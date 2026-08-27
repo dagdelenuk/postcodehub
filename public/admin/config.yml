@@ -2,9 +2,7 @@ backend:
   name: github
   repo: dagdelenuk/postcodehub
   branch: main
-  # Replace with the site's real live domain (the one wrangler.toml's `name`
-  # deploys to) once confirmed - this is where /auth and /callback live.
-  base_url: https://REPLACE-WITH-YOUR-WORKER-DOMAIN
+  base_url: https://postcodehub.g2m.partners
   auth_endpoint: auth
 
 # Uploaded images (if an editor chooses "upload" instead of pasting a URL in
