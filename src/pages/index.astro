@@ -7,14 +7,21 @@ const hierarchy = loadHierarchy();
 ---
 
 <BaseLayout title="Home" description="A non-commercial community information hub for UK neighbourhoods, covering health, safety, transport, schools, and civic data by postcode." menuLevel="home">
-  <section class="mx-auto max-w-5xl px-4 py-16 text-center">
-    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Your neighbourhood, in one place</h1>
-    <p class="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
-      PostcodeHub is a non-commercial, non-partisan digital notice board covering health services, transport,
-      schools, safety, planning, local representatives, events, and property &mdash; built from open UK
-      government data, organised by postcode.
-    </p>
-  </section>
+  <div class="relative overflow-hidden">
+    <div
+      class="absolute inset-0"
+      style="background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px); background-size: 40px 40px; -webkit-mask-image: linear-gradient(to bottom, black, transparent); mask-image: linear-gradient(to bottom, black, transparent);"
+    >
+    </div>
+    <section class="relative mx-auto max-w-5xl px-4 py-16 text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Your neighbourhood, in one place</h1>
+      <p class="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
+        PostcodeHub is a non-commercial, non-partisan digital notice board covering health services, transport,
+        schools, safety, planning, local representatives, events, and property &mdash; built from open UK
+        government data, organised by postcode.
+      </p>
+    </section>
+  </div>
 
   <section class="mx-auto max-w-5xl px-4 pb-16">
     <h2 class="text-xl font-semibold mb-4">Browse by city</h2>
