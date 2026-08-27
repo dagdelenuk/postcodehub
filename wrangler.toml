@@ -1,5 +1,14 @@
 name = "postcodehubuk-worker"
 compatibility_date = "2026-08-27"
+main = "worker/index.ts"
 
 [assets]
 directory = "./dist"
+binding = "ASSETS"
+
+# GITHUB_OAUTH_ID is not secret (a GitHub OAuth App's client ID is public by
+# design - it's meant to appear in the authorize URL). GITHUB_OAUTH_SECRET is
+# set separately via the Cloudflare dashboard (Settings > Variables and
+# Secrets), never committed here.
+[vars]
+GITHUB_OAUTH_ID = "REPLACE_WITH_YOUR_OAUTH_APP_CLIENT_ID"

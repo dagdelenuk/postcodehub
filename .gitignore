@@ -9,6 +9,9 @@ data/raw/
 # dependencies
 node_modules/
 
+# wrangler local dev state
+.wrangler/
+
 # logs
 npm-debug.log*
 yarn-debug.log*

@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: dagdelenuk/postcodehub
+  branch: main
+  # Replace with the site's real live domain (the one wrangler.toml's `name`
+  # deploys to) once confirmed - this is where /auth and /callback live.
+  base_url: https://REPLACE-WITH-YOUR-WORKER-DOMAIN
+  auth_endpoint: auth
+
+# Uploaded images (if an editor chooses "upload" instead of pasting a URL in
+# the image field) land in the repo here, and Astro serves public/ as-is.
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "banner_overrides"
+    label: "Banner image overrides"
+    files:
+      - file: "data/manual/banner-overrides.json"
+        label: "City & borough banner overrides"
+        name: "banner-overrides"
+        description: >
+          Overrides the automatically-sourced Wikimedia photos for a
+          city/borough's rotating banner. Add an entry with the exact page
+          slug (e.g. "london", "richmond-upon-thames", "kensington-and-chelsea"
+          - the part of the URL after postcodehub.uk/london/) to replace its
+          banner images entirely.
+        fields:
+          - label: "Overrides"
+            name: "overrides"
+            widget: "list"
+            summary: "{{fields.slug}} ({{fields.images}} images)"
+            fields:
+              - { label: "Slug", name: "slug", widget: "string", hint: "e.g. london, richmond-upon-thames, kensington-and-chelsea" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "src", widget: "image", choose_url: true }
+                  - { label: "Width (px)", name: "width", widget: "number", value_type: "int", default: 1600 }
+                  - { label: "Height (px)", name: "height", widget: "number", value_type: "int", default: 900 }
+                  - { label: "Credit text", name: "credit", widget: "string", hint: "Shown in the banner's corner, e.g. \"Jane Smith · CC BY 4.0 · Wikimedia Commons\"" }
+                  - { label: "Credit link", name: "creditUrl", widget: "string", hint: "Where the credit text links to" }
+                  - { label: "License", name: "license", widget: "string", hint: "e.g. CC BY 4.0, or \"All rights reserved (used with permission)\"" }

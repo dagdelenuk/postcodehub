@@ -17,19 +17,20 @@ interface ManualOverrideEntry {
 
 /**
  * Hand-curated banners (data/manual/ - never touched by ingestion) win over
- * whatever was auto-fetched. Stored on disk as a list (not a Record<slug,...>)
- * because that's what the Decap CMS admin UI's "list" widget edits - a plain
- * map with arbitrary keys doesn't have a good structured-editor equivalent.
+ * whatever was auto-fetched. Stored on disk as { overrides: [{slug, images}] }
+ * - a named list, not a bare array or a Record<slug,...> - because that's
+ * what the Decap CMS admin UI's file-collection + list widget edits (a file
+ * collection's fields map onto named top-level keys in the JSON file).
  */
 async function loadManualOverrides(): Promise<Banners> {
-  let entries: ManualOverrideEntry[];
+  let parsed: { overrides?: ManualOverrideEntry[] };
   try {
-    entries = JSON.parse(await readFile(MANUAL_OVERRIDES_PATH, "utf-8")) as ManualOverrideEntry[];
+    parsed = JSON.parse(await readFile(MANUAL_OVERRIDES_PATH, "utf-8")) as { overrides?: ManualOverrideEntry[] };
   } catch {
     return {};
   }
   const byLocation: Banners = {};
-  for (const entry of entries) {
+  for (const entry of parsed.overrides ?? []) {
     if (entry.slug && entry.images?.length > 0) byLocation[entry.slug] = entry.images;
   }
   return byLocation;
