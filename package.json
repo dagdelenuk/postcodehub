@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run ingest && astro build",
+    "build": "astro build",
+    "build:full": "npm run ingest && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "ingest": "tsx scripts/ingest/run-all.ts",

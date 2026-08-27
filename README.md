@@ -46,10 +46,16 @@ everything except the hand-curated places/events/history seed.
 
 ## Deployment
 
-Configured for Cloudflare Pages via `wrangler.toml` (`pages_build_output_dir = "dist"`). Build
-command: `npm run build` (runs ingest, then `astro build`). Point Cloudflare Pages at this repo
-with that build command and `dist` as the output directory — no adapter needed since this is a
-fully static site.
+Configured for Cloudflare Pages/Workers via `wrangler.toml`. Build command: `npm run build`
+(just `astro build` — **not** ingest). `data/processed/` is committed to the repo, so the
+deploy build reads already-generated data and never makes live API calls itself, per the spec
+doc's "don't call APIs during the build" guardrail.
+
+To refresh the data (new schools, updated crime stats, etc.), run `npm run ingest` locally (or
+`npm run build:full` to ingest + build in one step) and commit the updated `data/processed/`
+files — that commit is what triggers the next deploy with fresh data. Running ingest as part of
+the Cloudflare build itself would make every deploy take 30–60+ minutes and risks getting
+rate-limited by NHS/police.uk/etc, so don't point the platform's build command at `build:full`.
 
 ## Known follow-ups
 
