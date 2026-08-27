@@ -1,0 +1,54 @@
+---
+import { CATEGORIES } from "../lib/categories";
+import type { CategoryKey } from "../lib/types";
+
+interface Props {
+  basePath: string;
+  active?: CategoryKey | "overview";
+  available: Set<CategoryKey>;
+}
+
+const { basePath, active, available } = Astro.props;
+---
+
+<nav class="border-b border-stone-200 bg-white sticky top-0 z-10">
+  <div class="mx-auto max-w-5xl px-4 overflow-x-auto">
+    <ul class="flex gap-1 text-sm whitespace-nowrap">
+      <li>
+        <a
+          href={basePath}
+          class:list={[
+            "inline-block px-3 py-3 border-b-2 -mb-px transition-colors",
+            active === "overview" ? "border-emerald-700 text-emerald-800 font-medium" : "border-transparent text-stone-600 hover:text-stone-900",
+          ]}
+        >
+          Overview
+        </a>
+      </li>
+      {
+        CATEGORIES.map((cat) => {
+          const isAvailable = available.has(cat.key);
+          return (
+            <li>
+              {isAvailable ? (
+                <a
+                  href={`${basePath}${cat.key}/`}
+                  class:list={[
+                    "inline-block px-3 py-3 border-b-2 -mb-px transition-colors",
+                    active === cat.key ? "border-emerald-700 text-emerald-800 font-medium" : "border-transparent text-stone-600 hover:text-stone-900",
+                  ]}
+                >
+                  {cat.icon} {cat.label}
+                </a>
+              ) : (
+                <span class="inline-block px-3 py-3 text-stone-300 cursor-default" title="No data available for this area">
+                  {cat.icon} {cat.label}
+                </span>
+              )}
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "A non-commercial community information network for UK neighbourhoods." } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} · PostcodeHub</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+        <a href="/" class="text-lg font-semibold tracking-tight">
+          Postcode<span class="text-emerald-700">Hub</span>
+        </a>
+        <p class="hidden sm:block text-xs text-stone-500">Non-commercial &middot; non-partisan community information</p>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="border-t border-stone-200 bg-white mt-12">
+      <div class="mx-auto max-w-5xl px-4 py-8 text-sm text-stone-500 space-y-2">
+        <p>PostcodeHub is a non-commercial, non-partisan community information network covering health, safety, transport, schools, and local civic data for UK neighbourhoods.</p>
+        <p>Built from open data: NHS Organisation Data Service, DfE Get Information about Schools, Ofsted, data.police.uk, HM Land Registry, UK Parliament, and each local council.</p>
+      </div>
+    </footer>
+  </body>
+</html>

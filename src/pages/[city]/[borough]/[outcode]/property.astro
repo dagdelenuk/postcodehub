@@ -1,0 +1,67 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "property"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+
+const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+const recentSales = data.property.sales.slice(0, 40);
+---
+
+<LocalityLayout
+  data={data}
+  citySlug={city!}
+  boroughSlug={borough!}
+  active="property"
+  title={`Property in ${data.outcode}`}
+  description={`Recent property sales and price trends in the ${data.outcode} area.`}
+>
+  <h1 class="text-2xl font-bold mb-2">Property in {data.outcode}</h1>
+  <p class="text-stone-500 mb-6">{data.property.sales.length} recorded sales over the last two years.</p>
+
+  <div class="grid gap-4 sm:grid-cols-2 mb-8">
+    <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
+      <p class="text-2xl font-bold text-emerald-800">{data.property.medianPrice ? gbp.format(data.property.medianPrice) : "n/a"}</p>
+      <p class="text-xs text-stone-500 mt-1">Median sale price</p>
+    </div>
+    <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
+      <p class="text-2xl font-bold text-emerald-800">{data.property.averagePrice ? gbp.format(data.property.averagePrice) : "n/a"}</p>
+      <p class="text-xs text-stone-500 mt-1">Average sale price</p>
+    </div>
+  </div>
+
+  <h2 class="text-lg font-semibold mb-3">Recent sales</h2>
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm border-collapse">
+      <thead>
+        <tr class="text-left text-stone-500 border-b border-stone-200">
+          <th class="py-2 pr-4">Address</th>
+          <th class="py-2 pr-4">Type</th>
+          <th class="py-2 pr-4">Date</th>
+          <th class="py-2 text-right">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          recentSales.map((sale) => (
+            <tr class="border-b border-stone-100">
+              <td class="py-2 pr-4">{sale.address || sale.postcode}</td>
+              <td class="py-2 pr-4 text-stone-500">{sale.propertyType}{sale.newBuild ? " (new build)" : ""}</td>
+              <td class="py-2 pr-4 text-stone-500">{sale.dateOfTransfer}</td>
+              <td class="py-2 text-right font-medium">{gbp.format(sale.price)}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-xs text-stone-400 mt-4">Source: HM Land Registry Price Paid Data.</p>
+</LocalityLayout>

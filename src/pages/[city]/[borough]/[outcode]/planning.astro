@@ -1,0 +1,55 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "planning"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+---
+
+<LocalityLayout
+  data={data}
+  citySlug={city!}
+  boroughSlug={borough!}
+  active="planning"
+  title={`Planning in ${data.outcode}`}
+  description={`Planning applications for the ${data.outcode} area.`}
+>
+  <h1 class="text-2xl font-bold mb-6">Planning applications in {data.outcode}</h1>
+
+  {
+    data.planning.applications.length > 0 ? (
+      <div class="space-y-3">
+        {data.planning.applications.map((app) => (
+          <div class="rounded-lg border border-stone-200 bg-white p-4">
+            <p class="font-medium">{app.address}</p>
+            <p class="text-sm text-stone-600 mt-1">{app.description}</p>
+            <p class="text-xs text-stone-400 mt-2">{app.reference} &middot; {app.status} &middot; received {app.dateReceived}</p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="rounded-lg border border-stone-200 bg-white p-6">
+        <p class="text-stone-600">
+          {data.borough}'s planning register doesn't expose a public feed we could pull structured listings
+          from, so we're linking straight to the council's live search instead of guessing at data.
+        </p>
+        {data.planning.searchUrl && (
+          <a
+            href={data.planning.searchUrl}
+            target="_blank"
+            rel="noopener"
+            class="inline-block mt-3 text-emerald-700 font-medium hover:underline"
+          >
+            Search live planning applications &rarr;
+          </a>
+        )}
+      </div>
+    )
+  }
+</LocalityLayout>

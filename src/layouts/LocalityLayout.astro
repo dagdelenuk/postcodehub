@@ -1,0 +1,46 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CategoryNav from "../components/CategoryNav.astro";
+import { hasContent } from "../lib/data";
+import type { CategoryKey, OutcodeData } from "../lib/types";
+import { CATEGORY_KEYS } from "../lib/types";
+
+interface Props {
+  data: OutcodeData;
+  citySlug: string;
+  boroughSlug: string;
+  active?: CategoryKey | "overview";
+  title: string;
+  description?: string;
+}
+
+const { data, citySlug, boroughSlug, active = "overview", title, description } = Astro.props;
+
+const basePath = `/${citySlug}/${boroughSlug}/${data.slug}/`;
+
+const available = new Set<CategoryKey>(
+  CATEGORY_KEYS.filter((key) => (key === "transport" ? true : hasContent(data, key)))
+);
+---
+
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs
+    crumbs={[
+      { label: "PostcodeHub", href: "/" },
+      { label: data.city, href: `/${citySlug}/` },
+      { label: data.borough, href: `/${citySlug}/${boroughSlug}/` },
+      { label: data.outcode },
+    ]}
+  />
+  <div class="mx-auto max-w-5xl px-4 pt-4">
+    <h1 class="text-3xl font-bold tracking-tight">{data.outcode}</h1>
+    <p class="text-stone-500 mt-1">{data.borough}, {data.city} &middot; {data.wards.join(", ")}</p>
+  </div>
+  <div class="mt-4">
+    <CategoryNav basePath={basePath} active={active} available={available} />
+  </div>
+  <div class="mx-auto max-w-5xl px-4 py-8">
+    <slot />
+  </div>
+</BaseLayout>

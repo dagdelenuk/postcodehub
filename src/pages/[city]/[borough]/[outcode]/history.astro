@@ -1,0 +1,44 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "history"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+---
+
+<LocalityLayout
+  data={data}
+  citySlug={city!}
+  boroughSlug={borough!}
+  active="history"
+  title={`History of ${data.outcode}`}
+  description={`Local heritage and history of the ${data.outcode} area.`}
+>
+  <h1 class="text-2xl font-bold mb-6">History &amp; heritage</h1>
+
+  <div class="rounded-lg border border-stone-200 bg-white p-6 mb-6">
+    <p class="text-stone-700 leading-relaxed">{data.history.summary}</p>
+  </div>
+
+  {
+    data.history.keyFacts.length > 0 && (
+      <section>
+        <h2 class="text-lg font-semibold mb-3">Key facts</h2>
+        <ul class="space-y-2">
+          {data.history.keyFacts.map((fact) => (
+            <li class="flex gap-2 text-stone-600">
+              <span class="text-emerald-700">&bull;</span>
+              <span>{fact}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</LocalityLayout>

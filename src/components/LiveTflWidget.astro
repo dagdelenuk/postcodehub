@@ -1,0 +1,45 @@
+---
+// Fetched client-side per the pipeline doc's "live API fallback" strategy:
+// TfL status changes constantly, so it must never be baked into the static build.
+---
+
+<div class="rounded-lg border border-stone-200 bg-white p-4" data-tfl-widget>
+  <p class="text-xs uppercase tracking-wide text-stone-400 mb-2">Live TfL status</p>
+  <ul data-tfl-output class="text-sm text-stone-600 space-y-1">
+    <li>Loading live status&hellip;</li>
+  </ul>
+</div>
+
+<script>
+  interface TflLine {
+    name: string;
+    modeName: string;
+    lineStatuses: { statusSeverityDescription: string }[];
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-tfl-widget]").forEach(async (widget) => {
+    const output = widget.querySelector<HTMLElement>("[data-tfl-output]");
+    if (!output) return;
+    try {
+      const res = await fetch("https://api.tfl.gov.uk/Line/Mode/tube,dlr,overground,elizabeth-line,tram/Status");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const lines: TflLine[] = await res.json();
+      const disrupted = lines.filter((l) => !l.lineStatuses.every((s) => s.statusSeverityDescription === "Good Service"));
+
+      output.innerHTML = "";
+      if (disrupted.length === 0) {
+        const li = document.createElement("li");
+        li.textContent = "✅ Good service on all lines";
+        output.appendChild(li);
+      } else {
+        for (const line of disrupted.slice(0, 6)) {
+          const li = document.createElement("li");
+          li.textContent = `⚠️ ${line.name}: ${line.lineStatuses.map((s) => s.statusSeverityDescription).join(", ")}`;
+          output.appendChild(li);
+        }
+      }
+    } catch {
+      output.innerHTML = '<li>Live status unavailable right now.</li>';
+    }
+  });
+</script>

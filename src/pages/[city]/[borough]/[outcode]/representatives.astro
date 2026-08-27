@@ -1,0 +1,66 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "representatives"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+
+const mp = data.representatives.representatives.filter((r) => r.role === "MP");
+const councillors = data.representatives.representatives.filter((r) => r.role === "Councillor");
+---
+
+<LocalityLayout
+  data={data}
+  citySlug={city!}
+  boroughSlug={borough!}
+  active="representatives"
+  title={`Representatives for ${data.outcode}`}
+  description={`Your MP and local ward councillors for the ${data.outcode} area.`}
+>
+  <h1 class="text-2xl font-bold mb-6">Your representatives</h1>
+
+  {
+    mp.length > 0 && (
+      <section class="mb-8">
+        <h2 class="text-lg font-semibold mb-3">Member of Parliament</h2>
+        <div class="grid gap-3 sm:grid-cols-2">
+          {mp.map((rep) => (
+            <div class="rounded-lg border border-stone-200 bg-white p-4">
+              <p class="font-medium">{rep.name}</p>
+              <p class="text-sm text-stone-500 mt-1">{rep.party} &middot; {rep.constituency}</p>
+              {rep.contactUrl && (
+                <a href={rep.contactUrl} target="_blank" rel="noopener" class="text-sm text-emerald-700 hover:underline mt-1 inline-block">
+                  Contact &rarr;
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    councillors.length > 0 && (
+      <section>
+        <h2 class="text-lg font-semibold mb-3">Ward councillors ({councillors.length})</h2>
+        <div class="grid gap-3 sm:grid-cols-2">
+          {councillors.map((rep) => (
+            <div class="rounded-lg border border-stone-200 bg-white p-4">
+              <p class="font-medium">{rep.name}</p>
+              <p class="text-sm text-stone-500 mt-1">{rep.party} &middot; {rep.ward} ward</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <p class="text-xs text-stone-400 mt-6">Sources: UK Parliament Members API; {data.borough} council.</p>
+</LocalityLayout>

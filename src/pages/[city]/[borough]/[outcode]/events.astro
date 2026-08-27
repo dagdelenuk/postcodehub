@@ -1,0 +1,50 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "events"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+---
+
+<LocalityLayout
+  data={data}
+  citySlug={city!}
+  boroughSlug={borough!}
+  active="events"
+  title={`Events near ${data.outcode}`}
+  description={`Local events and things to do near ${data.outcode}.`}
+>
+  <h1 class="text-2xl font-bold mb-6">Events near {data.outcode}</h1>
+
+  {
+    data.events.events.length > 0 ? (
+      <div class="space-y-3">
+        {data.events.events.map((event) => (
+          <div class="rounded-lg border border-stone-200 bg-white p-4">
+            <p class="font-medium">{event.name}</p>
+            <p class="text-sm text-stone-500 mt-1">{event.date} &middot; {event.location}</p>
+            <p class="text-sm text-stone-600 mt-2">{event.description}</p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="rounded-lg border border-stone-200 bg-white p-6">
+        <p class="text-stone-600">
+          Event listings change daily, so rather than showing dates that will go stale, we link straight to a
+          live local events calendar for {data.borough}.
+        </p>
+        {data.events.listingUrl && (
+          <a href={data.events.listingUrl} target="_blank" rel="noopener" class="inline-block mt-3 text-emerald-700 font-medium hover:underline">
+            See what's on &rarr;
+          </a>
+        )}
+      </div>
+    )
+  }
+</LocalityLayout>

@@ -1,0 +1,71 @@
+---
+interface Props {
+  latitude: number;
+  longitude: number;
+}
+
+const { latitude, longitude } = Astro.props;
+---
+
+<div
+  class="rounded-lg border border-stone-200 bg-white p-4"
+  data-weather-widget
+  data-lat={latitude}
+  data-lon={longitude}
+>
+  <p class="text-xs uppercase tracking-wide text-stone-400 mb-1">Live weather &middot; Open-Meteo</p>
+  <p data-weather-output class="text-stone-600 text-sm">Loading current weather&hellip;</p>
+</div>
+
+<script>
+  const WEATHER_CODES: Record<number, string> = {
+    0: "☀️ Clear sky",
+    1: "🌤️ Mainly clear",
+    2: "⛅ Partly cloudy",
+    3: "☁️ Overcast",
+    45: "🌫️ Fog",
+    48: "🌫️ Depositing rime fog",
+    51: "🌦️ Light drizzle",
+    53: "🌦️ Moderate drizzle",
+    55: "🌦️ Dense drizzle",
+    56: "🌧️ Light freezing drizzle",
+    57: "🌧️ Dense freezing drizzle",
+    61: "🌧️ Slight rain",
+    63: "🌧️ Moderate rain",
+    65: "🌧️ Heavy rain",
+    66: "🌧️ Light freezing rain",
+    67: "🌧️ Heavy freezing rain",
+    71: "🌨️ Slight snow",
+    73: "🌨️ Moderate snow",
+    75: "🌨️ Heavy snow",
+    77: "🌨️ Snow grains",
+    80: "🌦️ Slight rain showers",
+    81: "🌦️ Moderate rain showers",
+    82: "🌧️ Violent rain showers",
+    85: "🌨️ Slight snow showers",
+    86: "🌨️ Heavy snow showers",
+    95: "⛈️ Thunderstorm",
+    96: "⛈️ Thunderstorm with slight hail",
+    99: "⛈️ Thunderstorm with heavy hail",
+  };
+
+  document.querySelectorAll<HTMLElement>("[data-weather-widget]").forEach(async (widget) => {
+    const output = widget.querySelector<HTMLElement>("[data-weather-output]");
+    if (!output) return;
+    const lat = widget.dataset.lat;
+    const lon = widget.dataset.lon;
+    try {
+      const res = await fetch(
+        `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&timezone=auto`
+      );
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const temp = data.current.temperature_2m;
+      const code = data.current.weather_code;
+      const label = WEATHER_CODES[code] ?? "Weather";
+      output.textContent = `${label} · ${temp}°C`;
+    } catch {
+      output.textContent = "Weather data unavailable right now.";
+    }
+  });
+</script>

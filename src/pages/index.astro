@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { loadHierarchy } from "../lib/data";
+
+const hierarchy = loadHierarchy();
+---
+
+<BaseLayout title="Home" description="A non-commercial community information hub for UK neighbourhoods, covering health, safety, transport, schools, and civic data by postcode.">
+  <section class="mx-auto max-w-5xl px-4 py-16 text-center">
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Your neighbourhood, in one place</h1>
+    <p class="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
+      PostcodeHub is a non-commercial, non-partisan digital notice board covering health services, transport,
+      schools, safety, planning, local representatives, events, and property &mdash; built from open UK
+      government data, organised by postcode.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pb-16">
+    <h2 class="text-xl font-semibold mb-4">Browse by city</h2>
+    <div class="grid gap-4 sm:grid-cols-2">
+      {
+        hierarchy.cities.map((city) => (
+          <a href={`/${city.slug}/`} class="block rounded-lg border border-stone-200 bg-white p-6 hover:border-emerald-600 transition-colors">
+            <h3 class="text-lg font-semibold">{city.name}</h3>
+            <p class="text-sm text-stone-500 mt-1">
+              {city.boroughs.length} council {city.boroughs.length === 1 ? "authority" : "authorities"} covered
+            </p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

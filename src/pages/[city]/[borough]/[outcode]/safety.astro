@@ -1,0 +1,69 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "safety"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+
+const maxMonthly = Math.max(...data.safety.monthlyTrend.map((m) => m.totalCrimes), 1);
+const topCategories = Object.entries(data.safety.categoryBreakdown)
+  .sort(([, a], [, b]) => b - a)
+  .slice(0, 8);
+const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
+---
+
+<LocalityLayout
+  data={data}
+  citySlug={city!}
+  boroughSlug={borough!}
+  active="safety"
+  title={`Safety in ${data.outcode}`}
+  description={`Crime statistics and trends for the ${data.outcode} area.`}
+>
+  <h1 class="text-2xl font-bold mb-2">Crime in {data.outcode}</h1>
+  <p class="text-stone-500 mb-6">{data.safety.totalLast12Months.toLocaleString()} recorded crimes over the last 12 months, within roughly 1 mile of the area centre.</p>
+
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold mb-3">Monthly trend</h2>
+    <div class="rounded-lg border border-stone-200 bg-white p-4 flex items-end gap-1 h-40">
+      {
+        data.safety.monthlyTrend.map((m) => (
+          <div class="flex-1 flex flex-col items-end gap-1 h-full">
+            <div class="w-full flex-1 flex items-end">
+              <div
+                class="w-full bg-emerald-600/80 rounded-t"
+                style={`height: ${Math.max((m.totalCrimes / maxMonthly) * 100, 2)}px`}
+              />
+            </div>
+            <span class="text-[10px] text-stone-400 whitespace-nowrap -rotate-45 origin-top-left translate-y-2">{m.month.slice(2)}</span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-lg font-semibold mb-3">By category</h2>
+    <div class="space-y-2">
+      {
+        topCategories.map(([category, count]) => (
+          <div class="flex items-center gap-3">
+            <span class="text-sm text-stone-600 w-40 shrink-0 truncate">{category.replace(/-/g, " ")}</span>
+            <div class="flex-1 bg-stone-100 rounded-full h-3">
+              <div class="bg-emerald-600 h-3 rounded-full" style={`width: ${(count / maxCategory) * 100}%`} />
+            </div>
+            <span class="text-sm text-stone-500 w-10 text-right">{count}</span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <p class="text-xs text-stone-400 mt-6">Source: data.police.uk street-level crime data.</p>
+</LocalityLayout>

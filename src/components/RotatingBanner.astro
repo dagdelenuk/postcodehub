@@ -1,0 +1,63 @@
+---
+import type { BannerImage } from "../lib/types";
+
+interface Props {
+  images: BannerImage[];
+}
+
+const { images } = Astro.props;
+const rotates = images.length > 1;
+---
+
+{
+  images.length > 0 && (
+    <div class="relative h-56 sm:h-72 overflow-hidden rounded-lg bg-stone-200" data-banner={rotates ? "rotating" : undefined}>
+      {images.map((img, i) => (
+        <img
+          src={img.src}
+          width={img.width}
+          height={img.height}
+          alt=""
+          loading={i === 0 ? "eager" : "lazy"}
+          class:list={["absolute inset-0 h-full w-full object-cover transition-opacity duration-1000", i === 0 ? "opacity-100" : "opacity-0"]}
+          data-banner-slide
+          data-credit={img.credit}
+          data-credit-url={img.creditUrl}
+        />
+      ))}
+      <a
+        href={images[0].creditUrl}
+        target="_blank"
+        rel="noopener"
+        data-banner-credit
+        class="absolute bottom-1.5 right-2 rounded bg-black/40 px-2 py-0.5 text-[11px] text-white/90 hover:text-white hover:bg-black/60 transition-colors"
+      >
+        {images[0].credit}
+      </a>
+    </div>
+  )
+}
+
+{
+  rotates && (
+    <script>
+      document.querySelectorAll<HTMLElement>('[data-banner="rotating"]').forEach((banner) => {
+        const slides = [...banner.querySelectorAll<HTMLImageElement>("[data-banner-slide]")];
+        const creditLink = banner.querySelector<HTMLAnchorElement>("[data-banner-credit]");
+        if (slides.length < 2) return;
+        let current = 0;
+        setInterval(() => {
+          slides[current].classList.remove("opacity-100");
+          slides[current].classList.add("opacity-0");
+          current = (current + 1) % slides.length;
+          slides[current].classList.remove("opacity-0");
+          slides[current].classList.add("opacity-100");
+          if (creditLink) {
+            creditLink.textContent = slides[current].dataset.credit ?? "";
+            creditLink.href = slides[current].dataset.creditUrl ?? "#";
+          }
+        }, 5000);
+      });
+    </script>
+  )
+}

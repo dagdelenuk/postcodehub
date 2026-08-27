@@ -1,0 +1,38 @@
+{
+  "name": "postcodehub-uk",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run ingest && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "ingest": "tsx scripts/ingest/run-all.ts",
+    "ingest:geography": "tsx scripts/ingest/fetch-geography.ts",
+    "ingest:health": "tsx scripts/ingest/fetch-health.ts",
+    "ingest:schools": "tsx scripts/ingest/fetch-schools.ts",
+    "ingest:crime": "tsx scripts/ingest/fetch-crime.ts",
+    "ingest:property": "tsx scripts/ingest/fetch-property.ts",
+    "ingest:representatives": "tsx scripts/ingest/fetch-representatives.ts",
+    "ingest:planning": "tsx scripts/ingest/fetch-planning.ts",
+    "ingest:seed": "tsx scripts/ingest/seed-places-events-history.ts",
+    "ingest:banners": "tsx scripts/ingest/fetch-banner-images.ts",
+    "ingest:merge": "tsx scripts/ingest/build-outcode-data.ts"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.8",
+    "csv-parse": "^7.0.2",
+    "tailwindcss": "^4.3.3"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "tsx": "^4.23.12"
+  }
+}
