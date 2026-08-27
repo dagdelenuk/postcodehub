@@ -16,10 +16,10 @@ const { city, borough } = Astro.params;
 const { data } = Astro.props;
 
 const summaryStats = [
-  { label: "GP surgeries", value: data.health.gpSurgeries.length },
-  { label: "Schools", value: data.schools.schools.length },
-  { label: "Crimes (12mo)", value: data.safety.totalLast12Months },
-  { label: "Property sales", value: data.property.sales.length },
+  { label: "GP surgeries", value: data.health.gpSurgeries.length, category: "health" as const },
+  { label: "Schools", value: data.schools.schools.length, category: "schools" as const },
+  { label: "Crimes (12mo)", value: data.safety.totalLast12Months, category: "safety" as const },
+  { label: "Property sales", value: data.property.sales.length, category: "property" as const },
 ];
 ---
 
@@ -33,12 +33,23 @@ const summaryStats = [
 >
   <div class="grid gap-4 sm:grid-cols-4 mb-8">
     {
-      summaryStats.map((stat) => (
-        <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
-          <p class="text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
-          <p class="text-xs text-stone-500 mt-1">{stat.label}</p>
-        </div>
-      ))
+      summaryStats.map((stat) => {
+        const clickable = hasContent(data, stat.category);
+        const cardClass = "rounded-lg border border-stone-200 bg-white p-4 text-center transition-colors" + (clickable ? " hover:border-emerald-600 cursor-pointer" : "");
+        const content = (
+          <>
+            <p class="text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
+            <p class="text-xs text-stone-500 mt-1">{stat.label}</p>
+          </>
+        );
+        return clickable ? (
+          <a href={`/${city}/${borough}/${data.slug}/${stat.category}/`} class={cardClass}>
+            {content}
+          </a>
+        ) : (
+          <div class={cardClass}>{content}</div>
+        );
+      })
     }
   </div>
 
