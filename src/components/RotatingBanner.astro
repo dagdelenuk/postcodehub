@@ -25,6 +25,38 @@ const rotates = images.length > 1;
           data-credit-url={img.creditUrl}
         />
       ))}
+
+      {rotates && (
+        <>
+          <button
+            type="button"
+            aria-label="Previous photo"
+            data-banner-prev
+            class="absolute left-2 top-1/2 -translate-y-1/2 flex items-center justify-center h-8 w-8 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            aria-label="Next photo"
+            data-banner-next
+            class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center h-8 w-8 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+          >
+            ›
+          </button>
+          <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5" data-banner-dots>
+            {images.map((_, i) => (
+              <button
+                type="button"
+                aria-label={`Go to photo ${i + 1}`}
+                data-banner-dot
+                class:list={["h-1.5 w-1.5 rounded-full transition-colors", i === 0 ? "bg-white" : "bg-white/40 hover:bg-white/70"]}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
       <a
         href={images[0].creditUrl}
         target="_blank"
@@ -43,20 +75,54 @@ const rotates = images.length > 1;
     <script>
       document.querySelectorAll<HTMLElement>('[data-banner="rotating"]').forEach((banner) => {
         const slides = [...banner.querySelectorAll<HTMLImageElement>("[data-banner-slide]")];
+        const dots = [...banner.querySelectorAll<HTMLButtonElement>("[data-banner-dot]")];
         const creditLink = banner.querySelector<HTMLAnchorElement>("[data-banner-credit]");
+        const prevBtn = banner.querySelector<HTMLButtonElement>("[data-banner-prev]");
+        const nextBtn = banner.querySelector<HTMLButtonElement>("[data-banner-next]");
         if (slides.length < 2) return;
+
         let current = 0;
-        setInterval(() => {
+        let timer: ReturnType<typeof setInterval>;
+
+        function show(index: number) {
           slides[current].classList.remove("opacity-100");
           slides[current].classList.add("opacity-0");
-          current = (current + 1) % slides.length;
+          dots[current]?.classList.remove("bg-white");
+          dots[current]?.classList.add("bg-white/40");
+
+          current = (index + slides.length) % slides.length;
+
           slides[current].classList.remove("opacity-0");
           slides[current].classList.add("opacity-100");
+          dots[current]?.classList.remove("bg-white/40");
+          dots[current]?.classList.add("bg-white");
           if (creditLink) {
             creditLink.textContent = slides[current].dataset.credit ?? "";
             creditLink.href = slides[current].dataset.creditUrl ?? "#";
           }
-        }, 5000);
+        }
+
+        function restartTimer() {
+          clearInterval(timer);
+          timer = setInterval(() => show(current + 1), 5000);
+        }
+
+        prevBtn?.addEventListener("click", () => {
+          show(current - 1);
+          restartTimer();
+        });
+        nextBtn?.addEventListener("click", () => {
+          show(current + 1);
+          restartTimer();
+        });
+        dots.forEach((dot, i) =>
+          dot.addEventListener("click", () => {
+            show(i);
+            restartTimer();
+          })
+        );
+
+        restartTimer();
       });
     </script>
   )
