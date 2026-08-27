@@ -1,0 +1,556 @@
+{
+  "outcode": "W1D",
+  "slug": "w1d",
+  "city": "London",
+  "borough": "Westminster",
+  "latitude": 51.51331648776977,
+  "longitude": -0.13268913237410054,
+  "wards": [
+    "St James's",
+    "West End"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "SOHO CENTRE FOR HEALTH AND CARE",
+        "odsCode": "E87069",
+        "address": "1ST FLOOR, 30 SOHO SQUARE, LONDON",
+        "postcode": "W1D 3QS",
+        "telephone": "020 75346570"
+      },
+      {
+        "name": "SOHO SQUARE GENERAL PRACTICE",
+        "odsCode": "E87714",
+        "address": "1ST FLOOR, 1 FRITH STREET, LONDON",
+        "postcode": "W1D 3HZ",
+        "telephone": "020 34056570"
+      },
+      {
+        "name": "GREAT CHAPEL STREET MEDICAL CENTRE",
+        "odsCode": "E87772",
+        "address": "4TH FLOOR, SOHO CENTRE FOR HEALTH, LONDON",
+        "postcode": "W1D 3HZ",
+        "telephone": "020 74379360"
+      },
+      {
+        "name": "SOHO WALK IN CENTRE (WIC)",
+        "odsCode": "Y00175",
+        "address": "1 FRITH STREET, LONDON",
+        "postcode": "W1D 3HZ",
+        "telephone": "020 75346500"
+      },
+      {
+        "name": "TURNING POINT",
+        "odsCode": "Y03211",
+        "address": "31 WARDOUR STREET, LONDON",
+        "postcode": "W1D 6PT",
+        "telephone": "020 72878743"
+      },
+      {
+        "name": "WESTMINSTER DAWS",
+        "odsCode": "Y05642",
+        "address": "31 WARDOUR STREET, SOHO, LONDON",
+        "postcode": "W1D 6PT",
+        "telephone": "020 72878743"
+      },
+      {
+        "name": "HOMELESS HEALTH SWL CLCH",
+        "odsCode": "Y08969",
+        "address": "SOHO CENTRE FOR HEALTH, 1 FRITH STREET, LONDON",
+        "postcode": "W1D 3HZ",
+        "telephone": "02079 81385"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "SOHO ORTHODONTIC CLINIC",
+        "odsCode": "V06975",
+        "address": "29-30 SOHO SQUARE, LONDON",
+        "postcode": "W1D 3QS"
+      },
+      {
+        "name": "SOHO DENTAL CARE",
+        "odsCode": "V10424",
+        "address": "1 FRITH STREET, LONDON",
+        "postcode": "W1D 3HZ"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "WATSONS PHARMACY",
+        "odsCode": "FLR52",
+        "address": "1 FRITH STREET, LONDON",
+        "postcode": "W1D 3HZ",
+        "telephone": "020 74372270"
+      },
+      {
+        "name": "BOOTS",
+        "odsCode": "FM364",
+        "address": "193 OXFORD STREET, LONDON",
+        "postcode": "W1D 2JY",
+        "telephone": "02072 875025"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Soho Parish CofE Primary School",
+        "urn": "101131",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "23 Great Windmill Street, London",
+        "postcode": "W1D 7LF",
+        "numberOfPupils": 90,
+        "schoolCapacity": 170
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 5929,
+        "violentCrimes": 1150,
+        "propertyCrimes": 4043
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 5398,
+        "violentCrimes": 1108,
+        "propertyCrimes": 3446
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 5306,
+        "violentCrimes": 1241,
+        "propertyCrimes": 3371
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 5834,
+        "violentCrimes": 1160,
+        "propertyCrimes": 3905
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 6772,
+        "violentCrimes": 1167,
+        "propertyCrimes": 4865
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 6739,
+        "violentCrimes": 1171,
+        "propertyCrimes": 4790
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 5054,
+        "violentCrimes": 979,
+        "propertyCrimes": 3375
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 4764,
+        "violentCrimes": 851,
+        "propertyCrimes": 3239
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 4675,
+        "violentCrimes": 978,
+        "propertyCrimes": 3015
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 4816,
+        "violentCrimes": 1006,
+        "propertyCrimes": 3085
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 4748,
+        "violentCrimes": 1121,
+        "propertyCrimes": 2886
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 4688,
+        "violentCrimes": 1050,
+        "propertyCrimes": 2889
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 6858,
+      "bicycle-theft": 723,
+      "burglary": 1349,
+      "criminal-damage-arson": 1030,
+      "drugs": 1698,
+      "other-theft": 13954,
+      "possession-of-weapons": 231,
+      "public-order": 2575,
+      "robbery": 2275,
+      "shoplifting": 6947,
+      "theft-from-the-person": 17750,
+      "vehicle-crime": 1156,
+      "violent-crime": 7901,
+      "other-crime": 276
+    },
+    "totalLast12Months": 64723
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "16, FLAT 1B, BATEMAN STREET",
+        "postcode": "W1D 3AH",
+        "price": 395000,
+        "dateOfTransfer": "2026-05-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, CARLISLE STREET",
+        "postcode": "W1D 3BU",
+        "price": 3926393,
+        "dateOfTransfer": "2026-04-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "241, GROUND FLOOR SHOP, OXFORD STREET",
+        "postcode": "W1D 2LT",
+        "price": 201000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "SOHO LOFTS, 10, FLAT 23, RICHMOND MEWS",
+        "postcode": "W1D 3DD",
+        "price": 765000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22 - 25, FLAT 5, DEAN STREET",
+        "postcode": "W1D 3RY",
+        "price": 440000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FRITH STREET",
+        "postcode": "W1D 4RD",
+        "price": 2500000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "13, SOHO SQUARE",
+        "postcode": "W1D 3QF",
+        "price": 6250000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "10, WARDOUR STREET",
+        "postcode": "W1D 6QF",
+        "price": 260000000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "181 - 183, OXFORD STREET",
+        "postcode": "W1D 2JT",
+        "price": 22000000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "12, FLAT 5, BOURCHIER STREET",
+        "postcode": "W1D 4HZ",
+        "price": 1065000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, CARLISLE STREET",
+        "postcode": "W1D 3BU",
+        "price": 4260000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "51-53, FLAT 1, RUPERT STREET",
+        "postcode": "W1D 7PQ",
+        "price": 480000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, GREEK STREET",
+        "postcode": "W1D 4DE",
+        "price": 139875,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "20A, FLAT 6, GREAT WINDMILL STREET",
+        "postcode": "W1D 7LA",
+        "price": 900000,
+        "dateOfTransfer": "2025-09-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21 - 22, COVENTRY STREET",
+        "postcode": "W1D 7AE",
+        "price": 13000000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, DEAN STREET",
+        "postcode": "W1D 3RL",
+        "price": 3900000,
+        "dateOfTransfer": "2025-09-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, FRITH STREET",
+        "postcode": "W1D 4RR",
+        "price": 535000,
+        "dateOfTransfer": "2025-07-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "62, GROUND AND BASEMENT FLOORS, SHAFTESBURY AVENUE",
+        "postcode": "W1D 6LT",
+        "price": 300000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "16, FLAT 3, ARCHER STREET",
+        "postcode": "W1D 7BE",
+        "price": 445000,
+        "dateOfTransfer": "2025-06-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "63, OLD COMPTON STREET",
+        "postcode": "W1D 6HT",
+        "price": 75000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "12, MACCLESFIELD STREET",
+        "postcode": "W1D 5BP",
+        "price": 110000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "21, BASEMENT AND GROUND FLOOR, SHAFTESBURY AVENUE",
+        "postcode": "W1D 7ED",
+        "price": 9999,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "RICHMOND HOUSE, 12 - 13, FLAT 5, RICHMOND BUILDINGS",
+        "postcode": "W1D 3HF",
+        "price": 685000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "33, OLD COMPTON STREET",
+        "postcode": "W1D 5JU",
+        "price": 275000,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "47 - 49, FLAT 4, RUPERT STREET",
+        "postcode": "W1D 7PE",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5 - 6, GROUND FLOOR PREMISES, COVENTRY STREET",
+        "postcode": "W1D 6BW",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "47 - 49, FLAT 5, RUPERT STREET",
+        "postcode": "W1D 7PE",
+        "price": 375000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23 - 24, GREEK STREET",
+        "postcode": "W1D 4DZ",
+        "price": 340000,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "EXETER MANSIONS, 106, FLAT 7, SHAFTESBURY AVENUE",
+        "postcode": "W1D 5EQ",
+        "price": 750000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, OLD COMPTON STREET",
+        "postcode": "W1D 4TL",
+        "price": 6870000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "10 - 11, ARCHER STREET",
+        "postcode": "W1D 7AZ",
+        "price": 13900000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "2, BOURCHIER STREET",
+        "postcode": "W1D 4HX",
+        "price": 2750000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "45A, OLD COMPTON STREET",
+        "postcode": "W1D 6HH",
+        "price": 47500,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, GREEK STREET",
+        "postcode": "W1D 4DG",
+        "price": 2047000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "9, GREEK STREET",
+        "postcode": "W1D 4DQ",
+        "price": 3100000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "6, CARLISLE STREET",
+        "postcode": "W1D 3BN",
+        "price": 1575000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "20, GROUND TO THIRD FLOOR PREMISES, GREEK STREET",
+        "postcode": "W1D 4DU",
+        "price": 2225000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "3, FLAT 3, CARLISLE STREET",
+        "postcode": "W1D 3BH",
+        "price": 890000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RICHMOND HOUSE, 12 - 13, FLAT 6, RICHMOND BUILDINGS",
+        "postcode": "W1D 3HF",
+        "price": 690000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 9211968,
+    "medianPrice": 750000
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Rachel Blake",
+        "party": "Labour (Co-op)",
+        "constituency": "Cities of London and Westminster",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://idoxpa.westminster.gov.uk/online-applications/"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Westminster Abbey",
+        "category": "community-hub",
+        "address": "Westminster",
+        "description": "The historic coronation church of English and British monarchs since 1066."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "W1D lies within Westminster. The City of Westminster sits at the heart of UK government and culture, home to the Houses of Parliament, Buckingham Palace, Westminster Abbey, and the West End theatre district.",
+    "keyFacts": [
+      "The City of Westminster sits at the heart of UK government and culture, home to the Houses of Parliament, Buckingham Palace, Westminster Abbey, and the West End theatre district."
+    ]
+  }
+}

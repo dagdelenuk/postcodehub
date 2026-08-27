@@ -1,0 +1,4426 @@
+{
+  "outcode": "SE4",
+  "slug": "se4",
+  "city": "London",
+  "borough": "Lewisham",
+  "latitude": 51.4610043304535,
+  "longitude": -0.03517160475161984,
+  "wards": [
+    "Brockley",
+    "Crofton Park",
+    "Ladywell",
+    "Nunhead & Queen's Road",
+    "Peckham Rye",
+    "Telegraph Hill"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "VESTA ROAD SURGERY",
+        "odsCode": "G85105",
+        "address": "58 VESTA ROAD, LONDON",
+        "postcode": "SE4 2NH",
+        "telephone": "020 76390654"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "CROFTON PARK DENTAL PRACTICE",
+        "odsCode": "V00063",
+        "address": "18 BROCKLEY GROVE, CROFTON PARK, LONDON",
+        "postcode": "SE4 1QY"
+      },
+      {
+        "name": "L ZIMAN & ASSOCIATES LTD",
+        "odsCode": "V00459",
+        "address": "349 BROCKLEY ROAD, CROFTON PARK, LONDON",
+        "postcode": "SE4 2AQ"
+      },
+      {
+        "name": "COLOSSEUM DENTAL (HONOR OAK)",
+        "odsCode": "V07643",
+        "address": "76 ST. NORBERT ROAD, LONDON",
+        "postcode": "SE4 2EY"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "OSBON PHARMACY",
+        "odsCode": "FET97",
+        "address": "179-181 LEWISHAM WAY, LONDON",
+        "postcode": "SE4 1UY",
+        "telephone": "020 86922823"
+      },
+      {
+        "name": "CHELTENHAM CHEMIST",
+        "odsCode": "FFK83",
+        "address": "20 KENTWELL CLOSE, TURNHAM ROAD, LONDON",
+        "postcode": "SE4 2QN",
+        "telephone": "020 76395941"
+      },
+      {
+        "name": "LADYWELL PHARMACY",
+        "odsCode": "FK081",
+        "address": "HILLY FIELDS MEDICAL CENTRE, 172 ADELAIDE AVENUE, LONDON",
+        "postcode": "SE4 1JN",
+        "telephone": "020 86900327"
+      },
+      {
+        "name": "BENTLEYS PHARMACY",
+        "odsCode": "FNL71",
+        "address": "374 BROCKLEY ROAD, LONDON",
+        "postcode": "SE4 2BY",
+        "telephone": "02086 921067"
+      },
+      {
+        "name": "AMIN PHARMACY",
+        "odsCode": "FNN90",
+        "address": "291 BROCKLEY ROAD, BROCKLEY, LONDON",
+        "postcode": "SE4 2SA",
+        "telephone": "020 86921389"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Chelwood Nursery School",
+        "urn": "100668",
+        "phaseOfEducation": "Nursery",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Chelwood Walk, Turnham Road, London",
+        "postcode": "SE4 2QQ",
+        "numberOfPupils": 127,
+        "schoolCapacity": null
+      },
+      {
+        "name": "Beecroft Garden Primary",
+        "urn": "100674",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Beecroft Road, London",
+        "postcode": "SE4 2BS",
+        "numberOfPupils": 382,
+        "schoolCapacity": 420
+      },
+      {
+        "name": "Gordonbrock Primary School",
+        "urn": "100684",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Amyruth Road, London, Brockley",
+        "postcode": "SE4 1HQ",
+        "numberOfPupils": 626,
+        "schoolCapacity": 655
+      },
+      {
+        "name": "John Stainer Community Primary School",
+        "urn": "100689",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": null,
+        "address": "Mantle Road, Brockley, London",
+        "postcode": "SE4 2DY",
+        "numberOfPupils": 400,
+        "schoolCapacity": 450
+      },
+      {
+        "name": "Myatt Garden Primary School",
+        "urn": "100713",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Rokeby Road, Brockley, London",
+        "postcode": "SE4 1DF",
+        "numberOfPupils": 357,
+        "schoolCapacity": 480
+      },
+      {
+        "name": "Turnham Academy",
+        "urn": "146100",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Good",
+        "ofstedLastInspection": null,
+        "address": "Turnham Road, Brockley, London",
+        "postcode": "SE4 2HH",
+        "numberOfPupils": 168,
+        "schoolCapacity": 576
+      },
+      {
+        "name": "Prendergast Ladywell School",
+        "urn": "150318",
+        "phaseOfEducation": "All-through",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Manwood Road, Brockley, Lewisham",
+        "postcode": "SE4 1SA",
+        "numberOfPupils": 1280,
+        "schoolCapacity": 1320
+      },
+      {
+        "name": "Prendergast School",
+        "urn": "150319",
+        "phaseOfEducation": "Secondary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Adelaide Avenue, Brockley, London",
+        "postcode": "SE4 1LE",
+        "numberOfPupils": 1052,
+        "schoolCapacity": 1000
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 625,
+        "violentCrimes": 219,
+        "propertyCrimes": 211
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 650,
+        "violentCrimes": 219,
+        "propertyCrimes": 232
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 637,
+        "violentCrimes": 228,
+        "propertyCrimes": 250
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 616,
+        "violentCrimes": 221,
+        "propertyCrimes": 241
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 604,
+        "violentCrimes": 212,
+        "propertyCrimes": 233
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 500,
+        "violentCrimes": 191,
+        "propertyCrimes": 196
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 527,
+        "violentCrimes": 219,
+        "propertyCrimes": 184
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 520,
+        "violentCrimes": 213,
+        "propertyCrimes": 166
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 611,
+        "violentCrimes": 246,
+        "propertyCrimes": 221
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 598,
+        "violentCrimes": 234,
+        "propertyCrimes": 217
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 650,
+        "violentCrimes": 259,
+        "propertyCrimes": 224
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 640,
+        "violentCrimes": 269,
+        "propertyCrimes": 206
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 1448,
+      "bicycle-theft": 96,
+      "burglary": 322,
+      "criminal-damage-arson": 311,
+      "drugs": 340,
+      "other-theft": 547,
+      "possession-of-weapons": 62,
+      "public-order": 391,
+      "robbery": 220,
+      "shoplifting": 554,
+      "theft-from-the-person": 228,
+      "vehicle-crime": 523,
+      "violent-crime": 2057,
+      "other-crime": 79
+    },
+    "totalLast12Months": 7178
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "182C, DRAKEFELL ROAD, BROCKLEY",
+        "postcode": "SE4 2DS",
+        "price": 400000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, ELSIEMAUD ROAD",
+        "postcode": "SE4 1HW",
+        "price": 250000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "194, FLAT 2, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XY",
+        "price": 570000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "300, FLAT C, BROCKLEY ROAD",
+        "postcode": "SE4 2RA",
+        "price": 215000,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, FLAT 5, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 532500,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, FOXBERRY ROAD",
+        "postcode": "SE4 2SR",
+        "price": 905000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, DALRYMPLE ROAD",
+        "postcode": "SE4 2BH",
+        "price": 1250000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "136B, DRAKEFELL ROAD, BROCKLEY",
+        "postcode": "SE4 2DS",
+        "price": 540000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1A, SEVENOAKS ROAD",
+        "postcode": "SE4 1RA",
+        "price": 535000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, CROFTON GATE WAY",
+        "postcode": "SE4 2DL",
+        "price": 620000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "150C, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XY",
+        "price": 495000,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 8, TYRWHITT ROAD",
+        "postcode": "SE4 1QD",
+        "price": 430000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, SEVENOAKS ROAD",
+        "postcode": "SE4 1RE",
+        "price": 725000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, MALLORY CLOSE",
+        "postcode": "SE4 2HE",
+        "price": 635000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, IVY ROAD",
+        "postcode": "SE4 1YS",
+        "price": 545000,
+        "dateOfTransfer": "2026-05-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, FLAT D, HILLY FIELDS CRESCENT",
+        "postcode": "SE4 1QA",
+        "price": 375000,
+        "dateOfTransfer": "2026-05-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHALSEY LODGE, FLAT 1, CHALSEY ROAD, BROCKLEY",
+        "postcode": "SE4 1YW",
+        "price": 400000,
+        "dateOfTransfer": "2026-05-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHALSEY LODGE, FLAT 2, CHALSEY ROAD, BROCKLEY",
+        "postcode": "SE4 1YW",
+        "price": 400000,
+        "dateOfTransfer": "2026-05-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44, ARICA ROAD",
+        "postcode": "SE4 2PX",
+        "price": 850000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE CURVE BUILDING, FLAT 9, CHUDLEIGH ROAD",
+        "postcode": "SE4 1HD",
+        "price": 415000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, UPPER FLAT, MARNOCK ROAD",
+        "postcode": "SE4 1EU",
+        "price": 603500,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "172, CHUDLEIGH ROAD",
+        "postcode": "SE4 1EE",
+        "price": 900000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "130, BREAKSPEARS ROAD",
+        "postcode": "SE4 1UA",
+        "price": 1150000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT C, HAREFIELD MEWS",
+        "postcode": "SE4 1LP",
+        "price": 320000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WILLOW HOUSE, FLAT 22, DRAGONFLY PLACE",
+        "postcode": "SE4 2FJ",
+        "price": 500000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41A, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SY",
+        "price": 361500,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, FLAT 1, SPRULES ROAD",
+        "postcode": "SE4 2NL",
+        "price": 600000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MAY TREE HOUSE, FLAT 4, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LZ",
+        "price": 425000,
+        "dateOfTransfer": "2026-05-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ALDHAM HOUSE, 79, FLAT 12, MALPAS ROAD",
+        "postcode": "SE4 1DP",
+        "price": 450000,
+        "dateOfTransfer": "2026-05-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "216, DRAKEFELL ROAD, BROCKLEY",
+        "postcode": "SE4 2DR",
+        "price": 1260000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "STEPHENS COURT, 82, FLAT 10, ENDWELL ROAD",
+        "postcode": "SE4 2DP",
+        "price": 300000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, KNELLER ROAD",
+        "postcode": "SE4 2AR",
+        "price": 1000000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42, MALPAS ROAD",
+        "postcode": "SE4 1BS",
+        "price": 810000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51B, TYRWHITT ROAD",
+        "postcode": "SE4 1QD",
+        "price": 415000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "97, BEXHILL ROAD",
+        "postcode": "SE4 1SH",
+        "price": 918000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, CYPRESS GARDENS",
+        "postcode": "SE4 2FB",
+        "price": 565000,
+        "dateOfTransfer": "2026-04-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ST. CYPRIANS COURT, BRAXFIELD ROAD",
+        "postcode": "SE4 2AW",
+        "price": 443000,
+        "dateOfTransfer": "2026-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "81, CROFTON PARK ROAD",
+        "postcode": "SE4 1AJ",
+        "price": 560000,
+        "dateOfTransfer": "2026-04-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13B, HAZELDON ROAD",
+        "postcode": "SE4 2DD",
+        "price": 500000,
+        "dateOfTransfer": "2026-04-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19C, MANOR AVENUE",
+        "postcode": "SE4 1PE",
+        "price": 400000,
+        "dateOfTransfer": "2026-04-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "82, FLAT 7, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 360000,
+        "dateOfTransfer": "2026-04-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FORMAN HOUSE, FLAT 14, FRENDSBURY ROAD",
+        "postcode": "SE4 2LB",
+        "price": 272000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, FLAT 3, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1PW",
+        "price": 482000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6A, BREAKSPEARS ROAD",
+        "postcode": "SE4 1UW",
+        "price": 480000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EMPEROR HOUSE, FLAT 6, DRAGONFLY PLACE",
+        "postcode": "SE4 2FL",
+        "price": 350000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, TRESSILLIAN CRESCENT",
+        "postcode": "SE4 1QJ",
+        "price": 580000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AR",
+        "price": 995000,
+        "dateOfTransfer": "2026-04-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13, ST NORBERT GREEN",
+        "postcode": "SE4 2HD",
+        "price": 715000,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, ALBERT MEWS",
+        "postcode": "SE4 2SZ",
+        "price": 485000,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MCMILLAN HOUSE, FLAT 7, ARICA ROAD",
+        "postcode": "SE4 2PU",
+        "price": 385000,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35B, DALRYMPLE ROAD",
+        "postcode": "SE4 2BQ",
+        "price": 637000,
+        "dateOfTransfer": "2026-04-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, EDDYSTONE ROAD",
+        "postcode": "SE4 2DE",
+        "price": 720000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, BIRCHAM PATH",
+        "postcode": "SE4 2HY",
+        "price": 460000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "183, MALPAS ROAD",
+        "postcode": "SE4 1BQ",
+        "price": 977500,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, BIRCHAM PATH",
+        "postcode": "SE4 2HY",
+        "price": 500000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "135, FLAT 1, BREAKSPEARS ROAD",
+        "postcode": "SE4 1TY",
+        "price": 457000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FLAT 1, 286, BROCKLEY ROAD",
+        "postcode": "SE4 2RA",
+        "price": 495000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "55L, MERRITT ROAD",
+        "postcode": "SE4 1DT",
+        "price": 855000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "61, BRAXFIELD ROAD",
+        "postcode": "SE4 2AW",
+        "price": 600000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "33, VESTA ROAD",
+        "postcode": "SE4 2NJ",
+        "price": 1160000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "200A, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XY",
+        "price": 635000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT 2, MONTAGUE AVENUE",
+        "postcode": "SE4 1YP",
+        "price": 295000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "89D, MANOR AVENUE",
+        "postcode": "SE4 1TD",
+        "price": 525000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, FOXWELL STREET",
+        "postcode": "SE4 2DX",
+        "price": 500000,
+        "dateOfTransfer": "2026-03-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST. CYPRIANS COURT, APARTMENT 8, BRAXFIELD ROAD",
+        "postcode": "SE4 2AW",
+        "price": 385000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, TOP FLAT, TYRWHITT ROAD",
+        "postcode": "SE4 1QG",
+        "price": 387000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, BEXHILL ROAD",
+        "postcode": "SE4 1RZ",
+        "price": 942000,
+        "dateOfTransfer": "2026-03-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22B, BREAKSPEARS ROAD",
+        "postcode": "SE4 1UW",
+        "price": 647000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, CRANFIELD ROAD",
+        "postcode": "SE4 1TN",
+        "price": 710000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37A, BREAKSPEARS ROAD",
+        "postcode": "SE4 1XR",
+        "price": 785000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHESTER HOUSE, 25, FLAT F, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1PL",
+        "price": 422500,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "107, FLAT B, BREAKSPEARS ROAD",
+        "postcode": "SE4 1TY",
+        "price": 642000,
+        "dateOfTransfer": "2026-03-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, OLD CARPENTERS YARD",
+        "postcode": "SE4 2FS",
+        "price": 570000,
+        "dateOfTransfer": "2026-03-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, GARSINGTON MEWS",
+        "postcode": "SE4 1LL",
+        "price": 705000,
+        "dateOfTransfer": "2026-03-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "INDIGO HOUSE, 81, FLAT 5, MALPAS ROAD",
+        "postcode": "SE4 1BN",
+        "price": 450000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROKELAND HOUSE, FLAT 3, TURNHAM ROAD",
+        "postcode": "SE4 2HW",
+        "price": 340000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, GLYNDE STREET",
+        "postcode": "SE4 1RU",
+        "price": 633000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "111, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1TF",
+        "price": 435000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "144, CROFTON PARK ROAD",
+        "postcode": "SE4 1AL",
+        "price": 860000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "53, FLAT 3, MANOR AVENUE",
+        "postcode": "SE4 1TD",
+        "price": 365000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "83, SEVENOAKS ROAD",
+        "postcode": "SE4 1RF",
+        "price": 605000,
+        "dateOfTransfer": "2026-03-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, HORSMONDEN ROAD",
+        "postcode": "SE4 1RG",
+        "price": 672500,
+        "dateOfTransfer": "2026-03-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, SEVENOAKS ROAD",
+        "postcode": "SE4 1RA",
+        "price": 600000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AT",
+        "price": 900000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "116, ST ASAPH ROAD",
+        "postcode": "SE4 2EN",
+        "price": 1100000,
+        "dateOfTransfer": "2026-02-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "232, FLAT B, MALPAS ROAD",
+        "postcode": "SE4 1DJ",
+        "price": 275000,
+        "dateOfTransfer": "2026-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, RUSHFORD ROAD",
+        "postcode": "SE4 1SG",
+        "price": 832136,
+        "dateOfTransfer": "2026-02-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "196, ADELAIDE AVENUE",
+        "postcode": "SE4 1JN",
+        "price": 1162000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, COSTON WALK",
+        "postcode": "SE4 2LS",
+        "price": 395000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54D, TYRWHITT ROAD",
+        "postcode": "SE4 1QG",
+        "price": 339000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, ST ASAPH ROAD",
+        "postcode": "SE4 2EL",
+        "price": 940000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, FLAT 3, BROCKLEY CROSS",
+        "postcode": "SE4 2AB",
+        "price": 260000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, FLAT 2, BROCKLEY CROSS",
+        "postcode": "SE4 2AB",
+        "price": 260000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47B, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SY",
+        "price": 650000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, ROKEBY ROAD",
+        "postcode": "SE4 1DE",
+        "price": 522000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "EDGEHILL LODGE, 153, FLAT 4, TURNHAM ROAD",
+        "postcode": "SE4 2LY",
+        "price": 432500,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, ROKEBY ROAD",
+        "postcode": "SE4 1DE",
+        "price": 600000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "64B, BREAKSPEARS ROAD",
+        "postcode": "SE4 1TS",
+        "price": 655000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "70, MERRITT ROAD",
+        "postcode": "SE4 1DX",
+        "price": 605000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, ENDWELL ROAD",
+        "postcode": "SE4 2NE",
+        "price": 1387500,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "33, ASPINALL ROAD",
+        "postcode": "SE4 2EH",
+        "price": 787500,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10D, MALPAS ROAD",
+        "postcode": "SE4 1BS",
+        "price": 890000,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "76, FLAT 6, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1ST",
+        "price": 460000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "122, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SS",
+        "price": 1400000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31B, ARABIN ROAD",
+        "postcode": "SE4 2SD",
+        "price": 275000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WOODSTONE HOUSE, GARSINGTON MEWS",
+        "postcode": "SE4 1LL",
+        "price": 1895000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, FIRST FLOOR FLAT, ADELAIDE AVENUE",
+        "postcode": "SE4 1YR",
+        "price": 395000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "141, CROFTON PARK ROAD",
+        "postcode": "SE4 1AJ",
+        "price": 785000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, HOWSON ROAD",
+        "postcode": "SE4 2AL",
+        "price": 885000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, FLAT 2, MANOR AVENUE",
+        "postcode": "SE4 1PD",
+        "price": 412000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68A, MALPAS ROAD",
+        "postcode": "SE4 1BU",
+        "price": 425000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "98, GEOFFREY ROAD",
+        "postcode": "SE4 1NU",
+        "price": 440000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11A, TYRWHITT ROAD",
+        "postcode": "SE4 1QD",
+        "price": 822500,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, KNELLER ROAD",
+        "postcode": "SE4 2AR",
+        "price": 817500,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, DUNDALK ROAD",
+        "postcode": "SE4 2JJ",
+        "price": 1395000,
+        "dateOfTransfer": "2026-01-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "76, FLAT 7, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1ST",
+        "price": 375000,
+        "dateOfTransfer": "2025-12-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "107, ST ASAPH ROAD",
+        "postcode": "SE4 2DZ",
+        "price": 688500,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16B, BARTRAM ROAD",
+        "postcode": "SE4 2DQ",
+        "price": 207000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "67A, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SY",
+        "price": 516000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LILAC HOUSE, FLAT 5, BREAKSPEARS ROAD",
+        "postcode": "SE4 1TU",
+        "price": 450000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15B, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YG",
+        "price": 445000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68, ST ASAPH ROAD",
+        "postcode": "SE4 2EL",
+        "price": 560000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, MANWOOD ROAD",
+        "postcode": "SE4 1AD",
+        "price": 852500,
+        "dateOfTransfer": "2025-12-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, EDDYSTONE ROAD",
+        "postcode": "SE4 2DE",
+        "price": 740000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, MARNOCK ROAD",
+        "postcode": "SE4 1EU",
+        "price": 814750,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "49L, MERRITT ROAD",
+        "postcode": "SE4 1DT",
+        "price": 530000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "160C, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XY",
+        "price": 548000,
+        "dateOfTransfer": "2025-12-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FORMAN HOUSE, FLAT 18, FRENDSBURY ROAD",
+        "postcode": "SE4 2LB",
+        "price": 280000,
+        "dateOfTransfer": "2025-12-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "115B, HOWSON ROAD",
+        "postcode": "SE4 2BB",
+        "price": 487500,
+        "dateOfTransfer": "2025-12-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21C, CRANFIELD ROAD",
+        "postcode": "SE4 1TN",
+        "price": 470000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, BARTRAM ROAD",
+        "postcode": "SE4 2DQ",
+        "price": 710000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, EASTERN ROAD",
+        "postcode": "SE4 1LD",
+        "price": 1270000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LANGTRY COURT, 3, COULGATE STREET",
+        "postcode": "SE4 2FA",
+        "price": 500000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "198A, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XY",
+        "price": 609000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "57A, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YA",
+        "price": 684000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 1, BEECROFT ROAD, BROCKLEY",
+        "postcode": "SE4 2BS",
+        "price": 495000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT 3, WHITBREAD ROAD",
+        "postcode": "SE4 2BD",
+        "price": 165000,
+        "dateOfTransfer": "2025-12-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FORMAN HOUSE, FLAT 15, FRENDSBURY ROAD",
+        "postcode": "SE4 2LB",
+        "price": 270000,
+        "dateOfTransfer": "2025-12-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, MERRITT ROAD",
+        "postcode": "SE4 1DY",
+        "price": 767000,
+        "dateOfTransfer": "2025-12-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12B, FIRST FLOOR FLAT, LINDAL ROAD",
+        "postcode": "SE4 1EJ",
+        "price": 331000,
+        "dateOfTransfer": "2025-12-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68A, HOWSON ROAD",
+        "postcode": "SE4 2AT",
+        "price": 646200,
+        "dateOfTransfer": "2025-12-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "90B, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1ST",
+        "price": 575000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35B, LOWER FLAT, DARFIELD ROAD",
+        "postcode": "SE4 1ET",
+        "price": 422500,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2B, ARABIN ROAD",
+        "postcode": "SE4 2SE",
+        "price": 755000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12A, WHITBREAD ROAD",
+        "postcode": "SE4 2BE",
+        "price": 325000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, FINLAND ROAD",
+        "postcode": "SE4 2JH",
+        "price": 1050000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "107A, ST ASAPH ROAD",
+        "postcode": "SE4 2DZ",
+        "price": 550000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, FLAT B, ADELAIDE AVENUE",
+        "postcode": "SE4 1YR",
+        "price": 172330,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "182, BASEMENT FLAT, LEWISHAM WAY",
+        "postcode": "SE4 1UU",
+        "price": 625000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "149, BEXHILL ROAD",
+        "postcode": "SE4 1SH",
+        "price": 805000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44, ASPINALL ROAD",
+        "postcode": "SE4 2EQ",
+        "price": 900000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "95, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AR",
+        "price": 849750,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "84, GEOFFREY ROAD",
+        "postcode": "SE4 1NU",
+        "price": 475000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, RUSHFORD ROAD",
+        "postcode": "SE4 1SG",
+        "price": 823440,
+        "dateOfTransfer": "2025-11-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "240, MALPAS ROAD",
+        "postcode": "SE4 1DJ",
+        "price": 920000,
+        "dateOfTransfer": "2025-11-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51A, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 565000,
+        "dateOfTransfer": "2025-11-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "119, BREAKSPEARS ROAD",
+        "postcode": "SE4 1TY",
+        "price": 1587500,
+        "dateOfTransfer": "2025-11-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, COSTON WALK",
+        "postcode": "SE4 2LS",
+        "price": 300000,
+        "dateOfTransfer": "2025-11-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "396, FLAT 1, BROCKLEY ROAD",
+        "postcode": "SE4 2DH",
+        "price": 375000,
+        "dateOfTransfer": "2025-11-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, ARTHURDON ROAD",
+        "postcode": "SE4 1JU",
+        "price": 785000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SU",
+        "price": 825000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CURLEW HOUSE, FLAT 12, ST NORBERT ROAD",
+        "postcode": "SE4 2QG",
+        "price": 450000,
+        "dateOfTransfer": "2025-11-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT 2, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 582300,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "439, FLAT 3, BROCKLEY ROAD",
+        "postcode": "SE4 2PJ",
+        "price": 524000,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, FLAT B, CRANFIELD ROAD",
+        "postcode": "SE4 1TN",
+        "price": 180000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48, FOXBERRY ROAD",
+        "postcode": "SE4 2SP",
+        "price": 1110000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "SHANDON COURT, FLAT 2, ENDWELL ROAD",
+        "postcode": "SE4 2NE",
+        "price": 490000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, SEVENOAKS ROAD",
+        "postcode": "SE4 1RE",
+        "price": 200000,
+        "dateOfTransfer": "2025-11-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "463, BROCKLEY ROAD",
+        "postcode": "SE4 2PJ",
+        "price": 747000,
+        "dateOfTransfer": "2025-11-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, ELSIEMAUD ROAD",
+        "postcode": "SE4 1HW",
+        "price": 911250,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, GROUND FLOOR FLAT, TRESSILLIAN CRESCENT",
+        "postcode": "SE4 1QJ",
+        "price": 725000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11B, DARFIELD ROAD",
+        "postcode": "SE4 1ET",
+        "price": 365000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, FRANCEMARY ROAD",
+        "postcode": "SE4 1JR",
+        "price": 1053500,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ASH TREE HOUSE, FLAT 8, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NB",
+        "price": 405000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, BROCKILL CRESCENT",
+        "postcode": "SE4 2PT",
+        "price": 700000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, SEYMOUR GARDENS",
+        "postcode": "SE4 2DN",
+        "price": 700000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "131, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1TF",
+        "price": 1185000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "16, REVELON ROAD, BROCKLEY",
+        "postcode": "SE4 2PP",
+        "price": 1380000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "100, FLAT D, ENDWELL ROAD",
+        "postcode": "SE4 2LX",
+        "price": 365000,
+        "dateOfTransfer": "2025-10-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37B, FINLAND ROAD",
+        "postcode": "SE4 2JE",
+        "price": 575000,
+        "dateOfTransfer": "2025-10-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, DRESSINGTON AVENUE",
+        "postcode": "SE4 1JQ",
+        "price": 536000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "92, MANWOOD ROAD",
+        "postcode": "SE4 1SB",
+        "price": 615000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, TACK MEWS",
+        "postcode": "SE4 1XS",
+        "price": 575000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ERICA HOUSE, FLAT 7, CRANFIELD ROAD",
+        "postcode": "SE4 1TW",
+        "price": 399950,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, LLOYD VILLAS",
+        "postcode": "SE4 1US",
+        "price": 455000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "278B, BROCKLEY ROAD",
+        "postcode": "SE4 2RA",
+        "price": 325000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, ARABIN ROAD",
+        "postcode": "SE4 2SD",
+        "price": 825000,
+        "dateOfTransfer": "2025-10-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "60, GEOFFREY ROAD",
+        "postcode": "SE4 1NT",
+        "price": 1295000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "72A, ASPINALL ROAD",
+        "postcode": "SE4 2EG",
+        "price": 520500,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44D, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NZ",
+        "price": 590000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, THE GROUND FLOOR FLAT AT, BRAXFIELD ROAD",
+        "postcode": "SE4 2AN",
+        "price": 489500,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SY",
+        "price": 1275000,
+        "dateOfTransfer": "2025-10-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "83C, TYRWHITT ROAD",
+        "postcode": "SE4 1QE",
+        "price": 584000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, ALBERT MEWS",
+        "postcode": "SE4 2SZ",
+        "price": 380000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, FLAT 1, ST ASAPH ROAD",
+        "postcode": "SE4 2EJ",
+        "price": 475000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WALLIS COURT, 38, FLAT 1, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NZ",
+        "price": 410000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "108, BUCKTHORNE ROAD",
+        "postcode": "SE4 2DG",
+        "price": 968000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, IVY ROAD",
+        "postcode": "SE4 1YS",
+        "price": 475000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, BESSINGHAM WALK",
+        "postcode": "SE4 2HZ",
+        "price": 485550,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "100, MANWOOD ROAD",
+        "postcode": "SE4 1SE",
+        "price": 903000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "82, FLAT C, MANOR AVENUE",
+        "postcode": "SE4 1TE",
+        "price": 350000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHESTER HOUSE, 25, FLAT A, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1PL",
+        "price": 460000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, BROCKLEY GROVE",
+        "postcode": "SE4 1QZ",
+        "price": 600000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, FINLAND ROAD",
+        "postcode": "SE4 2JE",
+        "price": 591000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "145, MANWOOD ROAD",
+        "postcode": "SE4 1SA",
+        "price": 825000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "270, BROCKLEY ROAD",
+        "postcode": "SE4 2SF",
+        "price": 900000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7B, GLENSDALE ROAD",
+        "postcode": "SE4 1UE",
+        "price": 765000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, ASPINALL ROAD",
+        "postcode": "SE4 2EQ",
+        "price": 535500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "88A, ST ASAPH ROAD",
+        "postcode": "SE4 2EL",
+        "price": 800000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "180C, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XY",
+        "price": 487500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "439, FLAT 4, BROCKLEY ROAD",
+        "postcode": "SE4 2PJ",
+        "price": 355000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FORSYTHIA HOUSE, FLAT 5, PENDRELL ROAD",
+        "postcode": "SE4 2PA",
+        "price": 258644,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1A, MALPAS ROAD",
+        "postcode": "SE4 1BP",
+        "price": 403000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "171, MALPAS ROAD",
+        "postcode": "SE4 1BQ",
+        "price": 945000,
+        "dateOfTransfer": "2025-09-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "175, CHUDLEIGH ROAD",
+        "postcode": "SE4 1EG",
+        "price": 900000,
+        "dateOfTransfer": "2025-09-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MONMOUTH HOUSE, FLAT 3, AVIGNON ROAD",
+        "postcode": "SE4 2JP",
+        "price": 290000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "212, BROCKLEY GROVE",
+        "postcode": "SE4 1HG",
+        "price": 955000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "99A, BROCKLEY GROVE",
+        "postcode": "SE4 1DZ",
+        "price": 525000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BRIDGE HOUSE, 47, FLAT 9, ADELAIDE AVENUE",
+        "postcode": "SE4 1LF",
+        "price": 400000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79, ENDWELL ROAD",
+        "postcode": "SE4 2NF",
+        "price": 470000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51, FLAT D, MANOR AVENUE",
+        "postcode": "SE4 1TD",
+        "price": 620000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31C, HARCOURT ROAD",
+        "postcode": "SE4 2AJ",
+        "price": 725000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "77, LOWER FLOOR, FOXBERRY ROAD",
+        "postcode": "SE4 2SR",
+        "price": 310000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, WHITBREAD ROAD",
+        "postcode": "SE4 2BE",
+        "price": 560000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SU",
+        "price": 765000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, HOWSON ROAD",
+        "postcode": "SE4 2AT",
+        "price": 600000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, FLAT 3, WHITBREAD ROAD",
+        "postcode": "SE4 2BD",
+        "price": 210000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "115, ARICA ROAD",
+        "postcode": "SE4 2PS",
+        "price": 790000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "164, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SS",
+        "price": 800500,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, FLAT 2, WHITBREAD ROAD",
+        "postcode": "SE4 2BD",
+        "price": 175000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, KNELLER ROAD",
+        "postcode": "SE4 2AR",
+        "price": 750000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "143, MANWOOD ROAD",
+        "postcode": "SE4 1SA",
+        "price": 645000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "46A, WALLBUTTON ROAD",
+        "postcode": "SE4 2NX",
+        "price": 515000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CURLEW HOUSE, FLAT 16, ST NORBERT ROAD",
+        "postcode": "SE4 2QG",
+        "price": 398000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "215, MANWOOD ROAD",
+        "postcode": "SE4 1SF",
+        "price": 793680,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AS",
+        "price": 955000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "48, HOWSON ROAD",
+        "postcode": "SE4 2AT",
+        "price": 557500,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "60A, TYRWHITT ROAD",
+        "postcode": "SE4 1QG",
+        "price": 650000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20B, WALLBUTTON ROAD",
+        "postcode": "SE4 2NX",
+        "price": 499143,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AT",
+        "price": 710000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, LLOYD VILLAS",
+        "postcode": "SE4 1US",
+        "price": 506000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VERONICA HOUSE, FLAT 5, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NQ",
+        "price": 405050,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, FOXBERRY ROAD",
+        "postcode": "SE4 2SP",
+        "price": 1100000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "310A, BROCKLEY ROAD",
+        "postcode": "SE4 2AZ",
+        "price": 510000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, ARABIN ROAD",
+        "postcode": "SE4 2SE",
+        "price": 1050000,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "56, BUCKTHORNE ROAD",
+        "postcode": "SE4 2DB",
+        "price": 746000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, BRIGHTLING ROAD",
+        "postcode": "SE4 1SQ",
+        "price": 770000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "JUDE COURT, 4, APARTMENT 21, MANTLE ROAD",
+        "postcode": "SE4 2EX",
+        "price": 450000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "85A, MANOR AVENUE",
+        "postcode": "SE4 1TD",
+        "price": 545000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32A, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YB",
+        "price": 600500,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, GROUND FLOOR FLAT, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YB",
+        "price": 350000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, WHITBREAD ROAD",
+        "postcode": "SE4 2BD",
+        "price": 1100000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "50, BUCKTHORNE ROAD",
+        "postcode": "SE4 2DB",
+        "price": 880000,
+        "dateOfTransfer": "2025-08-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "192, ADELAIDE AVENUE",
+        "postcode": "SE4 1JN",
+        "price": 422000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, ALBERT MEWS",
+        "postcode": "SE4 2SZ",
+        "price": 410000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "198, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XY",
+        "price": 640000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BELL COURT, FLAT 10, IVY ROAD",
+        "postcode": "SE4 1HF",
+        "price": 260000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, ALBERT MEWS",
+        "postcode": "SE4 2SZ",
+        "price": 410000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, RUSHFORD ROAD",
+        "postcode": "SE4 1SG",
+        "price": 815000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, SEYMOUR GARDENS",
+        "postcode": "SE4 2DN",
+        "price": 610000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT 5, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 348000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, WALLBUTTON ROAD",
+        "postcode": "SE4 2NX",
+        "price": 1060000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, CYPRESS GARDENS",
+        "postcode": "SE4 2FB",
+        "price": 549250,
+        "dateOfTransfer": "2025-07-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36A, FLAT 1, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NZ",
+        "price": 442500,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, CROFTON PARK ROAD",
+        "postcode": "SE4 1AF",
+        "price": 702000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "72, BUCKTHORNE ROAD",
+        "postcode": "SE4 2DG",
+        "price": 1250000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30A, ARABIN ROAD",
+        "postcode": "SE4 2SE",
+        "price": 472000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "146, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XX",
+        "price": 1300000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "47, ARTHURDON ROAD",
+        "postcode": "SE4 1JT",
+        "price": 862500,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "55A, ENDWELL ROAD",
+        "postcode": "SE4 2NE",
+        "price": 291000,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, HENRYSON ROAD",
+        "postcode": "SE4 1HJ",
+        "price": 835000,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LADYWELL HEIGHTS, FLAT 19, CROFTON PARK ROAD",
+        "postcode": "SE4 1AU",
+        "price": 285000,
+        "dateOfTransfer": "2025-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32B, HOWSON ROAD",
+        "postcode": "SE4 2AS",
+        "price": 415000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24A, FINLAND ROAD",
+        "postcode": "SE4 2JH",
+        "price": 515000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, BROCKILL CRESCENT",
+        "postcode": "SE4 2PT",
+        "price": 785000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "41, DUNDALK ROAD",
+        "postcode": "SE4 2JJ",
+        "price": 1288000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, MONTAGUE AVENUE",
+        "postcode": "SE4 1YP",
+        "price": 1670000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, CRESCENT WAY",
+        "postcode": "SE4 1QL",
+        "price": 925000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "58A, COMERFORD ROAD, BROCKLEY",
+        "postcode": "SE4 2AX",
+        "price": 415000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, BEXHILL ROAD",
+        "postcode": "SE4 1SL",
+        "price": 835000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "28, BASEMENT FLAT, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YB",
+        "price": 620000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "245, MANWOOD ROAD",
+        "postcode": "SE4 1SF",
+        "price": 695000,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "400A - 402A, BROCKLEY ROAD",
+        "postcode": "SE4 2DH",
+        "price": 585000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FINLAND ROAD",
+        "postcode": "SE4 2JE",
+        "price": 1130000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68, SEYMOUR GARDENS",
+        "postcode": "SE4 2DW",
+        "price": 278000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST. ASAPH COURT, FLAT 18, ST ASAPH ROAD",
+        "postcode": "SE4 2EE",
+        "price": 338500,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, FLAT C, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 425000,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "85, MANOR AVENUE",
+        "postcode": "SE4 1TD",
+        "price": 516000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "85, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1TF",
+        "price": 1250000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21A, CHALSEY ROAD",
+        "postcode": "SE4 1YN",
+        "price": 542500,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, DALRYMPLE ROAD",
+        "postcode": "SE4 2BQ",
+        "price": 720000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JASMIN HOUSE, FLAT 14, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NF",
+        "price": 430000,
+        "dateOfTransfer": "2025-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19F, WICKHAM ROAD",
+        "postcode": "SE4 1PL",
+        "price": 360500,
+        "dateOfTransfer": "2025-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT F, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1PB",
+        "price": 348900,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "80, DARFIELD ROAD",
+        "postcode": "SE4 1ER",
+        "price": 1225000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "292, BASEMENT FLAT, BROCKLEY ROAD",
+        "postcode": "SE4 2RA",
+        "price": 327500,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT A, ENDWELL ROAD",
+        "postcode": "SE4 2NE",
+        "price": 407000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, SEYMOUR GARDENS",
+        "postcode": "SE4 2DN",
+        "price": 705000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT 2, WHITBREAD ROAD",
+        "postcode": "SE4 2BD",
+        "price": 150000,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "218A, BROCKLEY ROAD",
+        "postcode": "SE4 2SU",
+        "price": 330000,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, FOXWELL STREET",
+        "postcode": "SE4 2DX",
+        "price": 300000,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SY",
+        "price": 1050000,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "16, RUSHFORD ROAD",
+        "postcode": "SE4 1SG",
+        "price": 910000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11A, SEVENOAKS ROAD",
+        "postcode": "SE4 1RA",
+        "price": 375000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, TOP FLAT, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 540000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, TOP FLAT, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 540000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "287, FLAT 1, LEWISHAM WAY",
+        "postcode": "SE4 1XF",
+        "price": 660000,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "96B, ST ASAPH ROAD",
+        "postcode": "SE4 2EL",
+        "price": 360000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, LOWER FLAT, GLYNDE STREET",
+        "postcode": "SE4 1RU",
+        "price": 450000,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, BUCKTHORNE ROAD",
+        "postcode": "SE4 2DB",
+        "price": 725000,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "53, BARVILLE CLOSE",
+        "postcode": "SE4 2LN",
+        "price": 310000,
+        "dateOfTransfer": "2025-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "290, TOP FLAT, BROCKLEY ROAD",
+        "postcode": "SE4 2RA",
+        "price": 510000,
+        "dateOfTransfer": "2025-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "133, ASHBY MEWS",
+        "postcode": "SE4 1TB",
+        "price": 122000,
+        "dateOfTransfer": "2025-06-10",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "57, SEYMOUR GARDENS",
+        "postcode": "SE4 2DW",
+        "price": 275500,
+        "dateOfTransfer": "2025-06-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26B, BREAKSPEARS ROAD",
+        "postcode": "SE4 1UW",
+        "price": 665000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, ST NORBERT ROAD",
+        "postcode": "SE4 2EY",
+        "price": 500000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "70, ROKEBY ROAD",
+        "postcode": "SE4 1DF",
+        "price": 1450000,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "ROKELAND HOUSE, FLAT 1, TURNHAM ROAD",
+        "postcode": "SE4 2HW",
+        "price": 325000,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44A, TYRWHITT ROAD",
+        "postcode": "SE4 1QG",
+        "price": 740000,
+        "dateOfTransfer": "2025-06-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2A, FLAT 3, COMERFORD ROAD",
+        "postcode": "SE4 2AX",
+        "price": 400000,
+        "dateOfTransfer": "2025-06-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "70, SPRULES ROAD",
+        "postcode": "SE4 2NN",
+        "price": 820000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "JUDE COURT, 4, APARTMENT 13, MANTLE ROAD",
+        "postcode": "SE4 2EX",
+        "price": 430000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROYSTON COURT, 2, FLAT 1, ASHBY ROAD",
+        "postcode": "SE4 1PR",
+        "price": 435000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "244A, DRAKEFELL ROAD, BROCKLEY",
+        "postcode": "SE4 2DR",
+        "price": 635000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT 4, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 455000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44A, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NZ",
+        "price": 330000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "UNIT 1, ASHBY MEWS",
+        "postcode": "SE4 1TB",
+        "price": 125000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "336, FLAT 1-3, BROCKLEY ROAD",
+        "postcode": "SE4 2BT",
+        "price": 700000,
+        "dateOfTransfer": "2025-05-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "50, SEYMOUR GARDENS",
+        "postcode": "SE4 2DW",
+        "price": 250000,
+        "dateOfTransfer": "2025-05-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11C, BREAKSPEARS ROAD",
+        "postcode": "SE4 1XW",
+        "price": 615000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "BOWLBY HOUSE, 9, FLAT C, FRENDSBURY ROAD",
+        "postcode": "SE4 2BF",
+        "price": 195000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37A, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AS",
+        "price": 625000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT 3, HILLY FIELDS CRESCENT",
+        "postcode": "SE4 1QA",
+        "price": 460000,
+        "dateOfTransfer": "2025-05-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "247D, LEWISHAM WAY",
+        "postcode": "SE4 1XF",
+        "price": 250000,
+        "dateOfTransfer": "2025-05-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27B, COMERFORD ROAD, BROCKLEY",
+        "postcode": "SE4 2BA",
+        "price": 491000,
+        "dateOfTransfer": "2025-05-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "110, GEOFFREY ROAD",
+        "postcode": "SE4 1NU",
+        "price": 444775,
+        "dateOfTransfer": "2025-05-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "105, CROFTON PARK ROAD",
+        "postcode": "SE4 1AJ",
+        "price": 690000,
+        "dateOfTransfer": "2025-05-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, HAYWARD MEWS",
+        "postcode": "SE4 1AZ",
+        "price": 920000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, ARABIN ROAD",
+        "postcode": "SE4 2SE",
+        "price": 550000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "166, LEWISHAM WAY",
+        "postcode": "SE4 1UU",
+        "price": 1700000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MCMILLAN HOUSE, FLAT 18, ARICA ROAD",
+        "postcode": "SE4 2PU",
+        "price": 335000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22B, HAREFIELD ROAD",
+        "postcode": "SE4 1LR",
+        "price": 610000,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "142, FOXBERRY ROAD",
+        "postcode": "SE4 2SH",
+        "price": 722500,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "137A, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XZ",
+        "price": 617000,
+        "dateOfTransfer": "2025-04-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, BROCKILL CRESCENT",
+        "postcode": "SE4 2PT",
+        "price": 715000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "49B, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 640000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, SPRULES ROAD",
+        "postcode": "SE4 2NL",
+        "price": 1290000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, PENDRELL ROAD",
+        "postcode": "SE4 2PB",
+        "price": 1300000,
+        "dateOfTransfer": "2025-04-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 7, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 357500,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 1, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 1900000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 1, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 355000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 2, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 635000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 3, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 365000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 4, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 355000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 5, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 365000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 6, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 357500,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "142, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AP",
+        "price": 550000,
+        "dateOfTransfer": "2025-04-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "142, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AP",
+        "price": 500000,
+        "dateOfTransfer": "2025-04-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, BEARSTEAD RISE",
+        "postcode": "SE4 1RQ",
+        "price": 740000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "212, MALPAS ROAD",
+        "postcode": "SE4 1DH",
+        "price": 852500,
+        "dateOfTransfer": "2025-04-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "457, BROCKLEY ROAD",
+        "postcode": "SE4 2PJ",
+        "price": 565000,
+        "dateOfTransfer": "2025-04-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13A, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1SY",
+        "price": 350000,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "55, LOWER FLAT, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YA",
+        "price": 687500,
+        "dateOfTransfer": "2025-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YA",
+        "price": 1400000,
+        "dateOfTransfer": "2025-04-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "71, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YA",
+        "price": 1900000,
+        "dateOfTransfer": "2025-04-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "69, GROUND FLOOR FLAT, ENDWELL ROAD",
+        "postcode": "SE4 2NF",
+        "price": 438000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36A, PENDRELL ROAD",
+        "postcode": "SE4 2PB",
+        "price": 555000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, FLAT 1, WHITBREAD ROAD",
+        "postcode": "SE4 2BD",
+        "price": 438000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "160, CHUDLEIGH ROAD",
+        "postcode": "SE4 1EE",
+        "price": 950000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, EDDYSTONE ROAD",
+        "postcode": "SE4 2DE",
+        "price": 730000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FORMAN HOUSE, FLAT 4, FRENDSBURY ROAD",
+        "postcode": "SE4 2LB",
+        "price": 240000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "72, TOP FLAT, BREAKSPEARS ROAD",
+        "postcode": "SE4 1TS",
+        "price": 675000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51B, COMERFORD ROAD, BROCKLEY",
+        "postcode": "SE4 2BA",
+        "price": 550000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, CRANFIELD ROAD",
+        "postcode": "SE4 1TN",
+        "price": 1520000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "97, FLAT B, ST ASAPH ROAD",
+        "postcode": "SE4 2DZ",
+        "price": 366000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, OTFORD CRESCENT",
+        "postcode": "SE4 1RD",
+        "price": 740000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "100, FLAT B, ENDWELL ROAD",
+        "postcode": "SE4 2LX",
+        "price": 340000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, LLOYD VILLAS",
+        "postcode": "SE4 1US",
+        "price": 510000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "137, TRESSILLIAN ROAD",
+        "postcode": "SE4 1XZ",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WILLOW HOUSE, FLAT 20, DRAGONFLY PLACE",
+        "postcode": "SE4 2FJ",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, EWHURST ROAD",
+        "postcode": "SE4 1AG",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FLAT 2, MANOR AVENUE",
+        "postcode": "SE4 1PD",
+        "price": 527500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "133B, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1TF",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, TREMAINE CLOSE",
+        "postcode": "SE4 1YF",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "63, HAREFIELD ROAD",
+        "postcode": "SE4 1LU",
+        "price": 829000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "164A, LEWISHAM WAY",
+        "postcode": "SE4 1UU",
+        "price": 575000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, BEECROFT ROAD",
+        "postcode": "SE4 2BS",
+        "price": 850000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "91, FLAT 4, CRANFIELD ROAD",
+        "postcode": "SE4 1TR",
+        "price": 480000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26C, CRANFIELD ROAD",
+        "postcode": "SE4 1UG",
+        "price": 517000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, RAY BELL COURT",
+        "postcode": "SE4 1PS",
+        "price": 745000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "208, BROCKLEY GROVE",
+        "postcode": "SE4 1HG",
+        "price": 1225000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "163, FOXBOROUGH GARDENS",
+        "postcode": "SE4 1HS",
+        "price": 330000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, FLAT C, DALRYMPLE ROAD",
+        "postcode": "SE4 2BH",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36C, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1NZ",
+        "price": 640000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "101, FLAT 3, MANOR AVENUE",
+        "postcode": "SE4 1TD",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BRIDGE HOUSE, 47, FLAT 6, ADELAIDE AVENUE",
+        "postcode": "SE4 1LF",
+        "price": 508500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "78, BROCKILL CRESCENT",
+        "postcode": "SE4 2QB",
+        "price": 445000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "147, CHUDLEIGH ROAD",
+        "postcode": "SE4 1HP",
+        "price": 955000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ST. ASAPH COURT, FLAT 7, ST ASAPH ROAD",
+        "postcode": "SE4 2EE",
+        "price": 310000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23A, TYRWHITT ROAD",
+        "postcode": "SE4 1QD",
+        "price": 610000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17B, LINDAL ROAD",
+        "postcode": "SE4 1EJ",
+        "price": 329000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "439, FLAT 2, BROCKLEY ROAD",
+        "postcode": "SE4 2PJ",
+        "price": 385000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "113, EWHURST ROAD",
+        "postcode": "SE4 1SD",
+        "price": 810000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10C, BREAKSPEARS ROAD",
+        "postcode": "SE4 1UW",
+        "price": 436500,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, BIRCHAM PATH",
+        "postcode": "SE4 2HY",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, CHALSEY ROAD",
+        "postcode": "SE4 1YN",
+        "price": 1170000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "158, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AP",
+        "price": 960000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, ADELAIDE AVENUE",
+        "postcode": "SE4 1YT",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33B, ENDWELL ROAD",
+        "postcode": "SE4 2NE",
+        "price": 648470,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "285, FLAT 4, LEWISHAM WAY",
+        "postcode": "SE4 1XF",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11A, ROKEBY ROAD",
+        "postcode": "SE4 1DE",
+        "price": 395000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28C, CRANFIELD ROAD",
+        "postcode": "SE4 1UG",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "142, BROCKLEY GROVE",
+        "postcode": "SE4 1EB",
+        "price": 1050000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "SULBY HOUSE, FLAT 24, TURNHAM ROAD",
+        "postcode": "SE4 2HP",
+        "price": 351500,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "66, MANWOOD ROAD",
+        "postcode": "SE4 1SB",
+        "price": 855000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, FLAT 2, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1PB",
+        "price": 505000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62, UPPER FLOOR, ASPINALL ROAD",
+        "postcode": "SE4 2EQ",
+        "price": 485000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, REVELON ROAD, BROCKLEY",
+        "postcode": "SE4 2PW",
+        "price": 680000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "78, ASPINALL ROAD",
+        "postcode": "SE4 2EG",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WILLOW HOUSE, FLAT 12, DRAGONFLY PLACE",
+        "postcode": "SE4 2FJ",
+        "price": 426000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "116, EWHURST ROAD",
+        "postcode": "SE4 1SD",
+        "price": 665000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, RUSHEY MEAD",
+        "postcode": "SE4 1JJ",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, THE FIRST FLOOR FLAT, MANWOOD ROAD",
+        "postcode": "SE4 1AD",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "183A, BROCKLEY ROAD",
+        "postcode": "SE4 2RS",
+        "price": 1400000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ST. CYPRIANS COURT, APARTMENT 5, BRAXFIELD ROAD",
+        "postcode": "SE4 2AW",
+        "price": 345000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LANGTRY COURT, 180, 23, BROCKLEY ROAD",
+        "postcode": "SE4 2RR",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "66, CHUDLEIGH ROAD",
+        "postcode": "SE4 1JW",
+        "price": 762500,
+        "dateOfTransfer": "2025-03-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "103, EWHURST ROAD",
+        "postcode": "SE4 1SD",
+        "price": 575500,
+        "dateOfTransfer": "2025-03-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "76, FLAT 1, MANOR AVENUE",
+        "postcode": "SE4 1TE",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1 - 3, ASHBY ROAD",
+        "postcode": "SE4 1PR",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "HOLLY TREE HOUSE, FLAT 6, BROCKLEY ROAD",
+        "postcode": "SE4 2RU",
+        "price": 370000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, HENRYSON ROAD",
+        "postcode": "SE4 1HJ",
+        "price": 838000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, MARNOCK ROAD",
+        "postcode": "SE4 1EU",
+        "price": 995000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "93, FOXBOROUGH GARDENS",
+        "postcode": "SE4 1HT",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "80, FLAT C, MANOR AVENUE",
+        "postcode": "SE4 1TE",
+        "price": 335000,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MYATT COURT, 120, FLAT 3, MALPAS ROAD",
+        "postcode": "SE4 1BZ",
+        "price": 395000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "88, EWHURST ROAD",
+        "postcode": "SE4 1SD",
+        "price": 686000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, ARTHURDON ROAD",
+        "postcode": "SE4 1JU",
+        "price": 825000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, SPRULES ROAD",
+        "postcode": "SE4 2NL",
+        "price": 880000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "105A, TYRWHITT ROAD",
+        "postcode": "SE4 1QE",
+        "price": 1120000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "55, REVELON ROAD, BROCKLEY",
+        "postcode": "SE4 2PN",
+        "price": 740000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11D, SANDBOURNE ROAD",
+        "postcode": "SE4 2NP",
+        "price": 596000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "85, BROCKLEY GROVE",
+        "postcode": "SE4 1DZ",
+        "price": 725000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "58, BARVILLE CLOSE",
+        "postcode": "SE4 2LN",
+        "price": 250000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "69, FLAT 2, TYRWHITT ROAD",
+        "postcode": "SE4 1QE",
+        "price": 355000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36A, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YB",
+        "price": 430000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, GARDEN FLAT, ADELAIDE AVENUE",
+        "postcode": "SE4 1YR",
+        "price": 535000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, CRANFIELD ROAD",
+        "postcode": "SE4 1UG",
+        "price": 475000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, ROKEBY ROAD",
+        "postcode": "SE4 1DF",
+        "price": 320050,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, FOXWELL STREET",
+        "postcode": "SE4 2DX",
+        "price": 518000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, FLAT B, VESTA ROAD",
+        "postcode": "SE4 2NH",
+        "price": 427000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "14, BEVERLEY COURT",
+        "postcode": "SE4 1UN",
+        "price": 685250,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "368, BROCKLEY ROAD",
+        "postcode": "SE4 2BY",
+        "price": 475000,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "CROSSWAY COURT, 40 - 44, FLAT 4, ENDWELL ROAD",
+        "postcode": "SE4 2NG",
+        "price": 425000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "292, GROUND FLOOR FLAT, BROCKLEY ROAD",
+        "postcode": "SE4 2RA",
+        "price": 340000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, KNELLER ROAD",
+        "postcode": "SE4 2AR",
+        "price": 900000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "121, ST ASAPH ROAD",
+        "postcode": "SE4 2DZ",
+        "price": 845000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "115, UPPER BROCKLEY ROAD",
+        "postcode": "SE4 1TF",
+        "price": 1750000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, FLAT A, TYRWHITT ROAD",
+        "postcode": "SE4 1QD",
+        "price": 987775,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43E, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LT",
+        "price": 272000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "82, FLAT 5, WICKHAM ROAD, BROCKLEY",
+        "postcode": "SE4 1LS",
+        "price": 542000,
+        "dateOfTransfer": "2025-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, RUSHFORD ROAD",
+        "postcode": "SE4 1SG",
+        "price": 780000,
+        "dateOfTransfer": "2025-02-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, FLAT C, PENDRELL ROAD",
+        "postcode": "SE4 2PB",
+        "price": 545000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, COMERFORD ROAD, BROCKLEY",
+        "postcode": "SE4 2AX",
+        "price": 1220000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, HARCOURT ROAD",
+        "postcode": "SE4 2AJ",
+        "price": 400000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, ADELAIDE AVENUE",
+        "postcode": "SE4 1YT",
+        "price": 365000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, FLAT C, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YB",
+        "price": 722000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PULTON HOUSE, FLAT 23, TURNHAM ROAD",
+        "postcode": "SE4 2HN",
+        "price": 300000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, HARCOURT ROAD",
+        "postcode": "SE4 2AJ",
+        "price": 535000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, HARCOURT ROAD",
+        "postcode": "SE4 2AJ",
+        "price": 1090000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ST. CYPRIANS COURT, APARTMENT 3, BRAXFIELD ROAD",
+        "postcode": "SE4 2AW",
+        "price": 440000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "229, MALPAS ROAD",
+        "postcode": "SE4 1BH",
+        "price": 578000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, ASPINALL ROAD",
+        "postcode": "SE4 2EQ",
+        "price": 1025000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "87, CROFTON PARK ROAD",
+        "postcode": "SE4 1AJ",
+        "price": 705000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "65, FOXBOROUGH GARDENS",
+        "postcode": "SE4 1HU",
+        "price": 535500,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, BEVERLEY COURT",
+        "postcode": "SE4 1UN",
+        "price": 575000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42A, ARABIN ROAD",
+        "postcode": "SE4 2SE",
+        "price": 472000,
+        "dateOfTransfer": "2025-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, BEECROFT ROAD, BROCKLEY",
+        "postcode": "SE4 2BS",
+        "price": 812500,
+        "dateOfTransfer": "2025-01-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "123, ARICA ROAD",
+        "postcode": "SE4 2PS",
+        "price": 735000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "98, BARVILLE CLOSE",
+        "postcode": "SE4 2LN",
+        "price": 275000,
+        "dateOfTransfer": "2025-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "88, TYRWHITT ROAD",
+        "postcode": "SE4 1QB",
+        "price": 2350000,
+        "dateOfTransfer": "2025-01-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, FLAT B, TRESSILLIAN ROAD",
+        "postcode": "SE4 1YB",
+        "price": 961000,
+        "dateOfTransfer": "2025-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, ARTHURDON ROAD",
+        "postcode": "SE4 1JT",
+        "price": 869500,
+        "dateOfTransfer": "2025-01-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "EMPEROR HOUSE, FLAT 8, DRAGONFLY PLACE",
+        "postcode": "SE4 2FL",
+        "price": 345000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "147C, BREAKSPEARS ROAD",
+        "postcode": "SE4 1TY",
+        "price": 426100,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, BROCKILL CRESCENT",
+        "postcode": "SE4 2PT",
+        "price": 693000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "82B, ASPINALL ROAD",
+        "postcode": "SE4 2EG",
+        "price": 467500,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30A, CHALSEY ROAD, BROCKLEY",
+        "postcode": "SE4 1YW",
+        "price": 590000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, WALLBUTTON ROAD",
+        "postcode": "SE4 2NX",
+        "price": 1125000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, RUSHEY MEAD",
+        "postcode": "SE4 1JJ",
+        "price": 320000,
+        "dateOfTransfer": "2025-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, HOWSON ROAD",
+        "postcode": "SE4 2AL",
+        "price": 1086577,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, BROCKLEY WAY",
+        "postcode": "SE4 2LW",
+        "price": 310000,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "93D, MANOR AVENUE",
+        "postcode": "SE4 1TD",
+        "price": 470000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, FINLAND ROAD",
+        "postcode": "SE4 2JE",
+        "price": 975000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, SALEHURST ROAD, CROFTON PARK",
+        "postcode": "SE4 1AT",
+        "price": 930000,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LANGTRY COURT, 16, COULGATE STREET",
+        "postcode": "SE4 2FA",
+        "price": 525000,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "197, MALPAS ROAD",
+        "postcode": "SE4 1BH",
+        "price": 962500,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "189, CHUDLEIGH ROAD",
+        "postcode": "SE4 1EG",
+        "price": 446000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3A, ABBOTSWELL ROAD",
+        "postcode": "SE4 1ED",
+        "price": 540000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13B, DUNDALK ROAD",
+        "postcode": "SE4 2JJ",
+        "price": 434000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, UPPER FLAT, GLYNDE STREET",
+        "postcode": "SE4 1RU",
+        "price": 480000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST. CYPRIANS COURT, APARTMENT 2, BRAXFIELD ROAD",
+        "postcode": "SE4 2AW",
+        "price": 342500,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62, COMERFORD ROAD, BROCKLEY",
+        "postcode": "SE4 2AX",
+        "price": 1291500,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31, FLAT C, CRANFIELD ROAD",
+        "postcode": "SE4 1TN",
+        "price": 475000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 628379,
+    "medianPrice": 546500
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Vicky Foxcroft",
+        "party": "Labour",
+        "constituency": "Lewisham North",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      },
+      {
+        "role": "Councillor",
+        "name": "Ade Adewunmi",
+        "party": "Lewisham Green Party Group",
+        "ward": "Brockley",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "El Fry",
+        "party": "Lewisham Green Party Group",
+        "ward": "Brockley",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Rotimi Skyers",
+        "party": "Lewisham Green Party Group",
+        "ward": "Brockley",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Esther Lie",
+        "party": "Lewisham Green Party Group",
+        "ward": "Crofton Park",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Aaron Regisford",
+        "party": "Lewisham Green Party Group",
+        "ward": "Crofton Park",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Natalie Thomas",
+        "party": "Lewisham Green Party Group",
+        "ward": "Crofton Park",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Shireen Asaw",
+        "party": "Lewisham Green Party Group",
+        "ward": "Ladywell",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Robin McGhee",
+        "party": "Lewisham Green Party Group",
+        "ward": "Ladywell",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Ed Sutton",
+        "party": "Lewisham Green Party Group",
+        "ward": "Ladywell",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Kate Anderson",
+        "party": "Lewisham Green Party Group",
+        "ward": "Telegraph Hill",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Becky Sanders",
+        "party": "Lewisham Green Party Group",
+        "ward": "Telegraph Hill",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Nick Torry",
+        "party": "Lewisham Green Party Group",
+        "ward": "Telegraph Hill",
+        "contactUrl": "https://councilmeetings.lewisham.gov.uk"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://planning.lewisham.gov.uk/online-applications/"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Horniman Museum and Gardens",
+        "category": "community-hub",
+        "address": "Forest Hill",
+        "description": "A free museum of anthropology and natural history set in 16 acres of gardens."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "SE4 lies within Lewisham. Formed in 1965 from Lewisham and Deptford. Deptford was the site of the royal dockyard founded by Henry VIII in 1513, from which many famous naval expeditions set sail.",
+    "keyFacts": [
+      "Formed in 1965 from Lewisham and Deptford. Deptford was the site of the royal dockyard founded by Henry VIII in 1513, from which many famous naval expeditions set sail."
+    ]
+  }
+}

@@ -1,0 +1,3513 @@
+{
+  "outcode": "E1W",
+  "slug": "e1w",
+  "city": "London",
+  "borough": "Tower Hamlets",
+  "latitude": 51.50943395611999,
+  "longitude": -0.0589249653579675,
+  "wards": [
+    "Shadwell",
+    "St Katharine's & Wapping",
+    "Whitechapel"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "THE WAPPING GROUP PRACTICE",
+        "odsCode": "F84079",
+        "address": "THE WAPPING HEALTH CENTRE, 22 WAPPING LANE, LONDON",
+        "postcode": "E1W 2RL",
+        "telephone": "020 74819376"
+      },
+      {
+        "name": "ST. KATHERINE'S DOCK PRACTICE",
+        "odsCode": "F84731",
+        "address": "FLAT 12, NIGHTINGALE HOUSE, 50 THOMAS MORE STREET, LONDON",
+        "postcode": "E1W 1UA",
+        "telephone": "020 74883653"
+      },
+      {
+        "name": "TOWER NETWORK PCN HUB",
+        "odsCode": "Y07478",
+        "address": "WAPPING GROUP PRACTICE, 22 WAPPING LANE, LONDON",
+        "postcode": "E1W 2RL",
+        "telephone": "02074 819376"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "WAPPING DENTAL CENTRE",
+        "odsCode": "V30919",
+        "address": "172 THE HIGHWAY, WAPPING, LONDON",
+        "postcode": "E1W 3DD"
+      },
+      {
+        "name": "HERMITAGE CLINIC",
+        "odsCode": "V82611",
+        "address": "UNIT 1, HERMITAGE COURT, LONDON",
+        "postcode": "E1W 1NR"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "CITY DOCK PHARMACY",
+        "odsCode": "FTM20",
+        "address": "UNIT 2A, BUILDING A, 142 VAUGHAN WAY, LONDON",
+        "postcode": "E1W 2AF"
+      },
+      {
+        "name": "TOWER PHARMACY",
+        "odsCode": "FVE07",
+        "address": "50 WAPPING LANE, WAPPING, LONDON",
+        "postcode": "E1W 2RL",
+        "telephone": "02074 889364"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "St Peter's London Docks CofE Primary School",
+        "urn": "100960",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Garnet Street, London",
+        "postcode": "E1W 3QT",
+        "numberOfPupils": 233,
+        "schoolCapacity": 240
+      },
+      {
+        "name": "Mulberry Academy London Dock",
+        "urn": "143716",
+        "phaseOfEducation": "Secondary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "6 Virginia Street, London",
+        "postcode": "E1W 2AD",
+        "numberOfPupils": 304,
+        "schoolCapacity": 1260
+      },
+      {
+        "name": "Hermitage Primary School",
+        "urn": "151013",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Requires improvement",
+        "ofstedLastInspection": null,
+        "address": "Vaughan Way, London",
+        "postcode": "E1W 2PT",
+        "numberOfPupils": 269,
+        "schoolCapacity": 330
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 1955,
+        "violentCrimes": 568,
+        "propertyCrimes": 760
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 1883,
+        "violentCrimes": 582,
+        "propertyCrimes": 770
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 1655,
+        "violentCrimes": 478,
+        "propertyCrimes": 711
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 1757,
+        "violentCrimes": 577,
+        "propertyCrimes": 737
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 1636,
+        "violentCrimes": 486,
+        "propertyCrimes": 740
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 1640,
+        "violentCrimes": 508,
+        "propertyCrimes": 748
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 1531,
+        "violentCrimes": 481,
+        "propertyCrimes": 689
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 1456,
+        "violentCrimes": 483,
+        "propertyCrimes": 656
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 1620,
+        "violentCrimes": 566,
+        "propertyCrimes": 666
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 1584,
+        "violentCrimes": 463,
+        "propertyCrimes": 703
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 1787,
+        "violentCrimes": 575,
+        "propertyCrimes": 684
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 1641,
+        "violentCrimes": 616,
+        "propertyCrimes": 622
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 4110,
+      "bicycle-theft": 534,
+      "burglary": 1037,
+      "criminal-damage-arson": 615,
+      "drugs": 995,
+      "other-theft": 2208,
+      "possession-of-weapons": 115,
+      "public-order": 1210,
+      "robbery": 591,
+      "shoplifting": 1419,
+      "theft-from-the-person": 1930,
+      "vehicle-crime": 743,
+      "violent-crime": 4467,
+      "other-crime": 171
+    },
+    "totalLast12Months": 20145
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "MERCHANT COURT, 61, FLAT 47, WAPPING WALL",
+        "postcode": "E1W 3SJ",
+        "price": 605000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CINNABAR WHARF EAST, 28, FLAT 66, WAPPING HIGH STREET",
+        "postcode": "E1W 1NG",
+        "price": 815000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "78, FLAT 13, WAPPING HIGH STREET",
+        "postcode": "E1W 2NB",
+        "price": 334500,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, SPIRIT QUAY",
+        "postcode": "E1W 2UT",
+        "price": 328000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SCOTIA BUILDING, 5, FLAT 19, JARDINE ROAD",
+        "postcode": "E1W 3WA",
+        "price": 250000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CINNABAR WHARF EAST, 28, FLAT 62, WAPPING HIGH STREET",
+        "postcode": "E1W 1NG",
+        "price": 492000,
+        "dateOfTransfer": "2026-06-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ADMIRALTY HOUSE, 150, APARTMENT 301, VAUGHAN WAY",
+        "postcode": "E1W 2AH",
+        "price": 853000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SIRIUS BUILDING, 3, FLAT 9, JARDINE ROAD",
+        "postcode": "E1W 3WE",
+        "price": 415000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "67, DISCOVERY WALK",
+        "postcode": "E1W 2JG",
+        "price": 290000,
+        "dateOfTransfer": "2026-05-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 17, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 365000,
+        "dateOfTransfer": "2026-05-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "89, THOMAS MORE STREET",
+        "postcode": "E1W 1YD",
+        "price": 680000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 312, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AY",
+        "price": 390000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 73, EMERY WAY",
+        "postcode": "E1W 2AS",
+        "price": 271670,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FENNER HOUSE, FLAT 5, WATTS STREET",
+        "postcode": "E1W 2PX",
+        "price": 450000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 216, MILK YARD",
+        "postcode": "E1W 3TA",
+        "price": 500000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 205, MILK YARD",
+        "postcode": "E1W 3TB",
+        "price": 495000,
+        "dateOfTransfer": "2026-05-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FLAT 134, NEW CRANE PLACE",
+        "postcode": "E1W 3TU",
+        "price": 600000,
+        "dateOfTransfer": "2026-05-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK LODGE, 65, FLAT 5, WAPPING LANE",
+        "postcode": "E1W 2RN",
+        "price": 450000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FLAT 111, NEW CRANE PLACE",
+        "postcode": "E1W 3TU",
+        "price": 700000,
+        "dateOfTransfer": "2026-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, NEWLANDS QUAY",
+        "postcode": "E1W 3QZ",
+        "price": 495000,
+        "dateOfTransfer": "2026-04-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FALCONET COURT, 123, FLAT 14, WAPPING HIGH STREET",
+        "postcode": "E1W 3NX",
+        "price": 495000,
+        "dateOfTransfer": "2026-04-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 113, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AY",
+        "price": 395000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MERGANSER COURT, FLAT 12, STAR PLACE",
+        "postcode": "E1W 1AQ",
+        "price": 630000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, TORRINGTON PLACE",
+        "postcode": "E1W 2UY",
+        "price": 760000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SHEARWATER COURT, FLAT 51, STAR PLACE",
+        "postcode": "E1W 1AD",
+        "price": 1220000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, FLAT 29, WAPPING WALL",
+        "postcode": "E1W 3SE",
+        "price": 430000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, BURR CLOSE",
+        "postcode": "E1W 1NB",
+        "price": 570000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, WATERMAN WAY",
+        "postcode": "E1W 2QW",
+        "price": 491000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRAFALGAR COURT, FLAT 12, WAPPING WALL",
+        "postcode": "E1W 3TF",
+        "price": 500000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, WAPPING WALL",
+        "postcode": "E1W 3SF",
+        "price": 960000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 304, MILK YARD",
+        "postcode": "E1W 3TB",
+        "price": 530000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRADEWINDS COURT, FLAT 35, ASHER WAY",
+        "postcode": "E1W 2JB",
+        "price": 434000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 207, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AY",
+        "price": 300001,
+        "dateOfTransfer": "2026-02-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "52, KENNET STREET",
+        "postcode": "E1W 2JJ",
+        "price": 430000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WELSH HOUSE, FLAT 4, WAPPING LANE",
+        "postcode": "E1W 2RP",
+        "price": 375000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FALCONET COURT, 123, FLAT 18, WAPPING HIGH STREET",
+        "postcode": "E1W 3NX",
+        "price": 560000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PRESIDENTS QUAY HOUSE, 72, FLAT 5, ST KATHARINES WAY",
+        "postcode": "E1W 1UF",
+        "price": 630000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROSS HOUSE, FLAT 15, PRUSOM STREET",
+        "postcode": "E1W 3NR",
+        "price": 405000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "132, KENNET STREET",
+        "postcode": "E1W 2JJ",
+        "price": 1080000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, BRIDEWELL PLACE",
+        "postcode": "E1W 2PB",
+        "price": 825000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 515, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AZ",
+        "price": 300000,
+        "dateOfTransfer": "2026-01-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "COUNTER HOUSE, 5, APARTMENT 307, GAUGING SQUARE",
+        "postcode": "E1W 2AE",
+        "price": 1020000,
+        "dateOfTransfer": "2026-01-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 309, MILK YARD",
+        "postcode": "E1W 3TB",
+        "price": 480000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, JOHN RENNIE WALK",
+        "postcode": "E1W 3RN",
+        "price": 370000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NIGHTINGALE HOUSE, 50, FLAT 35, THOMAS MORE STREET",
+        "postcode": "E1W 1UA",
+        "price": 395000,
+        "dateOfTransfer": "2026-01-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EXECUTION DOCK HOUSE, 80, FLAT 4, WAPPING HIGH STREET",
+        "postcode": "E1W 2NE",
+        "price": 2850000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GUN PLACE, 86, FLAT 60, WAPPING LANE",
+        "postcode": "E1W 2RX",
+        "price": 340000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MAURETANIA BUILDING, 4, FLAT 40, JARDINE ROAD",
+        "postcode": "E1W 3WB",
+        "price": 955000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WELSH HOUSE, FLAT 2, WAPPING LANE",
+        "postcode": "E1W 2RP",
+        "price": 630000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, WAVENEY CLOSE",
+        "postcode": "E1W 2JL",
+        "price": 1100000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "74, FLAT 12, WAPPING HIGH STREET",
+        "postcode": "E1W 2NP",
+        "price": 215000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "COUNTER HOUSE, 5, APARTMENT 604, GAUGING SQUARE",
+        "postcode": "E1W 2AE",
+        "price": 1000000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 138, MILK YARD",
+        "postcode": "E1W 3SX",
+        "price": 530000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "478, CABLE STREET",
+        "postcode": "E1W 3DR",
+        "price": 410000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRADEWINDS COURT, FLAT 11, ASHER WAY",
+        "postcode": "E1W 2JB",
+        "price": 405000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CINNABAR WHARF EAST, 28, FLAT 92, WAPPING HIGH STREET",
+        "postcode": "E1W 1NG",
+        "price": 1385287,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "171, THOMAS MORE STREET",
+        "postcode": "E1W 1YD",
+        "price": 695000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, FLAT 8, REARDON PATH",
+        "postcode": "E1W 2AN",
+        "price": 467500,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, FLAT 1901, GAUGING SQUARE",
+        "postcode": "E1W 2AX",
+        "price": 1005000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, EAST SMITHFIELD",
+        "postcode": "E1W 1AP",
+        "price": 305000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, CODLING CLOSE",
+        "postcode": "E1W 2UX",
+        "price": 180000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "IVORY HOUSE, FLAT 11, EAST SMITHFIELD",
+        "postcode": "E1W 1AT",
+        "price": 725000,
+        "dateOfTransfer": "2025-12-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 15, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 485000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FREE TRADE WHARF, 340, FLAT 8, THE HIGHWAY",
+        "postcode": "E1W 3ES",
+        "price": 663000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TOWER BRIDGE WHARF, 86, FLAT 34, ST KATHARINES WAY",
+        "postcode": "E1W 1UR",
+        "price": 520000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JACANA COURT, FLAT 52, STAR PLACE",
+        "postcode": "E1W 1AH",
+        "price": 825000,
+        "dateOfTransfer": "2025-12-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LOWDER HOUSE, FLAT 16, WAPPING LANE",
+        "postcode": "E1W 2RJ",
+        "price": 407000,
+        "dateOfTransfer": "2025-12-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NIGHTINGALE HOUSE, 50, FLAT 47, THOMAS MORE STREET",
+        "postcode": "E1W 1UA",
+        "price": 465000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FREE TRADE WHARF, 340, FLAT 21, THE HIGHWAY",
+        "postcode": "E1W 3ES",
+        "price": 525000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, BRIDGEPORT PLACE",
+        "postcode": "E1W 2JS",
+        "price": 415000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "350, FLAT 305, THE HIGHWAY",
+        "postcode": "E1W 3HU",
+        "price": 550000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, PROSPECT PLACE",
+        "postcode": "E1W 3TJ",
+        "price": 740000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, BURR CLOSE",
+        "postcode": "E1W 1NB",
+        "price": 620000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "81, BURR CLOSE",
+        "postcode": "E1W 1ND",
+        "price": 415000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TEAL COURT, FLAT 71, STAR PLACE",
+        "postcode": "E1W 1AB",
+        "price": 1870000,
+        "dateOfTransfer": "2025-11-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DUNDEE COURT, 73, FLAT 36, WAPPING HIGH STREET",
+        "postcode": "E1W 2YG",
+        "price": 550000,
+        "dateOfTransfer": "2025-11-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MORAN HOUSE, 82, FLAT 8, WAPPING LANE",
+        "postcode": "E1W 2RU",
+        "price": 670000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 87, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 910000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, WATERMAN WAY",
+        "postcode": "E1W 2QN",
+        "price": 255000,
+        "dateOfTransfer": "2025-11-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "350, FLAT 202, THE HIGHWAY",
+        "postcode": "E1W 3HU",
+        "price": 300000,
+        "dateOfTransfer": "2025-11-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GREAT JUBILEE WHARF, 78, FLAT 12, WAPPING WALL",
+        "postcode": "E1W 3TH",
+        "price": 1600000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 7, ORTON STREET",
+        "postcode": "E1W 1LN",
+        "price": 425000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ABERDEEN WHARF, 94, FLAT 5, WAPPING HIGH STREET",
+        "postcode": "E1W 2ND",
+        "price": 582000,
+        "dateOfTransfer": "2025-11-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CAPITAL WHARF, 50, FLAT 57, WAPPING HIGH STREET",
+        "postcode": "E1W 1LY",
+        "price": 91973,
+        "dateOfTransfer": "2025-11-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43 - 45, FLAT 8, EAST SMITHFIELD",
+        "postcode": "E1W 1AP",
+        "price": 499999,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BEECHEY HOUSE, FLAT 16, WATTS STREET",
+        "postcode": "E1W 2QF",
+        "price": 395000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, APARTMENT 501, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 980000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHANCELLOR HOUSE, FLAT 16, GREEN BANK",
+        "postcode": "E1W 2QB",
+        "price": 475000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MERCHANT COURT, 61, FLAT 8, WAPPING WALL",
+        "postcode": "E1W 3SJ",
+        "price": 820000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRADEWINDS COURT, FLAT 12, ASHER WAY",
+        "postcode": "E1W 2JB",
+        "price": 335000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PRESIDENTS QUAY HOUSE, 72, FLAT 8, ST KATHARINES WAY",
+        "postcode": "E1W 1UF",
+        "price": 340000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 235, MILK YARD",
+        "postcode": "E1W 3SY",
+        "price": 544000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 806, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1800000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 143, MILK YARD",
+        "postcode": "E1W 3SX",
+        "price": 540000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FALCONET COURT, 123, FLAT 15, WAPPING HIGH STREET",
+        "postcode": "E1W 3NX",
+        "price": 249000,
+        "dateOfTransfer": "2025-10-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 227, MILK YARD",
+        "postcode": "E1W 3SZ",
+        "price": 500000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, MAYNARDS QUAY",
+        "postcode": "E1W 3RY",
+        "price": 512500,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GUN PLACE, 86, FLAT 4, WAPPING LANE",
+        "postcode": "E1W 2RX",
+        "price": 425000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, BURR CLOSE",
+        "postcode": "E1W 1NB",
+        "price": 465000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "65, BURR CLOSE",
+        "postcode": "E1W 1ND",
+        "price": 610000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SANCTUARY COURT, FLAT 402, REARDON PATH",
+        "postcode": "E1W 2PP",
+        "price": 832400,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MARC BRUNEL HOUSE, 136, FLAT 404, WAPPING HIGH STREET",
+        "postcode": "E1W 3PA",
+        "price": 977500,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 603, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1253000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "142, FLAT 5, WAPPING HIGH STREET",
+        "postcode": "E1W 3PB",
+        "price": 130000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, GLAMIS ROAD",
+        "postcode": "E1W 3EE",
+        "price": 214000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST JOHNS COURT, 12, FLAT 4, SCANDRETT STREET",
+        "postcode": "E1W 2UP",
+        "price": 1025000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 801, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1475000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "54, KENNET STREET",
+        "postcode": "E1W 2JJ",
+        "price": 462500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FLAT 98, NEW CRANE PLACE",
+        "postcode": "E1W 3TU",
+        "price": 855000,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, WELLAND MEWS",
+        "postcode": "E1W 2JW",
+        "price": 880000,
+        "dateOfTransfer": "2025-09-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ELUNA APARTMENTS, 4, 35, WAPPING LANE",
+        "postcode": "E1W 2RG",
+        "price": 510000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 502, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 662400,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "18, REDCASTLE CLOSE",
+        "postcode": "E1W 3DQ",
+        "price": 400000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JOHN BOWLES COURT, 69, FLAT 22, SCHOOLHOUSE LANE",
+        "postcode": "E1W 3AH",
+        "price": 445000,
+        "dateOfTransfer": "2025-09-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 604, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1253200,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 503, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1240000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 507, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 595000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 310, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 817425,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 803, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 816000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CINNABAR WHARF EAST, 28, FLAT 83, WAPPING HIGH STREET",
+        "postcode": "E1W 1NG",
+        "price": 707000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1601, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1293245,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "72, FLAT 15, WAPPING HIGH STREET",
+        "postcode": "E1W 2NW",
+        "price": 235000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 104, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1134000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 9, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 525000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 104, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 330176,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "5, WELLINGTON TERRACE",
+        "postcode": "E1W 2JQ",
+        "price": 1050000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, FLAT 2001, GAUGING SQUARE",
+        "postcode": "E1W 2AX",
+        "price": 1100000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT G01, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 586300,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "TRAFALGAR COURT, FLAT 56, WAPPING WALL",
+        "postcode": "E1W 3TF",
+        "price": 540000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 501, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 841300,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 502, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 841300,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 1007, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 2836800,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 401, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 792000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "97, WAPPING LANE",
+        "postcode": "E1W 2RW",
+        "price": 1350000,
+        "dateOfTransfer": "2025-08-12",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 602, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 653300,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "61, PROSPECT PLACE",
+        "postcode": "E1W 3TJ",
+        "price": 400000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 804, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 826000,
+        "dateOfTransfer": "2025-08-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 802, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1425000,
+        "dateOfTransfer": "2025-08-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 1008, COBBLESTONE SQUARE",
+        "postcode": "E1W 3BA",
+        "price": 1375000,
+        "dateOfTransfer": "2025-08-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "67, THOMAS MORE STREET",
+        "postcode": "E1W 1YD",
+        "price": 760000,
+        "dateOfTransfer": "2025-08-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, WATERMAN WAY",
+        "postcode": "E1W 2QN",
+        "price": 755000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BREEZERS COURT, 20, FLAT 5, THE HIGHWAY",
+        "postcode": "E1W 2BE",
+        "price": 510000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 703, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 883200,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "HILLIARD HOUSE, FLAT 2, PRUSOM STREET",
+        "postcode": "E1W 3NN",
+        "price": 390000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 803, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AZ",
+        "price": 635000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 105, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 330228,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1503, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1625000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROSS HOUSE, FLAT 1, PRUSOM STREET",
+        "postcode": "E1W 3NR",
+        "price": 350000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRAFALGAR COURT, FLAT 11, WAPPING WALL",
+        "postcode": "E1W 3TF",
+        "price": 818000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 608, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1081000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 402, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 652800,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 1006, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1866000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 205, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 819840,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 1004, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 845000,
+        "dateOfTransfer": "2025-07-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 605, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 672000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "GUN PLACE, 86, FLAT 71, WAPPING LANE",
+        "postcode": "E1W 2RX",
+        "price": 1840000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT G01, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 650880,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 407, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 691200,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CHIMNEY COURT, 23, FLAT 38, BREWHOUSE LANE",
+        "postcode": "E1W 2NU",
+        "price": 1020000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HALCYON WHARF, 5, FLAT 20, WAPPING HIGH STREET",
+        "postcode": "E1W 1LH",
+        "price": 653750,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 606, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 811200,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 609, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 764398,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 607, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 670000,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "PRESIDENTS QUAY HOUSE, 72, FLAT 30, ST KATHARINES WAY",
+        "postcode": "E1W 1UF",
+        "price": 515000,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 601, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 802750,
+        "dateOfTransfer": "2025-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 704, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 883200,
+        "dateOfTransfer": "2025-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 506, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 834240,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 504, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1178000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CAMPANIA BUILDING, 1, FLAT 8, JARDINE ROAD",
+        "postcode": "E1W 3WD",
+        "price": 450000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 301, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 780000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 404, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1168500,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 41, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 665000,
+        "dateOfTransfer": "2025-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 505, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 681600,
+        "dateOfTransfer": "2025-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "2, APARTMENT 402, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 1156200,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "SANDPIPER COURT, 8, FLAT 61, THOMAS MORE STREET",
+        "postcode": "E1W 1AS",
+        "price": 1537500,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, WELLAND MEWS",
+        "postcode": "E1W 2JW",
+        "price": 1200000,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, WATERMAN WAY",
+        "postcode": "E1W 2QN",
+        "price": 750000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 1002, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 844800,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "BALTIC COURT, 5, FLAT 3, CLAVE STREET",
+        "postcode": "E1W 3AL",
+        "price": 470000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 307, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 686400,
+        "dateOfTransfer": "2025-07-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 304, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1159000,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 409, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 835000,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 405, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 669300,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 406, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 829440,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT G03, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1111500,
+        "dateOfTransfer": "2025-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 802, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 855400,
+        "dateOfTransfer": "2025-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "SANDERLING LODGE, FLAT 31, STAR PLACE",
+        "postcode": "E1W 1AJ",
+        "price": 2050000,
+        "dateOfTransfer": "2025-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT G06, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 667360,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "GULLIVERS WHARF, 105, FLAT 4, WAPPING LANE",
+        "postcode": "E1W 2RR",
+        "price": 1550000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, FOWEY CLOSE",
+        "postcode": "E1W 2JP",
+        "price": 1085500,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 71, EMERY WAY",
+        "postcode": "E1W 2AS",
+        "price": 440000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 302, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 810795,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 1001, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 844800,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 305, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 824640,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 303, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1101286,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "FROBISHER HOUSE, FLAT 12, WATTS STREET",
+        "postcode": "E1W 2PZ",
+        "price": 375000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, APARTMENT 105, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 810795,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 204, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1251750,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 203, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 1130500,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 107, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 676800,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 207, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 681600,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 202, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 792000,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 401, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 811200,
+        "dateOfTransfer": "2025-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "10, TELFORDS YARD",
+        "postcode": "E1W 2BQ",
+        "price": 1755000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "35, RUM CLOSE",
+        "postcode": "E1W 3QX",
+        "price": 400000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, ST KATHARINES WAY",
+        "postcode": "E1W 1LP",
+        "price": 3090000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 901, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 835200,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 902, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 835200,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 903, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 883200,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 905, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 873600,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 906, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1840000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 801, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 820000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 904, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 883200,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 908, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 849050,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "OLIVERS WHARF, 64, FLAT 2C, WAPPING HIGH STREET",
+        "postcode": "E1W 2PJ",
+        "price": 2075000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, PORTLAND SQUARE",
+        "postcode": "E1W 2QR",
+        "price": 672500,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "OLIVERS WHARF, 64, GROUND FLOOR STORAGE UNIT BB, WAPPING HIGH STREET",
+        "postcode": "E1W 2PJ",
+        "price": 2075000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 705, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 793250,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 503, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 840000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "11, FLAT 96, NEW CRANE PLACE",
+        "postcode": "E1W 3TU",
+        "price": 1075000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 704, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 830400,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT G06, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1356650,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, APARTMENT 306, BOXWOOD GARDENS",
+        "postcode": "E1W 2DU",
+        "price": 824640,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 243, MILK YARD",
+        "postcode": "E1W 3SX",
+        "price": 512500,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, HERMITAGE WALL",
+        "postcode": "E1W 1LW",
+        "price": 800000,
+        "dateOfTransfer": "2025-06-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LOWDER HOUSE, FLAT 18, WAPPING LANE",
+        "postcode": "E1W 2RJ",
+        "price": 328000,
+        "dateOfTransfer": "2025-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 1005, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 795150,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "3, BRIDGEPORT PLACE",
+        "postcode": "E1W 2JS",
+        "price": 706000,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1103, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1500000,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "350, FLAT 205, THE HIGHWAY",
+        "postcode": "E1W 3HU",
+        "price": 440000,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST. JOHNS WHARF, 104 - 106, FLAT 1B, WAPPING HIGH STREET",
+        "postcode": "E1W 2PR",
+        "price": 827300,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 807, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1724500,
+        "dateOfTransfer": "2025-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 707, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1697500,
+        "dateOfTransfer": "2025-06-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 504, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 846000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 804, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 849120,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 210, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AY",
+        "price": 318000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 601, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 835050,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "GUN PLACE, 86, FLAT 45, WAPPING LANE",
+        "postcode": "E1W 2RX",
+        "price": 290000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GUN PLACE, 86, FLAT 70, WAPPING LANE",
+        "postcode": "E1W 2RX",
+        "price": 1500000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 108, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1226500,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 701, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 795500,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 703, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 817425,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 805, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 830560,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 404, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 807000,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 702, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 841300,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 602, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 836550,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 808, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 845500,
+        "dateOfTransfer": "2025-06-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 315, MILK YARD",
+        "postcode": "E1W 3TA",
+        "price": 450000,
+        "dateOfTransfer": "2025-06-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 608, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 805600,
+        "dateOfTransfer": "2025-06-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 406, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1258175,
+        "dateOfTransfer": "2025-06-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 506, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1250000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 505, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1270410,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 405, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1261400,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 605, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 792650,
+        "dateOfTransfer": "2025-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1604, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1339200,
+        "dateOfTransfer": "2025-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 803, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 860000,
+        "dateOfTransfer": "2025-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 403, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 796000,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 603, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 808400,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "FREE TRADE WHARF, 340, FLAT 153, THE HIGHWAY",
+        "postcode": "E1W 3EU",
+        "price": 625000,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "OSWELL HOUSE, FLAT 2, FARTHING FIELDS",
+        "postcode": "E1W 3RU",
+        "price": 360000,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 107, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1200600,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "COMPASS HOUSE, 11, FLAT 209, RAINE STREET",
+        "postcode": "E1W 3AU",
+        "price": 420000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHINA COURT, FLAT 66, ASHER WAY",
+        "postcode": "E1W 2JF",
+        "price": 415000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 8, WAPPING HIGH STREET",
+        "postcode": "E1W 1BH",
+        "price": 945000,
+        "dateOfTransfer": "2025-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARRY HOUSE, FLAT 16, GREEN BANK",
+        "postcode": "E1W 2QE",
+        "price": 360000,
+        "dateOfTransfer": "2025-05-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 309, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 745000,
+        "dateOfTransfer": "2025-05-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "PENNINGTON COURT, 40, FLAT 3, THE HIGHWAY",
+        "postcode": "E1W 2SD",
+        "price": 378000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 208, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1170000,
+        "dateOfTransfer": "2025-05-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 307, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1269000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 707, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AZ",
+        "price": 325000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GREAT JUBILEE WHARF, 78, FLAT 6, WAPPING WALL",
+        "postcode": "E1W 3TH",
+        "price": 1775000,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, VINEGAR STREET",
+        "postcode": "E1W 2QQ",
+        "price": 505000,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BINNACLE HOUSE, 10, APARTMENT 504, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AR",
+        "price": 380000,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DUNDEE COURT, 73, FLAT 30, WAPPING HIGH STREET",
+        "postcode": "E1W 2YG",
+        "price": 482500,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WARTON COURT, 526, FLAT 26, CABLE STREET",
+        "postcode": "E1W 3AG",
+        "price": 290000,
+        "dateOfTransfer": "2025-04-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, TELFORDS YARD",
+        "postcode": "E1W 2BQ",
+        "price": 810000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, NEWLANDS QUAY",
+        "postcode": "E1W 3QZ",
+        "price": 585000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 507, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1219400,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "350, FLAT 309, THE HIGHWAY",
+        "postcode": "E1W 3HU",
+        "price": 670000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "67, SPIRIT QUAY",
+        "postcode": "E1W 2UT",
+        "price": 580000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, FLAT 55, NEW CRANE PLACE",
+        "postcode": "E1W 3TX",
+        "price": 465000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "466, CABLE STREET",
+        "postcode": "E1W 3DR",
+        "price": 440000,
+        "dateOfTransfer": "2025-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 706, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1765575,
+        "dateOfTransfer": "2025-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 407, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1210300,
+        "dateOfTransfer": "2025-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1503, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1625000,
+        "dateOfTransfer": "2025-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1403, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1615000,
+        "dateOfTransfer": "2025-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "15, FLAT 8, MONZA STREET",
+        "postcode": "E1W 3TL",
+        "price": 740000,
+        "dateOfTransfer": "2025-04-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "OSWELL HOUSE, FLAT 42, FARTHING FIELDS",
+        "postcode": "E1W 3RU",
+        "price": 385000,
+        "dateOfTransfer": "2025-04-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRAFALGAR COURT, FLAT 16, WAPPING WALL",
+        "postcode": "E1W 3TF",
+        "price": 680000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHIMNEY COURT, 23, FLAT 40, BREWHOUSE LANE",
+        "postcode": "E1W 2NU",
+        "price": 911000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ELUNA APARTMENTS, 4, 64, WAPPING LANE",
+        "postcode": "E1W 2RG",
+        "price": 520000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANCOUVER HOUSE, FLAT 14, REARDON PATH",
+        "postcode": "E1W 2PF",
+        "price": 420000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 79, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 610000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, WATERMAN WAY",
+        "postcode": "E1W 2QN",
+        "price": 505595,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CORMORANT LODGE, 10, FLAT 61, THOMAS MORE STREET",
+        "postcode": "E1W 1AU",
+        "price": 2350000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, MACE CLOSE",
+        "postcode": "E1W 2JX",
+        "price": 1300000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BINNACLE HOUSE, 10, APARTMENT 505, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AR",
+        "price": 520000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 116, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AY",
+        "price": 555250,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 231, MILK YARD",
+        "postcode": "E1W 3SY",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, CLOYSTERS GREEN",
+        "postcode": "E1W 1LU",
+        "price": 598000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SEVILLE HOUSE 11 & A HALF, FLAT 4, WAPPING HIGH STREET",
+        "postcode": "E1W 1NX",
+        "price": 520000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1702, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1580000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 904, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1334195,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CHIMNEY COURT, 23, FLAT 19, BREWHOUSE LANE",
+        "postcode": "E1W 2NU",
+        "price": 580000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SANDPIPER COURT, 8, FLAT 3, THOMAS MORE STREET",
+        "postcode": "E1W 1AS",
+        "price": 580000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRADEWINDS COURT, FLAT 38, ASHER WAY",
+        "postcode": "E1W 2JB",
+        "price": 408000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LEEWARD COURT, FLAT 51, ASHER WAY",
+        "postcode": "E1W 2JZ",
+        "price": 420000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DOUGHTY COURT, FLAT 29, PRUSOM STREET",
+        "postcode": "E1W 3RT",
+        "price": 413500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CINNABAR WHARF CENTRAL, 24, FLAT 55, WAPPING HIGH STREET",
+        "postcode": "E1W 1NQ",
+        "price": 726000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, SPIRIT QUAY",
+        "postcode": "E1W 2UT",
+        "price": 1185000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "61, BURR CLOSE",
+        "postcode": "E1W 1ND",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, MAYNARDS QUAY",
+        "postcode": "E1W 3RY",
+        "price": 555000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FREE TRADE WHARF, 340, FLAT 47, THE HIGHWAY",
+        "postcode": "E1W 3ES",
+        "price": 455000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "REARDON HOUSE, FLAT 4, REARDON STREET",
+        "postcode": "E1W 2QJ",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 402, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 800000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 604, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 815000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "18, PROSPECT PLACE",
+        "postcode": "E1W 3TJ",
+        "price": 675000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 84, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 975000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 501, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AZ",
+        "price": 1150000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "350, FLAT 304, THE HIGHWAY",
+        "postcode": "E1W 3HU",
+        "price": 610000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 32A, ARTICHOKE HILL",
+        "postcode": "E1W 2BA",
+        "price": 315000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, BURR CLOSE",
+        "postcode": "E1W 1NB",
+        "price": 300000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, TORRINGTON PLACE",
+        "postcode": "E1W 2UY",
+        "price": 770000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "135, FLAT 22, WAPPING HIGH STREET",
+        "postcode": "E1W 3NH",
+        "price": 720000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SANCTUARY COURT, FLAT 202, REARDON PATH",
+        "postcode": "E1W 2PP",
+        "price": 730000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, RUM CLOSE",
+        "postcode": "E1W 3QX",
+        "price": 325000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CORDAGE HOUSE, 15, APARTMENT G08, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AS",
+        "price": 470000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 111, MERINO GARDENS",
+        "postcode": "E1W 2DF",
+        "price": 710000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRAFALGAR COURT, FLAT 17, WAPPING WALL",
+        "postcode": "E1W 3TF",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1703, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1651600,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "GARNET HOUSE, FLAT 1, GARNET STREET",
+        "postcode": "E1W 3QY",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PIERHEAD WHARF, 69, FLAT 30, WAPPING HIGH STREET",
+        "postcode": "E1W 2YF",
+        "price": 435000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CAPITAL WHARF, 50, FLAT 65, WAPPING HIGH STREET",
+        "postcode": "E1W 1LY",
+        "price": 965000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1202, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1480920,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1704, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1396250,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 308, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 1201200,
+        "dateOfTransfer": "2025-03-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "130, FLAT 10, WAPPING HIGH STREET",
+        "postcode": "E1W 2NH",
+        "price": 660000,
+        "dateOfTransfer": "2025-03-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 314, MILK YARD",
+        "postcode": "E1W 3TA",
+        "price": 540000,
+        "dateOfTransfer": "2025-03-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 12, WAPPING HIGH STREET",
+        "postcode": "E1W 1BH",
+        "price": 880000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, PEARTREE LANE",
+        "postcode": "E1W 3SR",
+        "price": 1150000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "COMPASS HOUSE 11, FLAT C003, RAINE STREET",
+        "postcode": "E1W 3AU",
+        "price": 668000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1602, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 3084150,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "IVORY HOUSE, FLAT 6, EAST SMITHFIELD",
+        "postcode": "E1W 1AT",
+        "price": 752000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "UNICORN BUILDING, 2, FLAT 10, JARDINE ROAD",
+        "postcode": "E1W 3WF",
+        "price": 395000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, GARNET STREET",
+        "postcode": "E1W 3QT",
+        "price": 364064,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "TRADEWINDS COURT, FLAT 39, ASHER WAY",
+        "postcode": "E1W 2JB",
+        "price": 463500,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERMITAGE COURT, FLAT 36, KNIGHTEN STREET",
+        "postcode": "E1W 1PW",
+        "price": 710000,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1701, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1302295,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "29, PROSPECT PLACE",
+        "postcode": "E1W 3TJ",
+        "price": 624999,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "135, FLAT 18, WAPPING HIGH STREET",
+        "postcode": "E1W 3NH",
+        "price": 855000,
+        "dateOfTransfer": "2025-03-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43, WATERMAN WAY",
+        "postcode": "E1W 2QW",
+        "price": 540000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LEEWARD COURT, FLAT 13, ASHER WAY",
+        "postcode": "E1W 2JY",
+        "price": 411000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1502, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1733600,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1004, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1297200,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1504, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1350000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "MATILDA HOUSE, FLAT 44, ST KATHARINES WAY",
+        "postcode": "E1W 1LQ",
+        "price": 455000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1302, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1685000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WARTON COURT, 526, FLAT 25, CABLE STREET",
+        "postcode": "E1W 3AG",
+        "price": 440000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1404, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1292200,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1204, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1268000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "24, BRIDEWELL PLACE",
+        "postcode": "E1W 2PB",
+        "price": 778500,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SANCTUARY COURT, FLAT 103, REARDON PATH",
+        "postcode": "E1W 2PP",
+        "price": 438000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1402, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1651275,
+        "dateOfTransfer": "2025-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1401, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1268100,
+        "dateOfTransfer": "2025-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "MATILDA HOUSE, FLAT 84, ST KATHARINES WAY",
+        "postcode": "E1W 1LG",
+        "price": 425000,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 106, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 701350,
+        "dateOfTransfer": "2025-02-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 109, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 699450,
+        "dateOfTransfer": "2025-02-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 209, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 704200,
+        "dateOfTransfer": "2025-02-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 902, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1745240,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1301, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1252105,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1304, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1297200,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "43 - 45, FLAT 1, EAST SMITHFIELD",
+        "postcode": "E1W 1AP",
+        "price": 482000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "163, WAPPING HIGH STREET",
+        "postcode": "E1W 3NQ",
+        "price": 1100000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MATILDA HOUSE, FLAT 133, ST KATHARINES WAY",
+        "postcode": "E1W 1LF",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1104, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1251000,
+        "dateOfTransfer": "2025-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 206, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 676800,
+        "dateOfTransfer": "2025-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1102, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1594375,
+        "dateOfTransfer": "2025-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1203, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1678400,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1201, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1303990,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1101, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1282470,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "6A, ST JOHNS WHARF",
+        "postcode": "E1W 2PR",
+        "price": 3459765,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRADEWINDS COURT, FLAT 10, ASHER WAY",
+        "postcode": "E1W 2JB",
+        "price": 407500,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT G02, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 238427,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, APARTMENT 302, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 389423,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 903, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1684770,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "2, APARTMENT 602, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 1175000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "2, APARTMENT 1402, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 1631700,
+        "dateOfTransfer": "2025-01-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CORDAGE HOUSE, 15, APARTMENT 104, COBBLESTONE SQUARE",
+        "postcode": "E1W 3AS",
+        "price": 300000,
+        "dateOfTransfer": "2025-01-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 122, EMERY WAY",
+        "postcode": "E1W 2AS",
+        "price": 1097000,
+        "dateOfTransfer": "2025-01-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 901, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1089270,
+        "dateOfTransfer": "2025-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "RIVERSIDE MANSIONS, FLAT 147, MILK YARD",
+        "postcode": "E1W 3SU",
+        "price": 530000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1002, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1642500,
+        "dateOfTransfer": "2025-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "2, APARTMENT 304, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 687240,
+        "dateOfTransfer": "2025-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, APARTMENT 1001, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1232100,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "2, APARTMENT 1104, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 1951500,
+        "dateOfTransfer": "2025-01-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "VANCOUVER HOUSE, FLAT 20, REARDON PATH",
+        "postcode": "E1W 2PF",
+        "price": 465000,
+        "dateOfTransfer": "2025-01-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 33, ARTICHOKE HILL",
+        "postcode": "E1W 2BA",
+        "price": 300000,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, APARTMENT 204, MERINO GARDENS",
+        "postcode": "E1W 2DS",
+        "price": 389436,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "7, WAPPING HIGH STREET",
+        "postcode": "E1W 1LS",
+        "price": 410000,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 1003, BOXWOOD GARDENS",
+        "postcode": "E1W 2DX",
+        "price": 1580000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "PARK VISTA TOWER, 5, APARTMENT 1306, COBBLESTONE SQUARE",
+        "postcode": "E1W 3BA",
+        "price": 973450,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, APARTMENT 1502, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 3215520,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "2, APARTMENT 906, MERINO GARDENS",
+        "postcode": "E1W 2DR",
+        "price": 1079960,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WAINWRIGHT HOUSE, FLAT 9, GARNET STREET",
+        "postcode": "E1W 3RA",
+        "price": 325000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "REARDON HOUSE, FLAT 31, REARDON STREET",
+        "postcode": "E1W 2QJ",
+        "price": 390000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 832130,
+    "medianPrice": 710000
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Rushanara Ali",
+        "party": "Labour",
+        "constituency": "Bethnal Green and Stepney",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      },
+      {
+        "role": "Councillor",
+        "name": "Rabina Khan",
+        "party": "Liberal Democrats",
+        "ward": "Shadwell",
+        "contactUrl": "https://democracy.towerhamlets.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Harun Miah",
+        "party": "Aspire",
+        "ward": "Shadwell",
+        "contactUrl": "https://democracy.towerhamlets.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Shafi Ahmed",
+        "party": "Aspire",
+        "ward": "Whitechapel",
+        "contactUrl": "https://democracy.towerhamlets.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Abulkashem Mohammed Helal",
+        "party": "Aspire",
+        "ward": "Whitechapel",
+        "contactUrl": "https://democracy.towerhamlets.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Kamrul Hussain",
+        "party": "Aspire",
+        "ward": "Whitechapel",
+        "contactUrl": "https://democracy.towerhamlets.gov.uk"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://development.towerhamlets.gov.uk/online-applications/"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Victoria Park",
+        "category": "park",
+        "address": "Tower Hamlets/Hackney border",
+        "description": "One of London's oldest public parks, opened in 1845 for the East End."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "E1W lies within Tower Hamlets. Named for its historic hamlets bordering the Tower of London. Canary Wharf, one of the UK's two main financial centres, was developed from the 1980s on former Docklands land within the borough.",
+    "keyFacts": [
+      "Named for its historic hamlets bordering the Tower of London. Canary Wharf, one of the UK's two main financial centres, was developed from the 1980s on former Docklands land within the borough."
+    ]
+  }
+}

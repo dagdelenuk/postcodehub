@@ -1,0 +1,646 @@
+{
+  "outcode": "WC1N",
+  "slug": "wc1n",
+  "city": "London",
+  "borough": "Camden",
+  "latitude": 51.522922577205854,
+  "longitude": -0.11973170955882353,
+  "wards": [
+    "Bloomsbury",
+    "Clerkenwell",
+    "Holborn & Covent Garden",
+    "King's Cross"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "THE BLOOMSBURY SURGERY",
+        "odsCode": "F83044",
+        "address": "1 HANDEL STREET, LONDON",
+        "postcode": "WC1N 1PD",
+        "telephone": "020 78378559"
+      },
+      {
+        "name": "BRUNSWICK MEDICAL CENTRE UHPC",
+        "odsCode": "F83048",
+        "address": "39 BRUNSWICK CENTRE, LONDON",
+        "postcode": "WC1N 1AF",
+        "telephone": "020 78373057"
+      },
+      {
+        "name": "HOLBORN MEDICAL CENTRE",
+        "odsCode": "F83058",
+        "address": "64-66 LAMBS CONDUIT STREET, LONDON",
+        "postcode": "WC1N 3NA",
+        "telephone": "020 30770044"
+      },
+      {
+        "name": "FITZROY PLACE",
+        "odsCode": "Y05103",
+        "address": "NHNN PHARMACY, QUEEN SQUARE, LONDON",
+        "postcode": "WC1N 3BG",
+        "telephone": "020 34483137"
+      },
+      {
+        "name": "SOUTH CAMDEN PCN - EAS",
+        "odsCode": "Y07809",
+        "address": "HOLBORN MEDICAL CENTRE, 64-66 LAMBS CONDUIT STREET, LONDON",
+        "postcode": "WC1N 3NA",
+        "telephone": "02074 213500"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "CONDUIT DENTAL SURGERY",
+        "odsCode": "V04199",
+        "address": "41 LAMBS CONDUIT STREET, LONDON",
+        "postcode": "WC1N 3NG"
+      },
+      {
+        "name": "BOND DENTAL LONDON (BLOOMSBURY)",
+        "odsCode": "V04283",
+        "address": "96 MARCHMONT STREET, LONDON",
+        "postcode": "WC1N 1AG"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "BOUTALLS PHARMACY",
+        "odsCode": "FPF52",
+        "address": "60 LAMBS CONDUIT STREET, LONDON",
+        "postcode": "WC1N 3LW",
+        "telephone": "02074 051039"
+      },
+      {
+        "name": "BOOTS",
+        "odsCode": "FQ977",
+        "address": "40-42 BRUNSWICK CENTRE, LONDON",
+        "postcode": "WC1N 1AE",
+        "telephone": "020 72785040"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Thomas Coram Centre",
+        "urn": "100005",
+        "phaseOfEducation": "Nursery",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "49 Mecklenburgh Square, London",
+        "postcode": "WC1N 2NY",
+        "numberOfPupils": 105,
+        "schoolCapacity": null
+      },
+      {
+        "name": "St George the Martyr Church of England Primary School",
+        "urn": "100040",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": null,
+        "address": "John's Mews, London",
+        "postcode": "WC1N 2NX",
+        "numberOfPupils": 190,
+        "schoolCapacity": 236
+      },
+      {
+        "name": "Children's Hospital School at Gt Ormond Street and UCH",
+        "urn": "100060",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Great Ormond Street, Camden, London",
+        "postcode": "WC1N 3JH",
+        "numberOfPupils": 0,
+        "schoolCapacity": null
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 4693,
+        "violentCrimes": 1025,
+        "propertyCrimes": 2887
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 4343,
+        "violentCrimes": 1001,
+        "propertyCrimes": 2536
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 4276,
+        "violentCrimes": 1014,
+        "propertyCrimes": 2569
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 4777,
+        "violentCrimes": 1059,
+        "propertyCrimes": 2969
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 5079,
+        "violentCrimes": 1032,
+        "propertyCrimes": 3287
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 4782,
+        "violentCrimes": 978,
+        "propertyCrimes": 3069
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 4055,
+        "violentCrimes": 884,
+        "propertyCrimes": 2474
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 4036,
+        "violentCrimes": 831,
+        "propertyCrimes": 2475
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 4019,
+        "violentCrimes": 950,
+        "propertyCrimes": 2251
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 4229,
+        "violentCrimes": 987,
+        "propertyCrimes": 2455
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 4059,
+        "violentCrimes": 1026,
+        "propertyCrimes": 2303
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 4054,
+        "violentCrimes": 1025,
+        "propertyCrimes": 2278
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 6983,
+      "bicycle-theft": 870,
+      "burglary": 1412,
+      "criminal-damage-arson": 977,
+      "drugs": 1799,
+      "other-theft": 10782,
+      "possession-of-weapons": 189,
+      "public-order": 2405,
+      "robbery": 1802,
+      "shoplifting": 4727,
+      "theft-from-the-person": 11850,
+      "vehicle-crime": 935,
+      "violent-crime": 7416,
+      "other-crime": 255
+    },
+    "totalLast12Months": 52402
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "84, FLAT 1, MARCHMONT STREET",
+        "postcode": "WC1N 1AG",
+        "price": 470000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MILLMAN COURT, 27 - 39, FLAT 24, MILLMAN STREET",
+        "postcode": "WC1N 3EN",
+        "price": 522500,
+        "dateOfTransfer": "2026-05-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76, FLAT 2, MARCHMONT STREET",
+        "postcode": "WC1N 1AG",
+        "price": 485000,
+        "dateOfTransfer": "2026-05-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, GROUND FLOOR PREMISES, DOUGHTY STREET",
+        "postcode": "WC1N 2AA",
+        "price": 235000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "BEVAN HOUSE, FLAT 25, BOSWELL STREET",
+        "postcode": "WC1N 3BT",
+        "price": 450000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GUILFORD COURT, 51, FLAT K, GUILFORD STREET",
+        "postcode": "WC1N 1ES",
+        "price": 300000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FOUNDLING COURT, FLAT 211, BRUNSWICK CENTRE",
+        "postcode": "WC1N 1QG",
+        "price": 640000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CORAM HOUSE, FLAT 4, HERBRAND STREET",
+        "postcode": "WC1N 1HQ",
+        "price": 430000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BRUNSWICK MANSIONS, 8, FLAT 12, HANDEL STREET",
+        "postcode": "WC1N 1PE",
+        "price": 530000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, FLAT 5, JOHN STREET",
+        "postcode": "WC1N 2BF",
+        "price": 1250000,
+        "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "87 - 89, FLAT 2, MARCHMONT STREET",
+        "postcode": "WC1N 1AL",
+        "price": 860000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 1, HANDEL STREET",
+        "postcode": "WC1N 1PB",
+        "price": 850000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43, OLD GLOUCESTER STREET",
+        "postcode": "WC1N 3AD",
+        "price": 425000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, NORTHINGTON STREET",
+        "postcode": "WC1N 2NW",
+        "price": 1350000,
+        "dateOfTransfer": "2025-12-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "106, BASEMENT FLAT, GUILFORD STREET",
+        "postcode": "WC1N 1DP",
+        "price": 650000,
+        "dateOfTransfer": "2025-12-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, FLAT 6, JOHN STREET",
+        "postcode": "WC1N 2BF",
+        "price": 1350000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DICKENS HOUSE, FLAT 16, HERBRAND STREET",
+        "postcode": "WC1N 1HJ",
+        "price": 675000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, FLAT 3, COSMO PLACE",
+        "postcode": "WC1N 3AP",
+        "price": 475000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, JOHNS MEWS",
+        "postcode": "WC1N 2PA",
+        "price": 2050000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT 4, JOHN STREET",
+        "postcode": "WC1N 2ES",
+        "price": 2000000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT B, MECKLENBURGH STREET",
+        "postcode": "WC1N 2AH",
+        "price": 495000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE OLD DIARY, 7, UNIT 2, WAKEFIELD STREET",
+        "postcode": "WC1N 1PG",
+        "price": 88000,
+        "dateOfTransfer": "2025-11-20",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "QUEEN COURT, FLAT 21, QUEEN SQUARE",
+        "postcode": "WC1N 3BB",
+        "price": 685000,
+        "dateOfTransfer": "2025-10-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BEVAN HOUSE, FLAT 3, BOSWELL STREET",
+        "postcode": "WC1N 3BT",
+        "price": 416000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4 - 6, B1 UNIT D, BROWNLOW MEWS",
+        "postcode": "WC1N 2LD",
+        "price": 815000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "JENNER HOUSE, FLAT 48, HUNTER STREET",
+        "postcode": "WC1N 1BL",
+        "price": 720000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10 - 12, FLAT 13, NORTH MEWS",
+        "postcode": "WC1N 2JN",
+        "price": 1760000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, JOHNS MEWS",
+        "postcode": "WC1N 2PA",
+        "price": 2160000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "20 - 21, KINGS MEWS",
+        "postcode": "WC1N 2JB",
+        "price": 5500000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, NORTH MEWS",
+        "postcode": "WC1N 2JP",
+        "price": 1800000,
+        "dateOfTransfer": "2025-08-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, FLAT 1, LAMBS CONDUIT STREET",
+        "postcode": "WC1N 3NG",
+        "price": 720000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WITLEY COURT, FLAT 25, CORAM STREET",
+        "postcode": "WC1N 1HD",
+        "price": 650000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3 - 4, FLAT 9, DOUGHTY STREET",
+        "postcode": "WC1N 2PN",
+        "price": 575000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, FLAT 2, JOHN STREET",
+        "postcode": "WC1N 2BG",
+        "price": 705000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ABERDEEN MANSIONS, FLAT 7, KENTON STREET",
+        "postcode": "WC1N 1NL",
+        "price": 850000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, FLAT 1, MARCHMONT STREET",
+        "postcode": "WC1N 1AP",
+        "price": 475000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, FLAT 2, MARCHMONT STREET",
+        "postcode": "WC1N 1AP",
+        "price": 475000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, FLAT 3, MARCHMONT STREET",
+        "postcode": "WC1N 1AP",
+        "price": 475000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, DOUGHTY STREET",
+        "postcode": "WC1N 2PL",
+        "price": 4250000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4 - 5, NORTH MEWS",
+        "postcode": "WC1N 2JP",
+        "price": 3100000,
+        "dateOfTransfer": "2025-05-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "29 - 31, FLAT 2, JOHNS MEWS, HOLBORN",
+        "postcode": "WC1N 2NS",
+        "price": 535000,
+        "dateOfTransfer": "2025-04-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "QUEEN COURT, FLAT 38, QUEEN SQUARE",
+        "postcode": "WC1N 3BB",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "108C, GUILFORD STREET",
+        "postcode": "WC1N 1DP",
+        "price": 985000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT 3, DOUGHTY STREET",
+        "postcode": "WC1N 2PL",
+        "price": 760000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13E, GREAT ORMOND STREET",
+        "postcode": "WC1N 3RA",
+        "price": 772500,
+        "dateOfTransfer": "2025-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26C, OLD GLOUCESTER STREET",
+        "postcode": "WC1N 3AF",
+        "price": 617500,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "80, APARTMENT 1, GUILFORD STREET",
+        "postcode": "WC1N 1DF",
+        "price": 880000,
+        "dateOfTransfer": "2025-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, NORTHINGTON STREET",
+        "postcode": "WC1N 2JF",
+        "price": 2518000,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21B, BROWNLOW MEWS",
+        "postcode": "WC1N 2LA",
+        "price": 1900000,
+        "dateOfTransfer": "2025-01-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 1064888,
+    "medianPrice": 685000
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Sir Keir Starmer",
+        "party": "Labour",
+        "constituency": "Holborn and St Pancras",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://www.camden.gov.uk/search-for-planning-applications"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Camden Market",
+        "category": "community-hub",
+        "address": "Camden Town",
+        "description": "One of the UK's most visited attractions, a sprawling market for fashion, food, and crafts."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "WC1N lies within Camden. Formed in 1965 from Hampstead, Holborn, and St Pancras. Home to the British Museum, the British Library, and Camden Market, one of the UK's most visited attractions.",
+    "keyFacts": [
+      "Formed in 1965 from Hampstead, Holborn, and St Pancras. Home to the British Museum, the British Library, and Camden Market, one of the UK's most visited attractions."
+    ]
+  }
+}

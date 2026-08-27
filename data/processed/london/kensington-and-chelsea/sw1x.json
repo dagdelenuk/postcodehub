@@ -1,0 +1,1330 @@
+{
+  "outcode": "SW1X",
+  "slug": "sw1x",
+  "city": "London",
+  "borough": "Kensington and Chelsea",
+  "latitude": 51.49824600000002,
+  "longitude": -0.15675298014888345,
+  "wards": [
+    "Brompton & Hans Town",
+    "Knightsbridge & Belgravia",
+    "Nine Elms",
+    "Royal Hospital"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "KNIGHTSBRIDGE MEDICAL CENTRE",
+        "odsCode": "E87738",
+        "address": "71-75 PAVILION ROAD, LONDON",
+        "postcode": "SW1X 0ET",
+        "telephone": "02039 615260"
+      }
+    ],
+    "dentists": [],
+    "pharmacies": [
+      {
+        "name": "DAY LEWIS PHARMACY",
+        "odsCode": "FTC71",
+        "address": "LOWER GROUND FLOOR, 87-135 BROMPTON ROAD, LONDON",
+        "postcode": "SW1X 7XL",
+        "telephone": "020 72255954"
+      },
+      {
+        "name": "A MOORE & CO",
+        "odsCode": "FTH32",
+        "address": "25E LOWNDES STREET, LONDON",
+        "postcode": "SW1X 9JF",
+        "telephone": "020 72355887"
+      },
+      {
+        "name": "ANDREWS PHARMACY",
+        "odsCode": "FYL40",
+        "address": "149B SLOANE STREET, KENSINGTON AND CHELSEA, LONDON",
+        "postcode": "SW1X 9BZ",
+        "telephone": "02077 301018"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Holy Trinity CofE Primary School",
+        "urn": "100490",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Sedding Street, Sloane Square, London",
+        "postcode": "SW1X 9DE",
+        "numberOfPupils": 204,
+        "schoolCapacity": 210
+      },
+      {
+        "name": "Sussex House School",
+        "urn": "100514",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "68 Cadogan Square, Chelsea, London",
+        "postcode": "SW1X 0EA",
+        "numberOfPupils": 184,
+        "schoolCapacity": 183
+      },
+      {
+        "name": "Hill House School",
+        "urn": "100518",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Hans Place, Knightsbridge, London",
+        "postcode": "SW1X 0EP",
+        "numberOfPupils": 396,
+        "schoolCapacity": 990
+      },
+      {
+        "name": "More House School",
+        "urn": "100521",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "22-24 Pont Street, Chelsea, Knightsbridge",
+        "postcode": "SW1X 0AA",
+        "numberOfPupils": 79,
+        "schoolCapacity": 211
+      },
+      {
+        "name": "Knightsbridge School",
+        "urn": "100533",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "67 Pont Street, London",
+        "postcode": "SW1X 0BD",
+        "numberOfPupils": 295,
+        "schoolCapacity": 600
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 1792,
+        "violentCrimes": 387,
+        "propertyCrimes": 1010
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 1736,
+        "violentCrimes": 361,
+        "propertyCrimes": 959
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 1582,
+        "violentCrimes": 379,
+        "propertyCrimes": 870
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 1633,
+        "violentCrimes": 376,
+        "propertyCrimes": 903
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 1560,
+        "violentCrimes": 343,
+        "propertyCrimes": 915
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 1744,
+        "violentCrimes": 405,
+        "propertyCrimes": 1007
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 1426,
+        "violentCrimes": 354,
+        "propertyCrimes": 771
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 1309,
+        "violentCrimes": 297,
+        "propertyCrimes": 705
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 1321,
+        "violentCrimes": 284,
+        "propertyCrimes": 750
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 1388,
+        "violentCrimes": 295,
+        "propertyCrimes": 682
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 1375,
+        "violentCrimes": 355,
+        "propertyCrimes": 681
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 1359,
+        "violentCrimes": 363,
+        "propertyCrimes": 688
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 3507,
+      "bicycle-theft": 213,
+      "burglary": 555,
+      "criminal-damage-arson": 541,
+      "drugs": 471,
+      "other-theft": 2704,
+      "possession-of-weapons": 88,
+      "public-order": 869,
+      "robbery": 559,
+      "shoplifting": 1797,
+      "theft-from-the-person": 2957,
+      "vehicle-crime": 1174,
+      "violent-crime": 2683,
+      "other-crime": 107
+    },
+    "totalLast12Months": 18225
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "3, CLABON MEWS",
+        "postcode": "SW1X 0EG",
+        "price": 3600000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "40, BELGRAVE MEWS NORTH",
+        "postcode": "SW1X 8RS",
+        "price": 2500000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "142, PAVILION ROAD",
+        "postcode": "SW1X 0AY",
+        "price": 3750000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13, FLAT 5, LENNOX GARDENS",
+        "postcode": "SW1X 0DB",
+        "price": 1445000,
+        "dateOfTransfer": "2026-05-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, LITTLE CHESTER STREET",
+        "postcode": "SW1X 7AL",
+        "price": 2600000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "55, CADOGAN PLACE",
+        "postcode": "SW1X 9RT",
+        "price": 35500000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "36, OLD BARRACK YARD",
+        "postcode": "SW1X 7NP",
+        "price": 2019500,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, WILTON PLACE",
+        "postcode": "SW1X 8RL",
+        "price": 8750000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, CADOGAN PLACE",
+        "postcode": "SW1X 9SA",
+        "price": 12000000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 7, LENNOX GARDENS",
+        "postcode": "SW1X 0DG",
+        "price": 995000,
+        "dateOfTransfer": "2026-03-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, HEADFORT PLACE",
+        "postcode": "SW1X 7RY",
+        "price": 650000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "DENBIGH HOUSE, 8 - 13, FLAT 23, HANS PLACE",
+        "postcode": "SW1X 0EX",
+        "price": 99999,
+        "dateOfTransfer": "2026-02-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "12, HERBERT CRESCENT",
+        "postcode": "SW1X 0HB",
+        "price": 9400000,
+        "dateOfTransfer": "2026-02-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PARK MANSIONS, 82, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7QU",
+        "price": 1550000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, BELGRAVE SQUARE",
+        "postcode": "SW1X 8QB",
+        "price": 35000000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "CHALFONT HOUSE, 19 - 21, FLAT 29, CHESHAM STREET",
+        "postcode": "SW1X 8NG",
+        "price": 2027692,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, FLAT E, PONT STREET",
+        "postcode": "SW1X 0BH",
+        "price": 900000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 9, WILLIAM STREET",
+        "postcode": "SW1X 9HL",
+        "price": 1500000,
+        "dateOfTransfer": "2026-01-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, FLAT 1, LENNOX GARDENS",
+        "postcode": "SW1X 0DF",
+        "price": 3650000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, WILTON CRESCENT",
+        "postcode": "SW1X 8RX",
+        "price": 13880000,
+        "dateOfTransfer": "2026-01-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, CHAPEL STREET",
+        "postcode": "SW1X 7BY",
+        "price": 5600000,
+        "dateOfTransfer": "2025-12-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, HEADFORT PLACE",
+        "postcode": "SW1X 7DE",
+        "price": 3340000,
+        "dateOfTransfer": "2025-12-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ONE HYDE PARK, 100, APARTMENT C.05.1, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7LJ",
+        "price": 34000000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47, ALL THAT FRONT BASEMENT FLAT A, LENNOX GARDENS",
+        "postcode": "SW1X 0DF",
+        "price": 890000,
+        "dateOfTransfer": "2025-12-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, FLAT 1, LENNOX GARDENS",
+        "postcode": "SW1X 0DB",
+        "price": 2150000,
+        "dateOfTransfer": "2025-12-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, KINNERTON PLACE NORTH",
+        "postcode": "SW1X 8EJ",
+        "price": 1465000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, BASEMENT FLAT, LENNOX GARDENS",
+        "postcode": "SW1X 0DG",
+        "price": 450000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, BELGRAVE MEWS SOUTH",
+        "postcode": "SW1X 8BT",
+        "price": 6000000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 6, WILLIAM STREET",
+        "postcode": "SW1X 9HL",
+        "price": 23250000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, FLAT 4, CHESHAM PLACE",
+        "postcode": "SW1X 8HG",
+        "price": 300000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WILBRAHAM MANSIONS, 10, FLAT 12, WILBRAHAM PLACE",
+        "postcode": "SW1X 9AA",
+        "price": 4200000,
+        "dateOfTransfer": "2025-11-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, SHAFTO MEWS",
+        "postcode": "SW1X 0JT",
+        "price": 3350000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "50, FLAT 2, PONT STREET",
+        "postcode": "SW1X 0AE",
+        "price": 1250000,
+        "dateOfTransfer": "2025-11-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "74, FLAT 4, CADOGAN SQUARE",
+        "postcode": "SW1X 0EA",
+        "price": 1392000,
+        "dateOfTransfer": "2025-11-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2A, LYALL MEWS",
+        "postcode": "SW1X 8DJ",
+        "price": 3385000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, FLAT 1, LENNOX GARDENS",
+        "postcode": "SW1X 0DE",
+        "price": 1350000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FLAT H, CHESHAM PLACE",
+        "postcode": "SW1X 8HN",
+        "price": 2400000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, SECOND FLOOR FLAT, CADOGAN SQUARE",
+        "postcode": "SW1X 0JU",
+        "price": 3046000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, CADOGAN SQUARE",
+        "postcode": "SW1X 0JP",
+        "price": 50000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "133, FLAT 3, PAVILION ROAD",
+        "postcode": "SW1X 0BJ",
+        "price": 790000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, FLAT 3, CADOGAN SQUARE",
+        "postcode": "SW1X 0HT",
+        "price": 1630000,
+        "dateOfTransfer": "2025-10-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, WILBRAHAM PLACE",
+        "postcode": "SW1X 9AE",
+        "price": 165000,
+        "dateOfTransfer": "2025-10-13",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "70 - 72, FLAT 12, CADOGAN SQUARE",
+        "postcode": "SW1X 0EA",
+        "price": 3300000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76, PAVILION ROAD",
+        "postcode": "SW1X 0ES",
+        "price": 600000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, KINNERTON STREET",
+        "postcode": "SW1X 8ES",
+        "price": 2175000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 9, WILLIAM STREET",
+        "postcode": "SW1X 9HL",
+        "price": 2550000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BELGRAVIA HOUSE, FLAT 22, HALKIN PLACE",
+        "postcode": "SW1X 8JF",
+        "price": 2327500,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LOWNDES LODGE, 13 - 16, FLAT 26, CADOGAN PLACE",
+        "postcode": "SW1X 9RZ",
+        "price": 4000000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "90, EATON PLACE",
+        "postcode": "SW1X 8LW",
+        "price": 45000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "CADOGAN COURT GARDENS, 1, FLAT 2, D'OYLEY STREET",
+        "postcode": "SW1X 9AQ",
+        "price": 1335500,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, FLAT G, HANS CRESCENT",
+        "postcode": "SW1X 0LL",
+        "price": 950000,
+        "dateOfTransfer": "2025-09-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, FLAT 1, PONT STREET",
+        "postcode": "SW1X 0BB",
+        "price": 850000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, FLAT 1, PONT STREET",
+        "postcode": "SW1X 0BB",
+        "price": 850000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "69, FLAT 3, EATON PLACE",
+        "postcode": "SW1X 8DF",
+        "price": 6650000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47, KINNERTON STREET",
+        "postcode": "SW1X 8ED",
+        "price": 2000000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, THIRD FLOOR FLAT, CADOGAN SQUARE",
+        "postcode": "SW1X 0EA",
+        "price": 2445000,
+        "dateOfTransfer": "2025-09-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, FLAT 8, WILBRAHAM PLACE",
+        "postcode": "SW1X 9AE",
+        "price": 790000,
+        "dateOfTransfer": "2025-09-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FLAT 4, CADOGAN SQUARE",
+        "postcode": "SW1X 0HT",
+        "price": 2800000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79, FLAT 2, EATON PLACE",
+        "postcode": "SW1X 8DR",
+        "price": 4960000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16 - 18, FLAT J, LENNOX GARDENS",
+        "postcode": "SW1X 0DG",
+        "price": 1244634,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MEZZANINE FLOOR FLAT, 13, UPPER BELGRAVE STREET",
+        "postcode": "SW1X 8BA",
+        "price": 4600000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50, FLAT 4, LENNOX GARDENS",
+        "postcode": "SW1X 0DJ",
+        "price": 4500000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROYAL COURT HOUSE, 162, FLAT 5, SLOANE STREET",
+        "postcode": "SW1X 9BS",
+        "price": 750000,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26A, GROOM PLACE",
+        "postcode": "SW1X 7BA",
+        "price": 3850000,
+        "dateOfTransfer": "2025-08-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CADOGAN HOUSE, 93, FLAT 8, SLOANE STREET",
+        "postcode": "SW1X 9PD",
+        "price": 850300,
+        "dateOfTransfer": "2025-08-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, WILTON CRESCENT",
+        "postcode": "SW1X 8RN",
+        "price": 33000000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "21, OLD BARRACK YARD",
+        "postcode": "SW1X 7NP",
+        "price": 2900000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "86 - 88, FLAT 9, EATON PLACE",
+        "postcode": "SW1X 8LN",
+        "price": 1700000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "PARK MANSIONS, 65, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7QT",
+        "price": 1900000,
+        "dateOfTransfer": "2025-07-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WELLINGTON COURT, 116, FLAT 26, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7PL",
+        "price": 5700000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 24, GROSVENOR PLACE",
+        "postcode": "SW1X 7HJ",
+        "price": 36800000,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, APARTMENT 1, CHESHAM STREET",
+        "postcode": "SW1X 8NQ",
+        "price": 8300000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, FLAT 4, WILBRAHAM PLACE",
+        "postcode": "SW1X 9AE",
+        "price": 1230000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, FLAT F, HANS CRESCENT",
+        "postcode": "SW1X 0LL",
+        "price": 955000,
+        "dateOfTransfer": "2025-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, FLAT 5, HANS PLACE",
+        "postcode": "SW1X 0EP",
+        "price": 1000000,
+        "dateOfTransfer": "2025-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WELLINGTON COURT, 116, FLAT 14, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7PL",
+        "price": 3750000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, FLAT 4, LENNOX GARDENS",
+        "postcode": "SW1X 0DF",
+        "price": 3045000,
+        "dateOfTransfer": "2025-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, LYALL MEWS WEST",
+        "postcode": "SW1X 8DP",
+        "price": 1970000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3A, PONT STREET",
+        "postcode": "SW1X 9EJ",
+        "price": 6500000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "10, FLAT 4, LENNOX GARDENS",
+        "postcode": "SW1X 0DG",
+        "price": 3700000,
+        "dateOfTransfer": "2025-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50, FLAT 5, PONT STREET",
+        "postcode": "SW1X 0AE",
+        "price": 2250000,
+        "dateOfTransfer": "2025-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLUNIE HOUSE, 4 - 7, FLAT 8, HANS PLACE",
+        "postcode": "SW1X 0EY",
+        "price": 2285000,
+        "dateOfTransfer": "2025-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "69 - 73, CLABON MEWS",
+        "postcode": "SW1X 0EQ",
+        "price": 2945750,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "67, FLAT 3, CADOGAN SQUARE",
+        "postcode": "SW1X 0DY",
+        "price": 1612000,
+        "dateOfTransfer": "2025-06-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, FOURTH AND FIFTH FLOOR FLAT 14, CADOGAN SQUARE",
+        "postcode": "SW1X 0HU",
+        "price": 4500000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "GREVILLE HOUSE, FLAT 22, KINNERTON STREET",
+        "postcode": "SW1X 8EY",
+        "price": 1525000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, FLAT 1, PONT STREET",
+        "postcode": "SW1X 0AD",
+        "price": 1120000,
+        "dateOfTransfer": "2025-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, FLAT 2, LENNOX GARDENS",
+        "postcode": "SW1X 0DE",
+        "price": 1091900,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CARLTON LODGE, 37 - 39, FLAT 7, LOWNDES STREET",
+        "postcode": "SW1X 9JB",
+        "price": 1900000,
+        "dateOfTransfer": "2025-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, KINNERTON STREET",
+        "postcode": "SW1X 8EA",
+        "price": 3100000,
+        "dateOfTransfer": "2025-05-20",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "SLOANE TERRACE MANSIONS, FLAT 3, SLOANE TERRACE",
+        "postcode": "SW1X 9DG",
+        "price": 4050000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, ECCLESTON MEWS",
+        "postcode": "SW1X 8AG",
+        "price": 2575000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "49, WILLIAM MEWS",
+        "postcode": "SW1X 9HQ",
+        "price": 5250000,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT 2, LOWNDES SQUARE",
+        "postcode": "SW1X 9HR",
+        "price": 2735000,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, CHESTER STREET",
+        "postcode": "SW1X 7BL",
+        "price": 13000000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, FLAT 3, PONT STREET",
+        "postcode": "SW1X 0BB",
+        "price": 250000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, FLAT 1, CADOGAN PLACE",
+        "postcode": "SW1X 9RX",
+        "price": 5250000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, FLAT 5, LENNOX GARDENS",
+        "postcode": "SW1X 0DH",
+        "price": 1060000,
+        "dateOfTransfer": "2025-04-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "117, GARAGE 1, ECCLESTON MEWS",
+        "postcode": "SW1X 8AQ",
+        "price": 250000,
+        "dateOfTransfer": "2025-04-15",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ALBERT GATE COURT, 124, FLAT 11, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7PE",
+        "price": 5035000,
+        "dateOfTransfer": "2025-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, FLAT 5, CADOGAN SQUARE",
+        "postcode": "SW1X 0DY",
+        "price": 1700000,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, FLAT 1, CADOGAN SQUARE",
+        "postcode": "SW1X 0JP",
+        "price": 1021500,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, CHESTER STREET",
+        "postcode": "SW1X 7BB",
+        "price": 2750000,
+        "dateOfTransfer": "2025-04-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "OAKLEY HOUSE, 103, FLAT 19, SLOANE STREET",
+        "postcode": "SW1X 9PP",
+        "price": 250000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHALFONT HOUSE, 19 - 21, FLAT 26, CHESHAM STREET",
+        "postcode": "SW1X 8NG",
+        "price": 2603616,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LITTLE GROSVENOR COURT, FLAT 6, PAVILION ROAD",
+        "postcode": "SW1X 0BN",
+        "price": 710000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, FLAT 3, LENNOX GARDENS",
+        "postcode": "SW1X 0DH",
+        "price": 1575000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, FLAT 5, PONT STREET",
+        "postcode": "SW1X 0BB",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DENBIGH HOUSE, GARAGE 8, HANS PLACE",
+        "postcode": "SW1X 0EX",
+        "price": 105000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "65, FLAT B, PONT STREET",
+        "postcode": "SW1X 0BD",
+        "price": 1950000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "133, FLAT 5, PAVILION ROAD",
+        "postcode": "SW1X 0BJ",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, CHESHAM STREET",
+        "postcode": "SW1X 8ND",
+        "price": 90000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ONE HYDE PARK, 100, UNIT B, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7LJ",
+        "price": 120000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "6, KINNERTON YARD",
+        "postcode": "SW1X 8EB",
+        "price": 1450000,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, MOTCOMB STREET",
+        "postcode": "SW1X 8JU",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "41, LOWNDES STREET",
+        "postcode": "SW1X 9HX",
+        "price": 5250000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "41, LOWNDES STREET",
+        "postcode": "SW1X 9HX",
+        "price": 5250000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "41, LOWNDES STREET",
+        "postcode": "SW1X 9HX",
+        "price": 5250000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "MARLAND HOUSE, 28, FLAT 10, SLOANE STREET",
+        "postcode": "SW1X 9NE",
+        "price": 2150000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "81, FLAT 5, CADOGAN PLACE",
+        "postcode": "SW1X 9RP",
+        "price": 7035000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "55, CADOGAN LANE",
+        "postcode": "SW1X 9DT",
+        "price": 3725000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, LOWNDES CLOSE",
+        "postcode": "SW1X 8BZ",
+        "price": 420000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, CADOGAN LANE",
+        "postcode": "SW1X 9DP",
+        "price": 6700000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ROYAL COURT HOUSE, 162, FLAT 34, SLOANE STREET",
+        "postcode": "SW1X 9BS",
+        "price": 3675000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13 - 15, FLAT 6, CHESHAM STREET",
+        "postcode": "SW1X 8ND",
+        "price": 2700000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "61, KINNERTON STREET",
+        "postcode": "SW1X 8ED",
+        "price": 3125000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, HALKIN MEWS",
+        "postcode": "SW1X 8JZ",
+        "price": 3000000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "52, FIRST FLOOR FLAT, EATON PLACE",
+        "postcode": "SW1X 8AL",
+        "price": 1950000,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, WILTON CRESCENT",
+        "postcode": "SW1X 8RN",
+        "price": 34000000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, GROUND FLOOR FLAT, PONT STREET",
+        "postcode": "SW1X 0AD",
+        "price": 1525000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50, FLAT 4, LENNOX GARDENS",
+        "postcode": "SW1X 0DJ",
+        "price": 2500000,
+        "dateOfTransfer": "2025-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76 - 82, FLAT 11, CADOGAN SQUARE",
+        "postcode": "SW1X 0EA",
+        "price": 2660000,
+        "dateOfTransfer": "2025-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, APARTMENT 8, MONTROSE PLACE",
+        "postcode": "SW1X 7DU",
+        "price": 10000000,
+        "dateOfTransfer": "2025-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, LITTLE CHESTER STREET",
+        "postcode": "SW1X 7AP",
+        "price": 4000000,
+        "dateOfTransfer": "2025-01-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, FLAT 8, LOWNDES SQUARE",
+        "postcode": "SW1X 9HE",
+        "price": 1950000,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, EATON PLACE",
+        "postcode": "SW1X 8AF",
+        "price": 85000,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Other",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 4365389,
+    "medianPrice": 2306250
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Marsha De Cordova",
+        "party": "Labour",
+        "constituency": "Battersea",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://www.rbkc.gov.uk/planning/searches/default.aspx?adv=1"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Natural History Museum",
+        "category": "community-hub",
+        "address": "South Kensington",
+        "description": "One of the world's great natural history collections, housed in a landmark Victorian building."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "SW1X lies within Kensington and Chelsea. London's smallest borough by area, a Royal Borough and one of the most affluent in the country. South Kensington's \"Albertopolis\" is home to the Natural History Museum, Science Museum, and Victoria and Albert Museum.",
+    "keyFacts": [
+      "London's smallest borough by area, a Royal Borough and one of the most affluent in the country. South Kensington's \"Albertopolis\" is home to the Natural History Museum, Science Museum, and Victoria and Albert Museum."
+    ]
+  }
+}

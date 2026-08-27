@@ -1,0 +1,2188 @@
+{
+  "outcode": "SE21",
+  "slug": "se21",
+  "city": "London",
+  "borough": "Southwark",
+  "latitude": 51.43896636949156,
+  "longitude": -0.0887258101694915,
+  "wards": [
+    "Dulwich Village",
+    "Dulwich Wood",
+    "Gipsy Hill",
+    "St Martin's",
+    "West Dulwich"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "PAXTON GREEN GROUP PRACTICE",
+        "odsCode": "G85039",
+        "address": "PAXTON GREEN HEALTH CENTRE, 1 ALLEYN PARK, LONDON",
+        "postcode": "SE21 8AU",
+        "telephone": "020 86706878"
+      },
+      {
+        "name": "THE OLD DAIRY HEALTH CENTRE",
+        "odsCode": "G85706",
+        "address": "19B CROXTED ROAD, WEST DULWICH, LONDON",
+        "postcode": "SE21 8SZ",
+        "telephone": "020 87618070"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "DENTAL SURGERY",
+        "odsCode": "V00534",
+        "address": "9 THURLOW PARK ROAD, LONDON",
+        "postcode": "SE21 8JB"
+      },
+      {
+        "name": "DULWICH ORTHODONTIC CENTRE",
+        "odsCode": "V00695",
+        "address": "82 PARK HALL ROAD, LONDON",
+        "postcode": "SE21 8BW"
+      },
+      {
+        "name": "THE ORTHODONTIC SUITE",
+        "odsCode": "V142248",
+        "address": "13 CROXTED ROAD, LONDON",
+        "postcode": "SE21 8SZ"
+      },
+      {
+        "name": "DENTAL SURGERY",
+        "odsCode": "V216481",
+        "address": "107 ROSENDALE ROAD, LONDON",
+        "postcode": "SE21 8EZ"
+      },
+      {
+        "name": "WEST DULWICH DENTAL",
+        "odsCode": "V86529",
+        "address": "102 THURLOW PARK ROAD, LONDON",
+        "postcode": "SE21 8HY"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "DULWICH PHARMACY",
+        "odsCode": "FCH16",
+        "address": "19 CROXTED ROAD, WEST DULWICH, LONDON",
+        "postcode": "SE21 8SZ",
+        "telephone": "02086 702119"
+      },
+      {
+        "name": "RUMSEY CHEMISTS",
+        "odsCode": "FML78",
+        "address": "47 DULWICH VILLAGE, LONDON",
+        "postcode": "SE21 7BN",
+        "telephone": "020 86932430"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Turney Primary and Secondary Special School",
+        "urn": "100643",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Turney Road, London",
+        "postcode": "SE21 8LX",
+        "numberOfPupils": 161,
+        "schoolCapacity": 165
+      },
+      {
+        "name": "Alleyn's Oakfield",
+        "urn": "100644",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "125-128 Thurlow Park Road, London",
+        "postcode": "SE21 8HP",
+        "numberOfPupils": 215,
+        "schoolCapacity": 500
+      },
+      {
+        "name": "Rosemead Preparatory School",
+        "urn": "100645",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "70 Thurlow Park Road, West Dulwich, London",
+        "postcode": "SE21 8HZ",
+        "numberOfPupils": 263,
+        "schoolCapacity": 400
+      },
+      {
+        "name": "Dulwich Wood Nursery School",
+        "urn": "100769",
+        "phaseOfEducation": "Nursery",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Lyall Avenue, London",
+        "postcode": "SE21 8QS",
+        "numberOfPupils": 81,
+        "schoolCapacity": null
+      },
+      {
+        "name": "Dulwich Wood Primary School",
+        "urn": "100801",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Good",
+        "ofstedLastInspection": null,
+        "address": "Bowen Drive, Kingswood Estate, London",
+        "postcode": "SE21 8NS",
+        "numberOfPupils": 417,
+        "schoolCapacity": 420
+      },
+      {
+        "name": "Dulwich Village Church of England Infants' School",
+        "urn": "100823",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": null,
+        "address": "Dulwich Village, London",
+        "postcode": "SE21 7BU",
+        "numberOfPupils": 265,
+        "schoolCapacity": 270
+      },
+      {
+        "name": "Dulwich College",
+        "urn": "100861",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Dulwich Common, Dulwich, London",
+        "postcode": "SE21 7LD",
+        "numberOfPupils": 1923,
+        "schoolCapacity": 1950
+      },
+      {
+        "name": "Dulwich Prep & Senior",
+        "urn": "100862",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "38-42 ALLEYN PARK, LONDON",
+        "postcode": "SE21 7AA",
+        "numberOfPupils": 808,
+        "schoolCapacity": 999
+      },
+      {
+        "name": "Kingsdale Foundation School",
+        "urn": "136309",
+        "phaseOfEducation": "Secondary",
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": null,
+        "address": "Alleyn Park, Dulwich, London",
+        "postcode": "SE21 8SQ",
+        "numberOfPupils": 2550,
+        "schoolCapacity": 2455
+      },
+      {
+        "name": "Dulwich Hamlet Junior School",
+        "urn": "136665",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": null,
+        "address": "Dulwich Village, London",
+        "postcode": "SE21 7AL",
+        "numberOfPupils": 374,
+        "schoolCapacity": 360
+      },
+      {
+        "name": "Rosendale Primary School",
+        "urn": "144308",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": null,
+        "address": "Rosendale Road, West Dulwich, London",
+        "postcode": "SE21 8LR",
+        "numberOfPupils": 679,
+        "schoolCapacity": 630
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 409,
+        "violentCrimes": 152,
+        "propertyCrimes": 166
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 382,
+        "violentCrimes": 122,
+        "propertyCrimes": 174
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 354,
+        "violentCrimes": 111,
+        "propertyCrimes": 150
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 381,
+        "violentCrimes": 120,
+        "propertyCrimes": 161
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 410,
+        "violentCrimes": 137,
+        "propertyCrimes": 183
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 373,
+        "violentCrimes": 100,
+        "propertyCrimes": 170
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 339,
+        "violentCrimes": 106,
+        "propertyCrimes": 137
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 314,
+        "violentCrimes": 107,
+        "propertyCrimes": 126
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 373,
+        "violentCrimes": 147,
+        "propertyCrimes": 149
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 439,
+        "violentCrimes": 135,
+        "propertyCrimes": 217
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 421,
+        "violentCrimes": 111,
+        "propertyCrimes": 185
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 430,
+        "violentCrimes": 149,
+        "propertyCrimes": 188
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 935,
+      "bicycle-theft": 79,
+      "burglary": 255,
+      "criminal-damage-arson": 184,
+      "drugs": 144,
+      "other-theft": 404,
+      "possession-of-weapons": 37,
+      "public-order": 228,
+      "robbery": 141,
+      "shoplifting": 443,
+      "theft-from-the-person": 144,
+      "vehicle-crime": 497,
+      "violent-crime": 1091,
+      "other-crime": 43
+    },
+    "totalLast12Months": 4625
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "35, DALKEITH ROAD",
+        "postcode": "SE21 8LT",
+        "price": 730000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41A, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DY",
+        "price": 535000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "154, CLIVE ROAD",
+        "postcode": "SE21 8BP",
+        "price": 535000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, CLIVE ROAD",
+        "postcode": "SE21 8DA",
+        "price": 650000,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "98C, THURLOW PARK ROAD",
+        "postcode": "SE21 8HY",
+        "price": 392500,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "34, PEABODY HILL",
+        "postcode": "SE21 8LD",
+        "price": 466000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, CHALFORD ROAD",
+        "postcode": "SE21 8BX",
+        "price": 750000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30A, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8EE",
+        "price": 327500,
+        "dateOfTransfer": "2026-04-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MARKHAM HOUSE, FLAT 25, KINGSWOOD ESTATE",
+        "postcode": "SE21 8QQ",
+        "price": 345000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, BOXALL ROAD",
+        "postcode": "SE21 7JS",
+        "price": 600000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "220, CLIVE ROAD",
+        "postcode": "SE21 8BS",
+        "price": 1340000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16A, THURLOW HILL",
+        "postcode": "SE21 8JN",
+        "price": 480000,
+        "dateOfTransfer": "2026-04-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, SPENSER MEWS",
+        "postcode": "SE21 8SN",
+        "price": 1000000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 2, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8EA",
+        "price": 330000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "182, CLIVE ROAD",
+        "postcode": "SE21 8BS",
+        "price": 1100000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "66, PEABODY HILL",
+        "postcode": "SE21 8LD",
+        "price": 370000,
+        "dateOfTransfer": "2026-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DUNLIN COURT, FLAT 11, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8RD",
+        "price": 280000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, WALKERSCROFT MEAD",
+        "postcode": "SE21 8LJ",
+        "price": 850000,
+        "dateOfTransfer": "2026-03-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "61B, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DY",
+        "price": 850000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, THURLOW PARK ROAD",
+        "postcode": "SE21 8JP",
+        "price": 1575000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, FLAT 1, ST FAITHS ROAD",
+        "postcode": "SE21 8JD",
+        "price": 569000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47, FLAT 3, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DY",
+        "price": 367000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "175, CROXTED ROAD",
+        "postcode": "SE21 8NL",
+        "price": 730000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79D, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8EZ",
+        "price": 350000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35B, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8ED",
+        "price": 372500,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, WOODHALL DRIVE",
+        "postcode": "SE21 7HJ",
+        "price": 1850000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, SYDCOTE, WEST DULWICH",
+        "postcode": "SE21 8LH",
+        "price": 890000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "99, APARTMENT 5, THURLOW PARK ROAD",
+        "postcode": "SE21 8JL",
+        "price": 182000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT 1, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8EE",
+        "price": 560000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "82, COLLEGE ROAD",
+        "postcode": "SE21 7LY",
+        "price": 610000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, CEDAR CLOSE",
+        "postcode": "SE21 8HX",
+        "price": 133600,
+        "dateOfTransfer": "2026-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76B, PARK HALL ROAD",
+        "postcode": "SE21 8BW",
+        "price": 565000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, FLAT 5, THURLOW PARK ROAD",
+        "postcode": "SE21 8HZ",
+        "price": 425000,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, VILLAGE WAY",
+        "postcode": "SE21 7AP",
+        "price": 1260000,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "DELACOURT MANSIONS, 31, FLAT 1, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DU",
+        "price": 360000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, TOLLGATE DRIVE",
+        "postcode": "SE21 7LS",
+        "price": 2825000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, SOUTH CROXTED ROAD",
+        "postcode": "SE21 8AZ",
+        "price": 1230000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "48, WALKERSCROFT MEAD",
+        "postcode": "SE21 8LJ",
+        "price": 780000,
+        "dateOfTransfer": "2026-01-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "122A, CLIVE ROAD",
+        "postcode": "SE21 8BP",
+        "price": 525000,
+        "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68H, THURLOW PARK ROAD",
+        "postcode": "SE21 8HZ",
+        "price": 315000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, ALLEYN CRESCENT",
+        "postcode": "SE21 8BN",
+        "price": 935000,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "74, THURLOW PARK ROAD",
+        "postcode": "SE21 8HY",
+        "price": 1000000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "74, THURLOW PARK ROAD",
+        "postcode": "SE21 8HY",
+        "price": 1085000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, DALMORE ROAD",
+        "postcode": "SE21 8HD",
+        "price": 2615440,
+        "dateOfTransfer": "2026-01-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, DALMORE ROAD",
+        "postcode": "SE21 8HB",
+        "price": 1515200,
+        "dateOfTransfer": "2026-01-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DP",
+        "price": 880000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, DESENFANS ROAD",
+        "postcode": "SE21 7DN",
+        "price": 1465386,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "89B, COURT LANE",
+        "postcode": "SE21 7EF",
+        "price": 1965000,
+        "dateOfTransfer": "2026-01-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, AYSGARTH ROAD",
+        "postcode": "SE21 7JR",
+        "price": 1390000,
+        "dateOfTransfer": "2025-12-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "93, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8EZ",
+        "price": 275000,
+        "dateOfTransfer": "2025-12-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, AYSGARTH ROAD",
+        "postcode": "SE21 7JR",
+        "price": 1020000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "243, CROXTED ROAD",
+        "postcode": "SE21 8NL",
+        "price": 675000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, CARSON ROAD",
+        "postcode": "SE21 8HU",
+        "price": 2675000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "171, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8LW",
+        "price": 1400000,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, BURROW WALK",
+        "postcode": "SE21 8LY",
+        "price": 625000,
+        "dateOfTransfer": "2025-12-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "153, COURT LANE",
+        "postcode": "SE21 7EE",
+        "price": 1650000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "43, GILKES CRESCENT",
+        "postcode": "SE21 7BP",
+        "price": 1080000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "29, WOODHALL DRIVE",
+        "postcode": "SE21 7HJ",
+        "price": 2150000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "197, CROXTED ROAD",
+        "postcode": "SE21 8NL",
+        "price": 700000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "105, SOUTH CROXTED ROAD",
+        "postcode": "SE21 8AX",
+        "price": 1325000,
+        "dateOfTransfer": "2025-12-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "72, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 2298500,
+        "dateOfTransfer": "2025-12-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "34, GROUND FLOOR FLAT C, PARK HALL ROAD",
+        "postcode": "SE21 8DW",
+        "price": 370000,
+        "dateOfTransfer": "2025-12-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25B, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8ED",
+        "price": 425000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, COURT LANE",
+        "postcode": "SE21 7DH",
+        "price": 2100000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "156, CROXTED ROAD",
+        "postcode": "SE21 8NW",
+        "price": 1550000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "94, PYMERS MEAD",
+        "postcode": "SE21 8NJ",
+        "price": 850000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "45, BIRKBECK HILL",
+        "postcode": "SE21 8JS",
+        "price": 792500,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "46, SOUTH CROXTED ROAD",
+        "postcode": "SE21 8BD",
+        "price": 1380000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "MELLOR HOUSE, FLAT 13, KINGSWOOD ESTATE",
+        "postcode": "SE21 8PU",
+        "price": 330000,
+        "dateOfTransfer": "2025-11-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8ED",
+        "price": 310000,
+        "dateOfTransfer": "2025-11-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "199, CLIVE ROAD",
+        "postcode": "SE21 8DG",
+        "price": 1850000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "84, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 2350000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "193A, SOUTH CROXTED ROAD",
+        "postcode": "SE21 8AY",
+        "price": 599950,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "74, THURLOW HILL",
+        "postcode": "SE21 8JN",
+        "price": 580000,
+        "dateOfTransfer": "2025-11-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "52, FIRST FLOOR FLAT, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8EE",
+        "price": 430000,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "161, COURT LANE",
+        "postcode": "SE21 7EE",
+        "price": 1650000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "121, GROUND FLOOR FLAT, SOUTH CROXTED ROAD",
+        "postcode": "SE21 8AX",
+        "price": 880000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31A, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8ED",
+        "price": 455000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "48, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 405000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BERESFORD HOUSE, FLAT 16, KINGSWOOD ESTATE",
+        "postcode": "SE21 8NX",
+        "price": 265000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "136, CROXTED ROAD",
+        "postcode": "SE21 8NR",
+        "price": 1370000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, FLAT 2, THURLOW PARK ROAD",
+        "postcode": "SE21 8JB",
+        "price": 442000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, WALKERSCROFT MEAD",
+        "postcode": "SE21 8LJ",
+        "price": 770000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "GAINSBOROUGH COURT, FLAT 2, COLLEGE ROAD",
+        "postcode": "SE21 7LT",
+        "price": 423000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WYKEHAM MANSIONS, 18 - 20, FLAT 4, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DX",
+        "price": 392500,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, LINGS COPPICE",
+        "postcode": "SE21 8SY",
+        "price": 879950,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "49, FLAT A, MARTELL ROAD",
+        "postcode": "SE21 8ED",
+        "price": 576250,
+        "dateOfTransfer": "2025-10-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "56, CLIVE ROAD",
+        "postcode": "SE21 8BY",
+        "price": 975000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "82, THURLOW HILL",
+        "postcode": "SE21 8JN",
+        "price": 600000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 480000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WYKEHAM MANSIONS, 18 - 20, FLAT 6, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DX",
+        "price": 380000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, FLAT A, TRITTON ROAD",
+        "postcode": "SE21 8DE",
+        "price": 586750,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLEVEDON COURT, FLAT 9, CLIVE ROAD",
+        "postcode": "SE21 8BT",
+        "price": 230000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "187, CLIVE ROAD",
+        "postcode": "SE21 8DG",
+        "price": 1300000,
+        "dateOfTransfer": "2025-10-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "91, CALTON AVENUE",
+        "postcode": "SE21 7DF",
+        "price": 3500000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, WALKERSCROFT MEAD",
+        "postcode": "SE21 8LJ",
+        "price": 890000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "108, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8LF",
+        "price": 1840000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, AYSGARTH ROAD",
+        "postcode": "SE21 7JR",
+        "price": 1250000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "160, COURT LANE",
+        "postcode": "SE21 7EB",
+        "price": 2465000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "57, PYMERS MEAD",
+        "postcode": "SE21 8NH",
+        "price": 805000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CLEVEDON COURT, FLAT 10, CLIVE ROAD",
+        "postcode": "SE21 8BT",
+        "price": 340000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, FIRST FLOOR FLAT B, PARK HALL ROAD",
+        "postcode": "SE21 8DW",
+        "price": 308000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62, DULWICH VILLAGE",
+        "postcode": "SE21 7AJ",
+        "price": 3390000,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "64, CEDAR CLOSE",
+        "postcode": "SE21 8JF",
+        "price": 205000,
+        "dateOfTransfer": "2025-09-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "57, PARK HALL ROAD",
+        "postcode": "SE21 8EX",
+        "price": 1915000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "182, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8LQ",
+        "price": 691000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, SPENSER MEWS",
+        "postcode": "SE21 8SN",
+        "price": 965000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11, FLAT A, ST FAITHS ROAD",
+        "postcode": "SE21 8JD",
+        "price": 714000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27C, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8ED",
+        "price": 405000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "125, FLAT 1, CLIVE ROAD",
+        "postcode": "SE21 8DF",
+        "price": 448300,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48, FLAT 4, THURLOW PARK ROAD",
+        "postcode": "SE21 8HZ",
+        "price": 220000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "STONEHILLS COURT, FLAT 37, COLLEGE ROAD",
+        "postcode": "SE21 7LZ",
+        "price": 625000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, CEDAR CLOSE",
+        "postcode": "SE21 8HX",
+        "price": 145000,
+        "dateOfTransfer": "2025-09-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GAINSBOROUGH COURT, FLAT 9, COLLEGE ROAD",
+        "postcode": "SE21 7LT",
+        "price": 485000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, CLIVE ROAD",
+        "postcode": "SE21 8DA",
+        "price": 670000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, FLAT 3, CARSON ROAD",
+        "postcode": "SE21 8HT",
+        "price": 768000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6A, BIRKBECK HILL",
+        "postcode": "SE21 8JS",
+        "price": 490000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, CLIVE ROAD",
+        "postcode": "SE21 8DA",
+        "price": 1120000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "119, TURNEY ROAD",
+        "postcode": "SE21 7JB",
+        "price": 1850000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "86, ALLEYN PARK",
+        "postcode": "SE21 8SL",
+        "price": 800000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "82A, THURLOW PARK ROAD",
+        "postcode": "SE21 8HY",
+        "price": 390000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "56, PARK HALL ROAD",
+        "postcode": "SE21 8BW",
+        "price": 2120000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "134, CROXTED ROAD",
+        "postcode": "SE21 8NR",
+        "price": 2000000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, DALKEITH ROAD",
+        "postcode": "SE21 8LT",
+        "price": 745000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, DRUCE ROAD",
+        "postcode": "SE21 7DW",
+        "price": 1827500,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "145, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8HE",
+        "price": 2686750,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ATWOOD HOUSE, FLAT 1, KINGSWOOD ESTATE",
+        "postcode": "SE21 8NT",
+        "price": 252000,
+        "dateOfTransfer": "2025-08-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, CLIVE ROAD",
+        "postcode": "SE21 8DA",
+        "price": 1164660,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, FLAT 4, ST FAITHS ROAD",
+        "postcode": "SE21 8JD",
+        "price": 480000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, WOODYARD LANE",
+        "postcode": "SE21 7BH",
+        "price": 2775000,
+        "dateOfTransfer": "2025-08-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "64, TURNEY ROAD",
+        "postcode": "SE21 8LU",
+        "price": 650000,
+        "dateOfTransfer": "2025-08-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NORMANDIE COURT, 56 - 62, FLAT 10, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 380000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36A, THURLOW PARK ROAD",
+        "postcode": "SE21 8JA",
+        "price": 512500,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "74, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 2700000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "NORMANDIE COURT, 56 - 62, FLAT 9, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 470000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, GILKES CRESCENT",
+        "postcode": "SE21 7BS",
+        "price": 3396500,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "126 - 128, THURLOW PARK ROAD",
+        "postcode": "SE21 8HP",
+        "price": 816995,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, FLAT 1, THURLOW PARK ROAD",
+        "postcode": "SE21 8JB",
+        "price": 590000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, EASTMEARN ROAD, WEST DULWICH",
+        "postcode": "SE21 8HA",
+        "price": 1750000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, AYSGARTH ROAD",
+        "postcode": "SE21 7JR",
+        "price": 950000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "131, COURT LANE",
+        "postcode": "SE21 7EE",
+        "price": 1550000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "77, TURNEY ROAD",
+        "postcode": "SE21 7JB",
+        "price": 2255000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "114, BOWEN DRIVE",
+        "postcode": "SE21 8PG",
+        "price": 247000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, BOWEN DRIVE",
+        "postcode": "SE21 8NS",
+        "price": 552000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "79A, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8EZ",
+        "price": 765000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, BIRKBECK HILL",
+        "postcode": "SE21 8JS",
+        "price": 605000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2B, ILDERSLY GROVE",
+        "postcode": "SE21 8EU",
+        "price": 1505000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, AYSGARTH ROAD",
+        "postcode": "SE21 7JR",
+        "price": 1100000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "166, CLIVE ROAD",
+        "postcode": "SE21 8BP",
+        "price": 618180,
+        "dateOfTransfer": "2025-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, CALTON AVENUE",
+        "postcode": "SE21 7DE",
+        "price": 1500000,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "142A, CROXTED ROAD",
+        "postcode": "SE21 8NR",
+        "price": 1325000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "231, CROXTED ROAD",
+        "postcode": "SE21 8NL",
+        "price": 693000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "82A, THURLOW PARK ROAD",
+        "postcode": "SE21 8HY",
+        "price": 275000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "113, SOUTH CROXTED ROAD",
+        "postcode": "SE21 8AX",
+        "price": 1425000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12C, ALLEYN ROAD",
+        "postcode": "SE21 8AL",
+        "price": 1965000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BUCHANAN HOUSE, FLAT 26, KINGSWOOD ESTATE",
+        "postcode": "SE21 8PF",
+        "price": 310000,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, COLLEGE ROAD",
+        "postcode": "SE21 7BG",
+        "price": 4000000,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "102, PYMERS MEAD",
+        "postcode": "SE21 8NJ",
+        "price": 900000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "183, CLIVE ROAD",
+        "postcode": "SE21 8DG",
+        "price": 1211080,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, VILLAGE WAY",
+        "postcode": "SE21 7AN",
+        "price": 724000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "144, CLIVE ROAD",
+        "postcode": "SE21 8BP",
+        "price": 3000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "3, FLAT 2, LEONORA TYSON MEWS",
+        "postcode": "SE21 8GA",
+        "price": 285000,
+        "dateOfTransfer": "2025-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "201, CROXTED ROAD",
+        "postcode": "SE21 8NL",
+        "price": 840000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WHITFIELD COURT, FLAT 12, ROUSE GARDENS",
+        "postcode": "SE21 8AG",
+        "price": 625000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, TURNEY ROAD",
+        "postcode": "SE21 8LU",
+        "price": 1165841,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13D, PARK HALL ROAD",
+        "postcode": "SE21 8EH",
+        "price": 357500,
+        "dateOfTransfer": "2025-06-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, BOXALL ROAD",
+        "postcode": "SE21 7JS",
+        "price": 950000,
+        "dateOfTransfer": "2025-06-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, DESENFANS ROAD",
+        "postcode": "SE21 7DN",
+        "price": 1350000,
+        "dateOfTransfer": "2025-06-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13F, THURLOW PARK ROAD",
+        "postcode": "SE21 8JB",
+        "price": 365000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WELLDON COURT, FLAT 4, CROXTED ROAD",
+        "postcode": "SE21 8RW",
+        "price": 300000,
+        "dateOfTransfer": "2025-05-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 3, THURLOW HILL",
+        "postcode": "SE21 8JW",
+        "price": 512000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, LITTLE BORNES",
+        "postcode": "SE21 8SD",
+        "price": 960750,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, FLAT A, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DP",
+        "price": 858000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "145, COURT LANE",
+        "postcode": "SE21 7EE",
+        "price": 1650000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CYPRESS TREE HOUSE, DULWICH COMMON",
+        "postcode": "SE21 7EU",
+        "price": 2500000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DP",
+        "price": 1500000,
+        "dateOfTransfer": "2025-04-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23A, THURLOW PARK ROAD",
+        "postcode": "SE21 8JP",
+        "price": 620000,
+        "dateOfTransfer": "2025-04-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, CEDAR CLOSE",
+        "postcode": "SE21 8HX",
+        "price": 155000,
+        "dateOfTransfer": "2025-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "85, GLAZEBROOK CLOSE",
+        "postcode": "SE21 8RR",
+        "price": 430000,
+        "dateOfTransfer": "2025-04-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33A, MARTELL ROAD, WEST DULWICH",
+        "postcode": "SE21 8ED",
+        "price": 439000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BULLFINCH COURT, FLAT 8, CROXTED ROAD",
+        "postcode": "SE21 8RL",
+        "price": 495000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, MORKYNS WALK",
+        "postcode": "SE21 8BG",
+        "price": 700000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, MORKYNS WALK",
+        "postcode": "SE21 8BG",
+        "price": 700000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SOUTHWELL COURT, 27 - 29, FLAT 8A, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DT",
+        "price": 330500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, PICKWICK ROAD",
+        "postcode": "SE21 7JN",
+        "price": 1430000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "NORMANDIE COURT, 56 - 62, FLAT 15, CROXTED ROAD",
+        "postcode": "SE21 8NP",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "164, CLIVE ROAD",
+        "postcode": "SE21 8BP",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, POND MEAD",
+        "postcode": "SE21 7AR",
+        "price": 685510,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "142, FLAT 1, CROXTED ROAD",
+        "postcode": "SE21 8NR",
+        "price": 902500,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79, PYMERS MEAD",
+        "postcode": "SE21 8NJ",
+        "price": 841000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, FLAT 1, THURLOW PARK ROAD",
+        "postcode": "SE21 8HZ",
+        "price": 465000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, PYMERS MEAD",
+        "postcode": "SE21 8NH",
+        "price": 880000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HOLBERRY HOUSE, FLAT 17, KINGSWOOD ESTATE",
+        "postcode": "SE21 8QH",
+        "price": 325000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "98A, THURLOW PARK ROAD",
+        "postcode": "SE21 8HY",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11B, ST FAITHS ROAD",
+        "postcode": "SE21 8JD",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, FIRST FLOOR FLAT, PARK HALL ROAD",
+        "postcode": "SE21 8DW",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "74, GLAZEBROOK CLOSE",
+        "postcode": "SE21 8RR",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51, FLAT 3, THURLOW PARK ROAD",
+        "postcode": "SE21 8JP",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERON COURT, FLAT 17, ELMWORTH GROVE",
+        "postcode": "SE21 8RQ",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, APARTMENT B, THURLOW PARK ROAD",
+        "postcode": "SE21 8JA",
+        "price": 552175,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, VILLAGE WAY",
+        "postcode": "SE21 7AN",
+        "price": 2628818,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "DUNNOCK COURT, FLAT 3, ELMWORTH GROVE",
+        "postcode": "SE21 8RF",
+        "price": 362500,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "99, APARTMENT 2, THURLOW PARK ROAD",
+        "postcode": "SE21 8JL",
+        "price": 755000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, FIRST FLOOR FLAT, BIRKBECK PLACE",
+        "postcode": "SE21 8JU",
+        "price": 442500,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MARKHAM HOUSE, FLAT 14, KINGSWOOD ESTATE",
+        "postcode": "SE21 8QQ",
+        "price": 260000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, KENNOLDES",
+        "postcode": "SE21 8SS",
+        "price": 515000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79B, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8EZ",
+        "price": 420000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "87, PARK HALL ROAD",
+        "postcode": "SE21 8ES",
+        "price": 7000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "24, AYSGARTH ROAD",
+        "postcode": "SE21 7JR",
+        "price": 1225000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, TURNEY ROAD",
+        "postcode": "SE21 8LU",
+        "price": 745000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, CARSON ROAD",
+        "postcode": "SE21 8HU",
+        "price": 385123,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "122, CLIVE ROAD",
+        "postcode": "SE21 8BP",
+        "price": 610000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, ROSEWAY",
+        "postcode": "SE21 7JT",
+        "price": 1650000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "83, FLAT 2, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8EZ",
+        "price": 453000,
+        "dateOfTransfer": "2025-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, ALLEYN PARK",
+        "postcode": "SE21 8SF",
+        "price": 985000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "FALCON COURT, FLAT 12, ELMWORTH GROVE",
+        "postcode": "SE21 8RG",
+        "price": 350000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "170, BURBAGE ROAD",
+        "postcode": "SE21 7AG",
+        "price": 2850000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "132, FLAT 2, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8LG",
+        "price": 815000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, GROUND FLOOR FLAT, BIRKBECK HILL",
+        "postcode": "SE21 8JS",
+        "price": 550000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "52, TURNEY ROAD",
+        "postcode": "SE21 8LU",
+        "price": 750000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, PICKWICK ROAD",
+        "postcode": "SE21 7JN",
+        "price": 1575000,
+        "dateOfTransfer": "2025-01-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "113, TURNEY ROAD",
+        "postcode": "SE21 7JB",
+        "price": 2250000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, FLAT 1, THURLOW PARK ROAD",
+        "postcode": "SE21 8HZ",
+        "price": 375000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, FLAT 3, TURNEY ROAD",
+        "postcode": "SE21 8LU",
+        "price": 490000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WYKEHAM MANSIONS, 18 - 20, FLAT 4A, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8DX",
+        "price": 345000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "269, ROSENDALE ROAD, WEST DULWICH",
+        "postcode": "SE21 8LR",
+        "price": 660000,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, FLAT 2, ROSENDALE ROAD",
+        "postcode": "SE21 8DS",
+        "price": 480000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, SOUTH CROXTED ROAD",
+        "postcode": "SE21 8BB",
+        "price": 1050000,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "KINSEY HOUSE, FLAT 20, KINGSWOOD ESTATE",
+        "postcode": "SE21 8PH",
+        "price": 275000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, GREAT BROWNINGS, DULWICH",
+        "postcode": "SE21 7HR",
+        "price": 996000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "KINSEY HOUSE, FLAT 20, KINGSWOOD ESTATE",
+        "postcode": "SE21 8PH",
+        "price": 250000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 930094,
+    "medianPrice": 691000
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Helen Hayes",
+        "party": "Labour",
+        "constituency": "Dulwich and West Norwood",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://planning.southwark.gov.uk/online-applications/"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Borough Market",
+        "category": "community-hub",
+        "address": "Southwark",
+        "description": "One of London's oldest food markets, trading in some form since the 12th century."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "SE21 lies within Southwark. Home to Shakespeare's Globe, a reconstruction of the Elizabethan theatre near its original Bankside site, and to Borough Market, trading in some form since at least the 12th century.",
+    "keyFacts": [
+      "Home to Shakespeare's Globe, a reconstruction of the Elizabethan theatre near its original Bankside site, and to Borough Market, trading in some form since at least the 12th century."
+    ]
+  }
+}

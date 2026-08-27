@@ -1,0 +1,525 @@
+{
+  "outcode": "SW1H",
+  "slug": "sw1h",
+  "city": "London",
+  "borough": "Westminster",
+  "latitude": 51.49864696703294,
+  "longitude": -0.13351194505494504,
+  "wards": [
+    "Nine Elms",
+    "St James's"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "SIC",
+        "odsCode": "Y03214",
+        "address": "THE SIC CENTRE, 2 OLD QUEEN STREET, LONDON",
+        "postcode": "SW1H 9HP",
+        "telephone": "020 72333553"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "YOUR DENTIST AT VICTORIA",
+        "odsCode": "V80103",
+        "address": "47-49 VICTORIA STREET, VICTORIA, LONDON",
+        "postcode": "SW1H 0EU"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "DOLPHINS PHARMACY",
+        "odsCode": "FKE09",
+        "address": "9-11 BROADWAY, LONDON",
+        "postcode": "SW1H 0AZ",
+        "telephone": "020 72221828"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Harris Westminster Sixth Form",
+        "urn": "140939",
+        "phaseOfEducation": "16 plus",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Steel House, 11 Tothill Street, Westminster, London",
+        "postcode": "SW1H 9LH",
+        "numberOfPupils": 610,
+        "schoolCapacity": 600
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 3671,
+        "violentCrimes": 870,
+        "propertyCrimes": 2075
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 3534,
+        "violentCrimes": 838,
+        "propertyCrimes": 1912
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 3471,
+        "violentCrimes": 953,
+        "propertyCrimes": 1867
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 3628,
+        "violentCrimes": 885,
+        "propertyCrimes": 2048
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 3778,
+        "violentCrimes": 903,
+        "propertyCrimes": 2297
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 3943,
+        "violentCrimes": 881,
+        "propertyCrimes": 2432
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 3181,
+        "violentCrimes": 823,
+        "propertyCrimes": 1767
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 2836,
+        "violentCrimes": 694,
+        "propertyCrimes": 1595
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 2848,
+        "violentCrimes": 717,
+        "propertyCrimes": 1563
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 2763,
+        "violentCrimes": 764,
+        "propertyCrimes": 1441
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 2898,
+        "violentCrimes": 923,
+        "propertyCrimes": 1340
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 2977,
+        "violentCrimes": 831,
+        "propertyCrimes": 1505
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 6186,
+      "bicycle-theft": 392,
+      "burglary": 748,
+      "criminal-damage-arson": 902,
+      "drugs": 1236,
+      "other-theft": 6992,
+      "possession-of-weapons": 201,
+      "public-order": 1989,
+      "robbery": 1496,
+      "shoplifting": 2453,
+      "theft-from-the-person": 9642,
+      "vehicle-crime": 713,
+      "violent-crime": 6396,
+      "other-crime": 182
+    },
+    "totalLast12Months": 39528
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "ARTILLERY MANSIONS, FLAT 6, VICTORIA STREET",
+        "postcode": "SW1H 0HZ",
+        "price": 557000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHRISTCHURCH HOUSE, FLAT 4, CAXTON STREET",
+        "postcode": "SW1H 0PX",
+        "price": 650000,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 121, VICTORIA STREET",
+        "postcode": "SW1H 0HX",
+        "price": 630000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CAXTON HALL, 10, FLAT 2, CAXTON STREET",
+        "postcode": "SW1H 0AQ",
+        "price": 610000,
+        "dateOfTransfer": "2026-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANDON COURT, 64, FLAT 33, PETTY FRANCE",
+        "postcode": "SW1H 9HE",
+        "price": 300000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 3, VICTORIA STREET",
+        "postcode": "SW1H 0HZ",
+        "price": 973000,
+        "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL BUILDING, 3, APARTMENT 44, MATTHEW PARKER STREET",
+        "postcode": "SW1H 9NE",
+        "price": 1000000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANDON COURT, 64, FLAT 3, PETTY FRANCE",
+        "postcode": "SW1H 9HE",
+        "price": 405500,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, APARTMENT 22, MATTHEW PARKER STREET",
+        "postcode": "SW1H 9NJ",
+        "price": 815000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 125, VICTORIA STREET",
+        "postcode": "SW1H 0HX",
+        "price": 1050000,
+        "dateOfTransfer": "2025-11-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 99, VICTORIA STREET",
+        "postcode": "SW1H 0HX",
+        "price": 1100000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "25 - 27, FOURTH FLOOR FLAT, OLD QUEEN STREET",
+        "postcode": "SW1H 9JA",
+        "price": 1830000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 68, VICTORIA STREET",
+        "postcode": "SW1H 0HY",
+        "price": 1050000,
+        "dateOfTransfer": "2025-10-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 108, VICTORIA STREET",
+        "postcode": "SW1H 0HX",
+        "price": 1000000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANDON COURT, 64, FLAT 34, PETTY FRANCE",
+        "postcode": "SW1H 9HE",
+        "price": 515000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "55, APARTMENT 101, VICTORIA STREET",
+        "postcode": "SW1H 0AF",
+        "price": 900000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 162, VICTORIA STREET",
+        "postcode": "SW1H 0HU",
+        "price": 900000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANDON COURT, 64, FLAT 4, PETTY FRANCE",
+        "postcode": "SW1H 9HE",
+        "price": 372000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 37, VICTORIA STREET",
+        "postcode": "SW1H 0HZ",
+        "price": 1100000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, APARTMENT SW06.03, BROADWAY",
+        "postcode": "SW1H 0AR",
+        "price": 1300000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "10, APARTMENT CW13.02, BROADWAY",
+        "postcode": "SW1H 0BP",
+        "price": 2700000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "55, APARTMENT 506, VICTORIA STREET",
+        "postcode": "SW1H 0AF",
+        "price": 2160000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHRISTCHURCH HOUSE, FLAT 19, CAXTON STREET",
+        "postcode": "SW1H 0PX",
+        "price": 405000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, APARTMENT CE15.01, DACRE STREET",
+        "postcode": "SW1H 0AJ",
+        "price": 16500000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 74, VICTORIA STREET",
+        "postcode": "SW1H 0HY",
+        "price": 700000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, OLD QUEEN STREET",
+        "postcode": "SW1H 9HP",
+        "price": 10125000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "20, APARTMENT PE06.02, DACRE STREET",
+        "postcode": "SW1H 0AJ",
+        "price": 2843890,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "20, APARTMENT CE13.02, DACRE STREET",
+        "postcode": "SW1H 0AJ",
+        "price": 2887642,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "20, APARTMENT PE13.01, DACRE STREET",
+        "postcode": "SW1H 0AJ",
+        "price": 6253750,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "20, APARTMENT CE12.04, DACRE STREET",
+        "postcode": "SW1H 0AJ",
+        "price": 2666936,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "20, APARTMENT CE12.03, DACRE STREET",
+        "postcode": "SW1H 0AJ",
+        "price": 2857642,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "APARTMENT CE11.03, 20, DACRE STREET",
+        "postcode": "SW1H 0AJ",
+        "price": 2843890,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 47, VICTORIA STREET",
+        "postcode": "SW1H 0HZ",
+        "price": 1335000,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANDON COURT, 64, FLAT 66, PETTY FRANCE",
+        "postcode": "SW1H 9HF",
+        "price": 365000,
+        "dateOfTransfer": "2025-04-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANDON COURT, 64, FLAT 43, PETTY FRANCE",
+        "postcode": "SW1H 9HF",
+        "price": 433000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 171, VICTORIA STREET",
+        "postcode": "SW1H 0HU",
+        "price": 855000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "APARTMENT PW14.03, 10, BROADWAY",
+        "postcode": "SW1H 0AR",
+        "price": 5100000,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "APARTMENT PW13.01, 10, BROADWAY",
+        "postcode": "SW1H 0AR",
+        "price": 6550000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 32, VICTORIA STREET",
+        "postcode": "SW1H 0HZ",
+        "price": 975000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VANDON COURT, 64, FLAT 89, PETTY FRANCE",
+        "postcode": "SW1H 9HG",
+        "price": 540000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 34, VICTORIA STREET",
+        "postcode": "SW1H 0HZ",
+        "price": 853000,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, DARTMOUTH STREET",
+        "postcode": "SW1H 9BL",
+        "price": 2325000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Other",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 2126958,
+    "medianPrice": 1000000
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Marsha De Cordova",
+        "party": "Labour",
+        "constituency": "Battersea",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://idoxpa.westminster.gov.uk/online-applications/"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Westminster Abbey",
+        "category": "community-hub",
+        "address": "Westminster",
+        "description": "The historic coronation church of English and British monarchs since 1066."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "SW1H lies within Westminster. The City of Westminster sits at the heart of UK government and culture, home to the Houses of Parliament, Buckingham Palace, Westminster Abbey, and the West End theatre district.",
+    "keyFacts": [
+      "The City of Westminster sits at the heart of UK government and culture, home to the Houses of Parliament, Buckingham Palace, Westminster Abbey, and the West End theatre district."
+    ]
+  }
+}

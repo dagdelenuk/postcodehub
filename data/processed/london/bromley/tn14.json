@@ -1,0 +1,2723 @@
+{
+  "outcode": "TN14",
+  "slug": "tn14",
+  "city": "London",
+  "borough": "Bromley",
+  "latitude": 51.29802094492256,
+  "longitude": 0.15716572633390719,
+  "wards": [
+    "Brasted, Chevening and Sundridge",
+    "Chelsfield",
+    "Crockenhill and Well Hill",
+    "Darwin",
+    "Dunton Green and Riverhead",
+    "Halstead, Knockholt and Badgers Mount",
+    "Kemsing",
+    "Leigh and Chiddingstone Causeway",
+    "Otford and Shoreham",
+    "Penshurst, Fordcombe and Chiddingstone",
+    "Seal and Weald",
+    "Sevenoaks Eastern",
+    "Sevenoaks Kippington",
+    "Sevenoaks Northern",
+    "Sevenoaks Town and St John's"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "OTFORD MEDICAL PRACTICE",
+        "odsCode": "G82125",
+        "address": "LEONARD AVENUE, OTFORD, SEVENOAKS",
+        "postcode": "TN14 5RB",
+        "telephone": "01959 524633"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "OTFORD DENTAL SURGERY",
+        "odsCode": "V03648",
+        "address": "CLYDERHOWE, SEVENOAKS ROAD, SEVENOAKS",
+        "postcode": "TN14 5PA"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "OTFORD PHARMACY",
+        "odsCode": "FTL24",
+        "address": "4 HIGH STREET, OTFORD, SEVENOAKS",
+        "postcode": "TN14 5PQ",
+        "telephone": "01959 522072"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Otford Primary School",
+        "urn": "118279",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "High Street, Otford, Sevenoaks",
+        "postcode": "TN14 5PG",
+        "numberOfPupils": 239,
+        "schoolCapacity": 300
+      },
+      {
+        "name": "Weald Community Primary School",
+        "urn": "118283",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Long Barn Road, Weald, Sevenoaks",
+        "postcode": "TN14 6PY",
+        "numberOfPupils": 103,
+        "schoolCapacity": 175
+      },
+      {
+        "name": "Sundridge and Brasted Church of England Voluntary Controlled Primary School",
+        "urn": "118608",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Good",
+        "ofstedLastInspection": null,
+        "address": "Church Road, Sundridge, Sevenoaks",
+        "postcode": "TN14 6EA",
+        "numberOfPupils": 78,
+        "schoolCapacity": 105
+      },
+      {
+        "name": "St Katharine's Knockholt Church of England Voluntary Aided Primary School",
+        "urn": "118713",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Main Road, Knockholt, Sevenoaks",
+        "postcode": "TN14 7LS",
+        "numberOfPupils": 182,
+        "schoolCapacity": 210
+      },
+      {
+        "name": "Ide Hill Church of England Primary School",
+        "urn": "118722",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Sundridge Road, Ide Hill, Sevenoaks",
+        "postcode": "TN14 6JT",
+        "numberOfPupils": 154,
+        "schoolCapacity": 154
+      },
+      {
+        "name": "St Michael's Prep School",
+        "urn": "118954",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "St Michael's Preparatory School, Otford Court, Otford",
+        "postcode": "TN14 5RY",
+        "numberOfPupils": 447,
+        "schoolCapacity": 488
+      },
+      {
+        "name": "Radnor House Sevenoaks",
+        "urn": "118957",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Combe Bank Drive, Sevenoaks",
+        "postcode": "TN14 6AE",
+        "numberOfPupils": 502,
+        "schoolCapacity": 750
+      },
+      {
+        "name": "Russell House School",
+        "urn": "118984",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Station Road, Otford, Sevenoaks",
+        "postcode": "TN14 5QU",
+        "numberOfPupils": 174,
+        "schoolCapacity": 218
+      },
+      {
+        "name": "Halstead Community Primary School",
+        "urn": "148876",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Otford Lane, Halstead, Sevenoaks",
+        "postcode": "TN14 7EA",
+        "numberOfPupils": 55,
+        "schoolCapacity": 195
+      },
+      {
+        "name": "Shoreham Village School",
+        "urn": "151495",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Church Street, Shoreham, Sevenoaks",
+        "postcode": "TN14 7SN",
+        "numberOfPupils": 90,
+        "schoolCapacity": 105
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 26,
+        "violentCrimes": 9,
+        "propertyCrimes": 8
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 34,
+        "violentCrimes": 13,
+        "propertyCrimes": 16
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 26,
+        "violentCrimes": 8,
+        "propertyCrimes": 9
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 22,
+        "violentCrimes": 5,
+        "propertyCrimes": 12
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 24,
+        "violentCrimes": 8,
+        "propertyCrimes": 7
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 26,
+        "violentCrimes": 16,
+        "propertyCrimes": 6
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 25,
+        "violentCrimes": 7,
+        "propertyCrimes": 11
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 18,
+        "violentCrimes": 2,
+        "propertyCrimes": 13
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 28,
+        "violentCrimes": 14,
+        "propertyCrimes": 8
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 20,
+        "violentCrimes": 6,
+        "propertyCrimes": 11
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 37,
+        "violentCrimes": 8,
+        "propertyCrimes": 15
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 27,
+        "violentCrimes": 5,
+        "propertyCrimes": 12
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 67,
+      "burglary": 9,
+      "criminal-damage-arson": 33,
+      "other-theft": 35,
+      "vehicle-crime": 23,
+      "violent-crime": 89,
+      "possession-of-weapons": 2,
+      "public-order": 9,
+      "shoplifting": 25,
+      "theft-from-the-person": 2,
+      "drugs": 8,
+      "robbery": 1,
+      "other-crime": 9,
+      "bicycle-theft": 1
+    },
+    "totalLast12Months": 313
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "154, CRAMPTONS ROAD",
+        "postcode": "TN14 5DZ",
+        "price": 360000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ELMTREE COTTAGES, 10, MAIN ROAD, KNOCKHOLT",
+        "postcode": "TN14 7JB",
+        "price": 400000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, HIGH STREET, OTFORD",
+        "postcode": "TN14 5PQ",
+        "price": 572500,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WORSLEY, BADGERS ROAD, BADGERS MOUNT",
+        "postcode": "TN14 7AZ",
+        "price": 525000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "163, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6EH",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SHAWCROFT, SHACKLANDS ROAD, BADGERS MOUNT",
+        "postcode": "TN14 7BD",
+        "price": 675000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ASTON HOUSE, HIGHLAND ROAD, BADGERS MOUNT",
+        "postcode": "TN14 7BB",
+        "price": 1050000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, WATERCROFT ROAD, HALSTEAD",
+        "postcode": "TN14 7DP",
+        "price": 972000,
+        "dateOfTransfer": "2026-06-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "MEADOW VIEW, STONEHOUSE ROAD, HALSTEAD",
+        "postcode": "TN14 7HL",
+        "price": 571160,
+        "dateOfTransfer": "2026-06-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, KNIGHTON ROAD, OTFORD",
+        "postcode": "TN14 5LD",
+        "price": 615000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6EF",
+        "price": 410000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ORCHARD END, POUND LANE, KNOCKHOLT",
+        "postcode": "TN14 7ND",
+        "price": 725000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, RYE LANE, OTFORD",
+        "postcode": "TN14 5LU",
+        "price": 486000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "58, CHURCH ROAD, SUNDRIDGE",
+        "postcode": "TN14 6EA",
+        "price": 590000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, SWANZY ROAD",
+        "postcode": "TN14 5EE",
+        "price": 450000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, LONDON ROAD, HALSTEAD",
+        "postcode": "TN14 7DS",
+        "price": 750000,
+        "dateOfTransfer": "2026-05-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, WARHAM ROAD, OTFORD",
+        "postcode": "TN14 5PF",
+        "price": 725000,
+        "dateOfTransfer": "2026-05-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, TUDOR CRESCENT, OTFORD",
+        "postcode": "TN14 5QT",
+        "price": 1400000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHYNOWETH, 3, MANOR ROAD, SUNDRIDGE",
+        "postcode": "TN14 6DL",
+        "price": 575000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, GROVE ROAD",
+        "postcode": "TN14 5DA",
+        "price": 560000,
+        "dateOfTransfer": "2026-05-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE CONIFERS, THE MEADOWS, HALSTEAD",
+        "postcode": "TN14 7HD",
+        "price": 742500,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, COOMBE AVENUE",
+        "postcode": "TN14 5DX",
+        "price": 400000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "66A, HIGH STREET, OTFORD",
+        "postcode": "TN14 5PH",
+        "price": 708000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, NICHOLSON ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GX",
+        "price": 143750,
+        "dateOfTransfer": "2026-04-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "YARNOLD COURT, 20, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GR",
+        "price": 370000,
+        "dateOfTransfer": "2026-04-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, FORT ROAD, HALSTEAD",
+        "postcode": "TN14 7BT",
+        "price": 625000,
+        "dateOfTransfer": "2026-04-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "NORMAN COURT, 14, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GZ",
+        "price": 192500,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "176, OTFORD ROAD",
+        "postcode": "TN14 5DP",
+        "price": 350000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, YEW TREE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GE",
+        "price": 744000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHAMBERS COTTAGES, 2, FILSTON LANE, SHOREHAM",
+        "postcode": "TN14 7SY",
+        "price": 1090000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "57, CRAMPTONS ROAD",
+        "postcode": "TN14 5ES",
+        "price": 552500,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "90, EVELYN ROAD, OTFORD",
+        "postcode": "TN14 5PU",
+        "price": 860000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "KNOWLES COURT, 11, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GQ",
+        "price": 373000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, CHURCH COTTAGES, SHOREHAM",
+        "postcode": "TN14 7SB",
+        "price": 210000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PRIMROSE COTTAGE, BOWZELL GREEN, WEALD",
+        "postcode": "TN14 6NB",
+        "price": 1425000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, GREATNESS ROAD",
+        "postcode": "TN14 5BY",
+        "price": 410000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, HAZEL COTTAGES, HALSTEAD",
+        "postcode": "TN14 7ED",
+        "price": 497500,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, EASTWOOD COTTAGES, IDE HILL",
+        "postcode": "TN14 6LH",
+        "price": 740000,
+        "dateOfTransfer": "2026-04-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, CHRISTIES AVENUE, BADGERS MOUNT",
+        "postcode": "TN14 7AN",
+        "price": 565000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, CHATHAM HILL ROAD",
+        "postcode": "TN14 5AP",
+        "price": 480000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CUDHAM HALL, FLAT 5, CUDHAM LANE SOUTH, CUDHAM",
+        "postcode": "TN14 7QB",
+        "price": 400000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EMITON, KNOCKHOLT ROAD, HALSTEAD",
+        "postcode": "TN14 7EU",
+        "price": 1108330,
+        "dateOfTransfer": "2026-03-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "MILL HOUSE, MILL LANE",
+        "postcode": "TN14 5BX",
+        "price": 295000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "FORGE COTTAGES, 3, MORLEYS ROAD, WEALD",
+        "postcode": "TN14 6QT",
+        "price": 800000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "HOMELANDS, RYE LANE, OTFORD",
+        "postcode": "TN14 5JF",
+        "price": 1395000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, LORD DARBY MEWS, CUDHAM",
+        "postcode": "TN14 7QQ",
+        "price": 982500,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "COTE GREEN, HIGHLAND ROAD, BADGERS MOUNT",
+        "postcode": "TN14 7BB",
+        "price": 950000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "89, THE MOOR ROAD",
+        "postcode": "TN14 5ED",
+        "price": 438000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, RYECROFT ROAD, OTFORD",
+        "postcode": "TN14 5LX",
+        "price": 598000,
+        "dateOfTransfer": "2026-03-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, SWANZY ROAD",
+        "postcode": "TN14 5EE",
+        "price": 475000,
+        "dateOfTransfer": "2026-03-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, TUDOR DRIVE, OTFORD",
+        "postcode": "TN14 5QP",
+        "price": 775000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CORNFIELDS, SHOREHAM ROAD, OTFORD",
+        "postcode": "TN14 5RL",
+        "price": 1405000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHURCHILL COURT, FLAT 6, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FR",
+        "price": 252500,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, YEW TREE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GE",
+        "price": 605000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE COTTAGE, BADGERS ROAD, BADGERS MOUNT",
+        "postcode": "TN14 7AY",
+        "price": 800000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "34, TUDOR CRESCENT, OTFORD",
+        "postcode": "TN14 5QT",
+        "price": 750000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, YEW TREE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GE",
+        "price": 780000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "SEPTEMBER COTTAGE, CHURCH STREET, SHOREHAM",
+        "postcode": "TN14 7SW",
+        "price": 775000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "135, CRAMPTONS ROAD",
+        "postcode": "TN14 5DU",
+        "price": 347500,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BADGERS OAK, HIGHLAND ROAD, BADGERS MOUNT",
+        "postcode": "TN14 7BB",
+        "price": 965000,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, COLETS ORCHARD, OTFORD",
+        "postcode": "TN14 5RA",
+        "price": 960000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, TELSTON LANE, OTFORD",
+        "postcode": "TN14 5JZ",
+        "price": 610000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE BARONS, REDMANS LANE, SHOREHAM",
+        "postcode": "TN14 7UB",
+        "price": 2220000,
+        "dateOfTransfer": "2026-02-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "160, CRAMPTONS ROAD",
+        "postcode": "TN14 5DZ",
+        "price": 342500,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, WARHAM ROAD, OTFORD",
+        "postcode": "TN14 5PF",
+        "price": 482500,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "33, HIGH STREET, OTFORD",
+        "postcode": "TN14 5PG",
+        "price": 475000,
+        "dateOfTransfer": "2026-01-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, GREAT TILL CLOSE, OTFORD",
+        "postcode": "TN14 5LQ",
+        "price": 1025000,
+        "dateOfTransfer": "2026-01-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6EP",
+        "price": 610000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, ARMSTRONG CLOSE, HALSTEAD",
+        "postcode": "TN14 7BS",
+        "price": 570000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, JOHNSONS AVENUE, BADGERS MOUNT",
+        "postcode": "TN14 7AX",
+        "price": 455000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, LONDON ROAD, HALSTEAD",
+        "postcode": "TN14 7DS",
+        "price": 665000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, YEW TREE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GE",
+        "price": 840000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, TUDOR CRESCENT, OTFORD",
+        "postcode": "TN14 5QT",
+        "price": 1250000,
+        "dateOfTransfer": "2026-01-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, MANOR ROAD, SUNDRIDGE",
+        "postcode": "TN14 6DL",
+        "price": 550000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "43, GREATNESS LANE",
+        "postcode": "TN14 5BD",
+        "price": 395000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, DAMSON DRIVE, HALSTEAD",
+        "postcode": "TN14 7EL",
+        "price": 610000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, BAXLEY COURT, DUNTON GREEN",
+        "postcode": "TN14 5FE",
+        "price": 360000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, PARK HILL ROAD, OTFORD",
+        "postcode": "TN14 5QH",
+        "price": 820000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, THE BUTTS, OTFORD",
+        "postcode": "TN14 5PR",
+        "price": 955000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE GARDEN HOUSE, SHOREHAM ROAD, SHOREHAM",
+        "postcode": "TN14 7UE",
+        "price": 2120000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "BYRE COTTAGE, SHOREHAM ROAD, OTFORD",
+        "postcode": "TN14 5RL",
+        "price": 1900000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "APPLEDOWNE PLACE, APARTMENT 1, SHOREHAM ROAD, OTFORD",
+        "postcode": "TN14 5RL",
+        "price": 650000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, JOHNSONS AVENUE, BADGERS MOUNT",
+        "postcode": "TN14 7AX",
+        "price": 380000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, CROWN ROAD, SHOREHAM",
+        "postcode": "TN14 7TN",
+        "price": 600000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "OAK HALL, CHURCH ROAD, SUNDRIDGE",
+        "postcode": "TN14 6AT",
+        "price": 2100000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, BELDAM HAW, HALSTEAD",
+        "postcode": "TN14 7DA",
+        "price": 510000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, SOUTHDENE, HALSTEAD",
+        "postcode": "TN14 7HB",
+        "price": 450000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "167, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6EH",
+        "price": 465000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LAWS COTTAGES, 1, SUNDRIDGE ROAD, IDE HILL",
+        "postcode": "TN14 6JP",
+        "price": 665000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PREVAIL PLACE, 26, FLAT 4, CHATHAM HILL ROAD",
+        "postcode": "TN14 5AP",
+        "price": 247000,
+        "dateOfTransfer": "2025-12-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, CROWN ROAD, SHOREHAM",
+        "postcode": "TN14 7TN",
+        "price": 620000,
+        "dateOfTransfer": "2025-12-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, GREENHILL ROAD, OTFORD",
+        "postcode": "TN14 5RS",
+        "price": 1275000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, THE MEADOWS, HALSTEAD",
+        "postcode": "TN14 7HD",
+        "price": 850000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, THE OLD WALK, OTFORD",
+        "postcode": "TN14 5PP",
+        "price": 1010850,
+        "dateOfTransfer": "2025-12-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "58, HIGH STREET, OTFORD",
+        "postcode": "TN14 5PQ",
+        "price": 832000,
+        "dateOfTransfer": "2025-12-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, WILLOW PARK, OTFORD",
+        "postcode": "TN14 5NE",
+        "price": 545000,
+        "dateOfTransfer": "2025-12-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHESTNUT COTTAGE, IDE HILL",
+        "postcode": "TN14 6BW",
+        "price": 2351000,
+        "dateOfTransfer": "2025-12-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "34, WILLOW PARK, OTFORD",
+        "postcode": "TN14 5NE",
+        "price": 525000,
+        "dateOfTransfer": "2025-12-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, THE BUTTS, OTFORD",
+        "postcode": "TN14 5PR",
+        "price": 755000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "STONESTACK, STONEHOUSE LANE, HALSTEAD",
+        "postcode": "TN14 7HH",
+        "price": 1465000,
+        "dateOfTransfer": "2025-11-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, LORD DARBY MEWS, CUDHAM",
+        "postcode": "TN14 7QQ",
+        "price": 920000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, WEAVERS LANE",
+        "postcode": "TN14 5BT",
+        "price": 650000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "JESSEMERE COTTAGES, 2, SHOREHAM LANE, HALSTEAD",
+        "postcode": "TN14 7DD",
+        "price": 672500,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "YARROW COURT, 13, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5FL",
+        "price": 365000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, BROUGHTON ROAD, OTFORD",
+        "postcode": "TN14 5LY",
+        "price": 550000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SAXON HOUSE, 140, 6, SEAL ROAD",
+        "postcode": "TN14 5AA",
+        "price": 92750,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "39, TUDOR CRESCENT, OTFORD",
+        "postcode": "TN14 5QT",
+        "price": 735000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, HIGH STREET, SHOREHAM",
+        "postcode": "TN14 7TD",
+        "price": 735000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, MILL POND CLOSE",
+        "postcode": "TN14 5AW",
+        "price": 425000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CAMDEN, KNOCKHOLT ROAD, HALSTEAD",
+        "postcode": "TN14 7EU",
+        "price": 525000,
+        "dateOfTransfer": "2025-11-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "172, CRAMPTONS ROAD",
+        "postcode": "TN14 5DZ",
+        "price": 185000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, PINEWOOD AVENUE",
+        "postcode": "TN14 5AE",
+        "price": 500000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE OLD POLICE STATION, CHEVENING LANE, KNOCKHOLT",
+        "postcode": "TN14 7LB",
+        "price": 395000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, HAZELWOOD ROAD, CUDHAM",
+        "postcode": "TN14 7QU",
+        "price": 880000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "STUMBLEBURROW, 1A, TUDOR DRIVE, OTFORD",
+        "postcode": "TN14 5QP",
+        "price": 975000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "87, THE MOOR ROAD",
+        "postcode": "TN14 5ED",
+        "price": 431000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LITTLEHATCH, MAIN ROAD, KNOCKHOLT",
+        "postcode": "TN14 7JE",
+        "price": 780000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE HERMITAGE, STONEHOUSE ROAD, HALSTEAD",
+        "postcode": "TN14 7HW",
+        "price": 800000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "52A, PILGRIMS WAY EAST, OTFORD",
+        "postcode": "TN14 5QW",
+        "price": 1323500,
+        "dateOfTransfer": "2025-10-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "SNAG LANE FARM, SNAG LANE, CUDHAM",
+        "postcode": "TN14 7RG",
+        "price": 1370000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "41, GREENHILL ROAD, OTFORD",
+        "postcode": "TN14 5RR",
+        "price": 1375000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, SHOREHAM PLACE, SHOREHAM",
+        "postcode": "TN14 7RX",
+        "price": 930000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HIGHBANK, CUDHAM LANE SOUTH, CUDHAM",
+        "postcode": "TN14 7QE",
+        "price": 915000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, GREYSTONE PARK, SUNDRIDGE",
+        "postcode": "TN14 6EB",
+        "price": 885750,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE VIEW, CHURCH ROAD, HALSTEAD",
+        "postcode": "TN14 7HG",
+        "price": 2400000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, STATION ROAD, HALSTEAD",
+        "postcode": "TN14 7DJ",
+        "price": 430000,
+        "dateOfTransfer": "2025-10-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, WARHAM ROAD, OTFORD",
+        "postcode": "TN14 5PF",
+        "price": 690000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, THE BUTTS, OTFORD",
+        "postcode": "TN14 5PR",
+        "price": 942500,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, MOUNT PLEASANT, IDE HILL",
+        "postcode": "TN14 6JH",
+        "price": 330000,
+        "dateOfTransfer": "2025-10-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE RED HOUSE, IDE HILL",
+        "postcode": "TN14 6JN",
+        "price": 1450000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FP",
+        "price": 575000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CRESS COURT, 2, THE MOOR ROAD",
+        "postcode": "TN14 5EB",
+        "price": 235000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TREESBY, OLD LONDON ROAD, KNOCKHOLT",
+        "postcode": "TN14 7JR",
+        "price": 435000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, SEYMOUR PLACE, DUNTON GREEN",
+        "postcode": "TN14 5GA",
+        "price": 355000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, CHURCH ROAD, SUNDRIDGE",
+        "postcode": "TN14 6DT",
+        "price": 400000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "OXBOURNE COTTAGES, 2, HIGH STREET, SHOREHAM",
+        "postcode": "TN14 7TE",
+        "price": 342500,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, GREATNESS LANE",
+        "postcode": "TN14 5BD",
+        "price": 412500,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE NEEDLES, OTFORD LANE, HALSTEAD",
+        "postcode": "TN14 7EG",
+        "price": 1120000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, VICTORY COTTAGES, WEALD",
+        "postcode": "TN14 6QS",
+        "price": 610000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, HAZELWOOD ROAD, CUDHAM",
+        "postcode": "TN14 7QU",
+        "price": 475000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "ROMNEY COURT, 5, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5HH",
+        "price": 140000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KNOWLES COURT, 9, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GQ",
+        "price": 270000,
+        "dateOfTransfer": "2025-09-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, SOUTHDENE, HALSTEAD",
+        "postcode": "TN14 7HB",
+        "price": 630000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, YEW TREE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GE",
+        "price": 646500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, WARHAM ROAD, OTFORD",
+        "postcode": "TN14 5PF",
+        "price": 580000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, GREATNESS ROAD",
+        "postcode": "TN14 5BY",
+        "price": 360000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "82, EVELYN ROAD, OTFORD",
+        "postcode": "TN14 5PU",
+        "price": 725000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE LAURELS, OLD LONDON ROAD, KNOCKHOLT",
+        "postcode": "TN14 7JR",
+        "price": 547500,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "52, WELL ROAD, OTFORD",
+        "postcode": "TN14 5PT",
+        "price": 870000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "55, THE MOOR ROAD",
+        "postcode": "TN14 5ED",
+        "price": 475000,
+        "dateOfTransfer": "2025-09-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FP",
+        "price": 585500,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "154, SEAL ROAD",
+        "postcode": "TN14 5AA",
+        "price": 495000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WESTWELL, ST MICHAELS DRIVE, OTFORD",
+        "postcode": "TN14 5SA",
+        "price": 1255000,
+        "dateOfTransfer": "2025-09-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, GLEBE ROAD, WEALD",
+        "postcode": "TN14 6PB",
+        "price": 560000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, CHINE FARM PLACE, KNOCKHOLT",
+        "postcode": "TN14 7LG",
+        "price": 940000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "92, EVELYN ROAD, OTFORD",
+        "postcode": "TN14 5PU",
+        "price": 720000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, THE OLD WALK, OTFORD",
+        "postcode": "TN14 5PP",
+        "price": 910000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, WOODLAND ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GD",
+        "price": 570000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "SARNIA HOUSE, SHOREHAM ROAD, OTFORD",
+        "postcode": "TN14 5RL",
+        "price": 1666500,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, HOPFIELD CLOSE, OTFORD",
+        "postcode": "TN14 5FB",
+        "price": 775000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, CRAMPTONS ROAD",
+        "postcode": "TN14 5DS",
+        "price": 385000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE COTTAGE, COMBE BANK DRIVE, SUNDRIDGE",
+        "postcode": "TN14 6AD",
+        "price": 1000000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, WATERCROFT ROAD, HALSTEAD",
+        "postcode": "TN14 7DP",
+        "price": 1040000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, WATERCROFT ROAD, HALSTEAD",
+        "postcode": "TN14 7DP",
+        "price": 1275000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, PINEWOOD AVENUE",
+        "postcode": "TN14 5AF",
+        "price": 1100000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, SHOREHAM PLACE, SHOREHAM",
+        "postcode": "TN14 7RX",
+        "price": 975000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "GARDEN LODGE, COMBE BANK DRIVE, SUNDRIDGE",
+        "postcode": "TN14 6AD",
+        "price": 790000,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "GROVE END, HARROW ROAD, KNOCKHOLT",
+        "postcode": "TN14 7JT",
+        "price": 1060000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "WATERWORKS COTTAGE, 3, CRAMPTONS ROAD",
+        "postcode": "TN14 5DS",
+        "price": 365000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "AVENDALE, SHOREHAM LANE, HALSTEAD",
+        "postcode": "TN14 7BY",
+        "price": 600000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "41, KNIGHTON ROAD, OTFORD",
+        "postcode": "TN14 5LD",
+        "price": 840000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, CLARKS LANE, HALSTEAD",
+        "postcode": "TN14 7DG",
+        "price": 403500,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "93, WELL ROAD, OTFORD",
+        "postcode": "TN14 5PT",
+        "price": 825000,
+        "dateOfTransfer": "2025-08-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, GREATNESS ROAD",
+        "postcode": "TN14 5BY",
+        "price": 425000,
+        "dateOfTransfer": "2025-08-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, PROSPECT COTTAGES, WEALD",
+        "postcode": "TN14 6NH",
+        "price": 435000,
+        "dateOfTransfer": "2025-08-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "81, WILLOW PARK, OTFORD",
+        "postcode": "TN14 5NF",
+        "price": 665000,
+        "dateOfTransfer": "2025-08-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "87, WILLOW PARK, OTFORD",
+        "postcode": "TN14 5NF",
+        "price": 665000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LINNETS, NIGHTINGALE LANE, IDE HILL",
+        "postcode": "TN14 6JA",
+        "price": 1495000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FP",
+        "price": 590000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "145, CRAMPTONS ROAD",
+        "postcode": "TN14 5DU",
+        "price": 343000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, FILSTON LANE, SHOREHAM",
+        "postcode": "TN14 7SP",
+        "price": 800000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "DARENTH HOUSE, SHACKLANDS ROAD, SHOREHAM",
+        "postcode": "TN14 7TU",
+        "price": 1900000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "COLGATES COTTAGE, SHOREHAM LANE, HALSTEAD",
+        "postcode": "TN14 7BY",
+        "price": 475000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, GREATNESS ROAD",
+        "postcode": "TN14 5BY",
+        "price": 375000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FLINTSTONES, CADLOCKS HILL, HALSTEAD",
+        "postcode": "TN14 7DU",
+        "price": 750000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, THE CHARNE, OTFORD",
+        "postcode": "TN14 5LS",
+        "price": 640000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, WARHAM ROAD, OTFORD",
+        "postcode": "TN14 5PF",
+        "price": 695000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, GROVE ROAD",
+        "postcode": "TN14 5DA",
+        "price": 375000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, DOWNE AVENUE, CUDHAM",
+        "postcode": "TN14 7QX",
+        "price": 562000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "HARRISON COURT, 8, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FT",
+        "price": 140000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LEYLAND, SHOREHAM ROAD, OTFORD",
+        "postcode": "TN14 5RN",
+        "price": 1310000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "72, PILGRIMS WAY EAST, OTFORD",
+        "postcode": "TN14 5SJ",
+        "price": 918500,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "REDLANDS COURT, 19, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FW",
+        "price": 238000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76, EVELYN ROAD, OTFORD",
+        "postcode": "TN14 5PU",
+        "price": 750000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "KNOWLES COURT, 21, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GQ",
+        "price": 315000,
+        "dateOfTransfer": "2025-07-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, DOWNE AVENUE, CUDHAM",
+        "postcode": "TN14 7QX",
+        "price": 730000,
+        "dateOfTransfer": "2025-07-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "51, HIGH STREET, OTFORD",
+        "postcode": "TN14 5PL",
+        "price": 475000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, DOWNE AVENUE, CUDHAM",
+        "postcode": "TN14 7QX",
+        "price": 510000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, YEW TREE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GE",
+        "price": 720000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, MILL POND CLOSE",
+        "postcode": "TN14 5AW",
+        "price": 595000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "61, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6EQ",
+        "price": 299950,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "140, FLAT 2, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6ET",
+        "price": 173000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, ELMFIELD CLOSE, WEALD",
+        "postcode": "TN14 6PP",
+        "price": 540000,
+        "dateOfTransfer": "2025-06-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "MERRYN, ORPINGTON BY PASS, BADGERS MOUNT",
+        "postcode": "TN14 7AG",
+        "price": 945000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "TOR HOUSE, SHOREHAM ROAD, OTFORD",
+        "postcode": "TN14 5RP",
+        "price": 950000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "YARROW COURT, 6, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5FL",
+        "price": 320000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, BUBBLESTONE ROAD, OTFORD",
+        "postcode": "TN14 5PN",
+        "price": 1100000,
+        "dateOfTransfer": "2025-06-18",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE SILKHOUSE, 22, GREATNESS MILL COURT",
+        "postcode": "TN14 5GS",
+        "price": 460000,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, NORTH VIEW ROAD",
+        "postcode": "TN14 5BB",
+        "price": 750000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SACKVILLE COURT, 9, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FU",
+        "price": 126000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, SHINECROFT, OTFORD",
+        "postcode": "TN14 5NA",
+        "price": 389800,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FAIRVIEW, LONG BARN ROAD, WEALD",
+        "postcode": "TN14 6NH",
+        "price": 880000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CEDARHOLME, ORPINGTON BY PASS, BADGERS MOUNT",
+        "postcode": "TN14 7AG",
+        "price": 350000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, THE TERRACE, SHOREHAM",
+        "postcode": "TN14 7SN",
+        "price": 676400,
+        "dateOfTransfer": "2025-05-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CHURCHILL COURT, 14, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FR",
+        "price": 330000,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NORMAN COURT, 8, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GZ",
+        "price": 140000,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, MACMILLAN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5GH",
+        "price": 700000,
+        "dateOfTransfer": "2025-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, SEAL ROAD",
+        "postcode": "TN14 5AR",
+        "price": 420000,
+        "dateOfTransfer": "2025-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CLOVER COURT, 6, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FN",
+        "price": 256500,
+        "dateOfTransfer": "2025-05-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "DOWNSVIEW, CHURCH ROAD, WEALD",
+        "postcode": "TN14 6LT",
+        "price": 1400000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, PINEHURST",
+        "postcode": "TN14 5AQ",
+        "price": 825000,
+        "dateOfTransfer": "2025-05-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, BEECHY LEES ROAD, OTFORD",
+        "postcode": "TN14 5QJ",
+        "price": 1650000,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "PREVAIL PLACE, 26, FLAT 2, CHATHAM HILL ROAD",
+        "postcode": "TN14 5AP",
+        "price": 285000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, MILDMAY PLACE, SHOREHAM",
+        "postcode": "TN14 7ST",
+        "price": 625000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "217, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6EJ",
+        "price": 355000,
+        "dateOfTransfer": "2025-04-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, THE BUTTS, OTFORD",
+        "postcode": "TN14 5PR",
+        "price": 810000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "PREVAIL PLACE, 26, FLAT 1, CHATHAM HILL ROAD",
+        "postcode": "TN14 5AP",
+        "price": 250000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE SURGERY, MORLEYS ROAD, WEALD",
+        "postcode": "TN14 6QX",
+        "price": 150000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "HOMEBASE LTD, RIVERSIDE RETAIL PARK",
+        "postcode": "TN14 5EW",
+        "price": 365093,
+        "dateOfTransfer": "2025-04-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ASHBEE COURT, 2, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FY",
+        "price": 316500,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SWINTON COURT, 22, MERE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FX",
+        "price": 248000,
+        "dateOfTransfer": "2025-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PATIENCE COTTAGES, 3, LONG BARN ROAD, WEALD",
+        "postcode": "TN14 6PU",
+        "price": 335000,
+        "dateOfTransfer": "2025-04-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FP",
+        "price": 587500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "APPLEBY, 3, GREENHILL ROAD, OTFORD",
+        "postcode": "TN14 5RR",
+        "price": 2350000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "117, EVELYN ROAD, OTFORD",
+        "postcode": "TN14 5PU",
+        "price": 800000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "YARNOLD COURT, 11, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GR",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, SILK MILLS CLOSE",
+        "postcode": "TN14 5AZ",
+        "price": 480000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE FOLLIES, RUSHMORE HILL, KNOCKHOLT",
+        "postcode": "TN14 7NL",
+        "price": 1815000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "HAWKRIDGE, 1, GREENHILL ROAD, OTFORD",
+        "postcode": "TN14 5RR",
+        "price": 2130000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "7, BOAKES MEADOW, SHOREHAM",
+        "postcode": "TN14 7SH",
+        "price": 680000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "120, CUDHAM LANE NORTH, CUDHAM",
+        "postcode": "TN14 7QS",
+        "price": 670000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "KNOWLES COURT, 23, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GQ",
+        "price": 335000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MILL LANE COTTAGES, 5, MILL LANE, SHOREHAM",
+        "postcode": "TN14 7TS",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "28, KNIGHTON ROAD, OTFORD",
+        "postcode": "TN14 5LF",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, OTFORD ROAD",
+        "postcode": "TN14 5DN",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "104, SIDNEY GARDENS, OTFORD",
+        "postcode": "TN14 5PX",
+        "price": 1180000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, CLARKS LANE, HALSTEAD",
+        "postcode": "TN14 7DQ",
+        "price": 660000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "DANTRY FAIR, SEVENOAKS ROAD, HALSTEAD",
+        "postcode": "TN14 7HP",
+        "price": 870000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "HILLVIEW, CHURCH ROAD, SUNDRIDGE",
+        "postcode": "TN14 6AU",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, HURST FARM ROAD, WEALD",
+        "postcode": "TN14 6PE",
+        "price": 700000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHINE FARM PLACE, FLAT 8, MAIN ROAD, KNOCKHOLT",
+        "postcode": "TN14 7LG",
+        "price": 637500,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MEADOW FARM, OLD LONDON ROAD, KNOCKHOLT",
+        "postcode": "TN14 7JW",
+        "price": 1300000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, RIVERDALE COTTAGES, SHOREHAM",
+        "postcode": "TN14 7TW",
+        "price": 548500,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PRESTON FARM COTTAGES, 1, SHOREHAM ROAD, SHOREHAM",
+        "postcode": "TN14 7UD",
+        "price": 847500,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "YARNOLD COURT, 25, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GR",
+        "price": 360000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, PARKSIDE, HALSTEAD",
+        "postcode": "TN14 7HA",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "109A, CRAMPTONS ROAD",
+        "postcode": "TN14 5DU",
+        "price": 325000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, PINEWOOD AVENUE",
+        "postcode": "TN14 5AE",
+        "price": 725000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, DOWNE AVENUE, CUDHAM",
+        "postcode": "TN14 7QX",
+        "price": 720000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, CHATHAM HILL ROAD",
+        "postcode": "TN14 5AP",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CLYDERHOWE, SEVENOAKS ROAD, OTFORD",
+        "postcode": "TN14 5PA",
+        "price": 950000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "35, WILLOW PARK, OTFORD",
+        "postcode": "TN14 5ND",
+        "price": 620000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, HALLS GREEN, WEALD",
+        "postcode": "TN14 6NR",
+        "price": 1375000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, GREATNESS ROAD",
+        "postcode": "TN14 5BY",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "55, HIGH STREET, SHOREHAM",
+        "postcode": "TN14 7TB",
+        "price": 335000,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LITTLE NORMANFIELDS, IDE HILL",
+        "postcode": "TN14 6JB",
+        "price": 1300000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "YARNOLD COURT, 16, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GR",
+        "price": 367000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, THE BUTTS, OTFORD",
+        "postcode": "TN14 5PR",
+        "price": 770000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, CUDHAM PARK ROAD, CUDHAM",
+        "postcode": "TN14 7RE",
+        "price": 635000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "SWINTON COURT, 6, MERE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FX",
+        "price": 270000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SUMMERLEAZE, 40, PILGRIMS WAY EAST, OTFORD",
+        "postcode": "TN14 5QW",
+        "price": 1000000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "SYCAMORES, COOPERS CORNER, IDE HILL",
+        "postcode": "TN14 6LB",
+        "price": 1260000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, RYE LANE, OTFORD",
+        "postcode": "TN14 5LU",
+        "price": 670000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "BRYNHIR, MAIN ROAD, KNOCKHOLT",
+        "postcode": "TN14 7LS",
+        "price": 585000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHURCHILL COURT, 17, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FR",
+        "price": 323000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, CRESS COURT",
+        "postcode": "TN14 5EB",
+        "price": 260000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, CLARKS LANE, HALSTEAD",
+        "postcode": "TN14 7DG",
+        "price": 382000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "SWINTON COURT, 8, MERE ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FX",
+        "price": 249999,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, THE MEADOWS, HALSTEAD",
+        "postcode": "TN14 7HD",
+        "price": 850000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, CLARKS LANE, HALSTEAD",
+        "postcode": "TN14 7DQ",
+        "price": 295000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, THE OLD WALK, OTFORD",
+        "postcode": "TN14 5PP",
+        "price": 870000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "BRIDGE COTTAGE, DARENTH WAY, SHOREHAM",
+        "postcode": "TN14 7SE",
+        "price": 499000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, IVY LANE, KNOCKHOLT",
+        "postcode": "TN14 7LE",
+        "price": 770000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "REDWALLS, COMBE BANK DRIVE, SUNDRIDGE",
+        "postcode": "TN14 6AD",
+        "price": 1660000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "79, WILLOW PARK, OTFORD",
+        "postcode": "TN14 5NF",
+        "price": 550000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LITTLE COLGATES, SHOREHAM LANE, HALSTEAD",
+        "postcode": "TN14 7BY",
+        "price": 500000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "57, TUDOR CRESCENT, OTFORD",
+        "postcode": "TN14 5QT",
+        "price": 950000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, MILL LANE",
+        "postcode": "TN14 5BU",
+        "price": 535000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "66, MAIN ROAD, SUNDRIDGE",
+        "postcode": "TN14 6ER",
+        "price": 810000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, PINEWOOD AVENUE",
+        "postcode": "TN14 5AF",
+        "price": 824000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "LITTLE RECORD, CHURCH STREET, SHOREHAM",
+        "postcode": "TN14 7SD",
+        "price": 704000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, GLEBE ROAD, WEALD",
+        "postcode": "TN14 6PB",
+        "price": 660000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, BERWICK WAY",
+        "postcode": "TN14 5EY",
+        "price": 350000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "MEADOW SPRINGS, SEVENOAKS ROAD, OTFORD",
+        "postcode": "TN14 5PA",
+        "price": 1052500,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, PINEWOOD AVENUE",
+        "postcode": "TN14 5AF",
+        "price": 825000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ORCHARD GROVE, KNOCKHOLT ROAD, HALSTEAD",
+        "postcode": "TN14 7EU",
+        "price": 800000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "MEAD COURT, 1, EDEN ROAD, DUNTON GREEN",
+        "postcode": "TN14 5FQ",
+        "price": 345000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE SILKHOUSE, 15, GREATNESS MILL COURT",
+        "postcode": "TN14 5GS",
+        "price": 322500,
+        "dateOfTransfer": "2025-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KNOWLES COURT, 1, CAMPION SQUARE, DUNTON GREEN",
+        "postcode": "TN14 5GQ",
+        "price": 256500,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WOODSTOCK, OLD LONDON ROAD, KNOCKHOLT",
+        "postcode": "TN14 7JR",
+        "price": 905000,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, PROSPECT COTTAGES, WEALD",
+        "postcode": "TN14 6NH",
+        "price": 400000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 703288,
+    "medianPrice": 615000
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Gareth Bacon",
+        "party": "Conservative",
+        "constituency": "Orpington",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      },
+      {
+        "role": "Councillor",
+        "name": "Mike Botting",
+        "party": "Local Conservatives",
+        "ward": "Chelsfield",
+        "contactUrl": "https://cds.bromley.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Sumeet Jalan",
+        "party": "Local Conservatives",
+        "ward": "Chelsfield",
+        "contactUrl": "https://cds.bromley.gov.uk"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://planningaccess.bromley.gov.uk/pr/s/register-view?c__r=Arcus_BE_Public_Register"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Crystal Palace Park",
+        "category": "park",
+        "address": "Bromley/Croydon border",
+        "description": "A large Victorian park containing the world-famous Crystal Palace Dinosaurs sculptures."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "TN14 lies within Bromley. London's largest borough by area, formed in 1965 largely from the old county of Kent. Down House in Downe village was the family home of Charles Darwin, where he wrote On the Origin of Species.",
+    "keyFacts": [
+      "London's largest borough by area, formed in 1965 largely from the old county of Kent. Down House in Downe village was the family home of Charles Darwin, where he wrote On the Origin of Species."
+    ]
+  }
+}

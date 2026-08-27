@@ -1,0 +1,910 @@
+{
+  "outcode": "WC1H",
+  "slug": "wc1h",
+  "city": "London",
+  "borough": "Camden",
+  "latitude": 51.52686025816989,
+  "longitude": -0.12568300653594783,
+  "wards": [
+    "Bloomsbury",
+    "Clerkenwell",
+    "King's Cross"
+  ],
+  "health": {
+    "gpSurgeries": [],
+    "dentists": [
+      {
+        "name": "CHALTON STREET DENTAL",
+        "odsCode": "V04224",
+        "address": "16 TAVISTOCK PLACE, LONDON",
+        "postcode": "WC1H 9RU"
+      },
+      {
+        "name": "RAVAL DENTAL SURGERY",
+        "odsCode": "V04232",
+        "address": "86 CROMER STREET, LONDON",
+        "postcode": "WC1H 8DG"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "JOHN WALKER CHEMISTS",
+        "odsCode": "FHK32",
+        "address": "2-3 MEDWAY COURT, JUDD STREET, LONDON",
+        "postcode": "WC1H 9QX",
+        "telephone": "020 73871789"
+      },
+      {
+        "name": "HASSCON PHARMACY",
+        "odsCode": "FMC51",
+        "address": "76 CROMER STREET, CAMDEN, LONDON",
+        "postcode": "WC1H 8DR",
+        "telephone": "02086 165960"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Argyle Primary School",
+        "urn": "100008",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Good",
+        "ofstedLastInspection": null,
+        "address": "Tonbridge Street, London",
+        "postcode": "WC1H 9EG",
+        "numberOfPupils": 269,
+        "schoolCapacity": 432
+      },
+      {
+        "name": "School of Oriental and African Studies",
+        "urn": "133907",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Thornhaugh Street, Russell Square, London",
+        "postcode": "WC1H 0XG",
+        "numberOfPupils": null,
+        "schoolCapacity": null
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 3894,
+        "violentCrimes": 830,
+        "propertyCrimes": 2394
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 3485,
+        "violentCrimes": 793,
+        "propertyCrimes": 2040
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 3549,
+        "violentCrimes": 827,
+        "propertyCrimes": 2135
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 3830,
+        "violentCrimes": 894,
+        "propertyCrimes": 2307
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 3965,
+        "violentCrimes": 837,
+        "propertyCrimes": 2476
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 3726,
+        "violentCrimes": 786,
+        "propertyCrimes": 2308
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 3227,
+        "violentCrimes": 725,
+        "propertyCrimes": 1878
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 3146,
+        "violentCrimes": 662,
+        "propertyCrimes": 1867
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 3390,
+        "violentCrimes": 824,
+        "propertyCrimes": 1844
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 3559,
+        "violentCrimes": 802,
+        "propertyCrimes": 2028
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 3424,
+        "violentCrimes": 831,
+        "propertyCrimes": 1941
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 3426,
+        "violentCrimes": 885,
+        "propertyCrimes": 1897
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 6281,
+      "bicycle-theft": 710,
+      "burglary": 1282,
+      "criminal-damage-arson": 852,
+      "drugs": 1296,
+      "other-theft": 8403,
+      "possession-of-weapons": 142,
+      "public-order": 1943,
+      "robbery": 1390,
+      "shoplifting": 4087,
+      "theft-from-the-person": 8875,
+      "vehicle-crime": 906,
+      "violent-crime": 6221,
+      "other-crime": 233
+    },
+    "totalLast12Months": 42621
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "RUSSELL COURT, FLAT 340, WOBURN PLACE",
+        "postcode": "WC1H 0NG",
+        "price": 350000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 391, WOBURN PLACE",
+        "postcode": "WC1H 0NH",
+        "price": 285000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "QUEEN ALEXANDRA MANSIONS, FLAT 95, HASTINGS STREET",
+        "postcode": "WC1H 9DP",
+        "price": 425000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINSTON HOUSE, FLAT 12, ENDSLEIGH STREET",
+        "postcode": "WC1H 0EA",
+        "price": 485000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 73, JUDD STREET",
+        "postcode": "WC1H 9QW",
+        "price": 315000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FLAXMAN COURT, FLAT 18, FLAXMAN TERRACE",
+        "postcode": "WC1H 9AS",
+        "price": 550000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FLAXMAN COURT, FLAT 7, FLAXMAN TERRACE",
+        "postcode": "WC1H 9AS",
+        "price": 525000,
+        "dateOfTransfer": "2026-05-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "QUEEN ALEXANDRA MANSIONS, FLAT 102, HASTINGS STREET",
+        "postcode": "WC1H 9DP",
+        "price": 470000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, FLAT C, BURTON STREET",
+        "postcode": "WC1H 9AQ",
+        "price": 520000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 427, WOBURN PLACE",
+        "postcode": "WC1H 0NJ",
+        "price": 290000,
+        "dateOfTransfer": "2026-03-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAMAR HOUSE, 12, FLAT 14, TAVISTOCK PLACE",
+        "postcode": "WC1H 9RD",
+        "price": 695000,
+        "dateOfTransfer": "2026-03-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RODMELL, FLAT 1, REGENT SQUARE",
+        "postcode": "WC1H 8HX",
+        "price": 357000,
+        "dateOfTransfer": "2026-03-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 307, WOBURN PLACE",
+        "postcode": "WC1H 0NG",
+        "price": 285000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 263, WOBURN PLACE",
+        "postcode": "WC1H 0NF",
+        "price": 215000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 469, WOBURN PLACE",
+        "postcode": "WC1H 0NL",
+        "price": 230000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RODMELL, FLAT 28, REGENT SQUARE",
+        "postcode": "WC1H 8HX",
+        "price": 475000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 335, WOBURN PLACE",
+        "postcode": "WC1H 0NG",
+        "price": 283000,
+        "dateOfTransfer": "2026-01-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 25, JUDD STREET",
+        "postcode": "WC1H 9QW",
+        "price": 488000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TONBRIDGE HOUSE, FLAT 10, TONBRIDGE STREET",
+        "postcode": "WC1H 9PA",
+        "price": 465000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, BASEMENT FLAT, LEIGH STREET",
+        "postcode": "WC1H 9EW",
+        "price": 647500,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 430, WOBURN PLACE",
+        "postcode": "WC1H 0NJ",
+        "price": 350000,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FLAT 1, TAVISTOCK PLACE",
+        "postcode": "WC1H 9SH",
+        "price": 995000,
+        "dateOfTransfer": "2025-12-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 57, JUDD STREET",
+        "postcode": "WC1H 9QW",
+        "price": 714000,
+        "dateOfTransfer": "2025-12-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "STORRINGTON, FLAT 1, REGENT SQUARE",
+        "postcode": "WC1H 8LA",
+        "price": 475000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 398, WOBURN PLACE",
+        "postcode": "WC1H 0NH",
+        "price": 250000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 68, JUDD STREET",
+        "postcode": "WC1H 9QW",
+        "price": 400000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EDWARD BOND HOUSE, FLAT 12, CROMER STREET",
+        "postcode": "WC1H 8DT",
+        "price": 290000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, FLAT 1, REGENT SQUARE",
+        "postcode": "WC1H 8HZ",
+        "price": 850000,
+        "dateOfTransfer": "2025-11-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, FLAT 1, REGENT SQUARE",
+        "postcode": "WC1H 8HZ",
+        "price": 850000,
+        "dateOfTransfer": "2025-11-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RASHLEIGH HOUSE, FLAT 4, THANET STREET",
+        "postcode": "WC1H 9ES",
+        "price": 420000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 211, WOBURN PLACE",
+        "postcode": "WC1H 0ND",
+        "price": 250000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SANDWICH HOUSE, FLAT 57, SANDWICH STREET",
+        "postcode": "WC1H 9PP",
+        "price": 465000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINSTON HOUSE, FLAT 22, ENDSLEIGH STREET",
+        "postcode": "WC1H 0EA",
+        "price": 673500,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 284, WOBURN PLACE",
+        "postcode": "WC1H 0NF",
+        "price": 260000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "116, CROMER STREET",
+        "postcode": "WC1H 8BS",
+        "price": 1200000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "QUEEN ALEXANDRA MANSIONS, FLAT 92, HASTINGS STREET",
+        "postcode": "WC1H 9DP",
+        "price": 500000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SINCLAIR HOUSE, FLAT 178, THANET STREET",
+        "postcode": "WC1H 9QA",
+        "price": 523000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 2, WOBURN PLACE",
+        "postcode": "WC1H 0LL",
+        "price": 299950,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 14, JUDD STREET",
+        "postcode": "WC1H 9QW",
+        "price": 331000,
+        "dateOfTransfer": "2025-09-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ALBANY HOUSE, 41, FLAT 203, JUDD STREET",
+        "postcode": "WC1H 9QS",
+        "price": 300000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NORTHIAM, FLAT 9, CROMER STREET",
+        "postcode": "WC1H 8LB",
+        "price": 471000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, SECOND AND THIRD FLOOR FLAT, REGENT SQUARE",
+        "postcode": "WC1H 8HZ",
+        "price": 895000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, SECOND AND THIRD FLOOR FLAT, REGENT SQUARE",
+        "postcode": "WC1H 8HZ",
+        "price": 895000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 441, WOBURN PLACE",
+        "postcode": "WC1H 0NJ",
+        "price": 315000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 174, WOBURN PLACE",
+        "postcode": "WC1H 0LR",
+        "price": 290000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 110, WOBURN PLACE",
+        "postcode": "WC1H 0LP",
+        "price": 280000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JESSEL HOUSE, FLAT 56, JUDD STREET",
+        "postcode": "WC1H 9NU",
+        "price": 645000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAVISTOCK COURT, FLAT 45, TAVISTOCK SQUARE",
+        "postcode": "WC1H 9HG",
+        "price": 175000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 180, WOBURN PLACE",
+        "postcode": "WC1H 0LR",
+        "price": 320000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 126, JUDD STREET",
+        "postcode": "WC1H 9QR",
+        "price": 420000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, FLAT D, BURTON STREET",
+        "postcode": "WC1H 9AQ",
+        "price": 345000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JESSEL HOUSE, 108 - 110, FLAT 71, JUDD STREET",
+        "postcode": "WC1H 9NX",
+        "price": 610000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 125, WOBURN PLACE",
+        "postcode": "WC1H 0LP",
+        "price": 300000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 111, WOBURN PLACE",
+        "postcode": "WC1H 0LP",
+        "price": 257500,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FLAXMAN COURT, FLAT 83, FLAXMAN TERRACE",
+        "postcode": "WC1H 9AW",
+        "price": 470000,
+        "dateOfTransfer": "2025-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 212, WOBURN PLACE",
+        "postcode": "WC1H 0ND",
+        "price": 240000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THANET HOUSE, FLAT 156, THANET STREET",
+        "postcode": "WC1H 9QD",
+        "price": 505000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERSIDE, FLAT 19, BIRKENHEAD STREET",
+        "postcode": "WC1H 8BH",
+        "price": 425000,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAVISTOCK COURT, FLAT 66, TAVISTOCK SQUARE",
+        "postcode": "WC1H 9HG",
+        "price": 320000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 393, WOBURN PLACE",
+        "postcode": "WC1H 0NH",
+        "price": 325000,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAMAR HOUSE, 12, FLAT 13, TAVISTOCK PLACE",
+        "postcode": "WC1H 9RD",
+        "price": 975500,
+        "dateOfTransfer": "2025-06-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 104, JUDD STREET",
+        "postcode": "WC1H 9QP",
+        "price": 450000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, FLAT 3, LEIGH STREET",
+        "postcode": "WC1H 9EW",
+        "price": 349500,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1 - 5, WHIDBORNE STREET",
+        "postcode": "WC1H 8ET",
+        "price": 3156789,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "KELVIN HOUSE, 123, JUDD STREET",
+        "postcode": "WC1H 9NP",
+        "price": 12000000,
+        "dateOfTransfer": "2025-04-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 169, WOBURN PLACE",
+        "postcode": "WC1H 0LR",
+        "price": 310000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAVISTOCK COURT, FLAT 5, TAVISTOCK SQUARE",
+        "postcode": "WC1H 9HE",
+        "price": 240000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAMAR HOUSE, 12, FLAT 9, TAVISTOCK PLACE",
+        "postcode": "WC1H 9RD",
+        "price": 532500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 216, WOBURN PLACE",
+        "postcode": "WC1H 0ND",
+        "price": 276000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ENDSLEIGH COURT, FLAT 605, UPPER WOBURN PLACE",
+        "postcode": "WC1H 0HL",
+        "price": 775000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAMAR HOUSE, 12, FLAT 9, TAVISTOCK PLACE",
+        "postcode": "WC1H 9RD",
+        "price": 532500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SANDWICH HOUSE, FLAT 84, SANDWICH STREET",
+        "postcode": "WC1H 9PW",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 6, REGENT SQUARE",
+        "postcode": "WC1H 8HZ",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BECKETT HOUSE, 6, WESTKING PLACE",
+        "postcode": "WC1H 8AH",
+        "price": 1550000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 64, WOBURN PLACE",
+        "postcode": "WC1H 0LW",
+        "price": 285000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, FLAT 3, ARGYLE STREET",
+        "postcode": "WC1H 8EP",
+        "price": 405000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAVISTOCK COURT, FLAT 27, TAVISTOCK SQUARE",
+        "postcode": "WC1H 9HE",
+        "price": 179000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 193, WOBURN PLACE",
+        "postcode": "WC1H 0LR",
+        "price": 295000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAMAR HOUSE, 12, FLAT 16, TAVISTOCK PLACE",
+        "postcode": "WC1H 9RD",
+        "price": 545000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 293, WOBURN PLACE",
+        "postcode": "WC1H 0NF",
+        "price": 325000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FLEETWAY, FLAT 3, BIRKENHEAD STREET",
+        "postcode": "WC1H 8BL",
+        "price": 225000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BURLEIGH HOUSE, FLAT 19, WESTKING PLACE",
+        "postcode": "WC1H 8AQ",
+        "price": 695000,
+        "dateOfTransfer": "2025-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ALBANY HOUSE, 41, FLAT 304, JUDD STREET",
+        "postcode": "WC1H 9QS",
+        "price": 240000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, FLAT A, BURTON STREET",
+        "postcode": "WC1H 9AQ",
+        "price": 680000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, DUKES ROAD",
+        "postcode": "WC1H 9AD",
+        "price": 1999999,
+        "dateOfTransfer": "2025-01-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 51, WOBURN PLACE",
+        "postcode": "WC1H 0LW",
+        "price": 250000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 128, WOBURN PLACE",
+        "postcode": "WC1H 0LP",
+        "price": 275000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BURLEIGH HOUSE, FLAT 17, WESTKING PLACE",
+        "postcode": "WC1H 8AQ",
+        "price": 960000,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 647128,
+    "medianPrice": 422500
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Sir Keir Starmer",
+        "party": "Labour",
+        "constituency": "Holborn and St Pancras",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://www.camden.gov.uk/search-for-planning-applications"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Camden Market",
+        "category": "community-hub",
+        "address": "Camden Town",
+        "description": "One of the UK's most visited attractions, a sprawling market for fashion, food, and crafts."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "WC1H lies within Camden. Formed in 1965 from Hampstead, Holborn, and St Pancras. Home to the British Museum, the British Library, and Camden Market, one of the UK's most visited attractions.",
+    "keyFacts": [
+      "Formed in 1965 from Hampstead, Holborn, and St Pancras. Home to the British Museum, the British Library, and Camden Market, one of the UK's most visited attractions."
+    ]
+  }
+}

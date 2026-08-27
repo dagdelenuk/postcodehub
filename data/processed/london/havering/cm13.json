@@ -1,0 +1,4829 @@
+{
+  "outcode": "CM13",
+  "slug": "cm13",
+  "city": "London",
+  "borough": "Havering",
+  "latitude": 51.6150199101284,
+  "longitude": 0.3382108516405134,
+  "wards": [
+    "Brentwood South",
+    "Burstead",
+    "Harold Wood",
+    "Herongate, Ingrave & West Horndon",
+    "Hutton East",
+    "Hutton North",
+    "Hutton South",
+    "Ingatestone, Fryerning & Mountnessing",
+    "Laindon Park",
+    "Orsett",
+    "Warley"
+  ],
+  "health": {
+    "gpSurgeries": [
+      {
+        "name": "MOUNT AVENUE SURGERY",
+        "odsCode": "F81055",
+        "address": "THE SURGERY, MOUNT AVENUE, SHENFIELD, BRENTWOOD",
+        "postcode": "CM13 2NL",
+        "telephone": "01277 283180"
+      }
+    ],
+    "dentists": [
+      {
+        "name": "DENTAL SURGERY",
+        "odsCode": "V05934",
+        "address": "152 BRENTWOOD ROAD, HERONGATE, BRENTWOOD",
+        "postcode": "CM13 3PD"
+      },
+      {
+        "name": "DENTAL SURGERY",
+        "odsCode": "V05945",
+        "address": "217 RAYLEIGH ROAD, HUTTON, BRENTWOOD",
+        "postcode": "CM13 1PJ"
+      },
+      {
+        "name": "CORAM GREEN DENTAL CLINIC",
+        "odsCode": "V32137",
+        "address": "HUTTON, BRENTWOOD",
+        "postcode": "CM13 1LR"
+      }
+    ],
+    "pharmacies": [
+      {
+        "name": "WELL",
+        "odsCode": "FCF02",
+        "address": "201 RAYLEIGH ROAD, HUTTON, BRENTWOOD",
+        "postcode": "CM13 1LZ",
+        "telephone": "01277 214628"
+      },
+      {
+        "name": "INGRAVE PHARMACY",
+        "odsCode": "FW781",
+        "address": "21 EASTHAM CRESCENT, INGRAVE, BRENTWOOD",
+        "postcode": "CM13 2BN",
+        "telephone": "01277 229203"
+      }
+    ]
+  },
+  "schools": {
+    "schools": [
+      {
+        "name": "Long Ridings Primary School",
+        "urn": "114902",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Long Ridings Avenue, Hutton, Brentwood",
+        "postcode": "CM13 1DU",
+        "numberOfPupils": 392,
+        "schoolCapacity": 420
+      },
+      {
+        "name": "West Horndon Primary School",
+        "urn": "114921",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": "Good",
+        "ofstedLastInspection": null,
+        "address": "Thorndon Avenue, West Horndon, Brentwood",
+        "postcode": "CM13 3TR",
+        "numberOfPupils": 180,
+        "schoolCapacity": 189
+      },
+      {
+        "name": "Willowbrook Primary School",
+        "urn": "115041",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Rosen Crescent, Hutton, Brentwood",
+        "postcode": "CM13 2TU",
+        "numberOfPupils": 208,
+        "schoolCapacity": 210
+      },
+      {
+        "name": "Ingrave Johnstone Church of England Voluntary Aided Primary School",
+        "urn": "115154",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Brentwood Road, Ingrave, Brentwood",
+        "postcode": "CM13 3NU",
+        "numberOfPupils": 210,
+        "schoolCapacity": 218
+      },
+      {
+        "name": "St Joseph the Worker Catholic Primary School",
+        "urn": "115183",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Highview Crescent, Hutton",
+        "postcode": "CM13 1BJ",
+        "numberOfPupils": 205,
+        "schoolCapacity": 210
+      },
+      {
+        "name": "Ursuline Preparatory School",
+        "urn": "115428",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Great Ropers Lane,, Brentwood, Brentwood",
+        "postcode": "CM13 3HR",
+        "numberOfPupils": 161,
+        "schoolCapacity": 170
+      },
+      {
+        "name": "Woodlands School Hutton Manor",
+        "urn": "133628",
+        "phaseOfEducation": "Not applicable",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "428 Rayleigh Road, Brentwood, Brentwood",
+        "postcode": "CM13 1SD",
+        "numberOfPupils": 143,
+        "schoolCapacity": 230
+      },
+      {
+        "name": "St Martin's School Brentwood",
+        "urn": "136875",
+        "phaseOfEducation": "Secondary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Hanging Hill Lane, Hutton, Brentwood",
+        "postcode": "CM13 2HG",
+        "numberOfPupils": 1794,
+        "schoolCapacity": 1805
+      },
+      {
+        "name": "Hutton All Saints' Church of England Primary School",
+        "urn": "137698",
+        "phaseOfEducation": "Primary",
+        "ofstedRating": null,
+        "ofstedLastInspection": null,
+        "address": "Claughton Way, Hutton, Brentwood",
+        "postcode": "CM13 1JW",
+        "numberOfPupils": 200,
+        "schoolCapacity": 231
+      }
+    ]
+  },
+  "safety": {
+    "monthlyTrend": [
+      {
+        "month": "2025-07",
+        "totalCrimes": 39,
+        "violentCrimes": 16,
+        "propertyCrimes": 13
+      },
+      {
+        "month": "2025-08",
+        "totalCrimes": 35,
+        "violentCrimes": 19,
+        "propertyCrimes": 13
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 25,
+        "violentCrimes": 12,
+        "propertyCrimes": 7
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 39,
+        "violentCrimes": 25,
+        "propertyCrimes": 8
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 35,
+        "violentCrimes": 16,
+        "propertyCrimes": 12
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 37,
+        "violentCrimes": 17,
+        "propertyCrimes": 10
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 39,
+        "violentCrimes": 24,
+        "propertyCrimes": 11
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 31,
+        "violentCrimes": 19,
+        "propertyCrimes": 9
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 36,
+        "violentCrimes": 18,
+        "propertyCrimes": 14
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 24,
+        "violentCrimes": 16,
+        "propertyCrimes": 4
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 51,
+        "violentCrimes": 30,
+        "propertyCrimes": 15
+      },
+      {
+        "month": "2026-06",
+        "totalCrimes": 33,
+        "violentCrimes": 18,
+        "propertyCrimes": 5
+      }
+    ],
+    "categoryBreakdown": {
+      "anti-social-behaviour": 30,
+      "bicycle-theft": 1,
+      "burglary": 15,
+      "criminal-damage-arson": 28,
+      "drugs": 35,
+      "other-theft": 26,
+      "public-order": 23,
+      "theft-from-the-person": 1,
+      "vehicle-crime": 50,
+      "violent-crime": 195,
+      "other-crime": 8,
+      "possession-of-weapons": 9,
+      "robbery": 3
+    },
+    "totalLast12Months": 424
+  },
+  "property": {
+    "sales": [
+      {
+        "address": "9, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1EA",
+        "price": 575000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, ELLIOTS CLOSE, WEST HORNDON",
+        "postcode": "CM13 3FU",
+        "price": 490000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BURNSIDE, ALEXANDER LANE, HUTTON",
+        "postcode": "CM13 1AG",
+        "price": 1242080,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "BURNSIDE, ALEXANDER LANE, HUTTON",
+        "postcode": "CM13 1AG",
+        "price": 1242080,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "41, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HG",
+        "price": 415000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, DUNMOW GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NL",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, LIME AVENUE",
+        "postcode": "CM13 2DU",
+        "price": 545000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, SYLVIA AVENUE, HUTTON",
+        "postcode": "CM13 2HP",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "69, ABENBERG WAY, HUTTON",
+        "postcode": "CM13 2UQ",
+        "price": 287000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "34, RANDALLS DRIVE, HUTTON",
+        "postcode": "CM13 1NW",
+        "price": 630000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, OAKLAND GARDENS, HUTTON",
+        "postcode": "CM13 1EN",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 126, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GJ",
+        "price": 290000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, COMMON ROAD, INGRAVE",
+        "postcode": "CM13 3QL",
+        "price": 650000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "59, VICTORS CRESCENT, HUTTON",
+        "postcode": "CM13 2JA",
+        "price": 615000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "175, INGRAVE ROAD",
+        "postcode": "CM13 2AA",
+        "price": 900000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "171, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1LX",
+        "price": 630000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, JANMEAD, HUTTON",
+        "postcode": "CM13 2PU",
+        "price": 845000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "52, PRINCES WAY, HUTTON",
+        "postcode": "CM13 2JW",
+        "price": 375000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, BONNINGTONS",
+        "postcode": "CM13 2TL",
+        "price": 420000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, ROSEMEAD GARDENS, HUTTON",
+        "postcode": "CM13 1HZ",
+        "price": 465000,
+        "dateOfTransfer": "2026-05-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, WILKES ROAD, HUTTON",
+        "postcode": "CM13 1LH",
+        "price": 403000,
+        "dateOfTransfer": "2026-05-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "211, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2QG",
+        "price": 560000,
+        "dateOfTransfer": "2026-05-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "190, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1PN",
+        "price": 660000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, ARNOLDS CLOSE, HUTTON",
+        "postcode": "CM13 1EZ",
+        "price": 510000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "MAYBANK, 2A, WASH ROAD, HUTTON",
+        "postcode": "CM13 1BZ",
+        "price": 487500,
+        "dateOfTransfer": "2026-04-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, THE MEADOWS, INGRAVE",
+        "postcode": "CM13 3RL",
+        "price": 575000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, SYCAMORE CLOSE, GREAT WARLEY",
+        "postcode": "CM13 3FJ",
+        "price": 787500,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, MOSBACH GARDENS, HUTTON",
+        "postcode": "CM13 2UW",
+        "price": 297000,
+        "dateOfTransfer": "2026-04-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "76, VICTORS CRESCENT, HUTTON",
+        "postcode": "CM13 2JA",
+        "price": 590000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, FLORENCE CLOSE, GREAT WARLEY",
+        "postcode": "CM13 3FQ",
+        "price": 320000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HS",
+        "price": 610000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, EDWARDS WAY, HUTTON",
+        "postcode": "CM13 1BT",
+        "price": 475000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "66, CORAM GREEN, HUTTON",
+        "postcode": "CM13 1LW",
+        "price": 415000,
+        "dateOfTransfer": "2026-04-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, LIME AVENUE",
+        "postcode": "CM13 2DU",
+        "price": 602500,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "65, CRICKETERS LANE, HERONGATE",
+        "postcode": "CM13 3QB",
+        "price": 1000000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "SANTHEM RESIDENCES, 2, 11, RAYLEIGH CLOSE, HUTTON",
+        "postcode": "CM13 1FD",
+        "price": 460000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, PINE CRESCENT, HUTTON",
+        "postcode": "CM13 1JB",
+        "price": 510000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "MAGPIE'S NEST, PLOT 1, WARLEY GAP, LITTLE WARLEY",
+        "postcode": "CM13 3DR",
+        "price": 302750,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "91, LONG RIDINGS AVENUE, HUTTON",
+        "postcode": "CM13 1EF",
+        "price": 870000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, BRENTWOOD ROAD, INGRAVE",
+        "postcode": "CM13 3RE",
+        "price": 420000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 450000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "51, FAIRVIEW AVENUE, HUTTON",
+        "postcode": "CM13 1NZ",
+        "price": 435000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "41, ROSEN CRESCENT, HUTTON",
+        "postcode": "CM13 2TU",
+        "price": 475000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, CRICKETERS ROW, HERONGATE",
+        "postcode": "CM13 3QA",
+        "price": 530000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HOMESTEAD, LITTLE WARLEY HALL LANE, LITTLE WARLEY",
+        "postcode": "CM13 3EU",
+        "price": 975000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HY",
+        "price": 720000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "42, SURMAN CRESCENT, HUTTON",
+        "postcode": "CM13 2PW",
+        "price": 915000,
+        "dateOfTransfer": "2026-03-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HG",
+        "price": 645000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, FALCON DRIVE, GREAT WARLEY",
+        "postcode": "CM13 3GU",
+        "price": 762500,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, CORY DRIVE, HUTTON",
+        "postcode": "CM13 2PT",
+        "price": 1600000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 420000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, BYRON ROAD, HUTTON",
+        "postcode": "CM13 2RU",
+        "price": 712500,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 85, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GH",
+        "price": 340000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, EDWARDS WAY, HUTTON",
+        "postcode": "CM13 1BT",
+        "price": 498000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, WALTON GARDENS, HUTTON",
+        "postcode": "CM13 1EJ",
+        "price": 490000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THORNDON COURT, FLAT 3, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3BZ",
+        "price": 250000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, CADOGAN AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TX",
+        "price": 563500,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "158, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TR",
+        "price": 556000,
+        "dateOfTransfer": "2026-03-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, RIFFHAMS",
+        "postcode": "CM13 2TW",
+        "price": 352000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 23, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GF",
+        "price": 310000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "82, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HS",
+        "price": 635000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, TALLON ROAD, HUTTON",
+        "postcode": "CM13 1TE",
+        "price": 750000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "38, FIELDING WAY, HUTTON",
+        "postcode": "CM13 1JN",
+        "price": 340000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HH",
+        "price": 232500,
+        "dateOfTransfer": "2026-02-18",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "124, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HW",
+        "price": 425000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, FYFIELD CLOSE, WEST HORNDON",
+        "postcode": "CM13 3NQ",
+        "price": 515000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "37, FLORENCE CLOSE, GREAT WARLEY",
+        "postcode": "CM13 3FQ",
+        "price": 252500,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, CARSWELL CLOSE, HUTTON",
+        "postcode": "CM13 1PD",
+        "price": 555000,
+        "dateOfTransfer": "2026-02-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "654, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1SJ",
+        "price": 935000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "42, VICTORS CRESCENT, HUTTON",
+        "postcode": "CM13 2HZ",
+        "price": 570000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, CEDAR ROAD, HUTTON",
+        "postcode": "CM13 1NA",
+        "price": 545000,
+        "dateOfTransfer": "2026-02-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, BYRON ROAD, HUTTON",
+        "postcode": "CM13 2SA",
+        "price": 450000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "602, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1SG",
+        "price": 640000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, DUNMOW GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NL",
+        "price": 615000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, OAKWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1PT",
+        "price": 550000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "31C, TENNYSON ROAD, HUTTON",
+        "postcode": "CM13 2SJ",
+        "price": 685000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "42, CADOGAN AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TX",
+        "price": 575000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "560, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1SG",
+        "price": 862000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "59, EASTHAM CRESCENT",
+        "postcode": "CM13 2ET",
+        "price": 235000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "87, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HN",
+        "price": 980000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "49, TENNYSON ROAD, HUTTON",
+        "postcode": "CM13 2SG",
+        "price": 537500,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, ASPEN COURT",
+        "postcode": "CM13 2LD",
+        "price": 210000,
+        "dateOfTransfer": "2026-01-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "66, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HH",
+        "price": 190000,
+        "dateOfTransfer": "2026-01-20",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "11, BRINDLES CLOSE, HUTTON",
+        "postcode": "CM13 2HW",
+        "price": 450000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31, SPURGATE, HUTTON",
+        "postcode": "CM13 2JS",
+        "price": 1250000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 425000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ST JAMES COURT, 13, STATION ROAD, WEST HORNDON",
+        "postcode": "CM13 3LZ",
+        "price": 280000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, LONG MEADOW, HUTTON",
+        "postcode": "CM13 2HJ",
+        "price": 1310000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, SHAW CRESCENT, HUTTON",
+        "postcode": "CM13 1JD",
+        "price": 435000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, SAFFRON CLOSE, WEST HORNDON",
+        "postcode": "CM13 3NF",
+        "price": 450000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "190, HAWTHORN AVENUE",
+        "postcode": "CM13 2EQ",
+        "price": 380000,
+        "dateOfTransfer": "2026-01-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "48, ABENBERG WAY, HUTTON",
+        "postcode": "CM13 2UQ",
+        "price": 210000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, CEDAR ROAD, HUTTON",
+        "postcode": "CM13 1NA",
+        "price": 634000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WILDWOOD, 2, HERINGTON GROVE, HUTTON",
+        "postcode": "CM13 2NN",
+        "price": 1622500,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, EDWARDS CLOSE, HUTTON",
+        "postcode": "CM13 1BU",
+        "price": 553000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, THRIFT GREEN",
+        "postcode": "CM13 2BB",
+        "price": 480000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PARKLANDS, THORNDON APPROACH, HERONGATE",
+        "postcode": "CM13 3PA",
+        "price": 2500000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "32, ARNOLDS AVENUE, HUTTON",
+        "postcode": "CM13 1EU",
+        "price": 810000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, TOMLYNS CLOSE, HUTTON",
+        "postcode": "CM13 1PU",
+        "price": 460000,
+        "dateOfTransfer": "2026-01-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "67, CEDAR ROAD, HUTTON",
+        "postcode": "CM13 1ND",
+        "price": 560000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, WENDOVER GARDENS",
+        "postcode": "CM13 2JE",
+        "price": 525000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "48, ORCHARD AVENUE",
+        "postcode": "CM13 2DP",
+        "price": 600000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1EA",
+        "price": 475000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, BURSES WAY, HUTTON",
+        "postcode": "CM13 2PL",
+        "price": 655000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "SANTHEM RESIDENCES, 2, 22, RAYLEIGH CLOSE, HUTTON",
+        "postcode": "CM13 1FD",
+        "price": 493000,
+        "dateOfTransfer": "2025-12-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TT",
+        "price": 700000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, RIDGEWAY, HUTTON",
+        "postcode": "CM13 2LS",
+        "price": 1525000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TT",
+        "price": 500000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "OAKWOOD, 51, PARK AVENUE, HUTTON",
+        "postcode": "CM13 2QP",
+        "price": 2012750,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "84, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TS",
+        "price": 700000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, HUTTON COURT, HUTTON",
+        "postcode": "CM13 1SZ",
+        "price": 275000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, HAMMONDS LANE, GREAT WARLEY",
+        "postcode": "CM13 3AQ",
+        "price": 312500,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "233, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1PJ",
+        "price": 220000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HY",
+        "price": 572500,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WATER TOWER, 10A, PINE COURT, GREAT WARLEY",
+        "postcode": "CM13 3FH",
+        "price": 550000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "WARWICK COURT, FLAT 2, WENDOVER GARDENS",
+        "postcode": "CM13 2JB",
+        "price": 275000,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "188, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TP",
+        "price": 410000,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, ROTH DRIVE, HUTTON",
+        "postcode": "CM13 2UD",
+        "price": 362500,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, CARSWELL CLOSE, HUTTON",
+        "postcode": "CM13 1PD",
+        "price": 492750,
+        "dateOfTransfer": "2025-12-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, DUNMOW GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NL",
+        "price": 420000,
+        "dateOfTransfer": "2025-12-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "62, BONNINGTONS",
+        "postcode": "CM13 2TN",
+        "price": 440000,
+        "dateOfTransfer": "2025-12-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, WAINWRIGHT AVENUE, HUTTON",
+        "postcode": "CM13 2SR",
+        "price": 400000,
+        "dateOfTransfer": "2025-12-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26, ROWHEDGE",
+        "postcode": "CM13 2TS",
+        "price": 365000,
+        "dateOfTransfer": "2025-12-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "67, CRICKETERS LANE, HERONGATE",
+        "postcode": "CM13 3QB",
+        "price": 1190000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, COLET ROAD, HUTTON",
+        "postcode": "CM13 1LD",
+        "price": 375000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, WAINWRIGHT AVENUE, HUTTON",
+        "postcode": "CM13 2SS",
+        "price": 440000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "VINE COTTAGE, BRINDLES CLOSE, HUTTON",
+        "postcode": "CM13 2HW",
+        "price": 675000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1 THORNDON COTTAGES, THORNDON GATE, INGRAVE",
+        "postcode": "CM13 3RG",
+        "price": 647450,
+        "dateOfTransfer": "2025-12-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, NEWMANS DRIVE, HUTTON",
+        "postcode": "CM13 2PZ",
+        "price": 865000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, BECKET CLOSE, GREAT WARLEY",
+        "postcode": "CM13 3BU",
+        "price": 430000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1EA",
+        "price": 532500,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, PETRESFIELD WAY, WEST HORNDON",
+        "postcode": "CM13 3TG",
+        "price": 285000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JASMINE COTTAGE, 189, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1LZ",
+        "price": 500000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "272, WARLEY HILL, GREAT WARLEY",
+        "postcode": "CM13 3AB",
+        "price": 700000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THORNDON COURT, FLAT 59, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3BX",
+        "price": 235000,
+        "dateOfTransfer": "2025-11-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FAIRSTEAD LODGE, GREAT WARLEY STREET, GREAT WARLEY",
+        "postcode": "CM13 3JP",
+        "price": 1500000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, HERONWAY, HUTTON",
+        "postcode": "CM13 2LG",
+        "price": 2050000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, NEWMANS DRIVE, HUTTON",
+        "postcode": "CM13 2PZ",
+        "price": 1200000,
+        "dateOfTransfer": "2025-11-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, HAZELEIGH",
+        "postcode": "CM13 2TT",
+        "price": 385000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THORNDON HALL, FLAT 12, THORNDON PARK, INGRAVE",
+        "postcode": "CM13 3RJ",
+        "price": 775000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, SHENFIELD GARDENS, HUTTON",
+        "postcode": "CM13 1DT",
+        "price": 1195000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "39, WALTON GARDENS, HUTTON",
+        "postcode": "CM13 1EJ",
+        "price": 485000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, BIRKBECK ROAD, HUTTON",
+        "postcode": "CM13 1JP",
+        "price": 410000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, BYRON ROAD, HUTTON",
+        "postcode": "CM13 2RU",
+        "price": 568750,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "32, ROWAN GREEN EAST",
+        "postcode": "CM13 2ED",
+        "price": 270000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, PEARTREES, INGRAVE",
+        "postcode": "CM13 3RP",
+        "price": 700000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, WHITBY AVENUE, INGRAVE",
+        "postcode": "CM13 3NT",
+        "price": 325000,
+        "dateOfTransfer": "2025-11-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, PRINCES WAY, HUTTON",
+        "postcode": "CM13 2JW",
+        "price": 320000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, COPEMAN ROAD, HUTTON",
+        "postcode": "CM13 2RN",
+        "price": 335000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, WILLINGALE CLOSE, HUTTON",
+        "postcode": "CM13 1NT",
+        "price": 395000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "53, SPALT CLOSE, HUTTON",
+        "postcode": "CM13 2UN",
+        "price": 330000,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, SPURGATE, HUTTON",
+        "postcode": "CM13 2LA",
+        "price": 744000,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "62, LONG RIDINGS AVENUE, HUTTON",
+        "postcode": "CM13 1EE",
+        "price": 625000,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "KINGSMEAD, DARCY CLOSE, HUTTON",
+        "postcode": "CM13 2PY",
+        "price": 1612500,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "ALDEBURGH LODGE, THE AVENUE",
+        "postcode": "CM13 3RZ",
+        "price": 1800000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, WOODSIDE PLACE, GREAT WARLEY",
+        "postcode": "CM13 3FP",
+        "price": 1497500,
+        "dateOfTransfer": "2025-11-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 33, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GF",
+        "price": 275000,
+        "dateOfTransfer": "2025-11-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "57, WOODWAY, HUTTON",
+        "postcode": "CM13 2JR",
+        "price": 1155000,
+        "dateOfTransfer": "2025-11-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, WATLINGTON GARDENS, GREAT WARLEY",
+        "postcode": "CM13 3FA",
+        "price": 990000,
+        "dateOfTransfer": "2025-11-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "THORNDON LODGE, 29, FLAT 2, BRENTWOOD ROAD, INGRAVE",
+        "postcode": "CM13 3RE",
+        "price": 260000,
+        "dateOfTransfer": "2025-11-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROSSETTI, KINGSLEY ROAD, HUTTON",
+        "postcode": "CM13 2SH",
+        "price": 1599950,
+        "dateOfTransfer": "2025-11-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, ST STEPHENS CRESCENT",
+        "postcode": "CM13 2AU",
+        "price": 410000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MAYFLOWER HOUSE, FLAT 16, THE DRIVE, GREAT WARLEY",
+        "postcode": "CM13 3BG",
+        "price": 160000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 87, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GH",
+        "price": 290000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 101, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GH",
+        "price": 250000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, BROCKSPARKWOOD",
+        "postcode": "CM13 2TJ",
+        "price": 425000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, CARPENTER PATH, HUTTON",
+        "postcode": "CM13 1LJ",
+        "price": 430000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "29, FRESHWELL GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NG",
+        "price": 501000,
+        "dateOfTransfer": "2025-10-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "111, INGRAVE ROAD",
+        "postcode": "CM13 2AA",
+        "price": 490000,
+        "dateOfTransfer": "2025-10-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, BILLERICAY ROAD, HERONGATE",
+        "postcode": "CM13 3PU",
+        "price": 605000,
+        "dateOfTransfer": "2025-10-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "662, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1SJ",
+        "price": 717500,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, PETRE CLOSE, WEST HORNDON",
+        "postcode": "CM13 3TN",
+        "price": 300000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, THE AVENUE",
+        "postcode": "CM13 2AD",
+        "price": 1275000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, BROCKSPARKWOOD",
+        "postcode": "CM13 2TH",
+        "price": 545000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "77, WASH ROAD, HUTTON",
+        "postcode": "CM13 1DL",
+        "price": 491500,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, LOMBARDS CHASE, WEST HORNDON",
+        "postcode": "CM13 3UA",
+        "price": 175000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43, GREDING WALK, HUTTON",
+        "postcode": "CM13 2UF",
+        "price": 410000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BRINDALE, LOWER DUNTON ROAD, DUNTON",
+        "postcode": "CM13 3SN",
+        "price": 630000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 434000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "172, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HE",
+        "price": 1212000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "HARLYN HOUSE, 13, HILLWOOD GROVE, HUTTON",
+        "postcode": "CM13 2PF",
+        "price": 2550000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, COTSWOLD GARDENS, HUTTON",
+        "postcode": "CM13 1RF",
+        "price": 400000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, SHENFIELD GARDENS, HUTTON",
+        "postcode": "CM13 1DT",
+        "price": 1085000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, SAFFRON CLOSE, WEST HORNDON",
+        "postcode": "CM13 3NF",
+        "price": 425000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 28, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GF",
+        "price": 255000,
+        "dateOfTransfer": "2025-10-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, LODGE CLOSE, HUTTON",
+        "postcode": "CM13 1SW",
+        "price": 715000,
+        "dateOfTransfer": "2025-10-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "ALDEBURGH, HERINGTON GROVE, HUTTON",
+        "postcode": "CM13 2NW",
+        "price": 1858000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, PETRESFIELD WAY, WEST HORNDON",
+        "postcode": "CM13 3TG",
+        "price": 285000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "134, HUTTON DRIVE, HUTTON",
+        "postcode": "CM13 1QW",
+        "price": 398500,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "174, WHITTINGTON ROAD, HUTTON",
+        "postcode": "CM13 1LG",
+        "price": 390000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "43, BROCKSPARKWOOD",
+        "postcode": "CM13 2TJ",
+        "price": 535000,
+        "dateOfTransfer": "2025-10-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, HILLWOOD GROVE, HUTTON",
+        "postcode": "CM13 2PD",
+        "price": 4850000,
+        "dateOfTransfer": "2025-10-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "246, WARLEY HILL, GREAT WARLEY",
+        "postcode": "CM13 3AA",
+        "price": 580000,
+        "dateOfTransfer": "2025-10-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, LONGAFORD WAY, HUTTON",
+        "postcode": "CM13 2LT",
+        "price": 2500000,
+        "dateOfTransfer": "2025-10-08",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "PEGASUS BIRDS LTD, LITTLE WARLEY HALL LANE, LITTLE WARLEY",
+        "postcode": "CM13 3EN",
+        "price": 500000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "15, TOMLYNS CLOSE, HUTTON",
+        "postcode": "CM13 1PU",
+        "price": 465000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, SHAW CRESCENT, HUTTON",
+        "postcode": "CM13 1JD",
+        "price": 545000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "GLADE VIEW, BROCKLEY GROVE, HUTTON",
+        "postcode": "CM13 2JJ",
+        "price": 1000000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, KNIGHTS WAY",
+        "postcode": "CM13 2AZ",
+        "price": 460000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "155, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HL",
+        "price": 590000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "109, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1LX",
+        "price": 735000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, COPEMAN ROAD, HUTTON",
+        "postcode": "CM13 2RN",
+        "price": 400000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44, LONG RIDINGS AVENUE, HUTTON",
+        "postcode": "CM13 1EE",
+        "price": 540000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "32, SPRINGFIELD AVENUE, HUTTON",
+        "postcode": "CM13 1RE",
+        "price": 265000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, KNIGHTS WAY",
+        "postcode": "CM13 2BA",
+        "price": 500000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "OO KARES, FOXES GROVE, HUTTON",
+        "postcode": "CM13 1SR",
+        "price": 615000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, KNIGHTS WAY",
+        "postcode": "CM13 2AR",
+        "price": 447500,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, HERINGTON GROVE, HUTTON",
+        "postcode": "CM13 2NW",
+        "price": 1080000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, PARK AVENUE, HUTTON",
+        "postcode": "CM13 2QL",
+        "price": 1145000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "208, WHITTINGTON ROAD, HUTTON",
+        "postcode": "CM13 1LQ",
+        "price": 500000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HY",
+        "price": 545000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, COLET ROAD, HUTTON",
+        "postcode": "CM13 1LD",
+        "price": 485000,
+        "dateOfTransfer": "2025-09-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 185, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GL",
+        "price": 249000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, THE AVENUE",
+        "postcode": "CM13 2AD",
+        "price": 665000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, BROCKSPARKWOOD",
+        "postcode": "CM13 2TJ",
+        "price": 522500,
+        "dateOfTransfer": "2025-09-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE GABLES, LITTLE WARLEY HALL LANE, LITTLE WARLEY",
+        "postcode": "CM13 3EX",
+        "price": 1175000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CLEVES, THORNDON APPROACH, HERONGATE",
+        "postcode": "CM13 3PA",
+        "price": 2060000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, COPEMAN ROAD, HUTTON",
+        "postcode": "CM13 2RN",
+        "price": 375000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE BLACK BARN, MAGPIE LANE, LITTLE WARLEY",
+        "postcode": "CM13 3DZ",
+        "price": 1225000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, GREDING WALK, HUTTON",
+        "postcode": "CM13 2UF",
+        "price": 155000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, WHITBY AVENUE, INGRAVE",
+        "postcode": "CM13 3NT",
+        "price": 790000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "182, INGRAVE ROAD",
+        "postcode": "CM13 2AG",
+        "price": 434000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, KEATS WALK, HUTTON",
+        "postcode": "CM13 2RY",
+        "price": 431900,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, CLIFTON WAY, HUTTON",
+        "postcode": "CM13 2QR",
+        "price": 1200000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 490000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, BOUNDARY DRIVE, HUTTON",
+        "postcode": "CM13 1RQ",
+        "price": 408000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, PRINCES WAY, HUTTON",
+        "postcode": "CM13 2JN",
+        "price": 756500,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, CRICKETERS ROW, HERONGATE",
+        "postcode": "CM13 3QA",
+        "price": 320000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MULBERRY HOUSE, 17, ROUNDWOOD AVENUE, HUTTON",
+        "postcode": "CM13 2ND",
+        "price": 4050000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, GREENSTEAD CLOSE, HUTTON",
+        "postcode": "CM13 1RD",
+        "price": 458500,
+        "dateOfTransfer": "2025-09-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THISTLEYS, LITTLE WARLEY HALL LANE, LITTLE WARLEY",
+        "postcode": "CM13 3EN",
+        "price": 750000,
+        "dateOfTransfer": "2025-09-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "PRIMULA VILLA, 153, WARLEY HILL, GREAT WARLEY",
+        "postcode": "CM13 3AJ",
+        "price": 415000,
+        "dateOfTransfer": "2025-09-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1AE",
+        "price": 575000,
+        "dateOfTransfer": "2025-09-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WILLOWS, HILLWOOD GROVE, HUTTON",
+        "postcode": "CM13 2PD",
+        "price": 1325000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, PARK AVENUE, HUTTON",
+        "postcode": "CM13 2QL",
+        "price": 1575000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, COMMON ROAD, INGRAVE",
+        "postcode": "CM13 3QL",
+        "price": 840000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "121, WHITTINGTON ROAD, HUTTON",
+        "postcode": "CM13 1LQ",
+        "price": 540000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "28, CEDAR CLOSE, HUTTON",
+        "postcode": "CM13 1NE",
+        "price": 310000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "162, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TR",
+        "price": 495000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, NORMANHURST, HUTTON",
+        "postcode": "CM13 1BG",
+        "price": 642000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "108, PONDFIELD LANE",
+        "postcode": "CM13 2DB",
+        "price": 370000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, LAUREL CLOSE, HUTTON",
+        "postcode": "CM13 1DY",
+        "price": 592000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HURSTWOOD, ALEXANDER LANE, HUTTON",
+        "postcode": "CM13 1AG",
+        "price": 1170000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "69A, GOODWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1QD",
+        "price": 787500,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, CARPENTER PATH, HUTTON",
+        "postcode": "CM13 1LJ",
+        "price": 485000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, CEDAR ROAD, HUTTON",
+        "postcode": "CM13 1NB",
+        "price": 375000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1A, BOURNEBRIDGE CLOSE, HUTTON",
+        "postcode": "CM13 1RJ",
+        "price": 330000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, SPALT CLOSE, HUTTON",
+        "postcode": "CM13 2UN",
+        "price": 210000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MOORCROFT, ALEXANDER LANE, HUTTON",
+        "postcode": "CM13 1AG",
+        "price": 895000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "116, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HL",
+        "price": 425000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, WHITBY AVENUE, INGRAVE",
+        "postcode": "CM13 3NT",
+        "price": 382500,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, PETRESFIELD WAY, WEST HORNDON",
+        "postcode": "CM13 3TG",
+        "price": 650000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, CHELMER DRIVE, HUTTON",
+        "postcode": "CM13 1NP",
+        "price": 565000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68, VICTORS CRESCENT, HUTTON",
+        "postcode": "CM13 2JA",
+        "price": 510000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "51, SPALT CLOSE, HUTTON",
+        "postcode": "CM13 2UN",
+        "price": 342500,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, NEWMANS DRIVE, HUTTON",
+        "postcode": "CM13 2PZ",
+        "price": 870000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "48, CORAM GREEN, HUTTON",
+        "postcode": "CM13 1LW",
+        "price": 395000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, HALSTEAD WAY, HUTTON",
+        "postcode": "CM13 1YQ",
+        "price": 955000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "134, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TR",
+        "price": 450000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "63, MOUNT AVENUE, HUTTON",
+        "postcode": "CM13 2PB",
+        "price": 2740000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, LONSDALE AVENUE, HUTTON",
+        "postcode": "CM13 1NH",
+        "price": 480000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "49, SPURGATE, HUTTON",
+        "postcode": "CM13 2JT",
+        "price": 1250000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "204, INGRAVE ROAD",
+        "postcode": "CM13 2AG",
+        "price": 850000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, GREDING WALK, HUTTON",
+        "postcode": "CM13 2UF",
+        "price": 410000,
+        "dateOfTransfer": "2025-08-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ROWLANDSON HOUSE, THORNDON APPROACH, HERONGATE",
+        "postcode": "CM13 3PA",
+        "price": 2325000,
+        "dateOfTransfer": "2025-08-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "39, ABENBERG WAY, HUTTON",
+        "postcode": "CM13 2UG",
+        "price": 475000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, WENHAM GARDENS, HUTTON",
+        "postcode": "CM13 1YS",
+        "price": 870000,
+        "dateOfTransfer": "2025-08-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "91, WHITTINGTON ROAD, HUTTON",
+        "postcode": "CM13 1LA",
+        "price": 375000,
+        "dateOfTransfer": "2025-08-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE TARNS, RIDGEWAY, HUTTON",
+        "postcode": "CM13 2LP",
+        "price": 1675000,
+        "dateOfTransfer": "2025-08-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, DUNMOW GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NL",
+        "price": 411000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, ARDLEIGH GARDENS, HUTTON",
+        "postcode": "CM13 1QR",
+        "price": 410000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, COLET ROAD, HUTTON",
+        "postcode": "CM13 1LB",
+        "price": 397600,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "59, WASH ROAD, HUTTON",
+        "postcode": "CM13 1BX",
+        "price": 300000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, TALLON ROAD, HUTTON",
+        "postcode": "CM13 1TF",
+        "price": 525000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "17, TALLON ROAD, HUTTON",
+        "postcode": "CM13 1TF",
+        "price": 355000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "BLUE HOUSE FARM, MAGPIE LANE, LITTLE WARLEY",
+        "postcode": "CM13 3DT",
+        "price": 615000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "COOMBE, WARLEY ROAD, GREAT WARLEY",
+        "postcode": "CM13 3HZ",
+        "price": 2100000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "BOOTHS COURT, FLAT 8, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YY",
+        "price": 345000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, BOWMONT CLOSE, HUTTON",
+        "postcode": "CM13 1EB",
+        "price": 750000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "66, TENNYSON ROAD, HUTTON",
+        "postcode": "CM13 2SG",
+        "price": 750000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, PRINCES WAY, HUTTON",
+        "postcode": "CM13 2JW",
+        "price": 680000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "56, BONNINGTONS",
+        "postcode": "CM13 2TN",
+        "price": 452500,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, TOTTERNHOE PLACE, HUTTON",
+        "postcode": "CM13 1SH",
+        "price": 775000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "82, PONDFIELD LANE",
+        "postcode": "CM13 2DB",
+        "price": 400000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, ST STEPHENS CRESCENT",
+        "postcode": "CM13 2AT",
+        "price": 432000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MELFORD GRANGE, RIDGEWAY, HUTTON",
+        "postcode": "CM13 2LJ",
+        "price": 1467500,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, PLASHET GARDENS",
+        "postcode": "CM13 2BS",
+        "price": 390000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, SYLVIA AVENUE, HUTTON",
+        "postcode": "CM13 2HP",
+        "price": 425000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, BROCKSPARKWOOD",
+        "postcode": "CM13 2TH",
+        "price": 480000,
+        "dateOfTransfer": "2025-07-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, GARDEN MEWS, HUTTON",
+        "postcode": "CM13 1FJ",
+        "price": 810000,
+        "dateOfTransfer": "2025-07-23",
+        "propertyType": "Detached",
+        "newBuild": true
+      },
+      {
+        "address": "26, MIDDLE ROAD, INGRAVE",
+        "postcode": "CM13 3QS",
+        "price": 628000,
+        "dateOfTransfer": "2025-07-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "32, CORAM GREEN, HUTTON",
+        "postcode": "CM13 1LN",
+        "price": 352500,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, HARRISON CLOSE, HUTTON",
+        "postcode": "CM13 1LP",
+        "price": 555000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 314, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GP",
+        "price": 825000,
+        "dateOfTransfer": "2025-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "PUMPING STATION COTTAGE, GREAT WARLEY STREET, GREAT WARLEY",
+        "postcode": "CM13 3JR",
+        "price": 1100000,
+        "dateOfTransfer": "2025-07-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "14, MOSBACH GARDENS, HUTTON",
+        "postcode": "CM13 2UW",
+        "price": 427000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26, SURMAN CRESCENT, HUTTON",
+        "postcode": "CM13 2PP",
+        "price": 1050000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, LIME AVENUE",
+        "postcode": "CM13 2DU",
+        "price": 467000,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, GOODWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1QD",
+        "price": 768750,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "150, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HN",
+        "price": 420000,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, WILKES ROAD, HUTTON",
+        "postcode": "CM13 1LH",
+        "price": 480000,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, COPEMAN ROAD, HUTTON",
+        "postcode": "CM13 2RN",
+        "price": 385000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "OLD MILL COTTAGES, 3, TILBURY ROAD, WEST HORNDON",
+        "postcode": "CM13 3LU",
+        "price": 540000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "138, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HG",
+        "price": 1225000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "123, WHITTINGTON ROAD, HUTTON",
+        "postcode": "CM13 1LQ",
+        "price": 405500,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, FLORENCE CLOSE, GREAT WARLEY",
+        "postcode": "CM13 3FQ",
+        "price": 250000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50A, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HY",
+        "price": 835000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "53, WAINWRIGHT AVENUE, HUTTON",
+        "postcode": "CM13 2SZ",
+        "price": 383000,
+        "dateOfTransfer": "2025-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, LILIAN CRESCENT, HUTTON",
+        "postcode": "CM13 2HR",
+        "price": 460000,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SHELDON COURT, FLAT 5, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1AF",
+        "price": 272500,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, THE DELL, GREAT WARLEY",
+        "postcode": "CM13 3AL",
+        "price": 475000,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, BURNELL WALK, GREAT WARLEY",
+        "postcode": "CM13 3DA",
+        "price": 390000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, PARK AVENUE, HUTTON",
+        "postcode": "CM13 2QL",
+        "price": 1346500,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "41, TALLON ROAD, HUTTON",
+        "postcode": "CM13 1TG",
+        "price": 659362,
+        "dateOfTransfer": "2025-07-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "41A, WALTON GARDENS, HUTTON",
+        "postcode": "CM13 1ER",
+        "price": 490000,
+        "dateOfTransfer": "2025-07-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "MAYFLOWER HOUSE, FLAT 8, THE DRIVE, GREAT WARLEY",
+        "postcode": "CM13 3BG",
+        "price": 147000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43, ROWHEDGE",
+        "postcode": "CM13 2TS",
+        "price": 522000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, HALSTEAD WAY, HUTTON",
+        "postcode": "CM13 1YQ",
+        "price": 900000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, CHELMER DRIVE, HUTTON",
+        "postcode": "CM13 1NP",
+        "price": 555000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, ASHBEAM CLOSE, GREAT WARLEY",
+        "postcode": "CM13 3BB",
+        "price": 319000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "74, FAIRVIEW AVENUE, HUTTON",
+        "postcode": "CM13 1NS",
+        "price": 415000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "65, BURSES WAY, HUTTON",
+        "postcode": "CM13 2PX",
+        "price": 880000,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "22, ROWHEDGE",
+        "postcode": "CM13 2TS",
+        "price": 519000,
+        "dateOfTransfer": "2025-06-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, WHITTINGTON ROAD, HUTTON",
+        "postcode": "CM13 1JY",
+        "price": 382482,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, MOUNT PLEASANT AVENUE, HUTTON",
+        "postcode": "CM13 1PW",
+        "price": 915000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "COBWEBS, 65, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HN",
+        "price": 425000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, CHURCH LANE, GREAT WARLEY",
+        "postcode": "CM13 3EP",
+        "price": 415000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "143, BRENTWOOD ROAD, HERONGATE",
+        "postcode": "CM13 3PB",
+        "price": 720000,
+        "dateOfTransfer": "2025-06-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "48, COVENBROOK",
+        "postcode": "CM13 2TR",
+        "price": 520000,
+        "dateOfTransfer": "2025-06-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11, NEWMANS DRIVE, HUTTON",
+        "postcode": "CM13 2PZ",
+        "price": 885000,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "60, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TT",
+        "price": 660000,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, COPEMAN ROAD, HUTTON",
+        "postcode": "CM13 2RN",
+        "price": 468000,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11, DELTA ROAD, HUTTON",
+        "postcode": "CM13 1NG",
+        "price": 560000,
+        "dateOfTransfer": "2025-06-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, HAZELEIGH",
+        "postcode": "CM13 2TT",
+        "price": 300000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ESKDALE, 2, JANMEAD, HUTTON",
+        "postcode": "CM13 2PU",
+        "price": 886500,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, BIRKBECK ROAD, HUTTON",
+        "postcode": "CM13 1JP",
+        "price": 380000,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WINCROFT, 147, INGRAVE ROAD",
+        "postcode": "CM13 2AA",
+        "price": 719500,
+        "dateOfTransfer": "2025-06-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, TOTTERNHOE PLACE, HUTTON",
+        "postcode": "CM13 1SH",
+        "price": 1200000,
+        "dateOfTransfer": "2025-06-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, LONG MEADOW, HUTTON",
+        "postcode": "CM13 2HJ",
+        "price": 780000,
+        "dateOfTransfer": "2025-06-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, GRAHAM CLOSE, HUTTON",
+        "postcode": "CM13 1HJ",
+        "price": 490000,
+        "dateOfTransfer": "2025-06-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, BYFIELD COURT, WEST HORNDON",
+        "postcode": "CM13 3TZ",
+        "price": 187000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST JAMES COURT, 12, STATION ROAD, WEST HORNDON",
+        "postcode": "CM13 3LZ",
+        "price": 290000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, FAIRVIEW AVENUE, HUTTON",
+        "postcode": "CM13 1NX",
+        "price": 420000,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, BYRON ROAD, HUTTON",
+        "postcode": "CM13 2SA",
+        "price": 425000,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE KEYS, 6, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3BP",
+        "price": 28000,
+        "dateOfTransfer": "2025-06-04",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "23, BOLEYN GARDENS",
+        "postcode": "CM13 2EP",
+        "price": 205000,
+        "dateOfTransfer": "2025-06-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, CANDLEFORD MEWS, HUTTON",
+        "postcode": "CM13 2FE",
+        "price": 930000,
+        "dateOfTransfer": "2025-06-02",
+        "propertyType": "Semi-detached",
+        "newBuild": true
+      },
+      {
+        "address": "42C, TOMLYNS CLOSE, HUTTON",
+        "postcode": "CM13 1PU",
+        "price": 564000,
+        "dateOfTransfer": "2025-06-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CAPRI, MOUNT AVENUE, HUTTON",
+        "postcode": "CM13 2NU",
+        "price": 1130000,
+        "dateOfTransfer": "2025-06-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "85, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HX",
+        "price": 500000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, MOUNT PLEASANT AVENUE, HUTTON",
+        "postcode": "CM13 1PW",
+        "price": 825000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "44, FIELDING WAY, HUTTON",
+        "postcode": "CM13 1JN",
+        "price": 360000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13, GRAYS WALK, HUTTON",
+        "postcode": "CM13 2RX",
+        "price": 410000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HILLWOOD, 7, HILLWOOD GROVE, HUTTON",
+        "postcode": "CM13 2PF",
+        "price": 3600000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "73, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HG",
+        "price": 456000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "138, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TR",
+        "price": 524999,
+        "dateOfTransfer": "2025-05-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, BILLERICAY ROAD, HERONGATE",
+        "postcode": "CM13 3PS",
+        "price": 820000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, WALTON GARDENS, HUTTON",
+        "postcode": "CM13 1EJ",
+        "price": 375000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, CEDAR ROAD, HUTTON",
+        "postcode": "CM13 1NB",
+        "price": 490000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "88B, BILLERICAY ROAD, HERONGATE",
+        "postcode": "CM13 3SB",
+        "price": 517000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "TRIENNA COURT, FLAT 5, WENDOVER GARDENS",
+        "postcode": "CM13 2HD",
+        "price": 150000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, SAXON CLOSE",
+        "postcode": "CM13 2EU",
+        "price": 245000,
+        "dateOfTransfer": "2025-05-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, SPALT CLOSE, HUTTON",
+        "postcode": "CM13 2UN",
+        "price": 300000,
+        "dateOfTransfer": "2025-05-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, WALTON GARDENS, HUTTON",
+        "postcode": "CM13 1EL",
+        "price": 475000,
+        "dateOfTransfer": "2025-05-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, HALL GREEN LANE, HUTTON",
+        "postcode": "CM13 2QU",
+        "price": 870000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, CLAUGHTON WAY, HUTTON",
+        "postcode": "CM13 1JS",
+        "price": 412000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, THE AVENUE",
+        "postcode": "CM13 2AD",
+        "price": 725000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, RUNNING WATERS",
+        "postcode": "CM13 2AP",
+        "price": 482500,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, ARNOLDS AVENUE, HUTTON",
+        "postcode": "CM13 1ET",
+        "price": 482500,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, SAXON CLOSE",
+        "postcode": "CM13 2EU",
+        "price": 260000,
+        "dateOfTransfer": "2025-05-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 317, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GP",
+        "price": 775000,
+        "dateOfTransfer": "2025-05-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 321, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GP",
+        "price": 775000,
+        "dateOfTransfer": "2025-05-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 324, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GP",
+        "price": 825000,
+        "dateOfTransfer": "2025-05-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 327, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GP",
+        "price": 875000,
+        "dateOfTransfer": "2025-05-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, PINECROFT, HUTTON MOUNT",
+        "postcode": "CM13 2PG",
+        "price": 1295000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, BOWMONT CLOSE, HUTTON",
+        "postcode": "CM13 1EB",
+        "price": 895000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "ST. ANDREWS METHODIST CHURCH, BILLERICAY ROAD, HERONGATE",
+        "postcode": "CM13 3PS",
+        "price": 502000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "222, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2QF",
+        "price": 1525000,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "122, WAINWRIGHT AVENUE, HUTTON",
+        "postcode": "CM13 2SZ",
+        "price": 345000,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "72, PEREGRINE DRIVE, GREAT WARLEY",
+        "postcode": "CM13 3GW",
+        "price": 625000,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HUNTERS LODGE, THE AVENUE",
+        "postcode": "CM13 2AD",
+        "price": 390000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "9, DUNMOW GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NL",
+        "price": 530000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 325, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GP",
+        "price": 1050000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "THE COPPICE, CHURCH LANE, HUTTON",
+        "postcode": "CM13 1SA",
+        "price": 2750000,
+        "dateOfTransfer": "2025-04-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "9, COLET ROAD, HUTTON",
+        "postcode": "CM13 1LD",
+        "price": 260000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 253, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GN",
+        "price": 335000,
+        "dateOfTransfer": "2025-04-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLEMINGS, GREAT WARLEY",
+        "postcode": "CM13 3DH",
+        "price": 650000,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "MERRYMEET, HILLWOOD GROVE, HUTTON",
+        "postcode": "CM13 2PD",
+        "price": 1500000,
+        "dateOfTransfer": "2025-04-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 100, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GH",
+        "price": 250000,
+        "dateOfTransfer": "2025-04-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, CADOGAN AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TU",
+        "price": 425000,
+        "dateOfTransfer": "2025-04-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "69, CEDAR ROAD, HUTTON",
+        "postcode": "CM13 1ND",
+        "price": 445000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, WALTHAM CLOSE, HUTTON",
+        "postcode": "CM13 1YE",
+        "price": 770000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "165, BRENTWOOD ROAD, HERONGATE",
+        "postcode": "CM13 3PB",
+        "price": 341000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "236, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2QF",
+        "price": 740000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "AVALON, KINGSLEY ROAD, HUTTON",
+        "postcode": "CM13 2SH",
+        "price": 695000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE TIDING, MAGPIE LANE, LITTLE WARLEY",
+        "postcode": "CM13 3DZ",
+        "price": 960000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, ARNOLDS CLOSE, HUTTON",
+        "postcode": "CM13 1EZ",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "121, STATION ROAD, WEST HORNDON",
+        "postcode": "CM13 3NB",
+        "price": 484000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BEECH HOUSE, 67, FLAT 4, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1AT",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SLIEVE ARD, 268, WARLEY HILL, GREAT WARLEY",
+        "postcode": "CM13 3AA",
+        "price": 668000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, CHELMER DRIVE, HUTTON",
+        "postcode": "CM13 1NR",
+        "price": 427500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, GARDEN MEWS, HUTTON",
+        "postcode": "CM13 1FJ",
+        "price": 760000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": true
+      },
+      {
+        "address": "31, RIDGEWAY, HUTTON",
+        "postcode": "CM13 2LL",
+        "price": 2450000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, ABENBERG WAY, HUTTON",
+        "postcode": "CM13 2UG",
+        "price": 150000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "228, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2QF",
+        "price": 780000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, LONG RIDINGS AVENUE, HUTTON",
+        "postcode": "CM13 1DZ",
+        "price": 312000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, PAGLESFIELD, HUTTON",
+        "postcode": "CM13 1BQ",
+        "price": 700000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "57, CRICKETERS LANE, HERONGATE",
+        "postcode": "CM13 3QB",
+        "price": 900000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, MOUNT PLEASANT AVENUE, HUTTON",
+        "postcode": "CM13 1PW",
+        "price": 780000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, RANDALLS DRIVE, HUTTON",
+        "postcode": "CM13 1NW",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, BONNINGTONS",
+        "postcode": "CM13 2TN",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "BOOTHS COURT, FLAT 14, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YY",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, SPRINGFIELD AVENUE, HUTTON",
+        "postcode": "CM13 1RE",
+        "price": 365000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, TOTTERNHOE PLACE, HUTTON",
+        "postcode": "CM13 1SH",
+        "price": 950000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "43, HAMMONDS LANE, GREAT WARLEY",
+        "postcode": "CM13 3AH",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, STATION ROAD, WEST HORNDON",
+        "postcode": "CM13 3TL",
+        "price": 228500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 240, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GN",
+        "price": 390000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "BOOTHS COURT, FLAT 13, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YY",
+        "price": 385000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, BYRON ROAD, HUTTON",
+        "postcode": "CM13 2SA",
+        "price": 462000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, SAFFRON CLOSE, WEST HORNDON",
+        "postcode": "CM13 3NF",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, BOUNDARY DRIVE, HUTTON",
+        "postcode": "CM13 1RH",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11, HILLWOOD CLOSE, HUTTON",
+        "postcode": "CM13 2PE",
+        "price": 1605000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "131, BILLERICAY ROAD, HERONGATE",
+        "postcode": "CM13 3SD",
+        "price": 652000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, ARNOLDS CLOSE, HUTTON",
+        "postcode": "CM13 1EZ",
+        "price": 457500,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, ARNOLDS CLOSE, HUTTON",
+        "postcode": "CM13 1EZ",
+        "price": 530000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "111, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HH",
+        "price": 465000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "147, BRENTWOOD ROAD, HERONGATE",
+        "postcode": "CM13 3PB",
+        "price": 800000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, MEADSWAY, GREAT WARLEY",
+        "postcode": "CM13 3DQ",
+        "price": 690000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "HIGH BEECHES, ROUNDWOOD AVENUE, HUTTON",
+        "postcode": "CM13 2LZ",
+        "price": 1765000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, KELVEDON CLOSE, HUTTON",
+        "postcode": "CM13 1QS",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, LIME AVENUE",
+        "postcode": "CM13 2DU",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "295, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1PL",
+        "price": 515000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, CADOGAN AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TU",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, CADOGAN AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TU",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, SYLVIA AVENUE, HUTTON",
+        "postcode": "CM13 2HP",
+        "price": 455000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, ARDLEIGH GARDENS, HUTTON",
+        "postcode": "CM13 1QR",
+        "price": 440270,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "32, BRINDLES CLOSE, HUTTON",
+        "postcode": "CM13 2HW",
+        "price": 465000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, DUNMOW GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NL",
+        "price": 498000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "113, HUTTON DRIVE, HUTTON",
+        "postcode": "CM13 1QN",
+        "price": 442500,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, BROCKSPARKWOOD",
+        "postcode": "CM13 2TH",
+        "price": 360000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THORNDON LODGE, 29, FLAT 1, BRENTWOOD ROAD, INGRAVE",
+        "postcode": "CM13 3RE",
+        "price": 325000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "163, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1LX",
+        "price": 492000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, WATLINGTON GARDENS, GREAT WARLEY",
+        "postcode": "CM13 3FA",
+        "price": 775000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "106, INGRAVE ROAD",
+        "postcode": "CM13 2AQ",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, CRICKETERS ROW, HERONGATE",
+        "postcode": "CM13 3QA",
+        "price": 370000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BOOTHS COURT, FLAT 10, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YY",
+        "price": 330000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "52, HERONWAY, HUTTON",
+        "postcode": "CM13 2LG",
+        "price": 1290000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "76, BROCKSPARKWOOD",
+        "postcode": "CM13 2TJ",
+        "price": 505000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, FLORENCE CLOSE, GREAT WARLEY",
+        "postcode": "CM13 3FQ",
+        "price": 315000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PIPERS POOL, ROUNDWOOD AVENUE, HUTTON",
+        "postcode": "CM13 2NA",
+        "price": 1650000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, EASTHAM CRESCENT",
+        "postcode": "CM13 2BG",
+        "price": 390000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BOOTHS COURT, FLAT 16, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YY",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1BA",
+        "price": 725000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, PRINCES WAY, HUTTON",
+        "postcode": "CM13 2JW",
+        "price": 1020000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "56, EASTHAM CRESCENT",
+        "postcode": "CM13 2ET",
+        "price": 355000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "133, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HL",
+        "price": 440000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, THE COVERTS, HUTTON",
+        "postcode": "CM13 2JP",
+        "price": 635000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "260, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1PX",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, ELLIOTS CLOSE, WEST HORNDON",
+        "postcode": "CM13 3FU",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, CHERRY AVENUE",
+        "postcode": "CM13 2DZ",
+        "price": 265000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, MAGDALEN GARDENS, HUTTON",
+        "postcode": "CM13 1RL",
+        "price": 440000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "43, BOUNDARY DRIVE, HUTTON",
+        "postcode": "CM13 1RQ",
+        "price": 380000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, ORCHARD AVENUE",
+        "postcode": "CM13 2DP",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, PLASHET GARDENS",
+        "postcode": "CM13 2BS",
+        "price": 377500,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, TOMLYNS CLOSE, HUTTON",
+        "postcode": "CM13 1PU",
+        "price": 470000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "155, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1LX",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 435000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 582000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "273, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1PL",
+        "price": 550000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "37, BOUNDARY DRIVE, HUTTON",
+        "postcode": "CM13 1RQ",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "106, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2HN",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, SAXON CLOSE",
+        "postcode": "CM13 2EU",
+        "price": 224000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, WAINWRIGHT AVENUE, HUTTON",
+        "postcode": "CM13 2SX",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, ARNOLDS CLOSE, HUTTON",
+        "postcode": "CM13 1EZ",
+        "price": 355000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "51, SPURGATE, HUTTON",
+        "postcode": "CM13 2JT",
+        "price": 915000,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHADSTONE, SHELLEY ROAD, HUTTON",
+        "postcode": "CM13 2SF",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "53, ROSEN CRESCENT, HUTTON",
+        "postcode": "CM13 2TU",
+        "price": 420000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "118, BRENTWOOD ROAD, HERONGATE",
+        "postcode": "CM13 3NY",
+        "price": 480000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, WALTHAM CLOSE, HUTTON",
+        "postcode": "CM13 1YE",
+        "price": 675000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, WALTHAM CLOSE, HUTTON",
+        "postcode": "CM13 1YE",
+        "price": 932500,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "52, BROCKSPARKWOOD",
+        "postcode": "CM13 2TJ",
+        "price": 447500,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "29, THE MEADOWS, INGRAVE",
+        "postcode": "CM13 3RL",
+        "price": 522000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "109, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HH",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11A, BOURNEBRIDGE CLOSE, HUTTON",
+        "postcode": "CM13 1RJ",
+        "price": 390000,
+        "dateOfTransfer": "2025-03-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, PLASHET GARDENS",
+        "postcode": "CM13 2BS",
+        "price": 375000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, SUNRAY AVENUE, HUTTON",
+        "postcode": "CM13 1PR",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, COURAGE WALK, HUTTON",
+        "postcode": "CM13 2TA",
+        "price": 362000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, CRUSHES CLOSE, HUTTON",
+        "postcode": "CM13 1PB",
+        "price": 505000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "57, QUEENSWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1HU",
+        "price": 435000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "43, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HG",
+        "price": 510000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "MAYFLOWER HOUSE, FLAT 41, THE DRIVE, GREAT WARLEY",
+        "postcode": "CM13 3BG",
+        "price": 125000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, WAINWRIGHT AVENUE, HUTTON",
+        "postcode": "CM13 2SS",
+        "price": 380000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54B, STATION ROAD, WEST HORNDON",
+        "postcode": "CM13 3TW",
+        "price": 267500,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, BEECH AVENUE",
+        "postcode": "CM13 2DX",
+        "price": 462500,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "81, THORNDON AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TS",
+        "price": 600000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, BIRDBROOK CLOSE, HUTTON",
+        "postcode": "CM13 1YG",
+        "price": 900000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 291, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GP",
+        "price": 275000,
+        "dateOfTransfer": "2025-02-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "4, CANDLEFORD MEWS, HUTTON",
+        "postcode": "CM13 2FE",
+        "price": 920000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Semi-detached",
+        "newBuild": true
+      },
+      {
+        "address": "66, PONDFIELD LANE",
+        "postcode": "CM13 2DB",
+        "price": 485000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "250, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2QF",
+        "price": 490000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, WILLOW CLOSE, HUTTON",
+        "postcode": "CM13 2NT",
+        "price": 1100000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, COLERIDGE WALK, HUTTON",
+        "postcode": "CM13 2RT",
+        "price": 690000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "32, LONG RIDINGS AVENUE, HUTTON",
+        "postcode": "CM13 1DZ",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "222, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1PP",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, SPRINGFIELD AVENUE, HUTTON",
+        "postcode": "CM13 1RG",
+        "price": 452500,
+        "dateOfTransfer": "2025-02-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "82, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1BH",
+        "price": 440000,
+        "dateOfTransfer": "2025-02-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, SAXON CLOSE",
+        "postcode": "CM13 2EU",
+        "price": 395000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "47, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YU",
+        "price": 950000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, CARSWELL CLOSE, HUTTON",
+        "postcode": "CM13 1PD",
+        "price": 625000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, SPURGATE, HUTTON",
+        "postcode": "CM13 2LA",
+        "price": 815000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "52, BONNINGTONS",
+        "postcode": "CM13 2TN",
+        "price": 477500,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, WOODLAND AVENUE, HUTTON",
+        "postcode": "CM13 1HG",
+        "price": 408000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, CLAVERING GARDENS, WEST HORNDON",
+        "postcode": "CM13 3ND",
+        "price": 510000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1A, SUNRAY AVENUE, HUTTON",
+        "postcode": "CM13 1PR",
+        "price": 385000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ROBINS HOUSE, 2, RIDGEWAY, HUTTON",
+        "postcode": "CM13 2LS",
+        "price": 1700000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, CLAVERING GARDENS, WEST HORNDON",
+        "postcode": "CM13 3ND",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, ROTH DRIVE, HUTTON",
+        "postcode": "CM13 2UD",
+        "price": 535000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "DINAS, CHURCH ROAD, MOUNTNESSING",
+        "postcode": "CM13 1UG",
+        "price": 420000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, THE MEADOWS, INGRAVE",
+        "postcode": "CM13 3RL",
+        "price": 520000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "51, THE DRIVE, GREAT WARLEY",
+        "postcode": "CM13 3BH",
+        "price": 300000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "281, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1PL",
+        "price": 430000,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, BRENTWOOD ROAD, INGRAVE",
+        "postcode": "CM13 3QY",
+        "price": 800000,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "29, DUNMOW GARDENS, WEST HORNDON",
+        "postcode": "CM13 3NL",
+        "price": 550000,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, LONG MEADOW, HUTTON",
+        "postcode": "CM13 2HJ",
+        "price": 975000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, GOODWOOD AVENUE, HUTTON",
+        "postcode": "CM13 1QD",
+        "price": 325000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHEALE MEATS, LITTLE WARLEY HALL LANE, LITTLE WARLEY",
+        "postcode": "CM13 3EN",
+        "price": 12250000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "KENTWOOD COTTAGES, 2, THE AVENUE",
+        "postcode": "CM13 3RZ",
+        "price": 300000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, MOSBACH GARDENS, HUTTON",
+        "postcode": "CM13 2UW",
+        "price": 365000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, BILLERICAY ROAD, HERONGATE",
+        "postcode": "CM13 3PS",
+        "price": 820000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 251, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GN",
+        "price": 350000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "BRADWELL COURT, FLAT 20, BRADWELL GREEN, HUTTON",
+        "postcode": "CM13 1YR",
+        "price": 330000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, FYFIELD CLOSE, WEST HORNDON",
+        "postcode": "CM13 3NQ",
+        "price": 490000,
+        "dateOfTransfer": "2025-01-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, WID CLOSE, HUTTON",
+        "postcode": "CM13 1JQ",
+        "price": 420000,
+        "dateOfTransfer": "2025-01-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "56, BIRKBECK ROAD, HUTTON",
+        "postcode": "CM13 1JR",
+        "price": 375000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BOOTHS COURT, FLAT 26, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YY",
+        "price": 460000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GRASMERE, FLAT 5, ALEXANDER LANE, HUTTON",
+        "postcode": "CM13 1AG",
+        "price": 465000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, WASH ROAD, HUTTON",
+        "postcode": "CM13 1BX",
+        "price": 586500,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "64, CADOGAN AVENUE, WEST HORNDON",
+        "postcode": "CM13 3TX",
+        "price": 587500,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, MOSBACH GARDENS, HUTTON",
+        "postcode": "CM13 2UW",
+        "price": 313000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68A, VICTORS CRESCENT, HUTTON",
+        "postcode": "CM13 2JA",
+        "price": 515000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, BYFIELD COURT, WEST HORNDON",
+        "postcode": "CM13 3TZ",
+        "price": 195000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "226, HANGING HILL LANE, HUTTON",
+        "postcode": "CM13 2QF",
+        "price": 1260000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, CLAUGHTON WAY, HUTTON",
+        "postcode": "CM13 1JT",
+        "price": 368000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "191, HUTTON DRIVE, HUTTON",
+        "postcode": "CM13 1QZ",
+        "price": 400000,
+        "dateOfTransfer": "2025-01-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, ST STEPHENS CRESCENT",
+        "postcode": "CM13 2AU",
+        "price": 475000,
+        "dateOfTransfer": "2025-01-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, CEDAR CLOSE, HUTTON",
+        "postcode": "CM13 1NE",
+        "price": 450000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "234, WARLEY HILL, GREAT WARLEY",
+        "postcode": "CM13 3AA",
+        "price": 1525000,
+        "dateOfTransfer": "2025-01-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, LONGAFORD WAY, HUTTON",
+        "postcode": "CM13 2LT",
+        "price": 2175000,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, PETRESFIELD WAY, WEST HORNDON",
+        "postcode": "CM13 3TG",
+        "price": 270000,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "25, LIME AVENUE",
+        "postcode": "CM13 2DU",
+        "price": 340000,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, SAXON CLOSE",
+        "postcode": "CM13 2EU",
+        "price": 255000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, PINECROFT, HUTTON MOUNT",
+        "postcode": "CM13 2PG",
+        "price": 1280000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "610, RAYLEIGH ROAD, HUTTON",
+        "postcode": "CM13 1SG",
+        "price": 735000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, EDWARDS WAY, HUTTON",
+        "postcode": "CM13 1BT",
+        "price": 590000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "65, CHELMER DRIVE, HUTTON",
+        "postcode": "CM13 1NP",
+        "price": 450000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, MEADSWAY, GREAT WARLEY",
+        "postcode": "CM13 3DQ",
+        "price": 705000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "SENTOSA, HILLWOOD CLOSE, HUTTON",
+        "postcode": "CM13 2PE",
+        "price": 1557500,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, LAUREL COURT, HUTTON",
+        "postcode": "CM13 1XP",
+        "price": 340000,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FAIRVIEW AVENUE, HUTTON",
+        "postcode": "CM13 1NX",
+        "price": 420000,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, ROSEN CRESCENT, HUTTON",
+        "postcode": "CM13 2TU",
+        "price": 215000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, THE BROADWALK NORTH",
+        "postcode": "CM13 2EY",
+        "price": 450000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CENTRAL HOUSE, FLAT 40, EAGLE WAY, GREAT WARLEY",
+        "postcode": "CM13 3GF",
+        "price": 285000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, POPLAR DRIVE, HUTTON",
+        "postcode": "CM13 1YU",
+        "price": 935000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      }
+    ],
+    "averagePrice": 664749,
+    "medianPrice": 492750
+  },
+  "representatives": {
+    "representatives": [
+      {
+        "role": "MP",
+        "name": "Mr Richard Holden",
+        "party": "Conservative",
+        "constituency": "Basildon and Billericay",
+        "contactUrl": "https://www.parliament.uk/mps-lords-and-offices/mps/"
+      },
+      {
+        "role": "Councillor",
+        "name": "Brian Eagling",
+        "party": "East Havering Residents&#39; Group",
+        "ward": "Harold Wood",
+        "contactUrl": "https://democracy.havering.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Martin Goode",
+        "party": "East Havering Residents&#39; Group",
+        "ward": "Harold Wood",
+        "contactUrl": "https://democracy.havering.gov.uk"
+      },
+      {
+        "role": "Councillor",
+        "name": "Darren Wise",
+        "party": "East Havering Residents&#39; Group",
+        "ward": "Harold Wood",
+        "contactUrl": "https://democracy.havering.gov.uk"
+      }
+    ]
+  },
+  "planning": {
+    "applications": [],
+    "searchUrl": "https://msp.havering.gov.uk/planning/search-applications"
+  },
+  "places": {
+    "places": [
+      {
+        "name": "Raphael Park",
+        "category": "park",
+        "address": "Romford",
+        "description": "A Victorian park with a boating lake, adjoining the historic Gidea Park estate."
+      }
+    ]
+  },
+  "events": {
+    "events": [],
+    "listingUrl": "https://www.timeout.com/london/things-to-do"
+  },
+  "history": {
+    "summary": "CM13 lies within Havering. Formed in 1965 from Romford and Hornchurch, formerly part of Essex. Romford Market, established by royal charter in 1247, remains one of the largest outdoor markets in the country.",
+    "keyFacts": [
+      "Formed in 1965 from Romford and Hornchurch, formerly part of Essex. Romford Market, established by royal charter in 1247, remains one of the largest outdoor markets in the country."
+    ]
+  }
+}
