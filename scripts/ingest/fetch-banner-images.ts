@@ -10,13 +10,29 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROCESSED_DIR = path.resolve(__dirname, "../../data/processed");
 const MANUAL_OVERRIDES_PATH = path.resolve(__dirname, "../../data/manual/banner-overrides.json");
 
-/** Hand-curated banners (data/manual/ - never touched by ingestion) win over whatever was auto-fetched. */
+interface ManualOverrideEntry {
+  slug: string;
+  images: BannerImage[];
+}
+
+/**
+ * Hand-curated banners (data/manual/ - never touched by ingestion) win over
+ * whatever was auto-fetched. Stored on disk as a list (not a Record<slug,...>)
+ * because that's what the Decap CMS admin UI's "list" widget edits - a plain
+ * map with arbitrary keys doesn't have a good structured-editor equivalent.
+ */
 async function loadManualOverrides(): Promise<Banners> {
+  let entries: ManualOverrideEntry[];
   try {
-    return JSON.parse(await readFile(MANUAL_OVERRIDES_PATH, "utf-8")) as Banners;
+    entries = JSON.parse(await readFile(MANUAL_OVERRIDES_PATH, "utf-8")) as ManualOverrideEntry[];
   } catch {
     return {};
   }
+  const byLocation: Banners = {};
+  for (const entry of entries) {
+    if (entry.slug && entry.images?.length > 0) byLocation[entry.slug] = entry.images;
+  }
+  return byLocation;
 }
 
 // Wikimedia's API policy requires a descriptive User-Agent identifying the
