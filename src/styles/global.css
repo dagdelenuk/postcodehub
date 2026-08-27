@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* Applied client-side (favorites.ts logic in FavoriteStar.astro) to whichever
+   element wraps a favorited city/borough/outcode, in both card grids and the
+   hamburger menu lists - highlights it and moves it to the top of its list. */
+.is-favorited-item {
+  background-color: color-mix(in srgb, #fef3c7 55%, white);
+  border-color: #f59e0b !important;
+}

@@ -1,0 +1,99 @@
+---
+interface Props {
+  favKey: string;
+  size?: "sm" | "md";
+}
+
+const { favKey, size = "md" } = Astro.props;
+const dims = size === "sm" ? "14" : "18";
+---
+
+<button
+  type="button"
+  data-favorite-star
+  data-favorite-key={favKey}
+  aria-label="Add to favourites"
+  aria-pressed="false"
+  class="favorite-star-btn inline-flex items-center justify-center h-7 w-7 rounded-full hover:bg-stone-100 transition-colors shrink-0"
+>
+  <svg data-star-fill width={dims} height={dims} viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M10 1.6l2.53 5.12 5.65.82-4.09 3.99.97 5.63L10 14.4l-5.06 2.66.97-5.63-4.09-3.99 5.65-.82L10 1.6z"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.3"
+      stroke-linejoin="round"
+    />
+  </svg>
+</button>
+
+<script>
+  const STORAGE_KEY = "postcodehub:favorites";
+
+  function getFavorites(): Set<string> {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return new Set(raw ? (JSON.parse(raw) as string[]) : []);
+    } catch {
+      return new Set();
+    }
+  }
+
+  function saveFavorites(favs: Set<string>) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...favs]));
+    } catch {
+      // localStorage unavailable (private mode, quota, etc.) - favouriting just silently no-ops.
+    }
+  }
+
+  function applyStarVisual(btn: HTMLElement, isFav: boolean) {
+    btn.setAttribute("aria-pressed", String(isFav));
+    const path = btn.querySelector("path");
+    if (path) {
+      path.setAttribute("fill", isFav ? "#f59e0b" : "none");
+      path.setAttribute("stroke", isFav ? "#f59e0b" : "currentColor");
+    }
+  }
+
+  function reorderFavoriteLists(favs: Set<string>) {
+    document.querySelectorAll<HTMLElement>("[data-favorite-list]").forEach((list) => {
+      const items = [...list.children] as HTMLElement[];
+      for (const el of items) {
+        const key = el.dataset.favoriteKey;
+        el.classList.toggle("is-favorited-item", Boolean(key && favs.has(key)));
+      }
+      const favItems = items.filter((el) => el.dataset.favoriteKey && favs.has(el.dataset.favoriteKey));
+      const rest = items.filter((el) => !favItems.includes(el));
+      for (const el of [...favItems, ...rest]) {
+        list.appendChild(el);
+      }
+    });
+  }
+
+  function init() {
+    const favs = getFavorites();
+    document.querySelectorAll<HTMLElement>("[data-favorite-star]").forEach((btn) => {
+      const key = btn.dataset.favoriteKey;
+      if (!key) return;
+      applyStarVisual(btn, favs.has(key));
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const current = getFavorites();
+        if (current.has(key)) current.delete(key);
+        else current.add(key);
+        saveFavorites(current);
+        applyStarVisual(btn, current.has(key));
+        reorderFavoriteLists(current);
+      });
+    });
+    reorderFavoriteLists(favs);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+</script>
