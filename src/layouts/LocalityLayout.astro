@@ -24,7 +24,7 @@ const available = new Set<CategoryKey>(
 );
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} menuLevel="outcode" citySlug={citySlug} boroughSlug={boroughSlug}>
   <Breadcrumbs
     crumbs={[
       { label: "PostcodeHub", href: "/" },

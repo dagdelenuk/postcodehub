@@ -1,12 +1,22 @@
 ---
 import "../styles/global.css";
+import HamburgerMenu from "../components/HamburgerMenu.astro";
 
 interface Props {
   title: string;
   description?: string;
+  menuLevel?: "home" | "city" | "borough" | "outcode";
+  citySlug?: string;
+  boroughSlug?: string;
 }
 
-const { title, description = "A non-commercial community information network for UK neighbourhoods." } = Astro.props;
+const {
+  title,
+  description = "A non-commercial community information network for UK neighbourhoods.",
+  menuLevel = "home",
+  citySlug,
+  boroughSlug,
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -24,7 +34,10 @@ const { title, description = "A non-commercial community information network for
         <a href="/" class="text-lg font-semibold tracking-tight">
           Postcode<span class="text-emerald-700">Hub</span>.UK
         </a>
-        <p class="hidden sm:block text-xs text-stone-500">Non-commercial &middot; non-partisan community information</p>
+        <div class="flex items-center gap-3">
+          <p class="hidden sm:block text-xs text-stone-500">Non-commercial &middot; non-partisan community information</p>
+          <HamburgerMenu level={menuLevel} citySlug={citySlug} boroughSlug={boroughSlug} />
+        </div>
       </div>
     </header>
 

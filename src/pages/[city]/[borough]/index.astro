@@ -3,6 +3,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
+import FavoriteStar from "../../../components/FavoriteStar.astro";
 import { getBannerImages, getBoroughSummary, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
@@ -25,7 +26,7 @@ const summaryStats = [
 ];
 ---
 
-<BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`}>
+<BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}>
   <Breadcrumbs
     crumbs={[
       { label: "PostcodeHub", href: "/" },
@@ -64,17 +65,22 @@ const summaryStats = [
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-16">
-    <div class="grid gap-3 sm:grid-cols-3">
+    <div class="grid gap-3 sm:grid-cols-3" data-favorite-list>
       {
-        borough.outcodes.map((outcode) => (
-          <a
-            href={`/${city.slug}/${borough.slug}/${outcode.slug}/`}
-            class="block rounded-lg border border-stone-200 bg-white px-4 py-3 hover:border-emerald-600 transition-colors"
-          >
-            <span class="font-semibold">{outcode.outcode}</span>
-            <span class="block text-xs text-stone-500 mt-0.5 truncate">{outcode.wards.slice(0, 2).join(", ")}</span>
-          </a>
-        ))
+        borough.outcodes.map((outcode) => {
+          const favKey = `outcode:${city.slug}/${borough.slug}/${outcode.slug}`;
+          return (
+            <div class="relative rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>
+              <a href={`/${city.slug}/${borough.slug}/${outcode.slug}/`} class="block px-4 py-3 pr-9 hover:border-emerald-600 rounded-lg transition-colors">
+                <span class="font-semibold">{outcode.outcode}</span>
+                <span class="block text-xs text-stone-500 mt-0.5 truncate">{outcode.wards.slice(0, 2).join(", ")}</span>
+              </a>
+              <div class="absolute top-1.5 right-1.5">
+                <FavoriteStar favKey={favKey} size="sm" />
+              </div>
+            </div>
+          );
+        })
       }
     </div>
   </section>

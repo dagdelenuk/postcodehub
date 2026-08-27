@@ -1,11 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import FavoriteStar from "../components/FavoriteStar.astro";
 import { getBannerImages, loadHierarchy } from "../lib/data";
 
 const hierarchy = loadHierarchy();
 ---
 
-<BaseLayout title="Home" description="A non-commercial community information hub for UK neighbourhoods, covering health, safety, transport, schools, and civic data by postcode.">
+<BaseLayout title="Home" description="A non-commercial community information hub for UK neighbourhoods, covering health, safety, transport, schools, and civic data by postcode." menuLevel="home">
   <section class="mx-auto max-w-5xl px-4 py-16 text-center">
     <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Your neighbourhood, in one place</h1>
     <p class="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
@@ -17,20 +18,26 @@ const hierarchy = loadHierarchy();
 
   <section class="mx-auto max-w-5xl px-4 pb-16">
     <h2 class="text-xl font-semibold mb-4">Browse by city</h2>
-    <div class="grid gap-4 sm:grid-cols-2">
+    <div class="grid gap-4 sm:grid-cols-2" data-favorite-list>
       {
         hierarchy.cities.map((city) => {
           const thumb = getBannerImages(city.slug)[0];
+          const favKey = `city:${city.slug}`;
           return (
-            <a href={`/${city.slug}/`} class="flex items-center gap-4 rounded-lg border border-stone-200 bg-white p-6 hover:border-emerald-600 transition-colors">
-              {thumb && <img src={thumb.src} alt="" class="h-16 w-16 shrink-0 rounded-md object-cover" />}
-              <div>
-                <h3 class="text-lg font-semibold">{city.name}</h3>
-                <p class="text-sm text-stone-500 mt-1">
-                  {city.boroughs.length} council {city.boroughs.length === 1 ? "authority" : "authorities"} covered
-                </p>
+            <div class="relative rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>
+              <a href={`/${city.slug}/`} class="flex items-center gap-4 p-6 hover:border-emerald-600 rounded-lg transition-colors">
+                {thumb && <img src={thumb.src} alt="" class="h-16 w-16 shrink-0 rounded-md object-cover" />}
+                <div>
+                  <h3 class="text-lg font-semibold">{city.name}</h3>
+                  <p class="text-sm text-stone-500 mt-1">
+                    {city.boroughs.length} council {city.boroughs.length === 1 ? "authority" : "authorities"} covered
+                  </p>
+                </div>
+              </a>
+              <div class="absolute top-2 right-2">
+                <FavoriteStar favKey={favKey} />
               </div>
-            </a>
+            </div>
           );
         })
       }

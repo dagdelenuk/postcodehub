@@ -1,0 +1,179 @@
+---
+import { getBannerImages, getBorough, getCity, loadHierarchy } from "../lib/data";
+import FavoriteStar from "./FavoriteStar.astro";
+
+interface Props {
+  level: "home" | "city" | "borough" | "outcode";
+  citySlug?: string;
+  boroughSlug?: string;
+}
+
+const { level, citySlug, boroughSlug } = Astro.props;
+
+const hierarchy = loadHierarchy();
+const city = citySlug ? getCity(citySlug) : undefined;
+const borough = citySlug && boroughSlug ? getBorough(citySlug, boroughSlug) : undefined;
+
+// An outcode/category page is "within" its borough, so it shows the same
+// menu content as the borough page itself.
+const effectiveLevel = level === "outcode" ? "borough" : level;
+
+const pathLinks = [
+  { label: "Home", href: "/" },
+  ...(city ? [{ label: city.name, href: `/${city.slug}/` }] : []),
+  ...(effectiveLevel === "borough" && borough ? [{ label: borough.name, href: `/${citySlug}/${borough.slug}/` }] : []),
+];
+---
+
+<div data-hamburger-menu class="contents">
+<button
+  type="button"
+  aria-label="Open menu"
+  aria-expanded="false"
+  data-menu-toggle
+  class="flex items-center justify-center h-9 w-9 rounded-md text-stone-600 hover:bg-stone-100 hover:text-stone-900 transition-colors"
+>
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+  </svg>
+</button>
+
+<div data-menu-backdrop class="fixed inset-0 bg-black/30 z-40 hidden"></div>
+
+<nav
+  data-menu-panel
+  aria-hidden="true"
+  class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 shadow-xl translate-x-full transition-transform duration-200 flex flex-col"
+>
+  <div class="flex items-center justify-between px-4 py-4 border-b border-stone-200">
+    <span class="font-semibold">Menu</span>
+    <button type="button" aria-label="Close menu" data-menu-close class="flex items-center justify-center h-8 w-8 rounded-md text-stone-500 hover:bg-stone-100">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="overflow-y-auto flex-1 py-2">
+    <ul class="px-2">
+      {
+        pathLinks.map((link, i) => (
+          <li>
+            <a
+              href={link.href}
+              class:list={[
+                "block rounded-md px-3 py-2 text-sm hover:bg-stone-100 transition-colors",
+                i === pathLinks.length - 1 ? "font-semibold text-emerald-800" : "text-stone-700",
+              ]}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="my-2 border-t border-stone-200" />
+
+    {
+      effectiveLevel === "home" && (
+        <div class="px-2">
+          <p class="px-3 pt-2 pb-1 text-xs font-medium uppercase tracking-wide text-stone-400">Cities</p>
+          <ul data-favorite-list>
+            {hierarchy.cities.map((c) => {
+              const favKey = `city:${c.slug}`;
+              return (
+                <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
+                  <a href={`/${c.slug}/`} class="flex-1 block px-3 py-2 text-sm text-stone-700 hover:bg-stone-100 rounded-md transition-colors">
+                    {c.name}
+                  </a>
+                  <FavoriteStar favKey={favKey} size="sm" />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )
+    }
+
+    {
+      effectiveLevel === "city" && city && (
+        <div class="px-2">
+          <p class="px-3 pt-2 pb-1 text-xs font-medium uppercase tracking-wide text-stone-400">Boroughs</p>
+          <ul data-favorite-list>
+            {city.boroughs.map((b) => {
+              const thumb = getBannerImages(b.slug)[0];
+              const favKey = `borough:${b.slug}`;
+              return (
+                <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
+                  <a href={`/${city.slug}/${b.slug}/`} class="flex-1 flex items-center gap-3 px-3 py-2 text-sm text-stone-700 hover:bg-stone-100 rounded-md transition-colors">
+                    {thumb ? (
+                      <img src={thumb.src} alt="" class="h-8 w-8 shrink-0 rounded object-cover" />
+                    ) : (
+                      <span class="h-8 w-8 shrink-0 rounded bg-stone-100" />
+                    )}
+                    <span>{b.name}</span>
+                  </a>
+                  <FavoriteStar favKey={favKey} size="sm" />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )
+    }
+
+    {
+      effectiveLevel === "borough" && borough && (
+        <div class="px-2">
+          <p class="px-3 pt-2 pb-1 text-xs font-medium uppercase tracking-wide text-stone-400">Postcode areas</p>
+          <ul data-favorite-list>
+            {borough.outcodes.map((o) => {
+              const favKey = `outcode:${citySlug}/${borough.slug}/${o.slug}`;
+              return (
+                <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
+                  <a href={`/${citySlug}/${borough.slug}/${o.slug}/`} class="flex-1 block px-3 py-2 text-sm hover:bg-stone-100 rounded-md transition-colors">
+                    <span class="block font-medium text-stone-800">{o.outcode}</span>
+                    <span class="block text-xs text-stone-500 truncate">{o.wards.slice(0, 2).join(", ")}</span>
+                  </a>
+                  <FavoriteStar favKey={favKey} size="sm" />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )
+    }
+  </div>
+</nav>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-hamburger-menu]").forEach((root) => {
+    const toggle = root.querySelector<HTMLElement>("[data-menu-toggle]");
+    const panel = root.querySelector<HTMLElement>("[data-menu-panel]");
+    const backdrop = root.querySelector<HTMLElement>("[data-menu-backdrop]");
+    const closeBtn = root.querySelector<HTMLElement>("[data-menu-close]");
+    if (!toggle || !panel || !backdrop) return;
+
+    function open() {
+      panel!.classList.remove("translate-x-full");
+      panel!.setAttribute("aria-hidden", "false");
+      backdrop!.classList.remove("hidden");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+    function close() {
+      panel!.classList.add("translate-x-full");
+      panel!.setAttribute("aria-hidden", "true");
+      backdrop!.classList.add("hidden");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+
+    toggle.addEventListener("click", open);
+    closeBtn?.addEventListener("click", close);
+    backdrop.addEventListener("click", close);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+    });
+  });
+</script>
