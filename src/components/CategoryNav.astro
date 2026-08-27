@@ -17,12 +17,14 @@ const { basePath, active, available } = Astro.props;
       <li>
         <a
           href={basePath}
+          aria-label="Overview"
+          title="Overview"
           class:list={[
-            "inline-block px-3 py-3 border-b-2 -mb-px transition-colors",
-            active === "overview" ? "border-emerald-700 text-emerald-800 font-medium" : "border-transparent text-stone-600 hover:text-stone-900",
+            "inline-block px-3 py-3 border-b-2 -mb-px transition-colors text-base",
+            active === "overview" ? "border-emerald-700 text-emerald-800" : "border-transparent text-stone-600 hover:text-stone-900",
           ]}
         >
-          Overview
+          🏠
         </a>
       </li>
       {
