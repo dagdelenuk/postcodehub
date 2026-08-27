@@ -2,7 +2,8 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
-import { getBannerImages, loadHierarchy } from "../../../lib/data";
+import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
+import { getBannerImages, getBoroughSummary, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -15,6 +16,13 @@ export function getStaticPaths() {
 }
 
 const { city, borough } = Astro.props;
+const summary = getBoroughSummary(city.slug, borough.slug);
+const summaryStats = [
+  { label: "GP surgeries", value: summary.gpSurgeries },
+  { label: "Schools", value: summary.schools },
+  { label: "Crimes (12mo)", value: summary.crimes12mo },
+  { label: "Property sales", value: summary.propertySales },
+];
 ---
 
 <BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`}>
@@ -30,6 +38,29 @@ const { city, borough } = Astro.props;
     <RotatingBanner images={getBannerImages(borough.slug)} />
     <h1 class="text-3xl font-bold tracking-tight mt-4">{borough.name}</h1>
     <p class="text-stone-500 mt-1">{borough.outcodes.length} postcode areas covered</p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pb-8">
+    <div class="grid gap-4 sm:grid-cols-4 mb-8">
+      {
+        summaryStats.map((stat) => (
+          <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
+            <p class="text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
+            <p class="text-xs text-stone-500 mt-1">{stat.label}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      <LiveWeatherWidget latitude={summary.latitude} longitude={summary.longitude} />
+      {summary.historySummary && (
+        <div class="rounded-lg border border-stone-200 bg-white p-4">
+          <p class="text-xs uppercase tracking-wide text-stone-400 mb-1">About {borough.name}</p>
+          <p class="text-sm text-stone-600">{summary.historySummary}</p>
+        </div>
+      )}
+    </div>
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-16">

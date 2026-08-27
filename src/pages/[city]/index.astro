@@ -2,7 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../components/RotatingBanner.astro";
-import { getBannerImages, loadHierarchy } from "../../lib/data";
+import LiveWeatherWidget from "../../components/LiveWeatherWidget.astro";
+import { getBannerImages, getCityFact, getCitySummary, loadHierarchy } from "../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -13,6 +14,8 @@ export function getStaticPaths() {
 }
 
 const { city } = Astro.props;
+const summary = getCitySummary(city.slug);
+const cityFact = getCityFact(city.slug) ?? summary.historySummary;
 ---
 
 <BaseLayout title={city.name} description={`Community information for ${city.name}, organised by council authority and postcode.`}>
@@ -22,6 +25,18 @@ const { city } = Astro.props;
     <RotatingBanner images={getBannerImages(city.slug)} />
     <h1 class="text-3xl font-bold tracking-tight mt-4">{city.name}</h1>
     <p class="text-stone-500 mt-1">{city.boroughs.length} council {city.boroughs.length === 1 ? "authority" : "authorities"} covered</p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pb-8">
+    <div class="grid gap-6 sm:grid-cols-2">
+      <LiveWeatherWidget latitude={summary.latitude} longitude={summary.longitude} />
+      {cityFact && (
+        <div class="rounded-lg border border-stone-200 bg-white p-4">
+          <p class="text-xs uppercase tracking-wide text-stone-400 mb-1">About {city.name}</p>
+          <p class="text-sm text-stone-600">{cityFact}</p>
+        </div>
+      )}
+    </div>
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-16">

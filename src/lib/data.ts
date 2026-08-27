@@ -27,6 +27,18 @@ export function getBannerImages(slug: string): BannerImage[] {
   return loadBanners()[slug] ?? [];
 }
 
+// A short, genuinely-about-the-city fact, used on the city page instead of
+// rolling up one borough's history text (which reads oddly generalised to
+// the whole city - "Formed in 1965 from the former boroughs of Barking and
+// Dagenham" is a fact about that borough, not about London).
+const CITY_FACTS: Record<string, string> = {
+  london: "Greater London comprises 32 boroughs plus the City of London, each with its own local council, spanning both banks of the Thames and covering roughly 1,570 square kilometres.",
+};
+
+export function getCityFact(citySlug: string): string | undefined {
+  return CITY_FACTS[citySlug];
+}
+
 export function getCity(citySlug: string): HierarchyCity | undefined {
   return loadHierarchy().cities.find((c) => c.slug === citySlug);
 }
@@ -58,6 +70,79 @@ export function getAllOutcodeParams(): OutcodeParams[] {
     }
   }
   return params;
+}
+
+export interface AreaSummary {
+  gpSurgeries: number;
+  schools: number;
+  crimes12mo: number;
+  propertySales: number;
+  latitude: number;
+  longitude: number;
+  historySummary: string;
+}
+
+function summariseOutcodes(entries: { citySlug: string; boroughSlug: string; outcodeSlug: string }[]): AreaSummary {
+  let gpSurgeries = 0;
+  let schools = 0;
+  let crimes12mo = 0;
+  let propertySales = 0;
+  let latSum = 0;
+  let lonSum = 0;
+  let historySummary = "";
+
+  for (const entry of entries) {
+    const data = loadOutcodeData(entry.citySlug, entry.boroughSlug, entry.outcodeSlug);
+    gpSurgeries += data.health.gpSurgeries.length;
+    schools += data.schools.schools.length;
+    crimes12mo += data.safety.totalLast12Months;
+    propertySales += data.property.sales.length;
+    latSum += data.latitude;
+    lonSum += data.longitude;
+    // keyFacts[0] is always the borough-neutral paragraph (see
+    // seed-places-events-history.ts); history.summary itself is often phrased
+    // around one specific outcode ("TW9 covers Kew...", "KT1 lies within..."),
+    // which reads oddly rolled up to a whole borough or city.
+    if (!historySummary) historySummary = data.history.keyFacts[0] || data.history.summary;
+  }
+
+  const count = entries.length || 1;
+  return {
+    gpSurgeries,
+    schools,
+    crimes12mo,
+    propertySales,
+    latitude: latSum / count,
+    longitude: lonSum / count,
+    historySummary,
+  };
+}
+
+/** Aggregates every outcode in a borough - each outcode belongs to exactly one borough's own file set, no double-counting. */
+export function getBoroughSummary(citySlug: string, boroughSlug: string): AreaSummary {
+  const borough = getBorough(citySlug, boroughSlug);
+  const entries = (borough?.outcodes ?? []).map((o) => ({ citySlug, boroughSlug, outcodeSlug: o.slug }));
+  return summariseOutcodes(entries);
+}
+
+/**
+ * Aggregates every outcode across all of a city's boroughs. A boundary outcode
+ * (e.g. N1, shared by Hackney and Islington) has its own file under each
+ * borough it touches with identical underlying facts - dedupe by outcode code
+ * so it's only counted once at city level, not once per borough it borders.
+ */
+export function getCitySummary(citySlug: string): AreaSummary {
+  const city = getCity(citySlug);
+  const seen = new Set<string>();
+  const entries: { citySlug: string; boroughSlug: string; outcodeSlug: string }[] = [];
+  for (const borough of city?.boroughs ?? []) {
+    for (const outcode of borough.outcodes) {
+      if (seen.has(outcode.outcode)) continue;
+      seen.add(outcode.outcode);
+      entries.push({ citySlug, boroughSlug: borough.slug, outcodeSlug: outcode.slug });
+    }
+  }
+  return summariseOutcodes(entries);
 }
 
 /**
