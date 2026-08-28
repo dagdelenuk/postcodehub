@@ -128,8 +128,11 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
           </button>
         ))
       }
-      <button type="button" class="text-xs text-stone-400 underline ml-1" data-legend-reset>
+      <button type="button" class="text-xs text-stone-400 underline ml-1" data-legend-show-all>
         Show all
+      </button>
+      <button type="button" class="text-xs text-stone-400 underline" data-legend-clear-all>
+        Clear all
       </button>
     </div>
 
@@ -151,8 +154,10 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
     white-space: nowrap;
     transition: opacity 0.15s;
   }
-  .legend-pill.is-off {
-    opacity: 0.35;
+  .legend-pill.is-active {
+    border-color: #059669;
+    background: #ecfdf5;
+    color: #065f46;
   }
   .legend-dot {
     display: inline-block;
@@ -160,9 +165,6 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
     height: 8px;
     border-radius: 9999px;
     flex-shrink: 0;
-  }
-  [data-borough-line].is-dimmed {
-    stroke-opacity: 0.22;
   }
   [data-borough-line].is-emphasised {
     stroke-width: 3.5;
@@ -182,9 +184,13 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
     const averageLine = chart.querySelector<SVGPolylineElement>("[data-average-line]");
     const legend = wrapper.querySelector<HTMLElement>("[data-crime-legend]");
     const pills = [...(legend?.querySelectorAll<HTMLButtonElement>("[data-legend-toggle]") ?? [])];
-    const resetBtn = legend?.querySelector<HTMLElement>("[data-legend-reset]");
+    const showAllBtn = legend?.querySelector<HTMLElement>("[data-legend-show-all]");
+    const clearAllBtn = legend?.querySelector<HTMLElement>("[data-legend-clear-all]");
+    const allSlugs = ["average", ...lines.map((l) => l.dataset.boroughSlug!)];
 
-    const hidden = new Set<string>();
+    // selected = which lines are visible; anything not in here is fully
+    // hidden, not just dimmed - the point is to compare only what you pick.
+    let selected = new Set<string>(allSlugs);
 
     function pillFor(slug: string) {
       return pills.find((p) => p.dataset.legendToggle === slug);
@@ -192,45 +198,44 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
 
     function refresh() {
       for (const line of lines) {
-        const slug = line.dataset.boroughSlug!;
-        line.classList.toggle("is-hidden", hidden.has(slug));
+        line.classList.toggle("is-hidden", !selected.has(line.dataset.boroughSlug!));
       }
-      if (hidden.has("average")) averageLine?.classList.add("is-hidden");
-      else averageLine?.classList.remove("is-hidden");
+      averageLine?.classList.toggle("is-hidden", !selected.has("average"));
       for (const pill of pills) {
-        pill.classList.toggle("is-off", hidden.has(pill.dataset.legendToggle!));
+        pill.classList.toggle("is-active", selected.has(pill.dataset.legendToggle!));
       }
     }
 
     pills.forEach((pill) => {
       pill.addEventListener("click", () => {
         const slug = pill.dataset.legendToggle!;
-        if (hidden.has(slug)) hidden.delete(slug);
-        else hidden.add(slug);
+        if (selected.has(slug)) selected.delete(slug);
+        else selected.add(slug);
         refresh();
       });
     });
 
-    resetBtn?.addEventListener("click", () => {
-      hidden.clear();
-      for (const line of lines) line.classList.remove("is-dimmed", "is-emphasised");
+    showAllBtn?.addEventListener("click", () => {
+      selected = new Set(allSlugs);
+      for (const line of lines) line.classList.remove("is-emphasised");
       refresh();
     });
 
-    // Arriving from a specific borough's "Crimes (12mo)" card: emphasise
-    // that borough's line and dim the rest, without hiding anything - the
-    // point is still to compare against the full picture.
+    clearAllBtn?.addEventListener("click", () => {
+      selected = new Set();
+      for (const line of lines) line.classList.remove("is-emphasised");
+      refresh();
+    });
+
+    // Arriving from a specific borough's "Crimes (12mo)" card: show only
+    // that borough's line (emphasised) plus the average, hiding every other
+    // borough until the visitor opts back in via the legend.
     const params = new URLSearchParams(location.search);
     const highlight = params.get("highlight");
-    if (highlight) {
-      const highlightLine = lines.find((l) => l.dataset.boroughSlug === highlight);
-      if (highlightLine) {
-        for (const line of lines) {
-          if (line === highlightLine) line.classList.add("is-emphasised");
-          else line.classList.add("is-dimmed");
-        }
-        pillFor(highlight)?.scrollIntoView({ block: "nearest", inline: "center" });
-      }
+    if (highlight && lines.some((l) => l.dataset.boroughSlug === highlight)) {
+      selected = new Set(["average", highlight]);
+      lines.find((l) => l.dataset.boroughSlug === highlight)?.classList.add("is-emphasised");
+      pillFor(highlight)?.scrollIntoView({ block: "nearest", inline: "center" });
     }
 
     refresh();
