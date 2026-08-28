@@ -29,6 +29,13 @@
         "postcode": "NW1 2BU"
       },
       {
+        "name": "Uclh Pathway To Home",
+        "odsCode": "Y05005",
+        "address": "University College Hospital, NW1 2BU, 235 Euston Road, London",
+        "postcode": "NW1 2BU",
+        "telephone": "0845 1555000"
+      },
+      {
         "name": "Marylebone Health Centre",
         "odsCode": "E87737",
         "address": "17 Marylebone Road, NW1 5LT, London",
@@ -41,6 +48,13 @@
         "address": "Lower Ground Floor, NW1 5JD, 15 Marylebone Road, London",
         "postcode": "NW1 5JD",
         "telephone": "020 74875244"
+      },
+      {
+        "name": "Westminster Zt Practice",
+        "odsCode": "Y00230",
+        "address": "Ferguson House, NW1 5JD, 15 Marylebone Road, London",
+        "postcode": "NW1 5JD",
+        "telephone": "020 77926080"
       },
       {
         "name": "Ampthill & Regents Park Practice",
@@ -71,13 +85,6 @@
         "telephone": "020 73876855"
       },
       {
-        "name": "Westminster Zt Practice",
-        "odsCode": "Y00230",
-        "address": "Ferguson House, NW1 5JD, 15 Marylebone Road, London",
-        "postcode": "NW1 5JD",
-        "telephone": "020 77926080"
-      },
-      {
         "name": "Camden Health Improvement Practice",
         "odsCode": "Y02674",
         "address": "The Margarete Centre, NW1 2LS, 108 Hampstead Road, London",
@@ -92,13 +99,6 @@
         "telephone": "020 73916388"
       },
       {
-        "name": "Camden Integrated Care Service",
-        "odsCode": "Y03387",
-        "address": "South Camden Centre, NW1 3HP, 154 Drummond Street, London",
-        "postcode": "NW1 3HP",
-        "telephone": "020 31821701"
-      },
-      {
         "name": "Camden Community Nursing",
         "odsCode": "Y03897",
         "address": "1st Floor South Wing, NW1 0PE, St Pancras Hospital, London",
@@ -111,27 +111,6 @@
         "address": "St. Pancras Hospital, NW1 0PE, 4 St. Pancras Way, London",
         "postcode": "NW1 0PE",
         "telephone": "020 34021213"
-      },
-      {
-        "name": "Uclh Pathway To Home",
-        "odsCode": "Y05005",
-        "address": "University College Hospital, NW1 2BU, 235 Euston Road, London",
-        "postcode": "NW1 2BU",
-        "telephone": "0845 1555000"
-      },
-      {
-        "name": "Cri Camden Community Drug Treatment Serv",
-        "odsCode": "Y05293",
-        "address": "Cri, NW1 9NN, 184 Royal College Street, London",
-        "postcode": "NW1 9NN",
-        "telephone": "020 74852722"
-      },
-      {
-        "name": "Central London Extended Hours Hubs",
-        "odsCode": "Y05686",
-        "address": "Central London Healthcare, NW1 6SE, 1b Harewood Row, London",
-        "postcode": "NW1 6SE",
-        "telephone": "020 75358300"
       },
       {
         "name": "Camden Diabetes Ipu",
@@ -153,6 +132,27 @@
         "address": "Camden Health Partners, NW1 0PE, South Wing, St Pancras Hospital, London",
         "postcode": "NW1 0PE",
         "telephone": "02074 285701"
+      },
+      {
+        "name": "Camden Integrated Care Service",
+        "odsCode": "Y03387",
+        "address": "South Camden Centre, NW1 3HP, 154 Drummond Street, London",
+        "postcode": "NW1 3HP",
+        "telephone": "020 31821701"
+      },
+      {
+        "name": "Cri Camden Community Drug Treatment Serv",
+        "odsCode": "Y05293",
+        "address": "Cri, NW1 9NN, 184 Royal College Street, London",
+        "postcode": "NW1 9NN",
+        "telephone": "020 74852722"
+      },
+      {
+        "name": "Central London Extended Hours Hubs",
+        "odsCode": "Y05686",
+        "address": "Central London Healthcare, NW1 6SE, 1b Harewood Row, London",
+        "postcode": "NW1 6SE",
+        "telephone": "020 75358300"
       },
       {
         "name": "Cgl Camden Drug And Alcohol Service",
@@ -370,8 +370,14 @@
         "postcode": "NW1 9DB"
       },
       {
-        "name": "St Pancras Hospital",
-        "odsCode": "A6F2W",
+        "name": "Pts St Pancras Hospital",
+        "odsCode": "RRU88",
+        "address": "St. Pancras Way, NW1 0PE, London",
+        "postcode": "NW1 0PE"
+      },
+      {
+        "name": "Uclh Outreach: St Pancras Hospital",
+        "odsCode": "RRVPH",
         "address": "4 St. Pancras Way, NW1 0PE, London",
         "postcode": "NW1 0PE"
       },
@@ -382,8 +388,20 @@
         "postcode": "NW1 2PG"
       },
       {
+        "name": "University College London Hospitals Nhs Foundation Trust",
+        "odsCode": "RRV00",
+        "address": "250 Euston Road, NW1 2PG, London",
+        "postcode": "NW1 2PG"
+      },
+      {
         "name": "Hammersmith Hospital - Western Eye Hospital Elective Surgical Hub",
         "odsCode": "L8J7P",
+        "address": "153-173 Marylebone Road, NW1 5QH, London",
+        "postcode": "NW1 5QH"
+      },
+      {
+        "name": "Western Eye Hospital",
+        "odsCode": "RYJ07",
         "address": "153-173 Marylebone Road, NW1 5QH, London",
         "postcode": "NW1 5QH"
       },
@@ -401,24 +419,6 @@
         "postcode": "NW1 2BU"
       },
       {
-        "name": "Pts St Pancras Hospital",
-        "odsCode": "RRU88",
-        "address": "St. Pancras Way, NW1 0PE, London",
-        "postcode": "NW1 0PE"
-      },
-      {
-        "name": "University College London Hospitals Nhs Foundation Trust",
-        "odsCode": "RRV00",
-        "address": "250 Euston Road, NW1 2PG, London",
-        "postcode": "NW1 2PG"
-      },
-      {
-        "name": "University College London Hospitals Nhs Foundation Trust Hq",
-        "odsCode": "RRV01",
-        "address": "250 Euston Road, NW1 2PG, London",
-        "postcode": "NW1 2PG"
-      },
-      {
         "name": "University College Hospital",
         "odsCode": "RRV03",
         "address": "235 Euston Road, NW1 2BU, London",
@@ -431,34 +431,10 @@
         "postcode": "NW1 2BU"
       },
       {
-        "name": "Uclh Outreach: St Pancras Hospital",
-        "odsCode": "RRVPH",
-        "address": "4 St. Pancras Way, NW1 0PE, London",
-        "postcode": "NW1 0PE"
-      },
-      {
-        "name": "St Pancras Hospital",
-        "odsCode": "RV3DY",
-        "address": "Inpatient Unit, NW1 0PE, South Wing, London",
-        "postcode": "NW1 0PE"
-      },
-      {
-        "name": "University College London Hospital",
-        "odsCode": "RV3EC",
-        "address": "Pallative Care Team, NW1 2BU, 3rd Floor West, London",
-        "postcode": "NW1 2BU"
-      },
-      {
         "name": "Samaritan Hospital For Women",
         "odsCode": "RYJ06",
         "address": "Ferguson House, NW1 5JD, 15 Marylebone Road, London",
         "postcode": "NW1 5JD"
-      },
-      {
-        "name": "Western Eye Hospital",
-        "odsCode": "RYJ07",
-        "address": "153-173 Marylebone Road, NW1 5QH, London",
-        "postcode": "NW1 5QH"
       }
     ]
   },

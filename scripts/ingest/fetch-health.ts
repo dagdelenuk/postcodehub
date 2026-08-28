@@ -75,6 +75,69 @@ async function getOrgDetail(orgId: string): Promise<GpSurgery> {
   };
 }
 
+// ODS carries genuine duplicate org records for the same physical site (repeat
+// entries under multiple ODS codes, occasional name typos like "Castlenau" vs
+// "Castelnau"), so an exact-string dedupe misses them. Cluster same-postcode
+// entries by fuzzy name similarity instead, which catches those while leaving
+// distinct real organisations that happen to share a generic ODS name (e.g.
+// two different "Dental Surgery" practices in different postcodes) alone.
+function normalizeName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/^the\s+/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function levenshtein(a: string, b: string): number {
+  const dp: number[][] = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+  for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      dp[i][j] = a[i - 1] === b[j - 1] ? dp[i - 1][j - 1] : 1 + Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]);
+    }
+  }
+  return dp[a.length][b.length];
+}
+
+function nameSimilarity(a: string, b: string): number {
+  if (a === b) return 1;
+  const maxLen = Math.max(a.length, b.length);
+  return maxLen === 0 ? 1 : 1 - levenshtein(a, b) / maxLen;
+}
+
+const NAME_MATCH_THRESHOLD = 0.82;
+
+function dedupeOrgs(orgs: GpSurgery[]): GpSurgery[] {
+  const byPostcode = new Map<string, GpSurgery[]>();
+  for (const org of orgs) {
+    const key = org.postcode.toUpperCase().replace(/\s+/g, "");
+    const list = byPostcode.get(key) ?? [];
+    list.push(org);
+    byPostcode.set(key, list);
+  }
+
+  const deduped: GpSurgery[] = [];
+  for (const group of byPostcode.values()) {
+    const clusters: { orgs: GpSurgery[]; normName: string }[] = [];
+    for (const org of group) {
+      const normName = normalizeName(org.name);
+      const cluster = clusters.find((c) => nameSimilarity(c.normName, normName) >= NAME_MATCH_THRESHOLD);
+      if (cluster) cluster.orgs.push(org);
+      else clusters.push({ orgs: [org], normName });
+    }
+    for (const cluster of clusters) {
+      // Shortest address tends to be the cleanest (fewer extra building-name lines);
+      // borrow a phone number from a sibling record if the chosen one lacks one.
+      const best = [...cluster.orgs].sort((a, b) => a.address.length - b.address.length)[0];
+      const telephone = best.telephone ?? cluster.orgs.find((o) => o.telephone)?.telephone;
+      deduped.push({ ...best, telephone });
+    }
+  }
+  return deduped;
+}
+
 async function fetchCategory(outcode: string, roleId: string, nameFilter?: RegExp): Promise<GpSurgery[]> {
   let orgs = await listActiveOrgs(outcode, roleId);
   if (nameFilter) orgs = orgs.filter((org) => nameFilter.test(org.Name));
@@ -93,7 +156,7 @@ async function fetchCategory(outcode: string, roleId: string, nameFilter?: RegEx
     results.push(...detailed);
     await sleep(150);
   }
-  return results;
+  return dedupeOrgs(results);
 }
 
 async function main() {

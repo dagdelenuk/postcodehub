@@ -27,11 +27,25 @@
         "telephone": "020 89695151"
       },
       {
+        "name": "St. Quintin Health Centre",
+        "odsCode": "Y00507",
+        "address": "St. Quintin Avenue, W10 6NX, London",
+        "postcode": "W10 6NX",
+        "telephone": "020 89605677"
+      },
+      {
         "name": "Shirland Medical",
         "odsCode": "E87021",
         "address": "Queens Park Health Centre, W10 4LD, Dart Street, London",
         "postcode": "W10 4LD",
         "telephone": "020 89692626"
+      },
+      {
+        "name": "Queens Park Health Centre",
+        "odsCode": "E87755",
+        "address": "Dart Street, W10 4LD, London",
+        "postcode": "W10 4LD",
+        "telephone": "020 89649990"
       },
       {
         "name": "The Golborne Medical Centre",
@@ -55,46 +69,11 @@
         "telephone": "02037 724996"
       },
       {
-        "name": "Golborne Canalside Health Centre",
-        "odsCode": "E87742",
-        "address": "175a Kensal Road, W10 5DD, London",
-        "postcode": "W10 5DD",
-        "telephone": "020 89644801"
-      },
-      {
-        "name": "Srikrishnamurthy Harrow Road Surgery",
-        "odsCode": "E87751",
-        "address": "574 Harrow Road, W10 4NJ, London",
-        "postcode": "W10 4NJ",
-        "telephone": "020 89605499"
-      },
-      {
-        "name": "Queens Park Health Centre",
-        "odsCode": "E87755",
-        "address": "Dart Street, W10 4LD, London",
-        "postcode": "W10 4LD",
-        "telephone": "020 89649990"
-      },
-      {
-        "name": "St. Quintin Health Centre",
-        "odsCode": "Y00507",
-        "address": "St. Quintin Avenue, W10 6NX, London",
-        "postcode": "W10 6NX",
-        "telephone": "020 89605677"
-      },
-      {
         "name": "Barlby Surgery",
         "odsCode": "Y01011",
         "address": "St. Charles Hospital, W10 6DZ, Exmoor Street, London",
         "postcode": "W10 6DZ",
         "telephone": "02070 626310"
-      },
-      {
-        "name": "Half Penny Steps Health Centre",
-        "odsCode": "Y02842",
-        "address": "427-429 Harrow Road, W10 4RE, London",
-        "postcode": "W10 4RE",
-        "telephone": "020 89628700"
       },
       {
         "name": "Lcw Ealing Ccg Ooh",
@@ -132,13 +111,6 @@
         "telephone": "0300 0339898"
       },
       {
-        "name": "Lcw Wlccg Ooh",
-        "odsCode": "Y04923",
-        "address": "St Charles Ctr For H&wb, W10 6DZ, Exmoor Street, London",
-        "postcode": "W10 6DZ",
-        "telephone": "0300 0339898"
-      },
-      {
         "name": "Cis Three Boroughs",
         "odsCode": "Y05337",
         "address": "St Charles Centre For Hwb, W10 6DZ, Exmoor Street, London",
@@ -160,13 +132,6 @@
         "telephone": "0300 0339898"
       },
       {
-        "name": "Kensington And Chelsea Daws",
-        "odsCode": "Y05643",
-        "address": "Acorn Hall, W10 5AW, 1 East Row, London",
-        "postcode": "W10 5AW",
-        "telephone": "020 89605599"
-      },
-      {
         "name": "Community Palliative Care Team - Clch",
         "odsCode": "Y06313",
         "address": "Pembridge Hospice, W10 6DZ, Exmoor Street, London",
@@ -179,6 +144,34 @@
         "address": "Lcw Unscheduled Care, W10 6DZ, St. Charles Hospital, London",
         "postcode": "W10 6DZ",
         "telephone": "03000 339898"
+      },
+      {
+        "name": "Golborne Canalside Health Centre",
+        "odsCode": "E87742",
+        "address": "175a Kensal Road, W10 5DD, London",
+        "postcode": "W10 5DD",
+        "telephone": "020 89644801"
+      },
+      {
+        "name": "Srikrishnamurthy Harrow Road Surgery",
+        "odsCode": "E87751",
+        "address": "574 Harrow Road, W10 4NJ, London",
+        "postcode": "W10 4NJ",
+        "telephone": "020 89605499"
+      },
+      {
+        "name": "Half Penny Steps Health Centre",
+        "odsCode": "Y02842",
+        "address": "427-429 Harrow Road, W10 4RE, London",
+        "postcode": "W10 4RE",
+        "telephone": "020 89628700"
+      },
+      {
+        "name": "Kensington And Chelsea Daws",
+        "odsCode": "Y05643",
+        "address": "Acorn Hall, W10 5AW, 1 East Row, London",
+        "postcode": "W10 5AW",
+        "telephone": "020 89605599"
       }
     ],
     "dentists": [
@@ -213,16 +206,16 @@
         "postcode": "W10 6DZ"
       },
       {
-        "name": "The Tooth Clinic",
-        "odsCode": "V11303",
-        "address": "Network Hub, W10 5BE, 300 Kensal Road, London",
-        "postcode": "W10 5BE"
-      },
-      {
         "name": "Emergency Dental Services",
         "odsCode": "V14779",
         "address": "St. Charles Centre, W10 6DZ, Exmoor Street, London",
         "postcode": "W10 6DZ"
+      },
+      {
+        "name": "The Tooth Clinic",
+        "odsCode": "V11303",
+        "address": "Network Hub, W10 5BE, 300 Kensal Road, London",
+        "postcode": "W10 5BE"
       }
     ],
     "pharmacies": [
@@ -296,18 +289,6 @@
         "address": "Exmoor Street, W10 6DZ, London",
         "postcode": "W10 6DZ",
         "telephone": "020 8969 2488"
-      },
-      {
-        "name": "St Charles Hospital",
-        "odsCode": "RYJ05",
-        "address": "Exmoor Street, W10 6DZ, London",
-        "postcode": "W10 6DZ"
-      },
-      {
-        "name": "St. Charles Hospital",
-        "odsCode": "RYX18",
-        "address": "Exmoor Street, W10 6DZ, London",
-        "postcode": "W10 6DZ"
       }
     ]
   },
