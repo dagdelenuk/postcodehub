@@ -4,7 +4,7 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
 import FavoriteStar from "../../../components/FavoriteStar.astro";
-import { getBannerImages, getBoroughSummary, loadHierarchy } from "../../../lib/data";
+import { getBannerImages, getBoroughHealth, getBoroughSchools, getBoroughSummary, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -18,11 +18,13 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.props;
 const summary = getBoroughSummary(city.slug, borough.slug);
+const hasHealth = getBoroughHealth(city.slug, borough.slug).length > 0;
+const hasSchools = getBoroughSchools(city.slug, borough.slug).length > 0;
 const summaryStats = [
-  { label: "GP surgeries", value: summary.gpSurgeries },
-  { label: "Schools", value: summary.schools },
-  { label: "Crimes (12mo)", value: summary.crimes12mo },
-  { label: "Property sales", value: summary.propertySales },
+  { label: "GP surgeries", value: summary.gpSurgeries, href: hasHealth ? `/${city.slug}/${borough.slug}/health/` : null },
+  { label: "Schools", value: summary.schools, href: hasSchools ? `/${city.slug}/${borough.slug}/schools/` : null },
+  { label: "Crimes (12mo)", value: summary.crimes12mo, href: null },
+  { label: "Property sales", value: summary.propertySales, href: null },
 ];
 ---
 
@@ -44,12 +46,22 @@ const summaryStats = [
   <section class="mx-auto max-w-5xl px-4 pb-8">
     <div class="grid gap-4 sm:grid-cols-4 mb-8">
       {
-        summaryStats.map((stat) => (
-          <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
-            <p class="text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
-            <p class="text-xs text-stone-500 mt-1">{stat.label}</p>
-          </div>
-        ))
+        summaryStats.map((stat) => {
+          const cardClass = "rounded-lg border border-stone-200 bg-white p-4 text-center transition-colors" + (stat.href ? " hover:border-emerald-600 cursor-pointer" : "");
+          const content = (
+            <>
+              <p class="text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
+              <p class="text-xs text-stone-500 mt-1">{stat.label}</p>
+            </>
+          );
+          return stat.href ? (
+            <a href={stat.href} class={cardClass}>
+              {content}
+            </a>
+          ) : (
+            <div class={cardClass}>{content}</div>
+          );
+        })
       }
     </div>
 

@@ -1,0 +1,52 @@
+---
+import type { School } from "../lib/types";
+import { OFSTED_RATING_COLORS, formatOfstedDate } from "../lib/ofsted";
+
+interface Props {
+  school: School;
+}
+
+const { school } = Astro.props;
+---
+
+<div class="rounded-lg border border-stone-200 bg-white p-4">
+  <div class="flex items-start justify-between gap-2">
+    <p class="font-medium">{school.name}</p>
+    {
+      school.ofstedRating && (
+        <span class:list={["text-xs px-2 py-0.5 rounded-full whitespace-nowrap", OFSTED_RATING_COLORS[school.ofstedRating] ?? "bg-stone-100 text-stone-600"]}>
+          {school.ofstedRating}
+        </span>
+      )
+    }
+  </div>
+  <p class="text-sm text-stone-500 mt-1">{school.phaseOfEducation} &middot; {school.address}</p>
+  {
+    school.ofstedRating && !school.ofstedRatingDerivedFromAreaGrades && formatOfstedDate(school.ofstedLastInspection) && (
+      <p class="text-xs text-stone-400 mt-1">Inspected {formatOfstedDate(school.ofstedLastInspection)}</p>
+    )
+  }
+  {
+    school.ofstedRating && school.ofstedRatingDerivedFromAreaGrades && (
+      <p class="text-xs text-stone-400 mt-1">
+        {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
+        {school.ofstedRating.toLowerCase()} in every graded area - Ofsted's post-2024 framework doesn't publish a composite label
+      </p>
+    )
+  }
+  {
+    !school.ofstedRating && school.ofstedNotJudgedUnderNewFramework && (
+      <p class="text-xs text-stone-400 mt-1">
+        {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
+        mixed grades across areas, no single overall grade under Ofsted's post-2024 framework
+      </p>
+    )
+  }
+  {
+    school.numberOfPupils && (
+      <p class="text-xs text-stone-400 mt-1">
+        {school.numberOfPupils} pupils{school.schoolCapacity ? ` / capacity ${school.schoolCapacity}` : ""}
+      </p>
+    )
+  }
+</div>

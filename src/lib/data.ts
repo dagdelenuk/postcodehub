@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import type { Banners, BannerImage, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData } from "./types";
+import type { Banners, BannerImage, GpSurgery, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData, School } from "./types";
 
 const PROCESSED_DIR = path.resolve(process.cwd(), "data/processed");
 
@@ -171,6 +171,51 @@ export function getCitySummary(citySlug: string): AreaSummary {
     }
   }
   return summariseOutcodes(entries);
+}
+
+export interface BoroughHealthGroup {
+  outcode: string;
+  outcodeSlug: string;
+  gpSurgeries: GpSurgery[];
+  dentists: GpSurgery[];
+  pharmacies: GpSurgery[];
+}
+
+/**
+ * GP surgeries/dentists/pharmacies for every outcode this borough is the
+ * primary owner of, grouped by outcode - same primary-only filter as
+ * getBoroughSummary(), so a boundary outcode's practices aren't listed
+ * under every borough it touches.
+ */
+export function getBoroughHealth(citySlug: string, boroughSlug: string): BoroughHealthGroup[] {
+  const borough = getBorough(citySlug, boroughSlug);
+  return (borough?.outcodes ?? [])
+    .filter((o) => o.isPrimaryBorough)
+    .map((o) => {
+      const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
+      return { outcode: o.outcode, outcodeSlug: o.slug, gpSurgeries: data.health.gpSurgeries, dentists: data.health.dentists, pharmacies: data.health.pharmacies };
+    })
+    .filter((g) => g.gpSurgeries.length + g.dentists.length + g.pharmacies.length > 0)
+    .sort((a, b) => a.outcode.localeCompare(b.outcode));
+}
+
+export interface BoroughSchoolsGroup {
+  outcode: string;
+  outcodeSlug: string;
+  schools: School[];
+}
+
+/** Schools for every outcode this borough is the primary owner of, grouped by outcode. */
+export function getBoroughSchools(citySlug: string, boroughSlug: string): BoroughSchoolsGroup[] {
+  const borough = getBorough(citySlug, boroughSlug);
+  return (borough?.outcodes ?? [])
+    .filter((o) => o.isPrimaryBorough)
+    .map((o) => {
+      const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
+      return { outcode: o.outcode, outcodeSlug: o.slug, schools: data.schools.schools };
+    })
+    .filter((g) => g.schools.length > 0)
+    .sort((a, b) => a.outcode.localeCompare(b.outcode));
 }
 
 /**
