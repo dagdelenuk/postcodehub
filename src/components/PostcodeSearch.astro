@@ -50,6 +50,7 @@ const TYPE_ICON: Record<string, string> = {
     href: string;
     keywords: string;
     wards?: string[];
+    borough?: string;
   }
 
   /** Same "word starts with, or plain substring" rule used for whole-entry scoring, applied to one ward name. */
@@ -141,7 +142,7 @@ const TYPE_ICON: Record<string, string> = {
         const matchedWards = entry.wards?.filter((w) => wardMatches(w, q)) ?? [];
         const sublabel = document.createElement("span");
         sublabel.className = "block text-xs text-stone-500 truncate";
-        sublabel.textContent = matchedWards.length > 0 ? matchedWards.join(", ") : entry.sublabel;
+        sublabel.textContent = matchedWards.length > 0 && entry.borough ? `${matchedWards.join(", ")} · ${entry.borough}` : entry.sublabel;
         text.append(label, sublabel);
         button.append(icon, text);
         // mousedown (not click) fires before the input's blur hides the list.

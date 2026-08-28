@@ -103,6 +103,8 @@ export interface QuickSearchEntry {
   keywords: string;
   /** Outcode entries only - lets the dropdown show which specific ward(s) matched instead of the generic borough/city sublabel. */
   wards?: string[];
+  /** Outcode entries only - kept separate from `sublabel` so a ward-matched result can still show "{wards} · {borough}" rather than losing the borough entirely. */
+  borough?: string;
 }
 
 /**
@@ -148,6 +150,7 @@ export function getQuickSearchIndex(): QuickSearchEntry[] {
             href: `/${city.slug}/${borough.slug}/${outcode.slug}/`,
             keywords: `${outcode.outcode} ${borough.name} ${city.name} ${outcode.wards.join(" ")}`.toLowerCase(),
             wards: outcode.wards,
+            borough: borough.name,
           },
         });
       }
