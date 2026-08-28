@@ -94,6 +94,67 @@ export function getPostcodeSearchIndex(): Record<string, string> {
   return index;
 }
 
+export interface QuickSearchEntry {
+  type: "city" | "borough" | "outcode";
+  label: string;
+  sublabel: string;
+  href: string;
+  /** Lowercased, space-joined blob of everything this entry should match on. */
+  keywords: string;
+}
+
+/**
+ * Flat, pre-lowercased index for the live quick-search dropdown: one entry
+ * per city, per borough, and per unique outcode (deduped by primary borough,
+ * same rule as getPostcodeSearchIndex - a boundary outcode is one real place,
+ * not one result per borough it touches). An outcode's ward names are folded
+ * into its own keywords rather than getting separate entries, since wards
+ * have no page of their own to land on.
+ */
+export function getQuickSearchIndex(): QuickSearchEntry[] {
+  const hierarchy = loadHierarchy();
+  const entries: QuickSearchEntry[] = [];
+  const outcodeEntries = new Map<string, { entry: QuickSearchEntry; isPrimary: boolean }>();
+
+  for (const city of hierarchy.cities) {
+    entries.push({
+      type: "city",
+      label: city.name,
+      sublabel: `${city.boroughs.length} ${city.boroughs.length === 1 ? "borough" : "boroughs"}`,
+      href: `/${city.slug}/`,
+      keywords: city.name.toLowerCase(),
+    });
+
+    for (const borough of city.boroughs) {
+      entries.push({
+        type: "borough",
+        label: borough.name,
+        sublabel: city.name,
+        href: `/${city.slug}/${borough.slug}/`,
+        keywords: `${borough.name} ${city.name}`.toLowerCase(),
+      });
+
+      for (const outcode of borough.outcodes) {
+        const existing = outcodeEntries.get(outcode.outcode);
+        if (existing?.isPrimary && !outcode.isPrimaryBorough) continue;
+        outcodeEntries.set(outcode.outcode, {
+          isPrimary: outcode.isPrimaryBorough,
+          entry: {
+            type: "outcode",
+            label: outcode.outcode,
+            sublabel: `${borough.name}, ${city.name}`,
+            href: `/${city.slug}/${borough.slug}/${outcode.slug}/`,
+            keywords: `${outcode.outcode} ${borough.name} ${city.name} ${outcode.wards.join(" ")}`.toLowerCase(),
+          },
+        });
+      }
+    }
+  }
+
+  for (const { entry } of outcodeEntries.values()) entries.push(entry);
+  return entries;
+}
+
 export interface AreaSummary {
   gpSurgeries: number;
   schools: number;

@@ -1,12 +1,19 @@
 ---
-import { getPostcodeSearchIndex } from "../lib/data";
+import { getPostcodeSearchIndex, getQuickSearchIndex } from "../lib/data";
 
 const index = getPostcodeSearchIndex();
+const quickSearchIndex = getQuickSearchIndex();
+
+const TYPE_ICON: Record<string, string> = {
+  city: "🏙️",
+  borough: "🏘️",
+  outcode: "📮",
+};
 ---
 
 <div data-postcode-search class="relative w-full max-w-xs">
   <form data-postcode-search-form class="flex items-center gap-2">
-    <label for="postcode-search-input" class="sr-only">Search by postcode</label>
+    <label for="postcode-search-input" class="sr-only">Search by postcode, place, or ward</label>
     <input
       id="postcode-search-input"
       type="text"
@@ -28,11 +35,22 @@ const index = getPostcodeSearchIndex();
     </button>
   </form>
   <p data-postcode-search-message class="hidden absolute left-0 top-full mt-1 text-xs text-stone-500 bg-white border border-stone-200 rounded-md px-3 py-2 shadow-sm z-10"></p>
+  <ul data-postcode-search-results class="hidden absolute left-0 top-full mt-1 w-full max-h-80 overflow-y-auto bg-white border border-stone-200 rounded-md shadow-sm z-10 py-1"></ul>
 </div>
 
 <script type="application/json" id="postcode-search-index" set:html={JSON.stringify(index)} />
+<script type="application/json" id="postcode-quick-search-index" set:html={JSON.stringify(quickSearchIndex)} />
+<script type="application/json" id="postcode-search-type-icon" set:html={JSON.stringify(TYPE_ICON)} />
 
 <script>
+  interface QuickSearchEntry {
+    type: "city" | "borough" | "outcode";
+    label: string;
+    sublabel: string;
+    href: string;
+    keywords: string;
+  }
+
   function postcodeToOutcode(raw: string): string | null {
     const normalised = raw.trim().toUpperCase().replace(/\s+/g, "");
     const match = normalised.match(/^([A-Z]{1,2}\d[A-Z\d]?)\d[A-Z]{2}$/);
@@ -42,18 +60,87 @@ const index = getPostcodeSearchIndex();
     return outcodeMatch ? normalised : null;
   }
 
+  const TYPE_ORDER: Record<string, number> = { city: 0, borough: 1, outcode: 2 };
+
+  function rankResults(entries: QuickSearchEntry[], query: string): QuickSearchEntry[] {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    const scored: { entry: QuickSearchEntry; score: number }[] = [];
+    for (const entry of entries) {
+      const label = entry.label.toLowerCase();
+      let score: number;
+      if (label.startsWith(q)) score = 0;
+      else if (entry.keywords.split(" ").some((word) => word.startsWith(q))) score = 1;
+      else if (entry.keywords.includes(q)) score = 2;
+      else continue;
+      scored.push({ entry, score });
+    }
+    scored.sort((a, b) => a.score - b.score || TYPE_ORDER[a.entry.type] - TYPE_ORDER[b.entry.type] || a.entry.label.localeCompare(b.entry.label));
+    return scored.slice(0, 10).map((s) => s.entry);
+  }
+
   document.querySelectorAll<HTMLElement>("[data-postcode-search]").forEach((root) => {
     const form = root.querySelector<HTMLFormElement>("[data-postcode-search-form]");
     const input = root.querySelector<HTMLInputElement>("[data-postcode-search-input]");
     const message = root.querySelector<HTMLElement>("[data-postcode-search-message]");
+    const results = root.querySelector<HTMLUListElement>("[data-postcode-search-results]");
     const indexEl = document.getElementById("postcode-search-index");
-    if (!form || !input || !message || !indexEl) return;
+    const quickIndexEl = document.getElementById("postcode-quick-search-index");
+    const typeIconEl = document.getElementById("postcode-search-type-icon");
+    if (!form || !input || !message || !results || !indexEl || !quickIndexEl || !typeIconEl) return;
 
     let index: Record<string, string>;
+    let quickIndex: QuickSearchEntry[];
+    let typeIcon: Record<string, string>;
     try {
       index = JSON.parse(indexEl.textContent ?? "{}");
+      quickIndex = JSON.parse(quickIndexEl.textContent ?? "[]");
+      typeIcon = JSON.parse(typeIconEl.textContent ?? "{}");
     } catch {
       index = {};
+      quickIndex = [];
+      typeIcon = {};
+    }
+
+    function hideResults() {
+      results!.classList.add("hidden");
+      results!.innerHTML = "";
+    }
+
+    function renderResults(entries: QuickSearchEntry[]) {
+      results!.innerHTML = "";
+      if (entries.length === 0) {
+        hideResults();
+        return;
+      }
+      for (const entry of entries) {
+        const li = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "w-full flex items-start gap-2 px-3 py-2 text-left text-sm hover:bg-stone-100 transition-colors";
+        const icon = document.createElement("span");
+        icon.className = "shrink-0";
+        icon.setAttribute("aria-hidden", "true");
+        icon.textContent = typeIcon[entry.type] ?? "";
+        const text = document.createElement("span");
+        text.className = "min-w-0";
+        const label = document.createElement("span");
+        label.className = "block font-medium truncate";
+        label.textContent = entry.label;
+        const sublabel = document.createElement("span");
+        sublabel.className = "block text-xs text-stone-500 truncate";
+        sublabel.textContent = entry.sublabel;
+        text.append(label, sublabel);
+        button.append(icon, text);
+        // mousedown (not click) fires before the input's blur hides the list.
+        button.addEventListener("mousedown", (e) => {
+          e.preventDefault();
+          window.location.href = entry.href;
+        });
+        li.appendChild(button);
+        results!.appendChild(li);
+      }
+      results!.classList.remove("hidden");
     }
 
     form.addEventListener("submit", (e) => {
@@ -64,6 +151,7 @@ const index = getPostcodeSearchIndex();
         window.location.href = path;
         return;
       }
+      hideResults();
       message.textContent = outcode
         ? `${outcode} isn't covered yet - we're only live in London so far.`
         : "Enter a UK postcode or postcode area, e.g. \"TW9\" or \"TW9 3PZ\".";
@@ -72,6 +160,19 @@ const index = getPostcodeSearchIndex();
 
     input.addEventListener("input", () => {
       message.classList.add("hidden");
+      renderResults(rankResults(quickIndex, input.value));
+    });
+
+    input.addEventListener("focus", () => {
+      if (input.value.trim()) renderResults(rankResults(quickIndex, input.value));
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") hideResults();
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!root.contains(e.target as Node)) hideResults();
     });
   });
 </script>
