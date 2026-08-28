@@ -23,6 +23,7 @@ const trend = getCityPropertyTrend(city.slug);
   citySlug={city.slug}
 >
   <Breadcrumbs
+    sticky
     crumbs={[
       { label: "PostcodeHub", href: "/" },
       { label: city.name, href: `/${city.slug}/` },

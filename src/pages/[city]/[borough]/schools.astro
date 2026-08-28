@@ -31,6 +31,7 @@ const totalSchools = allSchools.length;
   boroughSlug={borough.slug}
 >
   <Breadcrumbs
+    sticky
     crumbs={[
       { label: "PostcodeHub", href: "/" },
       { label: city.name, href: `/${city.slug}/` },
