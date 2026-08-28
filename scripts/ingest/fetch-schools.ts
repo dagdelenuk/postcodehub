@@ -199,10 +199,16 @@ async function main() {
     matched++;
     const urn = row["URN"];
     const ofsted = ofstedRatings.get(urn);
+    // GIAS leaves "PhaseOfEducation" as "Not applicable" for independent
+    // schools, special schools, PRUs, and other non-standard establishment
+    // types - it just doesn't classify them by state-school phase. Fall
+    // back to the establishment type itself (e.g. "Other independent
+    // school", "Pupil referral unit"), which is far more informative.
+    const phaseRaw = row["PhaseOfEducation (name)"];
     const school: School = {
       name: row["EstablishmentName"],
       urn,
-      phaseOfEducation: row["PhaseOfEducation (name)"] || "Unknown",
+      phaseOfEducation: phaseRaw && phaseRaw !== "Not applicable" ? phaseRaw : row["TypeOfEstablishment (name)"] || "Unknown",
       ofstedRating: ofsted?.rating ?? null,
       ofstedLastInspection: ofsted?.inspectionDate ?? null,
       ofstedNotJudgedUnderNewFramework: ofsted?.notJudgedUnderNewFramework ?? false,
