@@ -46,7 +46,7 @@ const summaryStats = [
         const icon = CATEGORIES.find((c) => c.key === stat.category)!.icon;
         const content = (
           <>
-            <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-10 leading-none", STAT_COLORS[stat.category]]} aria-hidden="true">
+            <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none", STAT_COLORS[stat.category]]} aria-hidden="true">
               {icon}
             </span>
             <p class="relative text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
