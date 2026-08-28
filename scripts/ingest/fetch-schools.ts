@@ -213,7 +213,7 @@ async function main() {
       ofstedLastInspection: ofsted?.inspectionDate ?? null,
       ofstedNotJudgedUnderNewFramework: ofsted?.notJudgedUnderNewFramework ?? false,
       ofstedRatingDerivedFromAreaGrades: ofsted?.derivedFromAreaGrades ?? false,
-      address: [row["Street"], row["Locality"], row["Town"]].filter(Boolean).join(", "),
+      address: [row["Street"], postcode, row["Locality"], row["Town"]].filter(Boolean).join(", "),
       postcode,
       numberOfPupils: row["NumberOfPupils"] ? Number(row["NumberOfPupils"]) : null,
       schoolCapacity: row["SchoolCapacity"] ? Number(row["SchoolCapacity"]) : null,

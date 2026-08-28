@@ -18,7 +18,15 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.props;
 const groups = getBoroughSchools(city.slug, borough.slug);
-const totalSchools = groups.reduce((sum, g) => sum + g.schools.length, 0);
+const allSchools = groups.flatMap((g) => g.schools);
+const totalSchools = allSchools.length;
+
+const RATING_ORDER = ["Outstanding", "Good", "Requires improvement", "Inadequate"];
+const ratings = RATING_ORDER.filter((r) => allSchools.some((s) => s.ofstedRating === r));
+const phases = [...new Set(allSchools.map((s) => s.phaseOfEducation))].sort((a, b) => a.localeCompare(b));
+const hasOversubscribed = allSchools.some((s) => s.numberOfPupils != null && s.schoolCapacity != null && s.numberOfPupils > s.schoolCapacity);
+
+const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors";
 ---
 
 <BaseLayout
@@ -38,11 +46,51 @@ const totalSchools = groups.reduce((sum, g) => sum + g.schools.length, 0);
   />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
-    <h1 class="text-2xl font-bold mb-6">Schools in {borough.name} ({totalSchools})</h1>
+    <h1 class="text-2xl font-bold mb-4">Schools in {borough.name} ({totalSchools})</h1>
+
+    <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2" data-school-filters>
+      {
+        ratings.length > 0 && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">Rating:</span>
+            {ratings.map((r) => (
+              <button type="button" class={PILL_BASE} data-filter-group="rating" data-filter-value={r}>
+                {r}
+              </button>
+            ))}
+          </div>
+        )
+      }
+      {
+        phases.length > 0 && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">Type:</span>
+            {phases.map((p) => (
+              <button type="button" class={PILL_BASE} data-filter-group="phase" data-filter-value={p}>
+                {p}
+              </button>
+            ))}
+          </div>
+        )
+      }
+      {
+        hasOversubscribed && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <button type="button" class={PILL_BASE} data-filter-group="oversubscribed" data-filter-value="true">
+              Oversubscribed
+            </button>
+          </div>
+        )
+      }
+      <button type="button" class="text-xs text-stone-400 underline hidden" data-filter-clear>
+        Clear filters
+      </button>
+    </div>
+    <p class="text-xs text-stone-400 mb-6" data-filter-count></p>
 
     {
       groups.map((group) => (
-        <div class="mb-8">
+        <div class="mb-8" data-school-group>
           <h2 class="text-lg font-semibold mb-3">
             <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/schools/`} class="hover:text-emerald-700">
               {group.outcode}
@@ -60,3 +108,68 @@ const totalSchools = groups.reduce((sum, g) => sum + g.schools.length, 0);
     <p class="text-xs text-stone-400 mt-4">Source: DfE Get Information about Schools (GIAS) and Ofsted inspection outcomes.</p>
   </section>
 </BaseLayout>
+
+<style>
+  [data-filter-group] {
+    border-color: #d6d3d1;
+    color: #57534e;
+    background: white;
+  }
+  [data-filter-group].is-active {
+    border-color: #059669;
+    background: #ecfdf5;
+    color: #065f46;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-school-filters]").forEach((bar) => {
+    const section = bar.closest("section");
+    if (!section) return;
+
+    const pills = [...bar.querySelectorAll<HTMLButtonElement>("[data-filter-group]")];
+    const clearBtn = bar.querySelector<HTMLElement>("[data-filter-clear]");
+    const countEl = section.querySelector<HTMLElement>("[data-filter-count]");
+    const cards = [...section.querySelectorAll<HTMLElement>("[data-school-card]")];
+    const groups = [...section.querySelectorAll<HTMLElement>("[data-school-group]")];
+    const totalCount = cards.length;
+
+    // active[group] = Set of selected values for that facet; empty set = no filter on that facet
+    const active: Record<string, Set<string>> = {};
+
+    function apply() {
+      const activeGroups = Object.entries(active).filter(([, set]) => set.size > 0);
+      let visible = 0;
+      for (const card of cards) {
+        const matches = activeGroups.every(([group, values]) => values.has(card.dataset[`school${group[0].toUpperCase()}${group.slice(1)}`] ?? ""));
+        card.classList.toggle("hidden", !matches);
+        if (matches) visible++;
+      }
+      for (const group of groups) {
+        const anyVisible = [...group.querySelectorAll<HTMLElement>("[data-school-card]")].some((c) => !c.classList.contains("hidden"));
+        group.classList.toggle("hidden", !anyVisible);
+      }
+      const hasFilter = activeGroups.length > 0;
+      clearBtn?.classList.toggle("hidden", !hasFilter);
+      if (countEl) countEl.textContent = hasFilter ? `Showing ${visible} of ${totalCount} schools` : "";
+    }
+
+    pills.forEach((pill) => {
+      const group = pill.dataset.filterGroup!;
+      const value = pill.dataset.filterValue!;
+      active[group] ??= new Set();
+      pill.addEventListener("click", () => {
+        if (active[group].has(value)) active[group].delete(value);
+        else active[group].add(value);
+        pill.classList.toggle("is-active", active[group].has(value));
+        apply();
+      });
+    });
+
+    clearBtn?.addEventListener("click", () => {
+      for (const key of Object.keys(active)) active[key].clear();
+      pills.forEach((p) => p.classList.remove("is-active"));
+      apply();
+    });
+  });
+</script>
