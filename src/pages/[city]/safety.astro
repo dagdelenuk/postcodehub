@@ -51,9 +51,17 @@ function pointsFor(series: number[]): string {
 const gridLines = [0, 0.25, 0.5, 0.75, 1].map((frac) => ({
   y: PAD_TOP + (1 - frac) * plotHeight,
   value: Math.round(maxValue * frac),
+  frac,
 }));
 
 const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(i) }));
+
+const chartData = {
+  months: trend.months,
+  average: trend.average,
+  boroughs: boroughsWithColor.map((b) => ({ slug: b.slug, series: b.series })),
+  geometry: { PAD_LEFT, PAD_RIGHT, PAD_TOP, PAD_BOTTOM, CHART_WIDTH, CHART_HEIGHT },
+};
 ---
 
 <BaseLayout
@@ -80,7 +88,7 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
           gridLines.map((g) => (
             <>
               <line x1={PAD_LEFT} y1={g.y} x2={CHART_WIDTH - PAD_RIGHT} y2={g.y} stroke="#e7e5e4" stroke-width="1" />
-              <text x={PAD_LEFT - 8} y={g.y + 4} text-anchor="end" font-size="10" fill="#a8a29e">
+              <text x={PAD_LEFT - 8} y={g.y + 4} text-anchor="end" font-size="10" fill="#a8a29e" data-grid-label data-grid-frac={g.frac}>
                 {g.value.toLocaleString()}
               </text>
             </>
@@ -116,6 +124,7 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
         </polyline>
       </svg>
     </div>
+    <script type="application/json" id="crime-trend-data" set:html={JSON.stringify(chartData)} />
 
     <div class="flex flex-wrap items-center gap-2 mt-4" data-crime-legend>
       <button type="button" class="legend-pill is-average" data-legend-toggle="average">
@@ -182,11 +191,20 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
 
     const lines = [...chart.querySelectorAll<SVGPolylineElement>("[data-borough-line]")];
     const averageLine = chart.querySelector<SVGPolylineElement>("[data-average-line]");
+    const gridLabels = [...chart.querySelectorAll<SVGTextElement>("[data-grid-label]")];
     const legend = wrapper.querySelector<HTMLElement>("[data-crime-legend]");
     const pills = [...(legend?.querySelectorAll<HTMLButtonElement>("[data-legend-toggle]") ?? [])];
     const showAllBtn = legend?.querySelector<HTMLElement>("[data-legend-show-all]");
     const clearAllBtn = legend?.querySelector<HTMLElement>("[data-legend-clear-all]");
     const allSlugs = ["average", ...lines.map((l) => l.dataset.boroughSlug!)];
+
+    const dataEl = document.getElementById("crime-trend-data");
+    const raw: {
+      months: string[];
+      average: number[];
+      boroughs: { slug: string; series: number[] }[];
+      geometry: { PAD_LEFT: number; PAD_RIGHT: number; PAD_TOP: number; PAD_BOTTOM: number; CHART_WIDTH: number; CHART_HEIGHT: number };
+    } = JSON.parse(dataEl?.textContent ?? "null");
 
     // selected = which lines are visible; anything not in here is fully
     // hidden, not just dimmed - the point is to compare only what you pick.
@@ -194,6 +212,36 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
 
     function pillFor(slug: string) {
       return pills.find((p) => p.dataset.legendToggle === slug);
+    }
+
+    function rescale() {
+      if (!raw) return;
+      const { PAD_LEFT, PAD_RIGHT, PAD_TOP, PAD_BOTTOM, CHART_WIDTH, CHART_HEIGHT } = raw.geometry;
+      const plotWidth = CHART_WIDTH - PAD_LEFT - PAD_RIGHT;
+      const plotHeight = CHART_HEIGHT - PAD_TOP - PAD_BOTTOM;
+      const monthCount = raw.months.length;
+
+      const seriesInPlay: number[][] = [];
+      if (selected.has("average")) seriesInPlay.push(raw.average);
+      for (const b of raw.boroughs) {
+        if (selected.has(b.slug)) seriesInPlay.push(b.series);
+      }
+      const values = seriesInPlay.flat();
+      const maxValue = (values.length > 0 ? Math.max(...values, 1) : 100) * 1.08;
+
+      const xAt = (i: number) => PAD_LEFT + (monthCount <= 1 ? 0 : (i / (monthCount - 1)) * plotWidth);
+      const yAt = (v: number) => PAD_TOP + (1 - v / maxValue) * plotHeight;
+      const pointsFor = (series: number[]) => series.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(" ");
+
+      averageLine?.setAttribute("points", pointsFor(raw.average));
+      for (const line of lines) {
+        const b = raw.boroughs.find((x) => x.slug === line.dataset.boroughSlug);
+        if (b) line.setAttribute("points", pointsFor(b.series));
+      }
+      for (const label of gridLabels) {
+        const frac = Number(label.dataset.gridFrac);
+        label.textContent = Math.round(maxValue * frac).toLocaleString();
+      }
     }
 
     function refresh() {
@@ -204,6 +252,7 @@ const boroughsWithColor = trend.boroughs.map((b, i) => ({ ...b, color: colorFor(
       for (const pill of pills) {
         pill.classList.toggle("is-active", selected.has(pill.dataset.legendToggle!));
       }
+      rescale();
     }
 
     pills.forEach((pill) => {
