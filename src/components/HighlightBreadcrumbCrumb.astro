@@ -1,0 +1,40 @@
+---
+// The breadcrumb is static HTML rendered at build time, but ?highlight=
+// (which borough/outcode the visitor arrived from) is only known once the
+// page loads in the browser - so this inserts the extra crumb client-side
+// rather than trying to read the query string server-side (which a static
+// site can't do at all).
+interface Props {
+  citySlug: string;
+  entities: { slug: string; name: string }[];
+}
+
+const { citySlug, entities } = Astro.props;
+---
+
+<script type="application/json" data-highlight-crumb-entities set:html={JSON.stringify({ citySlug, entities })} />
+
+<script>
+  document.querySelectorAll<HTMLScriptElement>("[data-highlight-crumb-entities]").forEach((el) => {
+    const { citySlug, entities } = JSON.parse(el.textContent ?? "null") as { citySlug: string; entities: { slug: string; name: string }[] };
+    const highlight = new URLSearchParams(location.search).get("highlight");
+    const entity = highlight ? entities.find((e) => e.slug === highlight) : null;
+    if (!entity) return;
+
+    const list = document.querySelector<HTMLOListElement>('nav[aria-label="Breadcrumb"] ol');
+    const lastItem = list?.lastElementChild;
+    if (!list || !lastItem) return;
+
+    const li = document.createElement("li");
+    li.className = "flex items-center gap-1";
+    const sep = document.createElement("span");
+    sep.className = "text-stone-300";
+    sep.textContent = "/";
+    const a = document.createElement("a");
+    a.href = `/${citySlug}/${entity.slug}/`;
+    a.className = "hover:text-emerald-700 flex items-center";
+    a.textContent = entity.name;
+    li.append(sep, a);
+    list.insertBefore(li, lastItem);
+  });
+</script>

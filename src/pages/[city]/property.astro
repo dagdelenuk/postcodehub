@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
+import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
 import { getCityPropertyTrend, loadHierarchy } from "../../lib/data";
 
 export function getStaticPaths() {
@@ -28,6 +29,7 @@ const trend = getCityPropertyTrend(city.slug);
       { label: "Property sales comparison" },
     ]}
   />
+  <HighlightBreadcrumbCrumb citySlug={city.slug} entities={trend.boroughs} />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
     <h1 class="text-2xl font-bold mb-1">Property sales comparison across {city.name}</h1>
