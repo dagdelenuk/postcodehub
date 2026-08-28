@@ -41,7 +41,7 @@ const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
                 style={`height: ${Math.max((m.totalCrimes / maxMonthly) * 100, 2)}px`}
               />
             </div>
-            <span class="text-[10px] text-stone-400 whitespace-nowrap rotate-90 mt-3">{m.month.slice(2)}</span>
+            <span class="text-[10px] text-stone-400 whitespace-nowrap -rotate-90 mt-3">{m.month.slice(2)}</span>
           </div>
         ))
       }
