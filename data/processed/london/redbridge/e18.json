@@ -3,8 +3,8 @@
   "slug": "e18",
   "city": "London",
   "borough": "Redbridge",
-  "latitude": 51.59278207103822,
-  "longitude": 0.025035713114754114,
+  "latitude": 51.592793655172414,
+  "longitude": 0.02498506896551724,
   "wards": [
     "Churchfields",
     "South Woodford",
@@ -112,8 +112,9 @@
         "name": "Snaresbrook Primary School",
         "urn": "102832",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "03/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Meadow Walk, South Woodford, London",
         "postcode": "E18 2EN",
         "numberOfPupils": 461,
@@ -124,7 +125,8 @@
         "urn": "102839",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "10/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Ashbourne Avenue, South Woodford, London",
         "postcode": "E18 1PL",
         "numberOfPupils": 685,
@@ -136,6 +138,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "75 Woodford Road, South Woodford, London",
         "postcode": "E18 2EA",
         "numberOfPupils": 89,
@@ -146,7 +149,8 @@
         "urn": "133931",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "26/11/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Oakdale Road, Redbridge, London",
         "postcode": "E18 1JX",
         "numberOfPupils": 357,
@@ -156,8 +160,9 @@
         "name": "Oakdale Infants' School",
         "urn": "133932",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "21/09/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Woodville Road, South Woodford, London",
         "postcode": "E18 1JU",
         "numberOfPupils": 299,
@@ -168,7 +173,8 @@
         "urn": "133935",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Churchfields, South Woodford, London",
         "postcode": "E18 2RB",
         "numberOfPupils": 477,
@@ -179,7 +185,8 @@
         "urn": "133936",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Churchfields, South Woodford, London",
         "postcode": "E18 2RB",
         "numberOfPupils": 429,
@@ -283,11 +290,99 @@
   "property": {
     "sales": [
       {
+        "address": "10, VIOLET ROAD",
+        "postcode": "E18 1DG",
+        "price": 801000,
+        "dateOfTransfer": "2026-07-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, OAKDALE ROAD",
+        "postcode": "E18 1JX",
+        "price": 925000,
+        "dateOfTransfer": "2026-07-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "FERNDOWN, FLAT 16, WOODFORD ROAD",
+        "postcode": "E18 2ED",
+        "price": 380000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5A, STANLEY ROAD",
+        "postcode": "E18 2NR",
+        "price": 440000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, ASHFORD ROAD",
+        "postcode": "E18 1JZ",
+        "price": 820000,
+        "dateOfTransfer": "2026-07-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "108, ONSLOW GARDENS",
+        "postcode": "E18 1NB",
+        "price": 438000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DERBY COURT, FLAT 4, DERBY ROAD",
+        "postcode": "E18 2PT",
+        "price": 315000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, CARNARVON ROAD",
+        "postcode": "E18 2NT",
+        "price": 855000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "16, SHERWOOD AVENUE",
         "postcode": "E18 1PB",
         "price": 950000,
         "dateOfTransfer": "2026-06-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "93, PEEL ROAD",
+        "postcode": "E18 2LJ",
+        "price": 646496,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "KINGSWOOD HEIGHTS, 19, QUEEN MARY AVENUE",
+        "postcode": "E18 2FP",
+        "price": 370000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "REGENCY COURT, 89 - 111, FLAT 21, HIGH ROAD, SOUTH WOODFORD",
+        "postcode": "E18 2JT",
+        "price": 410000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -299,10 +394,34 @@
         "newBuild": false
       },
       {
+        "address": "69, GEORGE LANE",
+        "postcode": "E18 1JJ",
+        "price": 510000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "5, PRIORY CLOSE",
         "postcode": "E18 2QT",
         "price": 363000,
         "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "176, MAYBANK ROAD",
+        "postcode": "E18 1EL",
+        "price": 716000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "DERBY COURT, FLAT 10, DERBY ROAD",
+        "postcode": "E18 2PT",
+        "price": 310000,
+        "dateOfTransfer": "2026-06-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -331,6 +450,14 @@
         "newBuild": false
       },
       {
+        "address": "36, MARLBOROUGH ROAD",
+        "postcode": "E18 1AP",
+        "price": 1025000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "16, HERMITAGE CLOSE",
         "postcode": "E18 2BW",
         "price": 1550000,
@@ -347,6 +474,14 @@
         "newBuild": false
       },
       {
+        "address": "8, BYRON AVENUE",
+        "postcode": "E18 2HQ",
+        "price": 1288000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "MANOR COURT LODGE, 175, FLAT 44, HIGH ROAD, SOUTH WOODFORD",
         "postcode": "E18 2PD",
         "price": 325000,
@@ -355,10 +490,10 @@
         "newBuild": false
       },
       {
-        "address": "8, BYRON AVENUE",
-        "postcode": "E18 2HQ",
-        "price": 1288000,
-        "dateOfTransfer": "2026-05-22",
+        "address": "3, SOUTH VIEW DRIVE, SOUTH WOODFORD",
+        "postcode": "E18 1NP",
+        "price": 1260000,
+        "dateOfTransfer": "2026-05-21",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -379,11 +514,11 @@
         "newBuild": false
       },
       {
-        "address": "88, PEEL ROAD",
-        "postcode": "E18 2LG",
-        "price": 646500,
+        "address": "9B, CHIGWELL ROAD",
+        "postcode": "E18 1LR",
+        "price": 185000,
         "dateOfTransfer": "2026-05-15",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -392,6 +527,14 @@
         "price": 435000,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "88, PEEL ROAD",
+        "postcode": "E18 2LG",
+        "price": 646500,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -411,11 +554,11 @@
         "newBuild": false
       },
       {
-        "address": "EATON COURT, 111, FLAT 40, HIGH ROAD, SOUTH WOODFORD",
-        "postcode": "E18 2JU",
-        "price": 200000,
+        "address": "5, CRESCENT ROAD",
+        "postcode": "E18 1JA",
+        "price": 565000,
         "dateOfTransfer": "2026-05-08",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -424,6 +567,14 @@
         "price": 627500,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "EATON COURT, 111, FLAT 40, HIGH ROAD, SOUTH WOODFORD",
+        "postcode": "E18 2JU",
+        "price": 200000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -451,11 +602,11 @@
         "newBuild": false
       },
       {
-        "address": "8, WALPOLE ROAD",
-        "postcode": "E18 2LL",
-        "price": 600000,
+        "address": "RECTORY COURT, 189, FLAT 27, HIGH ROAD, SOUTH WOODFORD",
+        "postcode": "E18 2PE",
+        "price": 400000,
         "dateOfTransfer": "2026-04-24",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -467,25 +618,17 @@
         "newBuild": false
       },
       {
-        "address": "6, ALBERT ROAD",
-        "postcode": "E18 1LE",
-        "price": 435000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "RECTORY COURT, 189, FLAT 27, HIGH ROAD, SOUTH WOODFORD",
-        "postcode": "E18 2PE",
-        "price": 400000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "MANOR COURT LODGE, 175, FLAT 31, HIGH ROAD, SOUTH WOODFORD",
         "postcode": "E18 2PD",
         "price": 185000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, ALBERT ROAD",
+        "postcode": "E18 1LE",
+        "price": 435000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -496,6 +639,14 @@
         "price": 268000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, WALPOLE ROAD",
+        "postcode": "E18 2LL",
+        "price": 600000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -531,17 +682,17 @@
         "newBuild": false
       },
       {
-        "address": "8, AVONDALE COURT",
-        "postcode": "E18 2RD",
-        "price": 313000,
+        "address": "CEDAR COURT, FLAT 9, CHURCHFIELDS",
+        "postcode": "E18 2QU",
+        "price": 355000,
         "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "CEDAR COURT, FLAT 9, CHURCHFIELDS",
-        "postcode": "E18 2QU",
-        "price": 355000,
+        "address": "KINGSWOOD HEIGHTS, 36, QUEEN MARY AVENUE",
+        "postcode": "E18 2FP",
+        "price": 510000,
         "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -555,10 +706,18 @@
         "newBuild": false
       },
       {
-        "address": "KINGSWOOD HEIGHTS, 36, QUEEN MARY AVENUE",
-        "postcode": "E18 2FP",
-        "price": 510000,
+        "address": "8, AVONDALE COURT",
+        "postcode": "E18 2RD",
+        "price": 313000,
         "dateOfTransfer": "2026-04-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, CRESCENT ROAD",
+        "postcode": "E18 1JA",
+        "price": 340000,
+        "dateOfTransfer": "2026-04-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -627,19 +786,19 @@
         "newBuild": false
       },
       {
-        "address": "CEDAR COURT, FLAT 22, CHURCHFIELDS",
-        "postcode": "E18 2QU",
-        "price": 360000,
-        "dateOfTransfer": "2026-03-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "3, STATION PASSAGE",
         "postcode": "E18 1JL",
         "price": 440000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CEDAR COURT, FLAT 22, CHURCHFIELDS",
+        "postcode": "E18 2QU",
+        "price": 360000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -654,6 +813,14 @@
         "address": "MARQUESS HEIGHTS, 25, QUEEN MARY AVENUE, SOUTH WOODFORD",
         "postcode": "E18 2FS",
         "price": 340000,
+        "dateOfTransfer": "2026-03-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KINGSWOOD HEIGHTS, 29, QUEEN MARY AVENUE",
+        "postcode": "E18 2FP",
+        "price": 383500,
         "dateOfTransfer": "2026-03-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -763,6 +930,14 @@
         "newBuild": false
       },
       {
+        "address": "96, WYNNDALE ROAD",
+        "postcode": "E18 1DX",
+        "price": 470000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "29, GREENHEYS DRIVE",
         "postcode": "E18 2HA",
         "price": 1022000,
@@ -784,6 +959,14 @@
         "price": 358500,
         "dateOfTransfer": "2026-02-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, PULTENEY ROAD",
+        "postcode": "E18 1PR",
+        "price": 1035000,
+        "dateOfTransfer": "2026-02-09",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -827,6 +1010,14 @@
         "newBuild": false
       },
       {
+        "address": "9, LAUREL WAY",
+        "postcode": "E18 2UA",
+        "price": 1325000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "9, LATCHETT ROAD",
         "postcode": "E18 1DL",
         "price": 820000,
@@ -843,19 +1034,19 @@
         "newBuild": false
       },
       {
-        "address": "111, GROVE HILL, SOUTH WOODFORD",
-        "postcode": "E18 2HY",
-        "price": 1000000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "16A, RAVEN ROAD",
         "postcode": "E18 1HB",
         "price": 1050000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "111, GROVE HILL, SOUTH WOODFORD",
+        "postcode": "E18 2HY",
+        "price": 1000000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -888,6 +1079,14 @@
         "price": 320000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ROSE HOUSE, 17A, ASHBOURNE AVENUE",
+        "postcode": "E18 1PJ",
+        "price": 100000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -960,6 +1159,14 @@
         "price": 450000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, THE DRIVE",
+        "postcode": "E18 2BL",
+        "price": 2050000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1115,6 +1322,14 @@
         "newBuild": false
       },
       {
+        "address": "25, CHIGWELL ROAD",
+        "postcode": "E18 1LR",
+        "price": 520000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "44, BUCKINGHAM ROAD, SOUTH WOODFORD",
         "postcode": "E18 2NJ",
         "price": 742000,
@@ -1147,25 +1362,17 @@
         "newBuild": false
       },
       {
-        "address": "25, CHIGWELL ROAD",
-        "postcode": "E18 1LR",
-        "price": 520000,
-        "dateOfTransfer": "2025-11-21",
-        "propertyType": "Flat/Maisonette",
+        "address": "24, HILLCREST ROAD",
+        "postcode": "E18 2JL",
+        "price": 932500,
+        "dateOfTransfer": "2025-11-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
         "address": "90, STANLEY ROAD",
         "postcode": "E18 2NS",
         "price": 825000,
-        "dateOfTransfer": "2025-11-20",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "24, HILLCREST ROAD",
-        "postcode": "E18 2JL",
-        "price": 932500,
         "dateOfTransfer": "2025-11-20",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1267,6 +1474,14 @@
         "newBuild": false
       },
       {
+        "address": "BLACKBERRY COURT, 12, QUEEN MARY AVENUE, SOUTH WOODFORD",
+        "postcode": "E18 2GF",
+        "price": 111000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "46, CLEVELAND ROAD",
         "postcode": "E18 2AL",
         "price": 1000000,
@@ -1280,14 +1495,6 @@
         "price": 1700000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "BLACKBERRY COURT, 12, QUEEN MARY AVENUE, SOUTH WOODFORD",
-        "postcode": "E18 2GF",
-        "price": 111000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1307,6 +1514,14 @@
         "newBuild": false
       },
       {
+        "address": "63, LANSDOWNE ROAD",
+        "postcode": "E18 2BA",
+        "price": 870000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "97, MALFORD GROVE",
         "postcode": "E18 2DH",
         "price": 1161000,
@@ -1323,14 +1538,6 @@
         "newBuild": false
       },
       {
-        "address": "63, LANSDOWNE ROAD",
-        "postcode": "E18 2BA",
-        "price": 870000,
-        "dateOfTransfer": "2025-10-20",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "70, WALPOLE ROAD",
         "postcode": "E18 2LL",
         "price": 323500,
@@ -1343,6 +1550,14 @@
         "postcode": "E18 2NT",
         "price": 715000,
         "dateOfTransfer": "2025-10-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, ASHFORD ROAD",
+        "postcode": "E18 1JZ",
+        "price": 650000,
+        "dateOfTransfer": "2025-10-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1371,11 +1586,19 @@
         "newBuild": false
       },
       {
-        "address": "35, ASHFORD ROAD",
-        "postcode": "E18 1JZ",
-        "price": 650000,
+        "address": "HERMITAGE COURT, FLAT 32, WOODFORD ROAD",
+        "postcode": "E18 2EW",
+        "price": 425000,
         "dateOfTransfer": "2025-10-15",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, LYNWOOD CLOSE",
+        "postcode": "E18 1DP",
+        "price": 315000,
+        "dateOfTransfer": "2025-10-13",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1387,10 +1610,18 @@
         "newBuild": false
       },
       {
-        "address": "12, LYNWOOD CLOSE",
-        "postcode": "E18 1DP",
-        "price": 315000,
-        "dateOfTransfer": "2025-10-13",
+        "address": "14, RAYNE COURT",
+        "postcode": "E18 2BS",
+        "price": 307500,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "102D, HERMON HILL",
+        "postcode": "E18 1QB",
+        "price": 284000,
+        "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1403,27 +1634,11 @@
         "newBuild": false
       },
       {
-        "address": "102D, HERMON HILL",
-        "postcode": "E18 1QB",
-        "price": 284000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "17, BYRON AVENUE",
         "postcode": "E18 2HH",
         "price": 1200000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "14, RAYNE COURT",
-        "postcode": "E18 2BS",
-        "price": 307500,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1443,17 +1658,17 @@
         "newBuild": false
       },
       {
-        "address": "12A, CLARENDON ROAD",
-        "postcode": "E18 2AW",
-        "price": 600000,
+        "address": "REGENCY COURT, 89 - 111, FLAT 112, HIGH ROAD, SOUTH WOODFORD",
+        "postcode": "E18 2JJ",
+        "price": 490000,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "REGENCY COURT, 89 - 111, FLAT 112, HIGH ROAD, SOUTH WOODFORD",
-        "postcode": "E18 2JJ",
-        "price": 490000,
+        "address": "12A, CLARENDON ROAD",
+        "postcode": "E18 2AW",
+        "price": 600000,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1491,19 +1706,19 @@
         "newBuild": false
       },
       {
-        "address": "2B, HIGH VIEW ROAD",
-        "postcode": "E18 2HJ",
-        "price": 810000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "LADY ANNE COURT, 1, QUEEN MARY AVENUE, SOUTH WOODFORD",
         "postcode": "E18 2FR",
         "price": 250000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2B, HIGH VIEW ROAD",
+        "postcode": "E18 2HJ",
+        "price": 810000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1563,6 +1778,14 @@
         "newBuild": false
       },
       {
+        "address": "46, WOODVILLE ROAD",
+        "postcode": "E18 1JU",
+        "price": 792500,
+        "dateOfTransfer": "2025-09-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "CEDAR COURT, FLAT 14, CHURCHFIELDS",
         "postcode": "E18 2QU",
         "price": 355000,
@@ -1595,14 +1818,6 @@
         "newBuild": false
       },
       {
-        "address": "102, ONSLOW GARDENS",
-        "postcode": "E18 1NB",
-        "price": 447000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "HIGHLAND COURT, 87, FLAT 9, GORDON ROAD, SOUTH WOODFORD",
         "postcode": "E18 1RE",
         "price": 315000,
@@ -1616,6 +1831,14 @@
         "price": 880000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "102, ONSLOW GARDENS",
+        "postcode": "E18 1NB",
+        "price": 447000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1723,27 +1946,11 @@
         "newBuild": false
       },
       {
-        "address": "60, BEECHWOOD PARK",
-        "postcode": "E18 2EQ",
-        "price": 500000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "MAYSTOCKS COURT, 59, FLAT 15, CHIGWELL ROAD",
         "postcode": "E18 1NL",
         "price": 427500,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "31, WOODVILLE ROAD",
-        "postcode": "E18 1JT",
-        "price": 760000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1755,11 +1962,27 @@
         "newBuild": false
       },
       {
+        "address": "31, WOODVILLE ROAD",
+        "postcode": "E18 1JT",
+        "price": 760000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "26, GORDON ROAD, SOUTH WOODFORD",
         "postcode": "E18 1DN",
         "price": 830000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "60, BEECHWOOD PARK",
+        "postcode": "E18 2EQ",
+        "price": 500000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1819,9 +2042,9 @@
         "newBuild": false
       },
       {
-        "address": "WALBROOK, FLAT 17, WOODFORD ROAD",
-        "postcode": "E18 2EG",
-        "price": 340000,
+        "address": "KINGSWOOD HEIGHTS, 18, QUEEN MARY AVENUE",
+        "postcode": "E18 2FP",
+        "price": 425000,
         "dateOfTransfer": "2025-08-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1835,9 +2058,9 @@
         "newBuild": false
       },
       {
-        "address": "KINGSWOOD HEIGHTS, 18, QUEEN MARY AVENUE",
-        "postcode": "E18 2FP",
-        "price": 425000,
+        "address": "WALBROOK, FLAT 17, WOODFORD ROAD",
+        "postcode": "E18 2EG",
+        "price": 340000,
         "dateOfTransfer": "2025-08-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1963,17 +2186,17 @@
         "newBuild": false
       },
       {
-        "address": "52, LANSDOWNE ROAD",
-        "postcode": "E18 2BB",
-        "price": 700000,
+        "address": "18, BRESSEY GROVE, SOUTH WOODFORD",
+        "postcode": "E18 2HP",
+        "price": 1900000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "18, BRESSEY GROVE, SOUTH WOODFORD",
-        "postcode": "E18 2HP",
-        "price": 1900000,
+        "address": "52, LANSDOWNE ROAD",
+        "postcode": "E18 2BB",
+        "price": 700000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Detached",
         "newBuild": false
@@ -1987,17 +2210,17 @@
         "newBuild": false
       },
       {
-        "address": "17, TAVISTOCK ROAD",
-        "postcode": "E18 2AP",
-        "price": 658000,
+        "address": "73, BRESSEY GROVE, SOUTH WOODFORD",
+        "postcode": "E18 2HX",
+        "price": 1180000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "73, BRESSEY GROVE, SOUTH WOODFORD",
-        "postcode": "E18 2HX",
-        "price": 1180000,
+        "address": "17, TAVISTOCK ROAD",
+        "postcode": "E18 2AP",
+        "price": 658000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2123,17 +2346,17 @@
         "newBuild": false
       },
       {
-        "address": "35, CARNARVON ROAD",
-        "postcode": "E18 2NT",
-        "price": 821000,
+        "address": "143, HERMON HILL",
+        "postcode": "E18 1QE",
+        "price": 670000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "143, HERMON HILL",
-        "postcode": "E18 1QE",
-        "price": 670000,
+        "address": "35, CARNARVON ROAD",
+        "postcode": "E18 2NT",
+        "price": 821000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2171,9 +2394,25 @@
         "newBuild": false
       },
       {
+        "address": "45, ELMHURST DRIVE",
+        "postcode": "E18 1BP",
+        "price": 1075000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "7, AVONDALE COURT",
         "postcode": "E18 2RD",
         "price": 365750,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ORCHARD HOUSE, 14, FLAT 1, EASTWOOD CLOSE",
+        "postcode": "E18 1BX",
+        "price": 395000,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2187,27 +2426,11 @@
         "newBuild": false
       },
       {
-        "address": "ORCHARD HOUSE, 14, FLAT 1, EASTWOOD CLOSE",
-        "postcode": "E18 1BX",
-        "price": 395000,
-        "dateOfTransfer": "2025-06-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "95A, CRESCENT ROAD",
         "postcode": "E18 1JA",
         "price": 357500,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "45, ELMHURST DRIVE",
-        "postcode": "E18 1BP",
-        "price": 1075000,
-        "dateOfTransfer": "2025-06-06",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2291,19 +2514,19 @@
         "newBuild": false
       },
       {
-        "address": "81, PEEL ROAD",
-        "postcode": "E18 2LJ",
-        "price": 555000,
-        "dateOfTransfer": "2025-05-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "MARQUESS HEIGHTS, 28, QUEEN MARY AVENUE, SOUTH WOODFORD",
         "postcode": "E18 2FS",
         "price": 265000,
         "dateOfTransfer": "2025-05-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "81, PEEL ROAD",
+        "postcode": "E18 2LJ",
+        "price": 555000,
+        "dateOfTransfer": "2025-05-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2363,19 +2586,19 @@
         "newBuild": false
       },
       {
-        "address": "48, THE DRIVE",
-        "postcode": "E18 2BJ",
-        "price": 1670000,
-        "dateOfTransfer": "2025-05-02",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "REGENCY COURT, 89 - 111, FLAT 77, HIGH ROAD, SOUTH WOODFORD",
         "postcode": "E18 2JJ",
         "price": 415000,
         "dateOfTransfer": "2025-05-02",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48, THE DRIVE",
+        "postcode": "E18 2BJ",
+        "price": 1670000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2459,14 +2682,6 @@
         "newBuild": false
       },
       {
-        "address": "DERBY COURT, FLAT 2, DERBY ROAD",
-        "postcode": "E18 2PT",
-        "price": 270000,
-        "dateOfTransfer": "2025-04-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "SNARESBROOK HOUSE, FLAT 1, WOODFORD ROAD",
         "postcode": "E18 2UB",
         "price": 300000,
@@ -2475,11 +2690,11 @@
         "newBuild": false
       },
       {
-        "address": "48, BUSHEY AVENUE",
-        "postcode": "E18 2DS",
-        "price": 985000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
+        "address": "DERBY COURT, FLAT 2, DERBY ROAD",
+        "postcode": "E18 2PT",
+        "price": 270000,
+        "dateOfTransfer": "2025-04-02",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2496,6 +2711,14 @@
         "price": 279000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48, BUSHEY AVENUE",
+        "postcode": "E18 2DS",
+        "price": 985000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2523,46 +2746,6 @@
         "newBuild": false
       },
       {
-        "address": "10, GLEBELANDS AVENUE",
-        "postcode": "E18 2AB",
-        "price": 1150000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "44, WALPOLE ROAD",
-        "postcode": "E18 2LL",
-        "price": 737000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "36, FLAT 2, STANLEY ROAD",
-        "postcode": "E18 2NS",
-        "price": 355000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "10, WYNNDALE ROAD",
-        "postcode": "E18 1DX",
-        "price": 740000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "3, GROUND FLOOR FLAT, CHELMSFORD ROAD, SOUTH WOODFORD",
-        "postcode": "E18 2PW",
-        "price": 407000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "52A, FLAT 2, TAVISTOCK ROAD",
         "postcode": "E18 2AP",
         "price": 362250,
@@ -2576,6 +2759,46 @@
         "price": 360000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, FLAT 2, STANLEY ROAD",
+        "postcode": "E18 2NS",
+        "price": 355000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, GROUND FLOOR FLAT, CHELMSFORD ROAD, SOUTH WOODFORD",
+        "postcode": "E18 2PW",
+        "price": 407000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, WYNNDALE ROAD",
+        "postcode": "E18 1DX",
+        "price": 740000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, GLEBELANDS AVENUE",
+        "postcode": "E18 2AB",
+        "price": 1150000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "44, WALPOLE ROAD",
+        "postcode": "E18 2LL",
+        "price": 737000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2611,22 +2834,6 @@
         "newBuild": false
       },
       {
-        "address": "159, MAYBANK ROAD",
-        "postcode": "E18 1EJ",
-        "price": 862000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "EMBASSY COURT, FLAT 15, WOODFORD ROAD",
-        "postcode": "E18 2EE",
-        "price": 595000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ALBERT HOUSE, FLAT 6, VICTORIA ROAD",
         "postcode": "E18 1LJ",
         "price": 300000,
@@ -2651,26 +2858,26 @@
         "newBuild": false
       },
       {
-        "address": "52, VICTORIA ROAD",
-        "postcode": "E18 1LG",
-        "price": 590000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Semi-detached",
+        "address": "159, MAYBANK ROAD",
+        "postcode": "E18 1EJ",
+        "price": 862000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "10, BEECHWOOD PARK",
-        "postcode": "E18 2EQ",
-        "price": 465000,
-        "dateOfTransfer": "2025-03-25",
+        "address": "EMBASSY COURT, FLAT 15, WOODFORD ROAD",
+        "postcode": "E18 2EE",
+        "price": 595000,
+        "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "1, FOXDENE CLOSE",
-        "postcode": "E18 1BH",
-        "price": 456000,
-        "dateOfTransfer": "2025-03-25",
+        "address": "52, VICTORIA ROAD",
+        "postcode": "E18 1LG",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-26",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2699,8 +2906,32 @@
         "newBuild": false
       },
       {
-        "address": "39A, TAVISTOCK ROAD",
-        "postcode": "E18 2AP",
+        "address": "1, FOXDENE CLOSE",
+        "postcode": "E18 1BH",
+        "price": 456000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, BEECHWOOD PARK",
+        "postcode": "E18 2EQ",
+        "price": 465000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42B, MALMESBURY ROAD",
+        "postcode": "E18 2NN",
+        "price": 465000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ORCHARD HOUSE, 14, FLAT 3, EASTWOOD CLOSE",
+        "postcode": "E18 1BX",
         "price": 375000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
@@ -2723,16 +2954,8 @@
         "newBuild": false
       },
       {
-        "address": "42B, MALMESBURY ROAD",
-        "postcode": "E18 2NN",
-        "price": 465000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ORCHARD HOUSE, 14, FLAT 3, EASTWOOD CLOSE",
-        "postcode": "E18 1BX",
+        "address": "39A, TAVISTOCK ROAD",
+        "postcode": "E18 2AP",
         "price": 375000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
@@ -2819,27 +3042,11 @@
         "newBuild": false
       },
       {
-        "address": "106A, HERMON HILL",
-        "postcode": "E18 1QB",
-        "price": 502000,
-        "dateOfTransfer": "2025-03-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "78, BUCKINGHAM ROAD, SOUTH WOODFORD",
         "postcode": "E18 2NJ",
         "price": 950000,
         "dateOfTransfer": "2025-03-03",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "21, GROVE END",
-        "postcode": "E18 2LE",
-        "price": 520000,
-        "dateOfTransfer": "2025-03-03",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2851,17 +3058,33 @@
         "newBuild": false
       },
       {
-        "address": "DEBORAH COURT, FLAT 11, VICTORIA ROAD",
-        "postcode": "E18 1LF",
-        "price": 337500,
+        "address": "21, GROVE END",
+        "postcode": "E18 2LE",
+        "price": 520000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "106A, HERMON HILL",
+        "postcode": "E18 1QB",
+        "price": 502000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HANOVER HOUSE, FLAT 2, EASTWOOD ROAD",
+        "postcode": "E18 1BN",
+        "price": 300000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "DERBY COURT, FLAT 5, DERBY ROAD",
-        "postcode": "E18 2PT",
-        "price": 263250,
+        "address": "DEBORAH COURT, FLAT 11, VICTORIA ROAD",
+        "postcode": "E18 1LF",
+        "price": 337500,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2883,9 +3106,9 @@
         "newBuild": false
       },
       {
-        "address": "HANOVER HOUSE, FLAT 2, EASTWOOD ROAD",
-        "postcode": "E18 1BN",
-        "price": 300000,
+        "address": "DERBY COURT, FLAT 5, DERBY ROAD",
+        "postcode": "E18 2PT",
+        "price": 263250,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2907,14 +3130,6 @@
         "newBuild": false
       },
       {
-        "address": "52, CARNARVON ROAD",
-        "postcode": "E18 2NU",
-        "price": 390000,
-        "dateOfTransfer": "2025-02-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "38, RIVENHALL GARDENS",
         "postcode": "E18 2BU",
         "price": 435000,
@@ -2931,6 +3146,14 @@
         "newBuild": false
       },
       {
+        "address": "52, CARNARVON ROAD",
+        "postcode": "E18 2NU",
+        "price": 390000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "176, CHIGWELL ROAD",
         "postcode": "E18 1HA",
         "price": 400000,
@@ -2939,17 +3162,17 @@
         "newBuild": false
       },
       {
-        "address": "73A, GROVE HILL, SOUTH WOODFORD",
-        "postcode": "E18 2JA",
-        "price": 346500,
+        "address": "REGENCY COURT, 89 - 111, FLAT 120, HIGH ROAD",
+        "postcode": "E18 2JJ",
+        "price": 488000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "REGENCY COURT, 89 - 111, FLAT 120, HIGH ROAD",
-        "postcode": "E18 2JJ",
-        "price": 488000,
+        "address": "73A, GROVE HILL, SOUTH WOODFORD",
+        "postcode": "E18 2JA",
+        "price": 346500,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3067,14 +3290,6 @@
         "newBuild": false
       },
       {
-        "address": "4, AVON WAY",
-        "postcode": "E18 2AR",
-        "price": 650000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "212, MAYBANK ROAD",
         "postcode": "E18 1ET",
         "price": 7000000,
@@ -3115,6 +3330,14 @@
         "newBuild": false
       },
       {
+        "address": "4, AVON WAY",
+        "postcode": "E18 2AR",
+        "price": 650000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "LAUREL MEAD COURT, 35, FLAT 7, CHURCHFIELDS",
         "postcode": "E18 2RB",
         "price": 375000,
@@ -3139,14 +3362,6 @@
         "newBuild": false
       },
       {
-        "address": "23, ALBERT ROAD",
-        "postcode": "E18 1LE",
-        "price": 645000,
-        "dateOfTransfer": "2025-01-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "GOWAN LEA, 15, FLAT 3, WOODFORD ROAD",
         "postcode": "E18 2ER",
         "price": 348500,
@@ -3155,11 +3370,27 @@
         "newBuild": false
       },
       {
+        "address": "23, ALBERT ROAD",
+        "postcode": "E18 1LE",
+        "price": 645000,
+        "dateOfTransfer": "2025-01-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "5, PULTENEY GARDENS",
         "postcode": "E18 1PU",
         "price": 665000,
         "dateOfTransfer": "2025-01-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "55, GROUND FLOOR SHOP, CHIGWELL ROAD",
+        "postcode": "E18 1NG",
+        "price": 200000,
+        "dateOfTransfer": "2025-01-20",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3176,14 +3407,6 @@
         "price": 260000,
         "dateOfTransfer": "2025-01-20",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "55, GROUND FLOOR SHOP, CHIGWELL ROAD",
-        "postcode": "E18 1NG",
-        "price": 200000,
-        "dateOfTransfer": "2025-01-20",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3235,6 +3458,14 @@
         "newBuild": false
       },
       {
+        "address": "38, COWSLIP ROAD",
+        "postcode": "E18 1JW",
+        "price": 200000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "50, DERBY ROAD",
         "postcode": "E18 2PS",
         "price": 1095000,
@@ -3249,18 +3480,10 @@
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
-      },
-      {
-        "address": "38, COWSLIP ROAD",
-        "postcode": "E18 1JW",
-        "price": 200000,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Other",
-        "newBuild": false
       }
     ],
-    "averagePrice": 633631,
-    "medianPrice": 540750
+    "averagePrice": 635597,
+    "medianPrice": 540000
   },
   "representatives": {
     "representatives": [

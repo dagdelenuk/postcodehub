@@ -3,8 +3,8 @@
   "slug": "ec3a",
   "city": "London",
   "borough": "City of London",
-  "latitude": 51.514785969696966,
-  "longitude": -0.08024684848484843,
+  "latitude": 51.51446590196078,
+  "longitude": -0.07947321568627451,
   "wards": [
     "Aldgate",
     "Bishopsgate",
@@ -31,7 +31,8 @@
         "urn": "100000",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "St James's Passage, Duke's Place, London",
         "postcode": "EC3A 5DE",
         "numberOfPupils": 229,
@@ -43,97 +44,121 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2846,
-        "violentCrimes": 758,
-        "propertyCrimes": 1452
+        "totalCrimes": 2873,
+        "violentCrimes": 757,
+        "propertyCrimes": 1460
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2885,
-        "violentCrimes": 734,
-        "propertyCrimes": 1552
+        "totalCrimes": 2933,
+        "violentCrimes": 749,
+        "propertyCrimes": 1571
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2546,
-        "violentCrimes": 634,
-        "propertyCrimes": 1403
+        "totalCrimes": 2588,
+        "violentCrimes": 641,
+        "propertyCrimes": 1417
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2757,
-        "violentCrimes": 719,
-        "propertyCrimes": 1575
+        "totalCrimes": 2781,
+        "violentCrimes": 732,
+        "propertyCrimes": 1579
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2517,
-        "violentCrimes": 677,
-        "propertyCrimes": 1415
+        "totalCrimes": 2555,
+        "violentCrimes": 693,
+        "propertyCrimes": 1419
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2805,
-        "violentCrimes": 760,
-        "propertyCrimes": 1588
+        "totalCrimes": 2831,
+        "violentCrimes": 768,
+        "propertyCrimes": 1594
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2354,
-        "violentCrimes": 574,
-        "propertyCrimes": 1366
+        "totalCrimes": 2389,
+        "violentCrimes": 593,
+        "propertyCrimes": 1374
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2320,
-        "violentCrimes": 595,
-        "propertyCrimes": 1310
+        "totalCrimes": 2358,
+        "violentCrimes": 612,
+        "propertyCrimes": 1317
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2550,
-        "violentCrimes": 705,
-        "propertyCrimes": 1432
+        "totalCrimes": 2551,
+        "violentCrimes": 708,
+        "propertyCrimes": 1427
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2415,
-        "violentCrimes": 581,
-        "propertyCrimes": 1413
+        "totalCrimes": 2433,
+        "violentCrimes": 596,
+        "propertyCrimes": 1412
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2502,
-        "violentCrimes": 684,
-        "propertyCrimes": 1344
+        "totalCrimes": 2514,
+        "violentCrimes": 693,
+        "propertyCrimes": 1341
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2532,
-        "violentCrimes": 707,
-        "propertyCrimes": 1365
+        "totalCrimes": 2549,
+        "violentCrimes": 714,
+        "propertyCrimes": 1364
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3788,
-      "bicycle-theft": 955,
-      "burglary": 1414,
-      "criminal-damage-arson": 821,
-      "drugs": 1723,
-      "other-theft": 5375,
-      "possession-of-weapons": 157,
-      "public-order": 1673,
-      "robbery": 1006,
-      "shoplifting": 3156,
-      "theft-from-the-person": 4704,
-      "vehicle-crime": 790,
-      "violent-crime": 5292,
-      "other-crime": 175
+      "anti-social-behaviour": 3903,
+      "bicycle-theft": 985,
+      "burglary": 1443,
+      "criminal-damage-arson": 829,
+      "drugs": 1739,
+      "other-theft": 5370,
+      "possession-of-weapons": 162,
+      "public-order": 1708,
+      "robbery": 1009,
+      "shoplifting": 3159,
+      "theft-from-the-person": 4689,
+      "vehicle-crime": 800,
+      "violent-crime": 5377,
+      "other-crime": 182
     },
-    "totalLast12Months": 31029
+    "totalLast12Months": 31355
   },
   "property": {
     "sales": [
+      {
+        "address": "80, APARTMENT 2510, HOUNDSDITCH",
+        "postcode": "EC3A 7AB",
+        "price": 1500000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "80, APARTMENT 2807, HOUNDSDITCH",
+        "postcode": "EC3A 7AB",
+        "price": 986000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "50, LEADENHALL STREET",
+        "postcode": "EC3A 2BJ",
+        "price": 2300000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "80, APARTMENT 4003, HOUNDSDITCH",
         "postcode": "EC3A 7AB",
@@ -199,8 +224,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 2424094,
-    "medianPrice": 1914875
+    "averagePrice": 2198068,
+    "medianPrice": 1805000
   },
   "representatives": {
     "representatives": [

@@ -3,8 +3,8 @@
   "slug": "kt4",
   "city": "London",
   "borough": "Sutton",
-  "latitude": 51.378381855491384,
-  "longitude": -0.24305059152215808,
+  "latitude": 51.37831229352229,
+  "longitude": -0.24309476923076923,
   "wards": [
     "Auriol",
     "Cuddington",
@@ -87,7 +87,8 @@
         "urn": "102587",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "29/03/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "The Manor Drive, Worcester Park",
         "postcode": "KT4 7LW",
         "numberOfPupils": 231,
@@ -97,8 +98,9 @@
         "name": "Dorchester Primary School",
         "urn": "102982",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "08/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Dorchester Road, Worcester Park",
         "postcode": "KT4 8PG",
         "numberOfPupils": 472,
@@ -108,8 +110,9 @@
         "name": "Cheam Common Junior Academy",
         "urn": "142398",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "09/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Kingsmead Avenue, Worcester Park",
         "postcode": "KT4 8UT",
         "numberOfPupils": 512,
@@ -121,6 +124,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Salisbury Road, Worcester Park",
         "postcode": "KT4 7DD",
         "numberOfPupils": 182,
@@ -131,7 +135,8 @@
         "urn": "144233",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "30/01/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Grafton Road, Worcester Park",
         "postcode": "KT4 7JW",
         "numberOfPupils": 145,
@@ -141,8 +146,9 @@
         "name": "Cheam Common Infants' Academy",
         "urn": "145481",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "27/04/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Balmoral Road, Worcester Park",
         "postcode": "KT4 8SS",
         "numberOfPupils": 410,
@@ -153,7 +159,8 @@
         "urn": "146127",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Green Lane, Worcester Park",
         "postcode": "KT4 8AS",
         "numberOfPupils": 407,
@@ -183,79 +190,247 @@
       },
       {
         "month": "2025-10",
-        "totalCrimes": 193,
-        "violentCrimes": 77,
-        "propertyCrimes": 64
+        "totalCrimes": 190,
+        "violentCrimes": 76,
+        "propertyCrimes": 63
       },
       {
         "month": "2025-11",
-        "totalCrimes": 173,
+        "totalCrimes": 172,
         "violentCrimes": 76,
-        "propertyCrimes": 58
+        "propertyCrimes": 57
       },
       {
         "month": "2025-12",
-        "totalCrimes": 149,
-        "violentCrimes": 59,
-        "propertyCrimes": 44
+        "totalCrimes": 146,
+        "violentCrimes": 58,
+        "propertyCrimes": 42
       },
       {
         "month": "2026-01",
-        "totalCrimes": 144,
+        "totalCrimes": 141,
         "violentCrimes": 53,
-        "propertyCrimes": 43
+        "propertyCrimes": 40
       },
       {
         "month": "2026-02",
-        "totalCrimes": 193,
+        "totalCrimes": 190,
         "violentCrimes": 72,
-        "propertyCrimes": 66
+        "propertyCrimes": 64
       },
       {
         "month": "2026-03",
-        "totalCrimes": 207,
+        "totalCrimes": 206,
         "violentCrimes": 75,
-        "propertyCrimes": 74
+        "propertyCrimes": 73
       },
       {
         "month": "2026-04",
-        "totalCrimes": 209,
+        "totalCrimes": 208,
         "violentCrimes": 68,
         "propertyCrimes": 75
       },
       {
         "month": "2026-05",
-        "totalCrimes": 168,
+        "totalCrimes": 167,
         "violentCrimes": 69,
-        "propertyCrimes": 40
+        "propertyCrimes": 39
       },
       {
         "month": "2026-06",
-        "totalCrimes": 182,
-        "violentCrimes": 85,
-        "propertyCrimes": 48
+        "totalCrimes": 177,
+        "violentCrimes": 84,
+        "propertyCrimes": 46
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 519,
+      "anti-social-behaviour": 516,
       "bicycle-theft": 10,
-      "burglary": 109,
-      "criminal-damage-arson": 111,
+      "burglary": 107,
+      "criminal-damage-arson": 109,
       "drugs": 68,
-      "other-theft": 119,
+      "other-theft": 115,
       "public-order": 137,
       "robbery": 34,
       "shoplifting": 160,
       "theft-from-the-person": 24,
-      "vehicle-crime": 155,
-      "violent-crime": 631,
-      "other-crime": 36,
+      "vehicle-crime": 150,
+      "violent-crime": 628,
+      "other-crime": 34,
       "possession-of-weapons": 13
     },
-    "totalLast12Months": 2126
+    "totalLast12Months": 2105
   },
   "property": {
     "sales": [
+      {
+        "address": "26, PEMBURY AVENUE",
+        "postcode": "KT4 8BT",
+        "price": 470000,
+        "dateOfTransfer": "2026-07-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "169, BROWNING AVENUE",
+        "postcode": "KT4 8LB",
+        "price": 430000,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "40, BURNHAM DRIVE",
+        "postcode": "KT4 8SF",
+        "price": 682000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, BURFORD ROAD",
+        "postcode": "KT4 7SU",
+        "price": 530000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, FLAT 6, COTSWOLD WAY",
+        "postcode": "KT4 8HA",
+        "price": 288000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FAIRFORD GARDENS",
+        "postcode": "KT4 7BQ",
+        "price": 765000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, FULLBROOKS AVENUE",
+        "postcode": "KT4 7PE",
+        "price": 1330000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "114, VALE ROAD",
+        "postcode": "KT4 7EB",
+        "price": 735000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, PARKDALE CRESCENT",
+        "postcode": "KT4 7QF",
+        "price": 616000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, BISLEY CLOSE",
+        "postcode": "KT4 8PN",
+        "price": 290000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLOVER COURT, 6, PEMBURY AVENUE",
+        "postcode": "KT4 8BX",
+        "price": 438000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "101, CLARKES AVENUE",
+        "postcode": "KT4 8QB",
+        "price": 472000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BRINKLEY COURT, 32, FLAT 5, BRINKLEY ROAD",
+        "postcode": "KT4 8JF",
+        "price": 331000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "173, BROWNING AVENUE",
+        "postcode": "KT4 8LB",
+        "price": 476500,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, THE WARREN",
+        "postcode": "KT4 7DH",
+        "price": 544500,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "4, PEMBURY AVENUE",
+        "postcode": "KT4 8BT",
+        "price": 550000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "65, OAKS AVENUE",
+        "postcode": "KT4 8XE",
+        "price": 775000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, BOSCOMBE ROAD",
+        "postcode": "KT4 8PL",
+        "price": 520000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "110, BRINKLEY ROAD",
+        "postcode": "KT4 8JF",
+        "price": 470000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "122, KINGSHILL AVENUE",
+        "postcode": "KT4 8DB",
+        "price": 482500,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "122, BUCKLAND WAY",
+        "postcode": "KT4 8NP",
+        "price": 520000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "44, LINDSAY ROAD",
         "postcode": "KT4 8LE",
@@ -270,6 +445,22 @@
         "price": 885000,
         "dateOfTransfer": "2026-06-19",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, WINCHESTER MEWS",
+        "postcode": "KT4 8QL",
+        "price": 535000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "75, LANGLEY AVENUE",
+        "postcode": "KT4 8PD",
+        "price": 595000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -289,6 +480,14 @@
         "newBuild": false
       },
       {
+        "address": "40, DONNINGTON ROAD",
+        "postcode": "KT4 8EN",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "20, WIMBORNE CLOSE",
         "postcode": "KT4 8NL",
         "price": 488000,
@@ -297,11 +496,27 @@
         "newBuild": false
       },
       {
+        "address": "3, VALE ROAD",
+        "postcode": "KT4 7DZ",
+        "price": 575000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "92, COTSWOLD WAY",
         "postcode": "KT4 8LN",
         "price": 325000,
         "dateOfTransfer": "2026-06-05",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, LYNWOOD DRIVE",
+        "postcode": "KT4 7AB",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -361,17 +576,17 @@
         "newBuild": false
       },
       {
-        "address": "174, STONELEIGH AVENUE",
-        "postcode": "KT4 8YA",
-        "price": 571500,
+        "address": "28, WASHINGTON ROAD",
+        "postcode": "KT4 8JH",
+        "price": 500000,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "28, WASHINGTON ROAD",
-        "postcode": "KT4 8JH",
-        "price": 500000,
+        "address": "174, STONELEIGH AVENUE",
+        "postcode": "KT4 8YA",
+        "price": 571500,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -393,17 +608,17 @@
         "newBuild": false
       },
       {
-        "address": "105, ELMSTEAD GARDENS",
-        "postcode": "KT4 7BG",
-        "price": 670000,
+        "address": "14, HAMBLETON CLOSE",
+        "postcode": "KT4 8JL",
+        "price": 420000,
         "dateOfTransfer": "2026-05-12",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "14, HAMBLETON CLOSE",
-        "postcode": "KT4 8JL",
-        "price": 420000,
+        "address": "105, ELMSTEAD GARDENS",
+        "postcode": "KT4 7BG",
+        "price": 670000,
         "dateOfTransfer": "2026-05-12",
         "propertyType": "Terraced",
         "newBuild": false
@@ -433,17 +648,17 @@
         "newBuild": false
       },
       {
-        "address": "OAK HOUSE, CROMWELL ROAD",
-        "postcode": "KT4 7JR",
-        "price": 1300000,
+        "address": "1, HAYMER GARDENS",
+        "postcode": "KT4 8YD",
+        "price": 670000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "1, HAYMER GARDENS",
-        "postcode": "KT4 8YD",
-        "price": 670000,
+        "address": "OAK HOUSE, CROMWELL ROAD",
+        "postcode": "KT4 7JR",
+        "price": 1300000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Detached",
         "newBuild": false
@@ -577,6 +792,14 @@
         "newBuild": false
       },
       {
+        "address": "3, HANDSIDE CLOSE",
+        "postcode": "KT4 8QG",
+        "price": 305000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "GLENAVON COURT, 4, ST PHILIPS AVENUE",
         "postcode": "KT4 8JY",
         "price": 376000,
@@ -590,14 +813,6 @@
         "price": 625000,
         "dateOfTransfer": "2026-03-31",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "3, HANDSIDE CLOSE",
-        "postcode": "KT4 8QG",
-        "price": 305000,
-        "dateOfTransfer": "2026-03-31",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -641,14 +856,6 @@
         "newBuild": false
       },
       {
-        "address": "CANTERBURY HALL, 2, FLAT 15, LEWISTON CLOSE",
-        "postcode": "KT4 8EE",
-        "price": 378000,
-        "dateOfTransfer": "2026-03-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "15, BEAUMONT DRIVE",
         "postcode": "KT4 8FE",
         "price": 750000,
@@ -662,6 +869,14 @@
         "price": 519000,
         "dateOfTransfer": "2026-03-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CANTERBURY HALL, 2, FLAT 15, LEWISTON CLOSE",
+        "postcode": "KT4 8EE",
+        "price": 378000,
+        "dateOfTransfer": "2026-03-25",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -713,6 +928,14 @@
         "newBuild": false
       },
       {
+        "address": "123, CALDBECK AVENUE",
+        "postcode": "KT4 8BJ",
+        "price": 610000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "KINGS COURT, 2C, FLAT 6, COLBORNE WAY",
         "postcode": "KT4 8LS",
         "price": 320000,
@@ -721,10 +944,10 @@
         "newBuild": false
       },
       {
-        "address": "123, CALDBECK AVENUE",
-        "postcode": "KT4 8BJ",
-        "price": 610000,
-        "dateOfTransfer": "2026-03-12",
+        "address": "67, WESTMOUNT CLOSE",
+        "postcode": "KT4 8FL",
+        "price": 835000,
+        "dateOfTransfer": "2026-03-11",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -737,25 +960,17 @@
         "newBuild": false
       },
       {
-        "address": "67, WESTMOUNT CLOSE",
-        "postcode": "KT4 8FL",
-        "price": 835000,
-        "dateOfTransfer": "2026-03-11",
-        "propertyType": "Terraced",
+        "address": "15A, WASHINGTON ROAD",
+        "postcode": "KT4 8JG",
+        "price": 325000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "143, VALE ROAD",
         "postcode": "KT4 7ED",
         "price": 395000,
-        "dateOfTransfer": "2026-03-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "15A, WASHINGTON ROAD",
-        "postcode": "KT4 8JG",
-        "price": 325000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -769,19 +984,19 @@
         "newBuild": false
       },
       {
+        "address": "9, SALISBURY ROAD",
+        "postcode": "KT4 7DF",
+        "price": 630000,
+        "dateOfTransfer": "2026-03-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "39, DORCHESTER ROAD",
         "postcode": "KT4 8NW",
         "price": 470000,
         "dateOfTransfer": "2026-03-04",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "21, THE MANOR DRIVE",
-        "postcode": "KT4 7LG",
-        "price": 860000,
-        "dateOfTransfer": "2026-02-27",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -801,6 +1016,14 @@
         "newBuild": false
       },
       {
+        "address": "21, THE MANOR DRIVE",
+        "postcode": "KT4 7LG",
+        "price": 860000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "100, KINGSMEAD AVENUE",
         "postcode": "KT4 8UT",
         "price": 1100000,
@@ -809,11 +1032,19 @@
         "newBuild": false
       },
       {
-        "address": "35, TRENT WAY",
-        "postcode": "KT4 8TW",
-        "price": 440000,
+        "address": "24, BADGERS COPSE",
+        "postcode": "KT4 7EZ",
+        "price": 682000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "116, EDENFIELD GARDENS",
+        "postcode": "KT4 7DY",
+        "price": 860000,
         "dateOfTransfer": "2026-02-24",
-        "propertyType": "Terraced",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -822,6 +1053,14 @@
         "price": 750000,
         "dateOfTransfer": "2026-02-24",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "35, TRENT WAY",
+        "postcode": "KT4 8TW",
+        "price": 440000,
+        "dateOfTransfer": "2026-02-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -841,11 +1080,11 @@
         "newBuild": false
       },
       {
-        "address": "80, BROWNING AVENUE",
-        "postcode": "KT4 8LD",
-        "price": 530000,
+        "address": "408, MALDEN ROAD",
+        "postcode": "KT4 7NG",
+        "price": 695000,
         "dateOfTransfer": "2026-02-20",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -854,6 +1093,30 @@
         "price": 220000,
         "dateOfTransfer": "2026-02-20",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "109B, CENTRAL ROAD",
+        "postcode": "KT4 8DU",
+        "price": 310000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "80, BROWNING AVENUE",
+        "postcode": "KT4 8LD",
+        "price": 530000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, THE HOLLANDS",
+        "postcode": "KT4 7LH",
+        "price": 835450,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -873,11 +1136,27 @@
         "newBuild": false
       },
       {
+        "address": "65, PEMBURY AVENUE",
+        "postcode": "KT4 8BU",
+        "price": 575000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "91, BRINKLEY ROAD",
         "postcode": "KT4 8JE",
         "price": 450000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, THE MANOR DRIVE",
+        "postcode": "KT4 7LG",
+        "price": 865000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -897,6 +1176,14 @@
         "newBuild": false
       },
       {
+        "address": "15, MORETON ROAD",
+        "postcode": "KT4 8EY",
+        "price": 485000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "22, LINDSAY ROAD",
         "postcode": "KT4 8LE",
         "price": 756300,
@@ -905,25 +1192,17 @@
         "newBuild": false
       },
       {
-        "address": "11, WOODBINE LANE",
-        "postcode": "KT4 8SZ",
-        "price": 526000,
+        "address": "47, INVERESK GARDENS",
+        "postcode": "KT4 7BB",
+        "price": 580000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "38, BEVERLEY ROAD",
-        "postcode": "KT4 8LX",
-        "price": 850000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "47, ST PHILIPS AVENUE",
-        "postcode": "KT4 8JS",
-        "price": 615000,
+        "address": "11, WOODBINE LANE",
+        "postcode": "KT4 8SZ",
+        "price": 526000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -937,27 +1216,27 @@
         "newBuild": false
       },
       {
+        "address": "47, ST PHILIPS AVENUE",
+        "postcode": "KT4 8JS",
+        "price": 615000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, BEVERLEY ROAD",
+        "postcode": "KT4 8LX",
+        "price": 850000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "54, ELMSTEAD GARDENS",
         "postcode": "KT4 7BE",
         "price": 573000,
         "dateOfTransfer": "2026-01-26",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "93A, CENTRAL ROAD",
-        "postcode": "KT4 8DY",
-        "price": 275000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ST PHILIP'S GATE, 210, FLAT 13, CHEAM COMMON ROAD",
-        "postcode": "KT4 8QS",
-        "price": 262500,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -977,10 +1256,50 @@
         "newBuild": false
       },
       {
+        "address": "101, SALISBURY ROAD",
+        "postcode": "KT4 7BZ",
+        "price": 1210000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "93A, CENTRAL ROAD",
+        "postcode": "KT4 8DY",
+        "price": 275000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST PHILIP'S GATE, 210, FLAT 13, CHEAM COMMON ROAD",
+        "postcode": "KT4 8QS",
+        "price": 262500,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "63, IDMISTON SQUARE",
         "postcode": "KT4 7SX",
         "price": 522000,
         "dateOfTransfer": "2026-01-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, WELLINGTON AVENUE",
+        "postcode": "KT4 8TQ",
+        "price": 820000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "100, BRIDGEWOOD ROAD",
+        "postcode": "KT4 8XS",
+        "price": 750000,
+        "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -998,22 +1317,6 @@
         "price": 485000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "100, BRIDGEWOOD ROAD",
-        "postcode": "KT4 8XS",
-        "price": 750000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "6, WELLINGTON AVENUE",
-        "postcode": "KT4 8TQ",
-        "price": 820000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1057,17 +1360,25 @@
         "newBuild": false
       },
       {
-        "address": "24, CONRAD DRIVE",
-        "postcode": "KT4 8PP",
-        "price": 380000,
+        "address": "86, BOSCOMBE ROAD",
+        "postcode": "KT4 8PL",
+        "price": 465000,
         "dateOfTransfer": "2026-01-08",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "86, BOSCOMBE ROAD",
-        "postcode": "KT4 8PL",
-        "price": 465000,
+        "address": "187, STONELEIGH AVENUE",
+        "postcode": "KT4 8YA",
+        "price": 660000,
+        "dateOfTransfer": "2026-01-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, CONRAD DRIVE",
+        "postcode": "KT4 8PP",
+        "price": 380000,
         "dateOfTransfer": "2026-01-08",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1209,14 +1520,6 @@
         "newBuild": false
       },
       {
-        "address": "36, SHERBROOKE WAY",
-        "postcode": "KT4 8BP",
-        "price": 1385000,
-        "dateOfTransfer": "2025-12-12",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "56, SHERBROOKE WAY",
         "postcode": "KT4 8BP",
         "price": 950000,
@@ -1225,17 +1528,25 @@
         "newBuild": false
       },
       {
-        "address": "65, BROCKENHURST AVENUE",
-        "postcode": "KT4 7RH",
-        "price": 630000,
+        "address": "36, SHERBROOKE WAY",
+        "postcode": "KT4 8BP",
+        "price": 1385000,
         "dateOfTransfer": "2025-12-12",
-        "propertyType": "Detached",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
         "address": "6, SALISBURY ROAD",
         "postcode": "KT4 7DG",
         "price": 1000000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "65, BROCKENHURST AVENUE",
+        "postcode": "KT4 7RH",
+        "price": 630000,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Detached",
         "newBuild": false
@@ -1265,19 +1576,19 @@
         "newBuild": false
       },
       {
-        "address": "17, FLAT 3, LANCASTER WAY",
-        "postcode": "KT4 8HF",
-        "price": 320000,
-        "dateOfTransfer": "2025-12-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "5, KINROSS AVENUE",
         "postcode": "KT4 7AJ",
         "price": 880000,
         "dateOfTransfer": "2025-12-11",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, FLAT 3, LANCASTER WAY",
+        "postcode": "KT4 8HF",
+        "price": 320000,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1457,17 +1768,17 @@
         "newBuild": false
       },
       {
-        "address": "1, WOODLANDS AVENUE",
-        "postcode": "KT4 7AN",
-        "price": 840000,
+        "address": "65, WOODLANDS AVENUE",
+        "postcode": "KT4 7AL",
+        "price": 770000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "65, WOODLANDS AVENUE",
-        "postcode": "KT4 7AL",
-        "price": 770000,
+        "address": "1, WOODLANDS AVENUE",
+        "postcode": "KT4 7AN",
+        "price": 840000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1553,6 +1864,14 @@
         "newBuild": false
       },
       {
+        "address": "59, FARM WAY",
+        "postcode": "KT4 8SB",
+        "price": 630000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "113, MORTIMER CRESCENT",
         "postcode": "KT4 7QN",
         "price": 730000,
@@ -1566,14 +1885,6 @@
         "price": 229000,
         "dateOfTransfer": "2025-10-27",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "59, FARM WAY",
-        "postcode": "KT4 8SB",
-        "price": 630000,
-        "dateOfTransfer": "2025-10-27",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1673,6 +1984,14 @@
         "newBuild": false
       },
       {
+        "address": "70, LONGFELLOW ROAD",
+        "postcode": "KT4 8BE",
+        "price": 376000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "120, BUCKLAND WAY",
         "postcode": "KT4 8NP",
         "price": 550000,
@@ -1761,6 +2080,14 @@
         "newBuild": false
       },
       {
+        "address": "25, MORETON ROAD",
+        "postcode": "KT4 8EY",
+        "price": 652500,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "13, CHELSEA CLOSE",
         "postcode": "KT4 7SF",
         "price": 500000,
@@ -1790,14 +2117,6 @@
         "price": 628000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "25, MORETON ROAD",
-        "postcode": "KT4 8EY",
-        "price": 652500,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1889,6 +2208,14 @@
         "newBuild": false
       },
       {
+        "address": "22, TRENT WAY",
+        "postcode": "KT4 8TT",
+        "price": 455000,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "13, HAZLEMERE GARDENS",
         "postcode": "KT4 8AH",
         "price": 550000,
@@ -1910,6 +2237,14 @@
         "price": 523000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, WORCESTER PARK ROAD",
+        "postcode": "KT4 7QD",
+        "price": 375000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2001,6 +2336,22 @@
         "newBuild": false
       },
       {
+        "address": "20, LANSDOWNE COURT",
+        "postcode": "KT4 7ES",
+        "price": 221000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, LINGFIELD ROAD",
+        "postcode": "KT4 8TG",
+        "price": 490000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "40, DUNDELA GARDENS",
         "postcode": "KT4 8UB",
         "price": 725000,
@@ -2030,22 +2381,6 @@
         "price": 490000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "2, LINGFIELD ROAD",
-        "postcode": "KT4 8TG",
-        "price": 490000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "20, LANSDOWNE COURT",
-        "postcode": "KT4 7ES",
-        "price": 221000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2105,19 +2440,19 @@
         "newBuild": false
       },
       {
-        "address": "77, ELMSTEAD GARDENS",
-        "postcode": "KT4 7BG",
-        "price": 631000,
-        "dateOfTransfer": "2025-08-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "BRIARWOOD COURT, 24, THE AVENUE",
         "postcode": "KT4 7EL",
         "price": 290000,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "77, ELMSTEAD GARDENS",
+        "postcode": "KT4 7BG",
+        "price": 631000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2161,14 +2496,6 @@
         "newBuild": false
       },
       {
-        "address": "65, BUCKLAND WAY",
-        "postcode": "KT4 8NT",
-        "price": 520000,
-        "dateOfTransfer": "2025-08-11",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "15, DELCOMBE AVENUE",
         "postcode": "KT4 8NY",
         "price": 530000,
@@ -2185,10 +2512,10 @@
         "newBuild": false
       },
       {
-        "address": "118, OAKS AVENUE",
-        "postcode": "KT4 8XF",
-        "price": 865000,
-        "dateOfTransfer": "2025-08-08",
+        "address": "65, BUCKLAND WAY",
+        "postcode": "KT4 8NT",
+        "price": 520000,
+        "dateOfTransfer": "2025-08-11",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -2206,6 +2533,14 @@
         "price": 440000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "118, OAKS AVENUE",
+        "postcode": "KT4 8XF",
+        "price": 865000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2257,14 +2592,6 @@
         "newBuild": false
       },
       {
-        "address": "169, CENTRAL ROAD",
-        "postcode": "KT4 8DR",
-        "price": 499500,
-        "dateOfTransfer": "2025-08-06",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "49, LANGLEY AVENUE",
         "postcode": "KT4 8PB",
         "price": 640000,
@@ -2278,6 +2605,14 @@
         "price": 440000,
         "dateOfTransfer": "2025-08-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "169, CENTRAL ROAD",
+        "postcode": "KT4 8DR",
+        "price": 499500,
+        "dateOfTransfer": "2025-08-06",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2425,19 +2760,19 @@
         "newBuild": false
       },
       {
-        "address": "38, WOLSEY CLOSE",
-        "postcode": "KT4 7EF",
-        "price": 342000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "59, GRAFTON ROAD",
         "postcode": "KT4 7QR",
         "price": 570000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, WOLSEY CLOSE",
+        "postcode": "KT4 7EF",
+        "price": 342000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2569,6 +2904,14 @@
         "newBuild": false
       },
       {
+        "address": "76, GREEN LANE",
+        "postcode": "KT4 8AR",
+        "price": 815000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "15A, WASHINGTON ROAD",
         "postcode": "KT4 8JG",
         "price": 275000,
@@ -2582,14 +2925,6 @@
         "price": 575000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "76, GREEN LANE",
-        "postcode": "KT4 8AR",
-        "price": 815000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2769,14 +3104,6 @@
         "newBuild": false
       },
       {
-        "address": "58A, KINGSMEAD AVENUE",
-        "postcode": "KT4 8XA",
-        "price": 800000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "1, FLAT 1, HAMPTON ROAD",
         "postcode": "KT4 8EU",
         "price": 356000,
@@ -2812,6 +3139,14 @@
         "address": "100, LYNWOOD DRIVE",
         "postcode": "KT4 7AE",
         "price": 720000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "58A, KINGSMEAD AVENUE",
+        "postcode": "KT4 8XA",
+        "price": 800000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2905,10 +3240,10 @@
         "newBuild": false
       },
       {
-        "address": "PURDEY COURT, 10, FLAT 9, THE AVENUE",
-        "postcode": "KT4 7EN",
-        "price": 173000,
-        "dateOfTransfer": "2025-05-15",
+        "address": "CANTON HOUSE, 82, FLAT 3, SHERBROOKE WAY",
+        "postcode": "KT4 8FN",
+        "price": 150000,
+        "dateOfTransfer": "2025-05-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2918,6 +3253,14 @@
         "price": 550000,
         "dateOfTransfer": "2025-05-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "PURDEY COURT, 10, FLAT 9, THE AVENUE",
+        "postcode": "KT4 7EN",
+        "price": 173000,
+        "dateOfTransfer": "2025-05-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3089,11 +3432,43 @@
         "newBuild": false
       },
       {
-        "address": "171, BROWNING AVENUE",
-        "postcode": "KT4 8LB",
-        "price": 355000,
+        "address": "26, RUSKIN DRIVE",
+        "postcode": "KT4 8LH",
+        "price": 725000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, WIMBORNE CLOSE",
+        "postcode": "KT4 8NL",
+        "price": 460000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, MENDIP CLOSE",
+        "postcode": "KT4 8LP",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, LINDSAY ROAD",
+        "postcode": "KT4 8LF",
+        "price": 565000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, ELM WAY",
+        "postcode": "KT4 8LT",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3121,43 +3496,11 @@
         "newBuild": false
       },
       {
-        "address": "1, MENDIP CLOSE",
-        "postcode": "KT4 8LP",
-        "price": 525000,
+        "address": "20, AURIOL PARK ROAD",
+        "postcode": "KT4 7DP",
+        "price": 765000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "15, LINDSAY ROAD",
-        "postcode": "KT4 8LF",
-        "price": 565000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, RUSKIN DRIVE",
-        "postcode": "KT4 8LH",
-        "price": 725000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "23, WIMBORNE CLOSE",
-        "postcode": "KT4 8NL",
-        "price": 460000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "18, ELM WAY",
-        "postcode": "KT4 8LT",
-        "price": 625000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3177,25 +3520,17 @@
         "newBuild": false
       },
       {
-        "address": "20, AURIOL PARK ROAD",
-        "postcode": "KT4 7DP",
-        "price": 765000,
+        "address": "171, BROWNING AVENUE",
+        "postcode": "KT4 8LB",
+        "price": 355000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, CHELSEA CLOSE",
-        "postcode": "KT4 7SF",
-        "price": 512500,
-        "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "17, DORCHESTER ROAD",
-        "postcode": "KT4 8NW",
-        "price": 555000,
+        "address": "8, GRANDISON ROAD",
+        "postcode": "KT4 8LU",
+        "price": 940000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3217,6 +3552,22 @@
         "newBuild": false
       },
       {
+        "address": "17, DORCHESTER ROAD",
+        "postcode": "KT4 8NW",
+        "price": 555000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HOLMAN HOUSE, 5, GUNPOWDER ROAD",
+        "postcode": "KT4 7BN",
+        "price": 332500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "205, ARDROSSAN GARDENS",
         "postcode": "KT4 7AZ",
         "price": 380000,
@@ -3225,11 +3576,11 @@
         "newBuild": false
       },
       {
-        "address": "8, GRANDISON ROAD",
-        "postcode": "KT4 8LU",
-        "price": 940000,
+        "address": "103, MORTIMER CRESCENT",
+        "postcode": "KT4 7QN",
+        "price": 655000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3238,14 +3589,6 @@
         "price": 535000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "103, MORTIMER CRESCENT",
-        "postcode": "KT4 7QN",
-        "price": 655000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3265,6 +3608,14 @@
         "newBuild": false
       },
       {
+        "address": "26, CHELSEA CLOSE",
+        "postcode": "KT4 7SF",
+        "price": 512500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "42, BOSCOMBE ROAD",
         "postcode": "KT4 8PL",
         "price": 505500,
@@ -3281,35 +3632,11 @@
         "newBuild": false
       },
       {
-        "address": "HOLMAN HOUSE, 5, GUNPOWDER ROAD",
-        "postcode": "KT4 7BN",
-        "price": 332500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "122, ARDROSSAN GARDENS",
         "postcode": "KT4 7AY",
         "price": 535000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "78, ARDROSSAN GARDENS",
-        "postcode": "KT4 7AX",
-        "price": 580000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "71, DORCHESTER ROAD",
-        "postcode": "KT4 8NW",
-        "price": 529660,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3350,6 +3677,22 @@
         "price": 735000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "78, ARDROSSAN GARDENS",
+        "postcode": "KT4 7AX",
+        "price": 580000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "71, DORCHESTER ROAD",
+        "postcode": "KT4 8NW",
+        "price": 529660,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3409,14 +3752,6 @@
         "newBuild": false
       },
       {
-        "address": "198, STONELEIGH AVENUE",
-        "postcode": "KT4 8YA",
-        "price": 615000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "98, BROWNING AVENUE",
         "postcode": "KT4 8LB",
         "price": 517000,
@@ -3449,11 +3784,11 @@
         "newBuild": false
       },
       {
-        "address": "28, ALSOM AVENUE",
-        "postcode": "KT4 7EG",
-        "price": 550000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Semi-detached",
+        "address": "198, STONELEIGH AVENUE",
+        "postcode": "KT4 8YA",
+        "price": 615000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3462,6 +3797,14 @@
         "price": 605000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "28, ALSOM AVENUE",
+        "postcode": "KT4 7EG",
+        "price": 550000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3489,14 +3832,6 @@
         "newBuild": false
       },
       {
-        "address": "37, INVERESK GARDENS",
-        "postcode": "KT4 7BB",
-        "price": 675000,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "418, MALDEN ROAD",
         "postcode": "KT4 7NG",
         "price": 1015000,
@@ -3510,6 +3845,14 @@
         "price": 660500,
         "dateOfTransfer": "2025-03-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, INVERESK GARDENS",
+        "postcode": "KT4 7BB",
+        "price": 675000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3529,14 +3872,6 @@
         "newBuild": false
       },
       {
-        "address": "72, BOSCOMBE ROAD",
-        "postcode": "KT4 8PL",
-        "price": 410000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "3, PARKLANDS WAY",
         "postcode": "KT4 7HT",
         "price": 800000,
@@ -3548,6 +3883,14 @@
         "address": "105, BROWNING AVENUE",
         "postcode": "KT4 8LD",
         "price": 420000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "72, BOSCOMBE ROAD",
+        "postcode": "KT4 8PL",
+        "price": 410000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3593,6 +3936,14 @@
         "newBuild": false
       },
       {
+        "address": "61, BRIDGEWOOD ROAD",
+        "postcode": "KT4 8XR",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "22, SALISBURY ROAD",
         "postcode": "KT4 7DG",
         "price": 800000,
@@ -3606,14 +3957,6 @@
         "price": 414000,
         "dateOfTransfer": "2025-03-12",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "61, BRIDGEWOOD ROAD",
-        "postcode": "KT4 8XR",
-        "price": 650000,
-        "dateOfTransfer": "2025-03-12",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3633,14 +3976,6 @@
         "newBuild": false
       },
       {
-        "address": "GARNET HOUSE, FLAT 6, PERCY GARDENS",
-        "postcode": "KT4 7SA",
-        "price": 230000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "93, CALDBECK AVENUE",
         "postcode": "KT4 8BH",
         "price": 550000,
@@ -3654,6 +3989,14 @@
         "price": 650000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "GARNET HOUSE, FLAT 6, PERCY GARDENS",
+        "postcode": "KT4 7SA",
+        "price": 230000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3713,17 +4056,17 @@
         "newBuild": false
       },
       {
-        "address": "18, CONRAD DRIVE",
-        "postcode": "KT4 8PP",
-        "price": 440000,
+        "address": "62, BRIDGEWOOD ROAD",
+        "postcode": "KT4 8XR",
+        "price": 625000,
         "dateOfTransfer": "2025-03-04",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "62, BRIDGEWOOD ROAD",
-        "postcode": "KT4 8XR",
-        "price": 625000,
+        "address": "18, CONRAD DRIVE",
+        "postcode": "KT4 8PP",
+        "price": 440000,
         "dateOfTransfer": "2025-03-04",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3737,14 +4080,6 @@
         "newBuild": false
       },
       {
-        "address": "172, WASHINGTON ROAD",
-        "postcode": "KT4 8JJ",
-        "price": 182000,
-        "dateOfTransfer": "2025-03-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "16, SOUTHWOOD CLOSE",
         "postcode": "KT4 8QQ",
         "price": 412500,
@@ -3753,10 +4088,10 @@
         "newBuild": false
       },
       {
-        "address": "OPHELIA COURT, 29, FLAT 3, ST PHILIPS AVENUE",
-        "postcode": "KT4 8JS",
-        "price": 407500,
-        "dateOfTransfer": "2025-02-28",
+        "address": "172, WASHINGTON ROAD",
+        "postcode": "KT4 8JJ",
+        "price": 182000,
+        "dateOfTransfer": "2025-03-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3769,19 +4104,11 @@
         "newBuild": false
       },
       {
-        "address": "43, AVON CLOSE",
-        "postcode": "KT4 7AQ",
-        "price": 410000,
+        "address": "OPHELIA COURT, 29, FLAT 3, ST PHILIPS AVENUE",
+        "postcode": "KT4 8JS",
+        "price": 407500,
         "dateOfTransfer": "2025-02-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "42, TUDOR AVENUE",
-        "postcode": "KT4 8TX",
-        "price": 740000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3806,6 +4133,22 @@
         "price": 580000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "43, AVON CLOSE",
+        "postcode": "KT4 7AQ",
+        "price": 410000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "42, TUDOR AVENUE",
+        "postcode": "KT4 8TX",
+        "price": 740000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3857,19 +4200,19 @@
         "newBuild": false
       },
       {
-        "address": "18, COVEY ROAD",
-        "postcode": "KT4 8RA",
-        "price": 645000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "MOORLAND COURT, FLAT 8, ARDROSSAN GARDENS",
         "postcode": "KT4 7AD",
         "price": 202000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, COVEY ROAD",
+        "postcode": "KT4 8RA",
+        "price": 645000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3929,6 +4272,14 @@
         "newBuild": false
       },
       {
+        "address": "210, LONGFELLOW ROAD",
+        "postcode": "KT4 8BA",
+        "price": 483000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "115, OAKS AVENUE",
         "postcode": "KT4 8XG",
         "price": 635000,
@@ -3945,11 +4296,11 @@
         "newBuild": false
       },
       {
-        "address": "210, LONGFELLOW ROAD",
-        "postcode": "KT4 8BA",
-        "price": 483000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Terraced",
+        "address": "ONYX HOUSE, FLAT 24, PERCY GARDENS",
+        "postcode": "KT4 7SB",
+        "price": 185000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3958,14 +4309,6 @@
         "price": 645000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "ONYX HOUSE, FLAT 24, PERCY GARDENS",
-        "postcode": "KT4 7SB",
-        "price": 185000,
-        "dateOfTransfer": "2025-02-12",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4041,14 +4384,6 @@
         "newBuild": false
       },
       {
-        "address": "177, PEMBURY AVENUE",
-        "postcode": "KT4 8BY",
-        "price": 527000,
-        "dateOfTransfer": "2025-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "40, IDMISTON SQUARE",
         "postcode": "KT4 7SY",
         "price": 529000,
@@ -4086,6 +4421,14 @@
         "price": 350000,
         "dateOfTransfer": "2025-01-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "177, PEMBURY AVENUE",
+        "postcode": "KT4 8BY",
+        "price": 527000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4225,19 +4568,19 @@
         "newBuild": false
       },
       {
-        "address": "OPAL HOUSE, FLAT 31, PERCY GARDENS",
-        "postcode": "KT4 7SD",
-        "price": 220000,
-        "dateOfTransfer": "2025-01-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "6, SHADBOLT CLOSE",
         "postcode": "KT4 7BT",
         "price": 750000,
         "dateOfTransfer": "2025-01-09",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "OPAL HOUSE, FLAT 31, PERCY GARDENS",
+        "postcode": "KT4 7SD",
+        "price": 220000,
+        "dateOfTransfer": "2025-01-09",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4273,8 +4616,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 565402,
-    "medianPrice": 551350
+    "averagePrice": 566684,
+    "medianPrice": 550500
   },
   "representatives": {
     "representatives": [

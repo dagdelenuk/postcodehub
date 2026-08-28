@@ -3,8 +3,8 @@
   "slug": "sm2",
   "city": "London",
   "borough": "Sutton",
-  "latitude": 51.35181942978003,
-  "longitude": -0.19880489170896762,
+  "latitude": 51.35182484364265,
+  "longitude": -0.19884775945017166,
   "wards": [
     "Banstead Village",
     "Belmont",
@@ -114,7 +114,8 @@
         "urn": "102975",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "14/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Devonshire Avenue, Sutton",
         "postcode": "SM2 5JL",
         "numberOfPupils": 678,
@@ -126,6 +127,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "67 Banstead Road South, Surrrey",
         "postcode": "SM2 5LH",
         "numberOfPupils": 168,
@@ -137,6 +139,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "95 Brighton Road, Sutton",
         "postcode": "SM2 5SJ",
         "numberOfPupils": 114,
@@ -147,7 +150,8 @@
         "urn": "136756",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "10/12/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "36 Stanley Road, Sutton",
         "postcode": "SM2 6TQ",
         "numberOfPupils": 1092,
@@ -157,8 +161,9 @@
         "name": "Cuddington Croft Primary School and Nursery",
         "urn": "141447",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "12/10/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "West Drive, Cheam, Sutton",
         "postcode": "SM2 7NA",
         "numberOfPupils": 472,
@@ -169,7 +174,8 @@
         "urn": "142177",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "31/01/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Avenue Road, Belmont, Sutton",
         "postcode": "SM2 6JE",
         "numberOfPupils": 1057,
@@ -180,7 +186,8 @@
         "urn": "143706",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "08/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "2 Chiltern Road, Sutton",
         "postcode": "SM2 5RD",
         "numberOfPupils": 1294,
@@ -258,13 +265,13 @@
       },
       {
         "month": "2026-06",
-        "totalCrimes": 291,
+        "totalCrimes": 290,
         "violentCrimes": 127,
         "propertyCrimes": 93
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 610,
+      "anti-social-behaviour": 609,
       "bicycle-theft": 23,
       "burglary": 178,
       "criminal-damage-arson": 178,
@@ -279,16 +286,192 @@
       "violent-crime": 1153,
       "other-crime": 43
     },
-    "totalLast12Months": 3484
+    "totalLast12Months": 3483
   },
   "property": {
     "sales": [
+      {
+        "address": "16, UPLAND ROAD",
+        "postcode": "SM2 5JE",
+        "price": 917000,
+        "dateOfTransfer": "2026-07-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, WESTMORELAND DRIVE",
+        "postcode": "SM2 6AA",
+        "price": 251500,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, YORK ROAD, CHEAM",
+        "postcode": "SM2 6HQ",
+        "price": 975000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "LORRAINE COURT, 32 - 34, FLAT 2, CAMBORNE ROAD",
+        "postcode": "SM2 6RE",
+        "price": 300000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, FLAT 1, ALBION ROAD",
+        "postcode": "SM2 5FP",
+        "price": 205000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, FLAT 11, KINGSWOOD DRIVE",
+        "postcode": "SM2 5NT",
+        "price": 187000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GROSVENOR COURT, 37, BRIGHTON ROAD",
+        "postcode": "SM2 5BL",
+        "price": 290000,
+        "dateOfTransfer": "2026-07-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "AVONDALE COURT, 85, 1, BRIGHTON ROAD",
+        "postcode": "SM2 5TR",
+        "price": 305000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, AVENUE ROAD",
+        "postcode": "SM2 6JE",
+        "price": 752000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, FLAT 8, EATON ROAD",
+        "postcode": "SM2 5DN",
+        "price": 312500,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "REDCLYFFE COURT, 2, YORK ROAD",
+        "postcode": "SM2 6HB",
+        "price": 270000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "TRANMERE COURT, FLAT 5, LANGLEY PARK ROAD",
+        "postcode": "SM2 5HE",
+        "price": 360000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, NONSUCH WALK, CHEAM",
+        "postcode": "SM2 7LF",
+        "price": 951000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "53D, LANGLEY PARK ROAD",
+        "postcode": "SM2 5EP",
+        "price": 285000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ORMSBY, 14, STANLEY ROAD",
+        "postcode": "SM2 6TJ",
+        "price": 395000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, BASINGHALL GARDENS",
+        "postcode": "SM2 6AW",
+        "price": 360000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, CALIFORNIA CLOSE",
+        "postcode": "SM2 6DQ",
+        "price": 327500,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, THE GREEN HOUSE, WEST DRIVE",
+        "postcode": "SM2 7NB",
+        "price": 1610000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, SANDY LANE, CHEAM",
+        "postcode": "SM2 7EN",
+        "price": 922500,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "ASPIRE COURT, 59, FLAT 5, ALBION ROAD",
+        "postcode": "SM2 5TD",
+        "price": 312500,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "SPRINGWELL MANOR, 38, FLAT 18, ALBION ROAD",
         "postcode": "SM2 5TF",
         "price": 285000,
         "dateOfTransfer": "2026-06-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "193, BANSTEAD ROAD SOUTH",
+        "postcode": "SM2 5LW",
+        "price": 852500,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, BELMONT ROAD",
+        "postcode": "SM2 6DW",
+        "price": 547500,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -332,6 +515,22 @@
         "newBuild": false
       },
       {
+        "address": "CEDAR COURT, 10, CEDAR ROAD",
+        "postcode": "SM2 5DH",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, AMBLESIDE GARDENS",
+        "postcode": "SM2 5ES",
+        "price": 270000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "3, HOLMWOOD CLOSE, CHEAM",
         "postcode": "SM2 7JL",
         "price": 590000,
@@ -352,6 +551,14 @@
         "postcode": "SM2 5TE",
         "price": 284000,
         "dateOfTransfer": "2026-06-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KINGSWOOD MANSIONS, 45, FLAT 8, WORCESTER ROAD",
+        "postcode": "SM2 6PY",
+        "price": 240000,
+        "dateOfTransfer": "2026-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -380,11 +587,19 @@
         "newBuild": false
       },
       {
-        "address": "HEREFORD COURT, 6, WORCESTER ROAD",
-        "postcode": "SM2 6QN",
-        "price": 370000,
-        "dateOfTransfer": "2026-05-15",
+        "address": "MIDSUMMER APARTMENTS, 1, FLAT 2, SACKVILLE ROAD",
+        "postcode": "SM2 6HS",
+        "price": 365000,
+        "dateOfTransfer": "2026-05-22",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, THE DENE, CHEAM",
+        "postcode": "SM2 7EG",
+        "price": 915000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -396,11 +611,11 @@
         "newBuild": false
       },
       {
-        "address": "20, THE DENE, CHEAM",
-        "postcode": "SM2 7EG",
-        "price": 915000,
+        "address": "HEREFORD COURT, 6, WORCESTER ROAD",
+        "postcode": "SM2 6QN",
+        "price": 370000,
         "dateOfTransfer": "2026-05-15",
-        "propertyType": "Detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -436,6 +651,14 @@
         "newBuild": false
       },
       {
+        "address": "15, BELMONT ROAD",
+        "postcode": "SM2 6DW",
+        "price": 425000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "DEVONSHIRE HOUSE, FLAT 16, DEVONSHIRE AVENUE",
         "postcode": "SM2 5JJ",
         "price": 325000,
@@ -444,11 +667,27 @@
         "newBuild": false
       },
       {
-        "address": "15, BELMONT ROAD",
-        "postcode": "SM2 6DW",
-        "price": 425000,
-        "dateOfTransfer": "2026-05-01",
+        "address": "22, VILLAGE ROW",
+        "postcode": "SM2 6JZ",
+        "price": 440000,
+        "dateOfTransfer": "2026-04-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LODDEN LODGE, 10, FLAT 4, DEVONSHIRE AVENUE",
+        "postcode": "SM2 5JL",
+        "price": 270000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "66, AVENUE ROAD",
+        "postcode": "SM2 6JB",
+        "price": 1050000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -468,22 +707,6 @@
         "newBuild": false
       },
       {
-        "address": "LODDEN LODGE, 10, FLAT 4, DEVONSHIRE AVENUE",
-        "postcode": "SM2 5JL",
-        "price": 270000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "22, VILLAGE ROW",
-        "postcode": "SM2 6JZ",
-        "price": 440000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "OVERTON COURT, 1, OVERTON ROAD",
         "postcode": "SM2 6QS",
         "price": 350000,
@@ -495,6 +718,14 @@
         "address": "KINSALE GRANGE, 57, FLAT 8, LANGLEY PARK ROAD",
         "postcode": "SM2 5GZ",
         "price": 360000,
+        "dateOfTransfer": "2026-04-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KEMPSTON HOUSE, FLAT 3, THE DOWNSWAY",
+        "postcode": "SM2 5RE",
+        "price": 240000,
         "dateOfTransfer": "2026-04-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -596,6 +827,14 @@
         "newBuild": false
       },
       {
+        "address": "ASHWOOD PARK, 69, FLAT 6, GRANGE ROAD",
+        "postcode": "SM2 6SP",
+        "price": 300000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "3, THE GALLOP",
         "postcode": "SM2 5RU",
         "price": 320000,
@@ -607,14 +846,6 @@
         "address": "23, PEACHES CLOSE, CHEAM",
         "postcode": "SM2 7BL",
         "price": 410000,
-        "dateOfTransfer": "2026-04-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ASHWOOD PARK, 69, FLAT 6, GRANGE ROAD",
-        "postcode": "SM2 6SP",
-        "price": 300000,
         "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -636,19 +867,19 @@
         "newBuild": false
       },
       {
-        "address": "125, DOWNS ROAD",
-        "postcode": "SM2 5PR",
-        "price": 390000,
-        "dateOfTransfer": "2026-03-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "FROBISHER COURT, FLAT 21, STATION APPROACH, CHEAM",
         "postcode": "SM2 7BW",
         "price": 230000,
         "dateOfTransfer": "2026-03-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "125, DOWNS ROAD",
+        "postcode": "SM2 5PR",
+        "price": 390000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -700,19 +931,19 @@
         "newBuild": false
       },
       {
-        "address": "4, ALBURY AVENUE, CHEAM",
-        "postcode": "SM2 7JT",
-        "price": 710000,
-        "dateOfTransfer": "2026-03-20",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "46A, UPPER MULGRAVE ROAD, CHEAM",
         "postcode": "SM2 7AJ",
         "price": 530000,
         "dateOfTransfer": "2026-03-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, ALBURY AVENUE, CHEAM",
+        "postcode": "SM2 7JT",
+        "price": 710000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -732,17 +963,17 @@
         "newBuild": false
       },
       {
-        "address": "PEASLAKE COURT, 72 - 74, FLAT 2, EGMONT ROAD",
-        "postcode": "SM2 5JS",
-        "price": 210000,
+        "address": "HADRIAN COURT, 2, STANLEY ROAD",
+        "postcode": "SM2 6SG",
+        "price": 318000,
         "dateOfTransfer": "2026-03-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "HADRIAN COURT, 2, STANLEY ROAD",
-        "postcode": "SM2 6SG",
-        "price": 318000,
+        "address": "PEASLAKE COURT, 72 - 74, FLAT 2, EGMONT ROAD",
+        "postcode": "SM2 5JS",
+        "price": 210000,
         "dateOfTransfer": "2026-03-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -752,6 +983,14 @@
         "postcode": "SM2 6NL",
         "price": 275000,
         "dateOfTransfer": "2026-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "75, FLAT 4, CEDAR ROAD",
+        "postcode": "SM2 5DJ",
+        "price": 345000,
+        "dateOfTransfer": "2026-03-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -804,6 +1043,14 @@
         "newBuild": false
       },
       {
+        "address": "191, AUTUMN DRIVE",
+        "postcode": "SM2 5FA",
+        "price": 245000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "SLOANE COURT, 47, FLAT 10, LANGLEY PARK ROAD",
         "postcode": "SM2 5EP",
         "price": 364105,
@@ -817,6 +1064,14 @@
         "price": 354000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, DEVON ROAD, CHEAM",
+        "postcode": "SM2 7PE",
+        "price": 1215000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -876,10 +1131,26 @@
         "newBuild": false
       },
       {
+        "address": "5B, STATION ROAD",
+        "postcode": "SM2 6BG",
+        "price": 515000,
+        "dateOfTransfer": "2026-02-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "ALBION COURT, 24, ALBION ROAD",
         "postcode": "SM2 5TB",
         "price": 290000,
         "dateOfTransfer": "2026-02-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BRACKEN HOUSE, 14 - 16, FLAT 4, EGMONT ROAD",
+        "postcode": "SM2 5JN",
+        "price": 450000,
+        "dateOfTransfer": "2026-02-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -913,6 +1184,14 @@
         "price": 1100000,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, THE CAUSEWAY",
+        "postcode": "SM2 5RS",
+        "price": 1995000,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -972,11 +1251,19 @@
         "newBuild": false
       },
       {
-        "address": "13, MOTTISTONE GROVE",
-        "postcode": "SM2 6FE",
-        "price": 500000,
+        "address": "GRANGE COURT, 2, GRANGE ROAD",
+        "postcode": "SM2 6RR",
+        "price": 310000,
         "dateOfTransfer": "2026-01-30",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "263, BASINGHALL GARDENS",
+        "postcode": "SM2 6AP",
+        "price": 317500,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -991,6 +1278,22 @@
         "address": "62, YORK ROAD, CHEAM",
         "postcode": "SM2 6HJ",
         "price": 1250000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, MOTTISTONE GROVE",
+        "postcode": "SM2 6FE",
+        "price": 500000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "47, YORK ROAD, CHEAM",
+        "postcode": "SM2 6HL",
+        "price": 1435000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Detached",
         "newBuild": false
@@ -1084,17 +1387,17 @@
         "newBuild": false
       },
       {
-        "address": "YEW TREE COURT, FLAT 9, WALNUT MEWS",
-        "postcode": "SM2 5TL",
-        "price": 245000,
+        "address": "PENTON HOUSE, 35, FLAT 5, CHRISTCHURCH PARK",
+        "postcode": "SM2 5TX",
+        "price": 365000,
         "dateOfTransfer": "2026-01-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "PENTON HOUSE, 35, FLAT 5, CHRISTCHURCH PARK",
-        "postcode": "SM2 5TX",
-        "price": 365000,
+        "address": "YEW TREE COURT, FLAT 9, WALNUT MEWS",
+        "postcode": "SM2 5TL",
+        "price": 245000,
         "dateOfTransfer": "2026-01-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1406,7 +1709,7 @@
       {
         "address": "1, FLAT 8, CEDAR GARDENS",
         "postcode": "SM2 5EQ",
-        "price": 223000,
+        "price": 191387,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1414,7 +1717,7 @@
       {
         "address": "1, FLAT 8, CEDAR GARDENS",
         "postcode": "SM2 5EQ",
-        "price": 191387,
+        "price": 223000,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1548,19 +1851,19 @@
         "newBuild": false
       },
       {
-        "address": "186, MULGRAVE ROAD, CHEAM",
-        "postcode": "SM2 6JT",
-        "price": 805000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "17, SANDY LANE, CHEAM",
         "postcode": "SM2 7NU",
         "price": 1300000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "186, MULGRAVE ROAD, CHEAM",
+        "postcode": "SM2 6JT",
+        "price": 805000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1596,6 +1899,14 @@
         "newBuild": false
       },
       {
+        "address": "9, CLIFTON AVENUE",
+        "postcode": "SM2 5PS",
+        "price": 480000,
+        "dateOfTransfer": "2025-11-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "5A, STATION ROAD",
         "postcode": "SM2 6BG",
         "price": 420000,
@@ -1604,11 +1915,11 @@
         "newBuild": false
       },
       {
-        "address": "9, CLIFTON AVENUE",
-        "postcode": "SM2 5PS",
-        "price": 480000,
+        "address": "ARGYLE HOUSE, FLAT 23, SUTTON COURT",
+        "postcode": "SM2 5AX",
+        "price": 296557,
         "dateOfTransfer": "2025-11-03",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1620,17 +1931,17 @@
         "newBuild": false
       },
       {
-        "address": "TRANMERE COURT, FLAT 22, LANGLEY PARK ROAD",
-        "postcode": "SM2 5HE",
-        "price": 345000,
+        "address": "HAMPTON LODGE, 15, FLAT 6, CAVENDISH ROAD",
+        "postcode": "SM2 5EY",
+        "price": 215000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "HAMPTON LODGE, 15, FLAT 6, CAVENDISH ROAD",
-        "postcode": "SM2 5EY",
-        "price": 215000,
+        "address": "TRANMERE COURT, FLAT 22, LANGLEY PARK ROAD",
+        "postcode": "SM2 5HE",
+        "price": 345000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1641,14 +1952,6 @@
         "price": 475000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "APSLEY COURT, FLAT 7, WELLESLEY ROAD",
-        "postcode": "SM2 5BW",
-        "price": 230000,
-        "dateOfTransfer": "2025-10-30",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1668,6 +1971,14 @@
         "newBuild": false
       },
       {
+        "address": "5B, STATION ROAD",
+        "postcode": "SM2 6BG",
+        "price": 355000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "28, FLAT 1, EGMONT ROAD",
         "postcode": "SM2 5JN",
         "price": 245000,
@@ -1676,11 +1987,11 @@
         "newBuild": false
       },
       {
-        "address": "5B, STATION ROAD",
-        "postcode": "SM2 6BG",
-        "price": 355000,
+        "address": "APSLEY COURT, FLAT 7, WELLESLEY ROAD",
+        "postcode": "SM2 5BW",
+        "price": 230000,
         "dateOfTransfer": "2025-10-30",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1740,14 +2051,6 @@
         "newBuild": false
       },
       {
-        "address": "PAMIR COURT, 36, 7, WORCESTER ROAD",
-        "postcode": "SM2 6PJ",
-        "price": 295000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CAREW COURT, 58, BASINGHALL GARDENS",
         "postcode": "SM2 6AS",
         "price": 260000,
@@ -1767,6 +2070,14 @@
         "address": "LYNTON COURT, 1, CEDAR ROAD",
         "postcode": "SM2 5DL",
         "price": 370000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PAMIR COURT, 36, 7, WORCESTER ROAD",
+        "postcode": "SM2 6PJ",
+        "price": 295000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1804,22 +2115,6 @@
         "newBuild": false
       },
       {
-        "address": "CLARE COURT, 14, FLAT 12, OVERTON ROAD",
-        "postcode": "SM2 6QF",
-        "price": 240000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "31, FLAT 1, CAVENDISH ROAD",
-        "postcode": "SM2 5EY",
-        "price": 242000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "GLOUCESTER COURT, 15A, FLAT 4, OVERTON ROAD",
         "postcode": "SM2 6QZ",
         "price": 350000,
@@ -1836,9 +2131,33 @@
         "newBuild": false
       },
       {
+        "address": "OCEAN HOUSE, FLAT 8, STATION APPROACH, CHEAM",
+        "postcode": "SM2 7AN",
+        "price": 405000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "DELACY COURT, 34, FLAT 3, QUEENS ROAD",
         "postcode": "SM2 6BQ",
         "price": 180000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, 14, FLAT 12, OVERTON ROAD",
+        "postcode": "SM2 6QF",
+        "price": 240000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, FLAT 1, CAVENDISH ROAD",
+        "postcode": "SM2 5EY",
+        "price": 242000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1940,6 +2259,22 @@
         "newBuild": false
       },
       {
+        "address": "OCEAN HOUSE, FLAT 6, STATION APPROACH, CHEAM",
+        "postcode": "SM2 7AN",
+        "price": 282500,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "HOLLY COURT, 66, FLAT 18, WORCESTER ROAD",
+        "postcode": "SM2 6QB",
+        "price": 235000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "34, FLAT 12, KINGSWOOD DRIVE",
         "postcode": "SM2 5NT",
         "price": 237500,
@@ -1996,6 +2331,14 @@
         "newBuild": false
       },
       {
+        "address": "5, HATFIELD CLOSE",
+        "postcode": "SM2 5BH",
+        "price": 265000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "53, EGMONT ROAD",
         "postcode": "SM2 5JR",
         "price": 1040000,
@@ -2007,14 +2350,6 @@
         "address": "MULGRAVE MANOR, 19, MULGRAVE ROAD",
         "postcode": "SM2 6LQ",
         "price": 315000,
-        "dateOfTransfer": "2025-09-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "5, HATFIELD CLOSE",
-        "postcode": "SM2 5BH",
-        "price": 265000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2060,14 +2395,6 @@
         "newBuild": false
       },
       {
-        "address": "127, NORTHEY AVENUE, CHEAM",
-        "postcode": "SM2 7HQ",
-        "price": 992500,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "111, FLAT 2, BRIGHTON ROAD",
         "postcode": "SM2 5SF",
         "price": 166000,
@@ -2084,6 +2411,14 @@
         "newBuild": false
       },
       {
+        "address": "127, NORTHEY AVENUE, CHEAM",
+        "postcode": "SM2 7HQ",
+        "price": 992500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "65, CHIPSTEAD CLOSE",
         "postcode": "SM2 6BF",
         "price": 260000,
@@ -2092,17 +2427,17 @@
         "newBuild": false
       },
       {
-        "address": "7, KENILWORTH TERRACE",
-        "postcode": "SM2 6JQ",
-        "price": 320000,
+        "address": "54, FLAT 4, OVERTON ROAD",
+        "postcode": "SM2 6RB",
+        "price": 280000,
         "dateOfTransfer": "2025-09-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "54, FLAT 4, OVERTON ROAD",
-        "postcode": "SM2 6RB",
-        "price": 280000,
+        "address": "7, KENILWORTH TERRACE",
+        "postcode": "SM2 6JQ",
+        "price": 320000,
         "dateOfTransfer": "2025-09-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2172,6 +2507,14 @@
         "newBuild": false
       },
       {
+        "address": "37, UPTON DENE",
+        "postcode": "SM2 6TA",
+        "price": 280000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "61, FLAT 2, EGMONT ROAD",
         "postcode": "SM2 5JS",
         "price": 240000,
@@ -2193,14 +2536,6 @@
         "price": 280000,
         "dateOfTransfer": "2025-09-01",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "17, SHIRLEY AVENUE, CHEAM",
-        "postcode": "SM2 7QS",
-        "price": 1800000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2228,6 +2563,14 @@
         "newBuild": false
       },
       {
+        "address": "17, SHIRLEY AVENUE, CHEAM",
+        "postcode": "SM2 7QS",
+        "price": 1800000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "BOSTON COURT, 12, CHRISTCHURCH PARK",
         "postcode": "SM2 5TJ",
         "price": 325000,
@@ -2244,14 +2587,6 @@
         "newBuild": false
       },
       {
-        "address": "107, PEACHES CLOSE, CHEAM",
-        "postcode": "SM2 7BL",
-        "price": 382500,
-        "dateOfTransfer": "2025-08-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "APSLEY COURT, FLAT 6, WELLESLEY ROAD",
         "postcode": "SM2 5BW",
         "price": 290000,
@@ -2264,6 +2599,22 @@
         "postcode": "SM2 6DH",
         "price": 115000,
         "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "107, PEACHES CLOSE, CHEAM",
+        "postcode": "SM2 7BL",
+        "price": 382500,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE ROWANS, 47, FLAT 2, MULGRAVE ROAD",
+        "postcode": "SM2 6LJ",
+        "price": 214500,
+        "dateOfTransfer": "2025-08-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2284,44 +2635,12 @@
         "newBuild": false
       },
       {
-        "address": "THE ROWANS, 47, FLAT 2, MULGRAVE ROAD",
-        "postcode": "SM2 6LJ",
-        "price": 214500,
-        "dateOfTransfer": "2025-08-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "34, FLAT 20, MULGRAVE ROAD, BELMONT",
         "postcode": "SM2 6FX",
         "price": 520000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
-      },
-      {
-        "address": "18, FLAT 9, AVENUE ROAD",
-        "postcode": "SM2 6JD",
-        "price": 280000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "52, WEST DRIVE, CHEAM",
-        "postcode": "SM2 7NA",
-        "price": 1400000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "OCEAN HOUSE, FLAT 20, STATION APPROACH, CHEAM",
-        "postcode": "SM2 7AN",
-        "price": 302500,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
       },
       {
         "address": "REDCLYFFE COURT, 19, 15, YORK ROAD, CHEAM",
@@ -2338,6 +2657,30 @@
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "52, WEST DRIVE, CHEAM",
+        "postcode": "SM2 7NA",
+        "price": 1400000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, FLAT 9, AVENUE ROAD",
+        "postcode": "SM2 6JD",
+        "price": 280000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "OCEAN HOUSE, FLAT 20, STATION APPROACH, CHEAM",
+        "postcode": "SM2 7AN",
+        "price": 302500,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "32 - 34, FLAT 12A, ALBION ROAD",
@@ -2388,14 +2731,6 @@
         "newBuild": false
       },
       {
-        "address": "38, FLAT 1, KINGSWOOD DRIVE",
-        "postcode": "SM2 5NB",
-        "price": 220000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "KINGSMEAD LODGE, 50, FLAT 16, CEDAR ROAD",
         "postcode": "SM2 5AH",
         "price": 200000,
@@ -2412,11 +2747,27 @@
         "newBuild": false
       },
       {
+        "address": "ESPRIT COURT, 17, FLAT 11, STANLEY ROAD",
+        "postcode": "SM2 6EH",
+        "price": 340000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "63, GRANGE ROAD",
         "postcode": "SM2 6SP",
         "price": 623530,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, FLAT 1, KINGSWOOD DRIVE",
+        "postcode": "SM2 5NB",
+        "price": 220000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2436,17 +2787,17 @@
         "newBuild": false
       },
       {
-        "address": "15A, FLAT 5, DEVONSHIRE ROAD",
-        "postcode": "SM2 5HQ",
-        "price": 450000,
+        "address": "MULGRAVE MANOR, 13, MULGRAVE ROAD",
+        "postcode": "SM2 6LQ",
+        "price": 335000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "MULGRAVE MANOR, 13, MULGRAVE ROAD",
-        "postcode": "SM2 6LQ",
-        "price": 335000,
+        "address": "15A, FLAT 5, DEVONSHIRE ROAD",
+        "postcode": "SM2 5HQ",
+        "price": 450000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2524,9 +2875,9 @@
         "newBuild": false
       },
       {
-        "address": "17, FLAT 7, YORK ROAD, CHEAM",
-        "postcode": "SM2 6EZ",
-        "price": 260000,
+        "address": "BEAUCLERE HOUSE, 67, FLAT 15, BRIGHTON ROAD",
+        "postcode": "SM2 5BT",
+        "price": 240000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2540,17 +2891,17 @@
         "newBuild": false
       },
       {
-        "address": "65, FLAT 6, ALBION ROAD",
-        "postcode": "SM2 5TD",
-        "price": 250000,
+        "address": "17, FLAT 7, YORK ROAD, CHEAM",
+        "postcode": "SM2 6EZ",
+        "price": 260000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BEAUCLERE HOUSE, 67, FLAT 15, BRIGHTON ROAD",
-        "postcode": "SM2 5BT",
-        "price": 240000,
+        "address": "65, FLAT 6, ALBION ROAD",
+        "postcode": "SM2 5TD",
+        "price": 250000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2636,19 +2987,19 @@
         "newBuild": false
       },
       {
-        "address": "75, NORTHEY AVENUE, CHEAM",
-        "postcode": "SM2 7HU",
-        "price": 1297000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "HERITAGE COURT, FLAT 3, BRADLEY CLOSE, BELMONT",
         "postcode": "SM2 6BU",
         "price": 250000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "75, NORTHEY AVENUE, CHEAM",
+        "postcode": "SM2 7HU",
+        "price": 1297000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2728,6 +3079,14 @@
         "postcode": "SM2 5RE",
         "price": 226000,
         "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, FLAT 3, CAVENDISH ROAD",
+        "postcode": "SM2 5EY",
+        "price": 238000,
+        "dateOfTransfer": "2025-07-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2868,6 +3227,22 @@
         "newBuild": false
       },
       {
+        "address": "1, FLAT 4, VENTNOR ROAD",
+        "postcode": "SM2 6BT",
+        "price": 240000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "169, AUTUMN DRIVE",
+        "postcode": "SM2 5FA",
+        "price": 260000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "OCEAN HOUSE, FLAT 21, STATION APPROACH, CHEAM",
         "postcode": "SM2 7AN",
         "price": 295000,
@@ -2882,22 +3257,6 @@
         "dateOfTransfer": "2025-07-04",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
-      },
-      {
-        "address": "169, AUTUMN DRIVE",
-        "postcode": "SM2 5FA",
-        "price": 260000,
-        "dateOfTransfer": "2025-07-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, FLAT 4, VENTNOR ROAD",
-        "postcode": "SM2 6BT",
-        "price": 240000,
-        "dateOfTransfer": "2025-07-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
       },
       {
         "address": "17, WHITE LODGE CLOSE",
@@ -3340,14 +3699,6 @@
         "newBuild": false
       },
       {
-        "address": "89, FLAT 3, CAMBORNE ROAD",
-        "postcode": "SM2 6RF",
-        "price": 370000,
-        "dateOfTransfer": "2025-04-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "28, FLAT 1, LANGLEY PARK ROAD",
         "postcode": "SM2 5EP",
         "price": 275000,
@@ -3356,10 +3707,10 @@
         "newBuild": false
       },
       {
-        "address": "163, AUTUMN DRIVE",
-        "postcode": "SM2 5FA",
-        "price": 262500,
-        "dateOfTransfer": "2025-04-17",
+        "address": "89, FLAT 3, CAMBORNE ROAD",
+        "postcode": "SM2 6RF",
+        "price": 370000,
+        "dateOfTransfer": "2025-04-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3370,6 +3721,14 @@
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "163, AUTUMN DRIVE",
+        "postcode": "SM2 5FA",
+        "price": 262500,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       },
       {
         "address": "85, FLAT 4, MULGRAVE ROAD",
@@ -3388,14 +3747,6 @@
         "newBuild": false
       },
       {
-        "address": "7, ONSLOW AVENUE, CHEAM",
-        "postcode": "SM2 7ED",
-        "price": 1575000,
-        "dateOfTransfer": "2025-04-11",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "9, CHEYHAM GARDENS, CHEAM",
         "postcode": "SM2 7NH",
         "price": 725000,
@@ -3410,6 +3761,14 @@
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "7, ONSLOW AVENUE, CHEAM",
+        "postcode": "SM2 7ED",
+        "price": 1575000,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Detached",
+        "newBuild": false
       },
       {
         "address": "QUEENS COURT, 2, THE CRESCENT, BELMONT",
@@ -3492,6 +3851,14 @@
         "newBuild": false
       },
       {
+        "address": "HIDCOTE HOUSE, 6, FLAT 5, DEVONSHIRE AVENUE",
+        "postcode": "SM2 5JL",
+        "price": 249500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "56B, MULGRAVE ROAD, BELMONT",
         "postcode": "SM2 6LX",
         "price": 352500,
@@ -3516,9 +3883,9 @@
         "newBuild": false
       },
       {
-        "address": "LYNTON COURT, 6, CEDAR ROAD",
-        "postcode": "SM2 5DL",
-        "price": 372500,
+        "address": "LANGLEY COURT, 43, FLAT 8, LANGLEY PARK ROAD",
+        "postcode": "SM2 5EW",
+        "price": 345000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3540,14 +3907,6 @@
         "newBuild": false
       },
       {
-        "address": "LANGLEY COURT, 43, FLAT 8, LANGLEY PARK ROAD",
-        "postcode": "SM2 5EW",
-        "price": 345000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "TOLL BAR COURT, 51, BASINGHALL GARDENS",
         "postcode": "SM2 6AU",
         "price": 190000,
@@ -3561,6 +3920,14 @@
         "price": 318500,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, UPLAND ROAD",
+        "postcode": "SM2 5JE",
+        "price": 770000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3580,11 +3947,11 @@
         "newBuild": false
       },
       {
-        "address": "46, UPLAND ROAD",
-        "postcode": "SM2 5JE",
-        "price": 770000,
+        "address": "LYNTON COURT, 6, CEDAR ROAD",
+        "postcode": "SM2 5DL",
+        "price": 372500,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3604,19 +3971,19 @@
         "newBuild": false
       },
       {
-        "address": "25, EATON ROAD",
-        "postcode": "SM2 5DN",
-        "price": 576000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "REDCLYFFE COURT, 23, WORCESTER ROAD",
         "postcode": "SM2 6JG",
         "price": 330000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, EATON ROAD",
+        "postcode": "SM2 5DN",
+        "price": 576000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3700,6 +4067,14 @@
         "newBuild": false
       },
       {
+        "address": "55, YORK ROAD, CHEAM",
+        "postcode": "SM2 6HL",
+        "price": 935000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "11, WOODBURY DRIVE",
         "postcode": "SM2 5RA",
         "price": 796500,
@@ -3721,14 +4096,6 @@
         "price": 695000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "55, YORK ROAD, CHEAM",
-        "postcode": "SM2 6HL",
-        "price": 935000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3756,9 +4123,9 @@
         "newBuild": false
       },
       {
-        "address": "25, HIGH VIEW, CHEAM",
-        "postcode": "SM2 7DZ",
-        "price": 1805000,
+        "address": "8, BRASTED CLOSE",
+        "postcode": "SM2 5BE",
+        "price": 845000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Detached",
         "newBuild": false
@@ -3772,19 +4139,19 @@
         "newBuild": false
       },
       {
-        "address": "8, BRASTED CLOSE",
-        "postcode": "SM2 5BE",
-        "price": 845000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "28, WOODBURY DRIVE",
         "postcode": "SM2 5RB",
         "price": 790000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, HIGH VIEW, CHEAM",
+        "postcode": "SM2 7DZ",
+        "price": 1805000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3884,14 +4251,6 @@
         "newBuild": false
       },
       {
-        "address": "11B, CEDAR ROAD",
-        "postcode": "SM2 5DA",
-        "price": 344000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "REDRUTH HOUSE, FLAT 4, GRANGE ROAD",
         "postcode": "SM2 6RT",
         "price": 325000,
@@ -3903,6 +4262,14 @@
         "address": "24, BASINGHALL GARDENS",
         "postcode": "SM2 6AW",
         "price": 275250,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11B, CEDAR ROAD",
+        "postcode": "SM2 5DA",
+        "price": 344000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3924,9 +4291,9 @@
         "newBuild": false
       },
       {
-        "address": "27, BANSTEAD ROAD SOUTH",
-        "postcode": "SM2 5LF",
-        "price": 835000,
+        "address": "66, ABINGER AVENUE, CHEAM",
+        "postcode": "SM2 7LW",
+        "price": 820000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Detached",
         "newBuild": false
@@ -3940,9 +4307,9 @@
         "newBuild": false
       },
       {
-        "address": "66, ABINGER AVENUE, CHEAM",
-        "postcode": "SM2 7LW",
-        "price": 820000,
+        "address": "27, BANSTEAD ROAD SOUTH",
+        "postcode": "SM2 5LF",
+        "price": 835000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Detached",
         "newBuild": false
@@ -3972,22 +4339,6 @@
         "newBuild": false
       },
       {
-        "address": "87A, LANGLEY PARK ROAD",
-        "postcode": "SM2 5HF",
-        "price": 668375,
-        "dateOfTransfer": "2025-03-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "CHEYNE COURT, 59, FLAT 7, CHRISTCHURCH PARK",
-        "postcode": "SM2 5TX",
-        "price": 370000,
-        "dateOfTransfer": "2025-03-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "4, PENSHURST WAY",
         "postcode": "SM2 6HR",
         "price": 542000,
@@ -4001,6 +4352,22 @@
         "price": 800000,
         "dateOfTransfer": "2025-03-12",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "87A, LANGLEY PARK ROAD",
+        "postcode": "SM2 5HF",
+        "price": 668375,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CHEYNE COURT, 59, FLAT 7, CHRISTCHURCH PARK",
+        "postcode": "SM2 5TX",
+        "price": 370000,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4076,6 +4443,14 @@
         "newBuild": true
       },
       {
+        "address": "25, HOLLAND AVENUE, CHEAM",
+        "postcode": "SM2 6HW",
+        "price": 1420000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "10, GOLF SIDE, CHEAM",
         "postcode": "SM2 7EZ",
         "price": 2600000,
@@ -4089,14 +4464,6 @@
         "price": 360000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "25, HOLLAND AVENUE, CHEAM",
-        "postcode": "SM2 6HW",
-        "price": 1420000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -4140,19 +4507,19 @@
         "newBuild": false
       },
       {
-        "address": "23, THE CRESCENT, BELMONT",
-        "postcode": "SM2 6BP",
-        "price": 845000,
-        "dateOfTransfer": "2025-02-26",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "36, FLAT 16, KINGSWOOD DRIVE",
         "postcode": "SM2 5NB",
         "price": 260000,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, THE CRESCENT, BELMONT",
+        "postcode": "SM2 6BP",
+        "price": 845000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4300,19 +4667,19 @@
         "newBuild": false
       },
       {
-        "address": "10, HOLMWOOD ROAD, CHEAM",
-        "postcode": "SM2 7JR",
-        "price": 880000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "25, BRANDY WAY",
         "postcode": "SM2 6SE",
         "price": 510000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, HOLMWOOD ROAD, CHEAM",
+        "postcode": "SM2 7JR",
+        "price": 880000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -4468,14 +4835,6 @@
         "newBuild": false
       },
       {
-        "address": "CASTLE HOUSE, 1, FLAT 34, OVERTON ROAD",
-        "postcode": "SM2 6QE",
-        "price": 192000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "25A, FLAT 1, CEDAR ROAD",
         "postcode": "SM2 5DG",
         "price": 195000,
@@ -4513,6 +4872,14 @@
         "price": 686000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CASTLE HOUSE, 1, FLAT 34, OVERTON ROAD",
+        "postcode": "SM2 6QE",
+        "price": 192000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4604,24 +4971,24 @@
         "newBuild": false
       },
       {
-        "address": "10, THE BYWAY",
-        "postcode": "SM2 5LE",
-        "price": 1120000,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "ASHDOWN COURT, 30, FLAT 20, CEDAR ROAD",
         "postcode": "SM2 5DG",
         "price": 210000,
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "10, THE BYWAY",
+        "postcode": "SM2 5LE",
+        "price": 1120000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Detached",
+        "newBuild": false
       }
     ],
-    "averagePrice": 541944,
-    "medianPrice": 364052.5
+    "averagePrice": 540360,
+    "medianPrice": 360000
   },
   "representatives": {
     "representatives": [

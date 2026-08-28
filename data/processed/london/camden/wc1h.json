@@ -3,8 +3,8 @@
   "slug": "wc1h",
   "city": "London",
   "borough": "Camden",
-  "latitude": 51.52686025816989,
-  "longitude": -0.12568300653594783,
+  "latitude": 51.52698704247102,
+  "longitude": -0.12563762934362935,
   "wards": [
     "Bloomsbury",
     "Clerkenwell",
@@ -50,7 +50,8 @@
         "urn": "100008",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/10/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Tonbridge Street, London",
         "postcode": "WC1H 9EG",
         "numberOfPupils": 269,
@@ -62,6 +63,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Thornhaugh Street, Russell Square, London",
         "postcode": "WC1H 0XG",
         "numberOfPupils": null,
@@ -73,97 +75,121 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 3894,
-        "violentCrimes": 830,
-        "propertyCrimes": 2394
+        "totalCrimes": 3885,
+        "violentCrimes": 826,
+        "propertyCrimes": 2390
       },
       {
         "month": "2025-08",
-        "totalCrimes": 3485,
-        "violentCrimes": 793,
-        "propertyCrimes": 2040
+        "totalCrimes": 3478,
+        "violentCrimes": 791,
+        "propertyCrimes": 2036
       },
       {
         "month": "2025-09",
-        "totalCrimes": 3549,
-        "violentCrimes": 827,
-        "propertyCrimes": 2135
+        "totalCrimes": 3544,
+        "violentCrimes": 829,
+        "propertyCrimes": 2130
       },
       {
         "month": "2025-10",
-        "totalCrimes": 3830,
+        "totalCrimes": 3828,
         "violentCrimes": 894,
-        "propertyCrimes": 2307
+        "propertyCrimes": 2305
       },
       {
         "month": "2025-11",
-        "totalCrimes": 3965,
-        "violentCrimes": 837,
-        "propertyCrimes": 2476
+        "totalCrimes": 3959,
+        "violentCrimes": 835,
+        "propertyCrimes": 2473
       },
       {
         "month": "2025-12",
-        "totalCrimes": 3726,
-        "violentCrimes": 786,
-        "propertyCrimes": 2308
+        "totalCrimes": 3717,
+        "violentCrimes": 780,
+        "propertyCrimes": 2303
       },
       {
         "month": "2026-01",
-        "totalCrimes": 3227,
-        "violentCrimes": 725,
-        "propertyCrimes": 1878
+        "totalCrimes": 3223,
+        "violentCrimes": 726,
+        "propertyCrimes": 1873
       },
       {
         "month": "2026-02",
-        "totalCrimes": 3146,
+        "totalCrimes": 3138,
         "violentCrimes": 662,
-        "propertyCrimes": 1867
+        "propertyCrimes": 1861
       },
       {
         "month": "2026-03",
-        "totalCrimes": 3390,
+        "totalCrimes": 3388,
         "violentCrimes": 824,
-        "propertyCrimes": 1844
+        "propertyCrimes": 1841
       },
       {
         "month": "2026-04",
-        "totalCrimes": 3559,
-        "violentCrimes": 802,
-        "propertyCrimes": 2028
+        "totalCrimes": 3554,
+        "violentCrimes": 803,
+        "propertyCrimes": 2022
       },
       {
         "month": "2026-05",
-        "totalCrimes": 3424,
-        "violentCrimes": 831,
-        "propertyCrimes": 1941
+        "totalCrimes": 3420,
+        "violentCrimes": 829,
+        "propertyCrimes": 1938
       },
       {
         "month": "2026-06",
-        "totalCrimes": 3426,
-        "violentCrimes": 885,
-        "propertyCrimes": 1897
+        "totalCrimes": 3424,
+        "violentCrimes": 881,
+        "propertyCrimes": 1898
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6281,
-      "bicycle-theft": 710,
-      "burglary": 1282,
-      "criminal-damage-arson": 852,
-      "drugs": 1296,
-      "other-theft": 8403,
+      "anti-social-behaviour": 6280,
+      "bicycle-theft": 709,
+      "burglary": 1280,
+      "criminal-damage-arson": 853,
+      "drugs": 1295,
+      "other-theft": 8389,
       "possession-of-weapons": 142,
       "public-order": 1943,
-      "robbery": 1390,
-      "shoplifting": 4087,
-      "theft-from-the-person": 8875,
-      "vehicle-crime": 906,
-      "violent-crime": 6221,
+      "robbery": 1387,
+      "shoplifting": 4076,
+      "theft-from-the-person": 8858,
+      "vehicle-crime": 905,
+      "violent-crime": 6208,
       "other-crime": 233
     },
-    "totalLast12Months": 42621
+    "totalLast12Months": 42558
   },
   "property": {
     "sales": [
+      {
+        "address": "RUSSELL COURT, FLAT 423, WOBURN PLACE",
+        "postcode": "WC1H 0NJ",
+        "price": 268000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 144, WOBURN PLACE",
+        "postcode": "WC1H 0LP",
+        "price": 260000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAVISTOCK COURT, FLAT 12, TAVISTOCK SQUARE",
+        "postcode": "WC1H 9HE",
+        "price": 880000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "RUSSELL COURT, FLAT 340, WOBURN PLACE",
         "postcode": "WC1H 0NG",
@@ -237,6 +263,14 @@
         "newBuild": false
       },
       {
+        "address": "26, FLAT C, BURTON STREET",
+        "postcode": "WC1H 9AQ",
+        "price": 520000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "RUSSELL COURT, FLAT 427, WOBURN PLACE",
         "postcode": "WC1H 0NJ",
         "price": 290000,
@@ -269,10 +303,26 @@
         "newBuild": false
       },
       {
+        "address": "BECKETT HOUSE, 1, WESTKING PLACE",
+        "postcode": "WC1H 8AH",
+        "price": 1580000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "RUSSELL COURT, FLAT 263, WOBURN PLACE",
         "postcode": "WC1H 0NF",
         "price": 215000,
         "dateOfTransfer": "2026-02-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 422, WOBURN PLACE",
+        "postcode": "WC1H 0NJ",
+        "price": 290000,
+        "dateOfTransfer": "2026-02-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -313,6 +363,14 @@
         "postcode": "WC1H 9PA",
         "price": 465000,
         "dateOfTransfer": "2026-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARE COURT, FLAT 138, JUDD STREET",
+        "postcode": "WC1H 9QR",
+        "price": 550000,
+        "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -365,17 +423,17 @@
         "newBuild": false
       },
       {
-        "address": "CLARE COURT, FLAT 68, JUDD STREET",
-        "postcode": "WC1H 9QW",
-        "price": 400000,
+        "address": "EDWARD BOND HOUSE, FLAT 12, CROMER STREET",
+        "postcode": "WC1H 8DT",
+        "price": 290000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "EDWARD BOND HOUSE, FLAT 12, CROMER STREET",
-        "postcode": "WC1H 8DT",
-        "price": 290000,
+        "address": "CLARE COURT, FLAT 68, JUDD STREET",
+        "postcode": "WC1H 9QW",
+        "price": 400000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -685,14 +743,6 @@
         "newBuild": false
       },
       {
-        "address": "RUSSELL COURT, FLAT 169, WOBURN PLACE",
-        "postcode": "WC1H 0LR",
-        "price": 310000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "TAVISTOCK COURT, FLAT 5, TAVISTOCK SQUARE",
         "postcode": "WC1H 9HE",
         "price": 240000,
@@ -712,6 +762,14 @@
         "address": "RUSSELL COURT, FLAT 216, WOBURN PLACE",
         "postcode": "WC1H 0ND",
         "price": 276000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RUSSELL COURT, FLAT 169, WOBURN PLACE",
+        "postcode": "WC1H 0LR",
+        "price": 310000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -869,8 +927,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 647128,
-    "medianPrice": 422500
+    "averagePrice": 645213,
+    "medianPrice": 425000
   },
   "representatives": {
     "representatives": [

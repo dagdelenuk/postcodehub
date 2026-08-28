@@ -3,8 +3,8 @@
   "slug": "rm6",
   "city": "London",
   "borough": "Redbridge",
-  "latitude": 51.57584646792455,
-  "longitude": 0.1295988358490566,
+  "latitude": 51.57583792692305,
+  "longitude": 0.1297445596153846,
   "wards": [
     "Aldborough",
     "Chadwell",
@@ -133,8 +133,9 @@
         "name": "Furze Infant School",
         "urn": "101203",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "17/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bennett Road, Chadwell Heath, Romford",
         "postcode": "RM6 6ES",
         "numberOfPupils": 452,
@@ -145,7 +146,8 @@
         "urn": "101219",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/03/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Gordon Road, Chadwell Heath, Romford",
         "postcode": "RM6 6DA",
         "numberOfPupils": 546,
@@ -156,7 +158,8 @@
         "urn": "101224",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Requires improvement",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "23/01/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Rose Lane, Chadwell Heath, Romford",
         "postcode": "RM6 5NJ",
         "numberOfPupils": 582,
@@ -168,6 +171,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Chadwell Heath Lane, Chadwell Heath, Romford",
         "postcode": "RM6 4XS",
         "numberOfPupils": 666,
@@ -178,7 +182,8 @@
         "urn": "102836",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "High Road, Chadwell Heath, Romford",
         "postcode": "RM6 4EU",
         "numberOfPupils": 675,
@@ -190,6 +195,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Huxley Drive, Chadwell Heath, Romford",
         "postcode": "RM6 4RJ",
         "numberOfPupils": 840,
@@ -200,7 +206,8 @@
         "urn": "102845",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "24/09/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Canon Avenue, Chadwell Heath, Romford",
         "postcode": "RM6 5RR",
         "numberOfPupils": 426,
@@ -210,8 +217,9 @@
         "name": "Little Heath School",
         "urn": "102878",
         "phaseOfEducation": "Not applicable",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "28/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hainault Road, Little Heath, Romford",
         "postcode": "RM6 5RX",
         "numberOfPupils": 264,
@@ -222,7 +230,8 @@
         "urn": "136267",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "23/04/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Christie Gardens, Chadwell Heath, Romford",
         "postcode": "RM6 4RS",
         "numberOfPupils": 1229,
@@ -233,7 +242,8 @@
         "urn": "141178",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "15/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Whalebone Lane North, Chadwell Heath, Romford",
         "postcode": "RM6 6SB",
         "numberOfPupils": 1392,
@@ -244,7 +254,8 @@
         "urn": "142896",
         "phaseOfEducation": "All-through",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Little Heath, Romford",
         "postcode": "RM6 4XX",
         "numberOfPupils": 1083,
@@ -256,6 +267,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "161 Gresham Drive, Romford",
         "postcode": "RM6 4TR",
         "numberOfPupils": 198,
@@ -267,97 +279,161 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 561,
-        "violentCrimes": 254,
-        "propertyCrimes": 168
+        "totalCrimes": 558,
+        "violentCrimes": 253,
+        "propertyCrimes": 167
       },
       {
         "month": "2025-08",
-        "totalCrimes": 533,
-        "violentCrimes": 251,
-        "propertyCrimes": 160
+        "totalCrimes": 529,
+        "violentCrimes": 250,
+        "propertyCrimes": 158
       },
       {
         "month": "2025-09",
-        "totalCrimes": 545,
-        "violentCrimes": 261,
-        "propertyCrimes": 174
+        "totalCrimes": 538,
+        "violentCrimes": 257,
+        "propertyCrimes": 172
       },
       {
         "month": "2025-10",
-        "totalCrimes": 548,
-        "violentCrimes": 256,
+        "totalCrimes": 545,
+        "violentCrimes": 254,
         "propertyCrimes": 160
       },
       {
         "month": "2025-11",
-        "totalCrimes": 505,
-        "violentCrimes": 247,
-        "propertyCrimes": 159
+        "totalCrimes": 502,
+        "violentCrimes": 246,
+        "propertyCrimes": 158
       },
       {
         "month": "2025-12",
-        "totalCrimes": 529,
-        "violentCrimes": 233,
+        "totalCrimes": 527,
+        "violentCrimes": 231,
         "propertyCrimes": 163
       },
       {
         "month": "2026-01",
-        "totalCrimes": 492,
-        "violentCrimes": 238,
+        "totalCrimes": 489,
+        "violentCrimes": 236,
         "propertyCrimes": 133
       },
       {
         "month": "2026-02",
-        "totalCrimes": 463,
-        "violentCrimes": 222,
+        "totalCrimes": 459,
+        "violentCrimes": 218,
         "propertyCrimes": 160
       },
       {
         "month": "2026-03",
-        "totalCrimes": 499,
-        "violentCrimes": 241,
-        "propertyCrimes": 150
+        "totalCrimes": 496,
+        "violentCrimes": 240,
+        "propertyCrimes": 149
       },
       {
         "month": "2026-04",
-        "totalCrimes": 508,
-        "violentCrimes": 233,
-        "propertyCrimes": 176
+        "totalCrimes": 503,
+        "violentCrimes": 231,
+        "propertyCrimes": 175
       },
       {
         "month": "2026-05",
-        "totalCrimes": 519,
-        "violentCrimes": 262,
-        "propertyCrimes": 147
+        "totalCrimes": 515,
+        "violentCrimes": 261,
+        "propertyCrimes": 146
       },
       {
         "month": "2026-06",
-        "totalCrimes": 514,
-        "violentCrimes": 281,
-        "propertyCrimes": 139
+        "totalCrimes": 512,
+        "violentCrimes": 280,
+        "propertyCrimes": 138
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1051,
+      "anti-social-behaviour": 1042,
       "bicycle-theft": 35,
-      "burglary": 192,
-      "criminal-damage-arson": 299,
-      "drugs": 233,
-      "other-theft": 302,
+      "burglary": 190,
+      "criminal-damage-arson": 297,
+      "drugs": 231,
+      "other-theft": 299,
       "possession-of-weapons": 35,
-      "public-order": 315,
+      "public-order": 314,
       "robbery": 141,
       "shoplifting": 551,
-      "theft-from-the-person": 94,
-      "vehicle-crime": 416,
-      "violent-crime": 2488,
+      "theft-from-the-person": 93,
+      "vehicle-crime": 414,
+      "violent-crime": 2467,
       "other-crime": 64
     },
-    "totalLast12Months": 6216
+    "totalLast12Months": 6173
   },
   "property": {
     "sales": [
+      {
+        "address": "82, AVENUE ROAD, CHADWELL HEATH",
+        "postcode": "RM6 4JE",
+        "price": 328000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, PORTLAND CLOSE",
+        "postcode": "RM6 5UE",
+        "price": 97000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE PINNACLE, 156 - 162, 5B, HIGH ROAD, CHADWELL HEATH",
+        "postcode": "RM6 6PN",
+        "price": 225000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "142, OVERTON DRIVE, CHADWELL HEATH",
+        "postcode": "RM6 4EE",
+        "price": 182500,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "180, OVERTON DRIVE, CHADWELL HEATH",
+        "postcode": "RM6 4EF",
+        "price": 360000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, LANGHAM DRIVE",
+        "postcode": "RM6 4TD",
+        "price": 435000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "158, SOMERVILLE ROAD",
+        "postcode": "RM6 5AT",
+        "price": 465000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, ARANDORA CRESCENT",
+        "postcode": "RM6 4SS",
+        "price": 735000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "68, THATCHES GROVE",
         "postcode": "RM6 5LH",
@@ -375,11 +451,43 @@
         "newBuild": false
       },
       {
+        "address": "49, ILFRACOMBE GARDENS",
+        "postcode": "RM6 4RL",
+        "price": 520000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "50, CAVALIER CLOSE",
         "postcode": "RM6 5EJ",
         "price": 160000,
         "dateOfTransfer": "2026-06-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, CHRISTIE GARDENS",
+        "postcode": "RM6 4SA",
+        "price": 320000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "147, ROSE LANE, CHADWELL HEATH",
+        "postcode": "RM6 5NR",
+        "price": 157000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, SOMERVILLE ROAD",
+        "postcode": "RM6 5BD",
+        "price": 380000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -559,6 +667,22 @@
         "newBuild": false
       },
       {
+        "address": "348, CHADWELL HEATH LANE",
+        "postcode": "RM6 4YH",
+        "price": 272000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, TANTONY GROVE",
+        "postcode": "RM6 5NA",
+        "price": 420000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "185, HAVERING GARDENS",
         "postcode": "RM6 5AR",
         "price": 570000,
@@ -572,22 +696,6 @@
         "price": 435000,
         "dateOfTransfer": "2026-04-17",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "26, TANTONY GROVE",
-        "postcode": "RM6 5NA",
-        "price": 420000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "348, CHADWELL HEATH LANE",
-        "postcode": "RM6 4YH",
-        "price": 272000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -615,19 +723,19 @@
         "newBuild": false
       },
       {
-        "address": "5, WHALEBONE GROVE",
-        "postcode": "RM6 6BU",
-        "price": 382000,
-        "dateOfTransfer": "2026-04-08",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "37, PRIESTLEY GARDENS",
         "postcode": "RM6 4SL",
         "price": 655000,
         "dateOfTransfer": "2026-04-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, WHALEBONE GROVE",
+        "postcode": "RM6 6BU",
+        "price": 382000,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -663,6 +771,14 @@
         "newBuild": false
       },
       {
+        "address": "ROSEWOOD COURT, FLAT 17, CHADWELL HEATH LANE, CHADWELL HEATH",
+        "postcode": "RM6 4YJ",
+        "price": 130000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "11, HAZEL GROVE",
         "postcode": "RM6 5PX",
         "price": 465000,
@@ -684,14 +800,6 @@
         "price": 300000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "ROSEWOOD COURT, FLAT 17, CHADWELL HEATH LANE, CHADWELL HEATH",
-        "postcode": "RM6 4YJ",
-        "price": 130000,
-        "dateOfTransfer": "2026-03-27",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -719,19 +827,19 @@
         "newBuild": false
       },
       {
-        "address": "88, MILL LANE",
-        "postcode": "RM6 6YH",
-        "price": 390000,
-        "dateOfTransfer": "2026-03-20",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "7, PARK VILLAS, CHADWELL HEATH",
         "postcode": "RM6 4JX",
         "price": 475000,
         "dateOfTransfer": "2026-03-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "88, MILL LANE",
+        "postcode": "RM6 6YH",
+        "price": 390000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -767,6 +875,14 @@
         "newBuild": false
       },
       {
+        "address": "82, HEATHFIELD PARK DRIVE, CHADWELL HEATH",
+        "postcode": "RM6 4FJ",
+        "price": 440000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "34, WADEVILLE AVENUE",
         "postcode": "RM6 6EU",
         "price": 380000,
@@ -799,6 +915,22 @@
         "newBuild": false
       },
       {
+        "address": "69, MILLHAVEN CLOSE",
+        "postcode": "RM6 4PL",
+        "price": 190000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, LEXDEN DRIVE",
+        "postcode": "RM6 4TJ",
+        "price": 485000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "1, WESTFIELD GARDENS, CHADWELL HEATH",
         "postcode": "RM6 4BY",
         "price": 405000,
@@ -815,19 +947,19 @@
         "newBuild": false
       },
       {
-        "address": "69, MILLHAVEN CLOSE",
-        "postcode": "RM6 4PL",
-        "price": 190000,
-        "dateOfTransfer": "2026-03-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "3, SECOND AVENUE",
         "postcode": "RM6 5ED",
         "price": 595000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, PRIMROSE AVENUE",
+        "postcode": "RM6 4PU",
+        "price": 500000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -919,26 +1051,18 @@
         "newBuild": false
       },
       {
+        "address": "15, CHAFFORD WAY",
+        "postcode": "RM6 5DP",
+        "price": 530000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "88, PRIMROSE AVENUE",
         "postcode": "RM6 4QD",
         "price": 575000,
         "dateOfTransfer": "2026-02-23",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "22, PORTLAND CLOSE",
-        "postcode": "RM6 5UE",
-        "price": 90000,
-        "dateOfTransfer": "2026-02-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "15, REYNOLDS AVENUE, CHADWELL HEATH",
-        "postcode": "RM6 4NT",
-        "price": 637500,
-        "dateOfTransfer": "2026-02-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -951,11 +1075,43 @@
         "newBuild": false
       },
       {
+        "address": "15, REYNOLDS AVENUE, CHADWELL HEATH",
+        "postcode": "RM6 4NT",
+        "price": 637500,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, PORTLAND CLOSE",
+        "postcode": "RM6 5UE",
+        "price": 90000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "92, SOMERVILLE ROAD",
+        "postcode": "RM6 5AS",
+        "price": 535000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "49, BAKERY CLOSE",
         "postcode": "RM6 5AN",
         "price": 290000,
         "dateOfTransfer": "2026-02-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, LEXDEN DRIVE",
+        "postcode": "RM6 4TJ",
+        "price": 625000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -975,17 +1131,17 @@
         "newBuild": false
       },
       {
-        "address": "53, LEXDEN DRIVE",
-        "postcode": "RM6 4TJ",
-        "price": 625000,
-        "dateOfTransfer": "2026-02-13",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "12, MILTON COURT, CHADWELL HEATH",
         "postcode": "RM6 4JP",
         "price": 200000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "238A, HIGH ROAD, CHADWELL HEATH",
+        "postcode": "RM6 6AP",
+        "price": 120000,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -996,14 +1152,6 @@
         "price": 515000,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "238A, HIGH ROAD, CHADWELL HEATH",
-        "postcode": "RM6 6AP",
-        "price": 120000,
-        "dateOfTransfer": "2026-02-12",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1047,14 +1195,6 @@
         "newBuild": false
       },
       {
-        "address": "35, ADELAIDE GARDENS, CHADWELL HEATH",
-        "postcode": "RM6 6SS",
-        "price": 500000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "41, MILL LANE",
         "postcode": "RM6 6UJ",
         "price": 415000,
@@ -1063,10 +1203,10 @@
         "newBuild": false
       },
       {
-        "address": "59, HAINAULT ROAD, CHADWELL HEATH",
-        "postcode": "RM6 6BH",
-        "price": 357000,
-        "dateOfTransfer": "2026-01-29",
+        "address": "35, ADELAIDE GARDENS, CHADWELL HEATH",
+        "postcode": "RM6 6SS",
+        "price": 500000,
+        "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1074,6 +1214,14 @@
         "address": "21, GALSWORTHY AVENUE",
         "postcode": "RM6 4PX",
         "price": 510000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "59, HAINAULT ROAD, CHADWELL HEATH",
+        "postcode": "RM6 6BH",
+        "price": 357000,
         "dateOfTransfer": "2026-01-29",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1095,17 +1243,17 @@
         "newBuild": false
       },
       {
-        "address": "23, ABERCORN GARDENS",
-        "postcode": "RM6 4TA",
-        "price": 490000,
+        "address": "12, ARANDORA CRESCENT",
+        "postcode": "RM6 4SS",
+        "price": 640000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "12, ARANDORA CRESCENT",
-        "postcode": "RM6 4SS",
-        "price": 640000,
+        "address": "23, ABERCORN GARDENS",
+        "postcode": "RM6 4TA",
+        "price": 490000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1127,19 +1275,19 @@
         "newBuild": false
       },
       {
-        "address": "37, HAINAULT ROAD, CHADWELL HEATH",
-        "postcode": "RM6 6BJ",
-        "price": 610000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "75, THATCHES GROVE",
         "postcode": "RM6 5LH",
         "price": 450000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "37, HAINAULT ROAD, CHADWELL HEATH",
+        "postcode": "RM6 6BJ",
+        "price": 610000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1151,17 +1299,17 @@
         "newBuild": false
       },
       {
-        "address": "47, ECCLESTON CRESCENT",
-        "postcode": "RM6 4QX",
-        "price": 620000,
+        "address": "47, PRIMROSE AVENUE",
+        "postcode": "RM6 4PU",
+        "price": 762500,
         "dateOfTransfer": "2026-01-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "47, PRIMROSE AVENUE",
-        "postcode": "RM6 4PU",
-        "price": 762500,
+        "address": "47, ECCLESTON CRESCENT",
+        "postcode": "RM6 4QX",
+        "price": 620000,
         "dateOfTransfer": "2026-01-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1199,17 +1347,17 @@
         "newBuild": false
       },
       {
-        "address": "2, OVERTON DRIVE, CHADWELL HEATH",
-        "postcode": "RM6 4EH",
-        "price": 470000,
+        "address": "20, MANSTED GARDENS",
+        "postcode": "RM6 4ED",
+        "price": 505000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "20, MANSTED GARDENS",
-        "postcode": "RM6 4ED",
-        "price": 505000,
+        "address": "2, OVERTON DRIVE, CHADWELL HEATH",
+        "postcode": "RM6 4EH",
+        "price": 470000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1228,6 +1376,14 @@
         "price": 440000,
         "dateOfTransfer": "2025-12-18",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "71, EAST ROAD, CHADWELL HEATH",
+        "postcode": "RM6 6YS",
+        "price": 575000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1487,30 +1643,6 @@
         "newBuild": false
       },
       {
-        "address": "38, WOODRUSH WAY",
-        "postcode": "RM6 5BL",
-        "price": 330500,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "44A, SHEPHERDS CLOSE",
-        "postcode": "RM6 5AD",
-        "price": 530000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "28, KINGSTON HILL AVENUE",
-        "postcode": "RM6 5QD",
-        "price": 410000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "ROSEWOOD COURT, FLAT 12, CHADWELL HEATH LANE, CHADWELL HEATH",
         "postcode": "RM6 4YJ",
         "price": 100000,
@@ -1524,6 +1656,30 @@
         "price": 364000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, WOODRUSH WAY",
+        "postcode": "RM6 5BL",
+        "price": 330500,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "28, KINGSTON HILL AVENUE",
+        "postcode": "RM6 5QD",
+        "price": 410000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44A, SHEPHERDS CLOSE",
+        "postcode": "RM6 5AD",
+        "price": 530000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1575,19 +1731,19 @@
         "newBuild": false
       },
       {
-        "address": "3, CHAUDEWELL CLOSE",
-        "postcode": "RM6 6EZ",
-        "price": 460000,
-        "dateOfTransfer": "2025-10-23",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "44, HEATH ROAD",
         "postcode": "RM6 6LJ",
         "price": 360000,
         "dateOfTransfer": "2025-10-23",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, CHAUDEWELL CLOSE",
+        "postcode": "RM6 6EZ",
+        "price": 460000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1607,9 +1763,17 @@
         "newBuild": false
       },
       {
-        "address": "25, EVA ROAD",
-        "postcode": "RM6 4NA",
-        "price": 276000,
+        "address": "6, HAWKRIDGE CLOSE",
+        "postcode": "RM6 4NR",
+        "price": 266000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "41, ERIC ROAD",
+        "postcode": "RM6 6JJ",
+        "price": 355000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1639,17 +1803,9 @@
         "newBuild": false
       },
       {
-        "address": "6, HAWKRIDGE CLOSE",
-        "postcode": "RM6 4NR",
-        "price": 266000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "41, ERIC ROAD",
-        "postcode": "RM6 6JJ",
-        "price": 355000,
+        "address": "25, EVA ROAD",
+        "postcode": "RM6 4NA",
+        "price": 276000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1679,22 +1835,6 @@
         "newBuild": false
       },
       {
-        "address": "73, MORLEY ROAD",
-        "postcode": "RM6 6XA",
-        "price": 525000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "SUDBURY COURT, FLAT 8, GLANDFORD WAY, CHADWELL HEATH",
-        "postcode": "RM6 4UJ",
-        "price": 263000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "16, THIRD AVENUE",
         "postcode": "RM6 5DB",
         "price": 490000,
@@ -1708,6 +1848,22 @@
         "price": 250000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "SUDBURY COURT, FLAT 8, GLANDFORD WAY, CHADWELL HEATH",
+        "postcode": "RM6 4UJ",
+        "price": 263000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, MORLEY ROAD",
+        "postcode": "RM6 6XA",
+        "price": 525000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1735,14 +1891,6 @@
         "newBuild": false
       },
       {
-        "address": "95, JARROW ROAD",
-        "postcode": "RM6 5RP",
-        "price": 465000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "17, KELLY WAY",
         "postcode": "RM6 6XH",
         "price": 490000,
@@ -1759,19 +1907,19 @@
         "newBuild": false
       },
       {
+        "address": "95, JARROW ROAD",
+        "postcode": "RM6 5RP",
+        "price": 465000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "110, SHEPHERDS CLOSE",
         "postcode": "RM6 5AJ",
         "price": 265000,
         "dateOfTransfer": "2025-10-01",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "24, HAVERING GARDENS",
-        "postcode": "RM6 5AA",
-        "price": 517000,
-        "dateOfTransfer": "2025-10-01",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1783,18 +1931,10 @@
         "newBuild": false
       },
       {
-        "address": "24, WESTFIELD GARDENS, CHADWELL HEATH",
-        "postcode": "RM6 4BY",
-        "price": 240000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "41, CHADWELL HEATH LANE",
-        "postcode": "RM6 4LP",
-        "price": 490000,
-        "dateOfTransfer": "2025-09-30",
+        "address": "24, HAVERING GARDENS",
+        "postcode": "RM6 5AA",
+        "price": 517000,
+        "dateOfTransfer": "2025-10-01",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1804,6 +1944,14 @@
         "price": 285000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, WESTFIELD GARDENS, CHADWELL HEATH",
+        "postcode": "RM6 4BY",
+        "price": 240000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1823,18 +1971,10 @@
         "newBuild": false
       },
       {
-        "address": "102, CHADVILLE GARDENS",
-        "postcode": "RM6 5UB",
-        "price": 465000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "41, WHALEBONE GROVE",
-        "postcode": "RM6 6BT",
-        "price": 460000,
-        "dateOfTransfer": "2025-09-26",
+        "address": "41, CHADWELL HEATH LANE",
+        "postcode": "RM6 4LP",
+        "price": 490000,
+        "dateOfTransfer": "2025-09-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1855,14 +1995,6 @@
         "newBuild": false
       },
       {
-        "address": "974, HIGH ROAD",
-        "postcode": "RM6 4BA",
-        "price": 280000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "10, HEATHFIELD PARK DRIVE, CHADWELL HEATH",
         "postcode": "RM6 4FB",
         "price": 400000,
@@ -1879,10 +2011,42 @@
         "newBuild": false
       },
       {
+        "address": "102, CHADVILLE GARDENS",
+        "postcode": "RM6 5UB",
+        "price": 465000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "41, WHALEBONE GROVE",
+        "postcode": "RM6 6BT",
+        "price": 460000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "974, HIGH ROAD",
+        "postcode": "RM6 4BA",
+        "price": 280000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "23, OVERTON DRIVE, CHADWELL HEATH",
         "postcode": "RM6 4EN",
         "price": 238000,
         "dateOfTransfer": "2025-09-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROSEWOOD COURT, FLAT 37, CHADWELL HEATH LANE, CHADWELL HEATH",
+        "postcode": "RM6 4YJ",
+        "price": 104000,
+        "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1903,19 +2067,19 @@
         "newBuild": false
       },
       {
-        "address": "89, BURNS AVENUE, CHADWELL HEATH",
-        "postcode": "RM6 4DG",
-        "price": 230000,
-        "dateOfTransfer": "2025-09-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "12, KENNETH ROAD",
         "postcode": "RM6 6LL",
         "price": 364000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "89, BURNS AVENUE, CHADWELL HEATH",
+        "postcode": "RM6 4DG",
+        "price": 230000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1927,11 +2091,27 @@
         "newBuild": false
       },
       {
+        "address": "24, THATCHES GROVE",
+        "postcode": "RM6 5LA",
+        "price": 230000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "16, BROOMFIELD ROAD",
         "postcode": "RM6 6JT",
         "price": 370000,
         "dateOfTransfer": "2025-09-08",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "64, NASH ROAD, CHADWELL HEATH",
+        "postcode": "RM6 5JP",
+        "price": 380000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1946,14 +2126,6 @@
         "address": "49, NORBURY GARDENS",
         "postcode": "RM6 5TR",
         "price": 530000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "64, NASH ROAD, CHADWELL HEATH",
-        "postcode": "RM6 5JP",
-        "price": 380000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2055,6 +2227,22 @@
         "newBuild": false
       },
       {
+        "address": "32, BURNS AVENUE, CHADWELL HEATH",
+        "postcode": "RM6 4DN",
+        "price": 224000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "202B, HIGH ROAD, CHADWELL HEATH",
+        "postcode": "RM6 6LS",
+        "price": 230000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "33, BATH ROAD",
         "postcode": "RM6 6NH",
         "price": 670000,
@@ -2087,18 +2275,10 @@
         "newBuild": false
       },
       {
-        "address": "202B, HIGH ROAD, CHADWELL HEATH",
-        "postcode": "RM6 6LS",
-        "price": 230000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "32, BURNS AVENUE, CHADWELL HEATH",
+        "address": "33, BURNS AVENUE, CHADWELL HEATH",
         "postcode": "RM6 4DN",
-        "price": 224000,
-        "dateOfTransfer": "2025-08-22",
+        "price": 186000,
+        "dateOfTransfer": "2025-08-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2108,14 +2288,6 @@
         "price": 330000,
         "dateOfTransfer": "2025-08-21",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "33, BURNS AVENUE, CHADWELL HEATH",
-        "postcode": "RM6 4DN",
-        "price": 186000,
-        "dateOfTransfer": "2025-08-21",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2135,14 +2307,6 @@
         "newBuild": false
       },
       {
-        "address": "41, CRUCIBLE CLOSE",
-        "postcode": "RM6 4PZ",
-        "price": 168000,
-        "dateOfTransfer": "2025-08-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "189, BARLEY LANE",
         "postcode": "RM6 4XU",
         "price": 470000,
@@ -2159,11 +2323,11 @@
         "newBuild": false
       },
       {
-        "address": "90, KENNETH ROAD",
-        "postcode": "RM6 6LP",
-        "price": 420000,
-        "dateOfTransfer": "2025-08-18",
-        "propertyType": "Terraced",
+        "address": "41, CRUCIBLE CLOSE",
+        "postcode": "RM6 4PZ",
+        "price": 168000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2178,6 +2342,14 @@
         "address": "66, SAVILLE ROAD, CHADWELL HEATH",
         "postcode": "RM6 6DT",
         "price": 620000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "90, KENNETH ROAD",
+        "postcode": "RM6 6LP",
+        "price": 420000,
         "dateOfTransfer": "2025-08-18",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2279,19 +2451,19 @@
         "newBuild": false
       },
       {
-        "address": "112, CHADVILLE GARDENS",
-        "postcode": "RM6 5UB",
-        "price": 450000,
-        "dateOfTransfer": "2025-08-04",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "50, LANGHAM DRIVE",
         "postcode": "RM6 4TB",
         "price": 510000,
         "dateOfTransfer": "2025-08-04",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "112, CHADVILLE GARDENS",
+        "postcode": "RM6 5UB",
+        "price": 450000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2431,19 +2603,19 @@
         "newBuild": false
       },
       {
-        "address": "146, HAVERING GARDENS",
-        "postcode": "RM6 5AL",
-        "price": 528000,
-        "dateOfTransfer": "2025-07-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "8A, CEDAR PARK GARDENS",
         "postcode": "RM6 4DS",
         "price": 490000,
         "dateOfTransfer": "2025-07-21",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "146, HAVERING GARDENS",
+        "postcode": "RM6 5AL",
+        "price": 528000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2487,19 +2659,19 @@
         "newBuild": false
       },
       {
-        "address": "41, TOLWORTH GARDENS",
-        "postcode": "RM6 5TJ",
-        "price": 492000,
-        "dateOfTransfer": "2025-07-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "12, PORTLAND GARDENS",
         "postcode": "RM6 5UJ",
         "price": 465000,
         "dateOfTransfer": "2025-07-10",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "41, TOLWORTH GARDENS",
+        "postcode": "RM6 5TJ",
+        "price": 492000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2695,19 +2867,19 @@
         "newBuild": false
       },
       {
-        "address": "7, KINGS AVENUE",
-        "postcode": "RM6 6BD",
-        "price": 499000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "44, BILLET ROAD",
         "postcode": "RM6 5SU",
         "price": 477000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, KINGS AVENUE",
+        "postcode": "RM6 6BD",
+        "price": 499000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2759,6 +2931,14 @@
         "newBuild": false
       },
       {
+        "address": "20, MORLEY ROAD",
+        "postcode": "RM6 6XB",
+        "price": 445000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "7, TOLWORTH GARDENS",
         "postcode": "RM6 5TJ",
         "price": 440000,
@@ -2775,11 +2955,11 @@
         "newBuild": false
       },
       {
-        "address": "20, MORLEY ROAD",
-        "postcode": "RM6 6XB",
-        "price": 445000,
+        "address": "131, PRIMROSE AVENUE",
+        "postcode": "RM6 4PR",
+        "price": 595000,
         "dateOfTransfer": "2025-05-23",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2951,14 +3131,6 @@
         "newBuild": false
       },
       {
-        "address": "8, BURCHETT WAY",
-        "postcode": "RM6 6BX",
-        "price": 400000,
-        "dateOfTransfer": "2025-04-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "43, JOYDON DRIVE",
         "postcode": "RM6 4ST",
         "price": 518000,
@@ -2967,10 +3139,34 @@
         "newBuild": false
       },
       {
+        "address": "8, BURCHETT WAY",
+        "postcode": "RM6 6BX",
+        "price": 400000,
+        "dateOfTransfer": "2025-04-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "SUDBURY COURT, FLAT 6, GLANDFORD WAY, CHADWELL HEATH",
         "postcode": "RM6 4UJ",
         "price": 275000,
         "dateOfTransfer": "2025-04-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, CEDAR AVENUE",
+        "postcode": "RM6 6ST",
+        "price": 530000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "126, SHEPHERDS CLOSE",
+        "postcode": "RM6 5AJ",
+        "price": 255000,
+        "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2983,14 +3179,6 @@
         "newBuild": false
       },
       {
-        "address": "64, GRANTHAM GARDENS, CHADWELL HEATH",
-        "postcode": "RM6 6HJ",
-        "price": 250000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "219B, ROSE LANE, CHADWELL HEATH",
         "postcode": "RM6 5NH",
         "price": 235000,
@@ -2999,11 +3187,11 @@
         "newBuild": false
       },
       {
-        "address": "7, CEDAR AVENUE",
-        "postcode": "RM6 6ST",
-        "price": 530000,
+        "address": "64, GRANTHAM GARDENS, CHADWELL HEATH",
+        "postcode": "RM6 6HJ",
+        "price": 250000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3039,11 +3227,11 @@
         "newBuild": false
       },
       {
-        "address": "126, SHEPHERDS CLOSE",
-        "postcode": "RM6 5AJ",
-        "price": 255000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
+        "address": "11, ST JAMES GARDENS, LITTLE HEATH",
+        "postcode": "RM6 5RY",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3055,35 +3243,11 @@
         "newBuild": false
       },
       {
-        "address": "29, ST JAMES GARDENS, LITTLE HEATH",
-        "postcode": "RM6 5RY",
-        "price": 320000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "21, MORLEY ROAD",
-        "postcode": "RM6 6UX",
-        "price": 485000,
+        "address": "78, BURLINGTON GARDENS, CHADWELL HEATH",
+        "postcode": "RM6 6ET",
+        "price": 527000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "21, ROLES GROVE",
-        "postcode": "RM6 5LT",
-        "price": 530000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "77, SHEPHERDS CLOSE",
-        "postcode": "RM6 5AH",
-        "price": 155000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3119,14 +3283,6 @@
         "newBuild": false
       },
       {
-        "address": "11, ST JAMES GARDENS, LITTLE HEATH",
-        "postcode": "RM6 5RY",
-        "price": 425000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "92, GROVE ROAD, CHADWELL HEATH",
         "postcode": "RM6 4UH",
         "price": 500000,
@@ -3143,6 +3299,30 @@
         "newBuild": false
       },
       {
+        "address": "29, ST JAMES GARDENS, LITTLE HEATH",
+        "postcode": "RM6 5RY",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, MORLEY ROAD",
+        "postcode": "RM6 6UX",
+        "price": 485000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, ROLES GROVE",
+        "postcode": "RM6 5LT",
+        "price": 530000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "124, ECCLESTON CRESCENT",
         "postcode": "RM6 4RD",
         "price": 605000,
@@ -3151,27 +3331,11 @@
         "newBuild": false
       },
       {
-        "address": "78, BURLINGTON GARDENS, CHADWELL HEATH",
-        "postcode": "RM6 6ET",
-        "price": 527000,
+        "address": "77, SHEPHERDS CLOSE",
+        "postcode": "RM6 5AH",
+        "price": 155000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "1F, PEMBERTON GARDENS",
-        "postcode": "RM6 6SH",
-        "price": 473000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "39, JARROW ROAD",
-        "postcode": "RM6 5RH",
-        "price": 490000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3188,6 +3352,22 @@
         "price": 480000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1F, PEMBERTON GARDENS",
+        "postcode": "RM6 6SH",
+        "price": 473000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, JARROW ROAD",
+        "postcode": "RM6 5RH",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3271,14 +3451,6 @@
         "newBuild": false
       },
       {
-        "address": "30, SHERMAN GARDENS, CHADWELL HEATH",
-        "postcode": "RM6 4AX",
-        "price": 290000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "32, GRESHAM DRIVE",
         "postcode": "RM6 4TS",
         "price": 490000,
@@ -3308,6 +3480,14 @@
         "price": 340000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, SHERMAN GARDENS, CHADWELL HEATH",
+        "postcode": "RM6 4AX",
+        "price": 290000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3359,14 +3539,6 @@
         "newBuild": false
       },
       {
-        "address": "150, CHADWELL HEATH LANE",
-        "postcode": "RM6 4YX",
-        "price": 446000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "12A, CLARISSA ROAD",
         "postcode": "RM6 4ND",
         "price": 215000,
@@ -3380,6 +3552,14 @@
         "price": 165000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "150, CHADWELL HEATH LANE",
+        "postcode": "RM6 4YX",
+        "price": 446000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3415,19 +3595,19 @@
         "newBuild": false
       },
       {
-        "address": "122, ECCLESTON CRESCENT",
-        "postcode": "RM6 4RB",
-        "price": 525000,
-        "dateOfTransfer": "2025-03-13",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "32, MAYFAIR AVENUE",
         "postcode": "RM6 6UB",
         "price": 434000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "122, ECCLESTON CRESCENT",
+        "postcode": "RM6 4RB",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3471,17 +3651,17 @@
         "newBuild": false
       },
       {
-        "address": "9, REYNOLDS AVENUE, CHADWELL HEATH",
-        "postcode": "RM6 4NT",
-        "price": 490000,
+        "address": "85, JARROW ROAD",
+        "postcode": "RM6 5RP",
+        "price": 595000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "85, JARROW ROAD",
-        "postcode": "RM6 5RP",
-        "price": 595000,
+        "address": "9, REYNOLDS AVENUE, CHADWELL HEATH",
+        "postcode": "RM6 4NT",
+        "price": 490000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3527,17 +3707,17 @@
         "newBuild": false
       },
       {
-        "address": "134, BILLET ROAD",
-        "postcode": "RM6 5PS",
-        "price": 322500,
+        "address": "GROVE COURT, 64, BURNS AVENUE, CHADWELL HEATH",
+        "postcode": "RM6 4DG",
+        "price": 195000,
         "dateOfTransfer": "2025-03-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "GROVE COURT, 64, BURNS AVENUE, CHADWELL HEATH",
-        "postcode": "RM6 4DG",
-        "price": 195000,
+        "address": "134, BILLET ROAD",
+        "postcode": "RM6 5PS",
+        "price": 322500,
         "dateOfTransfer": "2025-03-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3547,14 +3727,6 @@
         "postcode": "RM6 4TP",
         "price": 502500,
         "dateOfTransfer": "2025-03-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "68, ECCLESTON CRESCENT",
-        "postcode": "RM6 4QU",
-        "price": 575000,
-        "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3580,6 +3752,14 @@
         "price": 160000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68, ECCLESTON CRESCENT",
+        "postcode": "RM6 4QU",
+        "price": 575000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3615,19 +3795,19 @@
         "newBuild": false
       },
       {
-        "address": "10, BURCHETT WAY",
-        "postcode": "RM6 6BX",
-        "price": 400000,
-        "dateOfTransfer": "2025-02-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "26, HAVERING GARDENS",
         "postcode": "RM6 5AA",
         "price": 510000,
         "dateOfTransfer": "2025-02-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, BURCHETT WAY",
+        "postcode": "RM6 6BX",
+        "price": 400000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3663,14 +3843,6 @@
         "newBuild": false
       },
       {
-        "address": "4, NURSERY CLOSE",
-        "postcode": "RM6 4LB",
-        "price": 415000,
-        "dateOfTransfer": "2025-02-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "122, SHEPHERDS CLOSE",
         "postcode": "RM6 5AJ",
         "price": 280000,
@@ -3682,6 +3854,14 @@
         "address": "19, PRIMROSE AVENUE",
         "postcode": "RM6 4QB",
         "price": 550000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, NURSERY CLOSE",
+        "postcode": "RM6 4LB",
+        "price": 415000,
         "dateOfTransfer": "2025-02-20",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3703,19 +3883,19 @@
         "newBuild": false
       },
       {
-        "address": "39, MELBOURNE GARDENS",
-        "postcode": "RM6 6TD",
-        "price": 515000,
-        "dateOfTransfer": "2025-02-18",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "44, PRIESTLEY GARDENS",
         "postcode": "RM6 4SL",
         "price": 720000,
         "dateOfTransfer": "2025-02-18",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, MELBOURNE GARDENS",
+        "postcode": "RM6 6TD",
+        "price": 515000,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3775,19 +3955,19 @@
         "newBuild": false
       },
       {
-        "address": "40, PEMBERTON GARDENS",
-        "postcode": "RM6 6SH",
-        "price": 465000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "29, LEXDEN DRIVE",
         "postcode": "RM6 4TJ",
         "price": 485000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "40, PEMBERTON GARDENS",
+        "postcode": "RM6 6SH",
+        "price": 465000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3799,14 +3979,6 @@
         "newBuild": false
       },
       {
-        "address": "6, HATHAWAY GARDENS",
-        "postcode": "RM6 5TP",
-        "price": 425000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "106, SOMERVILLE ROAD",
         "postcode": "RM6 5AS",
         "price": 444600,
@@ -3815,11 +3987,11 @@
         "newBuild": false
       },
       {
-        "address": "24, MAYFAIR AVENUE",
-        "postcode": "RM6 6UB",
-        "price": 555000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Detached",
+        "address": "6, HATHAWAY GARDENS",
+        "postcode": "RM6 5TP",
+        "price": 425000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3836,6 +4008,14 @@
         "price": 114000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, MAYFAIR AVENUE",
+        "postcode": "RM6 6UB",
+        "price": 555000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3895,6 +4075,30 @@
         "newBuild": false
       },
       {
+        "address": "21, WHALEBONE GROVE",
+        "postcode": "RM6 6BU",
+        "price": 282500,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "120, MILL LANE",
+        "postcode": "RM6 6RS",
+        "price": 482000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "102, BRIAN ROAD",
+        "postcode": "RM6 5BT",
+        "price": 460000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "39, CHADWELL HEATH LANE",
         "postcode": "RM6 4LP",
         "price": 405000,
@@ -3908,30 +4112,6 @@
         "price": 565000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "120, MILL LANE",
-        "postcode": "RM6 6RS",
-        "price": 482000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "21, WHALEBONE GROVE",
-        "postcode": "RM6 6BU",
-        "price": 282500,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "102, BRIAN ROAD",
-        "postcode": "RM6 5BT",
-        "price": 460000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3967,22 +4147,6 @@
         "newBuild": false
       },
       {
-        "address": "131, HAVERING GARDENS",
-        "postcode": "RM6 5AL",
-        "price": 580000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "117, SOMERVILLE ROAD",
-        "postcode": "RM6 5AX",
-        "price": 432000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "HUTCHINSON COURT, 40, PADNALL ROAD",
         "postcode": "RM6 5ET",
         "price": 270000,
@@ -3999,6 +4163,22 @@
         "newBuild": false
       },
       {
+        "address": "131, HAVERING GARDENS",
+        "postcode": "RM6 5AL",
+        "price": 580000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "117, SOMERVILLE ROAD",
+        "postcode": "RM6 5AX",
+        "price": 432000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "22, ROLES GROVE",
         "postcode": "RM6 5LT",
         "price": 230000,
@@ -4007,17 +4187,17 @@
         "newBuild": false
       },
       {
-        "address": "31, KINGSTON HILL AVENUE",
-        "postcode": "RM6 5QJ",
-        "price": 405000,
+        "address": "58, LANGHAM DRIVE",
+        "postcode": "RM6 4TB",
+        "price": 615000,
         "dateOfTransfer": "2025-01-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "58, LANGHAM DRIVE",
-        "postcode": "RM6 4TB",
-        "price": 615000,
+        "address": "31, KINGSTON HILL AVENUE",
+        "postcode": "RM6 5QJ",
+        "price": 405000,
         "dateOfTransfer": "2025-01-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4047,8 +4227,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 443758,
-    "medianPrice": 432000
+    "averagePrice": 441434,
+    "medianPrice": 432500
   },
   "representatives": {
     "representatives": [

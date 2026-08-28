@@ -3,8 +3,8 @@
   "slug": "rm2",
   "city": "London",
   "borough": "Havering",
-  "latitude": 51.58430010820897,
-  "longitude": 0.20340534701492535,
+  "latitude": 51.584395477272736,
+  "longitude": 0.20364540151515154,
   "wards": [
     "Marshalls & Rise Park",
     "Rush Green & Crowlands",
@@ -58,8 +58,9 @@
         "name": "Squirrels Heath Primary School",
         "urn": "102303",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "06/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Salisbury Road, Gidea Park, Romford",
         "postcode": "RM2 5TP",
         "numberOfPupils": 600,
@@ -69,8 +70,9 @@
         "name": "Gidea Park Primary School",
         "urn": "102308",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "19/05/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lodge Avenue, Gidea Park, Romford",
         "postcode": "RM2 5AJ",
         "numberOfPupils": 459,
@@ -82,6 +84,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "2 Balgores Lane, Gidea Park, Romford",
         "postcode": "RM2 5JR",
         "numberOfPupils": 163,
@@ -93,6 +96,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "South Drive, Gidea Park, Romford",
         "postcode": "RM2 6HH",
         "numberOfPupils": 144,
@@ -102,8 +106,9 @@
         "name": "The Royal Liberty School",
         "urn": "143877",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "08/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Upper Brentwood Road, Romford",
         "postcode": "RM2 6HJ",
         "numberOfPupils": 749,
@@ -115,97 +120,161 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 312,
+        "totalCrimes": 314,
         "violentCrimes": 111,
-        "propertyCrimes": 103
+        "propertyCrimes": 104
       },
       {
         "month": "2025-08",
-        "totalCrimes": 291,
-        "violentCrimes": 118,
-        "propertyCrimes": 90
+        "totalCrimes": 287,
+        "violentCrimes": 116,
+        "propertyCrimes": 89
       },
       {
         "month": "2025-09",
-        "totalCrimes": 243,
-        "violentCrimes": 74,
+        "totalCrimes": 239,
+        "violentCrimes": 72,
         "propertyCrimes": 95
       },
       {
         "month": "2025-10",
         "totalCrimes": 254,
-        "violentCrimes": 89,
-        "propertyCrimes": 97
+        "violentCrimes": 88,
+        "propertyCrimes": 98
       },
       {
         "month": "2025-11",
-        "totalCrimes": 265,
+        "totalCrimes": 263,
         "violentCrimes": 103,
         "propertyCrimes": 101
       },
       {
         "month": "2025-12",
-        "totalCrimes": 311,
-        "violentCrimes": 121,
-        "propertyCrimes": 107
+        "totalCrimes": 306,
+        "violentCrimes": 118,
+        "propertyCrimes": 105
       },
       {
         "month": "2026-01",
-        "totalCrimes": 241,
-        "violentCrimes": 94,
-        "propertyCrimes": 83
+        "totalCrimes": 232,
+        "violentCrimes": 90,
+        "propertyCrimes": 81
       },
       {
         "month": "2026-02",
-        "totalCrimes": 244,
-        "violentCrimes": 91,
-        "propertyCrimes": 87
+        "totalCrimes": 236,
+        "violentCrimes": 90,
+        "propertyCrimes": 86
       },
       {
         "month": "2026-03",
-        "totalCrimes": 253,
+        "totalCrimes": 252,
         "violentCrimes": 97,
         "propertyCrimes": 89
       },
       {
         "month": "2026-04",
-        "totalCrimes": 233,
-        "violentCrimes": 88,
-        "propertyCrimes": 89
+        "totalCrimes": 228,
+        "violentCrimes": 87,
+        "propertyCrimes": 87
       },
       {
         "month": "2026-05",
-        "totalCrimes": 284,
-        "violentCrimes": 97,
-        "propertyCrimes": 105
+        "totalCrimes": 277,
+        "violentCrimes": 95,
+        "propertyCrimes": 103
       },
       {
         "month": "2026-06",
-        "totalCrimes": 285,
-        "violentCrimes": 114,
-        "propertyCrimes": 91
+        "totalCrimes": 281,
+        "violentCrimes": 116,
+        "propertyCrimes": 89
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 681,
+      "anti-social-behaviour": 663,
       "bicycle-theft": 27,
       "burglary": 103,
-      "criminal-damage-arson": 127,
-      "drugs": 157,
-      "other-theft": 236,
-      "public-order": 189,
+      "criminal-damage-arson": 124,
+      "drugs": 153,
+      "other-theft": 234,
+      "public-order": 191,
       "robbery": 75,
       "shoplifting": 280,
-      "theft-from-the-person": 84,
-      "vehicle-crime": 280,
-      "violent-crime": 916,
-      "other-crime": 44,
+      "theft-from-the-person": 83,
+      "vehicle-crime": 276,
+      "violent-crime": 900,
+      "other-crime": 43,
       "possession-of-weapons": 17
     },
-    "totalLast12Months": 3216
+    "totalLast12Months": 3169
   },
   "property": {
     "sales": [
+      {
+        "address": "23, CARLTON ROAD, GIDEA PARK",
+        "postcode": "RM2 5AP",
+        "price": 570000,
+        "dateOfTransfer": "2026-07-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SQUIRRELS COURT, 7, SQUIRRELS HEATH LANE",
+        "postcode": "RM2 6DL",
+        "price": 277000,
+        "dateOfTransfer": "2026-07-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "369, BRENTWOOD ROAD",
+        "postcode": "RM2 5TH",
+        "price": 530000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "GIDEA LODGE, 220A, FLAT 6, MAIN ROAD",
+        "postcode": "RM2 5HR",
+        "price": 175000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5A, HEATH PARK ROAD",
+        "postcode": "RM2 5UB",
+        "price": 364000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, DURHAM AVENUE",
+        "postcode": "RM2 6JJ",
+        "price": 465000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "441, BRENTWOOD ROAD",
+        "postcode": "RM2 6DD",
+        "price": 950000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, BALGORES SQUARE",
+        "postcode": "RM2 6AU",
+        "price": 850000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "17, GLENWOOD DRIVE",
         "postcode": "RM2 5AR",
@@ -220,6 +289,14 @@
         "price": 775000,
         "dateOfTransfer": "2026-06-18",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "72, STATION ROAD, GIDEA PARK",
+        "postcode": "RM2 6DA",
+        "price": 275000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -268,6 +345,14 @@
         "price": 1000000,
         "dateOfTransfer": "2026-05-28",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, HASTINGS ROAD",
+        "postcode": "RM2 5SR",
+        "price": 450000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -391,19 +476,19 @@
         "newBuild": false
       },
       {
-        "address": "14, COMPTON AVENUE",
-        "postcode": "RM2 6ET",
-        "price": 770000,
-        "dateOfTransfer": "2026-04-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "34, RISEBRIDGE ROAD",
         "postcode": "RM2 5PR",
         "price": 1025000,
         "dateOfTransfer": "2026-04-27",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, COMPTON AVENUE",
+        "postcode": "RM2 6ET",
+        "price": 770000,
+        "dateOfTransfer": "2026-04-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -471,6 +556,14 @@
         "newBuild": false
       },
       {
+        "address": "26, STATION ROAD, GIDEA PARK",
+        "postcode": "RM2 6DA",
+        "price": 312500,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "MASTERS COURT, 3, FLAT 14, ACADEMY FIELDS ROAD",
         "postcode": "RM2 5UG",
         "price": 300000,
@@ -487,14 +580,6 @@
         "newBuild": false
       },
       {
-        "address": "26, STATION ROAD, GIDEA PARK",
-        "postcode": "RM2 6DA",
-        "price": 312500,
-        "dateOfTransfer": "2026-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "COLLEGE COURT, 3, 21, SCHOLARS WAY",
         "postcode": "RM2 5UQ",
         "price": 222000,
@@ -503,9 +588,9 @@
         "newBuild": false
       },
       {
-        "address": "20, CROSSWAYS",
-        "postcode": "RM2 6AL",
-        "price": 922000,
+        "address": "148, CAMBRIDGE AVENUE",
+        "postcode": "RM2 6RA",
+        "price": 712500,
         "dateOfTransfer": "2026-03-25",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -519,18 +604,18 @@
         "newBuild": false
       },
       {
+        "address": "20, CROSSWAYS",
+        "postcode": "RM2 6AL",
+        "price": 922000,
+        "dateOfTransfer": "2026-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "GIDEA LODGE, 220A, FLAT 5, MAIN ROAD",
         "postcode": "RM2 5HR",
         "price": 240000,
         "dateOfTransfer": "2026-03-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "COOPERS COURT, FLAT 9, KIDMAN CLOSE, GIDEA PARK",
-        "postcode": "RM2 6GD",
-        "price": 210000,
-        "dateOfTransfer": "2026-03-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -540,6 +625,14 @@
         "price": 370000,
         "dateOfTransfer": "2026-03-23",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "COOPERS COURT, FLAT 9, KIDMAN CLOSE, GIDEA PARK",
+        "postcode": "RM2 6GD",
+        "price": 210000,
+        "dateOfTransfer": "2026-03-23",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -687,14 +780,6 @@
         "newBuild": false
       },
       {
-        "address": "11, GEDDY COURT",
-        "postcode": "RM2 6BE",
-        "price": 270000,
-        "dateOfTransfer": "2026-02-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "23, TUDOR DRIVE",
         "postcode": "RM2 5LJ",
         "price": 362000,
@@ -708,6 +793,14 @@
         "price": 420000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, GEDDY COURT",
+        "postcode": "RM2 6BE",
+        "price": 270000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1087,14 +1180,6 @@
         "newBuild": false
       },
       {
-        "address": "THE RAILSTORE, 37 SOUTH BLOCK, KIDMAN CLOSE",
-        "postcode": "RM2 6JH",
-        "price": 348500,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "47, TUDOR DRIVE",
         "postcode": "RM2 5LJ",
         "price": 380000,
@@ -1103,9 +1188,9 @@
         "newBuild": false
       },
       {
-        "address": "MOUNTBATTEN HOUSE, 36, ELVET AVENUE",
-        "postcode": "RM2 6JT",
-        "price": 200000,
+        "address": "THE RAILSTORE, 37 SOUTH BLOCK, KIDMAN CLOSE",
+        "postcode": "RM2 6JH",
+        "price": 348500,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1119,11 +1204,11 @@
         "newBuild": false
       },
       {
-        "address": "3, PEMBERTON AVENUE",
-        "postcode": "RM2 6EX",
-        "price": 850000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Semi-detached",
+        "address": "MOUNTBATTEN HOUSE, 36, ELVET AVENUE",
+        "postcode": "RM2 6JT",
+        "price": 200000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1132,6 +1217,14 @@
         "price": 1200000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, HEATH PARK COURT",
+        "postcode": "RM2 5UA",
+        "price": 308000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1159,11 +1252,11 @@
         "newBuild": false
       },
       {
-        "address": "22, HEATH PARK COURT",
-        "postcode": "RM2 5UA",
-        "price": 308000,
+        "address": "3, PEMBERTON AVENUE",
+        "postcode": "RM2 6EX",
+        "price": 850000,
         "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1199,19 +1292,19 @@
         "newBuild": false
       },
       {
-        "address": "79, STANLEY AVENUE",
-        "postcode": "RM2 5DJ",
-        "price": 685000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "2, CROSSWAYS",
         "postcode": "RM2 6AA",
         "price": 927500,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "79, STANLEY AVENUE",
+        "postcode": "RM2 5DJ",
+        "price": 685000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1231,19 +1324,19 @@
         "newBuild": false
       },
       {
-        "address": "9, GEDDY COURT",
-        "postcode": "RM2 6BE",
-        "price": 285000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "80, LINKS AVENUE",
         "postcode": "RM2 6NJ",
         "price": 650000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "9, GEDDY COURT",
+        "postcode": "RM2 6BE",
+        "price": 285000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1260,6 +1353,14 @@
         "price": 515000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, REPTON AVENUE",
+        "postcode": "RM2 5LT",
+        "price": 635000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1295,14 +1396,6 @@
         "newBuild": false
       },
       {
-        "address": "29, CROSSWAYS",
-        "postcode": "RM2 6AJ",
-        "price": 1225000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "37A, LODGE AVENUE",
         "postcode": "RM2 5AB",
         "price": 224000,
@@ -1319,19 +1412,19 @@
         "newBuild": false
       },
       {
+        "address": "29, CROSSWAYS",
+        "postcode": "RM2 6AJ",
+        "price": 1225000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "22, TUDOR AVENUE",
         "postcode": "RM2 5LB",
         "price": 765000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "HIGHLANDS APARTMENTS, 59, 3, MAIN ROAD",
-        "postcode": "RM2 5EH",
-        "price": 380000,
-        "dateOfTransfer": "2025-09-10",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1343,11 +1436,11 @@
         "newBuild": false
       },
       {
-        "address": "35, REPTON AVENUE",
-        "postcode": "RM2 5LT",
-        "price": 635000,
-        "dateOfTransfer": "2025-09-06",
-        "propertyType": "Semi-detached",
+        "address": "HIGHLANDS APARTMENTS, 59, 3, MAIN ROAD",
+        "postcode": "RM2 5EH",
+        "price": 380000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1391,11 +1484,11 @@
         "newBuild": false
       },
       {
-        "address": "COOPERS COURT, FLAT 5, KIDMAN CLOSE, GIDEA PARK",
-        "postcode": "RM2 6GD",
-        "price": 220000,
+        "address": "41, CROSSWAYS",
+        "postcode": "RM2 6AJ",
+        "price": 775000,
         "dateOfTransfer": "2025-08-21",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1407,11 +1500,11 @@
         "newBuild": false
       },
       {
-        "address": "41, CROSSWAYS",
-        "postcode": "RM2 6AJ",
-        "price": 775000,
+        "address": "COOPERS COURT, FLAT 5, KIDMAN CLOSE, GIDEA PARK",
+        "postcode": "RM2 6GD",
+        "price": 220000,
         "dateOfTransfer": "2025-08-21",
-        "propertyType": "Detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1711,19 +1804,19 @@
         "newBuild": false
       },
       {
-        "address": "COLLEGE COURT, 3, 24, SCHOLARS WAY",
-        "postcode": "RM2 5UQ",
-        "price": 271000,
-        "dateOfTransfer": "2025-06-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "199, CARLTON ROAD, GIDEA PARK",
         "postcode": "RM2 5AX",
         "price": 515000,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "COLLEGE COURT, 3, 24, SCHOLARS WAY",
+        "postcode": "RM2 5UQ",
+        "price": 271000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1767,17 +1860,17 @@
         "newBuild": false
       },
       {
-        "address": "169, CARLTON ROAD, GIDEA PARK",
-        "postcode": "RM2 5AX",
-        "price": 530000,
+        "address": "327, BRENTWOOD ROAD",
+        "postcode": "RM2 5TH",
+        "price": 370000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "327, BRENTWOOD ROAD",
-        "postcode": "RM2 5TH",
-        "price": 370000,
+        "address": "169, CARLTON ROAD, GIDEA PARK",
+        "postcode": "RM2 5AX",
+        "price": 530000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1831,14 +1924,6 @@
         "newBuild": false
       },
       {
-        "address": "56, BELGRAVE AVENUE",
-        "postcode": "RM2 6QA",
-        "price": 695000,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "VICTORIA HOUSE, 32, DURHAM AVENUE",
         "postcode": "RM2 6JL",
         "price": 200000,
@@ -1852,6 +1937,14 @@
         "price": 698000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "56, BELGRAVE AVENUE",
+        "postcode": "RM2 6QA",
+        "price": 695000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1943,6 +2036,22 @@
         "newBuild": false
       },
       {
+        "address": "19, GLENWOOD DRIVE",
+        "postcode": "RM2 5AR",
+        "price": 517250,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, HEATH DRIVE",
+        "postcode": "RM2 5QB",
+        "price": 1225000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "10, REDFERN GARDENS",
         "postcode": "RM2 6PY",
         "price": 500000,
@@ -1975,22 +2084,6 @@
         "newBuild": false
       },
       {
-        "address": "19, GLENWOOD DRIVE",
-        "postcode": "RM2 5AR",
-        "price": 517250,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "8, HEATH DRIVE",
-        "postcode": "RM2 5QB",
-        "price": 1225000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "88, STANLEY AVENUE",
         "postcode": "RM2 5BX",
         "price": 610000,
@@ -2007,11 +2100,11 @@
         "newBuild": false
       },
       {
-        "address": "424A, UPPER BRENTWOOD ROAD",
-        "postcode": "RM2 6JX",
-        "price": 265000,
+        "address": "52, THE RIDGEWAY, GIDEA PARK",
+        "postcode": "RM2 5BT",
+        "price": 767500,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2023,27 +2116,11 @@
         "newBuild": false
       },
       {
-        "address": "55, STANLEY AVENUE",
-        "postcode": "RM2 5DJ",
-        "price": 653000,
+        "address": "424A, UPPER BRENTWOOD ROAD",
+        "postcode": "RM2 6JX",
+        "price": 265000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "22, TUDOR GARDENS",
-        "postcode": "RM2 5LL",
-        "price": 785000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "590A, UPPER BRENTWOOD ROAD",
-        "postcode": "RM2 6HU",
-        "price": 885000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2087,17 +2164,33 @@
         "newBuild": false
       },
       {
-        "address": "52, THE RIDGEWAY, GIDEA PARK",
-        "postcode": "RM2 5BT",
-        "price": 767500,
+        "address": "24, MILLBROOK GARDENS, GIDEA PARK",
+        "postcode": "RM2 5RP",
+        "price": 505000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "55, STANLEY AVENUE",
+        "postcode": "RM2 5DJ",
+        "price": 653000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "24, MILLBROOK GARDENS, GIDEA PARK",
-        "postcode": "RM2 5RP",
-        "price": 505000,
+        "address": "22, TUDOR GARDENS",
+        "postcode": "RM2 5LL",
+        "price": 785000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "590A, UPPER BRENTWOOD ROAD",
+        "postcode": "RM2 6HU",
+        "price": 885000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2108,6 +2201,22 @@
         "price": 350000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HIGHLANDS APARTMENTS, 59, 24, MAIN ROAD",
+        "postcode": "RM2 5EH",
+        "price": 370000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "523, UPPER BRENTWOOD ROAD",
+        "postcode": "RM2 6LD",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2130,22 +2239,6 @@
         "address": "THE RAILSTORE, 3 NORTH BLOCK, KIDMAN CLOSE",
         "postcode": "RM2 6JN",
         "price": 307000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "523, UPPER BRENTWOOD ROAD",
-        "postcode": "RM2 6LD",
-        "price": 625000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "HIGHLANDS APARTMENTS, 59, 24, MAIN ROAD",
-        "postcode": "RM2 5EH",
-        "price": 370000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2191,6 +2284,14 @@
         "newBuild": false
       },
       {
+        "address": "65, CARLTON ROAD, GIDEA PARK",
+        "postcode": "RM2 5AT",
+        "price": 675000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "86, STANLEY AVENUE",
         "postcode": "RM2 5BX",
         "price": 645000,
@@ -2204,14 +2305,6 @@
         "price": 850000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "65, CARLTON ROAD, GIDEA PARK",
-        "postcode": "RM2 5AT",
-        "price": 675000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2319,17 +2412,25 @@
         "newBuild": false
       },
       {
-        "address": "DREYWOOD COURT, 53, FLAT 83, SQUIRRELS HEATH LANE",
-        "postcode": "RM2 6EY",
-        "price": 230000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "8, KINGSLEY COURT",
         "postcode": "RM2 5SY",
         "price": 267000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, CATHERINE ROAD",
+        "postcode": "RM2 5SA",
+        "price": 411000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12A, SQUIRRELS HEATH LANE",
+        "postcode": "RM2 6DS",
+        "price": 457000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2351,19 +2452,11 @@
         "newBuild": false
       },
       {
-        "address": "20, CATHERINE ROAD",
-        "postcode": "RM2 5SA",
-        "price": 411000,
+        "address": "DREYWOOD COURT, 53, FLAT 83, SQUIRRELS HEATH LANE",
+        "postcode": "RM2 6EY",
+        "price": 230000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "12A, SQUIRRELS HEATH LANE",
-        "postcode": "RM2 6DS",
-        "price": 457000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2399,14 +2492,6 @@
         "newBuild": false
       },
       {
-        "address": "BURNS COURT, 102, FLAT 12, BALGORES LANE",
-        "postcode": "RM2 5JU",
-        "price": 495000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "152, MAIN ROAD",
         "postcode": "RM2 5HS",
         "price": 790000,
@@ -2418,6 +2503,14 @@
         "address": "9, HARCOURT MEWS",
         "postcode": "RM2 5BN",
         "price": 222000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BURNS COURT, 102, FLAT 12, BALGORES LANE",
+        "postcode": "RM2 5JU",
+        "price": 495000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2639,19 +2732,19 @@
         "newBuild": false
       },
       {
-        "address": "COOPERS COURT, FLAT 4, KIDMAN CLOSE, GIDEA PARK",
-        "postcode": "RM2 6GD",
-        "price": 190000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "3, HEATH DRIVE",
         "postcode": "RM2 5QB",
         "price": 610000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "COOPERS COURT, FLAT 4, KIDMAN CLOSE, GIDEA PARK",
+        "postcode": "RM2 6GD",
+        "price": 190000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2663,19 +2756,19 @@
         "newBuild": false
       },
       {
-        "address": "8, GLENWOOD DRIVE",
-        "postcode": "RM2 5AS",
-        "price": 605000,
-        "dateOfTransfer": "2025-01-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "33, BROOK ROAD",
         "postcode": "RM2 5QS",
         "price": 780000,
         "dateOfTransfer": "2025-01-14",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, GLENWOOD DRIVE",
+        "postcode": "RM2 5AS",
+        "price": 605000,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2751,7 +2844,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 530331,
+    "averagePrice": 529677,
     "medianPrice": 515000
   },
   "representatives": {

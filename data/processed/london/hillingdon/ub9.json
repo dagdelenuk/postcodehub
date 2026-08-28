@@ -3,8 +3,8 @@
   "slug": "ub9",
   "city": "London",
   "borough": "Hillingdon",
-  "latitude": 51.586409903002334,
-  "longitude": -0.49236087990762145,
+  "latitude": 51.58705211556603,
+  "longitude": -0.4922705023584908,
   "wards": [
     "Chorleywood South & Maple Cross",
     "Gerrards Cross & Denham",
@@ -87,7 +87,8 @@
         "urn": "102381",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Park Lane, Harefield",
         "postcode": "UB9 6BJ",
         "numberOfPupils": 207,
@@ -98,7 +99,8 @@
         "urn": "110219",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Cheapside Lane, Denham, Uxbridge",
         "postcode": "UB9 5AE",
         "numberOfPupils": 100,
@@ -109,7 +111,8 @@
         "urn": "135004",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "23/06/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Northwood Way, Harefield, Uxbridge",
         "postcode": "UB9 6ET",
         "numberOfPupils": 287,
@@ -120,7 +123,8 @@
         "urn": "139679",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/10/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Nightingale Way, Denham Green",
         "postcode": "UB9 5JL",
         "numberOfPupils": 226,
@@ -223,6 +227,78 @@
   "property": {
     "sales": [
       {
+        "address": "2, SIDE ROAD, DENHAM",
+        "postcode": "UB9 5EE",
+        "price": 618000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "63, ST MARYS ROAD, HAREFIELD",
+        "postcode": "UB9 6AE",
+        "price": 550000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, MORSE CLOSE, HAREFIELD",
+        "postcode": "UB9 6RA",
+        "price": 435000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "50, OAKSIDE, DENHAM",
+        "postcode": "UB9 4BX",
+        "price": 410000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "47, LINDSEY ROAD, DENHAM",
+        "postcode": "UB9 5BW",
+        "price": 415000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, PARKVIEW COTTAGES, HAREFIELD",
+        "postcode": "UB9 6LE",
+        "price": 410000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "40, LINDSEY ROAD, DENHAM",
+        "postcode": "UB9 5BP",
+        "price": 317500,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "201, ASH GROVE, HAREFIELD",
+        "postcode": "UB9 6HA",
+        "price": 420000,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "126, PARK LANE, HAREFIELD",
+        "postcode": "UB9 6BN",
+        "price": 600000,
+        "dateOfTransfer": "2026-06-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "34, RICKMANSWORTH ROAD, HAREFIELD",
         "postcode": "UB9 6JX",
         "price": 300000,
@@ -303,6 +379,14 @@
         "newBuild": false
       },
       {
+        "address": "7, ST MARYS ROAD, DENHAM",
+        "postcode": "UB9 5JU",
+        "price": 635000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "3, SKYLARK ROAD, DENHAM",
         "postcode": "UB9 4HR",
         "price": 395000,
@@ -343,19 +427,19 @@
         "newBuild": false
       },
       {
-        "address": "GLOUCESTER COURT, FLAT 3, MOORFIELD ROAD, DENHAM",
-        "postcode": "UB9 5NR",
-        "price": 295000,
-        "dateOfTransfer": "2026-04-02",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "THE LONG ROOM APARTMENTS, 30, ROYAL QUAY, HAREFIELD",
         "postcode": "UB9 6FE",
         "price": 355000,
         "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GLOUCESTER COURT, FLAT 3, MOORFIELD ROAD, DENHAM",
+        "postcode": "UB9 5NR",
+        "price": 295000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -387,6 +471,14 @@
         "postcode": "UB9 6HX",
         "price": 685000,
         "dateOfTransfer": "2026-03-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, DENHAM GREEN CLOSE, DENHAM",
+        "postcode": "UB9 5NA",
+        "price": 650000,
+        "dateOfTransfer": "2026-03-23",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -487,6 +579,14 @@
         "newBuild": false
       },
       {
+        "address": "75, KNIGHTON WAY LANE, DENHAM",
+        "postcode": "UB9 4EH",
+        "price": 347500,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "35, JACKS LANE, HAREFIELD",
         "postcode": "UB9 6HE",
         "price": 869000,
@@ -495,9 +595,9 @@
         "newBuild": false
       },
       {
-        "address": "75, KNIGHTON WAY LANE, DENHAM",
-        "postcode": "UB9 4EH",
-        "price": 347500,
+        "address": "21, LEYS CLOSE, HAREFIELD",
+        "postcode": "UB9 6QB",
+        "price": 540000,
         "dateOfTransfer": "2026-02-23",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -508,14 +608,6 @@
         "price": 740000,
         "dateOfTransfer": "2026-02-23",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "21, LEYS CLOSE, HAREFIELD",
-        "postcode": "UB9 6QB",
-        "price": 540000,
-        "dateOfTransfer": "2026-02-23",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -687,6 +779,14 @@
         "newBuild": false
       },
       {
+        "address": "12, LEYS CLOSE, HAREFIELD",
+        "postcode": "UB9 6QB",
+        "price": 570000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "136, NORTH ORBITAL ROAD, DENHAM",
         "postcode": "UB9 5HA",
         "price": 287000,
@@ -700,14 +800,6 @@
         "price": 700000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, LEYS CLOSE, HAREFIELD",
-        "postcode": "UB9 6QB",
-        "price": 570000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -871,11 +963,11 @@
         "newBuild": false
       },
       {
-        "address": "HARLAND COURT, 3, MERLE AVENUE, HAREFIELD",
-        "postcode": "UB9 6DE",
-        "price": 355000,
-        "dateOfTransfer": "2025-11-24",
-        "propertyType": "Flat/Maisonette",
+        "address": "THE RANCHER, RICKMANSWORTH ROAD, HAREFIELD",
+        "postcode": "UB9 6JX",
+        "price": 745000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -884,6 +976,14 @@
         "price": 510000,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HARLAND COURT, 3, MERLE AVENUE, HAREFIELD",
+        "postcode": "UB9 6DE",
+        "price": 355000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -940,6 +1040,14 @@
         "price": 265000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MANDEVILLE, CHEAPSIDE LANE, DENHAM",
+        "postcode": "UB9 5AB",
+        "price": 785000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1039,14 +1147,6 @@
         "newBuild": false
       },
       {
-        "address": "WOODSIDE, BAKERS WOOD, DENHAM",
-        "postcode": "UB9 4LQ",
-        "price": 935000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "34, PRIORY CLOSE, DENHAM",
         "postcode": "UB9 5AT",
         "price": 542000,
@@ -1060,6 +1160,14 @@
         "price": 503000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WOODSIDE, BAKERS WOOD, DENHAM",
+        "postcode": "UB9 4LQ",
+        "price": 935000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1079,14 +1187,6 @@
         "newBuild": false
       },
       {
-        "address": "MEADOW VIEW, 1, SPRINGWELL LANE, HAREFIELD",
-        "postcode": "UB9 6PQ",
-        "price": 605000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "5, MILNE WAY, HAREFIELD",
         "postcode": "UB9 6BQ",
         "price": 350000,
@@ -1095,10 +1195,10 @@
         "newBuild": false
       },
       {
-        "address": "13, NINE STILES CLOSE, DENHAM",
-        "postcode": "UB9 4BA",
-        "price": 430000,
-        "dateOfTransfer": "2025-10-15",
+        "address": "MEADOW VIEW, 1, SPRINGWELL LANE, HAREFIELD",
+        "postcode": "UB9 6PQ",
+        "price": 605000,
+        "dateOfTransfer": "2025-10-17",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1106,6 +1206,14 @@
         "address": "4A, WILLOW AVENUE, DENHAM",
         "postcode": "UB9 4AF",
         "price": 705000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, NINE STILES CLOSE, DENHAM",
+        "postcode": "UB9 4BA",
+        "price": 430000,
         "dateOfTransfer": "2025-10-15",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1143,19 +1251,27 @@
         "newBuild": false
       },
       {
-        "address": "4, QUEEN MOTHERS DRIVE, DENHAM GARDEN VILLAGE",
-        "postcode": "UB9 5GA",
-        "price": 582500,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "KORDA HOUSE, FLAT 1, STANLEY KUBRICK ROAD, DENHAM",
         "postcode": "UB9 5FH",
         "price": 412000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "113, ASH GROVE, HAREFIELD",
+        "postcode": "UB9 6EZ",
+        "price": 390000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, QUEEN MOTHERS DRIVE, DENHAM GARDEN VILLAGE",
+        "postcode": "UB9 5GA",
+        "price": 582500,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1167,19 +1283,19 @@
         "newBuild": false
       },
       {
-        "address": "12, UPPER ROAD, DENHAM",
-        "postcode": "UB9 5EJ",
-        "price": 845000,
-        "dateOfTransfer": "2025-09-29",
+        "address": "37, WILLOW CRESCENT EAST, DENHAM",
+        "postcode": "UB9 4AR",
+        "price": 1030000,
+        "dateOfTransfer": "2025-10-01",
         "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "19, MILNE WAY, HAREFIELD",
-        "postcode": "UB9 6BQ",
-        "price": 210000,
-        "dateOfTransfer": "2025-09-29",
-        "propertyType": "Flat/Maisonette",
+        "address": "51, HILLSIDE, HAREFIELD",
+        "postcode": "UB9 6AU",
+        "price": 575000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1199,17 +1315,33 @@
         "newBuild": false
       },
       {
-        "address": "6, JACKS LANE, HAREFIELD",
-        "postcode": "UB9 6HE",
-        "price": 640000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Terraced",
+        "address": "12, UPPER ROAD, DENHAM",
+        "postcode": "UB9 5EJ",
+        "price": 845000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, MILNE WAY, HAREFIELD",
+        "postcode": "UB9 6BQ",
+        "price": 210000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "4, SAVAY LANE, DENHAM",
         "postcode": "UB9 5NH",
         "price": 685000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, JACKS LANE, HAREFIELD",
+        "postcode": "UB9 6HE",
+        "price": 640000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1271,6 +1403,14 @@
         "newBuild": false
       },
       {
+        "address": "1, SPRING CLOSE, HAREFIELD",
+        "postcode": "UB9 6HD",
+        "price": 597500,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "16, WOLSTAN CLOSE, DENHAM",
         "postcode": "UB9 5BU",
         "price": 450000,
@@ -1279,11 +1419,11 @@
         "newBuild": false
       },
       {
-        "address": "1, SPRING CLOSE, HAREFIELD",
-        "postcode": "UB9 6HD",
-        "price": 597500,
+        "address": "26, MORSE CLOSE, HAREFIELD",
+        "postcode": "UB9 6RA",
+        "price": 440000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1300,14 +1440,6 @@
         "price": 535000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, MORSE CLOSE, HAREFIELD",
-        "postcode": "UB9 6RA",
-        "price": 440000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1503,6 +1635,14 @@
         "newBuild": false
       },
       {
+        "address": "22, RANSTON CLOSE, DENHAM",
+        "postcode": "UB9 5JX",
+        "price": 232500,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "9, DENHAM CLOSE, DENHAM",
         "postcode": "UB9 4EE",
         "price": 585000,
@@ -1551,19 +1691,19 @@
         "newBuild": false
       },
       {
-        "address": "THE LONG ROOM APARTMENTS, 31, ROYAL QUAY, HAREFIELD",
-        "postcode": "UB9 6FE",
-        "price": 375000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "4, PRIORY AVENUE, HAREFIELD",
         "postcode": "UB9 6AP",
         "price": 550000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE LONG ROOM APARTMENTS, 31, ROYAL QUAY, HAREFIELD",
+        "postcode": "UB9 6FE",
+        "price": 375000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1615,19 +1755,19 @@
         "newBuild": false
       },
       {
-        "address": "21, SPRING CLOSE, HAREFIELD",
-        "postcode": "UB9 6HD",
-        "price": 543000,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "OBERON COURT, 1, PATRONS WAY EAST, DENHAM GARDEN VILLAGE",
         "postcode": "UB9 5NP",
         "price": 390000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, SPRING CLOSE, HAREFIELD",
+        "postcode": "UB9 6HD",
+        "price": 543000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1679,19 +1819,19 @@
         "newBuild": false
       },
       {
-        "address": "MARIAN COTTAGE, REDHILL, DENHAM",
-        "postcode": "UB9 4LE",
-        "price": 1250000,
-        "dateOfTransfer": "2025-06-05",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "18, BROADWATER GARDENS, HAREFIELD",
         "postcode": "UB9 6AL",
         "price": 375000,
         "dateOfTransfer": "2025-06-05",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "MARIAN COTTAGE, REDHILL, DENHAM",
+        "postcode": "UB9 4LE",
+        "price": 1250000,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1743,14 +1883,6 @@
         "newBuild": false
       },
       {
-        "address": "GLOUCESTER COURT, FLAT 13, MOORFIELD ROAD, DENHAM",
-        "postcode": "UB9 5NR",
-        "price": 320000,
-        "dateOfTransfer": "2025-05-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "DANFOSS LTD, CAPSWOOD BUSINESS CENTRE, DENHAM",
         "postcode": "UB9 4LH",
         "price": 6219159,
@@ -1759,10 +1891,10 @@
         "newBuild": false
       },
       {
-        "address": "DENHAM LODGE, 44, OXFORD ROAD, NEW DENHAM",
-        "postcode": "UB9 4AB",
-        "price": 220000,
-        "dateOfTransfer": "2025-05-16",
+        "address": "GLOUCESTER COURT, FLAT 13, MOORFIELD ROAD, DENHAM",
+        "postcode": "UB9 5NR",
+        "price": 320000,
+        "dateOfTransfer": "2025-05-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1772,6 +1904,14 @@
         "price": 87500,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "DENHAM LODGE, 44, OXFORD ROAD, NEW DENHAM",
+        "postcode": "UB9 4AB",
+        "price": 220000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1871,9 +2011,9 @@
         "newBuild": false
       },
       {
-        "address": "42, SEDLEY GROVE, HAREFIELD",
-        "postcode": "UB9 6JB",
-        "price": 200000,
+        "address": "KORDA HOUSE, FLAT 12, STANLEY KUBRICK ROAD, DENHAM",
+        "postcode": "UB9 5FH",
+        "price": 485000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1895,9 +2035,9 @@
         "newBuild": false
       },
       {
-        "address": "KORDA HOUSE, FLAT 12, STANLEY KUBRICK ROAD, DENHAM",
-        "postcode": "UB9 5FH",
-        "price": 485000,
+        "address": "42, SEDLEY GROVE, HAREFIELD",
+        "postcode": "UB9 6JB",
+        "price": 200000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1908,14 +2048,6 @@
         "price": 365000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "64, LOWER ROAD, DENHAM",
-        "postcode": "UB9 5EB",
-        "price": 580000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1935,10 +2067,10 @@
         "newBuild": false
       },
       {
-        "address": "MANOR COURT, 12, CHURCH HILL, HAREFIELD",
-        "postcode": "UB9 6AB",
-        "price": 350000,
-        "dateOfTransfer": "2025-03-27",
+        "address": "64, LOWER ROAD, DENHAM",
+        "postcode": "UB9 5EB",
+        "price": 580000,
+        "dateOfTransfer": "2025-03-28",
         "propertyType": "Detached",
         "newBuild": false
       },
@@ -1959,10 +2091,10 @@
         "newBuild": false
       },
       {
-        "address": "58, WILLOW CRESCENT WEST, DENHAM",
-        "postcode": "UB9 4AU",
-        "price": 900000,
-        "dateOfTransfer": "2025-03-26",
+        "address": "MANOR COURT, 12, CHURCH HILL, HAREFIELD",
+        "postcode": "UB9 6AB",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-27",
         "propertyType": "Detached",
         "newBuild": false
       },
@@ -1972,6 +2104,14 @@
         "price": 665000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "58, WILLOW CRESCENT WEST, DENHAM",
+        "postcode": "UB9 4AU",
+        "price": 900000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1991,9 +2131,9 @@
         "newBuild": false
       },
       {
-        "address": "26, GILBERT ROAD, HAREFIELD",
-        "postcode": "UB9 6NQ",
-        "price": 430000,
+        "address": "15, VERNON DRIVE, HAREFIELD",
+        "postcode": "UB9 6EG",
+        "price": 500000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2007,9 +2147,9 @@
         "newBuild": false
       },
       {
-        "address": "15, VERNON DRIVE, HAREFIELD",
-        "postcode": "UB9 6EG",
-        "price": 500000,
+        "address": "26, GILBERT ROAD, HAREFIELD",
+        "postcode": "UB9 6NQ",
+        "price": 430000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2023,14 +2163,6 @@
         "newBuild": false
       },
       {
-        "address": "36, BROADWATER GARDENS, HAREFIELD",
-        "postcode": "UB9 6AL",
-        "price": 320000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "17, NOEL COWARD AVENUE, DENHAM",
         "postcode": "UB9 5FN",
         "price": 777000,
@@ -2041,6 +2173,14 @@
       {
         "address": "70, MOUNT PLEASANT, HAREFIELD",
         "postcode": "UB9 6BG",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, BROADWATER GARDENS, HAREFIELD",
+        "postcode": "UB9 6AL",
         "price": 320000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Flat/Maisonette",
@@ -2068,22 +2208,6 @@
         "price": 500000,
         "dateOfTransfer": "2025-03-17",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "30, BARRINGTON DRIVE, HAREFIELD",
-        "postcode": "UB9 6RL",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "47, PARK LANE, HAREFIELD",
-        "postcode": "UB9 6BJ",
-        "price": 460000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2119,6 +2243,14 @@
         "newBuild": false
       },
       {
+        "address": "3, SAVOY CLOSE, HAREFIELD",
+        "postcode": "UB9 6NW",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "11, TRUESDALE DRIVE, HAREFIELD",
         "postcode": "UB9 6AY",
         "price": 450000,
@@ -2127,11 +2259,19 @@
         "newBuild": false
       },
       {
-        "address": "3, SAVOY CLOSE, HAREFIELD",
-        "postcode": "UB9 6NW",
-        "price": 430000,
+        "address": "30, BARRINGTON DRIVE, HAREFIELD",
+        "postcode": "UB9 6RL",
+        "price": 600000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "47, PARK LANE, HAREFIELD",
+        "postcode": "UB9 6BJ",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2151,19 +2291,19 @@
         "newBuild": false
       },
       {
-        "address": "36A, BROADWATER GARDENS, HAREFIELD",
-        "postcode": "UB9 6AL",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "8, HALL DRIVE, HAREFIELD",
         "postcode": "UB9 6LA",
         "price": 675000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "36A, BROADWATER GARDENS, HAREFIELD",
+        "postcode": "UB9 6AL",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2191,6 +2331,14 @@
         "newBuild": false
       },
       {
+        "address": "9, LINCOLN COURT, DENHAM",
+        "postcode": "UB9 5EU",
+        "price": 320000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "8, MILNE WAY, HAREFIELD",
         "postcode": "UB9 6BQ",
         "price": 440000,
@@ -2204,14 +2352,6 @@
         "price": 500000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "9, LINCOLN COURT, DENHAM",
-        "postcode": "UB9 5EU",
-        "price": 320000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2255,19 +2395,19 @@
         "newBuild": false
       },
       {
-        "address": "23, SAVAY CLOSE, DENHAM",
-        "postcode": "UB9 5NQ",
-        "price": 425000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "13, COURTFIELD GARDENS, DENHAM",
         "postcode": "UB9 4EF",
         "price": 450000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, SAVAY CLOSE, DENHAM",
+        "postcode": "UB9 5NQ",
+        "price": 425000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2335,19 +2475,19 @@
         "newBuild": false
       },
       {
-        "address": "22, LOWER ROAD, DENHAM",
-        "postcode": "UB9 5EA",
-        "price": 730000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "37, PARK LANE, HAREFIELD",
         "postcode": "UB9 6BJ",
         "price": 340000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, LOWER ROAD, DENHAM",
+        "postcode": "UB9 5EA",
+        "price": 730000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2367,11 +2507,11 @@
         "newBuild": false
       },
       {
-        "address": "2, DEXTER ROAD, HAREFIELD",
-        "postcode": "UB9 6RF",
-        "price": 520000,
+        "address": "2, PENZANCE CLOSE, HAREFIELD",
+        "postcode": "UB9 6NN",
+        "price": 560000,
         "dateOfTransfer": "2025-01-24",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2383,19 +2523,19 @@
         "newBuild": false
       },
       {
-        "address": "2, PENZANCE CLOSE, HAREFIELD",
-        "postcode": "UB9 6NN",
-        "price": 560000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "106, PEERLESS DRIVE, HAREFIELD",
         "postcode": "UB9 6JQ",
         "price": 202000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, DEXTER ROAD, HAREFIELD",
+        "postcode": "UB9 6RF",
+        "price": 520000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2455,8 +2595,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 548215,
-    "medianPrice": 485000
+    "averagePrice": 547872,
+    "medianPrice": 485049.5
   },
   "representatives": {
     "representatives": [

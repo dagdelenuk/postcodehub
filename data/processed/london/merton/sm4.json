@@ -3,8 +3,8 @@
   "slug": "sm4",
   "city": "London",
   "borough": "Merton",
-  "latitude": 51.39301659621991,
-  "longitude": -0.19968913058419244,
+  "latitude": 51.39287780535713,
+  "longitude": -0.1997836803571431,
   "wards": [
     "Cannon Hill",
     "Figge's Marsh",
@@ -139,7 +139,8 @@
         "urn": "102632",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "14/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Lower Morden Lane, Morden",
         "postcode": "SM4 4SJ",
         "numberOfPupils": 338,
@@ -149,8 +150,9 @@
         "name": "Morden Primary School",
         "urn": "102640",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "25/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "London Road, Morden",
         "postcode": "SM4 5PX",
         "numberOfPupils": 222,
@@ -160,8 +162,9 @@
         "name": "Abbotsbury Primary School",
         "urn": "102649",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "14/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Abbotsbury Road, Morden",
         "postcode": "SM4 5JS",
         "numberOfPupils": 352,
@@ -172,7 +175,8 @@
         "urn": "102655",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "08/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Ashridge Way, Morden",
         "postcode": "SM4 4EE",
         "numberOfPupils": 437,
@@ -182,8 +186,9 @@
         "name": "St Teresa's Catholic Primary School",
         "urn": "102669",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "07/07/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Montacute Road, Morden",
         "postcode": "SM4 6RL",
         "numberOfPupils": 485,
@@ -195,6 +200,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bordesley Road, Morden",
         "postcode": "SM4 5LT",
         "numberOfPupils": 186,
@@ -205,7 +211,8 @@
         "urn": "132169",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "18/03/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Malmesbury Road, Morden",
         "postcode": "SM4 6HG",
         "numberOfPupils": 347,
@@ -217,6 +224,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Canterbury Road, Morden",
         "postcode": "SM4 6PT",
         "numberOfPupils": 50,
@@ -226,8 +234,9 @@
         "name": "Harris Academy Morden",
         "urn": "138495",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "18/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lilleshall Road, Morden",
         "postcode": "SM4 6DU",
         "numberOfPupils": 873,
@@ -239,6 +248,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Aragon Primary School, Aragon Road, Morden",
         "postcode": "SM4 4QU",
         "numberOfPupils": 597,
@@ -248,8 +258,9 @@
         "name": "Abbey Primary School",
         "urn": "146160",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "26/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Glastonbury Road, Morden",
         "postcode": "SM4 6NY",
         "numberOfPupils": 468,
@@ -261,6 +272,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Morden Lodge, Morden Hall Road, London",
         "postcode": "SM4 5JD",
         "numberOfPupils": 125,
@@ -272,97 +284,185 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 312,
-        "violentCrimes": 114,
-        "propertyCrimes": 83
-      },
-      {
-        "month": "2025-08",
-        "totalCrimes": 311,
-        "violentCrimes": 105,
-        "propertyCrimes": 111
-      },
-      {
-        "month": "2025-09",
-        "totalCrimes": 272,
-        "violentCrimes": 127,
+        "totalCrimes": 313,
+        "violentCrimes": 116,
         "propertyCrimes": 84
       },
       {
+        "month": "2025-08",
+        "totalCrimes": 316,
+        "violentCrimes": 106,
+        "propertyCrimes": 115
+      },
+      {
+        "month": "2025-09",
+        "totalCrimes": 274,
+        "violentCrimes": 129,
+        "propertyCrimes": 85
+      },
+      {
         "month": "2025-10",
-        "totalCrimes": 313,
+        "totalCrimes": 315,
         "violentCrimes": 121,
-        "propertyCrimes": 103
+        "propertyCrimes": 105
       },
       {
         "month": "2025-11",
-        "totalCrimes": 295,
+        "totalCrimes": 298,
         "violentCrimes": 141,
-        "propertyCrimes": 89
+        "propertyCrimes": 92
       },
       {
         "month": "2025-12",
         "totalCrimes": 279,
         "violentCrimes": 112,
-        "propertyCrimes": 95
+        "propertyCrimes": 96
       },
       {
         "month": "2026-01",
-        "totalCrimes": 274,
-        "violentCrimes": 98,
-        "propertyCrimes": 103
+        "totalCrimes": 282,
+        "violentCrimes": 101,
+        "propertyCrimes": 108
       },
       {
         "month": "2026-02",
-        "totalCrimes": 262,
-        "violentCrimes": 111,
-        "propertyCrimes": 77
+        "totalCrimes": 263,
+        "violentCrimes": 112,
+        "propertyCrimes": 79
       },
       {
         "month": "2026-03",
-        "totalCrimes": 313,
+        "totalCrimes": 317,
+        "violentCrimes": 122,
+        "propertyCrimes": 114
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 319,
         "violentCrimes": 120,
         "propertyCrimes": 111
       },
       {
-        "month": "2026-04",
-        "totalCrimes": 321,
-        "violentCrimes": 122,
-        "propertyCrimes": 110
-      },
-      {
         "month": "2026-05",
         "totalCrimes": 264,
-        "violentCrimes": 121,
-        "propertyCrimes": 84
+        "violentCrimes": 120,
+        "propertyCrimes": 86
       },
       {
         "month": "2026-06",
         "totalCrimes": 276,
-        "violentCrimes": 128,
+        "violentCrimes": 127,
         "propertyCrimes": 77
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 724,
-      "bicycle-theft": 28,
-      "burglary": 143,
-      "criminal-damage-arson": 176,
+      "anti-social-behaviour": 716,
+      "bicycle-theft": 29,
+      "burglary": 148,
+      "criminal-damage-arson": 180,
       "drugs": 169,
-      "other-theft": 194,
-      "possession-of-weapons": 12,
+      "other-theft": 198,
+      "possession-of-weapons": 11,
       "public-order": 228,
       "robbery": 87,
-      "shoplifting": 218,
-      "theft-from-the-person": 62,
-      "vehicle-crime": 306,
-      "violent-crime": 1093,
+      "shoplifting": 227,
+      "theft-from-the-person": 63,
+      "vehicle-crime": 307,
+      "violent-crime": 1101,
       "other-crime": 52
     },
-    "totalLast12Months": 3492
+    "totalLast12Months": 3516
   },
   "property": {
     "sales": [
+      {
+        "address": "25, CONNAUGHT GARDENS",
+        "postcode": "SM4 6DB",
+        "price": 325000,
+        "dateOfTransfer": "2026-07-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, LESSNESS ROAD",
+        "postcode": "SM4 6HP",
+        "price": 385000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "160, TUDOR DRIVE",
+        "postcode": "SM4 4PG",
+        "price": 635000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, YORK CLOSE",
+        "postcode": "SM4 5HW",
+        "price": 320000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51, DUDLEY DRIVE",
+        "postcode": "SM4 4RJ",
+        "price": 275000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51, DUDLEY DRIVE",
+        "postcode": "SM4 4RJ",
+        "price": 275000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, DUDLEY DRIVE",
+        "postcode": "SM4 4RQ",
+        "price": 635000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BISHOPSFORD HOUSE, FLAT 8, POULTER PARK",
+        "postcode": "SM4 6AS",
+        "price": 335000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, MAYCROSS AVENUE",
+        "postcode": "SM4 4DA",
+        "price": 780000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, EVESHAM GREEN",
+        "postcode": "SM4 6PW",
+        "price": 488500,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, WOODLAND WAY",
+        "postcode": "SM4 4DS",
+        "price": 560000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "378, LYNMOUTH AVENUE",
         "postcode": "SM4 4RT",
@@ -372,11 +472,51 @@
         "newBuild": false
       },
       {
+        "address": "2, FURNESS ROAD",
+        "postcode": "SM4 6PR",
+        "price": 550000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "403A, LYNMOUTH AVENUE",
         "postcode": "SM4 4RZ",
         "price": 262000,
         "dateOfTransfer": "2026-06-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "131, CARDINAL AVENUE",
+        "postcode": "SM4 4ST",
+        "price": 590000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, SALCOMBE DRIVE",
+        "postcode": "SM4 4LD",
+        "price": 550000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, SCHOOLGATE DRIVE",
+        "postcode": "SM4 5BF",
+        "price": 685000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68, ARAGON ROAD",
+        "postcode": "SM4 4QQ",
+        "price": 540000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -444,6 +584,14 @@
         "newBuild": false
       },
       {
+        "address": "117, WANDLE ROAD",
+        "postcode": "SM4 6AD",
+        "price": 575000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "183, ARAGON ROAD",
         "postcode": "SM4 4QW",
         "price": 540000,
@@ -468,14 +616,6 @@
         "newBuild": false
       },
       {
-        "address": "117, WANDLE ROAD",
-        "postcode": "SM4 6AD",
-        "price": 575000,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "53, GARTH ROAD",
         "postcode": "SM4 4JX",
         "price": 465000,
@@ -492,17 +632,17 @@
         "newBuild": false
       },
       {
-        "address": "158, KINGSBRIDGE ROAD",
-        "postcode": "SM4 4QA",
-        "price": 545000,
+        "address": "72, MONKLEIGH ROAD",
+        "postcode": "SM4 4EP",
+        "price": 755000,
         "dateOfTransfer": "2026-05-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "72, MONKLEIGH ROAD",
-        "postcode": "SM4 4EP",
-        "price": 755000,
+        "address": "158, KINGSBRIDGE ROAD",
+        "postcode": "SM4 4QA",
+        "price": 545000,
         "dateOfTransfer": "2026-05-20",
         "propertyType": "Terraced",
         "newBuild": false
@@ -572,30 +712,6 @@
         "newBuild": false
       },
       {
-        "address": "CASTLE COURT, FLAT 12, POLLARD ROAD",
-        "postcode": "SM4 6EJ",
-        "price": 350000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "227, LYNMOUTH AVENUE",
-        "postcode": "SM4 4RX",
-        "price": 350000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "85, LANGDON ROAD",
-        "postcode": "SM4 6HA",
-        "price": 445000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "23, EDWARD AVENUE",
         "postcode": "SM4 6EP",
         "price": 605000,
@@ -620,6 +736,30 @@
         "newBuild": false
       },
       {
+        "address": "227, LYNMOUTH AVENUE",
+        "postcode": "SM4 4RX",
+        "price": 350000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "85, LANGDON ROAD",
+        "postcode": "SM4 6HA",
+        "price": 445000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CASTLE COURT, FLAT 12, POLLARD ROAD",
+        "postcode": "SM4 6EJ",
+        "price": 350000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "119, GARTH ROAD",
         "postcode": "SM4 4LF",
         "price": 455000,
@@ -628,17 +768,17 @@
         "newBuild": false
       },
       {
-        "address": "45, CHURSTON DRIVE",
-        "postcode": "SM4 4JD",
-        "price": 633000,
+        "address": "79, BAYHAM ROAD",
+        "postcode": "SM4 5JH",
+        "price": 440000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "79, BAYHAM ROAD",
-        "postcode": "SM4 5JH",
-        "price": 440000,
+        "address": "45, CHURSTON DRIVE",
+        "postcode": "SM4 4JD",
+        "price": 633000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -724,19 +864,19 @@
         "newBuild": false
       },
       {
-        "address": "9, CARDINAL CLOSE",
-        "postcode": "SM4 4SY",
-        "price": 615000,
-        "dateOfTransfer": "2026-03-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "LYLE COURT, 201, LILLESHALL ROAD",
         "postcode": "SM4 6DT",
         "price": 210000,
         "dateOfTransfer": "2026-03-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, CARDINAL CLOSE",
+        "postcode": "SM4 4SY",
+        "price": 615000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -804,19 +944,19 @@
         "newBuild": false
       },
       {
-        "address": "15, MORDEN COURT",
-        "postcode": "SM4 5HN",
-        "price": 365000,
-        "dateOfTransfer": "2026-03-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "39, CHURSTON DRIVE",
         "postcode": "SM4 4JD",
         "price": 640000,
         "dateOfTransfer": "2026-03-16",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "33, THE DRIVE",
+        "postcode": "SM4 6DH",
+        "price": 400000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -828,11 +968,11 @@
         "newBuild": false
       },
       {
-        "address": "33, THE DRIVE",
-        "postcode": "SM4 6DH",
-        "price": 400000,
-        "dateOfTransfer": "2026-03-13",
-        "propertyType": "Semi-detached",
+        "address": "15, MORDEN COURT",
+        "postcode": "SM4 5HN",
+        "price": 365000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -892,6 +1032,14 @@
         "newBuild": false
       },
       {
+        "address": "MORDEN HOUSE, FLAT 38, LONDON ROAD",
+        "postcode": "SM4 5HH",
+        "price": 340000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "17, CANTERBURY ROAD",
         "postcode": "SM4 6QW",
         "price": 460000,
@@ -900,11 +1048,11 @@
         "newBuild": false
       },
       {
-        "address": "337, BISHOPSFORD ROAD",
-        "postcode": "SM4 6BW",
-        "price": 500000,
+        "address": "WOODGLEN, FLAT 1, BISHOPSFORD ROAD",
+        "postcode": "SM4 6AW",
+        "price": 149000,
         "dateOfTransfer": "2026-02-23",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -913,6 +1061,14 @@
         "price": 740000,
         "dateOfTransfer": "2026-02-23",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "337, BISHOPSFORD ROAD",
+        "postcode": "SM4 6BW",
+        "price": 500000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -932,19 +1088,19 @@
         "newBuild": false
       },
       {
-        "address": "44, CARLINGFORD ROAD",
-        "postcode": "SM4 4NY",
-        "price": 614000,
-        "dateOfTransfer": "2026-02-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "1, GLENTHORPE ROAD",
         "postcode": "SM4 4JP",
         "price": 557500,
         "dateOfTransfer": "2026-02-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44, CARLINGFORD ROAD",
+        "postcode": "SM4 4NY",
+        "price": 614000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -956,6 +1112,14 @@
         "newBuild": false
       },
       {
+        "address": "22, HYDE WALK",
+        "postcode": "SM4 6LR",
+        "price": 260000,
+        "dateOfTransfer": "2026-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "GROSVENOR COURT, FLAT 67, LONDON ROAD",
         "postcode": "SM4 5HQ",
         "price": 257500,
@@ -964,11 +1128,11 @@
         "newBuild": false
       },
       {
-        "address": "22, HYDE WALK",
-        "postcode": "SM4 6LR",
-        "price": 260000,
-        "dateOfTransfer": "2026-02-10",
-        "propertyType": "Flat/Maisonette",
+        "address": "59, HAZELWOOD AVENUE",
+        "postcode": "SM4 5RS",
+        "price": 539000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -988,11 +1152,11 @@
         "newBuild": false
       },
       {
-        "address": "63, GARENDON ROAD",
-        "postcode": "SM4 6LX",
-        "price": 470000,
-        "dateOfTransfer": "2026-02-04",
-        "propertyType": "Terraced",
+        "address": "PEARSON COURT, FLAT 10, CENTRAL ROAD",
+        "postcode": "SM4 5RN",
+        "price": 345000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1001,6 +1165,22 @@
         "price": 240000,
         "dateOfTransfer": "2026-02-04",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "63, GARENDON ROAD",
+        "postcode": "SM4 6LX",
+        "price": 470000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "45, KINGSBRIDGE ROAD",
+        "postcode": "SM4 4PT",
+        "price": 500000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1028,19 +1208,19 @@
         "newBuild": false
       },
       {
-        "address": "45, KINGSBRIDGE ROAD",
-        "postcode": "SM4 4PT",
-        "price": 500000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
+        "address": "48, CHERRYWOOD LANE",
+        "postcode": "SM4 4HS",
+        "price": 670000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "CLARENDON COURT 1A, FLAT 12, POLLARD ROAD",
-        "postcode": "SM4 6EB",
-        "price": 265000,
+        "address": "285, LOWER MORDEN LANE",
+        "postcode": "SM4 4NX",
+        "price": 690000,
         "dateOfTransfer": "2026-01-29",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1052,11 +1232,11 @@
         "newBuild": false
       },
       {
-        "address": "285, LOWER MORDEN LANE",
-        "postcode": "SM4 4NX",
-        "price": 690000,
+        "address": "CLARENDON COURT 1A, FLAT 12, POLLARD ROAD",
+        "postcode": "SM4 6EB",
+        "price": 265000,
         "dateOfTransfer": "2026-01-29",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1076,14 +1256,6 @@
         "newBuild": false
       },
       {
-        "address": "23, FLAT 1, ARAGON PLACE",
-        "postcode": "SM4 4QD",
-        "price": 306000,
-        "dateOfTransfer": "2026-01-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "42, CANTERBURY ROAD",
         "postcode": "SM4 6QP",
         "price": 473000,
@@ -1092,17 +1264,25 @@
         "newBuild": false
       },
       {
-        "address": "137, TUDOR DRIVE",
-        "postcode": "SM4 4PL",
-        "price": 570000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Terraced",
+        "address": "23, FLAT 1, ARAGON PLACE",
+        "postcode": "SM4 4QD",
+        "price": 306000,
+        "dateOfTransfer": "2026-01-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "52, HALESOWEN ROAD",
         "postcode": "SM4 6NG",
         "price": 470000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "137, TUDOR DRIVE",
+        "postcode": "SM4 4PL",
+        "price": 570000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1124,14 +1304,6 @@
         "newBuild": false
       },
       {
-        "address": "3, STANLEY ROAD",
-        "postcode": "SM4 5DE",
-        "price": 450000,
-        "dateOfTransfer": "2026-01-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "64, BIRCHWOOD CLOSE",
         "postcode": "SM4 5NH",
         "price": 280000,
@@ -1148,11 +1320,35 @@
         "newBuild": false
       },
       {
+        "address": "3, STANLEY ROAD",
+        "postcode": "SM4 5DE",
+        "price": 450000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "17A, EPSOM ROAD",
         "postcode": "SM4 5PN",
         "price": 217000,
         "dateOfTransfer": "2026-01-13",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24D, MORTON ROAD",
+        "postcode": "SM4 6EF",
+        "price": 367000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, POLLARD ROAD",
+        "postcode": "SM4 6EG",
+        "price": 697000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1172,19 +1368,11 @@
         "newBuild": false
       },
       {
-        "address": "13, POLLARD ROAD",
-        "postcode": "SM4 6EG",
-        "price": 697000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "24D, MORTON ROAD",
-        "postcode": "SM4 6EF",
-        "price": 367000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Flat/Maisonette",
+        "address": "95, CHERRYWOOD LANE",
+        "postcode": "SM4 4HD",
+        "price": 660000,
+        "dateOfTransfer": "2026-01-08",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1540,19 +1728,19 @@
         "newBuild": false
       },
       {
-        "address": "38, GLENTHORPE ROAD",
-        "postcode": "SM4 4JW",
-        "price": 665000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "25, CANTERBURY ROAD",
         "postcode": "SM4 6QW",
         "price": 610000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, GLENTHORPE ROAD",
+        "postcode": "SM4 4JW",
+        "price": 665000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1585,6 +1773,14 @@
         "price": 425000,
         "dateOfTransfer": "2025-11-05",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MANOR HOUSE, LONDON ROAD",
+        "postcode": "SM4 5QT",
+        "price": 2250000,
+        "dateOfTransfer": "2025-11-05",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1636,19 +1832,19 @@
         "newBuild": false
       },
       {
-        "address": "104, FLAT 31, GREEN LANE",
-        "postcode": "SM4 6FE",
-        "price": 260000,
-        "dateOfTransfer": "2025-10-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "3, DORE GARDENS",
         "postcode": "SM4 6QD",
         "price": 443000,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "104, FLAT 31, GREEN LANE",
+        "postcode": "SM4 6FE",
+        "price": 260000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1732,17 +1928,25 @@
         "newBuild": false
       },
       {
-        "address": "98, ST HELIER AVENUE",
-        "postcode": "SM4 6LE",
-        "price": 437000,
+        "address": "64, MARTIN WAY",
+        "postcode": "SM4 4AG",
+        "price": 285000,
         "dateOfTransfer": "2025-10-16",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "93, ARAGON ROAD",
         "postcode": "SM4 4QG",
         "price": 580000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "98, ST HELIER AVENUE",
+        "postcode": "SM4 6LE",
+        "price": 437000,
         "dateOfTransfer": "2025-10-16",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1844,6 +2048,22 @@
         "newBuild": false
       },
       {
+        "address": "11, MARTIN GROVE",
+        "postcode": "SM4 5AJ",
+        "price": 825000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "257, KINGSBRIDGE ROAD",
+        "postcode": "SM4 4PY",
+        "price": 495000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "24, EASBY CRESCENT",
         "postcode": "SM4 6SB",
         "price": 390000,
@@ -1924,6 +2144,14 @@
         "newBuild": false
       },
       {
+        "address": "16, GREENWOOD CLOSE",
+        "postcode": "SM4 4HX",
+        "price": 660000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "53, ROUGEMONT AVENUE",
         "postcode": "SM4 5PY",
         "price": 560000,
@@ -1996,6 +2224,14 @@
         "newBuild": false
       },
       {
+        "address": "76, THURLESTON AVENUE",
+        "postcode": "SM4 4BW",
+        "price": 600000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "11, LEONARD AVENUE",
         "postcode": "SM4 6DW",
         "price": 585000,
@@ -2016,14 +2252,6 @@
         "postcode": "SM4 5PN",
         "price": 345000,
         "dateOfTransfer": "2025-09-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "113, GLASTONBURY ROAD",
-        "postcode": "SM4 6NX",
-        "price": 455000,
-        "dateOfTransfer": "2025-09-01",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2065,6 +2293,14 @@
         "price": 444000,
         "dateOfTransfer": "2025-09-01",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "113, GLASTONBURY ROAD",
+        "postcode": "SM4 6NX",
+        "price": 455000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2116,17 +2352,17 @@
         "newBuild": false
       },
       {
-        "address": "51, GARTH CLOSE",
-        "postcode": "SM4 4NN",
-        "price": 500000,
+        "address": "311, HILLCROSS AVENUE",
+        "postcode": "SM4 4BX",
+        "price": 615000,
         "dateOfTransfer": "2025-08-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "311, HILLCROSS AVENUE",
-        "postcode": "SM4 4BX",
-        "price": 615000,
+        "address": "51, GARTH CLOSE",
+        "postcode": "SM4 4NN",
+        "price": 500000,
         "dateOfTransfer": "2025-08-20",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2244,22 +2480,6 @@
         "newBuild": false
       },
       {
-        "address": "LYLE COURT, 203, LILLESHALL ROAD",
-        "postcode": "SM4 6DT",
-        "price": 205000,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CLUSTER HOUSE, 22, FLAT 2, SCHOOLGATE DRIVE",
-        "postcode": "SM4 5BW",
-        "price": 312000,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "10, WESTCROFT GARDENS",
         "postcode": "SM4 4DL",
         "price": 670000,
@@ -2287,6 +2507,22 @@
         "address": "ROSEHILL COURT, FLAT 68, ST HELIER AVENUE",
         "postcode": "SM4 6JT",
         "price": 148000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LYLE COURT, 203, LILLESHALL ROAD",
+        "postcode": "SM4 6DT",
+        "price": 205000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLUSTER HOUSE, 22, FLAT 2, SCHOOLGATE DRIVE",
+        "postcode": "SM4 5BW",
+        "price": 312000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2372,6 +2608,14 @@
         "newBuild": false
       },
       {
+        "address": "12, NORTHWAY",
+        "postcode": "SM4 4HF",
+        "price": 581000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "20, MIDDLETON ROAD",
         "postcode": "SM4 6SD",
         "price": 470000,
@@ -2385,14 +2629,6 @@
         "price": 760000,
         "dateOfTransfer": "2025-07-21",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "12, NORTHWAY",
-        "postcode": "SM4 4HF",
-        "price": 581000,
-        "dateOfTransfer": "2025-07-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2436,17 +2672,17 @@
         "newBuild": false
       },
       {
-        "address": "30, CRANMER CLOSE",
-        "postcode": "SM4 4SU",
-        "price": 545000,
+        "address": "47, GREENWOOD CLOSE",
+        "postcode": "SM4 4HZ",
+        "price": 675000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "47, GREENWOOD CLOSE",
-        "postcode": "SM4 4HZ",
-        "price": 675000,
+        "address": "30, CRANMER CLOSE",
+        "postcode": "SM4 4SU",
+        "price": 545000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2492,17 +2728,17 @@
         "newBuild": false
       },
       {
-        "address": "212, BISHOPSFORD ROAD",
-        "postcode": "SM4 6DA",
-        "price": 410000,
+        "address": "91, LOWER MORDEN LANE",
+        "postcode": "SM4 4SW",
+        "price": 650000,
         "dateOfTransfer": "2025-07-03",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "91, LOWER MORDEN LANE",
-        "postcode": "SM4 4SW",
-        "price": 650000,
+        "address": "212, BISHOPSFORD ROAD",
+        "postcode": "SM4 6DA",
+        "price": 410000,
         "dateOfTransfer": "2025-07-03",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2620,6 +2856,14 @@
         "newBuild": false
       },
       {
+        "address": "124, CHERRYWOOD LANE",
+        "postcode": "SM4 4HQ",
+        "price": 695000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "57, LOVE LANE",
         "postcode": "SM4 6LT",
         "price": 510000,
@@ -2631,14 +2875,6 @@
         "address": "330, BISHOPSFORD ROAD",
         "postcode": "SM4 6BX",
         "price": 505000,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "124, CHERRYWOOD LANE",
-        "postcode": "SM4 4HQ",
-        "price": 695000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2756,6 +2992,14 @@
         "newBuild": false
       },
       {
+        "address": "75, BORDESLEY ROAD",
+        "postcode": "SM4 5LW",
+        "price": 485000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "3, CLAYMORE CLOSE",
         "postcode": "SM4 5PS",
         "price": 430000,
@@ -2769,14 +3013,6 @@
         "price": 269000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "75, BORDESLEY ROAD",
-        "postcode": "SM4 5LW",
-        "price": 485000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2801,6 +3037,14 @@
         "price": 595000,
         "dateOfTransfer": "2025-05-29",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WOODGLEN, FLAT 7, BISHOPSFORD ROAD",
+        "postcode": "SM4 6AW",
+        "price": 335000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3068,22 +3312,6 @@
         "newBuild": false
       },
       {
-        "address": "COMPASS HOUSE, 25, FLAT 4, SCHOOLGATE DRIVE",
-        "postcode": "SM4 5BF",
-        "price": 350000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "53, CONNAUGHT GARDENS",
-        "postcode": "SM4 6DB",
-        "price": 325000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "213, ARAGON ROAD",
         "postcode": "SM4 4QW",
         "price": 511000,
@@ -3108,6 +3336,14 @@
         "newBuild": false
       },
       {
+        "address": "COMPASS HOUSE, 25, FLAT 4, SCHOOLGATE DRIVE",
+        "postcode": "SM4 5BF",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2, MONKLEIGH ROAD",
         "postcode": "SM4 4EW",
         "price": 850000,
@@ -3119,6 +3355,14 @@
         "address": "RIVERSIDE HOUSE, 196, FLAT 8, WANDLE ROAD",
         "postcode": "SM4 6AU",
         "price": 337500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, CONNAUGHT GARDENS",
+        "postcode": "SM4 6DB",
+        "price": 325000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3156,17 +3400,33 @@
         "newBuild": false
       },
       {
-        "address": "5, SHALDON DRIVE",
-        "postcode": "SM4 4BE",
-        "price": 715000,
+        "address": "19, CARDINAL AVENUE",
+        "postcode": "SM4 4TA",
+        "price": 536000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "297, ARAGON ROAD",
-        "postcode": "SM4 4QP",
-        "price": 374000,
+        "address": "23, BIRCHWOOD CLOSE",
+        "postcode": "SM4 5LA",
+        "price": 263000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, MOSSVILLE GARDENS",
+        "postcode": "SM4 4DG",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, SEYMOUR AVENUE",
+        "postcode": "SM4 4RD",
+        "price": 470000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3196,33 +3456,9 @@
         "newBuild": false
       },
       {
-        "address": "24, SEYMOUR AVENUE",
-        "postcode": "SM4 4RD",
-        "price": 470000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "23, BIRCHWOOD CLOSE",
-        "postcode": "SM4 5LA",
-        "price": 263000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "37, MOSSVILLE GARDENS",
-        "postcode": "SM4 4DG",
-        "price": 650000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "19, CARDINAL AVENUE",
-        "postcode": "SM4 4TA",
-        "price": 536000,
+        "address": "10, MIDDLETON ROAD",
+        "postcode": "SM4 6SD",
+        "price": 404950,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3244,19 +3480,27 @@
         "newBuild": false
       },
       {
-        "address": "2, WOODLAND WAY",
-        "postcode": "SM4 4DS",
-        "price": 730000,
+        "address": "5, SHALDON DRIVE",
+        "postcode": "SM4 4BE",
+        "price": 715000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "10, MIDDLETON ROAD",
-        "postcode": "SM4 6SD",
-        "price": 404950,
+        "address": "297, ARAGON ROAD",
+        "postcode": "SM4 4QP",
+        "price": 374000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, WOODLAND WAY",
+        "postcode": "SM4 4DS",
+        "price": 730000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3292,9 +3536,9 @@
         "newBuild": false
       },
       {
-        "address": "102, KINGSBRIDGE ROAD",
-        "postcode": "SM4 4QB",
-        "price": 526000,
+        "address": "61, ASHRIDGE WAY",
+        "postcode": "SM4 4ED",
+        "price": 670000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3308,19 +3552,19 @@
         "newBuild": false
       },
       {
-        "address": "61, ASHRIDGE WAY",
-        "postcode": "SM4 4ED",
-        "price": 670000,
+        "address": "102, KINGSBRIDGE ROAD",
+        "postcode": "SM4 4QB",
+        "price": 526000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "16, MILNER ROAD",
-        "postcode": "SM4 6EN",
-        "price": 640000,
+        "address": "12, ABBOTSBURY ROAD",
+        "postcode": "SM4 5LQ",
+        "price": 1800,
         "dateOfTransfer": "2025-03-25",
-        "propertyType": "Semi-detached",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3332,14 +3576,6 @@
         "newBuild": false
       },
       {
-        "address": "122, LONDON ROAD",
-        "postcode": "SM4 5AT",
-        "price": 455000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "45, BUTTERMERE CLOSE",
         "postcode": "SM4 4SG",
         "price": 257000,
@@ -3348,19 +3584,27 @@
         "newBuild": false
       },
       {
-        "address": "100, CHERRYWOOD LANE",
-        "postcode": "SM4 4HB",
-        "price": 650000,
+        "address": "16, MILNER ROAD",
+        "postcode": "SM4 6EN",
+        "price": 640000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "122, LONDON ROAD",
+        "postcode": "SM4 5AT",
+        "price": 455000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "12, ABBOTSBURY ROAD",
-        "postcode": "SM4 5LQ",
-        "price": 1800,
+        "address": "100, CHERRYWOOD LANE",
+        "postcode": "SM4 4HB",
+        "price": 650000,
         "dateOfTransfer": "2025-03-25",
-        "propertyType": "Other",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3380,17 +3624,17 @@
         "newBuild": false
       },
       {
-        "address": "42, CAMBORNE ROAD",
-        "postcode": "SM4 4JJ",
-        "price": 648000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "9, GARTH ROAD",
         "postcode": "SM4 4JX",
         "price": 418000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, KINGSBRIDGE ROAD",
+        "postcode": "SM4 4QB",
+        "price": 550000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3404,11 +3648,11 @@
         "newBuild": false
       },
       {
-        "address": "62, KINGSBRIDGE ROAD",
-        "postcode": "SM4 4QB",
-        "price": 550000,
+        "address": "41, THE DRIVE",
+        "postcode": "SM4 6DH",
+        "price": 630000,
         "dateOfTransfer": "2025-03-24",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3420,9 +3664,9 @@
         "newBuild": false
       },
       {
-        "address": "41, THE DRIVE",
-        "postcode": "SM4 6DH",
-        "price": 630000,
+        "address": "42, CAMBORNE ROAD",
+        "postcode": "SM4 4JJ",
+        "price": 648000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3433,22 +3677,6 @@
         "price": 365000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "95, CAMBORNE ROAD",
-        "postcode": "SM4 4JN",
-        "price": 900000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "23, CARTMEL GARDENS",
-        "postcode": "SM4 6QN",
-        "price": 540000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3487,6 +3715,22 @@
         "address": "90, CHERRYWOOD LANE",
         "postcode": "SM4 4HB",
         "price": 875000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "95, CAMBORNE ROAD",
+        "postcode": "SM4 4JN",
+        "price": 900000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, CARTMEL GARDENS",
+        "postcode": "SM4 6QN",
+        "price": 540000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3580,14 +3824,6 @@
         "newBuild": false
       },
       {
-        "address": "45, HARTLAND ROAD",
-        "postcode": "SM4 6LZ",
-        "price": 360000,
-        "dateOfTransfer": "2025-03-11",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "31, HYDE WALK",
         "postcode": "SM4 6LR",
         "price": 429000,
@@ -3596,18 +3832,10 @@
         "newBuild": false
       },
       {
-        "address": "138, SEYMOUR AVENUE",
-        "postcode": "SM4 4QY",
-        "price": 575000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "28, BRISTOL ROAD",
-        "postcode": "SM4 5SB",
-        "price": 380000,
-        "dateOfTransfer": "2025-03-07",
+        "address": "45, HARTLAND ROAD",
+        "postcode": "SM4 6LZ",
+        "price": 360000,
+        "dateOfTransfer": "2025-03-11",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3636,11 +3864,19 @@
         "newBuild": false
       },
       {
-        "address": "10, ALLGOOD CLOSE",
-        "postcode": "SM4 4PA",
-        "price": 560000,
+        "address": "18, VICTORY AVENUE",
+        "postcode": "SM4 6DL",
+        "price": 620000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, BRISTOL ROAD",
+        "postcode": "SM4 5SB",
+        "price": 380000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3652,9 +3888,17 @@
         "newBuild": false
       },
       {
-        "address": "18, VICTORY AVENUE",
-        "postcode": "SM4 6DL",
-        "price": 620000,
+        "address": "10, ALLGOOD CLOSE",
+        "postcode": "SM4 4PA",
+        "price": 560000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "138, SEYMOUR AVENUE",
+        "postcode": "SM4 4QY",
+        "price": 575000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3788,17 +4032,17 @@
         "newBuild": false
       },
       {
-        "address": "41, DUDLEY DRIVE",
-        "postcode": "SM4 4RJ",
-        "price": 555000,
+        "address": "107, MONKLEIGH ROAD",
+        "postcode": "SM4 4EL",
+        "price": 750000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "107, MONKLEIGH ROAD",
-        "postcode": "SM4 4EL",
-        "price": 750000,
+        "address": "41, DUDLEY DRIVE",
+        "postcode": "SM4 4RJ",
+        "price": 555000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3820,17 +4064,17 @@
         "newBuild": false
       },
       {
-        "address": "14, CENTRAL ROAD",
-        "postcode": "SM4 5RT",
-        "price": 525000,
+        "address": "103, CHURSTON DRIVE",
+        "postcode": "SM4 4JE",
+        "price": 600000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "103, CHURSTON DRIVE",
-        "postcode": "SM4 4JE",
-        "price": 600000,
+        "address": "14, CENTRAL ROAD",
+        "postcode": "SM4 5RT",
+        "price": 525000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3916,19 +4160,19 @@
         "newBuild": false
       },
       {
-        "address": "111, SEYMOUR AVENUE",
-        "postcode": "SM4 4RA",
-        "price": 645000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "134, ABBOTSBURY ROAD",
         "postcode": "SM4 5JX",
         "price": 495000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "111, SEYMOUR AVENUE",
+        "postcode": "SM4 4RA",
+        "price": 645000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3996,19 +4240,19 @@
         "newBuild": false
       },
       {
-        "address": "143, LYNMOUTH AVENUE",
-        "postcode": "SM4 4RR",
-        "price": 475000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "139, LOWER MORDEN LANE",
         "postcode": "SM4 4SW",
         "price": 727500,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "143, LYNMOUTH AVENUE",
+        "postcode": "SM4 4RR",
+        "price": 475000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4052,19 +4296,19 @@
         "newBuild": false
       },
       {
-        "address": "PARK VIEW, FLAT 15, WANDLE ROAD",
-        "postcode": "SM4 6AG",
-        "price": 330000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "30, TEMPLECOMBE WAY",
         "postcode": "SM4 4JG",
         "price": 565000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "PARK VIEW, FLAT 15, WANDLE ROAD",
+        "postcode": "SM4 6AG",
+        "price": 330000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4084,14 +4328,6 @@
         "newBuild": false
       },
       {
-        "address": "18, MIDDLETON ROAD",
-        "postcode": "SM4 6SD",
-        "price": 456000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "23, ROUGEMONT AVENUE",
         "postcode": "SM4 5PY",
         "price": 485000,
@@ -4108,6 +4344,14 @@
         "newBuild": false
       },
       {
+        "address": "18, MIDDLETON ROAD",
+        "postcode": "SM4 6SD",
+        "price": 456000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "128A, TUDOR DRIVE",
         "postcode": "SM4 4PF",
         "price": 315500,
@@ -4116,8 +4360,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 492107,
-    "medianPrice": 495000
+    "averagePrice": 495743,
+    "medianPrice": 496250
   },
   "representatives": {
     "representatives": [

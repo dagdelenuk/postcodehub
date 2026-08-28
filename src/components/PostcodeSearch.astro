@@ -1,0 +1,77 @@
+---
+import { getPostcodeSearchIndex } from "../lib/data";
+
+const index = getPostcodeSearchIndex();
+---
+
+<div data-postcode-search class="relative w-full max-w-xs">
+  <form data-postcode-search-form class="flex items-center gap-2">
+    <label for="postcode-search-input" class="sr-only">Search by postcode</label>
+    <input
+      id="postcode-search-input"
+      type="text"
+      inputmode="text"
+      autocomplete="off"
+      placeholder="Search a postcode (e.g. TW9)"
+      data-postcode-search-input
+      class="w-full rounded-md border border-stone-300 bg-white px-3 py-1.5 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
+    />
+    <button
+      type="submit"
+      aria-label="Search"
+      class="flex items-center justify-center h-8 w-8 shrink-0 rounded-md text-stone-600 hover:bg-stone-100 hover:text-stone-900 transition-colors"
+    >
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="7" cy="7" r="5.2" stroke="currentColor" stroke-width="1.6" />
+        <path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+      </svg>
+    </button>
+  </form>
+  <p data-postcode-search-message class="hidden absolute left-0 top-full mt-1 text-xs text-stone-500 bg-white border border-stone-200 rounded-md px-3 py-2 shadow-sm z-10"></p>
+</div>
+
+<script type="application/json" id="postcode-search-index" set:html={JSON.stringify(index)} />
+
+<script>
+  function postcodeToOutcode(raw: string): string | null {
+    const normalised = raw.trim().toUpperCase().replace(/\s+/g, "");
+    const match = normalised.match(/^([A-Z]{1,2}\d[A-Z\d]?)\d[A-Z]{2}$/);
+    if (match) return match[1];
+    // The input might already just be an outcode ("TW9") rather than a full postcode.
+    const outcodeMatch = normalised.match(/^[A-Z]{1,2}\d[A-Z\d]?$/);
+    return outcodeMatch ? normalised : null;
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-postcode-search]").forEach((root) => {
+    const form = root.querySelector<HTMLFormElement>("[data-postcode-search-form]");
+    const input = root.querySelector<HTMLInputElement>("[data-postcode-search-input]");
+    const message = root.querySelector<HTMLElement>("[data-postcode-search-message]");
+    const indexEl = document.getElementById("postcode-search-index");
+    if (!form || !input || !message || !indexEl) return;
+
+    let index: Record<string, string>;
+    try {
+      index = JSON.parse(indexEl.textContent ?? "{}");
+    } catch {
+      index = {};
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const outcode = postcodeToOutcode(input.value);
+      const path = outcode ? index[outcode] : null;
+      if (path) {
+        window.location.href = path;
+        return;
+      }
+      message.textContent = outcode
+        ? `${outcode} isn't covered yet - we're only live in London so far.`
+        : "Enter a UK postcode or postcode area, e.g. \"TW9\" or \"TW9 3PZ\".";
+      message.classList.remove("hidden");
+    });
+
+    input.addEventListener("input", () => {
+      message.classList.add("hidden");
+    });
+  });
+</script>

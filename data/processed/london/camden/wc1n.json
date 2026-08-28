@@ -3,8 +3,8 @@
   "slug": "wc1n",
   "city": "London",
   "borough": "Camden",
-  "latitude": 51.522922577205854,
-  "longitude": -0.11973170955882353,
+  "latitude": 51.5229085731707,
+  "longitude": -0.11972058943089427,
   "wards": [
     "Bloomsbury",
     "Clerkenwell",
@@ -86,8 +86,9 @@
         "name": "Thomas Coram Centre",
         "urn": "100005",
         "phaseOfEducation": "Nursery",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "23/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "49 Mecklenburgh Square, London",
         "postcode": "WC1N 2NY",
         "numberOfPupils": 105,
@@ -98,7 +99,8 @@
         "urn": "100040",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "18/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "John's Mews, London",
         "postcode": "WC1N 2NX",
         "numberOfPupils": 190,
@@ -108,8 +110,9 @@
         "name": "Children's Hospital School at Gt Ormond Street and UCH",
         "urn": "100060",
         "phaseOfEducation": "Not applicable",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "29/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Great Ormond Street, Camden, London",
         "postcode": "WC1N 3JH",
         "numberOfPupils": 0,
@@ -121,102 +124,134 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 4693,
+        "totalCrimes": 4689,
         "violentCrimes": 1025,
-        "propertyCrimes": 2887
+        "propertyCrimes": 2883
       },
       {
         "month": "2025-08",
-        "totalCrimes": 4343,
+        "totalCrimes": 4340,
         "violentCrimes": 1001,
-        "propertyCrimes": 2536
+        "propertyCrimes": 2533
       },
       {
         "month": "2025-09",
-        "totalCrimes": 4276,
+        "totalCrimes": 4273,
         "violentCrimes": 1014,
-        "propertyCrimes": 2569
+        "propertyCrimes": 2566
       },
       {
         "month": "2025-10",
-        "totalCrimes": 4777,
+        "totalCrimes": 4776,
         "violentCrimes": 1059,
-        "propertyCrimes": 2969
+        "propertyCrimes": 2968
       },
       {
         "month": "2025-11",
-        "totalCrimes": 5079,
+        "totalCrimes": 5077,
         "violentCrimes": 1032,
-        "propertyCrimes": 3287
+        "propertyCrimes": 3285
       },
       {
         "month": "2025-12",
-        "totalCrimes": 4782,
-        "violentCrimes": 978,
-        "propertyCrimes": 3069
+        "totalCrimes": 4775,
+        "violentCrimes": 975,
+        "propertyCrimes": 3065
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4055,
-        "violentCrimes": 884,
-        "propertyCrimes": 2474
+        "totalCrimes": 4052,
+        "violentCrimes": 883,
+        "propertyCrimes": 2472
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4036,
-        "violentCrimes": 831,
-        "propertyCrimes": 2475
+        "totalCrimes": 4033,
+        "violentCrimes": 830,
+        "propertyCrimes": 2473
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4019,
-        "violentCrimes": 950,
-        "propertyCrimes": 2251
+        "totalCrimes": 4011,
+        "violentCrimes": 949,
+        "propertyCrimes": 2244
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4229,
+        "totalCrimes": 4227,
         "violentCrimes": 987,
-        "propertyCrimes": 2455
+        "propertyCrimes": 2453
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4059,
-        "violentCrimes": 1026,
-        "propertyCrimes": 2303
+        "totalCrimes": 4054,
+        "violentCrimes": 1025,
+        "propertyCrimes": 2299
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4054,
-        "violentCrimes": 1025,
-        "propertyCrimes": 2278
+        "totalCrimes": 4049,
+        "violentCrimes": 1024,
+        "propertyCrimes": 2274
       }
     ],
     "categoryBreakdown": {
       "anti-social-behaviour": 6983,
       "bicycle-theft": 870,
-      "burglary": 1412,
-      "criminal-damage-arson": 977,
+      "burglary": 1409,
+      "criminal-damage-arson": 976,
       "drugs": 1799,
-      "other-theft": 10782,
-      "possession-of-weapons": 189,
+      "other-theft": 10772,
+      "possession-of-weapons": 188,
       "public-order": 2405,
-      "robbery": 1802,
-      "shoplifting": 4727,
-      "theft-from-the-person": 11850,
-      "vehicle-crime": 935,
-      "violent-crime": 7416,
+      "robbery": 1800,
+      "shoplifting": 4722,
+      "theft-from-the-person": 11832,
+      "vehicle-crime": 934,
+      "violent-crime": 7411,
       "other-crime": 255
     },
-    "totalLast12Months": 52402
+    "totalLast12Months": 52356
   },
   "property": {
     "sales": [
+      {
+        "address": "FOUNDLING COURT, FLAT 181, BRUNSWICK CENTRE",
+        "postcode": "WC1N 1QE",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "O'DONNELL COURT, FLAT 179, BRUNSWICK CENTRE",
+        "postcode": "WC1N 1AQ",
+        "price": 765000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BERNARD MANSIONS, FLAT 6, BERNARD STREET",
+        "postcode": "WC1N 1LB",
+        "price": 625000,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "84, FLAT 1, MARCHMONT STREET",
         "postcode": "WC1N 1AG",
         "price": 470000,
         "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 4, DOUGHTY STREET",
+        "postcode": "WC1N 2PN",
+        "price": 530000,
+        "dateOfTransfer": "2026-05-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -605,8 +640,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1064888,
-    "medianPrice": 685000
+    "averagePrice": 1030179,
+    "medianPrice": 675000
   },
   "representatives": {
     "representatives": [

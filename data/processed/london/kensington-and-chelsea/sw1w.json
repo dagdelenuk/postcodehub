@@ -3,8 +3,8 @@
   "slug": "sw1w",
   "city": "London",
   "borough": "Kensington and Chelsea",
-  "latitude": 51.49267237900874,
-  "longitude": -0.1510994606413994,
+  "latitude": 51.49267101904764,
+  "longitude": -0.15130510158730162,
   "wards": [
     "Knightsbridge & Belgravia",
     "Nine Elms",
@@ -86,7 +86,8 @@
         "urn": "101126",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "St Barnabas Street, Pimlico, London",
         "postcode": "SW1W 8PF",
         "numberOfPupils": 114,
@@ -97,7 +98,8 @@
         "urn": "101140",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Lower Belgrave Street, London",
         "postcode": "SW1W 0NL",
         "numberOfPupils": 147,
@@ -109,6 +111,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "3-5 Eaton Gate, London, London",
         "postcode": "SW1W 9BA",
         "numberOfPupils": 114,
@@ -120,6 +123,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "39 Graham Terrace, London",
         "postcode": "SW1W 8JF",
         "numberOfPupils": 594,
@@ -131,6 +135,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "7 Eaton Gate, London",
         "postcode": "SW1W 9BA",
         "numberOfPupils": null,
@@ -142,97 +147,121 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1781,
-        "violentCrimes": 379,
-        "propertyCrimes": 948
+        "totalCrimes": 1779,
+        "violentCrimes": 374,
+        "propertyCrimes": 951
       },
       {
         "month": "2025-08",
         "totalCrimes": 1719,
-        "violentCrimes": 369,
-        "propertyCrimes": 871
+        "violentCrimes": 368,
+        "propertyCrimes": 875
       },
       {
         "month": "2025-09",
-        "totalCrimes": 1627,
-        "violentCrimes": 368,
-        "propertyCrimes": 848
+        "totalCrimes": 1618,
+        "violentCrimes": 367,
+        "propertyCrimes": 842
       },
       {
         "month": "2025-10",
-        "totalCrimes": 1611,
-        "violentCrimes": 367,
-        "propertyCrimes": 833
+        "totalCrimes": 1607,
+        "violentCrimes": 364,
+        "propertyCrimes": 836
       },
       {
         "month": "2025-11",
-        "totalCrimes": 1521,
-        "violentCrimes": 345,
-        "propertyCrimes": 828
+        "totalCrimes": 1510,
+        "violentCrimes": 338,
+        "propertyCrimes": 824
       },
       {
         "month": "2025-12",
-        "totalCrimes": 1628,
-        "violentCrimes": 383,
-        "propertyCrimes": 886
+        "totalCrimes": 1618,
+        "violentCrimes": 381,
+        "propertyCrimes": 885
       },
       {
         "month": "2026-01",
-        "totalCrimes": 1379,
-        "violentCrimes": 332,
-        "propertyCrimes": 708
+        "totalCrimes": 1372,
+        "violentCrimes": 330,
+        "propertyCrimes": 705
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1222,
-        "violentCrimes": 271,
-        "propertyCrimes": 639
+        "totalCrimes": 1220,
+        "violentCrimes": 268,
+        "propertyCrimes": 638
       },
       {
         "month": "2026-03",
-        "totalCrimes": 1284,
+        "totalCrimes": 1285,
         "violentCrimes": 284,
-        "propertyCrimes": 681
+        "propertyCrimes": 682
       },
       {
         "month": "2026-04",
-        "totalCrimes": 1251,
-        "violentCrimes": 303,
-        "propertyCrimes": 607
+        "totalCrimes": 1248,
+        "violentCrimes": 302,
+        "propertyCrimes": 606
       },
       {
         "month": "2026-05",
-        "totalCrimes": 1316,
-        "violentCrimes": 372,
+        "totalCrimes": 1311,
+        "violentCrimes": 368,
         "propertyCrimes": 575
       },
       {
         "month": "2026-06",
-        "totalCrimes": 1305,
-        "violentCrimes": 375,
-        "propertyCrimes": 582
+        "totalCrimes": 1296,
+        "violentCrimes": 372,
+        "propertyCrimes": 580
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3988,
-      "bicycle-theft": 221,
-      "burglary": 571,
-      "criminal-damage-arson": 544,
-      "drugs": 401,
-      "other-theft": 2332,
+      "anti-social-behaviour": 3964,
+      "bicycle-theft": 220,
+      "burglary": 572,
+      "criminal-damage-arson": 543,
+      "drugs": 403,
+      "other-theft": 2347,
       "possession-of-weapons": 87,
-      "public-order": 840,
-      "robbery": 466,
-      "shoplifting": 1803,
-      "theft-from-the-person": 2562,
-      "vehicle-crime": 973,
-      "violent-crime": 2755,
+      "public-order": 832,
+      "robbery": 454,
+      "shoplifting": 1802,
+      "theft-from-the-person": 2539,
+      "vehicle-crime": 976,
+      "violent-crime": 2743,
       "other-crime": 101
     },
-    "totalLast12Months": 17644
+    "totalLast12Months": 17583
   },
   "property": {
     "sales": [
+      {
+        "address": "CONSORT RISE HOUSE, 199 - 203, APARTMENT 53, BUCKINGHAM PALACE ROAD",
+        "postcode": "SW1W 9TB",
+        "price": 925000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41A, CHESTER SQUARE",
+        "postcode": "SW1W 9HT",
+        "price": 2225000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WOODS HOUSE, 7, APARTMENT 20, GATLIFF ROAD",
+        "postcode": "SW1W 8DE",
+        "price": 175000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "CARO POINT, 5, APARTMENT 32, GATLIFF ROAD",
         "postcode": "SW1W 8BD",
@@ -306,6 +335,14 @@
         "newBuild": false
       },
       {
+        "address": "HEPWORTH COURT, 30, APARTMENT 4, GATLIFF ROAD",
+        "postcode": "SW1W 8QN",
+        "price": 640000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "CONSORT RISE HOUSE, 199 - 203, APARTMENT 74, BUCKINGHAM PALACE ROAD",
         "postcode": "SW1W 9TB",
         "price": 525000,
@@ -362,6 +399,14 @@
         "newBuild": false
       },
       {
+        "address": "8, BURTON MEWS",
+        "postcode": "SW1W 9EP",
+        "price": 2250000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "9, BURTON MEWS",
         "postcode": "SW1W 9EP",
         "price": 2450000,
@@ -370,10 +415,34 @@
         "newBuild": false
       },
       {
-        "address": "28, CHESTER ROW",
-        "postcode": "SW1W 9JB",
-        "price": 1950000,
-        "dateOfTransfer": "2026-01-30",
+        "address": "CLIVEDEN HOUSE, 26 - 29, CLIVEDEN PLACE",
+        "postcode": "SW1W 8HD",
+        "price": 4520000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "BRAMAH HOUSE, 9, APARTMENT 56, GATLIFF ROAD",
+        "postcode": "SW1W 8DQ",
+        "price": 1045000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FLAT 3, CLIVEDEN PLACE",
+        "postcode": "SW1W 8LA",
+        "price": 1565000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, CHESTER SQUARE",
+        "postcode": "SW1W 9HH",
+        "price": 11300000,
+        "dateOfTransfer": "2026-02-10",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -383,6 +452,14 @@
         "price": 1000000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, CHESTER ROW",
+        "postcode": "SW1W 9JB",
+        "price": 1950000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -439,6 +516,14 @@
         "price": 925000,
         "dateOfTransfer": "2025-11-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, EATON MEWS WEST",
+        "postcode": "SW1W 9ET",
+        "price": 3525000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -554,6 +639,38 @@
         "newBuild": false
       },
       {
+        "address": "41, GRAHAM TERRACE",
+        "postcode": "SW1W 8HN",
+        "price": 1790000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 15, FIVE FIELDS SQUARE",
+        "postcode": "SW1W 8BF",
+        "price": 8200000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, FLAT 28, FIVE FIELDS SQUARE",
+        "postcode": "SW1W 8BF",
+        "price": 18000000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "12, FLAT 1, LOWER SLOANE STREET",
+        "postcode": "SW1W 8BJ",
+        "price": 2380000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "42A, UPPER MAISONETTE AT, ELIZABETH STREET",
         "postcode": "SW1W 9NZ",
         "price": 3289000,
@@ -626,19 +743,19 @@
         "newBuild": false
       },
       {
-        "address": "7, BURTON MEWS",
-        "postcode": "SW1W 9EP",
-        "price": 655000,
-        "dateOfTransfer": "2025-09-02",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "5, GROSVENOR GARDENS",
         "postcode": "SW1W 0BD",
         "price": 7600000,
         "dateOfTransfer": "2025-09-02",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "7, BURTON MEWS",
+        "postcode": "SW1W 9EP",
+        "price": 655000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -662,6 +779,14 @@
         "postcode": "SW1W 8DP",
         "price": 1130000,
         "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DONERAILE HOUSE, FLAT 9, EBURY BRIDGE ROAD",
+        "postcode": "SW1W 8SX",
+        "price": 800000,
+        "dateOfTransfer": "2025-08-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -874,6 +999,14 @@
         "newBuild": false
       },
       {
+        "address": "99, EATON TERRACE",
+        "postcode": "SW1W 8TW",
+        "price": 5000000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "18 - 20, FLAT 7, SLOANE GARDENS",
         "postcode": "SW1W 8DL",
         "price": 680000,
@@ -954,20 +1087,20 @@
         "newBuild": false
       },
       {
-        "address": "9, FLAT 19, MULBERRY SQUARE",
-        "postcode": "SW1W 8BQ",
-        "price": 6200000,
-        "dateOfTransfer": "2025-04-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "55, FLAT 28, EBURY STREET",
         "postcode": "SW1W 0PA",
         "price": 3000000,
         "dateOfTransfer": "2025-04-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "9, FLAT 19, MULBERRY SQUARE",
+        "postcode": "SW1W 8BQ",
+        "price": 6200000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "80, FLAT H, EATON SQUARE",
@@ -1018,19 +1151,19 @@
         "newBuild": false
       },
       {
-        "address": "4, LOWER SLOANE STREET",
-        "postcode": "SW1W 8BJ",
-        "price": 3125000,
-        "dateOfTransfer": "2025-04-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "162, MOZART TERRACE",
         "postcode": "SW1W 8UP",
         "price": 5450000,
         "dateOfTransfer": "2025-04-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, LOWER SLOANE STREET",
+        "postcode": "SW1W 8BJ",
+        "price": 3125000,
+        "dateOfTransfer": "2025-04-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1138,17 +1271,17 @@
         "newBuild": false
       },
       {
-        "address": "8, FLAT 5, SLOANE GARDENS",
-        "postcode": "SW1W 8DL",
-        "price": 1050000,
+        "address": "CHEYLESMORE HOUSE, FLAT 16, EBURY BRIDGE ROAD",
+        "postcode": "SW1W 8QY",
+        "price": 600000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "CHEYLESMORE HOUSE, FLAT 16, EBURY BRIDGE ROAD",
-        "postcode": "SW1W 8QY",
-        "price": 600000,
+        "address": "8, FLAT 5, SLOANE GARDENS",
+        "postcode": "SW1W 8DL",
+        "price": 1050000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1226,19 +1359,19 @@
         "newBuild": false
       },
       {
-        "address": "SLOANE SQUARE HOUSE, 1, FLAT 9, HOLBEIN PLACE",
-        "postcode": "SW1W 8NS",
-        "price": 900000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ROYAL COURT THEATRE, SLOANE SQUARE",
         "postcode": "SW1W 8AS",
         "price": 270000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "SLOANE SQUARE HOUSE, 1, FLAT 9, HOLBEIN PLACE",
+        "postcode": "SW1W 8NS",
+        "price": 900000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1298,6 +1431,14 @@
         "newBuild": false
       },
       {
+        "address": "SUTHERLAND APARTMENTS, APARTMENT 105, ALBA SQUARE",
+        "postcode": "SW1W 8DY",
+        "price": 1120000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "17, FLAT 1, CLIVEDEN PLACE",
         "postcode": "SW1W 8LA",
         "price": 2260000,
@@ -1309,14 +1450,6 @@
         "address": "65, FLAT O, EATON SQUARE",
         "postcode": "SW1W 9BQ",
         "price": 900000,
-        "dateOfTransfer": "2025-02-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "SUTHERLAND APARTMENTS, APARTMENT 105, ALBA SQUARE",
-        "postcode": "SW1W 8DY",
-        "price": 1120000,
         "dateOfTransfer": "2025-02-04",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1442,8 +1575,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 3075279,
-    "medianPrice": 1600000
+    "averagePrice": 3165911,
+    "medianPrice": 1615000
   },
   "representatives": {
     "representatives": [

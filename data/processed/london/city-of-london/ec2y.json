@@ -3,8 +3,8 @@
   "slug": "ec2y",
   "city": "London",
   "borough": "City of London",
-  "latitude": 51.51946605555553,
-  "longitude": -0.0935492222222222,
+  "latitude": 51.51944493150685,
+  "longitude": -0.09327079452054793,
   "wards": [
     "Aldersgate",
     "Bassishaw",
@@ -39,6 +39,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "St Giles' Terrace, Barbican, London",
         "postcode": "EC2Y 8BB",
         "numberOfPupils": 794,
@@ -50,6 +51,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Silk Street, Barbican, London",
         "postcode": "EC2Y 8DT",
         "numberOfPupils": null,
@@ -61,97 +63,145 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2752,
-        "violentCrimes": 689,
-        "propertyCrimes": 1538
+        "totalCrimes": 2764,
+        "violentCrimes": 682,
+        "propertyCrimes": 1553
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2755,
-        "violentCrimes": 705,
-        "propertyCrimes": 1545
+        "totalCrimes": 2768,
+        "violentCrimes": 706,
+        "propertyCrimes": 1555
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2419,
+        "totalCrimes": 2434,
         "violentCrimes": 617,
-        "propertyCrimes": 1398
+        "propertyCrimes": 1415
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2580,
-        "violentCrimes": 621,
-        "propertyCrimes": 1548
+        "totalCrimes": 2606,
+        "violentCrimes": 626,
+        "propertyCrimes": 1571
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2482,
-        "violentCrimes": 623,
-        "propertyCrimes": 1464
+        "totalCrimes": 2502,
+        "violentCrimes": 630,
+        "propertyCrimes": 1473
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2608,
-        "violentCrimes": 668,
-        "propertyCrimes": 1546
+        "totalCrimes": 2632,
+        "violentCrimes": 670,
+        "propertyCrimes": 1568
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2275,
-        "violentCrimes": 534,
-        "propertyCrimes": 1342
+        "totalCrimes": 2298,
+        "violentCrimes": 536,
+        "propertyCrimes": 1362
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2290,
-        "violentCrimes": 549,
-        "propertyCrimes": 1352
+        "totalCrimes": 2316,
+        "violentCrimes": 552,
+        "propertyCrimes": 1369
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2480,
-        "violentCrimes": 631,
-        "propertyCrimes": 1429
+        "totalCrimes": 2512,
+        "violentCrimes": 634,
+        "propertyCrimes": 1457
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2464,
-        "violentCrimes": 571,
-        "propertyCrimes": 1499
+        "totalCrimes": 2497,
+        "violentCrimes": 575,
+        "propertyCrimes": 1523
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2419,
-        "violentCrimes": 614,
-        "propertyCrimes": 1430
+        "totalCrimes": 2435,
+        "violentCrimes": 617,
+        "propertyCrimes": 1441
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2487,
-        "violentCrimes": 595,
-        "propertyCrimes": 1486
+        "totalCrimes": 2516,
+        "violentCrimes": 599,
+        "propertyCrimes": 1506
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3291,
-      "bicycle-theft": 893,
-      "burglary": 1414,
-      "criminal-damage-arson": 731,
-      "drugs": 1570,
-      "other-theft": 5337,
-      "possession-of-weapons": 130,
-      "public-order": 1473,
-      "robbery": 981,
-      "shoplifting": 3820,
-      "theft-from-the-person": 4657,
-      "vehicle-crime": 725,
-      "violent-crime": 4833,
+      "anti-social-behaviour": 3303,
+      "bicycle-theft": 897,
+      "burglary": 1417,
+      "criminal-damage-arson": 738,
+      "drugs": 1584,
+      "other-theft": 5410,
+      "possession-of-weapons": 129,
+      "public-order": 1471,
+      "robbery": 993,
+      "shoplifting": 3836,
+      "theft-from-the-person": 4765,
+      "vehicle-crime": 730,
+      "violent-crime": 4851,
       "other-crime": 156
     },
-    "totalLast12Months": 30011
+    "totalLast12Months": 30280
   },
   "property": {
     "sales": [
+      {
+        "address": "SHAKESPEARE TOWER, FLAT 323, BARBICAN",
+        "postcode": "EC2Y 8NJ",
+        "price": 1775000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BUNYAN COURT, 519, BARBICAN",
+        "postcode": "EC2Y 8DH",
+        "price": 1500000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAUDERDALE TOWER, FLAT 391, BARBICAN",
+        "postcode": "EC2Y 8NA",
+        "price": 2400000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ANDREWES HOUSE, FLAT 157, BARBICAN",
+        "postcode": "EC2Y 8BA",
+        "price": 793292,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JOHN TRUNDLE COURT, FLAT 29, BARBICAN",
+        "postcode": "EC2Y 8DJ",
+        "price": 835000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "JOHN TRUNDLE COURT, FLAT 78, BARBICAN",
+        "postcode": "EC2Y 8NE",
+        "price": 495000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "6 - 9, FLAT 2, BRIDGEWATER SQUARE",
         "postcode": "EC2Y 8AG",
@@ -213,6 +263,14 @@
         "postcode": "EC2Y 8NA",
         "price": 1625000,
         "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DEFOE HOUSE, FLAT 93, BARBICAN",
+        "postcode": "EC2Y 8ND",
+        "price": 949999,
+        "dateOfTransfer": "2026-02-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -513,17 +571,17 @@
         "newBuild": false
       },
       {
-        "address": "THOMAS MORE HOUSE, FLAT 157, BARBICAN",
-        "postcode": "EC2Y 8BU",
-        "price": 700000,
+        "address": "BRETON HOUSE, FLAT 87, BARBICAN",
+        "postcode": "EC2Y 8PQ",
+        "price": 525000,
         "dateOfTransfer": "2025-07-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BRETON HOUSE, FLAT 87, BARBICAN",
-        "postcode": "EC2Y 8PQ",
-        "price": 525000,
+        "address": "THOMAS MORE HOUSE, FLAT 157, BARBICAN",
+        "postcode": "EC2Y 8BU",
+        "price": 700000,
         "dateOfTransfer": "2025-07-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -569,17 +627,17 @@
         "newBuild": false
       },
       {
-        "address": "LAUDERDALE TOWER, FLAT 362, BARBICAN",
-        "postcode": "EC2Y 8NA",
-        "price": 1600000,
+        "address": "GILBERT HOUSE, FLAT 211, BARBICAN",
+        "postcode": "EC2Y 8BD",
+        "price": 925000,
         "dateOfTransfer": "2025-07-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "GILBERT HOUSE, FLAT 211, BARBICAN",
-        "postcode": "EC2Y 8BD",
-        "price": 925000,
+        "address": "LAUDERDALE TOWER, FLAT 362, BARBICAN",
+        "postcode": "EC2Y 8NA",
+        "price": 1600000,
         "dateOfTransfer": "2025-07-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -705,9 +763,9 @@
         "newBuild": false
       },
       {
-        "address": "ANDREWES HOUSE, FLAT 85, BARBICAN",
+        "address": "ANDREWES HOUSE, FLAT 90, BARBICAN",
         "postcode": "EC2Y 8AY",
-        "price": 830000,
+        "price": 925000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -729,10 +787,18 @@
         "newBuild": false
       },
       {
-        "address": "ANDREWES HOUSE, FLAT 90, BARBICAN",
+        "address": "ANDREWES HOUSE, FLAT 85, BARBICAN",
         "postcode": "EC2Y 8AY",
-        "price": 925000,
+        "price": 830000,
         "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROMAN HOUSE, APARTMENT 79, WOOD STREET",
+        "postcode": "EC2Y 5AG",
+        "price": 624999,
+        "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -753,10 +819,10 @@
         "newBuild": false
       },
       {
-        "address": "ROMAN HOUSE, APARTMENT 79, WOOD STREET",
-        "postcode": "EC2Y 5AG",
-        "price": 624999,
-        "dateOfTransfer": "2025-03-28",
+        "address": "SPEED HOUSE, FLAT 47, BARBICAN",
+        "postcode": "EC2Y 8AT",
+        "price": 765000,
+        "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -764,14 +830,6 @@
         "address": "5, FLAT 3102, MOOR LANE",
         "postcode": "EC2Y 9BB",
         "price": 2600000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "SPEED HOUSE, FLAT 47, BARBICAN",
-        "postcode": "EC2Y 8AT",
-        "price": 765000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -993,8 +1051,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1002811,
-    "medianPrice": 860000
+    "averagePrice": 1018245,
+    "medianPrice": 862500
   },
   "representatives": {
     "representatives": [

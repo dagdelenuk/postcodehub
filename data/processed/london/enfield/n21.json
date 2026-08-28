@@ -3,8 +3,8 @@
   "slug": "n21",
   "city": "London",
   "borough": "Enfield",
-  "latitude": 51.636730138240516,
-  "longitude": -0.09966966965888685,
+  "latitude": 51.63693347645953,
+  "longitude": -0.09967087005649707,
   "wards": [
     "Bush Hill Park",
     "Grange Park",
@@ -113,7 +113,8 @@
         "urn": "102035",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/12/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Ringwood Way, Winchmore Hill, London",
         "postcode": "N21 2RA",
         "numberOfPupils": 419,
@@ -123,8 +124,9 @@
         "name": "Winchmore School",
         "urn": "102045",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "29/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Laburnum Grove, Winchmore Hill, London",
         "postcode": "N21 3HS",
         "numberOfPupils": 1859,
@@ -136,6 +138,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Wades Hill, Winchmore Hill, London",
         "postcode": "N21 1BG",
         "numberOfPupils": 192,
@@ -147,6 +150,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "104 Hoppers Road, London",
         "postcode": "N21 3LJ",
         "numberOfPupils": 174,
@@ -158,6 +162,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "13 The Chine, Grange Park, London",
         "postcode": "N21 2EA",
         "numberOfPupils": 125,
@@ -167,8 +172,9 @@
         "name": "Highfield Primary School",
         "urn": "132203",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "28/04/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Highfield Road, London",
         "postcode": "N21 3HE",
         "numberOfPupils": 672,
@@ -179,7 +185,8 @@
         "urn": "132256",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/11/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "148 Worlds End Lane, London",
         "postcode": "N21 1QQ",
         "numberOfPupils": 1694,
@@ -189,8 +196,9 @@
         "name": "Grange Park Primary School",
         "urn": "145207",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "03/03/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "World's End Lane, Winchmore Hill, London",
         "postcode": "N21 1PP",
         "numberOfPupils": 786,
@@ -201,7 +209,8 @@
         "urn": "151543",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/07/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Chaseville Park Road, London",
         "postcode": "N21 1PD",
         "numberOfPupils": 629,
@@ -213,9 +222,9 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 192,
+        "totalCrimes": 191,
         "violentCrimes": 51,
-        "propertyCrimes": 83
+        "propertyCrimes": 82
       },
       {
         "month": "2025-08",
@@ -232,24 +241,24 @@
       {
         "month": "2025-10",
         "totalCrimes": 187,
-        "violentCrimes": 56,
-        "propertyCrimes": 93
+        "violentCrimes": 58,
+        "propertyCrimes": 92
       },
       {
         "month": "2025-11",
-        "totalCrimes": 166,
+        "totalCrimes": 165,
         "violentCrimes": 44,
-        "propertyCrimes": 76
+        "propertyCrimes": 75
       },
       {
         "month": "2025-12",
-        "totalCrimes": 152,
+        "totalCrimes": 153,
         "violentCrimes": 40,
         "propertyCrimes": 63
       },
       {
         "month": "2026-01",
-        "totalCrimes": 187,
+        "totalCrimes": 186,
         "violentCrimes": 52,
         "propertyCrimes": 87
       },
@@ -267,9 +276,9 @@
       },
       {
         "month": "2026-04",
-        "totalCrimes": 160,
+        "totalCrimes": 159,
         "violentCrimes": 42,
-        "propertyCrimes": 67
+        "propertyCrimes": 66
       },
       {
         "month": "2026-05",
@@ -279,8 +288,8 @@
       },
       {
         "month": "2026-06",
-        "totalCrimes": 189,
-        "violentCrimes": 58,
+        "totalCrimes": 191,
+        "violentCrimes": 60,
         "propertyCrimes": 77
       }
     ],
@@ -288,22 +297,102 @@
       "anti-social-behaviour": 482,
       "bicycle-theft": 6,
       "burglary": 183,
-      "criminal-damage-arson": 81,
-      "drugs": 64,
-      "other-theft": 156,
+      "criminal-damage-arson": 79,
+      "drugs": 63,
+      "other-theft": 154,
       "possession-of-weapons": 6,
-      "public-order": 64,
+      "public-order": 65,
       "robbery": 30,
       "shoplifting": 69,
       "theft-from-the-person": 58,
       "vehicle-crime": 365,
-      "violent-crime": 507,
+      "violent-crime": 510,
       "other-crime": 31
     },
-    "totalLast12Months": 2102
+    "totalLast12Months": 2101
   },
   "property": {
     "sales": [
+      {
+        "address": "33, BROAD WALK",
+        "postcode": "N21 3BU",
+        "price": 4350000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, KENT ROAD",
+        "postcode": "N21 2JR",
+        "price": 810000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "PEGASUS COURT, 890, FLAT 18, GREEN LANES",
+        "postcode": "N21 2RW",
+        "price": 150000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, CRANLEIGH GARDENS",
+        "postcode": "N21 1DS",
+        "price": 840000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, FIRS LANE",
+        "postcode": "N21 2HT",
+        "price": 355000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, BEECHDALE",
+        "postcode": "N21 3QG",
+        "price": 751000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, COSGROVE CLOSE",
+        "postcode": "N21 3BG",
+        "price": 280000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, ANDERSON CLOSE",
+        "postcode": "N21 1TH",
+        "price": 475000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, GREEN DRAGON LANE",
+        "postcode": "N21 2LH",
+        "price": 915000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, BANTING DRIVE",
+        "postcode": "N21 1SL",
+        "price": 280000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "ASHWOOD LODGE, 1, FLAT 7, HOUNDSDEN ROAD",
         "postcode": "N21 1ND",
@@ -329,6 +418,54 @@
         "newBuild": false
       },
       {
+        "address": "8, RADCLIFFE ROAD",
+        "postcode": "N21 2SE",
+        "price": 1085750,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CARRINGTON COURT, 104, FLAT 16, GREEN DRAGON LANE",
+        "postcode": "N21 2LY",
+        "price": 600000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, BERRY CLOSE",
+        "postcode": "N21 2RY",
+        "price": 390000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "63, CARPENTER GARDENS",
+        "postcode": "N21 3HH",
+        "price": 673500,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "105B, WOODBERRY AVENUE",
+        "postcode": "N21 3LG",
+        "price": 525500,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "70, HOODCOTE GARDENS",
+        "postcode": "N21 2NE",
+        "price": 900000,
+        "dateOfTransfer": "2026-06-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "DUNCAN COURT, FLAT 10, GREEN LANES",
         "postcode": "N21 3RL",
         "price": 320300,
@@ -345,14 +482,6 @@
         "newBuild": false
       },
       {
-        "address": "18, ORCHARDMEDE",
-        "postcode": "N21 2DL",
-        "price": 1025000,
-        "dateOfTransfer": "2026-05-14",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "17A, COLLEGE ROAD",
         "postcode": "N21 3LL",
         "price": 550000,
@@ -361,19 +490,19 @@
         "newBuild": false
       },
       {
+        "address": "18, ORCHARDMEDE",
+        "postcode": "N21 2DL",
+        "price": 1025000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "5, CLARENDON WAY",
         "postcode": "N21 2LX",
         "price": 845000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "AUSTEN COURT, 205, FLAT 34, WINCHMORE HILL ROAD",
-        "postcode": "N21 1QN",
-        "price": 160000,
-        "dateOfTransfer": "2026-05-01",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -393,19 +522,27 @@
         "newBuild": false
       },
       {
-        "address": "60, BARROWELL GREEN",
-        "postcode": "N21 3AY",
-        "price": 420000,
-        "dateOfTransfer": "2026-05-01",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "71, CHEYNE WALK",
         "postcode": "N21 1DD",
         "price": 985000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "AUSTEN COURT, 205, FLAT 34, WINCHMORE HILL ROAD",
+        "postcode": "N21 1QN",
+        "price": 160000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, BARROWELL GREEN",
+        "postcode": "N21 3AY",
+        "price": 420000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -433,6 +570,14 @@
         "newBuild": false
       },
       {
+        "address": "OAK LODGE, 50, FLAT 3, EVERSLEY PARK ROAD",
+        "postcode": "N21 1JL",
+        "price": 130000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2A, LAUREL DRIVE",
         "postcode": "N21 1LJ",
         "price": 1402000,
@@ -444,14 +589,6 @@
         "address": "32A, HYDE PARK AVENUE",
         "postcode": "N21 2PP",
         "price": 347500,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "OAK LODGE, 50, FLAT 3, EVERSLEY PARK ROAD",
-        "postcode": "N21 1JL",
-        "price": 130000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -489,19 +626,19 @@
         "newBuild": false
       },
       {
-        "address": "857A, GREEN LANES",
-        "postcode": "N21 2RX",
-        "price": 270000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "10, SHERBROOK GARDENS",
         "postcode": "N21 2NU",
         "price": 930000,
         "dateOfTransfer": "2026-04-17",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "857A, GREEN LANES",
+        "postcode": "N21 2RX",
+        "price": 270000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -649,6 +786,14 @@
         "newBuild": false
       },
       {
+        "address": "25, RIDGE AVENUE",
+        "postcode": "N21 2RJ",
+        "price": 675000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "3 - 3A, WOODBERRY AVENUE",
         "postcode": "N21 3LE",
         "price": 375000,
@@ -662,6 +807,22 @@
         "price": 267500,
         "dateOfTransfer": "2026-02-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, WADES HILL",
+        "postcode": "N21 1BD",
+        "price": 670000,
+        "dateOfTransfer": "2026-02-24",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "29, COMPTON ROAD",
+        "postcode": "N21 3NU",
+        "price": 1050000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -729,6 +890,14 @@
         "newBuild": false
       },
       {
+        "address": "27, FIRS LANE",
+        "postcode": "N21 2HT",
+        "price": 317000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "4, MYDDELTON GARDENS",
         "postcode": "N21 2PA",
         "price": 1250000,
@@ -766,6 +935,22 @@
         "price": 400000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "74, GREEN DRAGON LANE",
+        "postcode": "N21 2LH",
+        "price": 730000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "43, BEECHDALE",
+        "postcode": "N21 3QE",
+        "price": 835000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -873,19 +1058,19 @@
         "newBuild": false
       },
       {
-        "address": "37, PARK DRIVE",
-        "postcode": "N21 2LU",
-        "price": 858500,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "37, HYDEFIELD CLOSE",
         "postcode": "N21 2PS",
         "price": 210000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, PARK DRIVE",
+        "postcode": "N21 2LU",
+        "price": 858500,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -953,19 +1138,19 @@
         "newBuild": false
       },
       {
-        "address": "21, CEDARS ROAD",
-        "postcode": "N21 3HB",
-        "price": 642000,
-        "dateOfTransfer": "2025-12-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "PEGASUS COURT, 890, FLAT 5, GREEN LANES",
         "postcode": "N21 2RW",
         "price": 255000,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, CEDARS ROAD",
+        "postcode": "N21 3HB",
+        "price": 642000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1169,6 +1354,14 @@
         "newBuild": false
       },
       {
+        "address": "21, HILL HOUSE CLOSE",
+        "postcode": "N21 1LG",
+        "price": 375000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "243, FIRS LANE",
         "postcode": "N21 2PH",
         "price": 750000,
@@ -1193,14 +1386,6 @@
         "newBuild": false
       },
       {
-        "address": "HANOVER LODGE, 10, FLAT 6, BROOK PARK CLOSE",
-        "postcode": "N21 1RF",
-        "price": 423000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "WATERMEAD LODGE, 1, FLAT 2, FARM ROAD",
         "postcode": "N21 3JQ",
         "price": 342000,
@@ -1217,25 +1402,25 @@
         "newBuild": false
       },
       {
-        "address": "41, BEVERLEY CLOSE",
-        "postcode": "N21 3JB",
-        "price": 400000,
-        "dateOfTransfer": "2025-10-24",
+        "address": "HANOVER LODGE, 10, FLAT 6, BROOK PARK CLOSE",
+        "postcode": "N21 1RF",
+        "price": 423000,
+        "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "23, CEDARS ROAD",
-        "postcode": "N21 3HB",
-        "price": 675000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
+        "address": "88, HYDE PARK AVENUE",
+        "postcode": "N21 2PP",
+        "price": 650000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "10, VERA AVENUE",
-        "postcode": "N21 1RA",
-        "price": 235000,
+        "address": "41, BEVERLEY CLOSE",
+        "postcode": "N21 3JB",
+        "price": 400000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1249,10 +1434,18 @@
         "newBuild": false
       },
       {
-        "address": "2, HYDE PARK GARDENS",
-        "postcode": "N21 2PN",
-        "price": 770000,
-        "dateOfTransfer": "2025-10-23",
+        "address": "10, VERA AVENUE",
+        "postcode": "N21 1RA",
+        "price": 235000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, CEDARS ROAD",
+        "postcode": "N21 3HB",
+        "price": 675000,
+        "dateOfTransfer": "2025-10-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1265,18 +1458,18 @@
         "newBuild": false
       },
       {
-        "address": "47, HOPPERS ROAD",
-        "postcode": "N21 3LN",
-        "price": 716000,
-        "dateOfTransfer": "2025-10-20",
+        "address": "2, HYDE PARK GARDENS",
+        "postcode": "N21 2PN",
+        "price": 770000,
+        "dateOfTransfer": "2025-10-23",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "31, BARROWELL GREEN",
-        "postcode": "N21 3AS",
-        "price": 630000,
-        "dateOfTransfer": "2025-10-17",
+        "address": "47, HOPPERS ROAD",
+        "postcode": "N21 3LN",
+        "price": 716000,
+        "dateOfTransfer": "2025-10-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1297,6 +1490,14 @@
         "newBuild": false
       },
       {
+        "address": "31, BARROWELL GREEN",
+        "postcode": "N21 3AS",
+        "price": 630000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "7, PERCY ROAD",
         "postcode": "N21 2HY",
         "price": 890000,
@@ -1305,11 +1506,11 @@
         "newBuild": false
       },
       {
-        "address": "70, GRANGE PARK AVENUE, WINCHMORE HILL",
-        "postcode": "N21 2LL",
-        "price": 1332500,
+        "address": "45, BUSH HILL ROAD",
+        "postcode": "N21 2DP",
+        "price": 435000,
         "dateOfTransfer": "2025-10-10",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1321,11 +1522,11 @@
         "newBuild": false
       },
       {
-        "address": "45, BUSH HILL ROAD",
-        "postcode": "N21 2DP",
-        "price": 435000,
+        "address": "70, GRANGE PARK AVENUE, WINCHMORE HILL",
+        "postcode": "N21 2LL",
+        "price": 1332500,
         "dateOfTransfer": "2025-10-10",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1345,19 +1546,27 @@
         "newBuild": false
       },
       {
-        "address": "34A, QUEENS AVENUE",
-        "postcode": "N21 3JH",
-        "price": 395000,
-        "dateOfTransfer": "2025-10-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "19, HADLEY WAY",
         "postcode": "N21 1AL",
         "price": 842000,
         "dateOfTransfer": "2025-10-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, VIGA ROAD",
+        "postcode": "N21 1HJ",
+        "price": 1525000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "34A, QUEENS AVENUE",
+        "postcode": "N21 3JH",
+        "price": 395000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1377,19 +1586,27 @@
         "newBuild": false
       },
       {
+        "address": "13, PARK DRIVE",
+        "postcode": "N21 2LU",
+        "price": 925000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, VIGA ROAD",
+        "postcode": "N21 1HJ",
+        "price": 1020000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "48, BUSH HILL ROAD",
         "postcode": "N21 2DT",
         "price": 668000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "39, BROAD WALK",
-        "postcode": "N21 3BL",
-        "price": 2400000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1409,19 +1626,19 @@
         "newBuild": false
       },
       {
-        "address": "10, VIGA ROAD",
-        "postcode": "N21 1HJ",
-        "price": 1020000,
+        "address": "39, BROAD WALK",
+        "postcode": "N21 3BL",
+        "price": 2400000,
         "dateOfTransfer": "2025-09-26",
-        "propertyType": "Semi-detached",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "60, CHEYNE WALK",
-        "postcode": "N21 1DE",
-        "price": 900000,
-        "dateOfTransfer": "2025-09-25",
-        "propertyType": "Semi-detached",
+        "address": "CRESSINGTON LODGE, 122, FLAT 5, GREEN DRAGON LANE",
+        "postcode": "N21 1HA",
+        "price": 730000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1430,6 +1647,14 @@
         "price": 985000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "60, CHEYNE WALK",
+        "postcode": "N21 1DE",
+        "price": 900000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1449,6 +1674,14 @@
         "newBuild": false
       },
       {
+        "address": "158, HOPPERS ROAD",
+        "postcode": "N21 3LA",
+        "price": 870000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "SEYMOUR COURT, FLAT 45, EVERSLEY PARK ROAD",
         "postcode": "N21 1JQ",
         "price": 350000,
@@ -1462,14 +1695,6 @@
         "price": 116000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "158, HOPPERS ROAD",
-        "postcode": "N21 3LA",
-        "price": 870000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1497,6 +1722,14 @@
         "newBuild": false
       },
       {
+        "address": "123, HOPPERS ROAD",
+        "postcode": "N21 3LP",
+        "price": 775000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "35, LANDRA GARDENS",
         "postcode": "N21 1RS",
         "price": 1550000,
@@ -1521,17 +1754,25 @@
         "newBuild": false
       },
       {
-        "address": "123, HOPPERS ROAD",
-        "postcode": "N21 3LP",
-        "price": 775000,
+        "address": "103, VICARS MOOR LANE",
+        "postcode": "N21 1BL",
+        "price": 1405000,
         "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
         "address": "ASBURY COURT, 74, FLAT 11, PENNINGTON DRIVE",
         "postcode": "N21 1SY",
         "price": 274000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MCBURNEY COURT, 2, FLAT 3, NEWSHOLME DRIVE",
+        "postcode": "N21 1UD",
+        "price": 340000,
         "dateOfTransfer": "2025-09-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1545,19 +1786,19 @@
         "newBuild": false
       },
       {
-        "address": "140, WINCHMORE HILL ROAD",
-        "postcode": "N21 1QP",
-        "price": 905000,
-        "dateOfTransfer": "2025-09-08",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "36, RIDGE ROAD",
         "postcode": "N21 3EA",
         "price": 645000,
         "dateOfTransfer": "2025-09-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "140, WINCHMORE HILL ROAD",
+        "postcode": "N21 1QP",
+        "price": 905000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1609,14 +1850,6 @@
         "newBuild": false
       },
       {
-        "address": "DUNCAN COURT, FLAT 2, GREEN LANES",
-        "postcode": "N21 3RL",
-        "price": 335000,
-        "dateOfTransfer": "2025-09-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "20, HANBURY DRIVE",
         "postcode": "N21 1SZ",
         "price": 587500,
@@ -1625,27 +1858,19 @@
         "newBuild": false
       },
       {
+        "address": "DUNCAN COURT, FLAT 2, GREEN LANES",
+        "postcode": "N21 3RL",
+        "price": 335000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "3, WOODCROFT",
         "postcode": "N21 3QN",
         "price": 1300000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "PEGASUS COURT, 890, FLAT 20, GREEN LANES",
-        "postcode": "N21 2RW",
-        "price": 230000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "11, MERRIDENE",
-        "postcode": "N21 1RD",
-        "price": 447000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1665,6 +1890,22 @@
         "newBuild": false
       },
       {
+        "address": "PEGASUS COURT, 890, FLAT 20, GREEN LANES",
+        "postcode": "N21 2RW",
+        "price": 230000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, MERRIDENE",
+        "postcode": "N21 1RD",
+        "price": 447000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "27, ANDERSON CLOSE",
         "postcode": "N21 1TH",
         "price": 555000,
@@ -1673,17 +1914,17 @@
         "newBuild": false
       },
       {
-        "address": "20, HOMEWILLOW CLOSE",
-        "postcode": "N21 2HJ",
-        "price": 230000,
+        "address": "BELGRAVIA LODGE, 3, FLAT 1, BROOK PARK CLOSE",
+        "postcode": "N21 1RF",
+        "price": 425000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BELGRAVIA LODGE, 3, FLAT 1, BROOK PARK CLOSE",
-        "postcode": "N21 1RF",
-        "price": 425000,
+        "address": "20, HOMEWILLOW CLOSE",
+        "postcode": "N21 2HJ",
+        "price": 230000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1721,14 +1962,6 @@
         "newBuild": false
       },
       {
-        "address": "27, THE ALDERS",
-        "postcode": "N21 1AR",
-        "price": 1050000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "27, SPRING BANK",
         "postcode": "N21 1JH",
         "price": 440000,
@@ -1745,11 +1978,27 @@
         "newBuild": false
       },
       {
+        "address": "27, THE ALDERS",
+        "postcode": "N21 1AR",
+        "price": 1050000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "19, CEDARS ROAD",
         "postcode": "N21 3HB",
         "price": 675000,
         "dateOfTransfer": "2025-08-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, HENRIETTA GARDENS",
+        "postcode": "N21 3BF",
+        "price": 1325000,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1777,6 +2026,14 @@
         "newBuild": false
       },
       {
+        "address": "28, ELMSCOTT GARDENS",
+        "postcode": "N21 2BP",
+        "price": 870000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "12, WILSON STREET",
         "postcode": "N21 1BP",
         "price": 732000,
@@ -1793,14 +2050,6 @@
         "newBuild": false
       },
       {
-        "address": "16, ANDERSON CLOSE",
-        "postcode": "N21 1TH",
-        "price": 538000,
-        "dateOfTransfer": "2025-08-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "18, ARUNDEL GARDENS",
         "postcode": "N21 3AE",
         "price": 980000,
@@ -1809,11 +2058,11 @@
         "newBuild": false
       },
       {
-        "address": "28, ELMSCOTT GARDENS",
-        "postcode": "N21 2BP",
-        "price": 870000,
+        "address": "16, ANDERSON CLOSE",
+        "postcode": "N21 1TH",
+        "price": 538000,
         "dateOfTransfer": "2025-08-14",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2193,9 +2442,25 @@
         "newBuild": false
       },
       {
+        "address": "VALENTINE MANSIONS, FLAT 1, THE GREEN, WINCHMORE HILL",
+        "postcode": "N21 1BA",
+        "price": 350000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "75A, THE CHINE",
         "postcode": "N21 2EE",
         "price": 603500,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, BANTING DRIVE",
+        "postcode": "N21 1SL",
+        "price": 320000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2217,27 +2482,11 @@
         "newBuild": false
       },
       {
-        "address": "VALENTINE MANSIONS, FLAT 1, THE GREEN, WINCHMORE HILL",
-        "postcode": "N21 1BA",
-        "price": 350000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "97, HALSTEAD ROAD, WINCHMORE HILL",
         "postcode": "N21 3DR",
         "price": 762500,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "6, BANTING DRIVE",
-        "postcode": "N21 1SL",
-        "price": 320000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2289,14 +2538,6 @@
         "newBuild": false
       },
       {
-        "address": "MARGARET COURT, 32, FLAT 1, VICARS MOOR LANE",
-        "postcode": "N21 2QL",
-        "price": 376250,
-        "dateOfTransfer": "2025-06-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "24, THE ORCHARD",
         "postcode": "N21 2DH",
         "price": 815000,
@@ -2305,11 +2546,11 @@
         "newBuild": false
       },
       {
-        "address": "8, PARK DRIVE",
-        "postcode": "N21 2LR",
-        "price": 920000,
-        "dateOfTransfer": "2025-06-18",
-        "propertyType": "Semi-detached",
+        "address": "MARGARET COURT, 32, FLAT 1, VICARS MOOR LANE",
+        "postcode": "N21 2QL",
+        "price": 376250,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2318,6 +2559,14 @@
         "price": 1010000,
         "dateOfTransfer": "2025-06-18",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, PARK DRIVE",
+        "postcode": "N21 2LR",
+        "price": 920000,
+        "dateOfTransfer": "2025-06-18",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2593,19 +2842,19 @@
         "newBuild": false
       },
       {
-        "address": "37A, FERNLEIGH ROAD",
-        "postcode": "N21 3AN",
-        "price": 290000,
-        "dateOfTransfer": "2025-04-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "81, RIDGE ROAD",
         "postcode": "N21 3EL",
         "price": 849000,
         "dateOfTransfer": "2025-04-16",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "37A, FERNLEIGH ROAD",
+        "postcode": "N21 3AN",
+        "price": 290000,
+        "dateOfTransfer": "2025-04-16",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2641,11 +2890,11 @@
         "newBuild": false
       },
       {
-        "address": "37, CARPENTER GARDENS",
-        "postcode": "N21 3HJ",
-        "price": 565000,
+        "address": "30, OAKWOOD CRESCENT",
+        "postcode": "N21 1PB",
+        "price": 603000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2673,14 +2922,6 @@
         "newBuild": false
       },
       {
-        "address": "25, THE ALDERS",
-        "postcode": "N21 1AR",
-        "price": 965000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "28, EVERSLEY PARK ROAD",
         "postcode": "N21 1JU",
         "price": 410000,
@@ -2694,6 +2935,22 @@
         "price": 800000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, CARPENTER GARDENS",
+        "postcode": "N21 3HJ",
+        "price": 565000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, STATION ROAD, WINCHMORE HILL",
+        "postcode": "N21 3RB",
+        "price": 1170000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2713,11 +2970,19 @@
         "newBuild": false
       },
       {
-        "address": "18, STATION ROAD, WINCHMORE HILL",
-        "postcode": "N21 3RB",
-        "price": 1170000,
+        "address": "25, THE ALDERS",
+        "postcode": "N21 1AR",
+        "price": 965000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "125, WADES HILL",
+        "postcode": "N21 1EQ",
+        "price": 1001000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2737,14 +3002,6 @@
         "newBuild": false
       },
       {
-        "address": "125, WADES HILL",
-        "postcode": "N21 1EQ",
-        "price": 1001000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "GILLIES COURT, 3, FLAT 15, DONOVAN PLACE",
         "postcode": "N21 1RZ",
         "price": 385000,
@@ -2753,10 +3010,26 @@
         "newBuild": false
       },
       {
-        "address": "30, OAKWOOD CRESCENT",
-        "postcode": "N21 1PB",
-        "price": 603000,
-        "dateOfTransfer": "2025-03-31",
+        "address": "44, STATION ROAD, WINCHMORE HILL",
+        "postcode": "N21 3RA",
+        "price": 1210000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHESTERFIELD LODGE, FLAT 4, CHURCH HILL",
+        "postcode": "N21 1LW",
+        "price": 265000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, BEECHDALE",
+        "postcode": "N21 3QG",
+        "price": 807500,
+        "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2785,6 +3058,14 @@
         "newBuild": false
       },
       {
+        "address": "4B, ELM PARK ROAD",
+        "postcode": "N21 2HN",
+        "price": 363000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "10, OXFORD GARDENS",
         "postcode": "N21 2AP",
         "price": 710000,
@@ -2801,33 +3082,9 @@
         "newBuild": false
       },
       {
-        "address": "44, STATION ROAD, WINCHMORE HILL",
-        "postcode": "N21 3RA",
-        "price": 1210000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "BEVERIDGE COURT, FLAT 1, PENNINGTON DRIVE",
-        "postcode": "N21 1SY",
-        "price": 349000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CHESTERFIELD LODGE, FLAT 4, CHURCH HILL",
-        "postcode": "N21 1LW",
-        "price": 265000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "18, BEECHDALE",
-        "postcode": "N21 3QG",
-        "price": 807500,
+        "address": "25, THE BIRCHES",
+        "postcode": "N21 1NJ",
+        "price": 1050000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2841,19 +3098,11 @@
         "newBuild": false
       },
       {
-        "address": "4B, ELM PARK ROAD",
-        "postcode": "N21 2HN",
-        "price": 363000,
+        "address": "BEVERIDGE COURT, FLAT 1, PENNINGTON DRIVE",
+        "postcode": "N21 1SY",
+        "price": 349000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "25, THE BIRCHES",
-        "postcode": "N21 1NJ",
-        "price": 1050000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2862,22 +3111,6 @@
         "price": 632500,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "56, HIGHFIELD ROAD",
-        "postcode": "N21 3HL",
-        "price": 392000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "3, SEAFORTH GARDENS",
-        "postcode": "N21 3BT",
-        "price": 2485000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2897,27 +3130,27 @@
         "newBuild": false
       },
       {
+        "address": "56, HIGHFIELD ROAD",
+        "postcode": "N21 3HL",
+        "price": 392000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, SEAFORTH GARDENS",
+        "postcode": "N21 3BT",
+        "price": 2485000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "77, PARK DRIVE",
         "postcode": "N21 2LT",
         "price": 1455000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "5D, CHURCH HILL",
-        "postcode": "N21 1LS",
-        "price": 250000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CITY HOUSE, 794, 39, GREEN LANES",
-        "postcode": "N21 2BH",
-        "price": 430000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2929,11 +3162,27 @@
         "newBuild": false
       },
       {
+        "address": "5D, CHURCH HILL",
+        "postcode": "N21 1LS",
+        "price": 250000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "43, MACLEOD ROAD",
         "postcode": "N21 1SW",
         "price": 605000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CITY HOUSE, 794, 39, GREEN LANES",
+        "postcode": "N21 2BH",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2961,17 +3210,17 @@
         "newBuild": false
       },
       {
-        "address": "15, HIGHFIELD ROAD",
-        "postcode": "N21 3HD",
-        "price": 555000,
+        "address": "4, HYDEFIELD CLOSE",
+        "postcode": "N21 2PS",
+        "price": 591000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "4, HYDEFIELD CLOSE",
-        "postcode": "N21 2PS",
-        "price": 591000,
+        "address": "15, HIGHFIELD ROAD",
+        "postcode": "N21 3HD",
+        "price": 555000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2993,19 +3242,19 @@
         "newBuild": false
       },
       {
-        "address": "BLAKE COURT, 1, FLAT 55, NEWSHOLME DRIVE",
-        "postcode": "N21 1SQ",
-        "price": 185000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "61, FERNLEIGH ROAD",
         "postcode": "N21 3AJ",
         "price": 480000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "BLAKE COURT, 1, FLAT 55, NEWSHOLME DRIVE",
+        "postcode": "N21 1SQ",
+        "price": 185000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3057,19 +3306,19 @@
         "newBuild": false
       },
       {
-        "address": "6, CARPENTER GARDENS",
-        "postcode": "N21 3HJ",
-        "price": 590000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "23, HILLCREST",
         "postcode": "N21 1AT",
         "price": 950000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, CARPENTER GARDENS",
+        "postcode": "N21 3HJ",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3105,14 +3354,6 @@
         "newBuild": false
       },
       {
-        "address": "BROCKLEY COURT, 24A, FLAT 6, RIVER BANK",
-        "postcode": "N21 2AB",
-        "price": 310000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "42, ELSIEDENE ROAD",
         "postcode": "N21 2RP",
         "price": 810000,
@@ -3124,6 +3365,14 @@
         "address": "REPTON COURT, 23, FLAT 11, THE GREEN, WINCHMORE HILL",
         "postcode": "N21 1HR",
         "price": 700000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BROCKLEY COURT, 24A, FLAT 6, RIVER BANK",
+        "postcode": "N21 2AB",
+        "price": 310000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3169,9 +3418,9 @@
         "newBuild": false
       },
       {
-        "address": "196, GROUND FLOOR FLAT, HOPPERS ROAD",
-        "postcode": "N21 3JX",
-        "price": 600000,
+        "address": "SEYMOUR COURT, FLAT 14, EVERSLEY PARK ROAD",
+        "postcode": "N21 1JG",
+        "price": 362000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3193,9 +3442,9 @@
         "newBuild": false
       },
       {
-        "address": "SEYMOUR COURT, FLAT 14, EVERSLEY PARK ROAD",
-        "postcode": "N21 1JG",
-        "price": 362000,
+        "address": "196, GROUND FLOOR FLAT, HOPPERS ROAD",
+        "postcode": "N21 3JX",
+        "price": 600000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3225,30 +3474,6 @@
         "newBuild": false
       },
       {
-        "address": "CARRINGTON COURT, 104, FLAT 10, GREEN DRAGON LANE",
-        "postcode": "N21 2LY",
-        "price": 675000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CHESTERFIELD LODGE, FLAT 12, CHURCH HILL",
-        "postcode": "N21 1LW",
-        "price": 305000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "22, HIGHFIELD ROAD",
-        "postcode": "N21 3HA",
-        "price": 490000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "43A, OLD PARK RIDINGS",
         "postcode": "N21 2ET",
         "price": 825000,
@@ -3262,6 +3487,14 @@
         "price": 875000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, HIGHFIELD ROAD",
+        "postcode": "N21 3HA",
+        "price": 490000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3286,6 +3519,22 @@
         "price": 660000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CARRINGTON COURT, 104, FLAT 10, GREEN DRAGON LANE",
+        "postcode": "N21 2LY",
+        "price": 675000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHESTERFIELD LODGE, FLAT 12, CHURCH HILL",
+        "postcode": "N21 1LW",
+        "price": 305000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3361,14 +3610,6 @@
         "newBuild": false
       },
       {
-        "address": "10, BEAULIEU GARDENS",
-        "postcode": "N21 2HR",
-        "price": 1075000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "59, GREEN DRAGON LANE",
         "postcode": "N21 2LB",
         "price": 840000,
@@ -3382,6 +3623,14 @@
         "price": 229995,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "10, BEAULIEU GARDENS",
+        "postcode": "N21 2HR",
+        "price": 1075000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3401,22 +3650,6 @@
         "newBuild": false
       },
       {
-        "address": "BLAKE COURT, 1, FLAT 6, NEWSHOLME DRIVE",
-        "postcode": "N21 1SQ",
-        "price": 380000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "BLAKE COURT, 1, FLAT 58, NEWSHOLME DRIVE",
-        "postcode": "N21 1SQ",
-        "price": 445000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "83, FARM ROAD",
         "postcode": "N21 3HR",
         "price": 18000,
@@ -3430,6 +3663,22 @@
         "price": 535000,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BLAKE COURT, 1, FLAT 6, NEWSHOLME DRIVE",
+        "postcode": "N21 1SQ",
+        "price": 380000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BLAKE COURT, 1, FLAT 58, NEWSHOLME DRIVE",
+        "postcode": "N21 1SQ",
+        "price": 445000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3561,19 +3810,19 @@
         "newBuild": false
       },
       {
-        "address": "65, OLD PARK RIDINGS",
-        "postcode": "N21 2ET",
-        "price": 1105000,
-        "dateOfTransfer": "2025-01-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "7, BEECHDALE",
         "postcode": "N21 3QE",
         "price": 1225000,
         "dateOfTransfer": "2025-01-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "65, OLD PARK RIDINGS",
+        "postcode": "N21 2ET",
+        "price": 1105000,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3617,8 +3866,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 710615,
-    "medianPrice": 633750
+    "averagePrice": 718755,
+    "medianPrice": 643500
   },
   "representatives": {
     "representatives": [

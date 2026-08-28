@@ -3,8 +3,8 @@
   "slug": "ec2v",
   "city": "London",
   "borough": "City of London",
-  "latitude": 51.51545524509803,
-  "longitude": -0.09365718627450974,
+  "latitude": 51.51530140259741,
+  "longitude": -0.0934093376623377,
   "wards": [
     "Aldersgate",
     "Bassishaw",
@@ -35,97 +35,121 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2845,
-        "violentCrimes": 705,
-        "propertyCrimes": 1634
+        "totalCrimes": 2847,
+        "violentCrimes": 706,
+        "propertyCrimes": 1635
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2828,
-        "violentCrimes": 714,
-        "propertyCrimes": 1641
+        "totalCrimes": 2840,
+        "violentCrimes": 716,
+        "propertyCrimes": 1650
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2500,
-        "violentCrimes": 602,
-        "propertyCrimes": 1524
+        "totalCrimes": 2515,
+        "violentCrimes": 607,
+        "propertyCrimes": 1529
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2666,
-        "violentCrimes": 596,
-        "propertyCrimes": 1712
+        "totalCrimes": 2688,
+        "violentCrimes": 602,
+        "propertyCrimes": 1724
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2594,
-        "violentCrimes": 646,
+        "totalCrimes": 2600,
+        "violentCrimes": 649,
         "propertyCrimes": 1586
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2684,
-        "violentCrimes": 673,
-        "propertyCrimes": 1663
+        "totalCrimes": 2685,
+        "violentCrimes": 668,
+        "propertyCrimes": 1664
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2359,
-        "violentCrimes": 563,
-        "propertyCrimes": 1440
+        "totalCrimes": 2377,
+        "violentCrimes": 568,
+        "propertyCrimes": 1444
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2340,
-        "violentCrimes": 553,
-        "propertyCrimes": 1412
+        "totalCrimes": 2369,
+        "violentCrimes": 565,
+        "propertyCrimes": 1421
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2571,
-        "violentCrimes": 635,
-        "propertyCrimes": 1540
+        "totalCrimes": 2574,
+        "violentCrimes": 633,
+        "propertyCrimes": 1544
       },
       {
         "month": "2026-04",
         "totalCrimes": 2549,
-        "violentCrimes": 556,
+        "violentCrimes": 548,
         "propertyCrimes": 1607
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2442,
-        "violentCrimes": 609,
-        "propertyCrimes": 1490
+        "totalCrimes": 2467,
+        "violentCrimes": 612,
+        "propertyCrimes": 1505
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2475,
-        "violentCrimes": 592,
-        "propertyCrimes": 1539
+        "totalCrimes": 2496,
+        "violentCrimes": 594,
+        "propertyCrimes": 1551
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3028,
-      "bicycle-theft": 907,
-      "burglary": 1373,
-      "criminal-damage-arson": 730,
-      "drugs": 1449,
-      "other-theft": 5846,
-      "possession-of-weapons": 135,
-      "public-order": 1518,
-      "robbery": 1107,
-      "shoplifting": 3643,
-      "theft-from-the-person": 5639,
+      "anti-social-behaviour": 3079,
+      "bicycle-theft": 914,
+      "burglary": 1386,
+      "criminal-damage-arson": 734,
+      "drugs": 1456,
+      "other-theft": 5863,
+      "possession-of-weapons": 137,
+      "public-order": 1527,
+      "robbery": 1111,
+      "shoplifting": 3649,
+      "theft-from-the-person": 5664,
       "vehicle-crime": 650,
-      "violent-crime": 4684,
+      "violent-crime": 4693,
       "other-crime": 144
     },
-    "totalLast12Months": 30853
+    "totalLast12Months": 31007
   },
   "property": {
     "sales": [
+      {
+        "address": "GARRARD HOUSE, 31 - 45, GRESHAM STREET",
+        "postcode": "EC2V 7QA",
+        "price": 1000000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "GARRARD HOUSE, 31 - 45, GRESHAM STREET",
+        "postcode": "EC2V 7QA",
+        "price": 1000000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "GARRARD HOUSE, 31 - 45, GRESHAM STREET",
+        "postcode": "EC2V 7QA",
+        "price": 1000000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "5, FOSTER LANE",
         "postcode": "EC2V 6HH",
@@ -151,8 +175,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 556667,
-    "medianPrice": 570000
+    "averagePrice": 778333,
+    "medianPrice": 825000
   },
   "representatives": {
     "representatives": [

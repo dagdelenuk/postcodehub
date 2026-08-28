@@ -3,8 +3,8 @@
   "slug": "rm7",
   "city": "London",
   "borough": "Barking and Dagenham",
-  "latitude": 51.5751665225695,
-  "longitude": 0.16854238020833376,
+  "latitude": 51.57566282387479,
+  "longitude": 0.16815884931506841,
   "wards": [
     "Eastbrook & Rush Green",
     "Mawneys",
@@ -140,7 +140,8 @@
         "urn": "101212",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "08/07/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Dagenham Road, Rush Green, Romford",
         "postcode": "RM7 0RL",
         "numberOfPupils": 840,
@@ -150,8 +151,9 @@
         "name": "Crownfield Junior School",
         "urn": "102294",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "13/07/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "White Hart Lane, Collier Row, Romford",
         "postcode": "RM7 8JB",
         "numberOfPupils": 423,
@@ -161,8 +163,9 @@
         "name": "Crownfield Infant School",
         "urn": "102295",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "21/09/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "White Hart Lane, Collier Row, Romford",
         "postcode": "RM7 8JB",
         "numberOfPupils": 321,
@@ -174,6 +177,7 @@
         "phaseOfEducation": "16 plus",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Dagenham Road, Romford",
         "postcode": "RM7 0XU",
         "numberOfPupils": null,
@@ -184,7 +188,8 @@
         "urn": "131426",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Mawney Road, Romford",
         "postcode": "RM7 7HR",
         "numberOfPupils": 650,
@@ -194,8 +199,9 @@
         "name": "Crowlands Primary School",
         "urn": "135812",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "18/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "London Road, Romford",
         "postcode": "RM7 9EJ",
         "numberOfPupils": 669,
@@ -207,6 +213,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Union Road, Romford",
         "postcode": "RM7 0HG",
         "numberOfPupils": 597,
@@ -217,7 +224,8 @@
         "urn": "145944",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/05/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "London Road, Romford",
         "postcode": "RM7 9NX",
         "numberOfPupils": 918,
@@ -229,6 +237,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "373 London Road, Romford",
         "postcode": "RM7 9NU",
         "numberOfPupils": 53,
@@ -240,103 +249,263 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 685,
+        "totalCrimes": 678,
         "violentCrimes": 286,
-        "propertyCrimes": 205
+        "propertyCrimes": 199
       },
       {
         "month": "2025-08",
-        "totalCrimes": 584,
-        "violentCrimes": 221,
-        "propertyCrimes": 182
+        "totalCrimes": 579,
+        "violentCrimes": 218,
+        "propertyCrimes": 183
       },
       {
         "month": "2025-09",
-        "totalCrimes": 559,
+        "totalCrimes": 565,
         "violentCrimes": 216,
-        "propertyCrimes": 186
+        "propertyCrimes": 189
       },
       {
         "month": "2025-10",
-        "totalCrimes": 557,
-        "violentCrimes": 207,
-        "propertyCrimes": 177
+        "totalCrimes": 548,
+        "violentCrimes": 201,
+        "propertyCrimes": 176
       },
       {
         "month": "2025-11",
-        "totalCrimes": 517,
-        "violentCrimes": 232,
-        "propertyCrimes": 147
+        "totalCrimes": 509,
+        "violentCrimes": 229,
+        "propertyCrimes": 144
       },
       {
         "month": "2025-12",
-        "totalCrimes": 552,
-        "violentCrimes": 236,
-        "propertyCrimes": 187
+        "totalCrimes": 554,
+        "violentCrimes": 237,
+        "propertyCrimes": 188
       },
       {
         "month": "2026-01",
-        "totalCrimes": 553,
-        "violentCrimes": 226,
+        "totalCrimes": 549,
+        "violentCrimes": 223,
         "propertyCrimes": 176
       },
       {
         "month": "2026-02",
-        "totalCrimes": 567,
-        "violentCrimes": 211,
-        "propertyCrimes": 196
+        "totalCrimes": 561,
+        "violentCrimes": 208,
+        "propertyCrimes": 193
       },
       {
         "month": "2026-03",
-        "totalCrimes": 561,
-        "violentCrimes": 231,
-        "propertyCrimes": 178
+        "totalCrimes": 562,
+        "violentCrimes": 234,
+        "propertyCrimes": 175
       },
       {
         "month": "2026-04",
-        "totalCrimes": 590,
-        "violentCrimes": 214,
+        "totalCrimes": 583,
+        "violentCrimes": 210,
         "propertyCrimes": 221
       },
       {
         "month": "2026-05",
-        "totalCrimes": 563,
-        "violentCrimes": 211,
-        "propertyCrimes": 186
+        "totalCrimes": 561,
+        "violentCrimes": 210,
+        "propertyCrimes": 185
       },
       {
         "month": "2026-06",
-        "totalCrimes": 593,
-        "violentCrimes": 232,
-        "propertyCrimes": 210
+        "totalCrimes": 586,
+        "violentCrimes": 224,
+        "propertyCrimes": 208
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1385,
+      "anti-social-behaviour": 1381,
       "bicycle-theft": 38,
-      "burglary": 181,
-      "criminal-damage-arson": 285,
-      "drugs": 449,
-      "other-theft": 412,
+      "burglary": 180,
+      "criminal-damage-arson": 288,
+      "drugs": 446,
+      "other-theft": 400,
       "possession-of-weapons": 57,
-      "public-order": 446,
+      "public-order": 444,
       "robbery": 207,
-      "shoplifting": 733,
-      "theft-from-the-person": 232,
+      "shoplifting": 734,
+      "theft-from-the-person": 227,
       "vehicle-crime": 370,
-      "violent-crime": 2013,
-      "other-crime": 73
+      "violent-crime": 1988,
+      "other-crime": 75
     },
-    "totalLast12Months": 6881
+    "totalLast12Months": 6835
   },
   "property": {
     "sales": [
+      {
+        "address": "PULSE COURT, FLAT 23, MAXWELL ROAD",
+        "postcode": "RM7 0FF",
+        "price": 300000,
+        "dateOfTransfer": "2026-07-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, DERBY AVENUE",
+        "postcode": "RM7 9JR",
+        "price": 535000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "259, RUSH GREEN ROAD",
+        "postcode": "RM7 0JP",
+        "price": 442500,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "102, WILLOW STREET",
+        "postcode": "RM7 7LB",
+        "price": 485000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "134, MAWNEY ROAD",
+        "postcode": "RM7 7BJ",
+        "price": 440000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "132, MAWNEY ROAD",
+        "postcode": "RM7 7BJ",
+        "price": 450000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "271A, LONDON ROAD",
+        "postcode": "RM7 9NJ",
+        "price": 170000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "111, GREAT CULLINGS, RUSH GREEN",
+        "postcode": "RM7 0YP",
+        "price": 420000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, AINSLEY AVENUE",
+        "postcode": "RM7 9HT",
+        "price": 495000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, KENSINGTON ROAD",
+        "postcode": "RM7 9DA",
+        "price": 415000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "DEVON HOUSE, 1, WHITE HART LANE, COLLIER ROW",
+        "postcode": "RM7 8LA",
+        "price": 245000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VERITY HOUSE, FLAT 12, COTLEIGH ROAD",
+        "postcode": "RM7 9AE",
+        "price": 198000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "141, MARLBOROUGH ROAD",
+        "postcode": "RM7 8AP",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ASH COURT, FLAT 7, JUTSUMS LANE",
+        "postcode": "RM7 9EE",
+        "price": 270000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, HOLLAND CLOSE",
+        "postcode": "RM7 7RN",
+        "price": 205000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26A, CROW LANE",
+        "postcode": "RM7 0EL",
+        "price": 630000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "75, MILDMAY ROAD",
+        "postcode": "RM7 7BT",
+        "price": 610000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "51, HONITON ROAD",
+        "postcode": "RM7 9AJ",
+        "price": 415000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "32, ABBOTTS CLOSE",
+        "postcode": "RM7 8QU",
+        "price": 475000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "54, NORWOOD AVENUE",
         "postcode": "RM7 0QH",
         "price": 462500,
         "dateOfTransfer": "2026-06-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "437, MAWNEY ROAD",
+        "postcode": "RM7 8PX",
+        "price": 475000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -353,6 +522,14 @@
         "price": 85000,
         "dateOfTransfer": "2026-06-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, EASTBROOK DRIVE, RUSH GREEN",
+        "postcode": "RM7 0YT",
+        "price": 404500,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -420,6 +597,14 @@
         "newBuild": false
       },
       {
+        "address": "62, LYNTON AVENUE",
+        "postcode": "RM7 8NL",
+        "price": 470000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "22, WOLSELEY ROAD",
         "postcode": "RM7 0BS",
         "price": 390000,
@@ -431,6 +616,14 @@
         "address": "255, CROW LANE",
         "postcode": "RM7 0HA",
         "price": 445000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "67, EASTBROOK DRIVE, RUSH GREEN",
+        "postcode": "RM7 0YT",
+        "price": 490000,
         "dateOfTransfer": "2026-05-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -460,6 +653,14 @@
         "newBuild": false
       },
       {
+        "address": "18A, MEDORA ROAD",
+        "postcode": "RM7 7EP",
+        "price": 256000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "25, LONSDALE AVENUE",
         "postcode": "RM7 9JS",
         "price": 540000,
@@ -476,14 +677,6 @@
         "newBuild": false
       },
       {
-        "address": "47, BIRCH CLOSE",
-        "postcode": "RM7 8ES",
-        "price": 420000,
-        "dateOfTransfer": "2026-05-18",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "44, LAUREL CRESCENT",
         "postcode": "RM7 0RT",
         "price": 483000,
@@ -492,11 +685,11 @@
         "newBuild": false
       },
       {
-        "address": "36, LEONARD AVENUE",
-        "postcode": "RM7 0XL",
-        "price": 460000,
-        "dateOfTransfer": "2026-05-15",
-        "propertyType": "Terraced",
+        "address": "47, BIRCH CLOSE",
+        "postcode": "RM7 8ES",
+        "price": 420000,
+        "dateOfTransfer": "2026-05-18",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -508,18 +701,18 @@
         "newBuild": false
       },
       {
+        "address": "36, LEONARD AVENUE",
+        "postcode": "RM7 0XL",
+        "price": 460000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "4, ST GEORGES COURT",
         "postcode": "RM7 7JG",
         "price": 187500,
         "dateOfTransfer": "2026-05-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "8, ESSEX CLOSE",
-        "postcode": "RM7 8BD",
-        "price": 142000,
-        "dateOfTransfer": "2026-05-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -532,11 +725,27 @@
         "newBuild": false
       },
       {
+        "address": "8, ESSEX CLOSE",
+        "postcode": "RM7 8BD",
+        "price": 142000,
+        "dateOfTransfer": "2026-05-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "TYTHE COURT, 141, APARTMENT 21, WHITE HART LANE, COLLIER ROW",
         "postcode": "RM7 8LZ",
         "price": 133400,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, SEABROOK GARDENS",
+        "postcode": "RM7 0EU",
+        "price": 550000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -553,14 +762,6 @@
         "price": 277500,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "49, SEABROOK GARDENS",
-        "postcode": "RM7 0EU",
-        "price": 550000,
-        "dateOfTransfer": "2026-05-08",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -588,14 +789,6 @@
         "newBuild": false
       },
       {
-        "address": "28, CROWNMEAD WAY",
-        "postcode": "RM7 8BL",
-        "price": 383000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "QUEENSIDE COURT, 6, MAWNEY ROAD",
         "postcode": "RM7 7BG",
         "price": 206000,
@@ -620,11 +813,19 @@
         "newBuild": false
       },
       {
-        "address": "15, CROWLANDS AVENUE",
-        "postcode": "RM7 9JA",
-        "price": 485000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Semi-detached",
+        "address": "28, CROWNMEAD WAY",
+        "postcode": "RM7 8BL",
+        "price": 383000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "129, MAWNEY ROAD",
+        "postcode": "RM7 7BH",
+        "price": 450000,
+        "dateOfTransfer": "2026-04-27",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -636,19 +837,27 @@
         "newBuild": false
       },
       {
-        "address": "50, EDDY CLOSE",
-        "postcode": "RM7 9HS",
-        "price": 468000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "10, ANSON CLOSE",
         "postcode": "RM7 8HU",
         "price": 550000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, CROWLANDS AVENUE",
+        "postcode": "RM7 9JA",
+        "price": 485000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, EDDY CLOSE",
+        "postcode": "RM7 9HS",
+        "price": 468000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -668,11 +877,11 @@
         "newBuild": false
       },
       {
-        "address": "TYTHE COURT, 141, APARTMENT 6, WHITE HART LANE, COLLIER ROW",
-        "postcode": "RM7 8LZ",
-        "price": 145000,
+        "address": "9, CROMER ROAD",
+        "postcode": "RM7 9DT",
+        "price": 450000,
         "dateOfTransfer": "2026-04-17",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -684,11 +893,11 @@
         "newBuild": false
       },
       {
-        "address": "9, CROMER ROAD",
-        "postcode": "RM7 9DT",
-        "price": 450000,
+        "address": "TYTHE COURT, 141, APARTMENT 6, WHITE HART LANE, COLLIER ROW",
+        "postcode": "RM7 8LZ",
+        "price": 145000,
         "dateOfTransfer": "2026-04-17",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -748,6 +957,14 @@
         "newBuild": false
       },
       {
+        "address": "28, WILLOW STREET",
+        "postcode": "RM7 7LJ",
+        "price": 395000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "2, LOWLANDS GARDENS",
         "postcode": "RM7 9NL",
         "price": 280000,
@@ -796,17 +1013,17 @@
         "newBuild": false
       },
       {
-        "address": "53, MAWNEY ROAD",
-        "postcode": "RM7 7HL",
-        "price": 460000,
+        "address": "10, MEDORA ROAD",
+        "postcode": "RM7 7EP",
+        "price": 415000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "40, LINCOLN AVENUE",
-        "postcode": "RM7 0SR",
-        "price": 470000,
+        "address": "53, MAWNEY ROAD",
+        "postcode": "RM7 7HL",
+        "price": 460000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -817,6 +1034,14 @@
         "price": 275000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, LINCOLN AVENUE",
+        "postcode": "RM7 0SR",
+        "price": 470000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -964,6 +1189,22 @@
         "newBuild": false
       },
       {
+        "address": "8, ESSEX CLOSE",
+        "postcode": "RM7 8BD",
+        "price": 135000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PULSE COURT, FLAT 89, MAXWELL ROAD",
+        "postcode": "RM7 0FG",
+        "price": 284000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "489, MAWNEY ROAD",
         "postcode": "RM7 8QA",
         "price": 557000,
@@ -975,14 +1216,6 @@
         "address": "48, GROSVENOR ROAD",
         "postcode": "RM7 0QT",
         "price": 292000,
-        "dateOfTransfer": "2026-03-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "8, ESSEX CLOSE",
-        "postcode": "RM7 8BD",
-        "price": 135000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1036,11 +1269,27 @@
         "newBuild": false
       },
       {
+        "address": "171, GREAT CULLINGS, RUSH GREEN",
+        "postcode": "RM7 0YR",
+        "price": 280000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "7, EDDY CLOSE",
         "postcode": "RM7 9HR",
         "price": 465000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "181, MARLBOROUGH ROAD",
+        "postcode": "RM7 8AP",
+        "price": 530000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1060,14 +1309,6 @@
         "newBuild": false
       },
       {
-        "address": "223, MAWNEY ROAD",
-        "postcode": "RM7 8DJ",
-        "price": 450500,
-        "dateOfTransfer": "2026-02-19",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "117, LINLEY CRESCENT",
         "postcode": "RM7 8RB",
         "price": 425000,
@@ -1081,6 +1322,14 @@
         "price": 425000,
         "dateOfTransfer": "2026-02-18",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "58, LAUREL CRESCENT",
+        "postcode": "RM7 0RT",
+        "price": 570000,
+        "dateOfTransfer": "2026-02-18",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1148,6 +1397,14 @@
         "newBuild": false
       },
       {
+        "address": "18, RECREATION AVENUE",
+        "postcode": "RM7 9ET",
+        "price": 440000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "SEDDON COURT, 67, FLAT 8, BROOKLANDS ROAD",
         "postcode": "RM7 7EB",
         "price": 260000,
@@ -1156,11 +1413,11 @@
         "newBuild": false
       },
       {
-        "address": "18, RECREATION AVENUE",
-        "postcode": "RM7 9ET",
-        "price": 440000,
-        "dateOfTransfer": "2026-02-04",
-        "propertyType": "Terraced",
+        "address": "56, BIRCH CLOSE",
+        "postcode": "RM7 8EU",
+        "price": 455000,
+        "dateOfTransfer": "2026-02-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1180,25 +1437,17 @@
         "newBuild": false
       },
       {
-        "address": "47, GROSVENOR ROAD",
-        "postcode": "RM7 0QU",
-        "price": 450000,
+        "address": "28, MILDMAY ROAD",
+        "postcode": "RM7 7DD",
+        "price": 525000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "4, BIRCH ROAD",
-        "postcode": "RM7 8EP",
-        "price": 200000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "28, MILDMAY ROAD",
-        "postcode": "RM7 7DD",
-        "price": 525000,
+        "address": "47, GROSVENOR ROAD",
+        "postcode": "RM7 0QU",
+        "price": 450000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1209,6 +1458,14 @@
         "price": 462000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, BIRCH ROAD",
+        "postcode": "RM7 8EP",
+        "price": 200000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1228,6 +1485,14 @@
         "newBuild": false
       },
       {
+        "address": "223, MAWNEY ROAD",
+        "postcode": "RM7 8DJ",
+        "price": 450500,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "62, CROWLANDS AVENUE",
         "postcode": "RM7 9JB",
         "price": 510000,
@@ -1244,11 +1509,27 @@
         "newBuild": false
       },
       {
+        "address": "11, BEECHFIELD GARDENS",
+        "postcode": "RM7 0EJ",
+        "price": 585000,
+        "dateOfTransfer": "2026-01-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "49, VIGNOLES ROAD",
         "postcode": "RM7 0DT",
         "price": 230000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "86, JUBILEE AVENUE",
+        "postcode": "RM7 9LT",
+        "price": 442500,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1268,14 +1549,6 @@
         "newBuild": false
       },
       {
-        "address": "57, ROSE GLEN",
-        "postcode": "RM7 0SL",
-        "price": 620000,
-        "dateOfTransfer": "2026-01-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "73, VALENTINES WAY",
         "postcode": "RM7 0YD",
         "price": 570000,
@@ -1287,6 +1560,14 @@
         "address": "457, MAWNEY ROAD",
         "postcode": "RM7 8QA",
         "price": 480000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "57, ROSE GLEN",
+        "postcode": "RM7 0SL",
+        "price": 620000,
         "dateOfTransfer": "2026-01-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1316,22 +1597,6 @@
         "newBuild": false
       },
       {
-        "address": "167, GREAT CULLINGS, RUSH GREEN",
-        "postcode": "RM7 0YR",
-        "price": 420000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "THE SQUIRES, 243, FLAT 15, LONDON ROAD",
-        "postcode": "RM7 9JX",
-        "price": 195000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "239, GORSEWAY",
         "postcode": "RM7 0SB",
         "price": 438000,
@@ -1348,6 +1613,22 @@
         "newBuild": false
       },
       {
+        "address": "167, GREAT CULLINGS, RUSH GREEN",
+        "postcode": "RM7 0YR",
+        "price": 420000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE SQUIRES, 243, FLAT 15, LONDON ROAD",
+        "postcode": "RM7 9JX",
+        "price": 195000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "6, CAMPION CLOSE, RUSH GREEN",
         "postcode": "RM7 0WX",
         "price": 575000,
@@ -1356,19 +1637,19 @@
         "newBuild": false
       },
       {
-        "address": "79, LINLEY CRESCENT",
-        "postcode": "RM7 8RB",
-        "price": 535000,
-        "dateOfTransfer": "2026-01-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "19, CROWLANDS AVENUE",
         "postcode": "RM7 9JA",
         "price": 535000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "79, LINLEY CRESCENT",
+        "postcode": "RM7 8RB",
+        "price": 535000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1388,6 +1669,14 @@
         "newBuild": false
       },
       {
+        "address": "33, LEONARD AVENUE",
+        "postcode": "RM7 0XL",
+        "price": 467000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "16B, COMO STREET",
         "postcode": "RM7 7DJ",
         "price": 420000,
@@ -1404,14 +1693,6 @@
         "newBuild": false
       },
       {
-        "address": "33, LEONARD AVENUE",
-        "postcode": "RM7 0XL",
-        "price": 467000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "47, WEALD WAY",
         "postcode": "RM7 9PH",
         "price": 432500,
@@ -1420,17 +1701,17 @@
         "newBuild": false
       },
       {
-        "address": "157, MARKS ROAD",
-        "postcode": "RM7 7AF",
-        "price": 395000,
+        "address": "111, MAWNEY ROAD",
+        "postcode": "RM7 7JA",
+        "price": 680000,
         "dateOfTransfer": "2026-01-05",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "111, MAWNEY ROAD",
-        "postcode": "RM7 7JA",
-        "price": 680000,
+        "address": "157, MARKS ROAD",
+        "postcode": "RM7 7AF",
+        "price": 395000,
         "dateOfTransfer": "2026-01-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1524,19 +1805,19 @@
         "newBuild": false
       },
       {
-        "address": "15, RICHARDS AVENUE",
-        "postcode": "RM7 9ES",
-        "price": 425000,
-        "dateOfTransfer": "2025-12-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "59, WOLSELEY ROAD",
         "postcode": "RM7 0BS",
         "price": 466500,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, RICHARDS AVENUE",
+        "postcode": "RM7 9ES",
+        "price": 425000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1788,19 +2069,19 @@
         "newBuild": false
       },
       {
-        "address": "7, PRETORIA ROAD",
-        "postcode": "RM7 7AU",
-        "price": 395000,
-        "dateOfTransfer": "2025-11-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "80, LAUREL CRESCENT",
         "postcode": "RM7 0RT",
         "price": 430000,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, PRETORIA ROAD",
+        "postcode": "RM7 7AU",
+        "price": 395000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1932,19 +2213,19 @@
         "newBuild": false
       },
       {
-        "address": "18, KENSINGTON ROAD",
-        "postcode": "RM7 9DA",
-        "price": 420000,
-        "dateOfTransfer": "2025-11-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "82, CROW LANE",
         "postcode": "RM7 0EP",
         "price": 504000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, KENSINGTON ROAD",
+        "postcode": "RM7 9DA",
+        "price": 420000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1964,30 +2245,6 @@
         "newBuild": false
       },
       {
-        "address": "30, BELLHOUSE ROAD",
-        "postcode": "RM7 0LS",
-        "price": 369000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "126, BELLHOUSE ROAD",
-        "postcode": "RM7 0LJ",
-        "price": 340000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "25, COMO STREET",
-        "postcode": "RM7 7DR",
-        "price": 535000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "73, JASMINE ROAD, RUSH GREEN",
         "postcode": "RM7 0WZ",
         "price": 350000,
@@ -2001,6 +2258,30 @@
         "price": 267000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, COMO STREET",
+        "postcode": "RM7 7DR",
+        "price": 535000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "126, BELLHOUSE ROAD",
+        "postcode": "RM7 0LJ",
+        "price": 340000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, BELLHOUSE ROAD",
+        "postcode": "RM7 0LS",
+        "price": 369000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2028,9 +2309,9 @@
         "newBuild": false
       },
       {
-        "address": "173, MARKS ROAD",
-        "postcode": "RM7 7AF",
-        "price": 320000,
+        "address": "23, RICHARDS AVENUE",
+        "postcode": "RM7 9ES",
+        "price": 476000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2044,9 +2325,9 @@
         "newBuild": false
       },
       {
-        "address": "23, RICHARDS AVENUE",
-        "postcode": "RM7 9ES",
-        "price": 476000,
+        "address": "173, MARKS ROAD",
+        "postcode": "RM7 7AF",
+        "price": 320000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2076,17 +2357,17 @@
         "newBuild": false
       },
       {
-        "address": "72, CEDAR ROAD",
-        "postcode": "RM7 7JU",
-        "price": 450000,
+        "address": "80, LYNTON AVENUE",
+        "postcode": "RM7 8NL",
+        "price": 430000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "80, LYNTON AVENUE",
-        "postcode": "RM7 8NL",
-        "price": 430000,
+        "address": "72, CEDAR ROAD",
+        "postcode": "RM7 7JU",
+        "price": 450000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2100,17 +2381,17 @@
         "newBuild": false
       },
       {
-        "address": "45, BEECHFIELD GARDENS",
-        "postcode": "RM7 0EJ",
-        "price": 370000,
+        "address": "461, MAWNEY ROAD",
+        "postcode": "RM7 8QA",
+        "price": 480000,
         "dateOfTransfer": "2025-10-22",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "461, MAWNEY ROAD",
-        "postcode": "RM7 8QA",
-        "price": 480000,
+        "address": "45, BEECHFIELD GARDENS",
+        "postcode": "RM7 0EJ",
+        "price": 370000,
         "dateOfTransfer": "2025-10-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2148,17 +2429,17 @@
         "newBuild": false
       },
       {
-        "address": "104, GORSEWAY",
-        "postcode": "RM7 0RX",
-        "price": 550000,
+        "address": "24, WOLSELEY ROAD",
+        "postcode": "RM7 0BS",
+        "price": 405000,
         "dateOfTransfer": "2025-10-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "24, WOLSELEY ROAD",
-        "postcode": "RM7 0BS",
-        "price": 405000,
+        "address": "104, GORSEWAY",
+        "postcode": "RM7 0RX",
+        "price": 550000,
         "dateOfTransfer": "2025-10-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2177,30 +2458,6 @@
         "price": 255000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "19, ESSEX CLOSE",
-        "postcode": "RM7 8BD",
-        "price": 385000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "76, THORNTONS FARM AVENUE",
-        "postcode": "RM7 0TU",
-        "price": 380000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "289, GORSEWAY",
-        "postcode": "RM7 0SD",
-        "price": 530000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2228,6 +2485,14 @@
         "newBuild": false
       },
       {
+        "address": "76, THORNTONS FARM AVENUE",
+        "postcode": "RM7 0TU",
+        "price": 380000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "IMAGE COURT, FLAT 54, MAXWELL ROAD",
         "postcode": "RM7 0FJ",
         "price": 320000,
@@ -2236,10 +2501,18 @@
         "newBuild": false
       },
       {
-        "address": "23, LILAC GARDENS",
-        "postcode": "RM7 0RJ",
-        "price": 380000,
-        "dateOfTransfer": "2025-10-02",
+        "address": "289, GORSEWAY",
+        "postcode": "RM7 0SD",
+        "price": 530000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, ESSEX CLOSE",
+        "postcode": "RM7 8BD",
+        "price": 385000,
+        "dateOfTransfer": "2025-10-03",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2252,11 +2525,11 @@
         "newBuild": false
       },
       {
-        "address": "55, CROWLANDS AVENUE",
-        "postcode": "RM7 9JA",
-        "price": 485000,
-        "dateOfTransfer": "2025-10-01",
-        "propertyType": "Terraced",
+        "address": "23, LILAC GARDENS",
+        "postcode": "RM7 0RJ",
+        "price": 380000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2268,25 +2541,17 @@
         "newBuild": false
       },
       {
-        "address": "LUX BUILDING, FLAT 28, MAXWELL ROAD",
-        "postcode": "RM7 0FN",
-        "price": 220000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Flat/Maisonette",
+        "address": "55, CROWLANDS AVENUE",
+        "postcode": "RM7 9JA",
+        "price": 485000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "1A, FAIRVIEW PARADE",
-        "postcode": "RM7 7AD",
-        "price": 260000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "4, DAGENHAM ROAD",
-        "postcode": "RM7 0BH",
-        "price": 335000,
+        "address": "338, MAWNEY ROAD",
+        "postcode": "RM7 8QT",
+        "price": 650000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2300,19 +2565,43 @@
         "newBuild": false
       },
       {
-        "address": "338, MAWNEY ROAD",
-        "postcode": "RM7 8QT",
-        "price": 650000,
+        "address": "1A, FAIRVIEW PARADE",
+        "postcode": "RM7 7AD",
+        "price": 260000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "LUX BUILDING, FLAT 28, MAXWELL ROAD",
+        "postcode": "RM7 0FN",
+        "price": 220000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, DAGENHAM ROAD",
+        "postcode": "RM7 0BH",
+        "price": 335000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "327, LONDON ROAD",
-        "postcode": "RM7 9NS",
-        "price": 475000,
-        "dateOfTransfer": "2025-09-26",
+        "address": "171, MEDORA ROAD",
+        "postcode": "RM7 7ET",
+        "price": 307000,
+        "dateOfTransfer": "2025-09-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "29, MEDORA ROAD",
+        "postcode": "RM7 7EP",
+        "price": 560000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2340,11 +2629,11 @@
         "newBuild": false
       },
       {
-        "address": "29, MEDORA ROAD",
-        "postcode": "RM7 7EP",
-        "price": 560000,
+        "address": "327, LONDON ROAD",
+        "postcode": "RM7 9NS",
+        "price": 475000,
         "dateOfTransfer": "2025-09-26",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2388,6 +2677,14 @@
         "newBuild": false
       },
       {
+        "address": "FERNLEIGH COURT, 95, FLAT 9, MAWNEY ROAD",
+        "postcode": "RM7 7JE",
+        "price": 130000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "LOAM HOUSE, 77, FLAT 20, LONDON ROAD",
         "postcode": "RM7 9DH",
         "price": 230000,
@@ -2396,10 +2693,10 @@
         "newBuild": false
       },
       {
-        "address": "FERNLEIGH COURT, 95, FLAT 9, MAWNEY ROAD",
-        "postcode": "RM7 7JE",
-        "price": 130000,
-        "dateOfTransfer": "2025-09-19",
+        "address": "30, GREAT CULLINGS, RUSH GREEN",
+        "postcode": "RM7 0YL",
+        "price": 265000,
+        "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2540,11 +2837,19 @@
         "newBuild": false
       },
       {
-        "address": "86, COMO STREET",
-        "postcode": "RM7 7DT",
-        "price": 335000,
+        "address": "112, CROSS ROAD, MAWNEYS",
+        "postcode": "RM7 8EL",
+        "price": 445000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "233, MARKS ROAD",
+        "postcode": "RM7 7AF",
+        "price": 400000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2556,11 +2861,19 @@
         "newBuild": false
       },
       {
-        "address": "233, MARKS ROAD",
-        "postcode": "RM7 7AF",
-        "price": 400000,
+        "address": "48, MAWNEY CLOSE",
+        "postcode": "RM7 8EJ",
+        "price": 325000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "86, COMO STREET",
+        "postcode": "RM7 7DT",
+        "price": 335000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2588,6 +2901,22 @@
         "newBuild": false
       },
       {
+        "address": "22, BIRKBECK ROAD",
+        "postcode": "RM7 0QP",
+        "price": 400000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "35, CROSS ROAD, MAWNEYS",
+        "postcode": "RM7 8AU",
+        "price": 430000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "96, MARLBOROUGH ROAD",
         "postcode": "RM7 8AJ",
         "price": 457000,
@@ -2604,11 +2933,11 @@
         "newBuild": false
       },
       {
-        "address": "35, CROSS ROAD, MAWNEYS",
-        "postcode": "RM7 8AU",
+        "address": "171, OLDCHURCH ROAD",
+        "postcode": "RM7 0BD",
         "price": 430000,
-        "dateOfTransfer": "2025-08-26",
-        "propertyType": "Detached",
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2639,14 +2968,6 @@
         "address": "79, MILDMAY ROAD",
         "postcode": "RM7 7BT",
         "price": 512000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "171, OLDCHURCH ROAD",
-        "postcode": "RM7 0BD",
-        "price": 430000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2796,6 +3117,14 @@
         "newBuild": false
       },
       {
+        "address": "56, GREAT CULLINGS, RUSH GREEN",
+        "postcode": "RM7 0YL",
+        "price": 495000,
+        "dateOfTransfer": "2025-08-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "219, MARKS ROAD",
         "postcode": "RM7 7AF",
         "price": 370000,
@@ -2828,19 +3157,19 @@
         "newBuild": false
       },
       {
-        "address": "FLAT 2A, HOOD WALK",
-        "postcode": "RM7 8NU",
-        "price": 202000,
-        "dateOfTransfer": "2025-08-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "26, WILLOW STREET",
         "postcode": "RM7 7LJ",
         "price": 410000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FLAT 2A, HOOD WALK",
+        "postcode": "RM7 8NU",
+        "price": 202000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2868,19 +3197,19 @@
         "newBuild": false
       },
       {
-        "address": "59, CROMER ROAD",
-        "postcode": "RM7 9DT",
-        "price": 485000,
-        "dateOfTransfer": "2025-08-05",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "167, PRETORIA ROAD",
         "postcode": "RM7 7BB",
         "price": 534000,
         "dateOfTransfer": "2025-08-05",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "59, CROMER ROAD",
+        "postcode": "RM7 9DT",
+        "price": 485000,
+        "dateOfTransfer": "2025-08-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2892,6 +3221,14 @@
         "newBuild": false
       },
       {
+        "address": "4, PERCY ROAD",
+        "postcode": "RM7 8RA",
+        "price": 420000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "26, BLANDFORD CLOSE",
         "postcode": "RM7 8BP",
         "price": 178000,
@@ -2900,11 +3237,11 @@
         "newBuild": false
       },
       {
-        "address": "4, PERCY ROAD",
-        "postcode": "RM7 8RA",
-        "price": 420000,
-        "dateOfTransfer": "2025-08-04",
-        "propertyType": "Terraced",
+        "address": "63, WEALD WAY",
+        "postcode": "RM7 9PH",
+        "price": 405000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2919,14 +3256,6 @@
         "address": "9, LINDEN STREET",
         "postcode": "RM7 7DP",
         "price": 610000,
-        "dateOfTransfer": "2025-08-01",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "63, WEALD WAY",
-        "postcode": "RM7 9PH",
-        "price": 405000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2964,6 +3293,14 @@
         "newBuild": false
       },
       {
+        "address": "45, HONITON ROAD",
+        "postcode": "RM7 9AJ",
+        "price": 395000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "1, WINSTON CLOSE",
         "postcode": "RM7 8LL",
         "price": 258000,
@@ -2975,6 +3312,14 @@
         "address": "189, GREAT CULLINGS, RUSH GREEN",
         "postcode": "RM7 0YR",
         "price": 390000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, BEECHFIELD GARDENS",
+        "postcode": "RM7 0EJ",
+        "price": 450000,
         "dateOfTransfer": "2025-07-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2996,6 +3341,14 @@
         "newBuild": false
       },
       {
+        "address": "28, VALENTINES WAY",
+        "postcode": "RM7 0YH",
+        "price": 515000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "104, COMO STREET",
         "postcode": "RM7 7DT",
         "price": 430000,
@@ -3009,14 +3362,6 @@
         "price": 300000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "28, VALENTINES WAY",
-        "postcode": "RM7 0YH",
-        "price": 515000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3052,22 +3397,6 @@
         "newBuild": false
       },
       {
-        "address": "197, MARKS ROAD",
-        "postcode": "RM7 7AF",
-        "price": 415000,
-        "dateOfTransfer": "2025-07-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "33, JUBILEE AVENUE",
-        "postcode": "RM7 9LS",
-        "price": 390000,
-        "dateOfTransfer": "2025-07-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "10, DRUMMOND AVENUE",
         "postcode": "RM7 7EH",
         "price": 425000,
@@ -3084,6 +3413,22 @@
         "newBuild": false
       },
       {
+        "address": "197, MARKS ROAD",
+        "postcode": "RM7 7AF",
+        "price": 415000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "33, JUBILEE AVENUE",
+        "postcode": "RM7 9LS",
+        "price": 390000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "143A, PRETORIA ROAD",
         "postcode": "RM7 7BB",
         "price": 323000,
@@ -3092,19 +3437,19 @@
         "newBuild": false
       },
       {
-        "address": "430, MAWNEY ROAD",
-        "postcode": "RM7 8QD",
-        "price": 525000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "121, LINLEY CRESCENT",
         "postcode": "RM7 8RB",
         "price": 385000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "430, MAWNEY ROAD",
+        "postcode": "RM7 8QD",
+        "price": 525000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3137,6 +3482,14 @@
         "price": 320000,
         "dateOfTransfer": "2025-07-16",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "98, LINCOLN AVENUE",
+        "postcode": "RM7 0SJ",
+        "price": 425000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3196,6 +3549,14 @@
         "newBuild": false
       },
       {
+        "address": "13, COTLEIGH ROAD",
+        "postcode": "RM7 9AS",
+        "price": 397500,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "55, SILVER WAY",
         "postcode": "RM7 8EX",
         "price": 550000,
@@ -3220,14 +3581,6 @@
         "newBuild": false
       },
       {
-        "address": "13, COTLEIGH ROAD",
-        "postcode": "RM7 9AS",
-        "price": 397500,
-        "dateOfTransfer": "2025-07-10",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "39, COMO STREET",
         "postcode": "RM7 7DR",
         "price": 492000,
@@ -3236,11 +3589,11 @@
         "newBuild": false
       },
       {
-        "address": "79, ESSEX ROAD",
-        "postcode": "RM7 8BB",
-        "price": 535000,
+        "address": "PULSE COURT, FLAT 17, MAXWELL ROAD",
+        "postcode": "RM7 0FF",
+        "price": 300000,
         "dateOfTransfer": "2025-07-04",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3252,11 +3605,11 @@
         "newBuild": false
       },
       {
-        "address": "PULSE COURT, FLAT 17, MAXWELL ROAD",
-        "postcode": "RM7 0FF",
-        "price": 300000,
+        "address": "79, ESSEX ROAD",
+        "postcode": "RM7 8BB",
+        "price": 535000,
         "dateOfTransfer": "2025-07-04",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3295,6 +3648,14 @@
         "address": "20, FUCHSIA CLOSE, RUSH GREEN",
         "postcode": "RM7 0YZ",
         "price": 488000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "124, EASTBROOK DRIVE, RUSH GREEN",
+        "postcode": "RM7 0YU",
+        "price": 402000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3340,14 +3701,6 @@
         "newBuild": false
       },
       {
-        "address": "124, EASTBROOK DRIVE, RUSH GREEN",
-        "postcode": "RM7 0YU",
-        "price": 402000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "38, REDRIFF ROAD",
         "postcode": "RM7 8HD",
         "price": 440000,
@@ -3380,19 +3733,19 @@
         "newBuild": false
       },
       {
-        "address": "SUFFOLK HOUSE, 1, WHITE HART LANE, COLLIER ROW",
-        "postcode": "RM7 8JP",
-        "price": 243500,
-        "dateOfTransfer": "2025-06-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "5, FOURTH AVENUE",
         "postcode": "RM7 0UA",
         "price": 475000,
         "dateOfTransfer": "2025-06-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "SUFFOLK HOUSE, 1, WHITE HART LANE, COLLIER ROW",
+        "postcode": "RM7 8JP",
+        "price": 243500,
+        "dateOfTransfer": "2025-06-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3564,19 +3917,19 @@
         "newBuild": false
       },
       {
-        "address": "281, GORSEWAY",
-        "postcode": "RM7 0SD",
-        "price": 525000,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "OAK HOUSE, FLAT 20, COTTONS APPROACH",
         "postcode": "RM7 7LN",
         "price": 245000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "281, GORSEWAY",
+        "postcode": "RM7 0SD",
+        "price": 525000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3612,17 +3965,17 @@
         "newBuild": false
       },
       {
-        "address": "25, EDDY CLOSE",
-        "postcode": "RM7 9HR",
-        "price": 415000,
+        "address": "50, JUBILEE AVENUE",
+        "postcode": "RM7 9LT",
+        "price": 475000,
         "dateOfTransfer": "2025-05-07",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "50, JUBILEE AVENUE",
-        "postcode": "RM7 9LT",
-        "price": 475000,
+        "address": "25, EDDY CLOSE",
+        "postcode": "RM7 9HR",
+        "price": 415000,
         "dateOfTransfer": "2025-05-07",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3676,16 +4029,16 @@
         "newBuild": false
       },
       {
-        "address": "THE SQUIRES, 243, FLAT 18, LONDON ROAD",
-        "postcode": "RM7 9JX",
+        "address": "113, RUSH GREEN GARDENS",
+        "postcode": "RM7 0NS",
         "price": 235000,
         "dateOfTransfer": "2025-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "113, RUSH GREEN GARDENS",
-        "postcode": "RM7 0NS",
+        "address": "THE SQUIRES, 243, FLAT 18, LONDON ROAD",
+        "postcode": "RM7 9JX",
         "price": 235000,
         "dateOfTransfer": "2025-04-30",
         "propertyType": "Flat/Maisonette",
@@ -3780,9 +4133,41 @@
         "newBuild": false
       },
       {
+        "address": "9, BISHOPS COURT",
+        "postcode": "RM7 8BW",
+        "price": 147500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, PRETORIA ROAD",
+        "postcode": "RM7 7AT",
+        "price": 377500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "45, JUBILEE AVENUE",
+        "postcode": "RM7 9LT",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "521, MAWNEY ROAD",
         "postcode": "RM7 8QA",
         "price": 855001,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, COTLEIGH ROAD",
+        "postcode": "RM7 9AH",
+        "price": 480000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3828,46 +4213,6 @@
         "newBuild": false
       },
       {
-        "address": "9, BISHOPS COURT",
-        "postcode": "RM7 8BW",
-        "price": 147500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "60, PRETORIA ROAD",
-        "postcode": "RM7 7AT",
-        "price": 377500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "9, BISHOPS COURT",
-        "postcode": "RM7 8BW",
-        "price": 135000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "10, COTLEIGH ROAD",
-        "postcode": "RM7 9AH",
-        "price": 480000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "45, JUBILEE AVENUE",
-        "postcode": "RM7 9LT",
-        "price": 525000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "199, MARKS ROAD",
         "postcode": "RM7 7AF",
         "price": 382000,
@@ -3881,6 +4226,14 @@
         "price": 465000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, BISHOPS COURT",
+        "postcode": "RM7 8BW",
+        "price": 135000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3900,8 +4253,96 @@
         "newBuild": false
       },
       {
+        "address": "52, BROOKLANDS ROAD",
+        "postcode": "RM7 7EB",
+        "price": 435000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "54, COMO STREET",
         "postcode": "RM7 7DR",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, WEST ROAD, RUSH GREEN",
+        "postcode": "RM7 0QS",
+        "price": 355000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "68, LAUREL CRESCENT",
+        "postcode": "RM7 0RT",
+        "price": 520000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "175, GREAT CULLINGS, RUSH GREEN",
+        "postcode": "RM7 0YR",
+        "price": 270000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DURHAM HOUSE, 3, WHITE HART LANE, COLLIER ROW",
+        "postcode": "RM7 8JX",
+        "price": 260000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, VALENTINES WAY",
+        "postcode": "RM7 0YH",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FERN COURT, FLAT 13, COTTONS APPROACH",
+        "postcode": "RM7 7LP",
+        "price": 222000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, MAWNEY ROAD",
+        "postcode": "RM7 7HR",
+        "price": 1650000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "39, MAWNEY ROAD",
+        "postcode": "RM7 7HL",
+        "price": 510000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "25, BRIDPORT AVENUE",
+        "postcode": "RM7 9HL",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, OAK STREET",
+        "postcode": "RM7 7BS",
         "price": 425000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
@@ -3940,78 +4381,6 @@
         "newBuild": false
       },
       {
-        "address": "2, WEST ROAD, RUSH GREEN",
-        "postcode": "RM7 0QS",
-        "price": 355000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "68, LAUREL CRESCENT",
-        "postcode": "RM7 0RT",
-        "price": 520000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "FERN COURT, FLAT 13, COTTONS APPROACH",
-        "postcode": "RM7 7LP",
-        "price": 222000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "DURHAM HOUSE, 3, WHITE HART LANE, COLLIER ROW",
-        "postcode": "RM7 8JX",
-        "price": 260000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "34, MAWNEY ROAD",
-        "postcode": "RM7 7HR",
-        "price": 1650000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "39, MAWNEY ROAD",
-        "postcode": "RM7 7HL",
-        "price": 510000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "54, VALENTINES WAY",
-        "postcode": "RM7 0YH",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "15, OAK STREET",
-        "postcode": "RM7 7BS",
-        "price": 425000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "52, BROOKLANDS ROAD",
-        "postcode": "RM7 7EB",
-        "price": 435000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "35, CROWLANDS AVENUE",
         "postcode": "RM7 9JA",
         "price": 468000,
@@ -4020,41 +4389,9 @@
         "newBuild": false
       },
       {
-        "address": "25, BRIDPORT AVENUE",
-        "postcode": "RM7 9HL",
-        "price": 430000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "175, GREAT CULLINGS, RUSH GREEN",
-        "postcode": "RM7 0YR",
-        "price": 270000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "86, NORWOOD AVENUE",
         "postcode": "RM7 0QJ",
         "price": 480000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "142, CROSS ROAD, MAWNEYS",
-        "postcode": "RM7 8EL",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "8, KIMBERLEY AVENUE",
-        "postcode": "RM7 9JP",
-        "price": 458000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4068,11 +4405,19 @@
         "newBuild": false
       },
       {
-        "address": "39, SOUTHERN WAY",
-        "postcode": "RM7 9PA",
-        "price": 426500,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
+        "address": "8, KIMBERLEY AVENUE",
+        "postcode": "RM7 9JP",
+        "price": 458000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "142, CROSS ROAD, MAWNEYS",
+        "postcode": "RM7 8EL",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4084,6 +4429,22 @@
         "newBuild": false
       },
       {
+        "address": "45, PHILIP AVENUE",
+        "postcode": "RM7 0XH",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "39, SOUTHERN WAY",
+        "postcode": "RM7 9PA",
+        "price": 426500,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "1, ST GEORGES COURT",
         "postcode": "RM7 7JG",
         "price": 215000,
@@ -4092,11 +4453,11 @@
         "newBuild": false
       },
       {
-        "address": "45, PHILIP AVENUE",
-        "postcode": "RM7 0XH",
-        "price": 430000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Semi-detached",
+        "address": "49, RUSH GREEN GARDENS",
+        "postcode": "RM7 0NR",
+        "price": 235000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4116,11 +4477,11 @@
         "newBuild": false
       },
       {
-        "address": "49, RUSH GREEN GARDENS",
-        "postcode": "RM7 0NR",
-        "price": 235000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Flat/Maisonette",
+        "address": "68B, DAGENHAM ROAD",
+        "postcode": "RM7 0DA",
+        "price": 150000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4132,19 +4493,27 @@
         "newBuild": false
       },
       {
-        "address": "68B, DAGENHAM ROAD",
-        "postcode": "RM7 0DA",
-        "price": 150000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "23, CHERRYDOWN WALK",
         "postcode": "RM7 8HJ",
         "price": 233500,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, RUSH GREEN ROAD",
+        "postcode": "RM7 0PS",
+        "price": 285000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, NORFOLK ROAD",
+        "postcode": "RM7 9DL",
+        "price": 512000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4169,22 +4538,6 @@
         "price": 595000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "1, NORFOLK ROAD",
-        "postcode": "RM7 9DL",
-        "price": 512000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "30, RUSH GREEN ROAD",
-        "postcode": "RM7 0PS",
-        "price": 285000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4220,14 +4573,6 @@
         "newBuild": false
       },
       {
-        "address": "3, KNIGHTSBRIDGE GARDENS",
-        "postcode": "RM7 9AD",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "18B, MEDORA ROAD",
         "postcode": "RM7 7EP",
         "price": 270000,
@@ -4236,11 +4581,11 @@
         "newBuild": false
       },
       {
-        "address": "TYTHE COURT, 141, APARTMENT 11, WHITE HART LANE, COLLIER ROW",
-        "postcode": "RM7 8LZ",
-        "price": 150000,
+        "address": "3, KNIGHTSBRIDGE GARDENS",
+        "postcode": "RM7 9AD",
+        "price": 500000,
         "dateOfTransfer": "2025-03-17",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4249,6 +4594,14 @@
         "price": 400000,
         "dateOfTransfer": "2025-03-17",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "TYTHE COURT, 141, APARTMENT 11, WHITE HART LANE, COLLIER ROW",
+        "postcode": "RM7 8LZ",
+        "price": 150000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4292,19 +4645,19 @@
         "newBuild": false
       },
       {
-        "address": "104, BELLHOUSE ROAD",
-        "postcode": "RM7 0LJ",
-        "price": 415000,
-        "dateOfTransfer": "2025-03-13",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "42, VICTORY WAY",
         "postcode": "RM7 8PA",
         "price": 405000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "104, BELLHOUSE ROAD",
+        "postcode": "RM7 0LJ",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4372,14 +4725,6 @@
         "newBuild": false
       },
       {
-        "address": "IMAGE COURT, FLAT 101, MAXWELL ROAD",
-        "postcode": "RM7 0FL",
-        "price": 307500,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "29, FOURTH AVENUE",
         "postcode": "RM7 0UB",
         "price": 488000,
@@ -4409,6 +4754,14 @@
         "price": 395000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "IMAGE COURT, FLAT 101, MAXWELL ROAD",
+        "postcode": "RM7 0FL",
+        "price": 307500,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4444,17 +4797,17 @@
         "newBuild": false
       },
       {
-        "address": "414, MAWNEY ROAD",
-        "postcode": "RM7 8QD",
-        "price": 490000,
+        "address": "75, COMO STREET",
+        "postcode": "RM7 7DT",
+        "price": 425000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "75, COMO STREET",
-        "postcode": "RM7 7DT",
-        "price": 425000,
+        "address": "414, MAWNEY ROAD",
+        "postcode": "RM7 8QD",
+        "price": 490000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4508,17 +4861,9 @@
         "newBuild": false
       },
       {
-        "address": "LUX BUILDING, FLAT 31, MAXWELL ROAD",
-        "postcode": "RM7 0FN",
-        "price": 265000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "88, LYNTON AVENUE",
-        "postcode": "RM7 8NL",
-        "price": 420000,
+        "address": "VESTRY COURT, 2, 39, BOURNEBROOK GROVE",
+        "postcode": "RM7 0GX",
+        "price": 540000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4548,9 +4893,9 @@
         "newBuild": false
       },
       {
-        "address": "VESTRY COURT, 2, 39, BOURNEBROOK GROVE",
-        "postcode": "RM7 0GX",
-        "price": 540000,
+        "address": "88, LYNTON AVENUE",
+        "postcode": "RM7 8NL",
+        "price": 420000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4561,6 +4906,14 @@
         "price": 475000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LUX BUILDING, FLAT 31, MAXWELL ROAD",
+        "postcode": "RM7 0FN",
+        "price": 265000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4628,14 +4981,6 @@
         "newBuild": false
       },
       {
-        "address": "19, STOCKLAND ROAD",
-        "postcode": "RM7 9AR",
-        "price": 385000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "46, LYNTON AVENUE",
         "postcode": "RM7 8NL",
         "price": 450000,
@@ -4663,6 +5008,14 @@
         "address": "2, CEDAR ROAD",
         "postcode": "RM7 7JR",
         "price": 490000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, STOCKLAND ROAD",
+        "postcode": "RM7 9AR",
+        "price": 385000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4708,9 +5061,25 @@
         "newBuild": false
       },
       {
+        "address": "61, CAMPION CLOSE, RUSH GREEN",
+        "postcode": "RM7 0WX",
+        "price": 475000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "122, CROSS ROAD, MAWNEYS",
         "postcode": "RM7 8EL",
         "price": 390000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, KNIGHTSBRIDGE GARDENS",
+        "postcode": "RM7 9AD",
+        "price": 422000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4734,22 +5103,6 @@
       {
         "address": "56, CEDAR ROAD",
         "postcode": "RM7 7JT",
-        "price": 475000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "27, KNIGHTSBRIDGE GARDENS",
-        "postcode": "RM7 9AD",
-        "price": 422000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "61, CAMPION CLOSE, RUSH GREEN",
-        "postcode": "RM7 0WX",
         "price": 475000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
@@ -4812,7 +5165,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 409859,
+    "averagePrice": 410001,
     "medianPrice": 425000
   },
   "representatives": {

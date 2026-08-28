@@ -3,8 +3,8 @@
   "slug": "da18",
   "city": "London",
   "borough": "Bexley",
-  "latitude": 51.49428122058823,
-  "longitude": 0.1362885882352941,
+  "latitude": 51.49449815873016,
+  "longitude": 0.1348741587301587,
   "wards": [
     "Slade Green & Northend",
     "Thamesmead East"
@@ -20,8 +20,9 @@
         "name": "Parkway Primary School",
         "urn": "101437",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "26/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Alsike Road, Erith",
         "postcode": "DA18 4DP",
         "numberOfPupils": 247,
@@ -32,7 +33,8 @@
         "urn": "101460",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Kale Road, Thamesmead, Erith",
         "postcode": "DA18 4BA",
         "numberOfPupils": 177,
@@ -44,6 +46,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Northwood Place, Erith",
         "postcode": "DA18 4HN",
         "numberOfPupils": 144,
@@ -54,7 +57,8 @@
         "urn": "145140",
         "phaseOfEducation": "All-through",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Yarnton Way, Thamesmead, Erith",
         "postcode": "DA18 4DW",
         "numberOfPupils": 1505,
@@ -66,97 +70,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 399,
-        "violentCrimes": 138,
-        "propertyCrimes": 141
+        "totalCrimes": 412,
+        "violentCrimes": 145,
+        "propertyCrimes": 142
       },
       {
         "month": "2025-08",
-        "totalCrimes": 350,
-        "violentCrimes": 119,
-        "propertyCrimes": 130
+        "totalCrimes": 355,
+        "violentCrimes": 123,
+        "propertyCrimes": 135
       },
       {
         "month": "2025-09",
-        "totalCrimes": 320,
-        "violentCrimes": 123,
-        "propertyCrimes": 109
+        "totalCrimes": 334,
+        "violentCrimes": 129,
+        "propertyCrimes": 115
       },
       {
         "month": "2025-10",
-        "totalCrimes": 385,
-        "violentCrimes": 133,
-        "propertyCrimes": 152
+        "totalCrimes": 397,
+        "violentCrimes": 138,
+        "propertyCrimes": 158
       },
       {
         "month": "2025-11",
-        "totalCrimes": 319,
-        "violentCrimes": 126,
-        "propertyCrimes": 129
+        "totalCrimes": 339,
+        "violentCrimes": 135,
+        "propertyCrimes": 135
       },
       {
         "month": "2025-12",
-        "totalCrimes": 259,
-        "violentCrimes": 107,
-        "propertyCrimes": 87
+        "totalCrimes": 267,
+        "violentCrimes": 113,
+        "propertyCrimes": 92
       },
       {
         "month": "2026-01",
-        "totalCrimes": 309,
-        "violentCrimes": 104,
-        "propertyCrimes": 131
+        "totalCrimes": 321,
+        "violentCrimes": 110,
+        "propertyCrimes": 135
       },
       {
         "month": "2026-02",
-        "totalCrimes": 302,
-        "violentCrimes": 113,
-        "propertyCrimes": 99
+        "totalCrimes": 315,
+        "violentCrimes": 121,
+        "propertyCrimes": 101
       },
       {
         "month": "2026-03",
-        "totalCrimes": 333,
-        "violentCrimes": 123,
-        "propertyCrimes": 116
+        "totalCrimes": 347,
+        "violentCrimes": 131,
+        "propertyCrimes": 122
       },
       {
         "month": "2026-04",
-        "totalCrimes": 323,
-        "violentCrimes": 133,
-        "propertyCrimes": 76
+        "totalCrimes": 335,
+        "violentCrimes": 140,
+        "propertyCrimes": 78
       },
       {
         "month": "2026-05",
-        "totalCrimes": 304,
-        "violentCrimes": 134,
-        "propertyCrimes": 72
+        "totalCrimes": 312,
+        "violentCrimes": 142,
+        "propertyCrimes": 73
       },
       {
         "month": "2026-06",
-        "totalCrimes": 346,
-        "violentCrimes": 155,
-        "propertyCrimes": 87
+        "totalCrimes": 360,
+        "violentCrimes": 162,
+        "propertyCrimes": 89
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 842,
-      "bicycle-theft": 19,
-      "burglary": 118,
-      "criminal-damage-arson": 201,
-      "drugs": 211,
-      "other-theft": 196,
-      "possession-of-weapons": 25,
-      "public-order": 201,
-      "robbery": 91,
+      "anti-social-behaviour": 852,
+      "bicycle-theft": 20,
+      "burglary": 117,
+      "criminal-damage-arson": 205,
+      "drugs": 217,
+      "other-theft": 209,
+      "possession-of-weapons": 26,
+      "public-order": 213,
+      "robbery": 98,
       "shoplifting": 386,
-      "theft-from-the-person": 39,
-      "vehicle-crime": 370,
-      "violent-crime": 1191,
-      "other-crime": 59
+      "theft-from-the-person": 42,
+      "vehicle-crime": 396,
+      "violent-crime": 1252,
+      "other-crime": 61
     },
-    "totalLast12Months": 3949
+    "totalLast12Months": 4094
   },
   "property": {
     "sales": [
+      {
+        "address": "74, LEATHERBOTTLE GREEN",
+        "postcode": "DA18 4HP",
+        "price": 450000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "16, LIME ROW",
         "postcode": "DA18 4HW",
@@ -350,8 +362,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 265295,
-    "medianPrice": 243750
+    "averagePrice": 272683,
+    "medianPrice": 250000
   },
   "representatives": {
     "representatives": [

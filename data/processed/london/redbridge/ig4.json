@@ -3,8 +3,8 @@
   "slug": "ig4",
   "city": "London",
   "borough": "Redbridge",
-  "latitude": 51.58005972661868,
-  "longitude": 0.05120223021582734,
+  "latitude": 51.58011690441176,
+  "longitude": 0.051144639705882344,
   "wards": [
     "Barkingside",
     "Clayhall",
@@ -53,6 +53,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "233 Beehive Lane, Redbridge, Ilford",
         "postcode": "IG4 5ED",
         "numberOfPupils": 44,
@@ -63,7 +64,8 @@
         "urn": "127046",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "College Gardens, Redbridge, Ilford",
         "postcode": "IG4 5HW",
         "numberOfPupils": 808,
@@ -74,7 +76,8 @@
         "urn": "140575",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "09/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Woodford Bridge Road, Ilford",
         "postcode": "IG4 5LP",
         "numberOfPupils": 2615,
@@ -85,7 +88,8 @@
         "urn": "141006",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Woodford Bridge Road, Clayhall, Ilford",
         "postcode": "IG4 5LP",
         "numberOfPupils": 35,
@@ -97,103 +101,127 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 330,
-        "violentCrimes": 119,
-        "propertyCrimes": 121
+        "totalCrimes": 324,
+        "violentCrimes": 115,
+        "propertyCrimes": 120
       },
       {
         "month": "2025-08",
-        "totalCrimes": 310,
-        "violentCrimes": 103,
+        "totalCrimes": 305,
+        "violentCrimes": 98,
         "propertyCrimes": 109
       },
       {
         "month": "2025-09",
-        "totalCrimes": 314,
+        "totalCrimes": 312,
         "violentCrimes": 100,
-        "propertyCrimes": 133
+        "propertyCrimes": 131
       },
       {
         "month": "2025-10",
-        "totalCrimes": 335,
-        "violentCrimes": 117,
-        "propertyCrimes": 136
+        "totalCrimes": 330,
+        "violentCrimes": 115,
+        "propertyCrimes": 135
       },
       {
         "month": "2025-11",
-        "totalCrimes": 298,
-        "violentCrimes": 117,
-        "propertyCrimes": 108
+        "totalCrimes": 294,
+        "violentCrimes": 115,
+        "propertyCrimes": 106
       },
       {
         "month": "2025-12",
-        "totalCrimes": 277,
-        "violentCrimes": 106,
-        "propertyCrimes": 99
+        "totalCrimes": 270,
+        "violentCrimes": 101,
+        "propertyCrimes": 98
       },
       {
         "month": "2026-01",
-        "totalCrimes": 274,
-        "violentCrimes": 103,
-        "propertyCrimes": 101
+        "totalCrimes": 271,
+        "violentCrimes": 101,
+        "propertyCrimes": 100
       },
       {
         "month": "2026-02",
-        "totalCrimes": 231,
-        "violentCrimes": 87,
+        "totalCrimes": 225,
+        "violentCrimes": 82,
         "propertyCrimes": 98
       },
       {
         "month": "2026-03",
-        "totalCrimes": 278,
+        "totalCrimes": 279,
         "violentCrimes": 117,
         "propertyCrimes": 92
       },
       {
         "month": "2026-04",
         "totalCrimes": 234,
-        "violentCrimes": 83,
+        "violentCrimes": 82,
         "propertyCrimes": 90
       },
       {
         "month": "2026-05",
-        "totalCrimes": 303,
-        "violentCrimes": 127,
-        "propertyCrimes": 91
+        "totalCrimes": 297,
+        "violentCrimes": 123,
+        "propertyCrimes": 89
       },
       {
         "month": "2026-06",
-        "totalCrimes": 287,
-        "violentCrimes": 132,
+        "totalCrimes": 286,
+        "violentCrimes": 131,
         "propertyCrimes": 83
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 711,
+      "anti-social-behaviour": 708,
       "bicycle-theft": 15,
-      "burglary": 161,
-      "criminal-damage-arson": 158,
+      "burglary": 158,
+      "criminal-damage-arson": 156,
       "drugs": 142,
-      "other-theft": 236,
+      "other-theft": 233,
       "possession-of-weapons": 21,
-      "public-order": 181,
-      "robbery": 84,
+      "public-order": 178,
+      "robbery": 80,
       "shoplifting": 182,
-      "theft-from-the-person": 110,
-      "vehicle-crime": 399,
-      "violent-crime": 1025,
+      "theft-from-the-person": 109,
+      "vehicle-crime": 398,
+      "violent-crime": 1001,
       "other-crime": 46
     },
-    "totalLast12Months": 3471
+    "totalLast12Months": 3427
   },
   "property": {
     "sales": [
+      {
+        "address": "6, REDBRIDGE LANE EAST",
+        "postcode": "IG4 5ES",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "41, BRANTWOOD GARDENS",
         "postcode": "IG4 5LG",
         "price": 622000,
         "dateOfTransfer": "2026-06-22",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11, SOMERSBY GARDENS",
+        "postcode": "IG4 5DY",
+        "price": 620000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, TRYFAN CLOSE",
+        "postcode": "IG4 5JX",
+        "price": 615000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -253,6 +281,14 @@
         "newBuild": false
       },
       {
+        "address": "29, WOODFORD BRIDGE ROAD",
+        "postcode": "IG4 5LL",
+        "price": 540000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "15, LIMEWOOD COURT",
         "postcode": "IG4 5EL",
         "price": 110000,
@@ -265,6 +301,14 @@
         "postcode": "IG4 5PD",
         "price": 580000,
         "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, SUSSEX CLOSE",
+        "postcode": "IG4 5DP",
+        "price": 430000,
+        "dateOfTransfer": "2026-02-12",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -453,6 +497,14 @@
         "newBuild": false
       },
       {
+        "address": "14, VISTA DRIVE",
+        "postcode": "IG4 5JF",
+        "price": 850000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "1C, GRASMERE GARDENS",
         "postcode": "IG4 5LF",
         "price": 430000,
@@ -464,14 +516,6 @@
         "address": "1B, GRASMERE GARDENS",
         "postcode": "IG4 5LF",
         "price": 425000,
-        "dateOfTransfer": "2025-10-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "14, VISTA DRIVE",
-        "postcode": "IG4 5JF",
-        "price": 850000,
         "dateOfTransfer": "2025-10-16",
         "propertyType": "Terraced",
         "newBuild": false
@@ -509,11 +553,19 @@
         "newBuild": false
       },
       {
-        "address": "11, SOMERSBY GARDENS",
-        "postcode": "IG4 5DY",
-        "price": 415000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Terraced",
+        "address": "WATERWORKS COTTAGE, EASTERN AVENUE",
+        "postcode": "IG4 5BD",
+        "price": 1000000,
+        "dateOfTransfer": "2025-10-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "247, BEEHIVE LANE",
+        "postcode": "IG4 5ED",
+        "price": 12500,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -522,6 +574,14 @@
         "price": 610000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, SOMERSBY GARDENS",
+        "postcode": "IG4 5DY",
+        "price": 415000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -541,14 +601,6 @@
         "newBuild": false
       },
       {
-        "address": "24, WHITNEY AVENUE",
-        "postcode": "IG4 5PN",
-        "price": 630000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "25, LEIGH AVENUE",
         "postcode": "IG4 5PH",
         "price": 600000,
@@ -562,6 +614,14 @@
         "price": 85000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, WHITNEY AVENUE",
+        "postcode": "IG4 5PN",
+        "price": 630000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -597,19 +657,19 @@
         "newBuild": false
       },
       {
-        "address": "141A, BEEHIVE LANE",
-        "postcode": "IG4 5DR",
-        "price": 480000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "14, ELLESMERE GARDENS",
         "postcode": "IG4 5DA",
         "price": 620000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "141A, BEEHIVE LANE",
+        "postcode": "IG4 5DR",
+        "price": 480000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -629,6 +689,14 @@
         "newBuild": false
       },
       {
+        "address": "66, LIMEWOOD COURT",
+        "postcode": "IG4 5EL",
+        "price": 177500,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "44, CASTLE DRIVE",
         "postcode": "IG4 5AE",
         "price": 250000,
@@ -637,11 +705,11 @@
         "newBuild": false
       },
       {
-        "address": "66, LIMEWOOD COURT",
-        "postcode": "IG4 5EL",
-        "price": 177500,
-        "dateOfTransfer": "2025-08-26",
-        "propertyType": "Flat/Maisonette",
+        "address": "17, LAKESIDE AVENUE",
+        "postcode": "IG4 5PJ",
+        "price": 670000,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -682,6 +750,14 @@
         "price": 90000,
         "dateOfTransfer": "2025-07-23",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "151, FALMOUTH GARDENS",
+        "postcode": "IG4 5JN",
+        "price": 580000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -821,6 +897,14 @@
         "newBuild": false
       },
       {
+        "address": "22, VISTA DRIVE",
+        "postcode": "IG4 5JF",
+        "price": 740000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "13, BERGHOLT AVENUE",
         "postcode": "IG4 5NE",
         "price": 560000,
@@ -837,22 +921,6 @@
         "newBuild": false
       },
       {
-        "address": "22, VISTA DRIVE",
-        "postcode": "IG4 5JF",
-        "price": 740000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "26, FERNHALL DRIVE",
-        "postcode": "IG4 5BW",
-        "price": 900000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "31, BRAINTREE AVENUE",
         "postcode": "IG4 5PY",
         "price": 647250,
@@ -864,6 +932,14 @@
         "address": "31, AMBLESIDE GARDENS",
         "postcode": "IG4 5HH",
         "price": 545000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26, FERNHALL DRIVE",
+        "postcode": "IG4 5BW",
+        "price": 900000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -909,19 +985,19 @@
         "newBuild": false
       },
       {
-        "address": "46, HIGHCLIFFE GARDENS",
-        "postcode": "IG4 5HR",
-        "price": 601000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "28, FALMOUTH GARDENS",
         "postcode": "IG4 5JU",
         "price": 920000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, HIGHCLIFFE GARDENS",
+        "postcode": "IG4 5HR",
+        "price": 601000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -997,7 +1073,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 520819,
+    "averagePrice": 523366,
     "medianPrice": 565000
   },
   "representatives": {

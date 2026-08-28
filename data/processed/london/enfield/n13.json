@@ -3,8 +3,8 @@
   "slug": "n13",
   "city": "London",
   "borough": "Enfield",
-  "latitude": 51.61805157844994,
-  "longitude": -0.10423224196597355,
+  "latitude": 51.617758559686834,
+  "longitude": -0.10430085322896289,
   "wards": [
     "Arnos Grove",
     "Bowes",
@@ -145,7 +145,8 @@
         "urn": "101989",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Rayleigh Road, Palmers Green, London",
         "postcode": "N13 5QP",
         "numberOfPupils": 498,
@@ -156,7 +157,8 @@
         "urn": "101996",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/11/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Hazelwood Lane, London",
         "postcode": "N13 5HE",
         "numberOfPupils": 380,
@@ -167,7 +169,8 @@
         "urn": "101997",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/11/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Hazelwood Lane, London",
         "postcode": "N13 5HE",
         "numberOfPupils": 323,
@@ -178,7 +181,8 @@
         "urn": "102006",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Tottenhall Road, Palmers Green, London",
         "postcode": "N13 6HX",
         "numberOfPupils": 204,
@@ -188,8 +192,9 @@
         "name": "St Michael at Bowes CofE Junior School",
         "urn": "102026",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "12/07/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Tottenhall Road, London",
         "postcode": "N13 6JB",
         "numberOfPupils": 253,
@@ -199,8 +204,9 @@
         "name": "St Anne's Catholic High School for Girls",
         "urn": "102053",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "23/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Oakthorpe Road, Palmers Green, London",
         "postcode": "N13 5TY",
         "numberOfPupils": 960,
@@ -212,6 +218,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Tile Kiln Lane, London",
         "postcode": "N13 6BY",
         "numberOfPupils": 438,
@@ -223,111 +230,183 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 462,
-        "violentCrimes": 161,
-        "propertyCrimes": 180
+        "totalCrimes": 459,
+        "violentCrimes": 160,
+        "propertyCrimes": 179
       },
       {
         "month": "2025-08",
         "totalCrimes": 376,
-        "violentCrimes": 100,
-        "propertyCrimes": 156
-      },
-      {
-        "month": "2025-09",
-        "totalCrimes": 390,
-        "violentCrimes": 120,
-        "propertyCrimes": 146
-      },
-      {
-        "month": "2025-10",
-        "totalCrimes": 413,
-        "violentCrimes": 131,
-        "propertyCrimes": 186
-      },
-      {
-        "month": "2025-11",
-        "totalCrimes": 382,
-        "violentCrimes": 115,
+        "violentCrimes": 101,
         "propertyCrimes": 157
       },
       {
-        "month": "2025-12",
-        "totalCrimes": 369,
-        "violentCrimes": 116,
-        "propertyCrimes": 153
+        "month": "2025-09",
+        "totalCrimes": 394,
+        "violentCrimes": 120,
+        "propertyCrimes": 150
       },
       {
-        "month": "2026-01",
-        "totalCrimes": 393,
-        "violentCrimes": 134,
+        "month": "2025-10",
+        "totalCrimes": 415,
+        "violentCrimes": 133,
+        "propertyCrimes": 184
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 388,
+        "violentCrimes": 117,
         "propertyCrimes": 159
       },
       {
+        "month": "2025-12",
+        "totalCrimes": 372,
+        "violentCrimes": 117,
+        "propertyCrimes": 155
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 399,
+        "violentCrimes": 136,
+        "propertyCrimes": 162
+      },
+      {
         "month": "2026-02",
-        "totalCrimes": 378,
-        "violentCrimes": 138,
-        "propertyCrimes": 147
+        "totalCrimes": 377,
+        "violentCrimes": 139,
+        "propertyCrimes": 146
       },
       {
         "month": "2026-03",
-        "totalCrimes": 409,
-        "violentCrimes": 166,
+        "totalCrimes": 412,
+        "violentCrimes": 167,
         "propertyCrimes": 143
       },
       {
         "month": "2026-04",
-        "totalCrimes": 387,
-        "violentCrimes": 127,
-        "propertyCrimes": 166
+        "totalCrimes": 385,
+        "violentCrimes": 128,
+        "propertyCrimes": 164
       },
       {
         "month": "2026-05",
-        "totalCrimes": 390,
-        "violentCrimes": 153,
+        "totalCrimes": 395,
+        "violentCrimes": 155,
         "propertyCrimes": 129
       },
       {
         "month": "2026-06",
-        "totalCrimes": 387,
-        "violentCrimes": 148,
-        "propertyCrimes": 136
+        "totalCrimes": 390,
+        "violentCrimes": 149,
+        "propertyCrimes": 137
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 970,
-      "bicycle-theft": 21,
-      "burglary": 286,
-      "criminal-damage-arson": 217,
-      "drugs": 245,
-      "other-theft": 356,
+      "anti-social-behaviour": 976,
+      "bicycle-theft": 22,
+      "burglary": 284,
+      "criminal-damage-arson": 221,
+      "drugs": 244,
+      "other-theft": 358,
       "possession-of-weapons": 31,
-      "public-order": 181,
-      "robbery": 99,
-      "shoplifting": 164,
-      "theft-from-the-person": 135,
+      "public-order": 180,
+      "robbery": 101,
+      "shoplifting": 163,
+      "theft-from-the-person": 138,
       "vehicle-crime": 679,
-      "violent-crime": 1298,
-      "other-crime": 54
+      "violent-crime": 1310,
+      "other-crime": 55
     },
-    "totalLast12Months": 4736
+    "totalLast12Months": 4762
   },
   "property": {
     "sales": [
+      {
+        "address": "48, MEDESENGE WAY",
+        "postcode": "N13 6DY",
+        "price": 300000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "52A, THE GROVE",
+        "postcode": "N13 5JR",
+        "price": 350000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "56, PELLIPAR CLOSE",
+        "postcode": "N13 4AG",
+        "price": 340000,
+        "dateOfTransfer": "2026-07-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, LODGE DRIVE",
+        "postcode": "N13 5LB",
+        "price": 325000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, HAZEL CLOSE",
+        "postcode": "N13 5NJ",
+        "price": 515000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, COLET CLOSE",
+        "postcode": "N13 6LH",
+        "price": 182500,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, BELSIZE AVENUE",
+        "postcode": "N13 4TL",
+        "price": 687000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "41, CHEQUERS WAY",
+        "postcode": "N13 6DA",
+        "price": 600000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "141, TOTTENHALL ROAD",
+        "postcode": "N13 6JA",
+        "price": 600000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43, GROUND FLOOR FLAT, AMBERLEY ROAD",
+        "postcode": "N13 4BH",
+        "price": 475000,
+        "dateOfTransfer": "2026-06-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "14, ALDERMANS HILL",
         "postcode": "N13 4PN",
         "price": 100,
         "dateOfTransfer": "2026-06-11",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "5, GRANVILLE ROAD",
-        "postcode": "N13 4RR",
-        "price": 660000,
-        "dateOfTransfer": "2026-06-05",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -347,10 +426,34 @@
         "newBuild": false
       },
       {
+        "address": "5, GRANVILLE ROAD",
+        "postcode": "N13 4RR",
+        "price": 660000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "236, HEDGE LANE",
         "postcode": "N13 5DA",
         "price": 545000,
         "dateOfTransfer": "2026-06-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, BEALE CLOSE",
+        "postcode": "N13 6DH",
+        "price": 176500,
+        "dateOfTransfer": "2026-06-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "136, TOTTENHALL ROAD",
+        "postcode": "N13 6DL",
+        "price": 423000,
+        "dateOfTransfer": "2026-05-29",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -443,11 +546,35 @@
         "newBuild": false
       },
       {
+        "address": "55, CRANFORD AVENUE",
+        "postcode": "N13 4NY",
+        "price": 440000,
+        "dateOfTransfer": "2026-05-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "28, GREEN LANES",
         "postcode": "N13 6HT",
         "price": 725000,
         "dateOfTransfer": "2026-05-12",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "32, AVONDALE ROAD",
+        "postcode": "N13 4DU",
+        "price": 285000,
+        "dateOfTransfer": "2026-05-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "87, CAVERSHAM AVENUE",
+        "postcode": "N13 4LL",
+        "price": 435000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -464,14 +591,6 @@
         "price": 892620,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "87, CAVERSHAM AVENUE",
-        "postcode": "N13 4LL",
-        "price": 435000,
-        "dateOfTransfer": "2026-05-08",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -627,6 +746,14 @@
         "newBuild": false
       },
       {
+        "address": "35A, MOFFAT ROAD",
+        "postcode": "N13 4SA",
+        "price": 475000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "20B, PARK AVENUE, PALMERS GREEN",
         "postcode": "N13 5PF",
         "price": 375000,
@@ -683,6 +810,14 @@
         "newBuild": false
       },
       {
+        "address": "6, SPENCER AVENUE",
+        "postcode": "N13 4TR",
+        "price": 910000,
+        "dateOfTransfer": "2026-03-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "19, EATON PARK ROAD, PALMERS GREEN",
         "postcode": "N13 4ED",
         "price": 815000,
@@ -696,6 +831,14 @@
         "price": 810000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "94, PARK AVENUE, PALMERS GREEN",
+        "postcode": "N13 5PN",
+        "price": 393000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -723,11 +866,27 @@
         "newBuild": false
       },
       {
+        "address": "20, ASH GROVE",
+        "postcode": "N13 5AA",
+        "price": 605000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "2, WOLVES LANE",
         "postcode": "N13 6DR",
         "price": 744000,
         "dateOfTransfer": "2026-02-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, PILGRIMS CLOSE",
+        "postcode": "N13 4HX",
+        "price": 100000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -747,19 +906,19 @@
         "newBuild": false
       },
       {
-        "address": "100, THE LARCHES",
-        "postcode": "N13 5QE",
-        "price": 705000,
-        "dateOfTransfer": "2026-02-13",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "231, PRINCES AVENUE",
         "postcode": "N13 6HH",
         "price": 545000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "100, THE LARCHES",
+        "postcode": "N13 5QE",
+        "price": 705000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -787,9 +946,25 @@
         "newBuild": false
       },
       {
+        "address": "LYNTON, MEADOWCROFT ROAD",
+        "postcode": "N13 4EA",
+        "price": 3000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "HAZELWOOD HOUSE, FLAT 20, NEW RIVER CRESCENT",
         "postcode": "N13 5HG",
         "price": 340000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LYNTON, GROUND FLOOR FLAT, MEADOWCROFT ROAD",
+        "postcode": "N13 4EA",
+        "price": 315000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -811,17 +986,17 @@
         "newBuild": false
       },
       {
-        "address": "12, FIRST FLOOR FLAT, OSBORNE ROAD",
-        "postcode": "N13 5PS",
-        "price": 410000,
+        "address": "13, BAYSWATER CLOSE",
+        "postcode": "N13 5BF",
+        "price": 415000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "13, BAYSWATER CLOSE",
-        "postcode": "N13 5BF",
-        "price": 415000,
+        "address": "12, FIRST FLOOR FLAT, OSBORNE ROAD",
+        "postcode": "N13 5PS",
+        "price": 410000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -859,6 +1034,14 @@
         "newBuild": false
       },
       {
+        "address": "6, WINDSOR ROAD",
+        "postcode": "N13 5PR",
+        "price": 437120,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "FITZROVIA HOUSE, 329, FLAT 4, GREEN LANES",
         "postcode": "N13 4TY",
         "price": 250000,
@@ -875,26 +1058,10 @@
         "newBuild": false
       },
       {
-        "address": "6, WINDSOR ROAD",
-        "postcode": "N13 5PR",
-        "price": 437120,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "57, BURFORD GARDENS",
         "postcode": "N13 4LR",
         "price": 791500,
         "dateOfTransfer": "2026-01-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "36, LIVINGSTONE ROAD",
-        "postcode": "N13 4SD",
-        "price": 705000,
-        "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -907,6 +1074,14 @@
         "newBuild": false
       },
       {
+        "address": "36, LIVINGSTONE ROAD",
+        "postcode": "N13 4SD",
+        "price": 705000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "35A, GROVELANDS ROAD",
         "postcode": "N13 4RJ",
         "price": 290000,
@@ -915,49 +1090,9 @@
         "newBuild": false
       },
       {
-        "address": "2, LIVINGSTONE ROAD",
-        "postcode": "N13 4SD",
-        "price": 680000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "EVERARD COURT, 9, FLAT 7, CROTHALL CLOSE",
-        "postcode": "N13 4BW",
-        "price": 135000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "25, BAYSWATER CLOSE",
-        "postcode": "N13 5BF",
-        "price": 525000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "23, ST PAULS RISE",
         "postcode": "N13 6LB",
         "price": 306000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "59, NEW PARK AVENUE",
-        "postcode": "N13 5ND",
-        "price": 535000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "125A, FOX LANE",
-        "postcode": "N13 4AP",
-        "price": 415000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -974,6 +1109,46 @@
         "address": "79, FRONT FLAT, PALMERSTON CRESCENT",
         "postcode": "N13 4NG",
         "price": 162500,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, LIVINGSTONE ROAD",
+        "postcode": "N13 4SD",
+        "price": 680000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "59, NEW PARK AVENUE",
+        "postcode": "N13 5ND",
+        "price": 535000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, BAYSWATER CLOSE",
+        "postcode": "N13 5BF",
+        "price": 525000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "125A, FOX LANE",
+        "postcode": "N13 4AP",
+        "price": 415000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EVERARD COURT, 9, FLAT 7, CROTHALL CLOSE",
+        "postcode": "N13 4BW",
+        "price": 135000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1179,17 +1354,25 @@
         "newBuild": false
       },
       {
-        "address": "HERTFORD COURT, FLAT 24, GREEN LANES",
-        "postcode": "N13 4DD",
-        "price": 425000,
-        "dateOfTransfer": "2025-12-02",
-        "propertyType": "Flat/Maisonette",
+        "address": "323A, GREEN LANES",
+        "postcode": "N13 4TY",
+        "price": 690000,
+        "dateOfTransfer": "2025-12-04",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
         "address": "61A, NEW RIVER CRESCENT",
         "postcode": "N13 5RQ",
         "price": 390000,
+        "dateOfTransfer": "2025-12-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERTFORD COURT, FLAT 24, GREEN LANES",
+        "postcode": "N13 4DD",
+        "price": 425000,
         "dateOfTransfer": "2025-12-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1227,17 +1410,17 @@
         "newBuild": false
       },
       {
-        "address": "10, LIGHTCLIFFE ROAD",
-        "postcode": "N13 5HD",
-        "price": 525000,
+        "address": "4, KELVIN AVENUE",
+        "postcode": "N13 4TG",
+        "price": 160000,
         "dateOfTransfer": "2025-11-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "4, KELVIN AVENUE",
-        "postcode": "N13 4TG",
-        "price": 160000,
+        "address": "10, LIGHTCLIFFE ROAD",
+        "postcode": "N13 5HD",
+        "price": 525000,
         "dateOfTransfer": "2025-11-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1371,19 +1554,19 @@
         "newBuild": false
       },
       {
-        "address": "ASHBOURNE LODGE, 18A, FLAT 2, HAZELWOOD LANE",
-        "postcode": "N13 5EP",
-        "price": 412000,
-        "dateOfTransfer": "2025-11-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "119, WESTMINSTER DRIVE",
         "postcode": "N13 4NT",
         "price": 584500,
         "dateOfTransfer": "2025-11-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ASHBOURNE LODGE, 18A, FLAT 2, HAZELWOOD LANE",
+        "postcode": "N13 5EP",
+        "price": 412000,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1435,6 +1618,14 @@
         "newBuild": false
       },
       {
+        "address": "42A, GREEN LANES",
+        "postcode": "N13 6JU",
+        "price": 260000,
+        "dateOfTransfer": "2025-11-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "29, ASHRIDGE GARDENS",
         "postcode": "N13 4JY",
         "price": 675000,
@@ -1459,6 +1650,14 @@
         "newBuild": false
       },
       {
+        "address": "9, DAWLISH AVENUE",
+        "postcode": "N13 4HP",
+        "price": 855000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "45, PARK AVENUE, PALMERS GREEN",
         "postcode": "N13 5PG",
         "price": 525000,
@@ -1470,14 +1669,6 @@
         "address": "30, BOURNE HILL",
         "postcode": "N13 4LH",
         "price": 1240000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "9, DAWLISH AVENUE",
-        "postcode": "N13 4HP",
-        "price": 855000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1515,6 +1706,22 @@
         "newBuild": false
       },
       {
+        "address": "164, PRINCES AVENUE",
+        "postcode": "N13 6HL",
+        "price": 680000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, SHAPLAND WAY",
+        "postcode": "N13 4EZ",
+        "price": 236500,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "60B, BURFORD GARDENS",
         "postcode": "N13 4LP",
         "price": 555000,
@@ -1523,10 +1730,10 @@
         "newBuild": false
       },
       {
-        "address": "164, PRINCES AVENUE",
-        "postcode": "N13 6HL",
-        "price": 680000,
-        "dateOfTransfer": "2025-10-20",
+        "address": "44, LIGHTCLIFFE ROAD",
+        "postcode": "N13 5PW",
+        "price": 777850,
+        "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1547,10 +1754,10 @@
         "newBuild": false
       },
       {
-        "address": "44, LIGHTCLIFFE ROAD",
-        "postcode": "N13 5PW",
-        "price": 777850,
-        "dateOfTransfer": "2025-10-17",
+        "address": "10, THE FAIRWAY, PALMERS GREEN",
+        "postcode": "N13 5NF",
+        "price": 712000,
+        "dateOfTransfer": "2025-10-14",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1659,14 +1866,6 @@
         "newBuild": false
       },
       {
-        "address": "68, ULSTER GARDENS",
-        "postcode": "N13 5DW",
-        "price": 645000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "5, DOVERIDGE GARDENS",
         "postcode": "N13 5BJ",
         "price": 905000,
@@ -1675,10 +1874,34 @@
         "newBuild": false
       },
       {
+        "address": "68, ULSTER GARDENS",
+        "postcode": "N13 5DW",
+        "price": 645000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "130, NEW PARK AVENUE",
+        "postcode": "N13 5LZ",
+        "price": 607500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "124, THE LARCHES",
         "postcode": "N13 5QE",
         "price": 550000,
         "dateOfTransfer": "2025-09-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "32, BERKSHIRE GARDENS",
+        "postcode": "N13 6AB",
+        "price": 735000,
+        "dateOfTransfer": "2025-09-12",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1691,9 +1914,9 @@
         "newBuild": false
       },
       {
-        "address": "32, BERKSHIRE GARDENS",
-        "postcode": "N13 6AB",
-        "price": 735000,
+        "address": "2, KELVIN AVENUE",
+        "postcode": "N13 4TG",
+        "price": 605000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1707,14 +1930,6 @@
         "newBuild": false
       },
       {
-        "address": "56, GROUND FLOOR FLAT, ELVENDON ROAD",
-        "postcode": "N13 4SJ",
-        "price": 490000,
-        "dateOfTransfer": "2025-09-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "95, WESTMINSTER DRIVE",
         "postcode": "N13 4NT",
         "price": 760000,
@@ -1723,11 +1938,35 @@
         "newBuild": false
       },
       {
+        "address": "56, GROUND FLOOR FLAT, ELVENDON ROAD",
+        "postcode": "N13 4SJ",
+        "price": 490000,
+        "dateOfTransfer": "2025-09-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, BRIAR CLOSE",
+        "postcode": "N13 5NL",
+        "price": 450000,
+        "dateOfTransfer": "2025-09-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "11, ARNOLD GARDENS",
         "postcode": "N13 5JE",
         "price": 535000,
         "dateOfTransfer": "2025-09-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, FOX LANE",
+        "postcode": "N13 4AB",
+        "price": 625000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1755,10 +1994,10 @@
         "newBuild": false
       },
       {
-        "address": "7, FOX LANE",
-        "postcode": "N13 4AB",
-        "price": 625000,
-        "dateOfTransfer": "2025-09-05",
+        "address": "58, OLD PARK ROAD",
+        "postcode": "N13 4RE",
+        "price": 1300000,
+        "dateOfTransfer": "2025-09-03",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1768,14 +2007,6 @@
         "price": 573200,
         "dateOfTransfer": "2025-09-03",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "58, OLD PARK ROAD",
-        "postcode": "N13 4RE",
-        "price": 1300000,
-        "dateOfTransfer": "2025-09-03",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1795,11 +2026,11 @@
         "newBuild": false
       },
       {
-        "address": "17C, SIDNEY AVENUE",
-        "postcode": "N13 4XA",
-        "price": 400000,
+        "address": "56, LAKESIDE ROAD",
+        "postcode": "N13 4PR",
+        "price": 1000000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1819,11 +2050,19 @@
         "newBuild": false
       },
       {
-        "address": "56, LAKESIDE ROAD",
-        "postcode": "N13 4PR",
-        "price": 1000000,
+        "address": "23, RYLSTON ROAD",
+        "postcode": "N13 5NQ",
+        "price": 480000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17C, SIDNEY AVENUE",
+        "postcode": "N13 4XA",
+        "price": 400000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1835,11 +2074,19 @@
         "newBuild": false
       },
       {
-        "address": "23, RYLSTON ROAD",
-        "postcode": "N13 5NQ",
-        "price": 480000,
+        "address": "17C, PALMERSTON CRESCENT",
+        "postcode": "N13 4UE",
+        "price": 371500,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "67B, OSBORNE ROAD",
+        "postcode": "N13 5PU",
+        "price": 340000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1875,14 +2122,6 @@
         "newBuild": false
       },
       {
-        "address": "125A, BOURNE HILL",
-        "postcode": "N13 4BE",
-        "price": 167000,
-        "dateOfTransfer": "2025-08-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "47, ST PAULS RISE",
         "postcode": "N13 6LB",
         "price": 130000,
@@ -1904,6 +2143,14 @@
         "price": 765000,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "125A, BOURNE HILL",
+        "postcode": "N13 4BE",
+        "price": 167000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2171,14 +2418,6 @@
         "newBuild": false
       },
       {
-        "address": "THE FOX, 413, GREEN LANES",
-        "postcode": "N13 4JD",
-        "price": 2411528,
-        "dateOfTransfer": "2025-07-10",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "12, THE ROWANS",
         "postcode": "N13 5AD",
         "price": 620000,
@@ -2187,11 +2426,11 @@
         "newBuild": false
       },
       {
-        "address": "24, HAWTHORN AVENUE",
-        "postcode": "N13 4JT",
-        "price": 650000,
-        "dateOfTransfer": "2025-07-07",
-        "propertyType": "Terraced",
+        "address": "THE FOX, 413, GREEN LANES",
+        "postcode": "N13 4JD",
+        "price": 2411528,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2200,6 +2439,14 @@
         "price": 235000,
         "dateOfTransfer": "2025-07-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, HAWTHORN AVENUE",
+        "postcode": "N13 4JT",
+        "price": 650000,
+        "dateOfTransfer": "2025-07-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2251,14 +2498,6 @@
         "newBuild": false
       },
       {
-        "address": "73, GROVELANDS ROAD",
-        "postcode": "N13 4RJ",
-        "price": 870000,
-        "dateOfTransfer": "2025-06-30",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "233, NORTH CIRCULAR ROAD",
         "postcode": "N13 5JF",
         "price": 490000,
@@ -2272,6 +2511,14 @@
         "price": 325000,
         "dateOfTransfer": "2025-06-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, GROVELANDS ROAD",
+        "postcode": "N13 4RJ",
+        "price": 870000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2347,17 +2594,17 @@
         "newBuild": false
       },
       {
-        "address": "96B, HAZELWOOD LANE",
-        "postcode": "N13 5HF",
-        "price": 450000,
+        "address": "31, GROUND FLOOR FLAT, WINDSOR ROAD",
+        "postcode": "N13 5PP",
+        "price": 415000,
         "dateOfTransfer": "2025-06-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "31, GROUND FLOOR FLAT, WINDSOR ROAD",
-        "postcode": "N13 5PP",
-        "price": 415000,
+        "address": "96B, HAZELWOOD LANE",
+        "postcode": "N13 5HF",
+        "price": 450000,
         "dateOfTransfer": "2025-06-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2379,17 +2626,17 @@
         "newBuild": false
       },
       {
-        "address": "73, HAZELWOOD LANE",
-        "postcode": "N13 5HE",
-        "price": 749995,
+        "address": "135, HEDGE LANE",
+        "postcode": "N13 5BY",
+        "price": 578000,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "135, HEDGE LANE",
-        "postcode": "N13 5BY",
-        "price": 578000,
+        "address": "73, HAZELWOOD LANE",
+        "postcode": "N13 5HE",
+        "price": 749995,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2443,11 +2690,11 @@
         "newBuild": false
       },
       {
-        "address": "8, KINGSLEY ROAD",
-        "postcode": "N13 5PL",
-        "price": 355000,
+        "address": "29, DERWENT ROAD",
+        "postcode": "N13 4PY",
+        "price": 1175000,
         "dateOfTransfer": "2025-05-30",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2459,11 +2706,11 @@
         "newBuild": false
       },
       {
-        "address": "29, DERWENT ROAD",
-        "postcode": "N13 4PY",
-        "price": 1175000,
+        "address": "8, KINGSLEY ROAD",
+        "postcode": "N13 5PL",
+        "price": 355000,
         "dateOfTransfer": "2025-05-30",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2507,19 +2754,19 @@
         "newBuild": false
       },
       {
+        "address": "10, NEW PARK AVENUE",
+        "postcode": "N13 5NB",
+        "price": 515000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "100, FLAT A, PALMERSTON CRESCENT",
         "postcode": "N13 4NH",
         "price": 240000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "8, NEW PARK AVENUE",
-        "postcode": "N13 5NB",
-        "price": 560000,
-        "dateOfTransfer": "2025-05-23",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2531,9 +2778,9 @@
         "newBuild": false
       },
       {
-        "address": "10, NEW PARK AVENUE",
+        "address": "8, NEW PARK AVENUE",
         "postcode": "N13 5NB",
-        "price": 515000,
+        "price": 560000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2699,6 +2946,14 @@
         "newBuild": false
       },
       {
+        "address": "1A, HEREWARD GARDENS",
+        "postcode": "N13 6EX",
+        "price": 320000,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "359A, GREEN LANES",
         "postcode": "N13 4TY",
         "price": 750000,
@@ -2718,14 +2973,6 @@
         "address": "14, SIDNEY AVENUE",
         "postcode": "N13 4UY",
         "price": 350000,
-        "dateOfTransfer": "2025-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1A, HEREWARD GARDENS",
-        "postcode": "N13 6EX",
-        "price": 320000,
         "dateOfTransfer": "2025-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2779,14 +3026,6 @@
         "newBuild": false
       },
       {
-        "address": "12, FOX LANE",
-        "postcode": "N13 4AH",
-        "price": 870000,
-        "dateOfTransfer": "2025-04-01",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "40A, GREEN LANES",
         "postcode": "N13 6HT",
         "price": 800000,
@@ -2795,9 +3034,49 @@
         "newBuild": false
       },
       {
-        "address": "31, MILLICENT GROVE",
-        "postcode": "N13 6HF",
-        "price": 300000,
+        "address": "12, FOX LANE",
+        "postcode": "N13 4AH",
+        "price": 870000,
+        "dateOfTransfer": "2025-04-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "114, CAVERSHAM AVENUE",
+        "postcode": "N13 4LN",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "105, MUNSTER GARDENS",
+        "postcode": "N13 5DU",
+        "price": 605000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LINDSEY COURT, FLAT 7, GREEN LANES",
+        "postcode": "N13 5SD",
+        "price": 340000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "379, GREEN LANES",
+        "postcode": "N13 4JG",
+        "price": 835000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "62, MINTERN CLOSE",
+        "postcode": "N13 5SX",
+        "price": 280000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2819,46 +3098,6 @@
         "newBuild": false
       },
       {
-        "address": "114, CAVERSHAM AVENUE",
-        "postcode": "N13 4LN",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "379, GREEN LANES",
-        "postcode": "N13 4JG",
-        "price": 835000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "105, MUNSTER GARDENS",
-        "postcode": "N13 5DU",
-        "price": 605000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "LINDSEY COURT, FLAT 7, GREEN LANES",
-        "postcode": "N13 5SD",
-        "price": 340000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "62, MINTERN CLOSE",
-        "postcode": "N13 5SX",
-        "price": 280000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "13, SIDNEY AVENUE",
         "postcode": "N13 4XA",
         "price": 800000,
@@ -2867,9 +3106,65 @@
         "newBuild": false
       },
       {
+        "address": "31, MILLICENT GROVE",
+        "postcode": "N13 6HF",
+        "price": 300000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "PLUM COURT, 1, 5, BROOMFIELD ROAD",
         "postcode": "N13 4DY",
         "price": 400000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19A, GREEN LANES",
+        "postcode": "N13 4TT",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "59, PALMERSTON CRESCENT",
+        "postcode": "N13 4UD",
+        "price": 370000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, AVONDALE ROAD",
+        "postcode": "N13 4DU",
+        "price": 443000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "291, GROUND FLOOR FLAT, FIRS LANE",
+        "postcode": "N13 5QH",
+        "price": 365000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "219A, FOX LANE",
+        "postcode": "N13 4BB",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "59, WINDSOR ROAD",
+        "postcode": "N13 5PP",
+        "price": 408000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2907,59 +3202,27 @@
         "newBuild": false
       },
       {
-        "address": "19A, GREEN LANES",
-        "postcode": "N13 4TT",
-        "price": 590000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "59, PALMERSTON CRESCENT",
-        "postcode": "N13 4UD",
-        "price": 370000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "219A, FOX LANE",
-        "postcode": "N13 4BB",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "14, AVONDALE ROAD",
-        "postcode": "N13 4DU",
-        "price": 443000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "291, GROUND FLOOR FLAT, FIRS LANE",
-        "postcode": "N13 5QH",
-        "price": 365000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "59, WINDSOR ROAD",
-        "postcode": "N13 5PP",
-        "price": 408000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "243, PRINCES AVENUE",
         "postcode": "N13 6HH",
         "price": 550000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39A, PALMERSTON CRESCENT",
+        "postcode": "N13 4UE",
+        "price": 180000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32A, HEDGE LANE",
+        "postcode": "N13 5SH",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2995,18 +3258,10 @@
         "newBuild": false
       },
       {
-        "address": "32A, HEDGE LANE",
-        "postcode": "N13 5SH",
-        "price": 415000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "39A, PALMERSTON CRESCENT",
-        "postcode": "N13 4UE",
-        "price": 180000,
-        "dateOfTransfer": "2025-03-27",
+        "address": "1, HEREWARD GARDENS",
+        "postcode": "N13 6EX",
+        "price": 320000,
+        "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3014,14 +3269,6 @@
         "address": "2A, FOX LANE",
         "postcode": "N13 4AH",
         "price": 529500,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, HEREWARD GARDENS",
-        "postcode": "N13 6EX",
-        "price": 320000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3040,22 +3287,6 @@
         "price": 515000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "27A, CRANLEY GARDENS",
-        "postcode": "N13 4LT",
-        "price": 470000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "122, TOTTENHALL ROAD",
-        "postcode": "N13 6DG",
-        "price": 503000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3083,6 +3314,14 @@
         "newBuild": false
       },
       {
+        "address": "122, TOTTENHALL ROAD",
+        "postcode": "N13 6DG",
+        "price": 503000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "60, CAVERSHAM AVENUE",
         "postcode": "N13 4LN",
         "price": 920000,
@@ -3091,18 +3330,10 @@
         "newBuild": false
       },
       {
-        "address": "17, HAZEL CLOSE",
-        "postcode": "N13 5NJ",
-        "price": 340000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "22A, RUSSELL ROAD",
-        "postcode": "N13 4RP",
-        "price": 350000,
-        "dateOfTransfer": "2025-03-21",
+        "address": "27A, CRANLEY GARDENS",
+        "postcode": "N13 4LT",
+        "price": 470000,
+        "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3123,18 +3354,26 @@
         "newBuild": false
       },
       {
+        "address": "22A, RUSSELL ROAD",
+        "postcode": "N13 4RP",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, HAZEL CLOSE",
+        "postcode": "N13 5NJ",
+        "price": 340000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "16, THE FAIRWAY, PALMERS GREEN",
         "postcode": "N13 5NF",
         "price": 495000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "32, SPENCER AVENUE",
-        "postcode": "N13 4TR",
-        "price": 717500,
-        "dateOfTransfer": "2025-03-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3147,19 +3386,19 @@
         "newBuild": false
       },
       {
+        "address": "32, SPENCER AVENUE",
+        "postcode": "N13 4TR",
+        "price": 717500,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "93, GREEN LANES",
         "postcode": "N13 4TD",
         "price": 2000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "45, STONARD ROAD",
-        "postcode": "N13 4DJ",
-        "price": 615000,
-        "dateOfTransfer": "2025-03-18",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3179,11 +3418,27 @@
         "newBuild": false
       },
       {
+        "address": "45, STONARD ROAD",
+        "postcode": "N13 4DJ",
+        "price": 615000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "87, THE FAIRWAY, PALMERS GREEN",
         "postcode": "N13 5QN",
         "price": 625000,
         "dateOfTransfer": "2025-03-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15A, BELMONT AVENUE",
+        "postcode": "N13 4HD",
+        "price": 530000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3200,14 +3455,6 @@
         "price": 580000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "15A, BELMONT AVENUE",
-        "postcode": "N13 4HD",
-        "price": 530000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3235,17 +3482,9 @@
         "newBuild": false
       },
       {
-        "address": "49, BERKSHIRE GARDENS",
-        "postcode": "N13 6AA",
-        "price": 840000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "17, ECCLESBOURNE GARDENS",
-        "postcode": "N13 5JD",
-        "price": 567000,
+        "address": "6, ECCLESBOURNE GARDENS",
+        "postcode": "N13 5JB",
+        "price": 525000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3259,11 +3498,19 @@
         "newBuild": false
       },
       {
-        "address": "6, ECCLESBOURNE GARDENS",
-        "postcode": "N13 5JB",
-        "price": 525000,
+        "address": "17, ECCLESBOURNE GARDENS",
+        "postcode": "N13 5JD",
+        "price": 567000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "49, BERKSHIRE GARDENS",
+        "postcode": "N13 6AA",
+        "price": 840000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3271,6 +3518,14 @@
         "postcode": "N13 6AB",
         "price": 625000,
         "dateOfTransfer": "2025-03-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "77, BROOMFIELD AVENUE",
+        "postcode": "N13 4JR",
+        "price": 720000,
+        "dateOfTransfer": "2025-03-04",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3291,14 +3546,6 @@
         "newBuild": false
       },
       {
-        "address": "77, BROOMFIELD AVENUE",
-        "postcode": "N13 4JR",
-        "price": 720000,
-        "dateOfTransfer": "2025-03-04",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "95, PILGRIMS CLOSE",
         "postcode": "N13 4HU",
         "price": 233000,
@@ -3312,14 +3559,6 @@
         "price": 802500,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "22A, ELMDALE ROAD",
-        "postcode": "N13 4UL",
-        "price": 370000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3339,14 +3578,6 @@
         "newBuild": false
       },
       {
-        "address": "8, BROOMFIELD AVENUE",
-        "postcode": "N13 4JN",
-        "price": 603000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "70, THE GROVE",
         "postcode": "N13 5JR",
         "price": 635000,
@@ -3355,11 +3586,19 @@
         "newBuild": false
       },
       {
-        "address": "10A, SPENCER AVENUE",
-        "postcode": "N13 4TR",
-        "price": 405000,
-        "dateOfTransfer": "2025-02-18",
+        "address": "22A, ELMDALE ROAD",
+        "postcode": "N13 4UL",
+        "price": 370000,
+        "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, BROOMFIELD AVENUE",
+        "postcode": "N13 4JN",
+        "price": 603000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3379,18 +3618,10 @@
         "newBuild": false
       },
       {
-        "address": "10, AVONDALE ROAD",
-        "postcode": "N13 4DU",
-        "price": 450000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "52, MINTERN CLOSE",
-        "postcode": "N13 5SX",
-        "price": 351000,
-        "dateOfTransfer": "2025-02-14",
+        "address": "10A, SPENCER AVENUE",
+        "postcode": "N13 4TR",
+        "price": 405000,
+        "dateOfTransfer": "2025-02-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3403,11 +3634,11 @@
         "newBuild": false
       },
       {
-        "address": "7, PYMMES ROAD",
-        "postcode": "N13 4RY",
-        "price": 565500,
+        "address": "52, MINTERN CLOSE",
+        "postcode": "N13 5SX",
+        "price": 351000,
         "dateOfTransfer": "2025-02-14",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3424,6 +3655,22 @@
         "price": 585000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, PYMMES ROAD",
+        "postcode": "N13 4RY",
+        "price": 565500,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, AVONDALE ROAD",
+        "postcode": "N13 4DU",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3483,19 +3730,19 @@
         "newBuild": false
       },
       {
-        "address": "217, FOX LANE",
-        "postcode": "N13 4BB",
-        "price": 850000,
-        "dateOfTransfer": "2025-01-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "26A, WINDSOR ROAD",
         "postcode": "N13 5PR",
         "price": 450000,
         "dateOfTransfer": "2025-01-29",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "217, FOX LANE",
+        "postcode": "N13 4BB",
+        "price": 850000,
+        "dateOfTransfer": "2025-01-29",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3515,6 +3762,14 @@
         "newBuild": false
       },
       {
+        "address": "9, LUCERNE CLOSE",
+        "postcode": "N13 4QJ",
+        "price": 335000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "67A, FLAT, GROVELANDS ROAD",
         "postcode": "N13 4RJ",
         "price": 475000,
@@ -3523,11 +3778,11 @@
         "newBuild": false
       },
       {
-        "address": "9, LUCERNE CLOSE",
-        "postcode": "N13 4QJ",
-        "price": 335000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Flat/Maisonette",
+        "address": "10, BIRCH AVENUE",
+        "postcode": "N13 5AT",
+        "price": 580000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3547,14 +3802,6 @@
         "newBuild": false
       },
       {
-        "address": "10, BIRCH AVENUE",
-        "postcode": "N13 5AT",
-        "price": 580000,
-        "dateOfTransfer": "2025-01-23",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "100, ULSTER GARDENS",
         "postcode": "N13 5DW",
         "price": 430000,
@@ -3571,9 +3818,9 @@
         "newBuild": false
       },
       {
-        "address": "42, ARNOLD GARDENS",
-        "postcode": "N13 5JE",
-        "price": 600000,
+        "address": "223, PRINCES AVENUE",
+        "postcode": "N13 6HH",
+        "price": 534000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3587,19 +3834,19 @@
         "newBuild": false
       },
       {
-        "address": "7, PARK AVENUE, PALMERS GREEN",
-        "postcode": "N13 5PG",
-        "price": 895000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "WILLOWCROFT LODGE, 127, FLAT 1, ALDERMANS HILL",
         "postcode": "N13 4QB",
         "price": 645000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, PARK AVENUE, PALMERS GREEN",
+        "postcode": "N13 5PG",
+        "price": 895000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3611,17 +3858,17 @@
         "newBuild": false
       },
       {
-        "address": "330, FIRS LANE",
-        "postcode": "N13 5LY",
-        "price": 650000,
+        "address": "42, ARNOLD GARDENS",
+        "postcode": "N13 5JE",
+        "price": 600000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "223, PRINCES AVENUE",
-        "postcode": "N13 6HH",
-        "price": 534000,
+        "address": "330, FIRS LANE",
+        "postcode": "N13 5LY",
+        "price": 650000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3635,17 +3882,17 @@
         "newBuild": false
       },
       {
-        "address": "26, ASHLEY GARDENS",
-        "postcode": "N13 5EW",
-        "price": 552000,
+        "address": "46, MITCHELL ROAD",
+        "postcode": "N13 6EE",
+        "price": 570000,
         "dateOfTransfer": "2025-01-14",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "46, MITCHELL ROAD",
-        "postcode": "N13 6EE",
-        "price": 570000,
+        "address": "26, ASHLEY GARDENS",
+        "postcode": "N13 5EW",
+        "price": 552000,
         "dateOfTransfer": "2025-01-14",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3715,8 +3962,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 613167,
-    "medianPrice": 538000
+    "averagePrice": 600809,
+    "medianPrice": 535000
   },
   "representatives": {
     "representatives": [

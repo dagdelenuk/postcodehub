@@ -3,8 +3,8 @@
   "slug": "w1g",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.51932961789775,
-  "longitude": -0.14825499715909088,
+  "latitude": 51.519352670623256,
+  "longitude": -0.1483338382789317,
   "wards": [
     "Clerkenwell",
     "Marylebone",
@@ -266,6 +266,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "43-49 Harley Street, London",
         "postcode": "W1G 8BT",
         "numberOfPupils": 412,
@@ -277,97 +278,113 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5207,
-        "violentCrimes": 1013,
-        "propertyCrimes": 3468
+        "totalCrimes": 5201,
+        "violentCrimes": 1016,
+        "propertyCrimes": 3459
       },
       {
         "month": "2025-08",
-        "totalCrimes": 4699,
-        "violentCrimes": 958,
-        "propertyCrimes": 3026
+        "totalCrimes": 4691,
+        "violentCrimes": 960,
+        "propertyCrimes": 3020
       },
       {
         "month": "2025-09",
-        "totalCrimes": 4515,
-        "violentCrimes": 965,
-        "propertyCrimes": 2946
+        "totalCrimes": 4507,
+        "violentCrimes": 967,
+        "propertyCrimes": 2939
       },
       {
         "month": "2025-10",
-        "totalCrimes": 4930,
-        "violentCrimes": 991,
-        "propertyCrimes": 3265
+        "totalCrimes": 4921,
+        "violentCrimes": 992,
+        "propertyCrimes": 3257
       },
       {
         "month": "2025-11",
-        "totalCrimes": 5887,
-        "violentCrimes": 984,
-        "propertyCrimes": 4180
+        "totalCrimes": 5885,
+        "violentCrimes": 987,
+        "propertyCrimes": 4179
       },
       {
         "month": "2025-12",
-        "totalCrimes": 5863,
-        "violentCrimes": 989,
-        "propertyCrimes": 4186
+        "totalCrimes": 5862,
+        "violentCrimes": 993,
+        "propertyCrimes": 4185
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4324,
+        "totalCrimes": 4319,
         "violentCrimes": 797,
-        "propertyCrimes": 2864
+        "propertyCrimes": 2860
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4167,
-        "violentCrimes": 768,
-        "propertyCrimes": 2791
+        "totalCrimes": 4162,
+        "violentCrimes": 769,
+        "propertyCrimes": 2789
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4100,
-        "violentCrimes": 821,
-        "propertyCrimes": 2642
+        "totalCrimes": 4085,
+        "violentCrimes": 816,
+        "propertyCrimes": 2639
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4278,
-        "violentCrimes": 836,
-        "propertyCrimes": 2648
+        "totalCrimes": 4267,
+        "violentCrimes": 835,
+        "propertyCrimes": 2643
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4086,
-        "violentCrimes": 893,
-        "propertyCrimes": 2505
+        "totalCrimes": 4075,
+        "violentCrimes": 890,
+        "propertyCrimes": 2501
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4128,
-        "violentCrimes": 894,
+        "totalCrimes": 4124,
+        "violentCrimes": 896,
         "propertyCrimes": 2496
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6234,
+      "anti-social-behaviour": 6195,
       "bicycle-theft": 528,
-      "burglary": 1275,
-      "criminal-damage-arson": 877,
-      "drugs": 1728,
-      "other-theft": 11143,
-      "possession-of-weapons": 184,
-      "public-order": 2013,
+      "burglary": 1272,
+      "criminal-damage-arson": 873,
+      "drugs": 1724,
+      "other-theft": 11142,
+      "possession-of-weapons": 186,
+      "public-order": 2017,
       "robbery": 2137,
-      "shoplifting": 6499,
-      "theft-from-the-person": 15255,
-      "vehicle-crime": 1440,
-      "violent-crime": 6575,
-      "other-crime": 296
+      "shoplifting": 6492,
+      "theft-from-the-person": 15246,
+      "vehicle-crime": 1414,
+      "violent-crime": 6578,
+      "other-crime": 295
     },
-    "totalLast12Months": 56184
+    "totalLast12Months": 56099
   },
   "property": {
     "sales": [
+      {
+        "address": "103 - 105, APARTMENT 8, HARLEY STREET",
+        "postcode": "W1G 6AJ",
+        "price": 685500,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, DEVONSHIRE MEWS WEST",
+        "postcode": "W1G 6QE",
+        "price": 5250000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "4, DEVONSHIRE CLOSE",
         "postcode": "W1G 7BA",
@@ -409,10 +426,26 @@
         "newBuild": false
       },
       {
+        "address": "DUDLEY HOUSE, FLAT 12, WESTMORELAND STREET",
+        "postcode": "W1G 8PW",
+        "price": 1675000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "MELCOMBE REGIS COURT, 59, FLAT 47, WEYMOUTH STREET",
         "postcode": "W1G 8NT",
         "price": 775000,
         "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, FLAT 3, WEYMOUTH STREET",
+        "postcode": "W1G 7BP",
+        "price": 2630978,
+        "dateOfTransfer": "2026-01-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -505,10 +538,34 @@
         "newBuild": false
       },
       {
+        "address": "95 - 97, OFFICE PREMISES, HARLEY STREET",
+        "postcode": "W1G 6AG",
+        "price": 40400000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "97, HARLEY STREET",
+        "postcode": "W1G 6AG",
+        "price": 40400000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "39, FLAT 6, WIMPOLE STREET",
         "postcode": "W1G 8YE",
         "price": 1550000,
         "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MILFORD HOUSE, 7, FLAT 14A, QUEEN ANNE STREET",
+        "postcode": "W1G 9HN",
+        "price": 900000,
+        "dateOfTransfer": "2025-10-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -518,6 +575,14 @@
         "price": 4250000,
         "dateOfTransfer": "2025-10-09",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, UPPER WIMPOLE STREET",
+        "postcode": "W1G 6NA",
+        "price": 10392103,
+        "dateOfTransfer": "2025-10-08",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -577,19 +642,19 @@
         "newBuild": false
       },
       {
-        "address": "WESLEY COURT, 51 - 55, FLAT 4, WEYMOUTH STREET",
-        "postcode": "W1G 8NN",
-        "price": 280000,
-        "dateOfTransfer": "2025-08-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "38, BEAUMONT STREET",
         "postcode": "W1G 6DJ",
         "price": 2000000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "WESLEY COURT, 51 - 55, FLAT 4, WEYMOUTH STREET",
+        "postcode": "W1G 8NN",
+        "price": 280000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -604,6 +669,14 @@
         "address": "LONGFORD HOUSE, 24, FLAT C, WIMPOLE STREET",
         "postcode": "W1G 8GH",
         "price": 1200000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HARCOURT HOUSE, 19, APARTMENT 21, CAVENDISH SQUARE",
+        "postcode": "W1G 0PL",
+        "price": 6000000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -673,14 +746,6 @@
         "newBuild": false
       },
       {
-        "address": "13, WIMPOLE STREET",
-        "postcode": "W1G 9SU",
-        "price": 10500000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "4, DE WALDEN STREET",
         "postcode": "W1G 8RJ",
         "price": 2000000,
@@ -694,6 +759,14 @@
         "price": 3650000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13, WIMPOLE STREET",
+        "postcode": "W1G 9SU",
+        "price": 10500000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -777,6 +850,14 @@
         "newBuild": false
       },
       {
+        "address": "1, CAVENDISH SQUARE",
+        "postcode": "W1G 0PD",
+        "price": 333333,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "MILFORD HOUSE, 7, FLAT 2, QUEEN ANNE STREET",
         "postcode": "W1G 9HN",
         "price": 2164125,
@@ -785,17 +866,17 @@
         "newBuild": false
       },
       {
-        "address": "29, FLAT 16, WIMPOLE STREET",
-        "postcode": "W1G 8GP",
-        "price": 1050000,
+        "address": "6, FOURTH FLOOR FLAT, DEVONSHIRE PLACE",
+        "postcode": "W1G 6HN",
+        "price": 1200000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "6, FOURTH FLOOR FLAT, DEVONSHIRE PLACE",
-        "postcode": "W1G 6HN",
-        "price": 1200000,
+        "address": "29, FLAT 16, WIMPOLE STREET",
+        "postcode": "W1G 8GP",
+        "price": 1050000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -849,8 +930,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 3104943,
-    "medianPrice": 1875000
+    "averagePrice": 4213764,
+    "medianPrice": 2000000
   },
   "representatives": {
     "representatives": [

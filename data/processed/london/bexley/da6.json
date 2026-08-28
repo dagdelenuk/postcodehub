@@ -3,8 +3,8 @@
   "slug": "da6",
   "city": "London",
   "borough": "Bexley",
-  "latitude": 51.45504648400003,
-  "longitude": 0.13929029199999998,
+  "latitude": 51.454952042372874,
+  "longitude": 0.13898046610169487,
   "wards": [
     "Bexleyheath",
     "Crayford",
@@ -83,8 +83,9 @@
         "name": "Crook Log Primary School",
         "urn": "101402",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "18/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Crook Log, Bexleyheath",
         "postcode": "DA6 8EQ",
         "numberOfPupils": 432,
@@ -95,7 +96,8 @@
         "urn": "137138",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "06/07/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Woolwich Road, Bexleyheath",
         "postcode": "DA6 7DA",
         "numberOfPupils": 1474,
@@ -106,7 +108,8 @@
         "urn": "137681",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "14/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Watling Street, Bexleyheath",
         "postcode": "DA6 7QJ",
         "numberOfPupils": 1021,
@@ -117,7 +120,8 @@
         "urn": "137769",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Townley Road, Bexleyheath",
         "postcode": "DA6 7AB",
         "numberOfPupils": 1669,
@@ -129,6 +133,7 @@
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Halcot Avenue, Bexleyheath",
         "postcode": "DA6 7QB",
         "numberOfPupils": 805,
@@ -138,8 +143,9 @@
         "name": "Gravel Hill Primary School",
         "urn": "145208",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "27/01/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Watling Street, Bexleyheath",
         "postcode": "DA6 7QJ",
         "numberOfPupils": 434,
@@ -157,21 +163,21 @@
       },
       {
         "month": "2025-08",
-        "totalCrimes": 330,
-        "violentCrimes": 145,
-        "propertyCrimes": 103
-      },
-      {
-        "month": "2025-09",
-        "totalCrimes": 291,
-        "violentCrimes": 112,
+        "totalCrimes": 333,
+        "violentCrimes": 148,
         "propertyCrimes": 104
       },
       {
+        "month": "2025-09",
+        "totalCrimes": 293,
+        "violentCrimes": 112,
+        "propertyCrimes": 105
+      },
+      {
         "month": "2025-10",
-        "totalCrimes": 317,
+        "totalCrimes": 320,
         "violentCrimes": 117,
-        "propertyCrimes": 125
+        "propertyCrimes": 128
       },
       {
         "month": "2025-11",
@@ -181,9 +187,9 @@
       },
       {
         "month": "2025-12",
-        "totalCrimes": 322,
+        "totalCrimes": 323,
         "violentCrimes": 130,
-        "propertyCrimes": 106
+        "propertyCrimes": 107
       },
       {
         "month": "2026-01",
@@ -193,15 +199,15 @@
       },
       {
         "month": "2026-02",
-        "totalCrimes": 273,
+        "totalCrimes": 274,
         "violentCrimes": 110,
         "propertyCrimes": 85
       },
       {
         "month": "2026-03",
-        "totalCrimes": 306,
-        "violentCrimes": 103,
-        "propertyCrimes": 111
+        "totalCrimes": 303,
+        "violentCrimes": 102,
+        "propertyCrimes": 109
       },
       {
         "month": "2026-04",
@@ -211,41 +217,89 @@
       },
       {
         "month": "2026-05",
-        "totalCrimes": 291,
-        "violentCrimes": 114,
+        "totalCrimes": 287,
+        "violentCrimes": 111,
         "propertyCrimes": 85
       },
       {
         "month": "2026-06",
-        "totalCrimes": 307,
-        "violentCrimes": 127,
+        "totalCrimes": 309,
+        "violentCrimes": 130,
         "propertyCrimes": 83
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 754,
+      "anti-social-behaviour": 753,
       "bicycle-theft": 9,
-      "burglary": 141,
+      "burglary": 140,
       "criminal-damage-arson": 176,
       "drugs": 199,
-      "other-theft": 205,
+      "other-theft": 207,
       "possession-of-weapons": 20,
-      "public-order": 276,
-      "robbery": 78,
+      "public-order": 277,
+      "robbery": 79,
       "shoplifting": 395,
       "theft-from-the-person": 70,
-      "vehicle-crime": 195,
+      "vehicle-crime": 198,
       "violent-crime": 974,
       "other-crime": 44
     },
-    "totalLast12Months": 3536
+    "totalLast12Months": 3541
   },
   "property": {
     "sales": [
       {
+        "address": "60, HIGHLAND ROAD",
+        "postcode": "DA6 7LZ",
+        "price": 438500,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, TALEHANGERS CLOSE",
+        "postcode": "DA6 8AE",
+        "price": 300000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "63, SUNLAND AVENUE",
+        "postcode": "DA6 8LP",
+        "price": 440000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, BRUNSWICK ROAD",
+        "postcode": "DA6 8EL",
+        "price": 317000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, ROSSLAND CLOSE",
+        "postcode": "DA6 7PP",
+        "price": 325000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "16, OAKLANDS CLOSE",
         "postcode": "DA6 7AP",
         "price": 665000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "79, ALERS ROAD",
+        "postcode": "DA6 8HT",
+        "price": 525000,
         "dateOfTransfer": "2026-06-15",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -259,19 +313,19 @@
         "newBuild": false
       },
       {
-        "address": "49, BRASTED CLOSE",
-        "postcode": "DA6 8HU",
-        "price": 538000,
-        "dateOfTransfer": "2026-05-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "117, UPTON ROAD",
         "postcode": "DA6 8LS",
         "price": 440000,
         "dateOfTransfer": "2026-05-29",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "49, BRASTED CLOSE",
+        "postcode": "DA6 8HU",
+        "price": 538000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -331,6 +385,14 @@
         "newBuild": false
       },
       {
+        "address": "5, LENOR CLOSE",
+        "postcode": "DA6 8NH",
+        "price": 390000,
+        "dateOfTransfer": "2026-04-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "83, LION ROAD",
         "postcode": "DA6 8NT",
         "price": 700000,
@@ -342,6 +404,14 @@
         "address": "3, HARCOURT ROAD",
         "postcode": "DA6 8AQ",
         "price": 635000,
+        "dateOfTransfer": "2026-04-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "107, HALCOT AVENUE",
+        "postcode": "DA6 7QA",
+        "price": 240000,
         "dateOfTransfer": "2026-04-20",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -411,19 +481,19 @@
         "newBuild": false
       },
       {
-        "address": "3, STANLEY TERRACE",
-        "postcode": "DA6 7LR",
-        "price": 410000,
-        "dateOfTransfer": "2026-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "16, ASKERN CLOSE",
         "postcode": "DA6 8JE",
         "price": 560000,
         "dateOfTransfer": "2026-03-26",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, STANLEY TERRACE",
+        "postcode": "DA6 7LR",
+        "price": 410000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -467,6 +537,22 @@
         "newBuild": false
       },
       {
+        "address": "82, LION ROAD",
+        "postcode": "DA6 8PQ",
+        "price": 317500,
+        "dateOfTransfer": "2026-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FAIRWAY",
+        "postcode": "DA6 8LU",
+        "price": 1025000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "29, SUNLAND AVENUE",
         "postcode": "DA6 8LP",
         "price": 405000,
@@ -499,18 +585,18 @@
         "newBuild": false
       },
       {
-        "address": "23, HARCOURT ROAD",
-        "postcode": "DA6 8AQ",
-        "price": 380000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
+        "address": "27, PINCOTT ROAD",
+        "postcode": "DA6 7LP",
+        "price": 475000,
+        "dateOfTransfer": "2026-02-09",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "205, THE SECOND FLOOR FLAT, BROADWAY",
-        "postcode": "DA6 7ER",
-        "price": 212000,
-        "dateOfTransfer": "2026-01-30",
+        "address": "KINGSLEY COURT, 21, FLAT 21, PINCOTT ROAD",
+        "postcode": "DA6 7LA",
+        "price": 205000,
+        "dateOfTransfer": "2026-02-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -531,10 +617,18 @@
         "newBuild": false
       },
       {
-        "address": "8, TALEHANGERS CLOSE",
-        "postcode": "DA6 8AE",
-        "price": 286500,
-        "dateOfTransfer": "2026-01-29",
+        "address": "23, HARCOURT ROAD",
+        "postcode": "DA6 8AQ",
+        "price": 380000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "205, THE SECOND FLOOR FLAT, BROADWAY",
+        "postcode": "DA6 7ER",
+        "price": 212000,
+        "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -547,11 +641,27 @@
         "newBuild": false
       },
       {
+        "address": "8, TALEHANGERS CLOSE",
+        "postcode": "DA6 8AE",
+        "price": 286500,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "LANGMORE COURT, 77, HANOVER WAY",
         "postcode": "DA6 8BZ",
         "price": 250000,
         "dateOfTransfer": "2026-01-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, IVERHURST CLOSE",
+        "postcode": "DA6 8HY",
+        "price": 367000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -571,26 +681,10 @@
         "newBuild": false
       },
       {
-        "address": "30, IVERHURST CLOSE",
-        "postcode": "DA6 8HY",
-        "price": 367000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "3, BRUNSWICK ROAD",
         "postcode": "DA6 8EL",
         "price": 457000,
         "dateOfTransfer": "2026-01-15",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "46, SUNLAND AVENUE",
-        "postcode": "DA6 8LP",
-        "price": 407000,
-        "dateOfTransfer": "2026-01-09",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -600,6 +694,14 @@
         "price": 250000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, SUNLAND AVENUE",
+        "postcode": "DA6 8LP",
+        "price": 407000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -811,6 +913,14 @@
         "newBuild": false
       },
       {
+        "address": "24, LATHAM ROAD",
+        "postcode": "DA6 7NJ",
+        "price": 515000,
+        "dateOfTransfer": "2025-11-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "LANGMORE COURT, 25, HANOVER WAY",
         "postcode": "DA6 8BZ",
         "price": 285000,
@@ -867,6 +977,14 @@
         "newBuild": false
       },
       {
+        "address": "153B, BROADWAY",
+        "postcode": "DA6 7EZ",
+        "price": 179950,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "LIBERTY COURT, 13, 94, REGAL WALK",
         "postcode": "DA6 7BZ",
         "price": 390000,
@@ -915,6 +1033,14 @@
         "newBuild": false
       },
       {
+        "address": "153, UPTON ROAD",
+        "postcode": "DA6 8LY",
+        "price": 750000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "THE ROSE PUBLIC HOUSE, 179, BROADWAY",
         "postcode": "DA6 7ES",
         "price": 669998,
@@ -931,10 +1057,10 @@
         "newBuild": false
       },
       {
-        "address": "153, UPTON ROAD",
-        "postcode": "DA6 8LY",
-        "price": 750000,
-        "dateOfTransfer": "2025-09-30",
+        "address": "121, HALCOT AVENUE",
+        "postcode": "DA6 7QA",
+        "price": 272000,
+        "dateOfTransfer": "2025-09-29",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -952,6 +1078,14 @@
         "price": 550000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "LIBERTY COURT, 13, 71, REGAL WALK",
+        "postcode": "DA6 7BL",
+        "price": 475000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1059,19 +1193,19 @@
         "newBuild": false
       },
       {
-        "address": "14, DEVONSHIRE ROAD",
-        "postcode": "DA6 8DS",
-        "price": 390000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "65, HAWTHORN ROAD",
         "postcode": "DA6 7AF",
         "price": 190000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, DEVONSHIRE ROAD",
+        "postcode": "DA6 8DS",
+        "price": 390000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1235,19 +1369,19 @@
         "newBuild": false
       },
       {
-        "address": "39, ROYAL OAK ROAD",
-        "postcode": "DA6 7HQ",
-        "price": 517000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "CRAFT COURT, 5, 34, REGAL WALK",
         "postcode": "DA6 7BF",
         "price": 392000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, ROYAL OAK ROAD",
+        "postcode": "DA6 7HQ",
+        "price": 517000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1289,6 +1423,14 @@
         "dateOfTransfer": "2025-07-09",
         "propertyType": "Detached",
         "newBuild": false
+      },
+      {
+        "address": "ABERLEIGH COURT, 10, 16, REGAL WALK",
+        "postcode": "DA6 7BP",
+        "price": 378100,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "98, UPTON ROAD",
@@ -1355,6 +1497,14 @@
         "newBuild": false
       },
       {
+        "address": "40, OAKHOUSE ROAD",
+        "postcode": "DA6 7NA",
+        "price": 305000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "184, BROADWAY",
         "postcode": "DA6 7BT",
         "price": 78092,
@@ -1368,14 +1518,6 @@
         "price": 710000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "40, OAKHOUSE ROAD",
-        "postcode": "DA6 7NA",
-        "price": 305000,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1443,19 +1585,19 @@
         "newBuild": false
       },
       {
-        "address": "2, TODD CLOSE",
-        "postcode": "DA6 8AF",
-        "price": 775000,
-        "dateOfTransfer": "2025-06-03",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "8, BROOMFIELD ROAD",
         "postcode": "DA6 7PA",
         "price": 785000,
         "dateOfTransfer": "2025-06-03",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, TODD CLOSE",
+        "postcode": "DA6 8AF",
+        "price": 775000,
+        "dateOfTransfer": "2025-06-03",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1595,6 +1737,14 @@
         "newBuild": false
       },
       {
+        "address": "69, HIGHLAND ROAD",
+        "postcode": "DA6 7LY",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "15, PADDOCK ROAD",
         "postcode": "DA6 8NF",
         "price": 345000,
@@ -1611,27 +1761,11 @@
         "newBuild": false
       },
       {
-        "address": "69, HIGHLAND ROAD",
-        "postcode": "DA6 7LY",
-        "price": 460000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "265, BROADWAY",
         "postcode": "DA6 8DB",
         "price": 2650000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "52, MARTIN DENE",
-        "postcode": "DA6 8NA",
-        "price": 618000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1643,11 +1777,35 @@
         "newBuild": false
       },
       {
+        "address": "52, MARTIN DENE",
+        "postcode": "DA6 8NA",
+        "price": 618000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "KINGSLEY COURT, 21, FLAT 17, PINCOTT ROAD",
         "postcode": "DA6 7LA",
         "price": 225000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, WARREN ROAD",
+        "postcode": "DA6 7LU",
+        "price": 827500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, FAIRWAY",
+        "postcode": "DA6 8LU",
+        "price": 362500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1667,25 +1825,9 @@
         "newBuild": false
       },
       {
-        "address": "11, WARREN ROAD",
-        "postcode": "DA6 7LU",
-        "price": 827500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "38, TOWNLEY ROAD",
-        "postcode": "DA6 7HN",
-        "price": 665000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "8, FAIRWAY",
-        "postcode": "DA6 8LU",
-        "price": 362500,
+        "address": "57, STANDARD ROAD",
+        "postcode": "DA6 8DR",
+        "price": 325000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Detached",
         "newBuild": false
@@ -1699,11 +1841,11 @@
         "newBuild": false
       },
       {
-        "address": "57, STANDARD ROAD",
-        "postcode": "DA6 8DR",
-        "price": 325000,
+        "address": "38, TOWNLEY ROAD",
+        "postcode": "DA6 7HN",
+        "price": 665000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1747,6 +1889,14 @@
         "newBuild": false
       },
       {
+        "address": "ABERLEIGH COURT, 10, 56, REGAL WALK",
+        "postcode": "DA6 7BP",
+        "price": 403750,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "26, BRUNSWICK ROAD",
         "postcode": "DA6 8EN",
         "price": 632250,
@@ -1771,11 +1921,11 @@
         "newBuild": false
       },
       {
-        "address": "59, HIGHLAND ROAD",
-        "postcode": "DA6 7LY",
-        "price": 400000,
+        "address": "16, WARREN ROAD",
+        "postcode": "DA6 7LU",
+        "price": 625000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1787,19 +1937,19 @@
         "newBuild": false
       },
       {
+        "address": "59, HIGHLAND ROAD",
+        "postcode": "DA6 7LY",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "42, OAKHOUSE ROAD",
         "postcode": "DA6 7NA",
         "price": 300000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "16, WARREN ROAD",
-        "postcode": "DA6 7LU",
-        "price": 625000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1835,17 +1985,17 @@
         "newBuild": false
       },
       {
-        "address": "40, TOWNLEY ROAD",
-        "postcode": "DA6 7HN",
-        "price": 580000,
+        "address": "80, ALERS ROAD",
+        "postcode": "DA6 8HT",
+        "price": 425000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "80, ALERS ROAD",
-        "postcode": "DA6 8HT",
-        "price": 425000,
+        "address": "40, TOWNLEY ROAD",
+        "postcode": "DA6 7HN",
+        "price": 580000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1881,6 +2031,14 @@
         "dateOfTransfer": "2025-03-10",
         "propertyType": "Semi-detached",
         "newBuild": false
+      },
+      {
+        "address": "ABERLEIGH COURT, 10, 44, REGAL WALK",
+        "postcode": "DA6 7BP",
+        "price": 369860,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "28, DANSON ROAD",
@@ -2003,19 +2161,19 @@
         "newBuild": false
       },
       {
-        "address": "62, OAKLANDS ROAD",
-        "postcode": "DA6 7AJ",
-        "price": 390000,
-        "dateOfTransfer": "2025-02-11",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "CARDAMOM COURT, 71, 16, ALBION ROAD",
         "postcode": "DA6 7AX",
         "price": 405000,
         "dateOfTransfer": "2025-02-11",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62, OAKLANDS ROAD",
+        "postcode": "DA6 7AJ",
+        "price": 390000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2099,19 +2257,19 @@
         "newBuild": false
       },
       {
-        "address": "71, STANDARD ROAD",
-        "postcode": "DA6 8DR",
-        "price": 301000,
-        "dateOfTransfer": "2025-01-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "46, BROOMFIELD ROAD",
         "postcode": "DA6 7PA",
         "price": 490000,
         "dateOfTransfer": "2025-01-30",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "71, STANDARD ROAD",
+        "postcode": "DA6 8DR",
+        "price": 301000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2137,6 +2295,14 @@
         "dateOfTransfer": "2025-01-29",
         "propertyType": "Other",
         "newBuild": false
+      },
+      {
+        "address": "ABERLEIGH COURT, 10, 24, REGAL WALK",
+        "postcode": "DA6 7BP",
+        "price": 361950,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "41, TOWNLEY ROAD",
@@ -2179,8 +2345,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 473605,
-    "medianPrice": 402500
+    "averagePrice": 467809,
+    "medianPrice": 400000
   },
   "representatives": {
     "representatives": [

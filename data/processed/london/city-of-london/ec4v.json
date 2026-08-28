@@ -3,8 +3,8 @@
   "slug": "ec4v",
   "city": "London",
   "borough": "City of London",
-  "latitude": 51.512490581818184,
-  "longitude": -0.10001106363636361,
+  "latitude": 51.51227536082474,
+  "longitude": -0.09975845360824741,
   "wards": [
     "Bread Street",
     "Castle Baynard",
@@ -26,6 +26,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "107 Queen Victoria Street, London",
         "postcode": "EC4V 3AL",
         "numberOfPupils": 1040,
@@ -37,97 +38,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2723,
-        "violentCrimes": 643,
-        "propertyCrimes": 1707
+        "totalCrimes": 2688,
+        "violentCrimes": 642,
+        "propertyCrimes": 1681
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2704,
-        "violentCrimes": 634,
-        "propertyCrimes": 1645
+        "totalCrimes": 2669,
+        "violentCrimes": 625,
+        "propertyCrimes": 1619
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2553,
-        "violentCrimes": 568,
-        "propertyCrimes": 1631
+        "totalCrimes": 2525,
+        "violentCrimes": 559,
+        "propertyCrimes": 1616
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2658,
-        "violentCrimes": 549,
-        "propertyCrimes": 1777
+        "totalCrimes": 2640,
+        "violentCrimes": 545,
+        "propertyCrimes": 1761
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2580,
-        "violentCrimes": 614,
-        "propertyCrimes": 1633
+        "totalCrimes": 2533,
+        "violentCrimes": 608,
+        "propertyCrimes": 1603
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2725,
-        "violentCrimes": 628,
-        "propertyCrimes": 1753
+        "totalCrimes": 2677,
+        "violentCrimes": 620,
+        "propertyCrimes": 1715
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2358,
-        "violentCrimes": 541,
-        "propertyCrimes": 1477
+        "totalCrimes": 2325,
+        "violentCrimes": 535,
+        "propertyCrimes": 1453
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2299,
-        "violentCrimes": 511,
-        "propertyCrimes": 1437
+        "totalCrimes": 2276,
+        "violentCrimes": 507,
+        "propertyCrimes": 1419
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2486,
-        "violentCrimes": 570,
-        "propertyCrimes": 1535
+        "totalCrimes": 2453,
+        "violentCrimes": 554,
+        "propertyCrimes": 1519
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2481,
-        "violentCrimes": 529,
-        "propertyCrimes": 1624
+        "totalCrimes": 2452,
+        "violentCrimes": 522,
+        "propertyCrimes": 1606
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2429,
-        "violentCrimes": 603,
-        "propertyCrimes": 1474
+        "totalCrimes": 2389,
+        "violentCrimes": 594,
+        "propertyCrimes": 1450
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2480,
-        "violentCrimes": 588,
-        "propertyCrimes": 1582
+        "totalCrimes": 2445,
+        "violentCrimes": 582,
+        "propertyCrimes": 1560
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3159,
-      "bicycle-theft": 881,
-      "burglary": 1169,
-      "criminal-damage-arson": 713,
-      "drugs": 926,
-      "other-theft": 6481,
-      "possession-of-weapons": 109,
-      "public-order": 1456,
-      "robbery": 1086,
-      "shoplifting": 3549,
-      "theft-from-the-person": 5943,
-      "vehicle-crime": 539,
-      "violent-crime": 4327,
-      "other-crime": 138
+      "anti-social-behaviour": 3122,
+      "bicycle-theft": 875,
+      "burglary": 1166,
+      "criminal-damage-arson": 707,
+      "drugs": 919,
+      "other-theft": 6382,
+      "possession-of-weapons": 110,
+      "public-order": 1444,
+      "robbery": 1066,
+      "shoplifting": 3482,
+      "theft-from-the-person": 5852,
+      "vehicle-crime": 538,
+      "violent-crime": 4273,
+      "other-crime": 136
     },
-    "totalLast12Months": 30476
+    "totalLast12Months": 30072
   },
   "property": {
     "sales": [
+      {
+        "address": "GLOBE VIEW, 10, APARTMENT 119, HIGH TIMBER STREET",
+        "postcode": "EC4V 3PS",
+        "price": 890000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "QUEENS QUAY, 58, FLAT 411, UPPER THAMES STREET",
         "postcode": "EC4V 3EH",
@@ -289,8 +298,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 4557071,
-    "medianPrice": 615000
+    "averagePrice": 4382448,
+    "medianPrice": 620000
   },
   "representatives": {
     "representatives": [

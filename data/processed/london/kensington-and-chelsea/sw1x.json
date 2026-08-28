@@ -3,8 +3,8 @@
   "slug": "sw1x",
   "city": "London",
   "borough": "Kensington and Chelsea",
-  "latitude": 51.49824600000002,
-  "longitude": -0.15675298014888345,
+  "latitude": 51.49817363483145,
+  "longitude": -0.1570681404494383,
   "wards": [
     "Brompton & Hans Town",
     "Knightsbridge & Belgravia",
@@ -52,8 +52,9 @@
         "name": "Holy Trinity CofE Primary School",
         "urn": "100490",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "20/04/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Sedding Street, Sloane Square, London",
         "postcode": "SW1X 9DE",
         "numberOfPupils": 204,
@@ -65,6 +66,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "68 Cadogan Square, Chelsea, London",
         "postcode": "SW1X 0EA",
         "numberOfPupils": 184,
@@ -76,6 +78,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hans Place, Knightsbridge, London",
         "postcode": "SW1X 0EP",
         "numberOfPupils": 396,
@@ -87,6 +90,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "22-24 Pont Street, Chelsea, Knightsbridge",
         "postcode": "SW1X 0AA",
         "numberOfPupils": 79,
@@ -98,6 +102,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "67 Pont Street, London",
         "postcode": "SW1X 0BD",
         "numberOfPupils": 295,
@@ -109,103 +114,135 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1792,
-        "violentCrimes": 387,
-        "propertyCrimes": 1010
+        "totalCrimes": 1767,
+        "violentCrimes": 386,
+        "propertyCrimes": 987
       },
       {
         "month": "2025-08",
-        "totalCrimes": 1736,
-        "violentCrimes": 361,
-        "propertyCrimes": 959
+        "totalCrimes": 1712,
+        "violentCrimes": 358,
+        "propertyCrimes": 940
       },
       {
         "month": "2025-09",
-        "totalCrimes": 1582,
-        "violentCrimes": 379,
-        "propertyCrimes": 870
+        "totalCrimes": 1556,
+        "violentCrimes": 374,
+        "propertyCrimes": 852
       },
       {
         "month": "2025-10",
-        "totalCrimes": 1633,
-        "violentCrimes": 376,
-        "propertyCrimes": 903
+        "totalCrimes": 1606,
+        "violentCrimes": 374,
+        "propertyCrimes": 885
       },
       {
         "month": "2025-11",
-        "totalCrimes": 1560,
-        "violentCrimes": 343,
-        "propertyCrimes": 915
+        "totalCrimes": 1533,
+        "violentCrimes": 338,
+        "propertyCrimes": 892
       },
       {
         "month": "2025-12",
-        "totalCrimes": 1744,
-        "violentCrimes": 405,
-        "propertyCrimes": 1007
+        "totalCrimes": 1711,
+        "violentCrimes": 398,
+        "propertyCrimes": 982
       },
       {
         "month": "2026-01",
-        "totalCrimes": 1426,
-        "violentCrimes": 354,
-        "propertyCrimes": 771
+        "totalCrimes": 1398,
+        "violentCrimes": 352,
+        "propertyCrimes": 753
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1309,
-        "violentCrimes": 297,
-        "propertyCrimes": 705
+        "totalCrimes": 1288,
+        "violentCrimes": 293,
+        "propertyCrimes": 693
       },
       {
         "month": "2026-03",
-        "totalCrimes": 1321,
-        "violentCrimes": 284,
-        "propertyCrimes": 750
+        "totalCrimes": 1301,
+        "violentCrimes": 277,
+        "propertyCrimes": 739
       },
       {
         "month": "2026-04",
-        "totalCrimes": 1388,
-        "violentCrimes": 295,
-        "propertyCrimes": 682
+        "totalCrimes": 1365,
+        "violentCrimes": 288,
+        "propertyCrimes": 672
       },
       {
         "month": "2026-05",
-        "totalCrimes": 1375,
-        "violentCrimes": 355,
-        "propertyCrimes": 681
+        "totalCrimes": 1340,
+        "violentCrimes": 349,
+        "propertyCrimes": 657
       },
       {
         "month": "2026-06",
-        "totalCrimes": 1359,
-        "violentCrimes": 363,
-        "propertyCrimes": 688
+        "totalCrimes": 1324,
+        "violentCrimes": 354,
+        "propertyCrimes": 667
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3507,
-      "bicycle-theft": 213,
-      "burglary": 555,
-      "criminal-damage-arson": 541,
-      "drugs": 471,
-      "other-theft": 2704,
+      "anti-social-behaviour": 3467,
+      "bicycle-theft": 214,
+      "burglary": 543,
+      "criminal-damage-arson": 535,
+      "drugs": 468,
+      "other-theft": 2651,
       "possession-of-weapons": 88,
-      "public-order": 869,
-      "robbery": 559,
-      "shoplifting": 1797,
-      "theft-from-the-person": 2957,
-      "vehicle-crime": 1174,
-      "violent-crime": 2683,
-      "other-crime": 107
+      "public-order": 856,
+      "robbery": 551,
+      "shoplifting": 1728,
+      "theft-from-the-person": 2892,
+      "vehicle-crime": 1156,
+      "violent-crime": 2646,
+      "other-crime": 106
     },
-    "totalLast12Months": 18225
+    "totalLast12Months": 17901
   },
   "property": {
     "sales": [
       {
-        "address": "3, CLABON MEWS",
-        "postcode": "SW1X 0EG",
-        "price": 3600000,
-        "dateOfTransfer": "2026-05-15",
+        "address": "5, PONT STREET MEWS",
+        "postcode": "SW1X 0AF",
+        "price": 11728131,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, BOWLAND YARD",
+        "postcode": "SW1X 8EE",
+        "price": 1850000,
+        "dateOfTransfer": "2026-06-26",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, CHESTER MEWS",
+        "postcode": "SW1X 7AH",
+        "price": 456250,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 19-20, LOWNDES SQUARE",
+        "postcode": "SW1X 9EZ",
+        "price": 5400000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "56, THIRD FLOOR FLAT, CADOGAN PLACE",
+        "postcode": "SW1X 9RT",
+        "price": 1215000,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -220,6 +257,14 @@
         "address": "142, PAVILION ROAD",
         "postcode": "SW1X 0AY",
         "price": 3750000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, CLABON MEWS",
+        "postcode": "SW1X 0EG",
+        "price": 3600000,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -305,6 +350,14 @@
         "newBuild": false
       },
       {
+        "address": "LOWNDES COURT, FLAT 15, LOWNDES SQUARE",
+        "postcode": "SW1X 9JJ",
+        "price": 10000000,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "PARK MANSIONS, 82, KNIGHTSBRIDGE",
         "postcode": "SW1X 7QU",
         "price": 1550000,
@@ -369,6 +422,22 @@
         "newBuild": false
       },
       {
+        "address": "54 - 56, FLAT A, CADOGAN SQUARE",
+        "postcode": "SW1X 0JW",
+        "price": 6200000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54 - 56, FLAT A, CADOGAN SQUARE",
+        "postcode": "SW1X 0JW",
+        "price": 6200000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "9, HEADFORT PLACE",
         "postcode": "SW1X 7DE",
         "price": 3340000,
@@ -425,17 +494,17 @@
         "newBuild": false
       },
       {
-        "address": "1, APARTMENT 6, WILLIAM STREET",
-        "postcode": "SW1X 9HL",
-        "price": 23250000,
+        "address": "28, FLAT 4, CHESHAM PLACE",
+        "postcode": "SW1X 8HG",
+        "price": 300000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "28, FLAT 4, CHESHAM PLACE",
-        "postcode": "SW1X 8HG",
-        "price": 300000,
+        "address": "1, APARTMENT 6, WILLIAM STREET",
+        "postcode": "SW1X 9HL",
+        "price": 23250000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -561,6 +630,14 @@
         "newBuild": false
       },
       {
+        "address": "LOWNDES LODGE, 13 - 16, FLAT 26, CADOGAN PLACE",
+        "postcode": "SW1X 9RZ",
+        "price": 4000000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "1, APARTMENT 9, WILLIAM STREET",
         "postcode": "SW1X 9HL",
         "price": 2550000,
@@ -572,14 +649,6 @@
         "address": "BELGRAVIA HOUSE, FLAT 22, HALKIN PLACE",
         "postcode": "SW1X 8JF",
         "price": 2327500,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "LOWNDES LODGE, 13 - 16, FLAT 26, CADOGAN PLACE",
-        "postcode": "SW1X 9RZ",
-        "price": 4000000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -638,6 +707,22 @@
         "price": 2000000,
         "dateOfTransfer": "2025-09-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, FRONT GARDEN APARTMENT, CADOGAN SQUARE",
+        "postcode": "SW1X 0EA",
+        "price": 1225000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ONE HYDE PARK, 100, APARTMENT B.09.1, KNIGHTSBRIDGE",
+        "postcode": "SW1X 7LJ",
+        "price": 34800000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -841,17 +926,17 @@
         "newBuild": false
       },
       {
-        "address": "50, FLAT 5, PONT STREET",
-        "postcode": "SW1X 0AE",
-        "price": 2250000,
+        "address": "CLUNIE HOUSE, 4 - 7, FLAT 8, HANS PLACE",
+        "postcode": "SW1X 0EY",
+        "price": 2285000,
         "dateOfTransfer": "2025-06-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "CLUNIE HOUSE, 4 - 7, FLAT 8, HANS PLACE",
-        "postcode": "SW1X 0EY",
-        "price": 2285000,
+        "address": "50, FLAT 5, PONT STREET",
+        "postcode": "SW1X 0AE",
+        "price": 2250000,
         "dateOfTransfer": "2025-06-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1001,17 +1086,17 @@
         "newBuild": false
       },
       {
-        "address": "73, FLAT 5, CADOGAN SQUARE",
-        "postcode": "SW1X 0DY",
-        "price": 1700000,
+        "address": "22, FLAT 1, CADOGAN SQUARE",
+        "postcode": "SW1X 0JP",
+        "price": 1021500,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "22, FLAT 1, CADOGAN SQUARE",
-        "postcode": "SW1X 0JP",
-        "price": 1021500,
+        "address": "73, FLAT 5, CADOGAN SQUARE",
+        "postcode": "SW1X 0DY",
+        "price": 1700000,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1169,19 +1254,19 @@
         "newBuild": false
       },
       {
-        "address": "8, LOWNDES CLOSE",
-        "postcode": "SW1X 8BZ",
-        "price": 420000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "23, CADOGAN LANE",
         "postcode": "SW1X 9DP",
         "price": 6700000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, LOWNDES CLOSE",
+        "postcode": "SW1X 8BZ",
+        "price": 420000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1281,6 +1366,14 @@
         "newBuild": false
       },
       {
+        "address": "7, LYALL STREET",
+        "postcode": "SW1X 8LJ",
+        "price": 600000,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "34, EATON PLACE",
         "postcode": "SW1X 8AF",
         "price": 85000,
@@ -1289,8 +1382,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 4365389,
-    "medianPrice": 2306250
+    "averagePrice": 4580730,
+    "medianPrice": 2327500
   },
   "representatives": {
     "representatives": [

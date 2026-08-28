@@ -3,8 +3,8 @@
   "slug": "br4",
   "city": "London",
   "borough": "Bromley",
-  "latitude": 51.37497706451615,
-  "longitude": -0.008291005376344087,
+  "latitude": 51.374931610027865,
+  "longitude": -0.00805525348189415,
   "wards": [
     "Hayes & Coney Hall",
     "Shortlands & Park Langley",
@@ -112,6 +112,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Justin Hall, Beckenham Road, West Wickham",
         "postcode": "BR4 0QS",
         "numberOfPupils": 204,
@@ -122,7 +123,8 @@
         "urn": "137069",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "18/01/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Pickhurst Lane, West Wickham",
         "postcode": "BR4 0HL",
         "numberOfPupils": 336,
@@ -133,7 +135,8 @@
         "urn": "137070",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/12/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Pickhurst Lane, West Wickham",
         "postcode": "BR4 0HL",
         "numberOfPupils": 509,
@@ -143,8 +146,9 @@
         "name": "Hawes Down Primary School",
         "urn": "141784",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "19/07/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "The Mead, West Wickham",
         "postcode": "BR4 0BA",
         "numberOfPupils": 447,
@@ -156,6 +160,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Chamberlain Crescent, West Wickham",
         "postcode": "BR4 0LJ",
         "numberOfPupils": 565,
@@ -166,7 +171,8 @@
         "urn": "142301",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Gates Green Road, Coney Hall, West Wickham",
         "postcode": "BR4 9DG",
         "numberOfPupils": 413,
@@ -178,6 +184,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hawes Lane, West Wickham",
         "postcode": "BR4 9AE",
         "numberOfPupils": 288,
@@ -189,6 +196,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hawes Lane, West Wickham",
         "postcode": "BR4 9AA",
         "numberOfPupils": null,
@@ -200,20 +208,20 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 155,
-        "violentCrimes": 76,
+        "totalCrimes": 154,
+        "violentCrimes": 75,
         "propertyCrimes": 52
       },
       {
         "month": "2025-08",
-        "totalCrimes": 171,
+        "totalCrimes": 170,
         "violentCrimes": 67,
-        "propertyCrimes": 73
+        "propertyCrimes": 72
       },
       {
         "month": "2025-09",
-        "totalCrimes": 187,
-        "violentCrimes": 64,
+        "totalCrimes": 188,
+        "violentCrimes": 65,
         "propertyCrimes": 85
       },
       {
@@ -248,54 +256,118 @@
       },
       {
         "month": "2026-03",
-        "totalCrimes": 154,
-        "violentCrimes": 73,
-        "propertyCrimes": 61
+        "totalCrimes": 148,
+        "violentCrimes": 68,
+        "propertyCrimes": 60
       },
       {
         "month": "2026-04",
-        "totalCrimes": 154,
-        "violentCrimes": 62,
+        "totalCrimes": 152,
+        "violentCrimes": 60,
         "propertyCrimes": 66
       },
       {
         "month": "2026-05",
-        "totalCrimes": 154,
+        "totalCrimes": 153,
         "violentCrimes": 75,
         "propertyCrimes": 56
       },
       {
         "month": "2026-06",
-        "totalCrimes": 164,
-        "violentCrimes": 70,
+        "totalCrimes": 163,
+        "violentCrimes": 69,
         "propertyCrimes": 64
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 259,
+      "anti-social-behaviour": 258,
       "burglary": 69,
-      "criminal-damage-arson": 139,
+      "criminal-damage-arson": 138,
       "other-theft": 124,
       "possession-of-weapons": 6,
-      "public-order": 90,
-      "robbery": 41,
+      "public-order": 87,
+      "robbery": 40,
       "shoplifting": 167,
       "theft-from-the-person": 27,
-      "vehicle-crime": 237,
-      "violent-crime": 678,
+      "vehicle-crime": 236,
+      "violent-crime": 674,
       "other-crime": 26,
       "drugs": 45,
       "bicycle-theft": 6
     },
-    "totalLast12Months": 1914
+    "totalLast12Months": 1903
   },
   "property": {
     "sales": [
+      {
+        "address": "126, KINGSWAY",
+        "postcode": "BR4 9JQ",
+        "price": 580000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "227, LANGLEY WAY",
+        "postcode": "BR4 0DW",
+        "price": 575000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THOMASETT HOUSE, 2, FLAT 2, KNOTLEY WAY",
+        "postcode": "BR4 9EW",
+        "price": 385000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, MANOR ROAD",
+        "postcode": "BR4 9PS",
+        "price": 710000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "188, LANGLEY WAY",
+        "postcode": "BR4 0DT",
+        "price": 760000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "15A, BECKENHAM ROAD",
         "postcode": "BR4 0QR",
         "price": 940000,
         "dateOfTransfer": "2026-06-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHATSWORTH LODGE, FLAT 28, WICKHAM COURT ROAD",
+        "postcode": "BR4 0LY",
+        "price": 92000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, BARWOOD AVENUE",
+        "postcode": "BR4 0LB",
+        "price": 680000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, RODNEY GARDENS",
+        "postcode": "BR4 9DD",
+        "price": 625100,
+        "dateOfTransfer": "2026-06-23",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -313,6 +385,14 @@
         "price": 345000,
         "dateOfTransfer": "2026-06-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, WINDERMERE ROAD",
+        "postcode": "BR4 9AP",
+        "price": 682000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -348,11 +428,27 @@
         "newBuild": false
       },
       {
+        "address": "4, INCHWOOD",
+        "postcode": "BR4 9RB",
+        "price": 975000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "6, RYDAL DRIVE",
         "postcode": "BR4 9QH",
         "price": 990000,
         "dateOfTransfer": "2026-05-27",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, THE GLADE",
+        "postcode": "BR4 9LH",
+        "price": 673500,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -396,19 +492,19 @@
         "newBuild": false
       },
       {
-        "address": "7, ROSE WALK",
-        "postcode": "BR4 0RW",
-        "price": 640000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "9A, LITTLE COURT",
         "postcode": "BR4 9AL",
         "price": 720000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, ROSE WALK",
+        "postcode": "BR4 0RW",
+        "price": 640000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -473,6 +569,14 @@
         "price": 768000,
         "dateOfTransfer": "2026-04-08",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, BENCURTIS PARK",
+        "postcode": "BR4 9QG",
+        "price": 291000,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -628,17 +732,17 @@
         "newBuild": false
       },
       {
-        "address": "33, GLEBE WAY",
-        "postcode": "BR4 0SH",
-        "price": 525000,
+        "address": "135, PICKHURST RISE",
+        "postcode": "BR4 0AG",
+        "price": 675000,
         "dateOfTransfer": "2026-03-02",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "135, PICKHURST RISE",
-        "postcode": "BR4 0AG",
-        "price": 675000,
+        "address": "33, GLEBE WAY",
+        "postcode": "BR4 0SH",
+        "price": 525000,
         "dateOfTransfer": "2026-03-02",
         "propertyType": "Terraced",
         "newBuild": false
@@ -652,10 +756,26 @@
         "newBuild": false
       },
       {
+        "address": "156, THE AVENUE",
+        "postcode": "BR4 0EA",
+        "price": 620000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "2, OAKLANDS AVENUE",
         "postcode": "BR4 9LE",
         "price": 960000,
         "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "104, ADDINGTON ROAD",
+        "postcode": "BR4 9BQ",
+        "price": 605000,
+        "dateOfTransfer": "2026-02-26",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -671,14 +791,6 @@
         "address": "254, WICKHAM CHASE",
         "postcode": "BR4 0BS",
         "price": 660000,
-        "dateOfTransfer": "2026-02-26",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "104, ADDINGTON ROAD",
-        "postcode": "BR4 9BQ",
-        "price": 605000,
         "dateOfTransfer": "2026-02-26",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -716,19 +828,27 @@
         "newBuild": false
       },
       {
-        "address": "1, KESWICK ROAD",
-        "postcode": "BR4 9AR",
-        "price": 950000,
-        "dateOfTransfer": "2026-02-16",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "179, GOODHART WAY",
         "postcode": "BR4 0EX",
         "price": 840000,
         "dateOfTransfer": "2026-02-16",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "96, HAYES CHASE",
+        "postcode": "BR4 0JB",
+        "price": 810000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, KESWICK ROAD",
+        "postcode": "BR4 9AR",
+        "price": 950000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -740,10 +860,10 @@
         "newBuild": false
       },
       {
-        "address": "96, HAYES CHASE",
-        "postcode": "BR4 0JB",
-        "price": 810000,
-        "dateOfTransfer": "2026-02-16",
+        "address": "294, PICKHURST LANE",
+        "postcode": "BR4 0HT",
+        "price": 770000,
+        "dateOfTransfer": "2026-02-12",
         "propertyType": "Detached",
         "newBuild": false
       },
@@ -761,14 +881,6 @@
         "price": 645000,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "294, PICKHURST LANE",
-        "postcode": "BR4 0HT",
-        "price": 770000,
-        "dateOfTransfer": "2026-02-12",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -796,11 +908,27 @@
         "newBuild": false
       },
       {
+        "address": "129, LAYHAMS ROAD",
+        "postcode": "BR4 9HE",
+        "price": 650000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "245, LANGLEY WAY",
         "postcode": "BR4 0DW",
         "price": 513550,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17A, HIGH STREET",
+        "postcode": "BR4 0LP",
+        "price": 230000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -828,9 +956,9 @@
         "newBuild": false
       },
       {
-        "address": "96, SILVER LANE",
-        "postcode": "BR4 0RU",
-        "price": 745000,
+        "address": "68, GOODHART WAY",
+        "postcode": "BR4 0EY",
+        "price": 700000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -841,6 +969,14 @@
         "price": 575000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "96, SILVER LANE",
+        "postcode": "BR4 0RU",
+        "price": 745000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -860,14 +996,6 @@
         "newBuild": false
       },
       {
-        "address": "122, PICKHURST RISE",
-        "postcode": "BR4 0AW",
-        "price": 553500,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "21, KINGSWAY",
         "postcode": "BR4 9JD",
         "price": 565000,
@@ -876,17 +1004,25 @@
         "newBuild": false
       },
       {
-        "address": "21, BOLEYN GARDENS",
-        "postcode": "BR4 9NG",
-        "price": 910000,
+        "address": "122, PICKHURST RISE",
+        "postcode": "BR4 0AW",
+        "price": 553500,
         "dateOfTransfer": "2026-01-23",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "36, WINDERMERE ROAD",
         "postcode": "BR4 9AW",
         "price": 620000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, BOLEYN GARDENS",
+        "postcode": "BR4 9NG",
+        "price": 910000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1268,17 +1404,17 @@
         "newBuild": false
       },
       {
-        "address": "WINDSOR COURT, 203, FLAT 6, HIGH STREET",
-        "postcode": "BR4 0LE",
-        "price": 370000,
+        "address": "62A, CROYDON ROAD",
+        "postcode": "BR4 9HU",
+        "price": 335000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "62A, CROYDON ROAD",
-        "postcode": "BR4 9HU",
-        "price": 335000,
+        "address": "WINDSOR COURT, 203, FLAT 6, HIGH STREET",
+        "postcode": "BR4 0LE",
+        "price": 370000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1340,11 +1476,35 @@
         "newBuild": false
       },
       {
+        "address": "83, GATES GREEN ROAD",
+        "postcode": "BR4 9DE",
+        "price": 585000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "8, KENT ROAD",
         "postcode": "BR4 0JP",
         "price": 592000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WEST WICKHAM METHODIST CHURCH, HAWES LANE",
+        "postcode": "BR4 9AA",
+        "price": 2700000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "63, THE CRESCENT",
+        "postcode": "BR4 0HD",
+        "price": 683000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1364,14 +1524,6 @@
         "newBuild": false
       },
       {
-        "address": "63, THE CRESCENT",
-        "postcode": "BR4 0HD",
-        "price": 683000,
-        "dateOfTransfer": "2025-09-24",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "68, COURTFIELD RISE",
         "postcode": "BR4 9BH",
         "price": 625000,
@@ -1388,6 +1540,14 @@
         "newBuild": false
       },
       {
+        "address": "23, CONEY HILL ROAD",
+        "postcode": "BR4 9BU",
+        "price": 750000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "26, QUEENSWAY",
         "postcode": "BR4 9ER",
         "price": 800000,
@@ -1401,14 +1561,6 @@
         "price": 955000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "23, CONEY HILL ROAD",
-        "postcode": "BR4 9BU",
-        "price": 750000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1460,19 +1612,19 @@
         "newBuild": false
       },
       {
-        "address": "1A, SOUTH WALK",
-        "postcode": "BR4 9JA",
-        "price": 655000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "84, PICKHURST RISE",
         "postcode": "BR4 0AN",
         "price": 700000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1A, SOUTH WALK",
+        "postcode": "BR4 9JA",
+        "price": 655000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1516,22 +1668,6 @@
         "newBuild": false
       },
       {
-        "address": "87, WICKHAM CHASE",
-        "postcode": "BR4 0BG",
-        "price": 550000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "100, CHESTNUT AVENUE",
-        "postcode": "BR4 9EX",
-        "price": 531000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "6, ROSSLYN CLOSE",
         "postcode": "BR4 9HX",
         "price": 365000,
@@ -1543,6 +1679,22 @@
         "address": "163, QUEENSWAY",
         "postcode": "BR4 9DU",
         "price": 679500,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "87, WICKHAM CHASE",
+        "postcode": "BR4 0BG",
+        "price": 550000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "100, CHESTNUT AVENUE",
+        "postcode": "BR4 9EX",
+        "price": 531000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1668,6 +1820,14 @@
         "newBuild": false
       },
       {
+        "address": "70A, CROYDON ROAD",
+        "postcode": "BR4 9HY",
+        "price": 565000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "72, ADDINGTON ROAD",
         "postcode": "BR4 9BJ",
         "price": 980000,
@@ -1724,19 +1884,19 @@
         "newBuild": false
       },
       {
-        "address": "109, HIGH STREET",
-        "postcode": "BR4 0LT",
-        "price": 580000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "12A, MOUNT COURT",
         "postcode": "BR4 9AH",
         "price": 351506,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "109, HIGH STREET",
+        "postcode": "BR4 0LT",
+        "price": 580000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1828,17 +1988,17 @@
         "newBuild": false
       },
       {
-        "address": "10, HAYES CHASE",
-        "postcode": "BR4 0HZ",
-        "price": 1335000,
+        "address": "3, STAMBOURNE WAY",
+        "postcode": "BR4 9NE",
+        "price": 878000,
         "dateOfTransfer": "2025-06-26",
         "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "3, STAMBOURNE WAY",
-        "postcode": "BR4 9NE",
-        "price": 878000,
+        "address": "10, HAYES CHASE",
+        "postcode": "BR4 0HZ",
+        "price": 1335000,
         "dateOfTransfer": "2025-06-26",
         "propertyType": "Detached",
         "newBuild": false
@@ -1932,17 +2092,9 @@
         "newBuild": false
       },
       {
-        "address": "MANOR COURT, FLAT 4, MANOR ROAD",
-        "postcode": "BR4 9PT",
-        "price": 355000,
-        "dateOfTransfer": "2025-05-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "5, WICKHAM COURT ROAD",
-        "postcode": "BR4 9LN",
-        "price": 800000,
+        "address": "48, WOOD LODGE LANE",
+        "postcode": "BR4 9NA",
+        "price": 720000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1956,9 +2108,17 @@
         "newBuild": false
       },
       {
-        "address": "48, WOOD LODGE LANE",
-        "postcode": "BR4 9NA",
-        "price": 720000,
+        "address": "MANOR COURT, FLAT 4, MANOR ROAD",
+        "postcode": "BR4 9PT",
+        "price": 355000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, WICKHAM COURT ROAD",
+        "postcode": "BR4 9LN",
+        "price": 800000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1980,19 +2140,19 @@
         "newBuild": false
       },
       {
-        "address": "21, HAWKHURST WAY",
-        "postcode": "BR4 9PE",
-        "price": 761500,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "35, WOODLAND WAY",
         "postcode": "BR4 9LR",
         "price": 1110000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, HAWKHURST WAY",
+        "postcode": "BR4 9PE",
+        "price": 761500,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2100,6 +2260,14 @@
         "newBuild": false
       },
       {
+        "address": "21, GROSVENOR ROAD",
+        "postcode": "BR4 9PY",
+        "price": 610000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "THOMASETT HOUSE, 2, FLAT 5, KNOTLEY WAY",
         "postcode": "BR4 9EW",
         "price": 425000,
@@ -2140,19 +2308,27 @@
         "newBuild": false
       },
       {
-        "address": "21, GROSVENOR ROAD",
-        "postcode": "BR4 9PY",
-        "price": 610000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "213, PICKHURST RISE",
         "postcode": "BR4 0AQ",
         "price": 680000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "121, CROYDON ROAD",
+        "postcode": "BR4 9HZ",
+        "price": 216666,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, BOLDERWOOD WAY",
+        "postcode": "BR4 9PH",
+        "price": 575000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2172,22 +2348,6 @@
         "newBuild": false
       },
       {
-        "address": "33, BOLDERWOOD WAY",
-        "postcode": "BR4 9PH",
-        "price": 575000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "121, CROYDON ROAD",
-        "postcode": "BR4 9HZ",
-        "price": 216666,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "238, QUEENSWAY",
         "postcode": "BR4 9EA",
         "price": 240000,
@@ -2196,17 +2356,17 @@
         "newBuild": false
       },
       {
-        "address": "30, WICKHAM CHASE",
-        "postcode": "BR4 0BL",
-        "price": 730000,
+        "address": "9, SUSSEX ROAD",
+        "postcode": "BR4 0JX",
+        "price": 512000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "9, SUSSEX ROAD",
-        "postcode": "BR4 0JX",
-        "price": 512000,
+        "address": "30, WICKHAM CHASE",
+        "postcode": "BR4 0BL",
+        "price": 730000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2268,6 +2428,14 @@
         "newBuild": false
       },
       {
+        "address": "23, BENCURTIS PARK",
+        "postcode": "BR4 9QG",
+        "price": 313000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "12, SURREY ROAD",
         "postcode": "BR4 0JU",
         "price": 550000,
@@ -2308,14 +2476,6 @@
         "newBuild": false
       },
       {
-        "address": "23, BENCURTIS PARK",
-        "postcode": "BR4 9QG",
-        "price": 313000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "224, PICKHURST RISE",
         "postcode": "BR4 0AU",
         "price": 685000,
@@ -2332,9 +2492,9 @@
         "newBuild": false
       },
       {
-        "address": "30, BOLDERWOOD WAY",
-        "postcode": "BR4 9PH",
-        "price": 700000,
+        "address": "61, SHERWOOD WAY",
+        "postcode": "BR4 9PB",
+        "price": 720000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2356,9 +2516,9 @@
         "newBuild": false
       },
       {
-        "address": "61, SHERWOOD WAY",
-        "postcode": "BR4 9PB",
-        "price": 720000,
+        "address": "30, BOLDERWOOD WAY",
+        "postcode": "BR4 9PH",
+        "price": 700000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2444,17 +2604,17 @@
         "newBuild": false
       },
       {
-        "address": "9, BOLDERWOOD WAY",
-        "postcode": "BR4 9PH",
-        "price": 775000,
+        "address": "4, BOLEYN GARDENS",
+        "postcode": "BR4 9NQ",
+        "price": 785000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "4, BOLEYN GARDENS",
-        "postcode": "BR4 9NQ",
-        "price": 785000,
+        "address": "9, BOLDERWOOD WAY",
+        "postcode": "BR4 9PH",
+        "price": 775000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2556,9 +2716,9 @@
         "newBuild": false
       },
       {
-        "address": "28, PINE AVENUE",
-        "postcode": "BR4 0LW",
-        "price": 755000,
+        "address": "9, THE AVENUE",
+        "postcode": "BR4 0DX",
+        "price": 805000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2572,9 +2732,9 @@
         "newBuild": false
       },
       {
-        "address": "9, THE AVENUE",
-        "postcode": "BR4 0DX",
-        "price": 805000,
+        "address": "28, PINE AVENUE",
+        "postcode": "BR4 0LW",
+        "price": 755000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2588,17 +2748,17 @@
         "newBuild": false
       },
       {
-        "address": "58, COURTFIELD RISE",
-        "postcode": "BR4 9BH",
-        "price": 765000,
+        "address": "31, CORKSCREW HILL",
+        "postcode": "BR4 9BA",
+        "price": 780000,
         "dateOfTransfer": "2025-02-18",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "31, CORKSCREW HILL",
-        "postcode": "BR4 9BA",
-        "price": 780000,
+        "address": "58, COURTFIELD RISE",
+        "postcode": "BR4 9BH",
+        "price": 765000,
         "dateOfTransfer": "2025-02-18",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2764,8 +2924,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 651129,
-    "medianPrice": 680000
+    "averagePrice": 653285,
+    "medianPrice": 677250
   },
   "representatives": {
     "representatives": [

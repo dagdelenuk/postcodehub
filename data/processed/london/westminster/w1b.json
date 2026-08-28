@@ -3,8 +3,8 @@
   "slug": "w1b",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.514371184563764,
-  "longitude": -0.14094464093959733,
+  "latitude": 51.51424683687944,
+  "longitude": -0.14085420567375878,
   "wards": [
     "Marylebone",
     "West End"
@@ -44,6 +44,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "309 Regent Street, London",
         "postcode": "W1B 2UW",
         "numberOfPupils": null,
@@ -55,6 +56,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "36 Portland Place, London",
         "postcode": "W1B 1LS",
         "numberOfPupils": 111,
@@ -66,6 +68,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "63-65 Portland Place, London",
         "postcode": "W1B 1QR",
         "numberOfPupils": 456,
@@ -77,97 +80,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5903,
-        "violentCrimes": 1167,
-        "propertyCrimes": 3967
+        "totalCrimes": 5917,
+        "violentCrimes": 1172,
+        "propertyCrimes": 3976
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5322,
-        "violentCrimes": 1072,
-        "propertyCrimes": 3427
+        "totalCrimes": 5335,
+        "violentCrimes": 1075,
+        "propertyCrimes": 3438
       },
       {
         "month": "2025-09",
-        "totalCrimes": 5196,
-        "violentCrimes": 1188,
-        "propertyCrimes": 3304
+        "totalCrimes": 5215,
+        "violentCrimes": 1191,
+        "propertyCrimes": 3316
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5690,
-        "violentCrimes": 1138,
-        "propertyCrimes": 3787
+        "totalCrimes": 5714,
+        "violentCrimes": 1137,
+        "propertyCrimes": 3812
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6750,
-        "violentCrimes": 1154,
-        "propertyCrimes": 4849
+        "totalCrimes": 6762,
+        "violentCrimes": 1157,
+        "propertyCrimes": 4857
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6734,
-        "violentCrimes": 1147,
-        "propertyCrimes": 4799
+        "totalCrimes": 6750,
+        "violentCrimes": 1152,
+        "propertyCrimes": 4810
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4974,
-        "violentCrimes": 951,
-        "propertyCrimes": 3322
+        "totalCrimes": 4991,
+        "violentCrimes": 952,
+        "propertyCrimes": 3337
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4695,
-        "violentCrimes": 825,
-        "propertyCrimes": 3209
+        "totalCrimes": 4700,
+        "violentCrimes": 826,
+        "propertyCrimes": 3212
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4628,
-        "violentCrimes": 947,
-        "propertyCrimes": 2998
+        "totalCrimes": 4638,
+        "violentCrimes": 950,
+        "propertyCrimes": 3006
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4867,
-        "violentCrimes": 983,
-        "propertyCrimes": 3066
+        "totalCrimes": 4874,
+        "violentCrimes": 986,
+        "propertyCrimes": 3069
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4735,
-        "violentCrimes": 1101,
-        "propertyCrimes": 2885
+        "totalCrimes": 4749,
+        "violentCrimes": 1103,
+        "propertyCrimes": 2897
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4635,
-        "violentCrimes": 1009,
-        "propertyCrimes": 2888
+        "totalCrimes": 4647,
+        "violentCrimes": 1013,
+        "propertyCrimes": 2897
       }
     ],
     "categoryBreakdown": {
       "anti-social-behaviour": 6748,
-      "bicycle-theft": 600,
-      "burglary": 1331,
-      "criminal-damage-arson": 1003,
-      "drugs": 1912,
-      "other-theft": 13645,
+      "bicycle-theft": 613,
+      "burglary": 1335,
+      "criminal-damage-arson": 1006,
+      "drugs": 1915,
+      "other-theft": 13690,
       "possession-of-weapons": 217,
-      "public-order": 2495,
-      "robbery": 2328,
-      "shoplifting": 7060,
-      "theft-from-the-person": 17527,
-      "vehicle-crime": 1335,
-      "violent-crime": 7642,
-      "other-crime": 286
+      "public-order": 2502,
+      "robbery": 2337,
+      "shoplifting": 7084,
+      "theft-from-the-person": 17563,
+      "vehicle-crime": 1336,
+      "violent-crime": 7658,
+      "other-crime": 288
     },
-    "totalLast12Months": 64129
+    "totalLast12Months": 64292
   },
   "property": {
     "sales": [
+      {
+        "address": "22, FLAT 49, PARK CRESCENT",
+        "postcode": "W1B 1PE",
+        "price": 1350000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "22, FLAT 22, PARK CRESCENT",
         "postcode": "W1B 1PD",
@@ -181,6 +192,22 @@
         "postcode": "W1B 5QD",
         "price": 300000,
         "dateOfTransfer": "2026-05-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "94 - 96, FLAT 2, PORTLAND PLACE",
+        "postcode": "W1B 1NZ",
+        "price": 3250000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, PORTLAND PLACE",
+        "postcode": "W1B 1LY",
+        "price": 9160000,
+        "dateOfTransfer": "2026-01-29",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -249,8 +276,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 3687700,
-    "medianPrice": 1007500
+    "averagePrice": 3895154,
+    "medianPrice": 1350000
   },
   "representatives": {
     "representatives": [

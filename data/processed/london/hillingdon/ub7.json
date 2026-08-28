@@ -3,8 +3,8 @@
   "slug": "ub7",
   "city": "London",
   "borough": "Hillingdon",
-  "latitude": 51.50438180063294,
-  "longitude": -0.4691988528481012,
+  "latitude": 51.504502194127305,
+  "longitude": -0.46912412724306657,
   "wards": [
     "Heathrow Villages",
     "Pinkwell",
@@ -139,8 +139,9 @@
         "name": "Harmondsworth Primary School",
         "urn": "102384",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "09/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "School Road, Harmondsworth, West Drayton",
         "postcode": "UB7 0AU",
         "numberOfPupils": 213,
@@ -151,7 +152,8 @@
         "urn": "102385",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "15/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Harmondsworth Lane, West Drayton",
         "postcode": "UB7 0JQ",
         "numberOfPupils": 396,
@@ -162,7 +164,8 @@
         "urn": "102408",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/06/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Gordon Road, West Drayton",
         "postcode": "UB7 8AH",
         "numberOfPupils": 616,
@@ -173,7 +176,8 @@
         "urn": "102424",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Money Lane, West Drayton",
         "postcode": "UB7 7NX",
         "numberOfPupils": 235,
@@ -184,7 +188,8 @@
         "urn": "131638",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Requires improvement",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "26/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Sipson Road, West Drayton",
         "postcode": "UB7 9DL",
         "numberOfPupils": 562,
@@ -196,6 +201,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Inglenook, Sipson Lane",
         "postcode": "UB7 0JG",
         "numberOfPupils": 85,
@@ -206,7 +212,8 @@
         "urn": "139275",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Laurel Lane, West Drayton",
         "postcode": "UB7 7TX",
         "numberOfPupils": 267,
@@ -217,7 +224,8 @@
         "urn": "139302",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "06/07/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "High Street, Yiewsley, West Drayton",
         "postcode": "UB7 7QJ",
         "numberOfPupils": 399,
@@ -227,8 +235,9 @@
         "name": "St Martin's Church of England Primary School",
         "urn": "140484",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "20/09/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Rowan Road, West Drayton",
         "postcode": "UB7 7UF",
         "numberOfPupils": 206,
@@ -239,7 +248,8 @@
         "urn": "143714",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Falling Lane, Yiewsley, West Drayton",
         "postcode": "UB7 8AB",
         "numberOfPupils": 126,
@@ -251,6 +261,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Kingston Lane, West Drayton",
         "postcode": "UB7 9EA",
         "numberOfPupils": 649,
@@ -261,7 +272,8 @@
         "urn": "149033",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/03/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Falling Lane, Yiewsley, West Drayton",
         "postcode": "UB7 8AB",
         "numberOfPupils": 48,
@@ -273,6 +285,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Aviation House, Harmondsworth Lane, West Drayton",
         "postcode": "UB7 0LQ",
         "numberOfPupils": 51,
@@ -376,19 +389,99 @@
   "property": {
     "sales": [
       {
+        "address": "34, BETJEMAN COURT, YIEWSLEY",
+        "postcode": "UB7 7ST",
+        "price": 140000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, HEATHER LANE, YIEWSLEY",
+        "postcode": "UB7 8AL",
+        "price": 460000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, RUFFLE CLOSE",
+        "postcode": "UB7 9BP",
+        "price": 440000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "107, HORTON ROAD, YIEWSLEY",
+        "postcode": "UB7 8HS",
+        "price": 310000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "147, WISE LANE",
+        "postcode": "UB7 7EX",
+        "price": 505000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "88, FAIRWAY AVENUE",
+        "postcode": "UB7 7AW",
+        "price": 563000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "KEW APARTMENTS, 1, FLAT 21, WINTERGREEN BOULEVARD",
+        "postcode": "UB7 9FQ",
+        "price": 425000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, GURNARD CLOSE, YIEWSLEY",
+        "postcode": "UB7 7TT",
+        "price": 210000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "52, WRAYSBURY DRIVE, YIEWSLEY",
+        "postcode": "UB7 7FL",
+        "price": 480000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38A, HORTON ROAD, YIEWSLEY",
+        "postcode": "UB7 8EA",
+        "price": 460000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "53, OTTERFIELD ROAD, YIEWSLEY",
+        "postcode": "UB7 8PE",
+        "price": 470000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "LEXINGTON HOUSE, 35, FLAT 41, PARK LODGE AVENUE",
         "postcode": "UB7 9FJ",
         "price": 310000,
         "dateOfTransfer": "2026-06-15",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "144, LOWDELL CLOSE, YIEWSLEY",
-        "postcode": "UB7 8BD",
-        "price": 385000,
-        "dateOfTransfer": "2026-06-12",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -408,6 +501,14 @@
         "newBuild": false
       },
       {
+        "address": "144, LOWDELL CLOSE, YIEWSLEY",
+        "postcode": "UB7 8BD",
+        "price": 385000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "59, EDGAR ROAD, YIEWSLEY",
         "postcode": "UB7 8HN",
         "price": 440000,
@@ -416,11 +517,19 @@
         "newBuild": false
       },
       {
-        "address": "63, COLHAM AVENUE, YIEWSLEY",
-        "postcode": "UB7 8EU",
-        "price": 330000,
-        "dateOfTransfer": "2026-05-29",
+        "address": "41, ROWAN ROAD",
+        "postcode": "UB7 7UE",
+        "price": 515000,
+        "dateOfTransfer": "2026-06-05",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "61, OLD FARM ROAD",
+        "postcode": "UB7 7LE",
+        "price": 417000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -429,14 +538,6 @@
         "price": 490000,
         "dateOfTransfer": "2026-05-29",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, PEPLOW CLOSE, YIEWSLEY",
-        "postcode": "UB7 7XN",
-        "price": 237500,
-        "dateOfTransfer": "2026-05-29",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -456,11 +557,27 @@
         "newBuild": false
       },
       {
-        "address": "14, BAGLEY CLOSE",
-        "postcode": "UB7 7PZ",
-        "price": 600000,
-        "dateOfTransfer": "2026-05-27",
-        "propertyType": "Detached",
+        "address": "139, LOWDELL CLOSE, YIEWSLEY",
+        "postcode": "UB7 8RB",
+        "price": 237500,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, PEPLOW CLOSE, YIEWSLEY",
+        "postcode": "UB7 7XN",
+        "price": 237500,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "63, COLHAM AVENUE, YIEWSLEY",
+        "postcode": "UB7 8EU",
+        "price": 330000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -477,6 +594,14 @@
         "price": 410000,
         "dateOfTransfer": "2026-05-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, BAGLEY CLOSE",
+        "postcode": "UB7 7PZ",
+        "price": 600000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -608,6 +733,14 @@
         "newBuild": false
       },
       {
+        "address": "62, HATCH LANE, HARMONDSWORTH",
+        "postcode": "UB7 0AZ",
+        "price": 450000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "38, OTTER WAY, YIEWSLEY",
         "postcode": "UB7 8FA",
         "price": 365750,
@@ -616,11 +749,11 @@
         "newBuild": false
       },
       {
-        "address": "62, HATCH LANE, HARMONDSWORTH",
-        "postcode": "UB7 0AZ",
-        "price": 450000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Semi-detached",
+        "address": "484, SIPSON ROAD, SIPSON",
+        "postcode": "UB7 0HZ",
+        "price": 410000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -636,14 +769,6 @@
         "postcode": "UB7 7SG",
         "price": 345000,
         "dateOfTransfer": "2026-04-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "9, FAIRFIELD ROAD, YIEWSLEY",
-        "postcode": "UB7 8EY",
-        "price": 250000,
-        "dateOfTransfer": "2026-04-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -664,11 +789,11 @@
         "newBuild": false
       },
       {
-        "address": "6, WARWICK ROAD",
-        "postcode": "UB7 9BT",
-        "price": 660000,
-        "dateOfTransfer": "2026-04-01",
-        "propertyType": "Detached",
+        "address": "9, FAIRFIELD ROAD, YIEWSLEY",
+        "postcode": "UB7 8EY",
+        "price": 250000,
+        "dateOfTransfer": "2026-04-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -677,6 +802,22 @@
         "price": 390000,
         "dateOfTransfer": "2026-04-01",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, WARWICK ROAD",
+        "postcode": "UB7 9BT",
+        "price": 660000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "138, HIGH STREET, YIEWSLEY",
+        "postcode": "UB7 7BD",
+        "price": 249000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -832,17 +973,17 @@
         "newBuild": false
       },
       {
-        "address": "48, PORTERS WAY",
-        "postcode": "UB7 9AB",
-        "price": 540000,
+        "address": "10, KEATS WAY",
+        "postcode": "UB7 9DR",
+        "price": 515000,
         "dateOfTransfer": "2026-03-02",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "10, KEATS WAY",
-        "postcode": "UB7 9DR",
-        "price": 515000,
+        "address": "48, PORTERS WAY",
+        "postcode": "UB7 9AB",
+        "price": 540000,
         "dateOfTransfer": "2026-03-02",
         "propertyType": "Terraced",
         "newBuild": false
@@ -869,6 +1010,30 @@
         "price": 555000,
         "dateOfTransfer": "2026-02-25",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "119, LOWDELL CLOSE, YIEWSLEY",
+        "postcode": "UB7 8BA",
+        "price": 485000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, THE THICKET, YIEWSLEY",
+        "postcode": "UB7 8AS",
+        "price": 565000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "BRECON LODGE, 2, FLAT 49, WINTERGREEN BOULEVARD",
+        "postcode": "UB7 9GJ",
+        "price": 315000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -920,27 +1085,19 @@
         "newBuild": false
       },
       {
+        "address": "78, KEATS WAY",
+        "postcode": "UB7 9DU",
+        "price": 585000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "11, BRANDVILLE ROAD",
         "postcode": "UB7 9DA",
         "price": 480000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, MERRIVALE MEWS, YIEWSLEY",
-        "postcode": "UB7 7LY",
-        "price": 227500,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "TRENT COURT, 25, FLAT 17, BENTINCK ROAD, YIEWSLEY",
-        "postcode": "UB7 7RG",
-        "price": 141000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -952,11 +1109,27 @@
         "newBuild": false
       },
       {
+        "address": "TRENT COURT, 25, FLAT 17, BENTINCK ROAD, YIEWSLEY",
+        "postcode": "UB7 7RG",
+        "price": 141000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "103, HEATHER LANE, YIEWSLEY",
         "postcode": "UB7 8AP",
         "price": 625000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, MERRIVALE MEWS, YIEWSLEY",
+        "postcode": "UB7 7LY",
+        "price": 227500,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -984,17 +1157,17 @@
         "newBuild": false
       },
       {
-        "address": "44, MAGNOLIA STREET",
-        "postcode": "UB7 7UN",
-        "price": 450000,
+        "address": "130, ROWAN ROAD",
+        "postcode": "UB7 7UE",
+        "price": 465000,
         "dateOfTransfer": "2026-01-22",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "130, ROWAN ROAD",
-        "postcode": "UB7 7UE",
-        "price": 465000,
+        "address": "44, MAGNOLIA STREET",
+        "postcode": "UB7 7UN",
+        "price": 450000,
         "dateOfTransfer": "2026-01-22",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1008,16 +1181,16 @@
         "newBuild": false
       },
       {
-        "address": "46, OLD FARM ROAD",
-        "postcode": "UB7 7LE",
+        "address": "23, RUFFLE CLOSE",
+        "postcode": "UB7 9BP",
         "price": 425000,
         "dateOfTransfer": "2026-01-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "23, RUFFLE CLOSE",
-        "postcode": "UB7 9BP",
+        "address": "46, OLD FARM ROAD",
+        "postcode": "UB7 7LE",
         "price": 425000,
         "dateOfTransfer": "2026-01-20",
         "propertyType": "Terraced",
@@ -1056,19 +1229,19 @@
         "newBuild": false
       },
       {
-        "address": "ORCHARD COURT, 11, THE ISLAND",
-        "postcode": "UB7 0ES",
-        "price": 149000,
-        "dateOfTransfer": "2026-01-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "18, PROVIDENCE ROAD, YIEWSLEY",
         "postcode": "UB7 8HJ",
         "price": 520000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ORCHARD COURT, 11, THE ISLAND",
+        "postcode": "UB7 0ES",
+        "price": 149000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1088,19 +1261,19 @@
         "newBuild": false
       },
       {
-        "address": "34, FRAYS AVENUE",
-        "postcode": "UB7 7AG",
-        "price": 825000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "BRITANNIA COURT, UNIT 9, THE GREEN",
         "postcode": "UB7 7PN",
         "price": 30000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "34, FRAYS AVENUE",
+        "postcode": "UB7 7AG",
+        "price": 825000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1205,6 +1378,14 @@
         "price": 540000,
         "dateOfTransfer": "2025-12-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, COLNE AVENUE",
+        "postcode": "UB7 7AL",
+        "price": 710000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1352,17 +1533,17 @@
         "newBuild": false
       },
       {
-        "address": "25A, PINGLESTONE CLOSE, HARMONDSWORTH",
-        "postcode": "UB7 0DJ",
-        "price": 182000,
+        "address": "BROUGHTON COURT, 4A, FLAT 15, GARNET PLACE",
+        "postcode": "UB7 7GF",
+        "price": 485000,
         "dateOfTransfer": "2025-11-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BROUGHTON COURT, 4A, FLAT 15, GARNET PLACE",
-        "postcode": "UB7 7GF",
-        "price": 485000,
+        "address": "25A, PINGLESTONE CLOSE, HARMONDSWORTH",
+        "postcode": "UB7 0DJ",
+        "price": 182000,
         "dateOfTransfer": "2025-11-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1416,6 +1597,14 @@
         "newBuild": false
       },
       {
+        "address": "KEW APARTMENTS, 3, FLAT 36, WINTERGREEN BOULEVARD",
+        "postcode": "UB7 9FQ",
+        "price": 345000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "15, FAIRWAY AVENUE",
         "postcode": "UB7 7AN",
         "price": 585000,
@@ -1440,27 +1629,11 @@
         "newBuild": false
       },
       {
-        "address": "KEW APARTMENTS, 3, FLAT 36, WINTERGREEN BOULEVARD",
-        "postcode": "UB7 9FQ",
-        "price": 345000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2, ACACIA MEWS, HARMONDSWORTH",
         "postcode": "UB7 0AG",
         "price": 120500,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "50, DRAYTON GARDENS",
-        "postcode": "UB7 7LG",
-        "price": 550000,
-        "dateOfTransfer": "2025-10-29",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1472,11 +1645,11 @@
         "newBuild": false
       },
       {
-        "address": "164, LOWDELL CLOSE, YIEWSLEY",
-        "postcode": "UB7 8BD",
-        "price": 215000,
-        "dateOfTransfer": "2025-10-27",
-        "propertyType": "Flat/Maisonette",
+        "address": "50, DRAYTON GARDENS",
+        "postcode": "UB7 7LG",
+        "price": 550000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1488,11 +1661,19 @@
         "newBuild": false
       },
       {
-        "address": "39, ROWAN ROAD",
-        "postcode": "UB7 7UD",
-        "price": 510000,
-        "dateOfTransfer": "2025-10-24",
+        "address": "11, BLACKTHORN AVENUE",
+        "postcode": "UB7 9EU",
+        "price": 480000,
+        "dateOfTransfer": "2025-10-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "164, LOWDELL CLOSE, YIEWSLEY",
+        "postcode": "UB7 8BD",
+        "price": 215000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1504,34 +1685,18 @@
         "newBuild": false
       },
       {
+        "address": "39, ROWAN ROAD",
+        "postcode": "UB7 7UD",
+        "price": 510000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "RECTORY COURT, 191, FLAT 4, STATION ROAD",
         "postcode": "UB7 7NL",
         "price": 280000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WINDSOR COURT, 3, FLAT 57, PENNYROYAL DRIVE",
-        "postcode": "UB7 9GX",
-        "price": 355000,
-        "dateOfTransfer": "2025-10-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "25, CAROLINE CLOSE",
-        "postcode": "UB7 7LF",
-        "price": 148000,
-        "dateOfTransfer": "2025-10-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "25, BOXWOOD CLOSE",
-        "postcode": "UB7 9PD",
-        "price": 145000,
-        "dateOfTransfer": "2025-10-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1549,6 +1714,38 @@
         "price": 540000,
         "dateOfTransfer": "2025-10-16",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, BOXWOOD CLOSE",
+        "postcode": "UB7 9PD",
+        "price": 145000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, CAROLINE CLOSE",
+        "postcode": "UB7 7LF",
+        "price": 148000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79, GREAT BENTY",
+        "postcode": "UB7 7UR",
+        "price": 400000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WINDSOR COURT, 3, FLAT 57, PENNYROYAL DRIVE",
+        "postcode": "UB7 9GX",
+        "price": 355000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1584,11 +1781,11 @@
         "newBuild": false
       },
       {
-        "address": "TERMINAL 5, 420, PREMIER INN, BATH ROAD",
-        "postcode": "UB7 0EA",
-        "price": 57410000,
+        "address": "51, BENTINCK ROAD, YIEWSLEY",
+        "postcode": "UB7 7RG",
+        "price": 420000,
         "dateOfTransfer": "2025-10-03",
-        "propertyType": "Other",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1600,19 +1797,11 @@
         "newBuild": false
       },
       {
-        "address": "51, BENTINCK ROAD, YIEWSLEY",
-        "postcode": "UB7 7RG",
-        "price": 420000,
+        "address": "TERMINAL 5, 420, PREMIER INN, BATH ROAD",
+        "postcode": "UB7 0EA",
+        "price": 57410000,
         "dateOfTransfer": "2025-10-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "35, ALMOND AVENUE",
-        "postcode": "UB7 9EL",
-        "price": 525000,
-        "dateOfTransfer": "2025-10-02",
-        "propertyType": "Semi-detached",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1624,11 +1813,27 @@
         "newBuild": false
       },
       {
+        "address": "35, ALMOND AVENUE",
+        "postcode": "UB7 9EL",
+        "price": 525000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "75, KEATS WAY",
         "postcode": "UB7 9DU",
         "price": 595000,
         "dateOfTransfer": "2025-10-01",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, SWAINS CLOSE",
+        "postcode": "UB7 7JX",
+        "price": 385000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1648,11 +1853,19 @@
         "newBuild": false
       },
       {
-        "address": "2, SWAINS CLOSE",
-        "postcode": "UB7 7JX",
-        "price": 385000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Other",
+        "address": "3, LAVENDER RISE",
+        "postcode": "UB7 9AW",
+        "price": 440000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "16, ELRUGE CLOSE",
+        "postcode": "UB7 7ES",
+        "price": 325000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1664,19 +1877,19 @@
         "newBuild": false
       },
       {
-        "address": "3, LAVENDER RISE",
-        "postcode": "UB7 9AW",
-        "price": 440000,
-        "dateOfTransfer": "2025-09-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "76, HATCH LANE, HARMONDSWORTH",
         "postcode": "UB7 0BA",
         "price": 500000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, OLD FARM ROAD",
+        "postcode": "UB7 7LE",
+        "price": 465000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1690,14 +1903,6 @@
       {
         "address": "16, OAK AVENUE",
         "postcode": "UB7 9EP",
-        "price": 465000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "17, OLD FARM ROAD",
-        "postcode": "UB7 7LE",
         "price": 465000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Terraced",
@@ -1720,9 +1925,17 @@
         "newBuild": false
       },
       {
-        "address": "BROUGHTON COURT, 4A, FLAT 14, GARNET PLACE",
-        "postcode": "UB7 7GF",
-        "price": 375000,
+        "address": "95, DRAYTON GARDENS",
+        "postcode": "UB7 7LH",
+        "price": 515000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HURLEY HOUSE, 31, 6, PARK LODGE AVENUE",
+        "postcode": "UB7 9FH",
+        "price": 281000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1736,19 +1949,11 @@
         "newBuild": false
       },
       {
-        "address": "HURLEY HOUSE, 31, 6, PARK LODGE AVENUE",
-        "postcode": "UB7 9FH",
-        "price": 281000,
+        "address": "BROUGHTON COURT, 4A, FLAT 14, GARNET PLACE",
+        "postcode": "UB7 7GF",
+        "price": 375000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "95, DRAYTON GARDENS",
-        "postcode": "UB7 7LH",
-        "price": 515000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1768,17 +1973,17 @@
         "newBuild": false
       },
       {
-        "address": "24, DRAYTON GARDENS",
-        "postcode": "UB7 7LG",
-        "price": 223000,
+        "address": "7, OTTER WAY, YIEWSLEY",
+        "postcode": "UB7 8FA",
+        "price": 242000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "7, OTTER WAY, YIEWSLEY",
-        "postcode": "UB7 8FA",
-        "price": 242000,
+        "address": "24, DRAYTON GARDENS",
+        "postcode": "UB7 7LG",
+        "price": 223000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1816,6 +2021,22 @@
         "newBuild": false
       },
       {
+        "address": "49, BLOSSOM WAY",
+        "postcode": "UB7 9HF",
+        "price": 585000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "100, SIPSON ROAD",
+        "postcode": "UB7 9DW",
+        "price": 525000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "WINDSOR COURT, 3, FLAT 47, PENNYROYAL DRIVE",
         "postcode": "UB7 9GX",
         "price": 360000,
@@ -1837,22 +2058,6 @@
         "price": 300000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "49, BLOSSOM WAY",
-        "postcode": "UB7 9HF",
-        "price": 585000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "100, SIPSON ROAD",
-        "postcode": "UB7 9DW",
-        "price": 525000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1904,14 +2109,6 @@
         "newBuild": false
       },
       {
-        "address": "134, ADMIRALTY CLOSE",
-        "postcode": "UB7 9NJ",
-        "price": 270000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "39, BLACKTHORN AVENUE",
         "postcode": "UB7 9EX",
         "price": 500000,
@@ -1920,10 +2117,10 @@
         "newBuild": false
       },
       {
-        "address": "31, GURNARD CLOSE, YIEWSLEY",
-        "postcode": "UB7 7TT",
-        "price": 160000,
-        "dateOfTransfer": "2025-08-28",
+        "address": "134, ADMIRALTY CLOSE",
+        "postcode": "UB7 9NJ",
+        "price": 270000,
+        "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1944,6 +2141,14 @@
         "newBuild": false
       },
       {
+        "address": "31, GURNARD CLOSE, YIEWSLEY",
+        "postcode": "UB7 7TT",
+        "price": 160000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "9, BRANDVILLE ROAD",
         "postcode": "UB7 9DA",
         "price": 610000,
@@ -1960,11 +2165,11 @@
         "newBuild": false
       },
       {
-        "address": "BROUGHTON COURT, 4A, FLAT 12, GARNET PLACE",
-        "postcode": "UB7 7GF",
-        "price": 395000,
+        "address": "28, BRANDVILLE ROAD",
+        "postcode": "UB7 9DA",
+        "price": 605000,
         "dateOfTransfer": "2025-08-22",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1976,14 +2181,6 @@
         "newBuild": false
       },
       {
-        "address": "28, BRANDVILLE ROAD",
-        "postcode": "UB7 9DA",
-        "price": 605000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "4, COLHAM MILL ROAD",
         "postcode": "UB7 7AD",
         "price": 420000,
@@ -1992,17 +2189,25 @@
         "newBuild": false
       },
       {
-        "address": "17, QUEENS ROAD",
-        "postcode": "UB7 9EG",
-        "price": 500000,
+        "address": "BROUGHTON COURT, 4A, FLAT 12, GARNET PLACE",
+        "postcode": "UB7 7GF",
+        "price": 395000,
         "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "63, EAST ROAD",
         "postcode": "UB7 9HA",
         "price": 475000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, QUEENS ROAD",
+        "postcode": "UB7 9EG",
+        "price": 500000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2040,19 +2245,19 @@
         "newBuild": false
       },
       {
-        "address": "LITTLE GREBE HOUSE, 130, 15, WRAYSBURY DRIVE, YIEWSLEY",
-        "postcode": "UB7 7FS",
-        "price": 305000,
-        "dateOfTransfer": "2025-08-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "48, WINNOCK ROAD, YIEWSLEY",
         "postcode": "UB7 7RH",
         "price": 450000,
         "dateOfTransfer": "2025-08-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LITTLE GREBE HOUSE, 130, 15, WRAYSBURY DRIVE, YIEWSLEY",
+        "postcode": "UB7 7FS",
+        "price": 305000,
+        "dateOfTransfer": "2025-08-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2080,14 +2285,6 @@
         "newBuild": false
       },
       {
-        "address": "23, TAVISTOCK ROAD, YIEWSLEY",
-        "postcode": "UB7 7QY",
-        "price": 455000,
-        "dateOfTransfer": "2025-08-04",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "87, MILL ROAD",
         "postcode": "UB7 7EQ",
         "price": 5296104,
@@ -2096,17 +2293,25 @@
         "newBuild": false
       },
       {
-        "address": "FITZROY COURT, 2, FLAT 11, GARNET PLACE",
-        "postcode": "UB7 7GB",
-        "price": 345000,
-        "dateOfTransfer": "2025-08-01",
-        "propertyType": "Flat/Maisonette",
+        "address": "23, TAVISTOCK ROAD, YIEWSLEY",
+        "postcode": "UB7 7QY",
+        "price": 455000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "6, BETJEMAN COURT, YIEWSLEY",
         "postcode": "UB7 7ST",
         "price": 168000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FITZROY COURT, 2, FLAT 11, GARNET PLACE",
+        "postcode": "UB7 7GB",
+        "price": 345000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2304,17 +2509,17 @@
         "newBuild": false
       },
       {
-        "address": "124, ADMIRALTY CLOSE",
-        "postcode": "UB7 9NJ",
-        "price": 260000,
+        "address": "18, FRANKSWOOD AVENUE, YIEWSLEY",
+        "postcode": "UB7 8QR",
+        "price": 243500,
         "dateOfTransfer": "2025-06-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "18, FRANKSWOOD AVENUE, YIEWSLEY",
-        "postcode": "UB7 8QR",
-        "price": 243500,
+        "address": "124, ADMIRALTY CLOSE",
+        "postcode": "UB7 9NJ",
+        "price": 260000,
         "dateOfTransfer": "2025-06-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2360,10 +2565,26 @@
         "newBuild": false
       },
       {
+        "address": "DELAFORD HOUSE, FLAT 6, COLHAM MILL ROAD",
+        "postcode": "UB7 7AD",
+        "price": 272000,
+        "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "ARLINGTON HOUSE, 1, FLAT 9, PARK LODGE AVENUE",
         "postcode": "UB7 9FD",
         "price": 290000,
         "dateOfTransfer": "2025-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LEXINGTON HOUSE, 35, FLAT 44, PARK LODGE AVENUE",
+        "postcode": "UB7 9FJ",
+        "price": 195000,
+        "dateOfTransfer": "2025-06-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2373,14 +2594,6 @@
         "price": 522500,
         "dateOfTransfer": "2025-06-24",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "LEXINGTON HOUSE, 35, FLAT 44, PARK LODGE AVENUE",
-        "postcode": "UB7 9FJ",
-        "price": 195000,
-        "dateOfTransfer": "2025-06-24",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2400,27 +2613,11 @@
         "newBuild": false
       },
       {
-        "address": "29, BLOSSOM WAY",
-        "postcode": "UB7 9HF",
-        "price": 630000,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "16, BETJEMAN COURT, YIEWSLEY",
         "postcode": "UB7 7ST",
         "price": 185000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "46, EAST ROAD",
-        "postcode": "UB7 9EZ",
-        "price": 485000,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2432,11 +2629,27 @@
         "newBuild": false
       },
       {
+        "address": "46, EAST ROAD",
+        "postcode": "UB7 9EZ",
+        "price": 485000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "617, SIPSON ROAD, SIPSON",
         "postcode": "UB7 0JE",
         "price": 525000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "29, BLOSSOM WAY",
+        "postcode": "UB7 9HF",
+        "price": 630000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2512,14 +2725,6 @@
         "newBuild": false
       },
       {
-        "address": "166, LOWDELL CLOSE, YIEWSLEY",
-        "postcode": "UB7 8BD",
-        "price": 197000,
-        "dateOfTransfer": "2025-06-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "43, SUMMERHOUSE LANE, HARMONDSWORTH",
         "postcode": "UB7 0AW",
         "price": 500500,
@@ -2528,19 +2733,35 @@
         "newBuild": false
       },
       {
-        "address": "1, CHESTNUT CLOSE",
-        "postcode": "UB7 0JT",
-        "price": 300000,
+        "address": "166, LOWDELL CLOSE, YIEWSLEY",
+        "postcode": "UB7 8BD",
+        "price": 197000,
+        "dateOfTransfer": "2025-06-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, PEAR TREE AVENUE, YIEWSLEY",
+        "postcode": "UB7 8DG",
+        "price": 500000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "17, LIME AVENUE, YIEWSLEY",
-        "postcode": "UB7 8BN",
-        "price": 460000,
+        "address": "35, ALBERT ROAD, YIEWSLEY",
+        "postcode": "UB7 8ES",
+        "price": 452500,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "60, SUMMERHOUSE LANE, HARMONDSWORTH",
+        "postcode": "UB7 0AW",
+        "price": 475000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2552,9 +2773,9 @@
         "newBuild": false
       },
       {
-        "address": "42, PEAR TREE AVENUE, YIEWSLEY",
-        "postcode": "UB7 8DG",
-        "price": 500000,
+        "address": "1, CHESTNUT CLOSE",
+        "postcode": "UB7 0JT",
+        "price": 300000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2584,19 +2805,11 @@
         "newBuild": false
       },
       {
-        "address": "35, ALBERT ROAD, YIEWSLEY",
-        "postcode": "UB7 8ES",
-        "price": 452500,
+        "address": "17, LIME AVENUE, YIEWSLEY",
+        "postcode": "UB7 8BN",
+        "price": 460000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "60, SUMMERHOUSE LANE, HARMONDSWORTH",
-        "postcode": "UB7 0AW",
-        "price": 475000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2720,6 +2933,14 @@
         "newBuild": false
       },
       {
+        "address": "AUSTEN HOUSE, 113, 6, HIGH STREET, YIEWSLEY",
+        "postcode": "UB7 7QL",
+        "price": 266500,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "WATERFORD HOUSE, FLAT 15, THORNEY MILL ROAD",
         "postcode": "UB7 7DL",
         "price": 270000,
@@ -2736,19 +2957,19 @@
         "newBuild": false
       },
       {
-        "address": "37, OTTERFIELD ROAD, YIEWSLEY",
-        "postcode": "UB7 8PE",
-        "price": 445000,
-        "dateOfTransfer": "2025-05-02",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "35, HAWTHORNE CRESCENT",
         "postcode": "UB7 9PA",
         "price": 130000,
         "dateOfTransfer": "2025-05-02",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, OTTERFIELD ROAD, YIEWSLEY",
+        "postcode": "UB7 8PE",
+        "price": 445000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2808,19 +3029,19 @@
         "newBuild": false
       },
       {
-        "address": "57, THORNTON AVENUE",
-        "postcode": "UB7 9JU",
-        "price": 405000,
-        "dateOfTransfer": "2025-04-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "ROWLOCK HOUSE, 13, TROUT ROAD, YIEWSLEY",
         "postcode": "UB7 7FX",
         "price": 305000,
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "57, THORNTON AVENUE",
+        "postcode": "UB7 9JU",
+        "price": 405000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2872,25 +3093,9 @@
         "newBuild": false
       },
       {
-        "address": "2, BROOKLYN WAY",
-        "postcode": "UB7 7PD",
-        "price": 537500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "34, PEAR TREE AVENUE, YIEWSLEY",
-        "postcode": "UB7 8DG",
-        "price": 430000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "33, CHERRY LANE",
-        "postcode": "UB7 9HB",
-        "price": 440000,
+        "address": "12, HEATHROW CLOSE",
+        "postcode": "UB7 0ER",
+        "price": 313500,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2907,38 +3112,6 @@
         "address": "27, PIPPINS CLOSE",
         "postcode": "UB7 7XQ",
         "price": 238000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "171, WHITETHORN AVENUE, YIEWSLEY",
-        "postcode": "UB7 8LD",
-        "price": 575000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "30, FRAYS CLOSE",
-        "postcode": "UB7 7PF",
-        "price": 490000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "2, BERBERIS WALK",
-        "postcode": "UB7 7TZ",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "24, GURNARD CLOSE, YIEWSLEY",
-        "postcode": "UB7 7TT",
-        "price": 237677,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2968,6 +3141,62 @@
         "newBuild": false
       },
       {
+        "address": "171, WHITETHORN AVENUE, YIEWSLEY",
+        "postcode": "UB7 8LD",
+        "price": 575000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, FRAYS CLOSE",
+        "postcode": "UB7 7PF",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, GURNARD CLOSE, YIEWSLEY",
+        "postcode": "UB7 7TT",
+        "price": 237677,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, BROOKLYN WAY",
+        "postcode": "UB7 7PD",
+        "price": 537500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "34, PEAR TREE AVENUE, YIEWSLEY",
+        "postcode": "UB7 8DG",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, BERBERIS WALK",
+        "postcode": "UB7 7TZ",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, CHERRY LANE",
+        "postcode": "UB7 9HB",
+        "price": 440000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "3, OLD FARM ROAD",
         "postcode": "UB7 7LE",
         "price": 425000,
@@ -2979,14 +3208,6 @@
         "address": "3, FIR TREE AVENUE",
         "postcode": "UB7 9ET",
         "price": 515000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, HEATHROW CLOSE",
-        "postcode": "UB7 0ER",
-        "price": 313500,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3048,6 +3269,22 @@
         "newBuild": false
       },
       {
+        "address": "23, SIPSON ROAD",
+        "postcode": "UB7 9DQ",
+        "price": 477000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "131, WORDSWORTH WAY",
+        "postcode": "UB7 9HY",
+        "price": 285000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "114, FAIRWAY AVENUE",
         "postcode": "UB7 7AP",
         "price": 470000,
@@ -3056,11 +3293,27 @@
         "newBuild": false
       },
       {
+        "address": "29, EVERGREEN DRIVE",
+        "postcode": "UB7 9GQ",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "22, NEW GARDEN DRIVE",
         "postcode": "UB7 7JA",
         "price": 200000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "140, FAIRWAY AVENUE",
+        "postcode": "UB7 7AP",
+        "price": 510000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3088,14 +3341,6 @@
         "newBuild": false
       },
       {
-        "address": "1, RUTTERS CLOSE",
-        "postcode": "UB7 9AL",
-        "price": 475000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "6, SCOTT CLOSE",
         "postcode": "UB7 9DX",
         "price": 522000,
@@ -3104,19 +3349,11 @@
         "newBuild": false
       },
       {
-        "address": "29, EVERGREEN DRIVE",
-        "postcode": "UB7 9GQ",
-        "price": 500000,
+        "address": "1, RUTTERS CLOSE",
+        "postcode": "UB7 9AL",
+        "price": 475000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "140, FAIRWAY AVENUE",
-        "postcode": "UB7 7AP",
-        "price": 510000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3125,22 +3362,6 @@
         "price": 495000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "23, SIPSON ROAD",
-        "postcode": "UB7 9DQ",
-        "price": 477000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "131, WORDSWORTH WAY",
-        "postcode": "UB7 9HY",
-        "price": 285000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3160,14 +3381,6 @@
         "newBuild": false
       },
       {
-        "address": "WINDSOR COURT, 3, FLAT 45, PENNYROYAL DRIVE",
-        "postcode": "UB7 9GX",
-        "price": 360000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "23, LILAC PLACE, YIEWSLEY",
         "postcode": "UB7 8LR",
         "price": 320000,
@@ -3181,6 +3394,22 @@
         "price": 637000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WINDSOR COURT, 3, FLAT 45, PENNYROYAL DRIVE",
+        "postcode": "UB7 9GX",
+        "price": 360000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GARDEN COURT, 70, FLAT 11, STATION ROAD",
+        "postcode": "UB7 7FA",
+        "price": 195000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3200,14 +3429,6 @@
         "newBuild": false
       },
       {
-        "address": "GARDEN COURT, 70, FLAT 11, STATION ROAD",
-        "postcode": "UB7 7FA",
-        "price": 195000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "50, LAVENDER RISE",
         "postcode": "UB7 9AP",
         "price": 407500,
@@ -3221,14 +3442,6 @@
         "price": 340000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "74, FRANKSWOOD AVENUE, YIEWSLEY",
-        "postcode": "UB7 8QS",
-        "price": 425000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3248,11 +3461,19 @@
         "newBuild": false
       },
       {
-        "address": "RICHMOND COURT, 7, FLAT 2, PENNYROYAL DRIVE",
-        "postcode": "UB7 9FF",
-        "price": 245000,
+        "address": "74, FRANKSWOOD AVENUE, YIEWSLEY",
+        "postcode": "UB7 8QS",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "84, THE COPPICE, YIEWSLEY",
+        "postcode": "UB7 8DS",
+        "price": 345000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3272,11 +3493,11 @@
         "newBuild": false
       },
       {
-        "address": "84, THE COPPICE, YIEWSLEY",
-        "postcode": "UB7 8DS",
-        "price": 345000,
+        "address": "RICHMOND COURT, 7, FLAT 2, PENNYROYAL DRIVE",
+        "postcode": "UB7 9FF",
+        "price": 245000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3296,19 +3517,19 @@
         "newBuild": false
       },
       {
-        "address": "20, BELLCLOSE ROAD",
-        "postcode": "UB7 9DE",
-        "price": 475000,
-        "dateOfTransfer": "2025-03-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "19, FAIRFIELD ROAD, YIEWSLEY",
         "postcode": "UB7 8EY",
         "price": 220000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, BELLCLOSE ROAD",
+        "postcode": "UB7 9DE",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3336,6 +3557,14 @@
         "newBuild": false
       },
       {
+        "address": "21, CONSTABULARY CLOSE",
+        "postcode": "UB7 7GE",
+        "price": 370000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "134, FAIRWAY AVENUE",
         "postcode": "UB7 7AP",
         "price": 500000,
@@ -3344,11 +3573,11 @@
         "newBuild": false
       },
       {
-        "address": "21, CONSTABULARY CLOSE",
-        "postcode": "UB7 7GE",
-        "price": 370000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
+        "address": "40, RUFFLE CLOSE",
+        "postcode": "UB7 9BP",
+        "price": 570000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3368,22 +3597,6 @@
         "newBuild": false
       },
       {
-        "address": "40, RUFFLE CLOSE",
-        "postcode": "UB7 9BP",
-        "price": 570000,
-        "dateOfTransfer": "2025-03-13",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "30, SUMMER DRIVE",
-        "postcode": "UB7 9GD",
-        "price": 460000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "KIRK HOUSE, 97, FLAT 12, HIGH STREET, YIEWSLEY",
         "postcode": "UB7 7GJ",
         "price": 260000,
@@ -3392,11 +3605,11 @@
         "newBuild": false
       },
       {
-        "address": "9, TRIANGLE MEWS, YIEWSLEY",
-        "postcode": "UB7 8FB",
-        "price": 515000,
-        "dateOfTransfer": "2025-03-06",
-        "propertyType": "Semi-detached",
+        "address": "30, SUMMER DRIVE",
+        "postcode": "UB7 9GD",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3413,6 +3626,14 @@
         "price": 195000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, TRIANGLE MEWS, YIEWSLEY",
+        "postcode": "UB7 8FB",
+        "price": 515000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3448,22 +3669,6 @@
         "newBuild": false
       },
       {
-        "address": "ARLINGTON HOUSE, 1, FLAT 33, PARK LODGE AVENUE",
-        "postcode": "UB7 9FD",
-        "price": 225000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "41, BYRON WAY",
-        "postcode": "UB7 9JD",
-        "price": 250000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "3, WILLOW AVENUE, YIEWSLEY",
         "postcode": "UB7 8BW",
         "price": 400000,
@@ -3485,6 +3690,22 @@
         "price": 480000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ARLINGTON HOUSE, 1, FLAT 33, PARK LODGE AVENUE",
+        "postcode": "UB7 9FD",
+        "price": 225000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, BYRON WAY",
+        "postcode": "UB7 9JD",
+        "price": 250000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3512,14 +3733,6 @@
         "newBuild": false
       },
       {
-        "address": "DUVAL HOUSE, FLAT 16, MEADOWLEA CLOSE, HARMONDSWORTH",
-        "postcode": "UB7 0BX",
-        "price": 248000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "74, MILL ROAD",
         "postcode": "UB7 7EH",
         "price": 528550,
@@ -3531,6 +3744,14 @@
         "address": "2, MERRIVALE MEWS, YIEWSLEY",
         "postcode": "UB7 7LY",
         "price": 210000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DUVAL HOUSE, FLAT 16, MEADOWLEA CLOSE, HARMONDSWORTH",
+        "postcode": "UB7 0BX",
+        "price": 248000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3608,14 +3829,6 @@
         "newBuild": false
       },
       {
-        "address": "19, ST STEPHENS ROAD, YIEWSLEY",
-        "postcode": "UB7 7RL",
-        "price": 745000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "5, ELRUGE CLOSE",
         "postcode": "UB7 7ES",
         "price": 530000,
@@ -3645,6 +3858,14 @@
         "price": 250000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, ST STEPHENS ROAD, YIEWSLEY",
+        "postcode": "UB7 7RL",
+        "price": 745000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3696,22 +3917,6 @@
         "newBuild": false
       },
       {
-        "address": "8, HARMONDSWORTH ROAD",
-        "postcode": "UB7 9JS",
-        "price": 315000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "49, CHERRY LANE",
-        "postcode": "UB7 9HB",
-        "price": 600000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "126, FAIRWAY AVENUE",
         "postcode": "UB7 7AP",
         "price": 557500,
@@ -3728,6 +3933,14 @@
         "newBuild": false
       },
       {
+        "address": "49, CHERRY LANE",
+        "postcode": "UB7 9HB",
+        "price": 600000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "85, HARMONDSWORTH ROAD",
         "postcode": "UB7 9JP",
         "price": 295500,
@@ -3741,6 +3954,14 @@
         "price": 550000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, HARMONDSWORTH ROAD",
+        "postcode": "UB7 9JS",
+        "price": 315000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3784,19 +4005,19 @@
         "newBuild": false
       },
       {
-        "address": "24, EAST ROAD",
-        "postcode": "UB7 9EZ",
-        "price": 455000,
-        "dateOfTransfer": "2025-01-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "WATERFORD HOUSE, FLAT 2, THORNEY MILL ROAD",
         "postcode": "UB7 7DL",
         "price": 255000,
         "dateOfTransfer": "2025-01-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, EAST ROAD",
+        "postcode": "UB7 9EZ",
+        "price": 455000,
+        "dateOfTransfer": "2025-01-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3936,7 +4157,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 541992,
+    "averagePrice": 534780,
     "medianPrice": 420000
   },
   "representatives": {

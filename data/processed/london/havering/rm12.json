@@ -3,8 +3,8 @@
   "slug": "rm12",
   "city": "London",
   "borough": "Havering",
-  "latitude": 51.552601084394894,
-  "longitude": 0.20755265127388556,
+  "latitude": 51.55213267972746,
+  "longitude": 0.207233465076661,
   "wards": [
     "Elm Park",
     "Hacton",
@@ -171,8 +171,9 @@
         "name": "Elm Park Primary School",
         "urn": "102272",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "29/09/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "South End Road, Elm Park, Hornchurch",
         "postcode": "RM12 5UA",
         "numberOfPupils": 419,
@@ -182,8 +183,9 @@
         "name": "Suttons Primary School",
         "urn": "102283",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "12/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Suttons Lane, Hornchurch",
         "postcode": "RM12 6RP",
         "numberOfPupils": 468,
@@ -194,7 +196,8 @@
         "urn": "102316",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bonington Road, Hornchurch",
         "postcode": "RM12 6TH",
         "numberOfPupils": 421,
@@ -204,8 +207,9 @@
         "name": "St Mary's Catholic Primary School",
         "urn": "102329",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "26/04/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hornchurch Road, Hornchurch",
         "postcode": "RM12 4TL",
         "numberOfPupils": 414,
@@ -215,8 +219,9 @@
         "name": "St Alban's Catholic Primary School",
         "urn": "102336",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "04/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Heron Flight Avenue, Hornchurch",
         "postcode": "RM12 5LN",
         "numberOfPupils": 215,
@@ -227,7 +232,8 @@
         "urn": "131590",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Requires improvement",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "27/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Tangmere Crescent, Hornchurch",
         "postcode": "RM12 5PP",
         "numberOfPupils": 268,
@@ -237,8 +243,9 @@
         "name": "Abbs Cross Academy and Arts College",
         "urn": "136663",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "14/12/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Abbs Cross Lane, Hornchurch",
         "postcode": "RM12 4YB",
         "numberOfPupils": 882,
@@ -249,7 +256,8 @@
         "urn": "143216",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Benhurst Avenue, Elm Park, Hornchurch",
         "postcode": "RM12 4QS",
         "numberOfPupils": 410,
@@ -261,6 +269,7 @@
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Broadstone Road, Hornchurch",
         "postcode": "RM12 4AJ",
         "numberOfPupils": 661,
@@ -271,7 +280,8 @@
         "urn": "145111",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "15/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Rainsford Way, Hornchurch",
         "postcode": "RM12 4BP",
         "numberOfPupils": 456,
@@ -281,8 +291,9 @@
         "name": "Hacton Primary School",
         "urn": "146136",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "14/10/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Chepstow Avenue, Hornchurch",
         "postcode": "RM12 6AU",
         "numberOfPupils": 640,
@@ -293,7 +304,8 @@
         "urn": "146309",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "10/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Suttons Lane, Hornchurch",
         "postcode": "RM12 6RT",
         "numberOfPupils": 732,
@@ -305,97 +317,289 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 236,
-        "violentCrimes": 81,
-        "propertyCrimes": 72
+        "totalCrimes": 245,
+        "violentCrimes": 85,
+        "propertyCrimes": 74
       },
       {
         "month": "2025-08",
-        "totalCrimes": 270,
-        "violentCrimes": 94,
+        "totalCrimes": 269,
+        "violentCrimes": 95,
         "propertyCrimes": 95
       },
       {
         "month": "2025-09",
-        "totalCrimes": 246,
-        "violentCrimes": 84,
-        "propertyCrimes": 97
+        "totalCrimes": 245,
+        "violentCrimes": 83,
+        "propertyCrimes": 98
       },
       {
         "month": "2025-10",
-        "totalCrimes": 238,
-        "violentCrimes": 83,
-        "propertyCrimes": 81
+        "totalCrimes": 232,
+        "violentCrimes": 80,
+        "propertyCrimes": 80
       },
       {
         "month": "2025-11",
-        "totalCrimes": 245,
-        "violentCrimes": 82,
-        "propertyCrimes": 93
+        "totalCrimes": 246,
+        "violentCrimes": 85,
+        "propertyCrimes": 90
       },
       {
         "month": "2025-12",
-        "totalCrimes": 225,
-        "violentCrimes": 74,
-        "propertyCrimes": 94
+        "totalCrimes": 218,
+        "violentCrimes": 71,
+        "propertyCrimes": 92
       },
       {
         "month": "2026-01",
-        "totalCrimes": 230,
-        "violentCrimes": 71,
-        "propertyCrimes": 91
+        "totalCrimes": 225,
+        "violentCrimes": 69,
+        "propertyCrimes": 92
       },
       {
         "month": "2026-02",
-        "totalCrimes": 209,
-        "violentCrimes": 79,
-        "propertyCrimes": 76
+        "totalCrimes": 207,
+        "violentCrimes": 80,
+        "propertyCrimes": 75
       },
       {
         "month": "2026-03",
-        "totalCrimes": 269,
-        "violentCrimes": 80,
-        "propertyCrimes": 102
+        "totalCrimes": 272,
+        "violentCrimes": 82,
+        "propertyCrimes": 104
       },
       {
         "month": "2026-04",
-        "totalCrimes": 233,
-        "violentCrimes": 82,
-        "propertyCrimes": 78
+        "totalCrimes": 231,
+        "violentCrimes": 81,
+        "propertyCrimes": 75
       },
       {
         "month": "2026-05",
         "totalCrimes": 238,
-        "violentCrimes": 85,
-        "propertyCrimes": 83
+        "violentCrimes": 84,
+        "propertyCrimes": 84
       },
       {
         "month": "2026-06",
-        "totalCrimes": 279,
-        "violentCrimes": 131,
-        "propertyCrimes": 78
+        "totalCrimes": 274,
+        "violentCrimes": 129,
+        "propertyCrimes": 75
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 714,
+      "anti-social-behaviour": 708,
       "bicycle-theft": 8,
-      "burglary": 110,
-      "criminal-damage-arson": 121,
+      "burglary": 108,
+      "criminal-damage-arson": 126,
       "drugs": 102,
-      "other-theft": 153,
+      "other-theft": 150,
       "possession-of-weapons": 22,
-      "public-order": 158,
+      "public-order": 156,
       "robbery": 90,
-      "shoplifting": 295,
+      "shoplifting": 296,
       "theft-from-the-person": 46,
-      "vehicle-crime": 307,
+      "vehicle-crime": 300,
       "violent-crime": 756,
-      "other-crime": 36
+      "other-crime": 34
     },
-    "totalLast12Months": 2918
+    "totalLast12Months": 2902
   },
   "property": {
     "sales": [
+      {
+        "address": "20, ALMA AVENUE",
+        "postcode": "RM12 6SR",
+        "price": 518500,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "106, SUTTONS AVENUE",
+        "postcode": "RM12 4NE",
+        "price": 455000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "59, LATIMER DRIVE",
+        "postcode": "RM12 6TN",
+        "price": 260000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, CORONATION DRIVE",
+        "postcode": "RM12 5BL",
+        "price": 490000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "307, UPPER RAINHAM ROAD",
+        "postcode": "RM12 4DB",
+        "price": 426600,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "124, DEVONSHIRE ROAD",
+        "postcode": "RM12 4LW",
+        "price": 450000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, MANSARD CLOSE",
+        "postcode": "RM12 4HS",
+        "price": 382000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "166, ELM PARK AVENUE, ELM PARK",
+        "postcode": "RM12 4RY",
+        "price": 405000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, DIBAN AVENUE",
+        "postcode": "RM12 4YE",
+        "price": 605000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "PETANDS COURT, FLAT 21, RANDALL DRIVE",
+        "postcode": "RM12 6QT",
+        "price": 310000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, LABURNUM AVENUE",
+        "postcode": "RM12 4HE",
+        "price": 390000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, LANCASTER DRIVE",
+        "postcode": "RM12 5SU",
+        "price": 580000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, FRANMIL ROAD",
+        "postcode": "RM12 4TR",
+        "price": 314700,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, BENHURST AVENUE",
+        "postcode": "RM12 4QT",
+        "price": 490000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, ROSEBANK AVENUE",
+        "postcode": "RM12 5QX",
+        "price": 493000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "164, LANCASTER DRIVE",
+        "postcode": "RM12 5SL",
+        "price": 367000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, GLADIATOR WAY",
+        "postcode": "RM12 6EU",
+        "price": 575000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2A, ULLSWATER WAY",
+        "postcode": "RM12 5JU",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, WINDERMERE AVENUE",
+        "postcode": "RM12 5EL",
+        "price": 455000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, LIPHOOK CLOSE",
+        "postcode": "RM12 4LS",
+        "price": 383000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "401, SOUTH END ROAD",
+        "postcode": "RM12 5NA",
+        "price": 325000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "233, WARREN DRIVE",
+        "postcode": "RM12 4PL",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, MILTON AVENUE",
+        "postcode": "RM12 4BW",
+        "price": 635000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, MAYBANK AVENUE",
+        "postcode": "RM12 5SA",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "104, BANCROFT CHASE",
         "postcode": "RM12 4DR",
@@ -408,6 +612,14 @@
         "address": "5, KENT DRIVE",
         "postcode": "RM12 6TD",
         "price": 425000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "62, SAUNTON ROAD",
+        "postcode": "RM12 4HB",
+        "price": 550000,
         "dateOfTransfer": "2026-06-19",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -469,11 +681,43 @@
         "newBuild": false
       },
       {
+        "address": "24, WINIFRED AVENUE",
+        "postcode": "RM12 6SU",
+        "price": 695000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "88, LABURNUM WALK, ELM PARK",
+        "postcode": "RM12 5RJ",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, COLTISHALL ROAD",
+        "postcode": "RM12 6NY",
+        "price": 490000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "2, WHITTLE DRIVE",
         "postcode": "RM12 6EQ",
         "price": 575000,
         "dateOfTransfer": "2026-06-04",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, VICTOR COURT",
+        "postcode": "RM12 4XF",
+        "price": 153000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -525,11 +769,11 @@
         "newBuild": false
       },
       {
-        "address": "49, EDISON AVENUE",
-        "postcode": "RM12 4DZ",
-        "price": 585000,
+        "address": "39, CHEVINGTON WAY",
+        "postcode": "RM12 6RW",
+        "price": 660000,
         "dateOfTransfer": "2026-05-22",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -541,11 +785,11 @@
         "newBuild": false
       },
       {
-        "address": "7, CORMORANT WALK",
-        "postcode": "RM12 5HD",
-        "price": 405000,
-        "dateOfTransfer": "2026-05-18",
-        "propertyType": "Terraced",
+        "address": "49, EDISON AVENUE",
+        "postcode": "RM12 4DZ",
+        "price": 585000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -557,9 +801,25 @@
         "newBuild": false
       },
       {
+        "address": "7, CORMORANT WALK",
+        "postcode": "RM12 5HD",
+        "price": 405000,
+        "dateOfTransfer": "2026-05-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "6, ASCOT GARDENS",
         "postcode": "RM12 6SP",
         "price": 600000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, PLUMPTON AVENUE",
+        "postcode": "RM12 6BE",
+        "price": 530000,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -570,14 +830,6 @@
         "price": 249995,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "22, PLUMPTON AVENUE",
-        "postcode": "RM12 6BE",
-        "price": 530000,
-        "dateOfTransfer": "2026-05-15",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -645,17 +897,17 @@
         "newBuild": false
       },
       {
-        "address": "9, ABBS CROSS GARDENS",
-        "postcode": "RM12 4XJ",
-        "price": 440000,
+        "address": "35, COWDRAY WAY",
+        "postcode": "RM12 4AX",
+        "price": 410000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "35, COWDRAY WAY",
-        "postcode": "RM12 4AX",
-        "price": 410000,
+        "address": "9, ABBS CROSS GARDENS",
+        "postcode": "RM12 4XJ",
+        "price": 440000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Terraced",
         "newBuild": false
@@ -685,19 +937,19 @@
         "newBuild": false
       },
       {
-        "address": "31, SPINGATE CLOSE",
-        "postcode": "RM12 6SW",
-        "price": 600000,
-        "dateOfTransfer": "2026-05-01",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "32, LABURNUM AVENUE",
         "postcode": "RM12 4HA",
         "price": 332000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31, SPINGATE CLOSE",
+        "postcode": "RM12 6SW",
+        "price": 600000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -717,14 +969,6 @@
         "newBuild": false
       },
       {
-        "address": "75, KENILWORTH GARDENS",
-        "postcode": "RM12 4SF",
-        "price": 585000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "PELL COURT, 165 - 171, APARTMENT 19, HORNCHURCH ROAD",
         "postcode": "RM12 4TE",
         "price": 227000,
@@ -733,10 +977,10 @@
         "newBuild": false
       },
       {
-        "address": "2, ELMS FARM ROAD",
-        "postcode": "RM12 5RD",
-        "price": 660000,
-        "dateOfTransfer": "2026-04-29",
+        "address": "75, KENILWORTH GARDENS",
+        "postcode": "RM12 4SF",
+        "price": 585000,
+        "dateOfTransfer": "2026-04-30",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -746,6 +990,14 @@
         "price": 425000,
         "dateOfTransfer": "2026-04-29",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, ELMS FARM ROAD",
+        "postcode": "RM12 5RD",
+        "price": 660000,
+        "dateOfTransfer": "2026-04-29",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -797,19 +1049,19 @@
         "newBuild": false
       },
       {
-        "address": "62, DIBAN AVENUE",
-        "postcode": "RM12 4YF",
-        "price": 550000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "STILLWELL COURT, FLAT 25, WHITTLE DRIVE",
         "postcode": "RM12 6FH",
         "price": 377500,
         "dateOfTransfer": "2026-04-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62, DIBAN AVENUE",
+        "postcode": "RM12 4YF",
+        "price": 550000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -826,6 +1078,14 @@
         "price": 650000,
         "dateOfTransfer": "2026-04-16",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, LABURNUM AVENUE",
+        "postcode": "RM12 4HE",
+        "price": 500000,
+        "dateOfTransfer": "2026-04-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -893,6 +1153,14 @@
         "newBuild": false
       },
       {
+        "address": "363, ELM PARK AVENUE, ELM PARK",
+        "postcode": "RM12 4PE",
+        "price": 425000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "31, KEMPTON AVENUE",
         "postcode": "RM12 6EH",
         "price": 485000,
@@ -909,14 +1177,6 @@
         "newBuild": false
       },
       {
-        "address": "363, ELM PARK AVENUE, ELM PARK",
-        "postcode": "RM12 4PE",
-        "price": 425000,
-        "dateOfTransfer": "2026-04-02",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "69, NORTHWOOD AVENUE",
         "postcode": "RM12 4PU",
         "price": 470000,
@@ -930,6 +1190,14 @@
         "price": 535000,
         "dateOfTransfer": "2026-03-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, PETWORTH WAY",
+        "postcode": "RM12 4LR",
+        "price": 425000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -957,19 +1225,19 @@
         "newBuild": false
       },
       {
-        "address": "58, RANDALL DRIVE",
-        "postcode": "RM12 6TA",
-        "price": 500000,
-        "dateOfTransfer": "2026-03-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "MARTEL HOUSE, FLAT 12, DEFIANT CLOSE",
         "postcode": "RM12 6EY",
         "price": 297500,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, RANDALL DRIVE",
+        "postcode": "RM12 6TA",
+        "price": 500000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -997,14 +1265,6 @@
         "newBuild": false
       },
       {
-        "address": "119, LATIMER DRIVE",
-        "postcode": "RM12 6TN",
-        "price": 207500,
-        "dateOfTransfer": "2026-03-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "18, WOODFIELD WAY",
         "postcode": "RM12 4JA",
         "price": 650000,
@@ -1013,9 +1273,25 @@
         "newBuild": false
       },
       {
+        "address": "119, LATIMER DRIVE",
+        "postcode": "RM12 6TN",
+        "price": 207500,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "4, CHILTERN GARDENS",
         "postcode": "RM12 4SQ",
         "price": 420000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, CHILTERN GARDENS",
+        "postcode": "RM12 4SQ",
+        "price": 525000,
         "dateOfTransfer": "2026-03-20",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1050,6 +1326,14 @@
         "price": 410000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "69, ALBANY ROAD",
+        "postcode": "RM12 4AE",
+        "price": 510000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1109,6 +1393,22 @@
         "newBuild": false
       },
       {
+        "address": "PETANDS COURT, FLAT 1, RANDALL DRIVE",
+        "postcode": "RM12 6QT",
+        "price": 285000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "85, EYHURST AVENUE",
+        "postcode": "RM12 4RB",
+        "price": 525000,
+        "dateOfTransfer": "2026-03-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "12, NAUNTON WAY",
         "postcode": "RM12 6TG",
         "price": 130000,
@@ -1141,6 +1441,14 @@
         "newBuild": false
       },
       {
+        "address": "30, MANSARD CLOSE",
+        "postcode": "RM12 4HS",
+        "price": 395000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "2, FLORENCE CLOSE",
         "postcode": "RM12 6LD",
         "price": 300000,
@@ -1165,14 +1473,6 @@
         "newBuild": false
       },
       {
-        "address": "30, MANSARD CLOSE",
-        "postcode": "RM12 4HS",
-        "price": 395000,
-        "dateOfTransfer": "2026-02-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "17, CALBOURNE AVENUE",
         "postcode": "RM12 5BH",
         "price": 290237,
@@ -1186,6 +1486,14 @@
         "price": 475000,
         "dateOfTransfer": "2026-02-26",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, FURNESS WAY",
+        "postcode": "RM12 5JH",
+        "price": 450000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1253,18 +1561,18 @@
         "newBuild": false
       },
       {
-        "address": "6, WOOD LANE",
-        "postcode": "RM12 5HU",
-        "price": 525000,
-        "dateOfTransfer": "2026-02-18",
+        "address": "61, KEMPTON AVENUE",
+        "postcode": "RM12 6EH",
+        "price": 465000,
+        "dateOfTransfer": "2026-02-20",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "520, SOUTH END ROAD",
-        "postcode": "RM12 5PA",
-        "price": 535000,
-        "dateOfTransfer": "2026-02-16",
+        "address": "6, WOOD LANE",
+        "postcode": "RM12 5HU",
+        "price": 525000,
+        "dateOfTransfer": "2026-02-18",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1274,6 +1582,14 @@
         "price": 220000,
         "dateOfTransfer": "2026-02-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "520, SOUTH END ROAD",
+        "postcode": "RM12 5PA",
+        "price": 535000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1306,6 +1622,22 @@
         "price": 625000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, HACTON DRIVE",
+        "postcode": "RM12 6DL",
+        "price": 515000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "255, UPPER RAINHAM ROAD",
+        "postcode": "RM12 4EY",
+        "price": 436000,
+        "dateOfTransfer": "2026-02-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1389,30 +1721,6 @@
         "newBuild": false
       },
       {
-        "address": "MAYBANK LODGE, FLAT 35, MAYBANK AVENUE",
-        "postcode": "RM12 5SF",
-        "price": 285000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "89, ADELPHI CRESCENT",
-        "postcode": "RM12 4JZ",
-        "price": 415000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "104, GRENFELL AVENUE",
-        "postcode": "RM12 4DS",
-        "price": 497000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "59, MAYBANK AVENUE",
         "postcode": "RM12 5SH",
         "price": 510000,
@@ -1453,6 +1761,30 @@
         "newBuild": false
       },
       {
+        "address": "MAYBANK LODGE, FLAT 35, MAYBANK AVENUE",
+        "postcode": "RM12 5SF",
+        "price": 285000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "89, ADELPHI CRESCENT",
+        "postcode": "RM12 4JZ",
+        "price": 415000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "104, GRENFELL AVENUE",
+        "postcode": "RM12 4DS",
+        "price": 497000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "MARTEL HOUSE, FLAT 23, DEFIANT CLOSE",
         "postcode": "RM12 6EY",
         "price": 305000,
@@ -1477,6 +1809,14 @@
         "newBuild": false
       },
       {
+        "address": "ASTRID HOUSE, 64, FLAT 2, STATION LANE",
+        "postcode": "RM12 6NB",
+        "price": 490000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "540, SOUTH END ROAD",
         "postcode": "RM12 5UB",
         "price": 460000,
@@ -1493,11 +1833,19 @@
         "newBuild": false
       },
       {
-        "address": "ASTRID HOUSE, 64, FLAT 2, STATION LANE",
-        "postcode": "RM12 6NB",
-        "price": 490000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
+        "address": "33, MILL PARK AVENUE",
+        "postcode": "RM12 6HD",
+        "price": 945000,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "82, ST ANDREWS AVENUE, ELM PARK",
+        "postcode": "RM12 5DT",
+        "price": 507000,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1512,22 +1860,6 @@
         "address": "22, CONISTON WAY",
         "postcode": "RM12 5EJ",
         "price": 440000,
-        "dateOfTransfer": "2026-01-22",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "82, ST ANDREWS AVENUE, ELM PARK",
-        "postcode": "RM12 5DT",
-        "price": 507000,
-        "dateOfTransfer": "2026-01-22",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "33, MILL PARK AVENUE",
-        "postcode": "RM12 6HD",
-        "price": 945000,
         "dateOfTransfer": "2026-01-22",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1557,17 +1889,17 @@
         "newBuild": false
       },
       {
-        "address": "74, ALDWYCH CLOSE",
-        "postcode": "RM12 4JX",
-        "price": 392000,
+        "address": "5, CONDOR WALK",
+        "postcode": "RM12 5QD",
+        "price": 402500,
         "dateOfTransfer": "2026-01-19",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "5, CONDOR WALK",
-        "postcode": "RM12 5QD",
-        "price": 402500,
+        "address": "74, ALDWYCH CLOSE",
+        "postcode": "RM12 4JX",
+        "price": 392000,
         "dateOfTransfer": "2026-01-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1581,19 +1913,19 @@
         "newBuild": false
       },
       {
-        "address": "218, HIGH STREET",
-        "postcode": "RM12 6QP",
-        "price": 300000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "50, SARRE AVENUE",
         "postcode": "RM12 6TP",
         "price": 410000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "218, HIGH STREET",
+        "postcode": "RM12 6QP",
+        "price": 300000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1629,11 +1961,43 @@
         "newBuild": false
       },
       {
+        "address": "155, HORNCHURCH ROAD",
+        "postcode": "RM12 4SZ",
+        "price": 535000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "175A, STATION LANE",
         "postcode": "RM12 6LL",
         "price": 435000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, BRIAN CLOSE",
+        "postcode": "RM12 4SL",
+        "price": 350000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "64, HACTON DRIVE",
+        "postcode": "RM12 6DP",
+        "price": 743000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, ARBOUR WAY",
+        "postcode": "RM12 5BS",
+        "price": 410000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1669,38 +2033,6 @@
         "newBuild": false
       },
       {
-        "address": "155, HORNCHURCH ROAD",
-        "postcode": "RM12 4SZ",
-        "price": 535000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "18, BRIAN CLOSE",
-        "postcode": "RM12 4SL",
-        "price": 350000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "64, HACTON DRIVE",
-        "postcode": "RM12 6DP",
-        "price": 743000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "6, ARBOUR WAY",
-        "postcode": "RM12 5BS",
-        "price": 410000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "ASTRA COURT WEST, FLAT 46, ASTRA CLOSE",
         "postcode": "RM12 5NJ",
         "price": 235000,
@@ -1717,19 +2049,19 @@
         "newBuild": false
       },
       {
-        "address": "24, GORDON AVENUE",
-        "postcode": "RM12 4EA",
-        "price": 389000,
-        "dateOfTransfer": "2026-01-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "69, LATIMER DRIVE",
         "postcode": "RM12 6TN",
         "price": 185000,
         "dateOfTransfer": "2026-01-05",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, GORDON AVENUE",
+        "postcode": "RM12 4EA",
+        "price": 389000,
+        "dateOfTransfer": "2026-01-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1746,14 +2078,6 @@
         "price": 400000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "84 - 86, HIGH STREET",
-        "postcode": "RM12 4UH",
-        "price": 890000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1778,6 +2102,14 @@
         "price": 500000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "84 - 86, HIGH STREET",
+        "postcode": "RM12 4UH",
+        "price": 890000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1989,17 +2321,17 @@
         "newBuild": false
       },
       {
-        "address": "8, ACACIA AVENUE",
-        "postcode": "RM12 4EN",
-        "price": 380000,
+        "address": "16, BRIAN CLOSE",
+        "postcode": "RM12 4SL",
+        "price": 400500,
         "dateOfTransfer": "2025-12-01",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "16, BRIAN CLOSE",
-        "postcode": "RM12 4SL",
-        "price": 400500,
+        "address": "8, ACACIA AVENUE",
+        "postcode": "RM12 4EN",
+        "price": 380000,
         "dateOfTransfer": "2025-12-01",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2085,14 +2417,6 @@
         "newBuild": false
       },
       {
-        "address": "120 - 122, HIGH STREET",
-        "postcode": "RM12 4UL",
-        "price": 4880000,
-        "dateOfTransfer": "2025-11-24",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "49, SPRING GARDENS",
         "postcode": "RM12 5BG",
         "price": 445000,
@@ -2106,6 +2430,14 @@
         "price": 465000,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "120 - 122, HIGH STREET",
+        "postcode": "RM12 4UL",
+        "price": 4880000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2133,19 +2465,19 @@
         "newBuild": false
       },
       {
-        "address": "6, CRYSTAL AVENUE",
-        "postcode": "RM12 6AB",
-        "price": 200000,
-        "dateOfTransfer": "2025-11-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "18A, TADWORTH PARADE",
         "postcode": "RM12 5BA",
         "price": 180000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, CRYSTAL AVENUE",
+        "postcode": "RM12 6AB",
+        "price": 200000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2293,22 +2625,6 @@
         "newBuild": false
       },
       {
-        "address": "48, SUTTONS AVENUE",
-        "postcode": "RM12 4LE",
-        "price": 560000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "9, DEWEY PATH",
-        "postcode": "RM12 6TX",
-        "price": 270000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "4, WITTERING WALK",
         "postcode": "RM12 6NS",
         "price": 452000,
@@ -2325,10 +2641,18 @@
         "newBuild": false
       },
       {
-        "address": "4, STRATHMORE GARDENS",
-        "postcode": "RM12 4BQ",
-        "price": 530000,
-        "dateOfTransfer": "2025-10-30",
+        "address": "48, SUTTONS AVENUE",
+        "postcode": "RM12 4LE",
+        "price": 560000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, DEWEY PATH",
+        "postcode": "RM12 6TX",
+        "price": 270000,
+        "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -2338,6 +2662,22 @@
         "price": 475000,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, STRATHMORE GARDENS",
+        "postcode": "RM12 4BQ",
+        "price": 530000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42, ALMA AVENUE",
+        "postcode": "RM12 6SR",
+        "price": 575000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2365,14 +2705,6 @@
         "newBuild": false
       },
       {
-        "address": "134, THE AVENUE",
-        "postcode": "RM12 4JG",
-        "price": 500000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "292, ABBS CROSS LANE",
         "postcode": "RM12 4YD",
         "price": 617000,
@@ -2384,6 +2716,14 @@
         "address": "56, DORIAN ROAD",
         "postcode": "RM12 4AL",
         "price": 400000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "134, THE AVENUE",
+        "postcode": "RM12 4JG",
+        "price": 500000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2421,22 +2761,6 @@
         "newBuild": false
       },
       {
-        "address": "2, CANBERRA CLOSE",
-        "postcode": "RM12 5TR",
-        "price": 750000,
-        "dateOfTransfer": "2025-10-20",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "ASTRA COURT WEST, FLAT 56, ASTRA CLOSE",
-        "postcode": "RM12 5NJ",
-        "price": 230000,
-        "dateOfTransfer": "2025-10-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "39A, HACTON LANE",
         "postcode": "RM12 6PH",
         "price": 351000,
@@ -2450,6 +2774,22 @@
         "price": 717500,
         "dateOfTransfer": "2025-10-20",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, CANBERRA CLOSE",
+        "postcode": "RM12 5TR",
+        "price": 750000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ASTRA COURT WEST, FLAT 56, ASTRA CLOSE",
+        "postcode": "RM12 5NJ",
+        "price": 230000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2469,6 +2809,14 @@
         "newBuild": false
       },
       {
+        "address": "DRAPER COURT, FLAT 6, MAVIS GROVE",
+        "postcode": "RM12 6BN",
+        "price": 285000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "8, VICTOR GARDENS",
         "postcode": "RM12 4JB",
         "price": 467500,
@@ -2485,27 +2833,11 @@
         "newBuild": false
       },
       {
-        "address": "DRAPER COURT, FLAT 6, MAVIS GROVE",
-        "postcode": "RM12 6BN",
-        "price": 285000,
-        "dateOfTransfer": "2025-10-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "15, BERRY CLOSE",
         "postcode": "RM12 6UB",
         "price": 245000,
         "dateOfTransfer": "2025-10-14",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "25, LAMBOURNE GARDENS",
-        "postcode": "RM12 4LJ",
-        "price": 680000,
-        "dateOfTransfer": "2025-10-13",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2525,6 +2857,14 @@
         "newBuild": false
       },
       {
+        "address": "25, LAMBOURNE GARDENS",
+        "postcode": "RM12 4LJ",
+        "price": 680000,
+        "dateOfTransfer": "2025-10-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "32, LANGDALE GARDENS",
         "postcode": "RM12 5LB",
         "price": 460000,
@@ -2541,17 +2881,17 @@
         "newBuild": false
       },
       {
-        "address": "16, NORTHWOOD AVENUE",
-        "postcode": "RM12 4PX",
-        "price": 518000,
+        "address": "79, DIBAN AVENUE",
+        "postcode": "RM12 4YH",
+        "price": 405000,
         "dateOfTransfer": "2025-10-08",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "269, ELM PARK AVENUE, ELM PARK",
-        "postcode": "RM12 4PG",
-        "price": 467500,
+        "address": "16, NORTHWOOD AVENUE",
+        "postcode": "RM12 4PX",
+        "price": 518000,
         "dateOfTransfer": "2025-10-08",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2565,9 +2905,9 @@
         "newBuild": false
       },
       {
-        "address": "79, DIBAN AVENUE",
-        "postcode": "RM12 4YH",
-        "price": 405000,
+        "address": "269, ELM PARK AVENUE, ELM PARK",
+        "postcode": "RM12 4PG",
+        "price": 467500,
         "dateOfTransfer": "2025-10-08",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2586,14 +2926,6 @@
         "price": 250000,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "112, ALMA AVENUE",
-        "postcode": "RM12 6BP",
-        "price": 580000,
-        "dateOfTransfer": "2025-10-06",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2621,11 +2953,19 @@
         "newBuild": false
       },
       {
-        "address": "18, HUTCHINS CLOSE",
-        "postcode": "RM12 6NL",
-        "price": 240000,
+        "address": "112, ALMA AVENUE",
+        "postcode": "RM12 6BP",
+        "price": 580000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "85, ALMA AVENUE",
+        "postcode": "RM12 6SS",
+        "price": 515000,
         "dateOfTransfer": "2025-10-03",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2637,10 +2977,18 @@
         "newBuild": false
       },
       {
-        "address": "85, ALMA AVENUE",
-        "postcode": "RM12 6SS",
-        "price": 515000,
+        "address": "18, HUTCHINS CLOSE",
+        "postcode": "RM12 6NL",
+        "price": 240000,
         "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, HIGHFIELD CRESCENT",
+        "postcode": "RM12 6QB",
+        "price": 499500,
+        "dateOfTransfer": "2025-10-02",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2661,11 +3009,35 @@
         "newBuild": false
       },
       {
+        "address": "ASTRA COURT EAST, FLAT 16, ASTRA CLOSE",
+        "postcode": "RM12 5NJ",
+        "price": 140000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "209, STATION LANE",
+        "postcode": "RM12 6LL",
+        "price": 420000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "4, JOYCE CLOSE",
         "postcode": "RM12 6FE",
         "price": 480000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, EASEDALE DRIVE",
+        "postcode": "RM12 5HJ",
+        "price": 390000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2677,27 +3049,11 @@
         "newBuild": false
       },
       {
-        "address": "97, SAUNTON ROAD",
-        "postcode": "RM12 4HQ",
-        "price": 450000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "7, SAUNTON ROAD",
-        "postcode": "RM12 4HG",
-        "price": 420000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "13, VICARAGE ROAD",
-        "postcode": "RM12 4AS",
-        "price": 530000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Semi-detached",
+        "address": "2, BONINGTON ROAD",
+        "postcode": "RM12 6TH",
+        "price": 455000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2717,10 +3073,26 @@
         "newBuild": false
       },
       {
-        "address": "98, LANCASTER DRIVE",
-        "postcode": "RM12 5ST",
-        "price": 515000,
-        "dateOfTransfer": "2025-09-25",
+        "address": "7, SAUNTON ROAD",
+        "postcode": "RM12 4HG",
+        "price": 420000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "97, SAUNTON ROAD",
+        "postcode": "RM12 4HQ",
+        "price": 450000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13, VICARAGE ROAD",
+        "postcode": "RM12 4AS",
+        "price": 530000,
+        "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2728,6 +3100,14 @@
         "address": "184, LANCASTER DRIVE",
         "postcode": "RM12 5SL",
         "price": 460000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "98, LANCASTER DRIVE",
+        "postcode": "RM12 5ST",
+        "price": 515000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2741,17 +3121,17 @@
         "newBuild": false
       },
       {
-        "address": "94, RAVENSCOURT DRIVE",
-        "postcode": "RM12 6HL",
-        "price": 480000,
+        "address": "5, ENNERDALE AVENUE",
+        "postcode": "RM12 5JR",
+        "price": 487000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "5, ENNERDALE AVENUE",
-        "postcode": "RM12 5JR",
-        "price": 487000,
+        "address": "10, CHEVINGTON WAY",
+        "postcode": "RM12 6RN",
+        "price": 530000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2765,18 +3145,10 @@
         "newBuild": false
       },
       {
-        "address": "10, CHEVINGTON WAY",
-        "postcode": "RM12 6RN",
-        "price": 530000,
+        "address": "94, RAVENSCOURT DRIVE",
+        "postcode": "RM12 6HL",
+        "price": 480000,
         "dateOfTransfer": "2025-09-22",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "9, FERNBANK AVENUE",
-        "postcode": "RM12 5RA",
-        "price": 525000,
-        "dateOfTransfer": "2025-09-19",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2794,6 +3166,14 @@
         "price": 415000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, FERNBANK AVENUE",
+        "postcode": "RM12 5RA",
+        "price": 525000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2821,6 +3201,14 @@
         "newBuild": false
       },
       {
+        "address": "25, GORDON AVENUE",
+        "postcode": "RM12 4EB",
+        "price": 550000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "58, RAVENSCOURT DRIVE",
         "postcode": "RM12 6HL",
         "price": 530000,
@@ -2834,14 +3222,6 @@
         "price": 20000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "25, GORDON AVENUE",
-        "postcode": "RM12 4EB",
-        "price": 550000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2861,17 +3241,17 @@
         "newBuild": false
       },
       {
-        "address": "23, CANDOVER ROAD",
-        "postcode": "RM12 4TY",
-        "price": 495000,
+        "address": "17, FLAMINGO WALK",
+        "postcode": "RM12 5QP",
+        "price": 415000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "17, FLAMINGO WALK",
-        "postcode": "RM12 5QP",
-        "price": 415000,
+        "address": "23, CANDOVER ROAD",
+        "postcode": "RM12 4TY",
+        "price": 495000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2909,14 +3289,6 @@
         "newBuild": false
       },
       {
-        "address": "83, CHESTNUT AVENUE",
-        "postcode": "RM12 4HH",
-        "price": 625000,
-        "dateOfTransfer": "2025-09-02",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "50, PETWORTH WAY",
         "postcode": "RM12 4LR",
         "price": 450000,
@@ -2930,6 +3302,14 @@
         "price": 555000,
         "dateOfTransfer": "2025-09-02",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "83, CHESTNUT AVENUE",
+        "postcode": "RM12 4HH",
+        "price": 625000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2949,17 +3329,17 @@
         "newBuild": false
       },
       {
-        "address": "55, WOODCOTE AVENUE",
-        "postcode": "RM12 4PY",
-        "price": 460000,
+        "address": "2, BEVAN WAY",
+        "postcode": "RM12 6EJ",
+        "price": 530000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "2, BEVAN WAY",
-        "postcode": "RM12 6EJ",
-        "price": 530000,
+        "address": "55, WOODCOTE AVENUE",
+        "postcode": "RM12 4PY",
+        "price": 460000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2981,19 +3361,19 @@
         "newBuild": false
       },
       {
+        "address": "56, CARNFORTH GARDENS",
+        "postcode": "RM12 5DL",
+        "price": 480000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "358, SOUTH END ROAD",
         "postcode": "RM12 5LX",
         "price": 220000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, LANCASTER DRIVE",
-        "postcode": "RM12 5SU",
-        "price": 575000,
-        "dateOfTransfer": "2025-08-26",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3008,6 +3388,14 @@
         "address": "102, SUTTONS AVENUE",
         "postcode": "RM12 4NE",
         "price": 512000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, LANCASTER DRIVE",
+        "postcode": "RM12 5SU",
+        "price": 575000,
         "dateOfTransfer": "2025-08-26",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3077,14 +3465,6 @@
         "newBuild": false
       },
       {
-        "address": "14, CALBOURNE AVENUE",
-        "postcode": "RM12 5BJ",
-        "price": 420000,
-        "dateOfTransfer": "2025-08-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "1, DEWEY PATH",
         "postcode": "RM12 6TX",
         "price": 290000,
@@ -3093,11 +3473,27 @@
         "newBuild": false
       },
       {
+        "address": "14, CALBOURNE AVENUE",
+        "postcode": "RM12 5BJ",
+        "price": 420000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "24, HACTON LANE",
         "postcode": "RM12 6PB",
         "price": 650000,
         "dateOfTransfer": "2025-08-20",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, LECONFIELD WALK",
+        "postcode": "RM12 6NZ",
+        "price": 495000,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3112,14 +3508,6 @@
         "address": "11, KENLEY GARDENS",
         "postcode": "RM12 6PD",
         "price": 247225,
-        "dateOfTransfer": "2025-08-20",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "6, LECONFIELD WALK",
-        "postcode": "RM12 6NZ",
-        "price": 495000,
         "dateOfTransfer": "2025-08-20",
         "propertyType": "Detached",
         "newBuild": false
@@ -3165,14 +3553,6 @@
         "newBuild": false
       },
       {
-        "address": "27, LODGE COURT",
-        "postcode": "RM12 6QR",
-        "price": 355000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "100A, DEVONSHIRE ROAD",
         "postcode": "RM12 4LQ",
         "price": 232000,
@@ -3186,6 +3566,14 @@
         "price": 570000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, LODGE COURT",
+        "postcode": "RM12 6QR",
+        "price": 355000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3205,6 +3593,14 @@
         "newBuild": false
       },
       {
+        "address": "33, BEULAH ROAD",
+        "postcode": "RM12 4YR",
+        "price": 535000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "90, THE AVENUE",
         "postcode": "RM12 4JG",
         "price": 658350,
@@ -3218,14 +3614,6 @@
         "price": 575000,
         "dateOfTransfer": "2025-08-14",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "33, BEULAH ROAD",
-        "postcode": "RM12 4YR",
-        "price": 535000,
-        "dateOfTransfer": "2025-08-14",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3269,6 +3657,14 @@
         "newBuild": false
       },
       {
+        "address": "115, LATIMER DRIVE",
+        "postcode": "RM12 6TN",
+        "price": 215000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "35, BEULAH ROAD",
         "postcode": "RM12 4YR",
         "price": 525000,
@@ -3282,14 +3678,6 @@
         "price": 630000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "115, LATIMER DRIVE",
-        "postcode": "RM12 6TN",
-        "price": 215000,
-        "dateOfTransfer": "2025-08-08",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3357,19 +3745,19 @@
         "newBuild": false
       },
       {
-        "address": "125, SUTTONS AVENUE",
-        "postcode": "RM12 4LZ",
-        "price": 610000,
-        "dateOfTransfer": "2025-08-01",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "28A, THE BROADWAY",
         "postcode": "RM12 4RW",
         "price": 230000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "125, SUTTONS AVENUE",
+        "postcode": "RM12 4LZ",
+        "price": 610000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3485,19 +3873,19 @@
         "newBuild": false
       },
       {
-        "address": "117, ELM PARK AVENUE, ELM PARK",
-        "postcode": "RM12 4SN",
-        "price": 400000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "453, SOUTH END ROAD",
         "postcode": "RM12 5NX",
         "price": 460000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "117, ELM PARK AVENUE, ELM PARK",
+        "postcode": "RM12 4SN",
+        "price": 400000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3549,14 +3937,6 @@
         "newBuild": false
       },
       {
-        "address": "8, CARNFORTH GARDENS",
-        "postcode": "RM12 5DJ",
-        "price": 470000,
-        "dateOfTransfer": "2025-07-23",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "63, RAVENSCOURT DRIVE",
         "postcode": "RM12 6HP",
         "price": 590000,
@@ -3568,6 +3948,14 @@
         "address": "32, GORDON AVENUE",
         "postcode": "RM12 4EA",
         "price": 542500,
+        "dateOfTransfer": "2025-07-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, CARNFORTH GARDENS",
+        "postcode": "RM12 5DJ",
+        "price": 470000,
         "dateOfTransfer": "2025-07-23",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3589,19 +3977,19 @@
         "newBuild": false
       },
       {
-        "address": "4, BROADWAY PARADE",
-        "postcode": "RM12 4RS",
-        "price": 380000,
-        "dateOfTransfer": "2025-07-23",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "27, HACTON DRIVE",
         "postcode": "RM12 6DL",
         "price": 640000,
         "dateOfTransfer": "2025-07-23",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, BROADWAY PARADE",
+        "postcode": "RM12 4RS",
+        "price": 380000,
+        "dateOfTransfer": "2025-07-23",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3733,17 +4121,17 @@
         "newBuild": false
       },
       {
-        "address": "15, APOLLO CLOSE",
-        "postcode": "RM12 4JU",
-        "price": 435000,
+        "address": "146, THE AVENUE",
+        "postcode": "RM12 4JG",
+        "price": 440000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "146, THE AVENUE",
-        "postcode": "RM12 4JG",
-        "price": 440000,
+        "address": "9, BALMORAL ROAD",
+        "postcode": "RM12 4NR",
+        "price": 650000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3757,9 +4145,9 @@
         "newBuild": false
       },
       {
-        "address": "9, BALMORAL ROAD",
-        "postcode": "RM12 4NR",
-        "price": 650000,
+        "address": "15, APOLLO CLOSE",
+        "postcode": "RM12 4JU",
+        "price": 435000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3773,19 +4161,19 @@
         "newBuild": false
       },
       {
-        "address": "86, THE AVENUE",
-        "postcode": "RM12 4JG",
-        "price": 557500,
-        "dateOfTransfer": "2025-07-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "26, THE BROADWAY",
         "postcode": "RM12 4RW",
         "price": 400000,
         "dateOfTransfer": "2025-07-09",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "86, THE AVENUE",
+        "postcode": "RM12 4JG",
+        "price": 557500,
+        "dateOfTransfer": "2025-07-09",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3813,19 +4201,19 @@
         "newBuild": false
       },
       {
-        "address": "26, ELM PARADE SHOPS, ELM PARK",
-        "postcode": "RM12 4SA",
-        "price": 525000,
-        "dateOfTransfer": "2025-07-04",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "3, BRIAN CLOSE",
         "postcode": "RM12 4SL",
         "price": 370000,
         "dateOfTransfer": "2025-07-04",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26, ELM PARADE SHOPS, ELM PARK",
+        "postcode": "RM12 4SA",
+        "price": 525000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3989,6 +4377,14 @@
         "newBuild": false
       },
       {
+        "address": "9, LEATHART CLOSE",
+        "postcode": "RM12 5AP",
+        "price": 380000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "MAYBANK LODGE, FLAT 23, MAYBANK AVENUE",
         "postcode": "RM12 5SF",
         "price": 280000,
@@ -4010,14 +4406,6 @@
         "price": 440000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "9, LEATHART CLOSE",
-        "postcode": "RM12 5AP",
-        "price": 380000,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4045,19 +4433,19 @@
         "newBuild": false
       },
       {
-        "address": "108, BEVAN WAY",
-        "postcode": "RM12 6DT",
-        "price": 289000,
-        "dateOfTransfer": "2025-06-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "35, EYHURST AVENUE",
         "postcode": "RM12 4RB",
         "price": 560000,
         "dateOfTransfer": "2025-06-13",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "108, BEVAN WAY",
+        "postcode": "RM12 6DT",
+        "price": 289000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4093,17 +4481,17 @@
         "newBuild": false
       },
       {
-        "address": "4, CHESTNUT AVENUE",
-        "postcode": "RM12 4HW",
-        "price": 400000,
+        "address": "22, ST ANDREWS AVENUE, ELM PARK",
+        "postcode": "RM12 5DT",
+        "price": 468000,
         "dateOfTransfer": "2025-06-09",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "22, ST ANDREWS AVENUE, ELM PARK",
-        "postcode": "RM12 5DT",
-        "price": 468000,
+        "address": "4, CHESTNUT AVENUE",
+        "postcode": "RM12 4HW",
+        "price": 400000,
         "dateOfTransfer": "2025-06-09",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4141,17 +4529,17 @@
         "newBuild": false
       },
       {
-        "address": "4, MANSFIELD GARDENS",
-        "postcode": "RM12 4NL",
-        "price": 552500,
+        "address": "112, CHESTNUT AVENUE",
+        "postcode": "RM12 4HD",
+        "price": 575000,
         "dateOfTransfer": "2025-06-03",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "112, CHESTNUT AVENUE",
-        "postcode": "RM12 4HD",
-        "price": 575000,
+        "address": "4, MANSFIELD GARDENS",
+        "postcode": "RM12 4NL",
+        "price": 552500,
         "dateOfTransfer": "2025-06-03",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4317,25 +4705,17 @@
         "newBuild": false
       },
       {
-        "address": "28, ST NICHOLAS AVENUE",
-        "postcode": "RM12 4PR",
-        "price": 470000,
-        "dateOfTransfer": "2025-05-08",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "10, ASCOT GARDENS",
-        "postcode": "RM12 6SP",
-        "price": 425000,
-        "dateOfTransfer": "2025-05-08",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "16, KENT DRIVE",
         "postcode": "RM12 6TB",
         "price": 575000,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, ST NICHOLAS AVENUE",
+        "postcode": "RM12 4PR",
+        "price": 470000,
         "dateOfTransfer": "2025-05-08",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4354,6 +4734,14 @@
         "price": 263000,
         "dateOfTransfer": "2025-05-08",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "10, ASCOT GARDENS",
+        "postcode": "RM12 6SP",
+        "price": 425000,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4581,6 +4969,14 @@
         "newBuild": true
       },
       {
+        "address": "6, MILTON AVENUE",
+        "postcode": "RM12 4BW",
+        "price": 465000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "81, VICTOR WALK",
         "postcode": "RM12 4XQ",
         "price": 235000,
@@ -4621,14 +5017,6 @@
         "newBuild": false
       },
       {
-        "address": "6, MILTON AVENUE",
-        "postcode": "RM12 4BW",
-        "price": 465000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "133, LABURNUM AVENUE",
         "postcode": "RM12 4HF",
         "price": 327000,
@@ -4642,6 +5030,62 @@
         "price": 375000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WELFORD COURT, FLAT 6, SPITFIRE APPROACH",
+        "postcode": "RM12 6FL",
+        "price": 317500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WELFORD COURT, FLAT 2, SPITFIRE APPROACH",
+        "postcode": "RM12 6FL",
+        "price": 315000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "1, ENNERDALE AVENUE",
+        "postcode": "RM12 5JR",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "113, KENILWORTH GARDENS",
+        "postcode": "RM12 4SG",
+        "price": 582500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "UPHAVERING HOUSE, FLAT 32, PARKHILL CLOSE",
+        "postcode": "RM12 4YX",
+        "price": 215000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "111, CHESTNUT AVENUE",
+        "postcode": "RM12 4HD",
+        "price": 432500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, STANLEY ROAD",
+        "postcode": "RM12 4JN",
+        "price": 660000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -4669,27 +5113,11 @@
         "newBuild": false
       },
       {
-        "address": "113, KENILWORTH GARDENS",
-        "postcode": "RM12 4SG",
-        "price": 582500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "41A, THE BROADWAY",
         "postcode": "RM12 4RN",
         "price": 280000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, ENNERDALE AVENUE",
-        "postcode": "RM12 5JR",
-        "price": 475000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4701,30 +5129,6 @@
         "newBuild": false
       },
       {
-        "address": "111, CHESTNUT AVENUE",
-        "postcode": "RM12 4HD",
-        "price": 432500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, STANLEY ROAD",
-        "postcode": "RM12 4JN",
-        "price": 660000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "UPHAVERING HOUSE, FLAT 32, PARKHILL CLOSE",
-        "postcode": "RM12 4YX",
-        "price": 215000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "171, ROSEBANK AVENUE",
         "postcode": "RM12 5QR",
         "price": 435000,
@@ -4733,18 +5137,42 @@
         "newBuild": false
       },
       {
-        "address": "WELFORD COURT, FLAT 6, SPITFIRE APPROACH",
-        "postcode": "RM12 6FL",
-        "price": 317500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
+        "address": "44, HACTON LANE",
+        "postcode": "RM12 6PB",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
       },
       {
-        "address": "WELFORD COURT, FLAT 2, SPITFIRE APPROACH",
-        "postcode": "RM12 6FL",
-        "price": 315000,
-        "dateOfTransfer": "2025-03-28",
+        "address": "79, EYHURST AVENUE",
+        "postcode": "RM12 4RB",
+        "price": 410500,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, EGBERT CLOSE",
+        "postcode": "RM12 5DE",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, BOSS CLOSE",
+        "postcode": "RM12 4FY",
+        "price": 540000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "DURSTON COURT, FLAT 10, BOXALL WAY",
+        "postcode": "RM12 6FN",
+        "price": 396000,
+        "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
       },
@@ -4781,49 +5209,9 @@
         "newBuild": false
       },
       {
-        "address": "79, EYHURST AVENUE",
-        "postcode": "RM12 4RB",
-        "price": 410500,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "15, CAVENDISH AVENUE",
         "postcode": "RM12 5NS",
         "price": 720000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "2, BOSS CLOSE",
-        "postcode": "RM12 4FY",
-        "price": 540000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "DURSTON COURT, FLAT 10, BOXALL WAY",
-        "postcode": "RM12 6FN",
-        "price": 396000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "44, HACTON LANE",
-        "postcode": "RM12 6PB",
-        "price": 535000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "45, EGBERT CLOSE",
-        "postcode": "RM12 5DE",
-        "price": 460000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4840,14 +5228,6 @@
         "address": "33, LABURNUM AVENUE",
         "postcode": "RM12 4HE",
         "price": 565000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "147, ST ANDREWS AVENUE, ELM PARK",
-        "postcode": "RM12 5ED",
-        "price": 457000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4885,6 +5265,14 @@
         "newBuild": false
       },
       {
+        "address": "147, ST ANDREWS AVENUE, ELM PARK",
+        "postcode": "RM12 5ED",
+        "price": 457000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "46, RANDALL DRIVE",
         "postcode": "RM12 6TA",
         "price": 575000,
@@ -4896,6 +5284,14 @@
         "address": "86, ELM PARK AVENUE, ELM PARK",
         "postcode": "RM12 4SW",
         "price": 405000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "120, STANLEY ROAD",
+        "postcode": "RM12 4JW",
+        "price": 516730,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4917,22 +5313,6 @@
         "newBuild": false
       },
       {
-        "address": "120, STANLEY ROAD",
-        "postcode": "RM12 4JW",
-        "price": 516730,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "4, DETLING CLOSE",
-        "postcode": "RM12 5RU",
-        "price": 435000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "52, ALBANY ROAD",
         "postcode": "RM12 4AF",
         "price": 572000,
@@ -4944,6 +5324,14 @@
         "address": "28, FAIRLOP CLOSE",
         "postcode": "RM12 5PH",
         "price": 420000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, DETLING CLOSE",
+        "postcode": "RM12 5RU",
+        "price": 435000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4973,6 +5361,14 @@
         "newBuild": false
       },
       {
+        "address": "2, LEATHART CLOSE",
+        "postcode": "RM12 5AP",
+        "price": 385000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "31, CONNAUGHT ROAD",
         "postcode": "RM12 4NS",
         "price": 395000,
@@ -4986,6 +5382,30 @@
         "price": 410000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "86, STANLEY ROAD",
+        "postcode": "RM12 4JW",
+        "price": 565000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "MARTEL HOUSE, FLAT 2, DEFIANT CLOSE",
+        "postcode": "RM12 6EY",
+        "price": 277500,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, ACACIA AVENUE",
+        "postcode": "RM12 4EW",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5021,43 +5441,11 @@
         "newBuild": false
       },
       {
-        "address": "86, STANLEY ROAD",
-        "postcode": "RM12 4JW",
-        "price": 565000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "2, LEATHART CLOSE",
-        "postcode": "RM12 5AP",
-        "price": 385000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "29, HUNTER DRIVE",
         "postcode": "RM12 5TP",
         "price": 440000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "MARTEL HOUSE, FLAT 2, DEFIANT CLOSE",
-        "postcode": "RM12 6EY",
-        "price": 277500,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "29, ACACIA AVENUE",
-        "postcode": "RM12 4EW",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5093,14 +5481,6 @@
         "newBuild": false
       },
       {
-        "address": "81, PLUMPTON AVENUE",
-        "postcode": "RM12 6BB",
-        "price": 530000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "48, EYHURST AVENUE",
         "postcode": "RM12 4RA",
         "price": 560000,
@@ -5109,11 +5489,11 @@
         "newBuild": false
       },
       {
-        "address": "8, FAIRLOP CLOSE",
-        "postcode": "RM12 5PH",
-        "price": 443000,
-        "dateOfTransfer": "2025-03-19",
-        "propertyType": "Terraced",
+        "address": "81, PLUMPTON AVENUE",
+        "postcode": "RM12 6BB",
+        "price": 530000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5133,11 +5513,11 @@
         "newBuild": false
       },
       {
-        "address": "23, NAUNTON WAY",
-        "postcode": "RM12 6TG",
-        "price": 210000,
+        "address": "8, FAIRLOP CLOSE",
+        "postcode": "RM12 5PH",
+        "price": 443000,
         "dateOfTransfer": "2025-03-19",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5146,6 +5526,14 @@
         "price": 577000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, NAUNTON WAY",
+        "postcode": "RM12 6TG",
+        "price": 210000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5181,11 +5569,11 @@
         "newBuild": false
       },
       {
-        "address": "70, ROSEWOOD AVENUE",
-        "postcode": "RM12 5LH",
-        "price": 288000,
+        "address": "42, CAVENDISH CRESCENT",
+        "postcode": "RM12 5NT",
+        "price": 540000,
         "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5202,14 +5590,6 @@
         "price": 495000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "42, CAVENDISH CRESCENT",
-        "postcode": "RM12 5NT",
-        "price": 540000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5240,6 +5620,14 @@
         "address": "42, LODGE COURT",
         "postcode": "RM12 6QR",
         "price": 325000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "70, ROSEWOOD AVENUE",
+        "postcode": "RM12 5LH",
+        "price": 288000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5317,19 +5705,19 @@
         "newBuild": true
       },
       {
-        "address": "7, HERON FLIGHT AVENUE",
-        "postcode": "RM12 5LW",
-        "price": 395000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "27, VICARAGE ROAD",
         "postcode": "RM12 4AS",
         "price": 590000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "PELL COURT, 165 - 171, APARTMENT 15, HORNCHURCH ROAD",
+        "postcode": "RM12 4TE",
+        "price": 325000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5349,11 +5737,11 @@
         "newBuild": false
       },
       {
-        "address": "PELL COURT, 165 - 171, APARTMENT 15, HORNCHURCH ROAD",
-        "postcode": "RM12 4TE",
-        "price": 325000,
+        "address": "7, HERON FLIGHT AVENUE",
+        "postcode": "RM12 5LW",
+        "price": 395000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5373,19 +5761,19 @@
         "newBuild": false
       },
       {
-        "address": "92, RAVENSCOURT DRIVE",
-        "postcode": "RM12 6HL",
-        "price": 640000,
-        "dateOfTransfer": "2025-03-06",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "9, NORTH WEALD CLOSE",
         "postcode": "RM12 5AQ",
         "price": 540000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "92, RAVENSCOURT DRIVE",
+        "postcode": "RM12 6HL",
+        "price": 640000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5405,19 +5793,19 @@
         "newBuild": false
       },
       {
-        "address": "37, BROADSTONE ROAD",
-        "postcode": "RM12 4AH",
-        "price": 641500,
-        "dateOfTransfer": "2025-03-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "19, CORMORANT WALK",
         "postcode": "RM12 5HE",
         "price": 340000,
         "dateOfTransfer": "2025-03-03",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, BROADSTONE ROAD",
+        "postcode": "RM12 4AH",
+        "price": 641500,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5469,14 +5857,6 @@
         "newBuild": false
       },
       {
-        "address": "29, FERNBANK AVENUE",
-        "postcode": "RM12 5RA",
-        "price": 435000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "108, UPPER RAINHAM ROAD",
         "postcode": "RM12 4EE",
         "price": 440000,
@@ -5517,6 +5897,22 @@
         "newBuild": false
       },
       {
+        "address": "29, FERNBANK AVENUE",
+        "postcode": "RM12 5RA",
+        "price": 435000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, BROADSTONE ROAD",
+        "postcode": "RM12 4AH",
+        "price": 530000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "8, HATFIELD CLOSE",
         "postcode": "RM12 6SA",
         "price": 450000,
@@ -5528,14 +5924,6 @@
         "address": "166, EYHURST AVENUE",
         "postcode": "RM12 4NW",
         "price": 490000,
-        "dateOfTransfer": "2025-02-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "36, BROADSTONE ROAD",
-        "postcode": "RM12 4AH",
-        "price": 530000,
         "dateOfTransfer": "2025-02-27",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -5589,19 +5977,19 @@
         "newBuild": false
       },
       {
-        "address": "29, COLTISHALL ROAD",
-        "postcode": "RM12 6NY",
-        "price": 493000,
-        "dateOfTransfer": "2025-02-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "149, STANLEY ROAD",
         "postcode": "RM12 4JP",
         "price": 480000,
         "dateOfTransfer": "2025-02-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "29, COLTISHALL ROAD",
+        "postcode": "RM12 6NY",
+        "price": 493000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5661,19 +6049,19 @@
         "newBuild": false
       },
       {
-        "address": "72, ELM PARK AVENUE, ELM PARK",
-        "postcode": "RM12 4SW",
-        "price": 397000,
-        "dateOfTransfer": "2025-02-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "18, WAYSIDE AVENUE",
         "postcode": "RM12 4LL",
         "price": 435000,
         "dateOfTransfer": "2025-02-19",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "72, ELM PARK AVENUE, ELM PARK",
+        "postcode": "RM12 4SW",
+        "price": 397000,
+        "dateOfTransfer": "2025-02-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5741,14 +6129,6 @@
         "newBuild": false
       },
       {
-        "address": "12, PETWORTH WAY",
-        "postcode": "RM12 4LR",
-        "price": 372500,
-        "dateOfTransfer": "2025-02-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "39, CONISTON WAY",
         "postcode": "RM12 5EH",
         "price": 622000,
@@ -5760,6 +6140,14 @@
         "address": "4, BETHANY CLOSE",
         "postcode": "RM12 4QD",
         "price": 420000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, PETWORTH WAY",
+        "postcode": "RM12 4LR",
+        "price": 372500,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5805,9 +6193,9 @@
         "newBuild": true
       },
       {
-        "address": "13, BANCROFT CHASE",
-        "postcode": "RM12 4DP",
-        "price": 430000,
+        "address": "172, BENHURST AVENUE",
+        "postcode": "RM12 4QN",
+        "price": 405000,
         "dateOfTransfer": "2025-02-06",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5821,9 +6209,9 @@
         "newBuild": false
       },
       {
-        "address": "172, BENHURST AVENUE",
-        "postcode": "RM12 4QN",
-        "price": 405000,
+        "address": "13, BANCROFT CHASE",
+        "postcode": "RM12 4DP",
+        "price": 430000,
         "dateOfTransfer": "2025-02-06",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5832,6 +6220,14 @@
         "address": "97, ELMS FARM ROAD",
         "postcode": "RM12 5RH",
         "price": 221500,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "142, DEVONSHIRE ROAD",
+        "postcode": "RM12 4LW",
+        "price": 465000,
         "dateOfTransfer": "2025-02-05",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -5848,14 +6244,6 @@
         "address": "87, KENILWORTH GARDENS",
         "postcode": "RM12 4SG",
         "price": 575000,
-        "dateOfTransfer": "2025-02-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "142, DEVONSHIRE ROAD",
-        "postcode": "RM12 4LW",
-        "price": 465000,
         "dateOfTransfer": "2025-02-05",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -5925,9 +6313,9 @@
         "newBuild": false
       },
       {
-        "address": "119, ALMA AVENUE",
-        "postcode": "RM12 6BS",
-        "price": 430000,
+        "address": "35, COWDRAY WAY",
+        "postcode": "RM12 4AX",
+        "price": 411000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5941,9 +6329,9 @@
         "newBuild": false
       },
       {
-        "address": "35, COWDRAY WAY",
-        "postcode": "RM12 4AX",
-        "price": 411000,
+        "address": "119, ALMA AVENUE",
+        "postcode": "RM12 6BS",
+        "price": 430000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -6013,6 +6401,14 @@
         "newBuild": false
       },
       {
+        "address": "150, WOOD LANE",
+        "postcode": "RM12 5JB",
+        "price": 248000,
+        "dateOfTransfer": "2025-01-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "67, COWDRAY WAY",
         "postcode": "RM12 4AX",
         "price": 357500,
@@ -6027,14 +6423,6 @@
         "dateOfTransfer": "2025-01-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
-      },
-      {
-        "address": "150, WOOD LANE",
-        "postcode": "RM12 5JB",
-        "price": 248000,
-        "dateOfTransfer": "2025-01-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
       },
       {
         "address": "7, BEECH CLOSE",
@@ -6053,6 +6441,14 @@
         "newBuild": false
       },
       {
+        "address": "WELFORD COURT, FLAT 4, WHITTLE DRIVE",
+        "postcode": "RM12 6FH",
+        "price": 320000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "78, UPPER RAINHAM ROAD",
         "postcode": "RM12 4BZ",
         "price": 450000,
@@ -6067,14 +6463,6 @@
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
-      },
-      {
-        "address": "WELFORD COURT, FLAT 4, WHITTLE DRIVE",
-        "postcode": "RM12 6FH",
-        "price": 320000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
       },
       {
         "address": "WELFORD COURT, FLAT 8, SPITFIRE APPROACH",
@@ -6149,14 +6537,6 @@
         "newBuild": false
       },
       {
-        "address": "14, CARBURY CLOSE",
-        "postcode": "RM12 6TT",
-        "price": 257500,
-        "dateOfTransfer": "2025-01-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "WELFORD COURT, FLAT 3, SPITFIRE APPROACH",
         "postcode": "RM12 6FL",
         "price": 380000,
@@ -6165,19 +6545,19 @@
         "newBuild": true
       },
       {
+        "address": "14, CARBURY CLOSE",
+        "postcode": "RM12 6TT",
+        "price": 257500,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "7A, MAVIS GROVE",
         "postcode": "RM12 6EX",
         "price": 1059400,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "209, STATION LANE",
-        "postcode": "RM12 6LL",
-        "price": 400000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -6202,6 +6582,14 @@
         "price": 623000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "209, STATION LANE",
+        "postcode": "RM12 6LL",
+        "price": 400000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -6237,6 +6625,14 @@
         "newBuild": false
       },
       {
+        "address": "28, DIBAN AVENUE",
+        "postcode": "RM12 4YE",
+        "price": 500000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "52, MILL PARK AVENUE",
         "postcode": "RM12 6HD",
         "price": 1010000,
@@ -6261,11 +6657,11 @@
         "newBuild": false
       },
       {
-        "address": "28, DIBAN AVENUE",
-        "postcode": "RM12 4YE",
-        "price": 500000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Semi-detached",
+        "address": "88, GRENFELL AVENUE",
+        "postcode": "RM12 4DW",
+        "price": 535200,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6275,17 +6671,9 @@
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Terraced",
         "newBuild": false
-      },
-      {
-        "address": "88, GRENFELL AVENUE",
-        "postcode": "RM12 4DW",
-        "price": 535200,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Terraced",
-        "newBuild": false
       }
     ],
-    "averagePrice": 465634,
+    "averagePrice": 465134,
     "medianPrice": 460000
   },
   "representatives": {

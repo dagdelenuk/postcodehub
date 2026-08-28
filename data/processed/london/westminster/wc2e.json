@@ -3,8 +3,8 @@
   "slug": "wc2e",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.51189443113774,
-  "longitude": -0.1233306646706587,
+  "latitude": 51.5119224,
+  "longitude": -0.12338710666666673,
   "wards": [
     "St James's"
   ],
@@ -29,6 +29,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "46 Floral Street, Covent Garden, London",
         "postcode": "WC2E 9DA",
         "numberOfPupils": 227,
@@ -40,97 +41,121 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5525,
-        "violentCrimes": 1116,
+        "totalCrimes": 5521,
+        "violentCrimes": 1111,
         "propertyCrimes": 3706
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5185,
-        "violentCrimes": 1107,
-        "propertyCrimes": 3256
+        "totalCrimes": 5172,
+        "violentCrimes": 1105,
+        "propertyCrimes": 3246
       },
       {
         "month": "2025-09",
-        "totalCrimes": 5065,
-        "violentCrimes": 1177,
-        "propertyCrimes": 3204
+        "totalCrimes": 5049,
+        "violentCrimes": 1174,
+        "propertyCrimes": 3191
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5540,
-        "violentCrimes": 1156,
-        "propertyCrimes": 3660
+        "totalCrimes": 5534,
+        "violentCrimes": 1154,
+        "propertyCrimes": 3657
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6333,
-        "violentCrimes": 1124,
-        "propertyCrimes": 4539
+        "totalCrimes": 6327,
+        "violentCrimes": 1120,
+        "propertyCrimes": 4536
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6226,
-        "violentCrimes": 1122,
-        "propertyCrimes": 4362
+        "totalCrimes": 6211,
+        "violentCrimes": 1115,
+        "propertyCrimes": 4355
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4935,
-        "violentCrimes": 1011,
-        "propertyCrimes": 3241
+        "totalCrimes": 4931,
+        "violentCrimes": 1010,
+        "propertyCrimes": 3239
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4652,
+        "totalCrimes": 4654,
         "violentCrimes": 893,
-        "propertyCrimes": 3083
+        "propertyCrimes": 3082
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4488,
-        "violentCrimes": 964,
-        "propertyCrimes": 2817
+        "totalCrimes": 4489,
+        "violentCrimes": 963,
+        "propertyCrimes": 2819
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4675,
-        "violentCrimes": 1020,
-        "propertyCrimes": 2939
+        "totalCrimes": 4666,
+        "violentCrimes": 1017,
+        "propertyCrimes": 2933
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4576,
-        "violentCrimes": 1099,
-        "propertyCrimes": 2727
+        "totalCrimes": 4584,
+        "violentCrimes": 1097,
+        "propertyCrimes": 2736
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4577,
+        "totalCrimes": 4583,
         "violentCrimes": 1039,
-        "propertyCrimes": 2835
+        "propertyCrimes": 2840
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6646,
-      "bicycle-theft": 785,
-      "burglary": 1277,
-      "criminal-damage-arson": 997,
-      "drugs": 1677,
-      "other-theft": 13366,
+      "anti-social-behaviour": 6653,
+      "bicycle-theft": 782,
+      "burglary": 1276,
+      "criminal-damage-arson": 995,
+      "drugs": 1674,
+      "other-theft": 13336,
       "possession-of-weapons": 218,
-      "public-order": 2573,
-      "robbery": 2190,
-      "shoplifting": 6303,
-      "theft-from-the-person": 16812,
-      "vehicle-crime": 829,
-      "violent-crime": 7847,
-      "other-crime": 257
+      "public-order": 2564,
+      "robbery": 2191,
+      "shoplifting": 6330,
+      "theft-from-the-person": 16791,
+      "vehicle-crime": 830,
+      "violent-crime": 7825,
+      "other-crime": 256
     },
-    "totalLast12Months": 61777
+    "totalLast12Months": 61721
   },
   "property": {
     "sales": [
+      {
+        "address": "30, FLAT 6, FLORAL STREET",
+        "postcode": "WC2E 9DP",
+        "price": 650000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT B, GARRICK STREET",
+        "postcode": "WC2E 9BH",
+        "price": 680000,
+        "dateOfTransfer": "2026-07-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ACRE HOUSE, 72, APARTMENT 104, LONG ACRE",
+        "postcode": "WC2E 9JS",
+        "price": 920000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "HARLEQUIN COURT, 20, FLAT 18, TAVISTOCK STREET",
         "postcode": "WC2E 7NZ",
@@ -188,6 +213,14 @@
         "newBuild": false
       },
       {
+        "address": "49, FLAT F, WELLINGTON STREET",
+        "postcode": "WC2E 7BN",
+        "price": 1350000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "19, FLAT 9, HENRIETTA STREET",
         "postcode": "WC2E 8QH",
         "price": 1000000,
@@ -216,6 +249,14 @@
         "postcode": "WC2E 7NZ",
         "price": 980000,
         "dateOfTransfer": "2025-09-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DUDLEY HOUSE, 36 - 38, FLAT 6, SOUTHAMPTON STREET",
+        "postcode": "WC2E 7HG",
+        "price": 1560000,
+        "dateOfTransfer": "2025-08-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -356,8 +397,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 7196020,
-    "medianPrice": 1212500
+    "averagePrice": 6262077,
+    "medianPrice": 1125000
   },
   "representatives": {
     "representatives": [

@@ -3,8 +3,8 @@
   "slug": "w1h",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.517697439942175,
-  "longitude": -0.1612134081041968,
+  "latitude": 51.517739362686584,
+  "longitude": -0.16126747611940312,
   "wards": [
     "Marylebone",
     "West End"
@@ -58,7 +58,8 @@
         "urn": "101123",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "02/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "13 Nutford Place, London",
         "postcode": "W1H 5HA",
         "numberOfPupils": 225,
@@ -69,7 +70,8 @@
         "urn": "101136",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/05/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Enford Street, London",
         "postcode": "W1H 1DL",
         "numberOfPupils": 166,
@@ -81,6 +83,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "7b Wyndham Place, Marylebone, London",
         "postcode": "W1H 1PN",
         "numberOfPupils": 139,
@@ -92,6 +95,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "1 Nutford Place, Seymour Place",
         "postcode": "W1H 5YZ",
         "numberOfPupils": 185,
@@ -103,6 +107,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "48 Bryanston Square, London",
         "postcode": "W1H 2EA",
         "numberOfPupils": 255,
@@ -114,6 +119,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "33 Seymour Place, London",
         "postcode": "W1H 5AU",
         "numberOfPupils": 157,
@@ -125,63 +131,63 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 3043,
-        "violentCrimes": 637,
-        "propertyCrimes": 1906
+        "totalCrimes": 3036,
+        "violentCrimes": 634,
+        "propertyCrimes": 1902
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2693,
+        "totalCrimes": 2694,
         "violentCrimes": 574,
-        "propertyCrimes": 1628
+        "propertyCrimes": 1627
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2598,
-        "violentCrimes": 582,
-        "propertyCrimes": 1602
+        "totalCrimes": 2593,
+        "violentCrimes": 580,
+        "propertyCrimes": 1599
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2520,
-        "violentCrimes": 538,
-        "propertyCrimes": 1527
+        "totalCrimes": 2518,
+        "violentCrimes": 539,
+        "propertyCrimes": 1524
       },
       {
         "month": "2025-11",
-        "totalCrimes": 3029,
-        "violentCrimes": 540,
-        "propertyCrimes": 2000
+        "totalCrimes": 3023,
+        "violentCrimes": 539,
+        "propertyCrimes": 1995
       },
       {
         "month": "2025-12",
-        "totalCrimes": 3329,
+        "totalCrimes": 3326,
         "violentCrimes": 561,
-        "propertyCrimes": 2310
+        "propertyCrimes": 2307
       },
       {
         "month": "2026-01",
         "totalCrimes": 2360,
-        "violentCrimes": 440,
+        "violentCrimes": 439,
         "propertyCrimes": 1455
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2228,
-        "violentCrimes": 435,
-        "propertyCrimes": 1424
+        "totalCrimes": 2224,
+        "violentCrimes": 434,
+        "propertyCrimes": 1421
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2381,
-        "violentCrimes": 483,
-        "propertyCrimes": 1497
+        "totalCrimes": 2374,
+        "violentCrimes": 480,
+        "propertyCrimes": 1493
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2454,
+        "totalCrimes": 2449,
         "violentCrimes": 468,
-        "propertyCrimes": 1486
+        "propertyCrimes": 1480
       },
       {
         "month": "2026-05",
@@ -191,31 +197,47 @@
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2501,
-        "violentCrimes": 566,
-        "propertyCrimes": 1468
+        "totalCrimes": 2497,
+        "violentCrimes": 565,
+        "propertyCrimes": 1464
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 4303,
-      "bicycle-theft": 346,
+      "anti-social-behaviour": 4307,
+      "bicycle-theft": 347,
       "burglary": 1025,
       "criminal-damage-arson": 641,
-      "drugs": 944,
-      "other-theft": 5446,
+      "drugs": 945,
+      "other-theft": 5427,
       "possession-of-weapons": 123,
-      "public-order": 1165,
-      "robbery": 1004,
-      "shoplifting": 4335,
-      "theft-from-the-person": 6729,
-      "vehicle-crime": 1214,
-      "violent-crime": 4017,
+      "public-order": 1163,
+      "robbery": 1003,
+      "shoplifting": 4325,
+      "theft-from-the-person": 6722,
+      "vehicle-crime": 1213,
+      "violent-crime": 4009,
       "other-crime": 202
     },
-    "totalLast12Months": 31494
+    "totalLast12Months": 31452
   },
   "property": {
     "sales": [
+      {
+        "address": "CRANFIELD COURT, FLAT 33, HOMER STREET",
+        "postcode": "W1H 4NF",
+        "price": 500000,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MACREADY HOUSE, 75, FLAT 52, CRAWFORD STREET",
+        "postcode": "W1H 5LP",
+        "price": 575000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "CRANFIELD COURT, FLAT 8, HOMER STREET",
         "postcode": "W1H 4NB",
@@ -249,17 +271,17 @@
         "newBuild": false
       },
       {
-        "address": "CRANFIELD COURT, FLAT 32, HOMER STREET",
-        "postcode": "W1H 4NF",
-        "price": 350000,
+        "address": "14 - 15, FLAT 6, MOLYNEUX STREET",
+        "postcode": "W1H 5HQ",
+        "price": 570000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "14 - 15, FLAT 6, MOLYNEUX STREET",
-        "postcode": "W1H 5HQ",
-        "price": 570000,
+        "address": "CRANFIELD COURT, FLAT 32, HOMER STREET",
+        "postcode": "W1H 4NF",
+        "price": 350000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -289,6 +311,14 @@
         "newBuild": false
       },
       {
+        "address": "STOURCLIFFE CLOSE, FLAT 46, STOURCLIFFE STREET",
+        "postcode": "W1H 5AR",
+        "price": 620000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "37, FLAT 6, UPPER MONTAGU STREET",
         "postcode": "W1H 1SD",
         "price": 539000,
@@ -297,10 +327,26 @@
         "newBuild": false
       },
       {
+        "address": "24, CATO STREET",
+        "postcode": "W1H 5JH",
+        "price": 2050000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "91, FLAT 3, YORK STREET",
         "postcode": "W1H 4QE",
         "price": 610000,
         "dateOfTransfer": "2026-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, BRYANSTON MEWS WEST",
+        "postcode": "W1H 2DD",
+        "price": 1725000,
+        "dateOfTransfer": "2026-03-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -358,6 +404,14 @@
         "price": 3150000,
         "dateOfTransfer": "2026-02-02",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "43B, FLAT 3, CRAWFORD STREET",
+        "postcode": "W1H 1HA",
+        "price": 977775,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -453,6 +507,14 @@
         "postcode": "W1H 2NL",
         "price": 1050000,
         "dateOfTransfer": "2025-11-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "28, CRAWFORD PLACE",
+        "postcode": "W1H 5NJ",
+        "price": 40000,
+        "dateOfTransfer": "2025-11-14",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -921,14 +983,6 @@
         "newBuild": false
       },
       {
-        "address": "25, FLAT 6, BRYANSTON SQUARE",
-        "postcode": "W1H 2DS",
-        "price": 2360000,
-        "dateOfTransfer": "2025-05-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CUMBERLAND MANSIONS, FLAT 4, GEORGE STREET",
         "postcode": "W1H 5TE",
         "price": 2000000,
@@ -937,10 +991,18 @@
         "newBuild": false
       },
       {
-        "address": "BRYANSTON MANSIONS, FLAT 14, YORK STREET",
-        "postcode": "W1H 1DA",
-        "price": 3500000,
-        "dateOfTransfer": "2025-04-11",
+        "address": "25, FLAT 6, BRYANSTON SQUARE",
+        "postcode": "W1H 2DS",
+        "price": 2360000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BILTON TOWERS, FLAT 34, GREAT CUMBERLAND PLACE",
+        "postcode": "W1H 7LD",
+        "price": 1750000,
+        "dateOfTransfer": "2025-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -948,6 +1010,14 @@
         "address": "BRYANSTON COURT, FLAT 4, GEORGE STREET",
         "postcode": "W1H 7HA",
         "price": 3000111,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BRYANSTON MANSIONS, FLAT 14, YORK STREET",
+        "postcode": "W1H 1DA",
+        "price": 3500000,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1049,20 +1119,20 @@
         "newBuild": false
       },
       {
-        "address": "1, APARTMENT 6, MOLYNEUX STREET",
-        "postcode": "W1H 5HU",
-        "price": 1976000,
-        "dateOfTransfer": "2025-03-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "17, FLAT 8, HOMER ROW",
         "postcode": "W1H 4AP",
         "price": 2890000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 6, MOLYNEUX STREET",
+        "postcode": "W1H 5HU",
+        "price": 1976000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "THE LARRIK, 32, CRAWFORD PLACE",
@@ -1073,17 +1143,17 @@
         "newBuild": false
       },
       {
-        "address": "FLAT C, 11, UPPER MONTAGU STREET",
-        "postcode": "W1H 2PG",
-        "price": 870000,
+        "address": "DUDLEY COURT, FLAT 57, UPPER BERKELEY STREET",
+        "postcode": "W1H 5QB",
+        "price": 215000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "DUDLEY COURT, FLAT 57, UPPER BERKELEY STREET",
-        "postcode": "W1H 5QB",
-        "price": 215000,
+        "address": "FLAT C, 11, UPPER MONTAGU STREET",
+        "postcode": "W1H 2PG",
+        "price": 870000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1145,6 +1215,14 @@
         "newBuild": false
       },
       {
+        "address": "CUMBERLAND MANSIONS, 28, BROWN STREET",
+        "postcode": "W1H 5ZA",
+        "price": 1750000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "1, APARTMENT 8, MOLYNEUX STREET",
         "postcode": "W1H 5HU",
         "price": 1925000,
@@ -1153,10 +1231,10 @@
         "newBuild": true
       },
       {
-        "address": "CUMBERLAND MANSIONS, 28, BROWN STREET",
-        "postcode": "W1H 5ZA",
-        "price": 1750000,
-        "dateOfTransfer": "2025-02-06",
+        "address": "17B, MONTAGU SQUARE",
+        "postcode": "W1H 2LE",
+        "price": 2800000,
+        "dateOfTransfer": "2025-01-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1169,10 +1247,10 @@
         "newBuild": false
       },
       {
-        "address": "17B, MONTAGU SQUARE",
-        "postcode": "W1H 2LE",
-        "price": 2800000,
-        "dateOfTransfer": "2025-01-31",
+        "address": "FLAT B, 44, MONTAGU SQUARE",
+        "postcode": "W1H 2LN",
+        "price": 2750000,
+        "dateOfTransfer": "2025-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1180,14 +1258,6 @@
         "address": "VARSITY COURT, 44, FLAT 9, HOMER STREET",
         "postcode": "W1H 4NW",
         "price": 708000,
-        "dateOfTransfer": "2025-01-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "FLAT B, 44, MONTAGU SQUARE",
-        "postcode": "W1H 2LN",
-        "price": 2750000,
         "dateOfTransfer": "2025-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1233,8 +1303,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1594283,
-    "medianPrice": 1259700
+    "averagePrice": 1560827,
+    "medianPrice": 1240000
   },
   "representatives": {
     "representatives": [

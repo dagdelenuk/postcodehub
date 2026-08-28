@@ -72,6 +72,28 @@ export function getAllOutcodeParams(): OutcodeParams[] {
   return params;
 }
 
+/**
+ * outcode -> its page path, for the header postcode search box. A boundary
+ * outcode has a real page under every borough it touches; prefer the
+ * primary borough's page since that's the "main" copy, falling back to
+ * whichever page exists if for some reason none is marked primary.
+ */
+export function getPostcodeSearchIndex(): Record<string, string> {
+  const hierarchy = loadHierarchy();
+  const index: Record<string, string> = {};
+  for (const city of hierarchy.cities) {
+    for (const borough of city.boroughs) {
+      for (const outcode of borough.outcodes) {
+        const path = `/${city.slug}/${borough.slug}/${outcode.slug}/`;
+        if (outcode.isPrimaryBorough || !index[outcode.outcode]) {
+          index[outcode.outcode] = path;
+        }
+      }
+    }
+  }
+  return index;
+}
+
 export interface AreaSummary {
   gpSurgeries: number;
   schools: number;
@@ -121,7 +143,13 @@ function summariseOutcodes(entries: { citySlug: string; boroughSlug: string; out
 /** Aggregates every outcode in a borough - each outcode belongs to exactly one borough's own file set, no double-counting. */
 export function getBoroughSummary(citySlug: string, boroughSlug: string): AreaSummary {
   const borough = getBorough(citySlug, boroughSlug);
-  const entries = (borough?.outcodes ?? []).map((o) => ({ citySlug, boroughSlug, outcodeSlug: o.slug }));
+  // Only sum outcodes this borough actually owns the majority of - a boundary
+  // outcode this borough merely touches (isPrimaryBorough === false) is
+  // already counted in full by whichever borough IS its primary, so summing
+  // it here too would double-count and inflate this borough's totals.
+  const entries = (borough?.outcodes ?? [])
+    .filter((o) => o.isPrimaryBorough)
+    .map((o) => ({ citySlug, boroughSlug, outcodeSlug: o.slug }));
   return summariseOutcodes(entries);
 }
 

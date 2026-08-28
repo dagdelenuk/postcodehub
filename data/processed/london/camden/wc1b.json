@@ -3,8 +3,8 @@
   "slug": "wc1b",
   "city": "London",
   "borough": "Camden",
-  "latitude": 51.51945117197452,
-  "longitude": -0.1261003121019109,
+  "latitude": 51.519173125,
+  "longitude": -0.1266667499999999,
   "wards": [
     "Bloomsbury",
     "Clerkenwell",
@@ -46,6 +46,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "43-45 Bedford Square, Bloomsbury, London",
         "postcode": "WC1B 3DN",
         "numberOfPupils": 687,
@@ -57,6 +58,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "45 Russell Square, London",
         "postcode": "WC1B 4JP",
         "numberOfPupils": 19,
@@ -68,97 +70,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5698,
-        "violentCrimes": 1149,
-        "propertyCrimes": 3725
+        "totalCrimes": 5730,
+        "violentCrimes": 1160,
+        "propertyCrimes": 3748
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5207,
-        "violentCrimes": 1084,
-        "propertyCrimes": 3216
+        "totalCrimes": 5240,
+        "violentCrimes": 1089,
+        "propertyCrimes": 3236
       },
       {
         "month": "2025-09",
-        "totalCrimes": 5139,
-        "violentCrimes": 1133,
-        "propertyCrimes": 3265
+        "totalCrimes": 5196,
+        "violentCrimes": 1166,
+        "propertyCrimes": 3283
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5703,
-        "violentCrimes": 1154,
-        "propertyCrimes": 3742
+        "totalCrimes": 5760,
+        "violentCrimes": 1164,
+        "propertyCrimes": 3776
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6491,
-        "violentCrimes": 1164,
-        "propertyCrimes": 4528
+        "totalCrimes": 6526,
+        "violentCrimes": 1167,
+        "propertyCrimes": 4554
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6388,
-        "violentCrimes": 1128,
-        "propertyCrimes": 4465
+        "totalCrimes": 6432,
+        "violentCrimes": 1136,
+        "propertyCrimes": 4503
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4971,
-        "violentCrimes": 985,
-        "propertyCrimes": 3234
+        "totalCrimes": 5007,
+        "violentCrimes": 987,
+        "propertyCrimes": 3253
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4767,
-        "violentCrimes": 876,
-        "propertyCrimes": 3145
+        "totalCrimes": 4792,
+        "violentCrimes": 873,
+        "propertyCrimes": 3162
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4656,
+        "totalCrimes": 4649,
         "violentCrimes": 994,
-        "propertyCrimes": 2842
+        "propertyCrimes": 2852
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4891,
-        "violentCrimes": 1055,
-        "propertyCrimes": 2998
+        "totalCrimes": 4900,
+        "violentCrimes": 1053,
+        "propertyCrimes": 3000
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4776,
-        "violentCrimes": 1120,
-        "propertyCrimes": 2835
+        "totalCrimes": 4803,
+        "violentCrimes": 1119,
+        "propertyCrimes": 2851
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4786,
-        "violentCrimes": 1085,
-        "propertyCrimes": 2890
+        "totalCrimes": 4804,
+        "violentCrimes": 1076,
+        "propertyCrimes": 2904
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 7512,
-      "bicycle-theft": 779,
-      "burglary": 1442,
-      "criminal-damage-arson": 1005,
-      "drugs": 1866,
-      "other-theft": 13837,
-      "possession-of-weapons": 215,
-      "public-order": 2518,
-      "robbery": 2256,
-      "shoplifting": 6253,
-      "theft-from-the-person": 16396,
-      "vehicle-crime": 1173,
-      "violent-crime": 7938,
-      "other-crime": 283
+      "anti-social-behaviour": 7595,
+      "bicycle-theft": 775,
+      "burglary": 1443,
+      "criminal-damage-arson": 1014,
+      "drugs": 1858,
+      "other-theft": 13853,
+      "possession-of-weapons": 214,
+      "public-order": 2534,
+      "robbery": 2272,
+      "shoplifting": 6282,
+      "theft-from-the-person": 16556,
+      "vehicle-crime": 1199,
+      "violent-crime": 7964,
+      "other-crime": 280
     },
-    "totalLast12Months": 63473
+    "totalLast12Months": 63839
   },
   "property": {
     "sales": [
+      {
+        "address": "CRANFIELD HOUSE, 97 - 107, FLAT 28, SOUTHAMPTON ROW",
+        "postcode": "WC1B 4HH",
+        "price": 470000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "MUSEUM MANSIONS, 63A, FLAT 15, GREAT RUSSELL STREET",
         "postcode": "WC1B 3BJ",
@@ -224,17 +234,17 @@
         "newBuild": false
       },
       {
-        "address": "CRANFIELD HOUSE, 97 - 107, FLAT 5, SOUTHAMPTON ROW",
-        "postcode": "WC1B 4HH",
-        "price": 902332,
+        "address": "RUSSELL SQUARE MANSIONS, 122, FLAT 10, SOUTHAMPTON ROW",
+        "postcode": "WC1B 5AE",
+        "price": 771000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "RUSSELL SQUARE MANSIONS, 122, FLAT 10, SOUTHAMPTON ROW",
-        "postcode": "WC1B 5AE",
-        "price": 771000,
+        "address": "CRANFIELD HOUSE, 97 - 107, FLAT 5, SOUTHAMPTON ROW",
+        "postcode": "WC1B 4HH",
+        "price": 902332,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -440,8 +450,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 7356062,
-    "medianPrice": 750000
+    "averagePrice": 7164783,
+    "medianPrice": 725000
   },
   "representatives": {
     "representatives": [

@@ -3,8 +3,8 @@
   "slug": "sw13",
   "city": "London",
   "borough": "Richmond upon Thames",
-  "latitude": 51.476313171581786,
-  "longitude": -0.2431900697050939,
+  "latitude": 51.476478527777765,
+  "longitude": -0.24260166111111095,
   "wards": [
     "Barnes",
     "Mortlake & Barnes Common"
@@ -77,8 +77,9 @@
         "name": "Lowther Primary School",
         "urn": "102892",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "11/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Stillingfleet Road, Barnes, London",
         "postcode": "SW13 9AE",
         "numberOfPupils": 244,
@@ -89,7 +90,8 @@
         "urn": "102902",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Cross Street, Barnes, London",
         "postcode": "SW13 0QQ",
         "numberOfPupils": 470,
@@ -101,6 +103,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lonsdale Road, Barnes, London",
         "postcode": "SW13 9JT",
         "numberOfPupils": 1504,
@@ -112,6 +115,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "82 Lonsdale Road, London",
         "postcode": "SW13 9JS",
         "numberOfPupils": 216,
@@ -123,6 +127,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lonsdale Road, London",
         "postcode": "SW13 9QN",
         "numberOfPupils": 1034,
@@ -134,6 +139,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Church Road, Barnes, London",
         "postcode": "SW13 9HQ",
         "numberOfPupils": 167,
@@ -145,97 +151,217 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 299,
-        "violentCrimes": 100,
+        "totalCrimes": 293,
+        "violentCrimes": 96,
         "propertyCrimes": 138
       },
       {
         "month": "2025-08",
-        "totalCrimes": 225,
+        "totalCrimes": 222,
         "violentCrimes": 54,
-        "propertyCrimes": 99
+        "propertyCrimes": 98
       },
       {
         "month": "2025-09",
-        "totalCrimes": 161,
-        "violentCrimes": 63,
-        "propertyCrimes": 54
+        "totalCrimes": 160,
+        "violentCrimes": 64,
+        "propertyCrimes": 55
       },
       {
         "month": "2025-10",
-        "totalCrimes": 205,
-        "violentCrimes": 57,
-        "propertyCrimes": 103
+        "totalCrimes": 204,
+        "violentCrimes": 63,
+        "propertyCrimes": 100
       },
       {
         "month": "2025-11",
-        "totalCrimes": 202,
+        "totalCrimes": 201,
         "violentCrimes": 60,
-        "propertyCrimes": 85
+        "propertyCrimes": 87
       },
       {
         "month": "2025-12",
-        "totalCrimes": 194,
-        "violentCrimes": 56,
-        "propertyCrimes": 93
+        "totalCrimes": 192,
+        "violentCrimes": 53,
+        "propertyCrimes": 95
       },
       {
         "month": "2026-01",
-        "totalCrimes": 185,
-        "violentCrimes": 58,
+        "totalCrimes": 187,
+        "violentCrimes": 59,
         "propertyCrimes": 93
       },
       {
         "month": "2026-02",
         "totalCrimes": 211,
         "violentCrimes": 66,
-        "propertyCrimes": 90
+        "propertyCrimes": 92
       },
       {
         "month": "2026-03",
-        "totalCrimes": 242,
-        "violentCrimes": 47,
-        "propertyCrimes": 127
+        "totalCrimes": 239,
+        "violentCrimes": 46,
+        "propertyCrimes": 125
       },
       {
         "month": "2026-04",
-        "totalCrimes": 263,
-        "violentCrimes": 70,
-        "propertyCrimes": 117
+        "totalCrimes": 257,
+        "violentCrimes": 64,
+        "propertyCrimes": 115
       },
       {
         "month": "2026-05",
-        "totalCrimes": 257,
-        "violentCrimes": 79,
-        "propertyCrimes": 84
+        "totalCrimes": 260,
+        "violentCrimes": 75,
+        "propertyCrimes": 90
       },
       {
         "month": "2026-06",
         "totalCrimes": 230,
-        "violentCrimes": 64,
-        "propertyCrimes": 91
+        "violentCrimes": 66,
+        "propertyCrimes": 92
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 611,
-      "bicycle-theft": 92,
+      "anti-social-behaviour": 595,
+      "bicycle-theft": 96,
       "burglary": 196,
-      "criminal-damage-arson": 118,
-      "drugs": 85,
-      "other-theft": 196,
-      "possession-of-weapons": 9,
-      "public-order": 138,
-      "robbery": 23,
-      "shoplifting": 67,
-      "theft-from-the-person": 33,
-      "vehicle-crime": 472,
-      "violent-crime": 604,
-      "other-crime": 30
+      "criminal-damage-arson": 121,
+      "drugs": 84,
+      "other-theft": 192,
+      "public-order": 134,
+      "robbery": 22,
+      "shoplifting": 65,
+      "theft-from-the-person": 31,
+      "vehicle-crime": 479,
+      "violent-crime": 602,
+      "other-crime": 31,
+      "possession-of-weapons": 8
     },
-    "totalLast12Months": 2674
+    "totalLast12Months": 2656
   },
   "property": {
     "sales": [
+      {
+        "address": "45, BOILEAU ROAD",
+        "postcode": "SW13 9BN",
+        "price": 710000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, THE CRESCENT",
+        "postcode": "SW13 0NN",
+        "price": 4000000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, LYRIC ROAD",
+        "postcode": "SW13 9QA",
+        "price": 700000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, WHITE HART LANE",
+        "postcode": "SW13 0PY",
+        "price": 1250000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, BOILEAU ROAD",
+        "postcode": "SW13 9BJ",
+        "price": 825000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "59, WHITE HART LANE",
+        "postcode": "SW13 0PP",
+        "price": 1640000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, BROOK GARDENS",
+        "postcode": "SW13 0LY",
+        "price": 2525000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31, MEREDYTH ROAD",
+        "postcode": "SW13 0DS",
+        "price": 2092530,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "45, RAILWAY SIDE",
+        "postcode": "SW13 0PN",
+        "price": 850000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "40, ARCHWAY STREET",
+        "postcode": "SW13 0AR",
+        "price": 1575000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26, WESTFIELDS AVENUE",
+        "postcode": "SW13 0AU",
+        "price": 1270000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "148, WHITE HART LANE",
+        "postcode": "SW13 0QB",
+        "price": 445000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, CLAVERING AVENUE",
+        "postcode": "SW13 8DY",
+        "price": 1750000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, THORNE STREET",
+        "postcode": "SW13 0PR",
+        "price": 1300000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WESTFIELDS, FLAT 110, RAILWAY SIDE",
+        "postcode": "SW13 0PL",
+        "price": 392500,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "38, BOILEAU ROAD",
         "postcode": "SW13 9BL",
@@ -269,6 +395,14 @@
         "newBuild": false
       },
       {
+        "address": "5, LAUREL ROAD",
+        "postcode": "SW13 0EE",
+        "price": 4100000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "12, ROSSLYN AVENUE",
         "postcode": "SW13 0JX",
         "price": 840000,
@@ -277,11 +411,11 @@
         "newBuild": false
       },
       {
-        "address": "5, TUDOR GARDENS",
-        "postcode": "SW13 0JS",
-        "price": 1310000,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Terraced",
+        "address": "27, GERARD ROAD",
+        "postcode": "SW13 9RQ",
+        "price": 2672400,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -293,18 +427,18 @@
         "newBuild": false
       },
       {
-        "address": "16, ROSSLYN AVENUE",
-        "postcode": "SW13 0JX",
-        "price": 1135000,
-        "dateOfTransfer": "2026-05-13",
+        "address": "5, TUDOR GARDENS",
+        "postcode": "SW13 0JS",
+        "price": 1310000,
+        "dateOfTransfer": "2026-05-22",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "56, THORNE STREET",
-        "postcode": "SW13 0PR",
-        "price": 1250000,
-        "dateOfTransfer": "2026-05-10",
+        "address": "16, ROSSLYN AVENUE",
+        "postcode": "SW13 0JX",
+        "price": 1135000,
+        "dateOfTransfer": "2026-05-13",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -325,19 +459,19 @@
         "newBuild": false
       },
       {
+        "address": "56, THORNE STREET",
+        "postcode": "SW13 0PR",
+        "price": 1250000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "30, ELLISON ROAD",
         "postcode": "SW13 0AD",
         "price": 930000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "21A, LILLIAN ROAD",
-        "postcode": "SW13 9JG",
-        "price": 1350000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -354,6 +488,14 @@
         "price": 980000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21A, LILLIAN ROAD",
+        "postcode": "SW13 9JG",
+        "price": 1350000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -425,6 +567,14 @@
         "postcode": "SW13 0AS",
         "price": 975000,
         "dateOfTransfer": "2026-04-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, LIMES AVENUE",
+        "postcode": "SW13 0HG",
+        "price": 1835000,
+        "dateOfTransfer": "2026-04-02",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -509,11 +659,27 @@
         "newBuild": false
       },
       {
+        "address": "GRASMERE COURT, FLAT 12, VERDUN ROAD",
+        "postcode": "SW13 9AU",
+        "price": 345000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "31, ULLSWATER ROAD",
         "postcode": "SW13 9PL",
         "price": 2800000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "30A, WHITE HART LANE",
+        "postcode": "SW13 0PY",
+        "price": 410000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -565,19 +731,19 @@
         "newBuild": false
       },
       {
-        "address": "45, KILMINGTON ROAD",
-        "postcode": "SW13 9BZ",
-        "price": 1300000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "CASTLENAU COURT, 180, FLAT 3, CASTELNAU",
         "postcode": "SW13 9DH",
         "price": 425000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, KILMINGTON ROAD",
+        "postcode": "SW13 9BZ",
+        "price": 1300000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -589,10 +755,26 @@
         "newBuild": false
       },
       {
+        "address": "ELM BANK MANSIONS, FLAT 13, THE TERRACE",
+        "postcode": "SW13 0NS",
+        "price": 403288,
+        "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "71, BARNES AVENUE",
         "postcode": "SW13 9AL",
         "price": 785000,
         "dateOfTransfer": "2026-01-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, ROCKS LANE",
+        "postcode": "SW13 0DB",
+        "price": 1875000,
+        "dateOfTransfer": "2026-01-26",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -637,17 +819,17 @@
         "newBuild": false
       },
       {
-        "address": "SUSSEX COURT, FLAT 26, GROVE ROAD",
-        "postcode": "SW13 0EZ",
-        "price": 329400,
+        "address": "168, WHITE HART LANE",
+        "postcode": "SW13 0QB",
+        "price": 470000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "168, WHITE HART LANE",
-        "postcode": "SW13 0QB",
-        "price": 470000,
+        "address": "SUSSEX COURT, FLAT 26, GROVE ROAD",
+        "postcode": "SW13 0EZ",
+        "price": 329400,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -661,19 +843,19 @@
         "newBuild": false
       },
       {
-        "address": "3, BOILEAU ROAD",
-        "postcode": "SW13 9BJ",
-        "price": 675000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "FAIRBAIRN LODGE, 6, FLAT 7, CASTELNAU",
         "postcode": "SW13 9RU",
         "price": 478000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, BOILEAU ROAD",
+        "postcode": "SW13 9BJ",
+        "price": 675000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -901,6 +1083,14 @@
         "newBuild": false
       },
       {
+        "address": "72, GLENTHAM ROAD",
+        "postcode": "SW13 9JJ",
+        "price": 490000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "45, LYRIC ROAD",
         "postcode": "SW13 9QA",
         "price": 934205,
@@ -941,11 +1131,27 @@
         "newBuild": false
       },
       {
+        "address": "21, WYATT DRIVE",
+        "postcode": "SW13 8AL",
+        "price": 1700000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "3, KILMINGTON ROAD",
         "postcode": "SW13 9BZ",
         "price": 1275000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PENN HOUSE, 15, FLAT 2, WHITE HART LANE",
+        "postcode": "SW13 0PX",
+        "price": 900000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1000,6 +1206,22 @@
         "address": "13, KILMINGTON ROAD",
         "postcode": "SW13 9BZ",
         "price": 1495000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, CASTELNAU GARDENS",
+        "postcode": "SW13 8DU",
+        "price": 745000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, TUDOR GARDENS",
+        "postcode": "SW13 0JS",
+        "price": 1250000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1085,11 +1307,35 @@
         "newBuild": false
       },
       {
+        "address": "29B, CHARLES STREET",
+        "postcode": "SW13 0NZ",
+        "price": 1710000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "39, WHITE HART LANE",
         "postcode": "SW13 0PU",
         "price": 1335000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15B, WHITE HART LANE",
+        "postcode": "SW13 0PX",
+        "price": 875000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "HANDEL MANSIONS, 94, FLAT 15, WYATT DRIVE",
+        "postcode": "SW13 8AH",
+        "price": 1185000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1325,6 +1571,14 @@
         "newBuild": false
       },
       {
+        "address": "5A, FLAT 2, WHITE HART LANE",
+        "postcode": "SW13 0PX",
+        "price": 360000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "5, MERTHYR TERRACE",
         "postcode": "SW13 8DL",
         "price": 1480005,
@@ -1333,9 +1587,9 @@
         "newBuild": false
       },
       {
-        "address": "5A, FLAT 2, WHITE HART LANE",
+        "address": "5A, FLAT 1, WHITE HART LANE",
         "postcode": "SW13 0PX",
-        "price": 360000,
+        "price": 550000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1413,19 +1667,19 @@
         "newBuild": false
       },
       {
-        "address": "WESTFIELDS, FLAT 107, RAILWAY SIDE",
-        "postcode": "SW13 0PL",
-        "price": 555000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "19, CHARLES STREET",
         "postcode": "SW13 0NZ",
         "price": 1385000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WESTFIELDS, FLAT 107, RAILWAY SIDE",
+        "postcode": "SW13 0PL",
+        "price": 555000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1725,6 +1979,14 @@
         "newBuild": false
       },
       {
+        "address": "WESTFIELDS, FLAT 54, RAILWAY SIDE",
+        "postcode": "SW13 0PJ",
+        "price": 510000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "1, BELLEVUE ROAD",
         "postcode": "SW13 0BJ",
         "price": 1900000,
@@ -1746,14 +2008,6 @@
         "price": 3000000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "WESTFIELDS, FLAT 54, RAILWAY SIDE",
-        "postcode": "SW13 0PJ",
-        "price": 510000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1933,17 +2187,17 @@
         "newBuild": false
       },
       {
-        "address": "22, PARKE ROAD",
-        "postcode": "SW13 9NG",
-        "price": 1830000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "ELM BANK MANSIONS, FLAT 33, THE TERRACE",
         "postcode": "SW13 0NS",
         "price": 472500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINDERMERE COURT, FLAT 18, LONSDALE ROAD, BARNES",
+        "postcode": "SW13 9AS",
+        "price": 500000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1957,11 +2211,11 @@
         "newBuild": false
       },
       {
-        "address": "WINDERMERE COURT, FLAT 18, LONSDALE ROAD, BARNES",
-        "postcode": "SW13 9AS",
-        "price": 500000,
+        "address": "22, PARKE ROAD",
+        "postcode": "SW13 9NG",
+        "price": 1830000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1981,14 +2235,6 @@
         "newBuild": false
       },
       {
-        "address": "21, LILLIAN ROAD",
-        "postcode": "SW13 9JG",
-        "price": 1135000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "BRUNEL COURT, FLAT 16, WESTFIELDS AVENUE",
         "postcode": "SW13 0BA",
         "price": 415000,
@@ -1997,11 +2243,11 @@
         "newBuild": false
       },
       {
-        "address": "54, GLEBE ROAD, BARNES",
-        "postcode": "SW13 0ED",
-        "price": 5710000,
+        "address": "21, LILLIAN ROAD",
+        "postcode": "SW13 9JG",
+        "price": 1135000,
         "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2010,6 +2256,14 @@
         "price": 2047500,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, GLEBE ROAD, BARNES",
+        "postcode": "SW13 0ED",
+        "price": 5710000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2181,9 +2435,33 @@
         "newBuild": false
       },
       {
+        "address": "76, NOWELL ROAD",
+        "postcode": "SW13 9BS",
+        "price": 980000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "93, WHITE HART LANE",
+        "postcode": "SW13 0PW",
+        "price": 965000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "49, ROCKS LANE",
         "postcode": "SW13 0DA",
         "price": 395000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "67, ROCKS LANE",
+        "postcode": "SW13 0DA",
+        "price": 450000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2202,30 +2480,6 @@
         "price": 2700000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "67, ROCKS LANE",
-        "postcode": "SW13 0DA",
-        "price": 450000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "76, NOWELL ROAD",
-        "postcode": "SW13 9BS",
-        "price": 980000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "93, WHITE HART LANE",
-        "postcode": "SW13 0PW",
-        "price": 965000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2269,19 +2523,19 @@
         "newBuild": false
       },
       {
-        "address": "PARKVIEW, FLAT 5, RAILWAY SIDE",
-        "postcode": "SW13 0PH",
-        "price": 440000,
-        "dateOfTransfer": "2025-02-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "21, RAILWAY SIDE",
         "postcode": "SW13 0PN",
         "price": 625000,
         "dateOfTransfer": "2025-02-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PARKVIEW, FLAT 5, RAILWAY SIDE",
+        "postcode": "SW13 0PH",
+        "price": 440000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2317,6 +2571,14 @@
         "newBuild": false
       },
       {
+        "address": "HOLST MANSIONS, 96, FLAT 3, WYATT DRIVE",
+        "postcode": "SW13 8AJ",
+        "price": 1000000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "9, SHERIDAN PLACE",
         "postcode": "SW13 0LH",
         "price": 530000,
@@ -2330,22 +2592,6 @@
         "price": 1880000,
         "dateOfTransfer": "2025-02-11",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "HOLST MANSIONS, 96, FLAT 3, WYATT DRIVE",
-        "postcode": "SW13 8AJ",
-        "price": 1000000,
-        "dateOfTransfer": "2025-02-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "61, RIVERVIEW GARDENS",
-        "postcode": "SW13 8QZ",
-        "price": 1475000,
-        "dateOfTransfer": "2025-02-10",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2365,11 +2611,11 @@
         "newBuild": false
       },
       {
-        "address": "16, THORNE STREET",
-        "postcode": "SW13 0PR",
-        "price": 1460000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Terraced",
+        "address": "61, RIVERVIEW GARDENS",
+        "postcode": "SW13 8QZ",
+        "price": 1475000,
+        "dateOfTransfer": "2025-02-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2378,6 +2624,14 @@
         "price": 935000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, THORNE STREET",
+        "postcode": "SW13 0PR",
+        "price": 1460000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2461,11 +2715,11 @@
         "newBuild": false
       },
       {
-        "address": "52, WHITE HART LANE",
-        "postcode": "SW13 0PZ",
-        "price": 282000,
+        "address": "34, CLEVELAND GARDENS",
+        "postcode": "SW13 0AG",
+        "price": 1865000,
         "dateOfTransfer": "2025-01-29",
-        "propertyType": "Other",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2477,19 +2731,19 @@
         "newBuild": false
       },
       {
-        "address": "34, CLEVELAND GARDENS",
-        "postcode": "SW13 0AG",
-        "price": 1865000,
-        "dateOfTransfer": "2025-01-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "31, STILLINGFLEET ROAD",
         "postcode": "SW13 9AG",
         "price": 575000,
         "dateOfTransfer": "2025-01-29",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "52, WHITE HART LANE",
+        "postcode": "SW13 0PZ",
+        "price": 282000,
+        "dateOfTransfer": "2025-01-29",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2613,8 +2867,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1442233,
-    "medianPrice": 1027000
+    "averagePrice": 1435103,
+    "medianPrice": 1062500
   },
   "representatives": {
     "representatives": [

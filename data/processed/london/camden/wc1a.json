@@ -3,8 +3,8 @@
   "slug": "wc1a",
   "city": "London",
   "borough": "Camden",
-  "latitude": 51.52034016000014,
-  "longitude": -0.11999352666666681,
+  "latitude": 51.5177980652174,
+  "longitude": -0.12477084782608694,
   "wards": [
     "Bloomsbury",
     "Clerkenwell",
@@ -38,6 +38,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "43-45 Bloomsbury Square & 2 Southampton Place, London",
         "postcode": "WC1A 2RA",
         "numberOfPupils": 143,
@@ -49,97 +50,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5338,
-        "violentCrimes": 1150,
-        "propertyCrimes": 3390
+        "totalCrimes": 5681,
+        "violentCrimes": 1132,
+        "propertyCrimes": 3755
       },
       {
         "month": "2025-08",
-        "totalCrimes": 4954,
-        "violentCrimes": 1107,
-        "propertyCrimes": 2969
+        "totalCrimes": 5263,
+        "violentCrimes": 1102,
+        "propertyCrimes": 3267
       },
       {
         "month": "2025-09",
-        "totalCrimes": 4907,
-        "violentCrimes": 1140,
-        "propertyCrimes": 3027
+        "totalCrimes": 5163,
+        "violentCrimes": 1155,
+        "propertyCrimes": 3290
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5445,
-        "violentCrimes": 1163,
-        "propertyCrimes": 3483
+        "totalCrimes": 5738,
+        "violentCrimes": 1149,
+        "propertyCrimes": 3802
       },
       {
         "month": "2025-11",
-        "totalCrimes": 5995,
-        "violentCrimes": 1152,
-        "propertyCrimes": 4046
+        "totalCrimes": 6538,
+        "violentCrimes": 1180,
+        "propertyCrimes": 4579
       },
       {
         "month": "2025-12",
-        "totalCrimes": 5759,
-        "violentCrimes": 1101,
-        "propertyCrimes": 3871
+        "totalCrimes": 6388,
+        "violentCrimes": 1134,
+        "propertyCrimes": 4478
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4644,
-        "violentCrimes": 974,
-        "propertyCrimes": 2921
+        "totalCrimes": 4955,
+        "violentCrimes": 983,
+        "propertyCrimes": 3239
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4539,
-        "violentCrimes": 885,
-        "propertyCrimes": 2929
+        "totalCrimes": 4776,
+        "violentCrimes": 866,
+        "propertyCrimes": 3193
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4450,
-        "violentCrimes": 989,
-        "propertyCrimes": 2655
+        "totalCrimes": 4605,
+        "violentCrimes": 976,
+        "propertyCrimes": 2848
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4692,
-        "violentCrimes": 1057,
-        "propertyCrimes": 2823
+        "totalCrimes": 4884,
+        "violentCrimes": 1051,
+        "propertyCrimes": 3032
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4592,
-        "violentCrimes": 1106,
-        "propertyCrimes": 2695
+        "totalCrimes": 4796,
+        "violentCrimes": 1108,
+        "propertyCrimes": 2890
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4571,
-        "violentCrimes": 1109,
-        "propertyCrimes": 2657
+        "totalCrimes": 4733,
+        "violentCrimes": 1059,
+        "propertyCrimes": 2887
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 7271,
-      "bicycle-theft": 899,
-      "burglary": 1472,
-      "criminal-damage-arson": 1047,
-      "drugs": 1940,
-      "other-theft": 13081,
-      "possession-of-weapons": 217,
-      "public-order": 2589,
-      "robbery": 2115,
-      "shoplifting": 5318,
-      "theft-from-the-person": 14665,
-      "vehicle-crime": 984,
-      "violent-crime": 8012,
-      "other-crime": 276
+      "anti-social-behaviour": 7258,
+      "bicycle-theft": 812,
+      "burglary": 1431,
+      "criminal-damage-arson": 1033,
+      "drugs": 1836,
+      "other-theft": 13999,
+      "possession-of-weapons": 213,
+      "public-order": 2514,
+      "robbery": 2270,
+      "shoplifting": 6297,
+      "theft-from-the-person": 16560,
+      "vehicle-crime": 1128,
+      "violent-crime": 7898,
+      "other-crime": 271
     },
-    "totalLast12Months": 59886
+    "totalLast12Months": 63520
   },
   "property": {
     "sales": [
+      {
+        "address": "CENTRE POINT TOWER, 101 - 103, APARTMENT 3, NEW OXFORD STREET",
+        "postcode": "WC1A 1DB",
+        "price": 9000000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "PIED BULL COURT, FLAT 5, GALEN PLACE",
         "postcode": "WC1A 2JR",
@@ -253,8 +262,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 6122643,
-    "medianPrice": 1855000
+    "averagePrice": 6314467,
+    "medianPrice": 2100000
   },
   "representatives": {
     "representatives": [

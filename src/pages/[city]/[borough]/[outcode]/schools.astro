@@ -17,6 +17,19 @@ const RATING_COLORS: Record<string, string> = {
   "Requires improvement": "bg-amber-100 text-amber-800",
   Inadequate: "bg-red-100 text-red-800",
 };
+
+// Ofsted's own CSV dates the inspection as DD/MM/YYYY; single-word ratings
+// were also discontinued after Sept 2024, so showing the date matters - a
+// "Good" badge from 2019 shouldn't read as a current judgement.
+function formatOfstedDate(raw: string | null): string | null {
+  if (!raw) return null;
+  const match = raw.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  if (!match) return null;
+  const [, day, month, year] = match;
+  const date = new Date(Number(year), Number(month) - 1, Number(day));
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
+}
 ---
 
 <LocalityLayout
@@ -42,6 +55,15 @@ const RATING_COLORS: Record<string, string> = {
             )}
           </div>
           <p class="text-sm text-stone-500 mt-1">{school.phaseOfEducation} &middot; {school.address}</p>
+          {school.ofstedRating && formatOfstedDate(school.ofstedLastInspection) && (
+            <p class="text-xs text-stone-400 mt-1">Inspected {formatOfstedDate(school.ofstedLastInspection)}</p>
+          )}
+          {school.ofstedNotJudgedUnderNewFramework && (
+            <p class="text-xs text-stone-400 mt-1">
+              {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
+              no single overall grade under Ofsted's post-2024 framework
+            </p>
+          )}
           {school.numberOfPupils && (
             <p class="text-xs text-stone-400 mt-1">
               {school.numberOfPupils} pupils{school.schoolCapacity ? ` / capacity ${school.schoolCapacity}` : ""}

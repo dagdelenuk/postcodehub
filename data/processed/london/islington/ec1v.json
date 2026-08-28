@@ -3,8 +3,8 @@
   "slug": "ec1v",
   "city": "London",
   "borough": "Islington",
-  "latitude": 51.526796055785134,
-  "longitude": -0.0977726280991736,
+  "latitude": 51.526772234913764,
+  "longitude": -0.09775806034482756,
   "wards": [
     "Bunhill",
     "Clerkenwell",
@@ -104,6 +104,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Moreland Street, London",
         "postcode": "EC1V 8BB",
         "numberOfPupils": 469,
@@ -113,8 +114,9 @@
         "name": "St Luke's CofE Primary School",
         "urn": "100443",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "25/05/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Radnor Street, London",
         "postcode": "EC1V 3SJ",
         "numberOfPupils": 208,
@@ -125,7 +127,8 @@
         "urn": "100447",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "27/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Compton Street, Goswell Road, London",
         "postcode": "EC1V 0EU",
         "numberOfPupils": 222,
@@ -137,6 +140,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "8 Dallington Street, London, United Kingdom",
         "postcode": "EC1V 0BW",
         "numberOfPupils": 45,
@@ -148,6 +152,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Northampton Square, London",
         "postcode": "EC1V 0HB",
         "numberOfPupils": null,
@@ -158,7 +163,8 @@
         "urn": "141164",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "City Road, London",
         "postcode": "EC1V 1JX",
         "numberOfPupils": 15,
@@ -170,102 +176,254 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2633,
-        "violentCrimes": 702,
-        "propertyCrimes": 1339
+        "totalCrimes": 2651,
+        "violentCrimes": 711,
+        "propertyCrimes": 1345
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2549,
-        "violentCrimes": 720,
-        "propertyCrimes": 1264
+        "totalCrimes": 2555,
+        "violentCrimes": 723,
+        "propertyCrimes": 1266
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2389,
-        "violentCrimes": 656,
-        "propertyCrimes": 1250
+        "totalCrimes": 2395,
+        "violentCrimes": 658,
+        "propertyCrimes": 1252
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2369,
-        "violentCrimes": 652,
-        "propertyCrimes": 1232
+        "totalCrimes": 2377,
+        "violentCrimes": 653,
+        "propertyCrimes": 1238
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2378,
-        "violentCrimes": 641,
-        "propertyCrimes": 1205
+        "totalCrimes": 2383,
+        "violentCrimes": 642,
+        "propertyCrimes": 1209
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2353,
-        "violentCrimes": 620,
-        "propertyCrimes": 1277
+        "totalCrimes": 2360,
+        "violentCrimes": 623,
+        "propertyCrimes": 1281
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2173,
-        "violentCrimes": 586,
-        "propertyCrimes": 1136
+        "totalCrimes": 2175,
+        "violentCrimes": 587,
+        "propertyCrimes": 1137
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2143,
-        "violentCrimes": 569,
-        "propertyCrimes": 1126
+        "totalCrimes": 2150,
+        "violentCrimes": 571,
+        "propertyCrimes": 1131
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2384,
+        "totalCrimes": 2391,
         "violentCrimes": 671,
-        "propertyCrimes": 1204
+        "propertyCrimes": 1211
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2442,
-        "violentCrimes": 637,
-        "propertyCrimes": 1303
+        "totalCrimes": 2449,
+        "violentCrimes": 639,
+        "propertyCrimes": 1308
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2371,
-        "violentCrimes": 616,
-        "propertyCrimes": 1271
+        "totalCrimes": 2375,
+        "violentCrimes": 618,
+        "propertyCrimes": 1273
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2428,
-        "violentCrimes": 660,
-        "propertyCrimes": 1300
+        "totalCrimes": 2435,
+        "violentCrimes": 661,
+        "propertyCrimes": 1305
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 4132,
-      "bicycle-theft": 871,
-      "burglary": 1224,
-      "criminal-damage-arson": 755,
-      "drugs": 1663,
-      "other-theft": 3828,
+      "anti-social-behaviour": 4137,
+      "bicycle-theft": 873,
+      "burglary": 1231,
+      "criminal-damage-arson": 757,
+      "drugs": 1666,
+      "other-theft": 3854,
       "possession-of-weapons": 139,
-      "public-order": 1482,
-      "robbery": 938,
-      "shoplifting": 3667,
-      "theft-from-the-person": 3741,
-      "vehicle-crime": 821,
-      "violent-crime": 5171,
+      "public-order": 1486,
+      "robbery": 939,
+      "shoplifting": 3668,
+      "theft-from-the-person": 3751,
+      "vehicle-crime": 822,
+      "violent-crime": 5193,
       "other-crime": 180
     },
-    "totalLast12Months": 28612
+    "totalLast12Months": 28696
   },
   "property": {
     "sales": [
+      {
+        "address": "CARRARA TOWER, 1, APARTMENT 107, BOLLINDER PLACE",
+        "postcode": "EC1V 2AE",
+        "price": 695000,
+        "dateOfTransfer": "2026-07-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "116 - 118, FLAT 3, ST JOHN STREET",
+        "postcode": "EC1V 4JW",
+        "price": 395000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9A, PENTHOUSE, DALLINGTON STREET",
+        "postcode": "EC1V 0BQ",
+        "price": 3480000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHRONICLE TOWER, 261B, FLAT 45, CITY ROAD",
+        "postcode": "EC1V 1AJ",
+        "price": 710000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "AQUARELLE HOUSE, 259, FLAT 46, CITY ROAD",
+        "postcode": "EC1V 1AG",
+        "price": 575000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "AQUARELLE HOUSE, 259, FLAT 27, CITY ROAD",
+        "postcode": "EC1V 1AG",
+        "price": 227500,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "145, FLAT 1202, CITY ROAD",
+        "postcode": "EC1V 1AX",
+        "price": 510000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TOMPION HOUSE, FLAT 17, PERCIVAL STREET",
+        "postcode": "EC1V 0HU",
+        "price": 450000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ORCHARD BUILDING, 25, APARTMENT 26, PEAR TREE STREET",
+        "postcode": "EC1V 3AP",
+        "price": 850000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LEEDS COURT, 201, FLAT 59, ST JOHN STREET",
+        "postcode": "EC1V 4LZ",
+        "price": 790000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NEWLAND COURT, FLAT 6, OLD STREET",
+        "postcode": "EC1V 9NS",
+        "price": 300000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHRONICLE TOWER, 261B, FLAT 48, CITY ROAD",
+        "postcode": "EC1V 1AJ",
+        "price": 485000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "83, FLAT 2, GOSWELL ROAD",
+        "postcode": "EC1V 7ER",
+        "price": 530000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "145, FLAT 1907, CITY ROAD",
+        "postcode": "EC1V 1AY",
+        "price": 530000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE TRIANGLE, FLAT 106, CYRUS STREET",
+        "postcode": "EC1V 0AR",
+        "price": 575000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LANGDON COURT, FLAT 24, CITY ROAD",
+        "postcode": "EC1V 1LH",
+        "price": 475000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LANGDON COURT, FLAT 6, CITY ROAD",
+        "postcode": "EC1V 1LH",
+        "price": 460000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "346, FLAT 2, CITY ROAD",
+        "postcode": "EC1V 2PY",
+        "price": 1460000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "THE ROOF TERRACE APARTMENTS, 5, FLAT 12, GREAT SUTTON STREET",
         "postcode": "EC1V 0BY",
         "price": 557000,
         "dateOfTransfer": "2026-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ANGEL SOUTHSIDE, 1, FLAT 93, OWEN STREET",
+        "postcode": "EC1V 7JW",
+        "price": 900000,
+        "dateOfTransfer": "2026-06-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -290,6 +448,14 @@
         "postcode": "EC1V 1AF",
         "price": 640000,
         "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CANALETTO TOWER, 257, FLAT 1408, CITY ROAD",
+        "postcode": "EC1V 1AE",
+        "price": 580000,
+        "dateOfTransfer": "2026-05-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -470,6 +636,14 @@
         "newBuild": false
       },
       {
+        "address": "THE DESIGN WORKS 93-99, FLAT 12, GOSWELL ROAD",
+        "postcode": "EC1V 7EY",
+        "price": 850000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BOOK HOUSE, 261A, FLAT 44, CITY ROAD",
         "postcode": "EC1V 1AH",
         "price": 480000,
@@ -478,10 +652,10 @@
         "newBuild": false
       },
       {
-        "address": "THE DESIGN WORKS 93-99, FLAT 12, GOSWELL ROAD",
-        "postcode": "EC1V 7EY",
-        "price": 850000,
-        "dateOfTransfer": "2026-02-26",
+        "address": "198, FLAT 8, ST JOHN STREET",
+        "postcode": "EC1V 4JY",
+        "price": 1115000,
+        "dateOfTransfer": "2026-02-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -510,18 +684,18 @@
         "newBuild": false
       },
       {
-        "address": "145, FLAT 3601, CITY ROAD",
-        "postcode": "EC1V 1AZ",
-        "price": 2175000,
+        "address": "CARRARA TOWER, 1, APARTMENT 1, BOLLINDER PLACE",
+        "postcode": "EC1V 2AD",
+        "price": 740000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "CARRARA TOWER, 1, APARTMENT 1, BOLLINDER PLACE",
-        "postcode": "EC1V 2AD",
-        "price": 740000,
-        "dateOfTransfer": "2026-02-05",
+        "address": "145, FLAT 3601, CITY ROAD",
+        "postcode": "EC1V 1AZ",
+        "price": 2175000,
+        "dateOfTransfer": "2026-02-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -750,19 +924,19 @@
         "newBuild": false
       },
       {
-        "address": "238, ST JOHN STREET",
-        "postcode": "EC1V 4PH",
-        "price": 1400000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "338 - 346, GOSWELL ROAD",
         "postcode": "EC1V 7LQ",
         "price": 10325000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "238, ST JOHN STREET",
+        "postcode": "EC1V 4PH",
+        "price": 1400000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -846,6 +1020,14 @@
         "newBuild": false
       },
       {
+        "address": "20 - 21, FLAT 3, BARTHOLOMEW SQUARE",
+        "postcode": "EC1V 3QT",
+        "price": 562500,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "145, FLAT 909, CITY ROAD",
         "postcode": "EC1V 1AA",
         "price": 620000,
@@ -918,17 +1100,17 @@
         "newBuild": false
       },
       {
-        "address": "CANALETTO TOWER, 257, FLAT 2201, CITY ROAD",
-        "postcode": "EC1V 1AF",
-        "price": 900000,
+        "address": "BULLION BUILDING, 132 - 136, FLAT 5, ST JOHN STREET",
+        "postcode": "EC1V 4JT",
+        "price": 615000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BULLION BUILDING, 132 - 136, FLAT 5, ST JOHN STREET",
-        "postcode": "EC1V 4JT",
-        "price": 615000,
+        "address": "CANALETTO TOWER, 257, FLAT 2201, CITY ROAD",
+        "postcode": "EC1V 1AF",
+        "price": 900000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1046,6 +1228,14 @@
         "newBuild": false
       },
       {
+        "address": "VALENCIA TOWER, 3, APARTMENT 208, BOLLINDER PLACE",
+        "postcode": "EC1V 2AR",
+        "price": 2700000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "113, DANCE SQUARE",
         "postcode": "EC1V 3AL",
         "price": 475000,
@@ -1060,14 +1250,6 @@
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
-      },
-      {
-        "address": "VALENCIA TOWER, 3, APARTMENT 208, BOLLINDER PLACE",
-        "postcode": "EC1V 2AR",
-        "price": 2700000,
-        "dateOfTransfer": "2025-07-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
       },
       {
         "address": "CLARISSA BALDWIN HOUSE, 17, WAKLEY STREET",
@@ -1174,20 +1356,20 @@
         "newBuild": false
       },
       {
-        "address": "124 - 128, CITY ROAD",
-        "postcode": "EC1V 2NX",
-        "price": 3834362,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "FRANCK HOUSE, 244, FLAT 1, GOSWELL ROAD",
         "postcode": "EC1V 7AQ",
         "price": 655000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "124 - 128, CITY ROAD",
+        "postcode": "EC1V 2NX",
+        "price": 3834362,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Other",
+        "newBuild": false
       },
       {
         "address": "MOORGREEN HOUSE, FLAT 14, WYNYATT STREET",
@@ -1246,6 +1428,14 @@
         "newBuild": false
       },
       {
+        "address": "76 - 78, GOSWELL ROAD",
+        "postcode": "EC1V 7DB",
+        "price": 2500000,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "CARRARA TOWER, 1, APARTMENT 127, BOLLINDER PLACE",
         "postcode": "EC1V 2AE",
         "price": 750000,
@@ -1294,6 +1484,14 @@
         "newBuild": false
       },
       {
+        "address": "CHRONICLE TOWER, 261B, FLAT 73, CITY ROAD",
+        "postcode": "EC1V 1AJ",
+        "price": 800000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "DICKINSON COURT, 15, FLAT 17, BREWHOUSE YARD",
         "postcode": "EC1V 4JX",
         "price": 647500,
@@ -1318,19 +1516,27 @@
         "newBuild": false
       },
       {
-        "address": "CHRONICLE TOWER, 261B, FLAT 73, CITY ROAD",
-        "postcode": "EC1V 1AJ",
-        "price": 800000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CITY WALK APARTMENTS, 29, FLAT 11, SEWARD STREET",
         "postcode": "EC1V 3RF",
         "price": 750000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT 63, MACCLESFIELD ROAD",
+        "postcode": "EC1V 8DJ",
+        "price": 587500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BATH COURT, FLAT 127, ST LUKES ESTATE",
+        "postcode": "EC1V 9NT",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1369,22 +1575,6 @@
         "address": "42, FLAT 4, RAWSTORNE STREET",
         "postcode": "EC1V 7PN",
         "price": 452500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "BATH COURT, FLAT 127, ST LUKES ESTATE",
-        "postcode": "EC1V 9NT",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "6, FLAT 63, MACCLESFIELD ROAD",
-        "postcode": "EC1V 8DJ",
-        "price": 587500,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1438,17 +1628,17 @@
         "newBuild": false
       },
       {
-        "address": "NEWLAND COURT, FLAT 11, OLD STREET",
-        "postcode": "EC1V 9NS",
-        "price": 420000,
+        "address": "THE TRIANGLE, FLAT 68, COMPTON STREET",
+        "postcode": "EC1V 0AG",
+        "price": 350000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "THE TRIANGLE, FLAT 68, COMPTON STREET",
-        "postcode": "EC1V 0AG",
-        "price": 350000,
+        "address": "NEWLAND COURT, FLAT 11, OLD STREET",
+        "postcode": "EC1V 9NS",
+        "price": 420000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1462,9 +1652,9 @@
         "newBuild": false
       },
       {
-        "address": "KATIAL HOUSE, 248, FLAT 13, GOSWELL ROAD",
-        "postcode": "EC1V 7AS",
-        "price": 840000,
+        "address": "IMPERIAL HALL, 104 - 122, FLAT 35, CITY ROAD",
+        "postcode": "EC1V 2NR",
+        "price": 920000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1478,9 +1668,9 @@
         "newBuild": false
       },
       {
-        "address": "IMPERIAL HALL, 104 - 122, FLAT 35, CITY ROAD",
-        "postcode": "EC1V 2NR",
-        "price": 920000,
+        "address": "KATIAL HOUSE, 248, FLAT 13, GOSWELL ROAD",
+        "postcode": "EC1V 7AS",
+        "price": 840000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1518,17 +1708,17 @@
         "newBuild": false
       },
       {
-        "address": "20 - 21, FLAT 5, BARTHOLOMEW SQUARE",
-        "postcode": "EC1V 3QT",
-        "price": 799200,
+        "address": "242 - 244, FLAT 3, ST JOHN STREET",
+        "postcode": "EC1V 4PG",
+        "price": 585000,
         "dateOfTransfer": "2025-03-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "242 - 244, FLAT 3, ST JOHN STREET",
-        "postcode": "EC1V 4PG",
-        "price": 585000,
+        "address": "20 - 21, FLAT 5, BARTHOLOMEW SQUARE",
+        "postcode": "EC1V 3QT",
+        "price": 799200,
         "dateOfTransfer": "2025-03-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1590,14 +1780,6 @@
         "newBuild": false
       },
       {
-        "address": "CARRARA TOWER, 1, APARTMENT 81, BOLLINDER PLACE",
-        "postcode": "EC1V 2AE",
-        "price": 1095000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "68, DANCE SQUARE",
         "postcode": "EC1V 3AJ",
         "price": 142500,
@@ -1625,6 +1807,14 @@
         "address": "NEWLAND COURT, FLAT 44, OLD STREET",
         "postcode": "EC1V 9NS",
         "price": 520000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CARRARA TOWER, 1, APARTMENT 81, BOLLINDER PLACE",
+        "postcode": "EC1V 2AE",
+        "price": 1095000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1742,8 +1932,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1346224,
-    "medianPrice": 700000
+    "averagePrice": 1289454,
+    "medianPrice": 692500
   },
   "representatives": {
     "representatives": [

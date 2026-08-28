@@ -3,8 +3,8 @@
   "slug": "sw5",
   "city": "London",
   "borough": "Kensington and Chelsea",
-  "latitude": 51.49163487868853,
-  "longitude": -0.19188619672131144,
+  "latitude": 51.491805441281166,
+  "longitude": -0.19214204982206418,
   "wards": [
     "Abingdon",
     "Courtfield",
@@ -106,7 +106,8 @@
         "urn": "100480",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/09/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "South Bolton Gardens, London",
         "postcode": "SW5 0DJ",
         "numberOfPupils": 434,
@@ -118,6 +119,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "23 Collingham Gardens, London",
         "postcode": "SW5 0HL",
         "numberOfPupils": 162,
@@ -129,6 +131,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "4 Wetherby Gardens, London",
         "postcode": "SW5 0JN",
         "numberOfPupils": 106,
@@ -140,102 +143,198 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1453,
-        "violentCrimes": 416,
+        "totalCrimes": 1444,
+        "violentCrimes": 411,
         "propertyCrimes": 627
       },
       {
         "month": "2025-08",
-        "totalCrimes": 1432,
-        "violentCrimes": 439,
-        "propertyCrimes": 577
+        "totalCrimes": 1428,
+        "violentCrimes": 440,
+        "propertyCrimes": 574
       },
       {
         "month": "2025-09",
-        "totalCrimes": 1381,
-        "violentCrimes": 384,
-        "propertyCrimes": 603
+        "totalCrimes": 1360,
+        "violentCrimes": 381,
+        "propertyCrimes": 600
       },
       {
         "month": "2025-10",
-        "totalCrimes": 1407,
-        "violentCrimes": 390,
-        "propertyCrimes": 672
+        "totalCrimes": 1402,
+        "violentCrimes": 389,
+        "propertyCrimes": 670
       },
       {
         "month": "2025-11",
-        "totalCrimes": 1333,
+        "totalCrimes": 1327,
         "violentCrimes": 383,
-        "propertyCrimes": 568
+        "propertyCrimes": 566
       },
       {
         "month": "2025-12",
-        "totalCrimes": 1282,
-        "violentCrimes": 375,
-        "propertyCrimes": 558
+        "totalCrimes": 1283,
+        "violentCrimes": 374,
+        "propertyCrimes": 560
       },
       {
         "month": "2026-01",
-        "totalCrimes": 1304,
-        "violentCrimes": 413,
-        "propertyCrimes": 532
+        "totalCrimes": 1289,
+        "violentCrimes": 408,
+        "propertyCrimes": 526
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1184,
-        "violentCrimes": 333,
-        "propertyCrimes": 521
+        "totalCrimes": 1174,
+        "violentCrimes": 330,
+        "propertyCrimes": 520
       },
       {
         "month": "2026-03",
-        "totalCrimes": 1297,
-        "violentCrimes": 384,
-        "propertyCrimes": 545
+        "totalCrimes": 1293,
+        "violentCrimes": 382,
+        "propertyCrimes": 542
       },
       {
         "month": "2026-04",
-        "totalCrimes": 1258,
-        "violentCrimes": 399,
+        "totalCrimes": 1256,
+        "violentCrimes": 395,
         "propertyCrimes": 521
       },
       {
         "month": "2026-05",
-        "totalCrimes": 1332,
-        "violentCrimes": 400,
+        "totalCrimes": 1325,
+        "violentCrimes": 399,
         "propertyCrimes": 511
       },
       {
         "month": "2026-06",
-        "totalCrimes": 1292,
-        "violentCrimes": 415,
-        "propertyCrimes": 504
+        "totalCrimes": 1280,
+        "violentCrimes": 412,
+        "propertyCrimes": 500
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3813,
-      "bicycle-theft": 308,
-      "burglary": 789,
-      "criminal-damage-arson": 584,
+      "anti-social-behaviour": 3767,
+      "bicycle-theft": 310,
+      "burglary": 792,
+      "criminal-damage-arson": 583,
       "drugs": 566,
-      "other-theft": 1851,
+      "other-theft": 1849,
       "possession-of-weapons": 72,
-      "public-order": 913,
-      "robbery": 285,
-      "shoplifting": 1193,
-      "theft-from-the-person": 816,
-      "vehicle-crime": 1198,
-      "violent-crime": 3461,
-      "other-crime": 106
+      "public-order": 915,
+      "robbery": 283,
+      "shoplifting": 1184,
+      "theft-from-the-person": 806,
+      "vehicle-crime": 1193,
+      "violent-crime": 3434,
+      "other-crime": 107
     },
-    "totalLast12Months": 15955
+    "totalLast12Months": 15861
   },
   "property": {
     "sales": [
+      {
+        "address": "27A, FLAT 21, NEVERN SQUARE",
+        "postcode": "SW5 9TH",
+        "price": 1150000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 8, BINA GARDENS",
+        "postcode": "SW5 0LD",
+        "price": 485000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, FLAT D, EARDLEY CRESCENT",
+        "postcode": "SW5 9JS",
+        "price": 600000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51, FLAT 2, BARKSTON GARDENS",
+        "postcode": "SW5 0ES",
+        "price": 1630000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "284, BASEMENT FLAT, EARLS COURT ROAD",
+        "postcode": "SW5 9AS",
+        "price": 900000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, HOGARTH PLACE",
+        "postcode": "SW5 0QT",
+        "price": 895000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "24, FLAT 3, HOGARTH ROAD",
+        "postcode": "SW5 0PT",
+        "price": 525000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, REDFIELD LANE",
+        "postcode": "SW5 0RG",
+        "price": 2655000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, FLAT F, NEVERN SQUARE",
+        "postcode": "SW5 9PN",
+        "price": 950000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT 14, THE MANSIONS",
+        "postcode": "SW5 9BW",
+        "price": 255000,
+        "dateOfTransfer": "2026-06-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "KENSINGTON MANSIONS, FLAT 69A, WARWICK ROAD",
         "postcode": "SW5 9TB",
         "price": 450000,
         "dateOfTransfer": "2026-06-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ASHBURN HOUSE, 35, FLAT 2, COLLINGHAM ROAD",
+        "postcode": "SW5 0NU",
+        "price": 837500,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT 9, THE MANSIONS",
+        "postcode": "SW5 9BW",
+        "price": 247500,
+        "dateOfTransfer": "2026-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -264,6 +363,14 @@
         "newBuild": false
       },
       {
+        "address": "8, FLAT 3, COLLINGHAM PLACE",
+        "postcode": "SW5 0PY",
+        "price": 925000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "71, FLAT 3, PHILBEACH GARDENS",
         "postcode": "SW5 9EY",
         "price": 850000,
@@ -288,14 +395,6 @@
         "newBuild": false
       },
       {
-        "address": "150, FLAT, OLD BROMPTON ROAD",
-        "postcode": "SW5 0BE",
-        "price": 1983700,
-        "dateOfTransfer": "2026-05-05",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "30, FLAT 12, BRAMHAM GARDENS",
         "postcode": "SW5 0HF",
         "price": 3900000,
@@ -304,9 +403,17 @@
         "newBuild": false
       },
       {
-        "address": "67, FLAT L, EARDLEY CRESCENT",
-        "postcode": "SW5 9JT",
-        "price": 650000,
+        "address": "150, FLAT, OLD BROMPTON ROAD",
+        "postcode": "SW5 0BE",
+        "price": 1983700,
+        "dateOfTransfer": "2026-05-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "105, BARKSTON GARDENS",
+        "postcode": "SW5 0EX",
+        "price": 1325000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -320,9 +427,9 @@
         "newBuild": false
       },
       {
-        "address": "105, BARKSTON GARDENS",
-        "postcode": "SW5 0EX",
-        "price": 1325000,
+        "address": "67, FLAT L, EARDLEY CRESCENT",
+        "postcode": "SW5 9JT",
+        "price": 650000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -512,6 +619,38 @@
         "newBuild": false
       },
       {
+        "address": "46, FLAT G, LONGRIDGE ROAD",
+        "postcode": "SW5 9SJ",
+        "price": 265000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FLAT 1, BRAMHAM GARDENS",
+        "postcode": "SW5 0JJ",
+        "price": 1800000,
+        "dateOfTransfer": "2026-02-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, FLAT 2, PENYWERN ROAD",
+        "postcode": "SW5 9TT",
+        "price": 2020000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "COURTFIELD HOUSE 10-11, FLAT 6, COURTFIELD GARDENS",
+        "postcode": "SW5 0PL",
+        "price": 1200000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "RUPERT HOUSE, 52 - 57, FLAT 2, NEVERN SQUARE",
         "postcode": "SW5 9PL",
         "price": 850000,
@@ -528,11 +667,27 @@
         "newBuild": false
       },
       {
+        "address": "SULLIVAN COURT, 109, FLAT 38, EARLS COURT ROAD",
+        "postcode": "SW5 9RP",
+        "price": 792000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "43 - 44, FLAT 7, NEVERN SQUARE",
         "postcode": "SW5 9PF",
         "price": 600000,
         "dateOfTransfer": "2026-01-29",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, WALLGRAVE ROAD",
+        "postcode": "SW5 0RF",
+        "price": 1440310,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -549,6 +704,14 @@
         "price": 700000,
         "dateOfTransfer": "2026-01-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, REDFIELD LANE",
+        "postcode": "SW5 0RN",
+        "price": 1050000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -768,6 +931,14 @@
         "newBuild": false
       },
       {
+        "address": "210 - 212, EARLS COURT ROAD",
+        "postcode": "SW5 9QB",
+        "price": 4249817,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "HUNTER HOUSE, 326 - 342, FLAT 1, OLD BROMPTON ROAD",
         "postcode": "SW5 9LD",
         "price": 540000,
@@ -872,6 +1043,14 @@
         "newBuild": false
       },
       {
+        "address": "50C, PENYWERN ROAD",
+        "postcode": "SW5 9SX",
+        "price": 850000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "1, FLAT 3B, EARLS COURT SQUARE",
         "postcode": "SW5 9BY",
         "price": 310000,
@@ -888,17 +1067,17 @@
         "newBuild": false
       },
       {
-        "address": "KENSINGTON MANSIONS, FLAT 68B, WARWICK ROAD",
-        "postcode": "SW5 9TB",
-        "price": 685000,
+        "address": "YORK MANSIONS, 215, FLAT 10, EARLS COURT ROAD",
+        "postcode": "SW5 9AF",
+        "price": 1360000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "YORK MANSIONS, 215, FLAT 10, EARLS COURT ROAD",
-        "postcode": "SW5 9AF",
-        "price": 1360000,
+        "address": "KENSINGTON MANSIONS, FLAT 68B, WARWICK ROAD",
+        "postcode": "SW5 9TB",
+        "price": 685000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -944,10 +1123,10 @@
         "newBuild": false
       },
       {
-        "address": "WARWICK MANSIONS, FLAT 9A, CROMWELL CRESCENT",
-        "postcode": "SW5 9QR",
-        "price": 600000,
-        "dateOfTransfer": "2025-09-05",
+        "address": "HUNTER HOUSE, 326 - 342, FLAT 10, OLD BROMPTON ROAD",
+        "postcode": "SW5 9LD",
+        "price": 450000,
+        "dateOfTransfer": "2025-09-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -957,6 +1136,14 @@
         "price": 50000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "WARWICK MANSIONS, FLAT 9A, CROMWELL CRESCENT",
+        "postcode": "SW5 9QR",
+        "price": 600000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -979,6 +1166,14 @@
         "address": "1, REDFIELD MEWS",
         "postcode": "SW5 0RH",
         "price": 1475000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1A, CHILDS PLACE",
+        "postcode": "SW5 9RX",
+        "price": 1510000,
         "dateOfTransfer": "2025-09-02",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1056,17 +1251,17 @@
         "newBuild": false
       },
       {
-        "address": "103, LOWER GROUND FLOOR FLAT, WARWICK ROAD",
-        "postcode": "SW5 9EZ",
-        "price": 370000,
+        "address": "61, FLAT 5, EARLS COURT SQUARE",
+        "postcode": "SW5 9DG",
+        "price": 820000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "61, FLAT 5, EARLS COURT SQUARE",
-        "postcode": "SW5 9DG",
-        "price": 820000,
+        "address": "103, LOWER GROUND FLOOR FLAT, WARWICK ROAD",
+        "postcode": "SW5 9EZ",
+        "price": 370000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1096,19 +1291,19 @@
         "newBuild": false
       },
       {
-        "address": "8, FLAT 5, BRAMHAM GARDENS",
-        "postcode": "SW5 0JQ",
-        "price": 1069375,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "56, LONGRIDGE ROAD",
         "postcode": "SW5 9SH",
         "price": 4350000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, FLAT 5, BRAMHAM GARDENS",
+        "postcode": "SW5 0JQ",
+        "price": 1069375,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1144,17 +1339,17 @@
         "newBuild": false
       },
       {
-        "address": "19, FLAT 6, NEVERN SQUARE",
-        "postcode": "SW5 9PD",
-        "price": 1380000,
+        "address": "40, FLAT 3, PHILBEACH GARDENS",
+        "postcode": "SW5 9EB",
+        "price": 475000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "40, FLAT 3, PHILBEACH GARDENS",
-        "postcode": "SW5 9EB",
-        "price": 475000,
+        "address": "19, FLAT 6, NEVERN SQUARE",
+        "postcode": "SW5 9PD",
+        "price": 1380000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1296,9 +1491,9 @@
         "newBuild": false
       },
       {
-        "address": "KENSINGTON MANSIONS, FLAT 17, TREBOVIR ROAD",
-        "postcode": "SW5 9TF",
-        "price": 2800000,
+        "address": "8, FLAT 1, NEVERN SQUARE",
+        "postcode": "SW5 9NW",
+        "price": 950000,
         "dateOfTransfer": "2025-06-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1312,9 +1507,9 @@
         "newBuild": false
       },
       {
-        "address": "8, FLAT 1, NEVERN SQUARE",
-        "postcode": "SW5 9NW",
-        "price": 950000,
+        "address": "KENSINGTON MANSIONS, FLAT 17, TREBOVIR ROAD",
+        "postcode": "SW5 9TF",
+        "price": 2800000,
         "dateOfTransfer": "2025-06-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1352,27 +1547,11 @@
         "newBuild": false
       },
       {
-        "address": "27, FLAT 1, GLEDHOW GARDENS",
-        "postcode": "SW5 0AZ",
-        "price": 1150000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "20, COLLINGHAM PLACE",
         "postcode": "SW5 0PZ",
         "price": 5100000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "23, FLAT 3, COLLINGHAM PLACE",
-        "postcode": "SW5 0QF",
-        "price": 910000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1384,9 +1563,25 @@
         "newBuild": false
       },
       {
+        "address": "23, FLAT 3, COLLINGHAM PLACE",
+        "postcode": "SW5 0QF",
+        "price": 910000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "30, FLAT D, KEMPSFORD GARDENS",
         "postcode": "SW5 9LH",
         "price": 423000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, FLAT 1, GLEDHOW GARDENS",
+        "postcode": "SW5 0AZ",
+        "price": 1150000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1616,22 +1811,6 @@
         "newBuild": false
       },
       {
-        "address": "35, REDCLIFFE CLOSE",
-        "postcode": "SW5 9HY",
-        "price": 585000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "YORK MANSIONS, 215, FLAT 3, EARLS COURT ROAD",
-        "postcode": "SW5 9AF",
-        "price": 820000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "20, FLAT 11, COURTFIELD GARDENS",
         "postcode": "SW5 0PD",
         "price": 510000,
@@ -1648,6 +1827,14 @@
         "newBuild": false
       },
       {
+        "address": "49, FLAT B, COURTFIELD GARDENS",
+        "postcode": "SW5 0NA",
+        "price": 1435000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "41, FLAT 2, KEMPSFORD GARDENS",
         "postcode": "SW5 9LA",
         "price": 485000,
@@ -1656,17 +1843,17 @@
         "newBuild": false
       },
       {
-        "address": "22A, WALLGRAVE ROAD",
-        "postcode": "SW5 0RF",
-        "price": 851000,
+        "address": "35, REDCLIFFE CLOSE",
+        "postcode": "SW5 9HY",
+        "price": 585000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "49, FLAT B, COURTFIELD GARDENS",
-        "postcode": "SW5 0NA",
-        "price": 1435000,
+        "address": "YORK MANSIONS, 215, FLAT 3, EARLS COURT ROAD",
+        "postcode": "SW5 9AF",
+        "price": 820000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1680,9 +1867,25 @@
         "newBuild": false
       },
       {
-        "address": "13, FLAT 2, BRAMHAM GARDENS",
-        "postcode": "SW5 0JJ",
-        "price": 2000000,
+        "address": "22A, WALLGRAVE ROAD",
+        "postcode": "SW5 0RF",
+        "price": 851000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SHERBORNE COURT, 180 - 186, FLAT 20, CROMWELL ROAD",
+        "postcode": "SW5 0SS",
+        "price": 385000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, FLAT 4, EARLS COURT SQUARE",
+        "postcode": "SW5 9DP",
+        "price": 1280000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1712,9 +1915,9 @@
         "newBuild": false
       },
       {
-        "address": "8, FLAT 4, EARLS COURT SQUARE",
-        "postcode": "SW5 9DP",
-        "price": 1280000,
+        "address": "13, FLAT 2, BRAMHAM GARDENS",
+        "postcode": "SW5 0JJ",
+        "price": 2000000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1723,14 +1926,6 @@
         "address": "COLEHERNE COURT, FLAT 18A, THE LITTLE BOLTONS",
         "postcode": "SW5 0DL",
         "price": 1200000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "SHERBORNE COURT, 180 - 186, FLAT 20, CROMWELL ROAD",
-        "postcode": "SW5 0SS",
-        "price": 385000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1776,17 +1971,17 @@
         "newBuild": false
       },
       {
-        "address": "RICHMOND MANSIONS, FLAT 9A, OLD BROMPTON ROAD",
-        "postcode": "SW5 9HL",
-        "price": 1150000,
+        "address": "SHERBORNE COURT, 180 - 186, FLAT 19, CROMWELL ROAD",
+        "postcode": "SW5 0SS",
+        "price": 392500,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "SHERBORNE COURT, 180 - 186, FLAT 19, CROMWELL ROAD",
-        "postcode": "SW5 0SS",
-        "price": 392500,
+        "address": "RICHMOND MANSIONS, FLAT 9A, OLD BROMPTON ROAD",
+        "postcode": "SW5 9HL",
+        "price": 1150000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1816,17 +2011,17 @@
         "newBuild": false
       },
       {
-        "address": "12, FLAT 3, LONGRIDGE ROAD",
-        "postcode": "SW5 9SL",
-        "price": 500000,
+        "address": "177, FLAT 5, CROMWELL ROAD",
+        "postcode": "SW5 0SE",
+        "price": 1275000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "177, FLAT 5, CROMWELL ROAD",
-        "postcode": "SW5 0SE",
-        "price": 1275000,
+        "address": "12, FLAT 3, LONGRIDGE ROAD",
+        "postcode": "SW5 9SL",
+        "price": 500000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1920,14 +2115,6 @@
         "newBuild": false
       },
       {
-        "address": "28, FLAT 5, GLEDHOW GARDENS",
-        "postcode": "SW5 0AZ",
-        "price": 1045000,
-        "dateOfTransfer": "2025-03-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "3, UNIT 7, CLUNY MEWS",
         "postcode": "SW5 9AG",
         "price": 417405,
@@ -1950,6 +2137,14 @@
         "dateOfTransfer": "2025-03-03",
         "propertyType": "Other",
         "newBuild": true
+      },
+      {
+        "address": "28, FLAT 5, GLEDHOW GARDENS",
+        "postcode": "SW5 0AZ",
+        "price": 1045000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       },
       {
         "address": "26, FLAT 4, EARLS COURT GARDENS",
@@ -1976,17 +2171,17 @@
         "newBuild": false
       },
       {
-        "address": "304, FLAT 1, EARLS COURT ROAD",
-        "postcode": "SW5 9BA",
-        "price": 240000,
+        "address": "16, FLAT 12, NEVERN PLACE",
+        "postcode": "SW5 9PR",
+        "price": 386000,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "16, FLAT 12, NEVERN PLACE",
-        "postcode": "SW5 9PR",
-        "price": 386000,
+        "address": "304, FLAT 1, EARLS COURT ROAD",
+        "postcode": "SW5 9BA",
+        "price": 240000,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2072,17 +2267,17 @@
         "newBuild": false
       },
       {
-        "address": "75, FLAT 3, EARDLEY CRESCENT",
-        "postcode": "SW5 9JT",
-        "price": 339000,
+        "address": "12A, FLAT 1, COURTFIELD GARDENS",
+        "postcode": "SW5 0PL",
+        "price": 1150000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "12A, FLAT 1, COURTFIELD GARDENS",
-        "postcode": "SW5 0PL",
-        "price": 1150000,
+        "address": "75, FLAT 3, EARDLEY CRESCENT",
+        "postcode": "SW5 9JT",
+        "price": 339000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2200,17 +2395,17 @@
         "newBuild": false
       },
       {
-        "address": "177, FLAT 2, CROMWELL ROAD",
-        "postcode": "SW5 0SE",
-        "price": 800000,
+        "address": "BOSTON HOUSE, 31, FLAT 12, COLLINGHAM ROAD",
+        "postcode": "SW5 0NS",
+        "price": 720000,
         "dateOfTransfer": "2025-01-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BOSTON HOUSE, 31, FLAT 12, COLLINGHAM ROAD",
-        "postcode": "SW5 0NS",
-        "price": 720000,
+        "address": "177, FLAT 2, CROMWELL ROAD",
+        "postcode": "SW5 0SE",
+        "price": 800000,
         "dateOfTransfer": "2025-01-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2256,8 +2451,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1019149,
-    "medianPrice": 795000
+    "averagePrice": 1030783,
+    "medianPrice": 800000
   },
   "representatives": {
     "representatives": [

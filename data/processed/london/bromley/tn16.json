@@ -3,8 +3,8 @@
   "slug": "tn16",
   "city": "London",
   "borough": "Bromley",
-  "latitude": 51.2927772922078,
-  "longitude": 0.051996683441558424,
+  "latitude": 51.29252641086586,
+  "longitude": 0.05201585908319185,
   "wards": [
     "Biggin Hill",
     "Brasted, Chevening and Sundridge",
@@ -120,7 +120,8 @@
         "urn": "118616",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Rysted Lane, Westerham",
         "postcode": "TN16 1EZ",
         "numberOfPupils": 203,
@@ -131,7 +132,8 @@
         "urn": "119032",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/12/2019",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Westerham Road, Westerham",
         "postcode": "TN16 1QN",
         "numberOfPupils": 129,
@@ -142,7 +144,8 @@
         "urn": "136545",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "15/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Jail Lane, Biggin Hill, Westerham",
         "postcode": "TN16 3AU",
         "numberOfPupils": 1305,
@@ -152,8 +155,9 @@
         "name": "Biggin Hill Primary School",
         "urn": "137244",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "20/04/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Old Tye Avenue, Biggin Hill, Westerham",
         "postcode": "TN16 3LY",
         "numberOfPupils": 444,
@@ -164,7 +168,8 @@
         "urn": "141896",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Jail Lane, Biggin Hill, Westerham",
         "postcode": "TN16 3AX",
         "numberOfPupils": 48,
@@ -175,7 +180,8 @@
         "urn": "142234",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Requires improvement",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Oaklands Lane, Biggin Hill, Westerham",
         "postcode": "TN16 3DN",
         "numberOfPupils": 423,
@@ -185,8 +191,9 @@
         "name": "Tatsfield Primary School",
         "urn": "144231",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "14/10/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "3 Ship Hill, Tatsfield",
         "postcode": "TN16 2AH",
         "numberOfPupils": 205,
@@ -285,10 +292,194 @@
   "property": {
     "sales": [
       {
+        "address": "19, CROYDON ROAD",
+        "postcode": "TN16 1TN",
+        "price": 695000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "WHITELANDS, THE AVENUE",
+        "postcode": "TN16 2EE",
+        "price": 1150000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, VERN PLACE, TATSFIELD",
+        "postcode": "TN16 2BF",
+        "price": 400000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30A, MOUNT PLEASANT, BIGGIN HILL",
+        "postcode": "TN16 3TR",
+        "price": 390000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, HOLLINGWORTH WAY",
+        "postcode": "TN16 1BS",
+        "price": 410000,
+        "dateOfTransfer": "2026-07-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "126, SUTHERLAND AVENUE, BIGGIN HILL",
+        "postcode": "TN16 3HJ",
+        "price": 375000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, MOUNT PLEASANT, BIGGIN HILL",
+        "postcode": "TN16 3TR",
+        "price": 395000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "DOUGLAS COURT, FLAT 2, MAIN ROAD, BIGGIN HILL",
+        "postcode": "TN16 3LQ",
+        "price": 247500,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE GARDEN HOUSE, BRASTED CHART",
+        "postcode": "TN16 1LW",
+        "price": 1425000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "20, SOUTH BANK",
+        "postcode": "TN16 1EN",
+        "price": 485000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, ST MARY'S GREEN, BIGGIN HILL",
+        "postcode": "TN16 3RB",
+        "price": 610000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, MADAN ROAD",
+        "postcode": "TN16 1DU",
+        "price": 585000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "VEGA, CHART LANE, BRASTED",
+        "postcode": "TN16 1LN",
+        "price": 545000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, BARTLETT ROAD",
+        "postcode": "TN16 1TP",
+        "price": 220000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "52, APERFIELD ROAD, BIGGIN HILL",
+        "postcode": "TN16 3LX",
+        "price": 525000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "78, MAIN ROAD, BIGGIN HILL",
+        "postcode": "TN16 3DT",
+        "price": 700000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, CHALLOCK CLOSE, BIGGIN HILL",
+        "postcode": "TN16 3XP",
+        "price": 415000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, CHALLOCK CLOSE, BIGGIN HILL",
+        "postcode": "TN16 3XP",
+        "price": 458000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "GROSVENOR HOUSE COTTAGE, MILL STREET",
+        "postcode": "TN16 1TH",
+        "price": 395000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, BARWELL CRESCENT, BIGGIN HILL",
+        "postcode": "TN16 3GD",
+        "price": 588500,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "18A, KINGS ROAD, BIGGIN HILL",
+        "postcode": "TN16 3XU",
+        "price": 470000,
+        "dateOfTransfer": "2026-06-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "171C, KINGS ROAD, BIGGIN HILL",
         "postcode": "TN16 3NT",
         "price": 510000,
         "dateOfTransfer": "2026-06-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42, ALEXANDRA ROAD, BIGGIN HILL",
+        "postcode": "TN16 3NZ",
+        "price": 417500,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, ACER ROAD, BIGGIN HILL",
+        "postcode": "TN16 3SP",
+        "price": 307000,
+        "dateOfTransfer": "2026-06-11",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -389,6 +580,22 @@
         "newBuild": false
       },
       {
+        "address": "TUDOR COURT, 210, FLAT 36, MAIN ROAD, BIGGIN HILL",
+        "postcode": "TN16 3BB",
+        "price": 135000,
+        "dateOfTransfer": "2026-05-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "74, MADAN ROAD",
+        "postcode": "TN16 1DX",
+        "price": 200000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "RASPBERRY ROOM, HIGH STREET, BRASTED",
         "postcode": "TN16 1JE",
         "price": 275000,
@@ -413,6 +620,14 @@
         "newBuild": false
       },
       {
+        "address": "33, DOWDING ROAD, BIGGIN HILL",
+        "postcode": "TN16 3BG",
+        "price": 550000,
+        "dateOfTransfer": "2026-05-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "33, VALLEY VIEW, BIGGIN HILL",
         "postcode": "TN16 3QN",
         "price": 200000,
@@ -429,14 +644,6 @@
         "newBuild": false
       },
       {
-        "address": "12, HOLLINGWORTH WAY",
-        "postcode": "TN16 1BS",
-        "price": 290000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "36B, SUTHERLAND AVENUE, BIGGIN HILL",
         "postcode": "TN16 3HE",
         "price": 600000,
@@ -450,6 +657,14 @@
         "price": 385000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, HOLLINGWORTH WAY",
+        "postcode": "TN16 1BS",
+        "price": 290000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -573,6 +788,14 @@
         "newBuild": false
       },
       {
+        "address": "KIRKLAND, HAWTHORNE AVENUE, BIGGIN HILL",
+        "postcode": "TN16 3SG",
+        "price": 515000,
+        "dateOfTransfer": "2026-03-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "2, BLACKTHORNE ROAD, BIGGIN HILL",
         "postcode": "TN16 3SH",
         "price": 430000,
@@ -586,14 +809,6 @@
         "price": 425000,
         "dateOfTransfer": "2026-03-19",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "KIRKLAND, HAWTHORNE AVENUE, BIGGIN HILL",
-        "postcode": "TN16 3SG",
-        "price": 515000,
-        "dateOfTransfer": "2026-03-19",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -797,14 +1012,6 @@
         "newBuild": false
       },
       {
-        "address": "CORMORANT PLACE, FLAT 5, HIGH STREET",
-        "postcode": "TN16 1RG",
-        "price": 370000,
-        "dateOfTransfer": "2026-01-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "20B, EDWARD ROAD, BIGGIN HILL",
         "postcode": "TN16 3HN",
         "price": 570000,
@@ -826,6 +1033,14 @@
         "price": 615000,
         "dateOfTransfer": "2026-01-06",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CORMORANT PLACE, FLAT 5, HIGH STREET",
+        "postcode": "TN16 1RG",
+        "price": 370000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -869,6 +1084,14 @@
         "newBuild": false
       },
       {
+        "address": "TOYS HOUSE, PUDDLEDOCK LANE",
+        "postcode": "TN16 1PY",
+        "price": 5250000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "BIRDSONG, BERRYS GREEN ROAD, BERRYS GREEN",
         "postcode": "TN16 3AJ",
         "price": 820000,
@@ -906,6 +1129,14 @@
         "price": 87500,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, MOUNT PLEASANT, BIGGIN HILL",
+        "postcode": "TN16 3TP",
+        "price": 450000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1101,19 +1332,19 @@
         "newBuild": false
       },
       {
-        "address": "THE OLD JAIL, JAIL LANE, BIGGIN HILL",
-        "postcode": "TN16 3AX",
-        "price": 424800,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "10, SUNNINGVALE CLOSE, BIGGIN HILL",
         "postcode": "TN16 3BS",
         "price": 475000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, ALLENBY ROAD, BIGGIN HILL",
+        "postcode": "TN16 3LH",
+        "price": 650000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1141,19 +1372,19 @@
         "newBuild": false
       },
       {
-        "address": "27, ALLENBY ROAD, BIGGIN HILL",
-        "postcode": "TN16 3LH",
-        "price": 650000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "17, PAYNESFIELD ROAD, TATSFIELD",
         "postcode": "TN16 2AT",
         "price": 425000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE OLD JAIL, JAIL LANE, BIGGIN HILL",
+        "postcode": "TN16 3AX",
+        "price": 424800,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1181,6 +1412,14 @@
         "newBuild": false
       },
       {
+        "address": "23, ALLENBY ROAD, BIGGIN HILL",
+        "postcode": "TN16 3LH",
+        "price": 450000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "TUDOR COURT, 210, FLAT 32, MAIN ROAD, BIGGIN HILL",
         "postcode": "TN16 3BB",
         "price": 120000,
@@ -1189,11 +1428,11 @@
         "newBuild": false
       },
       {
-        "address": "23, ALLENBY ROAD, BIGGIN HILL",
-        "postcode": "TN16 3LH",
-        "price": 450000,
+        "address": "8, LUSTED HALL LANE, TATSFIELD",
+        "postcode": "TN16 2AE",
+        "price": 404350,
         "dateOfTransfer": "2025-10-29",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1293,6 +1532,14 @@
         "newBuild": false
       },
       {
+        "address": "23, CROYDON ROAD",
+        "postcode": "TN16 1TS",
+        "price": 800000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "10, TREEBOURNE ROAD, BIGGIN HILL",
         "postcode": "TN16 3QW",
         "price": 430000,
@@ -1317,17 +1564,17 @@
         "newBuild": false
       },
       {
-        "address": "4, SHIPFIELD CLOSE, TATSFIELD",
-        "postcode": "TN16 2AU",
-        "price": 525000,
+        "address": "49, ST MARY'S GREEN, BIGGIN HILL",
+        "postcode": "TN16 3RB",
+        "price": 315000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "23, CROYDON ROAD",
-        "postcode": "TN16 1TS",
-        "price": 800000,
+        "address": "4, SHIPFIELD CLOSE, TATSFIELD",
+        "postcode": "TN16 2AU",
+        "price": 525000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1381,10 +1628,10 @@
         "newBuild": false
       },
       {
-        "address": "14, TREEBOURNE ROAD, BIGGIN HILL",
-        "postcode": "TN16 3QW",
-        "price": 411500,
-        "dateOfTransfer": "2025-10-02",
+        "address": "3, BELVEDERE ROAD, BIGGIN HILL",
+        "postcode": "TN16 3HX",
+        "price": 640000,
+        "dateOfTransfer": "2025-10-03",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1397,6 +1644,14 @@
         "newBuild": false
       },
       {
+        "address": "14, TREEBOURNE ROAD, BIGGIN HILL",
+        "postcode": "TN16 3QW",
+        "price": 411500,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "3, MERRYHILLS CLOSE, BIGGIN HILL",
         "postcode": "TN16 3UQ",
         "price": 340000,
@@ -1405,17 +1660,25 @@
         "newBuild": false
       },
       {
-        "address": "DELLFIELD, MOORHOUSE ROAD",
-        "postcode": "TN16 2ES",
-        "price": 1190000,
-        "dateOfTransfer": "2025-09-29",
-        "propertyType": "Detached",
+        "address": "FALCON HOUSE, 3, BLACK EAGLE CLOSE",
+        "postcode": "TN16 1SE",
+        "price": 430000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "324, MAIN ROAD",
         "postcode": "TN16 2HL",
         "price": 300000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "DELLFIELD, MOORHOUSE ROAD",
+        "postcode": "TN16 2ES",
+        "price": 1190000,
         "dateOfTransfer": "2025-09-29",
         "propertyType": "Detached",
         "newBuild": false
@@ -1485,6 +1748,14 @@
         "newBuild": false
       },
       {
+        "address": "121, KINGS ROAD, BIGGIN HILL",
+        "postcode": "TN16 3NH",
+        "price": 475000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "17, SANDY LANE",
         "postcode": "TN16 1EB",
         "price": 592500,
@@ -1525,14 +1796,6 @@
         "newBuild": false
       },
       {
-        "address": "121, KINGS ROAD, BIGGIN HILL",
-        "postcode": "TN16 3NH",
-        "price": 475000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "NORMANNIA, HILLCREST ROAD, BIGGIN HILL",
         "postcode": "TN16 3UA",
         "price": 410000,
@@ -1541,19 +1804,19 @@
         "newBuild": false
       },
       {
-        "address": "284, MAIN ROAD, BIGGIN HILL",
-        "postcode": "TN16 3JG",
-        "price": 425000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "3, LATHAM CLOSE, BIGGIN HILL",
         "postcode": "TN16 3XD",
         "price": 392500,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "284, MAIN ROAD, BIGGIN HILL",
+        "postcode": "TN16 3JG",
+        "price": 425000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1581,19 +1844,19 @@
         "newBuild": false
       },
       {
-        "address": "HAZELDENE, RICKETTS HILL ROAD, TATSFIELD",
-        "postcode": "TN16 2NB",
-        "price": 980000,
-        "dateOfTransfer": "2025-09-10",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "6, NIGHTINGALE CLOSE, BIGGIN HILL",
         "postcode": "TN16 3LW",
         "price": 450000,
         "dateOfTransfer": "2025-09-10",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HAZELDENE, RICKETTS HILL ROAD, TATSFIELD",
+        "postcode": "TN16 2NB",
+        "price": 980000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1605,19 +1868,19 @@
         "newBuild": false
       },
       {
-        "address": "46, PAYNESFIELD ROAD, TATSFIELD",
-        "postcode": "TN16 2BG",
-        "price": 485000,
-        "dateOfTransfer": "2025-09-04",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "33, MAGNOLIA DRIVE, BIGGIN HILL",
         "postcode": "TN16 3SN",
         "price": 425000,
         "dateOfTransfer": "2025-09-04",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, PAYNESFIELD ROAD, TATSFIELD",
+        "postcode": "TN16 2BG",
+        "price": 485000,
+        "dateOfTransfer": "2025-09-04",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1645,22 +1908,6 @@
         "newBuild": false
       },
       {
-        "address": "398, MAIN ROAD",
-        "postcode": "TN16 2HP",
-        "price": 570000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "19, BEECH ROAD, BIGGIN HILL",
-        "postcode": "TN16 3JQ",
-        "price": 470000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "BREACHES, VICARAGE HILL",
         "postcode": "TN16 1AY",
         "price": 3400000,
@@ -1674,6 +1921,22 @@
         "price": 360000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, BEECH ROAD, BIGGIN HILL",
+        "postcode": "TN16 3JQ",
+        "price": 470000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "398, MAIN ROAD",
+        "postcode": "TN16 2HP",
+        "price": 570000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1818,6 +2081,14 @@
         "price": 570000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, TREEBOURNE ROAD, BIGGIN HILL",
+        "postcode": "TN16 3QW",
+        "price": 415000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2093,20 +2364,20 @@
         "newBuild": false
       },
       {
-        "address": "10, MOUCHOTTE CLOSE, BIGGIN HILL",
-        "postcode": "TN16 3ES",
-        "price": 624000,
-        "dateOfTransfer": "2025-07-02",
-        "propertyType": "Detached",
-        "newBuild": true
-      },
-      {
         "address": "8, KEYMER CLOSE, BIGGIN HILL",
         "postcode": "TN16 3DF",
         "price": 450000,
         "dateOfTransfer": "2025-07-02",
         "propertyType": "Semi-detached",
         "newBuild": false
+      },
+      {
+        "address": "10, MOUCHOTTE CLOSE, BIGGIN HILL",
+        "postcode": "TN16 3ES",
+        "price": 624000,
+        "dateOfTransfer": "2025-07-02",
+        "propertyType": "Detached",
+        "newBuild": true
       },
       {
         "address": "1A, TEMPLE ROAD, BIGGIN HILL",
@@ -2301,6 +2572,14 @@
         "newBuild": false
       },
       {
+        "address": "5, CERES VIEW, BIGGIN HILL",
+        "postcode": "TN16 3FA",
+        "price": 535000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "27, VINCENT SQUARE, BIGGIN HILL",
         "postcode": "TN16 3EL",
         "price": 461000,
@@ -2314,14 +2593,6 @@
         "price": 485000,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "5, CERES VIEW, BIGGIN HILL",
-        "postcode": "TN16 3FA",
-        "price": 535000,
-        "dateOfTransfer": "2025-06-06",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2533,19 +2804,19 @@
         "newBuild": false
       },
       {
+        "address": "HOSEY HEIGHTS, HOSEY HILL",
+        "postcode": "TN16 1TB",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "21, MAPLE LEAF CLOSE, BIGGIN HILL",
         "postcode": "TN16 3JW",
         "price": 215000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "LITTLE WESTON, 38, HIGHFIELD ROAD, BIGGIN HILL",
-        "postcode": "TN16 3UU",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2557,9 +2828,9 @@
         "newBuild": false
       },
       {
-        "address": "HOSEY HEIGHTS, HOSEY HILL",
-        "postcode": "TN16 1TB",
-        "price": 625000,
+        "address": "LITTLE WESTON, 38, HIGHFIELD ROAD, BIGGIN HILL",
+        "postcode": "TN16 3UU",
+        "price": 500000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Detached",
         "newBuild": false
@@ -2570,6 +2841,14 @@
         "price": 438000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "GATE HOUSE COURT, 3, GRANGE CLOSE",
+        "postcode": "TN16 1AG",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2592,14 +2871,6 @@
         "address": "6, MAPLE LEAF CLOSE, BIGGIN HILL",
         "postcode": "TN16 3JW",
         "price": 205000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "GATE HOUSE COURT, 3, GRANGE CLOSE",
-        "postcode": "TN16 1AG",
-        "price": 475000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2645,6 +2916,14 @@
         "newBuild": false
       },
       {
+        "address": "12, TEMPLE ROAD, BIGGIN HILL",
+        "postcode": "TN16 3UH",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "1, SUNNINGVALE CLOSE, BIGGIN HILL",
         "postcode": "TN16 3BS",
         "price": 525000,
@@ -2669,14 +2948,6 @@
         "newBuild": false
       },
       {
-        "address": "12, TEMPLE ROAD, BIGGIN HILL",
-        "postcode": "TN16 3UH",
-        "price": 415000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "CARINA, 149, SUNNINGVALE AVENUE, BIGGIN HILL",
         "postcode": "TN16 3TL",
         "price": 510000,
@@ -2690,6 +2961,30 @@
         "price": 1775000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "55, MOUNT PLEASANT, BIGGIN HILL",
+        "postcode": "TN16 3TP",
+        "price": 572000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "TUDOR COURT, 210, FLAT 37, MAIN ROAD, BIGGIN HILL",
+        "postcode": "TN16 3BB",
+        "price": 305000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, WAKELY CLOSE, BIGGIN HILL",
+        "postcode": "TN16 3RR",
+        "price": 362000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2717,35 +3012,11 @@
         "newBuild": false
       },
       {
-        "address": "TUDOR COURT, 210, FLAT 37, MAIN ROAD, BIGGIN HILL",
-        "postcode": "TN16 3BB",
-        "price": 305000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "55, MOUNT PLEASANT, BIGGIN HILL",
-        "postcode": "TN16 3TP",
-        "price": 572000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "LANGENFELD, HILLCREST ROAD, BIGGIN HILL",
         "postcode": "TN16 3UA",
         "price": 465000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "12, WAKELY CLOSE, BIGGIN HILL",
-        "postcode": "TN16 3RR",
-        "price": 362000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2861,19 +3132,19 @@
         "newBuild": false
       },
       {
-        "address": "3, STATION ROAD, BRASTED",
-        "postcode": "TN16 1NT",
-        "price": 507000,
-        "dateOfTransfer": "2025-03-12",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "15, ST MARY'S GREEN, BIGGIN HILL",
         "postcode": "TN16 3RB",
         "price": 341000,
         "dateOfTransfer": "2025-03-12",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, STATION ROAD, BRASTED",
+        "postcode": "TN16 1NT",
+        "price": 507000,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2933,19 +3204,19 @@
         "newBuild": false
       },
       {
-        "address": "3, FARLEY NURSERY",
-        "postcode": "TN16 1RR",
-        "price": 430000,
-        "dateOfTransfer": "2025-03-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "6, FILEY CLOSE, BIGGIN HILL",
         "postcode": "TN16 3PE",
         "price": 435000,
         "dateOfTransfer": "2025-03-05",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, FARLEY NURSERY",
+        "postcode": "TN16 1RR",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3053,14 +3324,6 @@
         "newBuild": false
       },
       {
-        "address": "67, MADAN ROAD",
-        "postcode": "TN16 1DX",
-        "price": 615000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "TUDOR COURT, 210, FLAT 21, MAIN ROAD, BIGGIN HILL",
         "postcode": "TN16 3BB",
         "price": 157500,
@@ -3077,19 +3340,19 @@
         "newBuild": false
       },
       {
+        "address": "67, MADAN ROAD",
+        "postcode": "TN16 1DX",
+        "price": 615000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "8, LEBANON GARDENS, BIGGIN HILL",
         "postcode": "TN16 3HA",
         "price": 350000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, MADAN ROAD",
-        "postcode": "TN16 1DU",
-        "price": 599950,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3101,19 +3364,27 @@
         "newBuild": false
       },
       {
-        "address": "444, MAIN ROAD",
-        "postcode": "TN16 2HW",
-        "price": 725000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "DUNCANS COTTAGES, 6, DUNCANS YARD",
         "postcode": "TN16 1AD",
         "price": 318000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26, MADAN ROAD",
+        "postcode": "TN16 1DU",
+        "price": 599950,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "444, MAIN ROAD",
+        "postcode": "TN16 2HW",
+        "price": 725000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3149,19 +3420,19 @@
         "newBuild": false
       },
       {
-        "address": "146, MAIN ROAD, BIGGIN HILL",
-        "postcode": "TN16 3BA",
-        "price": 80000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "63, APERFIELD ROAD, BIGGIN HILL",
         "postcode": "TN16 3LX",
         "price": 640000,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "146, MAIN ROAD, BIGGIN HILL",
+        "postcode": "TN16 3BA",
+        "price": 80000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3197,17 +3468,17 @@
         "newBuild": false
       },
       {
-        "address": "4, HOLLINGWORTH WAY",
-        "postcode": "TN16 1BS",
-        "price": 410000,
+        "address": "9, RAILWAY TERRACE",
+        "postcode": "TN16 1BY",
+        "price": 395000,
         "dateOfTransfer": "2025-01-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "9, RAILWAY TERRACE",
-        "postcode": "TN16 1BY",
-        "price": 395000,
+        "address": "4, HOLLINGWORTH WAY",
+        "postcode": "TN16 1BS",
+        "price": 410000,
         "dateOfTransfer": "2025-01-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3229,6 +3500,14 @@
         "newBuild": false
       },
       {
+        "address": "26, OLD TYE AVENUE, BIGGIN HILL",
+        "postcode": "TN16 3LY",
+        "price": 500000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "7, NIGHTINGALE CLOSE, BIGGIN HILL",
         "postcode": "TN16 3LW",
         "price": 490000,
@@ -3242,14 +3521,6 @@
         "price": 581000,
         "dateOfTransfer": "2025-01-23",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, OLD TYE AVENUE, BIGGIN HILL",
-        "postcode": "TN16 3LY",
-        "price": 500000,
-        "dateOfTransfer": "2025-01-23",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3277,6 +3548,14 @@
         "newBuild": false
       },
       {
+        "address": "124, JAIL LANE, BIGGIN HILL",
+        "postcode": "TN16 3SQ",
+        "price": 540000,
+        "dateOfTransfer": "2025-01-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "33, VILLAGE GREEN AVENUE, BIGGIN HILL",
         "postcode": "TN16 3LN",
         "price": 730000,
@@ -3285,10 +3564,10 @@
         "newBuild": false
       },
       {
-        "address": "124, JAIL LANE, BIGGIN HILL",
-        "postcode": "TN16 3SQ",
-        "price": 540000,
-        "dateOfTransfer": "2025-01-16",
+        "address": "88, MOUNT PLEASANT, BIGGIN HILL",
+        "postcode": "TN16 3TR",
+        "price": 590000,
+        "dateOfTransfer": "2025-01-14",
         "propertyType": "Detached",
         "newBuild": false
       },
@@ -3301,27 +3580,11 @@
         "newBuild": false
       },
       {
-        "address": "88, MOUNT PLEASANT, BIGGIN HILL",
-        "postcode": "TN16 3TR",
-        "price": 590000,
-        "dateOfTransfer": "2025-01-14",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "3F, SUNNINGVALE AVENUE, BIGGIN HILL",
         "postcode": "TN16 3BU",
         "price": 392500,
         "dateOfTransfer": "2025-01-14",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "72, VALLEY VIEW, BIGGIN HILL",
-        "postcode": "TN16 3QN",
-        "price": 410000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3347,10 +3610,18 @@
         "dateOfTransfer": "2025-01-06",
         "propertyType": "Detached",
         "newBuild": false
+      },
+      {
+        "address": "72, VALLEY VIEW, BIGGIN HILL",
+        "postcode": "TN16 3QN",
+        "price": 410000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Terraced",
+        "newBuild": false
       }
     ],
-    "averagePrice": 617127,
-    "medianPrice": 475000
+    "averagePrice": 618647,
+    "medianPrice": 472500
   },
   "representatives": {
     "representatives": [

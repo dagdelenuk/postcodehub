@@ -3,8 +3,8 @@
   "slug": "w1s",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.51120059856631,
-  "longitude": -0.1423860770609319,
+  "latitude": 51.511243504725854,
+  "longitude": -0.14243697353497164,
   "wards": [
     "West End"
   ],
@@ -28,6 +28,7 @@
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "3 Burlington Gardens, London",
         "postcode": "W1S 3EP",
         "numberOfPupils": null,
@@ -39,97 +40,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5725,
-        "violentCrimes": 1111,
-        "propertyCrimes": 3875
+        "totalCrimes": 5733,
+        "violentCrimes": 1113,
+        "propertyCrimes": 3881
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5169,
-        "violentCrimes": 1033,
-        "propertyCrimes": 3338
+        "totalCrimes": 5179,
+        "violentCrimes": 1034,
+        "propertyCrimes": 3346
       },
       {
         "month": "2025-09",
-        "totalCrimes": 4969,
-        "violentCrimes": 1130,
-        "propertyCrimes": 3176
+        "totalCrimes": 4979,
+        "violentCrimes": 1134,
+        "propertyCrimes": 3180
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5439,
-        "violentCrimes": 1059,
-        "propertyCrimes": 3652
+        "totalCrimes": 5455,
+        "violentCrimes": 1061,
+        "propertyCrimes": 3663
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6543,
-        "violentCrimes": 1100,
-        "propertyCrimes": 4737
+        "totalCrimes": 6548,
+        "violentCrimes": 1102,
+        "propertyCrimes": 4740
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6589,
+        "totalCrimes": 6598,
         "violentCrimes": 1120,
-        "propertyCrimes": 4723
+        "propertyCrimes": 4730
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4791,
-        "violentCrimes": 918,
-        "propertyCrimes": 3221
+        "totalCrimes": 4797,
+        "violentCrimes": 921,
+        "propertyCrimes": 3224
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4494,
+        "totalCrimes": 4501,
         "violentCrimes": 799,
-        "propertyCrimes": 3068
+        "propertyCrimes": 3072
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4378,
-        "violentCrimes": 876,
-        "propertyCrimes": 2857
+        "totalCrimes": 4390,
+        "violentCrimes": 881,
+        "propertyCrimes": 2859
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4629,
+        "totalCrimes": 4638,
         "violentCrimes": 915,
-        "propertyCrimes": 2897
+        "propertyCrimes": 2903
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4439,
-        "violentCrimes": 1032,
-        "propertyCrimes": 2709
+        "totalCrimes": 4459,
+        "violentCrimes": 1039,
+        "propertyCrimes": 2717
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4349,
+        "totalCrimes": 4359,
         "violentCrimes": 939,
-        "propertyCrimes": 2706
+        "propertyCrimes": 2712
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6355,
-      "bicycle-theft": 510,
-      "burglary": 1254,
-      "criminal-damage-arson": 937,
-      "drugs": 1890,
-      "other-theft": 13002,
-      "possession-of-weapons": 234,
-      "public-order": 2364,
-      "robbery": 2257,
-      "shoplifting": 6939,
-      "theft-from-the-person": 16975,
-      "vehicle-crime": 1342,
-      "violent-crime": 7177,
+      "anti-social-behaviour": 6380,
+      "bicycle-theft": 519,
+      "burglary": 1260,
+      "criminal-damage-arson": 946,
+      "drugs": 1893,
+      "other-theft": 13015,
+      "possession-of-weapons": 235,
+      "public-order": 2376,
+      "robbery": 2260,
+      "shoplifting": 6941,
+      "theft-from-the-person": 17003,
+      "vehicle-crime": 1343,
+      "violent-crime": 7187,
       "other-crime": 278
     },
-    "totalLast12Months": 61514
+    "totalLast12Months": 61636
   },
   "property": {
     "sales": [
+      {
+        "address": "1, SAVILE ROW",
+        "postcode": "W1S 3JR",
+        "price": 31000000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "170, NEW BOND STREET",
         "postcode": "W1S 4RB",
@@ -143,6 +152,22 @@
         "postcode": "W1S 4BF",
         "price": 14025000,
         "dateOfTransfer": "2026-05-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "9, NEW BURLINGTON PLACE",
+        "postcode": "W1S 2HU",
+        "price": 1957000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, HANOVER SQUARE",
+        "postcode": "W1S 1HL",
+        "price": 65000000,
+        "dateOfTransfer": "2026-03-27",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -235,14 +260,6 @@
         "newBuild": false
       },
       {
-        "address": "5A, STAFFORD STREET",
-        "postcode": "W1S 4RR",
-        "price": 3100000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "25, APARTMENT 407, CORK STREET",
         "postcode": "W1S 3NB",
         "price": 3000000,
@@ -259,6 +276,14 @@
         "newBuild": false
       },
       {
+        "address": "5A, STAFFORD STREET",
+        "postcode": "W1S 4RR",
+        "price": 3100000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "46, FLAT 2, MADDOX STREET",
         "postcode": "W1S 1AY",
         "price": 860000,
@@ -267,17 +292,17 @@
         "newBuild": false
       },
       {
-        "address": "26, ALBEMARLE STREET",
-        "postcode": "W1S 4HY",
-        "price": 23500000,
+        "address": "26C, ALBEMARLE STREET",
+        "postcode": "W1S 4JB",
+        "price": 750000,
         "dateOfTransfer": "2025-07-07",
         "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "26C, ALBEMARLE STREET",
-        "postcode": "W1S 4JB",
-        "price": 750000,
+        "address": "26, ALBEMARLE STREET",
+        "postcode": "W1S 4HY",
+        "price": 23500000,
         "dateOfTransfer": "2025-07-07",
         "propertyType": "Other",
         "newBuild": false
@@ -363,8 +388,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 9884034,
-    "medianPrice": 3100000
+    "averagePrice": 12018562,
+    "medianPrice": 3612500
   },
   "representatives": {
     "representatives": [

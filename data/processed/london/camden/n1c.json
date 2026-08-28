@@ -3,8 +3,8 @@
   "slug": "n1c",
   "city": "London",
   "borough": "Camden",
-  "latitude": 51.53692909756098,
-  "longitude": -0.12590389024390242,
+  "latitude": 51.536941481481485,
+  "longitude": -0.12585256790123453,
   "wards": [
     "Camden Square",
     "King's Cross",
@@ -36,8 +36,9 @@
         "name": "Frank Barnes School for Deaf Children",
         "urn": "100091",
         "phaseOfEducation": "Not applicable",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "11/05/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "4 Wollstonecraft Street, Kings Cross, London",
         "postcode": "N1C 4BT",
         "numberOfPupils": 40,
@@ -48,7 +49,8 @@
         "urn": "139837",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/06/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Jubilee Waterside Centre, 105 Camley Street, London",
         "postcode": "N1C 4PF",
         "numberOfPupils": 168,
@@ -58,8 +60,9 @@
         "name": "Kings Cross Academy",
         "urn": "140686",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "13/07/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Plimsoll Building, 4 Wollstonecraft Street, London",
         "postcode": "N1C 4BT",
         "numberOfPupils": 399,
@@ -71,37 +74,37 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2417,
+        "totalCrimes": 2418,
         "violentCrimes": 677,
         "propertyCrimes": 1137
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2240,
+        "totalCrimes": 2242,
         "violentCrimes": 652,
-        "propertyCrimes": 1058
+        "propertyCrimes": 1059
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2266,
-        "violentCrimes": 666,
+        "totalCrimes": 2268,
+        "violentCrimes": 668,
         "propertyCrimes": 1150
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2333,
+        "totalCrimes": 2335,
         "violentCrimes": 701,
         "propertyCrimes": 1081
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2124,
-        "violentCrimes": 629,
+        "totalCrimes": 2126,
+        "violentCrimes": 630,
         "propertyCrimes": 952
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2082,
+        "totalCrimes": 2083,
         "violentCrimes": 574,
         "propertyCrimes": 1000
       },
@@ -113,60 +116,84 @@
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1936,
+        "totalCrimes": 1937,
         "violentCrimes": 550,
-        "propertyCrimes": 865
+        "propertyCrimes": 866
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2266,
-        "violentCrimes": 675,
+        "totalCrimes": 2269,
+        "violentCrimes": 677,
         "propertyCrimes": 986
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2220,
-        "violentCrimes": 633,
+        "totalCrimes": 2223,
+        "violentCrimes": 634,
         "propertyCrimes": 1012
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2275,
-        "violentCrimes": 723,
+        "totalCrimes": 2278,
+        "violentCrimes": 724,
         "propertyCrimes": 992
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2377,
+        "totalCrimes": 2379,
         "violentCrimes": 805,
         "propertyCrimes": 1004
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 5046,
+      "anti-social-behaviour": 5058,
       "bicycle-theft": 527,
-      "burglary": 851,
+      "burglary": 853,
       "criminal-damage-arson": 791,
-      "drugs": 1285,
+      "drugs": 1286,
       "other-theft": 3660,
       "possession-of-weapons": 113,
-      "public-order": 1578,
-      "robbery": 857,
+      "public-order": 1580,
+      "robbery": 858,
       "shoplifting": 1863,
       "theft-from-the-person": 3458,
       "vehicle-crime": 950,
-      "violent-crime": 5354,
+      "violent-crime": 5358,
       "other-crime": 193
     },
-    "totalLast12Months": 26526
+    "totalLast12Months": 26548
   },
   "property": {
     "sales": [
+      {
+        "address": "GASHOLDERS BUILDING, 1, APARTMENT 10-82, LEWIS CUBITT SQUARE",
+        "postcode": "N1C 4BW",
+        "price": 5750000,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAPESTRY APARTMENTS, 1, APARTMENT 29, CANAL REACH",
+        "postcode": "N1C 4AZ",
+        "price": 512500,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "100, FLAT 14, CAMLEY STREET",
         "postcode": "N1C 4EE",
         "price": 1000000,
         "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PLIMSOLL BUILDING, 1, APARTMENT F5-12, HANDYSIDE STREET",
+        "postcode": "N1C 4BQ",
+        "price": 680000,
+        "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -387,19 +414,19 @@
         "newBuild": true
       },
       {
-        "address": "5, FLAT 11, CANAL REACH",
-        "postcode": "N1C 4BB",
-        "price": 690000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ARTHOUSE, 1, APARTMENT B3-3, YORK WAY",
         "postcode": "N1C 4AT",
         "price": 690000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 11, CANAL REACH",
+        "postcode": "N1C 4BB",
+        "price": 690000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -457,9 +484,17 @@
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT A.09.01, LEWIS CUBITT PARK",
+        "postcode": "N1C 4EL",
+        "price": 1525500,
+        "dateOfTransfer": "2025-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       }
     ],
-    "averagePrice": 1545230,
+    "averagePrice": 1601012,
     "medianPrice": 1000000
   },
   "representatives": {

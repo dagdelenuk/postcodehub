@@ -3,8 +3,8 @@
   "slug": "ec4m",
   "city": "London",
   "borough": "City of London",
-  "latitude": 51.51432203225806,
-  "longitude": -0.09950879569892472,
+  "latitude": 51.514058675000015,
+  "longitude": -0.09918256249999997,
   "wards": [
     "Bread Street",
     "Castle Baynard",
@@ -42,6 +42,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "2 New Change, London",
         "postcode": "EC4M 9AD",
         "numberOfPupils": 280,
@@ -53,97 +54,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2727,
-        "violentCrimes": 650,
-        "propertyCrimes": 1669
+        "totalCrimes": 2735,
+        "violentCrimes": 655,
+        "propertyCrimes": 1677
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2684,
-        "violentCrimes": 645,
-        "propertyCrimes": 1616
+        "totalCrimes": 2693,
+        "violentCrimes": 649,
+        "propertyCrimes": 1625
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2468,
-        "violentCrimes": 564,
-        "propertyCrimes": 1531
+        "totalCrimes": 2488,
+        "violentCrimes": 563,
+        "propertyCrimes": 1552
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2597,
-        "violentCrimes": 549,
-        "propertyCrimes": 1711
+        "totalCrimes": 2607,
+        "violentCrimes": 555,
+        "propertyCrimes": 1720
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2538,
-        "violentCrimes": 612,
-        "propertyCrimes": 1570
+        "totalCrimes": 2553,
+        "violentCrimes": 617,
+        "propertyCrimes": 1582
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2658,
-        "violentCrimes": 641,
-        "propertyCrimes": 1664
+        "totalCrimes": 2688,
+        "violentCrimes": 647,
+        "propertyCrimes": 1692
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2282,
-        "violentCrimes": 525,
-        "propertyCrimes": 1421
+        "totalCrimes": 2333,
+        "violentCrimes": 531,
+        "propertyCrimes": 1464
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2291,
-        "violentCrimes": 519,
-        "propertyCrimes": 1411
+        "totalCrimes": 2319,
+        "violentCrimes": 532,
+        "propertyCrimes": 1433
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2476,
-        "violentCrimes": 560,
-        "propertyCrimes": 1546
+        "totalCrimes": 2472,
+        "violentCrimes": 565,
+        "propertyCrimes": 1541
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2527,
-        "violentCrimes": 536,
-        "propertyCrimes": 1655
+        "totalCrimes": 2524,
+        "violentCrimes": 538,
+        "propertyCrimes": 1654
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2431,
-        "violentCrimes": 589,
-        "propertyCrimes": 1493
+        "totalCrimes": 2422,
+        "violentCrimes": 586,
+        "propertyCrimes": 1486
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2531,
-        "violentCrimes": 581,
-        "propertyCrimes": 1620
+        "totalCrimes": 2497,
+        "violentCrimes": 584,
+        "propertyCrimes": 1590
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3204,
-      "bicycle-theft": 898,
-      "burglary": 1220,
+      "anti-social-behaviour": 3161,
+      "bicycle-theft": 906,
+      "burglary": 1211,
       "criminal-damage-arson": 712,
-      "drugs": 994,
-      "other-theft": 6352,
-      "possession-of-weapons": 112,
-      "public-order": 1438,
-      "robbery": 1031,
-      "shoplifting": 3614,
-      "theft-from-the-person": 5581,
-      "vehicle-crime": 530,
-      "violent-crime": 4390,
-      "other-crime": 134
+      "drugs": 996,
+      "other-theft": 6354,
+      "possession-of-weapons": 109,
+      "public-order": 1456,
+      "robbery": 1044,
+      "shoplifting": 3603,
+      "theft-from-the-person": 5711,
+      "vehicle-crime": 519,
+      "violent-crime": 4413,
+      "other-crime": 136
     },
-    "totalLast12Months": 30210
+    "totalLast12Months": 30331
   },
   "property": {
     "sales": [
+      {
+        "address": "34 - 36, LOWER BASEMENT TO GROUND FLOOR PREMISES, LUDGATE HILL",
+        "postcode": "EC4M 7DE",
+        "price": 2000000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "34 - 36, LOWER BASEMENT TO GROUND FLOOR PREMISES, LUDGATE HILL",
         "postcode": "EC4M 7DE",
@@ -201,8 +210,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 2284286,
-    "medianPrice": 625000
+    "averagePrice": 2248750,
+    "medianPrice": 1312500
   },
   "representatives": {
     "representatives": [

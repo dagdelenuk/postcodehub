@@ -3,8 +3,8 @@
   "slug": "ig5",
   "city": "London",
   "borough": "Redbridge",
-  "latitude": 51.59130401260505,
-  "longitude": 0.06345896218487396,
+  "latitude": 51.591444236286925,
+  "longitude": 0.06342123628691983,
   "wards": [
     "Barkingside",
     "Clayhall",
@@ -73,7 +73,8 @@
         "urn": "102805",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/02/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Strafford Avenue, Ilford",
         "postcode": "IG5 0TL",
         "numberOfPupils": 344,
@@ -85,6 +86,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Atherton Road, Clayhall, Ilford",
         "postcode": "IG5 0PF",
         "numberOfPupils": 428,
@@ -95,7 +97,8 @@
         "urn": "102849",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "29/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Caterham Avenue, Clayhall, Ilford",
         "postcode": "IG5 0QW",
         "numberOfPupils": 953,
@@ -106,7 +109,8 @@
         "urn": "133938",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "19/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lord Avenue, Clayhall, Ilford",
         "postcode": "IG5 0DB",
         "numberOfPupils": 381,
@@ -116,8 +120,9 @@
         "name": "Parkhill Junior School",
         "urn": "133939",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "01/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lord Avenue, Clayhall, Ilford",
         "postcode": "IG5 0DB",
         "numberOfPupils": 442,
@@ -129,6 +134,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "133 Stradbroke Grove, Ilford",
         "postcode": "IG5 0DL",
         "numberOfPupils": 1,
@@ -140,97 +146,129 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 359,
+        "totalCrimes": 364,
         "violentCrimes": 137,
-        "propertyCrimes": 117
+        "propertyCrimes": 123
       },
       {
         "month": "2025-08",
-        "totalCrimes": 281,
+        "totalCrimes": 285,
         "violentCrimes": 96,
-        "propertyCrimes": 89
+        "propertyCrimes": 92
       },
       {
         "month": "2025-09",
-        "totalCrimes": 284,
-        "violentCrimes": 101,
-        "propertyCrimes": 108
+        "totalCrimes": 294,
+        "violentCrimes": 105,
+        "propertyCrimes": 113
       },
       {
         "month": "2025-10",
-        "totalCrimes": 291,
-        "violentCrimes": 102,
-        "propertyCrimes": 121
+        "totalCrimes": 299,
+        "violentCrimes": 103,
+        "propertyCrimes": 125
       },
       {
         "month": "2025-11",
-        "totalCrimes": 266,
-        "violentCrimes": 117,
-        "propertyCrimes": 99
+        "totalCrimes": 271,
+        "violentCrimes": 118,
+        "propertyCrimes": 102
       },
       {
         "month": "2025-12",
-        "totalCrimes": 273,
-        "violentCrimes": 115,
-        "propertyCrimes": 94
-      },
-      {
-        "month": "2026-01",
-        "totalCrimes": 268,
-        "violentCrimes": 119,
+        "totalCrimes": 280,
+        "violentCrimes": 116,
         "propertyCrimes": 99
       },
       {
-        "month": "2026-02",
-        "totalCrimes": 241,
-        "violentCrimes": 99,
-        "propertyCrimes": 95
-      },
-      {
-        "month": "2026-03",
-        "totalCrimes": 327,
-        "violentCrimes": 133,
-        "propertyCrimes": 98
-      },
-      {
-        "month": "2026-04",
-        "totalCrimes": 256,
-        "violentCrimes": 98,
-        "propertyCrimes": 90
-      },
-      {
-        "month": "2026-05",
-        "totalCrimes": 340,
-        "violentCrimes": 136,
+        "month": "2026-01",
+        "totalCrimes": 277,
+        "violentCrimes": 120,
         "propertyCrimes": 104
       },
       {
+        "month": "2026-02",
+        "totalCrimes": 246,
+        "violentCrimes": 99,
+        "propertyCrimes": 98
+      },
+      {
+        "month": "2026-03",
+        "totalCrimes": 333,
+        "violentCrimes": 134,
+        "propertyCrimes": 100
+      },
+      {
+        "month": "2026-04",
+        "totalCrimes": 261,
+        "violentCrimes": 99,
+        "propertyCrimes": 92
+      },
+      {
+        "month": "2026-05",
+        "totalCrimes": 341,
+        "violentCrimes": 135,
+        "propertyCrimes": 106
+      },
+      {
         "month": "2026-06",
-        "totalCrimes": 310,
-        "violentCrimes": 143,
-        "propertyCrimes": 94
+        "totalCrimes": 314,
+        "violentCrimes": 142,
+        "propertyCrimes": 95
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 744,
-      "bicycle-theft": 14,
-      "burglary": 117,
-      "criminal-damage-arson": 150,
-      "drugs": 106,
-      "other-theft": 230,
+      "anti-social-behaviour": 759,
+      "bicycle-theft": 17,
+      "burglary": 120,
+      "criminal-damage-arson": 155,
+      "drugs": 112,
+      "other-theft": 251,
       "possession-of-weapons": 26,
-      "public-order": 200,
-      "robbery": 72,
-      "shoplifting": 303,
-      "theft-from-the-person": 69,
-      "vehicle-crime": 325,
-      "violent-crime": 1098,
-      "other-crime": 42
+      "public-order": 199,
+      "robbery": 76,
+      "shoplifting": 307,
+      "theft-from-the-person": 71,
+      "vehicle-crime": 328,
+      "violent-crime": 1103,
+      "other-crime": 41
     },
-    "totalLast12Months": 3496
+    "totalLast12Months": 3565
   },
   "property": {
     "sales": [
+      {
+        "address": "74, LONGWOOD GARDENS",
+        "postcode": "IG5 0BB",
+        "price": 890000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, TIVERTON AVENUE",
+        "postcode": "IG5 0LA",
+        "price": 515000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "111, CLAYHALL AVENUE",
+        "postcode": "IG5 0PN",
+        "price": 705000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, EWELLHURST ROAD",
+        "postcode": "IG5 0PD",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "27, WINNINGALES COURT",
         "postcode": "IG5 0PX",
@@ -240,11 +278,43 @@
         "newBuild": false
       },
       {
+        "address": "328, FULLWELL AVENUE",
+        "postcode": "IG5 0SA",
+        "price": 355000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "57A, CAERNARVON DRIVE",
+        "postcode": "IG5 0XE",
+        "price": 240000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, PEEL PLACE",
+        "postcode": "IG5 0PS",
+        "price": 688000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "11A, CLAYBURY BROADWAY",
         "postcode": "IG5 0LQ",
         "price": 615000,
         "dateOfTransfer": "2026-06-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, SHELDON AVENUE",
+        "postcode": "IG5 0UD",
+        "price": 635000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -368,6 +438,22 @@
         "newBuild": false
       },
       {
+        "address": "37, EWELLHURST ROAD",
+        "postcode": "IG5 0PD",
+        "price": 638000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "37, EWELLHURST ROAD",
+        "postcode": "IG5 0PD",
+        "price": 638000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "280A, FULLWELL AVENUE",
         "postcode": "IG5 0SA",
         "price": 276000,
@@ -380,6 +466,14 @@
         "postcode": "IG5 0HG",
         "price": 650000,
         "dateOfTransfer": "2026-03-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "295, FULLWELL AVENUE",
+        "postcode": "IG5 0RG",
+        "price": 575000,
+        "dateOfTransfer": "2026-03-13",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -397,6 +491,22 @@
         "price": 137000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LANSDOWNE COURT, 12, CLAYBURY BROADWAY",
+        "postcode": "IG5 0JA",
+        "price": 320000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "65, BEECHWOOD GARDENS",
+        "postcode": "IG5 0AG",
+        "price": 735000,
+        "dateOfTransfer": "2026-03-02",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -432,9 +542,9 @@
         "newBuild": false
       },
       {
-        "address": "41, LONGWOOD GARDENS",
-        "postcode": "IG5 0EB",
-        "price": 845000,
+        "address": "31, ATHERTON ROAD",
+        "postcode": "IG5 0PF",
+        "price": 570000,
         "dateOfTransfer": "2026-02-20",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -448,11 +558,35 @@
         "newBuild": false
       },
       {
+        "address": "41, LONGWOOD GARDENS",
+        "postcode": "IG5 0EB",
+        "price": 845000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, HIGHWOOD GARDENS",
+        "postcode": "IG5 0AA",
+        "price": 277528,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "72, DUNSPRING LANE",
         "postcode": "IG5 0UB",
         "price": 450000,
         "dateOfTransfer": "2026-02-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, NASEBY ROAD",
+        "postcode": "IG5 0NN",
+        "price": 550000,
+        "dateOfTransfer": "2026-02-09",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -680,17 +814,17 @@
         "newBuild": false
       },
       {
-        "address": "199, LONGWOOD GARDENS",
-        "postcode": "IG5 0EU",
-        "price": 650000,
+        "address": "78, TIPTREE CRESCENT",
+        "postcode": "IG5 0SY",
+        "price": 475000,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "78, TIPTREE CRESCENT",
-        "postcode": "IG5 0SY",
-        "price": 475000,
+        "address": "199, LONGWOOD GARDENS",
+        "postcode": "IG5 0EU",
+        "price": 650000,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -776,6 +910,14 @@
         "newBuild": false
       },
       {
+        "address": "306, STRADBROKE GROVE",
+        "postcode": "IG5 0DE",
+        "price": 540000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "21, CHADACRE AVENUE",
         "postcode": "IG5 0JQ",
         "price": 655500,
@@ -840,6 +982,14 @@
         "newBuild": false
       },
       {
+        "address": "77, COLLINWOOD GARDENS",
+        "postcode": "IG5 0AN",
+        "price": 607500,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "4, COPPER BEECH CLOSE",
         "postcode": "IG5 0RX",
         "price": 435000,
@@ -848,19 +998,19 @@
         "newBuild": false
       },
       {
-        "address": "4A, WEDMORE AVENUE",
-        "postcode": "IG5 0XF",
-        "price": 335000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "95, STRADBROKE GROVE",
         "postcode": "IG5 0DW",
         "price": 550000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4A, WEDMORE AVENUE",
+        "postcode": "IG5 0XF",
+        "price": 335000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1040,6 +1190,14 @@
         "newBuild": false
       },
       {
+        "address": "5, BEECHWOOD GARDENS",
+        "postcode": "IG5 0AE",
+        "price": 705000,
+        "dateOfTransfer": "2025-07-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "186, TIPTREE CRESCENT",
         "postcode": "IG5 0ST",
         "price": 290000,
@@ -1053,22 +1211,6 @@
         "price": 880000,
         "dateOfTransfer": "2025-07-29",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "5, BEECHWOOD GARDENS",
-        "postcode": "IG5 0AE",
-        "price": 705000,
-        "dateOfTransfer": "2025-07-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "FULLWELL COURT, 21, FULLWELL AVENUE",
-        "postcode": "IG5 0RZ",
-        "price": 320000,
-        "dateOfTransfer": "2025-07-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1104,19 +1246,19 @@
         "newBuild": false
       },
       {
-        "address": "66, COLLINWOOD GARDENS",
-        "postcode": "IG5 0AN",
-        "price": 380000,
-        "dateOfTransfer": "2025-07-02",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "67, STRAFFORD AVENUE",
         "postcode": "IG5 0TL",
         "price": 415000,
         "dateOfTransfer": "2025-07-02",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "66, COLLINWOOD GARDENS",
+        "postcode": "IG5 0AN",
+        "price": 380000,
+        "dateOfTransfer": "2025-07-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1288,14 +1430,6 @@
         "newBuild": false
       },
       {
-        "address": "134, RUSHDEN GARDENS",
-        "postcode": "IG5 0BN",
-        "price": 520000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "104, HIGHWOOD GARDENS",
         "postcode": "IG5 0AB",
         "price": 710000,
@@ -1309,6 +1443,30 @@
         "price": 605000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "134, RUSHDEN GARDENS",
+        "postcode": "IG5 0BN",
+        "price": 520000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, STRAFFORD AVENUE",
+        "postcode": "IG5 0TJ",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, STRADBROKE GROVE",
+        "postcode": "IG5 0DN",
+        "price": 845000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1344,22 +1502,6 @@
         "newBuild": false
       },
       {
-        "address": "45, STRADBROKE GROVE",
-        "postcode": "IG5 0DN",
-        "price": 845000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "27, STRAFFORD AVENUE",
-        "postcode": "IG5 0TJ",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "112, CLAYHALL AVENUE",
         "postcode": "IG5 0LF",
         "price": 625000,
@@ -1376,19 +1518,19 @@
         "newBuild": false
       },
       {
-        "address": "120, CATERHAM AVENUE",
-        "postcode": "IG5 0QB",
-        "price": 537000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "20, WINNINGALES COURT",
         "postcode": "IG5 0PX",
         "price": 220000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "120, CATERHAM AVENUE",
+        "postcode": "IG5 0QB",
+        "price": 537000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1408,17 +1550,17 @@
         "newBuild": false
       },
       {
-        "address": "40, MARLANDS ROAD",
-        "postcode": "IG5 0JL",
-        "price": 640000,
+        "address": "19, JERNINGHAM AVENUE",
+        "postcode": "IG5 0UG",
+        "price": 490000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "19, JERNINGHAM AVENUE",
-        "postcode": "IG5 0UG",
-        "price": 490000,
+        "address": "40, MARLANDS ROAD",
+        "postcode": "IG5 0JL",
+        "price": 640000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1560,19 +1702,19 @@
         "newBuild": false
       },
       {
-        "address": "128, CLAYHALL AVENUE",
-        "postcode": "IG5 0LF",
-        "price": 650000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "13, WEDMORE AVENUE",
         "postcode": "IG5 0XF",
         "price": 355000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "128, CLAYHALL AVENUE",
+        "postcode": "IG5 0LF",
+        "price": 650000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1672,24 +1814,24 @@
         "newBuild": false
       },
       {
-        "address": "FULLWELL COURT, 8, FULLWELL AVENUE",
-        "postcode": "IG5 0RZ",
-        "price": 325000,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "22, STRADBROKE GROVE",
         "postcode": "IG5 0DN",
         "price": 710000,
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Semi-detached",
         "newBuild": false
+      },
+      {
+        "address": "FULLWELL COURT, 8, FULLWELL AVENUE",
+        "postcode": "IG5 0RZ",
+        "price": 325000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       }
     ],
-    "averagePrice": 558070,
-    "medianPrice": 574000
+    "averagePrice": 559637,
+    "medianPrice": 575000
   },
   "representatives": {
     "representatives": [

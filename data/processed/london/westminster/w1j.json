@@ -3,8 +3,8 @@
   "slug": "w1j",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.507869605697145,
-  "longitude": -0.14508181709145443,
+  "latitude": 51.50786124512991,
+  "longitude": -0.14517007954545472,
   "wards": [
     "Clerkenwell",
     "St James's",
@@ -31,6 +31,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "106 Piccadilly, Mayfair, London",
         "postcode": "W1J 7NL",
         "numberOfPupils": 202,
@@ -42,21 +43,21 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5809,
+        "totalCrimes": 5806,
         "violentCrimes": 1133,
-        "propertyCrimes": 3866
+        "propertyCrimes": 3864
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5323,
+        "totalCrimes": 5321,
         "violentCrimes": 1087,
-        "propertyCrimes": 3366
+        "propertyCrimes": 3364
       },
       {
         "month": "2025-09",
-        "totalCrimes": 4959,
+        "totalCrimes": 4958,
         "violentCrimes": 1167,
-        "propertyCrimes": 3105
+        "propertyCrimes": 3104
       },
       {
         "month": "2025-10",
@@ -66,27 +67,27 @@
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6412,
+        "totalCrimes": 6408,
         "violentCrimes": 1102,
-        "propertyCrimes": 4610
+        "propertyCrimes": 4606
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6586,
+        "totalCrimes": 6585,
         "violentCrimes": 1149,
-        "propertyCrimes": 4696
+        "propertyCrimes": 4695
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4808,
+        "totalCrimes": 4805,
         "violentCrimes": 964,
-        "propertyCrimes": 3190
+        "propertyCrimes": 3187
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4454,
+        "totalCrimes": 4453,
         "violentCrimes": 817,
-        "propertyCrimes": 2998
+        "propertyCrimes": 2997
       },
       {
         "month": "2026-03",
@@ -96,9 +97,9 @@
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4561,
-        "violentCrimes": 943,
-        "propertyCrimes": 2786
+        "totalCrimes": 4558,
+        "violentCrimes": 941,
+        "propertyCrimes": 2785
       },
       {
         "month": "2026-05",
@@ -116,23 +117,79 @@
     "categoryBreakdown": {
       "anti-social-behaviour": 6569,
       "bicycle-theft": 398,
-      "burglary": 1154,
-      "criminal-damage-arson": 986,
+      "burglary": 1152,
+      "criminal-damage-arson": 985,
       "drugs": 1878,
-      "other-theft": 12130,
+      "other-theft": 12121,
       "possession-of-weapons": 250,
-      "public-order": 2467,
-      "robbery": 2256,
+      "public-order": 2466,
+      "robbery": 2254,
       "shoplifting": 7419,
-      "theft-from-the-person": 16707,
-      "vehicle-crime": 1431,
-      "violent-crime": 7411,
-      "other-crime": 289
+      "theft-from-the-person": 16703,
+      "vehicle-crime": 1432,
+      "violent-crime": 7412,
+      "other-crime": 288
     },
-    "totalLast12Months": 61345
+    "totalLast12Months": 61327
   },
   "property": {
     "sales": [
+      {
+        "address": "CARRINGTON HOUSE, FLAT 410, HERTFORD STREET",
+        "postcode": "W1J 7SU",
+        "price": 1375000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CARRINGTON HOUSE, FLAT 510, HERTFORD STREET",
+        "postcode": "W1J 7SU",
+        "price": 1325000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CARRINGTON HOUSE, FLAT 209, HERTFORD STREET",
+        "postcode": "W1J 7RG",
+        "price": 1000000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CARRINGTON HOUSE, FLAT 104, HERTFORD STREET",
+        "postcode": "W1J 7RG",
+        "price": 1350000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CARRINGTON HOUSE, FLAT 401, HERTFORD STREET",
+        "postcode": "W1J 7SU",
+        "price": 1600000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHESTERFIELD HOUSE, FLAT 54, CHESTERFIELD GARDENS",
+        "postcode": "W1J 5JU",
+        "price": 1700000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27A, SHEPHERD MARKET",
+        "postcode": "W1J 7PR",
+        "price": 850000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "48N, BERKELEY SQUARE",
         "postcode": "W1J 5AX",
@@ -147,6 +204,14 @@
         "price": 22600000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "GARRICK HOUSE, FLAT 2, CARRINGTON STREET",
+        "postcode": "W1J 7AF",
+        "price": 700000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -203,6 +268,14 @@
         "price": 760000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, CHARLES STREET",
+        "postcode": "W1J 5DT",
+        "price": 14350000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -414,8 +487,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 5756123,
-    "medianPrice": 2320000
+    "averagePrice": 5129871,
+    "medianPrice": 2028779
   },
   "representatives": {
     "representatives": [

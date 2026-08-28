@@ -3,8 +3,8 @@
   "slug": "n8",
   "city": "London",
   "borough": "Haringey",
-  "latitude": 51.583125679083125,
-  "longitude": -0.11973671919770773,
+  "latitude": 51.58411185157419,
+  "longitude": -0.11816592803598205,
   "wards": [
     "Crouch End",
     "Harringay",
@@ -234,7 +234,8 @@
         "urn": "100432",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/05/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Crouch Hill Park, 83 Crouch Hill, London",
         "postcode": "N8 9EG",
         "numberOfPupils": 390,
@@ -244,8 +245,9 @@
         "name": "Campsbourne Junior School",
         "urn": "102084",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "19/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Nightingale Lane, London",
         "postcode": "N8 7AF",
         "numberOfPupils": 219,
@@ -255,8 +257,9 @@
         "name": "Campsbourne Infant School",
         "urn": "102085",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "26/04/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Nightingale Lane, London",
         "postcode": "N8 7AF",
         "numberOfPupils": 197,
@@ -268,6 +271,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Rokesly Avenue, London",
         "postcode": "N8 8NH",
         "numberOfPupils": 270,
@@ -279,6 +283,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hermiston Avenue, Crouch End, London",
         "postcode": "N8 8NH",
         "numberOfPupils": 205,
@@ -289,7 +294,8 @@
         "urn": "102121",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "25/03/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Crouch End Hill, Hornsey, London",
         "postcode": "N8 8DN",
         "numberOfPupils": 882,
@@ -300,7 +306,8 @@
         "urn": "102130",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Denton Road, Hornsey, London",
         "postcode": "N8 9WP",
         "numberOfPupils": 232,
@@ -311,7 +318,8 @@
         "urn": "102139",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "09/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Rectory Gardens, Hornsey, London",
         "postcode": "N8 7QN",
         "numberOfPupils": 306,
@@ -321,8 +329,9 @@
         "name": "Hornsey School for Girls",
         "urn": "102153",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "17/03/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Inderwick Road, London",
         "postcode": "N8 9JF",
         "numberOfPupils": 560,
@@ -332,8 +341,9 @@
         "name": "Highgate Wood Secondary School",
         "urn": "102154",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "18/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Montenotte Road, London",
         "postcode": "N8 8RN",
         "numberOfPupils": 1524,
@@ -344,7 +354,8 @@
         "urn": "133386",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "27/11/2019",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "High Street, Hornsey, London",
         "postcode": "N8 7NU",
         "numberOfPupils": 1137,
@@ -354,8 +365,9 @@
         "name": "North Harringay Primary School",
         "urn": "134681",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "12/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Falkland Road, Hornsey, London",
         "postcode": "N8 0NU",
         "numberOfPupils": 400,
@@ -367,6 +379,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "104 Crouch Hill, Crouch End, London",
         "postcode": "N8 9EA",
         "numberOfPupils": 40,
@@ -378,97 +391,273 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1046,
-        "violentCrimes": 277,
-        "propertyCrimes": 445
+        "totalCrimes": 1127,
+        "violentCrimes": 311,
+        "propertyCrimes": 472
       },
       {
         "month": "2025-08",
-        "totalCrimes": 946,
-        "violentCrimes": 263,
-        "propertyCrimes": 409
+        "totalCrimes": 980,
+        "violentCrimes": 287,
+        "propertyCrimes": 421
       },
       {
         "month": "2025-09",
-        "totalCrimes": 804,
-        "violentCrimes": 259,
-        "propertyCrimes": 317
+        "totalCrimes": 883,
+        "violentCrimes": 283,
+        "propertyCrimes": 349
       },
       {
         "month": "2025-10",
-        "totalCrimes": 955,
-        "violentCrimes": 293,
-        "propertyCrimes": 385
+        "totalCrimes": 988,
+        "violentCrimes": 314,
+        "propertyCrimes": 409
       },
       {
         "month": "2025-11",
-        "totalCrimes": 957,
-        "violentCrimes": 264,
-        "propertyCrimes": 422
+        "totalCrimes": 1030,
+        "violentCrimes": 303,
+        "propertyCrimes": 450
       },
       {
         "month": "2025-12",
-        "totalCrimes": 745,
-        "violentCrimes": 219,
-        "propertyCrimes": 320
+        "totalCrimes": 800,
+        "violentCrimes": 267,
+        "propertyCrimes": 340
       },
       {
         "month": "2026-01",
-        "totalCrimes": 821,
-        "violentCrimes": 238,
-        "propertyCrimes": 342
+        "totalCrimes": 842,
+        "violentCrimes": 260,
+        "propertyCrimes": 351
       },
       {
         "month": "2026-02",
-        "totalCrimes": 782,
-        "violentCrimes": 221,
-        "propertyCrimes": 332
+        "totalCrimes": 802,
+        "violentCrimes": 228,
+        "propertyCrimes": 348
       },
       {
         "month": "2026-03",
-        "totalCrimes": 821,
-        "violentCrimes": 286,
-        "propertyCrimes": 279
+        "totalCrimes": 887,
+        "violentCrimes": 312,
+        "propertyCrimes": 304
       },
       {
         "month": "2026-04",
-        "totalCrimes": 821,
-        "violentCrimes": 258,
-        "propertyCrimes": 331
+        "totalCrimes": 875,
+        "violentCrimes": 276,
+        "propertyCrimes": 351
       },
       {
         "month": "2026-05",
-        "totalCrimes": 867,
-        "violentCrimes": 320,
-        "propertyCrimes": 279
+        "totalCrimes": 934,
+        "violentCrimes": 342,
+        "propertyCrimes": 306
       },
       {
         "month": "2026-06",
-        "totalCrimes": 882,
-        "violentCrimes": 292,
-        "propertyCrimes": 325
+        "totalCrimes": 969,
+        "violentCrimes": 317,
+        "propertyCrimes": 348
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 2657,
-      "bicycle-theft": 97,
-      "burglary": 425,
-      "criminal-damage-arson": 377,
-      "drugs": 323,
-      "other-theft": 804,
-      "possession-of-weapons": 64,
-      "public-order": 510,
-      "robbery": 343,
-      "shoplifting": 1045,
-      "theft-from-the-person": 568,
-      "vehicle-crime": 870,
-      "violent-crime": 2273,
-      "other-crime": 91
+      "anti-social-behaviour": 2699,
+      "bicycle-theft": 101,
+      "burglary": 437,
+      "criminal-damage-arson": 390,
+      "drugs": 386,
+      "other-theft": 856,
+      "possession-of-weapons": 73,
+      "public-order": 552,
+      "robbery": 398,
+      "shoplifting": 1129,
+      "theft-from-the-person": 659,
+      "vehicle-crime": 877,
+      "violent-crime": 2477,
+      "other-crime": 83
     },
-    "totalLast12Months": 10447
+    "totalLast12Months": 11117
   },
   "property": {
     "sales": [
+      {
+        "address": "MAGNUS HEIGHTS, FLAT 18, HAMPDEN ROAD",
+        "postcode": "N8 0EL",
+        "price": 380000,
+        "dateOfTransfer": "2026-07-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "109, CROUCH HILL",
+        "postcode": "N8 9RD",
+        "price": 2325000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HUDSON APARTMENTS, 114, CHADWELL LANE",
+        "postcode": "N8 7RX",
+        "price": 430000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "112, FIRST FLOOR FLAT, NELSON ROAD, HORNSEY",
+        "postcode": "N8 9RN",
+        "price": 400000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, KELLAND CLOSE",
+        "postcode": "N8 8JS",
+        "price": 490000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "100D, DENTON ROAD",
+        "postcode": "N8 9NT",
+        "price": 400000,
+        "dateOfTransfer": "2026-07-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HUDSON APARTMENTS, 148, CHADWELL LANE",
+        "postcode": "N8 7RX",
+        "price": 292500,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EXCHANGE HOUSE, 71, FLAT 22, CROUCH END HILL",
+        "postcode": "N8 8DF",
+        "price": 430000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "321, WIGHTMAN ROAD",
+        "postcode": "N8 0NA",
+        "price": 640000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "95, NELSON ROAD, HORNSEY",
+        "postcode": "N8 9RS",
+        "price": 1555000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68A, NORTH VIEW ROAD",
+        "postcode": "N8 7LL",
+        "price": 515000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "116, SYDNEY ROAD",
+        "postcode": "N8 0EX",
+        "price": 625000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, REDSTON ROAD",
+        "postcode": "N8 7HJ",
+        "price": 945000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "32, FIRST FLOOR FLAT, FAIRFIELD ROAD",
+        "postcode": "N8 9HG",
+        "price": 575500,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HUDSON APARTMENTS, 48, CHADWELL LANE",
+        "postcode": "N8 7RW",
+        "price": 342500,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "65, BERESFORD ROAD",
+        "postcode": "N8 0AL",
+        "price": 1130000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37B, NELSON ROAD, HORNSEY",
+        "postcode": "N8 9RX",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PURSER COURT, FLAT 24, HIGH STREET",
+        "postcode": "N8 7FB",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EXCHANGE HOUSE, 71, FLAT 4, CROUCH END HILL",
+        "postcode": "N8 8DF",
+        "price": 370000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "90, FLAT 1, TOTTENHAM LANE",
+        "postcode": "N8 7EE",
+        "price": 485000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "93A, ALLISON ROAD",
+        "postcode": "N8 0AP",
+        "price": 665000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CRESCENT COURT, FLAT 4, CRESCENT ROAD, HORNSEY",
+        "postcode": "N8 8AU",
+        "price": 400000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "7C, WOLSELEY ROAD, HORNSEY",
         "postcode": "N8 8RR",
@@ -486,11 +675,67 @@
         "newBuild": false
       },
       {
+        "address": "11A, FLAT 1, HIGH STREET",
+        "postcode": "N8 7PS",
+        "price": 290000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "UREN HOUSE, 1, FLAT N6, FARNFIELD CLOSE",
+        "postcode": "N8 9FF",
+        "price": 800000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ALTITUDE POINT, FLAT 96, HAMPDEN ROAD",
+        "postcode": "N8 0EJ",
+        "price": 560000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, FLAT 2, HASLEMERE ROAD",
+        "postcode": "N8 9QP",
+        "price": 610000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, HARINGEY PARK",
+        "postcode": "N8 9JD",
+        "price": 1805000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18B - 18D, HARINGEY PARK",
+        "postcode": "N8 9HY",
+        "price": 555500,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "4, FAIRFIELD ROAD",
         "postcode": "N8 9HG",
         "price": 16500,
         "dateOfTransfer": "2026-06-10",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ALTITUDE POINT, FLAT 12, HAMPDEN ROAD",
+        "postcode": "N8 0EH",
+        "price": 540000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -558,6 +803,22 @@
         "newBuild": false
       },
       {
+        "address": "9, HARRINGAY GARDENS",
+        "postcode": "N8 0SE",
+        "price": 820000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, SOUTH VIEW ROAD, HORNSEY",
+        "postcode": "N8 7LU",
+        "price": 760000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "AYRES HOUSE, 2, FLAT 26, FARNFIELD CLOSE",
         "postcode": "N8 9FH",
         "price": 725000,
@@ -582,25 +843,17 @@
         "newBuild": false
       },
       {
-        "address": "9, HARRINGAY GARDENS",
-        "postcode": "N8 0SE",
-        "price": 820000,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "17, SOUTH VIEW ROAD, HORNSEY",
-        "postcode": "N8 7LU",
-        "price": 760000,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "7, FLAT 3, CAMPSBOURNE ROAD",
         "postcode": "N8 7PT",
         "price": 385000,
+        "dateOfTransfer": "2026-05-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, FLAT 3, BURGHLEY ROAD",
+        "postcode": "N8 0QE",
+        "price": 330000,
         "dateOfTransfer": "2026-05-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -694,6 +947,14 @@
         "newBuild": false
       },
       {
+        "address": "13C, HAROLD ROAD, HORNSEY",
+        "postcode": "N8 7DE",
+        "price": 385500,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "63, NIGHTINGALE LANE",
         "postcode": "N8 7RA",
         "price": 675000,
@@ -715,14 +976,6 @@
         "price": 600000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "13C, HAROLD ROAD, HORNSEY",
-        "postcode": "N8 7DE",
-        "price": 385500,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -806,6 +1059,14 @@
         "newBuild": false
       },
       {
+        "address": "70, TOTTENHAM LANE",
+        "postcode": "N8 7EE",
+        "price": 155000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "150A, INDERWICK ROAD",
         "postcode": "N8 9JT",
         "price": 760000,
@@ -830,17 +1091,17 @@
         "newBuild": false
       },
       {
-        "address": "60, FLAT A, RATHCOOLE GARDENS",
-        "postcode": "N8 9NB",
-        "price": 315000,
+        "address": "FYFE HOUSE, FLAT B, CHADWELL LANE",
+        "postcode": "N8 7RZ",
+        "price": 395000,
         "dateOfTransfer": "2026-03-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "FYFE HOUSE, FLAT B, CHADWELL LANE",
-        "postcode": "N8 7RZ",
-        "price": 395000,
+        "address": "60, FLAT A, RATHCOOLE GARDENS",
+        "postcode": "N8 9NB",
+        "price": 315000,
         "dateOfTransfer": "2026-03-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -867,6 +1128,14 @@
         "price": 290000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE QUEENS, BROADWAY PARADE",
+        "postcode": "N8 9DE",
+        "price": 3700000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -902,19 +1171,19 @@
         "newBuild": false
       },
       {
-        "address": "44, THE BROADWAY, HORNSEY",
-        "postcode": "N8 9SU",
-        "price": 700000,
-        "dateOfTransfer": "2026-03-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "6, TURNPIKE LANE",
         "postcode": "N8 0PT",
         "price": 400000,
         "dateOfTransfer": "2026-03-19",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "44, THE BROADWAY, HORNSEY",
+        "postcode": "N8 9SU",
+        "price": 700000,
+        "dateOfTransfer": "2026-03-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -966,17 +1235,17 @@
         "newBuild": false
       },
       {
-        "address": "BLAKE APARTMENTS, 46, NEW RIVER AVENUE",
-        "postcode": "N8 7QF",
-        "price": 362500,
+        "address": "98A, NELSON ROAD, HORNSEY",
+        "postcode": "N8 9RT",
+        "price": 375000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "6, FIRST FLOOR FLAT, WOMERSLEY ROAD",
-        "postcode": "N8 9AE",
-        "price": 560000,
+        "address": "107A, SOUTH VIEW ROAD, HORNSEY",
+        "postcode": "N8 7LX",
+        "price": 540000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1006,6 +1275,22 @@
         "newBuild": false
       },
       {
+        "address": "BLAKE APARTMENTS, 46, NEW RIVER AVENUE",
+        "postcode": "N8 7QF",
+        "price": 362500,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FIRST FLOOR FLAT, WOMERSLEY ROAD",
+        "postcode": "N8 9AE",
+        "price": 560000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2, REDSTON ROAD",
         "postcode": "N8 7HJ",
         "price": 1925000,
@@ -1018,6 +1303,14 @@
         "postcode": "N8 7RF",
         "price": 350000,
         "dateOfTransfer": "2026-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CORRIB HEIGHTS, FLAT 2, CRESCENT ROAD, HORNSEY",
+        "postcode": "N8 8DA",
+        "price": 400000,
+        "dateOfTransfer": "2026-03-04",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1042,6 +1335,14 @@
         "postcode": "N8 9FD",
         "price": 760000,
         "dateOfTransfer": "2026-03-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "182, GROUND FLOOR FLAT, WIGHTMAN ROAD",
+        "postcode": "N8 0BU",
+        "price": 640000,
+        "dateOfTransfer": "2026-02-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1134,19 +1435,19 @@
         "newBuild": false
       },
       {
-        "address": "10, FLAT 4, CHRISTCHURCH ROAD",
-        "postcode": "N8 9QL",
-        "price": 465000,
+        "address": "13, FLAT A, CLIFTON ROAD",
+        "postcode": "N8 8HY",
+        "price": 660000,
         "dateOfTransfer": "2026-02-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "53, NEWLAND ROAD",
-        "postcode": "N8 7SL",
-        "price": 615000,
+        "address": "10, FLAT 4, CHRISTCHURCH ROAD",
+        "postcode": "N8 9QL",
+        "price": 465000,
         "dateOfTransfer": "2026-02-20",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1166,6 +1467,14 @@
         "newBuild": false
       },
       {
+        "address": "53, NEWLAND ROAD",
+        "postcode": "N8 7SL",
+        "price": 615000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "SPRING APARTMENTS, 40, FLAT 3, NIGHTINGALE LANE",
         "postcode": "N8 7QU",
         "price": 335000,
@@ -1174,17 +1483,17 @@
         "newBuild": false
       },
       {
-        "address": "ALINGTON HOUSE, 1, FLAT 147, MARY NEUNER ROAD",
-        "postcode": "N8 0ES",
-        "price": 490000,
+        "address": "BLAKE APARTMENTS, 64, NEW RIVER AVENUE",
+        "postcode": "N8 7QF",
+        "price": 310000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BLAKE APARTMENTS, 64, NEW RIVER AVENUE",
-        "postcode": "N8 7QF",
-        "price": 310000,
+        "address": "13, FLAT 4, FAIRFIELD ROAD",
+        "postcode": "N8 9HG",
+        "price": 555800,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1206,18 +1515,10 @@
         "newBuild": false
       },
       {
-        "address": "13, FLAT 4, FAIRFIELD ROAD",
-        "postcode": "N8 9HG",
-        "price": 555800,
+        "address": "ALINGTON HOUSE, 1, FLAT 147, MARY NEUNER ROAD",
+        "postcode": "N8 0ES",
+        "price": 490000,
         "dateOfTransfer": "2026-02-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "EMERSON APARTMENTS, 26, CHADWELL LANE",
-        "postcode": "N8 7RF",
-        "price": 210000,
-        "dateOfTransfer": "2026-02-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1233,6 +1534,14 @@
         "address": "EDEN HOUSE, 5C, NEW ROAD",
         "postcode": "N8 8TA",
         "price": 850000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EMERSON APARTMENTS, 26, CHADWELL LANE",
+        "postcode": "N8 7RF",
+        "price": 210000,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1262,6 +1571,14 @@
         "newBuild": false
       },
       {
+        "address": "49, LINZEE ROAD",
+        "postcode": "N8 7RG",
+        "price": 1200000,
+        "dateOfTransfer": "2026-02-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "84, FLAT 1, HILLFIELD AVENUE",
         "postcode": "N8 7DN",
         "price": 370000,
@@ -1278,6 +1595,14 @@
         "newBuild": false
       },
       {
+        "address": "44 - 54, UNIT 3, COLERIDGE ROAD",
+        "postcode": "N8 8ED",
+        "price": 250000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "7, FLAT 3, HARVEY MEWS",
         "postcode": "N8 9PA",
         "price": 180000,
@@ -1291,6 +1616,22 @@
         "price": 500000,
         "dateOfTransfer": "2026-02-05",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "58, BARRINGTON ROAD",
+        "postcode": "N8 8QS",
+        "price": 1290000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, GLADWELL ROAD",
+        "postcode": "N8 9AA",
+        "price": 1300000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1326,6 +1667,30 @@
         "newBuild": false
       },
       {
+        "address": "45A, PALACE ROAD, HORNSEY",
+        "postcode": "N8 8QL",
+        "price": 545000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, SEYMOUR ROAD",
+        "postcode": "N8 0BE",
+        "price": 1565000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44, ROSEBERY GARDENS",
+        "postcode": "N8 8SH",
+        "price": 562500,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "AMAZON APARTMENTS, 9, NEW RIVER AVENUE",
         "postcode": "N8 7QE",
         "price": 275000,
@@ -1350,14 +1715,6 @@
         "newBuild": false
       },
       {
-        "address": "13, HILLFIELD AVENUE",
-        "postcode": "N8 7DU",
-        "price": 620000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "1, FALKLAND ROAD",
         "postcode": "N8 0NU",
         "price": 945000,
@@ -1371,6 +1728,14 @@
         "price": 976280,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, HILLFIELD AVENUE",
+        "postcode": "N8 7DU",
+        "price": 620000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1422,14 +1787,6 @@
         "newBuild": false
       },
       {
-        "address": "51, PARK RIDINGS",
-        "postcode": "N8 0LB",
-        "price": 550000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "26, HAMPDEN ROAD",
         "postcode": "N8 0HT",
         "price": 236500,
@@ -1446,10 +1803,34 @@
         "newBuild": false
       },
       {
+        "address": "51, PARK RIDINGS",
+        "postcode": "N8 0LB",
+        "price": 550000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "TIVENDALE, FLAT 46, BROOK ROAD",
+        "postcode": "N8 7AA",
+        "price": 370000,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "49, WESTON PARK",
         "postcode": "N8 9SY",
         "price": 475000,
         "dateOfTransfer": "2026-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19A, TIVOLI ROAD",
+        "postcode": "N8 8RE",
+        "price": 210000,
+        "dateOfTransfer": "2026-01-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1459,6 +1840,14 @@
         "price": 525000,
         "dateOfTransfer": "2026-01-21",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "BLAKE APARTMENTS, 36, NEW RIVER AVENUE",
+        "postcode": "N8 7QF",
+        "price": 220000,
+        "dateOfTransfer": "2026-01-20",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1494,22 +1883,6 @@
         "newBuild": false
       },
       {
-        "address": "72, HORNSEY PARK ROAD",
-        "postcode": "N8 0JY",
-        "price": 745000,
-        "dateOfTransfer": "2026-01-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "CHETTLE COURT, FLAT 65, RIDGE ROAD",
-        "postcode": "N8 9NU",
-        "price": 310000,
-        "dateOfTransfer": "2026-01-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "58, FLAT 2, COOLHURST ROAD",
         "postcode": "N8 8EU",
         "price": 1350000,
@@ -1534,33 +1907,33 @@
         "newBuild": false
       },
       {
-        "address": "70, HEWITT ROAD",
-        "postcode": "N8 0BL",
-        "price": 1100000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "79, PARK AVENUE SOUTH",
-        "postcode": "N8 8LX",
-        "price": 1900000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "6C, CRESCENT ROAD, HORNSEY",
-        "postcode": "N8 8AT",
-        "price": 650000,
-        "dateOfTransfer": "2026-01-09",
+        "address": "CHETTLE COURT, FLAT 65, RIDGE ROAD",
+        "postcode": "N8 9NU",
+        "price": 310000,
+        "dateOfTransfer": "2026-01-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "72, HORNSEY PARK ROAD",
+        "postcode": "N8 0JY",
+        "price": 745000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "CHESTNUT COURT, FLAT 8, MIDDLE LANE, CROUCH END",
         "postcode": "N8 8NU",
         "price": 408000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6C, CRESCENT ROAD, HORNSEY",
+        "postcode": "N8 8AT",
+        "price": 650000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1574,19 +1947,27 @@
         "newBuild": false
       },
       {
+        "address": "79, PARK AVENUE SOUTH",
+        "postcode": "N8 8LX",
+        "price": 1900000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "70, HEWITT ROAD",
+        "postcode": "N8 0BL",
+        "price": 1100000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "20B, HAROLD ROAD, HORNSEY",
         "postcode": "N8 7DE",
         "price": 680000,
         "dateOfTransfer": "2026-01-08",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "16, RATHCOOLE GARDENS",
-        "postcode": "N8 9NB",
-        "price": 1325000,
-        "dateOfTransfer": "2026-01-07",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1614,18 +1995,18 @@
         "newBuild": false
       },
       {
+        "address": "16, RATHCOOLE GARDENS",
+        "postcode": "N8 9NB",
+        "price": 1325000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "103A, HAMPDEN ROAD, HORNSEY",
         "postcode": "N8 0HU",
         "price": 560000,
         "dateOfTransfer": "2026-01-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "100, FLAT C, DENTON ROAD",
-        "postcode": "N8 9NT",
-        "price": 616000,
-        "dateOfTransfer": "2026-01-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1638,10 +2019,10 @@
         "newBuild": false
       },
       {
-        "address": "ALTITUDE POINT, FLAT 20, HAMPDEN ROAD",
-        "postcode": "N8 0EH",
-        "price": 280000,
-        "dateOfTransfer": "2025-12-23",
+        "address": "100, FLAT C, DENTON ROAD",
+        "postcode": "N8 9NT",
+        "price": 616000,
+        "dateOfTransfer": "2026-01-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1649,6 +2030,14 @@
         "address": "ALTITUDE POINT, FLAT 15, HAMPDEN ROAD",
         "postcode": "N8 0EH",
         "price": 270000,
+        "dateOfTransfer": "2025-12-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ALTITUDE POINT, FLAT 20, HAMPDEN ROAD",
+        "postcode": "N8 0EH",
+        "price": 280000,
         "dateOfTransfer": "2025-12-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1758,19 +2147,19 @@
         "newBuild": false
       },
       {
-        "address": "137, PARK ROAD, HORNSEY",
-        "postcode": "N8 8JN",
-        "price": 1150000,
-        "dateOfTransfer": "2025-12-11",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "167, NELSON ROAD, HORNSEY",
         "postcode": "N8 9RR",
         "price": 1080000,
         "dateOfTransfer": "2025-12-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "137, PARK ROAD, HORNSEY",
+        "postcode": "N8 8JN",
+        "price": 1150000,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1782,19 +2171,19 @@
         "newBuild": false
       },
       {
-        "address": "COZENS PLACE, 105, 1, EFFINGHAM ROAD",
-        "postcode": "N8 0AE",
-        "price": 875000,
-        "dateOfTransfer": "2025-12-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "HAMLET COURT, FLAT 2, HIGH STREET",
         "postcode": "N8 7FJ",
         "price": 375000,
         "dateOfTransfer": "2025-12-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "COZENS PLACE, 105, 1, EFFINGHAM ROAD",
+        "postcode": "N8 0AE",
+        "price": 875000,
+        "dateOfTransfer": "2025-12-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1902,17 +2291,17 @@
         "newBuild": false
       },
       {
-        "address": "CHIMES TERRACE, 3, TOTTENHAM LANE",
-        "postcode": "N8 8BE",
-        "price": 1100000,
+        "address": "14, UPLANDS ROAD",
+        "postcode": "N8 9NL",
+        "price": 1500000,
         "dateOfTransfer": "2025-12-04",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "14, UPLANDS ROAD",
-        "postcode": "N8 9NL",
-        "price": 1500000,
+        "address": "CHIMES TERRACE, 3, TOTTENHAM LANE",
+        "postcode": "N8 8BE",
+        "price": 1100000,
         "dateOfTransfer": "2025-12-04",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1990,6 +2379,14 @@
         "newBuild": false
       },
       {
+        "address": "82, BARRINGTON ROAD",
+        "postcode": "N8 8QX",
+        "price": 1985000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "4, CLIFTON ROAD",
         "postcode": "N8 8HY",
         "price": 2905000,
@@ -2046,14 +2443,6 @@
         "newBuild": false
       },
       {
-        "address": "COULSDEN COURT, 64, FLAT 18, PARK ROAD, HORNSEY",
-        "postcode": "N8 8SW",
-        "price": 421010,
-        "dateOfTransfer": "2025-11-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "96C, UPLANDS ROAD",
         "postcode": "N8 9NJ",
         "price": 1030000,
@@ -2062,11 +2451,11 @@
         "newBuild": false
       },
       {
-        "address": "132, FAIRFAX ROAD",
-        "postcode": "N8 0NL",
-        "price": 980000,
+        "address": "COULSDEN COURT, 64, FLAT 18, PARK ROAD, HORNSEY",
+        "postcode": "N8 8SW",
+        "price": 421010,
         "dateOfTransfer": "2025-11-21",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2078,11 +2467,11 @@
         "newBuild": false
       },
       {
-        "address": "HAMLET COURT, FLAT 13, HIGH STREET",
-        "postcode": "N8 7FJ",
-        "price": 370000,
-        "dateOfTransfer": "2025-11-18",
-        "propertyType": "Flat/Maisonette",
+        "address": "132, FAIRFAX ROAD",
+        "postcode": "N8 0NL",
+        "price": 980000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2094,11 +2483,27 @@
         "newBuild": false
       },
       {
+        "address": "HAMLET COURT, FLAT 13, HIGH STREET",
+        "postcode": "N8 7FJ",
+        "price": 370000,
+        "dateOfTransfer": "2025-11-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "7, PRIORY ROAD",
         "postcode": "N8 8LH",
         "price": 1450000,
         "dateOfTransfer": "2025-11-18",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15A, WOMERSLEY ROAD",
+        "postcode": "N8 9AE",
+        "price": 1250000,
+        "dateOfTransfer": "2025-11-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2126,14 +2531,6 @@
         "newBuild": false
       },
       {
-        "address": "ALYN COURT, FLAT 4, CRESCENT ROAD, HORNSEY",
-        "postcode": "N8 8AN",
-        "price": 202000,
-        "dateOfTransfer": "2025-11-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "LANG COURT, FLAT 40, HIGH STREET",
         "postcode": "N8 7FG",
         "price": 400000,
@@ -2145,6 +2542,14 @@
         "address": "34, ELM GROVE",
         "postcode": "N8 9AH",
         "price": 899950,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ALYN COURT, FLAT 4, CRESCENT ROAD, HORNSEY",
+        "postcode": "N8 8AN",
+        "price": 202000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2182,17 +2587,17 @@
         "newBuild": false
       },
       {
-        "address": "47, SECOND FLOOR FLAT, ROSEBERY GARDENS",
-        "postcode": "N8 8SH",
-        "price": 540000,
+        "address": "GRANITA COURT, 9, FLAT 19, CROSS LANE",
+        "postcode": "N8 7GD",
+        "price": 340000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "GRANITA COURT, 9, FLAT 19, CROSS LANE",
-        "postcode": "N8 7GD",
-        "price": 340000,
+        "address": "47, SECOND FLOOR FLAT, ROSEBERY GARDENS",
+        "postcode": "N8 8SH",
+        "price": 540000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2214,6 +2619,14 @@
         "newBuild": false
       },
       {
+        "address": "66, FLAT B, PRIORY ROAD",
+        "postcode": "N8 7EX",
+        "price": 504250,
+        "dateOfTransfer": "2025-11-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "6, INDERWICK ROAD",
         "postcode": "N8 9LD",
         "price": 1071600,
@@ -2222,9 +2635,9 @@
         "newBuild": false
       },
       {
-        "address": "66, FLAT B, PRIORY ROAD",
-        "postcode": "N8 7EX",
-        "price": 504250,
+        "address": "59, FLAT B, SYDNEY ROAD",
+        "postcode": "N8 0ET",
+        "price": 730000,
         "dateOfTransfer": "2025-11-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2278,19 +2691,19 @@
         "newBuild": false
       },
       {
-        "address": "52, PARK ROAD",
-        "postcode": "N8 8SX",
-        "price": 1620000,
+        "address": "14, NELSON ROAD, HORNSEY",
+        "postcode": "N8 9RU",
+        "price": 552500,
         "dateOfTransfer": "2025-10-31",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "2, BRYANSTONE ROAD",
-        "postcode": "N8 8TN",
-        "price": 1876000,
+        "address": "11, DASHWOOD ROAD",
+        "postcode": "N8 9AD",
+        "price": 420000,
         "dateOfTransfer": "2025-10-31",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2310,27 +2723,27 @@
         "newBuild": false
       },
       {
+        "address": "2, BRYANSTONE ROAD",
+        "postcode": "N8 8TN",
+        "price": 1876000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "52, PARK ROAD",
+        "postcode": "N8 8SX",
+        "price": 1620000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "GROUND FLOOR MAISONETTE, 46, FARRER ROAD",
         "postcode": "N8 8LB",
         "price": 750000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "14, NELSON ROAD, HORNSEY",
-        "postcode": "N8 9RU",
-        "price": 552500,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "11, DASHWOOD ROAD",
-        "postcode": "N8 9AD",
-        "price": 420000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2366,26 +2779,18 @@
         "newBuild": false
       },
       {
+        "address": "10, RIBBLESDALE ROAD",
+        "postcode": "N8 7EP",
+        "price": 5000,
+        "dateOfTransfer": "2025-10-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "32, GLADWELL ROAD",
         "postcode": "N8 9AA",
         "price": 1550000,
         "dateOfTransfer": "2025-10-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "68, SECOND FLOOR FLAT, ROKESLY AVENUE",
-        "postcode": "N8 8NH",
-        "price": 562500,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "51, BERESFORD ROAD",
-        "postcode": "N8 0AL",
-        "price": 841000,
-        "dateOfTransfer": "2025-10-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -2403,6 +2808,22 @@
         "price": 470000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68, SECOND FLOOR FLAT, ROKESLY AVENUE",
+        "postcode": "N8 8NH",
+        "price": 562500,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51, BERESFORD ROAD",
+        "postcode": "N8 0AL",
+        "price": 841000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2438,6 +2859,14 @@
         "newBuild": false
       },
       {
+        "address": "36A, ELM GROVE",
+        "postcode": "N8 9AH",
+        "price": 1035000,
+        "dateOfTransfer": "2025-10-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "22, WESTON PARK",
         "postcode": "N8 9TJ",
         "price": 2100000,
@@ -2454,9 +2883,9 @@
         "newBuild": false
       },
       {
-        "address": "EMERSON APARTMENTS, 18, CHADWELL LANE",
-        "postcode": "N8 7RF",
-        "price": 290000,
+        "address": "10A, FELIX AVENUE",
+        "postcode": "N8 9TL",
+        "price": 650000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2470,9 +2899,9 @@
         "newBuild": false
       },
       {
-        "address": "10A, FELIX AVENUE",
-        "postcode": "N8 9TL",
-        "price": 650000,
+        "address": "EMERSON APARTMENTS, 18, CHADWELL LANE",
+        "postcode": "N8 7RF",
+        "price": 290000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2486,6 +2915,14 @@
         "newBuild": false
       },
       {
+        "address": "17, PRIMEZONE MEWS",
+        "postcode": "N8 9JP",
+        "price": 532500,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BLENHEIM MANSIONS, 3, FLAT 73, MARY NEUNER ROAD",
         "postcode": "N8 0EZ",
         "price": 500000,
@@ -2494,10 +2931,18 @@
         "newBuild": false
       },
       {
-        "address": "17, PRIMEZONE MEWS",
-        "postcode": "N8 9JP",
-        "price": 532500,
+        "address": "WINCHAT HOUSE, 2C, FLAT 48, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 610000,
         "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "64A, NORTH VIEW ROAD",
+        "postcode": "N8 7LL",
+        "price": 546500,
+        "dateOfTransfer": "2025-10-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2510,11 +2955,27 @@
         "newBuild": false
       },
       {
-        "address": "64A, NORTH VIEW ROAD",
-        "postcode": "N8 7LL",
-        "price": 546500,
-        "dateOfTransfer": "2025-10-13",
+        "address": "60, NIGHTINGALE LANE",
+        "postcode": "N8 7QX",
+        "price": 665000,
+        "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "65, CECILE PARK",
+        "postcode": "N8 9AR",
+        "price": 1775000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, PARK ROAD, HORNSEY",
+        "postcode": "N8 8TE",
+        "price": 92372,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2534,27 +2995,11 @@
         "newBuild": false
       },
       {
-        "address": "65, CECILE PARK",
-        "postcode": "N8 9AR",
-        "price": 1775000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "60, NIGHTINGALE LANE",
-        "postcode": "N8 7QX",
-        "price": 665000,
-        "dateOfTransfer": "2025-10-10",
+        "address": "86, NORTH VIEW ROAD",
+        "postcode": "N8 7LP",
+        "price": 592000,
+        "dateOfTransfer": "2025-10-08",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, PARK ROAD, HORNSEY",
-        "postcode": "N8 8TE",
-        "price": 92372,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2566,18 +3011,34 @@
         "newBuild": false
       },
       {
-        "address": "86, NORTH VIEW ROAD",
-        "postcode": "N8 7LP",
-        "price": 592000,
-        "dateOfTransfer": "2025-10-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "87, FLAT A, FROBISHER ROAD",
         "postcode": "N8 0QU",
         "price": 425000,
         "dateOfTransfer": "2025-10-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, PRIORY ROAD",
+        "postcode": "N8 8LH",
+        "price": 1740000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42, TREGARON AVENUE",
+        "postcode": "N8 9EY",
+        "price": 1335000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BLAKE APARTMENTS, 21, NEW RIVER AVENUE",
+        "postcode": "N8 7QF",
+        "price": 195000,
+        "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2598,30 +3059,6 @@
         "newBuild": false
       },
       {
-        "address": "42, TREGARON AVENUE",
-        "postcode": "N8 9EY",
-        "price": 1335000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "BLAKE APARTMENTS, 21, NEW RIVER AVENUE",
-        "postcode": "N8 7QF",
-        "price": 195000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "60, HORNSEY PARK ROAD",
-        "postcode": "N8 0JY",
-        "price": 470000,
-        "dateOfTransfer": "2025-10-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2B, FROBISHER ROAD",
         "postcode": "N8 0QS",
         "price": 800000,
@@ -2638,10 +3075,10 @@
         "newBuild": false
       },
       {
-        "address": "46, GROUND FLOOR FLAT, SEYMOUR ROAD",
-        "postcode": "N8 0BE",
-        "price": 695000,
-        "dateOfTransfer": "2025-10-01",
+        "address": "60, HORNSEY PARK ROAD",
+        "postcode": "N8 0JY",
+        "price": 470000,
+        "dateOfTransfer": "2025-10-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2654,10 +3091,50 @@
         "newBuild": false
       },
       {
+        "address": "46, GROUND FLOOR FLAT, SEYMOUR ROAD",
+        "postcode": "N8 0BE",
+        "price": 695000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 11, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 430000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "86C, HILLFIELD AVENUE",
         "postcode": "N8 7DN",
         "price": 420000,
         "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 59, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 605000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "70B, CROUCH HALL ROAD",
+        "postcode": "N8 8HA",
+        "price": 500000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, FAIRFIELD ROAD",
+        "postcode": "N8 9HG",
+        "price": 400000,
+        "dateOfTransfer": "2025-09-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2678,33 +3155,17 @@
         "newBuild": false
       },
       {
-        "address": "11, FAIRFIELD ROAD",
-        "postcode": "N8 9HG",
-        "price": 400000,
+        "address": "WINCHAT HOUSE, 2C, FLAT 58, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 590000,
         "dateOfTransfer": "2025-09-29",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
+        "newBuild": true
       },
       {
-        "address": "70B, CROUCH HALL ROAD",
-        "postcode": "N8 8HA",
-        "price": 500000,
-        "dateOfTransfer": "2025-09-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "90, FLAT B, HILLFIELD AVENUE",
-        "postcode": "N8 7DN",
-        "price": 420000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "64, FLAT A, PRIORY ROAD",
-        "postcode": "N8 7EX",
-        "price": 360000,
+        "address": "6B, CRESCENT ROAD, HORNSEY",
+        "postcode": "N8 8AT",
+        "price": 825000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2750,9 +3211,41 @@
         "newBuild": false
       },
       {
-        "address": "6B, CRESCENT ROAD, HORNSEY",
-        "postcode": "N8 8AT",
-        "price": 825000,
+        "address": "90, FLAT B, HILLFIELD AVENUE",
+        "postcode": "N8 7DN",
+        "price": 420000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, FLAT A, PRIORY ROAD",
+        "postcode": "N8 7EX",
+        "price": 360000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 74, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 599500,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 55, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 440000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "35, CECILE PARK",
+        "postcode": "N8 9AX",
+        "price": 1215000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2766,17 +3259,17 @@
         "newBuild": true
       },
       {
-        "address": "NORTH POINT, FLAT 54, TOTTENHAM LANE",
-        "postcode": "N8 7HF",
-        "price": 365000,
+        "address": "LANG COURT, FLAT 3, HIGH STREET",
+        "postcode": "N8 7FG",
+        "price": 498000,
         "dateOfTransfer": "2025-09-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "LANG COURT, FLAT 3, HIGH STREET",
-        "postcode": "N8 7FG",
-        "price": 498000,
+        "address": "NORTH POINT, FLAT 54, TOTTENHAM LANE",
+        "postcode": "N8 7HF",
+        "price": 365000,
         "dateOfTransfer": "2025-09-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2798,20 +3291,28 @@
         "newBuild": false
       },
       {
-        "address": "19B, TIVOLI ROAD",
-        "postcode": "N8 8RE",
-        "price": 417500,
-        "dateOfTransfer": "2025-09-19",
+        "address": "29, FLAT C, WESTON PARK",
+        "postcode": "N8 9SY",
+        "price": 425000,
+        "dateOfTransfer": "2025-09-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "SHELLEY HOUSE, FLAT 4, BOYTON ROAD",
-        "postcode": "N8 7BE",
-        "price": 291500,
+        "address": "157, PARK ROAD, HORNSEY",
+        "postcode": "N8 8JJ",
+        "price": 1875000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 49, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 450000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
+        "newBuild": true
       },
       {
         "address": "2, HAROLD ROAD, HORNSEY",
@@ -2830,27 +3331,27 @@
         "newBuild": false
       },
       {
+        "address": "19B, TIVOLI ROAD",
+        "postcode": "N8 8RE",
+        "price": 417500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SHELLEY HOUSE, FLAT 4, BOYTON ROAD",
+        "postcode": "N8 7BE",
+        "price": 291500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "8, CECILE PARK",
         "postcode": "N8 9AS",
         "price": 7000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 49, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 450000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "157, PARK ROAD, HORNSEY",
-        "postcode": "N8 8JJ",
-        "price": 1875000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2894,11 +3395,19 @@
         "newBuild": false
       },
       {
-        "address": "79A, MAYFIELD ROAD",
-        "postcode": "N8 9LN",
-        "price": 680000,
+        "address": "125, RATHCOOLE GARDENS",
+        "postcode": "N8 9PH",
+        "price": 1335000,
         "dateOfTransfer": "2025-09-12",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "77, PRIORY ROAD",
+        "postcode": "N8 8LR",
+        "price": 1625000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2926,33 +3435,17 @@
         "newBuild": false
       },
       {
-        "address": "62, HEWITT ROAD",
-        "postcode": "N8 0BL",
-        "price": 845000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "OAKFIELD COURT, FLAT 53, HASLEMERE ROAD",
-        "postcode": "N8 9QY",
-        "price": 730000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "2, HARVEY MEWS",
-        "postcode": "N8 9PA",
-        "price": 875000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "35, ELMFIELD AVENUE",
         "postcode": "N8 8QG",
         "price": 1550000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, HEWITT ROAD",
+        "postcode": "N8 0BL",
+        "price": 845000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2974,19 +3467,27 @@
         "newBuild": true
       },
       {
-        "address": "125, RATHCOOLE GARDENS",
-        "postcode": "N8 9PH",
-        "price": 1335000,
+        "address": "OAKFIELD COURT, FLAT 53, HASLEMERE ROAD",
+        "postcode": "N8 9QY",
+        "price": 730000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, HARVEY MEWS",
+        "postcode": "N8 9PA",
+        "price": 875000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "77, PRIORY ROAD",
-        "postcode": "N8 8LR",
-        "price": 1625000,
+        "address": "79A, MAYFIELD ROAD",
+        "postcode": "N8 9LN",
+        "price": 680000,
         "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2995,38 +3496,6 @@
         "price": 450000,
         "dateOfTransfer": "2025-09-08",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "HAMLET COURT, FLAT 35, HIGH STREET",
-        "postcode": "N8 7FJ",
-        "price": 370000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 60, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 445000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "38, REDSTON ROAD",
-        "postcode": "N8 7HJ",
-        "price": 1030000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "98, INDERWICK ROAD",
-        "postcode": "N8 9JY",
-        "price": 1465000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3046,18 +3515,50 @@
         "newBuild": false
       },
       {
-        "address": "COLEMAN MANSIONS, FLAT 7, CROUCH HILL",
-        "postcode": "N8 9EJ",
-        "price": 397500,
-        "dateOfTransfer": "2025-09-03",
+        "address": "38, REDSTON ROAD",
+        "postcode": "N8 7HJ",
+        "price": 1030000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 60, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 445000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "98, INDERWICK ROAD",
+        "postcode": "N8 9JY",
+        "price": 1465000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HAMLET COURT, FLAT 35, HIGH STREET",
+        "postcode": "N8 7FJ",
+        "price": 370000,
+        "dateOfTransfer": "2025-09-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "94, FLAT 1, HILLFIELD AVENUE",
-        "postcode": "N8 7DN",
-        "price": 992500,
-        "dateOfTransfer": "2025-09-02",
+        "address": "WINCHAT HOUSE, 2C, FLAT 46, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 440000,
+        "dateOfTransfer": "2025-09-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "COLEMAN MANSIONS, FLAT 7, CROUCH HILL",
+        "postcode": "N8 9EJ",
+        "price": 397500,
+        "dateOfTransfer": "2025-09-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3078,6 +3579,22 @@
         "newBuild": false
       },
       {
+        "address": "8, THE BROADWAY, HORNSEY",
+        "postcode": "N8 9SX",
+        "price": 2650000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "94, FLAT 1, HILLFIELD AVENUE",
+        "postcode": "N8 7DN",
+        "price": 992500,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "141, INDERWICK ROAD",
         "postcode": "N8 9JR",
         "price": 1525000,
@@ -3086,9 +3603,9 @@
         "newBuild": false
       },
       {
-        "address": "EXCHANGE HOUSE, 71, FLAT 24, CROUCH END HILL",
-        "postcode": "N8 8DF",
-        "price": 415000,
+        "address": "CANDISH COURT, FLAT 24, MILES ROAD",
+        "postcode": "N8 7FR",
+        "price": 140000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3102,9 +3619,9 @@
         "newBuild": false
       },
       {
-        "address": "CANDISH COURT, FLAT 24, MILES ROAD",
-        "postcode": "N8 7FR",
-        "price": 140000,
+        "address": "EXCHANGE HOUSE, 71, FLAT 24, CROUCH END HILL",
+        "postcode": "N8 8DF",
+        "price": 415000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3142,6 +3659,14 @@
         "newBuild": false
       },
       {
+        "address": "7, OAK AVENUE",
+        "postcode": "N8 8LJ",
+        "price": 1200000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "CAMPSBOURNE WELL HOUSE, FLAT 1, CROSS LANE",
         "postcode": "N8 7FY",
         "price": 693000,
@@ -3158,26 +3683,10 @@
         "newBuild": false
       },
       {
-        "address": "7, OAK AVENUE",
-        "postcode": "N8 8LJ",
-        "price": 1200000,
-        "dateOfTransfer": "2025-08-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "26, HAMPDEN ROAD",
         "postcode": "N8 0HT",
         "price": 445000,
         "dateOfTransfer": "2025-08-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "AMAZON APARTMENTS, 71, NEW RIVER AVENUE",
-        "postcode": "N8 7QE",
-        "price": 305000,
-        "dateOfTransfer": "2025-08-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3198,6 +3707,14 @@
         "newBuild": false
       },
       {
+        "address": "12, HAREFIELD ROAD",
+        "postcode": "N8 8QY",
+        "price": 2027000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "79A, WESTON PARK",
         "postcode": "N8 9PS",
         "price": 545000,
@@ -3214,11 +3731,11 @@
         "newBuild": false
       },
       {
-        "address": "12, HAREFIELD ROAD",
-        "postcode": "N8 8QY",
-        "price": 2027000,
+        "address": "AMAZON APARTMENTS, 71, NEW RIVER AVENUE",
+        "postcode": "N8 7QE",
+        "price": 305000,
         "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3238,11 +3755,11 @@
         "newBuild": false
       },
       {
-        "address": "82A, UPLANDS ROAD",
-        "postcode": "N8 9NJ",
-        "price": 775000,
+        "address": "43, COLERAINE ROAD",
+        "postcode": "N8 0QJ",
+        "price": 890000,
         "dateOfTransfer": "2025-08-15",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3254,11 +3771,11 @@
         "newBuild": true
       },
       {
-        "address": "43, COLERAINE ROAD",
-        "postcode": "N8 0QJ",
-        "price": 890000,
+        "address": "82A, UPLANDS ROAD",
+        "postcode": "N8 9NJ",
+        "price": 775000,
         "dateOfTransfer": "2025-08-15",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3267,6 +3784,22 @@
         "price": 1100000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "43A, THE BROADWAY, HORNSEY",
+        "postcode": "N8 8DT",
+        "price": 970000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "6, GROUND AND FIRST FLOOR FLAT B, DICKENSON ROAD",
+        "postcode": "N8 9EN",
+        "price": 600000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3291,22 +3824,6 @@
         "price": 1685000,
         "dateOfTransfer": "2025-08-14",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "43A, THE BROADWAY, HORNSEY",
-        "postcode": "N8 8DT",
-        "price": 970000,
-        "dateOfTransfer": "2025-08-14",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "6, GROUND AND FIRST FLOOR FLAT B, DICKENSON ROAD",
-        "postcode": "N8 9EN",
-        "price": 600000,
-        "dateOfTransfer": "2025-08-14",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3350,19 +3867,19 @@
         "newBuild": false
       },
       {
-        "address": "32A - 32C, TOPSFIELD PARADE",
-        "postcode": "N8 8QA",
-        "price": 406000,
-        "dateOfTransfer": "2025-08-08",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "124A, NELSON ROAD, HORNSEY",
         "postcode": "N8 9RN",
         "price": 687120,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "153, CROUCH HILL",
+        "postcode": "N8 9QH",
+        "price": 920000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3374,11 +3891,11 @@
         "newBuild": false
       },
       {
-        "address": "153, CROUCH HILL",
-        "postcode": "N8 9QH",
-        "price": 920000,
+        "address": "32A - 32C, TOPSFIELD PARADE",
+        "postcode": "N8 8QA",
+        "price": 406000,
         "dateOfTransfer": "2025-08-08",
-        "propertyType": "Other",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3438,14 +3955,6 @@
         "newBuild": false
       },
       {
-        "address": "CRESCENT COURT, FLAT 18, CRESCENT ROAD, HORNSEY",
-        "postcode": "N8 8AU",
-        "price": 330450,
-        "dateOfTransfer": "2025-08-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "55, BARRINGTON ROAD",
         "postcode": "N8 8QT",
         "price": 1950000,
@@ -3459,6 +3968,14 @@
         "price": 1350000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CRESCENT COURT, FLAT 18, CRESCENT ROAD, HORNSEY",
+        "postcode": "N8 8AU",
+        "price": 330450,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3486,6 +4003,14 @@
         "newBuild": false
       },
       {
+        "address": "WINCHAT HOUSE, 2C, FLAT 37, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 571000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "THORNHILL COURT, FLAT 1, CRESCENT ROAD, HORNSEY",
         "postcode": "N8 8AY",
         "price": 420000,
@@ -3500,14 +4025,6 @@
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Semi-detached",
         "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 37, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 571000,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
       },
       {
         "address": "10, WOLSELEY ROAD, HORNSEY",
@@ -3534,14 +4051,6 @@
         "newBuild": false
       },
       {
-        "address": "206, MIDDLE LANE, CROUCH END",
-        "postcode": "N8 7LA",
-        "price": 550000,
-        "dateOfTransfer": "2025-07-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "9A, RATHCOOLE AVENUE",
         "postcode": "N8 9LY",
         "price": 635000,
@@ -3558,11 +4067,27 @@
         "newBuild": false
       },
       {
+        "address": "206, MIDDLE LANE, CROUCH END",
+        "postcode": "N8 7LA",
+        "price": 550000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "43, BIRKBECK ROAD, HORNSEY",
         "postcode": "N8 7PG",
         "price": 395000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "134, CROUCH HILL",
+        "postcode": "N8 9DX",
+        "price": 317500,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3574,11 +4099,11 @@
         "newBuild": false
       },
       {
-        "address": "134, CROUCH HILL",
-        "postcode": "N8 9DX",
-        "price": 317500,
+        "address": "82B, SYDNEY ROAD",
+        "postcode": "N8 0EX",
+        "price": 410000,
         "dateOfTransfer": "2025-07-25",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3619,14 +4144,6 @@
         "price": 1885000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "82B, SYDNEY ROAD",
-        "postcode": "N8 0EX",
-        "price": 410000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3678,14 +4195,6 @@
         "newBuild": false
       },
       {
-        "address": "GATEKEEPERS LODGE, 83, FLAT 1, HIGH STREET",
-        "postcode": "N8 7FD",
-        "price": 300000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "125, EFFINGHAM ROAD",
         "postcode": "N8 0AE",
         "price": 520000,
@@ -3694,10 +4203,26 @@
         "newBuild": false
       },
       {
+        "address": "GATEKEEPERS LODGE, 83, FLAT 1, HIGH STREET",
+        "postcode": "N8 7FD",
+        "price": 300000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "56, CECILE PARK",
         "postcode": "N8 9AU",
         "price": 3175000,
         "dateOfTransfer": "2025-07-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, GLASSLYN ROAD",
+        "postcode": "N8 8RJ",
+        "price": 2260000,
+        "dateOfTransfer": "2025-07-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3723,14 +4248,6 @@
         "price": 525000,
         "dateOfTransfer": "2025-07-17",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "15, GLASSLYN ROAD",
-        "postcode": "N8 8RJ",
-        "price": 2260000,
-        "dateOfTransfer": "2025-07-17",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3998,6 +4515,14 @@
         "newBuild": false
       },
       {
+        "address": "32, LIGHTFOOT ROAD",
+        "postcode": "N8 7JN",
+        "price": 1235000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "102, BARRINGTON ROAD",
         "postcode": "N8 8QX",
         "price": 1900000,
@@ -4019,14 +4544,6 @@
         "price": 1250000,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "32, LIGHTFOOT ROAD",
-        "postcode": "N8 7JN",
-        "price": 1235000,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4078,6 +4595,22 @@
         "newBuild": false
       },
       {
+        "address": "143, WIGHTMAN ROAD",
+        "postcode": "N8 0BB",
+        "price": 783700,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "82A, SYDNEY ROAD",
+        "postcode": "N8 0EX",
+        "price": 450000,
+        "dateOfTransfer": "2025-06-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "158, NORTH VIEW ROAD",
         "postcode": "N8 7NB",
         "price": 618000,
@@ -4089,14 +4622,6 @@
         "address": "12, LIGHTFOOT ROAD",
         "postcode": "N8 7JN",
         "price": 1350000,
-        "dateOfTransfer": "2025-06-13",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "143, WIGHTMAN ROAD",
-        "postcode": "N8 0BB",
-        "price": 783700,
         "dateOfTransfer": "2025-06-13",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4126,14 +4651,6 @@
         "newBuild": false
       },
       {
-        "address": "82A, SYDNEY ROAD",
-        "postcode": "N8 0EX",
-        "price": 450000,
-        "dateOfTransfer": "2025-06-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "144, CROUCH HILL",
         "postcode": "N8 9DX",
         "price": 7500,
@@ -4150,17 +4667,17 @@
         "newBuild": false
       },
       {
-        "address": "OAKFIELD COURT, FLAT 3, HASLEMERE ROAD",
-        "postcode": "N8 9RA",
-        "price": 625000,
+        "address": "44, COOLHURST ROAD",
+        "postcode": "N8 8EU",
+        "price": 1400000,
         "dateOfTransfer": "2025-06-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "44, COOLHURST ROAD",
-        "postcode": "N8 8EU",
-        "price": 1400000,
+        "address": "OAKFIELD COURT, FLAT 3, HASLEMERE ROAD",
+        "postcode": "N8 9RA",
+        "price": 625000,
         "dateOfTransfer": "2025-06-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4171,6 +4688,14 @@
         "price": 380000,
         "dateOfTransfer": "2025-06-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, ELM GROVE",
+        "postcode": "N8 9AH",
+        "price": 1580000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4190,14 +4715,6 @@
         "newBuild": false
       },
       {
-        "address": "15, ELM GROVE",
-        "postcode": "N8 9AH",
-        "price": 1580000,
-        "dateOfTransfer": "2025-06-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "7, MAYFIELD ROAD",
         "postcode": "N8 9LL",
         "price": 1545000,
@@ -4214,14 +4731,6 @@
         "newBuild": false
       },
       {
-        "address": "28, COURCY ROAD",
-        "postcode": "N8 0QH",
-        "price": 850000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "74, HAMPDEN ROAD, HORNSEY",
         "postcode": "N8 0HT",
         "price": 900000,
@@ -4235,6 +4744,14 @@
         "price": 570000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, COURCY ROAD",
+        "postcode": "N8 0QH",
+        "price": 850000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4342,17 +4859,9 @@
         "newBuild": false
       },
       {
-        "address": "7, FIRST FLOOR FLAT, MALVERN ROAD",
-        "postcode": "N8 0LE",
-        "price": 363000,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "139, INDERWICK ROAD",
-        "postcode": "N8 9JR",
-        "price": 700000,
+        "address": "BLAKE APARTMENTS, 62, NEW RIVER AVENUE",
+        "postcode": "N8 7QF",
+        "price": 310000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4366,17 +4875,25 @@
         "newBuild": false
       },
       {
-        "address": "GLACE APARTMENTS, 11, FLAT 24, CROSS LANE",
-        "postcode": "N8 7GE",
-        "price": 437500,
+        "address": "139, INDERWICK ROAD",
+        "postcode": "N8 9JR",
+        "price": 700000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BLAKE APARTMENTS, 62, NEW RIVER AVENUE",
-        "postcode": "N8 7QF",
-        "price": 310000,
+        "address": "7, FIRST FLOOR FLAT, MALVERN ROAD",
+        "postcode": "N8 0LE",
+        "price": 363000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GLACE APARTMENTS, 11, FLAT 24, CROSS LANE",
+        "postcode": "N8 7GE",
+        "price": 437500,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4390,19 +4907,19 @@
         "newBuild": false
       },
       {
-        "address": "104, FLAT B, HILLFIELD AVENUE, HORNSEY",
-        "postcode": "N8 7DN",
-        "price": 450000,
-        "dateOfTransfer": "2025-05-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "14, MINSTER WALK",
         "postcode": "N8 7JS",
         "price": 685000,
         "dateOfTransfer": "2025-05-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "104, FLAT B, HILLFIELD AVENUE, HORNSEY",
+        "postcode": "N8 7DN",
+        "price": 450000,
+        "dateOfTransfer": "2025-05-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4430,20 +4947,20 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 26, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 439500,
-        "dateOfTransfer": "2025-05-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "AMAZON APARTMENTS, 44, NEW RIVER AVENUE",
         "postcode": "N8 7QE",
         "price": 260000,
         "dateOfTransfer": "2025-05-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 26, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 439500,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "308, WIGHTMAN ROAD",
@@ -4462,19 +4979,19 @@
         "newBuild": false
       },
       {
-        "address": "3A, FAIRFIELD GARDENS",
-        "postcode": "N8 9DD",
-        "price": 760000,
-        "dateOfTransfer": "2025-04-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "12, DICKENSON ROAD",
         "postcode": "N8 9ET",
         "price": 1200000,
         "dateOfTransfer": "2025-04-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3A, FAIRFIELD GARDENS",
+        "postcode": "N8 9DD",
+        "price": 760000,
+        "dateOfTransfer": "2025-04-25",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4598,62 +5115,6 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 26, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 580450,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 27, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 580000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "26, BARRINGTON ROAD",
-        "postcode": "N8 8QS",
-        "price": 1635000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "16, MONTENOTTE ROAD",
-        "postcode": "N8 8RL",
-        "price": 1760000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "113A, ALEXANDRA ROAD, HORNSEY",
-        "postcode": "N8 0LG",
-        "price": 389000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "39, GROUND FLOOR FLAT, ROSEBERY GARDENS",
-        "postcode": "N8 8SH",
-        "price": 560000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "54, PARK AVENUE NORTH",
-        "postcode": "N8 7RT",
-        "price": 1500000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "23 - 25, TOTTENHAM LANE",
         "postcode": "N8 9BD",
         "price": 3280000,
@@ -4662,41 +5123,9 @@
         "newBuild": false
       },
       {
-        "address": "55, BERESFORD ROAD",
-        "postcode": "N8 0AL",
-        "price": 860000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "30, FLAT 3, CROUCH HALL ROAD",
-        "postcode": "N8 8HJ",
-        "price": 242000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "4, FLAT B, HAROLD ROAD, HORNSEY",
-        "postcode": "N8 7DE",
-        "price": 468000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "33, FLAT C, CHURCH LANE",
-        "postcode": "N8 7BT",
-        "price": 360000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "6, BADEN ROAD",
-        "postcode": "N8 7RJ",
-        "price": 1350000,
+        "address": "16, MONTENOTTE ROAD",
+        "postcode": "N8 8RL",
+        "price": 1760000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4750,9 +5179,9 @@
         "newBuild": false
       },
       {
-        "address": "9, BERKELEY ROAD, HORNSEY",
-        "postcode": "N8 8RU",
-        "price": 1510000,
+        "address": "54, PARK AVENUE NORTH",
+        "postcode": "N8 7RT",
+        "price": 1500000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4774,6 +5203,94 @@
         "newBuild": false
       },
       {
+        "address": "55, BERESFORD ROAD",
+        "postcode": "N8 0AL",
+        "price": 860000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, FLAT 3, CROUCH HALL ROAD",
+        "postcode": "N8 8HJ",
+        "price": 242000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, BARRINGTON ROAD",
+        "postcode": "N8 8QS",
+        "price": 1635000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, BADEN ROAD",
+        "postcode": "N8 7RJ",
+        "price": 1350000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT B, HAROLD ROAD, HORNSEY",
+        "postcode": "N8 7DE",
+        "price": 468000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, FLAT C, CHURCH LANE",
+        "postcode": "N8 7BT",
+        "price": 360000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "113A, ALEXANDRA ROAD, HORNSEY",
+        "postcode": "N8 0LG",
+        "price": 389000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, GROUND FLOOR FLAT, ROSEBERY GARDENS",
+        "postcode": "N8 8SH",
+        "price": 560000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, BERKELEY ROAD, HORNSEY",
+        "postcode": "N8 8RU",
+        "price": 1510000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 26, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 580450,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 27, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 580000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "NORTH POINT, FLAT 6, TOTTENHAM LANE",
         "postcode": "N8 7HF",
         "price": 450000,
@@ -4790,65 +5307,9 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 31, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 587500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 2, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 549450,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 32, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 575000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 41, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 550000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "52, FLAT 4, COOLHURST ROAD",
         "postcode": "N8 8EU",
         "price": 612000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "2, FLAT D, CECILE PARK",
-        "postcode": "N8 9AS",
-        "price": 467500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "178A, FERME PARK ROAD",
-        "postcode": "N8 9BN",
-        "price": 685000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "72, FLAT B, CROUCH HILL",
-        "postcode": "N8 9EE",
-        "price": 503000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4873,22 +5334,6 @@
         "address": "WINCHAT HOUSE, 2C, FLAT 82, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
         "price": 434750,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "42, FLAT 2, MAYFIELD ROAD",
-        "postcode": "N8 9LP",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "NORTHERN HEIGHTS, FLAT 4, CRESCENT ROAD, HORNSEY",
-        "postcode": "N8 8AS",
-        "price": 425000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5014,46 +5459,6 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 4, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 607500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "55, NORTH VIEW ROAD",
-        "postcode": "N8 7LN",
-        "price": 1350000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "11, TURNPIKE MEWS",
-        "postcode": "N8 0ED",
-        "price": 275000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "2, FLAT 5, WALLIS MEWS",
-        "postcode": "N8 0BF",
-        "price": 475000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, FLAT 2, ELDER AVENUE",
-        "postcode": "N8 9TE",
-        "price": 650000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "110, FLAT 1, CROUCH HILL",
         "postcode": "N8 9DY",
         "price": 810000,
@@ -5118,9 +5523,81 @@
         "newBuild": false
       },
       {
-        "address": "7, FLAT 1, FERRESTONE ROAD",
-        "postcode": "N8 7BX",
-        "price": 965000,
+        "address": "WINCHAT HOUSE, 2C, FLAT 4, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 607500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "55, NORTH VIEW ROAD",
+        "postcode": "N8 7LN",
+        "price": 1350000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 5, WALLIS MEWS",
+        "postcode": "N8 0BF",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT D, CECILE PARK",
+        "postcode": "N8 9AS",
+        "price": 467500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "178A, FERME PARK ROAD",
+        "postcode": "N8 9BN",
+        "price": 685000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "72, FLAT B, CROUCH HILL",
+        "postcode": "N8 9EE",
+        "price": 503000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 2, ELDER AVENUE",
+        "postcode": "N8 9TE",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, TURNPIKE MEWS",
+        "postcode": "N8 0ED",
+        "price": 275000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "42, FLAT 2, MAYFIELD ROAD",
+        "postcode": "N8 9LP",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NORTHERN HEIGHTS, FLAT 4, CRESCENT ROAD, HORNSEY",
+        "postcode": "N8 8AS",
+        "price": 425000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5158,6 +5635,46 @@
         "newBuild": false
       },
       {
+        "address": "7, FLAT 1, FERRESTONE ROAD",
+        "postcode": "N8 7BX",
+        "price": 965000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 31, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 587500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 2, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 549450,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 32, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 575000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 41, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 550000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "172, MIDDLE LANE, CROUCH END",
         "postcode": "N8 7LA",
         "price": 585000,
@@ -5174,43 +5691,11 @@
         "newBuild": false
       },
       {
-        "address": "PARAGON COURT, FLAT 12, WIGHTMAN ROAD",
-        "postcode": "N8 0HH",
-        "price": 365000,
+        "address": "4, RIBBLESDALE ROAD",
+        "postcode": "N8 7EP",
+        "price": 386245,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "29, RATHCOOLE GARDENS",
-        "postcode": "N8 9ND",
-        "price": 437000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "79, BURGHLEY ROAD",
-        "postcode": "N8 0QG",
-        "price": 573750,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "54, FAIRFAX ROAD",
-        "postcode": "N8 0NG",
-        "price": 843000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "54, GLASSLYN ROAD",
-        "postcode": "N8 8RH",
-        "price": 1655000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5222,17 +5707,9 @@
         "newBuild": false
       },
       {
-        "address": "4, RIBBLESDALE ROAD",
-        "postcode": "N8 7EP",
-        "price": 386245,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "10, CHURCH LANE",
-        "postcode": "N8 7BU",
-        "price": 885000,
+        "address": "19, BERKELEY ROAD, HORNSEY",
+        "postcode": "N8 8RU",
+        "price": 803000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5262,9 +5739,33 @@
         "newBuild": false
       },
       {
-        "address": "19, BERKELEY ROAD, HORNSEY",
-        "postcode": "N8 8RU",
-        "price": 803000,
+        "address": "79, BURGHLEY ROAD",
+        "postcode": "N8 0QG",
+        "price": 573750,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, FAIRFAX ROAD",
+        "postcode": "N8 0NG",
+        "price": 843000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, GLASSLYN ROAD",
+        "postcode": "N8 8RH",
+        "price": 1655000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, CHURCH LANE",
+        "postcode": "N8 7BU",
+        "price": 885000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5273,6 +5774,22 @@
         "address": "12, DRYLANDS ROAD",
         "postcode": "N8 9HN",
         "price": 750000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PARAGON COURT, FLAT 12, WIGHTMAN ROAD",
+        "postcode": "N8 0HH",
+        "price": 365000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, RATHCOOLE GARDENS",
+        "postcode": "N8 9ND",
+        "price": 437000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5294,12 +5811,12 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 18, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 650000,
+        "address": "160, FLAT 4, FERME PARK ROAD",
+        "postcode": "N8 9SE",
+        "price": 495000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
-        "newBuild": true
+        "newBuild": false
       },
       {
         "address": "69, MIDDLE LANE, CROUCH END",
@@ -5318,11 +5835,11 @@
         "newBuild": false
       },
       {
-        "address": "160, FLAT 4, FERME PARK ROAD",
-        "postcode": "N8 9SE",
-        "price": 495000,
+        "address": "28, HILLFIELD AVENUE",
+        "postcode": "N8 7DT",
+        "price": 1200000,
         "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5334,12 +5851,12 @@
         "newBuild": false
       },
       {
-        "address": "28, HILLFIELD AVENUE",
-        "postcode": "N8 7DT",
-        "price": 1200000,
+        "address": "WINCHAT HOUSE, 2C, FLAT 18, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 650000,
         "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "37, FLAT C, WOLSELEY ROAD, HORNSEY",
@@ -5350,17 +5867,17 @@
         "newBuild": false
       },
       {
-        "address": "28, FLAT 2, COOLHURST ROAD",
-        "postcode": "N8 8EL",
-        "price": 1195000,
+        "address": "102B, HAMPDEN ROAD, HORNSEY",
+        "postcode": "N8 0HS",
+        "price": 715000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "102B, HAMPDEN ROAD, HORNSEY",
-        "postcode": "N8 0HS",
-        "price": 715000,
+        "address": "28, FLAT 2, COOLHURST ROAD",
+        "postcode": "N8 8EL",
+        "price": 1195000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5406,17 +5923,9 @@
         "newBuild": false
       },
       {
-        "address": "111, SEYMOUR ROAD",
-        "postcode": "N8 0BH",
-        "price": 1069000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "71, BOYTON ROAD",
-        "postcode": "N8 7AE",
-        "price": 781000,
+        "address": "99, MAYFIELD ROAD",
+        "postcode": "N8 9LN",
+        "price": 1310000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5430,6 +5939,14 @@
         "newBuild": false
       },
       {
+        "address": "111, SEYMOUR ROAD",
+        "postcode": "N8 0BH",
+        "price": 1069000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "19B, RIBBLESDALE ROAD",
         "postcode": "N8 7EP",
         "price": 820000,
@@ -5438,9 +5955,9 @@
         "newBuild": false
       },
       {
-        "address": "99, MAYFIELD ROAD",
-        "postcode": "N8 9LN",
-        "price": 1310000,
+        "address": "71, BOYTON ROAD",
+        "postcode": "N8 7AE",
+        "price": 781000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5451,6 +5968,14 @@
         "price": 1300000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "80, FLAT A, FERME PARK ROAD",
+        "postcode": "N8 9SD",
+        "price": 427500,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5470,10 +5995,10 @@
         "newBuild": true
       },
       {
-        "address": "80, FLAT A, FERME PARK ROAD",
-        "postcode": "N8 9SD",
-        "price": 427500,
-        "dateOfTransfer": "2025-03-19",
+        "address": "8, SAXON CHASE",
+        "postcode": "N8 9EQ",
+        "price": 365000,
+        "dateOfTransfer": "2025-03-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -5486,12 +6011,12 @@
         "newBuild": true
       },
       {
-        "address": "8, SAXON CHASE",
-        "postcode": "N8 9EQ",
-        "price": 365000,
-        "dateOfTransfer": "2025-03-18",
+        "address": "WINCHAT HOUSE, 2C, FLAT 66, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-17",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
+        "newBuild": true
       },
       {
         "address": "37A, ROSEBERY GARDENS",
@@ -5510,27 +6035,11 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 66, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "288, FLAT A, PARK ROAD, HORNSEY",
         "postcode": "N8 8JY",
         "price": 565500,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "31C, RIDGE ROAD",
-        "postcode": "N8 9LJ",
-        "price": 560000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5558,12 +6067,28 @@
         "newBuild": false
       },
       {
+        "address": "31C, RIDGE ROAD",
+        "postcode": "N8 9LJ",
+        "price": 560000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "7, BURGHLEY ROAD",
         "postcode": "N8 0QG",
         "price": 675000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Terraced",
         "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 16, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 463600,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "121, FLAT 5, PRIORY ROAD",
@@ -5580,22 +6105,6 @@
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 16, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 463600,
-        "dateOfTransfer": "2025-03-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 36, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 441800,
-        "dateOfTransfer": "2025-03-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
       },
       {
         "address": "2, DENTON ROAD",
@@ -5630,27 +6139,19 @@
         "newBuild": false
       },
       {
+        "address": "WINCHAT HOUSE, 2C, FLAT 36, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 441800,
+        "dateOfTransfer": "2025-03-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "ALINGTON HOUSE, 1, FLAT 93, MARY NEUNER ROAD",
         "postcode": "N8 0ES",
         "price": 370000,
         "dateOfTransfer": "2025-03-11",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 77, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 584200,
-        "dateOfTransfer": "2025-03-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "17, FELIX AVENUE",
-        "postcode": "N8 9TL",
-        "price": 1585000,
-        "dateOfTransfer": "2025-03-10",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5662,6 +6163,14 @@
         "newBuild": false
       },
       {
+        "address": "17, FELIX AVENUE",
+        "postcode": "N8 9TL",
+        "price": 1585000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "30, CLOVELLY ROAD",
         "postcode": "N8 7RH",
         "price": 1379000,
@@ -5670,12 +6179,12 @@
         "newBuild": false
       },
       {
-        "address": "EXCHANGE HOUSE, 71, FLAT 46, CROUCH END HILL",
-        "postcode": "N8 8DF",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-07",
+        "address": "WINCHAT HOUSE, 2C, FLAT 77, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 584200,
+        "dateOfTransfer": "2025-03-10",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
+        "newBuild": true
       },
       {
         "address": "32, CHESTNUT AVENUE",
@@ -5686,11 +6195,11 @@
         "newBuild": false
       },
       {
-        "address": "86, HAWTHORN ROAD",
-        "postcode": "N8 7NA",
-        "price": 782000,
+        "address": "THE COLISEUM, 10, FLAT 13, SALISBURY PROMENADE",
+        "postcode": "N8 0RX",
+        "price": 425000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5710,11 +6219,35 @@
         "newBuild": false
       },
       {
-        "address": "THE COLISEUM, 10, FLAT 13, SALISBURY PROMENADE",
-        "postcode": "N8 0RX",
-        "price": 425000,
+        "address": "86, HAWTHORN ROAD",
+        "postcode": "N8 7NA",
+        "price": 782000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "EXCHANGE HOUSE, 71, FLAT 46, CROUCH END HILL",
+        "postcode": "N8 8DF",
+        "price": 400000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 28, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "63, SEYMOUR ROAD",
+        "postcode": "N8 0BJ",
+        "price": 885000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5734,36 +6267,12 @@
         "newBuild": false
       },
       {
-        "address": "63, SEYMOUR ROAD",
-        "postcode": "N8 0BJ",
-        "price": 885000,
-        "dateOfTransfer": "2025-03-06",
+        "address": "131, HEWITT ROAD",
+        "postcode": "N8 0BP",
+        "price": 830000,
+        "dateOfTransfer": "2025-03-05",
         "propertyType": "Terraced",
         "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 28, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 590000,
-        "dateOfTransfer": "2025-03-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 53, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 465600,
-        "dateOfTransfer": "2025-03-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 90, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 457000,
-        "dateOfTransfer": "2025-03-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
       },
       {
         "address": "THE COLISEUM, 10, FLAT 14, SALISBURY PROMENADE",
@@ -5782,18 +6291,18 @@
         "newBuild": false
       },
       {
-        "address": "131, HEWITT ROAD",
-        "postcode": "N8 0BP",
-        "price": 830000,
+        "address": "WINCHAT HOUSE, 2C, FLAT 53, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 465600,
         "dateOfTransfer": "2025-03-05",
-        "propertyType": "Terraced",
-        "newBuild": false
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 45, MARY NEUNER ROAD",
+        "address": "WINCHAT HOUSE, 2C, FLAT 90, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
-        "price": 595000,
-        "dateOfTransfer": "2025-03-03",
+        "price": 457000,
+        "dateOfTransfer": "2025-03-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
       },
@@ -5806,10 +6315,10 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 7, MARY NEUNER ROAD",
+        "address": "WINCHAT HOUSE, 2C, FLAT 45, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
-        "price": 564000,
-        "dateOfTransfer": "2025-02-28",
+        "price": 595000,
+        "dateOfTransfer": "2025-03-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
       },
@@ -5817,14 +6326,6 @@
         "address": "62, FLAT C, PRIORY ROAD",
         "postcode": "N8 7EX",
         "price": 445000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "65D, WESTON PARK",
-        "postcode": "N8 9TA",
-        "price": 575000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5862,6 +6363,22 @@
         "newBuild": false
       },
       {
+        "address": "65D, WESTON PARK",
+        "postcode": "N8 9TA",
+        "price": 575000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 7, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 564000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "171B, WIGHTMAN ROAD",
         "postcode": "N8 0BB",
         "price": 555000,
@@ -5878,12 +6395,20 @@
         "newBuild": true
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 21, MARY NEUNER ROAD",
+        "address": "WINCHAT HOUSE, 2C, FLAT 85, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
-        "price": 570000,
+        "price": 674950,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "49, SEYMOUR ROAD",
+        "postcode": "N8 0BJ",
+        "price": 490000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       },
       {
         "address": "EMERSON APARTMENTS, 51, CHADWELL LANE",
@@ -5902,44 +6427,12 @@
         "newBuild": false
       },
       {
-        "address": "49, SEYMOUR ROAD",
-        "postcode": "N8 0BJ",
-        "price": 490000,
-        "dateOfTransfer": "2025-02-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 85, MARY NEUNER ROAD",
+        "address": "WINCHAT HOUSE, 2C, FLAT 21, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
-        "price": 674950,
+        "price": 570000,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 43, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 455000,
-        "dateOfTransfer": "2025-02-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "101A, NORTH VIEW ROAD",
-        "postcode": "N8 7LR",
-        "price": 590000,
-        "dateOfTransfer": "2025-02-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "6, OAK AVENUE",
-        "postcode": "N8 8LJ",
-        "price": 765000,
-        "dateOfTransfer": "2025-02-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
       },
       {
         "address": "WINCHAT HOUSE, 2C, FLAT 67, MARY NEUNER ROAD",
@@ -5958,41 +6451,41 @@
         "newBuild": true
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 88, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 410000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 63, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 460000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "116, CROUCH HILL",
-        "postcode": "N8 9DY",
-        "price": 520000,
-        "dateOfTransfer": "2025-02-21",
+        "address": "6, OAK AVENUE",
+        "postcode": "N8 8LJ",
+        "price": 765000,
+        "dateOfTransfer": "2025-02-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "61, FALKLAND ROAD",
-        "postcode": "N8 0NS",
-        "price": 1400000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Terraced",
+        "address": "WINCHAT HOUSE, 2C, FLAT 43, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 455000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "101A, NORTH VIEW ROAD",
+        "postcode": "N8 7LR",
+        "price": 590000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "55, RATHCOOLE AVENUE",
         "postcode": "N8 9LY",
         "price": 900000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "61, FALKLAND ROAD",
+        "postcode": "N8 0NS",
+        "price": 1400000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -6012,6 +6505,30 @@
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 88, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 410000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "116, CROUCH HILL",
+        "postcode": "N8 9DY",
+        "price": 520000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 63, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 460000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "WINCHAT HOUSE, 2C, FLAT 76, MARY NEUNER ROAD",
@@ -6054,6 +6571,22 @@
         "newBuild": false
       },
       {
+        "address": "WINCHAT HOUSE, 2C, FLAT 17, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 608650,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "MEDICI COURT, FLAT 10, HILLFIELD AVENUE",
+        "postcode": "N8 7BQ",
+        "price": 350000,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "WINCHAT HOUSE, 2C, FLAT 65, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
         "price": 584375,
@@ -6070,28 +6603,12 @@
         "newBuild": true
       },
       {
-        "address": "MEDICI COURT, FLAT 10, HILLFIELD AVENUE",
-        "postcode": "N8 7BQ",
-        "price": 350000,
-        "dateOfTransfer": "2025-02-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 17, MARY NEUNER ROAD",
+        "address": "WINCHAT HOUSE, 2C, FLAT 24, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
-        "price": 608650,
-        "dateOfTransfer": "2025-02-18",
+        "price": 585150,
+        "dateOfTransfer": "2025-02-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
-      },
-      {
-        "address": "1A, MAYFIELD ROAD",
-        "postcode": "N8 9LL",
-        "price": 1425000,
-        "dateOfTransfer": "2025-02-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
       },
       {
         "address": "1, COMMERCIAL UNIT, HAMPDEN ROAD",
@@ -6102,25 +6619,17 @@
         "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 24, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 585150,
+        "address": "1A, MAYFIELD ROAD",
+        "postcode": "N8 9LL",
+        "price": 1425000,
         "dateOfTransfer": "2025-02-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
+        "propertyType": "Semi-detached",
+        "newBuild": false
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 33, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 460800,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "STATION MANSIONS, 371 - 385, 377, WIGHTMAN ROAD",
-        "postcode": "N8 0NA",
-        "price": 365000,
+        "address": "59, GROUND FLOOR FLAT, UPLANDS ROAD",
+        "postcode": "N8 9NH",
+        "price": 790000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -6142,11 +6651,27 @@
         "newBuild": false
       },
       {
-        "address": "59, GROUND FLOOR FLAT, UPLANDS ROAD",
-        "postcode": "N8 9NH",
-        "price": 790000,
+        "address": "STATION MANSIONS, 371 - 385, 377, WIGHTMAN ROAD",
+        "postcode": "N8 0NA",
+        "price": 365000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 33, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 460800,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "127, BERESFORD ROAD",
+        "postcode": "N8 0AG",
+        "price": 700000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6166,11 +6691,19 @@
         "newBuild": false
       },
       {
-        "address": "127, BERESFORD ROAD",
-        "postcode": "N8 0AG",
-        "price": 700000,
-        "dateOfTransfer": "2025-02-13",
-        "propertyType": "Terraced",
+        "address": "168, WESTON PARK",
+        "postcode": "N8 9PN",
+        "price": 500000,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, THE BASEMENT AND GROUND FLOOR FLAT AT, HILLFIELD AVENUE",
+        "postcode": "N8 7DS",
+        "price": 616250,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -6190,18 +6723,10 @@
         "newBuild": true
       },
       {
-        "address": "168, WESTON PARK",
-        "postcode": "N8 9PN",
-        "price": 500000,
-        "dateOfTransfer": "2025-02-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "71, THE BASEMENT AND GROUND FLOOR FLAT AT, HILLFIELD AVENUE",
-        "postcode": "N8 7DS",
-        "price": 616250,
-        "dateOfTransfer": "2025-02-12",
+        "address": "ALTITUDE POINT, FLAT 74, HAMPDEN ROAD",
+        "postcode": "N8 0EJ",
+        "price": 480000,
+        "dateOfTransfer": "2025-02-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -6246,14 +6771,6 @@
         "newBuild": true
       },
       {
-        "address": "ALTITUDE POINT, FLAT 74, HAMPDEN ROAD",
-        "postcode": "N8 0EJ",
-        "price": 480000,
-        "dateOfTransfer": "2025-02-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "76, FLAT A, RATHCOOLE GARDENS",
         "postcode": "N8 9PG",
         "price": 650000,
@@ -6294,6 +6811,14 @@
         "newBuild": false
       },
       {
+        "address": "3, FLAT 4, CROUCH HALL ROAD",
+        "postcode": "N8 8HT",
+        "price": 590000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "WINCHAT HOUSE, 2C, FLAT 13, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
         "price": 470000,
@@ -6306,22 +6831,6 @@
         "postcode": "N8 0FW",
         "price": 439200,
         "dateOfTransfer": "2025-02-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "3, FLAT 4, CROUCH HALL ROAD",
-        "postcode": "N8 8HT",
-        "price": 590000,
-        "dateOfTransfer": "2025-02-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WINCHAT HOUSE, 2C, FLAT 15, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 595000,
-        "dateOfTransfer": "2025-02-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
       },
@@ -6342,6 +6851,22 @@
         "newBuild": false
       },
       {
+        "address": "WINCHAT HOUSE, 2C, FLAT 15, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 595000,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "WINCHAT HOUSE, 2C, FLAT 5, MARY NEUNER ROAD",
+        "postcode": "N8 0FW",
+        "price": 540500,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "WINCHAT HOUSE, 2C, FLAT 12, MARY NEUNER ROAD",
         "postcode": "N8 0FW",
         "price": 550000,
@@ -6358,12 +6883,12 @@
         "newBuild": true
       },
       {
-        "address": "WINCHAT HOUSE, 2C, FLAT 5, MARY NEUNER ROAD",
-        "postcode": "N8 0FW",
-        "price": 540500,
-        "dateOfTransfer": "2025-02-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
+        "address": "3, HATHERLEY GARDENS",
+        "postcode": "N8 9JH",
+        "price": 1342000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Terraced",
+        "newBuild": false
       },
       {
         "address": "WINCHAT HOUSE, 2C, FLAT 30, MARY NEUNER ROAD",
@@ -6374,14 +6899,6 @@
         "newBuild": true
       },
       {
-        "address": "3, HATHERLEY GARDENS",
-        "postcode": "N8 9JH",
-        "price": 1342000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "104, PRIORY ROAD",
         "postcode": "N8 7HR",
         "price": 550000,
@@ -6390,11 +6907,11 @@
         "newBuild": false
       },
       {
-        "address": "22, LANDROCK ROAD",
-        "postcode": "N8 9HL",
-        "price": 1575000,
+        "address": "GOLDCREST HOUSE, ANCILLARY RESIDENTIAL UNIT, MARY NEUNER ROAD",
+        "postcode": "N8 0FR",
+        "price": 44696,
         "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -6422,6 +6939,14 @@
         "newBuild": false
       },
       {
+        "address": "22, LANDROCK ROAD",
+        "postcode": "N8 9HL",
+        "price": 1575000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "35, NELSON ROAD, HORNSEY",
         "postcode": "N8 9RX",
         "price": 2100000,
@@ -6438,19 +6963,11 @@
         "newBuild": false
       },
       {
-        "address": "GOLDCREST HOUSE, ANCILLARY RESIDENTIAL UNIT, MARY NEUNER ROAD",
-        "postcode": "N8 0FR",
-        "price": 44696,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "134A, CROUCH HILL",
-        "postcode": "N8 9DX",
-        "price": 555000,
+        "address": "245, LIGHTFOOT ROAD",
+        "postcode": "N8 7JQ",
+        "price": 450000,
         "dateOfTransfer": "2025-01-30",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6470,11 +6987,11 @@
         "newBuild": false
       },
       {
-        "address": "245, LIGHTFOOT ROAD",
-        "postcode": "N8 7JQ",
-        "price": 450000,
+        "address": "134A, CROUCH HILL",
+        "postcode": "N8 9DX",
+        "price": 555000,
         "dateOfTransfer": "2025-01-30",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -6534,17 +7051,17 @@
         "newBuild": false
       },
       {
-        "address": "52, FROBISHER ROAD",
-        "postcode": "N8 0QX",
-        "price": 808000,
+        "address": "5, AUBREY ROAD",
+        "postcode": "N8 9HH",
+        "price": 2160000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "5, AUBREY ROAD",
-        "postcode": "N8 9HH",
-        "price": 2160000,
+        "address": "52, FROBISHER ROAD",
+        "postcode": "N8 0QX",
+        "price": 808000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -6558,17 +7075,17 @@
         "newBuild": false
       },
       {
-        "address": "68A, HILLFIELD AVENUE",
-        "postcode": "N8 7DN",
-        "price": 675000,
+        "address": "15A, FALKLAND ROAD",
+        "postcode": "N8 0NU",
+        "price": 510000,
         "dateOfTransfer": "2025-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "15A, FALKLAND ROAD",
-        "postcode": "N8 0NU",
-        "price": 510000,
+        "address": "68A, HILLFIELD AVENUE",
+        "postcode": "N8 7DN",
+        "price": 675000,
         "dateOfTransfer": "2025-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -6670,11 +7187,11 @@
         "newBuild": false
       },
       {
-        "address": "64, CECILE PARK",
-        "postcode": "N8 9AU",
-        "price": 2200000,
+        "address": "7, GROUND FLOOR FLAT, AUBREY ROAD",
+        "postcode": "N8 9HH",
+        "price": 1200000,
         "dateOfTransfer": "2025-01-10",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -6694,11 +7211,11 @@
         "newBuild": false
       },
       {
-        "address": "7, GROUND FLOOR FLAT, AUBREY ROAD",
-        "postcode": "N8 9HH",
-        "price": 1200000,
+        "address": "64, CECILE PARK",
+        "postcode": "N8 9AU",
+        "price": 2200000,
         "dateOfTransfer": "2025-01-10",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6742,22 +7259,6 @@
         "newBuild": false
       },
       {
-        "address": "118, HILLFIELD AVENUE",
-        "postcode": "N8 7DN",
-        "price": 1260000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "168, WESTON PARK",
-        "postcode": "N8 9PN",
-        "price": 685000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "79B, MAYFIELD ROAD",
         "postcode": "N8 9LN",
         "price": 810000,
@@ -6790,6 +7291,22 @@
         "newBuild": false
       },
       {
+        "address": "118, HILLFIELD AVENUE",
+        "postcode": "N8 7DN",
+        "price": 1260000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "168, WESTON PARK",
+        "postcode": "N8 9PN",
+        "price": 685000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "198, MIDDLE LANE, CROUCH END",
         "postcode": "N8 7LA",
         "price": 522100,
@@ -6806,8 +7323,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 746957,
-    "medianPrice": 580225
+    "averagePrice": 748781,
+    "medianPrice": 580000
   },
   "representatives": {
     "representatives": [

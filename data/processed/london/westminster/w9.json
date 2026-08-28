@@ -3,8 +3,8 @@
   "slug": "w9",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.52486002417961,
-  "longitude": -0.19262648013816924,
+  "latitude": 51.526752195121986,
+  "longitude": -0.19224342026266408,
   "wards": [
     "Abbey Road",
     "Abingdon",
@@ -183,7 +183,8 @@
         "urn": "101105",
         "phaseOfEducation": "Nursery",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "24/05/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "293 Shirland Road, London",
         "postcode": "W9 3JY",
         "numberOfPupils": 71,
@@ -193,8 +194,9 @@
         "name": "Mary Paterson Nursery School",
         "urn": "101106",
         "phaseOfEducation": "Nursery",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "08/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "13 Riverton Close, Off Ashmore Road, London",
         "postcode": "W9 3DS",
         "numberOfPupils": 61,
@@ -204,8 +206,9 @@
         "name": "Essendine Primary School",
         "urn": "101111",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "29/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Essendine Road, London",
         "postcode": "W9 2LR",
         "numberOfPupils": 237,
@@ -216,7 +219,8 @@
         "urn": "101134",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/10/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Fernhead Road, London",
         "postcode": "W9 3EJ",
         "numberOfPupils": 186,
@@ -227,7 +231,8 @@
         "urn": "101139",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Chippenham Mews, Paddington, London",
         "postcode": "W9 2AN",
         "numberOfPupils": 192,
@@ -238,7 +243,8 @@
         "urn": "101141",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Shirland Road, Maida Vale, London",
         "postcode": "W9 2JD",
         "numberOfPupils": 214,
@@ -250,6 +256,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Kennet Road, London",
         "postcode": "W9 3LG",
         "numberOfPupils": 93,
@@ -260,7 +267,8 @@
         "urn": "130912",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "50 Marylands Road, London",
         "postcode": "W9 2DR",
         "numberOfPupils": 1256,
@@ -271,7 +279,8 @@
         "urn": "137323",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "27/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Amberley Road, Westminster, London",
         "postcode": "W9 2JY",
         "numberOfPupils": 419,
@@ -282,7 +291,8 @@
         "urn": "139369",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Lanark Road, Maida Vale, London",
         "postcode": "W9 1RB",
         "numberOfPupils": 1170,
@@ -294,6 +304,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "18 Saltram Crescent, London",
         "postcode": "W9 3HR",
         "numberOfPupils": 197,
@@ -304,7 +315,8 @@
         "urn": "149488",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "16/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lanark Road, Maida Vale, London",
         "postcode": "W9 1DF",
         "numberOfPupils": 264,
@@ -316,102 +328,262 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1967,
-        "violentCrimes": 612,
-        "propertyCrimes": 758
+        "totalCrimes": 1857,
+        "violentCrimes": 575,
+        "propertyCrimes": 670
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2828,
-        "violentCrimes": 797,
-        "propertyCrimes": 905
+        "totalCrimes": 2543,
+        "violentCrimes": 723,
+        "propertyCrimes": 801
       },
       {
         "month": "2025-09",
-        "totalCrimes": 1784,
-        "violentCrimes": 544,
-        "propertyCrimes": 752
+        "totalCrimes": 1656,
+        "violentCrimes": 501,
+        "propertyCrimes": 680
       },
       {
         "month": "2025-10",
-        "totalCrimes": 1998,
-        "violentCrimes": 553,
-        "propertyCrimes": 819
+        "totalCrimes": 1847,
+        "violentCrimes": 510,
+        "propertyCrimes": 755
       },
       {
         "month": "2025-11",
-        "totalCrimes": 1744,
-        "violentCrimes": 498,
-        "propertyCrimes": 727
+        "totalCrimes": 1664,
+        "violentCrimes": 463,
+        "propertyCrimes": 680
       },
       {
         "month": "2025-12",
-        "totalCrimes": 1791,
-        "violentCrimes": 514,
-        "propertyCrimes": 783
+        "totalCrimes": 1678,
+        "violentCrimes": 483,
+        "propertyCrimes": 684
       },
       {
         "month": "2026-01",
-        "totalCrimes": 1738,
-        "violentCrimes": 498,
-        "propertyCrimes": 708
+        "totalCrimes": 1687,
+        "violentCrimes": 472,
+        "propertyCrimes": 685
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1647,
-        "violentCrimes": 492,
-        "propertyCrimes": 710
+        "totalCrimes": 1587,
+        "violentCrimes": 475,
+        "propertyCrimes": 668
       },
       {
         "month": "2026-03",
-        "totalCrimes": 1796,
-        "violentCrimes": 517,
-        "propertyCrimes": 720
+        "totalCrimes": 1733,
+        "violentCrimes": 500,
+        "propertyCrimes": 660
       },
       {
         "month": "2026-04",
-        "totalCrimes": 1698,
-        "violentCrimes": 525,
-        "propertyCrimes": 663
+        "totalCrimes": 1690,
+        "violentCrimes": 507,
+        "propertyCrimes": 677
       },
       {
         "month": "2026-05",
-        "totalCrimes": 1823,
-        "violentCrimes": 506,
-        "propertyCrimes": 747
+        "totalCrimes": 1752,
+        "violentCrimes": 481,
+        "propertyCrimes": 712
       },
       {
         "month": "2026-06",
-        "totalCrimes": 1911,
-        "violentCrimes": 609,
-        "propertyCrimes": 748
+        "totalCrimes": 1782,
+        "violentCrimes": 579,
+        "propertyCrimes": 663
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 5444,
-      "bicycle-theft": 372,
-      "burglary": 1235,
-      "criminal-damage-arson": 794,
-      "drugs": 1406,
-      "other-theft": 2117,
-      "possession-of-weapons": 167,
-      "public-order": 1100,
-      "robbery": 594,
+      "anti-social-behaviour": 5416,
+      "bicycle-theft": 354,
+      "burglary": 1136,
+      "criminal-damage-arson": 762,
+      "drugs": 1291,
+      "other-theft": 1808,
+      "possession-of-weapons": 163,
+      "public-order": 1039,
+      "robbery": 575,
       "shoplifting": 1923,
-      "theft-from-the-person": 1330,
-      "vehicle-crime": 1269,
-      "violent-crime": 4804,
-      "other-crime": 170
+      "theft-from-the-person": 1114,
+      "vehicle-crime": 1238,
+      "violent-crime": 4492,
+      "other-crime": 165
     },
-    "totalLast12Months": 22725
+    "totalLast12Months": 21476
   },
   "property": {
     "sales": [
+      {
+        "address": "29, FLAT 1, WARRINGTON CRESCENT",
+        "postcode": "W9 1EJ",
+        "price": 645000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "77, FLAT 1, SALTRAM CRESCENT, MAIDA VALE",
+        "postcode": "W9 3JS",
+        "price": 784000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "156 - 158, FLAT 11, SUTHERLAND AVENUE",
+        "postcode": "W9 1HP",
+        "price": 1025000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "152, THIRD FLOOR FLAT, SHIRLAND ROAD",
+        "postcode": "W9 2BT",
+        "price": 335000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LANARK MANSIONS, 14, FLAT 16A, LANARK ROAD",
+        "postcode": "W9 1DB",
+        "price": 515000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SWALLOW COURT, FLAT 31, ADMIRAL WALK",
+        "postcode": "W9 3TX",
+        "price": 400000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51B, GROUND FLOOR FLAT, BLOMFIELD ROAD",
+        "postcode": "W9 2PD",
+        "price": 675000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WELLESLEY COURT, 130, MAIDA VALE",
+        "postcode": "W9 1RN",
+        "price": 250000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAUDERDALE MANSIONS, FLAT 186, LAUDERDALE ROAD",
+        "postcode": "W9 1NG",
+        "price": 945000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SOUTHWOLD MANSIONS, FLAT 21, WIDLEY ROAD",
+        "postcode": "W9 2LE",
+        "price": 625000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47D, WARWICK AVENUE",
+        "postcode": "W9 2PR",
+        "price": 527000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MANOR HOUSE COURT, 11, FLAT 11, WARRINGTON GARDENS",
+        "postcode": "W9 2PZ",
+        "price": 560000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "174B, BRAVINGTON ROAD",
+        "postcode": "W9 3AP",
+        "price": 262500,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SOUTHWOLD MANSIONS, FLAT 51, WIDLEY ROAD",
+        "postcode": "W9 2LF",
+        "price": 660000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 204, DIXON BUTLER MEWS",
+        "postcode": "W9 2BU",
+        "price": 750000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAUDERDALE MANSIONS, FLAT 169, LAUDERDALE ROAD",
+        "postcode": "W9 1LY",
+        "price": 1163750,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "109, FLAT 2, PORTNALL ROAD",
+        "postcode": "W9 3BB",
+        "price": 460000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "245, SECOND FLOOR FLAT, ELGIN AVENUE",
+        "postcode": "W9 1NJ",
+        "price": 485000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8A, FLAT B, RANDOLPH ROAD",
+        "postcode": "W9 1AN",
+        "price": 400000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "99, FLAT C, FERNHEAD ROAD",
         "postcode": "W9 3EA",
         "price": 500000,
         "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SOUTHWOLD MANSIONS, FLAT 63, WIDLEY ROAD",
+        "postcode": "W9 2LF",
+        "price": 710000,
+        "dateOfTransfer": "2026-06-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -456,6 +628,14 @@
         "newBuild": false
       },
       {
+        "address": "66A, ASHMORE ROAD",
+        "postcode": "W9 3DG",
+        "price": 538755,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "19, ALDSWORTH CLOSE",
         "postcode": "W9 2RA",
         "price": 605000,
@@ -475,6 +655,14 @@
         "address": "107, FLAT 2, WARWICK AVENUE",
         "postcode": "W9 2PP",
         "price": 650000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32A, RANDOLPH AVENUE",
+        "postcode": "W9 1BE",
+        "price": 657500,
         "dateOfTransfer": "2026-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -664,17 +852,17 @@
         "newBuild": false
       },
       {
-        "address": "ASHWORTH MANSIONS, FLAT 19, ELGIN AVENUE",
-        "postcode": "W9 1JP",
-        "price": 865000,
+        "address": "CLIVE COURT, 75, 414, MAIDA VALE",
+        "postcode": "W9 1SF",
+        "price": 525000,
         "dateOfTransfer": "2026-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "CLIVE COURT, 75, 414, MAIDA VALE",
-        "postcode": "W9 1SF",
-        "price": 525000,
+        "address": "ASHWORTH MANSIONS, FLAT 19, ELGIN AVENUE",
+        "postcode": "W9 1JP",
+        "price": 865000,
         "dateOfTransfer": "2026-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -686,6 +874,14 @@
         "dateOfTransfer": "2026-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "DIBDIN HOUSE, FLAT 149, MAIDA VALE",
+        "postcode": "W9 1QG",
+        "price": 387500,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "RANDOLPH COURT, FLAT 9, RANDOLPH AVENUE",
@@ -736,6 +932,14 @@
         "newBuild": false
       },
       {
+        "address": "93, WARRINGTON CRESCENT",
+        "postcode": "W9 1EH",
+        "price": 6450021,
+        "dateOfTransfer": "2026-03-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "35A, SECOND FLOOR FLAT, BLOMFIELD ROAD",
         "postcode": "W9 2PF",
         "price": 2100000,
@@ -764,6 +968,14 @@
         "postcode": "W9 1RG",
         "price": 475000,
         "dateOfTransfer": "2026-03-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, FLAT A, CASTELLAIN ROAD",
+        "postcode": "W9 1EZ",
+        "price": 2495000,
+        "dateOfTransfer": "2026-03-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -808,6 +1020,14 @@
         "newBuild": false
       },
       {
+        "address": "302 - 310, FLAT 5, KILBURN LANE",
+        "postcode": "W9 3EF",
+        "price": 580000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "WYMERING MANSIONS, FLAT 82, WYMERING ROAD",
         "postcode": "W9 2NE",
         "price": 860000,
@@ -832,6 +1052,30 @@
         "newBuild": false
       },
       {
+        "address": "48, SECOND FLOOR FLAT, CLIFTON GARDENS",
+        "postcode": "W9 1AU",
+        "price": 591000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ASHWORTH MANSIONS, FLAT 25, ELGIN AVENUE",
+        "postcode": "W9 1JP",
+        "price": 975000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, SECOND FLOOR FLAT, WARRINGTON CRESCENT",
+        "postcode": "W9 1EL",
+        "price": 717000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "11, GRITTLETON ROAD",
         "postcode": "W9 2DD",
         "price": 3200000,
@@ -845,6 +1089,14 @@
         "price": 14250,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "98, FLAT 2, SHIRLAND ROAD",
+        "postcode": "W9 2EQ",
+        "price": 326400,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -868,6 +1120,14 @@
         "postcode": "W9 1EL",
         "price": 475000,
         "dateOfTransfer": "2026-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GROUND FLOOR FLAT, 137, RANDOLPH AVENUE",
+        "postcode": "W9 1DN",
+        "price": 550000,
+        "dateOfTransfer": "2026-02-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -904,6 +1164,22 @@
         "newBuild": false
       },
       {
+        "address": "8, FORMOSA STREET",
+        "postcode": "W9 1EE",
+        "price": 70000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "WYMERING MANSIONS, FLAT 14A, WYMERING ROAD",
+        "postcode": "W9 2NB",
+        "price": 780000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "SWALLOW COURT, FLAT 1, ADMIRAL WALK",
         "postcode": "W9 3TX",
         "price": 360000,
@@ -936,14 +1212,6 @@
         "newBuild": false
       },
       {
-        "address": "WYMERING MANSIONS, FLAT 14A, WYMERING ROAD",
-        "postcode": "W9 2NB",
-        "price": 780000,
-        "dateOfTransfer": "2026-02-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CLARENDON COURT, 33, FLAT 42, MAIDA VALE",
         "postcode": "W9 1AJ",
         "price": 700000,
@@ -968,6 +1236,14 @@
         "newBuild": false
       },
       {
+        "address": "BIDDULPH MANSIONS, FLAT 100, ELGIN AVENUE",
+        "postcode": "W9 1HU",
+        "price": 795000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BRICK APARTMENTS, 7D, APARTMENT 16, WOODFIELD ROAD",
         "postcode": "W9 2EF",
         "price": 165000,
@@ -980,6 +1256,14 @@
         "postcode": "W9 2BP",
         "price": 345000,
         "dateOfTransfer": "2026-02-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, FLAT 1, BRADISTON ROAD",
+        "postcode": "W9 3HN",
+        "price": 450000,
+        "dateOfTransfer": "2026-02-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1016,19 +1300,19 @@
         "newBuild": false
       },
       {
+        "address": "RODNEY COURT, 6 - 8, 18, MAIDA VALE",
+        "postcode": "W9 1TQ",
+        "price": 1430000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "32, CHIPPENHAM MEWS",
         "postcode": "W9 2AW",
         "price": 500000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "CLARENDON COURT, 33, FLAT 25, MAIDA VALE",
-        "postcode": "W9 1AJ",
-        "price": 420000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1048,10 +1332,26 @@
         "newBuild": false
       },
       {
+        "address": "CLARENDON COURT, 33, FLAT 25, MAIDA VALE",
+        "postcode": "W9 1AJ",
+        "price": 420000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BIDDULPH MANSIONS, FLAT 11, ELGIN AVENUE",
         "postcode": "W9 1HZ",
         "price": 800000,
         "dateOfTransfer": "2026-01-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FLAT D, 169, SHIRLAND ROAD",
+        "postcode": "W9 2EP",
+        "price": 600000,
+        "dateOfTransfer": "2026-01-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1067,14 +1367,6 @@
         "address": "73, FLAT B-C, AMBERLEY ROAD",
         "postcode": "W9 2JL",
         "price": 240000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "FLAT D, 169, SHIRLAND ROAD",
-        "postcode": "W9 2EP",
-        "price": 600000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1112,14 +1404,6 @@
         "newBuild": false
       },
       {
-        "address": "8, FLAT 1, BRADISTON ROAD",
-        "postcode": "W9 3HN",
-        "price": 573100,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "197D, LANARK ROAD",
         "postcode": "W9 1NX",
         "price": 625000,
@@ -1136,10 +1420,10 @@
         "newBuild": false
       },
       {
-        "address": "RODNEY COURT 6-8, 55, MAIDA VALE",
-        "postcode": "W9 1TH",
-        "price": 1250000,
-        "dateOfTransfer": "2026-01-08",
+        "address": "8, FLAT 1, BRADISTON ROAD",
+        "postcode": "W9 3HN",
+        "price": 573100,
+        "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1152,9 +1436,25 @@
         "newBuild": false
       },
       {
+        "address": "RODNEY COURT 6-8, 55, MAIDA VALE",
+        "postcode": "W9 1TH",
+        "price": 1250000,
+        "dateOfTransfer": "2026-01-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "280, FLAT 2, ELGIN AVENUE",
         "postcode": "W9 1JR",
         "price": 714500,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "EDINBURGH HOUSE, 155, FLAT 67, MAIDA VALE",
+        "postcode": "W9 1QT",
+        "price": 280000,
         "dateOfTransfer": "2026-01-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1216,17 +1516,17 @@
         "newBuild": false
       },
       {
-        "address": "11B, GREAT WESTERN ROAD",
-        "postcode": "W9 3NW",
-        "price": 305000,
+        "address": "DELAWARE MANSIONS, FLAT 60, DELAWARE ROAD",
+        "postcode": "W9 2LJ",
+        "price": 562500,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "DELAWARE MANSIONS, FLAT 60, DELAWARE ROAD",
-        "postcode": "W9 2LJ",
-        "price": 562500,
+        "address": "11B, GREAT WESTERN ROAD",
+        "postcode": "W9 3NW",
+        "price": 305000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1256,6 +1556,14 @@
         "newBuild": false
       },
       {
+        "address": "69, BRAVINGTON ROAD",
+        "postcode": "W9 3AA",
+        "price": 2230000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "62G, RANDOLPH AVENUE",
         "postcode": "W9 1BE",
         "price": 2350000,
@@ -1280,19 +1588,19 @@
         "newBuild": false
       },
       {
-        "address": "CHESNEY COURT, FLAT 12, SHIRLAND ROAD",
-        "postcode": "W9 2EG",
-        "price": 355000,
-        "dateOfTransfer": "2025-12-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "WYMERING MANSIONS, FLAT 187, WYMERING ROAD",
         "postcode": "W9 2NQ",
         "price": 850000,
         "dateOfTransfer": "2025-12-17",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "CHESNEY COURT, FLAT 12, SHIRLAND ROAD",
+        "postcode": "W9 2EG",
+        "price": 355000,
+        "dateOfTransfer": "2025-12-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1488,6 +1796,14 @@
         "newBuild": false
       },
       {
+        "address": "302 - 310, FLAT 2, KILBURN LANE",
+        "postcode": "W9 3EF",
+        "price": 410000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "63, THIRD AND FOURTH FLOOR FLAT, SUTHERLAND AVENUE",
         "postcode": "W9 2HF",
         "price": 1175000,
@@ -1608,6 +1924,14 @@
         "newBuild": false
       },
       {
+        "address": "WELLESLEY COURT, 47, MAIDA VALE",
+        "postcode": "W9 1RJ",
+        "price": 355000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "WYMERING MANSIONS, FLAT 8, WYMERING ROAD",
         "postcode": "W9 2NB",
         "price": 923570,
@@ -1619,14 +1943,6 @@
         "address": "65, SECOND FLOOR FLAT, SUTHERLAND AVENUE",
         "postcode": "W9 2HF",
         "price": 648000,
-        "dateOfTransfer": "2025-11-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WELLESLEY COURT, 47, MAIDA VALE",
-        "postcode": "W9 1RJ",
-        "price": 355000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1792,6 +2108,14 @@
         "newBuild": false
       },
       {
+        "address": "MORSHEAD MANSIONS, FLAT 45, MORSHEAD ROAD",
+        "postcode": "W9 1LF",
+        "price": 919500,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "381, FLAT 1, HARROW ROAD",
         "postcode": "W9 3NA",
         "price": 482500,
@@ -1832,6 +2156,14 @@
         "newBuild": false
       },
       {
+        "address": "5, RIVERTON CLOSE",
+        "postcode": "W9 3DS",
+        "price": 640000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "CASTELLAIN MANSIONS, FLAT 153, CASTELLAIN ROAD",
         "postcode": "W9 1HG",
         "price": 855000,
@@ -1861,14 +2193,6 @@
         "price": 3210000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "5, RIVERTON CLOSE",
-        "postcode": "W9 3DS",
-        "price": 640000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1920,6 +2244,14 @@
         "newBuild": false
       },
       {
+        "address": "153, FLAT B, BRAVINGTON ROAD",
+        "postcode": "W9 3AT",
+        "price": 345000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "EDINBURGH HOUSE, 155, FLAT 98, MAIDA VALE",
         "postcode": "W9 1QT",
         "price": 340000,
@@ -1960,18 +2292,18 @@
         "newBuild": false
       },
       {
-        "address": "153, FLAT B, BRAVINGTON ROAD",
-        "postcode": "W9 3AT",
-        "price": 345000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "JOHNSON LODGE, FLAT 11, ADMIRAL WALK",
         "postcode": "W9 3TJ",
         "price": 450000,
         "dateOfTransfer": "2025-10-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BRAEMAR HOUSE, 135, FLAT 37, MAIDA VALE",
+        "postcode": "W9 1UT",
+        "price": 515000,
+        "dateOfTransfer": "2025-10-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2032,6 +2364,30 @@
         "newBuild": false
       },
       {
+        "address": "162A, FERNHEAD ROAD",
+        "postcode": "W9 3EL",
+        "price": 455000,
+        "dateOfTransfer": "2025-10-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62, FERNHEAD ROAD",
+        "postcode": "W9 3EW",
+        "price": 720000,
+        "dateOfTransfer": "2025-10-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, LANARK ROAD",
+        "postcode": "W9 1DD",
+        "price": 2950000,
+        "dateOfTransfer": "2025-10-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "50, CHIPPENHAM ROAD",
         "postcode": "W9 2AE",
         "price": 900000,
@@ -2040,17 +2396,17 @@
         "newBuild": false
       },
       {
-        "address": "256, FIRST FLOOR FLAT, ELGIN AVENUE",
-        "postcode": "W9 1JD",
-        "price": 700100,
+        "address": "51, FLAT 1, ESSENDINE ROAD",
+        "postcode": "W9 2LX",
+        "price": 715000,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "51, FLAT 1, ESSENDINE ROAD",
-        "postcode": "W9 2LX",
-        "price": 715000,
+        "address": "256, FIRST FLOOR FLAT, ELGIN AVENUE",
+        "postcode": "W9 1JD",
+        "price": 700100,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2064,9 +2420,9 @@
         "newBuild": false
       },
       {
-        "address": "201, FIRST  FLOOR  FLAT, ASHMORE ROAD",
-        "postcode": "W9 3DB",
-        "price": 435000,
+        "address": "9, GROUND FLOOR FLAT, HORMEAD ROAD",
+        "postcode": "W9 3NG",
+        "price": 645000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2080,17 +2436,25 @@
         "newBuild": false
       },
       {
-        "address": "CHARFIELD COURT, 2, FLAT 53, SHIRLAND ROAD",
-        "postcode": "W9 2JR",
-        "price": 505000,
+        "address": "302 - 310, FLAT 4, KILBURN LANE",
+        "postcode": "W9 3EF",
+        "price": 425000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "9, GROUND FLOOR FLAT, HORMEAD ROAD",
-        "postcode": "W9 3NG",
-        "price": 645000,
+        "address": "201, FIRST  FLOOR  FLAT, ASHMORE ROAD",
+        "postcode": "W9 3DB",
+        "price": 435000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHARFIELD COURT, 2, FLAT 53, SHIRLAND ROAD",
+        "postcode": "W9 2JR",
+        "price": 505000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2112,17 +2476,17 @@
         "newBuild": false
       },
       {
-        "address": "222D, RANDOLPH AVENUE",
-        "postcode": "W9 1PF",
-        "price": 450000,
-        "dateOfTransfer": "2025-09-30",
+        "address": "CONNAUGHT HOUSE, 3C, CLIFTON GARDENS",
+        "postcode": "W9 1AL",
+        "price": 2150000,
+        "dateOfTransfer": "2025-10-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "11A, RANDOLPH CRESCENT",
-        "postcode": "W9 1DP",
-        "price": 1215000,
+        "address": "222D, RANDOLPH AVENUE",
+        "postcode": "W9 1PF",
+        "price": 450000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2144,10 +2508,34 @@
         "newBuild": false
       },
       {
+        "address": "11A, RANDOLPH CRESCENT",
+        "postcode": "W9 1DP",
+        "price": 1215000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, SECOND FLOOR FLAT, DENHOLME ROAD",
+        "postcode": "W9 3HT",
+        "price": 580000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "ASHWORTH MANSIONS, FLAT 67, GRANTULLY ROAD",
         "postcode": "W9 1LN",
         "price": 1150000,
         "dateOfTransfer": "2025-09-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "184B, SHIRLAND ROAD",
+        "postcode": "W9 3JF",
+        "price": 422500,
+        "dateOfTransfer": "2025-09-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2163,14 +2551,6 @@
         "address": "BEECH COURT, FLAT 1, ELMFIELD WAY",
         "postcode": "W9 3TT",
         "price": 530000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "184B, SHIRLAND ROAD",
-        "postcode": "W9 3JF",
-        "price": 422500,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2192,19 +2572,19 @@
         "newBuild": false
       },
       {
-        "address": "5, FLAT 2, FORDINGLEY ROAD",
-        "postcode": "W9 3HE",
-        "price": 606250,
-        "dateOfTransfer": "2025-09-22",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "61G, BLOMFIELD ROAD",
         "postcode": "W9 2PA",
         "price": 387500,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 2, FORDINGLEY ROAD",
+        "postcode": "W9 3HE",
+        "price": 606250,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2224,9 +2604,17 @@
         "newBuild": false
       },
       {
-        "address": "22 - 24, FLAT 12, GREAT WESTERN ROAD",
-        "postcode": "W9 3NN",
-        "price": 264500,
+        "address": "51, FIRST FLOOR FLAT, WARRINGTON CRESCENT",
+        "postcode": "W9 1EJ",
+        "price": 1750000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "81, FLAT 5, WARRINGTON CRESCENT",
+        "postcode": "W9 1EH",
+        "price": 1250000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2248,9 +2636,9 @@
         "newBuild": false
       },
       {
-        "address": "81, FLAT 5, WARRINGTON CRESCENT",
-        "postcode": "W9 1EH",
-        "price": 1250000,
+        "address": "22 - 24, FLAT 12, GREAT WESTERN ROAD",
+        "postcode": "W9 3NN",
+        "price": 264500,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2264,17 +2652,17 @@
         "newBuild": false
       },
       {
-        "address": "51, FIRST FLOOR FLAT, WARRINGTON CRESCENT",
-        "postcode": "W9 1EJ",
-        "price": 1750000,
-        "dateOfTransfer": "2025-09-19",
+        "address": "BRICK APARTMENTS, 7D, APARTMENT 31, WOODFIELD ROAD",
+        "postcode": "W9 2EF",
+        "price": 565000,
+        "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BRICK APARTMENTS, 7D, APARTMENT 31, WOODFIELD ROAD",
-        "postcode": "W9 2EF",
-        "price": 565000,
+        "address": "87 - 89, FLAT 3, WARRINGTON CRESCENT",
+        "postcode": "W9 1EH",
+        "price": 710000,
         "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2284,6 +2672,14 @@
         "postcode": "W9 1DB",
         "price": 715000,
         "dateOfTransfer": "2025-09-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28B, PORTNALL ROAD",
+        "postcode": "W9 3BD",
+        "price": 385000,
+        "dateOfTransfer": "2025-09-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2312,9 +2708,9 @@
         "newBuild": false
       },
       {
-        "address": "28B, PORTNALL ROAD",
-        "postcode": "W9 3BD",
-        "price": 385000,
+        "address": "8A, UPPER MAISONETTE, RANDOLPH ROAD",
+        "postcode": "W9 1AN",
+        "price": 2880000,
         "dateOfTransfer": "2025-09-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2332,14 +2728,6 @@
         "postcode": "W9 3LL",
         "price": 417500,
         "dateOfTransfer": "2025-09-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "160 - 162, FLAT 8, SUTHERLAND AVENUE",
-        "postcode": "W9 1HP",
-        "price": 1175000,
-        "dateOfTransfer": "2025-09-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2363,6 +2751,14 @@
         "address": "97, FIRST FLOOR FLAT, MARYLANDS ROAD",
         "postcode": "W9 2DS",
         "price": 735000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "160 - 162, FLAT 8, SUTHERLAND AVENUE",
+        "postcode": "W9 1HP",
+        "price": 1175000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2416,6 +2812,22 @@
         "newBuild": false
       },
       {
+        "address": "474, HARROW ROAD",
+        "postcode": "W9 3RU",
+        "price": 1100000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "BIDDULPH MANSIONS, FLAT 47, ELGIN AVENUE",
+        "postcode": "W9 1HT",
+        "price": 962500,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "91C, ELGIN AVENUE",
         "postcode": "W9 2DA",
         "price": 825000,
@@ -2427,6 +2839,14 @@
         "address": "30, FLAT D, EDBROOKE ROAD",
         "postcode": "W9 2DG",
         "price": 862500,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FALCON LODGE, FLAT 14, ADMIRAL WALK",
+        "postcode": "W9 3TA",
+        "price": 460000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2448,10 +2868,34 @@
         "newBuild": false
       },
       {
-        "address": "FALCON LODGE, FLAT 14, ADMIRAL WALK",
-        "postcode": "W9 3TA",
-        "price": 460000,
+        "address": "LEITH MANSIONS, FLAT 40, GRANTULLY ROAD",
+        "postcode": "W9 1LH",
+        "price": 850000,
         "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DIBDIN HOUSE, FLAT 107, MAIDA VALE",
+        "postcode": "W9 1QF",
+        "price": 285000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "DIBDIN HOUSE, FLAT 129, MAIDA VALE",
+        "postcode": "W9 1QG",
+        "price": 410000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "LAUDERDALE MANSIONS, FLAT 161, LAUDERDALE ROAD",
+        "postcode": "W9 1LY",
+        "price": 1110000,
+        "dateOfTransfer": "2025-08-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2480,6 +2924,14 @@
         "newBuild": false
       },
       {
+        "address": "88, FLAT A, SALTRAM CRESCENT, MAIDA VALE",
+        "postcode": "W9 3JX",
+        "price": 670000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "87C, SALTRAM CRESCENT, MAIDA VALE",
         "postcode": "W9 3JS",
         "price": 810000,
@@ -2496,25 +2948,9 @@
         "newBuild": false
       },
       {
-        "address": "88, FLAT A, SALTRAM CRESCENT, MAIDA VALE",
-        "postcode": "W9 3JX",
-        "price": 670000,
-        "dateOfTransfer": "2025-08-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "LAUDERDALE MANSIONS, FLAT 161, LAUDERDALE ROAD",
-        "postcode": "W9 1LY",
-        "price": 1110000,
-        "dateOfTransfer": "2025-08-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "2, GROUND FLOOR FLAT AT, BRADISTON ROAD",
-        "postcode": "W9 3HN",
-        "price": 696000,
+        "address": "CASTELLAIN MANSIONS, FLAT 200, CASTELLAIN ROAD",
+        "postcode": "W9 1HD",
+        "price": 805000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2560,9 +2996,9 @@
         "newBuild": false
       },
       {
-        "address": "CASTELLAIN MANSIONS, FLAT 200, CASTELLAIN ROAD",
-        "postcode": "W9 1HD",
-        "price": 805000,
+        "address": "2, GROUND FLOOR FLAT AT, BRADISTON ROAD",
+        "postcode": "W9 3HN",
+        "price": 696000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2632,17 +3068,17 @@
         "newBuild": false
       },
       {
-        "address": "DELAWARE MANSIONS, FLAT 5, DELAWARE ROAD",
-        "postcode": "W9 2LH",
-        "price": 975000,
+        "address": "CUNNINGHAM COURT, FLAT 7, MAIDA VALE",
+        "postcode": "W9 1AE",
+        "price": 565000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "CUNNINGHAM COURT, FLAT 7, MAIDA VALE",
-        "postcode": "W9 1AE",
-        "price": 565000,
+        "address": "DELAWARE MANSIONS, FLAT 5, DELAWARE ROAD",
+        "postcode": "W9 2LH",
+        "price": 975000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2696,17 +3132,17 @@
         "newBuild": false
       },
       {
-        "address": "ESSENDINE MANSIONS, FLAT 72, ESSENDINE ROAD",
-        "postcode": "W9 2LY",
-        "price": 660000,
+        "address": "12A, WARRINGTON CRESCENT",
+        "postcode": "W9 1EL",
+        "price": 1950000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "12A, WARRINGTON CRESCENT",
-        "postcode": "W9 1EL",
-        "price": 1950000,
+        "address": "ESSENDINE MANSIONS, FLAT 72, ESSENDINE ROAD",
+        "postcode": "W9 2LY",
+        "price": 660000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2776,6 +3212,14 @@
         "newBuild": false
       },
       {
+        "address": "48, FIRST FLOOR FLAT C, BRAVINGTON ROAD",
+        "postcode": "W9 3AJ",
+        "price": 401000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "44, FLAT 3, FORMOSA STREET",
         "postcode": "W9 2JP",
         "price": 486000,
@@ -2800,17 +3244,17 @@
         "newBuild": false
       },
       {
-        "address": "48, FIRST FLOOR FLAT C, BRAVINGTON ROAD",
-        "postcode": "W9 3AJ",
-        "price": 401000,
-        "dateOfTransfer": "2025-08-01",
+        "address": "100 - 102, FLAT 18, SUTHERLAND AVENUE",
+        "postcode": "W9 2QR",
+        "price": 710000,
+        "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "100 - 102, FLAT 18, SUTHERLAND AVENUE",
-        "postcode": "W9 2QR",
-        "price": 710000,
+        "address": "15B, RANDOLPH CRESCENT",
+        "postcode": "W9 1DP",
+        "price": 1675000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2827,14 +3271,6 @@
         "address": "SIMON COURT, 16, FLAT 21, SALTRAM CRESCENT, MAIDA VALE",
         "postcode": "W9 3JA",
         "price": 400000,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "15B, RANDOLPH CRESCENT",
-        "postcode": "W9 1DP",
-        "price": 1675000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2888,9 +3324,9 @@
         "newBuild": false
       },
       {
-        "address": "114, FLAT 2, SUTHERLAND AVENUE",
-        "postcode": "W9 2QP",
-        "price": 555000,
+        "address": "3C, RANDOLPH CRESCENT",
+        "postcode": "W9 1DP",
+        "price": 1320000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2904,17 +3340,17 @@
         "newBuild": false
       },
       {
-        "address": "3C, RANDOLPH CRESCENT",
-        "postcode": "W9 1DP",
-        "price": 1320000,
+        "address": "274A, SHIRLAND ROAD",
+        "postcode": "W9 3JH",
+        "price": 730000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "274A, SHIRLAND ROAD",
-        "postcode": "W9 3JH",
-        "price": 730000,
+        "address": "114, FLAT 2, SUTHERLAND AVENUE",
+        "postcode": "W9 2QP",
+        "price": 555000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3016,19 +3452,19 @@
         "newBuild": false
       },
       {
-        "address": "28, EDBROOKE ROAD",
-        "postcode": "W9 2DG",
-        "price": 2700000,
-        "dateOfTransfer": "2025-07-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "143B, PORTNALL ROAD",
         "postcode": "W9 3BN",
         "price": 492500,
         "dateOfTransfer": "2025-07-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, EDBROOKE ROAD",
+        "postcode": "W9 2DG",
+        "price": 2700000,
+        "dateOfTransfer": "2025-07-16",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3184,22 +3620,6 @@
         "newBuild": false
       },
       {
-        "address": "129, RANDOLPH AVENUE",
-        "postcode": "W9 1DN",
-        "price": 4000000,
-        "dateOfTransfer": "2025-07-01",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "34C, SALTRAM CRESCENT, MAIDA VALE",
-        "postcode": "W9 3HR",
-        "price": 610000,
-        "dateOfTransfer": "2025-07-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "15, FLAT E, SUTHERLAND AVENUE",
         "postcode": "W9 2HE",
         "price": 650000,
@@ -3208,9 +3628,25 @@
         "newBuild": false
       },
       {
+        "address": "129, RANDOLPH AVENUE",
+        "postcode": "W9 1DN",
+        "price": 4000000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "35C, RANDOLPH CRESCENT",
         "postcode": "W9 1DP",
         "price": 2050000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34C, SALTRAM CRESCENT, MAIDA VALE",
+        "postcode": "W9 3HR",
+        "price": 610000,
         "dateOfTransfer": "2025-07-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3237,6 +3673,14 @@
         "price": 15750000,
         "dateOfTransfer": "2025-06-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, GARDEN FLOOR FLAT, CASTELLAIN ROAD",
+        "postcode": "W9 1EY",
+        "price": 1050000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3272,27 +3716,11 @@
         "newBuild": false
       },
       {
-        "address": "19, GARDEN FLOOR FLAT, CASTELLAIN ROAD",
-        "postcode": "W9 1EY",
-        "price": 1050000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "9, FLAT 3, GREAT WESTERN ROAD",
         "postcode": "W9 3NW",
         "price": 215000,
         "dateOfTransfer": "2025-06-25",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "LAUDERDALE MANSIONS, FLAT 51, LAUDERDALE ROAD",
-        "postcode": "W9 1LX",
-        "price": 1065000,
-        "dateOfTransfer": "2025-06-24",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3317,6 +3745,14 @@
         "price": 685000,
         "dateOfTransfer": "2025-06-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAUDERDALE MANSIONS, FLAT 51, LAUDERDALE ROAD",
+        "postcode": "W9 1LX",
+        "price": 1065000,
+        "dateOfTransfer": "2025-06-24",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3392,14 +3828,6 @@
         "newBuild": false
       },
       {
-        "address": "22, GARDEN FLAT, CASTELLAIN ROAD",
-        "postcode": "W9 1EZ",
-        "price": 875000,
-        "dateOfTransfer": "2025-06-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "90, UPPER GROUND FLOOR FLAT, ELGIN AVENUE",
         "postcode": "W9 2HD",
         "price": 575000,
@@ -3412,6 +3840,22 @@
         "postcode": "W9 3BE",
         "price": 480000,
         "dateOfTransfer": "2025-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, GARDEN FLAT, CASTELLAIN ROAD",
+        "postcode": "W9 1EZ",
+        "price": 875000,
+        "dateOfTransfer": "2025-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "137, SECOND FLOOR FLAT, SUTHERLAND AVENUE",
+        "postcode": "W9 2QJ",
+        "price": 1080000,
+        "dateOfTransfer": "2025-06-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3435,14 +3879,6 @@
         "address": "87, FLAT 6, SUTHERLAND AVENUE",
         "postcode": "W9 2HG",
         "price": 730000,
-        "dateOfTransfer": "2025-06-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "137, SECOND FLOOR FLAT, SUTHERLAND AVENUE",
-        "postcode": "W9 2QJ",
-        "price": 1080000,
         "dateOfTransfer": "2025-06-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3472,14 +3908,6 @@
         "newBuild": false
       },
       {
-        "address": "20B, RANDOLPH CRESCENT",
-        "postcode": "W9 1DR",
-        "price": 1393500,
-        "dateOfTransfer": "2025-06-09",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "15, FLAT D, SUTHERLAND AVENUE",
         "postcode": "W9 2HE",
         "price": 555000,
@@ -3488,10 +3916,10 @@
         "newBuild": false
       },
       {
-        "address": "35 - 37, FLAT E, RANDOLPH CRESCENT",
-        "postcode": "W9 1DP",
-        "price": 2371000,
-        "dateOfTransfer": "2025-06-06",
+        "address": "20B, RANDOLPH CRESCENT",
+        "postcode": "W9 1DR",
+        "price": 1393500,
+        "dateOfTransfer": "2025-06-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3501,6 +3929,14 @@
         "price": 2660000,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "35 - 37, FLAT E, RANDOLPH CRESCENT",
+        "postcode": "W9 1DP",
+        "price": 2371000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3520,17 +3956,9 @@
         "newBuild": false
       },
       {
-        "address": "FLAT 1, 11, MACROOM ROAD",
-        "postcode": "W9 3HY",
-        "price": 940000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, FIRST FLOOR FLAT, FORDINGLEY ROAD",
-        "postcode": "W9 3HE",
-        "price": 484000,
+        "address": "STUART TOWER, 105, FLAT 9, MAIDA VALE",
+        "postcode": "W9 1UB",
+        "price": 430000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3552,10 +3980,26 @@
         "newBuild": false
       },
       {
-        "address": "STUART TOWER, 105, FLAT 9, MAIDA VALE",
-        "postcode": "W9 1UB",
-        "price": 430000,
+        "address": "FLAT 1, 11, MACROOM ROAD",
+        "postcode": "W9 3HY",
+        "price": 940000,
         "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FIRST FLOOR FLAT, FORDINGLEY ROAD",
+        "postcode": "W9 3HE",
+        "price": 484000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "412, FIRST FLOOR FLAT, HARROW ROAD",
+        "postcode": "W9 2HU",
+        "price": 280000,
+        "dateOfTransfer": "2025-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3566,14 +4010,6 @@
         "dateOfTransfer": "2025-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
-      },
-      {
-        "address": "412, FIRST FLOOR FLAT, HARROW ROAD",
-        "postcode": "W9 2HU",
-        "price": 280000,
-        "dateOfTransfer": "2025-05-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
       },
       {
         "address": "138 - 140, FLAT A, SHIRLAND ROAD",
@@ -3664,17 +4100,17 @@
         "newBuild": false
       },
       {
-        "address": "12, FLAT 3, MACROOM ROAD",
-        "postcode": "W9 3HY",
-        "price": 265000,
+        "address": "RODNEY COURT 6-8, 42, MAIDA VALE",
+        "postcode": "W9 1TH",
+        "price": 815000,
         "dateOfTransfer": "2025-05-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "RODNEY COURT 6-8, 42, MAIDA VALE",
-        "postcode": "W9 1TH",
-        "price": 815000,
+        "address": "12, FLAT 3, MACROOM ROAD",
+        "postcode": "W9 3HY",
+        "price": 265000,
         "dateOfTransfer": "2025-05-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3824,6 +4260,14 @@
         "newBuild": false
       },
       {
+        "address": "51A, PORTNALL ROAD",
+        "postcode": "W9 3BA",
+        "price": 990000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "SOUTHWOLD MANSIONS, FLAT 10, WIDLEY ROAD",
         "postcode": "W9 2LE",
         "price": 625000,
@@ -3835,14 +4279,6 @@
         "address": "65, FLAT A, PORTNALL ROAD",
         "postcode": "W9 3BA",
         "price": 880000,
-        "dateOfTransfer": "2025-04-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "51A, PORTNALL ROAD",
-        "postcode": "W9 3BA",
-        "price": 990000,
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3860,14 +4296,6 @@
         "postcode": "W9 2PA",
         "price": 440000,
         "dateOfTransfer": "2025-04-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "194A, BRAVINGTON ROAD",
-        "postcode": "W9 3AP",
-        "price": 460000,
-        "dateOfTransfer": "2025-04-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3920,19 +4348,19 @@
         "newBuild": false
       },
       {
-        "address": "79, FLAT 23, FERMOY ROAD",
-        "postcode": "W9 3NJ",
-        "price": 355000,
-        "dateOfTransfer": "2025-04-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "4E, SHIRLAND MEWS",
         "postcode": "W9 3DY",
         "price": 700000,
         "dateOfTransfer": "2025-04-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "79, FLAT 23, FERMOY ROAD",
+        "postcode": "W9 3NJ",
+        "price": 355000,
+        "dateOfTransfer": "2025-04-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3965,6 +4393,94 @@
         "price": 25000,
         "dateOfTransfer": "2025-04-01",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, MACROOM ROAD",
+        "postcode": "W9 3HY",
+        "price": 653000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GLASGOW HOUSE, 175, FLAT 24, MAIDA VALE",
+        "postcode": "W9 1QY",
+        "price": 240000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, CLIFTON GARDENS",
+        "postcode": "W9 1AU",
+        "price": 329224,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ASHWORTH MANSIONS, FLAT 90, GRANTULLY ROAD",
+        "postcode": "W9 1LN",
+        "price": 1150000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ELGIN MANSIONS, FLAT 3, ELGIN AVENUE",
+        "postcode": "W9 1JG",
+        "price": 850000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54B, SUTHERLAND AVENUE",
+        "postcode": "W9 2QU",
+        "price": 482500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "187, BRAVINGTON ROAD",
+        "postcode": "W9 3AR",
+        "price": 455000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GROUND FLOOR SHOP, 215, SHIRLAND ROAD",
+        "postcode": "W9 3JP",
+        "price": 215000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ELM COURT, FLAT 10, ADMIRAL WALK",
+        "postcode": "W9 3TZ",
+        "price": 565000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WATERFRONT APARTMENTS, 82, FLAT 17, AMBERLEY ROAD",
+        "postcode": "W9 2JY",
+        "price": 542500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, FLAT 3, SALTRAM CRESCENT, MAIDA VALE",
+        "postcode": "W9 3JR",
+        "price": 405000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4008,91 +4524,11 @@
         "newBuild": false
       },
       {
-        "address": "8, MACROOM ROAD",
-        "postcode": "W9 3HY",
-        "price": 653000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ASHWORTH MANSIONS, FLAT 90, GRANTULLY ROAD",
-        "postcode": "W9 1LN",
-        "price": 1150000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "32, CLIFTON GARDENS",
-        "postcode": "W9 1AU",
-        "price": 329224,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "ELGIN MANSIONS, FLAT 3, ELGIN AVENUE",
-        "postcode": "W9 1JG",
-        "price": 850000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "54B, SUTHERLAND AVENUE",
-        "postcode": "W9 2QU",
-        "price": 482500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "187, BRAVINGTON ROAD",
-        "postcode": "W9 3AR",
-        "price": 455000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ELM COURT, FLAT 10, ADMIRAL WALK",
-        "postcode": "W9 3TZ",
-        "price": 565000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WATERFRONT APARTMENTS, 82, FLAT 17, AMBERLEY ROAD",
-        "postcode": "W9 2JY",
-        "price": 542500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "35, FLAT 3, SALTRAM CRESCENT, MAIDA VALE",
-        "postcode": "W9 3JR",
-        "price": 405000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "29, FLAT 7, SUTHERLAND AVENUE",
         "postcode": "W9 2HE",
         "price": 410000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "GROUND FLOOR SHOP, 215, SHIRLAND ROAD",
-        "postcode": "W9 3JP",
-        "price": 215000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4104,20 +4540,20 @@
         "newBuild": false
       },
       {
-        "address": "GLASGOW HOUSE, 175, FLAT 24, MAIDA VALE",
-        "postcode": "W9 1QY",
-        "price": 240000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "DIBDIN HOUSE, FLAT 198, MAIDA VALE",
         "postcode": "W9 1QQ",
         "price": 360000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "254, FIRST AND SECOND FLOOR FLAT, ASHMORE ROAD",
+        "postcode": "W9 3DD",
+        "price": 1320000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       },
       {
         "address": "31A, RANDOLPH AVENUE",
@@ -4136,49 +4572,17 @@
         "newBuild": false
       },
       {
-        "address": "ATHOLL HOUSE, 125, FLAT 31, MAIDA VALE",
-        "postcode": "W9 1UR",
-        "price": 532500,
+        "address": "9, BASEMENT FLAT, GREAT WESTERN ROAD",
+        "postcode": "W9 3NW",
+        "price": 310000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "ESSENDINE MANSIONS, FLAT 18, ESSENDINE ROAD",
-        "postcode": "W9 2LU",
-        "price": 665000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CLARENDON COURT, 33, FLAT 3, MAIDA VALE",
-        "postcode": "W9 1AJ",
-        "price": 455000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "166, FLAT B, SUTHERLAND AVENUE",
-        "postcode": "W9 1HR",
-        "price": 355000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "161A, BRAVINGTON ROAD",
-        "postcode": "W9 3AT",
-        "price": 540000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WALTERTON LODGE, 113 - 117, FLAT 6, WALTERTON ROAD",
-        "postcode": "W9 3PG",
-        "price": 545000,
+        "address": "97, FIRST FLOOR FLAT, SALTRAM CRESCENT, MAIDA VALE",
+        "postcode": "W9 3JS",
+        "price": 433150,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4198,6 +4602,22 @@
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "172, SECOND FLOOR FLAT, SHIRLAND ROAD",
+        "postcode": "W9 2BT",
+        "price": 622000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "106, TOP FLOOR FLAT, SHIRLAND ROAD",
+        "postcode": "W9 2EQ",
+        "price": 860000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       },
       {
         "address": "ASHWORTH MANSIONS, FLAT 73, GRANTULLY ROAD",
@@ -4240,9 +4660,25 @@
         "newBuild": false
       },
       {
-        "address": "29, GROUND FLOOR FLAT, SALTRAM CRESCENT, MAIDA VALE",
-        "postcode": "W9 3JR",
-        "price": 384000,
+        "address": "ATHOLL HOUSE, 125, FLAT 31, MAIDA VALE",
+        "postcode": "W9 1UR",
+        "price": 532500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ESSENDINE MANSIONS, FLAT 18, ESSENDINE ROAD",
+        "postcode": "W9 2LU",
+        "price": 665000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLARENDON COURT, 33, FLAT 3, MAIDA VALE",
+        "postcode": "W9 1AJ",
+        "price": 455000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4264,6 +4700,30 @@
         "newBuild": false
       },
       {
+        "address": "166, FLAT B, SUTHERLAND AVENUE",
+        "postcode": "W9 1HR",
+        "price": 355000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "161A, BRAVINGTON ROAD",
+        "postcode": "W9 3AT",
+        "price": 540000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WALTERTON LODGE, 113 - 117, FLAT 6, WALTERTON ROAD",
+        "postcode": "W9 3PG",
+        "price": 545000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "13, FLAT 2, CHIPPENHAM ROAD",
         "postcode": "W9 2AH",
         "price": 368000,
@@ -4272,17 +4732,25 @@
         "newBuild": false
       },
       {
-        "address": "172, SECOND FLOOR FLAT, SHIRLAND ROAD",
-        "postcode": "W9 2BT",
-        "price": 622000,
+        "address": "29, GROUND FLOOR FLAT, SALTRAM CRESCENT, MAIDA VALE",
+        "postcode": "W9 3JR",
+        "price": 384000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "106, TOP FLOOR FLAT, SHIRLAND ROAD",
-        "postcode": "W9 2EQ",
-        "price": 860000,
+        "address": "36, FLAT A, EDBROOKE ROAD",
+        "postcode": "W9 2DG",
+        "price": 470000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "220, FLAT 1A, RANDOLPH AVENUE",
+        "postcode": "W9 1PF",
+        "price": 660000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4304,46 +4772,6 @@
         "newBuild": false
       },
       {
-        "address": "36, FLAT A, EDBROOKE ROAD",
-        "postcode": "W9 2DG",
-        "price": 470000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "220, FLAT 1A, RANDOLPH AVENUE",
-        "postcode": "W9 1PF",
-        "price": 660000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "9, BASEMENT FLAT, GREAT WESTERN ROAD",
-        "postcode": "W9 3NW",
-        "price": 310000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "97, FIRST FLOOR FLAT, SALTRAM CRESCENT, MAIDA VALE",
-        "postcode": "W9 3JS",
-        "price": 433150,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "44, FLAT 3, FORMOSA STREET",
-        "postcode": "W9 2JP",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "19, BASEMENT, PORTNALL ROAD",
         "postcode": "W9 3BA",
         "price": 450000,
@@ -4360,10 +4788,26 @@
         "newBuild": false
       },
       {
+        "address": "44, FLAT 3, FORMOSA STREET",
+        "postcode": "W9 2JP",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BLOMFIELD COURT, FLAT 8, MAIDA VALE",
         "postcode": "W9 1TS",
         "price": 865000,
         "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WYMERING MANSIONS, FLAT 79, WYMERING ROAD",
+        "postcode": "W9 2NE",
+        "price": 780000,
+        "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4379,14 +4823,6 @@
         "address": "18A, EDBROOKE ROAD",
         "postcode": "W9 2DG",
         "price": 1090000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WYMERING MANSIONS, FLAT 79, WYMERING ROAD",
-        "postcode": "W9 2NE",
-        "price": 780000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4416,14 +4852,6 @@
         "newBuild": false
       },
       {
-        "address": "17, THE GROUND FLOOR FLAT AT, HORMEAD ROAD",
-        "postcode": "W9 3NG",
-        "price": 672000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "STUART TOWER, 105, FLAT 2A, MAIDA VALE",
         "postcode": "W9 1UD",
         "price": 518000,
@@ -4432,9 +4860,9 @@
         "newBuild": false
       },
       {
-        "address": "84B - 84D, WARWICK AVENUE",
-        "postcode": "W9 2PU",
-        "price": 1190000,
+        "address": "17, THE GROUND FLOOR FLAT AT, HORMEAD ROAD",
+        "postcode": "W9 3NG",
+        "price": 672000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4451,6 +4879,14 @@
         "address": "118, FLAT 1, SUTHERLAND AVENUE",
         "postcode": "W9 2QP",
         "price": 412000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "84B - 84D, WARWICK AVENUE",
+        "postcode": "W9 2PU",
+        "price": 1190000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4488,14 +4924,6 @@
         "newBuild": false
       },
       {
-        "address": "52D, ELGIN AVENUE",
-        "postcode": "W9 2HA",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "5, SHIRLAND MEWS",
         "postcode": "W9 3DY",
         "price": 1475000,
@@ -4504,9 +4932,9 @@
         "newBuild": false
       },
       {
-        "address": "65, FLAT B, PORTNALL ROAD",
-        "postcode": "W9 3BA",
-        "price": 600000,
+        "address": "52D, ELGIN AVENUE",
+        "postcode": "W9 2HA",
+        "price": 450000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4515,6 +4943,14 @@
         "address": "WOOD HOUSE, 4, FLAT 301, DIXON BUTLER MEWS",
         "postcode": "W9 2DL",
         "price": 157500,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "65, FLAT B, PORTNALL ROAD",
+        "postcode": "W9 3BA",
+        "price": 600000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4544,14 +4980,6 @@
         "newBuild": false
       },
       {
-        "address": "188, FLAT 3, BRAVINGTON ROAD",
-        "postcode": "W9 3AP",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "WYMERING MANSIONS, FLAT 115, WYMERING ROAD",
         "postcode": "W9 2NF",
         "price": 1033001,
@@ -4568,17 +4996,17 @@
         "newBuild": false
       },
       {
-        "address": "302 - 310, FLAT 1, KILBURN LANE",
-        "postcode": "W9 3EF",
-        "price": 600000,
+        "address": "32, GARDEN FLAT, PORTNALL ROAD",
+        "postcode": "W9 3BD",
+        "price": 515000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "32, GARDEN FLAT, PORTNALL ROAD",
-        "postcode": "W9 3BD",
-        "price": 515000,
+        "address": "302 - 310, FLAT 1, KILBURN LANE",
+        "postcode": "W9 3EF",
+        "price": 600000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4608,26 +5036,18 @@
         "newBuild": false
       },
       {
-        "address": "252A, ASHMORE ROAD",
-        "postcode": "W9 3DD",
-        "price": 435000,
+        "address": "188, FLAT 3, BRAVINGTON ROAD",
+        "postcode": "W9 3AP",
+        "price": 450000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "35A, WARWICK AVENUE",
-        "postcode": "W9 2PR",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "7, DENHOLME ROAD",
-        "postcode": "W9 3HU",
-        "price": 330000,
-        "dateOfTransfer": "2025-03-13",
+        "address": "252A, ASHMORE ROAD",
+        "postcode": "W9 3DD",
+        "price": 435000,
+        "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4643,6 +5063,22 @@
         "address": "155B, FERNHEAD ROAD",
         "postcode": "W9 3ED",
         "price": 512500,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35A, WARWICK AVENUE",
+        "postcode": "W9 2PR",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, DENHOLME ROAD",
+        "postcode": "W9 3HU",
+        "price": 330000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4816,14 +5252,6 @@
         "newBuild": false
       },
       {
-        "address": "WATERFRONT APARTMENTS, 82, FLAT 40, AMBERLEY ROAD",
-        "postcode": "W9 2JY",
-        "price": 535000,
-        "dateOfTransfer": "2025-02-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "20, SECOND FLOOR FLAT, HORMEAD ROAD",
         "postcode": "W9 3NG",
         "price": 575000,
@@ -4832,10 +5260,10 @@
         "newBuild": false
       },
       {
-        "address": "45, GROUND FLOOR FLAT, FERMOY ROAD",
-        "postcode": "W9 3NH",
-        "price": 385000,
-        "dateOfTransfer": "2025-02-24",
+        "address": "WATERFRONT APARTMENTS, 82, FLAT 40, AMBERLEY ROAD",
+        "postcode": "W9 2JY",
+        "price": 535000,
+        "dateOfTransfer": "2025-02-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4851,6 +5279,14 @@
         "address": "SANDRINGHAM COURT, 99, FLAT 44, MAIDA VALE",
         "postcode": "W9 1UA",
         "price": 1335000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, GROUND FLOOR FLAT, FERMOY ROAD",
+        "postcode": "W9 3NH",
+        "price": 385000,
         "dateOfTransfer": "2025-02-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4880,14 +5316,6 @@
         "newBuild": false
       },
       {
-        "address": "14, BIDDULPH ROAD",
-        "postcode": "W9 1JB",
-        "price": 2800000,
-        "dateOfTransfer": "2025-02-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "37, ELNATHAN MEWS",
         "postcode": "W9 2JE",
         "price": 1250000,
@@ -4896,17 +5324,17 @@
         "newBuild": false
       },
       {
-        "address": "ALEXANDRA COURT, 63, 4, MAIDA VALE",
-        "postcode": "W9 1SQ",
-        "price": 724000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
+        "address": "14, BIDDULPH ROAD",
+        "postcode": "W9 1JB",
+        "price": 2800000,
+        "dateOfTransfer": "2025-02-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "ASHWORTH MANSIONS, FLAT 38, ELGIN AVENUE",
-        "postcode": "W9 1JP",
-        "price": 1290000,
+        "address": "ALEXANDRA COURT, 63, 4, MAIDA VALE",
+        "postcode": "W9 1SQ",
+        "price": 724000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4928,10 +5356,10 @@
         "newBuild": false
       },
       {
-        "address": "69, SECOND FLOOR FLAT, WARWICK AVENUE",
-        "postcode": "W9 2PP",
-        "price": 495000,
-        "dateOfTransfer": "2025-02-13",
+        "address": "ASHWORTH MANSIONS, FLAT 38, ELGIN AVENUE",
+        "postcode": "W9 1JP",
+        "price": 1290000,
+        "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4939,6 +5367,14 @@
         "address": "DIBDIN HOUSE, FLAT 17, MAIDA VALE",
         "postcode": "W9 1QE",
         "price": 480000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "69, SECOND FLOOR FLAT, WARWICK AVENUE",
+        "postcode": "W9 2PP",
+        "price": 495000,
         "dateOfTransfer": "2025-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5064,22 +5500,6 @@
         "newBuild": false
       },
       {
-        "address": "15, FIRST FLOOR FLAT, CLARENDON GARDENS",
-        "postcode": "W9 1AY",
-        "price": 850000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WYMERING MANSIONS, FLAT 99, WYMERING ROAD",
-        "postcode": "W9 2NE",
-        "price": 670000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ELGIN MANSIONS, FLAT 38, ELGIN AVENUE",
         "postcode": "W9 1JQ",
         "price": 1075000,
@@ -5107,6 +5527,22 @@
         "address": "12, FLAT 4, LANHILL ROAD",
         "postcode": "W9 2BP",
         "price": 800000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, FIRST FLOOR FLAT, CLARENDON GARDENS",
+        "postcode": "W9 1AY",
+        "price": 850000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WYMERING MANSIONS, FLAT 99, WYMERING ROAD",
+        "postcode": "W9 2NE",
+        "price": 670000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5144,17 +5580,9 @@
         "newBuild": false
       },
       {
-        "address": "5A, GOLDNEY ROAD",
-        "postcode": "W9 2AP",
-        "price": 395000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "32, FLAT B, CASTELLAIN ROAD",
-        "postcode": "W9 1EZ",
-        "price": 850000,
+        "address": "23, FIRST FLOOR FLAT, CASTELLAIN ROAD",
+        "postcode": "W9 1EY",
+        "price": 895000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5168,9 +5596,17 @@
         "newBuild": false
       },
       {
-        "address": "23, FIRST FLOOR FLAT, CASTELLAIN ROAD",
-        "postcode": "W9 1EY",
-        "price": 895000,
+        "address": "32, FLAT B, CASTELLAIN ROAD",
+        "postcode": "W9 1EZ",
+        "price": 850000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5A, GOLDNEY ROAD",
+        "postcode": "W9 2AP",
+        "price": 395000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5208,6 +5644,14 @@
         "newBuild": false
       },
       {
+        "address": "50, FLAT B, WARRINGTON CRESCENT",
+        "postcode": "W9 1EP",
+        "price": 1260000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "MARLBOROUGH, 38 - 40, 9, MAIDA VALE",
         "postcode": "W9 1RW",
         "price": 965000,
@@ -5219,14 +5663,6 @@
         "address": "SOUTHWOLD MANSIONS, FLAT 2, WIDLEY ROAD",
         "postcode": "W9 2LE",
         "price": 675000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "50, FLAT B, WARRINGTON CRESCENT",
-        "postcode": "W9 1EP",
-        "price": 1260000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5256,9 +5692,9 @@
         "newBuild": false
       },
       {
-        "address": "33, FLAT 2, SALTRAM CRESCENT, MAIDA VALE",
-        "postcode": "W9 3JR",
-        "price": 540000,
+        "address": "57A - 57B, SUTHERLAND AVENUE",
+        "postcode": "W9 2HF",
+        "price": 690000,
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5272,9 +5708,9 @@
         "newBuild": false
       },
       {
-        "address": "57A - 57B, SUTHERLAND AVENUE",
-        "postcode": "W9 2HF",
-        "price": 690000,
+        "address": "33, FLAT 2, SALTRAM CRESCENT, MAIDA VALE",
+        "postcode": "W9 3JR",
+        "price": 540000,
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5288,7 +5724,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 842453,
+    "averagePrice": 848836,
     "medianPrice": 655000
   },
   "representatives": {

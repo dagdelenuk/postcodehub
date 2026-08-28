@@ -3,8 +3,8 @@
   "slug": "w13",
   "city": "London",
   "borough": "Ealing",
-  "latitude": 51.5130017181208,
-  "longitude": -0.32120429194630845,
+  "latitude": 51.512973019434675,
+  "longitude": -0.3211889310954063,
   "wards": [
     "Ealing Broadway",
     "Hanwell Broadway",
@@ -186,7 +186,8 @@
         "urn": "101873",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "15/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "St John's Primary School, Green Man Gardens, London",
         "postcode": "W13 0SE",
         "numberOfPupils": 474,
@@ -197,7 +198,8 @@
         "urn": "101881",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Requires improvement",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "06/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Drayton Grove, West Ealing, London",
         "postcode": "W13 0LA",
         "numberOfPupils": 236,
@@ -207,8 +209,9 @@
         "name": "Fielding Primary School",
         "urn": "101897",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "22/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Wyndham Road, Ealing, London",
         "postcode": "W13 9TE",
         "numberOfPupils": 1012,
@@ -220,6 +223,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "2 Cleveland Road, Ealing",
         "postcode": "W13 8AX",
         "numberOfPupils": 921,
@@ -231,6 +235,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "70 The Avenue, London",
         "postcode": "W13 8LS",
         "numberOfPupils": 58,
@@ -241,7 +246,8 @@
         "urn": "101966",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Hathaway Gardens, Ealing, London",
         "postcode": "W13 0DH",
         "numberOfPupils": 193,
@@ -252,7 +258,8 @@
         "urn": "101970",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "30/01/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Compton Close, Cavendish Avenue, London",
         "postcode": "W13 0JG",
         "numberOfPupils": 169,
@@ -264,6 +271,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Compton Close, Ealing, London",
         "postcode": "W13 0LR",
         "numberOfPupils": 56,
@@ -275,6 +283,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "3-5, Alexandria Road, West Ealing",
         "postcode": "W13 0NP",
         "numberOfPupils": 59,
@@ -285,7 +294,8 @@
         "urn": "143118",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "15/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hathaway Gardens, Ealing, London",
         "postcode": "W13 0DH",
         "numberOfPupils": 192,
@@ -297,7 +307,7 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1001,
+        "totalCrimes": 1000,
         "violentCrimes": 278,
         "propertyCrimes": 334
       },
@@ -309,15 +319,15 @@
       },
       {
         "month": "2025-09",
-        "totalCrimes": 771,
+        "totalCrimes": 769,
         "violentCrimes": 218,
-        "propertyCrimes": 287
+        "propertyCrimes": 285
       },
       {
         "month": "2025-10",
-        "totalCrimes": 802,
+        "totalCrimes": 801,
         "violentCrimes": 205,
-        "propertyCrimes": 310
+        "propertyCrimes": 309
       },
       {
         "month": "2025-11",
@@ -327,19 +337,19 @@
       },
       {
         "month": "2025-12",
-        "totalCrimes": 617,
+        "totalCrimes": 616,
         "violentCrimes": 195,
         "propertyCrimes": 232
       },
       {
         "month": "2026-01",
-        "totalCrimes": 595,
+        "totalCrimes": 594,
         "violentCrimes": 193,
         "propertyCrimes": 226
       },
       {
         "month": "2026-02",
-        "totalCrimes": 670,
+        "totalCrimes": 669,
         "violentCrimes": 206,
         "propertyCrimes": 237
       },
@@ -351,43 +361,147 @@
       },
       {
         "month": "2026-04",
-        "totalCrimes": 717,
+        "totalCrimes": 718,
         "violentCrimes": 228,
-        "propertyCrimes": 254
+        "propertyCrimes": 255
       },
       {
         "month": "2026-05",
         "totalCrimes": 746,
-        "violentCrimes": 247,
+        "violentCrimes": 248,
         "propertyCrimes": 246
       },
       {
         "month": "2026-06",
-        "totalCrimes": 747,
+        "totalCrimes": 748,
         "violentCrimes": 234,
-        "propertyCrimes": 271
+        "propertyCrimes": 272
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 2667,
-      "bicycle-theft": 96,
-      "burglary": 422,
-      "criminal-damage-arson": 318,
+      "anti-social-behaviour": 2662,
+      "bicycle-theft": 95,
+      "burglary": 421,
+      "criminal-damage-arson": 319,
       "drugs": 258,
-      "other-theft": 620,
+      "other-theft": 621,
       "possession-of-weapons": 48,
       "public-order": 507,
       "robbery": 172,
       "shoplifting": 747,
       "theft-from-the-person": 293,
-      "vehicle-crime": 816,
-      "violent-crime": 1986,
+      "vehicle-crime": 815,
+      "violent-crime": 1987,
       "other-crime": 67
     },
-    "totalLast12Months": 9017
+    "totalLast12Months": 9012
   },
   "property": {
     "sales": [
+      {
+        "address": "73, PURSEWARDENS CLOSE",
+        "postcode": "W13 9PW",
+        "price": 398000,
+        "dateOfTransfer": "2026-07-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "91, DRAYTON AVENUE",
+        "postcode": "W13 0LE",
+        "price": 800000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11, ELERS ROAD",
+        "postcode": "W13 9QA",
+        "price": 2120000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "EDMONSCOTE, FLAT 1, ARGYLE ROAD",
+        "postcode": "W13 0HQ",
+        "price": 505000,
+        "dateOfTransfer": "2026-07-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "95, WESTFIELD ROAD",
+        "postcode": "W13 9JD",
+        "price": 200000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44, ENDSLEIGH ROAD",
+        "postcode": "W13 0RE",
+        "price": 525000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64 - 64A, MATTOCK LANE",
+        "postcode": "W13 9LJ",
+        "price": 601357,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, BONCHURCH ROAD",
+        "postcode": "W13 9JE",
+        "price": 915000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, ASHDOWN",
+        "postcode": "W13 8DR",
+        "price": 520000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, NORTHCROFT ROAD",
+        "postcode": "W13 9SX",
+        "price": 885000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "BALLARAT HOUSE, 13, TEWKESBURY ROAD",
+        "postcode": "W13 0FL",
+        "price": 515000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, DENMARK ROAD, EALING",
+        "postcode": "W13 8RQ",
+        "price": 1025000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, NORTHCROFT ROAD",
+        "postcode": "W13 9SX",
+        "price": 910000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "LOVELACE HOUSE, 96 - 122, FLAT 1, UXBRIDGE ROAD, EALING",
         "postcode": "W13 8RB",
@@ -413,6 +527,22 @@
         "newBuild": false
       },
       {
+        "address": "60H, BALFOUR ROAD",
+        "postcode": "W13 9TN",
+        "price": 440000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 2, ST LEONARDS ROAD",
+        "postcode": "W13 8PN",
+        "price": 610000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "10, FIRST FLOOR FLAT, BEDFORD ROAD",
         "postcode": "W13 0SP",
         "price": 410000,
@@ -429,11 +559,27 @@
         "newBuild": false
       },
       {
+        "address": "19, BRUTON WAY",
+        "postcode": "W13 0BY",
+        "price": 970000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "23, RIDLEY AVENUE",
         "postcode": "W13 9XW",
         "price": 675000,
         "dateOfTransfer": "2026-06-05",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT 2, LYNCROFT GARDENS",
+        "postcode": "W13 9PU",
+        "price": 646000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -449,6 +595,14 @@
         "postcode": "W13 0HQ",
         "price": 357000,
         "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9A, DENMARK ROAD, EALING",
+        "postcode": "W13 8RQ",
+        "price": 463500,
+        "dateOfTransfer": "2026-05-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -525,11 +679,27 @@
         "newBuild": false
       },
       {
+        "address": "46, CHALFONT WAY",
+        "postcode": "W13 9XN",
+        "price": 1000000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "130, MIDHURST ROAD",
         "postcode": "W13 9TP",
         "price": 650000,
         "dateOfTransfer": "2026-05-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, ARGYLE ROAD",
+        "postcode": "W13 0LN",
+        "price": 935000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -544,14 +714,6 @@
         "address": "27A, EGERTON GARDENS",
         "postcode": "W13 8HG",
         "price": 548000,
-        "dateOfTransfer": "2026-05-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "3, ARGYLE ROAD",
-        "postcode": "W13 0LN",
-        "price": 935000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -637,6 +799,14 @@
         "newBuild": false
       },
       {
+        "address": "85, FLAT 8, CLEVELAND ROAD",
+        "postcode": "W13 0HF",
+        "price": 595000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "1, FLAT 2, CHAPEL ROAD",
         "postcode": "W13 9AE",
         "price": 200000,
@@ -645,11 +815,11 @@
         "newBuild": false
       },
       {
-        "address": "85, FLAT 8, CLEVELAND ROAD",
-        "postcode": "W13 0HF",
-        "price": 595000,
+        "address": "14, NORTHFIELD AVENUE",
+        "postcode": "W13 9RJ",
+        "price": 660000,
         "dateOfTransfer": "2026-04-17",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -725,6 +895,14 @@
         "newBuild": false
       },
       {
+        "address": "6, LOVEDAY ROAD",
+        "postcode": "W13 9JS",
+        "price": 1143638,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "150, NORTHCROFT ROAD",
         "postcode": "W13 9SU",
         "price": 975000,
@@ -765,11 +943,11 @@
         "newBuild": false
       },
       {
-        "address": "15, LONG ACRE COURT",
-        "postcode": "W13 0DA",
-        "price": 385000,
-        "dateOfTransfer": "2026-03-26",
-        "propertyType": "Flat/Maisonette",
+        "address": "100, ARGYLE ROAD",
+        "postcode": "W13 8EL",
+        "price": 1650000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -781,11 +959,11 @@
         "newBuild": false
       },
       {
-        "address": "20, CLEMENTINE CLOSE",
-        "postcode": "W13 9UB",
-        "price": 715000,
-        "dateOfTransfer": "2026-03-25",
-        "propertyType": "Terraced",
+        "address": "15, LONG ACRE COURT",
+        "postcode": "W13 0DA",
+        "price": 385000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -794,6 +972,14 @@
         "price": 225000,
         "dateOfTransfer": "2026-03-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, CLEMENTINE CLOSE",
+        "postcode": "W13 9UB",
+        "price": 715000,
+        "dateOfTransfer": "2026-03-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -845,6 +1031,14 @@
         "newBuild": false
       },
       {
+        "address": "143, FLAT 4, NORTHFIELD AVENUE",
+        "postcode": "W13 9QT",
+        "price": 425000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "62, LANGHAM GARDENS",
         "postcode": "W13 8PZ",
         "price": 430000,
@@ -882,6 +1076,14 @@
         "price": 700000,
         "dateOfTransfer": "2026-03-05",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, TOP FLOOR FLAT, SUTHERLAND ROAD",
+        "postcode": "W13 0DT",
+        "price": 450000,
+        "dateOfTransfer": "2026-03-04",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -933,11 +1135,11 @@
         "newBuild": false
       },
       {
-        "address": "13, ENDSLEIGH ROAD",
-        "postcode": "W13 0RE",
-        "price": 870000,
+        "address": "48, ARGYLE ROAD",
+        "postcode": "W13 8AA",
+        "price": 1400000,
         "dateOfTransfer": "2026-02-27",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -952,6 +1154,14 @@
         "address": "66, WESTFIELD ROAD",
         "postcode": "W13 9JA",
         "price": 830000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "13, ENDSLEIGH ROAD",
+        "postcode": "W13 0RE",
+        "price": 870000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1021,6 +1231,14 @@
         "newBuild": false
       },
       {
+        "address": "110, NORTHFIELD AVENUE",
+        "postcode": "W13 9RT",
+        "price": 260000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "FREEDOM HOUSE, 16, BROWNLOW ROAD",
         "postcode": "W13 0FW",
         "price": 143750,
@@ -1029,11 +1247,11 @@
         "newBuild": false
       },
       {
-        "address": "DUKES COURT, FLAT 7, KENT GARDENS",
-        "postcode": "W13 8DA",
-        "price": 445000,
+        "address": "89, CLEVELAND ROAD",
+        "postcode": "W13 0HF",
+        "price": 1200000,
         "dateOfTransfer": "2026-02-13",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1045,11 +1263,27 @@
         "newBuild": false
       },
       {
+        "address": "85, CAMBORNE AVENUE",
+        "postcode": "W13 9QZ",
+        "price": 1100000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "20, MILFORD ROAD",
         "postcode": "W13 9HZ",
         "price": 802500,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "DUKES COURT, FLAT 7, KENT GARDENS",
+        "postcode": "W13 8DA",
+        "price": 445000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1109,17 +1343,17 @@
         "newBuild": false
       },
       {
-        "address": "HIGHCLIFFE, FLAT 18, CLIVEDON COURT",
-        "postcode": "W13 8DP",
-        "price": 318000,
+        "address": "173, CAVENDISH AVENUE",
+        "postcode": "W13 0JZ",
+        "price": 450000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "173, CAVENDISH AVENUE",
-        "postcode": "W13 0JZ",
-        "price": 450000,
+        "address": "HIGHCLIFFE, FLAT 18, CLIVEDON COURT",
+        "postcode": "W13 8DP",
+        "price": 318000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1133,11 +1367,11 @@
         "newBuild": false
       },
       {
-        "address": "10, THE DENE",
-        "postcode": "W13 8AY",
-        "price": 822500,
-        "dateOfTransfer": "2026-01-28",
-        "propertyType": "Terraced",
+        "address": "CRAIG HOUSE, FLAT 1, HARTINGTON ROAD",
+        "postcode": "W13 8QJ",
+        "price": 277500,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1146,6 +1380,14 @@
         "price": 500000,
         "dateOfTransfer": "2026-01-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, THE DENE",
+        "postcode": "W13 8AY",
+        "price": 822500,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1189,6 +1431,38 @@
         "newBuild": false
       },
       {
+        "address": "42, CLAREMONT ROAD",
+        "postcode": "W13 0DG",
+        "price": 1085000,
+        "dateOfTransfer": "2026-01-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, RAYMOND AVENUE",
+        "postcode": "W13 9UY",
+        "price": 875000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, CLAYGATE ROAD",
+        "postcode": "W13 9XG",
+        "price": 900000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "148, NORTHFIELD AVENUE",
+        "postcode": "W13 9SB",
+        "price": 825000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "9, ALTENBURG AVENUE",
         "postcode": "W13 9RN",
         "price": 975000,
@@ -1213,27 +1487,27 @@
         "newBuild": false
       },
       {
-        "address": "33, RAYMOND AVENUE",
-        "postcode": "W13 9UY",
-        "price": 875000,
-        "dateOfTransfer": "2026-01-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "148, NORTHFIELD AVENUE",
-        "postcode": "W13 9SB",
-        "price": 825000,
-        "dateOfTransfer": "2026-01-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "12, REGINA TERRACE",
         "postcode": "W13 9HY",
         "price": 837000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, ENDSLEIGH ROAD",
+        "postcode": "W13 0RE",
+        "price": 828000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "EDMONSCOTE, FLAT 37, ARGYLE ROAD",
+        "postcode": "W13 0HQ",
+        "price": 25680,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1250,14 +1524,6 @@
         "price": 813800,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "9, ENDSLEIGH ROAD",
-        "postcode": "W13 0RE",
-        "price": 828000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1285,6 +1551,14 @@
         "newBuild": false
       },
       {
+        "address": "70, LANGHAM GARDENS",
+        "postcode": "W13 8PZ",
+        "price": 457500,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "93, SEAFORD ROAD, EALING",
         "postcode": "W13 9HS",
         "price": 565000,
@@ -1293,11 +1567,11 @@
         "newBuild": false
       },
       {
-        "address": "70, LANGHAM GARDENS",
-        "postcode": "W13 8PZ",
-        "price": 457500,
-        "dateOfTransfer": "2026-01-06",
-        "propertyType": "Flat/Maisonette",
+        "address": "EDMONSCOTE, FLAT 43, ARGYLE ROAD",
+        "postcode": "W13 0HQ",
+        "price": 44570,
+        "dateOfTransfer": "2025-12-23",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1333,6 +1607,14 @@
         "newBuild": false
       },
       {
+        "address": "29, BROADWAY, WEST EALING",
+        "postcode": "W13 9DA",
+        "price": 825000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "103, WESTFIELD ROAD",
         "postcode": "W13 9JD",
         "price": 800000,
@@ -1344,14 +1626,6 @@
         "address": "57, NORTHCROFT ROAD",
         "postcode": "W13 9SS",
         "price": 900000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "29, BROADWAY, WEST EALING",
-        "postcode": "W13 9DA",
-        "price": 825000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1549,6 +1823,14 @@
         "newBuild": false
       },
       {
+        "address": "14, FLAT 6, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 317500,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "158, CAVENDISH AVENUE",
         "postcode": "W13 0JW",
         "price": 480000,
@@ -1661,6 +1943,14 @@
         "newBuild": false
       },
       {
+        "address": "5A, SHERBORNE GARDENS",
+        "postcode": "W13 8AS",
+        "price": 585000,
+        "dateOfTransfer": "2025-11-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "31, AMHERST ROAD",
         "postcode": "W13 8LX",
         "price": 2000000,
@@ -1674,14 +1964,6 @@
         "price": 830000,
         "dateOfTransfer": "2025-11-04",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "5A, SHERBORNE GARDENS",
-        "postcode": "W13 8AS",
-        "price": 585000,
-        "dateOfTransfer": "2025-11-04",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1749,6 +2031,14 @@
         "newBuild": false
       },
       {
+        "address": "98, FLAT 3, GORDON ROAD",
+        "postcode": "W13 8PJ",
+        "price": 817500,
+        "dateOfTransfer": "2025-10-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "30, VALLIS WAY",
         "postcode": "W13 0DD",
         "price": 810000,
@@ -1757,10 +2047,10 @@
         "newBuild": false
       },
       {
-        "address": "98, FLAT 3, GORDON ROAD",
-        "postcode": "W13 8PJ",
-        "price": 817500,
-        "dateOfTransfer": "2025-10-28",
+        "address": "71, NORTHFIELD AVENUE",
+        "postcode": "W13 9QP",
+        "price": 250000,
+        "dateOfTransfer": "2025-10-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1770,14 +2060,6 @@
         "price": 1110000,
         "dateOfTransfer": "2025-10-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "71, NORTHFIELD AVENUE",
-        "postcode": "W13 9QP",
-        "price": 250000,
-        "dateOfTransfer": "2025-10-27",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1797,11 +2079,19 @@
         "newBuild": false
       },
       {
-        "address": "23, CRANMER AVENUE",
-        "postcode": "W13 9SH",
-        "price": 1050000,
+        "address": "LANSDOWNE LODGE, 2, SUTHERLAND ROAD",
+        "postcode": "W13 0DX",
+        "price": 555000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, KENT AVENUE",
+        "postcode": "W13 8BE",
+        "price": 1400000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1821,19 +2111,35 @@
         "newBuild": false
       },
       {
-        "address": "LANSDOWNE LODGE, 2, SUTHERLAND ROAD",
-        "postcode": "W13 0DX",
-        "price": 555000,
+        "address": "66, LAVINGTON ROAD",
+        "postcode": "W13 9LS",
+        "price": 1560000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, CRANMER AVENUE",
+        "postcode": "W13 9SH",
+        "price": 1050000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ELTHAM COURT, FLAT 8, BERWICK CLOSE",
+        "postcode": "W13 8BL",
+        "price": 525000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "7, KENT AVENUE",
-        "postcode": "W13 8BE",
-        "price": 1400000,
+        "address": "14, FLAT 3, SUTHERLAND ROAD",
+        "postcode": "W13 0DT",
+        "price": 725000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1869,6 +2175,14 @@
         "newBuild": false
       },
       {
+        "address": "74C, MATTOCK LANE",
+        "postcode": "W13 9NT",
+        "price": 570000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "32, ALEXANDRIA ROAD",
         "postcode": "W13 0NR",
         "price": 615000,
@@ -1885,10 +2199,34 @@
         "newBuild": false
       },
       {
+        "address": "FREEDOM HOUSE, 71, BROWNLOW ROAD",
+        "postcode": "W13 0HS",
+        "price": 143125,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "96, CRANMER AVENUE",
         "postcode": "W13 9XU",
         "price": 740000,
         "dateOfTransfer": "2025-10-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, RUTLAND GARDENS",
+        "postcode": "W13 0ED",
+        "price": 890000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "32, CAMBORNE AVENUE",
+        "postcode": "W13 9QZ",
+        "price": 930000,
+        "dateOfTransfer": "2025-10-03",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1898,14 +2236,6 @@
         "price": 365000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "32, CAMBORNE AVENUE",
-        "postcode": "W13 9QZ",
-        "price": 930000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1949,14 +2279,6 @@
         "newBuild": false
       },
       {
-        "address": "LANSDOWNE LODGE, 4, SUTHERLAND ROAD",
-        "postcode": "W13 0DX",
-        "price": 477500,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "104, ARGYLE ROAD",
         "postcode": "W13 8EL",
         "price": 1610000,
@@ -1965,10 +2287,18 @@
         "newBuild": false
       },
       {
-        "address": "16, FLAT 6, SOMERSET ROAD",
-        "postcode": "W13 9PB",
-        "price": 675000,
-        "dateOfTransfer": "2025-09-25",
+        "address": "LANSDOWNE LODGE, 4, SUTHERLAND ROAD",
+        "postcode": "W13 0DX",
+        "price": 477500,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 2, WITHAM ROAD",
+        "postcode": "W13 0BS",
+        "price": 400000,
+        "dateOfTransfer": "2025-09-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1981,18 +2311,26 @@
         "newBuild": false
       },
       {
-        "address": "104, CRANMER AVENUE",
-        "postcode": "W13 9XU",
-        "price": 837000,
+        "address": "16, FLAT 6, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 675000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, CLAYGATE ROAD",
+        "postcode": "W13 9XG",
+        "price": 732000,
         "dateOfTransfer": "2025-09-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "71, CAMBORNE AVENUE",
-        "postcode": "W13 9QZ",
-        "price": 1060000,
-        "dateOfTransfer": "2025-09-23",
+        "address": "104, CRANMER AVENUE",
+        "postcode": "W13 9XU",
+        "price": 837000,
+        "dateOfTransfer": "2025-09-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -2005,11 +2343,11 @@
         "newBuild": false
       },
       {
-        "address": "58, LAVINGTON ROAD",
-        "postcode": "W13 9LS",
-        "price": 1800000,
-        "dateOfTransfer": "2025-09-22",
-        "propertyType": "Semi-detached",
+        "address": "71, CAMBORNE AVENUE",
+        "postcode": "W13 9QZ",
+        "price": 1060000,
+        "dateOfTransfer": "2025-09-23",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2018,6 +2356,30 @@
         "price": 800000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "58, LAVINGTON ROAD",
+        "postcode": "W13 9LS",
+        "price": 1800000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, ECCLESTON ROAD",
+        "postcode": "W13 0RL",
+        "price": 965000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "63, MAYFIELD AVENUE",
+        "postcode": "W13 9UT",
+        "price": 760000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2034,22 +2396,6 @@
         "price": 412500,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "63, MAYFIELD AVENUE",
-        "postcode": "W13 9UT",
-        "price": 760000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "6, ECCLESTON ROAD",
-        "postcode": "W13 0RL",
-        "price": 965000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2077,11 +2423,35 @@
         "newBuild": false
       },
       {
+        "address": "83, ST STEPHENS ROAD",
+        "postcode": "W13 8JA",
+        "price": 903000,
+        "dateOfTransfer": "2025-09-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "44, HASLEMERE AVENUE",
         "postcode": "W13 9UJ",
         "price": 1225000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, RIDLEY AVENUE",
+        "postcode": "W13 9XW",
+        "price": 570000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ARAGON COURT, 138 - 140, FLAT 9, BROADWAY, WEST EALING",
+        "postcode": "W13 0TL",
+        "price": 275000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2101,30 +2471,6 @@
         "newBuild": false
       },
       {
-        "address": "ARAGON COURT, 138 - 140, FLAT 9, BROADWAY, WEST EALING",
-        "postcode": "W13 0TL",
-        "price": 275000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "19, RIDLEY AVENUE",
-        "postcode": "W13 9XW",
-        "price": 570000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "35, MAYFIELD AVENUE",
-        "postcode": "W13 9UP",
-        "price": 925000,
-        "dateOfTransfer": "2025-09-11",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "125A, COLDERSHAW ROAD",
         "postcode": "W13 9DU",
         "price": 475000,
@@ -2138,6 +2484,14 @@
         "price": 525000,
         "dateOfTransfer": "2025-09-11",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, MAYFIELD AVENUE",
+        "postcode": "W13 9UP",
+        "price": 925000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2245,11 +2599,11 @@
         "newBuild": false
       },
       {
-        "address": "35, WESTFIELD ROAD",
-        "postcode": "W13 9JP",
-        "price": 950000,
+        "address": "25, LYNCROFT GARDENS",
+        "postcode": "W13 9PU",
+        "price": 1700000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2261,17 +2615,17 @@
         "newBuild": false
       },
       {
-        "address": "25, LYNCROFT GARDENS",
-        "postcode": "W13 9PU",
-        "price": 1700000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "13, WESTFIELD ROAD, EALING",
         "postcode": "W13 9JP",
         "price": 350000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, WESTFIELD ROAD",
+        "postcode": "W13 9JP",
+        "price": 950000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2285,10 +2639,10 @@
         "newBuild": false
       },
       {
-        "address": "SHENSTONE, 2, CULMINGTON ROAD",
-        "postcode": "W13 9NL",
-        "price": 462570,
-        "dateOfTransfer": "2025-08-28",
+        "address": "FREEDOM HOUSE, 40, BROWNLOW ROAD",
+        "postcode": "W13 0FW",
+        "price": 180000,
+        "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2301,10 +2655,10 @@
         "newBuild": false
       },
       {
-        "address": "2, FLAT 2, SUTHERLAND ROAD",
-        "postcode": "W13 0DT",
-        "price": 705000,
-        "dateOfTransfer": "2025-08-27",
+        "address": "SHENSTONE, 2, CULMINGTON ROAD",
+        "postcode": "W13 9NL",
+        "price": 462570,
+        "dateOfTransfer": "2025-08-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2314,6 +2668,14 @@
         "price": 1290000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 2, SUTHERLAND ROAD",
+        "postcode": "W13 0DT",
+        "price": 705000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2349,6 +2711,14 @@
         "newBuild": false
       },
       {
+        "address": "2A, KIRCHEN ROAD",
+        "postcode": "W13 0TY",
+        "price": 203000,
+        "dateOfTransfer": "2025-08-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2, FLAT 1, SUTHERLAND ROAD",
         "postcode": "W13 0DT",
         "price": 565000,
@@ -2370,14 +2740,6 @@
         "price": 820000,
         "dateOfTransfer": "2025-08-20",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "2A, KIRCHEN ROAD",
-        "postcode": "W13 0TY",
-        "price": 203000,
-        "dateOfTransfer": "2025-08-20",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2517,17 +2879,17 @@
         "newBuild": false
       },
       {
-        "address": "84A, WESTFIELD ROAD",
-        "postcode": "W13 9JA",
-        "price": 275000,
+        "address": "19, SALISBURY ROAD",
+        "postcode": "W13 9TU",
+        "price": 790000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "19, SALISBURY ROAD",
-        "postcode": "W13 9TU",
-        "price": 790000,
+        "address": "84A, WESTFIELD ROAD",
+        "postcode": "W13 9JA",
+        "price": 275000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2589,14 +2951,6 @@
         "newBuild": false
       },
       {
-        "address": "13, NORTHFIELD ROAD",
-        "postcode": "W13 9SY",
-        "price": 650000,
-        "dateOfTransfer": "2025-07-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "103, LEIGHTON ROAD",
         "postcode": "W13 9DR",
         "price": 1230000,
@@ -2605,11 +2959,19 @@
         "newBuild": false
       },
       {
-        "address": "62, CAVENDISH AVENUE",
-        "postcode": "W13 0JQ",
-        "price": 8000,
+        "address": "13, NORTHFIELD ROAD",
+        "postcode": "W13 9SY",
+        "price": 650000,
+        "dateOfTransfer": "2025-07-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, DRAYTON ROAD",
+        "postcode": "W13 0LD",
+        "price": 492495,
         "dateOfTransfer": "2025-07-28",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2621,11 +2983,11 @@
         "newBuild": false
       },
       {
-        "address": "18, DRAYTON ROAD",
-        "postcode": "W13 0LD",
-        "price": 492495,
+        "address": "62, CAVENDISH AVENUE",
+        "postcode": "W13 0JQ",
+        "price": 8000,
         "dateOfTransfer": "2025-07-28",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2645,17 +3007,17 @@
         "newBuild": false
       },
       {
-        "address": "18, FLAT 7, SOMERSET ROAD",
-        "postcode": "W13 9PB",
-        "price": 450000,
+        "address": "7A, CASTLE HILL PARADE",
+        "postcode": "W13 8JP",
+        "price": 335000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "7A, CASTLE HILL PARADE",
-        "postcode": "W13 8JP",
-        "price": 335000,
+        "address": "18, FLAT 7, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 450000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2773,17 +3135,17 @@
         "newBuild": false
       },
       {
-        "address": "27, CHALFONT WAY",
-        "postcode": "W13 9XN",
-        "price": 815000,
+        "address": "133, UXBRIDGE ROAD, EALING",
+        "postcode": "W13 9AU",
+        "price": 578000,
         "dateOfTransfer": "2025-07-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "133, UXBRIDGE ROAD, EALING",
-        "postcode": "W13 9AU",
-        "price": 578000,
+        "address": "27, CHALFONT WAY",
+        "postcode": "W13 9XN",
+        "price": 815000,
         "dateOfTransfer": "2025-07-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2885,6 +3247,14 @@
         "newBuild": false
       },
       {
+        "address": "61, ST KILDA ROAD, EALING",
+        "postcode": "W13 9DF",
+        "price": 720000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "2, FLAT 5, SUTHERLAND ROAD",
         "postcode": "W13 0DT",
         "price": 655000,
@@ -2893,11 +3263,11 @@
         "newBuild": false
       },
       {
-        "address": "61, ST KILDA ROAD, EALING",
-        "postcode": "W13 9DF",
-        "price": 720000,
-        "dateOfTransfer": "2025-07-01",
-        "propertyType": "Terraced",
+        "address": "DOMINION HOUSE, FLAT 12, THE AVENUE",
+        "postcode": "W13 8AE",
+        "price": 300000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2914,14 +3284,6 @@
         "price": 905000,
         "dateOfTransfer": "2025-06-30",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "DOMINION HOUSE, FLAT 12, THE AVENUE",
-        "postcode": "W13 8AE",
-        "price": 300000,
-        "dateOfTransfer": "2025-06-30",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2989,17 +3351,17 @@
         "newBuild": false
       },
       {
-        "address": "25, FLAT 1, HASTINGS ROAD",
-        "postcode": "W13 8QH",
-        "price": 412500,
+        "address": "5, ARGYLE ROAD",
+        "postcode": "W13 0LN",
+        "price": 406000,
         "dateOfTransfer": "2025-06-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "5, ARGYLE ROAD",
-        "postcode": "W13 0LN",
-        "price": 406000,
+        "address": "25, FLAT 1, HASTINGS ROAD",
+        "postcode": "W13 8QH",
+        "price": 412500,
         "dateOfTransfer": "2025-06-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3061,17 +3423,17 @@
         "newBuild": false
       },
       {
-        "address": "17, CRANMER AVENUE",
-        "postcode": "W13 9SH",
-        "price": 970000,
+        "address": "60, HASLEMERE AVENUE",
+        "postcode": "W13 9UL",
+        "price": 912500,
         "dateOfTransfer": "2025-06-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "60, HASLEMERE AVENUE",
-        "postcode": "W13 9UL",
-        "price": 912500,
+        "address": "17, CRANMER AVENUE",
+        "postcode": "W13 9SH",
+        "price": 970000,
         "dateOfTransfer": "2025-06-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3165,14 +3527,6 @@
         "newBuild": false
       },
       {
-        "address": "7, CLAREMONT ROAD",
-        "postcode": "W13 0DE",
-        "price": 1100000,
-        "dateOfTransfer": "2025-06-11",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "8, FLAT 3, ENDSLEIGH ROAD",
         "postcode": "W13 0RE",
         "price": 180000,
@@ -3181,11 +3535,19 @@
         "newBuild": false
       },
       {
-        "address": "45, COLEBROOKE AVENUE",
-        "postcode": "W13 8JZ",
-        "price": 1724650,
-        "dateOfTransfer": "2025-06-06",
+        "address": "7, CLAREMONT ROAD",
+        "postcode": "W13 0DE",
+        "price": 1100000,
+        "dateOfTransfer": "2025-06-11",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "87, ADELAIDE ROAD",
+        "postcode": "W13 9ED",
+        "price": 1325000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3213,11 +3575,19 @@
         "newBuild": false
       },
       {
-        "address": "87, ADELAIDE ROAD",
-        "postcode": "W13 9ED",
-        "price": 1325000,
+        "address": "45, COLEBROOKE AVENUE",
+        "postcode": "W13 8JZ",
+        "price": 1724650,
         "dateOfTransfer": "2025-06-06",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, KENT AVENUE",
+        "postcode": "W13 8BE",
+        "price": 1395000,
+        "dateOfTransfer": "2025-06-04",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3237,14 +3607,6 @@
         "newBuild": false
       },
       {
-        "address": "15, KENT AVENUE",
-        "postcode": "W13 8BE",
-        "price": 1395000,
-        "dateOfTransfer": "2025-06-04",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "15, RATHGAR AVENUE",
         "postcode": "W13 9PL",
         "price": 1450000,
@@ -3258,6 +3620,14 @@
         "price": 542500,
         "dateOfTransfer": "2025-06-02",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "75, LEYBORNE AVENUE",
+        "postcode": "W13 9RA",
+        "price": 1035000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3285,26 +3655,10 @@
         "newBuild": false
       },
       {
-        "address": "75, LEYBORNE AVENUE",
-        "postcode": "W13 9RA",
-        "price": 1035000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "RAY COURT, FLAT 1, SOMERSET ROAD",
         "postcode": "W13 9PA",
         "price": 395000,
         "dateOfTransfer": "2025-05-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "14, FLAT 7, SUTHERLAND ROAD",
-        "postcode": "W13 0DT",
-        "price": 740000,
-        "dateOfTransfer": "2025-05-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3317,10 +3671,10 @@
         "newBuild": false
       },
       {
-        "address": "4, BELLEVUE ROAD",
-        "postcode": "W13 8DE",
-        "price": 486500,
-        "dateOfTransfer": "2025-05-23",
+        "address": "14, FLAT 7, SUTHERLAND ROAD",
+        "postcode": "W13 0DT",
+        "price": 740000,
+        "dateOfTransfer": "2025-05-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3389,6 +3743,14 @@
         "newBuild": false
       },
       {
+        "address": "4, BELLEVUE ROAD",
+        "postcode": "W13 8DE",
+        "price": 486500,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "9, FLAT 2, CHURCHFIELD ROAD",
         "postcode": "W13 9NF",
         "price": 387000,
@@ -3437,17 +3799,17 @@
         "newBuild": false
       },
       {
-        "address": "52, GLENFIELD ROAD",
-        "postcode": "W13 9JZ",
-        "price": 515000,
+        "address": "146B, ARGYLE ROAD",
+        "postcode": "W13 8ER",
+        "price": 450000,
         "dateOfTransfer": "2025-05-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "146B, ARGYLE ROAD",
-        "postcode": "W13 8ER",
-        "price": 450000,
+        "address": "52, GLENFIELD ROAD",
+        "postcode": "W13 9JZ",
+        "price": 515000,
         "dateOfTransfer": "2025-05-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3477,19 +3839,19 @@
         "newBuild": false
       },
       {
-        "address": "ST. STEPHENS COURT, FLAT 19, THE AVENUE",
-        "postcode": "W13 8HX",
-        "price": 665000,
-        "dateOfTransfer": "2025-05-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "34, WALDECK ROAD",
         "postcode": "W13 8LY",
         "price": 1680000,
         "dateOfTransfer": "2025-05-08",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "ST. STEPHENS COURT, FLAT 19, THE AVENUE",
+        "postcode": "W13 8HX",
+        "price": 665000,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3525,17 +3887,17 @@
         "newBuild": false
       },
       {
-        "address": "14, GLENMORE LAWNS",
-        "postcode": "W13 0NA",
-        "price": 450000,
+        "address": "15B, WIMBORNE GARDENS",
+        "postcode": "W13 8BY",
+        "price": 670000,
         "dateOfTransfer": "2025-05-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "15B, WIMBORNE GARDENS",
-        "postcode": "W13 8BY",
-        "price": 670000,
+        "address": "14, GLENMORE LAWNS",
+        "postcode": "W13 0NA",
+        "price": 450000,
         "dateOfTransfer": "2025-05-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3565,6 +3927,22 @@
         "newBuild": false
       },
       {
+        "address": "7, FLAT B, CASTLE HILL PARADE",
+        "postcode": "W13 8JP",
+        "price": 410000,
+        "dateOfTransfer": "2025-04-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, FLAT 3, KIRCHEN ROAD",
+        "postcode": "W13 0TY",
+        "price": 310528,
+        "dateOfTransfer": "2025-04-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "3, ST STEPHENS AVENUE",
         "postcode": "W13 8ES",
         "price": 1955000,
@@ -3586,22 +3964,6 @@
         "price": 1150000,
         "dateOfTransfer": "2025-04-25",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, FLAT 3, KIRCHEN ROAD",
-        "postcode": "W13 0TY",
-        "price": 310528,
-        "dateOfTransfer": "2025-04-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "7, FLAT B, CASTLE HILL PARADE",
-        "postcode": "W13 8JP",
-        "price": 410000,
-        "dateOfTransfer": "2025-04-25",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3653,99 +4015,11 @@
         "newBuild": false
       },
       {
-        "address": "4, HIGHVIEW ROAD",
-        "postcode": "W13 0HB",
-        "price": 385000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "SOMERVILLE HOUSE, 22, FLAT 9, SOMERSET ROAD",
-        "postcode": "W13 9PB",
-        "price": 370000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "148, NORTHCROFT ROAD",
-        "postcode": "W13 9SU",
-        "price": 750000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "62, SEAFORD ROAD, EALING",
-        "postcode": "W13 9HT",
-        "price": 725000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "64, PURSEWARDENS CLOSE",
         "postcode": "W13 9PW",
         "price": 340000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "3, CHARLES ROAD",
-        "postcode": "W13 0ND",
-        "price": 712500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "22, JEFFERSON CLOSE",
-        "postcode": "W13 9XJ",
-        "price": 346000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "16, FLAT 8, SOMERSET ROAD",
-        "postcode": "W13 9PB",
-        "price": 440000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "17, ALEXANDRIA ROAD",
-        "postcode": "W13 0NP",
-        "price": 467500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "39, MANOR ROAD",
-        "postcode": "W13 0JA",
-        "price": 778500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "HILTON HOUSE, FLAT 5, AMHERST ROAD",
-        "postcode": "W13 8NF",
-        "price": 410000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "30, HIGHVIEW ROAD",
-        "postcode": "W13 0HB",
-        "price": 1200000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3781,6 +4055,94 @@
         "newBuild": false
       },
       {
+        "address": "16, FLAT 8, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 440000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, ALEXANDRIA ROAD",
+        "postcode": "W13 0NP",
+        "price": 467500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, MANOR ROAD",
+        "postcode": "W13 0JA",
+        "price": 778500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "148, NORTHCROFT ROAD",
+        "postcode": "W13 9SU",
+        "price": 750000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "62, SEAFORD ROAD, EALING",
+        "postcode": "W13 9HT",
+        "price": 725000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HILTON HOUSE, FLAT 5, AMHERST ROAD",
+        "postcode": "W13 8NF",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, HIGHVIEW ROAD",
+        "postcode": "W13 0HB",
+        "price": 1200000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, CHARLES ROAD",
+        "postcode": "W13 0ND",
+        "price": 712500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, JEFFERSON CLOSE",
+        "postcode": "W13 9XJ",
+        "price": 346000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, HIGHVIEW ROAD",
+        "postcode": "W13 0HB",
+        "price": 385000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SOMERVILLE HOUSE, 22, FLAT 9, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 370000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BROUGHTON COURT, 41, BROUGHTON ROAD",
         "postcode": "W13 8QN",
         "price": 435000,
@@ -3797,22 +4159,6 @@
         "newBuild": false
       },
       {
-        "address": "73, FLAT 1, NORTHFIELD AVENUE",
-        "postcode": "W13 9QP",
-        "price": 517500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "73, FLAT 2, NORTHFIELD AVENUE",
-        "postcode": "W13 9QP",
-        "price": 615000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ASHMEAD HOUSE, 311, TEWKESBURY ROAD",
         "postcode": "W13 0DP",
         "price": 325000,
@@ -3821,25 +4167,17 @@
         "newBuild": false
       },
       {
-        "address": "7, HASTINGS ROAD",
-        "postcode": "W13 8QY",
-        "price": 675000,
+        "address": "LANSDOWNE LODGE, 8, SUTHERLAND ROAD",
+        "postcode": "W13 0DX",
+        "price": 445000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "81, ADELAIDE ROAD",
-        "postcode": "W13 9ED",
-        "price": 1000000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "45, FLAT 1, HARTINGTON ROAD",
-        "postcode": "W13 8QL",
-        "price": 475000,
+        "address": "14, FLAT 5, SUTHERLAND ROAD",
+        "postcode": "W13 0DT",
+        "price": 570000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3850,14 +4188,6 @@
         "price": 910000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "14, FLAT 5, SUTHERLAND ROAD",
-        "postcode": "W13 0DT",
-        "price": 570000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3893,9 +4223,41 @@
         "newBuild": false
       },
       {
-        "address": "LANSDOWNE LODGE, 8, SUTHERLAND ROAD",
-        "postcode": "W13 0DX",
-        "price": 445000,
+        "address": "7, HASTINGS ROAD",
+        "postcode": "W13 8QY",
+        "price": 675000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "81, ADELAIDE ROAD",
+        "postcode": "W13 9ED",
+        "price": 1000000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "45, FLAT 1, HARTINGTON ROAD",
+        "postcode": "W13 8QL",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, FLAT 1, NORTHFIELD AVENUE",
+        "postcode": "W13 9QP",
+        "price": 517500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, FLAT 2, NORTHFIELD AVENUE",
+        "postcode": "W13 9QP",
+        "price": 615000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3909,9 +4271,41 @@
         "newBuild": false
       },
       {
+        "address": "7, FLAT C, CASTLE HILL PARADE",
+        "postcode": "W13 8JP",
+        "price": 390000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, ARDEN ROAD",
+        "postcode": "W13 8RP",
+        "price": 480000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, FLAT 3, HASTINGS ROAD",
+        "postcode": "W13 8QH",
+        "price": 495000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "3, BERNARD AVENUE",
         "postcode": "W13 9TG",
         "price": 438000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "124, FLAT 1, GORDON ROAD",
+        "postcode": "W13 8PJ",
+        "price": 586500,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3933,34 +4327,10 @@
         "newBuild": false
       },
       {
-        "address": "32, FLAT 3, HASTINGS ROAD",
-        "postcode": "W13 8QH",
-        "price": 495000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "124, FLAT 1, GORDON ROAD",
-        "postcode": "W13 8PJ",
-        "price": 586500,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "14, ARDEN ROAD",
-        "postcode": "W13 8RP",
-        "price": 480000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "7, FLAT C, CASTLE HILL PARADE",
-        "postcode": "W13 8JP",
-        "price": 390000,
-        "dateOfTransfer": "2025-03-27",
+        "address": "DEREHAM HOUSE, 11, DRAYTON GREEN",
+        "postcode": "W13 0ET",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3973,25 +4343,17 @@
         "newBuild": false
       },
       {
-        "address": "DEREHAM HOUSE, 11, DRAYTON GREEN",
-        "postcode": "W13 0ET",
-        "price": 525000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
+        "address": "12, WYNDHAM ROAD",
+        "postcode": "W13 9TE",
+        "price": 1078000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "5, PRINCES ROAD",
         "postcode": "W13 9AS",
         "price": 710000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, WYNDHAM ROAD",
-        "postcode": "W13 9TE",
-        "price": 1078000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4029,12 +4391,12 @@
         "newBuild": false
       },
       {
-        "address": "5, FELIX ROAD",
-        "postcode": "W13 0NY",
-        "price": 1082000,
+        "address": "11, BRENTSIDE CLOSE",
+        "postcode": "W13 0BD",
+        "price": 751000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": true
+        "propertyType": "Semi-detached",
+        "newBuild": false
       },
       {
         "address": "2, LAKESIDE",
@@ -4045,27 +4407,19 @@
         "newBuild": false
       },
       {
-        "address": "11, BRENTSIDE CLOSE",
-        "postcode": "W13 0BD",
-        "price": 751000,
+        "address": "5, FELIX ROAD",
+        "postcode": "W13 0NY",
+        "price": 1082000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
+        "propertyType": "Terraced",
+        "newBuild": true
       },
       {
-        "address": "34, DUDLEY GARDENS",
-        "postcode": "W13 9LT",
-        "price": 892000,
+        "address": "24, FLAT 2, BROUGHTON ROAD",
+        "postcode": "W13 8QW",
+        "price": 480800,
         "dateOfTransfer": "2025-03-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "56, SALISBURY ROAD",
-        "postcode": "W13 9TX",
-        "price": 820000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4077,11 +4431,19 @@
         "newBuild": false
       },
       {
-        "address": "24, FLAT 2, BROUGHTON ROAD",
-        "postcode": "W13 8QW",
-        "price": 480800,
+        "address": "56, SALISBURY ROAD",
+        "postcode": "W13 9TX",
+        "price": 820000,
         "dateOfTransfer": "2025-03-20",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, DUDLEY GARDENS",
+        "postcode": "W13 9LT",
+        "price": 892000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4117,17 +4479,17 @@
         "newBuild": false
       },
       {
-        "address": "35B, COLDERSHAW ROAD",
-        "postcode": "W13 9EA",
-        "price": 510000,
+        "address": "13, NORTHFIELD AVENUE",
+        "postcode": "W13 9QP",
+        "price": 430000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "13, NORTHFIELD AVENUE",
-        "postcode": "W13 9QP",
-        "price": 430000,
+        "address": "144A - 144B, ARGYLE ROAD",
+        "postcode": "W13 8ER",
+        "price": 625000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4149,9 +4511,9 @@
         "newBuild": false
       },
       {
-        "address": "144A - 144B, ARGYLE ROAD",
-        "postcode": "W13 8ER",
-        "price": 625000,
+        "address": "35B, COLDERSHAW ROAD",
+        "postcode": "W13 9EA",
+        "price": 510000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4181,14 +4543,6 @@
         "newBuild": false
       },
       {
-        "address": "73, ALEXANDRIA ROAD",
-        "postcode": "W13 0NR",
-        "price": 860000,
-        "dateOfTransfer": "2025-03-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "77A, SYDNEY ROAD, EALING",
         "postcode": "W13 9EZ",
         "price": 370000,
@@ -4197,17 +4551,17 @@
         "newBuild": false
       },
       {
-        "address": "11, CONNAUGHT ROAD",
-        "postcode": "W13 0TF",
-        "price": 520000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
+        "address": "73, ALEXANDRIA ROAD",
+        "postcode": "W13 0NR",
+        "price": 860000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "76, CAVENDISH AVENUE",
-        "postcode": "W13 0JN",
-        "price": 465000,
+        "address": "19, SECOND FLOOR FLAT, KIRCHEN ROAD",
+        "postcode": "W13 0TY",
+        "price": 330000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4221,6 +4575,14 @@
         "newBuild": false
       },
       {
+        "address": "76, CAVENDISH AVENUE",
+        "postcode": "W13 0JN",
+        "price": 465000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "6, CAREW ROAD",
         "postcode": "W13 9QL",
         "price": 1210000,
@@ -4229,18 +4591,10 @@
         "newBuild": false
       },
       {
-        "address": "19, SECOND FLOOR FLAT, KIRCHEN ROAD",
-        "postcode": "W13 0TY",
-        "price": 330000,
+        "address": "11, CONNAUGHT ROAD",
+        "postcode": "W13 0TF",
+        "price": 520000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "14, FLAT 9, SUTHERLAND ROAD",
-        "postcode": "W13 0DT",
-        "price": 1100000,
-        "dateOfTransfer": "2025-03-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4248,6 +4602,14 @@
         "address": "ROSEMOOR HOUSE, 90 - 94, FLAT 17, BROADWAY, WEST EALING",
         "postcode": "W13 0SA",
         "price": 285000,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FLAT 9, SUTHERLAND ROAD",
+        "postcode": "W13 0DT",
+        "price": 1100000,
         "dateOfTransfer": "2025-03-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4266,30 +4628,6 @@
         "price": 300000,
         "dateOfTransfer": "2025-03-03",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "TUDOR COURT, 3, AMHERST ROAD",
-        "postcode": "W13 8NE",
-        "price": 440000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "61, CAVENDISH AVENUE",
-        "postcode": "W13 0JY",
-        "price": 475000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "6, GROUND FLOOR REAR FLAT, ELERS ROAD",
-        "postcode": "W13 9QD",
-        "price": 690000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4325,11 +4663,43 @@
         "newBuild": false
       },
       {
+        "address": "6, GROUND FLOOR REAR FLAT, ELERS ROAD",
+        "postcode": "W13 9QD",
+        "price": 690000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "70, NORTHFIELD AVENUE",
         "postcode": "W13 9RR",
         "price": 388000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "TUDOR COURT, 3, AMHERST ROAD",
+        "postcode": "W13 8NE",
+        "price": 440000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "61, CAVENDISH AVENUE",
+        "postcode": "W13 0JY",
+        "price": 475000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ASHMEAD HOUSE, 411, TEWKESBURY ROAD",
+        "postcode": "W13 0DP",
+        "price": 326000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4357,10 +4727,10 @@
         "newBuild": false
       },
       {
-        "address": "ASHMEAD HOUSE, 411, TEWKESBURY ROAD",
-        "postcode": "W13 0DP",
-        "price": 326000,
-        "dateOfTransfer": "2025-02-27",
+        "address": "FLAT 1, 93, BURNHAM WAY",
+        "postcode": "W13 9YB",
+        "price": 490000,
+        "dateOfTransfer": "2025-02-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4370,14 +4740,6 @@
         "price": 1145000,
         "dateOfTransfer": "2025-02-25",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "FLAT 1, 93, BURNHAM WAY",
-        "postcode": "W13 9YB",
-        "price": 490000,
-        "dateOfTransfer": "2025-02-25",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4397,12 +4759,12 @@
         "newBuild": false
       },
       {
-        "address": "29, BELSIZE AVENUE",
-        "postcode": "W13 9TF",
-        "price": 722500,
+        "address": "SOMERVILLE HOUSE, 22, FLAT 3, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 820000,
         "dateOfTransfer": "2025-02-20",
-        "propertyType": "Terraced",
-        "newBuild": false
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "79, THE AVENUE",
@@ -4410,6 +4772,14 @@
         "price": 1600000,
         "dateOfTransfer": "2025-02-20",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "29, BELSIZE AVENUE",
+        "postcode": "W13 9TF",
+        "price": 722500,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4421,12 +4791,12 @@
         "newBuild": false
       },
       {
-        "address": "SOMERVILLE HOUSE, 22, FLAT 3, SOMERSET ROAD",
-        "postcode": "W13 9PB",
-        "price": 820000,
-        "dateOfTransfer": "2025-02-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
+        "address": "85, SEAFORD ROAD, EALING",
+        "postcode": "W13 9HS",
+        "price": 370000,
+        "dateOfTransfer": "2025-02-19",
+        "propertyType": "Terraced",
+        "newBuild": false
       },
       {
         "address": "56, KINGSDOWN AVENUE, EALING",
@@ -4434,14 +4804,6 @@
         "price": 561000,
         "dateOfTransfer": "2025-02-19",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "85, SEAFORD ROAD, EALING",
-        "postcode": "W13 9HS",
-        "price": 370000,
-        "dateOfTransfer": "2025-02-19",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4477,17 +4839,17 @@
         "newBuild": false
       },
       {
-        "address": "SOMERVILLE HOUSE, 22, FLAT 5, SOMERSET ROAD",
+        "address": "SOMERVILLE HOUSE, 22, FLAT 7, SOMERSET ROAD",
         "postcode": "W13 9PB",
-        "price": 665000,
+        "price": 640000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
       },
       {
-        "address": "SOMERVILLE HOUSE, 22, FLAT 7, SOMERSET ROAD",
+        "address": "SOMERVILLE HOUSE, 22, FLAT 5, SOMERSET ROAD",
         "postcode": "W13 9PB",
-        "price": 640000,
+        "price": 665000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
@@ -4549,12 +4911,12 @@
         "newBuild": false
       },
       {
-        "address": "66, BELLEVUE ROAD",
-        "postcode": "W13 8DE",
-        "price": 985000,
+        "address": "SOMERVILLE HOUSE, 22, FLAT 4, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 617353,
         "dateOfTransfer": "2025-02-03",
-        "propertyType": "Terraced",
-        "newBuild": false
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "25, PEAL GARDENS",
@@ -4565,12 +4927,12 @@
         "newBuild": false
       },
       {
-        "address": "SOMERVILLE HOUSE, 22, FLAT 4, SOMERSET ROAD",
-        "postcode": "W13 9PB",
-        "price": 617353,
+        "address": "66, BELLEVUE ROAD",
+        "postcode": "W13 8DE",
+        "price": 985000,
         "dateOfTransfer": "2025-02-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
+        "propertyType": "Terraced",
+        "newBuild": false
       },
       {
         "address": "25, GROUND FLOOR FLAT, ADELAIDE ROAD",
@@ -4579,6 +4941,22 @@
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "SOMERVILLE HOUSE, 22, FLAT 1, SOMERSET ROAD",
+        "postcode": "W13 9PB",
+        "price": 785326,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "43, FELIX ROAD",
+        "postcode": "W13 0NY",
+        "price": 993600,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": true
       },
       {
         "address": "SOMERVILLE HOUSE, 22, FLAT 2, SOMERSET ROAD",
@@ -4621,22 +4999,6 @@
         "newBuild": false
       },
       {
-        "address": "SOMERVILLE HOUSE, 22, FLAT 1, SOMERSET ROAD",
-        "postcode": "W13 9PB",
-        "price": 785326,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
-        "address": "43, FELIX ROAD",
-        "postcode": "W13 0NY",
-        "price": 993600,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": true
-      },
-      {
         "address": "12, BERNARD AVENUE",
         "postcode": "W13 9TG",
         "price": 1010000,
@@ -4669,6 +5031,14 @@
         "newBuild": false
       },
       {
+        "address": "29A, DRAYTON GROVE",
+        "postcode": "W13 0LA",
+        "price": 390000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "PEAR TREE COTTAGE, BRADLEY GARDENS",
         "postcode": "W13 8HF",
         "price": 849950,
@@ -4693,19 +5063,11 @@
         "newBuild": false
       },
       {
-        "address": "29A, DRAYTON GROVE",
-        "postcode": "W13 0LA",
-        "price": 390000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "49, HASLEMERE AVENUE",
-        "postcode": "W13 9UH",
-        "price": 355000,
+        "address": "150, BROADWAY, WEST EALING",
+        "postcode": "W13 0TL",
+        "price": 1000000,
         "dateOfTransfer": "2025-01-23",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4717,11 +5079,11 @@
         "newBuild": false
       },
       {
-        "address": "150, BROADWAY, WEST EALING",
-        "postcode": "W13 0TL",
-        "price": 1000000,
+        "address": "49, HASLEMERE AVENUE",
+        "postcode": "W13 9UH",
+        "price": 355000,
         "dateOfTransfer": "2025-01-23",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4749,17 +5111,17 @@
         "newBuild": true
       },
       {
-        "address": "41, ALTENBURG AVENUE",
-        "postcode": "W13 9RN",
-        "price": 960000,
+        "address": "9, BELSIZE AVENUE",
+        "postcode": "W13 9TF",
+        "price": 912000,
         "dateOfTransfer": "2025-01-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "9, BELSIZE AVENUE",
-        "postcode": "W13 9TF",
-        "price": 912000,
+        "address": "41, ALTENBURG AVENUE",
+        "postcode": "W13 9RN",
+        "price": 960000,
         "dateOfTransfer": "2025-01-20",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4773,9 +5135,9 @@
         "newBuild": false
       },
       {
-        "address": "16, FLAT 1, HASTINGS ROAD",
+        "address": "10B, HASTINGS ROAD",
         "postcode": "W13 8QY",
-        "price": 380000,
+        "price": 560000,
         "dateOfTransfer": "2025-01-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4797,11 +5159,19 @@
         "newBuild": false
       },
       {
-        "address": "10B, HASTINGS ROAD",
+        "address": "16, FLAT 1, HASTINGS ROAD",
         "postcode": "W13 8QY",
-        "price": 560000,
+        "price": 380000,
         "dateOfTransfer": "2025-01-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, COLEBROOKE AVENUE",
+        "postcode": "W13 8JZ",
+        "price": 1830000,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4821,14 +5191,6 @@
         "newBuild": false
       },
       {
-        "address": "21, COLEBROOKE AVENUE",
-        "postcode": "W13 8JZ",
-        "price": 1830000,
-        "dateOfTransfer": "2025-01-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "1, FELIX ROAD",
         "postcode": "W13 0NY",
         "price": 1026000,
@@ -4837,19 +5199,19 @@
         "newBuild": true
       },
       {
-        "address": "23, ALTENBURG AVENUE",
-        "postcode": "W13 9RN",
-        "price": 887500,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "23, PRINCES ROAD",
         "postcode": "W13 9AS",
         "price": 370000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, ALTENBURG AVENUE",
+        "postcode": "W13 9RN",
+        "price": 887500,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4877,8 +5239,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 738040,
-    "medianPrice": 670000
+    "averagePrice": 736622,
+    "medianPrice": 665000
   },
   "representatives": {
     "representatives": [

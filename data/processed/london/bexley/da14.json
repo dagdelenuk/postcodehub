@@ -3,8 +3,8 @@
   "slug": "da14",
   "city": "London",
   "borough": "Bexley",
-  "latitude": 51.42493235882355,
-  "longitude": 0.11203465686274504,
+  "latitude": 51.42504046761134,
+  "longitude": 0.11200621255060729,
   "wards": [
     "Blendon & Penhill",
     "Chislehurst",
@@ -122,7 +122,8 @@
         "urn": "101426",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/12/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Alma Road, Sidcup",
         "postcode": "DA14 4ED",
         "numberOfPupils": 664,
@@ -134,6 +135,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "38 Knoll Road, Sidcup",
         "postcode": "DA14 4QU",
         "numberOfPupils": 311,
@@ -144,7 +146,8 @@
         "urn": "134185",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "08/03/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Oxford Road, Sidcup",
         "postcode": "DA14 6LW",
         "numberOfPupils": 207,
@@ -155,7 +158,8 @@
         "urn": "136281",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/02/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Sevenoaks Way, Sidcup",
         "postcode": "DA14 5AA",
         "numberOfPupils": 439,
@@ -166,7 +170,8 @@
         "urn": "138686",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bexley Lane, Sidcup",
         "postcode": "DA14 4JN",
         "numberOfPupils": 994,
@@ -177,7 +182,8 @@
         "urn": "139561",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/05/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "167 Rectory Lane, Sidcup",
         "postcode": "DA14 5BU",
         "numberOfPupils": 112,
@@ -188,7 +194,8 @@
         "urn": "142723",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "18/07/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Riverside Road, Sidcup",
         "postcode": "DA14 4PX",
         "numberOfPupils": 338,
@@ -199,7 +206,8 @@
         "urn": "147071",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bexley Lane, Sidcup",
         "postcode": "DA14 4JN",
         "numberOfPupils": 137,
@@ -210,7 +218,8 @@
         "urn": "149048",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "26/09/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Baugh Road, Sidcup",
         "postcode": "DA14 5ED",
         "numberOfPupils": 182,
@@ -240,9 +249,9 @@
       },
       {
         "month": "2025-10",
-        "totalCrimes": 206,
+        "totalCrimes": 205,
         "violentCrimes": 74,
-        "propertyCrimes": 78
+        "propertyCrimes": 77
       },
       {
         "month": "2025-11",
@@ -305,20 +314,180 @@
       "robbery": 46,
       "shoplifting": 186,
       "theft-from-the-person": 28,
-      "vehicle-crime": 200,
+      "vehicle-crime": 199,
       "violent-crime": 709,
       "other-crime": 26
     },
-    "totalLast12Months": 2435
+    "totalLast12Months": 2434
   },
   "property": {
     "sales": [
+      {
+        "address": "4, BEDENS ROAD",
+        "postcode": "DA14 5JQ",
+        "price": 475000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, DENBERRY DRIVE",
+        "postcode": "DA14 4LB",
+        "price": 1125000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, UPPERTON ROAD",
+        "postcode": "DA14 6AT",
+        "price": 1250000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "PROSPECT COURT, 6, FOOTS CRAY HIGH STREET",
+        "postcode": "DA14 5HN",
+        "price": 290000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, LINCOLN ROAD",
+        "postcode": "DA14 6LQ",
+        "price": 540000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "93, BIRKBECK ROAD",
+        "postcode": "DA14 4DJ",
+        "price": 681000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, CARLTON GREEN",
+        "postcode": "DA14 6DB",
+        "price": 365000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47, BIRCHWOOD AVENUE",
+        "postcode": "DA14 4JZ",
+        "price": 825000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "127, WALTON ROAD",
+        "postcode": "DA14 4LL",
+        "price": 845000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "TUDOR COURT, 34, HATHERLEY CRESCENT",
+        "postcode": "DA14 4HY",
+        "price": 249950,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PERRY HOUSE, FLAT 4, CHISLEHURST ROAD",
+        "postcode": "DA14 6BE",
+        "price": 325000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50, BIRCHWOOD AVENUE",
+        "postcode": "DA14 4JU",
+        "price": 492500,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7E, HATHERLEY ROAD",
+        "postcode": "DA14 4BH",
+        "price": 281000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, SUSSEX ROAD",
+        "postcode": "DA14 6LG",
+        "price": 426000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "3, LANGDON SHAW",
+        "postcode": "DA14 6AX",
+        "price": 475000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, BIRCHWOOD AVENUE",
+        "postcode": "DA14 4LF",
+        "price": 512000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, ST GEORGES ROAD",
+        "postcode": "DA14 5JN",
+        "price": 580000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "236, MAIN ROAD",
+        "postcode": "DA14 6RW",
+        "price": 775000,
+        "dateOfTransfer": "2026-06-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "23, OXFORD ROAD",
         "postcode": "DA14 6LW",
         "price": 450000,
         "dateOfTransfer": "2026-06-12",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "JULIAN COURT, 12, 6, GRANVILLE ROAD",
+        "postcode": "DA14 4DP",
+        "price": 277000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PELHAM COURT, 44, 5, HATHERLEY ROAD",
+        "postcode": "DA14 4TB",
+        "price": 227500,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -346,9 +515,25 @@
         "newBuild": false
       },
       {
+        "address": "LINDEN COURT, 192, 1, MAIN ROAD",
+        "postcode": "DA14 6RU",
+        "price": 153000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "29, WOODCHURCH CLOSE",
         "postcode": "DA14 6QH",
         "price": 330000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FINCH COURT, 10, FLAT 41, LANSDOWN ROAD",
+        "postcode": "DA14 4EN",
+        "price": 190000,
         "dateOfTransfer": "2026-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -398,6 +583,14 @@
         "postcode": "DA14 5HY",
         "price": 371000,
         "dateOfTransfer": "2026-05-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, MADDOCKS CLOSE",
+        "postcode": "DA14 5JH",
+        "price": 290000,
+        "dateOfTransfer": "2026-05-13",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -482,6 +675,14 @@
         "newBuild": false
       },
       {
+        "address": "46, MAYLANDS DRIVE",
+        "postcode": "DA14 4RZ",
+        "price": 212000,
+        "dateOfTransfer": "2026-04-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "21, ROYAL ROAD",
         "postcode": "DA14 4RG",
         "price": 665000,
@@ -511,14 +712,6 @@
         "price": 350000,
         "dateOfTransfer": "2026-04-01",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "169, MAIDSTONE ROAD",
-        "postcode": "DA14 5AN",
-        "price": 432500,
-        "dateOfTransfer": "2026-03-31",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -578,6 +771,14 @@
         "newBuild": false
       },
       {
+        "address": "169, MAIDSTONE ROAD",
+        "postcode": "DA14 5AN",
+        "price": 432500,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "GLENROSE COURT, 55, FLAT 36, SIDCUP HILL",
         "postcode": "DA14 6HG",
         "price": 132500,
@@ -591,6 +792,14 @@
         "price": 359000,
         "dateOfTransfer": "2026-03-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "103, CRAY ROAD",
+        "postcode": "DA14 5DL",
+        "price": 460000,
+        "dateOfTransfer": "2026-03-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -634,11 +843,35 @@
         "newBuild": false
       },
       {
+        "address": "EMBASSY COURT, 20, LANSDOWN ROAD",
+        "postcode": "DA14 4EW",
+        "price": 303000,
+        "dateOfTransfer": "2026-03-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "42, CLARENCE CRESCENT",
         "postcode": "DA14 4DF",
         "price": 715000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "93, MALLARD WALK",
+        "postcode": "DA14 6SG",
+        "price": 180000,
+        "dateOfTransfer": "2026-03-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "93, MALLARD WALK",
+        "postcode": "DA14 6SG",
+        "price": 180000,
+        "dateOfTransfer": "2026-03-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -655,6 +888,14 @@
         "price": 325000,
         "dateOfTransfer": "2026-02-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, ASH CLOSE",
+        "postcode": "DA14 4HF",
+        "price": 224903,
+        "dateOfTransfer": "2026-02-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -690,6 +931,14 @@
         "newBuild": false
       },
       {
+        "address": "27A, MAYLANDS DRIVE",
+        "postcode": "DA14 4SB",
+        "price": 250000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BOOMTOWN APARTMENTS, 2, 25, PROGRESSIVE CLOSE",
         "postcode": "DA14 5HZ",
         "price": 252000,
@@ -698,17 +947,17 @@
         "newBuild": false
       },
       {
-        "address": "MIDLAND COURT, 81 - 83, SIDCUP HIGH STREET",
-        "postcode": "DA14 6DW",
-        "price": 950000,
-        "dateOfTransfer": "2026-02-13",
-        "propertyType": "Other",
+        "address": "2, FARADAY AVENUE",
+        "postcode": "DA14 4JD",
+        "price": 670000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
         "address": "MIDLAND COURT, 81 - 83, SIDCUP HIGH STREET",
         "postcode": "DA14 6DW",
-        "price": 1200000,
+        "price": 950000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Other",
         "newBuild": false
@@ -722,6 +971,22 @@
         "newBuild": false
       },
       {
+        "address": "MIDLAND COURT, 81 - 83, SIDCUP HIGH STREET",
+        "postcode": "DA14 6DW",
+        "price": 1200000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "108, WALTON ROAD",
+        "postcode": "DA14 4LW",
+        "price": 850000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "323, MAIN ROAD",
         "postcode": "DA14 6QG",
         "price": 537500,
@@ -730,11 +995,11 @@
         "newBuild": false
       },
       {
-        "address": "14, OLD FORGE WAY",
-        "postcode": "DA14 4QL",
-        "price": 840000,
-        "dateOfTransfer": "2026-02-06",
-        "propertyType": "Terraced",
+        "address": "68, DAVENPORT ROAD",
+        "postcode": "DA14 4PW",
+        "price": 560000,
+        "dateOfTransfer": "2026-02-10",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -743,6 +1008,14 @@
         "price": 280000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, OLD FORGE WAY",
+        "postcode": "DA14 4QL",
+        "price": 840000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -762,6 +1035,14 @@
         "newBuild": false
       },
       {
+        "address": "OLD SCHOOL COURT, 2, 4, CLARENCE CRESCENT",
+        "postcode": "DA14 4DF",
+        "price": 450000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "KINGSWOOD COURT, 47 - 51, 19, SIDCUP HILL",
         "postcode": "DA14 6FH",
         "price": 265000,
@@ -778,17 +1059,17 @@
         "newBuild": false
       },
       {
-        "address": "108, BIRCHWOOD AVENUE",
-        "postcode": "DA14 4JU",
-        "price": 750000,
+        "address": "2, THURSLAND ROAD",
+        "postcode": "DA14 5LJ",
+        "price": 458500,
         "dateOfTransfer": "2026-01-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "2, THURSLAND ROAD",
-        "postcode": "DA14 5LJ",
-        "price": 458500,
+        "address": "108, BIRCHWOOD AVENUE",
+        "postcode": "DA14 4JU",
+        "price": 750000,
         "dateOfTransfer": "2026-01-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -802,22 +1083,6 @@
         "newBuild": false
       },
       {
-        "address": "33, ELLENBOROUGH ROAD",
-        "postcode": "DA14 5JY",
-        "price": 207500,
-        "dateOfTransfer": "2026-01-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "33, ELLENBOROUGH ROAD",
-        "postcode": "DA14 5JY",
-        "price": 207500,
-        "dateOfTransfer": "2026-01-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "47, ELLENBOROUGH ROAD",
         "postcode": "DA14 5JY",
         "price": 205000,
@@ -829,6 +1094,22 @@
         "address": "47, ELLENBOROUGH ROAD",
         "postcode": "DA14 5JY",
         "price": 205000,
+        "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, ELLENBOROUGH ROAD",
+        "postcode": "DA14 5JY",
+        "price": 207500,
+        "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, ELLENBOROUGH ROAD",
+        "postcode": "DA14 5JY",
+        "price": 207500,
         "dateOfTransfer": "2026-01-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -855,6 +1136,22 @@
         "price": 320000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "KINGS COURT, 38, 8, HATHERLEY ROAD",
+        "postcode": "DA14 4AT",
+        "price": 222500,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, ROSEWOOD CLOSE",
+        "postcode": "DA14 4LP",
+        "price": 660000,
+        "dateOfTransfer": "2026-01-22",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -906,19 +1203,19 @@
         "newBuild": false
       },
       {
-        "address": "TRIDENT HOUSE, GRASSINGTON ROAD",
-        "postcode": "DA14 6BY",
-        "price": 300000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "KINGSWOOD COURT, 47 - 51, 43, SIDCUP HILL",
         "postcode": "DA14 6FH",
         "price": 375000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TRIDENT HOUSE, GRASSINGTON ROAD",
+        "postcode": "DA14 6BY",
+        "price": 300000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1346,17 +1643,17 @@
         "newBuild": false
       },
       {
-        "address": "16, SIDCUP HILL GARDENS",
-        "postcode": "DA14 6JP",
-        "price": 355000,
+        "address": "AYOT, HONEYDEN ROAD",
+        "postcode": "DA14 5LX",
+        "price": 205000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "AYOT, HONEYDEN ROAD",
-        "postcode": "DA14 5LX",
-        "price": 205000,
+        "address": "16, SIDCUP HILL GARDENS",
+        "postcode": "DA14 6JP",
+        "price": 355000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1394,19 +1691,19 @@
         "newBuild": false
       },
       {
-        "address": "26, APPLEDORE CRESCENT",
-        "postcode": "DA14 6RQ",
-        "price": 330000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "70, FOOTS CRAY LANE",
         "postcode": "DA14 4NR",
         "price": 380000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26, APPLEDORE CRESCENT",
+        "postcode": "DA14 6RQ",
+        "price": 330000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1514,10 +1811,42 @@
         "newBuild": false
       },
       {
+        "address": "7, GRANVILLE ROAD",
+        "postcode": "DA14 4BW",
+        "price": 310000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44, FELTON LEA",
+        "postcode": "DA14 6BA",
+        "price": 415000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "94, LANGFORD PLACE",
+        "postcode": "DA14 4AZ",
+        "price": 392000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "34, BIRKBECK ROAD",
         "postcode": "DA14 4DE",
         "price": 500000,
         "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, CHURCH ROAD",
+        "postcode": "DA14 6BX",
+        "price": 450000,
+        "dateOfTransfer": "2025-10-16",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1527,14 +1856,6 @@
         "price": 497500,
         "dateOfTransfer": "2025-10-16",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "8, CHURCH ROAD",
-        "postcode": "DA14 6BX",
-        "price": 450000,
-        "dateOfTransfer": "2025-10-16",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1591,6 +1912,14 @@
         "price": 430000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "JANSON COURT, 16, 3, GRANVILLE ROAD",
+        "postcode": "DA14 4BX",
+        "price": 317000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1738,9 +2067,41 @@
         "newBuild": false
       },
       {
+        "address": "2, PARTRIDGE ROAD",
+        "postcode": "DA14 6RS",
+        "price": 450000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "5, ELLENBOROUGH ROAD",
         "postcode": "DA14 5JY",
         "price": 196000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "84, NORTHCOTE ROAD",
+        "postcode": "DA14 6PW",
+        "price": 415000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ROSSMORE, FLAT 1, CHISLEHURST ROAD",
+        "postcode": "DA14 6BJ",
+        "price": 315000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "129, BIRKBECK ROAD",
+        "postcode": "DA14 4DJ",
+        "price": 440000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1762,38 +2123,6 @@
         "newBuild": false
       },
       {
-        "address": "ROSSMORE, FLAT 1, CHISLEHURST ROAD",
-        "postcode": "DA14 6BJ",
-        "price": 315000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "129, BIRKBECK ROAD",
-        "postcode": "DA14 4DJ",
-        "price": 440000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "84, NORTHCOTE ROAD",
-        "postcode": "DA14 6PW",
-        "price": 415000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "2, PARTRIDGE ROAD",
-        "postcode": "DA14 6RS",
-        "price": 450000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "6, WOODCHURCH CLOSE",
         "postcode": "DA14 6QH",
         "price": 410000,
@@ -1807,6 +2136,14 @@
         "price": 450000,
         "dateOfTransfer": "2025-09-02",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "325, MAIN ROAD",
+        "postcode": "DA14 6QG",
+        "price": 480000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1834,9 +2171,9 @@
         "newBuild": false
       },
       {
-        "address": "325, MAIN ROAD",
-        "postcode": "DA14 6QG",
-        "price": 480000,
+        "address": "25, EATON ROAD",
+        "postcode": "DA14 4PE",
+        "price": 515000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1847,14 +2184,6 @@
         "price": 460000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "25, EATON ROAD",
-        "postcode": "DA14 4PE",
-        "price": 515000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1871,14 +2200,6 @@
         "price": 270000,
         "dateOfTransfer": "2025-08-26",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "51, CLEVE ROAD",
-        "postcode": "DA14 4RS",
-        "price": 310000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1914,6 +2235,22 @@
         "newBuild": false
       },
       {
+        "address": "58, FOOTS CRAY LANE",
+        "postcode": "DA14 4NR",
+        "price": 408000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51, CLEVE ROAD",
+        "postcode": "DA14 4RS",
+        "price": 310000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "LARKSPUR LODGE, 22, FLAT 9, LANSDOWN ROAD",
         "postcode": "DA14 4EG",
         "price": 335000,
@@ -1934,6 +2271,14 @@
         "postcode": "DA14 6RE",
         "price": 375000,
         "dateOfTransfer": "2025-08-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, AMBERLEY COURT",
+        "postcode": "DA14 6JT",
+        "price": 170000,
+        "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1970,14 +2315,6 @@
         "newBuild": false
       },
       {
-        "address": "13, AMBERLEY COURT",
-        "postcode": "DA14 6JT",
-        "price": 170000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "65, PRINCES CLOSE",
         "postcode": "DA14 4RH",
         "price": 525000,
@@ -2010,14 +2347,6 @@
         "newBuild": false
       },
       {
-        "address": "97, FLAT 3, SIDCUP HILL",
-        "postcode": "DA14 6JD",
-        "price": 325000,
-        "dateOfTransfer": "2025-08-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "36, FARADAY AVENUE",
         "postcode": "DA14 4JF",
         "price": 640000,
@@ -2039,6 +2368,14 @@
         "price": 550000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "97, FLAT 3, SIDCUP HILL",
+        "postcode": "DA14 6JD",
+        "price": 325000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2282,19 +2619,19 @@
         "newBuild": false
       },
       {
-        "address": "181, NORTH CRAY ROAD",
-        "postcode": "DA14 5LT",
-        "price": 485000,
-        "dateOfTransfer": "2025-07-17",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "127, LONGMEAD DRIVE",
         "postcode": "DA14 4NY",
         "price": 562000,
         "dateOfTransfer": "2025-07-17",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "181, NORTH CRAY ROAD",
+        "postcode": "DA14 5LT",
+        "price": 485000,
+        "dateOfTransfer": "2025-07-17",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2439,6 +2776,14 @@
         "price": 963000,
         "dateOfTransfer": "2025-06-26",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "3, FOWLERS CLOSE",
+        "postcode": "DA14 5LL",
+        "price": 409000,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2618,6 +2963,14 @@
         "newBuild": false
       },
       {
+        "address": "46, SUFFOLK ROAD",
+        "postcode": "DA14 5DD",
+        "price": 395000,
+        "dateOfTransfer": "2025-05-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "20, LONGMEAD DRIVE",
         "postcode": "DA14 4NU",
         "price": 830000,
@@ -2647,14 +3000,6 @@
         "price": 327000,
         "dateOfTransfer": "2025-05-29",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "46, SUFFOLK ROAD",
-        "postcode": "DA14 5DD",
-        "price": 395000,
-        "dateOfTransfer": "2025-05-29",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2850,17 +3195,17 @@
         "newBuild": false
       },
       {
-        "address": "76, THE GROVE",
-        "postcode": "DA14 5NQ",
-        "price": 560000,
+        "address": "72, CLEVE ROAD",
+        "postcode": "DA14 4RR",
+        "price": 340000,
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "72, CLEVE ROAD",
-        "postcode": "DA14 4RR",
-        "price": 340000,
+        "address": "76, THE GROVE",
+        "postcode": "DA14 5NQ",
+        "price": 560000,
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2930,6 +3275,22 @@
         "newBuild": false
       },
       {
+        "address": "40, RIVERSIDE ROAD",
+        "postcode": "DA14 4PU",
+        "price": 420000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, CLARENCE CRESCENT",
+        "postcode": "DA14 4DF",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "27, TAYLORS CLOSE",
         "postcode": "DA14 6TL",
         "price": 237000,
@@ -2946,11 +3307,11 @@
         "newBuild": false
       },
       {
-        "address": "8, CLARENCE CRESCENT",
-        "postcode": "DA14 4DF",
-        "price": 450000,
+        "address": "PLACE COTTAGE, THE GREEN",
+        "postcode": "DA14 6BS",
+        "price": 1400000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2962,14 +3323,6 @@
         "newBuild": false
       },
       {
-        "address": "PLACE COTTAGE, THE GREEN",
-        "postcode": "DA14 6BS",
-        "price": 1400000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "76A, SIDCUP HIGH STREET",
         "postcode": "DA14 6DS",
         "price": 300000,
@@ -2978,43 +3331,11 @@
         "newBuild": false
       },
       {
-        "address": "40, RIVERSIDE ROAD",
-        "postcode": "DA14 4PU",
-        "price": 420000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "54, SYDNEY ROAD",
         "postcode": "DA14 6RB",
         "price": 525000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "5, FARADAY AVENUE",
-        "postcode": "DA14 4JB",
-        "price": 725000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "5, RECTORY LANE",
-        "postcode": "DA14 4QN",
-        "price": 525000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "EMBASSY COURT, 2, LANSDOWN ROAD",
-        "postcode": "DA14 4EW",
-        "price": 335000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3039,6 +3360,22 @@
         "price": 1050000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, RECTORY LANE",
+        "postcode": "DA14 4QN",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "EMBASSY COURT, 2, LANSDOWN ROAD",
+        "postcode": "DA14 4EW",
+        "price": 335000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3079,6 +3416,14 @@
         "price": 270000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FARADAY AVENUE",
+        "postcode": "DA14 4JB",
+        "price": 725000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3154,19 +3499,19 @@
         "newBuild": false
       },
       {
-        "address": "128, MAYLANDS DRIVE",
-        "postcode": "DA14 4RL",
-        "price": 440000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "SYDNEY COURT, 7 - 13, FLAT 11, LANSDOWN ROAD",
         "postcode": "DA14 4EF",
         "price": 380000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "128, MAYLANDS DRIVE",
+        "postcode": "DA14 4RL",
+        "price": 440000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3202,14 +3547,6 @@
         "newBuild": false
       },
       {
-        "address": "11, WOODCHURCH CLOSE",
-        "postcode": "DA14 6QH",
-        "price": 418000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "241, FLAT 6, MAIN ROAD",
         "postcode": "DA14 6QS",
         "price": 245000,
@@ -3218,11 +3555,11 @@
         "newBuild": false
       },
       {
-        "address": "48, RIVERSIDE ROAD",
-        "postcode": "DA14 4PU",
-        "price": 568000,
+        "address": "11, WOODCHURCH CLOSE",
+        "postcode": "DA14 6QH",
+        "price": 418000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3231,6 +3568,14 @@
         "price": 425000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "48, RIVERSIDE ROAD",
+        "postcode": "DA14 4PU",
+        "price": 568000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3338,19 +3683,19 @@
         "newBuild": false
       },
       {
-        "address": "27, SUFFOLK ROAD",
-        "postcode": "DA14 5DD",
-        "price": 290000,
-        "dateOfTransfer": "2025-03-10",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "FINCH COURT, 10, FLAT 7, LANSDOWN ROAD",
         "postcode": "DA14 4EN",
         "price": 225000,
         "dateOfTransfer": "2025-03-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, SUFFOLK ROAD",
+        "postcode": "DA14 5DD",
+        "price": 290000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3402,14 +3747,6 @@
         "newBuild": false
       },
       {
-        "address": "3, ONSLOW DRIVE",
-        "postcode": "DA14 4PB",
-        "price": 482500,
-        "dateOfTransfer": "2025-03-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "15A, ST JOHNS ROAD",
         "postcode": "DA14 4HA",
         "price": 380000,
@@ -3423,6 +3760,14 @@
         "price": 390000,
         "dateOfTransfer": "2025-03-05",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, ONSLOW DRIVE",
+        "postcode": "DA14 4PB",
+        "price": 482500,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3450,14 +3795,6 @@
         "newBuild": false
       },
       {
-        "address": "36, TYRON WAY",
-        "postcode": "DA14 6AZ",
-        "price": 395000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "8, ELLENBOROUGH ROAD",
         "postcode": "DA14 5JZ",
         "price": 305000,
@@ -3469,6 +3806,14 @@
         "address": "118, FOOTS CRAY LANE",
         "postcode": "DA14 4NS",
         "price": 325000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "36, TYRON WAY",
+        "postcode": "DA14 6AZ",
+        "price": 395000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3490,14 +3835,6 @@
         "newBuild": false
       },
       {
-        "address": "2, MELVILLE ROAD",
-        "postcode": "DA14 4LX",
-        "price": 815000,
-        "dateOfTransfer": "2025-02-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "18, ORCHARD ROAD",
         "postcode": "DA14 6RD",
         "price": 525000,
@@ -3506,17 +3843,25 @@
         "newBuild": false
       },
       {
-        "address": "ASHTON COURT, 2A, FLAT 4, CLARENCE CRESCENT",
-        "postcode": "DA14 4DF",
-        "price": 370000,
+        "address": "2, MELVILLE ROAD",
+        "postcode": "DA14 4LX",
+        "price": 815000,
         "dateOfTransfer": "2025-02-27",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
         "address": "1, BRENDON",
         "postcode": "DA14 6DD",
         "price": 300000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ASHTON COURT, 2A, FLAT 4, CLARENCE CRESCENT",
+        "postcode": "DA14 4DF",
+        "price": 370000,
         "dateOfTransfer": "2025-02-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3730,22 +4075,6 @@
         "newBuild": false
       },
       {
-        "address": "22, SUSSEX ROAD",
-        "postcode": "DA14 6LG",
-        "price": 460000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "54, LEWIS ROAD",
-        "postcode": "DA14 4NA",
-        "price": 640000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "14, CHURCH AVENUE",
         "postcode": "DA14 6BU",
         "price": 1110000,
@@ -3759,6 +4088,22 @@
         "price": 317500,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, SUSSEX ROAD",
+        "postcode": "DA14 6LG",
+        "price": 460000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, LEWIS ROAD",
+        "postcode": "DA14 4NA",
+        "price": 640000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3786,19 +4131,19 @@
         "newBuild": false
       },
       {
-        "address": "OLD SCHOOL COURT, 2, 3, CLARENCE CRESCENT",
-        "postcode": "DA14 4DF",
-        "price": 430000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "59, FOOTS CRAY LANE",
         "postcode": "DA14 4NP",
         "price": 540000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "OLD SCHOOL COURT, 2, 3, CLARENCE CRESCENT",
+        "postcode": "DA14 4DF",
+        "price": 430000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3818,19 +4163,19 @@
         "newBuild": false
       },
       {
-        "address": "28, WREN ROAD",
-        "postcode": "DA14 4NG",
-        "price": 560000,
-        "dateOfTransfer": "2025-01-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "8, WALTON ROAD",
         "postcode": "DA14 4LD",
         "price": 900000,
         "dateOfTransfer": "2025-01-29",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, WREN ROAD",
+        "postcode": "DA14 4NG",
+        "price": 560000,
+        "dateOfTransfer": "2025-01-29",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3850,19 +4195,19 @@
         "newBuild": false
       },
       {
-        "address": "8, HIGHVIEW ROAD",
-        "postcode": "DA14 4EX",
-        "price": 1044000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "85, BIRKBECK ROAD",
         "postcode": "DA14 4DJ",
         "price": 457000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, HIGHVIEW ROAD",
+        "postcode": "DA14 4EX",
+        "price": 1044000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3906,14 +4251,6 @@
         "newBuild": false
       },
       {
-        "address": "78, FOOTS CRAY LANE",
-        "postcode": "DA14 4NR",
-        "price": 375000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "5, BLENHEIM COURT",
         "postcode": "DA14 6QQ",
         "price": 320000,
@@ -3927,6 +4264,14 @@
         "price": 350000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "78, FOOTS CRAY LANE",
+        "postcode": "DA14 4NR",
+        "price": 375000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4002,19 +4347,19 @@
         "newBuild": false
       },
       {
-        "address": "11, CHERRYDOWN ROAD",
-        "postcode": "DA14 4PF",
-        "price": 850000,
-        "dateOfTransfer": "2025-01-07",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "WILLOW TREE COURT, 8, CARLTON ROAD",
         "postcode": "DA14 6DG",
         "price": 287000,
         "dateOfTransfer": "2025-01-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, CHERRYDOWN ROAD",
+        "postcode": "DA14 4PF",
+        "price": 850000,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4050,8 +4395,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 441132,
-    "medianPrice": 380000
+    "averagePrice": 442303,
+    "medianPrice": 385000
   },
   "representatives": {
     "representatives": [

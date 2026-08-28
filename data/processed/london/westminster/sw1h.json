@@ -3,8 +3,8 @@
   "slug": "sw1h",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.49864696703294,
-  "longitude": -0.13351194505494504,
+  "latitude": 51.49918382191782,
+  "longitude": -0.1336063972602739,
   "wards": [
     "Nine Elms",
     "St James's"
@@ -45,6 +45,7 @@
         "phaseOfEducation": "16 plus",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Steel House, 11 Tothill Street, Westminster, London",
         "postcode": "SW1H 9LH",
         "numberOfPupils": 610,
@@ -56,97 +57,121 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 3671,
-        "violentCrimes": 870,
-        "propertyCrimes": 2075
+        "totalCrimes": 3787,
+        "violentCrimes": 885,
+        "propertyCrimes": 2170
       },
       {
         "month": "2025-08",
-        "totalCrimes": 3534,
-        "violentCrimes": 838,
-        "propertyCrimes": 1912
+        "totalCrimes": 3664,
+        "violentCrimes": 855,
+        "propertyCrimes": 2007
       },
       {
         "month": "2025-09",
-        "totalCrimes": 3471,
-        "violentCrimes": 953,
-        "propertyCrimes": 1867
+        "totalCrimes": 3580,
+        "violentCrimes": 956,
+        "propertyCrimes": 1964
       },
       {
         "month": "2025-10",
-        "totalCrimes": 3628,
-        "violentCrimes": 885,
-        "propertyCrimes": 2048
+        "totalCrimes": 3785,
+        "violentCrimes": 920,
+        "propertyCrimes": 2161
       },
       {
         "month": "2025-11",
-        "totalCrimes": 3778,
-        "violentCrimes": 903,
-        "propertyCrimes": 2297
+        "totalCrimes": 3924,
+        "violentCrimes": 918,
+        "propertyCrimes": 2411
       },
       {
         "month": "2025-12",
-        "totalCrimes": 3943,
-        "violentCrimes": 881,
-        "propertyCrimes": 2432
+        "totalCrimes": 4100,
+        "violentCrimes": 918,
+        "propertyCrimes": 2538
       },
       {
         "month": "2026-01",
-        "totalCrimes": 3181,
-        "violentCrimes": 823,
-        "propertyCrimes": 1767
+        "totalCrimes": 3332,
+        "violentCrimes": 832,
+        "propertyCrimes": 1897
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2836,
-        "violentCrimes": 694,
-        "propertyCrimes": 1595
+        "totalCrimes": 2928,
+        "violentCrimes": 699,
+        "propertyCrimes": 1672
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2848,
-        "violentCrimes": 717,
-        "propertyCrimes": 1563
+        "totalCrimes": 2944,
+        "violentCrimes": 741,
+        "propertyCrimes": 1630
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2763,
-        "violentCrimes": 764,
-        "propertyCrimes": 1441
+        "totalCrimes": 2855,
+        "violentCrimes": 769,
+        "propertyCrimes": 1512
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2898,
-        "violentCrimes": 923,
-        "propertyCrimes": 1340
+        "totalCrimes": 2983,
+        "violentCrimes": 932,
+        "propertyCrimes": 1403
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2977,
-        "violentCrimes": 831,
-        "propertyCrimes": 1505
+        "totalCrimes": 3030,
+        "violentCrimes": 845,
+        "propertyCrimes": 1544
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6186,
-      "bicycle-theft": 392,
-      "burglary": 748,
-      "criminal-damage-arson": 902,
-      "drugs": 1236,
-      "other-theft": 6992,
-      "possession-of-weapons": 201,
-      "public-order": 1989,
-      "robbery": 1496,
-      "shoplifting": 2453,
-      "theft-from-the-person": 9642,
-      "vehicle-crime": 713,
-      "violent-crime": 6396,
-      "other-crime": 182
+      "anti-social-behaviour": 6257,
+      "bicycle-theft": 393,
+      "burglary": 779,
+      "criminal-damage-arson": 911,
+      "drugs": 1293,
+      "other-theft": 7524,
+      "possession-of-weapons": 204,
+      "public-order": 2048,
+      "robbery": 1504,
+      "shoplifting": 2598,
+      "theft-from-the-person": 9975,
+      "vehicle-crime": 729,
+      "violent-crime": 6514,
+      "other-crime": 183
     },
-    "totalLast12Months": 39528
+    "totalLast12Months": 40912
   },
   "property": {
     "sales": [
+      {
+        "address": "14, QUEEN ANNES GATE",
+        "postcode": "SW1H 9AA",
+        "price": 12000000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 173, VICTORIA STREET",
+        "postcode": "SW1H 0HU",
+        "price": 926000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARTILLERY MANSIONS, 75, FLAT 41, VICTORIA STREET",
+        "postcode": "SW1H 0HZ",
+        "price": 900000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "ARTILLERY MANSIONS, FLAT 6, VICTORIA STREET",
         "postcode": "SW1H 0HZ",
@@ -192,7 +217,7 @@
         "postcode": "SW1H 0HZ",
         "price": 973000,
         "dateOfTransfer": "2026-01-27",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -484,7 +509,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 2126958,
+    "averagePrice": 2292406,
     "medianPrice": 1000000
   },
   "representatives": {

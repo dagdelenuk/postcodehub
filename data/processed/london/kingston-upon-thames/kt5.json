@@ -3,8 +3,8 @@
   "slug": "kt5",
   "city": "London",
   "borough": "Kingston upon Thames",
-  "latitude": 51.390528107238616,
-  "longitude": -0.28673500268096525,
+  "latitude": 51.3903482958904,
+  "longitude": -0.28665458082191814,
   "wards": [
     "Alexandra",
     "Berrylands",
@@ -77,6 +77,7 @@
         "phaseOfEducation": "Nursery",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Middle Green Close, Surbiton",
         "postcode": "KT5 8TD",
         "numberOfPupils": 122,
@@ -86,8 +87,9 @@
         "name": "Grand Avenue Primary and Nursery School",
         "urn": "102580",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "16/06/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Grand Avenue, Surbiton",
         "postcode": "KT5 9HU",
         "numberOfPupils": 655,
@@ -97,8 +99,9 @@
         "name": "Christ Church CofE Primary School",
         "urn": "102586",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "24/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Pine Gardens, Surbiton",
         "postcode": "KT5 8LJ",
         "numberOfPupils": 405,
@@ -109,7 +112,8 @@
         "urn": "140667",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/02/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Knollmead, Tolworth, Surbiton",
         "postcode": "KT5 9QP",
         "numberOfPupils": 248,
@@ -121,97 +125,201 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 328,
-        "violentCrimes": 116,
-        "propertyCrimes": 118
+        "totalCrimes": 326,
+        "violentCrimes": 115,
+        "propertyCrimes": 117
       },
       {
         "month": "2025-08",
-        "totalCrimes": 304,
-        "violentCrimes": 110,
+        "totalCrimes": 301,
+        "violentCrimes": 109,
         "propertyCrimes": 96
       },
       {
         "month": "2025-09",
-        "totalCrimes": 280,
-        "violentCrimes": 109,
-        "propertyCrimes": 77
+        "totalCrimes": 278,
+        "violentCrimes": 107,
+        "propertyCrimes": 76
       },
       {
         "month": "2025-10",
-        "totalCrimes": 395,
-        "violentCrimes": 137,
+        "totalCrimes": 391,
+        "violentCrimes": 135,
         "propertyCrimes": 134
       },
       {
         "month": "2025-11",
         "totalCrimes": 350,
         "violentCrimes": 97,
-        "propertyCrimes": 156
+        "propertyCrimes": 157
       },
       {
         "month": "2025-12",
-        "totalCrimes": 361,
-        "violentCrimes": 117,
+        "totalCrimes": 355,
+        "violentCrimes": 112,
         "propertyCrimes": 152
       },
       {
         "month": "2026-01",
-        "totalCrimes": 320,
+        "totalCrimes": 321,
         "violentCrimes": 121,
-        "propertyCrimes": 107
+        "propertyCrimes": 108
       },
       {
         "month": "2026-02",
-        "totalCrimes": 290,
-        "violentCrimes": 124,
-        "propertyCrimes": 104
+        "totalCrimes": 285,
+        "violentCrimes": 122,
+        "propertyCrimes": 102
       },
       {
         "month": "2026-03",
-        "totalCrimes": 327,
+        "totalCrimes": 325,
         "violentCrimes": 109,
         "propertyCrimes": 124
       },
       {
         "month": "2026-04",
-        "totalCrimes": 278,
-        "violentCrimes": 97,
+        "totalCrimes": 274,
+        "violentCrimes": 95,
         "propertyCrimes": 99
       },
       {
         "month": "2026-05",
-        "totalCrimes": 316,
-        "violentCrimes": 118,
-        "propertyCrimes": 106
+        "totalCrimes": 313,
+        "violentCrimes": 117,
+        "propertyCrimes": 105
       },
       {
         "month": "2026-06",
         "totalCrimes": 280,
         "violentCrimes": 107,
-        "propertyCrimes": 111
+        "propertyCrimes": 112
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 867,
+      "anti-social-behaviour": 856,
       "bicycle-theft": 58,
       "burglary": 169,
-      "criminal-damage-arson": 170,
-      "drugs": 165,
-      "other-theft": 221,
-      "possession-of-weapons": 21,
-      "public-order": 205,
-      "robbery": 39,
+      "criminal-damage-arson": 168,
+      "drugs": 164,
+      "other-theft": 220,
+      "possession-of-weapons": 20,
+      "public-order": 203,
+      "robbery": 38,
       "shoplifting": 308,
-      "theft-from-the-person": 54,
-      "vehicle-crime": 404,
-      "violent-crime": 1097,
+      "theft-from-the-person": 53,
+      "vehicle-crime": 406,
+      "violent-crime": 1085,
       "other-crime": 51
     },
-    "totalLast12Months": 3829
+    "totalLast12Months": 3799
   },
   "property": {
     "sales": [
+      {
+        "address": "190, TOLWORTH RISE SOUTH",
+        "postcode": "KT5 9NB",
+        "price": 630000,
+        "dateOfTransfer": "2026-07-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, KING CHARLES CRESCENT",
+        "postcode": "KT5 8SU",
+        "price": 662463,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, HOBILL WALK",
+        "postcode": "KT5 8SQ",
+        "price": 495000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "59, GRAND AVENUE",
+        "postcode": "KT5 9HU",
+        "price": 675000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, FLAT 5, BERRYLANDS ROAD",
+        "postcode": "KT5 8PD",
+        "price": 290000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, SOUTHWOOD DRIVE",
+        "postcode": "KT5 9PH",
+        "price": 770000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "59, SOUTHWOOD DRIVE",
+        "postcode": "KT5 9PJ",
+        "price": 665000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, GORDON ROAD",
+        "postcode": "KT5 9AR",
+        "price": 373750,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, FLAT 3, SURBITON HILL PARK",
+        "postcode": "KT5 8EX",
+        "price": 295950,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, BERRYLANDS",
+        "postcode": "KT5 8JU",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, BERRYLANDS",
+        "postcode": "KT5 8JT",
+        "price": 1200000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "GUILDFORD HOUSE, 41, FLAT A, ALPHA ROAD",
+        "postcode": "KT5 8BF",
+        "price": 480000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, KINGS DRIVE",
+        "postcode": "KT5 8NH",
+        "price": 890000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "30, WAVERLEY AVENUE",
         "postcode": "KT5 9HD",
@@ -226,6 +334,38 @@
         "price": 275000,
         "dateOfTransfer": "2026-06-18",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, BIRCHINGTON ROAD",
+        "postcode": "KT5 9AS",
+        "price": 757500,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "63, BARNSBURY CRESCENT",
+        "postcode": "KT5 9RF",
+        "price": 337500,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "67, FLAT 2, KING CHARLES ROAD",
+        "postcode": "KT5 8PG",
+        "price": 517000,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, BERRYLANDS ROAD",
+        "postcode": "KT5 8PA",
+        "price": 966000,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -253,19 +393,19 @@
         "newBuild": false
       },
       {
-        "address": "128, KNOLLMEAD",
-        "postcode": "KT5 9QW",
-        "price": 468000,
-        "dateOfTransfer": "2026-06-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "67, BROWNS ROAD",
         "postcode": "KT5 8SP",
         "price": 770000,
         "dateOfTransfer": "2026-06-09",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "128, KNOLLMEAD",
+        "postcode": "KT5 9QW",
+        "price": 468000,
+        "dateOfTransfer": "2026-06-09",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -297,6 +437,14 @@
         "postcode": "KT5 9HW",
         "price": 775000,
         "dateOfTransfer": "2026-05-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "130, TOLWORTH RISE SOUTH",
+        "postcode": "KT5 9NJ",
+        "price": 550000,
+        "dateOfTransfer": "2026-05-26",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -357,17 +505,17 @@
         "newBuild": false
       },
       {
-        "address": "28, KING CHARLES CRESCENT",
-        "postcode": "KT5 8SU",
-        "price": 693000,
+        "address": "32, ADDISON GARDENS",
+        "postcode": "KT5 8DW",
+        "price": 495000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "32, ADDISON GARDENS",
-        "postcode": "KT5 8DW",
-        "price": 495000,
+        "address": "28, KING CHARLES CRESCENT",
+        "postcode": "KT5 8SU",
+        "price": 693000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Terraced",
         "newBuild": false
@@ -389,17 +537,17 @@
         "newBuild": false
       },
       {
-        "address": "1, MEADWAY",
-        "postcode": "KT5 9RG",
-        "price": 480000,
+        "address": "57, GUILFORD AVENUE",
+        "postcode": "KT5 8DG",
+        "price": 785000,
         "dateOfTransfer": "2026-04-27",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "57, GUILFORD AVENUE",
-        "postcode": "KT5 8DG",
-        "price": 785000,
+        "address": "1, MEADWAY",
+        "postcode": "KT5 9RG",
+        "price": 480000,
         "dateOfTransfer": "2026-04-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -533,9 +681,17 @@
         "newBuild": false
       },
       {
-        "address": "18, MEADWAY",
-        "postcode": "KT5 9RG",
-        "price": 510000,
+        "address": "CHARRINGTON BOWL, KINGSTON ROAD",
+        "postcode": "KT5 9PB",
+        "price": 13500000,
+        "dateOfTransfer": "2026-03-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "78, WARREN DRIVE SOUTH",
+        "postcode": "KT5 9QE",
+        "price": 715000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -549,9 +705,9 @@
         "newBuild": false
       },
       {
-        "address": "78, WARREN DRIVE SOUTH",
-        "postcode": "KT5 9QE",
-        "price": 715000,
+        "address": "18, MEADWAY",
+        "postcode": "KT5 9RG",
+        "price": 510000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -589,17 +745,17 @@
         "newBuild": false
       },
       {
-        "address": "50, MORESBY AVENUE",
-        "postcode": "KT5 9DS",
-        "price": 975000,
+        "address": "97, BERESFORD AVENUE",
+        "postcode": "KT5 9LW",
+        "price": 650000,
         "dateOfTransfer": "2026-03-04",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "97, BERESFORD AVENUE",
-        "postcode": "KT5 9LW",
-        "price": 650000,
+        "address": "50, MORESBY AVENUE",
+        "postcode": "KT5 9DS",
+        "price": 975000,
         "dateOfTransfer": "2026-03-04",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -610,6 +766,14 @@
         "price": 610000,
         "dateOfTransfer": "2026-03-02",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "169, TOLWORTH RISE NORTH",
+        "postcode": "KT5 9ES",
+        "price": 560000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -677,6 +841,14 @@
         "newBuild": false
       },
       {
+        "address": "95, GREENFIELD AVENUE",
+        "postcode": "KT5 9HS",
+        "price": 755000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "40, PARKSIDE CRESCENT",
         "postcode": "KT5 9HT",
         "price": 765000,
@@ -701,6 +873,14 @@
         "newBuild": false
       },
       {
+        "address": "48, ADDISON GARDENS",
+        "postcode": "KT5 8DW",
+        "price": 525000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "WREN COURT, 12, FLAT 23, THE AVENUE",
         "postcode": "KT5 8JB",
         "price": 350000,
@@ -717,18 +897,18 @@
         "newBuild": false
       },
       {
-        "address": "48, ADDISON GARDENS",
-        "postcode": "KT5 8DW",
-        "price": 525000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "4, FLAT 3, BERRYLANDS",
         "postcode": "KT5 8JE",
         "price": 370000,
         "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PENNINGTON LODGE, 8, CRANES DRIVE",
+        "postcode": "KT5 8AU",
+        "price": 350000,
+        "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -965,6 +1145,22 @@
         "newBuild": false
       },
       {
+        "address": "76, BERRYLANDS",
+        "postcode": "KT5 8JY",
+        "price": 780000,
+        "dateOfTransfer": "2025-12-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "61, ELMBRIDGE AVENUE",
+        "postcode": "KT5 9EZ",
+        "price": 665000,
+        "dateOfTransfer": "2025-12-08",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "FRANCIS COURT, 10, CRANES PARK AVENUE",
         "postcode": "KT5 8BU",
         "price": 417500,
@@ -1165,6 +1361,14 @@
         "newBuild": false
       },
       {
+        "address": "8, ELMDENE",
+        "postcode": "KT5 9PW",
+        "price": 430000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "MARNCREST, 5, FLAT 5, SURBITON HILL PARK",
         "postcode": "KT5 8EF",
         "price": 165000,
@@ -1173,17 +1377,17 @@
         "newBuild": false
       },
       {
-        "address": "57, BEACONSFIELD ROAD",
-        "postcode": "KT5 9AW",
-        "price": 735000,
+        "address": "178, ELMBRIDGE AVENUE",
+        "postcode": "KT5 9HF",
+        "price": 780000,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "178, ELMBRIDGE AVENUE",
-        "postcode": "KT5 9HF",
-        "price": 780000,
+        "address": "57, BEACONSFIELD ROAD",
+        "postcode": "KT5 9AW",
+        "price": 735000,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1202,6 +1406,14 @@
         "price": 956000,
         "dateOfTransfer": "2025-10-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, THE RETREAT",
+        "postcode": "KT5 8RN",
+        "price": 575000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1325,17 +1537,17 @@
         "newBuild": false
       },
       {
-        "address": "28, MINNIEDALE",
-        "postcode": "KT5 8DH",
-        "price": 775000,
+        "address": "70, MANOR DRIVE",
+        "postcode": "KT5 8NF",
+        "price": 1270000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "70, MANOR DRIVE",
-        "postcode": "KT5 8NF",
-        "price": 1270000,
+        "address": "28, MINNIEDALE",
+        "postcode": "KT5 8DH",
+        "price": 775000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1370,6 +1582,14 @@
         "price": 824000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "99, BERRYLANDS",
+        "postcode": "KT5 8JX",
+        "price": 760000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1453,18 +1673,18 @@
         "newBuild": false
       },
       {
+        "address": "14, REGENT ROAD",
+        "postcode": "KT5 8NL",
+        "price": 1446500,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "83, KING CHARLES ROAD",
         "postcode": "KT5 8PG",
         "price": 1141000,
         "dateOfTransfer": "2025-09-09",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "68, MANOR DRIVE",
-        "postcode": "KT5 8NF",
-        "price": 900000,
-        "dateOfTransfer": "2025-09-05",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1474,6 +1694,14 @@
         "price": 405000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68, MANOR DRIVE",
+        "postcode": "KT5 8NF",
+        "price": 900000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1541,6 +1769,14 @@
         "newBuild": false
       },
       {
+        "address": "6B, PARKLANDS",
+        "postcode": "KT5 8EA",
+        "price": 475000,
+        "dateOfTransfer": "2025-08-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "109A, FLAT 2, CHILTERN DRIVE",
         "postcode": "KT5 8LS",
         "price": 235000,
@@ -1554,14 +1790,6 @@
         "price": 800000,
         "dateOfTransfer": "2025-08-13",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "6B, PARKLANDS",
-        "postcode": "KT5 8EA",
-        "price": 475000,
-        "dateOfTransfer": "2025-08-13",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1722,6 +1950,14 @@
         "price": 395000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "99, ALEXANDRA DRIVE",
+        "postcode": "KT5 9AE",
+        "price": 710000,
+        "dateOfTransfer": "2025-07-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2077,27 +2313,19 @@
         "newBuild": false
       },
       {
-        "address": "20, GRAND AVENUE",
-        "postcode": "KT5 9HU",
-        "price": 862000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "CLIFTON COURT, FLAT 8, HOLLYFIELD ROAD",
-        "postcode": "KT5 9AJ",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "52, THE RIDINGS",
         "postcode": "KT5 8HQ",
         "price": 887500,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "133, GRAND AVENUE",
+        "postcode": "KT5 9HY",
+        "price": 885000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2109,11 +2337,19 @@
         "newBuild": false
       },
       {
-        "address": "133, GRAND AVENUE",
-        "postcode": "KT5 9HY",
-        "price": 885000,
+        "address": "CLIFTON COURT, FLAT 8, HOLLYFIELD ROAD",
+        "postcode": "KT5 9AJ",
+        "price": 400000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, GRAND AVENUE",
+        "postcode": "KT5 9HU",
+        "price": 862000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2130,22 +2366,6 @@
         "price": 398000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "95, ELMBRIDGE AVENUE",
-        "postcode": "KT5 9HB",
-        "price": 811760,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "22, WARREN DRIVE NORTH",
-        "postcode": "KT5 9LQ",
-        "price": 730000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2178,6 +2398,22 @@
         "price": 530000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "95, ELMBRIDGE AVENUE",
+        "postcode": "KT5 9HB",
+        "price": 811760,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, WARREN DRIVE NORTH",
+        "postcode": "KT5 9LQ",
+        "price": 730000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2221,6 +2457,14 @@
         "newBuild": false
       },
       {
+        "address": "20, RAEBURN AVENUE",
+        "postcode": "KT5 9DP",
+        "price": 825000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "65, ENDWAY",
         "postcode": "KT5 9BX",
         "price": 682850,
@@ -2261,14 +2505,6 @@
         "newBuild": false
       },
       {
-        "address": "20, RAEBURN AVENUE",
-        "postcode": "KT5 9DP",
-        "price": 825000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "6, WOODSIDE CLOSE",
         "postcode": "KT5 9JU",
         "price": 631000,
@@ -2293,19 +2529,19 @@
         "newBuild": false
       },
       {
-        "address": "18, CHEYNE HILL",
-        "postcode": "KT5 8BN",
-        "price": 735000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "8, GROVE FOOTPATH",
         "postcode": "KT5 8AT",
         "price": 680000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, CHEYNE HILL",
+        "postcode": "KT5 8BN",
+        "price": 735000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2333,14 +2569,6 @@
         "newBuild": false
       },
       {
-        "address": "97, SURBITON HILL PARK",
-        "postcode": "KT5 8EJ",
-        "price": 850000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "51, VINCENT AVENUE",
         "postcode": "KT5 9RD",
         "price": 435000,
@@ -2362,6 +2590,14 @@
         "price": 1725000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "97, SURBITON HILL PARK",
+        "postcode": "KT5 8EJ",
+        "price": 850000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2549,19 +2785,19 @@
         "newBuild": false
       },
       {
-        "address": "130, KING CHARLES ROAD",
-        "postcode": "KT5 8QL",
-        "price": 987138,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "BRIDGE COURT, 3, KING CHARLES ROAD",
         "postcode": "KT5 8NS",
         "price": 470000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "130, KING CHARLES ROAD",
+        "postcode": "KT5 8QL",
+        "price": 987138,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2573,17 +2809,17 @@
         "newBuild": false
       },
       {
-        "address": "153, ELGAR AVENUE",
-        "postcode": "KT5 9JX",
-        "price": 880000,
+        "address": "32, ELMDENE",
+        "postcode": "KT5 9PW",
+        "price": 470000,
         "dateOfTransfer": "2025-02-27",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "32, ELMDENE",
-        "postcode": "KT5 9PW",
-        "price": 470000,
+        "address": "153, ELGAR AVENUE",
+        "postcode": "KT5 9JX",
+        "price": 880000,
         "dateOfTransfer": "2025-02-27",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2653,19 +2889,19 @@
         "newBuild": false
       },
       {
-        "address": "164, WARREN DRIVE SOUTH",
-        "postcode": "KT5 9QJ",
-        "price": 460000,
-        "dateOfTransfer": "2025-02-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "87, BERESFORD AVENUE",
         "postcode": "KT5 9LW",
         "price": 720000,
         "dateOfTransfer": "2025-02-20",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "164, WARREN DRIVE SOUTH",
+        "postcode": "KT5 9QJ",
+        "price": 460000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2765,14 +3001,6 @@
         "newBuild": false
       },
       {
-        "address": "11, MEADWAY",
-        "postcode": "KT5 9RG",
-        "price": 470000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "12, KING CHARLES ROAD",
         "postcode": "KT5 8PY",
         "price": 865000,
@@ -2787,6 +3015,14 @@
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "11, MEADWAY",
+        "postcode": "KT5 9RG",
+        "price": 470000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Terraced",
+        "newBuild": false
       },
       {
         "address": "5, GORDON ROAD",
@@ -2917,8 +3153,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 633930,
-    "medianPrice": 616000
+    "averagePrice": 669769,
+    "medianPrice": 625000
   },
   "representatives": {
     "representatives": [

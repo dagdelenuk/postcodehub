@@ -3,8 +3,8 @@
   "slug": "tw14",
   "city": "London",
   "borough": "Hounslow",
-  "latitude": 51.453343175732215,
-  "longitude": -0.4217162008368196,
+  "latitude": 51.45334853779696,
+  "longitude": -0.4216457688984884,
   "wards": [
     "Ashford North and Stanwell South",
     "Bedfont",
@@ -111,7 +111,8 @@
         "urn": "102554",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "07/12/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hatton Road, Bedfont, Feltham",
         "postcode": "TW14 9QZ",
         "numberOfPupils": 306,
@@ -122,7 +123,8 @@
         "urn": "132264",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Peacock Avenue, Bedfont, Feltham",
         "postcode": "TW14 8ET",
         "numberOfPupils": 409,
@@ -133,7 +135,8 @@
         "urn": "135831",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/12/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hatton Road, Bedfont, London",
         "postcode": "TW14 9QZ",
         "numberOfPupils": 538,
@@ -144,7 +147,8 @@
         "urn": "137009",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "15/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Tachbrook Road, Feltham",
         "postcode": "TW14 9PE",
         "numberOfPupils": 1058,
@@ -154,8 +158,9 @@
         "name": "Space Studio West London",
         "urn": "142126",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "09/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Letchworth Avenue, Feltham, Hounslow",
         "postcode": "TW14 9PE",
         "numberOfPupils": 148,
@@ -166,7 +171,8 @@
         "urn": "145475",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bedfont Lane, Feltham",
         "postcode": "TW14 9NP",
         "numberOfPupils": 623,
@@ -177,7 +183,8 @@
         "urn": "148150",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "25/01/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Sparrow Farm Primary School, Sparrow Farm Drive, Feltham",
         "postcode": "TW14 0DG",
         "numberOfPupils": 456,
@@ -281,6 +288,70 @@
   "property": {
     "sales": [
       {
+        "address": "25, BENEDICT DRIVE",
+        "postcode": "TW14 8JH",
+        "price": 720000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, BENEDICT DRIVE",
+        "postcode": "TW14 8JH",
+        "price": 720000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "85, FIELD ROAD",
+        "postcode": "TW14 0BE",
+        "price": 300000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, THE VALE",
+        "postcode": "TW14 0JY",
+        "price": 355000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, NURSERY CLOSE",
+        "postcode": "TW14 9BE",
+        "price": 456000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, ROUTH COURT",
+        "postcode": "TW14 8SJ",
+        "price": 143000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, COLONIAL ROAD",
+        "postcode": "TW14 8AA",
+        "price": 310000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, GARDNER PLACE",
+        "postcode": "TW14 0BX",
+        "price": 320000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "47, PARK WAY",
         "postcode": "TW14 9DH",
         "price": 470000,
@@ -289,11 +360,43 @@
         "newBuild": false
       },
       {
+        "address": "82, ELMCROFT CLOSE",
+        "postcode": "TW14 9HJ",
+        "price": 285000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "501A, STAINES ROAD",
         "postcode": "TW14 8BN",
         "price": 300000,
         "dateOfTransfer": "2026-06-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "128, WOOLDRIDGE CLOSE",
+        "postcode": "TW14 8BH",
+        "price": 2172118,
+        "dateOfTransfer": "2026-06-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "6, GRAFTON COURT",
+        "postcode": "TW14 8SL",
+        "price": 480000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, HELEN AVENUE",
+        "postcode": "TW14 9LD",
+        "price": 535000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -337,6 +440,14 @@
         "newBuild": false
       },
       {
+        "address": "63, HELEN AVENUE",
+        "postcode": "TW14 9LA",
+        "price": 515000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "8, CHICHESTER WAY",
         "postcode": "TW14 0DF",
         "price": 422250,
@@ -369,17 +480,17 @@
         "newBuild": false
       },
       {
-        "address": "63, ELMCROFT CLOSE",
-        "postcode": "TW14 9HJ",
-        "price": 203000,
+        "address": "3, MONTROSE ROAD",
+        "postcode": "TW14 8LP",
+        "price": 309000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "3, MONTROSE ROAD",
-        "postcode": "TW14 8LP",
-        "price": 309000,
+        "address": "63, ELMCROFT CLOSE",
+        "postcode": "TW14 9HJ",
+        "price": 203000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -441,14 +552,6 @@
         "newBuild": false
       },
       {
-        "address": "10A, RIVER GARDENS",
-        "postcode": "TW14 0RE",
-        "price": 230000,
-        "dateOfTransfer": "2026-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "APPLETON HOUSE, 3, FLAT 15, NEW ROAD",
         "postcode": "TW14 9AL",
         "price": 350000,
@@ -462,6 +565,14 @@
         "price": 284000,
         "dateOfTransfer": "2026-03-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10A, RIVER GARDENS",
+        "postcode": "TW14 0RE",
+        "price": 230000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -497,19 +608,19 @@
         "newBuild": false
       },
       {
-        "address": "79, ELMCROFT CLOSE",
-        "postcode": "TW14 9HJ",
-        "price": 275000,
-        "dateOfTransfer": "2026-03-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "86, THE DRIVE",
         "postcode": "TW14 0AL",
         "price": 290000,
         "dateOfTransfer": "2026-03-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "79, ELMCROFT CLOSE",
+        "postcode": "TW14 9HJ",
+        "price": 275000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -577,19 +688,19 @@
         "newBuild": false
       },
       {
-        "address": "78, THE DRIVE",
-        "postcode": "TW14 0AL",
-        "price": 490000,
-        "dateOfTransfer": "2026-03-06",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "8, KENDAL CLOSE",
         "postcode": "TW14 9QG",
         "price": 335000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "78, THE DRIVE",
+        "postcode": "TW14 0AL",
+        "price": 490000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -625,17 +736,25 @@
         "newBuild": false
       },
       {
-        "address": "108, NORTHUMBERLAND CRESCENT",
-        "postcode": "TW14 9SW",
-        "price": 427000,
-        "dateOfTransfer": "2026-02-26",
-        "propertyType": "Terraced",
+        "address": "EDITH COURT, FLAT 22, NEW ROAD, BEDFONT",
+        "postcode": "TW14 8HF",
+        "price": 260000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "122, SPARROW FARM DRIVE",
         "postcode": "TW14 0DN",
         "price": 470000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "108, NORTHUMBERLAND CRESCENT",
+        "postcode": "TW14 9SW",
+        "price": 427000,
         "dateOfTransfer": "2026-02-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -665,11 +784,35 @@
         "newBuild": false
       },
       {
+        "address": "16, PENINSULAR CLOSE",
+        "postcode": "TW14 9SS",
+        "price": 311500,
+        "dateOfTransfer": "2026-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "60, GLADSTONE AVENUE",
         "postcode": "TW14 9LL",
         "price": 525000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "65, NEW ROAD, BEDFONT",
+        "postcode": "TW14 8HR",
+        "price": 578000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, BEESTON WAY",
+        "postcode": "TW14 0HB",
+        "price": 468000,
+        "dateOfTransfer": "2026-02-09",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -689,6 +832,14 @@
         "newBuild": false
       },
       {
+        "address": "101, HARLINGTON ROAD WEST",
+        "postcode": "TW14 0JG",
+        "price": 630000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "COLNE HOUSE, 1, FLAT 9, MANOR PLACE",
         "postcode": "TW14 9BT",
         "price": 275000,
@@ -697,9 +848,9 @@
         "newBuild": false
       },
       {
-        "address": "101, HARLINGTON ROAD WEST",
-        "postcode": "TW14 0JG",
-        "price": 630000,
+        "address": "43, HELEN AVENUE",
+        "postcode": "TW14 9LA",
+        "price": 510000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -713,6 +864,14 @@
         "newBuild": false
       },
       {
+        "address": "80, THE DRIVE",
+        "postcode": "TW14 0AL",
+        "price": 485000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "22, SHERBORNE ROAD, BEDFONT",
         "postcode": "TW14 8ES",
         "price": 460000,
@@ -721,10 +880,10 @@
         "newBuild": false
       },
       {
-        "address": "80, THE DRIVE",
-        "postcode": "TW14 0AL",
-        "price": 485000,
-        "dateOfTransfer": "2026-02-05",
+        "address": "34, HARLINGTON ROAD WEST",
+        "postcode": "TW14 0JB",
+        "price": 502000,
+        "dateOfTransfer": "2026-02-04",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -801,14 +960,6 @@
         "newBuild": false
       },
       {
-        "address": "232, STAINES ROAD",
-        "postcode": "TW14 9HG",
-        "price": 280000,
-        "dateOfTransfer": "2026-01-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "181, STAINES ROAD",
         "postcode": "TW14 9EA",
         "price": 392500,
@@ -822,6 +973,22 @@
         "price": 540000,
         "dateOfTransfer": "2026-01-28",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "232, STAINES ROAD",
+        "postcode": "TW14 9HG",
+        "price": 280000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DENMAN HOUSE, 1, FLAT 15, NEW ROAD",
+        "postcode": "TW14 9AJ",
+        "price": 249000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -881,11 +1048,27 @@
         "newBuild": false
       },
       {
+        "address": "10, NEW ROAD, BEDFONT",
+        "postcode": "TW14 8HN",
+        "price": 465000,
+        "dateOfTransfer": "2026-01-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "86, KILROSS ROAD",
         "postcode": "TW14 8SA",
         "price": 300000,
         "dateOfTransfer": "2026-01-12",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, GREEN MAN LANE",
+        "postcode": "TW14 0QB",
+        "price": 500000,
+        "dateOfTransfer": "2026-01-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -902,6 +1085,14 @@
         "price": 305000,
         "dateOfTransfer": "2026-01-05",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, GLADSTONE AVENUE",
+        "postcode": "TW14 9LJ",
+        "price": 450000,
+        "dateOfTransfer": "2026-01-05",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -942,6 +1133,14 @@
         "price": 530000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "113, BEDFONT CLOSE",
+        "postcode": "TW14 8LH",
+        "price": 300000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1001,14 +1200,6 @@
         "newBuild": false
       },
       {
-        "address": "4, COLONIAL ROAD",
-        "postcode": "TW14 8AA",
-        "price": 480000,
-        "dateOfTransfer": "2025-12-12",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "23, TREVITHICK CLOSE",
         "postcode": "TW14 9XJ",
         "price": 420000,
@@ -1020,6 +1211,14 @@
         "address": "171, HATTON ROAD",
         "postcode": "TW14 9PR",
         "price": 600000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, COLONIAL ROAD",
+        "postcode": "TW14 8AA",
+        "price": 480000,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1209,11 +1408,11 @@
         "newBuild": false
       },
       {
-        "address": "5, DOCKWELL CLOSE",
-        "postcode": "TW14 0QA",
-        "price": 330000,
-        "dateOfTransfer": "2025-10-20",
-        "propertyType": "Flat/Maisonette",
+        "address": "39, PACIFIC CLOSE",
+        "postcode": "TW14 9XE",
+        "price": 375000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1241,11 +1440,11 @@
         "newBuild": false
       },
       {
-        "address": "22, WEST ROAD",
-        "postcode": "TW14 8JE",
-        "price": 488000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Semi-detached",
+        "address": "5, DOCKWELL CLOSE",
+        "postcode": "TW14 0QA",
+        "price": 330000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1254,6 +1453,14 @@
         "price": 495000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, WEST ROAD",
+        "postcode": "TW14 8JE",
+        "price": 488000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1273,14 +1480,6 @@
         "newBuild": false
       },
       {
-        "address": "32, VIOLA AVENUE",
-        "postcode": "TW14 0EW",
-        "price": 490000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "34, WESTMINSTER CLOSE",
         "postcode": "TW14 9XD",
         "price": 448000,
@@ -1289,19 +1488,11 @@
         "newBuild": false
       },
       {
-        "address": "QUESTRUM HOUSE, CENTRAL WAY",
-        "postcode": "TW14 0RX",
-        "price": 276690,
+        "address": "32, VIOLA AVENUE",
+        "postcode": "TW14 0EW",
+        "price": 490000,
         "dateOfTransfer": "2025-10-10",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "1A, LONGFORD AVENUE",
-        "postcode": "TW14 9TQ",
-        "price": 415000,
-        "dateOfTransfer": "2025-10-09",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1313,19 +1504,19 @@
         "newBuild": false
       },
       {
+        "address": "1A, LONGFORD AVENUE",
+        "postcode": "TW14 9TQ",
+        "price": 415000,
+        "dateOfTransfer": "2025-10-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "53, DUDLEY ROAD",
         "postcode": "TW14 8EJ",
         "price": 590000,
         "dateOfTransfer": "2025-10-08",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "189A, BEDFONT CLOSE",
-        "postcode": "TW14 8LQ",
-        "price": 600000,
-        "dateOfTransfer": "2025-10-07",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1345,19 +1536,19 @@
         "newBuild": false
       },
       {
+        "address": "189A, BEDFONT CLOSE",
+        "postcode": "TW14 8LQ",
+        "price": 600000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "58, LONGFORD AVENUE",
         "postcode": "TW14 9TG",
         "price": 460000,
         "dateOfTransfer": "2025-10-06",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "9, LANSBURY AVENUE",
-        "postcode": "TW14 0JN",
-        "price": 490000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1369,11 +1560,19 @@
         "newBuild": false
       },
       {
-        "address": "221, STAINES ROAD",
-        "postcode": "TW14 9EB",
-        "price": 425500,
-        "dateOfTransfer": "2025-10-02",
-        "propertyType": "Semi-detached",
+        "address": "101, HOUNSLOW ROAD",
+        "postcode": "TW14 0BB",
+        "price": 425000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, LANSBURY AVENUE",
+        "postcode": "TW14 0JN",
+        "price": 490000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1382,6 +1581,30 @@
         "price": 425500,
         "dateOfTransfer": "2025-10-02",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "221, STAINES ROAD",
+        "postcode": "TW14 9EB",
+        "price": 425500,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, THE DRIVE",
+        "postcode": "TW14 0AQ",
+        "price": 505000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "173, BEDFONT CLOSE",
+        "postcode": "TW14 8LQ",
+        "price": 499999,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1401,19 +1624,19 @@
         "newBuild": false
       },
       {
-        "address": "173, BEDFONT CLOSE",
-        "postcode": "TW14 8LQ",
-        "price": 499999,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "44, PATES MANOR DRIVE",
         "postcode": "TW14 8JJ",
         "price": 460000,
         "dateOfTransfer": "2025-09-29",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "56, PENTELOW GARDENS",
+        "postcode": "TW14 9EE",
+        "price": 418000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1430,14 +1653,6 @@
         "price": 397000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "56, PENTELOW GARDENS",
-        "postcode": "TW14 9EE",
-        "price": 418000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1465,14 +1680,6 @@
         "newBuild": false
       },
       {
-        "address": "31, THE VALE",
-        "postcode": "TW14 0JZ",
-        "price": 345000,
-        "dateOfTransfer": "2025-09-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "DENMAN HOUSE, 1, FLAT 10, NEW ROAD",
         "postcode": "TW14 9AJ",
         "price": 295000,
@@ -1481,11 +1688,11 @@
         "newBuild": false
       },
       {
-        "address": "10, GREEN MAN LANE",
-        "postcode": "TW14 0QB",
-        "price": 490000,
-        "dateOfTransfer": "2025-09-23",
-        "propertyType": "Terraced",
+        "address": "31, THE VALE",
+        "postcode": "TW14 0JZ",
+        "price": 345000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1497,11 +1704,11 @@
         "newBuild": false
       },
       {
-        "address": "39, NEW ROAD, BEDFONT",
-        "postcode": "TW14 8HW",
-        "price": 423000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Semi-detached",
+        "address": "10, GREEN MAN LANE",
+        "postcode": "TW14 0QB",
+        "price": 490000,
+        "dateOfTransfer": "2025-09-23",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1529,6 +1736,14 @@
         "newBuild": false
       },
       {
+        "address": "39, NEW ROAD, BEDFONT",
+        "postcode": "TW14 8HW",
+        "price": 423000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "96, FRUEN ROAD",
         "postcode": "TW14 9NR",
         "price": 345000,
@@ -1545,19 +1760,19 @@
         "newBuild": false
       },
       {
-        "address": "10, RIVER GARDENS",
-        "postcode": "TW14 0RE",
-        "price": 225000,
-        "dateOfTransfer": "2025-09-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "28, WARFIELD ROAD",
         "postcode": "TW14 8AD",
         "price": 556000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, RIVER GARDENS",
+        "postcode": "TW14 0RE",
+        "price": 225000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1633,19 +1848,19 @@
         "newBuild": false
       },
       {
-        "address": "429, STAINES ROAD",
-        "postcode": "TW14 9HA",
-        "price": 322000,
-        "dateOfTransfer": "2025-08-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "75, HELEN AVENUE",
         "postcode": "TW14 9LA",
         "price": 585000,
         "dateOfTransfer": "2025-08-26",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "429, STAINES ROAD",
+        "postcode": "TW14 9HA",
+        "price": 322000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1667,7 +1882,7 @@
       {
         "address": "158, STAINES ROAD",
         "postcode": "TW14 9ED",
-        "price": 685000,
+        "price": 675000,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Detached",
         "newBuild": false
@@ -1683,7 +1898,7 @@
       {
         "address": "158, STAINES ROAD",
         "postcode": "TW14 9ED",
-        "price": 675000,
+        "price": 685000,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Detached",
         "newBuild": false
@@ -1777,17 +1992,17 @@
         "newBuild": false
       },
       {
-        "address": "32, EDWARD ROAD",
-        "postcode": "TW14 9RF",
-        "price": 595000,
+        "address": "17, BRAINTON AVENUE",
+        "postcode": "TW14 0AZ",
+        "price": 420000,
         "dateOfTransfer": "2025-07-30",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "17, BRAINTON AVENUE",
-        "postcode": "TW14 0AZ",
-        "price": 420000,
+        "address": "32, EDWARD ROAD",
+        "postcode": "TW14 9RF",
+        "price": 595000,
         "dateOfTransfer": "2025-07-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2009,6 +2224,14 @@
         "newBuild": false
       },
       {
+        "address": "84, DURHAM ROAD",
+        "postcode": "TW14 0AE",
+        "price": 380000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "CAMBRIA COURT, 5, HOUNSLOW ROAD",
         "postcode": "TW14 9DL",
         "price": 240000,
@@ -2030,14 +2253,6 @@
         "price": 290000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "84, DURHAM ROAD",
-        "postcode": "TW14 0AE",
-        "price": 380000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2073,17 +2288,17 @@
         "newBuild": false
       },
       {
-        "address": "149, BEDFONT LANE",
-        "postcode": "TW14 9NH",
-        "price": 580000,
+        "address": "65, LANSBURY AVENUE",
+        "postcode": "TW14 0JW",
+        "price": 484000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "65, LANSBURY AVENUE",
-        "postcode": "TW14 0JW",
-        "price": 484000,
+        "address": "149, BEDFONT LANE",
+        "postcode": "TW14 9NH",
+        "price": 580000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2097,19 +2312,19 @@
         "newBuild": false
       },
       {
-        "address": "64, SOUTHERN AVENUE",
-        "postcode": "TW14 9ND",
-        "price": 370000,
-        "dateOfTransfer": "2025-05-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "121A, HARLINGTON ROAD WEST",
         "postcode": "TW14 0JG",
         "price": 560000,
         "dateOfTransfer": "2025-05-02",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "64, SOUTHERN AVENUE",
+        "postcode": "TW14 9ND",
+        "price": 370000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2225,6 +2440,46 @@
         "newBuild": false
       },
       {
+        "address": "30, THE DRIVE",
+        "postcode": "TW14 0AJ",
+        "price": 550000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, PEACOCK AVENUE",
+        "postcode": "TW14 8ET",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, FLAT 7, LEWIN TERRACE",
+        "postcode": "TW14 8ED",
+        "price": 280000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "43, PARK WAY",
+        "postcode": "TW14 9DH",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, SANDY DRIVE",
+        "postcode": "TW14 8BE",
+        "price": 310000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "35, IMPERIAL ROAD",
         "postcode": "TW14 8AF",
         "price": 465000,
@@ -2241,38 +2496,6 @@
         "newBuild": false
       },
       {
-        "address": "97, BURNS AVENUE",
-        "postcode": "TW14 9LX",
-        "price": 540000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "30, THE DRIVE",
-        "postcode": "TW14 0AJ",
-        "price": 550000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "43, PARK WAY",
-        "postcode": "TW14 9DH",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "20, FLAT 7, LEWIN TERRACE",
-        "postcode": "TW14 8ED",
-        "price": 280000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "54, DURHAM ROAD",
         "postcode": "TW14 0AD",
         "price": 420000,
@@ -2281,19 +2504,11 @@
         "newBuild": false
       },
       {
-        "address": "35, PEACOCK AVENUE",
-        "postcode": "TW14 8ET",
-        "price": 450000,
+        "address": "97, BURNS AVENUE",
+        "postcode": "TW14 9LX",
+        "price": 540000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "14, SANDY DRIVE",
-        "postcode": "TW14 8BE",
-        "price": 310000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2337,22 +2552,6 @@
         "newBuild": false
       },
       {
-        "address": "173, FIELD ROAD",
-        "postcode": "TW14 0BQ",
-        "price": 455000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "20, CHICHESTER WAY",
-        "postcode": "TW14 0DF",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "8A, RIVER GARDENS",
         "postcode": "TW14 0RE",
         "price": 224000,
@@ -2361,11 +2560,11 @@
         "newBuild": false
       },
       {
-        "address": "92, SHAFTESBURY AVENUE",
-        "postcode": "TW14 9LR",
-        "price": 600000,
+        "address": "173, FIELD ROAD",
+        "postcode": "TW14 0BQ",
+        "price": 455000,
         "dateOfTransfer": "2025-03-26",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2377,11 +2576,19 @@
         "newBuild": false
       },
       {
-        "address": "27, BISHOPS DRIVE",
-        "postcode": "TW14 8LT",
-        "price": 205000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Flat/Maisonette",
+        "address": "20, CHICHESTER WAY",
+        "postcode": "TW14 0DF",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "92, SHAFTESBURY AVENUE",
+        "postcode": "TW14 9LR",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2390,6 +2597,14 @@
         "price": 430000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, BISHOPS DRIVE",
+        "postcode": "TW14 8LT",
+        "price": 205000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2406,14 +2621,6 @@
         "price": 460000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "28, NINE ELMS CLOSE",
-        "postcode": "TW14 9XL",
-        "price": 425000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2438,6 +2645,14 @@
         "price": 220000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, NINE ELMS CLOSE",
+        "postcode": "TW14 9XL",
+        "price": 425000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2473,14 +2688,6 @@
         "newBuild": false
       },
       {
-        "address": "52, SHAFTESBURY AVENUE",
-        "postcode": "TW14 9LP",
-        "price": 505000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "102, HATTON ROAD",
         "postcode": "TW14 8JQ",
         "price": 465000,
@@ -2497,10 +2704,10 @@
         "newBuild": false
       },
       {
-        "address": "21, THE DRIVE",
-        "postcode": "TW14 0AQ",
-        "price": 417000,
-        "dateOfTransfer": "2025-03-13",
+        "address": "52, SHAFTESBURY AVENUE",
+        "postcode": "TW14 9LP",
+        "price": 505000,
+        "dateOfTransfer": "2025-03-14",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2508,6 +2715,14 @@
         "address": "14, WINDERMERE CLOSE",
         "postcode": "TW14 9QF",
         "price": 380000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "21, THE DRIVE",
+        "postcode": "TW14 0AQ",
+        "price": 417000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2521,11 +2736,11 @@
         "newBuild": false
       },
       {
-        "address": "48, SHERBORNE ROAD, BEDFONT",
-        "postcode": "TW14 8ER",
-        "price": 496000,
+        "address": "6, EAST ROAD, BEDFONT",
+        "postcode": "TW14 8DQ",
+        "price": 340000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2537,11 +2752,11 @@
         "newBuild": false
       },
       {
-        "address": "6, EAST ROAD, BEDFONT",
-        "postcode": "TW14 8DQ",
-        "price": 340000,
+        "address": "48, SHERBORNE ROAD, BEDFONT",
+        "postcode": "TW14 8ER",
+        "price": 496000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2585,11 +2800,11 @@
         "newBuild": false
       },
       {
-        "address": "108, KILROSS ROAD",
-        "postcode": "TW14 8SA",
-        "price": 410000,
+        "address": "2, WELLINGTON ROAD",
+        "postcode": "TW14 9QX",
+        "price": 310000,
         "dateOfTransfer": "2025-02-27",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2601,11 +2816,11 @@
         "newBuild": false
       },
       {
-        "address": "2, WELLINGTON ROAD",
-        "postcode": "TW14 9QX",
-        "price": 310000,
+        "address": "108, KILROSS ROAD",
+        "postcode": "TW14 8SA",
+        "price": 410000,
         "dateOfTransfer": "2025-02-27",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2649,17 +2864,17 @@
         "newBuild": false
       },
       {
-        "address": "279, STAINES ROAD",
-        "postcode": "TW14 9HF",
+        "address": "12, FINCH DRIVE",
+        "postcode": "TW14 0DL",
         "price": 430000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "12, FINCH DRIVE",
-        "postcode": "TW14 0DL",
-        "price": 430000,
+        "address": "10, PARK WAY",
+        "postcode": "TW14 9DJ",
+        "price": 310000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2673,9 +2888,9 @@
         "newBuild": false
       },
       {
-        "address": "10, PARK WAY",
-        "postcode": "TW14 9DJ",
-        "price": 310000,
+        "address": "279, STAINES ROAD",
+        "postcode": "TW14 9HF",
+        "price": 430000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2745,19 +2960,19 @@
         "newBuild": false
       },
       {
-        "address": "60, ELMCROFT CLOSE",
-        "postcode": "TW14 9HJ",
-        "price": 250000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "26, RUSKIN AVENUE",
         "postcode": "TW14 9HY",
         "price": 535000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "60, ELMCROFT CLOSE",
+        "postcode": "TW14 9HJ",
+        "price": 250000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2865,8 +3080,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 410953,
-    "medianPrice": 429000
+    "averagePrice": 417395,
+    "medianPrice": 430000
   },
   "representatives": {
     "representatives": [

@@ -3,8 +3,8 @@
   "slug": "w8",
   "city": "London",
   "borough": "Kensington and Chelsea",
-  "latitude": 51.50119413062418,
-  "longitude": -0.19424533817126252,
+  "latitude": 51.50133344333342,
+  "longitude": -0.19411918999999997,
   "wards": [
     "Abingdon",
     "Campden",
@@ -92,7 +92,8 @@
         "urn": "100482",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Fox Primary School , Kensington Place, London",
         "postcode": "W8 7PP",
         "numberOfPupils": 418,
@@ -103,7 +104,8 @@
         "urn": "100493",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "30/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "58 Earls Court Road, Kensington, London",
         "postcode": "W8 6EJ",
         "numberOfPupils": 220,
@@ -113,8 +115,9 @@
         "name": "St Mary Abbots CofE Primary School",
         "urn": "100497",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "08/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "2 Kensington Church Court, Kensington, London",
         "postcode": "W8 4SP",
         "numberOfPupils": 160,
@@ -126,6 +129,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "1 St. Albans Grove, London",
         "postcode": "W8 5PN",
         "numberOfPupils": 329,
@@ -137,6 +141,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "17 Old Court Place, Kensington, London",
         "postcode": "W8 4PL",
         "numberOfPupils": 223,
@@ -147,7 +152,8 @@
         "urn": "149632",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Inadequate",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/04/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Airlie Gardens, London",
         "postcode": "W8 7AF",
         "numberOfPupils": 1376,
@@ -159,103 +165,191 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1315,
-        "violentCrimes": 356,
-        "propertyCrimes": 607
+        "totalCrimes": 1300,
+        "violentCrimes": 352,
+        "propertyCrimes": 602
       },
       {
         "month": "2025-08",
-        "totalCrimes": 1596,
-        "violentCrimes": 426,
-        "propertyCrimes": 642
+        "totalCrimes": 1601,
+        "violentCrimes": 424,
+        "propertyCrimes": 643
       },
       {
         "month": "2025-09",
         "totalCrimes": 1183,
-        "violentCrimes": 310,
-        "propertyCrimes": 567
+        "violentCrimes": 309,
+        "propertyCrimes": 570
       },
       {
         "month": "2025-10",
-        "totalCrimes": 1307,
-        "violentCrimes": 328,
+        "totalCrimes": 1304,
+        "violentCrimes": 326,
         "propertyCrimes": 665
       },
       {
         "month": "2025-11",
-        "totalCrimes": 1147,
-        "violentCrimes": 308,
-        "propertyCrimes": 544
+        "totalCrimes": 1141,
+        "violentCrimes": 305,
+        "propertyCrimes": 543
       },
       {
         "month": "2025-12",
         "totalCrimes": 1128,
-        "violentCrimes": 289,
-        "propertyCrimes": 562
+        "violentCrimes": 288,
+        "propertyCrimes": 563
       },
       {
         "month": "2026-01",
-        "totalCrimes": 1100,
-        "violentCrimes": 296,
-        "propertyCrimes": 498
+        "totalCrimes": 1098,
+        "violentCrimes": 298,
+        "propertyCrimes": 496
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1009,
+        "totalCrimes": 1007,
         "violentCrimes": 286,
-        "propertyCrimes": 477
+        "propertyCrimes": 474
       },
       {
         "month": "2026-03",
-        "totalCrimes": 1121,
-        "violentCrimes": 300,
+        "totalCrimes": 1118,
+        "violentCrimes": 296,
         "propertyCrimes": 539
       },
       {
         "month": "2026-04",
-        "totalCrimes": 993,
-        "violentCrimes": 293,
-        "propertyCrimes": 443
+        "totalCrimes": 985,
+        "violentCrimes": 285,
+        "propertyCrimes": 442
       },
       {
         "month": "2026-05",
-        "totalCrimes": 1103,
+        "totalCrimes": 1104,
         "violentCrimes": 304,
-        "propertyCrimes": 490
+        "propertyCrimes": 489
       },
       {
         "month": "2026-06",
-        "totalCrimes": 1119,
-        "violentCrimes": 317,
-        "propertyCrimes": 508
+        "totalCrimes": 1115,
+        "violentCrimes": 311,
+        "propertyCrimes": 510
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3077,
-      "bicycle-theft": 249,
-      "burglary": 904,
-      "criminal-damage-arson": 511,
-      "drugs": 598,
-      "other-theft": 1888,
+      "anti-social-behaviour": 3066,
+      "bicycle-theft": 251,
+      "burglary": 897,
+      "criminal-damage-arson": 512,
+      "drugs": 604,
+      "other-theft": 1890,
       "possession-of-weapons": 61,
-      "public-order": 724,
-      "robbery": 261,
+      "public-order": 720,
+      "robbery": 260,
       "shoplifting": 1007,
-      "theft-from-the-person": 972,
-      "vehicle-crime": 1011,
-      "violent-crime": 2767,
-      "other-crime": 91
+      "theft-from-the-person": 967,
+      "vehicle-crime": 1012,
+      "violent-crime": 2743,
+      "other-crime": 94
     },
-    "totalLast12Months": 14121
+    "totalLast12Months": 14084
   },
   "property": {
     "sales": [
+      {
+        "address": "1 - 5, FLAT 13, HORNTON STREET",
+        "postcode": "W8 7NP",
+        "price": 890000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, PEEL STREET",
+        "postcode": "W8 7PD",
+        "price": 2600000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "SOVEREIGN COURT, 29, FLAT 501, WRIGHTS LANE",
+        "postcode": "W8 5SH",
+        "price": 1700000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PALMERSTON HOUSE, 60, FLAT 17, KENSINGTON PLACE",
+        "postcode": "W8 7PU",
+        "price": 785000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, FLAT 2, GORDON PLACE",
+        "postcode": "W8 4JD",
+        "price": 725000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "69F, LEXHAM GARDENS",
+        "postcode": "W8 6JH",
+        "price": 674000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, FLAT 3, AIRLIE GARDENS",
+        "postcode": "W8 7AJ",
+        "price": 790000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "89E, LEXHAM GARDENS",
+        "postcode": "W8 6JN",
+        "price": 200000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BISHOPS COURT, 14, FLAT 6, MARLOES ROAD",
+        "postcode": "W8 5LH",
+        "price": 555000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1 - 5, FLAT 3, HORNTON STREET",
+        "postcode": "W8 7NP",
+        "price": 680000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "17, ELDON ROAD",
         "postcode": "W8 5PT",
         "price": 10250000,
         "dateOfTransfer": "2026-06-22",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "VICARAGE COURT, FLAT 94, VICARAGE GATE",
+        "postcode": "W8 4HQ",
+        "price": 375000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -272,6 +366,14 @@
         "price": 850000,
         "dateOfTransfer": "2026-06-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "78, ABINGDON ROAD",
+        "postcode": "W8 6QT",
+        "price": 3550000,
+        "dateOfTransfer": "2026-06-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -347,17 +449,17 @@
         "newBuild": false
       },
       {
-        "address": "16, FLAT 1, PALACE GARDENS TERRACE",
-        "postcode": "W8 4RP",
-        "price": 1120000,
+        "address": "19 - 21, FLAT 12, LEXHAM GARDENS",
+        "postcode": "W8 5JJ",
+        "price": 575000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "19 - 21, FLAT 12, LEXHAM GARDENS",
-        "postcode": "W8 5JJ",
-        "price": 575000,
+        "address": "16, FLAT 1, PALACE GARDENS TERRACE",
+        "postcode": "W8 4RP",
+        "price": 1120000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -403,6 +505,22 @@
         "newBuild": false
       },
       {
+        "address": "36, ADAM & EVE MEWS",
+        "postcode": "W8 6UJ",
+        "price": 2850000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "36A, ADAM & EVE MEWS",
+        "postcode": "W8 6UJ",
+        "price": 1800000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "37, ABINGDON ROAD",
         "postcode": "W8 6AH",
         "price": 7700000,
@@ -415,6 +533,14 @@
         "postcode": "W8 4NF",
         "price": 1180000,
         "dateOfTransfer": "2026-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42A, STRATFORD ROAD",
+        "postcode": "W8 6QA",
+        "price": 510000,
+        "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -440,6 +566,22 @@
         "price": 2850000,
         "dateOfTransfer": "2026-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "41, HILLGATE PLACE",
+        "postcode": "W8 7SS",
+        "price": 2675000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51, CAMPDEN HILL GATE",
+        "postcode": "W8 7QJ",
+        "price": 2942000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -523,6 +665,30 @@
         "newBuild": false
       },
       {
+        "address": "1, HORNTON PLACE",
+        "postcode": "W8 4LZ",
+        "price": 2000000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "24, COPE PLACE",
+        "postcode": "W8 6AA",
+        "price": 2365000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MARLBOROUGH COURT, FLAT 15, PEMBROKE ROAD",
+        "postcode": "W8 6DE",
+        "price": 770000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "ARDEN HOUSE, 107, FLAT 11, EARLS COURT ROAD",
         "postcode": "W8 6QJ",
         "price": 445000,
@@ -539,11 +705,27 @@
         "newBuild": false
       },
       {
+        "address": "4, IVERNA COURT",
+        "postcode": "W8 6TY",
+        "price": 2200000,
+        "dateOfTransfer": "2026-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "18, FLAT 7, KENSINGTON COURT PLACE",
         "postcode": "W8 5BJ",
         "price": 1800000,
         "dateOfTransfer": "2026-02-09",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62, BEDFORD GARDENS",
+        "postcode": "W8 7EH",
+        "price": 18200000,
+        "dateOfTransfer": "2026-02-09",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -571,6 +753,30 @@
         "newBuild": false
       },
       {
+        "address": "1, PALACE GATE",
+        "postcode": "W8 5LS",
+        "price": 1285465,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "HUNTSMORE HOUSE, 35, FLAT 34, PEMBROKE ROAD",
+        "postcode": "W8 6LZ",
+        "price": 800000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BROADWALK COURT, 79, FLAT 64, PALACE GARDENS TERRACE",
+        "postcode": "W8 4EG",
+        "price": 325000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "THORNWOOD LODGE, FLAT 7, THORNWOOD GARDENS",
         "postcode": "W8 7EB",
         "price": 6500000,
@@ -587,6 +793,14 @@
         "newBuild": false
       },
       {
+        "address": "6A, CAMPDEN HILL GARDENS, KENSINGTON",
+        "postcode": "W8 7AY",
+        "price": 725000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "28, CAMPDEN HILL SQUARE",
         "postcode": "W8 7JY",
         "price": 6100000,
@@ -595,10 +809,10 @@
         "newBuild": false
       },
       {
-        "address": "6A, CAMPDEN HILL GARDENS, KENSINGTON",
-        "postcode": "W8 7AY",
-        "price": 725000,
-        "dateOfTransfer": "2026-01-30",
+        "address": "48, FLAT 2, STRATFORD ROAD",
+        "postcode": "W8 6QA",
+        "price": 1150000,
+        "dateOfTransfer": "2026-01-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -611,10 +825,18 @@
         "newBuild": false
       },
       {
-        "address": "48, FLAT 2, STRATFORD ROAD",
-        "postcode": "W8 6QA",
-        "price": 1150000,
+        "address": "38 - 38A, KENSINGTON CHURCH STREET",
+        "postcode": "W8 4BX",
+        "price": 650000,
         "dateOfTransfer": "2026-01-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "VICARAGE COURT, FLAT 90, VICARAGE GATE",
+        "postcode": "W8 4HQ",
+        "price": 725000,
+        "dateOfTransfer": "2026-01-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -635,17 +857,17 @@
         "newBuild": false
       },
       {
-        "address": "38, MALL CHAMBERS",
-        "postcode": "W8 4DZ",
-        "price": 490000,
+        "address": "46, IVERNA COURT",
+        "postcode": "W8 6TS",
+        "price": 2275000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "46, IVERNA COURT",
-        "postcode": "W8 6TS",
-        "price": 2275000,
+        "address": "38, MALL CHAMBERS",
+        "postcode": "W8 4DZ",
+        "price": 490000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -655,6 +877,14 @@
         "postcode": "W8 6NH",
         "price": 2275000,
         "dateOfTransfer": "2026-01-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KENSINGTON HEIGHTS, 91 - 95, FLAT 10, CAMPDEN HILL ROAD",
+        "postcode": "W8 7BD",
+        "price": 1250000,
+        "dateOfTransfer": "2026-01-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -675,11 +905,11 @@
         "newBuild": false
       },
       {
-        "address": "KENSINGTON HEIGHTS, 91 - 95, FLAT 10, CAMPDEN HILL ROAD",
-        "postcode": "W8 7BD",
-        "price": 1250000,
-        "dateOfTransfer": "2026-01-14",
-        "propertyType": "Flat/Maisonette",
+        "address": "131, KENSINGTON CHURCH STREET",
+        "postcode": "W8 7LP",
+        "price": 900000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -711,6 +941,14 @@
         "postcode": "W8 5LS",
         "price": 500000,
         "dateOfTransfer": "2025-12-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KENSINGTON HEIGHTS, 91 - 95, FLAT 44, CAMPDEN HILL ROAD",
+        "postcode": "W8 7BD",
+        "price": 885000,
+        "dateOfTransfer": "2025-12-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -763,17 +1001,17 @@
         "newBuild": true
       },
       {
-        "address": "AIRLIE HOUSE, 17, FLAT 34, AIRLIE GARDENS",
-        "postcode": "W8 7AN",
-        "price": 1500000,
+        "address": "HORNTON COURT, 19, KENSINGTON HIGH STREET",
+        "postcode": "W8 7RT",
+        "price": 2275000,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "HORNTON COURT, 19, KENSINGTON HIGH STREET",
-        "postcode": "W8 7RT",
-        "price": 2275000,
+        "address": "AIRLIE HOUSE, 17, FLAT 34, AIRLIE GARDENS",
+        "postcode": "W8 7AN",
+        "price": 1500000,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -795,6 +1033,14 @@
         "newBuild": false
       },
       {
+        "address": "12A, CHENISTON GARDENS",
+        "postcode": "W8 6TQ",
+        "price": 980000,
+        "dateOfTransfer": "2025-12-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "47, ABINGDON VILLAS",
         "postcode": "W8 6XA",
         "price": 4600000,
@@ -811,19 +1057,19 @@
         "newBuild": false
       },
       {
-        "address": "19B, LEXHAM MEWS",
-        "postcode": "W8 6JW",
-        "price": 1385001,
-        "dateOfTransfer": "2025-12-08",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "22, KENSINGTON PLACE",
         "postcode": "W8 7PT",
         "price": 2900000,
         "dateOfTransfer": "2025-12-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19B, LEXHAM MEWS",
+        "postcode": "W8 6JW",
+        "price": 1385001,
+        "dateOfTransfer": "2025-12-08",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -896,6 +1142,14 @@
         "price": 980000,
         "dateOfTransfer": "2025-12-01",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "42, SECOND FLOOR FLAT, STRATFORD ROAD",
+        "postcode": "W8 6QA",
+        "price": 582500,
+        "dateOfTransfer": "2025-12-01",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1059,6 +1313,14 @@
         "newBuild": true
       },
       {
+        "address": "LEVEL 2 STOREROOM, YORK HOUSE PLACE",
+        "postcode": "W8 4EY",
+        "price": 95000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "4, ST JOHNS VILLAS",
         "postcode": "W8 5UQ",
         "price": 4900000,
@@ -1115,14 +1377,6 @@
         "newBuild": false
       },
       {
-        "address": "94D, LEXHAM GARDENS",
-        "postcode": "W8 6JQ",
-        "price": 1035000,
-        "dateOfTransfer": "2025-10-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "36, HILLGATE PLACE",
         "postcode": "W8 7ST",
         "price": 2775000,
@@ -1131,11 +1385,35 @@
         "newBuild": false
       },
       {
+        "address": "94D, LEXHAM GARDENS",
+        "postcode": "W8 6JQ",
+        "price": 1035000,
+        "dateOfTransfer": "2025-10-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "67B, KENSINGTON CHURCH STREET",
+        "postcode": "W8 4BG",
+        "price": 2900000,
+        "dateOfTransfer": "2025-10-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "5, PEMBROKE VILLAS",
         "postcode": "W8 6PG",
         "price": 9800000,
         "dateOfTransfer": "2025-10-20",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, BEDFORD GARDENS",
+        "postcode": "W8 7EH",
+        "price": 3500000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1235,6 +1513,14 @@
         "newBuild": false
       },
       {
+        "address": "21, FLAT 3, KENSINGTON COURT",
+        "postcode": "W8 5DW",
+        "price": 1775000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "34, MALL CHAMBERS",
         "postcode": "W8 4DZ",
         "price": 476550,
@@ -1243,10 +1529,10 @@
         "newBuild": false
       },
       {
-        "address": "21, FLAT 3, KENSINGTON COURT",
-        "postcode": "W8 5DW",
-        "price": 1775000,
-        "dateOfTransfer": "2025-10-02",
+        "address": "ACADEMY GARDENS, APARTMENT 7, DUCHESS OF BEDFORDS WALK",
+        "postcode": "W8 7QQ",
+        "price": 3100000,
+        "dateOfTransfer": "2025-10-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1259,10 +1545,10 @@
         "newBuild": false
       },
       {
-        "address": "ACADEMY GARDENS, APARTMENT 7, DUCHESS OF BEDFORDS WALK",
-        "postcode": "W8 7QQ",
-        "price": 3100000,
-        "dateOfTransfer": "2025-10-01",
+        "address": "19, FLAT 2, PALACE GATE",
+        "postcode": "W8 5LS",
+        "price": 860000,
+        "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1278,14 +1564,6 @@
         "address": "10, RAISED GROUND FLOOR FLAT, MARLOES ROAD",
         "postcode": "W8 5LJ",
         "price": 1600000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "19, FLAT 2, PALACE GATE",
-        "postcode": "W8 5LS",
-        "price": 860000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1331,11 +1609,11 @@
         "newBuild": false
       },
       {
-        "address": "LEONARD COURT, 28, EDWARDES SQUARE",
-        "postcode": "W8 6NN",
-        "price": 675000,
-        "dateOfTransfer": "2025-09-25",
-        "propertyType": "Flat/Maisonette",
+        "address": "GARAGES 3 AND 4, 34, PHILLIMORE GARDENS",
+        "postcode": "W8 7QF",
+        "price": 35000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1344,6 +1622,22 @@
         "price": 6150000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 11, KENSINGTON ROAD",
+        "postcode": "W8 5AU",
+        "price": 17200000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "LEONARD COURT, 28, EDWARDES SQUARE",
+        "postcode": "W8 6NN",
+        "price": 675000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1368,6 +1662,14 @@
         "price": 925000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "184, GROUND FLOOR AND BASEMENT, KENSINGTON HIGH STREET",
+        "postcode": "W8 7RG",
+        "price": 87000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1467,6 +1769,22 @@
         "newBuild": false
       },
       {
+        "address": "1, PEEL STREET",
+        "postcode": "W8 7PA",
+        "price": 2165000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ALLEN HOUSE, 8, FLAT 502, ALLEN STREET",
+        "postcode": "W8 6BH",
+        "price": 1500000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "41, UPPER MAISONETTE, MARLOES ROAD",
         "postcode": "W8 6LA",
         "price": 1898000,
@@ -1491,17 +1809,17 @@
         "newBuild": false
       },
       {
-        "address": "8, DUKES LANE CHAMBERS",
-        "postcode": "W8 4JN",
-        "price": 415000,
+        "address": "55, SHEFFIELD TERRACE, KENSINGTON",
+        "postcode": "W8 7NB",
+        "price": 950000,
         "dateOfTransfer": "2025-08-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "55, SHEFFIELD TERRACE, KENSINGTON",
-        "postcode": "W8 7NB",
-        "price": 950000,
+        "address": "8, DUKES LANE CHAMBERS",
+        "postcode": "W8 4JN",
+        "price": 415000,
         "dateOfTransfer": "2025-08-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1606,6 +1924,14 @@
         "address": "ALLEN MANSIONS, GARAGE 8, ALLEN STREET",
         "postcode": "W8 6UY",
         "price": 50000,
+        "dateOfTransfer": "2025-08-11",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "51, PARKING SPACE 18, IVERNA GARDENS",
+        "postcode": "W8 6TP",
+        "price": 35000,
         "dateOfTransfer": "2025-08-11",
         "propertyType": "Other",
         "newBuild": false
@@ -1723,6 +2049,14 @@
         "newBuild": false
       },
       {
+        "address": "COURTLEIGH, 126, FLAT 16, EARLS COURT ROAD",
+        "postcode": "W8 6QL",
+        "price": 365000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "ST. ALBANS MANSIONS, FLAT 5, KENSINGTON COURT PLACE",
         "postcode": "W8 5QH",
         "price": 3217000,
@@ -1755,6 +2089,14 @@
         "newBuild": false
       },
       {
+        "address": "PHILLIMORE COURT, 30, KENSINGTON HIGH STREET",
+        "postcode": "W8 7DT",
+        "price": 1580000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "ALLEN HOUSE, 8, FLAT 205, ALLEN STREET",
         "postcode": "W8 6BH",
         "price": 1358000,
@@ -1763,11 +2105,11 @@
         "newBuild": true
       },
       {
-        "address": "PHILLIMORE COURT, 30, KENSINGTON HIGH STREET",
-        "postcode": "W8 7DT",
-        "price": 1580000,
-        "dateOfTransfer": "2025-07-28",
-        "propertyType": "Flat/Maisonette",
+        "address": "7, CANNING PLACE",
+        "postcode": "W8 5AD",
+        "price": 5350000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1792,14 +2134,6 @@
         "price": 1150000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "7, CANNING PLACE",
-        "postcode": "W8 5AD",
-        "price": 5350000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1835,27 +2169,27 @@
         "newBuild": false
       },
       {
-        "address": "ABINGDON COURT, FLAT 33, ABINGDON VILLAS",
-        "postcode": "W8 6BT",
-        "price": 2300000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "71, ABINGDON ROAD",
-        "postcode": "W8 6AW",
-        "price": 1375000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "71, ABINGDON ROAD",
         "postcode": "W8 6AW",
         "price": 25000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "71, ABINGDON ROAD",
+        "postcode": "W8 6AW",
+        "price": 1630000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ABINGDON COURT, FLAT 33, ABINGDON VILLAS",
+        "postcode": "W8 6BT",
+        "price": 2300000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1869,7 +2203,7 @@
       {
         "address": "71, ABINGDON ROAD",
         "postcode": "W8 6AW",
-        "price": 1630000,
+        "price": 1375000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1891,14 +2225,6 @@
         "newBuild": false
       },
       {
-        "address": "19, PEEL STREET",
-        "postcode": "W8 7PA",
-        "price": 1665000,
-        "dateOfTransfer": "2025-07-15",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "51, FLAT 8, IVERNA GARDENS",
         "postcode": "W8 6TP",
         "price": 642500,
@@ -1912,6 +2238,14 @@
         "price": 642500,
         "dateOfTransfer": "2025-07-15",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "19, PEEL STREET",
+        "postcode": "W8 7PA",
+        "price": 1665000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1944,6 +2278,14 @@
         "price": 1700000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8A, ABINGDON ROAD",
+        "postcode": "W8 6AF",
+        "price": 1950000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2011,19 +2353,19 @@
         "newBuild": false
       },
       {
-        "address": "34, PHILLIMORE WALK",
-        "postcode": "W8 7SA",
-        "price": 1250000,
-        "dateOfTransfer": "2025-07-01",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "OAK LODGE, FLAT 48, CHANTRY SQUARE",
         "postcode": "W8 5UL",
         "price": 1775000,
         "dateOfTransfer": "2025-07-01",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, PHILLIMORE WALK",
+        "postcode": "W8 7SA",
+        "price": 1250000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2046,6 +2388,14 @@
         "address": "15, GORDON PLACE",
         "postcode": "W8 4JD",
         "price": 830000,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48, PEMBROKE ROAD",
+        "postcode": "W8 6NU",
+        "price": 6900000,
         "dateOfTransfer": "2025-06-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2133,7 +2483,7 @@
       {
         "address": "SUTHERLAND HOUSE, FLAT 1, MARLOES ROAD",
         "postcode": "W8 5LG",
-        "price": 2000000,
+        "price": 1600000,
         "dateOfTransfer": "2025-06-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2141,9 +2491,17 @@
       {
         "address": "SUTHERLAND HOUSE, FLAT 1, MARLOES ROAD",
         "postcode": "W8 5LG",
-        "price": 1600000,
+        "price": 2000000,
         "dateOfTransfer": "2025-06-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, CARMEL COURT",
+        "postcode": "W8 4LU",
+        "price": 8456119,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2171,14 +2529,6 @@
         "newBuild": true
       },
       {
-        "address": "6, CARMEL COURT",
-        "postcode": "W8 4LU",
-        "price": 8456119,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "10A, SUNNINGDALE GARDENS",
         "postcode": "W8 6PX",
         "price": 865000,
@@ -2203,14 +2553,6 @@
         "newBuild": false
       },
       {
-        "address": "6 - 7, FLAT 12A, VICARAGE GATE",
-        "postcode": "W8 4HH",
-        "price": 642000,
-        "dateOfTransfer": "2025-05-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "261, APARTMENT 55, KENSINGTON HIGH STREET",
         "postcode": "W8 6NB",
         "price": 2230000,
@@ -2219,10 +2561,10 @@
         "newBuild": true
       },
       {
-        "address": "29, FLAT C, LEXHAM GARDENS",
-        "postcode": "W8 5JR",
-        "price": 1070000,
-        "dateOfTransfer": "2025-05-28",
+        "address": "6 - 7, FLAT 12A, VICARAGE GATE",
+        "postcode": "W8 4HH",
+        "price": 642000,
+        "dateOfTransfer": "2025-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2235,10 +2577,26 @@
         "newBuild": false
       },
       {
+        "address": "29, FLAT C, LEXHAM GARDENS",
+        "postcode": "W8 5JR",
+        "price": 1070000,
+        "dateOfTransfer": "2025-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "72, IVERNA COURT",
         "postcode": "W8 6TT",
         "price": 2200000,
         "dateOfTransfer": "2025-05-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7F, BERKELEY GARDENS",
+        "postcode": "W8 4AP",
+        "price": 1210000,
+        "dateOfTransfer": "2025-05-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2249,14 +2607,6 @@
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
-      },
-      {
-        "address": "7F, BERKELEY GARDENS",
-        "postcode": "W8 4AP",
-        "price": 1210000,
-        "dateOfTransfer": "2025-05-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
       },
       {
         "address": "MAGNOLIA LODGE, FLAT 20, ST MARYS GATE",
@@ -2275,19 +2625,19 @@
         "newBuild": false
       },
       {
-        "address": "24, HILLGATE STREET",
-        "postcode": "W8 7SR",
-        "price": 3000000,
-        "dateOfTransfer": "2025-05-20",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "ARGYLL COURT, 82 - 84, FLAT 6, LEXHAM GARDENS",
         "postcode": "W8 5JB",
         "price": 1340000,
         "dateOfTransfer": "2025-05-20",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, HILLGATE STREET",
+        "postcode": "W8 7SR",
+        "price": 3000000,
+        "dateOfTransfer": "2025-05-20",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2307,17 +2657,17 @@
         "newBuild": false
       },
       {
-        "address": "EVELYN HOUSE, 8 - 10, FLAT 7, HORNTON STREET",
-        "postcode": "W8 4NW",
-        "price": 1780000,
+        "address": "9, FIRST AND SECOND FLOOR MAISONETTE, BEDFORD GARDENS",
+        "postcode": "W8 7ED",
+        "price": 1150000,
         "dateOfTransfer": "2025-05-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "9, FIRST AND SECOND FLOOR MAISONETTE, BEDFORD GARDENS",
-        "postcode": "W8 7ED",
-        "price": 1150000,
+        "address": "EVELYN HOUSE, 8 - 10, FLAT 7, HORNTON STREET",
+        "postcode": "W8 4NW",
+        "price": 1780000,
         "dateOfTransfer": "2025-05-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2339,17 +2689,17 @@
         "newBuild": false
       },
       {
-        "address": "51, ABINGDON VILLAS",
-        "postcode": "W8 6XA",
-        "price": 5260000,
+        "address": "33, PEMBROKE GARDENS",
+        "postcode": "W8 6HU",
+        "price": 2650000,
         "dateOfTransfer": "2025-05-08",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "33, PEMBROKE GARDENS",
-        "postcode": "W8 6HU",
-        "price": 2650000,
+        "address": "51, ABINGDON VILLAS",
+        "postcode": "W8 6XA",
+        "price": 5260000,
         "dateOfTransfer": "2025-05-08",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2379,17 +2729,17 @@
         "newBuild": false
       },
       {
-        "address": "5, FLAT 2, GORDON PLACE",
-        "postcode": "W8 4JD",
-        "price": 750000,
+        "address": "6, FLAT 56, CAMPDEN HILL",
+        "postcode": "W8 7AD",
+        "price": 8300000,
         "dateOfTransfer": "2025-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "6, FLAT 56, CAMPDEN HILL",
-        "postcode": "W8 7AD",
-        "price": 8300000,
+        "address": "5, FLAT 2, GORDON PLACE",
+        "postcode": "W8 4JD",
+        "price": 750000,
         "dateOfTransfer": "2025-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2435,19 +2785,19 @@
         "newBuild": false
       },
       {
-        "address": "108 - 110, KENSINGTON HIGH STREET",
-        "postcode": "W8 4SG",
-        "price": 17000000,
-        "dateOfTransfer": "2025-04-17",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "46, WARWICK CHAMBERS",
         "postcode": "W8 6EW",
         "price": 700000,
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "108 - 110, KENSINGTON HIGH STREET",
+        "postcode": "W8 4SG",
+        "price": 17000000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2483,20 +2833,20 @@
         "newBuild": false
       },
       {
-        "address": "16, PEMBROKE SQUARE",
-        "postcode": "W8 6PA",
-        "price": 3772500,
-        "dateOfTransfer": "2025-04-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "261, APARTMENT 78, KENSINGTON HIGH STREET",
         "postcode": "W8 6NB",
         "price": 4300000,
         "dateOfTransfer": "2025-04-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "16, PEMBROKE SQUARE",
+        "postcode": "W8 6PA",
+        "price": 3772500,
+        "dateOfTransfer": "2025-04-10",
+        "propertyType": "Terraced",
+        "newBuild": false
       },
       {
         "address": "4, SHAFTESBURY VILLAS",
@@ -2512,6 +2862,14 @@
         "price": 2900000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ARDEN HOUSE, 107, FLAT 4, EARLS COURT ROAD",
+        "postcode": "W8 6QJ",
+        "price": 550000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2539,9 +2897,9 @@
         "newBuild": false
       },
       {
-        "address": "ARDEN HOUSE, 107, FLAT 4, EARLS COURT ROAD",
-        "postcode": "W8 6QJ",
-        "price": 550000,
+        "address": "CAMPDEN HOUSES, FLAT 78, PEEL STREET",
+        "postcode": "W8 7PQ",
+        "price": 390000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2555,27 +2913,19 @@
         "newBuild": false
       },
       {
-        "address": "CAMPDEN HOUSES, FLAT 78, PEEL STREET",
-        "postcode": "W8 7PQ",
-        "price": 390000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, FIRST FLOOR FLAT, STRATHMORE GARDENS",
-        "postcode": "W8 4RZ",
-        "price": 1800000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "19, COPE PLACE",
         "postcode": "W8 6AA",
         "price": 2485000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "WEST PEMBROKE COURT, 19, FLAT 1, PEMBROKE PLACE",
+        "postcode": "W8 6EX",
+        "price": 733000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2587,9 +2937,9 @@
         "newBuild": true
       },
       {
-        "address": "WEST PEMBROKE COURT, 19, FLAT 1, PEMBROKE PLACE",
-        "postcode": "W8 6EX",
-        "price": 733000,
+        "address": "1, FIRST FLOOR FLAT, STRATHMORE GARDENS",
+        "postcode": "W8 4RZ",
+        "price": 1800000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2635,6 +2985,14 @@
         "newBuild": false
       },
       {
+        "address": "CONSORT COURT, 31, FLAT 313, WRIGHTS LANE",
+        "postcode": "W8 5SN",
+        "price": 1350000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "50 - 52, FLAT 2, LEXHAM GARDENS",
         "postcode": "W8 5JA",
         "price": 1670000,
@@ -2646,14 +3004,6 @@
         "address": "10, IVERNA GARDENS",
         "postcode": "W8 6TN",
         "price": 2162500,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CONSORT COURT, 31, FLAT 313, WRIGHTS LANE",
-        "postcode": "W8 5SN",
-        "price": 1350000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2699,9 +3049,9 @@
         "newBuild": true
       },
       {
-        "address": "BROADWALK COURT, 79, FLAT 34, PALACE GARDENS TERRACE",
-        "postcode": "W8 4EF",
-        "price": 335000,
+        "address": "20, RADLEY MEWS",
+        "postcode": "W8 6JP",
+        "price": 690000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2715,10 +3065,18 @@
         "newBuild": false
       },
       {
-        "address": "20, RADLEY MEWS",
-        "postcode": "W8 6JP",
-        "price": 690000,
+        "address": "BROADWALK COURT, 79, FLAT 34, PALACE GARDENS TERRACE",
+        "postcode": "W8 4EF",
+        "price": 335000,
         "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, EDGE STREET",
+        "postcode": "W8 7PN",
+        "price": 2235000,
+        "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2747,14 +3105,6 @@
         "newBuild": false
       },
       {
-        "address": "16, EDGE STREET",
-        "postcode": "W8 7PN",
-        "price": 2235000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "59, FLAT E, KENSINGTON COURT",
         "postcode": "W8 5DG",
         "price": 736260,
@@ -2779,6 +3129,14 @@
         "newBuild": false
       },
       {
+        "address": "8, FARM PLACE",
+        "postcode": "W8 7SX",
+        "price": 1745000,
+        "dateOfTransfer": "2025-03-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "261, APARTMENT 60, KENSINGTON HIGH STREET",
         "postcode": "W8 6NB",
         "price": 3990000,
@@ -2795,17 +3153,9 @@
         "newBuild": false
       },
       {
-        "address": "8, FARM PLACE",
-        "postcode": "W8 7SX",
-        "price": 1745000,
-        "dateOfTransfer": "2025-03-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "OFFICE, KENSINGTON HIGH STREET",
         "postcode": "W8 6NB",
-        "price": 250000,
+        "price": 208333,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Other",
         "newBuild": false
@@ -2859,14 +3209,6 @@
         "newBuild": true
       },
       {
-        "address": "89, BEDFORD GARDENS",
-        "postcode": "W8 7EQ",
-        "price": 4750000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "5, FLAT 3, SHEFFIELD TERRACE, KENSINGTON",
         "postcode": "W8 7NG",
         "price": 1625000,
@@ -2883,17 +3225,25 @@
         "newBuild": false
       },
       {
-        "address": "71A, ABINGDON ROAD",
-        "postcode": "W8 6AW",
-        "price": 1375000,
+        "address": "89, BEDFORD GARDENS",
+        "postcode": "W8 7EQ",
+        "price": 4750000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "DAVIS COURT, FLAT I, ARGYLL ROAD",
         "postcode": "W8 7BQ",
         "price": 1165000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71A, ABINGDON ROAD",
+        "postcode": "W8 6AW",
+        "price": 1375000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2987,14 +3337,6 @@
         "newBuild": true
       },
       {
-        "address": "101, FLAT C, EARLS COURT ROAD",
-        "postcode": "W8 6QH",
-        "price": 1300000,
-        "dateOfTransfer": "2025-02-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "261, APARTMENT 70, KENSINGTON HIGH STREET",
         "postcode": "W8 6NB",
         "price": 5000000,
@@ -3005,16 +3347,16 @@
       {
         "address": "101, FLAT C, EARLS COURT ROAD",
         "postcode": "W8 6QH",
-        "price": 1167549,
+        "price": 1300000,
         "dateOfTransfer": "2025-02-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "12, FLAT D, MARLOES ROAD",
-        "postcode": "W8 5LJ",
-        "price": 1192500,
-        "dateOfTransfer": "2025-02-21",
+        "address": "101, FLAT C, EARLS COURT ROAD",
+        "postcode": "W8 6QH",
+        "price": 1167549,
+        "dateOfTransfer": "2025-02-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3022,6 +3364,14 @@
         "address": "13, FLAT 1, OBSERVATORY GARDENS",
         "postcode": "W8 7HY",
         "price": 1505000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, FLAT D, MARLOES ROAD",
+        "postcode": "W8 5LJ",
+        "price": 1192500,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3139,9 +3489,9 @@
         "newBuild": false
       },
       {
-        "address": "105, THIRD FLOOR FLAT, LEXHAM GARDENS",
-        "postcode": "W8 6JN",
-        "price": 350000,
+        "address": "LIZMANS TERRACE, 89 - 95, FLAT 18, EARLS COURT ROAD",
+        "postcode": "W8 6EF",
+        "price": 625000,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3150,14 +3500,6 @@
         "address": "COTTESMORE COURT, FLAT 13, STANFORD ROAD",
         "postcode": "W8 5QL",
         "price": 2200000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "LIZMANS TERRACE, 89 - 95, FLAT 18, EARLS COURT ROAD",
-        "postcode": "W8 6EF",
-        "price": 625000,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3176,6 +3518,14 @@
         "price": 7750000,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "105, THIRD FLOOR FLAT, LEXHAM GARDENS",
+        "postcode": "W8 6JN",
+        "price": 350000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3243,6 +3593,14 @@
         "newBuild": false
       },
       {
+        "address": "96, FLAT 2, LEXHAM GARDENS",
+        "postcode": "W8 6JQ",
+        "price": 710000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "21, HILLGATE STREET",
         "postcode": "W8 7SP",
         "price": 3100000,
@@ -3251,9 +3609,9 @@
         "newBuild": false
       },
       {
-        "address": "96, FLAT 2, LEXHAM GARDENS",
-        "postcode": "W8 6JQ",
-        "price": 710000,
+        "address": "22, WYCOMBE SQUARE",
+        "postcode": "W8 7JD",
+        "price": 1675000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3264,14 +3622,6 @@
         "price": 155000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "22, WYCOMBE SQUARE",
-        "postcode": "W8 7JD",
-        "price": 1675000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3323,17 +3673,17 @@
         "newBuild": false
       },
       {
-        "address": "1, PEMBROKE SQUARE",
-        "postcode": "W8 6PA",
-        "price": 1200000,
+        "address": "4, ABINGDON ROAD",
+        "postcode": "W8 6AF",
+        "price": 3250000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "4, ABINGDON ROAD",
-        "postcode": "W8 6AF",
-        "price": 3250000,
+        "address": "1, PEMBROKE SQUARE",
+        "postcode": "W8 6PA",
+        "price": 1200000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3344,6 +3694,14 @@
         "price": 399000,
         "dateOfTransfer": "2025-01-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, KENSINGTON PLACE",
+        "postcode": "W8 7PR",
+        "price": 2530000,
+        "dateOfTransfer": "2025-01-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3371,25 +3729,17 @@
         "newBuild": false
       },
       {
-        "address": "37, KENSINGTON PLACE",
-        "postcode": "W8 7PR",
-        "price": 2530000,
-        "dateOfTransfer": "2025-01-15",
-        "propertyType": "Terraced",
+        "address": "FORDHAM COURT, 9 - 13, FLAT 11, DE VERE GARDENS",
+        "postcode": "W8 5AP",
+        "price": 1150000,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "WINCHESTER COURT, FLAT 25, VICARAGE GATE",
         "postcode": "W8 4AD",
         "price": 527000,
-        "dateOfTransfer": "2025-01-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "FORDHAM COURT, 9 - 13, FLAT 11, DE VERE GARDENS",
-        "postcode": "W8 5AP",
-        "price": 1150000,
         "dateOfTransfer": "2025-01-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3451,8 +3801,8 @@
         "newBuild": true
       }
     ],
-    "averagePrice": 2559488,
-    "medianPrice": 1520000
+    "averagePrice": 2522470,
+    "medianPrice": 1494750
   },
   "representatives": {
     "representatives": [

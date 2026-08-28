@@ -3,8 +3,8 @@
   "slug": "n2",
   "city": "London",
   "borough": "Barnet",
-  "latitude": 51.59008553308821,
-  "longitude": -0.169277856617647,
+  "latitude": 51.590059214990156,
+  "longitude": -0.16937538264299792,
   "wards": [
     "East Finchley",
     "Fortis Green",
@@ -117,7 +117,8 @@
         "urn": "101317",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "19/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Eagans Close, London",
         "postcode": "N2 8GA",
         "numberOfPupils": 198,
@@ -129,6 +130,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "18 Holne Chase, Hampstead Garden Suburb, London",
         "postcode": "N2 0QN",
         "numberOfPupils": 63,
@@ -140,6 +142,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Norrice Lea, Hampstead Garden Suburb, London",
         "postcode": "N2 0RE",
         "numberOfPupils": 124,
@@ -150,7 +153,8 @@
         "urn": "135226",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Plane Tree Walk, East Finchley, London",
         "postcode": "N2 9JP",
         "numberOfPupils": 622,
@@ -162,6 +166,7 @@
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "East End Road, East Finchley, London",
         "postcode": "N2 0SE",
         "numberOfPupils": 1000,
@@ -173,6 +178,7 @@
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Eagans Close, London",
         "postcode": "N2 8GA",
         "numberOfPupils": 818,
@@ -183,7 +189,8 @@
         "urn": "143082",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/07/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hamilton Road, East Finchley, London",
         "postcode": "N2 0SQ",
         "numberOfPupils": 968,
@@ -195,6 +202,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Heath View, East Finchley, London",
         "postcode": "N2 0QY",
         "numberOfPupils": 190,
@@ -206,19 +214,19 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 266,
-        "violentCrimes": 89,
+        "totalCrimes": 265,
+        "violentCrimes": 88,
         "propertyCrimes": 104
       },
       {
         "month": "2025-08",
-        "totalCrimes": 234,
-        "violentCrimes": 66,
+        "totalCrimes": 232,
+        "violentCrimes": 65,
         "propertyCrimes": 99
       },
       {
         "month": "2025-09",
-        "totalCrimes": 232,
+        "totalCrimes": 231,
         "violentCrimes": 67,
         "propertyCrimes": 111
       },
@@ -248,14 +256,14 @@
       },
       {
         "month": "2026-02",
-        "totalCrimes": 223,
+        "totalCrimes": 222,
         "violentCrimes": 72,
         "propertyCrimes": 81
       },
       {
         "month": "2026-03",
-        "totalCrimes": 325,
-        "violentCrimes": 104,
+        "totalCrimes": 324,
+        "violentCrimes": 103,
         "propertyCrimes": 130
       },
       {
@@ -266,43 +274,115 @@
       },
       {
         "month": "2026-05",
-        "totalCrimes": 294,
-        "violentCrimes": 93,
+        "totalCrimes": 293,
+        "violentCrimes": 92,
         "propertyCrimes": 98
       },
       {
         "month": "2026-06",
-        "totalCrimes": 289,
+        "totalCrimes": 288,
         "violentCrimes": 90,
-        "propertyCrimes": 125
+        "propertyCrimes": 124
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 723,
+      "anti-social-behaviour": 721,
       "bicycle-theft": 21,
       "burglary": 232,
       "criminal-damage-arson": 149,
-      "drugs": 105,
+      "drugs": 104,
       "other-theft": 201,
-      "public-order": 158,
+      "public-order": 157,
       "robbery": 57,
       "shoplifting": 197,
       "theft-from-the-person": 67,
-      "vehicle-crime": 523,
-      "violent-crime": 721,
+      "vehicle-crime": 522,
+      "violent-crime": 718,
       "other-crime": 30,
       "possession-of-weapons": 14
     },
-    "totalLast12Months": 3198
+    "totalLast12Months": 3190
   },
   "property": {
     "sales": [
+      {
+        "address": "14, LEOPOLD ROAD",
+        "postcode": "N2 8BE",
+        "price": 757500,
+        "dateOfTransfer": "2026-07-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, MANOR PARK ROAD",
+        "postcode": "N2 0SL",
+        "price": 900000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, OAKVIEW GARDENS",
+        "postcode": "N2 0NJ",
+        "price": 900000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "57, BRIM HILL",
+        "postcode": "N2 0HA",
+        "price": 1410000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, BROWNSWELL ROAD, FINCHLEY",
+        "postcode": "N2 8LA",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CHANTRY COURT, FLAT 2, CREIGHTON AVENUE",
+        "postcode": "N2 9BG",
+        "price": 675500,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "116, CHURCH LANE",
+        "postcode": "N2 0TB",
+        "price": 965000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "74, OSSULTON WAY",
+        "postcode": "N2 0LB",
+        "price": 1450000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "71A, PARK HALL ROAD",
         "postcode": "N2 9PY",
         "price": 750000,
         "dateOfTransfer": "2026-06-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, THE BISHOPS AVENUE",
+        "postcode": "N2 0BN",
+        "price": 30000000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -314,9 +394,33 @@
         "newBuild": false
       },
       {
+        "address": "11, LUDLOW WAY",
+        "postcode": "N2 0JZ",
+        "price": 1100000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "17, HOWARD WALK",
+        "postcode": "N2 0HB",
+        "price": 1075000,
+        "dateOfTransfer": "2026-06-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "68, DEANSWAY",
         "postcode": "N2 0HY",
         "price": 3700000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, GREENHALGH WALK",
+        "postcode": "N2 0DJ",
+        "price": 1650000,
         "dateOfTransfer": "2026-05-29",
         "propertyType": "Detached",
         "newBuild": false
@@ -362,6 +466,14 @@
         "newBuild": false
       },
       {
+        "address": "BROOMFIELD COURT, 2, FLAT 3, BEAUMONT CLOSE",
+        "postcode": "N2 0GA",
+        "price": 1850000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "56, PARK HALL ROAD",
         "postcode": "N2 9PX",
         "price": 1672000,
@@ -386,22 +498,6 @@
         "newBuild": false
       },
       {
-        "address": "4, OAK LANE",
-        "postcode": "N2 8LP",
-        "price": 375000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WITCOMB LODGE, 64, FLAT 15, LANKASTER GARDENS",
-        "postcode": "N2 9AJ",
-        "price": 415000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2 ALBANY ROW, 12, THE CAUSEWAY",
         "postcode": "N2 0XB",
         "price": 740000,
@@ -413,6 +509,22 @@
         "address": "LYNTON GRANGE, FLAT 23, FORTIS GREEN",
         "postcode": "N2 9EU",
         "price": 435000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, OAK LANE",
+        "postcode": "N2 8LP",
+        "price": 375000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WITCOMB LODGE, 64, FLAT 15, LANKASTER GARDENS",
+        "postcode": "N2 9AJ",
+        "price": 415000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -514,11 +626,11 @@
         "newBuild": false
       },
       {
-        "address": "17, HOLNE CHASE",
-        "postcode": "N2 0QL",
-        "price": 2000000,
-        "dateOfTransfer": "2026-03-12",
-        "propertyType": "Other",
+        "address": "29, DURHAM ROAD",
+        "postcode": "N2 9DP",
+        "price": 1150000,
+        "dateOfTransfer": "2026-03-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -527,6 +639,14 @@
         "price": 140000,
         "dateOfTransfer": "2026-03-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, HOLNE CHASE",
+        "postcode": "N2 0QL",
+        "price": 2000000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -570,11 +690,11 @@
         "newBuild": false
       },
       {
-        "address": "44, HAMILTON ROAD",
-        "postcode": "N2 0SW",
-        "price": 933000,
-        "dateOfTransfer": "2026-02-25",
-        "propertyType": "Terraced",
+        "address": "8, AYLMER ROAD",
+        "postcode": "N2 0BX",
+        "price": 1300000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -586,9 +706,17 @@
         "newBuild": false
       },
       {
-        "address": "STOKES COURT, FLAT 38, DIPLOMA AVENUE",
-        "postcode": "N2 8NX",
-        "price": 255000,
+        "address": "44, HAMILTON ROAD",
+        "postcode": "N2 0SW",
+        "price": 933000,
+        "dateOfTransfer": "2026-02-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FLAT 3, 27, FORTIS GREEN",
+        "postcode": "N2 9JL",
+        "price": 300000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -602,11 +730,27 @@
         "newBuild": false
       },
       {
+        "address": "STOKES COURT, FLAT 38, DIPLOMA AVENUE",
+        "postcode": "N2 8NX",
+        "price": 255000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "100, HERTFORD ROAD, EAST FINCHLEY",
         "postcode": "N2 9BU",
         "price": 1530000,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, LUDLOW WAY",
+        "postcode": "N2 0JZ",
+        "price": 925000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -658,6 +802,14 @@
         "newBuild": false
       },
       {
+        "address": "41, DENISON CLOSE",
+        "postcode": "N2 0JU",
+        "price": 441000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "72, WINNINGTON ROAD",
         "postcode": "N2 0TX",
         "price": 4500000,
@@ -666,19 +818,19 @@
         "newBuild": false
       },
       {
-        "address": "6, ELMSHURST CRESCENT",
-        "postcode": "N2 0LP",
-        "price": 390000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "31, LEOPOLD ROAD",
         "postcode": "N2 8BE",
         "price": 868250,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, ELMSHURST CRESCENT",
+        "postcode": "N2 0LP",
+        "price": 390000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -714,19 +866,19 @@
         "newBuild": false
       },
       {
-        "address": "7, ETHAN DRIVE",
-        "postcode": "N2 0FD",
-        "price": 1075000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "55, LESLIE ROAD, EAST FINCHLEY",
         "postcode": "N2 8BJ",
         "price": 677000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, ETHAN DRIVE",
+        "postcode": "N2 0FD",
+        "price": 1075000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -922,19 +1074,19 @@
         "newBuild": false
       },
       {
-        "address": "13, BEECH DRIVE",
-        "postcode": "N2 9NX",
-        "price": 2500000,
-        "dateOfTransfer": "2025-11-25",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "LYTTELTON COURT, FLAT 21, LYTTELTON ROAD",
         "postcode": "N2 0EB",
         "price": 350000,
         "dateOfTransfer": "2025-11-25",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "13, BEECH DRIVE",
+        "postcode": "N2 9NX",
+        "price": 2500000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1034,14 +1186,6 @@
         "newBuild": false
       },
       {
-        "address": "66, PARK HALL ROAD",
-        "postcode": "N2 9PX",
-        "price": 1490000,
-        "dateOfTransfer": "2025-11-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "MANOR COURT, FLAT 26, AYLMER ROAD",
         "postcode": "N2 0PJ",
         "price": 395000,
@@ -1055,6 +1199,14 @@
         "price": 232000,
         "dateOfTransfer": "2025-11-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "66, PARK HALL ROAD",
+        "postcode": "N2 9PX",
+        "price": 1490000,
+        "dateOfTransfer": "2025-11-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1074,19 +1226,19 @@
         "newBuild": false
       },
       {
-        "address": "13, LYNMOUTH ROAD",
-        "postcode": "N2 9LR",
-        "price": 1450000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "7, FLAT 3, BLACKDOWN CLOSE",
         "postcode": "N2 8JF",
         "price": 292000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, LYNMOUTH ROAD",
+        "postcode": "N2 9LR",
+        "price": 1450000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1114,6 +1266,14 @@
         "newBuild": false
       },
       {
+        "address": "343, LONG LANE",
+        "postcode": "N2 8JW",
+        "price": 910000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "41, OSSULTON WAY",
         "postcode": "N2 0JY",
         "price": 1388000,
@@ -1138,17 +1298,9 @@
         "newBuild": false
       },
       {
-        "address": "343, LONG LANE",
-        "postcode": "N2 8JW",
-        "price": 910000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "56, PROSPECT RING",
         "postcode": "N2 8BP",
-        "price": 228000,
+        "price": 220000,
         "dateOfTransfer": "2025-10-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1156,7 +1308,7 @@
       {
         "address": "56, PROSPECT RING",
         "postcode": "N2 8BP",
-        "price": 220000,
+        "price": 228000,
         "dateOfTransfer": "2025-10-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1170,11 +1322,11 @@
         "newBuild": false
       },
       {
-        "address": "130, OLD FARM ROAD",
-        "postcode": "N2 9RQ",
-        "price": 270000,
+        "address": "23, LEICESTER ROAD",
+        "postcode": "N2 9DY",
+        "price": 1188000,
         "dateOfTransfer": "2025-10-20",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1186,19 +1338,19 @@
         "newBuild": false
       },
       {
-        "address": "23, LEICESTER ROAD",
-        "postcode": "N2 9DY",
-        "price": 1188000,
+        "address": "130, OLD FARM ROAD",
+        "postcode": "N2 9RQ",
+        "price": 270000,
         "dateOfTransfer": "2025-10-20",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "63, LESLIE ROAD, EAST FINCHLEY",
-        "postcode": "N2 8BJ",
-        "price": 712000,
+        "address": "51, BRACKENBURY ROAD",
+        "postcode": "N2 0SS",
+        "price": 770000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1210,11 +1362,11 @@
         "newBuild": false
       },
       {
-        "address": "51, BRACKENBURY ROAD",
-        "postcode": "N2 0SS",
-        "price": 770000,
+        "address": "63, LESLIE ROAD, EAST FINCHLEY",
+        "postcode": "N2 8BJ",
+        "price": 712000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1266,19 +1418,19 @@
         "newBuild": false
       },
       {
-        "address": "MULBERRY COURT, FLAT 23, BEDFORD ROAD",
-        "postcode": "N2 9DZ",
-        "price": 185000,
-        "dateOfTransfer": "2025-10-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "64, MANOR PARK ROAD",
         "postcode": "N2 0SJ",
         "price": 470000,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "MULBERRY COURT, FLAT 23, BEDFORD ROAD",
+        "postcode": "N2 9DZ",
+        "price": 185000,
+        "dateOfTransfer": "2025-10-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1298,14 +1450,6 @@
         "newBuild": false
       },
       {
-        "address": "LONSDALE COURT, 1, FLAT 1, BORROWDALE CLOSE",
-        "postcode": "N2 8LR",
-        "price": 410000,
-        "dateOfTransfer": "2025-10-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "5, PARK ROAD",
         "postcode": "N2 8EX",
         "price": 651999,
@@ -1319,6 +1463,14 @@
         "price": 865000,
         "dateOfTransfer": "2025-10-01",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LONSDALE COURT, 1, FLAT 1, BORROWDALE CLOSE",
+        "postcode": "N2 8LR",
+        "price": 410000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1354,6 +1506,14 @@
         "newBuild": false
       },
       {
+        "address": "71, LEOPOLD ROAD",
+        "postcode": "N2 8BG",
+        "price": 1075000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "25, TWYFORD AVENUE",
         "postcode": "N2 9NU",
         "price": 1950000,
@@ -1365,14 +1525,6 @@
         "address": "7, BRIGHTON ROAD",
         "postcode": "N2 8JU",
         "price": 810000,
-        "dateOfTransfer": "2025-09-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "71, LEOPOLD ROAD",
-        "postcode": "N2 8BG",
-        "price": 1075000,
         "dateOfTransfer": "2025-09-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1390,6 +1542,14 @@
         "postcode": "N2 0JT",
         "price": 430000,
         "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "STOKES COURT, FLAT 19, DIPLOMA AVENUE",
+        "postcode": "N2 8NX",
+        "price": 310000,
+        "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1466,19 +1626,19 @@
         "newBuild": false
       },
       {
-        "address": "29, BROWNSWELL ROAD, FINCHLEY",
-        "postcode": "N2 8LA",
-        "price": 540000,
-        "dateOfTransfer": "2025-09-04",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "27, OSSULTON WAY",
         "postcode": "N2 0DT",
         "price": 1775000,
         "dateOfTransfer": "2025-09-04",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "29, BROWNSWELL ROAD, FINCHLEY",
+        "postcode": "N2 8LA",
+        "price": 540000,
+        "dateOfTransfer": "2025-09-04",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1490,14 +1650,6 @@
         "newBuild": false
       },
       {
-        "address": "3, DIXEY COTTAGES",
-        "postcode": "N2 0NS",
-        "price": 585000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "LYTTELTON COURT, FLAT 65, LYTTELTON ROAD",
         "postcode": "N2 0ED",
         "price": 400000,
@@ -1506,11 +1658,11 @@
         "newBuild": false
       },
       {
-        "address": "23, SIMMS GARDENS",
-        "postcode": "N2 8HT",
-        "price": 350000,
+        "address": "3, DIXEY COTTAGES",
+        "postcode": "N2 0NS",
+        "price": 585000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1527,6 +1679,14 @@
         "price": 3500000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, SIMMS GARDENS",
+        "postcode": "N2 8HT",
+        "price": 350000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1754,6 +1914,14 @@
         "newBuild": false
       },
       {
+        "address": "47A, BARONSMERE ROAD",
+        "postcode": "N2 9QG",
+        "price": 530000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "297, LONG LANE",
         "postcode": "N2 8JW",
         "price": 562500,
@@ -1778,11 +1946,11 @@
         "newBuild": false
       },
       {
-        "address": "47A, BARONSMERE ROAD",
-        "postcode": "N2 9QG",
-        "price": 530000,
-        "dateOfTransfer": "2025-07-15",
-        "propertyType": "Flat/Maisonette",
+        "address": "113, HERTFORD ROAD, EAST FINCHLEY",
+        "postcode": "N2 9BX",
+        "price": 1230000,
+        "dateOfTransfer": "2025-07-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1882,19 +2050,19 @@
         "newBuild": false
       },
       {
-        "address": "23, NURSERY ROAD",
-        "postcode": "N2 9RA",
-        "price": 505000,
-        "dateOfTransfer": "2025-07-01",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "31, SEDGEMERE AVENUE",
         "postcode": "N2 0SY",
         "price": 545000,
         "dateOfTransfer": "2025-07-01",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, NURSERY ROAD",
+        "postcode": "N2 9RA",
+        "price": 505000,
+        "dateOfTransfer": "2025-07-01",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1911,6 +2079,14 @@
         "price": 1531000,
         "dateOfTransfer": "2025-06-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "GARAGE 16, HEATH VIEW",
+        "postcode": "N2 0QA",
+        "price": 28000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1938,11 +2114,11 @@
         "newBuild": false
       },
       {
-        "address": "GARAGE 16, HEATH VIEW",
-        "postcode": "N2 0QA",
-        "price": 28000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Other",
+        "address": "4, CHERRY TREE ROAD",
+        "postcode": "N2 9QL",
+        "price": 1285000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1962,11 +2138,11 @@
         "newBuild": false
       },
       {
-        "address": "4, CHERRY TREE ROAD",
-        "postcode": "N2 9QL",
-        "price": 1285000,
-        "dateOfTransfer": "2025-06-23",
-        "propertyType": "Terraced",
+        "address": "45, DEANERY CLOSE",
+        "postcode": "N2 8NT",
+        "price": 355000,
+        "dateOfTransfer": "2025-06-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1975,14 +2151,6 @@
         "price": 390000,
         "dateOfTransfer": "2025-06-19",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "45, DEANERY CLOSE",
-        "postcode": "N2 8NT",
-        "price": 355000,
-        "dateOfTransfer": "2025-06-19",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2010,6 +2178,14 @@
         "newBuild": false
       },
       {
+        "address": "75, OSSULTON WAY",
+        "postcode": "N2 0JY",
+        "price": 1135000,
+        "dateOfTransfer": "2025-06-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "WITCOMB LODGE, 64, FLAT 5, LANKASTER GARDENS",
         "postcode": "N2 9AJ",
         "price": 365000,
@@ -2026,14 +2202,6 @@
         "newBuild": false
       },
       {
-        "address": "18B, FLAT 9, HIGH ROAD",
-        "postcode": "N2 9PJ",
-        "price": 848000,
-        "dateOfTransfer": "2025-06-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "64, SUMMERLEE AVENUE",
         "postcode": "N2 9QH",
         "price": 1475000,
@@ -2042,12 +2210,12 @@
         "newBuild": false
       },
       {
-        "address": "75, OSSULTON WAY",
-        "postcode": "N2 0JY",
-        "price": 1135000,
+        "address": "18B, FLAT 9, HIGH ROAD",
+        "postcode": "N2 9PJ",
+        "price": 848000,
         "dateOfTransfer": "2025-06-11",
-        "propertyType": "Semi-detached",
-        "newBuild": false
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "10, FAIRLAWN AVENUE",
@@ -2210,19 +2378,19 @@
         "newBuild": false
       },
       {
-        "address": "5, OAKVIEW GARDENS",
-        "postcode": "N2 0NJ",
-        "price": 1100000,
-        "dateOfTransfer": "2025-04-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "HAZEL COURT, 49, FLAT 1, THE BISHOPS AVENUE",
         "postcode": "N2 0BN",
         "price": 2800000,
         "dateOfTransfer": "2025-04-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, OAKVIEW GARDENS",
+        "postcode": "N2 0NJ",
+        "price": 1100000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2290,33 +2458,9 @@
         "newBuild": false
       },
       {
-        "address": "17B, MARKET PLACE",
-        "postcode": "N2 8BD",
-        "price": 443000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "WHITTINGTON COURT, FLAT 7, AYLMER ROAD",
         "postcode": "N2 0BT",
         "price": 450000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "WESTSIDE, 68, FLAT 19, FORTIS GREEN",
-        "postcode": "N2 9ES",
-        "price": 780000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "27, SIMMS GARDENS",
-        "postcode": "N2 8HT",
-        "price": 325000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2338,6 +2482,22 @@
         "newBuild": false
       },
       {
+        "address": "27, SIMMS GARDENS",
+        "postcode": "N2 8HT",
+        "price": 325000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WESTSIDE, 68, FLAT 19, FORTIS GREEN",
+        "postcode": "N2 9ES",
+        "price": 780000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "263, CREIGHTON AVENUE",
         "postcode": "N2 9BP",
         "price": 1720000,
@@ -2346,11 +2506,11 @@
         "newBuild": false
       },
       {
-        "address": "34B, AYLMER PARADE",
-        "postcode": "N2 0PH",
-        "price": 402500,
+        "address": "17B, MARKET PLACE",
+        "postcode": "N2 8BD",
+        "price": 443000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2362,6 +2522,14 @@
         "newBuild": false
       },
       {
+        "address": "34B, AYLMER PARADE",
+        "postcode": "N2 0PH",
+        "price": 402500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "9, PROSPECT RING",
         "postcode": "N2 8BP",
         "price": 407500,
@@ -2370,9 +2538,17 @@
         "newBuild": false
       },
       {
-        "address": "39, LESLIE ROAD, EAST FINCHLEY",
-        "postcode": "N2 8BN",
-        "price": 600000,
+        "address": "23, HOWARD WALK",
+        "postcode": "N2 0HB",
+        "price": 1425000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WILLOW HOUSE, FLAT 13, THE GRANGE ESTATE",
+        "postcode": "N2 8EL",
+        "price": 400000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2383,6 +2559,22 @@
         "price": 1778000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, CROMWELL CLOSE",
+        "postcode": "N2 0LL",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LYTTELTON COURT, FLAT 49, LYTTELTON ROAD",
+        "postcode": "N2 0ED",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2410,22 +2602,6 @@
         "newBuild": false
       },
       {
-        "address": "28, CROMWELL CLOSE",
-        "postcode": "N2 0LL",
-        "price": 535000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "LYTTELTON COURT, FLAT 49, LYTTELTON ROAD",
-        "postcode": "N2 0ED",
-        "price": 410000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "373, LONG LANE",
         "postcode": "N2 8JW",
         "price": 820000,
@@ -2434,25 +2610,17 @@
         "newBuild": false
       },
       {
-        "address": "23, HOWARD WALK",
-        "postcode": "N2 0HB",
-        "price": 1425000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "WILLOW HOUSE, FLAT 13, THE GRANGE ESTATE",
-        "postcode": "N2 8EL",
-        "price": 400000,
+        "address": "39, LESLIE ROAD, EAST FINCHLEY",
+        "postcode": "N2 8BN",
+        "price": 600000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "LYTTELTON COURT, FLAT 34, LYTTELTON ROAD",
-        "postcode": "N2 0EB",
-        "price": 438000,
+        "address": "PRIORY GRANGE, FLAT 20, FORTIS GREEN",
+        "postcode": "N2 9ET",
+        "price": 390000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2466,9 +2634,9 @@
         "newBuild": false
       },
       {
-        "address": "PRIORY GRANGE, FLAT 20, FORTIS GREEN",
-        "postcode": "N2 9ET",
-        "price": 390000,
+        "address": "LYTTELTON COURT, FLAT 34, LYTTELTON ROAD",
+        "postcode": "N2 0EB",
+        "price": 438000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2514,17 +2682,17 @@
         "newBuild": false
       },
       {
-        "address": "MANOR COURT, FLAT 10, AYLMER ROAD",
-        "postcode": "N2 0PJ",
-        "price": 610000,
+        "address": "BISHOPS WOOD COURT, 29, FLAT 5, AYLMER ROAD",
+        "postcode": "N2 0BS",
+        "price": 885000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BISHOPS WOOD COURT, 29, FLAT 5, AYLMER ROAD",
-        "postcode": "N2 0BS",
-        "price": 885000,
+        "address": "MANOR COURT, FLAT 10, AYLMER ROAD",
+        "postcode": "N2 0PJ",
+        "price": 610000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2546,19 +2714,19 @@
         "newBuild": false
       },
       {
-        "address": "29A, FORTIS GREEN",
-        "postcode": "N2 9JL",
-        "price": 620000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "18C, JULIANA CLOSE",
         "postcode": "N2 0TJ",
         "price": 645000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "29A, FORTIS GREEN",
+        "postcode": "N2 9JL",
+        "price": 620000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2578,14 +2746,6 @@
         "newBuild": false
       },
       {
-        "address": "317, LONG LANE",
-        "postcode": "N2 8JW",
-        "price": 570000,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "TODD HOUSE, FLAT 2, THE GRANGE ESTATE",
         "postcode": "N2 8NL",
         "price": 359500,
@@ -2594,17 +2754,25 @@
         "newBuild": false
       },
       {
-        "address": "CHURCH COURT, 10, THE WALKS",
-        "postcode": "N2 8DN",
-        "price": 320000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
+        "address": "317, LONG LANE",
+        "postcode": "N2 8JW",
+        "price": 570000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "BOUCHIER HOUSE, FLAT 5A, THE GRANGE ESTATE",
         "postcode": "N2 8NH",
         "price": 360000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHURCH COURT, 10, THE WALKS",
+        "postcode": "N2 8DN",
+        "price": 320000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2650,33 +2818,9 @@
         "newBuild": false
       },
       {
-        "address": "LORRAINE COURT, FLAT 2, PARK GATE",
-        "postcode": "N2 8BY",
-        "price": 460000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2, SPRINGCROFT AVENUE",
         "postcode": "N2 9JE",
         "price": 1685000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "27, ELMSHURST CRESCENT",
-        "postcode": "N2 0LN",
-        "price": 650000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "91, BEDFORD ROAD",
-        "postcode": "N2 9DB",
-        "price": 1395000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2698,11 +2842,35 @@
         "newBuild": false
       },
       {
+        "address": "27, ELMSHURST CRESCENT",
+        "postcode": "N2 0LN",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "91, BEDFORD ROAD",
+        "postcode": "N2 9DB",
+        "price": 1395000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "220, HIGH ROAD",
         "postcode": "N2 9AY",
         "price": 259500,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LORRAINE COURT, FLAT 2, PARK GATE",
+        "postcode": "N2 8BY",
+        "price": 460000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2754,14 +2922,6 @@
         "newBuild": false
       },
       {
-        "address": "HOLDSWORTH LODGE, 66, FLAT 15, LANKASTER GARDENS",
-        "postcode": "N2 9FE",
-        "price": 325000,
-        "dateOfTransfer": "2025-02-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "NOBLEFIELD HEIGHTS, FLAT 14, GREAT NORTH ROAD",
         "postcode": "N2 0NX",
         "price": 647000,
@@ -2770,10 +2930,10 @@
         "newBuild": false
       },
       {
-        "address": "60, MANOR PARK ROAD",
-        "postcode": "N2 0SJ",
-        "price": 533500,
-        "dateOfTransfer": "2025-02-26",
+        "address": "HOLDSWORTH LODGE, 66, FLAT 15, LANKASTER GARDENS",
+        "postcode": "N2 9FE",
+        "price": 325000,
+        "dateOfTransfer": "2025-02-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2783,6 +2943,14 @@
         "price": 925000,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "60, MANOR PARK ROAD",
+        "postcode": "N2 0SJ",
+        "price": 533500,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2810,6 +2978,14 @@
         "newBuild": false
       },
       {
+        "address": "2A, LINCOLN ROAD",
+        "postcode": "N2 9FD",
+        "price": 885000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "18, SOUTHERN ROAD",
         "postcode": "N2 9LE",
         "price": 1700000,
@@ -2834,14 +3010,6 @@
         "newBuild": false
       },
       {
-        "address": "2A, LINCOLN ROAD",
-        "postcode": "N2 9FD",
-        "price": 885000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "77, OSSULTON WAY",
         "postcode": "N2 0JS",
         "price": 440000,
@@ -2858,14 +3026,6 @@
         "newBuild": false
       },
       {
-        "address": "5, LYTTON CLOSE",
-        "postcode": "N2 0RH",
-        "price": 1900000,
-        "dateOfTransfer": "2025-02-12",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "63, KINGSLEY WAY",
         "postcode": "N2 0EL",
         "price": 4000000,
@@ -2877,6 +3037,14 @@
         "address": "25, GREENHALGH WALK",
         "postcode": "N2 0DJ",
         "price": 1842500,
+        "dateOfTransfer": "2025-02-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, LYTTON CLOSE",
+        "postcode": "N2 0RH",
+        "price": 1900000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2962,6 +3130,14 @@
         "newBuild": false
       },
       {
+        "address": "27, GREENHALGH WALK",
+        "postcode": "N2 0DJ",
+        "price": 1795000,
+        "dateOfTransfer": "2025-01-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "6, WINNINGTON ROAD",
         "postcode": "N2 0UB",
         "price": 4760000,
@@ -2973,14 +3149,6 @@
         "address": "50, DURHAM ROAD",
         "postcode": "N2 9DT",
         "price": 1300000,
-        "dateOfTransfer": "2025-01-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "27, GREENHALGH WALK",
-        "postcode": "N2 0DJ",
-        "price": 1795000,
         "dateOfTransfer": "2025-01-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3050,25 +3218,9 @@
         "newBuild": false
       },
       {
-        "address": "4, RICHMOND ROAD",
-        "postcode": "N2 8JT",
-        "price": 952000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "MANOR COURT, FLAT 7, AYLMER ROAD",
         "postcode": "N2 0PJ",
         "price": 560000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "41, LUCAS GARDENS",
-        "postcode": "N2 8HJ",
-        "price": 280000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3087,6 +3239,22 @@
         "price": 2100000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, RICHMOND ROAD",
+        "postcode": "N2 8JT",
+        "price": 952000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "41, LUCAS GARDENS",
+        "postcode": "N2 8HJ",
+        "price": 280000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3114,8 +3282,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1085169,
-    "medianPrice": 605550
+    "averagePrice": 1158625,
+    "medianPrice": 642500
   },
   "representatives": {
     "representatives": [

@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import HamburgerMenu from "../components/HamburgerMenu.astro";
+import PostcodeSearch from "../components/PostcodeSearch.astro";
 
 interface Props {
   title: string;
@@ -31,10 +32,13 @@ const {
   </head>
   <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
     <header class="border-b border-stone-200 bg-white">
-      <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+      <div class="mx-auto max-w-5xl px-4 py-4 flex flex-wrap items-center justify-between gap-3">
         <a href="/" class="text-2xl font-extrabold tracking-tight">
           Postcode<span class="text-emerald-700">Hub</span>.UK
         </a>
+        <div class="order-3 w-full sm:order-none sm:w-auto sm:flex-1 sm:px-6">
+          <PostcodeSearch />
+        </div>
         <div class="flex items-center gap-3">
           <span class="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-emerald-800">
             <span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span>

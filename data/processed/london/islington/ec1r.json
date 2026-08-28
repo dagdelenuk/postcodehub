@@ -3,8 +3,8 @@
   "slug": "ec1r",
   "city": "London",
   "borough": "Islington",
-  "latitude": 51.52501843071166,
-  "longitude": -0.10834355805243448,
+  "latitude": 51.52501799215685,
+  "longitude": -0.1083067725490196,
   "wards": [
     "Clerkenwell",
     "Holborn & Covent Garden"
@@ -58,7 +58,8 @@
         "urn": "130342",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "23/02/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "38 Laystall Street, London",
         "postcode": "EC1R 4PQ",
         "numberOfPupils": 228,
@@ -68,8 +69,9 @@
         "name": "Hugh Myddelton Primary School",
         "urn": "131842",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "25/01/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Myddelton Street, London",
         "postcode": "EC1R 1YJ",
         "numberOfPupils": 502,
@@ -87,15 +89,15 @@
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2643,
+        "totalCrimes": 2641,
         "violentCrimes": 685,
-        "propertyCrimes": 1404
+        "propertyCrimes": 1402
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2584,
+        "totalCrimes": 2582,
         "violentCrimes": 621,
-        "propertyCrimes": 1479
+        "propertyCrimes": 1477
       },
       {
         "month": "2025-10",
@@ -105,73 +107,105 @@
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2596,
-        "violentCrimes": 646,
-        "propertyCrimes": 1412
+        "totalCrimes": 2592,
+        "violentCrimes": 645,
+        "propertyCrimes": 1409
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2527,
-        "violentCrimes": 577,
-        "propertyCrimes": 1452
+        "totalCrimes": 2523,
+        "violentCrimes": 576,
+        "propertyCrimes": 1449
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2319,
+        "totalCrimes": 2315,
         "violentCrimes": 569,
-        "propertyCrimes": 1273
+        "propertyCrimes": 1270
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2395,
-        "violentCrimes": 558,
+        "totalCrimes": 2394,
+        "violentCrimes": 557,
         "propertyCrimes": 1351
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2517,
-        "violentCrimes": 620,
-        "propertyCrimes": 1333
+        "totalCrimes": 2512,
+        "violentCrimes": 617,
+        "propertyCrimes": 1331
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2651,
-        "violentCrimes": 623,
-        "propertyCrimes": 1483
+        "totalCrimes": 2649,
+        "violentCrimes": 622,
+        "propertyCrimes": 1482
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2574,
+        "totalCrimes": 2571,
         "violentCrimes": 620,
-        "propertyCrimes": 1463
+        "propertyCrimes": 1460
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2690,
+        "totalCrimes": 2688,
         "violentCrimes": 691,
-        "propertyCrimes": 1531
+        "propertyCrimes": 1529
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 4931,
-      "bicycle-theft": 869,
-      "burglary": 1213,
-      "criminal-damage-arson": 756,
+      "anti-social-behaviour": 4930,
+      "bicycle-theft": 867,
+      "burglary": 1211,
+      "criminal-damage-arson": 755,
       "drugs": 1075,
-      "other-theft": 5388,
+      "other-theft": 5384,
       "possession-of-weapons": 105,
       "public-order": 1601,
-      "robbery": 976,
+      "robbery": 973,
       "shoplifting": 3510,
-      "theft-from-the-person": 4591,
-      "vehicle-crime": 866,
-      "violent-crime": 4884,
+      "theft-from-the-person": 4580,
+      "vehicle-crime": 865,
+      "violent-crime": 4880,
       "other-crime": 172
     },
-    "totalLast12Months": 30937
+    "totalLast12Months": 30908
   },
   "property": {
     "sales": [
+      {
+        "address": "40 - 41, FLAT 2, WHISKIN STREET",
+        "postcode": "EC1R 0BP",
+        "price": 750000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28 - 29, FLAT 1, MYDDELTON SQUARE",
+        "postcode": "EC1R 1YE",
+        "price": 800000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE NAUTILUS BUILDING, 3, FLAT 41, MYDDELTON PASSAGE",
+        "postcode": "EC1R 1XW",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, BOWLING GREEN LANE",
+        "postcode": "EC1R 0BG",
+        "price": 4575000,
+        "dateOfTransfer": "2026-06-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "2, FLAT 2, AMWELL STREET",
         "postcode": "EC1R 1UQ",
@@ -261,6 +295,14 @@
         "newBuild": false
       },
       {
+        "address": "134A, FARRINGDON ROAD",
+        "postcode": "EC1R 3AP",
+        "price": 830000,
+        "dateOfTransfer": "2026-03-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "44, CLERKENWELL CLOSE",
         "postcode": "EC1R 0AZ",
         "price": 1875000,
@@ -297,6 +339,14 @@
         "postcode": "EC1R 5EQ",
         "price": 285000,
         "dateOfTransfer": "2026-02-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT 2, MYDDELTON SQUARE",
+        "postcode": "EC1R 1YB",
+        "price": 1013000,
+        "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -389,6 +439,14 @@
         "newBuild": false
       },
       {
+        "address": "48, FLAT A, AMWELL STREET",
+        "postcode": "EC1R 1XS",
+        "price": 910000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "6, FLAT 2, PEARTREE COURT",
         "postcode": "EC1R 0DW",
         "price": 1200000,
@@ -402,6 +460,14 @@
         "price": 2300000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, SEKFORDE STREET",
+        "postcode": "EC1R 0BE",
+        "price": 16000000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -637,17 +703,17 @@
         "newBuild": false
       },
       {
-        "address": "1 - 10, FLAT 11, SUMMERS STREET",
-        "postcode": "EC1R 5BD",
-        "price": 1050000,
+        "address": "WARNER HOUSE, 43 - 49, FLAT 14, WARNER STREET",
+        "postcode": "EC1R 5ER",
+        "price": 1100000,
         "dateOfTransfer": "2025-04-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "WARNER HOUSE, 43 - 49, FLAT 14, WARNER STREET",
-        "postcode": "EC1R 5ER",
-        "price": 1100000,
+        "address": "1 - 10, FLAT 11, SUMMERS STREET",
+        "postcode": "EC1R 5BD",
+        "price": 1050000,
         "dateOfTransfer": "2025-04-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -661,9 +727,9 @@
         "newBuild": false
       },
       {
-        "address": "8, LAYSTALL STREET",
-        "postcode": "EC1R 4PA",
-        "price": 870000,
+        "address": "10, JOSEPH TROTTER CLOSE",
+        "postcode": "EC1R 1UB",
+        "price": 730000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -685,10 +751,18 @@
         "newBuild": false
       },
       {
-        "address": "10, JOSEPH TROTTER CLOSE",
-        "postcode": "EC1R 1UB",
-        "price": 730000,
+        "address": "8, LAYSTALL STREET",
+        "postcode": "EC1R 4PA",
+        "price": 870000,
         "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 25, LLOYDS ROW",
+        "postcode": "EC1R 4AD",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -698,14 +772,6 @@
         "price": 3700000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "1, FLAT 25, LLOYDS ROW",
-        "postcode": "EC1R 4AD",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -845,8 +911,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1375898,
-    "medianPrice": 750000
+    "averagePrice": 1532102,
+    "medianPrice": 782500
   },
   "representatives": {
     "representatives": [

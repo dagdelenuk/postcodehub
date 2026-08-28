@@ -3,8 +3,8 @@
   "slug": "rm1",
   "city": "London",
   "borough": "Havering",
-  "latitude": 51.582940318982416,
-  "longitude": 0.1835610097847359,
+  "latitude": 51.58330766954645,
+  "longitude": 0.18364128725701942,
   "wards": [
     "Havering-atte-Bower",
     "Heaton",
@@ -139,6 +139,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Granger Way, Romford",
         "postcode": "RM1 2RU",
         "numberOfPupils": 658,
@@ -149,7 +150,8 @@
         "urn": "102299",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "24/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Havering Road, Romford",
         "postcode": "RM1 4QX",
         "numberOfPupils": 881,
@@ -160,7 +162,8 @@
         "urn": "102328",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Havering Drive, Romford",
         "postcode": "RM1 4BT",
         "numberOfPupils": 675,
@@ -171,7 +174,8 @@
         "urn": "102335",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "29/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Dorset Avenue, Romford",
         "postcode": "RM1 4JA",
         "numberOfPupils": 376,
@@ -183,6 +187,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Havering Grange, Havering Road, Romford",
         "postcode": "RM1 4HR",
         "numberOfPupils": 112,
@@ -193,7 +198,8 @@
         "urn": "138326",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "19/11/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Brentwood Road, Romford",
         "postcode": "RM1 2RR",
         "numberOfPupils": 1381,
@@ -204,7 +210,8 @@
         "urn": "139307",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/09/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Havering Road, Romford",
         "postcode": "RM1 4YY",
         "numberOfPupils": 965,
@@ -215,7 +222,8 @@
         "urn": "141173",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "16/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Annan Way, Rise Park, Romford",
         "postcode": "RM1 4UD",
         "numberOfPupils": 350,
@@ -225,8 +233,9 @@
         "name": "Rise Park Infant School",
         "urn": "141299",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "22/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Annan Way, Rise Park, Romford",
         "postcode": "RM1 4UD",
         "numberOfPupils": 278,
@@ -237,7 +246,8 @@
         "urn": "144094",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "30/01/2020",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Pettits Lane, Romford",
         "postcode": "RM1 4EH",
         "numberOfPupils": 1174,
@@ -249,6 +259,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "62-64 Western Road, ROMFORD",
         "postcode": "RM1 3LP",
         "numberOfPupils": 31,
@@ -260,6 +271,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Brentwood Road, Romford",
         "postcode": "RM1 2RR",
         "numberOfPupils": 29,
@@ -271,102 +283,278 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 660,
-        "violentCrimes": 265,
-        "propertyCrimes": 212
+        "totalCrimes": 642,
+        "violentCrimes": 256,
+        "propertyCrimes": 209
       },
       {
         "month": "2025-08",
-        "totalCrimes": 520,
-        "violentCrimes": 203,
-        "propertyCrimes": 168
+        "totalCrimes": 518,
+        "violentCrimes": 202,
+        "propertyCrimes": 167
       },
       {
         "month": "2025-09",
-        "totalCrimes": 511,
-        "violentCrimes": 197,
-        "propertyCrimes": 173
+        "totalCrimes": 504,
+        "violentCrimes": 195,
+        "propertyCrimes": 171
       },
       {
         "month": "2025-10",
-        "totalCrimes": 521,
-        "violentCrimes": 200,
-        "propertyCrimes": 182
+        "totalCrimes": 506,
+        "violentCrimes": 192,
+        "propertyCrimes": 176
       },
       {
         "month": "2025-11",
-        "totalCrimes": 478,
-        "violentCrimes": 214,
+        "totalCrimes": 472,
+        "violentCrimes": 211,
         "propertyCrimes": 144
       },
       {
         "month": "2025-12",
-        "totalCrimes": 511,
-        "violentCrimes": 211,
-        "propertyCrimes": 172
+        "totalCrimes": 504,
+        "violentCrimes": 208,
+        "propertyCrimes": 171
       },
       {
         "month": "2026-01",
-        "totalCrimes": 491,
-        "violentCrimes": 206,
-        "propertyCrimes": 157
+        "totalCrimes": 480,
+        "violentCrimes": 199,
+        "propertyCrimes": 156
       },
       {
         "month": "2026-02",
-        "totalCrimes": 511,
-        "violentCrimes": 172,
-        "propertyCrimes": 177
+        "totalCrimes": 500,
+        "violentCrimes": 167,
+        "propertyCrimes": 175
       },
       {
         "month": "2026-03",
-        "totalCrimes": 547,
-        "violentCrimes": 231,
-        "propertyCrimes": 168
+        "totalCrimes": 537,
+        "violentCrimes": 227,
+        "propertyCrimes": 167
       },
       {
         "month": "2026-04",
-        "totalCrimes": 527,
-        "violentCrimes": 190,
-        "propertyCrimes": 213
+        "totalCrimes": 528,
+        "violentCrimes": 192,
+        "propertyCrimes": 212
       },
       {
         "month": "2026-05",
-        "totalCrimes": 543,
-        "violentCrimes": 195,
+        "totalCrimes": 538,
+        "violentCrimes": 193,
         "propertyCrimes": 178
       },
       {
         "month": "2026-06",
-        "totalCrimes": 590,
+        "totalCrimes": 586,
         "violentCrimes": 227,
-        "propertyCrimes": 212
+        "propertyCrimes": 210
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1238,
+      "anti-social-behaviour": 1216,
       "bicycle-theft": 39,
-      "burglary": 176,
-      "criminal-damage-arson": 258,
-      "drugs": 438,
-      "other-theft": 378,
+      "burglary": 174,
+      "criminal-damage-arson": 251,
+      "drugs": 431,
+      "other-theft": 375,
       "possession-of-weapons": 53,
-      "public-order": 414,
-      "robbery": 199,
+      "public-order": 405,
+      "robbery": 197,
       "shoplifting": 713,
-      "theft-from-the-person": 208,
-      "vehicle-crime": 384,
-      "violent-crime": 1845,
-      "other-crime": 67
+      "theft-from-the-person": 204,
+      "vehicle-crime": 380,
+      "violent-crime": 1814,
+      "other-crime": 63
     },
-    "totalLast12Months": 6410
+    "totalLast12Months": 6315
   },
   "property": {
     "sales": [
+      {
+        "address": "63, HELMSDALE ROAD",
+        "postcode": "RM1 4DN",
+        "price": 575000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "296, PETTITS LANE NORTH",
+        "postcode": "RM1 4PJ",
+        "price": 360000,
+        "dateOfTransfer": "2026-07-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "53, MCINTOSH ROAD",
+        "postcode": "RM1 4JJ",
+        "price": 670000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "39, HAVERING ROAD",
+        "postcode": "RM1 4QT",
+        "price": 385000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "67, CLYDE WAY",
+        "postcode": "RM1 4XT",
+        "price": 700000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, RICHMOND ROAD",
+        "postcode": "RM1 2DX",
+        "price": 320000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "74, SEYMER ROAD",
+        "postcode": "RM1 4LB",
+        "price": 515000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "305, HAVERING ROAD",
+        "postcode": "RM1 4BZ",
+        "price": 420000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, BEAULY WAY, RISE PARK",
+        "postcode": "RM1 4XD",
+        "price": 612500,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, PRINCES ROAD",
+        "postcode": "RM1 2SR",
+        "price": 567000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "66A, VICTORIA ROAD",
+        "postcode": "RM1 2LA",
+        "price": 575000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "16, BEAULY WAY, RISE PARK",
+        "postcode": "RM1 4XD",
+        "price": 450000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "7, HILL GROVE",
+        "postcode": "RM1 4JP",
+        "price": 615000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, HELMSDALE CLOSE",
+        "postcode": "RM1 4RS",
+        "price": 488000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HALYARDS COURT, 12, FLAT 12, WESTERN ROAD",
+        "postcode": "RM1 3GL",
+        "price": 238000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, KINGS GROVE",
+        "postcode": "RM1 2SU",
+        "price": 275000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, MONKWOOD CLOSE",
+        "postcode": "RM1 2NQ",
+        "price": 200000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "217, EASTERN AVENUE EAST",
+        "postcode": "RM1 4XS",
+        "price": 570000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "15, FAIROAK GARDENS",
+        "postcode": "RM1 4DU",
+        "price": 470000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "54, HELMSDALE ROAD",
+        "postcode": "RM1 4DN",
+        "price": 570000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE GATEHOUSE, FLAT 27, HIGH STREET",
+        "postcode": "RM1 1AN",
+        "price": 245000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "22, MALT HOUSE PLACE",
         "postcode": "RM1 1AR",
         "price": 175000,
         "dateOfTransfer": "2026-06-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NARBORO COURT, FLAT 20, MANOR ROAD",
+        "postcode": "RM1 2TA",
+        "price": 292500,
+        "dateOfTransfer": "2026-06-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -395,6 +583,14 @@
         "newBuild": false
       },
       {
+        "address": "STAMFORD COURT, 52, FLAT 5, WESTERN ROAD",
+        "postcode": "RM1 3FF",
+        "price": 230000,
+        "dateOfTransfer": "2026-06-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "62, SHAFTESBURY ROAD",
         "postcode": "RM1 2QJ",
         "price": 450000,
@@ -403,9 +599,49 @@
         "newBuild": false
       },
       {
+        "address": "103, FLAT, VICTORIA ROAD",
+        "postcode": "RM1 2LX",
+        "price": 425000,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CALDER COURT, FLAT 18, RIVERSIDE CLOSE",
+        "postcode": "RM1 1EN",
+        "price": 257000,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "152, PARKSIDE AVENUE",
+        "postcode": "RM1 4NP",
+        "price": 465000,
+        "dateOfTransfer": "2026-06-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, ERROLL ROAD",
+        "postcode": "RM1 3DJ",
+        "price": 800000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "23, THE CHASE",
         "postcode": "RM1 4BE",
         "price": 700000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, PARK END ROAD",
+        "postcode": "RM1 4AX",
+        "price": 585000,
         "dateOfTransfer": "2026-06-03",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -451,11 +687,27 @@
         "newBuild": false
       },
       {
+        "address": "11A, ROSEMARY AVENUE",
+        "postcode": "RM1 4HB",
+        "price": 595000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "49, HAVERING DRIVE",
         "postcode": "RM1 4BH",
         "price": 747500,
         "dateOfTransfer": "2026-05-26",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, MARSHALLS DRIVE",
+        "postcode": "RM1 4JT",
+        "price": 585000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -467,11 +719,11 @@
         "newBuild": false
       },
       {
-        "address": "18, MARSHALLS DRIVE",
-        "postcode": "RM1 4JT",
-        "price": 585000,
+        "address": "BUCKINGHAM COURT, FLAT 5, CARLISLE ROAD",
+        "postcode": "RM1 2QZ",
+        "price": 315000,
         "dateOfTransfer": "2026-05-22",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -488,14 +740,6 @@
         "price": 427000,
         "dateOfTransfer": "2026-05-22",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "BUCKINGHAM COURT, FLAT 5, CARLISLE ROAD",
-        "postcode": "RM1 2QZ",
-        "price": 315000,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -571,6 +815,14 @@
         "newBuild": false
       },
       {
+        "address": "LEXICON APARTMENTS, 96, MERCURY GARDENS",
+        "postcode": "RM1 3HG",
+        "price": 210000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "4, ROSEDALE ROAD",
         "postcode": "RM1 4QS",
         "price": 520000,
@@ -579,11 +831,11 @@
         "newBuild": false
       },
       {
-        "address": "LEXICON APARTMENTS, 96, MERCURY GARDENS",
-        "postcode": "RM1 3HG",
-        "price": 210000,
+        "address": "54, HAVERING DRIVE",
+        "postcode": "RM1 4BH",
+        "price": 675000,
         "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -611,11 +863,11 @@
         "newBuild": false
       },
       {
-        "address": "9, FONTAYNE AVENUE",
-        "postcode": "RM1 4NS",
-        "price": 385000,
+        "address": "59, MCINTOSH ROAD",
+        "postcode": "RM1 4JJ",
+        "price": 490000,
         "dateOfTransfer": "2026-04-24",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -627,14 +879,6 @@
         "newBuild": false
       },
       {
-        "address": "59, MCINTOSH ROAD",
-        "postcode": "RM1 4JJ",
-        "price": 490000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "60, RUSHDON CLOSE",
         "postcode": "RM1 2RE",
         "price": 258000,
@@ -643,11 +887,19 @@
         "newBuild": false
       },
       {
-        "address": "107, ROSEDALE ROAD",
-        "postcode": "RM1 4QR",
-        "price": 490000,
-        "dateOfTransfer": "2026-04-20",
-        "propertyType": "Semi-detached",
+        "address": "9, FONTAYNE AVENUE",
+        "postcode": "RM1 4NS",
+        "price": 385000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "55, MONKWOOD CLOSE",
+        "postcode": "RM1 2NQ",
+        "price": 255000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -667,6 +919,22 @@
         "newBuild": false
       },
       {
+        "address": "107, ROSEDALE ROAD",
+        "postcode": "RM1 4QR",
+        "price": 490000,
+        "dateOfTransfer": "2026-04-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, MARWELL CLOSE",
+        "postcode": "RM1 2TE",
+        "price": 215000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "AXIOM APARTMENTS, 112, MERCURY GARDENS",
         "postcode": "RM1 3HJ",
         "price": 272500,
@@ -678,14 +946,6 @@
         "address": "RAPHAEL COURT, FLAT 6, PETTITS LANE",
         "postcode": "RM1 4SE",
         "price": 276500,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "33, MARWELL CLOSE",
-        "postcode": "RM1 2TE",
-        "price": 215000,
         "dateOfTransfer": "2026-04-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -723,11 +983,11 @@
         "newBuild": false
       },
       {
-        "address": "52, FLAT 5, WESTERN ROAD",
-        "postcode": "RM1 3FF",
-        "price": 230000,
-        "dateOfTransfer": "2026-04-11",
-        "propertyType": "Flat/Maisonette",
+        "address": "16A, HAYSOMS CLOSE",
+        "postcode": "RM1 4DL",
+        "price": 400000,
+        "dateOfTransfer": "2026-04-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -739,17 +999,9 @@
         "newBuild": false
       },
       {
-        "address": "16A, HAYSOMS CLOSE",
-        "postcode": "RM1 4DL",
-        "price": 400000,
-        "dateOfTransfer": "2026-04-10",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "RAPHAEL COURT, FLAT 11, PETTITS LANE",
-        "postcode": "RM1 4SE",
-        "price": 264000,
+        "address": "THE GATEHOUSE, FLAT 25, HIGH STREET",
+        "postcode": "RM1 1AN",
+        "price": 195000,
         "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -763,9 +1015,9 @@
         "newBuild": false
       },
       {
-        "address": "THE GATEHOUSE, FLAT 25, HIGH STREET",
-        "postcode": "RM1 1AN",
-        "price": 195000,
+        "address": "RAPHAEL COURT, FLAT 11, PETTITS LANE",
+        "postcode": "RM1 4SE",
+        "price": 264000,
         "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -827,11 +1079,11 @@
         "newBuild": false
       },
       {
-        "address": "29, THE CHASE",
-        "postcode": "RM1 4BE",
-        "price": 650000,
+        "address": "36, HAVERING ROAD",
+        "postcode": "RM1 4QU",
+        "price": 425000,
         "dateOfTransfer": "2026-03-20",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -843,19 +1095,19 @@
         "newBuild": false
       },
       {
+        "address": "29, THE CHASE",
+        "postcode": "RM1 4BE",
+        "price": 650000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "56, MANOR ROAD",
         "postcode": "RM1 2RD",
         "price": 605000,
         "dateOfTransfer": "2026-03-20",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "36, HAVERING ROAD",
-        "postcode": "RM1 4QU",
-        "price": 425000,
-        "dateOfTransfer": "2026-03-20",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -875,9 +1127,9 @@
         "newBuild": false
       },
       {
-        "address": "21, AYR WAY",
-        "postcode": "RM1 4UH",
-        "price": 280000,
+        "address": "7, PRIESTS AVENUE",
+        "postcode": "RM1 4RJ",
+        "price": 565000,
         "dateOfTransfer": "2026-03-16",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -891,9 +1143,9 @@
         "newBuild": false
       },
       {
-        "address": "7, PRIESTS AVENUE",
-        "postcode": "RM1 4RJ",
-        "price": 565000,
+        "address": "21, AYR WAY",
+        "postcode": "RM1 4UH",
+        "price": 280000,
         "dateOfTransfer": "2026-03-16",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -971,6 +1223,14 @@
         "newBuild": false
       },
       {
+        "address": "81, DEE WAY",
+        "postcode": "RM1 4UU",
+        "price": 475000,
+        "dateOfTransfer": "2026-03-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "32, MARWELL CLOSE",
         "postcode": "RM1 2TE",
         "price": 258000,
@@ -979,19 +1239,19 @@
         "newBuild": false
       },
       {
-        "address": "221, HAVERING ROAD",
-        "postcode": "RM1 4TB",
-        "price": 495000,
-        "dateOfTransfer": "2026-03-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "80, SEYMER ROAD",
         "postcode": "RM1 4LB",
         "price": 548000,
         "dateOfTransfer": "2026-03-05",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "221, HAVERING ROAD",
+        "postcode": "RM1 4TB",
+        "price": 495000,
+        "dateOfTransfer": "2026-03-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1014,6 +1274,14 @@
         "address": "49, KINGSTON ROAD",
         "postcode": "RM1 3NB",
         "price": 695000,
+        "dateOfTransfer": "2026-03-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "45, ESK WAY",
+        "postcode": "RM1 4YH",
+        "price": 440000,
         "dateOfTransfer": "2026-03-04",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1099,6 +1367,30 @@
         "newBuild": false
       },
       {
+        "address": "PORTMAN HOUSE, 16 - 20, FLAT 19, VICTORIA ROAD",
+        "postcode": "RM1 2EQ",
+        "price": 138500,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, HEATHER CLOSE",
+        "postcode": "RM1 4PD",
+        "price": 418000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "195, NORTH STREET",
+        "postcode": "RM1 1DT",
+        "price": 500000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "23, DORSET AVENUE",
         "postcode": "RM1 4LL",
         "price": 537500,
@@ -1155,11 +1447,11 @@
         "newBuild": false
       },
       {
-        "address": "4, HAVERING DRIVE",
-        "postcode": "RM1 4BB",
-        "price": 690000,
+        "address": "18A, SHAKESPEARE ROAD",
+        "postcode": "RM1 2QD",
+        "price": 445000,
         "dateOfTransfer": "2026-02-13",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1171,11 +1463,11 @@
         "newBuild": false
       },
       {
-        "address": "18A, SHAKESPEARE ROAD",
-        "postcode": "RM1 2QD",
-        "price": 445000,
+        "address": "4, HAVERING DRIVE",
+        "postcode": "RM1 4BB",
+        "price": 690000,
         "dateOfTransfer": "2026-02-13",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1219,6 +1511,14 @@
         "newBuild": false
       },
       {
+        "address": "55, KINGSTON ROAD",
+        "postcode": "RM1 3NB",
+        "price": 775000,
+        "dateOfTransfer": "2026-02-04",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "175B, RISE PARK PARADE",
         "postcode": "RM1 4NT",
         "price": 175000,
@@ -1243,11 +1543,11 @@
         "newBuild": false
       },
       {
-        "address": "3, WALLACE WAY",
-        "postcode": "RM1 4TG",
-        "price": 525000,
+        "address": "5, THE AVENUE",
+        "postcode": "RM1 4LD",
+        "price": 643000,
         "dateOfTransfer": "2026-01-30",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1256,14 +1556,6 @@
         "price": 515000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "5, THE AVENUE",
-        "postcode": "RM1 4LD",
-        "price": 643000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1283,11 +1575,35 @@
         "newBuild": false
       },
       {
+        "address": "3, WALLACE WAY",
+        "postcode": "RM1 4TG",
+        "price": 525000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "UNIT 3, BROOKE TRADING ESTATE",
+        "postcode": "RM1 2AT",
+        "price": 360000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "36, BRENTWOOD ROAD",
         "postcode": "RM1 2EX",
         "price": 335000,
         "dateOfTransfer": "2026-01-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, SHAFTESBURY ROAD",
+        "postcode": "RM1 2QJ",
+        "price": 545000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1323,17 +1639,9 @@
         "newBuild": false
       },
       {
-        "address": "HILL COURT, FLAT 3, MAIN ROAD",
-        "postcode": "RM1 3DA",
-        "price": 300000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "12, KEW CLOSE",
-        "postcode": "RM1 4WJ",
-        "price": 396500,
+        "address": "45, HEATHER AVENUE",
+        "postcode": "RM1 4SU",
+        "price": 475000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1352,6 +1660,22 @@
         "price": 455000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HILL COURT, FLAT 3, MAIN ROAD",
+        "postcode": "RM1 3DA",
+        "price": 300000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, KEW CLOSE",
+        "postcode": "RM1 4WJ",
+        "price": 396500,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1395,6 +1719,14 @@
         "newBuild": false
       },
       {
+        "address": "82, VICTORIA ROAD",
+        "postcode": "RM1 2LA",
+        "price": 360000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "16, RICHMOND ROAD",
         "postcode": "RM1 2DX",
         "price": 340000,
@@ -1408,14 +1740,6 @@
         "price": 261500,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "82, VICTORIA ROAD",
-        "postcode": "RM1 2LA",
-        "price": 360000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1467,6 +1791,14 @@
         "newBuild": false
       },
       {
+        "address": "108, SOUTH STREET",
+        "postcode": "RM1 1SS",
+        "price": 2400000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "226, HAVERING ROAD",
         "postcode": "RM1 4TD",
         "price": 445000,
@@ -1515,14 +1847,6 @@
         "newBuild": false
       },
       {
-        "address": "40, LAKE RISE",
-        "postcode": "RM1 4DY",
-        "price": 770000,
-        "dateOfTransfer": "2025-12-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "26, ROSEDALE ROAD",
         "postcode": "RM1 4QS",
         "price": 465000,
@@ -1531,11 +1855,19 @@
         "newBuild": false
       },
       {
-        "address": "122 - 124, NORTH STREET",
-        "postcode": "RM1 1DL",
-        "price": 250000,
-        "dateOfTransfer": "2025-12-16",
-        "propertyType": "Other",
+        "address": "40, LAKE RISE",
+        "postcode": "RM1 4DY",
+        "price": 770000,
+        "dateOfTransfer": "2025-12-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "61, HEATHER AVENUE",
+        "postcode": "RM1 4SU",
+        "price": 390000,
+        "dateOfTransfer": "2025-12-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1552,6 +1884,14 @@
         "price": 540000,
         "dateOfTransfer": "2025-12-16",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "122 - 124, NORTH STREET",
+        "postcode": "RM1 1DL",
+        "price": 250000,
+        "dateOfTransfer": "2025-12-16",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1787,17 +2127,17 @@
         "newBuild": false
       },
       {
-        "address": "CHARRINGTON COURT, FLAT 88, ATLANTA BOULEVARD",
-        "postcode": "RM1 1TF",
-        "price": 255000,
+        "address": "ZETEX APARTMENTS, 147, MERCURY GARDENS",
+        "postcode": "RM1 3HN",
+        "price": 305000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "ZETEX APARTMENTS, 147, MERCURY GARDENS",
-        "postcode": "RM1 3HN",
-        "price": 305000,
+        "address": "CHARRINGTON COURT, FLAT 88, ATLANTA BOULEVARD",
+        "postcode": "RM1 1TF",
+        "price": 255000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1816,6 +2156,14 @@
         "price": 515350,
         "dateOfTransfer": "2025-11-10",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "24, OAKLANDS AVENUE",
+        "postcode": "RM1 4DB",
+        "price": 900000,
+        "dateOfTransfer": "2025-11-10",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1899,19 +2247,19 @@
         "newBuild": false
       },
       {
-        "address": "233, HAVERING ROAD",
-        "postcode": "RM1 4TH",
-        "price": 405000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "1, KINGS ROAD",
         "postcode": "RM1 2ST",
         "price": 570000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "233, HAVERING ROAD",
+        "postcode": "RM1 4TH",
+        "price": 405000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1947,19 +2295,19 @@
         "newBuild": false
       },
       {
-        "address": "67, SEYMER ROAD",
-        "postcode": "RM1 4LA",
-        "price": 560000,
-        "dateOfTransfer": "2025-10-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "77, MASHITERS WALK",
         "postcode": "RM1 4BP",
         "price": 645000,
         "dateOfTransfer": "2025-10-20",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "67, SEYMER ROAD",
+        "postcode": "RM1 4LA",
+        "price": 560000,
+        "dateOfTransfer": "2025-10-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1971,19 +2319,19 @@
         "newBuild": false
       },
       {
-        "address": "41, SEYMER ROAD",
-        "postcode": "RM1 4LA",
-        "price": 615000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "LONGDON COURT, 35, FLAT 12, JUNCTION ROAD",
         "postcode": "RM1 3QY",
         "price": 85000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, SEYMER ROAD",
+        "postcode": "RM1 4LA",
+        "price": 615000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2003,17 +2351,17 @@
         "newBuild": false
       },
       {
-        "address": "GREAT PETTITS COURT, 130, FLAT 2, PETTITS LANE",
-        "postcode": "RM1 4GG",
-        "price": 295000,
+        "address": "MERRITT HOUSE, 24, FRAZER CLOSE",
+        "postcode": "RM1 2DE",
+        "price": 105000,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "MERRITT HOUSE, 24, FRAZER CLOSE",
-        "postcode": "RM1 2DE",
-        "price": 105000,
+        "address": "GREAT PETTITS COURT, 130, FLAT 2, PETTITS LANE",
+        "postcode": "RM1 4GG",
+        "price": 295000,
         "dateOfTransfer": "2025-10-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2032,6 +2380,30 @@
         "price": 236250,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HERITAGE HOUSE, 6 - 8, FLAT 3, MANOR ROAD",
+        "postcode": "RM1 2RA",
+        "price": 187500,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "141, PARKSIDE AVENUE",
+        "postcode": "RM1 4NL",
+        "price": 400000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "60, MANOR ROAD",
+        "postcode": "RM1 2RD",
+        "price": 681003,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2059,27 +2431,19 @@
         "newBuild": false
       },
       {
-        "address": "141, PARKSIDE AVENUE",
-        "postcode": "RM1 4NL",
-        "price": 400000,
-        "dateOfTransfer": "2025-10-02",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "60, MANOR ROAD",
-        "postcode": "RM1 2RD",
-        "price": 681003,
-        "dateOfTransfer": "2025-10-02",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "AXIOM APARTMENTS, 117, MERCURY GARDENS",
         "postcode": "RM1 3HJ",
         "price": 210000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "102 - 106, SOUTH STREET",
+        "postcode": "RM1 1RX",
+        "price": 2600000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2093,14 +2457,6 @@
       {
         "address": "102 - 106, SOUTH STREET",
         "postcode": "RM1 1RX",
-        "price": 1050000,
-        "dateOfTransfer": "2025-09-29",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "102 - 106, SOUTH STREET",
-        "postcode": "RM1 1RX",
         "price": 450000,
         "dateOfTransfer": "2025-09-29",
         "propertyType": "Other",
@@ -2109,9 +2465,17 @@
       {
         "address": "102 - 106, SOUTH STREET",
         "postcode": "RM1 1RX",
-        "price": 2600000,
+        "price": 1050000,
         "dateOfTransfer": "2025-09-29",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "MONARCH'S COURT, 8, FLAT 3, HEARN ROAD",
+        "postcode": "RM1 2EF",
+        "price": 330000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2128,14 +2492,6 @@
         "price": 340000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "MONARCH'S COURT, 8, FLAT 3, HEARN ROAD",
-        "postcode": "RM1 2EF",
-        "price": 330000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2163,19 +2519,19 @@
         "newBuild": false
       },
       {
-        "address": "12, HEATHER WAY",
-        "postcode": "RM1 4TA",
-        "price": 450000,
-        "dateOfTransfer": "2025-09-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "10, GRANGER WAY",
         "postcode": "RM1 2RU",
         "price": 471000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, HEATHER WAY",
+        "postcode": "RM1 4TA",
+        "price": 450000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2187,19 +2543,19 @@
         "newBuild": false
       },
       {
-        "address": "50, DEE WAY",
-        "postcode": "RM1 4XB",
-        "price": 555000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "48, MASHITERS WALK",
         "postcode": "RM1 4BX",
         "price": 730000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "50, DEE WAY",
+        "postcode": "RM1 4XB",
+        "price": 555000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2227,10 +2583,26 @@
         "newBuild": false
       },
       {
+        "address": "24, FLAT 2, ALBERT ROAD",
+        "postcode": "RM1 2PJ",
+        "price": 208500,
+        "dateOfTransfer": "2025-09-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "11, HEATHER GARDENS",
         "postcode": "RM1 4SS",
         "price": 475000,
         "dateOfTransfer": "2025-09-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, MCINTOSH ROAD",
+        "postcode": "RM1 4JJ",
+        "price": 410000,
+        "dateOfTransfer": "2025-09-12",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -2251,11 +2623,11 @@
         "newBuild": false
       },
       {
-        "address": "30, MCINTOSH ROAD",
-        "postcode": "RM1 4JJ",
-        "price": 410000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Semi-detached",
+        "address": "FAIRWAYS, RISEBRIDGE CHASE",
+        "postcode": "RM1 4PR",
+        "price": 900000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2267,19 +2639,19 @@
         "newBuild": false
       },
       {
-        "address": "FAIRWAYS, RISEBRIDGE CHASE",
-        "postcode": "RM1 4PR",
-        "price": 900000,
-        "dateOfTransfer": "2025-09-10",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "36, CARLISLE ROAD",
         "postcode": "RM1 2QL",
         "price": 424000,
         "dateOfTransfer": "2025-09-08",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, DUNTON ROAD",
+        "postcode": "RM1 4AH",
+        "price": 266000,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2307,11 +2679,35 @@
         "newBuild": false
       },
       {
+        "address": "38, ANGEL WAY",
+        "postcode": "RM1 1JH",
+        "price": 215000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "PAPERMILL HOUSE, 363, FLAT 83, SOUTH STREET",
         "postcode": "RM1 2FB",
         "price": 190000,
         "dateOfTransfer": "2025-09-01",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "333, PETTITS LANE NORTH",
+        "postcode": "RM1 4PH",
+        "price": 485000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, MELTON GARDENS",
+        "postcode": "RM1 2AS",
+        "price": 480000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2336,22 +2732,6 @@
         "price": 697000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "333, PETTITS LANE NORTH",
-        "postcode": "RM1 4PH",
-        "price": 485000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "8, MELTON GARDENS",
-        "postcode": "RM1 2AS",
-        "price": 480000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2403,6 +2783,14 @@
         "newBuild": false
       },
       {
+        "address": "24, HYDE CLOSE",
+        "postcode": "RM1 4WF",
+        "price": 472000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "26, TWEED WAY",
         "postcode": "RM1 4AZ",
         "price": 395000,
@@ -2430,14 +2818,6 @@
         "address": "43, DORSET AVENUE",
         "postcode": "RM1 4LL",
         "price": 370000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "24, HYDE CLOSE",
-        "postcode": "RM1 4WF",
-        "price": 472000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2475,6 +2855,14 @@
         "newBuild": false
       },
       {
+        "address": "56, PRINCES ROAD",
+        "postcode": "RM1 2SP",
+        "price": 620000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "129A, BRENTWOOD ROAD",
         "postcode": "RM1 2SB",
         "price": 295000,
@@ -2504,14 +2892,6 @@
         "price": 263000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "56, PRINCES ROAD",
-        "postcode": "RM1 2SP",
-        "price": 620000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2555,6 +2935,14 @@
         "newBuild": false
       },
       {
+        "address": "13, RAPHAEL AVENUE",
+        "postcode": "RM1 4EP",
+        "price": 670000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "18, RISE PARK BOULEVARD",
         "postcode": "RM1 4PP",
         "price": 800000,
@@ -2568,14 +2956,6 @@
         "price": 243000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "13, RAPHAEL AVENUE",
-        "postcode": "RM1 4EP",
-        "price": 670000,
-        "dateOfTransfer": "2025-08-08",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2635,19 +3015,19 @@
         "newBuild": false
       },
       {
-        "address": "8, HOLLY COURT",
-        "postcode": "RM1 3AP",
-        "price": 84000,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ST. JAMES HOUSE, 27 - 43, EASTERN ROAD",
         "postcode": "RM1 3NH",
         "price": 6750000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, HOLLY COURT",
+        "postcode": "RM1 3AP",
+        "price": 84000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2787,19 +3167,19 @@
         "newBuild": false
       },
       {
-        "address": "BURNSIDE COURT, 229 - 239, FLAT 12, SOUTH STREET",
-        "postcode": "RM1 2BH",
-        "price": 255000,
-        "dateOfTransfer": "2025-07-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "61, SHAFTESBURY ROAD",
         "postcode": "RM1 2QJ",
         "price": 402000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BURNSIDE COURT, 229 - 239, FLAT 12, SOUTH STREET",
+        "postcode": "RM1 2BH",
+        "price": 255000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2811,17 +3191,17 @@
         "newBuild": false
       },
       {
-        "address": "4, RUSHDON CLOSE",
-        "postcode": "RM1 2RE",
-        "price": 140000,
+        "address": "23, HOLLY COURT",
+        "postcode": "RM1 3AP",
+        "price": 170000,
         "dateOfTransfer": "2025-07-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "23, HOLLY COURT",
-        "postcode": "RM1 3AP",
-        "price": 170000,
+        "address": "4, RUSHDON CLOSE",
+        "postcode": "RM1 2RE",
+        "price": 140000,
         "dateOfTransfer": "2025-07-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2835,19 +3215,19 @@
         "newBuild": false
       },
       {
-        "address": "NAYLAND COURT, FLAT 64, MARKET PLACE",
-        "postcode": "RM1 3EF",
-        "price": 200000,
-        "dateOfTransfer": "2025-07-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "89, DEE WAY",
         "postcode": "RM1 4UU",
         "price": 487500,
         "dateOfTransfer": "2025-07-04",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "NAYLAND COURT, FLAT 64, MARKET PLACE",
+        "postcode": "RM1 3EF",
+        "price": 200000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2979,19 +3359,19 @@
         "newBuild": false
       },
       {
-        "address": "ST DAVIDS COURT, FLAT 4, SOUTH STREET",
-        "postcode": "RM1 2AJ",
-        "price": 205000,
-        "dateOfTransfer": "2025-06-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "191, SOUTH STREET",
         "postcode": "RM1 1QA",
         "price": 548000,
         "dateOfTransfer": "2025-06-23",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ST DAVIDS COURT, FLAT 4, SOUTH STREET",
+        "postcode": "RM1 2AJ",
+        "price": 205000,
+        "dateOfTransfer": "2025-06-23",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3099,6 +3479,14 @@
         "newBuild": false
       },
       {
+        "address": "29, MELTON GARDENS",
+        "postcode": "RM1 2AS",
+        "price": 445000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "49, AYR WAY",
         "postcode": "RM1 4UH",
         "price": 455000,
@@ -3110,14 +3498,6 @@
         "address": "379, HAVERING ROAD",
         "postcode": "RM1 4BW",
         "price": 425000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "29, MELTON GARDENS",
-        "postcode": "RM1 2AS",
-        "price": 445000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3227,19 +3607,27 @@
         "newBuild": false
       },
       {
-        "address": "62A, VICTORIA ROAD",
-        "postcode": "RM1 2JH",
-        "price": 270000,
-        "dateOfTransfer": "2025-05-09",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "40, SHAFTESBURY ROAD",
         "postcode": "RM1 2QJ",
         "price": 387500,
         "dateOfTransfer": "2025-05-09",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "TOLBUT COURT, FLAT 50, LENNOX CLOSE",
+        "postcode": "RM1 2DY",
+        "price": 265000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "62A, VICTORIA ROAD",
+        "postcode": "RM1 2JH",
+        "price": 270000,
+        "dateOfTransfer": "2025-05-09",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3387,22 +3775,6 @@
         "newBuild": false
       },
       {
-        "address": "58, MANOR ROAD",
-        "postcode": "RM1 2RD",
-        "price": 707500,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "VICTORIA COURT, FLAT 23, VICTORIA ROAD",
-        "postcode": "RM1 2NU",
-        "price": 230000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "HALYARDS COURT, 12, FLAT 26, WESTERN ROAD",
         "postcode": "RM1 3GL",
         "price": 215000,
@@ -3416,6 +3788,14 @@
         "price": 630000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "58, MANOR ROAD",
+        "postcode": "RM1 2RD",
+        "price": 707500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3435,6 +3815,14 @@
         "newBuild": false
       },
       {
+        "address": "VICTORIA COURT, FLAT 23, VICTORIA ROAD",
+        "postcode": "RM1 2NU",
+        "price": 230000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BRANT COURT, FLAT 10, RIVERSIDE CLOSE",
         "postcode": "RM1 1EG",
         "price": 135000,
@@ -3448,30 +3836,6 @@
         "price": 685000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "ST. JAMES COURT, FLAT 3, GILBERT ROAD",
-        "postcode": "RM1 3SB",
-        "price": 315000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "13, THE AVENUE",
-        "postcode": "RM1 4LD",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "19, WOODLANDS ROAD",
-        "postcode": "RM1 4HD",
-        "price": 657000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3499,10 +3863,42 @@
         "newBuild": false
       },
       {
+        "address": "ST. JAMES COURT, FLAT 3, GILBERT ROAD",
+        "postcode": "RM1 3SB",
+        "price": 315000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, THE AVENUE",
+        "postcode": "RM1 4LD",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, WOODLANDS ROAD",
+        "postcode": "RM1 4HD",
+        "price": 657000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "8, HEATHER GARDENS",
         "postcode": "RM1 4ST",
         "price": 212500,
         "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "28, MORAY WAY",
+        "postcode": "RM1 4YD",
+        "price": 480000,
+        "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -3515,11 +3911,19 @@
         "newBuild": false
       },
       {
-        "address": "28, MORAY WAY",
-        "postcode": "RM1 4YD",
-        "price": 480000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
+        "address": "4, WYSES MEWS",
+        "postcode": "RM1 2EW",
+        "price": 418000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, BRUNEL CLOSE",
+        "postcode": "RM1 4GR",
+        "price": 900000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3563,22 +3967,6 @@
         "newBuild": false
       },
       {
-        "address": "4, WYSES MEWS",
-        "postcode": "RM1 2EW",
-        "price": 418000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "15, BRUNEL CLOSE",
-        "postcode": "RM1 4GR",
-        "price": 900000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "3, APSLEY MEWS",
         "postcode": "RM1 2FE",
         "price": 485000,
@@ -3611,17 +3999,9 @@
         "newBuild": false
       },
       {
-        "address": "ST. JAMES COURT, FLAT 8, GILBERT ROAD",
-        "postcode": "RM1 3SB",
-        "price": 314000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "110, BRENTWOOD ROAD",
-        "postcode": "RM1 2RX",
-        "price": 375000,
+        "address": "10, SEAFORTH CLOSE",
+        "postcode": "RM1 4LR",
+        "price": 500000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3643,22 +4023,6 @@
         "newBuild": false
       },
       {
-        "address": "210, SOUTH STREET",
-        "postcode": "RM1 1TR",
-        "price": 4080000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "10, SEAFORTH CLOSE",
-        "postcode": "RM1 4LR",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "AISHAH LODGE, FLAT 4, AVELEY ROAD",
         "postcode": "RM1 4GF",
         "price": 200000,
@@ -3675,11 +4039,27 @@
         "newBuild": false
       },
       {
-        "address": "CHARLOTTE HOUSE, 1A, FLAT 1, CARLISLE ROAD",
-        "postcode": "RM1 2QP",
-        "price": 270000,
+        "address": "210, SOUTH STREET",
+        "postcode": "RM1 1TR",
+        "price": 4080000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "ST. JAMES COURT, FLAT 8, GILBERT ROAD",
+        "postcode": "RM1 3SB",
+        "price": 314000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "110, BRENTWOOD ROAD",
+        "postcode": "RM1 2RX",
+        "price": 375000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3688,6 +4068,14 @@
         "price": 775000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "CHARLOTTE HOUSE, 1A, FLAT 1, CARLISLE ROAD",
+        "postcode": "RM1 2QP",
+        "price": 270000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3723,14 +4111,6 @@
         "newBuild": false
       },
       {
-        "address": "6, AVELEY ROAD",
-        "postcode": "RM1 4AB",
-        "price": 445000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "98, HAVERING ROAD",
         "postcode": "RM1 4RA",
         "price": 590000,
@@ -3744,6 +4124,14 @@
         "price": 250000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, AVELEY ROAD",
+        "postcode": "RM1 4AB",
+        "price": 445000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3795,17 +4183,17 @@
         "newBuild": false
       },
       {
-        "address": "3, DEE WAY",
-        "postcode": "RM1 4XA",
-        "price": 530000,
+        "address": "24, PETTITS CLOSE",
+        "postcode": "RM1 4EB",
+        "price": 507500,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "24, PETTITS CLOSE",
-        "postcode": "RM1 4EB",
-        "price": 507500,
+        "address": "3, DEE WAY",
+        "postcode": "RM1 4XA",
+        "price": 530000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3843,14 +4231,6 @@
         "newBuild": false
       },
       {
-        "address": "THE MALTINGS, FLAT 7, SOUTH STREET",
-        "postcode": "RM1 2AW",
-        "price": 215000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "15, VICTORIA ROAD",
         "postcode": "RM1 2JT",
         "price": 510000,
@@ -3872,6 +4252,14 @@
         "price": 670000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "THE MALTINGS, FLAT 7, SOUTH STREET",
+        "postcode": "RM1 2AW",
+        "price": 215000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3907,19 +4295,19 @@
         "newBuild": false
       },
       {
-        "address": "ZETEX APARTMENTS, 143, MERCURY GARDENS",
-        "postcode": "RM1 3HN",
-        "price": 295000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "96, VICTORIA ROAD",
         "postcode": "RM1 2PA",
         "price": 350000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ZETEX APARTMENTS, 143, MERCURY GARDENS",
+        "postcode": "RM1 3HN",
+        "price": 295000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3987,22 +4375,6 @@
         "newBuild": false
       },
       {
-        "address": "5, ABBEY CLOSE",
-        "postcode": "RM1 2QN",
-        "price": 423000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "3A, PETTITS LANE",
-        "postcode": "RM1 4HL",
-        "price": 775000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "PORTMAN HOUSE, 16 - 20, FLAT 7, VICTORIA ROAD",
         "postcode": "RM1 2EQ",
         "price": 133000,
@@ -4016,6 +4388,22 @@
         "price": 76087,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "3A, PETTITS LANE",
+        "postcode": "RM1 4HL",
+        "price": 775000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, ABBEY CLOSE",
+        "postcode": "RM1 2QN",
+        "price": 423000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4035,17 +4423,17 @@
         "newBuild": false
       },
       {
-        "address": "24, LAKE RISE",
-        "postcode": "RM1 4DY",
-        "price": 1157000,
+        "address": "6, DON WAY",
+        "postcode": "RM1 4YR",
+        "price": 575000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "6, DON WAY",
-        "postcode": "RM1 4YR",
-        "price": 575000,
+        "address": "24, LAKE RISE",
+        "postcode": "RM1 4DY",
+        "price": 1157000,
         "dateOfTransfer": "2025-02-12",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4187,19 +4575,19 @@
         "newBuild": false
       },
       {
-        "address": "118, LAKE RISE",
-        "postcode": "RM1 4EE",
-        "price": 717500,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "204A, BRENTWOOD ROAD",
         "postcode": "RM1 2RP",
         "price": 350000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "118, LAKE RISE",
+        "postcode": "RM1 4EE",
+        "price": 717500,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4315,7 +4703,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 478667,
+    "averagePrice": 479834,
     "medianPrice": 450000
   },
   "representatives": {

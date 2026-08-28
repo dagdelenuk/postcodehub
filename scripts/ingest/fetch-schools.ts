@@ -23,6 +23,24 @@ function normaliseOfstedRating(raw: string | undefined): string | null {
   return OFSTED_RATING_LABELS[raw] ?? null;
 }
 
+/**
+ * A school with no full re-grade in this window can still have a lighter-touch
+ * "ungraded" (S8) monitoring visit that just confirms its old grade still
+ * holds - free text like "School remains Good". Ofsted's own CSV leaves the
+ * OEIF overall-effectiveness columns blank for these schools entirely, so
+ * without this fallback they'd wrongly show no rating at all.
+ */
+function ratingFromUngradedOutcome(raw: string | undefined): string | null {
+  if (!raw) return null;
+  const match = raw.match(/outstanding|good|requires improvement|inadequate/i);
+  if (!match) return null;
+  const label = match[0].toLowerCase();
+  if (label === "outstanding") return "Outstanding";
+  if (label === "good") return "Good";
+  if (label === "requires improvement") return "Requires improvement";
+  return "Inadequate";
+}
+
 /** GIAS publishes a dated CSV daily; try today then walk back a few days. */
 async function fetchGiasCsv(): Promise<Record<string, string>[]> {
   for (let daysAgo = 0; daysAgo < 5; daysAgo++) {
@@ -43,13 +61,25 @@ async function fetchGiasCsv(): Promise<Record<string, string>[]> {
   throw new Error("Could not find a recent GIAS edubasealldata CSV in the last 5 days.");
 }
 
+interface OfstedRating {
+  rating: string | null;
+  /** "Inspection start date of latest OEIF graded inspection" - paired with
+   * the rating itself, unlike GIAS's own DateOfLastInspectionVisit column
+   * which is frequently blank even for schools with a current Ofsted grade. */
+  inspectionDate: string | null;
+  /** True when Ofsted DID inspect (and grade every individual area) under
+   * its post-Sept-2024 framework, but deliberately publishes no single
+   * combined grade - distinct from "no data at all" for display purposes. */
+  notJudgedUnderNewFramework: boolean;
+}
+
 /**
  * Ofsted publishes "state-funded schools inspections and outcomes" quarterly
  * (as at end of March/August/December). We walk back through recent quarter-end
  * dates, find the live gov.uk stats page, and scrape its CSV asset link rather
  * than hardcoding a versioned asset URL that changes every release.
  */
-async function fetchOfstedRatings(): Promise<Map<string, string>> {
+async function fetchOfstedRatings(): Promise<Map<string, OfstedRating>> {
   const quarterEnds: { month: string; day: number }[] = [
     { month: "march", day: 31 },
     { month: "august", day: 31 },
@@ -74,11 +104,31 @@ async function fetchOfstedRatings(): Promise<Map<string, string>> {
       logStep(STEP, `Found Ofsted ratings CSV via ${pageUrl}`);
       const csvText = await fetchText(match[0]);
       const rows: Record<string, string>[] = parse(csvText, { columns: true, skip_empty_lines: true });
-      const ratings = new Map<string, string>();
+      const ratings = new Map<string, OfstedRating>();
       for (const row of rows) {
         const urn = row["URN"];
-        const rating = normaliseOfstedRating(row["Latest OEIF overall effectiveness"]);
-        if (urn && rating) ratings.set(urn, rating);
+        if (!urn) continue;
+
+        const overallRaw = row["Latest OEIF overall effectiveness"];
+        const gradedRating = normaliseOfstedRating(overallRaw);
+        if (gradedRating) {
+          const dateRaw = row["Inspection start date of latest OEIF graded inspection"];
+          ratings.set(urn, { rating: gradedRating, inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null, notJudgedUnderNewFramework: false });
+          continue;
+        }
+        if (overallRaw === "Not judged") {
+          const dateRaw = row["Inspection start date of latest OEIF graded inspection"];
+          ratings.set(urn, { rating: null, inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null, notJudgedUnderNewFramework: true });
+          continue;
+        }
+
+        // No full graded inspection in this window - fall back to a
+        // confirmatory "ungraded" monitoring visit, if there is one.
+        const ungradedRating = ratingFromUngradedOutcome(row["Ungraded inspection overall outcome"]);
+        if (ungradedRating) {
+          const dateRaw = row["Date of latest ungraded inspection"];
+          ratings.set(urn, { rating: ungradedRating, inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null, notJudgedUnderNewFramework: false });
+        }
       }
       logStep(STEP, `Loaded Ofsted ratings for ${ratings.size} schools.`);
       return ratings;
@@ -105,12 +155,14 @@ async function main() {
 
     matched++;
     const urn = row["URN"];
+    const ofsted = ofstedRatings.get(urn);
     const school: School = {
       name: row["EstablishmentName"],
       urn,
       phaseOfEducation: row["PhaseOfEducation (name)"] || "Unknown",
-      ofstedRating: ofstedRatings.get(urn) ?? null,
-      ofstedLastInspection: row["DateOfLastInspectionVisit"] || null,
+      ofstedRating: ofsted?.rating ?? null,
+      ofstedLastInspection: ofsted?.inspectionDate ?? null,
+      ofstedNotJudgedUnderNewFramework: ofsted?.notJudgedUnderNewFramework ?? false,
       address: [row["Street"], row["Locality"], row["Town"]].filter(Boolean).join(", "),
       postcode,
       numberOfPupils: row["NumberOfPupils"] ? Number(row["NumberOfPupils"]) : null,

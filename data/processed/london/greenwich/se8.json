@@ -3,8 +3,8 @@
   "slug": "se8",
   "city": "London",
   "borough": "Greenwich",
-  "latitude": 51.481999634482776,
-  "longitude": -0.02962209137931035,
+  "latitude": 51.482003596428584,
+  "longitude": -0.02970764285714288,
   "wards": [
     "Brockley",
     "Deptford",
@@ -121,7 +121,8 @@
         "urn": "100097",
         "phaseOfEducation": "Nursery",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/03/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "McMillan Street, Deptford, London",
         "postcode": "SE8 3EH",
         "numberOfPupils": 123,
@@ -132,7 +133,8 @@
         "urn": "100667",
         "phaseOfEducation": "Nursery",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Alverton Street, Deptford, London",
         "postcode": "SE8 5NH",
         "numberOfPupils": 72,
@@ -142,8 +144,9 @@
         "name": "Deptford Park Primary School",
         "urn": "100678",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "07/12/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Evelyn Street, London",
         "postcode": "SE8 5RJ",
         "numberOfPupils": 217,
@@ -154,7 +157,8 @@
         "urn": "100685",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/09/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Clyde Street, Deptford, London",
         "postcode": "SE8 5LW",
         "numberOfPupils": 208,
@@ -165,7 +169,8 @@
         "urn": "100695",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/01/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Thornville Street, London",
         "postcode": "SE8 4QB",
         "numberOfPupils": 166,
@@ -176,7 +181,8 @@
         "urn": "100712",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/01/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Scawen Road, London",
         "postcode": "SE8 5AE",
         "numberOfPupils": 176,
@@ -186,8 +192,9 @@
         "name": "Ashmead Primary School",
         "urn": "100716",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "24/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Ashmead Road, London",
         "postcode": "SE8 4DX",
         "numberOfPupils": 390,
@@ -198,7 +205,8 @@
         "urn": "100729",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "07/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Crossfield Street, Deptford, London",
         "postcode": "SE8 3PH",
         "numberOfPupils": 122,
@@ -210,6 +218,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Laban, Creekside, Deptford",
         "postcode": "SE8 3DZ",
         "numberOfPupils": null,
@@ -221,6 +230,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "1-9 Evelyn Street, Surrey Quays, London",
         "postcode": "SE8 5RQ",
         "numberOfPupils": 35,
@@ -231,7 +241,8 @@
         "urn": "137441",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "09/11/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "11 Giffin Street, London",
         "postcode": "SE8 4RJ",
         "numberOfPupils": 427,
@@ -242,7 +253,8 @@
         "urn": "151011",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Albyn Road, Deptford, London",
         "postcode": "SE8 4ED",
         "numberOfPupils": 186,
@@ -254,8 +266,8 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1083,
-        "violentCrimes": 365,
+        "totalCrimes": 1084,
+        "violentCrimes": 366,
         "propertyCrimes": 363
       },
       {
@@ -266,13 +278,13 @@
       },
       {
         "month": "2025-09",
-        "totalCrimes": 934,
+        "totalCrimes": 936,
         "violentCrimes": 347,
-        "propertyCrimes": 345
+        "propertyCrimes": 347
       },
       {
         "month": "2025-10",
-        "totalCrimes": 956,
+        "totalCrimes": 957,
         "violentCrimes": 365,
         "propertyCrimes": 324
       },
@@ -284,8 +296,8 @@
       },
       {
         "month": "2025-12",
-        "totalCrimes": 875,
-        "violentCrimes": 323,
+        "totalCrimes": 876,
+        "violentCrimes": 324,
         "propertyCrimes": 325
       },
       {
@@ -296,32 +308,32 @@
       },
       {
         "month": "2026-02",
-        "totalCrimes": 890,
-        "violentCrimes": 339,
+        "totalCrimes": 891,
+        "violentCrimes": 340,
         "propertyCrimes": 327
       },
       {
         "month": "2026-03",
-        "totalCrimes": 914,
+        "totalCrimes": 915,
         "violentCrimes": 333,
-        "propertyCrimes": 351
+        "propertyCrimes": 352
       },
       {
         "month": "2026-04",
-        "totalCrimes": 860,
-        "violentCrimes": 301,
-        "propertyCrimes": 302
+        "totalCrimes": 866,
+        "violentCrimes": 306,
+        "propertyCrimes": 303
       },
       {
         "month": "2026-05",
-        "totalCrimes": 949,
-        "violentCrimes": 335,
+        "totalCrimes": 950,
+        "violentCrimes": 336,
         "propertyCrimes": 314
       },
       {
         "month": "2026-06",
-        "totalCrimes": 989,
-        "violentCrimes": 402,
+        "totalCrimes": 990,
+        "violentCrimes": 403,
         "propertyCrimes": 298
       }
     ],
@@ -329,26 +341,122 @@
       "anti-social-behaviour": 2487,
       "bicycle-theft": 199,
       "burglary": 604,
-      "criminal-damage-arson": 381,
-      "drugs": 620,
-      "other-theft": 819,
+      "criminal-damage-arson": 382,
+      "drugs": 621,
+      "other-theft": 821,
       "possession-of-weapons": 109,
-      "public-order": 630,
+      "public-order": 631,
       "robbery": 393,
       "shoplifting": 805,
-      "theft-from-the-person": 678,
+      "theft-from-the-person": 679,
       "vehicle-crime": 510,
-      "violent-crime": 2988,
+      "violent-crime": 2997,
       "other-crime": 88
     },
-    "totalLast12Months": 11311
+    "totalLast12Months": 11326
   },
   "property": {
     "sales": [
       {
+        "address": "BOWSPIRIT APARTMENTS, 38, CREEKSIDE",
+        "postcode": "SE8 3GP",
+        "price": 499000,
+        "dateOfTransfer": "2026-07-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, BESTWOOD STREET",
+        "postcode": "SE8 5AW",
+        "price": 637500,
+        "dateOfTransfer": "2026-07-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "GOBY HOUSE, 60, CREATIVE ROAD",
+        "postcode": "SE8 3GN",
+        "price": 42000000,
+        "dateOfTransfer": "2026-07-21",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "176, DEPTFORD HIGH STREET",
+        "postcode": "SE8 3PR",
+        "price": 575000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "9A, ST JOHNS VALE",
+        "postcode": "SE8 4EA",
+        "price": 360000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CORBIDGE COURT, FLAT 62, GLAISHER STREET",
+        "postcode": "SE8 3ET",
+        "price": 327500,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GRANSDEN HOUSE, FLAT 2, BOWDITCH",
+        "postcode": "SE8 3QL",
+        "price": 200000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44, ELVERSON ROAD",
+        "postcode": "SE8 4JN",
+        "price": 627000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "162, ALBYN ROAD",
+        "postcode": "SE8 4JQ",
+        "price": 1092000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "144, BASEVI WAY",
+        "postcode": "SE8 3JT",
+        "price": 955000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "191 - 193, FLAT B, DEPTFORD HIGH STREET",
+        "postcode": "SE8 3NT",
+        "price": 341251,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "23, GREENLAND MEWS, DEPTFORD",
         "postcode": "SE8 5JN",
         "price": 365000,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "45, ALLOA ROAD",
+        "postcode": "SE8 5AH",
+        "price": 790000,
         "dateOfTransfer": "2026-06-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -362,11 +470,19 @@
         "newBuild": false
       },
       {
-        "address": "8, WHARF STREET",
+        "address": "6, WHARF STREET",
         "postcode": "SE8 3GE",
         "price": 750000,
         "dateOfTransfer": "2026-06-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, ALLOA ROAD",
+        "postcode": "SE8 5AH",
+        "price": 815000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -378,11 +494,19 @@
         "newBuild": false
       },
       {
-        "address": "33, ALLOA ROAD",
-        "postcode": "SE8 5AH",
-        "price": 815000,
+        "address": "BOWSPIRIT APARTMENTS, 62, CREEKSIDE",
+        "postcode": "SE8 3GP",
+        "price": 485000,
         "dateOfTransfer": "2026-06-05",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE DRAKES, 390, APARTMENT 32, EVELYN STREET",
+        "postcode": "SE8 5BU",
+        "price": 365000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -402,10 +526,34 @@
         "newBuild": false
       },
       {
+        "address": "INWEN COURT, FLAT 35, GRINSTEAD ROAD",
+        "postcode": "SE8 5BH",
+        "price": 250000,
+        "dateOfTransfer": "2026-06-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "133, FLAT 4, DEPTFORD HIGH STREET",
         "postcode": "SE8 4NS",
         "price": 240000,
         "dateOfTransfer": "2026-06-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26, ENTERPRIZE WAY",
+        "postcode": "SE8 3PJ",
+        "price": 615000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "TINDERBOX HOUSE, 2, APARTMENT 57, OCTAVIUS STREET",
+        "postcode": "SE8 4BY",
+        "price": 465000,
+        "dateOfTransfer": "2026-05-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -439,6 +587,14 @@
         "price": 255000,
         "dateOfTransfer": "2026-05-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, SYBIL PHOENIX CLOSE",
+        "postcode": "SE8 5BA",
+        "price": 540000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -794,6 +950,14 @@
         "newBuild": false
       },
       {
+        "address": "22, GLENVILLE GROVE",
+        "postcode": "SE8 4BP",
+        "price": 215000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "DECKHOUSE COURT, 22, COFFERDAM WAY",
         "postcode": "SE8 3GR",
         "price": 615000,
@@ -829,6 +993,14 @@
         "address": "ARAGON TOWER, FLAT 10.11, GEORGE BEARD ROAD",
         "postcode": "SE8 3AJ",
         "price": 330000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "132, GIFFIN STREET",
+        "postcode": "SE8 4RJ",
+        "price": 320000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -898,19 +1070,27 @@
         "newBuild": false
       },
       {
-        "address": "13, ALLOA ROAD",
-        "postcode": "SE8 5AH",
-        "price": 735000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "EVELYN HALL, FLAT 4, STAUNTON STREET",
         "postcode": "SE8 5GA",
         "price": 370000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "INWEN COURT, FLAT 201, GRINSTEAD ROAD",
+        "postcode": "SE8 5BN",
+        "price": 329000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, ALLOA ROAD",
+        "postcode": "SE8 5AH",
+        "price": 735000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -934,6 +1114,14 @@
         "postcode": "SE8 4AE",
         "price": 385000,
         "dateOfTransfer": "2026-01-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MANDARA PLACE, FLAT 42, YEOMAN STREET",
+        "postcode": "SE8 5ET",
+        "price": 150000,
+        "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -962,14 +1150,6 @@
         "newBuild": false
       },
       {
-        "address": "MANDARA PLACE, FLAT 42, YEOMAN STREET",
-        "postcode": "SE8 5ET",
-        "price": 150000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "13, TANNERS HILL",
         "postcode": "SE8 4PJ",
         "price": 630000,
@@ -986,14 +1166,6 @@
         "newBuild": false
       },
       {
-        "address": "39, WARWICKSHIRE PATH",
-        "postcode": "SE8 4LN",
-        "price": 480000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "136, BASEVI WAY",
         "postcode": "SE8 3JT",
         "price": 840000,
@@ -1002,18 +1174,26 @@
         "newBuild": false
       },
       {
-        "address": "OSLO TOWER, FLAT 45, NAOMI STREET",
-        "postcode": "SE8 5EP",
-        "price": 555000,
-        "dateOfTransfer": "2026-01-13",
+        "address": "39, WARWICKSHIRE PATH",
+        "postcode": "SE8 4LN",
+        "price": 480000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ARLINGTON HOUSE, FLAT 39, EVELYN STREET",
+        "postcode": "SE8 5QT",
+        "price": 230000,
+        "dateOfTransfer": "2026-01-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "23A, BOLDEN STREET",
-        "postcode": "SE8 4JF",
-        "price": 412500,
-        "dateOfTransfer": "2026-01-09",
+        "address": "OSLO TOWER, FLAT 45, NAOMI STREET",
+        "postcode": "SE8 5EP",
+        "price": 555000,
+        "dateOfTransfer": "2026-01-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1034,6 +1214,22 @@
         "newBuild": false
       },
       {
+        "address": "23A, BOLDEN STREET",
+        "postcode": "SE8 4JF",
+        "price": 412500,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ADAGIO POINT, 3, FLAT 47, LABAN WALK, GREENWICH",
+        "postcode": "SE8 3FJ",
+        "price": 325000,
+        "dateOfTransfer": "2026-01-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "154A, ALBYN ROAD",
         "postcode": "SE8 4JQ",
         "price": 535000,
@@ -1050,25 +1246,9 @@
         "newBuild": false
       },
       {
-        "address": "ADAGIO POINT, 3, FLAT 47, LABAN WALK, GREENWICH",
-        "postcode": "SE8 3FJ",
-        "price": 325000,
-        "dateOfTransfer": "2026-01-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CAMELLIA HOUSE, FLAT 6, IDONIA STREET",
         "postcode": "SE8 4LZ",
         "price": 350000,
-        "dateOfTransfer": "2026-01-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "THE TAVERN APARTMENTS, 105, 6, TANNERS HILL",
-        "postcode": "SE8 4QD",
-        "price": 232000,
         "dateOfTransfer": "2026-01-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1079,6 +1259,14 @@
         "price": 850000,
         "dateOfTransfer": "2026-01-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "THE TAVERN APARTMENTS, 105, 6, TANNERS HILL",
+        "postcode": "SE8 4QD",
+        "price": 232000,
+        "dateOfTransfer": "2026-01-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1106,6 +1294,22 @@
         "newBuild": false
       },
       {
+        "address": "20, ALLOA ROAD",
+        "postcode": "SE8 5AJ",
+        "price": 665000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "103, REGINALD ROAD",
+        "postcode": "SE8 4RS",
+        "price": 450000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "CHANTRELLE COURT, FLAT 33, YEOMAN STREET",
         "postcode": "SE8 5FA",
         "price": 575000,
@@ -1119,22 +1323,6 @@
         "price": 600000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "103, REGINALD ROAD",
-        "postcode": "SE8 4RS",
-        "price": 450000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "20, ALLOA ROAD",
-        "postcode": "SE8 5AJ",
-        "price": 665000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1234,11 +1422,11 @@
         "newBuild": false
       },
       {
-        "address": "AKWAABA CENTRE, GRINLING PLACE",
-        "postcode": "SE8 5HG",
-        "price": 2350000,
+        "address": "GREENFELL MANSIONS, 19, GLAISHER STREET",
+        "postcode": "SE8 3EU",
+        "price": 545000,
         "dateOfTransfer": "2025-12-09",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1250,10 +1438,18 @@
         "newBuild": false
       },
       {
-        "address": "GREENFELL MANSIONS, 19, GLAISHER STREET",
-        "postcode": "SE8 3EU",
-        "price": 545000,
+        "address": "AKWAABA CENTRE, GRINLING PLACE",
+        "postcode": "SE8 5HG",
+        "price": 2350000,
         "dateOfTransfer": "2025-12-09",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "STATION HOUSE, 6, APARTMENT 37, CARRIAGE WAY",
+        "postcode": "SE8 4BZ",
+        "price": 418000,
+        "dateOfTransfer": "2025-12-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1370,17 +1566,17 @@
         "newBuild": false
       },
       {
-        "address": "LACEWOOD APARTMENTS, 4, FLAT 12, TIMBERYARD STREET",
-        "postcode": "SE8 3JZ",
-        "price": 615000,
+        "address": "CORBIDGE COURT, FLAT 82, GLAISHER STREET",
+        "postcode": "SE8 3ET",
+        "price": 310000,
         "dateOfTransfer": "2025-11-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "CORBIDGE COURT, FLAT 82, GLAISHER STREET",
-        "postcode": "SE8 3ET",
-        "price": 310000,
+        "address": "LACEWOOD APARTMENTS, 4, FLAT 12, TIMBERYARD STREET",
+        "postcode": "SE8 3JZ",
+        "price": 615000,
         "dateOfTransfer": "2025-11-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1474,17 +1670,17 @@
         "newBuild": false
       },
       {
-        "address": "HAZELWOOD HOUSE, FLAT 77, EVELYN STREET",
-        "postcode": "SE8 5RR",
-        "price": 280000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "NYLAND COURT, FLAT 44, NAOMI STREET",
         "postcode": "SE8 5EW",
         "price": 520000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "HAZELWOOD HOUSE, FLAT 77, EVELYN STREET",
+        "postcode": "SE8 5RR",
+        "price": 280000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1562,10 +1758,26 @@
         "newBuild": false
       },
       {
+        "address": "130, GIFFIN STREET",
+        "postcode": "SE8 4RJ",
+        "price": 310000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "44, ALBURY STREET",
         "postcode": "SE8 3PS",
         "price": 440000,
         "dateOfTransfer": "2025-10-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT B, LIND STREET",
+        "postcode": "SE8 4JE",
+        "price": 435000,
+        "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1586,10 +1798,10 @@
         "newBuild": false
       },
       {
-        "address": "1, FLAT B, LIND STREET",
-        "postcode": "SE8 4JE",
-        "price": 435000,
-        "dateOfTransfer": "2025-10-10",
+        "address": "HOLDEN HOUSE, FLAT 30, DEPTFORD CHURCH STREET",
+        "postcode": "SE8 4SQ",
+        "price": 382500,
+        "dateOfTransfer": "2025-10-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1634,17 +1846,17 @@
         "newBuild": false
       },
       {
-        "address": "27, GLENVILLE GROVE",
-        "postcode": "SE8 4BJ",
-        "price": 250000,
+        "address": "INWEN COURT, FLAT 130, GRINSTEAD ROAD",
+        "postcode": "SE8 5BL",
+        "price": 292500,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "INWEN COURT, FLAT 130, GRINSTEAD ROAD",
-        "postcode": "SE8 5BL",
-        "price": 292500,
+        "address": "27, GLENVILLE GROVE",
+        "postcode": "SE8 4BJ",
+        "price": 250000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1655,6 +1867,14 @@
         "price": 265000,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "82, GIFFIN STREET",
+        "postcode": "SE8 4RJ",
+        "price": 400000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1674,17 +1894,17 @@
         "newBuild": false
       },
       {
-        "address": "2B, APARTMENT 4, GLENVILLE GROVE",
-        "postcode": "SE8 4BP",
-        "price": 450000,
-        "dateOfTransfer": "2025-09-25",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "MALMO TOWER, FLAT 46, BAILEY STREET",
         "postcode": "SE8 5EU",
         "price": 545000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2B, APARTMENT 1, GLENVILLE GROVE",
+        "postcode": "SE8 4BP",
+        "price": 420000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1695,6 +1915,14 @@
         "price": 180000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2B, APARTMENT 4, GLENVILLE GROVE",
+        "postcode": "SE8 4BP",
+        "price": 450000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1718,6 +1946,22 @@
         "postcode": "SE8 3LG",
         "price": 415000,
         "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HOLDEN HOUSE, FLAT 27, DEPTFORD CHURCH STREET",
+        "postcode": "SE8 4SQ",
+        "price": 365000,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "IBIS COURT, FLAT 28, EDWARD PLACE",
+        "postcode": "SE8 5PY",
+        "price": 260000,
+        "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1762,10 +2006,26 @@
         "newBuild": false
       },
       {
+        "address": "ADAGIO POINT, 3, FLAT 95, LABAN WALK, GREENWICH",
+        "postcode": "SE8 3FJ",
+        "price": 327500,
+        "dateOfTransfer": "2025-09-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "231, GLENVILLE GROVE",
         "postcode": "SE8 4BT",
         "price": 576500,
         "dateOfTransfer": "2025-09-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "115, DEPTFORD HIGH STREET",
+        "postcode": "SE8 4NS",
+        "price": 270000,
+        "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1781,14 +2041,6 @@
         "address": "114, FRIENDLY STREET",
         "postcode": "SE8 4DR",
         "price": 620000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "115, DEPTFORD HIGH STREET",
-        "postcode": "SE8 4NS",
-        "price": 270000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1826,18 +2078,18 @@
         "newBuild": false
       },
       {
-        "address": "BOWSPIRIT APARTMENTS, 25, CREEKSIDE",
-        "postcode": "SE8 3GP",
-        "price": 532000,
+        "address": "ADAGIO POINT, 3, FLAT 81, LABAN WALK, GREENWICH",
+        "postcode": "SE8 3FJ",
+        "price": 447500,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "MAPLE HOUSE, FLAT 24, IDONIA STREET",
-        "postcode": "SE8 4LS",
-        "price": 367500,
-        "dateOfTransfer": "2025-08-28",
+        "address": "BOWSPIRIT APARTMENTS, 25, CREEKSIDE",
+        "postcode": "SE8 3GP",
+        "price": 532000,
+        "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1850,18 +2102,18 @@
         "newBuild": false
       },
       {
+        "address": "MAPLE HOUSE, FLAT 24, IDONIA STREET",
+        "postcode": "SE8 4LS",
+        "price": 367500,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "4, ELGAR CLOSE",
         "postcode": "SE8 4AR",
         "price": 670000,
         "dateOfTransfer": "2025-08-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "8, ADMIRAL STREET",
-        "postcode": "SE8 4HY",
-        "price": 830000,
-        "dateOfTransfer": "2025-08-26",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1871,6 +2123,14 @@
         "price": 372500,
         "dateOfTransfer": "2025-08-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, ADMIRAL STREET",
+        "postcode": "SE8 4HY",
+        "price": 830000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1890,9 +2150,9 @@
         "newBuild": false
       },
       {
-        "address": "1, FLAT A, LIND STREET",
-        "postcode": "SE8 4JE",
-        "price": 449000,
+        "address": "29, FORESHORE",
+        "postcode": "SE8 3AQ",
+        "price": 325000,
         "dateOfTransfer": "2025-08-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1906,10 +2166,18 @@
         "newBuild": false
       },
       {
-        "address": "29, FORESHORE",
-        "postcode": "SE8 3AQ",
-        "price": 325000,
+        "address": "1, FLAT A, LIND STREET",
+        "postcode": "SE8 4JE",
+        "price": 449000,
         "dateOfTransfer": "2025-08-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ARAGON TOWER, FLAT 2.05, GEORGE BEARD ROAD",
+        "postcode": "SE8 3AH",
+        "price": 370000,
+        "dateOfTransfer": "2025-08-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1986,17 +2254,9 @@
         "newBuild": false
       },
       {
-        "address": "STRETTON MANSIONS, FLAT 6, GLAISHER STREET",
-        "postcode": "SE8 3JP",
-        "price": 450000,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "72, FLAT 3, MCMILLAN STREET",
-        "postcode": "SE8 3HA",
-        "price": 432500,
+        "address": "1, JOHN SILKIN LANE",
+        "postcode": "SE8 5BB",
+        "price": 210000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2010,9 +2270,17 @@
         "newBuild": false
       },
       {
-        "address": "1, JOHN SILKIN LANE",
-        "postcode": "SE8 5BB",
-        "price": 210000,
+        "address": "72, FLAT 3, MCMILLAN STREET",
+        "postcode": "SE8 3HA",
+        "price": 432500,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "STRETTON MANSIONS, FLAT 6, GLAISHER STREET",
+        "postcode": "SE8 3JP",
+        "price": 450000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2026,17 +2294,17 @@
         "newBuild": false
       },
       {
-        "address": "93B, ALBYN ROAD",
-        "postcode": "SE8 4EB",
-        "price": 342500,
+        "address": "STATION HOUSE, 6, APARTMENT 11, CARRIAGE WAY",
+        "postcode": "SE8 4BZ",
+        "price": 382000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "STATION HOUSE, 6, APARTMENT 11, CARRIAGE WAY",
-        "postcode": "SE8 4BZ",
-        "price": 382000,
+        "address": "93B, ALBYN ROAD",
+        "postcode": "SE8 4EB",
+        "price": 342500,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2054,7 +2322,7 @@
         "postcode": "SE8 5DG",
         "price": 320000,
         "dateOfTransfer": "2025-07-24",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2062,7 +2330,7 @@
         "postcode": "SE8 5DG",
         "price": 320000,
         "dateOfTransfer": "2025-07-24",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2186,19 +2454,19 @@
         "newBuild": false
       },
       {
-        "address": "IBIS COURT, FLAT 28, EDWARD PLACE",
-        "postcode": "SE8 5PY",
-        "price": 220000,
-        "dateOfTransfer": "2025-07-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "DEPTFORD TRADING ESTATE, UNIT 1, BLACKHORSE ROAD",
         "postcode": "SE8 5HY",
         "price": 25000,
         "dateOfTransfer": "2025-07-10",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "IBIS COURT, FLAT 28, EDWARD PLACE",
+        "postcode": "SE8 5PY",
+        "price": 220000,
+        "dateOfTransfer": "2025-07-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2386,6 +2654,14 @@
         "newBuild": false
       },
       {
+        "address": "CORBIDGE COURT, FLAT 28, GLAISHER STREET",
+        "postcode": "SE8 3ES",
+        "price": 490000,
+        "dateOfTransfer": "2025-06-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "77, GLENVILLE GROVE",
         "postcode": "SE8 4BJ",
         "price": 220000,
@@ -2399,14 +2675,6 @@
         "price": 440000,
         "dateOfTransfer": "2025-06-06",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "CORBIDGE COURT, FLAT 28, GLAISHER STREET",
-        "postcode": "SE8 3ES",
-        "price": 490000,
-        "dateOfTransfer": "2025-06-06",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2554,19 +2822,19 @@
         "newBuild": false
       },
       {
-        "address": "KNIGHTS TOWER, 14, APARTMENT 94, WHARF STREET",
-        "postcode": "SE8 3FX",
-        "price": 585000,
-        "dateOfTransfer": "2025-05-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "BLOCK B, UNIT 7, GREENWICH QUAY",
         "postcode": "SE8 3EY",
         "price": 2238000,
         "dateOfTransfer": "2025-05-08",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "KNIGHTS TOWER, 14, APARTMENT 94, WHARF STREET",
+        "postcode": "SE8 3FX",
+        "price": 585000,
+        "dateOfTransfer": "2025-05-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2650,19 +2918,19 @@
         "newBuild": false
       },
       {
-        "address": "MERANTI APARTMENTS, 167, FLAT 43, GROVE STREET",
-        "postcode": "SE8 3GZ",
-        "price": 360000,
-        "dateOfTransfer": "2025-04-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "112B, GOSTERWOOD STREET",
         "postcode": "SE8 5NY",
         "price": 310000,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MERANTI APARTMENTS, 167, FLAT 43, GROVE STREET",
+        "postcode": "SE8 3GZ",
+        "price": 360000,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2686,38 +2954,6 @@
         "postcode": "SE8 3LZ",
         "price": 390000,
         "dateOfTransfer": "2025-04-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "BOWSPIRIT APARTMENTS, 2, CREEKSIDE",
-        "postcode": "SE8 3GP",
-        "price": 505000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "BLOOM HEIGHTS, FLAT 20, RIVER RISE CLOSE",
-        "postcode": "SE8 5FT",
-        "price": 390000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "2A, FLAT 2, GLENVILLE GROVE",
-        "postcode": "SE8 4BP",
-        "price": 417000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CENTURY HOUSE, FLAT 32, ARMOURY ROAD",
-        "postcode": "SE8 4LH",
-        "price": 431250,
-        "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2762,6 +2998,38 @@
         "newBuild": false
       },
       {
+        "address": "BOWSPIRIT APARTMENTS, 2, CREEKSIDE",
+        "postcode": "SE8 3GP",
+        "price": 505000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BLOOM HEIGHTS, FLAT 20, RIVER RISE CLOSE",
+        "postcode": "SE8 5FT",
+        "price": 390000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2A, FLAT 2, GLENVILLE GROVE",
+        "postcode": "SE8 4BP",
+        "price": 417000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CENTURY HOUSE, FLAT 32, ARMOURY ROAD",
+        "postcode": "SE8 4LH",
+        "price": 431250,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "52, WARWICKSHIRE PATH",
         "postcode": "SE8 4LN",
         "price": 560000,
@@ -2786,22 +3054,6 @@
         "newBuild": false
       },
       {
-        "address": "93 - 95, FLAT 2, DEPTFORD HIGH STREET",
-        "postcode": "SE8 4AA",
-        "price": 467500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "MARLOW COURT, 24, FLAT 7, MCMILLAN STREET",
-        "postcode": "SE8 3FS",
-        "price": 340000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CONGERS HOUSE, FLAT 9, BRONZE STREET",
         "postcode": "SE8 3DT",
         "price": 325000,
@@ -2815,6 +3067,14 @@
         "price": 570000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "DECKHOUSE COURT, 6, COFFERDAM WAY",
+        "postcode": "SE8 3GR",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2834,9 +3094,17 @@
         "newBuild": false
       },
       {
-        "address": "DECKHOUSE COURT, 6, COFFERDAM WAY",
-        "postcode": "SE8 3GR",
-        "price": 350000,
+        "address": "93 - 95, FLAT 2, DEPTFORD HIGH STREET",
+        "postcode": "SE8 4AA",
+        "price": 467500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MARLOW COURT, 24, FLAT 7, MCMILLAN STREET",
+        "postcode": "SE8 3FS",
+        "price": 340000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2858,14 +3126,6 @@
         "newBuild": false
       },
       {
-        "address": "DECKHOUSE COURT, 21, COFFERDAM WAY",
-        "postcode": "SE8 3GR",
-        "price": 525000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "55, WARWICKSHIRE PATH",
         "postcode": "SE8 4LN",
         "price": 527000,
@@ -2877,6 +3137,14 @@
         "address": "39B, ST JOHNS VALE",
         "postcode": "SE8 4EN",
         "price": 440000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DECKHOUSE COURT, 21, COFFERDAM WAY",
+        "postcode": "SE8 3GR",
+        "price": 525000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2930,6 +3198,14 @@
         "newBuild": false
       },
       {
+        "address": "OSLO TOWER, FLAT 61, NAOMI STREET",
+        "postcode": "SE8 5EP",
+        "price": 850000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "161, GLENVILLE GROVE",
         "postcode": "SE8 4BJ",
         "price": 165000,
@@ -2938,9 +3214,9 @@
         "newBuild": false
       },
       {
-        "address": "OSLO TOWER, FLAT 61, NAOMI STREET",
-        "postcode": "SE8 5EP",
-        "price": 850000,
+        "address": "MERIDIAN POINT, APARTMENT 12, CREEK ROAD",
+        "postcode": "SE8 3DB",
+        "price": 500000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2951,14 +3227,6 @@
         "price": 1060000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "MERIDIAN POINT, APARTMENT 12, CREEK ROAD",
-        "postcode": "SE8 3DB",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2986,6 +3254,14 @@
         "newBuild": false
       },
       {
+        "address": "EVELYN HALL, FLAT 7, STAUNTON STREET",
+        "postcode": "SE8 5GA",
+        "price": 520000,
+        "dateOfTransfer": "2025-03-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "47, JOHN SILKIN LANE",
         "postcode": "SE8 5BB",
         "price": 292500,
@@ -3002,33 +3278,9 @@
         "newBuild": false
       },
       {
-        "address": "EVELYN HALL, FLAT 7, STAUNTON STREET",
-        "postcode": "SE8 5GA",
-        "price": 520000,
-        "dateOfTransfer": "2025-03-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "HARBOURSIDE COURT, 1, FLAT 4, GULLIVERS WALK",
         "postcode": "SE8 3FA",
         "price": 395000,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "23, ELVERSON ROAD",
-        "postcode": "SE8 4JW",
-        "price": 623500,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "INWEN COURT, FLAT 135, GRINSTEAD ROAD",
-        "postcode": "SE8 5BL",
-        "price": 255000,
         "dateOfTransfer": "2025-03-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3042,17 +3294,33 @@
         "newBuild": false
       },
       {
-        "address": "COPENHAGEN COURT, FLAT 143, PELL STREET",
-        "postcode": "SE8 5ES",
-        "price": 670000,
-        "dateOfTransfer": "2025-03-14",
+        "address": "INWEN COURT, FLAT 135, GRINSTEAD ROAD",
+        "postcode": "SE8 5BL",
+        "price": 255000,
+        "dateOfTransfer": "2025-03-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, ELVERSON ROAD",
+        "postcode": "SE8 4JW",
+        "price": 623500,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "56, TANNERS HILL",
         "postcode": "SE8 4PN",
         "price": 530500,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "COPENHAGEN COURT, FLAT 143, PELL STREET",
+        "postcode": "SE8 5ES",
+        "price": 670000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3090,14 +3358,6 @@
         "newBuild": false
       },
       {
-        "address": "THE CRESCENT, 2, FLAT 210, SEAGER PLACE",
-        "postcode": "SE8 4HJ",
-        "price": 290000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CAVATINA POINT, 3, FLAT 52, DANCERS WAY",
         "postcode": "SE8 3FG",
         "price": 390000,
@@ -3109,6 +3369,14 @@
         "address": "130, BASEVI WAY",
         "postcode": "SE8 3JT",
         "price": 380000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THE CRESCENT, 2, FLAT 210, SEAGER PLACE",
+        "postcode": "SE8 4HJ",
+        "price": 290000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3194,9 +3462,9 @@
         "newBuild": false
       },
       {
-        "address": "1, FLAT F, CLYDE STREET",
-        "postcode": "SE8 5LW",
-        "price": 381000,
+        "address": "47, SYBIL PHOENIX CLOSE",
+        "postcode": "SE8 5BA",
+        "price": 275000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3218,9 +3486,9 @@
         "newBuild": false
       },
       {
-        "address": "47, SYBIL PHOENIX CLOSE",
-        "postcode": "SE8 5BA",
-        "price": 275000,
+        "address": "1, FLAT F, CLYDE STREET",
+        "postcode": "SE8 5LW",
+        "price": 381000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3298,6 +3566,14 @@
         "newBuild": false
       },
       {
+        "address": "BLOOM HEIGHTS, FLAT 12, RIVER RISE CLOSE",
+        "postcode": "SE8 5FT",
+        "price": 392500,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "76, JOHN SILKIN LANE",
         "postcode": "SE8 5BE",
         "price": 325000,
@@ -3322,14 +3598,6 @@
         "newBuild": false
       },
       {
-        "address": "BLOOM HEIGHTS, FLAT 12, RIVER RISE CLOSE",
-        "postcode": "SE8 5FT",
-        "price": 392500,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "DAUBENEY TOWER, FLAT 145, BOWDITCH",
         "postcode": "SE8 3QP",
         "price": 235000,
@@ -3346,14 +3614,6 @@
         "newBuild": false
       },
       {
-        "address": "STANHOPE HOUSE, FLAT 22, ADOLPHUS STREET",
-        "postcode": "SE8 4LX",
-        "price": 395000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "VERTEX TOWER, 3, FLAT 56, HARMONY PLACE",
         "postcode": "SE8 3FE",
         "price": 490000,
@@ -3365,6 +3625,14 @@
         "address": "FINCH HOUSE, FLAT 2, BRONZE STREET",
         "postcode": "SE8 3DU",
         "price": 460000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "STANHOPE HOUSE, FLAT 22, ADOLPHUS STREET",
+        "postcode": "SE8 4LX",
+        "price": 395000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3394,19 +3662,19 @@
         "newBuild": false
       },
       {
-        "address": "95, JOHN SILKIN LANE",
-        "postcode": "SE8 5BE",
-        "price": 356500,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "25, GREENLAND MEWS, DEPTFORD",
         "postcode": "SE8 5JN",
         "price": 439000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "95, JOHN SILKIN LANE",
+        "postcode": "SE8 5BE",
+        "price": 356500,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3426,17 +3694,17 @@
         "newBuild": false
       },
       {
-        "address": "28, BAILDON STREET",
-        "postcode": "SE8 4BQ",
-        "price": 255000,
+        "address": "11A, LIND STREET",
+        "postcode": "SE8 4JE",
+        "price": 432500,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "11A, LIND STREET",
-        "postcode": "SE8 4JE",
-        "price": 432500,
+        "address": "28, BAILDON STREET",
+        "postcode": "SE8 4BQ",
+        "price": 255000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3458,17 +3726,17 @@
         "newBuild": false
       },
       {
-        "address": "4, HAYES MEWS",
-        "postcode": "SE8 4EQ",
-        "price": 450000,
+        "address": "ARAGON TOWER, FLAT 6.10, GEORGE BEARD ROAD",
+        "postcode": "SE8 3AH",
+        "price": 350000,
         "dateOfTransfer": "2025-01-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "ARAGON TOWER, FLAT 6.10, GEORGE BEARD ROAD",
-        "postcode": "SE8 3AH",
-        "price": 350000,
+        "address": "4, HAYES MEWS",
+        "postcode": "SE8 4EQ",
+        "price": 450000,
         "dateOfTransfer": "2025-01-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3498,17 +3766,17 @@
         "newBuild": false
       },
       {
-        "address": "FULCHER HOUSE, FLAT 13, GROVE STREET",
-        "postcode": "SE8 3LW",
-        "price": 305000,
+        "address": "41, FLAT 10, DEPTFORD BRIDGE",
+        "postcode": "SE8 4HH",
+        "price": 400000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "41, FLAT 10, DEPTFORD BRIDGE",
-        "postcode": "SE8 4HH",
-        "price": 400000,
+        "address": "FULCHER HOUSE, FLAT 13, GROVE STREET",
+        "postcode": "SE8 3LW",
+        "price": 305000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3586,7 +3854,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 569514,
+    "averagePrice": 655771,
     "medianPrice": 395000
   },
   "representatives": {

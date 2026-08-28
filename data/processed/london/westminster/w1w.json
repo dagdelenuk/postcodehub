@@ -3,8 +3,8 @@
   "slug": "w1w",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.51921220224716,
-  "longitude": -0.1408767817014447,
+  "latitude": 51.51912253846158,
+  "longitude": -0.14124301839464876,
   "wards": [
     "Clerkenwell",
     "West End"
@@ -109,7 +109,8 @@
         "urn": "101121",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Foley Street, London",
         "postcode": "W1W 7JJ",
         "numberOfPupils": 180,
@@ -121,6 +122,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "85 Great Portland Street, First Floor, London",
         "postcode": "W1W 7LT",
         "numberOfPupils": 0,
@@ -132,102 +134,134 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5859,
-        "violentCrimes": 1161,
-        "propertyCrimes": 3930
+        "totalCrimes": 5838,
+        "violentCrimes": 1154,
+        "propertyCrimes": 3912
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5296,
-        "violentCrimes": 1057,
-        "propertyCrimes": 3410
+        "totalCrimes": 5275,
+        "violentCrimes": 1055,
+        "propertyCrimes": 3396
       },
       {
         "month": "2025-09",
-        "totalCrimes": 5123,
-        "violentCrimes": 1096,
-        "propertyCrimes": 3341
+        "totalCrimes": 5098,
+        "violentCrimes": 1091,
+        "propertyCrimes": 3327
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5657,
-        "violentCrimes": 1113,
-        "propertyCrimes": 3759
+        "totalCrimes": 5629,
+        "violentCrimes": 1115,
+        "propertyCrimes": 3744
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6707,
-        "violentCrimes": 1118,
-        "propertyCrimes": 4794
+        "totalCrimes": 6689,
+        "violentCrimes": 1123,
+        "propertyCrimes": 4780
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6645,
-        "violentCrimes": 1131,
-        "propertyCrimes": 4713
+        "totalCrimes": 6630,
+        "violentCrimes": 1130,
+        "propertyCrimes": 4706
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4910,
-        "violentCrimes": 925,
-        "propertyCrimes": 3265
+        "totalCrimes": 4893,
+        "violentCrimes": 924,
+        "propertyCrimes": 3255
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4716,
-        "violentCrimes": 852,
-        "propertyCrimes": 3183
+        "totalCrimes": 4706,
+        "violentCrimes": 849,
+        "propertyCrimes": 3175
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4685,
-        "violentCrimes": 961,
-        "propertyCrimes": 3012
+        "totalCrimes": 4666,
+        "violentCrimes": 959,
+        "propertyCrimes": 2997
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4859,
-        "violentCrimes": 988,
-        "propertyCrimes": 3018
+        "totalCrimes": 4842,
+        "violentCrimes": 983,
+        "propertyCrimes": 3008
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4729,
-        "violentCrimes": 1082,
-        "propertyCrimes": 2878
+        "totalCrimes": 4724,
+        "violentCrimes": 1077,
+        "propertyCrimes": 2874
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4686,
-        "violentCrimes": 1013,
-        "propertyCrimes": 2905
+        "totalCrimes": 4691,
+        "violentCrimes": 1012,
+        "propertyCrimes": 2903
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6913,
+      "anti-social-behaviour": 6881,
       "bicycle-theft": 647,
-      "burglary": 1447,
-      "criminal-damage-arson": 989,
-      "drugs": 1963,
-      "other-theft": 13368,
-      "possession-of-weapons": 197,
-      "public-order": 2412,
-      "robbery": 2297,
-      "shoplifting": 7105,
-      "theft-from-the-person": 17169,
-      "vehicle-crime": 1483,
-      "violent-crime": 7591,
-      "other-crime": 291
+      "burglary": 1438,
+      "criminal-damage-arson": 984,
+      "drugs": 1961,
+      "other-theft": 13319,
+      "possession-of-weapons": 195,
+      "public-order": 2401,
+      "robbery": 2300,
+      "shoplifting": 7034,
+      "theft-from-the-person": 17165,
+      "vehicle-crime": 1490,
+      "violent-crime": 7576,
+      "other-crime": 290
     },
-    "totalLast12Months": 63872
+    "totalLast12Months": 63681
   },
   "property": {
     "sales": [
+      {
+        "address": "GOODWOOD COURT, 54 - 57, FLAT 19, DEVONSHIRE STREET",
+        "postcode": "W1W 5EF",
+        "price": 650000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GOODWOOD COURT, 54 - 57, FLAT 11, DEVONSHIRE STREET",
+        "postcode": "W1W 5DZ",
+        "price": 510000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28 - 29, FLAT 5, GOSFIELD STREET",
+        "postcode": "W1W 6HH",
+        "price": 380000,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
       {
         "address": "110, FLAT 3, GREAT PORTLAND STREET",
         "postcode": "W1W 6PQ",
         "price": 820000,
         "dateOfTransfer": "2026-06-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, APARTMENT 2, BOURLET CLOSE",
+        "postcode": "W1W 7BN",
+        "price": 1150000,
+        "dateOfTransfer": "2026-06-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -288,6 +322,14 @@
         "newBuild": false
       },
       {
+        "address": "51, FLAT 1, RIDING HOUSE STREET",
+        "postcode": "W1W 7EB",
+        "price": 400000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "HALLAM COURT, 77, FLAT 31, HALLAM STREET, MARYLEBONE",
         "postcode": "W1W 5HB",
         "price": 925000,
@@ -308,6 +350,22 @@
         "postcode": "W1W 6JW",
         "price": 775000,
         "dateOfTransfer": "2026-03-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, BOURLET CLOSE",
+        "postcode": "W1W 7BP",
+        "price": 4720000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "GOODWOOD COURT, 54 - 57, FLAT 2, DEVONSHIRE STREET",
+        "postcode": "W1W 5DZ",
+        "price": 410000,
+        "dateOfTransfer": "2026-03-04",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -340,6 +398,14 @@
         "postcode": "W1W 8QH",
         "price": 14750,
         "dateOfTransfer": "2026-01-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "105, GREAT PORTLAND STREET",
+        "postcode": "W1W 6QF",
+        "price": 9526444,
+        "dateOfTransfer": "2025-12-15",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -400,6 +466,14 @@
         "newBuild": false
       },
       {
+        "address": "38 - 40, APARTMENT 4, EASTCASTLE STREET",
+        "postcode": "W1W 8DT",
+        "price": 1338000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "JAMES BOSWELL HOUSE, 118 - 122, FLAT 5, GREAT PORTLAND STREET",
         "postcode": "W1W 6PW",
         "price": 1025000,
@@ -413,6 +487,14 @@
         "price": 1325000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, BOURLET CLOSE",
+        "postcode": "W1W 7BN",
+        "price": 5300000,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -496,6 +578,14 @@
         "newBuild": false
       },
       {
+        "address": "204, APARTMENT A303, GREAT PORTLAND STREET",
+        "postcode": "W1W 5QQ",
+        "price": 1435200,
+        "dateOfTransfer": "2025-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "28 - 29, FLAT 4, GOSFIELD STREET",
         "postcode": "W1W 6HH",
         "price": 397500,
@@ -509,6 +599,22 @@
         "price": 9072000,
         "dateOfTransfer": "2025-04-10",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "90, APARTMENT 4, GREAT PORTLAND STREET",
+        "postcode": "W1W 7NT",
+        "price": 1150000,
+        "dateOfTransfer": "2025-04-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "90, APARTMENT 5, GREAT PORTLAND STREET",
+        "postcode": "W1W 7NT",
+        "price": 1150000,
+        "dateOfTransfer": "2025-04-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -541,22 +647,6 @@
         "price": 1940000,
         "dateOfTransfer": "2025-04-10",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "90, APARTMENT 4, GREAT PORTLAND STREET",
-        "postcode": "W1W 7NT",
-        "price": 1150000,
-        "dateOfTransfer": "2025-04-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "90, APARTMENT 5, GREAT PORTLAND STREET",
-        "postcode": "W1W 7NT",
-        "price": 1150000,
-        "dateOfTransfer": "2025-04-10",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -624,9 +714,9 @@
         "newBuild": false
       },
       {
-        "address": "CORYTON HOUSE, 128, FLAT 7, NEW CAVENDISH STREET",
-        "postcode": "W1W 6XY",
-        "price": 615000,
+        "address": "204, APARTMENT A504, GREAT PORTLAND STREET",
+        "postcode": "W1W 5QQ",
+        "price": 3900000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -640,9 +730,9 @@
         "newBuild": false
       },
       {
-        "address": "204, APARTMENT A504, GREAT PORTLAND STREET",
-        "postcode": "W1W 5QQ",
-        "price": 3900000,
+        "address": "CORYTON HOUSE, 128, FLAT 7, NEW CAVENDISH STREET",
+        "postcode": "W1W 6XY",
+        "price": 615000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -661,6 +751,14 @@
         "price": 1775000,
         "dateOfTransfer": "2025-03-17",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "20, BRIDFORD MEWS",
+        "postcode": "W1W 5BJ",
+        "price": 2146400,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -696,8 +794,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1824184,
-    "medianPrice": 820000
+    "averagePrice": 1909759,
+    "medianPrice": 925000
   },
   "representatives": {
     "representatives": [

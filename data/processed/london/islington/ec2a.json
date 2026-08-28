@@ -3,8 +3,8 @@
   "slug": "ec2a",
   "city": "London",
   "borough": "Islington",
-  "latitude": 51.523671727272784,
-  "longitude": -0.0854268826979474,
+  "latitude": 51.5236123017544,
+  "longitude": -0.08257353333333335,
   "wards": [
     "Bishopsgate",
     "Bunhill",
@@ -45,7 +45,8 @@
         "urn": "100458",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/03/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Cowper Street, City Road, London",
         "postcode": "EC2A 4SH",
         "numberOfPupils": 1152,
@@ -57,6 +58,7 @@
         "phaseOfEducation": "16 plus",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "4 Luke Street, London",
         "postcode": "EC2A 4XW",
         "numberOfPupils": null,
@@ -68,6 +70,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "59-65 Worship Street, Shoreditch, London",
         "postcode": "EC2A 2DU",
         "numberOfPupils": 126,
@@ -79,97 +82,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2819,
-        "violentCrimes": 766,
-        "propertyCrimes": 1404
+        "totalCrimes": 2804,
+        "violentCrimes": 792,
+        "propertyCrimes": 1352
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2806,
-        "violentCrimes": 744,
-        "propertyCrimes": 1435
+        "totalCrimes": 2778,
+        "violentCrimes": 757,
+        "propertyCrimes": 1384
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2504,
-        "violentCrimes": 669,
-        "propertyCrimes": 1288
-      },
-      {
-        "month": "2025-10",
-        "totalCrimes": 2615,
-        "violentCrimes": 715,
-        "propertyCrimes": 1424
-      },
-      {
-        "month": "2025-11",
-        "totalCrimes": 2555,
-        "violentCrimes": 700,
-        "propertyCrimes": 1350
-      },
-      {
-        "month": "2025-12",
-        "totalCrimes": 2680,
-        "violentCrimes": 733,
-        "propertyCrimes": 1475
-      },
-      {
-        "month": "2026-01",
-        "totalCrimes": 2280,
-        "violentCrimes": 597,
-        "propertyCrimes": 1252
-      },
-      {
-        "month": "2026-02",
-        "totalCrimes": 2305,
-        "violentCrimes": 617,
+        "totalCrimes": 2543,
+        "violentCrimes": 708,
         "propertyCrimes": 1255
       },
       {
+        "month": "2025-10",
+        "totalCrimes": 2658,
+        "violentCrimes": 751,
+        "propertyCrimes": 1412
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 2508,
+        "violentCrimes": 715,
+        "propertyCrimes": 1278
+      },
+      {
+        "month": "2025-12",
+        "totalCrimes": 2660,
+        "violentCrimes": 771,
+        "propertyCrimes": 1402
+      },
+      {
+        "month": "2026-01",
+        "totalCrimes": 2263,
+        "violentCrimes": 610,
+        "propertyCrimes": 1217
+      },
+      {
+        "month": "2026-02",
+        "totalCrimes": 2351,
+        "violentCrimes": 665,
+        "propertyCrimes": 1240
+      },
+      {
         "month": "2026-03",
-        "totalCrimes": 2544,
-        "violentCrimes": 698,
-        "propertyCrimes": 1339
+        "totalCrimes": 2519,
+        "violentCrimes": 727,
+        "propertyCrimes": 1299
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2510,
-        "violentCrimes": 629,
-        "propertyCrimes": 1390
+        "totalCrimes": 2424,
+        "violentCrimes": 647,
+        "propertyCrimes": 1285
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2544,
-        "violentCrimes": 663,
-        "propertyCrimes": 1383
+        "totalCrimes": 2558,
+        "violentCrimes": 718,
+        "propertyCrimes": 1307
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2640,
-        "violentCrimes": 686,
-        "propertyCrimes": 1456
+        "totalCrimes": 2594,
+        "violentCrimes": 717,
+        "propertyCrimes": 1364
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 4195,
-      "bicycle-theft": 1069,
-      "burglary": 1480,
-      "criminal-damage-arson": 826,
-      "drugs": 1749,
-      "other-theft": 4493,
-      "possession-of-weapons": 169,
-      "public-order": 1576,
-      "robbery": 1010,
-      "shoplifting": 3848,
-      "theft-from-the-person": 3890,
-      "vehicle-crime": 845,
-      "violent-crime": 5462,
-      "other-crime": 190
+      "anti-social-behaviour": 4300,
+      "bicycle-theft": 1106,
+      "burglary": 1509,
+      "criminal-damage-arson": 839,
+      "drugs": 1792,
+      "other-theft": 4319,
+      "possession-of-weapons": 173,
+      "public-order": 1652,
+      "robbery": 1001,
+      "shoplifting": 3397,
+      "theft-from-the-person": 3807,
+      "vehicle-crime": 818,
+      "violent-crime": 5752,
+      "other-crime": 195
     },
-    "totalLast12Months": 30802
+    "totalLast12Months": 30660
   },
   "property": {
     "sales": [
+      {
+        "address": "7, FLAT 503, GARDEN WALK",
+        "postcode": "EC2A 3EW",
+        "price": 528000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "COSMOPOLITAN HOUSE, 8, FLAT 2, CHRISTINA STREET",
         "postcode": "EC2A 4AZ",
@@ -203,6 +214,14 @@
         "newBuild": false
       },
       {
+        "address": "60, GREAT EASTERN STREET",
+        "postcode": "EC2A 3QR",
+        "price": 1300000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "PENNYBANK CHAMBERS, 1, FLAT 4A, FAIRCHILD PLACE",
         "postcode": "EC2A 3EN",
         "price": 360000,
@@ -224,6 +243,14 @@
         "price": 415000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "UNIT 2A, 110 - 112, CURTAIN ROAD",
+        "postcode": "EC2A 3AH",
+        "price": 450000,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -296,6 +323,14 @@
         "price": 975000,
         "dateOfTransfer": "2025-09-16",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CLERE HOUSE, 3, CHAPEL PLACE",
+        "postcode": "EC2A 3DQ",
+        "price": 1175000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -499,7 +534,7 @@
         "newBuild": true
       }
     ],
-    "averagePrice": 1496895,
+    "averagePrice": 1440571,
     "medianPrice": 950000
   },
   "representatives": {

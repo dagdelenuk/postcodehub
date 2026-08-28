@@ -3,8 +3,8 @@
   "slug": "rm4",
   "city": "London",
   "borough": "Havering",
-  "latitude": 51.641197668749996,
-  "longitude": 0.15932078125,
+  "latitude": 51.641507707006376,
+  "longitude": 0.1588067770700637,
   "wards": [
     "Brizes, Stondon Massey & South Weald",
     "Chigwell with Lambourne",
@@ -48,7 +48,8 @@
         "urn": "144881",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "25/01/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Stapleford Road, Stapleford Abbotts, Romford",
         "postcode": "RM4 1EJ",
         "numberOfPupils": 135,
@@ -58,8 +59,9 @@
         "name": "Lambourne Primary School",
         "urn": "145604",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "09/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hoe Lane, Abridge, Romford",
         "postcode": "RM4 1AU",
         "numberOfPupils": 214,
@@ -70,7 +72,8 @@
         "urn": "146185",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "North Road, Havering-atte-Bower, Romford",
         "postcode": "RM4 1PS",
         "numberOfPupils": 94,
@@ -169,6 +172,14 @@
   "property": {
     "sales": [
       {
+        "address": "43, ALDERWOOD DRIVE, ABRIDGE",
+        "postcode": "RM4 1DJ",
+        "price": 492000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "ST CLAIR, CURTIS MILL LANE, NAVESTOCK",
         "postcode": "RM4 1HS",
         "price": 450000,
@@ -233,10 +244,34 @@
         "newBuild": false
       },
       {
+        "address": "DARK SPINNEY, TYSEA HILL, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1JP",
+        "price": 880000,
+        "dateOfTransfer": "2026-03-05",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "THE WILLOWS, ORANGE TREE HILL, HAVERING-ATTE-BOWER",
         "postcode": "RM4 1PJ",
         "price": 600000,
         "dateOfTransfer": "2026-02-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "STRATHYRE, MARKET PLACE, ABRIDGE",
+        "postcode": "RM4 1UA",
+        "price": 480000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "TREDINNOCK, ORANGE TREE HILL, HAVERING-ATTE-BOWER",
+        "postcode": "RM4 1PB",
+        "price": 885000,
+        "dateOfTransfer": "2026-02-20",
         "propertyType": "Detached",
         "newBuild": false
       },
@@ -249,17 +284,17 @@
         "newBuild": false
       },
       {
-        "address": "YAXHAM, BOURNEBRIDGE LANE, STAPLEFORD ABBOTTS",
+        "address": "ROWLANDS, BOURNEBRIDGE LANE, STAPLEFORD ABBOTTS",
         "postcode": "RM4 1LT",
-        "price": 1200000,
+        "price": 1100000,
         "dateOfTransfer": "2026-02-20",
-        "propertyType": "Detached",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "TREDINNOCK, ORANGE TREE HILL, HAVERING-ATTE-BOWER",
-        "postcode": "RM4 1PB",
-        "price": 885000,
+        "address": "YAXHAM, BOURNEBRIDGE LANE, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1LT",
+        "price": 1200000,
         "dateOfTransfer": "2026-02-20",
         "propertyType": "Detached",
         "newBuild": false
@@ -353,6 +388,14 @@
         "newBuild": false
       },
       {
+        "address": "143, ONGAR ROAD, ABRIDGE",
+        "postcode": "RM4 1UL",
+        "price": 25000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "BROOK HOUSE BARN, EPPING LANE, STAPLEFORD TAWNEY",
         "postcode": "RM4 1ST",
         "price": 2100000,
@@ -385,14 +428,6 @@
         "newBuild": false
       },
       {
-        "address": "3, FAIRLIGHT VILLAS, HAVERING-ATTE-BOWER",
-        "postcode": "RM4 1PP",
-        "price": 525000,
-        "dateOfTransfer": "2025-10-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "THE WILLOWS, OAK HILL ROAD, STAPLEFORD ABBOTTS",
         "postcode": "RM4 1JH",
         "price": 853926,
@@ -401,11 +436,43 @@
         "newBuild": false
       },
       {
+        "address": "3, FAIRLIGHT VILLAS, HAVERING-ATTE-BOWER",
+        "postcode": "RM4 1PP",
+        "price": 525000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "11, WILLOW TREE CLOSE, ABRIDGE",
         "postcode": "RM4 1BL",
         "price": 500000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BISHOPS BROW, OAK HILL ROAD, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1JL",
+        "price": 725000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, WOODSIDE VIEW, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1FL",
+        "price": 855000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Detached",
+        "newBuild": true
+      },
+      {
+        "address": "HARLEEN, STAPLEFORD ROAD, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1EJ",
+        "price": 580000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -449,20 +516,20 @@
         "newBuild": false
       },
       {
-        "address": "8, GEORGE CELY PLACE, STAPLEFORD ABBOTTS",
-        "postcode": "RM4 1FF",
-        "price": 775000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "17, GEORGE CELY PLACE, STAPLEFORD ABBOTTS",
         "postcode": "RM4 1FF",
         "price": 600000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Semi-detached",
         "newBuild": true
+      },
+      {
+        "address": "8, GEORGE CELY PLACE, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1FF",
+        "price": 775000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
       },
       {
         "address": "MEADOW VIEW, 2, EPPING LANE, STAPLEFORD TAWNEY",
@@ -497,14 +564,6 @@
         "newBuild": false
       },
       {
-        "address": "RAINBIRDS, NUPERS HATCH, STAPLEFORD ABBOTTS",
-        "postcode": "RM4 1JR",
-        "price": 600000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "9, GEORGE CELY PLACE, STAPLEFORD ABBOTTS",
         "postcode": "RM4 1FF",
         "price": 1181250,
@@ -518,6 +577,14 @@
         "price": 408500,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "RAINBIRDS, NUPERS HATCH, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1JR",
+        "price": 600000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -633,20 +700,20 @@
         "newBuild": false
       },
       {
-        "address": "9, WOODLANDS GROVE, STAPLEFORD ABBOTTS",
-        "postcode": "RM4 1FB",
-        "price": 908225,
-        "dateOfTransfer": "2025-06-12",
-        "propertyType": "Detached",
-        "newBuild": true
-      },
-      {
         "address": "6, CHATSWORTH MEWS, STAPLEFORD ABBOTTS",
         "postcode": "RM4 1FD",
         "price": 1075000,
         "dateOfTransfer": "2025-06-12",
         "propertyType": "Semi-detached",
         "newBuild": false
+      },
+      {
+        "address": "9, WOODLANDS GROVE, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1FB",
+        "price": 908225,
+        "dateOfTransfer": "2025-06-12",
+        "propertyType": "Detached",
+        "newBuild": true
       },
       {
         "address": "GORDONS COTTAGES, 4, STAPLEFORD ROAD, STAPLEFORD ABBOTTS",
@@ -985,17 +1052,17 @@
         "newBuild": false
       },
       {
-        "address": "COBBS COTTAGE, STAPLEFORD ROAD, STAPLEFORD ABBOTTS",
-        "postcode": "RM4 1EJ",
-        "price": 590000,
+        "address": "JACQUIN, BOURNEBRIDGE LANE, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1LT",
+        "price": 900000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "JACQUIN, BOURNEBRIDGE LANE, STAPLEFORD ABBOTTS",
-        "postcode": "RM4 1LT",
-        "price": 900000,
+        "address": "COBBS COTTAGE, STAPLEFORD ROAD, STAPLEFORD ABBOTTS",
+        "postcode": "RM4 1EJ",
+        "price": 590000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Detached",
         "newBuild": false
@@ -1025,7 +1092,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 718045,
+    "averagePrice": 712764,
     "medianPrice": 620000
   },
   "representatives": {

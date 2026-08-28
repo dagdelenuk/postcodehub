@@ -3,8 +3,8 @@
   "slug": "se23",
   "city": "London",
   "borough": "Lewisham",
-  "latitude": 51.441487748807646,
-  "longitude": -0.04910844515103328,
+  "latitude": 51.44168224749166,
+  "longitude": -0.04891619899665547,
   "wards": [
     "Crofton Park",
     "Dulwich Hill",
@@ -128,7 +128,8 @@
         "urn": "100677",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/11/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Grove Close, Brockley Rise, London",
         "postcode": "SE23 1AS",
         "numberOfPupils": 381,
@@ -139,7 +140,8 @@
         "urn": "100704",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/02/2020",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Brockley Rise, Forest Hill, London",
         "postcode": "SE23 1NH",
         "numberOfPupils": 276,
@@ -150,7 +152,8 @@
         "urn": "100705",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/07/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Brockley Rise, London",
         "postcode": "SE23 1NH",
         "numberOfPupils": 284,
@@ -160,8 +163,9 @@
         "name": "Fairlawn Primary School",
         "urn": "100710",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "12/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Honor Oak Road, London",
         "postcode": "SE23 3SB",
         "numberOfPupils": 362,
@@ -171,8 +175,9 @@
         "name": "Horniman Primary School",
         "urn": "100714",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "07/12/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Horniman Drive, London",
         "postcode": "SE23 3BP",
         "numberOfPupils": 201,
@@ -182,8 +187,9 @@
         "name": "Perrymount Primary School",
         "urn": "100715",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "29/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Sunderland Road, Forest Hill, London",
         "postcode": "SE23 2PX",
         "numberOfPupils": 202,
@@ -194,7 +200,8 @@
         "urn": "100718",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "10/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Kilmorie Road, London",
         "postcode": "SE23 2SP",
         "numberOfPupils": 613,
@@ -204,8 +211,9 @@
         "name": "Holy Trinity Church of England Primary School",
         "urn": "100723",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "29/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Dartmouth Road, Forest Hill, London",
         "postcode": "SE23 3HZ",
         "numberOfPupils": 185,
@@ -216,7 +224,8 @@
         "urn": "100737",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/10/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Brockley Park, Forest Hill, London",
         "postcode": "SE23 1PS",
         "numberOfPupils": 207,
@@ -227,7 +236,8 @@
         "urn": "100745",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/12/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Dacres Road, Forest Hill, London",
         "postcode": "SE23 2XN",
         "numberOfPupils": 1080,
@@ -239,6 +249,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Perry Rise, London",
         "postcode": "SE23 2QU",
         "numberOfPupils": 181,
@@ -250,6 +261,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "62-72 Dalmain Road, London",
         "postcode": "SE23 1AT",
         "numberOfPupils": null,
@@ -259,8 +271,9 @@
         "name": "St George's CofE Primary School",
         "urn": "145621",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "27/01/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Perry Vale, Forest Hill, London",
         "postcode": "SE23 2NE",
         "numberOfPupils": 206,
@@ -272,103 +285,303 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 578,
-        "violentCrimes": 229,
-        "propertyCrimes": 194
+        "totalCrimes": 554,
+        "violentCrimes": 223,
+        "propertyCrimes": 186
       },
       {
         "month": "2025-08",
-        "totalCrimes": 495,
-        "violentCrimes": 165,
-        "propertyCrimes": 150
+        "totalCrimes": 491,
+        "violentCrimes": 161,
+        "propertyCrimes": 151
       },
       {
         "month": "2025-09",
-        "totalCrimes": 490,
-        "violentCrimes": 187,
-        "propertyCrimes": 166
+        "totalCrimes": 482,
+        "violentCrimes": 185,
+        "propertyCrimes": 163
       },
       {
         "month": "2025-10",
-        "totalCrimes": 572,
-        "violentCrimes": 213,
-        "propertyCrimes": 196
+        "totalCrimes": 557,
+        "violentCrimes": 209,
+        "propertyCrimes": 193
       },
       {
         "month": "2025-11",
-        "totalCrimes": 500,
-        "violentCrimes": 195,
-        "propertyCrimes": 194
+        "totalCrimes": 492,
+        "violentCrimes": 194,
+        "propertyCrimes": 189
       },
       {
         "month": "2025-12",
-        "totalCrimes": 401,
-        "violentCrimes": 162,
+        "totalCrimes": 393,
+        "violentCrimes": 158,
         "propertyCrimes": 143
       },
       {
         "month": "2026-01",
-        "totalCrimes": 468,
-        "violentCrimes": 172,
-        "propertyCrimes": 177
+        "totalCrimes": 455,
+        "violentCrimes": 165,
+        "propertyCrimes": 172
       },
       {
         "month": "2026-02",
-        "totalCrimes": 398,
-        "violentCrimes": 157,
-        "propertyCrimes": 142
+        "totalCrimes": 391,
+        "violentCrimes": 153,
+        "propertyCrimes": 140
       },
       {
         "month": "2026-03",
-        "totalCrimes": 436,
-        "violentCrimes": 180,
-        "propertyCrimes": 137
+        "totalCrimes": 430,
+        "violentCrimes": 178,
+        "propertyCrimes": 135
       },
       {
         "month": "2026-04",
-        "totalCrimes": 407,
-        "violentCrimes": 158,
-        "propertyCrimes": 142
+        "totalCrimes": 402,
+        "violentCrimes": 159,
+        "propertyCrimes": 139
       },
       {
         "month": "2026-05",
-        "totalCrimes": 483,
-        "violentCrimes": 195,
-        "propertyCrimes": 126
+        "totalCrimes": 469,
+        "violentCrimes": 192,
+        "propertyCrimes": 123
       },
       {
         "month": "2026-06",
-        "totalCrimes": 441,
-        "violentCrimes": 180,
-        "propertyCrimes": 137
+        "totalCrimes": 430,
+        "violentCrimes": 173,
+        "propertyCrimes": 138
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1283,
+      "anti-social-behaviour": 1248,
       "bicycle-theft": 41,
       "burglary": 239,
-      "criminal-damage-arson": 294,
-      "drugs": 220,
-      "other-theft": 353,
-      "possession-of-weapons": 32,
-      "public-order": 300,
-      "robbery": 123,
-      "shoplifting": 244,
-      "theft-from-the-person": 126,
-      "vehicle-crime": 607,
-      "violent-crime": 1738,
-      "other-crime": 69
+      "criminal-damage-arson": 288,
+      "drugs": 209,
+      "other-theft": 344,
+      "possession-of-weapons": 31,
+      "public-order": 294,
+      "robbery": 119,
+      "shoplifting": 236,
+      "theft-from-the-person": 123,
+      "vehicle-crime": 601,
+      "violent-crime": 1706,
+      "other-crime": 67
     },
-    "totalLast12Months": 5669
+    "totalLast12Months": 5546
   },
   "property": {
     "sales": [
+      {
+        "address": "3, COURTRAI ROAD",
+        "postcode": "SE23 1PL",
+        "price": 768500,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "105, BRENCHLEY GARDENS",
+        "postcode": "SE23 3RE",
+        "price": 815000,
+        "dateOfTransfer": "2026-07-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, PARBURY ROAD",
+        "postcode": "SE23 1PA",
+        "price": 990000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37D, DEVONSHIRE ROAD",
+        "postcode": "SE23 3EN",
+        "price": 460000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "131A, HONOR OAK ROAD",
+        "postcode": "SE23 3SL",
+        "price": 410000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "145, DARTMOUTH ROAD",
+        "postcode": "SE23 3HX",
+        "price": 400000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, COLFE ROAD",
+        "postcode": "SE23 2ES",
+        "price": 1070000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "53, DEVONSHIRE ROAD",
+        "postcode": "SE23 3EN",
+        "price": 1290000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, LEVENDALE ROAD, FOREST HILL",
+        "postcode": "SE23 2TW",
+        "price": 750500,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, BUCKLEY CLOSE",
+        "postcode": "SE23 3EQ",
+        "price": 680000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "262, WOOD VALE",
+        "postcode": "SE23 3DZ",
+        "price": 420000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SALCOMBE HOUSE, FLAT 19, DARTMOUTH ROAD",
+        "postcode": "SE23 3YF",
+        "price": 300000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35F, LOWTHER HILL",
+        "postcode": "SE23 1PZ",
+        "price": 445000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HAMLET HOUSE, 9, FLAT 2, LONDON ROAD",
+        "postcode": "SE23 3TS",
+        "price": 260000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20A, WYLEU STREET",
+        "postcode": "SE23 1DU",
+        "price": 535000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, HOLMESLEY ROAD",
+        "postcode": "SE23 1PH",
+        "price": 950000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "WOODFIELD HOUSE, FLAT 1, DACRES ESTATE",
+        "postcode": "SE23 2BL",
+        "price": 431000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24B, BOVILL ROAD",
+        "postcode": "SE23 1HA",
+        "price": 496000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34A, DACRES ROAD",
+        "postcode": "SE23 2NW",
+        "price": 240000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, GAYNESFORD ROAD",
+        "postcode": "SE23 2UQ",
+        "price": 1050000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "52, SHIPMAN ROAD",
         "postcode": "SE23 2DR",
         "price": 867405,
         "dateOfTransfer": "2026-06-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44A, SHIPMAN ROAD",
+        "postcode": "SE23 2DU",
+        "price": 445000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31A, HONOR OAK PARK",
+        "postcode": "SE23 1DZ",
+        "price": 535000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, FLAT 3, WESTBOURNE DRIVE",
+        "postcode": "SE23 2UP",
+        "price": 420000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "64, EWART ROAD",
+        "postcode": "SE23 1BQ",
+        "price": 446000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAYMOUNT GRANGE, FLAT 47, TAYMOUNT RISE, FOREST HILL",
+        "postcode": "SE23 3UH",
+        "price": 330000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -436,6 +649,14 @@
         "newBuild": false
       },
       {
+        "address": "13, LEVENDALE ROAD, FOREST HILL",
+        "postcode": "SE23 2TP",
+        "price": 700000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "68C, WOOLSTONE ROAD",
         "postcode": "SE23 2SW",
         "price": 377500,
@@ -471,6 +692,14 @@
         "address": "121, PERRY RISE",
         "postcode": "SE23 2QU",
         "price": 500000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, HAREDON CLOSE",
+        "postcode": "SE23 3TG",
+        "price": 775000,
         "dateOfTransfer": "2026-06-03",
         "propertyType": "Terraced",
         "newBuild": false
@@ -564,6 +793,14 @@
         "newBuild": false
       },
       {
+        "address": "76, PERRY RISE",
+        "postcode": "SE23 2QL",
+        "price": 730000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "110, FLAT 4, PERRY VALE",
         "postcode": "SE23 2LQ",
         "price": 485000,
@@ -588,14 +825,6 @@
         "newBuild": false
       },
       {
-        "address": "54, GABRIEL STREET",
-        "postcode": "SE23 1DP",
-        "price": 975000,
-        "dateOfTransfer": "2026-05-15",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "6, CANONBIE ROAD",
         "postcode": "SE23 3AP",
         "price": 1100000,
@@ -609,6 +838,14 @@
         "price": 422500,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "54, GABRIEL STREET",
+        "postcode": "SE23 1DP",
+        "price": 975000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -644,6 +881,14 @@
         "newBuild": false
       },
       {
+        "address": "21, BROCKLEY PARK",
+        "postcode": "SE23 1PT",
+        "price": 1300000,
+        "dateOfTransfer": "2026-05-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "5, ROUNDHAY CLOSE",
         "postcode": "SE23 2NP",
         "price": 600000,
@@ -660,17 +905,17 @@
         "newBuild": false
       },
       {
-        "address": "36, DUNOON ROAD",
-        "postcode": "SE23 3TF",
-        "price": 771000,
+        "address": "77, STILLNESS ROAD",
+        "postcode": "SE23 1NG",
+        "price": 935000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "77, STILLNESS ROAD",
-        "postcode": "SE23 1NG",
-        "price": 935000,
+        "address": "36, DUNOON ROAD",
+        "postcode": "SE23 3TF",
+        "price": 771000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Terraced",
         "newBuild": false
@@ -721,6 +966,14 @@
         "price": 390250,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, WOOD VALE",
+        "postcode": "SE23 3EE",
+        "price": 550000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -780,19 +1033,19 @@
         "newBuild": false
       },
       {
-        "address": "47, CARHOLME ROAD",
-        "postcode": "SE23 2HT",
-        "price": 975000,
-        "dateOfTransfer": "2026-04-13",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "THE APOSTLES, APARTMENT 9, CHURCH RISE",
         "postcode": "SE23 2UD",
         "price": 681000,
         "dateOfTransfer": "2026-04-13",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47, CARHOLME ROAD",
+        "postcode": "SE23 2HT",
+        "price": 975000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -860,19 +1113,19 @@
         "newBuild": false
       },
       {
-        "address": "145A, DEVONSHIRE ROAD",
-        "postcode": "SE23 3LZ",
-        "price": 670000,
-        "dateOfTransfer": "2026-04-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2, ROJACK ROAD",
         "postcode": "SE23 2DF",
         "price": 765000,
         "dateOfTransfer": "2026-04-01",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "145A, DEVONSHIRE ROAD",
+        "postcode": "SE23 3LZ",
+        "price": 670000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -892,14 +1145,6 @@
         "newBuild": false
       },
       {
-        "address": "114, FIRST FLOOR FLAT AT, STONDON PARK, FOREST HILL",
-        "postcode": "SE23 1JS",
-        "price": 406750,
-        "dateOfTransfer": "2026-03-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "4, WASTDALE ROAD",
         "postcode": "SE23 1HN",
         "price": 460000,
@@ -911,6 +1156,14 @@
         "address": "12, GROVE CLOSE",
         "postcode": "SE23 1AS",
         "price": 555000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "114, FIRST FLOOR FLAT AT, STONDON PARK, FOREST HILL",
+        "postcode": "SE23 1JS",
+        "price": 406750,
         "dateOfTransfer": "2026-03-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -929,14 +1182,6 @@
         "price": 220000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "26C, COMO ROAD",
-        "postcode": "SE23 2JJ",
-        "price": 750000,
-        "dateOfTransfer": "2026-03-27",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -964,9 +1209,25 @@
         "newBuild": false
       },
       {
+        "address": "26C, COMO ROAD",
+        "postcode": "SE23 2JJ",
+        "price": 750000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "21 - 23, DARTMOUTH ROAD",
         "postcode": "SE23 3HN",
         "price": 625000,
+        "dateOfTransfer": "2026-03-25",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "21 - 23, DARTMOUTH ROAD",
+        "postcode": "SE23 3HN",
+        "price": 850000,
         "dateOfTransfer": "2026-03-25",
         "propertyType": "Other",
         "newBuild": false
@@ -1012,6 +1273,14 @@
         "newBuild": false
       },
       {
+        "address": "134A, DEVONSHIRE ROAD",
+        "postcode": "SE23 3SZ",
+        "price": 650000,
+        "dateOfTransfer": "2026-03-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "227B, DEVONSHIRE ROAD",
         "postcode": "SE23 3NJ",
         "price": 508000,
@@ -1020,11 +1289,11 @@
         "newBuild": false
       },
       {
-        "address": "134A, DEVONSHIRE ROAD",
-        "postcode": "SE23 3SZ",
-        "price": 650000,
+        "address": "2, CAPITOL WALK",
+        "postcode": "SE23 3DN",
+        "price": 759790,
         "dateOfTransfer": "2026-03-16",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1073,6 +1342,14 @@
         "price": 804000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "117, HONOR OAK PARK",
+        "postcode": "SE23 3LD",
+        "price": 305000,
+        "dateOfTransfer": "2026-03-04",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1180,14 +1457,6 @@
         "newBuild": false
       },
       {
-        "address": "13, SHIPMAN ROAD",
-        "postcode": "SE23 2DY",
-        "price": 383000,
-        "dateOfTransfer": "2026-02-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "VALE LODGE, FLAT 12, PERRY VALE",
         "postcode": "SE23 2LG",
         "price": 370000,
@@ -1204,11 +1473,27 @@
         "newBuild": false
       },
       {
-        "address": "155, DEVONSHIRE ROAD",
-        "postcode": "SE23 3NB",
-        "price": 948000,
+        "address": "20, GREYSTEAD ROAD",
+        "postcode": "SE23 3SE",
+        "price": 371500,
+        "dateOfTransfer": "2026-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, SHIPMAN ROAD",
+        "postcode": "SE23 2DY",
+        "price": 383000,
+        "dateOfTransfer": "2026-02-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, SIDDONS ROAD",
+        "postcode": "SE23 2JH",
+        "price": 1140000,
         "dateOfTransfer": "2026-02-16",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1228,9 +1513,25 @@
         "newBuild": false
       },
       {
+        "address": "155, DEVONSHIRE ROAD",
+        "postcode": "SE23 3NB",
+        "price": 948000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "21, FLAT 1, VANCOUVER ROAD",
         "postcode": "SE23 2AG",
         "price": 485000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAYMOUNT GRANGE, FLAT 25, TAYMOUNT RISE, FOREST HILL",
+        "postcode": "SE23 3UH",
+        "price": 532000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1252,11 +1553,11 @@
         "newBuild": false
       },
       {
-        "address": "TAYMOUNT GRANGE, FLAT 25, TAYMOUNT RISE, FOREST HILL",
-        "postcode": "SE23 3UH",
-        "price": 532000,
-        "dateOfTransfer": "2026-02-13",
-        "propertyType": "Flat/Maisonette",
+        "address": "71, SUNDERLAND ROAD",
+        "postcode": "SE23 2PS",
+        "price": 1892000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1324,6 +1625,14 @@
         "newBuild": false
       },
       {
+        "address": "LEWISHAM HEIGHTS, 155, FLAT 8, HONOR OAK ROAD",
+        "postcode": "SE23 3RW",
+        "price": 460000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "63A, COLFE ROAD",
         "postcode": "SE23 2ES",
         "price": 500000,
@@ -1380,6 +1689,22 @@
         "newBuild": false
       },
       {
+        "address": "15, DUNOON ROAD",
+        "postcode": "SE23 3TD",
+        "price": 1425000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "189, BRENCHLEY GARDENS",
+        "postcode": "SE23 3RF",
+        "price": 382000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "48, WOOLSTONE ROAD",
         "postcode": "SE23 2SG",
         "price": 993750,
@@ -1396,27 +1721,11 @@
         "newBuild": false
       },
       {
-        "address": "189, BRENCHLEY GARDENS",
-        "postcode": "SE23 3RF",
-        "price": 382000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "LYNFIELD COURT, 161, FLAT 3, DEVONSHIRE ROAD",
         "postcode": "SE23 3ND",
         "price": 330000,
         "dateOfTransfer": "2026-01-15",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "43A, HONOR OAK PARK",
-        "postcode": "SE23 1DZ",
-        "price": 280000,
-        "dateOfTransfer": "2026-01-12",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1436,6 +1745,22 @@
         "newBuild": false
       },
       {
+        "address": "43A, HONOR OAK PARK",
+        "postcode": "SE23 1DZ",
+        "price": 280000,
+        "dateOfTransfer": "2026-01-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "136, FLAT D, DEVONSHIRE ROAD",
+        "postcode": "SE23 3SZ",
+        "price": 282500,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "54, DEVONSHIRE ROAD",
         "postcode": "SE23 3SX",
         "price": 359000,
@@ -1449,14 +1774,6 @@
         "price": 475000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "136, FLAT D, DEVONSHIRE ROAD",
-        "postcode": "SE23 3SZ",
-        "price": 282500,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1524,14 +1841,6 @@
         "newBuild": false
       },
       {
-        "address": "38, MONTEM ROAD",
-        "postcode": "SE23 1SH",
-        "price": 1410234,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "32A, HURSTBOURNE ROAD",
         "postcode": "SE23 2AB",
         "price": 410000,
@@ -1545,6 +1854,22 @@
         "price": 362500,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, WESTWOOD PARK, FOREST HILL",
+        "postcode": "SE23 3QG",
+        "price": 835000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "38, MONTEM ROAD",
+        "postcode": "SE23 1SH",
+        "price": 1410234,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1569,6 +1894,14 @@
         "price": 825000,
         "dateOfTransfer": "2025-12-18",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "81, BRENCHLEY GARDENS",
+        "postcode": "SE23 3RE",
+        "price": 321000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1609,6 +1942,14 @@
         "price": 555000,
         "dateOfTransfer": "2025-12-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HORNIMAN GRANGE, 68, FLAT 1, LONDON ROAD",
+        "postcode": "SE23 3HQ",
+        "price": 345000,
+        "dateOfTransfer": "2025-12-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1684,26 +2025,10 @@
         "newBuild": false
       },
       {
-        "address": "53, WESTWOOD PARK, FOREST HILL",
-        "postcode": "SE23 3QG",
-        "price": 835000,
-        "dateOfTransfer": "2025-12-09",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "47, FLAT A, WOOD VALE",
         "postcode": "SE23 3DT",
         "price": 485000,
         "dateOfTransfer": "2025-12-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "BELLE VUE COURT, 122D, FLAT 1B, DEVONSHIRE ROAD",
-        "postcode": "SE23 3SY",
-        "price": 200000,
-        "dateOfTransfer": "2025-12-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1719,6 +2044,14 @@
         "address": "IAN COURT, FLAT 3, DACRES ROAD",
         "postcode": "SE23 2PB",
         "price": 312500,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BELLE VUE COURT, 122D, FLAT 1B, DEVONSHIRE ROAD",
+        "postcode": "SE23 3SY",
+        "price": 200000,
         "dateOfTransfer": "2025-12-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1788,19 +2121,19 @@
         "newBuild": false
       },
       {
-        "address": "34, GROVE CLOSE",
-        "postcode": "SE23 1AS",
-        "price": 130000,
-        "dateOfTransfer": "2025-11-27",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "15D, WYNELL ROAD",
         "postcode": "SE23 2LN",
         "price": 310000,
         "dateOfTransfer": "2025-11-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, GROVE CLOSE",
+        "postcode": "SE23 1AS",
+        "price": 130000,
+        "dateOfTransfer": "2025-11-27",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1892,22 +2225,6 @@
         "newBuild": false
       },
       {
-        "address": "3, CROWMARSH GARDENS",
-        "postcode": "SE23 3AB",
-        "price": 525000,
-        "dateOfTransfer": "2025-11-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "4, DUNCOMBE HILL",
-        "postcode": "SE23 1QB",
-        "price": 785000,
-        "dateOfTransfer": "2025-11-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ATTLEBOROUGH COURT, FLAT 24, SYDENHAM HILL",
         "postcode": "SE23 3PL",
         "price": 310000,
@@ -1927,6 +2244,22 @@
         "address": "EBSWORTH COURT, FLAT 1, EBSWORTH STREET",
         "postcode": "SE23 1ET",
         "price": 465000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, CROWMARSH GARDENS",
+        "postcode": "SE23 3AB",
+        "price": 525000,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, DUNCOMBE HILL",
+        "postcode": "SE23 1QB",
+        "price": 785000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2148,6 +2481,14 @@
         "newBuild": false
       },
       {
+        "address": "1, FLAT 2, WALDENSHAW ROAD",
+        "postcode": "SE23 3XP",
+        "price": 610000,
+        "dateOfTransfer": "2025-10-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "6, EVERGREEN WALK",
         "postcode": "SE23 3FB",
         "price": 950000,
@@ -2156,10 +2497,10 @@
         "newBuild": false
       },
       {
-        "address": "1, FLAT 2, WALDENSHAW ROAD",
-        "postcode": "SE23 3XP",
-        "price": 610000,
-        "dateOfTransfer": "2025-10-29",
+        "address": "SOUTH VIEW COURT, 193, FLAT 8, HONOR OAK ROAD",
+        "postcode": "SE23 3RY",
+        "price": 422000,
+        "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2172,9 +2513,9 @@
         "newBuild": false
       },
       {
-        "address": "SOUTH VIEW COURT, 193, FLAT 8, HONOR OAK ROAD",
-        "postcode": "SE23 3RY",
-        "price": 422000,
+        "address": "184A, STANSTEAD ROAD, FOREST HILL",
+        "postcode": "SE23 1DA",
+        "price": 335000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2228,6 +2569,22 @@
         "newBuild": false
       },
       {
+        "address": "85, WOOD VALE",
+        "postcode": "SE23 3DT",
+        "price": 1690000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "NEWBRIDGE POINT, FLAT 29, WINDRUSH LANE",
+        "postcode": "SE23 2XA",
+        "price": 325000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "66, VANCOUVER ROAD",
         "postcode": "SE23 2AJ",
         "price": 1050000,
@@ -2252,11 +2609,11 @@
         "newBuild": false
       },
       {
-        "address": "85, WOOD VALE",
-        "postcode": "SE23 3DT",
-        "price": 1690000,
-        "dateOfTransfer": "2025-10-17",
-        "propertyType": "Semi-detached",
+        "address": "MCLEOD HOUSE, FLAT 27, SHACKLETON CLOSE",
+        "postcode": "SE23 3YN",
+        "price": 350000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2264,14 +2621,6 @@
         "postcode": "SE23 2SJ",
         "price": 340000,
         "dateOfTransfer": "2025-10-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "11, SYDMONS COURT",
-        "postcode": "SE23 3AJ",
-        "price": 500000,
-        "dateOfTransfer": "2025-10-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2284,11 +2633,27 @@
         "newBuild": false
       },
       {
+        "address": "11, SYDMONS COURT",
+        "postcode": "SE23 3AJ",
+        "price": 500000,
+        "dateOfTransfer": "2025-10-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "151, GRIERSON ROAD",
         "postcode": "SE23 1NT",
         "price": 850000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "135, CRANSTON ROAD, FOREST HILL",
+        "postcode": "SE23 2EZ",
+        "price": 650000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2300,11 +2665,11 @@
         "newBuild": false
       },
       {
-        "address": "135, CRANSTON ROAD, FOREST HILL",
-        "postcode": "SE23 2EZ",
-        "price": 650000,
+        "address": "23, BENSON ROAD",
+        "postcode": "SE23 3RL",
+        "price": 1475000,
         "dateOfTransfer": "2025-10-10",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2340,14 +2705,6 @@
         "newBuild": false
       },
       {
-        "address": "164, BROCKLEY RISE",
-        "postcode": "SE23 1NW",
-        "price": 715000,
-        "dateOfTransfer": "2025-10-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "26, FLAT 15, DARTMOUTH ROAD",
         "postcode": "SE23 3XU",
         "price": 350000,
@@ -2364,17 +2721,33 @@
         "newBuild": false
       },
       {
-        "address": "47, FLAT 1, BOVILL ROAD, HONOR OAK PARK",
-        "postcode": "SE23 1EX",
-        "price": 527000,
+        "address": "164, BROCKLEY RISE",
+        "postcode": "SE23 1NW",
+        "price": 715000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, RINGMORE RISE",
+        "postcode": "SE23 3DF",
+        "price": 885000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "TAYMOUNT MANSION, 15, TAYMOUNT RISE",
+        "postcode": "SE23 3UL",
+        "price": 450000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "9, FLAT 1, WALDENSHAW ROAD",
-        "postcode": "SE23 3XP",
-        "price": 495000,
+        "address": "47, FLAT 1, BOVILL ROAD, HONOR OAK PARK",
+        "postcode": "SE23 1EX",
+        "price": 527000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2388,11 +2761,19 @@
         "newBuild": false
       },
       {
-        "address": "21, RINGMORE RISE",
-        "postcode": "SE23 3DF",
-        "price": 885000,
+        "address": "9, FLAT 1, WALDENSHAW ROAD",
+        "postcode": "SE23 3XP",
+        "price": 495000,
         "dateOfTransfer": "2025-10-03",
-        "propertyType": "Detached",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, STILLNESS ROAD",
+        "postcode": "SE23 1NQ",
+        "price": 785000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2417,14 +2798,6 @@
         "price": 715000,
         "dateOfTransfer": "2025-10-02",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "46, STILLNESS ROAD",
-        "postcode": "SE23 1NQ",
-        "price": 785000,
-        "dateOfTransfer": "2025-10-02",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2468,17 +2841,17 @@
         "newBuild": false
       },
       {
-        "address": "12, DEANS GATE CLOSE",
-        "postcode": "SE23 2XX",
-        "price": 375000,
+        "address": "27A, COMO ROAD",
+        "postcode": "SE23 2JL",
+        "price": 425420,
         "dateOfTransfer": "2025-09-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "27A, COMO ROAD",
-        "postcode": "SE23 2JL",
-        "price": 425420,
+        "address": "12, DEANS GATE CLOSE",
+        "postcode": "SE23 2XX",
+        "price": 375000,
         "dateOfTransfer": "2025-09-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2492,11 +2865,19 @@
         "newBuild": false
       },
       {
-        "address": "6, THE TERRACE",
-        "postcode": "SE23 1LP",
-        "price": 930000,
+        "address": "102, FLAT A, KILMORIE ROAD",
+        "postcode": "SE23 2SR",
+        "price": 492000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "120, EWART ROAD",
+        "postcode": "SE23 1BE",
+        "price": 450000,
         "dateOfTransfer": "2025-09-25",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2508,19 +2889,19 @@
         "newBuild": false
       },
       {
+        "address": "6, THE TERRACE",
+        "postcode": "SE23 1LP",
+        "price": 930000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "59, INGLEMERE ROAD",
         "postcode": "SE23 2BB",
         "price": 480000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "120, EWART ROAD",
-        "postcode": "SE23 1BE",
-        "price": 450000,
-        "dateOfTransfer": "2025-09-25",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2537,6 +2918,22 @@
         "price": 694000,
         "dateOfTransfer": "2025-09-23",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "KINGSWEAR HOUSE, DARTMOUTH ROAD",
+        "postcode": "SE23 3YE",
+        "price": 410000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "39A, BROCKLEY RISE",
+        "postcode": "SE23 1JG",
+        "price": 141000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2564,6 +2961,14 @@
         "newBuild": false
       },
       {
+        "address": "21B, WOOD VALE",
+        "postcode": "SE23 3DS",
+        "price": 400000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "LYNNE COURT, FLAT 10, BROCKLEY VIEW",
         "postcode": "SE23 1SW",
         "price": 355000,
@@ -2572,25 +2977,25 @@
         "newBuild": false
       },
       {
-        "address": "39A, BROCKLEY RISE",
-        "postcode": "SE23 1JG",
-        "price": 141000,
+        "address": "21, PEARFIELD ROAD",
+        "postcode": "SE23 2LP",
+        "price": 1160000,
         "dateOfTransfer": "2025-09-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "27A, COLFE ROAD",
-        "postcode": "SE23 2ES",
-        "price": 470000,
-        "dateOfTransfer": "2025-09-18",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
         "address": "16, EBSWORTH STREET",
         "postcode": "SE23 1ES",
         "price": 708500,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27A, COLFE ROAD",
+        "postcode": "SE23 2ES",
+        "price": 470000,
         "dateOfTransfer": "2025-09-18",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2649,6 +3054,22 @@
         "price": 320000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "46, FLAT 4, SUNDERLAND ROAD",
+        "postcode": "SE23 2QA",
+        "price": 275000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79, BOVILL ROAD, HONOR OAK PARK",
+        "postcode": "SE23 1EL",
+        "price": 850000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2756,6 +3177,14 @@
         "newBuild": false
       },
       {
+        "address": "39, HONOR OAK ROAD",
+        "postcode": "SE23 3SH",
+        "price": 860000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "95, BROCKLEY RISE",
         "postcode": "SE23 1JN",
         "price": 980000,
@@ -2788,6 +3217,14 @@
         "newBuild": false
       },
       {
+        "address": "7, SHIPMAN ROAD",
+        "postcode": "SE23 2DY",
+        "price": 530000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "40, NETHERBY ROAD",
         "postcode": "SE23 3AN",
         "price": 856000,
@@ -2796,25 +3233,9 @@
         "newBuild": false
       },
       {
-        "address": "29, NORTHWOOD ROAD",
-        "postcode": "SE23 2HR",
-        "price": 930000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "133, CRANSTON ROAD, FOREST HILL",
-        "postcode": "SE23 2EZ",
-        "price": 715000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "TAYMOUNT MANSION, 1, TAYMOUNT RISE",
-        "postcode": "SE23 3UL",
-        "price": 700000,
+        "address": "THETFORD COURT, FLAT 2, SYDENHAM HILL",
+        "postcode": "SE23 3PN",
+        "price": 210000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2823,6 +3244,14 @@
         "address": "75, CODRINGTON HILL",
         "postcode": "SE23 1LR",
         "price": 812000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, ACORN WAY",
+        "postcode": "SE23 2XU",
+        "price": 575000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2852,9 +3281,9 @@
         "newBuild": false
       },
       {
-        "address": "21, ACORN WAY",
-        "postcode": "SE23 2XU",
-        "price": 575000,
+        "address": "29, NORTHWOOD ROAD",
+        "postcode": "SE23 2HR",
+        "price": 930000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2868,9 +3297,17 @@
         "newBuild": false
       },
       {
-        "address": "THETFORD COURT, FLAT 2, SYDENHAM HILL",
-        "postcode": "SE23 3PN",
-        "price": 210000,
+        "address": "133, CRANSTON ROAD, FOREST HILL",
+        "postcode": "SE23 2EZ",
+        "price": 715000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "TAYMOUNT MANSION, 1, TAYMOUNT RISE",
+        "postcode": "SE23 3UL",
+        "price": 700000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2881,14 +3318,6 @@
         "price": 1125000,
         "dateOfTransfer": "2025-08-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "312, WOOD VALE",
-        "postcode": "SE23 3DZ",
-        "price": 330000,
-        "dateOfTransfer": "2025-08-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2908,6 +3337,22 @@
         "newBuild": false
       },
       {
+        "address": "312, WOOD VALE",
+        "postcode": "SE23 3DZ",
+        "price": 330000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "109, FLAT 1, HONOR OAK PARK",
+        "postcode": "SE23 3LB",
+        "price": 815000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "39, MARLER ROAD",
         "postcode": "SE23 2AE",
         "price": 1000000,
@@ -2919,14 +3364,6 @@
         "address": "40, GREYSTEAD ROAD",
         "postcode": "SE23 3SE",
         "price": 300000,
-        "dateOfTransfer": "2025-08-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "109, FLAT 1, HONOR OAK PARK",
-        "postcode": "SE23 3LB",
-        "price": 815000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2980,17 +3417,17 @@
         "newBuild": false
       },
       {
-        "address": "38B, NETHERBY ROAD",
-        "postcode": "SE23 3AN",
-        "price": 820000,
+        "address": "39, BROCKLEY RISE",
+        "postcode": "SE23 1JG",
+        "price": 300000,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "39, BROCKLEY RISE",
-        "postcode": "SE23 1JG",
-        "price": 300000,
+        "address": "38B, NETHERBY ROAD",
+        "postcode": "SE23 3AN",
+        "price": 820000,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3004,19 +3441,19 @@
         "newBuild": false
       },
       {
-        "address": "2, CLYDE TERRACE",
-        "postcode": "SE23 3BA",
-        "price": 7260,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "57, ST GERMAN'S ROAD",
         "postcode": "SE23 1RY",
         "price": 1040000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, CLYDE TERRACE",
+        "postcode": "SE23 3BA",
+        "price": 7260,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3039,6 +3476,14 @@
         "address": "38, FARREN ROAD",
         "postcode": "SE23 2EA",
         "price": 578110,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FONTHILL COURT, FLAT 8, HONOR OAK ROAD",
+        "postcode": "SE23 3SJ",
+        "price": 462500,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3108,6 +3553,14 @@
         "newBuild": false
       },
       {
+        "address": "TAYMOUNT MANSION, 13, TAYMOUNT RISE",
+        "postcode": "SE23 3UL",
+        "price": 435000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "143, WESTWOOD PARK, FOREST HILL",
         "postcode": "SE23 3QL",
         "price": 1085000,
@@ -3140,17 +3593,17 @@
         "newBuild": false
       },
       {
-        "address": "126B, DEVONSHIRE ROAD",
-        "postcode": "SE23 3SZ",
-        "price": 353000,
+        "address": "7, THE FIRST FLOOR FLAT AT, GABRIEL STREET",
+        "postcode": "SE23 1DW",
+        "price": 485000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "7, THE FIRST FLOOR FLAT AT, GABRIEL STREET",
-        "postcode": "SE23 1DW",
-        "price": 485000,
+        "address": "126B, DEVONSHIRE ROAD",
+        "postcode": "SE23 3SZ",
+        "price": 353000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3236,22 +3689,6 @@
         "newBuild": false
       },
       {
-        "address": "TAYMOUNT MANSION, 5, TAYMOUNT RISE",
-        "postcode": "SE23 3UL",
-        "price": 680000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "TAYMOUNT MANSION, 10, TAYMOUNT RISE",
-        "postcode": "SE23 3UL",
-        "price": 725000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "9A, EBSWORTH STREET",
         "postcode": "SE23 1ER",
         "price": 830000,
@@ -3263,6 +3700,22 @@
         "address": "73B, DEVONSHIRE ROAD",
         "postcode": "SE23 3LX",
         "price": 190000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAYMOUNT MANSION, 5, TAYMOUNT RISE",
+        "postcode": "SE23 3UL",
+        "price": 680000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAYMOUNT MANSION, 10, TAYMOUNT RISE",
+        "postcode": "SE23 3UL",
+        "price": 725000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3308,14 +3761,6 @@
         "newBuild": false
       },
       {
-        "address": "TAYMOUNT MANSION, 9, TAYMOUNT RISE",
-        "postcode": "SE23 3UL",
-        "price": 450000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "177, BRENCHLEY GARDENS",
         "postcode": "SE23 3RF",
         "price": 330000,
@@ -3327,6 +3772,14 @@
         "address": "2A, CARHOLME ROAD",
         "postcode": "SE23 2HS",
         "price": 469948,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "TAYMOUNT MANSION, 9, TAYMOUNT RISE",
+        "postcode": "SE23 3UL",
+        "price": 450000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3548,17 +4001,17 @@
         "newBuild": false
       },
       {
-        "address": "150, WOOD VALE",
-        "postcode": "SE23 3EB",
-        "price": 365000,
+        "address": "80A, ELSINORE ROAD",
+        "postcode": "SE23 2SN",
+        "price": 410000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "80A, ELSINORE ROAD",
-        "postcode": "SE23 2SN",
-        "price": 410000,
+        "address": "150, WOOD VALE",
+        "postcode": "SE23 3EB",
+        "price": 365000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3788,19 +4241,19 @@
         "newBuild": false
       },
       {
-        "address": "240, FLAT 1, STANSTEAD ROAD, FOREST HILL",
-        "postcode": "SE23 1DD",
-        "price": 320000,
-        "dateOfTransfer": "2025-06-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "131, HONOR OAK PARK",
         "postcode": "SE23 3LD",
         "price": 2500000,
         "dateOfTransfer": "2025-06-05",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "240, FLAT 1, STANSTEAD ROAD, FOREST HILL",
+        "postcode": "SE23 1DD",
+        "price": 320000,
+        "dateOfTransfer": "2025-06-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4084,14 +4537,6 @@
         "newBuild": false
       },
       {
-        "address": "34B, DACRES ROAD",
-        "postcode": "SE23 2NW",
-        "price": 275000,
-        "dateOfTransfer": "2025-05-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "32, GROVE CLOSE",
         "postcode": "SE23 1AS",
         "price": 725000,
@@ -4100,10 +4545,26 @@
         "newBuild": false
       },
       {
+        "address": "34B, DACRES ROAD",
+        "postcode": "SE23 2NW",
+        "price": 275000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "VALENTINE COURT, FLAT 97, PERRY VALE",
         "postcode": "SE23 2LL",
         "price": 325000,
         "dateOfTransfer": "2025-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35A, LOWTHER HILL",
+        "postcode": "SE23 1PZ",
+        "price": 318000,
+        "dateOfTransfer": "2025-04-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4119,14 +4580,6 @@
         "address": "DENWOOD, FLAT 3, INGLEMERE ROAD",
         "postcode": "SE23 2BQ",
         "price": 330000,
-        "dateOfTransfer": "2025-04-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "35A, LOWTHER HILL",
-        "postcode": "SE23 1PZ",
-        "price": 318000,
         "dateOfTransfer": "2025-04-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4148,14 +4601,6 @@
         "newBuild": false
       },
       {
-        "address": "138, FLAT A, STANSTEAD ROAD",
-        "postcode": "SE23 1BX",
-        "price": 705000,
-        "dateOfTransfer": "2025-04-17",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "141, COMO ROAD",
         "postcode": "SE23 2JN",
         "price": 780050,
@@ -4164,10 +4609,26 @@
         "newBuild": false
       },
       {
+        "address": "138, FLAT A, STANSTEAD ROAD",
+        "postcode": "SE23 1BX",
+        "price": 705000,
+        "dateOfTransfer": "2025-04-17",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "144B, FLAT 1B, FOREST HILL ROAD",
         "postcode": "SE23 3QR",
         "price": 525000,
         "dateOfTransfer": "2025-04-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, CLYDE TERRACE",
+        "postcode": "SE23 3BA",
+        "price": 354000,
+        "dateOfTransfer": "2025-04-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4180,25 +4641,9 @@
         "newBuild": false
       },
       {
-        "address": "20, CLYDE TERRACE",
-        "postcode": "SE23 3BA",
-        "price": 354000,
-        "dateOfTransfer": "2025-04-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "16, WASTDALE ROAD",
         "postcode": "SE23 1HN",
         "price": 458000,
-        "dateOfTransfer": "2025-04-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "104, FLAT C, PERRY RISE",
-        "postcode": "SE23 2QP",
-        "price": 285000,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4212,10 +4657,26 @@
         "newBuild": false
       },
       {
+        "address": "104, FLAT C, PERRY RISE",
+        "postcode": "SE23 2QP",
+        "price": 285000,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "53B, WALDRAM PARK ROAD",
         "postcode": "SE23 2PW",
         "price": 480000,
         "dateOfTransfer": "2025-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, WINDLEY CLOSE",
+        "postcode": "SE23 3YQ",
+        "price": 325000,
+        "dateOfTransfer": "2025-04-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4225,14 +4686,6 @@
         "price": 675000,
         "dateOfTransfer": "2025-04-07",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "20, WINDLEY CLOSE",
-        "postcode": "SE23 3YQ",
-        "price": 325000,
-        "dateOfTransfer": "2025-04-07",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4271,6 +4724,62 @@
         "address": "14A, WOOLSTONE ROAD",
         "postcode": "SE23 2SG",
         "price": 550000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, BEAUMARIS MEWS",
+        "postcode": "SE23 1BF",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "179, FLAT 2, STANSTEAD ROAD, FOREST HILL",
+        "postcode": "SE23 1HP",
+        "price": 470000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT 6, CHURCH RISE",
+        "postcode": "SE23 2AU",
+        "price": 540000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CAYMAN COURT, 178 - 180, FLAT 5, DEVONSHIRE ROAD",
+        "postcode": "SE23 3TB",
+        "price": 315000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, GROUND FLOOR FLAT, HURSTBOURNE ROAD",
+        "postcode": "SE23 2AB",
+        "price": 527500,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, FLAT 4, WESTBOURNE DRIVE",
+        "postcode": "SE23 2UN",
+        "price": 390000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53A, QUEENSWOOD ROAD",
+        "postcode": "SE23 2QR",
+        "price": 467000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4316,54 +4825,6 @@
         "newBuild": false
       },
       {
-        "address": "4, BEAUMARIS MEWS",
-        "postcode": "SE23 1BF",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "179, FLAT 2, STANSTEAD ROAD, FOREST HILL",
-        "postcode": "SE23 1HP",
-        "price": 470000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "2, FLAT 6, CHURCH RISE",
-        "postcode": "SE23 2AU",
-        "price": 540000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CAYMAN COURT, 178 - 180, FLAT 5, DEVONSHIRE ROAD",
-        "postcode": "SE23 3TB",
-        "price": 315000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "58, FLAT 4, WESTBOURNE DRIVE",
-        "postcode": "SE23 2UN",
-        "price": 390000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "53A, QUEENSWOOD ROAD",
-        "postcode": "SE23 2QR",
-        "price": 467000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "12, LOWTHER HILL",
         "postcode": "SE23 1PY",
         "price": 1400000,
@@ -4380,10 +4841,66 @@
         "newBuild": false
       },
       {
-        "address": "18, GROUND FLOOR FLAT, HURSTBOURNE ROAD",
-        "postcode": "SE23 2AB",
-        "price": 527500,
-        "dateOfTransfer": "2025-03-31",
+        "address": "76, PAXTON ROAD",
+        "postcode": "SE23 2QG",
+        "price": 260000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "110, FLAT 2, PERRY VALE",
+        "postcode": "SE23 2LQ",
+        "price": 445500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, HENNEL CLOSE",
+        "postcode": "SE23 2NT",
+        "price": 565000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "49, PARBURY ROAD",
+        "postcode": "SE23 1NZ",
+        "price": 920260,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, CLEEVE HILL",
+        "postcode": "SE23 3DD",
+        "price": 812000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, FLAT 2, BOVENEY ROAD",
+        "postcode": "SE23 3NP",
+        "price": 300000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, FLAT 1, WOOLSTONE ROAD",
+        "postcode": "SE23 2SG",
+        "price": 365000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CITY WALK APARTMENTS, 31, 32, PERRY VALE",
+        "postcode": "SE23 2AR",
+        "price": 280000,
+        "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4436,90 +4953,10 @@
         "newBuild": false
       },
       {
-        "address": "49, PARBURY ROAD",
-        "postcode": "SE23 1NZ",
-        "price": 920260,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "8, CLEEVE HILL",
-        "postcode": "SE23 3DD",
-        "price": 812000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "76, PAXTON ROAD",
-        "postcode": "SE23 2QG",
-        "price": 260000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "110, FLAT 2, PERRY VALE",
-        "postcode": "SE23 2LQ",
-        "price": 445500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "12, HENNEL CLOSE",
-        "postcode": "SE23 2NT",
-        "price": 565000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "23, FLAT 2, BOVENEY ROAD",
-        "postcode": "SE23 3NP",
-        "price": 300000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "28, FLAT 1, WOOLSTONE ROAD",
-        "postcode": "SE23 2SG",
-        "price": 365000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CITY WALK APARTMENTS, 31, 32, PERRY VALE",
-        "postcode": "SE23 2AR",
-        "price": 280000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "92, EWART ROAD",
         "postcode": "SE23 1BE",
         "price": 400000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "17, HASELEY END",
-        "postcode": "SE23 3AF",
-        "price": 435000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "99, KILMORIE ROAD",
-        "postcode": "SE23 2SP",
-        "price": 490000,
-        "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4537,6 +4974,14 @@
         "price": 885000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "16, CLYDE TERRACE",
+        "postcode": "SE23 3BA",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4564,6 +5009,14 @@
         "newBuild": false
       },
       {
+        "address": "14, HOLLAND DRIVE",
+        "postcode": "SE23 2QJ",
+        "price": 495000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "5E, NETHERBY ROAD",
         "postcode": "SE23 3AL",
         "price": 340000,
@@ -4572,11 +5025,19 @@
         "newBuild": false
       },
       {
-        "address": "14, HOLLAND DRIVE",
-        "postcode": "SE23 2QJ",
-        "price": 495000,
+        "address": "17, HASELEY END",
+        "postcode": "SE23 3AF",
+        "price": 435000,
         "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "99, KILMORIE ROAD",
+        "postcode": "SE23 2SP",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4588,18 +5049,42 @@
         "newBuild": false
       },
       {
-        "address": "16, CLYDE TERRACE",
-        "postcode": "SE23 3BA",
-        "price": 350000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "7, IVESTOR TERRACE",
         "postcode": "SE23 3SG",
         "price": 330000,
         "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27B, KEMBLE ROAD, FOREST HILL",
+        "postcode": "SE23 2DH",
+        "price": 440000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "66, FIRS CLOSE",
+        "postcode": "SE23 1BB",
+        "price": 445000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "61, COLFE ROAD",
+        "postcode": "SE23 2ES",
+        "price": 540000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "37, LEVENDALE ROAD, FOREST HILL",
+        "postcode": "SE23 2TP",
+        "price": 816357,
+        "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -4620,41 +5105,9 @@
         "newBuild": false
       },
       {
-        "address": "66, FIRS CLOSE",
-        "postcode": "SE23 1BB",
-        "price": 445000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "37, LEVENDALE ROAD, FOREST HILL",
-        "postcode": "SE23 2TP",
-        "price": 816357,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "61, COLFE ROAD",
-        "postcode": "SE23 2ES",
-        "price": 540000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "22A, STONDON PARK, FOREST HILL",
         "postcode": "SE23 1LA",
         "price": 575000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "27B, KEMBLE ROAD, FOREST HILL",
-        "postcode": "SE23 2DH",
-        "price": 440000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4708,30 +5161,6 @@
         "newBuild": false
       },
       {
-        "address": "53A, WALDRAM PARK ROAD",
-        "postcode": "SE23 2PW",
-        "price": 570000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "227C, DEVONSHIRE ROAD",
-        "postcode": "SE23 3NJ",
-        "price": 430000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "2, KINGS GARTH MEWS",
-        "postcode": "SE23 3TZ",
-        "price": 725000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "CABRINI HOUSE, 2, FLAT 8, HONOR OAK RISE",
         "postcode": "SE23 3QY",
         "price": 460000,
@@ -4764,27 +5193,19 @@
         "newBuild": false
       },
       {
-        "address": "31, WINDLEY CLOSE",
-        "postcode": "SE23 3YH",
-        "price": 371000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "8, SHAWS COTTAGES",
-        "postcode": "SE23 2QN",
-        "price": 555000,
+        "address": "2, KINGS GARTH MEWS",
+        "postcode": "SE23 3TZ",
+        "price": 725000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "13, DERBY HILL",
-        "postcode": "SE23 3YD",
-        "price": 882000,
+        "address": "31, WINDLEY CLOSE",
+        "postcode": "SE23 3YH",
+        "price": 371000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4804,6 +5225,38 @@
         "newBuild": false
       },
       {
+        "address": "53A, WALDRAM PARK ROAD",
+        "postcode": "SE23 2PW",
+        "price": 570000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "227C, DEVONSHIRE ROAD",
+        "postcode": "SE23 3NJ",
+        "price": 430000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, DERBY HILL",
+        "postcode": "SE23 3YD",
+        "price": 882000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, SHAWS COTTAGES",
+        "postcode": "SE23 2QN",
+        "price": 555000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "127, STANSTEAD ROAD, FOREST HILL",
         "postcode": "SE23 1HH",
         "price": 2400000,
@@ -4820,9 +5273,9 @@
         "newBuild": false
       },
       {
-        "address": "13B, WOOD VALE",
-        "postcode": "SE23 3DS",
-        "price": 540000,
+        "address": "1 ASHTON HEIGHTS, HORNIMAN DRIVE",
+        "postcode": "SE23 3BS",
+        "price": 310000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4836,9 +5289,9 @@
         "newBuild": false
       },
       {
-        "address": "1 ASHTON HEIGHTS, HORNIMAN DRIVE",
-        "postcode": "SE23 3BS",
-        "price": 310000,
+        "address": "13B, WOOD VALE",
+        "postcode": "SE23 3DS",
+        "price": 540000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4868,14 +5321,6 @@
         "newBuild": false
       },
       {
-        "address": "66A, SIDDONS ROAD",
-        "postcode": "SE23 2JQ",
-        "price": 530000,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "11, HURSTBOURNE ROAD",
         "postcode": "SE23 2AA",
         "price": 830000,
@@ -4892,19 +5337,19 @@
         "newBuild": false
       },
       {
+        "address": "66A, SIDDONS ROAD",
+        "postcode": "SE23 2JQ",
+        "price": 530000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "61, PRIESTFIELD ROAD",
         "postcode": "SE23 2RW",
         "price": 555000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "13, FLAT 3, MONTEM ROAD",
-        "postcode": "SE23 1SA",
-        "price": 342500,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4919,6 +5364,14 @@
         "address": "46, FLAT 2, SUNDERLAND ROAD",
         "postcode": "SE23 2QA",
         "price": 260000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KATHERINE COURT, 70, FLAT 5, HONOR OAK ROAD",
+        "postcode": "SE23 3RS",
+        "price": 416500,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4940,10 +5393,18 @@
         "newBuild": false
       },
       {
-        "address": "KATHERINE COURT, 70, FLAT 5, HONOR OAK ROAD",
-        "postcode": "SE23 3RS",
-        "price": 416500,
+        "address": "13, FLAT 3, MONTEM ROAD",
+        "postcode": "SE23 1SA",
+        "price": 342500,
         "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "86A, ELSINORE ROAD",
+        "postcode": "SE23 2SN",
+        "price": 478000,
+        "dateOfTransfer": "2025-03-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4953,14 +5414,6 @@
         "price": 1350000,
         "dateOfTransfer": "2025-03-12",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "86A, ELSINORE ROAD",
-        "postcode": "SE23 2SN",
-        "price": 478000,
-        "dateOfTransfer": "2025-03-12",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4980,19 +5433,11 @@
         "newBuild": false
       },
       {
-        "address": "13, LIPHOOK CRESCENT",
-        "postcode": "SE23 3BN",
-        "price": 1250000,
+        "address": "71, FLAT B, LONDON ROAD",
+        "postcode": "SE23 3TY",
+        "price": 620500,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "16, CENTURY YARD",
-        "postcode": "SE23 3XT",
-        "price": 765000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5028,11 +5473,19 @@
         "newBuild": false
       },
       {
-        "address": "71, FLAT B, LONDON ROAD",
-        "postcode": "SE23 3TY",
-        "price": 620500,
+        "address": "13, LIPHOOK CRESCENT",
+        "postcode": "SE23 3BN",
+        "price": 1250000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, CENTURY YARD",
+        "postcode": "SE23 3XT",
+        "price": 765000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5060,14 +5513,6 @@
         "newBuild": false
       },
       {
-        "address": "4, CHARLOTTE PARADE",
-        "postcode": "SE23 2DE",
-        "price": 520250,
-        "dateOfTransfer": "2025-03-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "1, ROJACK ROAD",
         "postcode": "SE23 2DF",
         "price": 597500,
@@ -5076,11 +5521,11 @@
         "newBuild": false
       },
       {
-        "address": "50, STANSTEAD ROAD, FOREST HILL",
-        "postcode": "SE23 1BW",
-        "price": 792000,
-        "dateOfTransfer": "2025-03-03",
-        "propertyType": "Terraced",
+        "address": "4, CHARLOTTE PARADE",
+        "postcode": "SE23 2DE",
+        "price": 520250,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5092,10 +5537,10 @@
         "newBuild": false
       },
       {
-        "address": "119, COMO ROAD",
-        "postcode": "SE23 2JN",
-        "price": 800000,
-        "dateOfTransfer": "2025-02-28",
+        "address": "50, STANSTEAD ROAD, FOREST HILL",
+        "postcode": "SE23 1BW",
+        "price": 792000,
+        "dateOfTransfer": "2025-03-03",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -5116,14 +5561,6 @@
         "newBuild": false
       },
       {
-        "address": "30A, ACKROYD ROAD",
-        "postcode": "SE23 1DL",
-        "price": 480000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "101, CRANSTON ROAD, FOREST HILL",
         "postcode": "SE23 2EZ",
         "price": 827500,
@@ -5132,9 +5569,17 @@
         "newBuild": false
       },
       {
-        "address": "15, QUEENSWOOD ROAD",
-        "postcode": "SE23 2QR",
-        "price": 930000,
+        "address": "30A, ACKROYD ROAD",
+        "postcode": "SE23 1DL",
+        "price": 480000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "119, COMO ROAD",
+        "postcode": "SE23 2JN",
+        "price": 800000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5145,6 +5590,14 @@
         "price": 415000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "15, QUEENSWOOD ROAD",
+        "postcode": "SE23 2QR",
+        "price": 930000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5220,9 +5673,9 @@
         "newBuild": false
       },
       {
-        "address": "3 ASHTON HEIGHTS, HORNIMAN DRIVE",
-        "postcode": "SE23 3BS",
-        "price": 280000,
+        "address": "161, FLAT A, PERRY VALE",
+        "postcode": "SE23 2JD",
+        "price": 355000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5231,6 +5684,14 @@
         "address": "78, PAXTON ROAD",
         "postcode": "SE23 2QG",
         "price": 258000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3 ASHTON HEIGHTS, HORNIMAN DRIVE",
+        "postcode": "SE23 3BS",
+        "price": 280000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5249,14 +5710,6 @@
         "price": 860000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "161, FLAT A, PERRY VALE",
-        "postcode": "SE23 2JD",
-        "price": 355000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5279,14 +5732,6 @@
         "address": "MCLEOD HOUSE, FLAT 13, SHACKLETON CLOSE",
         "postcode": "SE23 3YN",
         "price": 328000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "174, FLAT 12, DEVONSHIRE ROAD",
-        "postcode": "SE23 3SZ",
-        "price": 380000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5332,11 +5777,11 @@
         "newBuild": false
       },
       {
-        "address": "144, CRANSTON ROAD, FOREST HILL",
-        "postcode": "SE23 2EY",
-        "price": 600000,
-        "dateOfTransfer": "2025-02-13",
-        "propertyType": "Terraced",
+        "address": "174, FLAT 12, DEVONSHIRE ROAD",
+        "postcode": "SE23 3SZ",
+        "price": 380000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5348,18 +5793,18 @@
         "newBuild": false
       },
       {
+        "address": "144, CRANSTON ROAD, FOREST HILL",
+        "postcode": "SE23 2EY",
+        "price": 600000,
+        "dateOfTransfer": "2025-02-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "139, FLAT A, DEVONSHIRE ROAD",
         "postcode": "SE23 3LZ",
         "price": 360000,
         "dateOfTransfer": "2025-02-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "SUNSET HEIGHTS, 77, FLAT 7, ST GERMAN'S ROAD",
-        "postcode": "SE23 1RY",
-        "price": 350000,
-        "dateOfTransfer": "2025-02-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -5369,6 +5814,14 @@
         "price": 1035000,
         "dateOfTransfer": "2025-02-11",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SUNSET HEIGHTS, 77, FLAT 7, ST GERMAN'S ROAD",
+        "postcode": "SE23 1RY",
+        "price": 350000,
+        "dateOfTransfer": "2025-02-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5388,22 +5841,6 @@
         "newBuild": false
       },
       {
-        "address": "UPLAND COURT, 33, FLAT 3, LONDON ROAD",
-        "postcode": "SE23 3TX",
-        "price": 310000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "136, FLAT A, DEVONSHIRE ROAD",
-        "postcode": "SE23 3SZ",
-        "price": 491000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "23, FLAT D, WOOD VALE",
         "postcode": "SE23 3DS",
         "price": 447500,
@@ -5417,6 +5854,22 @@
         "price": 535000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "UPLAND COURT, 33, FLAT 3, LONDON ROAD",
+        "postcode": "SE23 3TX",
+        "price": 310000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "136, FLAT A, DEVONSHIRE ROAD",
+        "postcode": "SE23 3SZ",
+        "price": 491000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5476,46 +5929,6 @@
         "newBuild": false
       },
       {
-        "address": "24, PAXTON ROAD",
-        "postcode": "SE23 2QG",
-        "price": 248000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "6, FLAT 3, CHURCH RISE",
-        "postcode": "SE23 2UD",
-        "price": 402000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "FOREST CROFT, FLAT 21, TAYMOUNT RISE, FOREST HILL",
-        "postcode": "SE23 3UN",
-        "price": 311500,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "15, BEADNELL ROAD",
-        "postcode": "SE23 1AA",
-        "price": 674600,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "105, PERRY VALE",
-        "postcode": "SE23 2NJ",
-        "price": 625000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "59A, HONOR OAK PARK",
         "postcode": "SE23 1EA",
         "price": 405000,
@@ -5540,6 +5953,22 @@
         "newBuild": false
       },
       {
+        "address": "15, BEADNELL ROAD",
+        "postcode": "SE23 1AA",
+        "price": 674600,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "105, PERRY VALE",
+        "postcode": "SE23 2NJ",
+        "price": 625000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "38, LOWTHER HILL",
         "postcode": "SE23 1PY",
         "price": 768000,
@@ -5556,19 +5985,27 @@
         "newBuild": false
       },
       {
-        "address": "12, RISELDINE ROAD",
-        "postcode": "SE23 1JU",
-        "price": 950000,
-        "dateOfTransfer": "2025-01-30",
-        "propertyType": "Terraced",
+        "address": "24, PAXTON ROAD",
+        "postcode": "SE23 2QG",
+        "price": 248000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "15, WOODCOMBE CRESCENT",
-        "postcode": "SE23 3BG",
-        "price": 1062500,
-        "dateOfTransfer": "2025-01-30",
-        "propertyType": "Other",
+        "address": "6, FLAT 3, CHURCH RISE",
+        "postcode": "SE23 2UD",
+        "price": 402000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "FOREST CROFT, FLAT 21, TAYMOUNT RISE, FOREST HILL",
+        "postcode": "SE23 3UN",
+        "price": 311500,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5588,11 +6025,19 @@
         "newBuild": false
       },
       {
-        "address": "13A, STANSTEAD ROAD, FOREST HILL",
-        "postcode": "SE23 1HG",
-        "price": 365000,
-        "dateOfTransfer": "2025-01-29",
-        "propertyType": "Flat/Maisonette",
+        "address": "12, RISELDINE ROAD",
+        "postcode": "SE23 1JU",
+        "price": 950000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, WOODCOMBE CRESCENT",
+        "postcode": "SE23 3BG",
+        "price": 1062500,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -5604,10 +6049,10 @@
         "newBuild": false
       },
       {
-        "address": "7, FLAT 1, TAYMOUNT RISE, FOREST HILL",
-        "postcode": "SE23 3UG",
-        "price": 350000,
-        "dateOfTransfer": "2025-01-27",
+        "address": "13A, STANSTEAD ROAD, FOREST HILL",
+        "postcode": "SE23 1HG",
+        "price": 365000,
+        "dateOfTransfer": "2025-01-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -5636,19 +6081,11 @@
         "newBuild": false
       },
       {
-        "address": "70A, FLAT 3, HONOR OAK ROAD",
-        "postcode": "SE23 3RR",
-        "price": 255000,
-        "dateOfTransfer": "2025-01-24",
+        "address": "7, FLAT 1, TAYMOUNT RISE, FOREST HILL",
+        "postcode": "SE23 3UG",
+        "price": 350000,
+        "dateOfTransfer": "2025-01-27",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "14, OWENS WAY",
-        "postcode": "SE23 1RW",
-        "price": 310000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5657,14 +6094,6 @@
         "price": 920000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "47, GROUND FLOOR FLAT, ELSINORE ROAD",
-        "postcode": "SE23 2SH",
-        "price": 536000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5684,6 +6113,14 @@
         "newBuild": false
       },
       {
+        "address": "47, GROUND FLOOR FLAT, ELSINORE ROAD",
+        "postcode": "SE23 2SH",
+        "price": 536000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "16, APRIL GLEN",
         "postcode": "SE23 2XP",
         "price": 610000,
@@ -5697,6 +6134,22 @@
         "price": 760000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "70A, FLAT 3, HONOR OAK ROAD",
+        "postcode": "SE23 3RR",
+        "price": 255000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, OWENS WAY",
+        "postcode": "SE23 1RW",
+        "price": 310000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5740,14 +6193,6 @@
         "newBuild": false
       },
       {
-        "address": "4, ALLENBY ROAD",
-        "postcode": "SE23 2RQ",
-        "price": 1550150,
-        "dateOfTransfer": "2025-01-16",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "26, QUEENSWOOD ROAD",
         "postcode": "SE23 2QS",
         "price": 480000,
@@ -5756,11 +6201,11 @@
         "newBuild": false
       },
       {
-        "address": "33C, MAYOW ROAD",
-        "postcode": "SE23 2XH",
-        "price": 272500,
-        "dateOfTransfer": "2025-01-15",
-        "propertyType": "Flat/Maisonette",
+        "address": "4, ALLENBY ROAD",
+        "postcode": "SE23 2RQ",
+        "price": 1550150,
+        "dateOfTransfer": "2025-01-16",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -5772,10 +6217,10 @@
         "newBuild": false
       },
       {
-        "address": "108, FLAT 7, PERRY VALE",
-        "postcode": "SE23 2LQ",
-        "price": 412500,
-        "dateOfTransfer": "2025-01-13",
+        "address": "33C, MAYOW ROAD",
+        "postcode": "SE23 2XH",
+        "price": 272500,
+        "dateOfTransfer": "2025-01-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -5788,6 +6233,14 @@
         "newBuild": false
       },
       {
+        "address": "108, FLAT 7, PERRY VALE",
+        "postcode": "SE23 2LQ",
+        "price": 412500,
+        "dateOfTransfer": "2025-01-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "33, DARTMOUTH PLACE",
         "postcode": "SE23 3AU",
         "price": 300000,
@@ -5796,19 +6249,19 @@
         "newBuild": false
       },
       {
-        "address": "NORTH CROFTS, FLAT 12, SYDENHAM HILL",
-        "postcode": "SE23 3PS",
-        "price": 270000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "72A, GARTHORNE ROAD",
         "postcode": "SE23 1EW",
         "price": 935000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "NORTH CROFTS, FLAT 12, SYDENHAM HILL",
+        "postcode": "SE23 3PS",
+        "price": 270000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5852,14 +6305,6 @@
         "newBuild": false
       },
       {
-        "address": "27, ALLENBY ROAD",
-        "postcode": "SE23 2RQ",
-        "price": 1300000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "WOODELM COURT, 123 - 125, FLAT 3, DEVONSHIRE ROAD",
         "postcode": "SE23 3LX",
         "price": 450000,
@@ -5873,6 +6318,22 @@
         "price": 325000,
         "dateOfTransfer": "2025-01-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "27, ALLENBY ROAD",
+        "postcode": "SE23 2RQ",
+        "price": 1300000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "83, MONTEM ROAD",
+        "postcode": "SE23 1SH",
+        "price": 535000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5890,17 +6351,9 @@
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Detached",
         "newBuild": false
-      },
-      {
-        "address": "83, MONTEM ROAD",
-        "postcode": "SE23 1SH",
-        "price": 535000,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
       }
     ],
-    "averagePrice": 573284,
+    "averagePrice": 578826,
     "medianPrice": 495000
   },
   "representatives": {

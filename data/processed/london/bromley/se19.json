@@ -3,8 +3,8 @@
   "slug": "se19",
   "city": "London",
   "borough": "Bromley",
-  "latitude": 51.41795811833334,
-  "longitude": -0.08610929666666665,
+  "latitude": 51.41790715077988,
+  "longitude": -0.08624804679376082,
   "wards": [
     "Crystal Palace & Anerley",
     "Crystal Palace & Upper Norwood",
@@ -108,7 +108,8 @@
         "urn": "100577",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Woodland Road, London",
         "postcode": "SE19 1PA",
         "numberOfPupils": 386,
@@ -119,7 +120,8 @@
         "urn": "100624",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/02/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Crown Dale, Lambeth, London",
         "postcode": "SE19 3NY",
         "numberOfPupils": 1076,
@@ -129,8 +131,9 @@
         "name": "Downsview Primary and Nursery School",
         "urn": "101778",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "13/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Biggin Way, Upper Norwood, London",
         "postcode": "SE19 3XE",
         "numberOfPupils": 620,
@@ -141,7 +144,8 @@
         "urn": "101783",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "10/06/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Chevening Road, Upper Norwood, London",
         "postcode": "SE19 3ST",
         "numberOfPupils": 453,
@@ -152,7 +156,8 @@
         "urn": "101787",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/12/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Upper Beulah Hill, Upper Norwood, London",
         "postcode": "SE19 3LG",
         "numberOfPupils": 174,
@@ -164,6 +169,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Woodend, Select",
         "postcode": "SE19 3NU",
         "numberOfPupils": 169,
@@ -173,8 +179,9 @@
         "name": "St Joseph's RC Infant School",
         "urn": "101803",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "26/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Crown Dale, Upper Norwood, London",
         "postcode": "SE19 3NX",
         "numberOfPupils": 154,
@@ -185,7 +192,8 @@
         "urn": "101856",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "02/07/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hermitage Road, Upper Norwood, London",
         "postcode": "SE19 3QN",
         "numberOfPupils": 140,
@@ -197,6 +205,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "101 Central Hill, Upper Norwood, London",
         "postcode": "SE19 1BY",
         "numberOfPupils": null,
@@ -207,7 +216,8 @@
         "urn": "135311",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/04/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Maberley Road, Upper Norwood, London",
         "postcode": "SE19 2JH",
         "numberOfPupils": 1191,
@@ -218,7 +228,8 @@
         "urn": "138221",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "25/02/2020",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Beulah Hill, London",
         "postcode": "SE19 3HL",
         "numberOfPupils": 739,
@@ -230,6 +241,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "147 Central Hill, London",
         "postcode": "SE19 1RT",
         "numberOfPupils": 411,
@@ -241,6 +253,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "ST MARY'S LODGE, 149 CENTRAL HILL",
         "postcode": "SE19 1RT",
         "numberOfPupils": 97,
@@ -252,6 +265,7 @@
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Spurgeon Road, London",
         "postcode": "SE19 3UG",
         "numberOfPupils": 1011,
@@ -263,102 +277,286 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 500,
-        "violentCrimes": 183,
+        "totalCrimes": 501,
+        "violentCrimes": 184,
         "propertyCrimes": 180
       },
       {
         "month": "2025-08",
-        "totalCrimes": 535,
+        "totalCrimes": 533,
         "violentCrimes": 174,
         "propertyCrimes": 209
       },
       {
         "month": "2025-09",
-        "totalCrimes": 438,
-        "violentCrimes": 190,
-        "propertyCrimes": 125
+        "totalCrimes": 434,
+        "violentCrimes": 191,
+        "propertyCrimes": 123
       },
       {
         "month": "2025-10",
-        "totalCrimes": 413,
-        "violentCrimes": 171,
-        "propertyCrimes": 123
+        "totalCrimes": 408,
+        "violentCrimes": 169,
+        "propertyCrimes": 122
       },
       {
         "month": "2025-11",
         "totalCrimes": 436,
         "violentCrimes": 185,
-        "propertyCrimes": 125
+        "propertyCrimes": 126
       },
       {
         "month": "2025-12",
-        "totalCrimes": 419,
-        "violentCrimes": 154,
+        "totalCrimes": 420,
+        "violentCrimes": 155,
         "propertyCrimes": 137
       },
       {
         "month": "2026-01",
-        "totalCrimes": 449,
+        "totalCrimes": 447,
         "violentCrimes": 175,
-        "propertyCrimes": 147
+        "propertyCrimes": 146
       },
       {
         "month": "2026-02",
-        "totalCrimes": 346,
+        "totalCrimes": 344,
         "violentCrimes": 131,
-        "propertyCrimes": 112
+        "propertyCrimes": 111
       },
       {
         "month": "2026-03",
         "totalCrimes": 441,
-        "violentCrimes": 185,
-        "propertyCrimes": 148
+        "violentCrimes": 184,
+        "propertyCrimes": 149
       },
       {
         "month": "2026-04",
         "totalCrimes": 457,
-        "violentCrimes": 168,
-        "propertyCrimes": 163
+        "violentCrimes": 170,
+        "propertyCrimes": 162
       },
       {
         "month": "2026-05",
-        "totalCrimes": 484,
-        "violentCrimes": 180,
-        "propertyCrimes": 135
+        "totalCrimes": 485,
+        "violentCrimes": 182,
+        "propertyCrimes": 134
       },
       {
         "month": "2026-06",
         "totalCrimes": 451,
-        "violentCrimes": 196,
-        "propertyCrimes": 126
+        "violentCrimes": 197,
+        "propertyCrimes": 125
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1276,
-      "bicycle-theft": 38,
+      "anti-social-behaviour": 1267,
+      "bicycle-theft": 37,
       "burglary": 250,
-      "criminal-damage-arson": 252,
-      "drugs": 203,
-      "other-theft": 350,
+      "criminal-damage-arson": 253,
+      "drugs": 200,
+      "other-theft": 348,
       "possession-of-weapons": 43,
       "public-order": 284,
-      "robbery": 147,
-      "shoplifting": 172,
-      "theft-from-the-person": 159,
-      "vehicle-crime": 509,
-      "violent-crime": 1618,
-      "other-crime": 68
+      "robbery": 148,
+      "shoplifting": 171,
+      "theft-from-the-person": 158,
+      "vehicle-crime": 507,
+      "violent-crime": 1622,
+      "other-crime": 69
     },
-    "totalLast12Months": 5369
+    "totalLast12Months": 5357
   },
   "property": {
     "sales": [
       {
-        "address": "25, FLAT 3, GIPSY HILL",
-        "postcode": "SE19 1QG",
-        "price": 393242,
+        "address": "4G, WALDEGRAVE ROAD",
+        "postcode": "SE19 2AJ",
+        "price": 280000,
+        "dateOfTransfer": "2026-07-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76, FLAT B, MABERLEY ROAD",
+        "postcode": "SE19 2JD",
+        "price": 485000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, SURRIDGE GARDENS",
+        "postcode": "SE19 3JP",
+        "price": 350000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "63, CENTRAL HILL",
+        "postcode": "SE19 1BS",
+        "price": 1000000,
+        "dateOfTransfer": "2026-07-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "16, FLAT 3, AUCKLAND ROAD",
+        "postcode": "SE19 2DL",
+        "price": 247500,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, OAKFIELD GARDENS",
+        "postcode": "SE19 1HF",
+        "price": 890000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "OLD BANK APARTMENTS, 8, FLAT 2, CHURCH ROAD",
+        "postcode": "SE19 2ET",
+        "price": 440000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, BEULAH HILL",
+        "postcode": "SE19 3EB",
+        "price": 795000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, PLEYDELL AVENUE",
+        "postcode": "SE19 2LP",
+        "price": 1150000,
+        "dateOfTransfer": "2026-07-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19D, WOODLAND ROAD",
+        "postcode": "SE19 1NS",
+        "price": 285000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20C, GATESTONE ROAD",
+        "postcode": "SE19 3AT",
+        "price": 525000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "91, MARSTON WAY",
+        "postcode": "SE19 3JD",
+        "price": 255000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "70A, HAROLD ROAD",
+        "postcode": "SE19 3SW",
+        "price": 282000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "KESTREL HOUSE, 24, FLAT 6, MOWBRAY ROAD",
+        "postcode": "SE19 2RN",
+        "price": 198240,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BEDFORD COURT, FLAT 6, MOWBRAY ROAD",
+        "postcode": "SE19 2RW",
+        "price": 430000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, WICKS WAY",
+        "postcode": "SE19 3DY",
+        "price": 157500,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, ALEXANDRA WALK",
+        "postcode": "SE19 1AL",
+        "price": 260000,
         "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68, FLAT 4, SALTERS HILL",
+        "postcode": "SE19 1EA",
+        "price": 465000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "86, KITLEY GARDENS",
+        "postcode": "SE19 2RY",
+        "price": 252000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42, PALACE ROAD",
+        "postcode": "SE19 2LX",
+        "price": 360000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "52, FLAT 1, HAROLD ROAD",
+        "postcode": "SE19 3SW",
+        "price": 550000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "158, FLAT 3, BIGGIN HILL",
+        "postcode": "SE19 3HP",
+        "price": 392500,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2D, FLAT 2, HAROLD ROAD",
+        "postcode": "SE19 3FB",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "304, FLAT 1, BEULAH HILL",
+        "postcode": "SE19 3HF",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -371,9 +569,33 @@
         "newBuild": false
       },
       {
+        "address": "8, THE LAWNS",
+        "postcode": "SE19 3TS",
+        "price": 425000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "145, HERMITAGE ROAD",
         "postcode": "SE19 3QL",
         "price": 280000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, FLAT 6, CINTRA PARK, UPPER NORWOOD",
+        "postcode": "SE19 2LQ",
+        "price": 320000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "212, LOWER MAISONETTE, BEULAH HILL",
+        "postcode": "SE19 3UX",
+        "price": 325000,
         "dateOfTransfer": "2026-06-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -427,6 +649,14 @@
         "newBuild": false
       },
       {
+        "address": "OAKDENE, FLAT 10, OAKS AVENUE",
+        "postcode": "SE19 1RB",
+        "price": 375000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "4, FLAT 1A, ALEXANDRA DRIVE",
         "postcode": "SE19 1AJ",
         "price": 450000,
@@ -451,6 +681,22 @@
         "newBuild": false
       },
       {
+        "address": "43, FLAT 1, CINTRA PARK, UPPER NORWOOD",
+        "postcode": "SE19 2LQ",
+        "price": 325000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, TREE VIEW CLOSE",
+        "postcode": "SE19 2QT",
+        "price": 702000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "48, CROWN DALE",
         "postcode": "SE19 3NR",
         "price": 645000,
@@ -459,10 +705,18 @@
         "newBuild": false
       },
       {
-        "address": "43, FLAT 1, CINTRA PARK, UPPER NORWOOD",
+        "address": "33, FLAT 1, CINTRA PARK, UPPER NORWOOD",
         "postcode": "SE19 2LQ",
-        "price": 325000,
+        "price": 565000,
         "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1K, BEULAH HILL",
+        "postcode": "SE19 3LQ",
+        "price": 166000,
+        "dateOfTransfer": "2026-05-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -491,19 +745,11 @@
         "newBuild": false
       },
       {
-        "address": "141G, CENTRAL HILL",
-        "postcode": "SE19 1RT",
-        "price": 443000,
+        "address": "LOWOOD COURT, FLAT 21, FARQUHAR ROAD",
+        "postcode": "SE19 1SW",
+        "price": 475000,
         "dateOfTransfer": "2026-05-08",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "160, SPA HILL",
-        "postcode": "SE19 3TU",
-        "price": 370000,
-        "dateOfTransfer": "2026-05-08",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -515,10 +761,26 @@
         "newBuild": false
       },
       {
-        "address": "LOWOOD COURT, FLAT 21, FARQUHAR ROAD",
-        "postcode": "SE19 1SW",
-        "price": 475000,
+        "address": "160, SPA HILL",
+        "postcode": "SE19 3TU",
+        "price": 370000,
         "dateOfTransfer": "2026-05-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "141G, CENTRAL HILL",
+        "postcode": "SE19 1RT",
+        "price": 443000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35A, FARQUHAR ROAD",
+        "postcode": "SE19 1SS",
+        "price": 790000,
+        "dateOfTransfer": "2026-05-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -536,14 +798,6 @@
         "price": 785000,
         "dateOfTransfer": "2026-05-07",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "35A, FARQUHAR ROAD",
-        "postcode": "SE19 1SS",
-        "price": 790000,
-        "dateOfTransfer": "2026-05-07",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -579,19 +833,19 @@
         "newBuild": false
       },
       {
-        "address": "14, BLOOMHALL ROAD",
-        "postcode": "SE19 1JQ",
-        "price": 580000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "20, GRECIAN CRESCENT",
         "postcode": "SE19 3HH",
         "price": 605000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "14, BLOOMHALL ROAD",
+        "postcode": "SE19 1JQ",
+        "price": 580000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -675,6 +929,14 @@
         "newBuild": false
       },
       {
+        "address": "RALEIGH COURT, FLAT 33, LYMER AVENUE",
+        "postcode": "SE19 1LS",
+        "price": 465000,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "OSPREY HOUSE, 26, FLAT 11, MOWBRAY ROAD",
         "postcode": "SE19 2RN",
         "price": 215000,
@@ -723,17 +985,17 @@
         "newBuild": false
       },
       {
-        "address": "12, BECONDALE ROAD",
-        "postcode": "SE19 1QJ",
-        "price": 387500,
+        "address": "HOGARTH COURT, FLAT 17, FOUNTAIN DRIVE",
+        "postcode": "SE19 1UY",
+        "price": 330000,
         "dateOfTransfer": "2026-03-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "HOGARTH COURT, FLAT 17, FOUNTAIN DRIVE",
-        "postcode": "SE19 1UY",
-        "price": 330000,
+        "address": "12, BECONDALE ROAD",
+        "postcode": "SE19 1QJ",
+        "price": 387500,
         "dateOfTransfer": "2026-03-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -803,6 +1065,14 @@
         "newBuild": false
       },
       {
+        "address": "27, THE WOODLANDS",
+        "postcode": "SE19 3EQ",
+        "price": 160000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "280, SYLVAN ROAD",
         "postcode": "SE19 2SB",
         "price": 375000,
@@ -811,10 +1081,26 @@
         "newBuild": false
       },
       {
-        "address": "27, THE WOODLANDS",
-        "postcode": "SE19 3EQ",
-        "price": 160000,
+        "address": "9, TURKEY OAK CLOSE",
+        "postcode": "SE19 3PJ",
+        "price": 691000,
         "dateOfTransfer": "2026-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "200, BEULAH HILL",
+        "postcode": "SE19 3UX",
+        "price": 630000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "83, THE WOODLANDS",
+        "postcode": "SE19 3EH",
+        "price": 210000,
+        "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -835,10 +1121,10 @@
         "newBuild": false
       },
       {
-        "address": "83, THE WOODLANDS",
-        "postcode": "SE19 3EH",
-        "price": 210000,
-        "dateOfTransfer": "2026-03-06",
+        "address": "REGENCY COURT, FLAT 9, HAMLET ROAD",
+        "postcode": "SE19 2AR",
+        "price": 153000,
+        "dateOfTransfer": "2026-03-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -883,9 +1169,9 @@
         "newBuild": false
       },
       {
-        "address": "57, QUEEN MARY ROAD, UPPER NORWOOD",
-        "postcode": "SE19 3NN",
-        "price": 417500,
+        "address": "52A, CHURCH ROAD",
+        "postcode": "SE19 2EZ",
+        "price": 690000,
         "dateOfTransfer": "2026-02-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -907,6 +1193,14 @@
         "newBuild": false
       },
       {
+        "address": "57, QUEEN MARY ROAD, UPPER NORWOOD",
+        "postcode": "SE19 3NN",
+        "price": 417500,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BEECHWOODS COURT, 3, FLAT 23, CRYSTAL PALACE PARADE",
         "postcode": "SE19 1UH",
         "price": 345000,
@@ -923,18 +1217,18 @@
         "newBuild": false
       },
       {
-        "address": "113, FLAT 7, CENTRAL HILL",
-        "postcode": "SE19 1BY",
-        "price": 285000,
-        "dateOfTransfer": "2026-02-16",
+        "address": "OAK LODGE, 130, FLAT 8, AUCKLAND ROAD",
+        "postcode": "SE19 2RQ",
+        "price": 367500,
+        "dateOfTransfer": "2026-02-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "VICARAGE COURT, 215, FLAT 5, CHURCH ROAD",
-        "postcode": "SE19 2QQ",
-        "price": 230000,
-        "dateOfTransfer": "2026-02-12",
+        "address": "113, FLAT 7, CENTRAL HILL",
+        "postcode": "SE19 1BY",
+        "price": 285000,
+        "dateOfTransfer": "2026-02-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -944,6 +1238,14 @@
         "price": 884995,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "VICARAGE COURT, 215, FLAT 5, CHURCH ROAD",
+        "postcode": "SE19 2QQ",
+        "price": 230000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -963,11 +1265,11 @@
         "newBuild": false
       },
       {
-        "address": "58, PATTERSON ROAD",
-        "postcode": "SE19 2LF",
-        "price": 822000,
+        "address": "MILLER HOUSE, FLAT 4, ANERLEY VALE",
+        "postcode": "SE19 2AQ",
+        "price": 110000,
         "dateOfTransfer": "2026-01-30",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -979,11 +1281,11 @@
         "newBuild": false
       },
       {
-        "address": "MILLER HOUSE, FLAT 4, ANERLEY VALE",
-        "postcode": "SE19 2AQ",
-        "price": 110000,
+        "address": "58, PATTERSON ROAD",
+        "postcode": "SE19 2LF",
+        "price": 822000,
         "dateOfTransfer": "2026-01-30",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1067,25 +1369,17 @@
         "newBuild": false
       },
       {
-        "address": "262, BEULAH HILL",
-        "postcode": "SE19 3HF",
-        "price": 600000,
+        "address": "13, HAROLD ROAD",
+        "postcode": "SE19 3PU",
+        "price": 1900000,
         "dateOfTransfer": "2026-01-16",
-        "propertyType": "Other",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
         "address": "COMPTON COURT, FLAT 8, VICTORIA CRESCENT",
         "postcode": "SE19 1AF",
         "price": 335000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "3, FLAT 1, VERMONT ROAD",
-        "postcode": "SE19 3SR",
-        "price": 350000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1115,10 +1409,18 @@
         "newBuild": false
       },
       {
-        "address": "54A, BEULAH HILL",
-        "postcode": "SE19 3ER",
-        "price": 536150,
-        "dateOfTransfer": "2026-01-15",
+        "address": "3, FLAT 1, VERMONT ROAD",
+        "postcode": "SE19 3SR",
+        "price": 350000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "262, BEULAH HILL",
+        "postcode": "SE19 3HF",
+        "price": 600000,
+        "dateOfTransfer": "2026-01-16",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -1139,10 +1441,10 @@
         "newBuild": false
       },
       {
-        "address": "12A, TELFORD CLOSE",
-        "postcode": "SE19 3AG",
-        "price": 477000,
-        "dateOfTransfer": "2026-01-09",
+        "address": "54A, BEULAH HILL",
+        "postcode": "SE19 3ER",
+        "price": 536150,
+        "dateOfTransfer": "2026-01-15",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -1160,6 +1462,14 @@
         "price": 610000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12A, TELFORD CLOSE",
+        "postcode": "SE19 3AG",
+        "price": 477000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1235,9 +1545,9 @@
         "newBuild": false
       },
       {
-        "address": "32, FLAT 3, HAMLET ROAD",
-        "postcode": "SE19 2AW",
-        "price": 366000,
+        "address": "72, PRIORY CRESCENT",
+        "postcode": "SE19 3EE",
+        "price": 200000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1248,14 +1558,6 @@
         "price": 632500,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "72, PRIORY CRESCENT",
-        "postcode": "SE19 3EE",
-        "price": 200000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1278,6 +1580,14 @@
         "address": "27, FLAT 2, WOODLAND ROAD",
         "postcode": "SE19 1NS",
         "price": 290000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "32, FLAT 3, HAMLET ROAD",
+        "postcode": "SE19 2AW",
+        "price": 366000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1539,14 +1849,6 @@
         "newBuild": false
       },
       {
-        "address": "71, SPA HILL",
-        "postcode": "SE19 3TW",
-        "price": 505000,
-        "dateOfTransfer": "2025-11-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "115A, FLAT 4, CHURCH ROAD",
         "postcode": "SE19 2PR",
         "price": 300000,
@@ -1568,6 +1870,14 @@
         "price": 415000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, SPA HILL",
+        "postcode": "SE19 3TW",
+        "price": 505000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1675,14 +1985,6 @@
         "newBuild": false
       },
       {
-        "address": "GOULD COURT, FLAT 14, WOODLAND ROAD",
-        "postcode": "SE19 1PH",
-        "price": 183000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CRYSTAL COURT, FLAT 26, COLLEGE ROAD",
         "postcode": "SE19 1UZ",
         "price": 345000,
@@ -1691,9 +1993,25 @@
         "newBuild": false
       },
       {
+        "address": "GOULD COURT, FLAT 14, WOODLAND ROAD",
+        "postcode": "SE19 1PH",
+        "price": 183000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "54, FLAT 1, BELVEDERE ROAD, UPPER NORWOOD",
         "postcode": "SE19 2HW",
         "price": 505000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RALEIGH COURT, FLAT 15, LYMER AVENUE",
+        "postcode": "SE19 1LS",
+        "price": 475000,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1710,14 +2028,6 @@
         "address": "DRAKE COURT, FLAT 19, TYLNEY AVENUE",
         "postcode": "SE19 1LW",
         "price": 525000,
-        "dateOfTransfer": "2025-10-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "RALEIGH COURT, FLAT 15, LYMER AVENUE",
-        "postcode": "SE19 1LS",
-        "price": 475000,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1752,6 +2062,14 @@
         "price": 822500,
         "dateOfTransfer": "2025-10-28",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "84, FLAT 1, CHURCH ROAD",
+        "postcode": "SE19 2EZ",
+        "price": 345000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1827,6 +2145,14 @@
         "newBuild": false
       },
       {
+        "address": "31, ORLEANS ROAD",
+        "postcode": "SE19 3TB",
+        "price": 550900,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "31B, AUCKLAND ROAD",
         "postcode": "SE19 2DR",
         "price": 488000,
@@ -1835,11 +2161,11 @@
         "newBuild": false
       },
       {
-        "address": "31, ORLEANS ROAD",
-        "postcode": "SE19 3TB",
-        "price": 550900,
+        "address": "1, DURNING ROAD",
+        "postcode": "SE19 1JP",
+        "price": 485000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1859,9 +2185,9 @@
         "newBuild": false
       },
       {
-        "address": "1, DURNING ROAD",
-        "postcode": "SE19 1JP",
-        "price": 485000,
+        "address": "61B, CHURCH ROAD",
+        "postcode": "SE19 2TE",
+        "price": 250000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1923,30 +2249,6 @@
         "newBuild": false
       },
       {
-        "address": "45, QUEEN MARY ROAD, UPPER NORWOOD",
-        "postcode": "SE19 3NN",
-        "price": 446000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "126, CHURCH ROAD",
-        "postcode": "SE19 2NT",
-        "price": 1920000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "45B, SYLVAN ROAD",
-        "postcode": "SE19 2RU",
-        "price": 440000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "11, HIGH VIEW ROAD",
         "postcode": "SE19 3SS",
         "price": 332690,
@@ -1966,6 +2268,30 @@
         "address": "14A, ANERLEY GROVE",
         "postcode": "SE19 2HS",
         "price": 391400,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45, QUEEN MARY ROAD, UPPER NORWOOD",
+        "postcode": "SE19 3NN",
+        "price": 446000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "126, CHURCH ROAD",
+        "postcode": "SE19 2NT",
+        "price": 1920000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "45B, SYLVAN ROAD",
+        "postcode": "SE19 2RU",
+        "price": 440000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2011,6 +2337,14 @@
         "newBuild": false
       },
       {
+        "address": "HIGHVIEW, FLAT 2, ANERLEY GROVE",
+        "postcode": "SE19 2HU",
+        "price": 410000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "OSPREY HOUSE, 26, FLAT 4, MOWBRAY ROAD",
         "postcode": "SE19 2RN",
         "price": 292000,
@@ -2027,11 +2361,11 @@
         "newBuild": false
       },
       {
-        "address": "HIGHVIEW, FLAT 2, ANERLEY GROVE",
-        "postcode": "SE19 2HU",
-        "price": 410000,
-        "dateOfTransfer": "2025-09-25",
-        "propertyType": "Flat/Maisonette",
+        "address": "110, GRECIAN CRESCENT",
+        "postcode": "SE19 3HJ",
+        "price": 605000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2075,6 +2409,14 @@
         "newBuild": false
       },
       {
+        "address": "21, HITHERWOOD DRIVE",
+        "postcode": "SE19 1XA",
+        "price": 1390000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "3, LANSDOWNE PLACE",
         "postcode": "SE19 2UQ",
         "price": 483000,
@@ -2083,17 +2425,17 @@
         "newBuild": false
       },
       {
-        "address": "31A, BELVEDERE ROAD, UPPER NORWOOD",
-        "postcode": "SE19 2HJ",
-        "price": 329000,
+        "address": "61A, GIPSY HILL",
+        "postcode": "SE19 1QH",
+        "price": 287000,
         "dateOfTransfer": "2025-09-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "61A, GIPSY HILL",
-        "postcode": "SE19 1QH",
-        "price": 287000,
+        "address": "31A, BELVEDERE ROAD, UPPER NORWOOD",
+        "postcode": "SE19 2HJ",
+        "price": 329000,
         "dateOfTransfer": "2025-09-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2267,7 +2609,7 @@
         "newBuild": false
       },
       {
-        "address": "14C, ALEXANDRA DRIVE",
+        "address": "16, ALEXANDRA DRIVE",
         "postcode": "SE19 1AJ",
         "price": 995000,
         "dateOfTransfer": "2025-09-02",
@@ -2323,11 +2665,11 @@
         "newBuild": false
       },
       {
-        "address": "2D, HAROLD ROAD",
-        "postcode": "SE19 3FB",
-        "price": 32000,
-        "dateOfTransfer": "2025-08-28",
-        "propertyType": "Other",
+        "address": "19, GILES COPPICE",
+        "postcode": "SE19 1XF",
+        "price": 660000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2344,6 +2686,14 @@
         "price": 735000,
         "dateOfTransfer": "2025-08-28",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2D, HAROLD ROAD",
+        "postcode": "SE19 3FB",
+        "price": 32000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2379,14 +2729,6 @@
         "newBuild": false
       },
       {
-        "address": "12C, GATESTONE ROAD",
-        "postcode": "SE19 3AT",
-        "price": 530000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "PATTERSON COURT, FLAT 9, PATTERSON ROAD",
         "postcode": "SE19 2LG",
         "price": 380000,
@@ -2403,11 +2745,11 @@
         "newBuild": false
       },
       {
-        "address": "20, OXFORD ROAD",
-        "postcode": "SE19 3JH",
-        "price": 900,
-        "dateOfTransfer": "2025-08-21",
-        "propertyType": "Other",
+        "address": "12C, GATESTONE ROAD",
+        "postcode": "SE19 3AT",
+        "price": 530000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2416,6 +2758,14 @@
         "price": 900000,
         "dateOfTransfer": "2025-08-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, OXFORD ROAD",
+        "postcode": "SE19 3JH",
+        "price": 900,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2443,19 +2793,19 @@
         "newBuild": false
       },
       {
-        "address": "LOWOOD COURT, FLAT 5, FARQUHAR ROAD",
-        "postcode": "SE19 1SW",
-        "price": 475000,
-        "dateOfTransfer": "2025-08-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "52, GIPSY HILL",
         "postcode": "SE19 1NL",
         "price": 830000,
         "dateOfTransfer": "2025-08-18",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LOWOOD COURT, FLAT 5, FARQUHAR ROAD",
+        "postcode": "SE19 1SW",
+        "price": 475000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2531,6 +2881,14 @@
         "newBuild": false
       },
       {
+        "address": "3, FREETHORPE CLOSE",
+        "postcode": "SE19 3LX",
+        "price": 308000,
+        "dateOfTransfer": "2025-08-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "57A, MABERLEY ROAD",
         "postcode": "SE19 2JE",
         "price": 480000,
@@ -2542,14 +2900,6 @@
         "address": "24, FLAT 1, ROCKMOUNT ROAD",
         "postcode": "SE19 3ST",
         "price": 474000,
-        "dateOfTransfer": "2025-08-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "3, FREETHORPE CLOSE",
-        "postcode": "SE19 3LX",
-        "price": 308000,
         "dateOfTransfer": "2025-08-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2571,19 +2921,19 @@
         "newBuild": false
       },
       {
-        "address": "31, HIGHFIELD HILL",
-        "postcode": "SE19 3PT",
-        "price": 765000,
-        "dateOfTransfer": "2025-08-05",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "22, JASPER ROAD",
         "postcode": "SE19 1SJ",
         "price": 550000,
         "dateOfTransfer": "2025-08-05",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "31, HIGHFIELD HILL",
+        "postcode": "SE19 3PT",
+        "price": 765000,
+        "dateOfTransfer": "2025-08-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2651,19 +3001,19 @@
         "newBuild": false
       },
       {
-        "address": "4, THE COVERT",
-        "postcode": "SE19 2UR",
-        "price": 566300,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "109A, SPA HILL",
         "postcode": "SE19 3TT",
         "price": 300000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, THE COVERT",
+        "postcode": "SE19 2UR",
+        "price": 566300,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2717,7 +3067,23 @@
       {
         "address": "MARLOWE COURT, FLAT 7, LYMER AVENUE",
         "postcode": "SE19 1LP",
+        "price": 260000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "MARLOWE COURT, FLAT 7, LYMER AVENUE",
+        "postcode": "SE19 1LP",
         "price": 230000,
+        "dateOfTransfer": "2025-07-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "158, FLAT 4, CHURCH ROAD",
+        "postcode": "SE19 2NT",
+        "price": 318000,
         "dateOfTransfer": "2025-07-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2739,35 +3105,11 @@
         "newBuild": false
       },
       {
-        "address": "MARLOWE COURT, FLAT 7, LYMER AVENUE",
-        "postcode": "SE19 1LP",
-        "price": 260000,
-        "dateOfTransfer": "2025-07-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "158, FLAT 4, CHURCH ROAD",
-        "postcode": "SE19 2NT",
-        "price": 318000,
-        "dateOfTransfer": "2025-07-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CROWN POINT, 14, BEULAH HILL",
         "postcode": "SE19 3NF",
         "price": 295000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "71A, MARSTON WAY",
-        "postcode": "SE19 3JB",
-        "price": 274000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2784,6 +3126,14 @@
         "price": 420000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71A, MARSTON WAY",
+        "postcode": "SE19 3JB",
+        "price": 274000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2851,17 +3201,9 @@
         "newBuild": false
       },
       {
-        "address": "1, ROSSITER CLOSE",
-        "postcode": "SE19 3BB",
-        "price": 618500,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "8, FLAT 22, SYLVAN HILL",
-        "postcode": "SE19 2QF",
-        "price": 495000,
+        "address": "35, FLAT 2, COLBY ROAD",
+        "postcode": "SE19 1HA",
+        "price": 520000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2875,9 +3217,17 @@
         "newBuild": false
       },
       {
-        "address": "35, FLAT 2, COLBY ROAD",
-        "postcode": "SE19 1HA",
-        "price": 520000,
+        "address": "1, ROSSITER CLOSE",
+        "postcode": "SE19 3BB",
+        "price": 618500,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8, FLAT 22, SYLVAN HILL",
+        "postcode": "SE19 2QF",
+        "price": 495000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3099,17 +3449,17 @@
         "newBuild": false
       },
       {
-        "address": "62, RAVENSDALE GARDENS",
-        "postcode": "SE19 3QE",
-        "price": 375000,
+        "address": "25, ESKMONT RIDGE",
+        "postcode": "SE19 3PZ",
+        "price": 265000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "25, ESKMONT RIDGE",
-        "postcode": "SE19 3PZ",
-        "price": 265000,
+        "address": "62, RAVENSDALE GARDENS",
+        "postcode": "SE19 3QE",
+        "price": 375000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3243,22 +3593,6 @@
         "newBuild": false
       },
       {
-        "address": "14, TYLNEY AVENUE",
-        "postcode": "SE19 1LN",
-        "price": 920000,
-        "dateOfTransfer": "2025-06-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "22, FLAT A, BECONDALE ROAD",
-        "postcode": "SE19 1QJ",
-        "price": 630000,
-        "dateOfTransfer": "2025-06-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "61, DURNING ROAD",
         "postcode": "SE19 1JS",
         "price": 500000,
@@ -3272,6 +3606,22 @@
         "price": 485000,
         "dateOfTransfer": "2025-06-17",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "14, TYLNEY AVENUE",
+        "postcode": "SE19 1LN",
+        "price": 920000,
+        "dateOfTransfer": "2025-06-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, FLAT A, BECONDALE ROAD",
+        "postcode": "SE19 1QJ",
+        "price": 630000,
+        "dateOfTransfer": "2025-06-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3451,19 +3801,19 @@
         "newBuild": false
       },
       {
-        "address": "28, GIBBS SQUARE",
-        "postcode": "SE19 1JN",
-        "price": 623600,
-        "dateOfTransfer": "2025-05-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "REGENCY COURT, FLAT 9, HAMLET ROAD",
         "postcode": "SE19 2AR",
         "price": 144000,
         "dateOfTransfer": "2025-05-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, GIBBS SQUARE",
+        "postcode": "SE19 1JN",
+        "price": 623600,
+        "dateOfTransfer": "2025-05-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3507,14 +3857,6 @@
         "newBuild": false
       },
       {
-        "address": "107, CHURCH ROAD",
-        "postcode": "SE19 2PR",
-        "price": 460000,
-        "dateOfTransfer": "2025-05-21",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "65 - 67B, CHURCH ROAD",
         "postcode": "SE19 2TE",
         "price": 268000,
@@ -3523,17 +3865,17 @@
         "newBuild": false
       },
       {
-        "address": "88, FLAT C, BELVEDERE ROAD",
-        "postcode": "SE19 2HZ",
-        "price": 528000,
-        "dateOfTransfer": "2025-05-20",
-        "propertyType": "Flat/Maisonette",
+        "address": "107, CHURCH ROAD",
+        "postcode": "SE19 2PR",
+        "price": 460000,
+        "dateOfTransfer": "2025-05-21",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "352, GRANGE ROAD, UPPER NORWOOD",
-        "postcode": "SE19 3DQ",
-        "price": 375000,
+        "address": "88, FLAT C, BELVEDERE ROAD",
+        "postcode": "SE19 2HZ",
+        "price": 528000,
         "dateOfTransfer": "2025-05-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3547,9 +3889,25 @@
         "newBuild": false
       },
       {
+        "address": "352, GRANGE ROAD, UPPER NORWOOD",
+        "postcode": "SE19 3DQ",
+        "price": 375000,
+        "dateOfTransfer": "2025-05-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "FORESTERS HALL, 25 - 27, WESTOW STREET",
         "postcode": "SE19 3RY",
         "price": 3000000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "20 - 22, UNIT 2, BEARDELL STREET",
+        "postcode": "SE19 1TP",
+        "price": 200000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Other",
         "newBuild": false
@@ -3563,19 +3921,19 @@
         "newBuild": false
       },
       {
-        "address": "20 - 22, UNIT 2, BEARDELL STREET",
-        "postcode": "SE19 1TP",
-        "price": 200000,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "67, WESTOW STREET",
         "postcode": "SE19 3RW",
         "price": 1750000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "105, CHURCH ROAD",
+        "postcode": "SE19 2PR",
+        "price": 750000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3683,14 +4041,6 @@
         "newBuild": false
       },
       {
-        "address": "105, CHURCH ROAD",
-        "postcode": "SE19 2PR",
-        "price": 750000,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "CROWN POINT, 13, BEULAH HILL",
         "postcode": "SE19 3NF",
         "price": 255000,
@@ -3779,19 +4129,19 @@
         "newBuild": false
       },
       {
-        "address": "154, BEAUCHAMP ROAD",
-        "postcode": "SE19 3DB",
-        "price": 200000,
-        "dateOfTransfer": "2025-05-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2, GLEBE HYRST",
         "postcode": "SE19 1XG",
         "price": 1000000,
         "dateOfTransfer": "2025-05-01",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "154, BEAUCHAMP ROAD",
+        "postcode": "SE19 3DB",
+        "price": 200000,
+        "dateOfTransfer": "2025-05-01",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3843,17 +4193,17 @@
         "newBuild": false
       },
       {
-        "address": "208, SYLVAN ROAD",
-        "postcode": "SE19 2SA",
-        "price": 315000,
+        "address": "4B, ESSEX GROVE",
+        "postcode": "SE19 3SX",
+        "price": 255000,
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "4B, ESSEX GROVE",
-        "postcode": "SE19 3SX",
-        "price": 255000,
+        "address": "208, SYLVAN ROAD",
+        "postcode": "SE19 2SA",
+        "price": 315000,
         "dateOfTransfer": "2025-04-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3891,6 +4241,14 @@
         "newBuild": false
       },
       {
+        "address": "5, HAROLD ROAD",
+        "postcode": "SE19 3PU",
+        "price": 795000,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "RAVENSROOST, 4, BEULAH HILL",
         "postcode": "SE19 3LN",
         "price": 375000,
@@ -3899,9 +4257,9 @@
         "newBuild": false
       },
       {
-        "address": "5, HAROLD ROAD",
-        "postcode": "SE19 3PU",
-        "price": 795000,
+        "address": "10, AUCKLAND ROAD",
+        "postcode": "SE19 2DL",
+        "price": 1450000,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3920,14 +4278,6 @@
         "price": 590000,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "10, AUCKLAND ROAD",
-        "postcode": "SE19 2DL",
-        "price": 1450000,
-        "dateOfTransfer": "2025-04-11",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3995,17 +4345,9 @@
         "newBuild": false
       },
       {
-        "address": "234, BEULAH HILL",
-        "postcode": "SE19 3UY",
-        "price": 735000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "MARLOWE COURT, FLAT 1, LYMER AVENUE",
-        "postcode": "SE19 1LP",
-        "price": 475000,
+        "address": "73, THE LAWNS",
+        "postcode": "SE19 3TR",
+        "price": 220000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4059,14 +4401,6 @@
         "newBuild": false
       },
       {
-        "address": "73, THE LAWNS",
-        "postcode": "SE19 3TR",
-        "price": 220000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "LOWOOD COURT, FLAT 27, FARQUHAR ROAD",
         "postcode": "SE19 1SW",
         "price": 463000,
@@ -4078,6 +4412,22 @@
         "address": "8, FLAT 42, SYLVAN HILL",
         "postcode": "SE19 2QF",
         "price": 500000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "234, BEULAH HILL",
+        "postcode": "SE19 3UY",
+        "price": 735000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "MARLOWE COURT, FLAT 1, LYMER AVENUE",
+        "postcode": "SE19 1LP",
+        "price": 475000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4099,41 +4449,9 @@
         "newBuild": false
       },
       {
-        "address": "HIGHLANDS COURT, FLAT 4, HIGHLAND ROAD",
-        "postcode": "SE19 1DR",
-        "price": 435000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "51 - 53, FLAT H, ANERLEY ROAD",
-        "postcode": "SE19 2AS",
-        "price": 265000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "28, FLAT 2, CINTRA PARK, UPPER NORWOOD",
-        "postcode": "SE19 2LH",
-        "price": 460500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "STRATOS HEIGHTS, 38, FLAT 16, MILESTONE ROAD",
-        "postcode": "SE19 2LU",
-        "price": 438000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "34A, WALDEGRAVE ROAD",
-        "postcode": "SE19 2AJ",
-        "price": 560000,
+        "address": "HILLTOP COURT, 345, FLAT 1, GRANGE ROAD, UPPER NORWOOD",
+        "postcode": "SE19 3BX",
+        "price": 252000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4171,11 +4489,51 @@
         "newBuild": false
       },
       {
+        "address": "51 - 53, FLAT H, ANERLEY ROAD",
+        "postcode": "SE19 2AS",
+        "price": 265000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, FLAT 2, CINTRA PARK, UPPER NORWOOD",
+        "postcode": "SE19 2LH",
+        "price": 460500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "STRATOS HEIGHTS, 38, FLAT 16, MILESTONE ROAD",
+        "postcode": "SE19 2LU",
+        "price": 438000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34A, WALDEGRAVE ROAD",
+        "postcode": "SE19 2AJ",
+        "price": 560000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "21, ANERLEY HILL",
         "postcode": "SE19 2BA",
         "price": 582000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "302, GRANGE ROAD, UPPER NORWOOD",
+        "postcode": "SE19 3DF",
+        "price": 103000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4195,14 +4553,6 @@
         "newBuild": false
       },
       {
-        "address": "302, GRANGE ROAD, UPPER NORWOOD",
-        "postcode": "SE19 3DF",
-        "price": 103000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "GLENMORE APARTMENTS, 34 - 36, FLAT 2, HAROLD ROAD",
         "postcode": "SE19 3PL",
         "price": 867000,
@@ -4214,6 +4564,14 @@
         "address": "63C, GIPSY HILL",
         "postcode": "SE19 1QH",
         "price": 315000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HIGHLANDS COURT, FLAT 4, HIGHLAND ROAD",
+        "postcode": "SE19 1DR",
+        "price": 435000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4232,22 +4590,6 @@
         "price": 340000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "19, JENSON WAY",
-        "postcode": "SE19 2UP",
-        "price": 514500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1A, PLEYDELL AVENUE",
-        "postcode": "SE19 2LN",
-        "price": 635000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4275,11 +4617,19 @@
         "newBuild": false
       },
       {
-        "address": "HILLTOP COURT, 345, FLAT 1, GRANGE ROAD, UPPER NORWOOD",
-        "postcode": "SE19 3BX",
-        "price": 252000,
+        "address": "19, JENSON WAY",
+        "postcode": "SE19 2UP",
+        "price": 514500,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1A, PLEYDELL AVENUE",
+        "postcode": "SE19 2LN",
+        "price": 635000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4288,6 +4638,38 @@
         "price": 440100,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, WOODLAND HILL",
+        "postcode": "SE19 1NY",
+        "price": 700000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10B, ROCKMOUNT ROAD",
+        "postcode": "SE19 3ST",
+        "price": 333000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, KITLEY GARDENS",
+        "postcode": "SE19 2RY",
+        "price": 406000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24B, ROCKMOUNT ROAD",
+        "postcode": "SE19 3ST",
+        "price": 340000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4307,38 +4689,6 @@
         "newBuild": false
       },
       {
-        "address": "10B, ROCKMOUNT ROAD",
-        "postcode": "SE19 3ST",
-        "price": 333000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "38, WOODLAND HILL",
-        "postcode": "SE19 1NY",
-        "price": 700000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "24B, ROCKMOUNT ROAD",
-        "postcode": "SE19 3ST",
-        "price": 340000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "28, KITLEY GARDENS",
-        "postcode": "SE19 2RY",
-        "price": 406000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "62, WHITELEY ROAD",
         "postcode": "SE19 1JT",
         "price": 1100000,
@@ -4350,14 +4700,6 @@
         "address": "73 - 75, FLAT C, CHURCH ROAD",
         "postcode": "SE19 2TA",
         "price": 332000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "49, FLAT 1, GIPSY HILL",
-        "postcode": "SE19 1QH",
-        "price": 635000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4379,19 +4721,19 @@
         "newBuild": false
       },
       {
+        "address": "49, FLAT 1, GIPSY HILL",
+        "postcode": "SE19 1QH",
+        "price": 635000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2, JASPER ROAD",
         "postcode": "SE19 1SJ",
         "price": 806000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "62, FLAT 3, VICTORIA CRESCENT",
-        "postcode": "SE19 1AE",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4403,10 +4745,10 @@
         "newBuild": false
       },
       {
-        "address": "KNOLL COURT, FLAT 6, FARQUHAR ROAD",
-        "postcode": "SE19 1SP",
-        "price": 275000,
-        "dateOfTransfer": "2025-03-24",
+        "address": "62, FLAT 3, VICTORIA CRESCENT",
+        "postcode": "SE19 1AE",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4422,6 +4764,14 @@
         "address": "41B, CINTRA PARK, UPPER NORWOOD",
         "postcode": "SE19 2LQ",
         "price": 403000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT B, ROCKMOUNT ROAD",
+        "postcode": "SE19 3ST",
+        "price": 310000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4443,9 +4793,9 @@
         "newBuild": false
       },
       {
-        "address": "4, FLAT B, ROCKMOUNT ROAD",
-        "postcode": "SE19 3ST",
-        "price": 310000,
+        "address": "KNOLL COURT, FLAT 6, FARQUHAR ROAD",
+        "postcode": "SE19 1SP",
+        "price": 275000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4483,9 +4833,17 @@
         "newBuild": false
       },
       {
-        "address": "62, FLAT 1, VICTORIA CRESCENT",
-        "postcode": "SE19 1AE",
-        "price": 420000,
+        "address": "ROSETTA COURT, 112, FLAT 25, CHURCH ROAD",
+        "postcode": "SE19 2UD",
+        "price": 200000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, BASEMENT FLAT, CAMDEN HILL ROAD",
+        "postcode": "SE19 1NR",
+        "price": 390000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4507,17 +4865,9 @@
         "newBuild": false
       },
       {
-        "address": "ROSETTA COURT, 112, FLAT 25, CHURCH ROAD",
-        "postcode": "SE19 2UD",
-        "price": 200000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "2, BASEMENT FLAT, CAMDEN HILL ROAD",
-        "postcode": "SE19 1NR",
-        "price": 390000,
+        "address": "62, FLAT 1, VICTORIA CRESCENT",
+        "postcode": "SE19 1AE",
+        "price": 420000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4579,11 +4929,11 @@
         "newBuild": false
       },
       {
-        "address": "22, FIRST FLOOR FLAT, WOODLAND ROAD",
-        "postcode": "SE19 1NT",
-        "price": 300000,
+        "address": "65, MOORE ROAD",
+        "postcode": "SE19 3RB",
+        "price": 760000,
         "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4603,11 +4953,11 @@
         "newBuild": false
       },
       {
-        "address": "65, MOORE ROAD",
-        "postcode": "SE19 3RB",
-        "price": 760000,
+        "address": "22, FIRST FLOOR FLAT, WOODLAND ROAD",
+        "postcode": "SE19 1NT",
+        "price": 300000,
         "dateOfTransfer": "2025-03-14",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4723,14 +5073,6 @@
         "newBuild": false
       },
       {
-        "address": "34, WESTOW HILL",
-        "postcode": "SE19 1RX",
-        "price": 500000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "35, FLAT 1, MABERLEY ROAD",
         "postcode": "SE19 2JA",
         "price": 362500,
@@ -4747,11 +5089,19 @@
         "newBuild": false
       },
       {
-        "address": "12, ANTIGUA WALK",
-        "postcode": "SE19 1JB",
-        "price": 420000,
+        "address": "34, WESTOW HILL",
+        "postcode": "SE19 1RX",
+        "price": 500000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "3, FLAT 1, CAWNPORE STREET",
+        "postcode": "SE19 1PF",
+        "price": 580000,
         "dateOfTransfer": "2025-02-27",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4763,11 +5113,11 @@
         "newBuild": false
       },
       {
-        "address": "3, FLAT 1, CAWNPORE STREET",
-        "postcode": "SE19 1PF",
-        "price": 580000,
+        "address": "12, ANTIGUA WALK",
+        "postcode": "SE19 1JB",
+        "price": 420000,
         "dateOfTransfer": "2025-02-27",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4811,14 +5161,6 @@
         "newBuild": false
       },
       {
-        "address": "49, HAROLD ROAD",
-        "postcode": "SE19 3SP",
-        "price": 830000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "12A, FIRST FLOOR FLAT, LUNHAM ROAD",
         "postcode": "SE19 1AA",
         "price": 525000,
@@ -4830,6 +5172,14 @@
         "address": "1, ALEXANDRA WALK",
         "postcode": "SE19 1AL",
         "price": 655000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "49, HAROLD ROAD",
+        "postcode": "SE19 3SP",
+        "price": 830000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4863,14 +5213,6 @@
         "postcode": "SE19 3SS",
         "price": 350000,
         "dateOfTransfer": "2025-02-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "COTMAN COURT, 61, FLAT 7, FARQUHAR ROAD",
-        "postcode": "SE19 1SN",
-        "price": 350000,
-        "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4931,6 +5273,14 @@
         "newBuild": false
       },
       {
+        "address": "COTMAN COURT, 61, FLAT 7, FARQUHAR ROAD",
+        "postcode": "SE19 1SN",
+        "price": 350000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "TRADE COURT, 69, APARTMENT 9, CHURCH ROAD",
         "postcode": "SE19 2TA",
         "price": 550000,
@@ -4971,22 +5321,6 @@
         "newBuild": false
       },
       {
-        "address": "2, FLAT 4, LUNHAM ROAD",
-        "postcode": "SE19 1AA",
-        "price": 285000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "32, FLAT C, WOODLAND ROAD",
-        "postcode": "SE19 1NT",
-        "price": 395000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "KNOLL COURT, FLAT 29, FARQUHAR ROAD",
         "postcode": "SE19 1SP",
         "price": 450000,
@@ -5011,18 +5345,26 @@
         "newBuild": false
       },
       {
-        "address": "17, FLAT 1, ALEXANDRA DRIVE",
-        "postcode": "SE19 1AW",
-        "price": 525000,
-        "dateOfTransfer": "2025-02-06",
+        "address": "2, FLAT 4, LUNHAM ROAD",
+        "postcode": "SE19 1AA",
+        "price": 285000,
+        "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "KNOLL COURT, FLAT 16, FARQUHAR ROAD",
-        "postcode": "SE19 1SP",
-        "price": 462000,
-        "dateOfTransfer": "2025-02-03",
+        "address": "32, FLAT C, WOODLAND ROAD",
+        "postcode": "SE19 1NT",
+        "price": 395000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, FLAT 1, ALEXANDRA DRIVE",
+        "postcode": "SE19 1AW",
+        "price": 525000,
+        "dateOfTransfer": "2025-02-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -5035,19 +5377,19 @@
         "newBuild": false
       },
       {
+        "address": "KNOLL COURT, FLAT 16, FARQUHAR ROAD",
+        "postcode": "SE19 1SP",
+        "price": 462000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "16, GILES COPPICE",
         "postcode": "SE19 1XF",
         "price": 737500,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "COMPTON COURT, FLAT 24, VICTORIA CRESCENT",
-        "postcode": "SE19 1AF",
-        "price": 340000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5075,6 +5417,14 @@
         "newBuild": false
       },
       {
+        "address": "COMPTON COURT, FLAT 24, VICTORIA CRESCENT",
+        "postcode": "SE19 1AF",
+        "price": 340000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "DRAKE COURT, FLAT 13, TYLNEY AVENUE",
         "postcode": "SE19 1LW",
         "price": 460000,
@@ -5091,17 +5441,17 @@
         "newBuild": false
       },
       {
-        "address": "KNOLL COURT, FLAT 15, FARQUHAR ROAD",
-        "postcode": "SE19 1SP",
-        "price": 475000,
+        "address": "307, FLAT 3, BEULAH HILL",
+        "postcode": "SE19 3UZ",
+        "price": 250000,
         "dateOfTransfer": "2025-01-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "307, FLAT 3, BEULAH HILL",
-        "postcode": "SE19 3UZ",
-        "price": 250000,
+        "address": "KNOLL COURT, FLAT 15, FARQUHAR ROAD",
+        "postcode": "SE19 1SP",
+        "price": 475000,
         "dateOfTransfer": "2025-01-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5147,14 +5497,6 @@
         "newBuild": false
       },
       {
-        "address": "54, SYLVAN HILL",
-        "postcode": "SE19 2QD",
-        "price": 327000,
-        "dateOfTransfer": "2025-01-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "OSPREY HOUSE, 26, FLAT 4, MOWBRAY ROAD",
         "postcode": "SE19 2RN",
         "price": 166000,
@@ -5163,18 +5505,10 @@
         "newBuild": false
       },
       {
-        "address": "33A, FLAT 5, WESTOW HILL",
-        "postcode": "SE19 1TQ",
-        "price": 330000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "89, MENLO GARDENS",
-        "postcode": "SE19 3DX",
-        "price": 159000,
-        "dateOfTransfer": "2025-01-17",
+        "address": "54, SYLVAN HILL",
+        "postcode": "SE19 2QD",
+        "price": 327000,
+        "dateOfTransfer": "2025-01-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -5187,9 +5521,25 @@
         "newBuild": false
       },
       {
+        "address": "89, MENLO GARDENS",
+        "postcode": "SE19 3DX",
+        "price": 159000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "MOWBRAY GRANGE, 2, FLAT G, MOWBRAY ROAD",
         "postcode": "SE19 2RN",
         "price": 403000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33A, FLAT 5, WESTOW HILL",
+        "postcode": "SE19 1TQ",
+        "price": 330000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5227,19 +5577,19 @@
         "newBuild": false
       },
       {
-        "address": "BEECHWOODS COURT, 3, FLAT 36, CRYSTAL PALACE PARADE",
-        "postcode": "SE19 1UH",
-        "price": 255000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "25, DULWICH WOOD AVENUE",
         "postcode": "SE19 1HB",
         "price": 1100000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "BEECHWOODS COURT, 3, FLAT 36, CRYSTAL PALACE PARADE",
+        "postcode": "SE19 1UH",
+        "price": 255000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5259,14 +5609,6 @@
         "newBuild": false
       },
       {
-        "address": "53D, ALEXANDRA DRIVE",
-        "postcode": "SE19 1AW",
-        "price": 395000,
-        "dateOfTransfer": "2025-01-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "EFFRA COURT, 38, FLAT 5, HOMELANDS DRIVE",
         "postcode": "SE19 2NS",
         "price": 370000,
@@ -5280,6 +5622,14 @@
         "price": 965000,
         "dateOfTransfer": "2025-01-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "53D, ALEXANDRA DRIVE",
+        "postcode": "SE19 1AW",
+        "price": 395000,
+        "dateOfTransfer": "2025-01-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5299,22 +5649,6 @@
         "newBuild": false
       },
       {
-        "address": "ZOLA HOUSE, 21, FLAT 5, CRYSTAL PALACE PARADE",
-        "postcode": "SE19 1UA",
-        "price": 400000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "42B, VICTORIA CRESCENT",
-        "postcode": "SE19 1AE",
-        "price": 440000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2, STAMBOURNE WAY",
         "postcode": "SE19 2PY",
         "price": 1100000,
@@ -5326,6 +5660,22 @@
         "address": "RAVENSROOST, 37, BEULAH HILL",
         "postcode": "SE19 3LN",
         "price": 450000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ZOLA HOUSE, 21, FLAT 5, CRYSTAL PALACE PARADE",
+        "postcode": "SE19 1UA",
+        "price": 400000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "42B, VICTORIA CRESCENT",
+        "postcode": "SE19 1AE",
+        "price": 440000,
         "dateOfTransfer": "2025-01-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5379,7 +5729,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 505568,
+    "averagePrice": 506086,
     "medianPrice": 435000
   },
   "representatives": {

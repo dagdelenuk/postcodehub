@@ -3,8 +3,8 @@
   "slug": "se7",
   "city": "London",
   "borough": "Greenwich",
-  "latitude": 51.484121850467325,
-  "longitude": 0.03394494626168226,
+  "latitude": 51.48396783374084,
+  "longitude": 0.03432898533007335,
   "wards": [
     "Charlton Hornfair",
     "Charlton Village & Riverside",
@@ -107,6 +107,7 @@
         "phaseOfEducation": "Nursery",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Pound Park Road, Charlton, London",
         "postcode": "SE7 8AF",
         "numberOfPupils": 137,
@@ -118,6 +119,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Rectory Field Crescent, Marlborough Lane, London",
         "postcode": "SE7 7DG",
         "numberOfPupils": 174,
@@ -128,7 +130,8 @@
         "urn": "100125",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/07/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Victoria Way, Charlton, London",
         "postcode": "SE7 7NQ",
         "numberOfPupils": 206,
@@ -139,7 +142,8 @@
         "urn": "100141",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Wyndcliff Road, Charlton, London",
         "postcode": "SE7 7JP",
         "numberOfPupils": 436,
@@ -149,8 +153,9 @@
         "name": "Thorntree Primary School",
         "urn": "100142",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "04/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Thorntree Road, Charlton, London",
         "postcode": "SE7 8AE",
         "numberOfPupils": 190,
@@ -160,8 +165,9 @@
         "name": "Charlton Manor Primary School",
         "urn": "100164",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "01/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Indus Road, London",
         "postcode": "SE7 7EF",
         "numberOfPupils": 410,
@@ -171,8 +177,9 @@
         "name": "Our Lady of Grace Catholic Primary School",
         "urn": "100168",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "22/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "16 Highcombe, Charlton, London",
         "postcode": "SE7 7HR",
         "numberOfPupils": 416,
@@ -182,8 +189,9 @@
         "name": "Charlton Park Academy",
         "urn": "138547",
         "phaseOfEducation": "Not applicable",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "08/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Charlton Park Road, Charlton, London",
         "postcode": "SE7 8HX",
         "numberOfPupils": 218,
@@ -194,7 +202,8 @@
         "urn": "143927",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "11/10/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "765 Woolwich Road, Greenwich, London",
         "postcode": "SE7 8LJ",
         "numberOfPupils": 871,
@@ -206,6 +215,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "775 Woolwich Road, London",
         "postcode": "SE7 8FE",
         "numberOfPupils": 500,
@@ -217,97 +227,129 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 507,
-        "violentCrimes": 212,
-        "propertyCrimes": 187
+        "totalCrimes": 511,
+        "violentCrimes": 214,
+        "propertyCrimes": 188
       },
       {
         "month": "2025-08",
-        "totalCrimes": 508,
-        "violentCrimes": 201,
-        "propertyCrimes": 170
-      },
-      {
-        "month": "2025-09",
-        "totalCrimes": 437,
-        "violentCrimes": 179,
-        "propertyCrimes": 150
-      },
-      {
-        "month": "2025-10",
-        "totalCrimes": 461,
-        "violentCrimes": 178,
-        "propertyCrimes": 171
-      },
-      {
-        "month": "2025-11",
-        "totalCrimes": 427,
-        "violentCrimes": 183,
+        "totalCrimes": 523,
+        "violentCrimes": 207,
         "propertyCrimes": 174
       },
       {
+        "month": "2025-09",
+        "totalCrimes": 443,
+        "violentCrimes": 181,
+        "propertyCrimes": 153
+      },
+      {
+        "month": "2025-10",
+        "totalCrimes": 470,
+        "violentCrimes": 185,
+        "propertyCrimes": 172
+      },
+      {
+        "month": "2025-11",
+        "totalCrimes": 434,
+        "violentCrimes": 187,
+        "propertyCrimes": 176
+      },
+      {
         "month": "2025-12",
-        "totalCrimes": 458,
-        "violentCrimes": 196,
-        "propertyCrimes": 159
+        "totalCrimes": 461,
+        "violentCrimes": 198,
+        "propertyCrimes": 160
       },
       {
         "month": "2026-01",
-        "totalCrimes": 425,
-        "violentCrimes": 193,
-        "propertyCrimes": 139
+        "totalCrimes": 435,
+        "violentCrimes": 194,
+        "propertyCrimes": 144
       },
       {
         "month": "2026-02",
-        "totalCrimes": 453,
-        "violentCrimes": 187,
+        "totalCrimes": 459,
+        "violentCrimes": 191,
         "propertyCrimes": 164
       },
       {
         "month": "2026-03",
-        "totalCrimes": 450,
-        "violentCrimes": 187,
-        "propertyCrimes": 178
+        "totalCrimes": 455,
+        "violentCrimes": 188,
+        "propertyCrimes": 183
       },
       {
         "month": "2026-04",
-        "totalCrimes": 461,
-        "violentCrimes": 181,
-        "propertyCrimes": 168
+        "totalCrimes": 469,
+        "violentCrimes": 184,
+        "propertyCrimes": 170
       },
       {
         "month": "2026-05",
         "totalCrimes": 452,
         "violentCrimes": 198,
-        "propertyCrimes": 142
+        "propertyCrimes": 141
       },
       {
         "month": "2026-06",
-        "totalCrimes": 474,
-        "violentCrimes": 206,
-        "propertyCrimes": 175
+        "totalCrimes": 482,
+        "violentCrimes": 211,
+        "propertyCrimes": 176
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 918,
+      "anti-social-behaviour": 936,
       "bicycle-theft": 26,
-      "burglary": 210,
-      "criminal-damage-arson": 248,
-      "drugs": 263,
-      "other-theft": 419,
+      "burglary": 212,
+      "criminal-damage-arson": 254,
+      "drugs": 265,
+      "other-theft": 423,
       "possession-of-weapons": 31,
-      "public-order": 405,
-      "robbery": 116,
-      "shoplifting": 561,
-      "theft-from-the-person": 115,
-      "vehicle-crime": 398,
-      "violent-crime": 1749,
+      "public-order": 407,
+      "robbery": 125,
+      "shoplifting": 569,
+      "theft-from-the-person": 116,
+      "vehicle-crime": 401,
+      "violent-crime": 1775,
       "other-crime": 54
     },
-    "totalLast12Months": 5513
+    "totalLast12Months": 5594
   },
   "property": {
     "sales": [
+      {
+        "address": "17, CANBERRA ROAD",
+        "postcode": "SE7 7BA",
+        "price": 645000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, CANBERRA ROAD",
+        "postcode": "SE7 7BA",
+        "price": 635000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "34B, ELLISCOMBE ROAD",
+        "postcode": "SE7 7PY",
+        "price": 700000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "8, MARLBOROUGH LANE",
+        "postcode": "SE7 7DF",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "53, HOPEDALE ROAD",
         "postcode": "SE7 7JH",
@@ -325,11 +367,35 @@
         "newBuild": false
       },
       {
+        "address": "THOMPSON HOUSE, 1, FLAT 202, BOWEN DRIVE",
+        "postcode": "SE7 7FZ",
+        "price": 300000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "164, EASTCOMBE AVENUE",
         "postcode": "SE7 7LW",
         "price": 835000,
         "dateOfTransfer": "2026-06-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7A, WELLINGTON GARDENS",
+        "postcode": "SE7 7PN",
+        "price": 265000,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "61B, LANSDOWNE LANE",
+        "postcode": "SE7 8TN",
+        "price": 410000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -389,11 +455,11 @@
         "newBuild": false
       },
       {
-        "address": "73, HORNFAIR ROAD",
-        "postcode": "SE7 7BB",
-        "price": 1035000,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Semi-detached",
+        "address": "96, EASTCOMBE AVENUE",
+        "postcode": "SE7 7LN",
+        "price": 835000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -402,6 +468,22 @@
         "price": 346500,
         "dateOfTransfer": "2026-05-22",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "73, HORNFAIR ROAD",
+        "postcode": "SE7 7BB",
+        "price": 1035000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, MONTCALM ROAD",
+        "postcode": "SE7 8QG",
+        "price": 700000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -421,19 +503,19 @@
         "newBuild": false
       },
       {
-        "address": "33, NADINE STREET",
-        "postcode": "SE7 7PQ",
-        "price": 300000,
-        "dateOfTransfer": "2026-05-08",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "141, FLAT A, CHARLTON CHURCH LANE",
         "postcode": "SE7 7AA",
         "price": 270000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, NADINE STREET",
+        "postcode": "SE7 7PQ",
+        "price": 300000,
+        "dateOfTransfer": "2026-05-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -477,10 +559,26 @@
         "newBuild": false
       },
       {
+        "address": "29, GROUND FLOOR FLAT, INVERINE ROAD",
+        "postcode": "SE7 7NJ",
+        "price": 205000,
+        "dateOfTransfer": "2026-04-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "33, WYNDCLIFF ROAD",
         "postcode": "SE7 7LP",
         "price": 852000,
         "dateOfTransfer": "2026-04-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "123, EASTCOMBE AVENUE",
+        "postcode": "SE7 7LL",
+        "price": 390000,
+        "dateOfTransfer": "2026-04-14",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -653,19 +751,19 @@
         "newBuild": false
       },
       {
-        "address": "35, MONTCALM ROAD",
-        "postcode": "SE7 8QG",
-        "price": 585000,
-        "dateOfTransfer": "2026-02-26",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "91, EASTCOMBE AVENUE",
         "postcode": "SE7 7LL",
         "price": 425000,
         "dateOfTransfer": "2026-02-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, MONTCALM ROAD",
+        "postcode": "SE7 8QG",
+        "price": 585000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -709,6 +807,22 @@
         "newBuild": false
       },
       {
+        "address": "157, FLAT 7, VICTORIA WAY, CHARLTON",
+        "postcode": "SE7 7NX",
+        "price": 318000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29A, FIRST FLOOR FLAT, INVERINE ROAD",
+        "postcode": "SE7 7NJ",
+        "price": 231000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "64, THE HEIGHTS",
         "postcode": "SE7 8JH",
         "price": 590000,
@@ -733,17 +847,17 @@
         "newBuild": false
       },
       {
-        "address": "35, EVERSLEY ROAD",
-        "postcode": "SE7 7LE",
-        "price": 885000,
+        "address": "42, NADINE STREET",
+        "postcode": "SE7 7PG",
+        "price": 640000,
         "dateOfTransfer": "2026-01-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "42, NADINE STREET",
-        "postcode": "SE7 7PG",
-        "price": 640000,
+        "address": "35, EVERSLEY ROAD",
+        "postcode": "SE7 7LE",
+        "price": 885000,
         "dateOfTransfer": "2026-01-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -754,6 +868,14 @@
         "price": 490000,
         "dateOfTransfer": "2026-01-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, TALLIS GROVE",
+        "postcode": "SE7 7LB",
+        "price": 510000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -877,19 +999,19 @@
         "newBuild": false
       },
       {
-        "address": "96C, CHARLTON CHURCH LANE",
-        "postcode": "SE7 7AA",
-        "price": 470000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2A, DELAFIELD ROAD",
         "postcode": "SE7 7NP",
         "price": 600000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "96C, CHARLTON CHURCH LANE",
+        "postcode": "SE7 7AA",
+        "price": 470000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -957,14 +1079,6 @@
         "newBuild": false
       },
       {
-        "address": "83, DELAFIELD ROAD",
-        "postcode": "SE7 7NW",
-        "price": 590000,
-        "dateOfTransfer": "2025-10-15",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "132, EASTCOMBE AVENUE",
         "postcode": "SE7 7LW",
         "price": 415000,
@@ -976,6 +1090,14 @@
         "address": "45, THE VILLAGE",
         "postcode": "SE7 8UG",
         "price": 850000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "83, DELAFIELD ROAD",
+        "postcode": "SE7 7NW",
+        "price": 590000,
         "dateOfTransfer": "2025-10-15",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1061,14 +1183,6 @@
         "newBuild": false
       },
       {
-        "address": "3, RATHMORE ROAD",
-        "postcode": "SE7 7QP",
-        "price": 800000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "1, KASHMIR ROAD",
         "postcode": "SE7 8QN",
         "price": 480000,
@@ -1093,6 +1207,14 @@
         "newBuild": false
       },
       {
+        "address": "3, RATHMORE ROAD",
+        "postcode": "SE7 7QP",
+        "price": 800000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "45, BRAMSHOT AVENUE",
         "postcode": "SE7 7HX",
         "price": 479000,
@@ -1101,17 +1223,17 @@
         "newBuild": false
       },
       {
-        "address": "43, EASTCOMBE AVENUE",
-        "postcode": "SE7 7JD",
-        "price": 895000,
+        "address": "12, LITTLE HEATH",
+        "postcode": "SE7 8HU",
+        "price": 1000000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "12, LITTLE HEATH",
-        "postcode": "SE7 8HU",
-        "price": 1000000,
+        "address": "43, EASTCOMBE AVENUE",
+        "postcode": "SE7 7JD",
+        "price": 895000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1133,11 +1255,11 @@
         "newBuild": false
       },
       {
-        "address": "35, WYNDCLIFF ROAD",
-        "postcode": "SE7 7LP",
-        "price": 910000,
+        "address": "13, THE VILLAGE",
+        "postcode": "SE7 8UG",
+        "price": 145000,
         "dateOfTransfer": "2025-08-28",
-        "propertyType": "Terraced",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1157,19 +1279,11 @@
         "newBuild": false
       },
       {
-        "address": "13, THE VILLAGE",
-        "postcode": "SE7 8UG",
-        "price": 145000,
+        "address": "35, WYNDCLIFF ROAD",
+        "postcode": "SE7 7LP",
+        "price": 910000,
         "dateOfTransfer": "2025-08-28",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "5, INVERINE ROAD",
-        "postcode": "SE7 7NJ",
-        "price": 325000,
-        "dateOfTransfer": "2025-08-28",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1293,19 +1407,19 @@
         "newBuild": false
       },
       {
-        "address": "38, EVERSLEY ROAD",
-        "postcode": "SE7 7LD",
-        "price": 840000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "CASSIDY HOUSE, 3, FLAT 101, BOWEN DRIVE",
         "postcode": "SE7 7GA",
         "price": 450000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, EVERSLEY ROAD",
+        "postcode": "SE7 7LD",
+        "price": 840000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1453,17 +1567,17 @@
         "newBuild": false
       },
       {
-        "address": "73, EASTCOMBE AVENUE",
-        "postcode": "SE7 7LL",
-        "price": 460000,
+        "address": "17D, WELLINGTON GARDENS",
+        "postcode": "SE7 7PJ",
+        "price": 335500,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "17D, WELLINGTON GARDENS",
-        "postcode": "SE7 7PJ",
-        "price": 335500,
+        "address": "73, EASTCOMBE AVENUE",
+        "postcode": "SE7 7LL",
+        "price": 460000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1557,19 +1671,19 @@
         "newBuild": false
       },
       {
-        "address": "5, SANDTOFT ROAD",
-        "postcode": "SE7 7LR",
-        "price": 775000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "ST. JOSEPHS COURT, FLAT 18, BRAMHOPE LANE",
         "postcode": "SE7 7HP",
         "price": 190000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, SANDTOFT ROAD",
+        "postcode": "SE7 7LR",
+        "price": 775000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1597,9 +1711,9 @@
         "newBuild": false
       },
       {
-        "address": "119, FLAT B, VICTORIA WAY",
-        "postcode": "SE7 7NX",
-        "price": 450000,
+        "address": "6, HEATHWOOD GARDENS",
+        "postcode": "SE7 8EP",
+        "price": 320000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1621,19 +1735,19 @@
         "newBuild": false
       },
       {
+        "address": "119, FLAT B, VICTORIA WAY",
+        "postcode": "SE7 7NX",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "82, CANBERRA ROAD",
         "postcode": "SE7 8PE",
         "price": 750000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "6, HEATHWOOD GARDENS",
-        "postcode": "SE7 8EP",
-        "price": 320000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1669,11 +1783,11 @@
         "newBuild": false
       },
       {
-        "address": "5, EMPIRE CLOSE",
-        "postcode": "SE7 7FL",
-        "price": 587500,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Terraced",
+        "address": "61 - 68, EASTMOOR STREET",
+        "postcode": "SE7 8LX",
+        "price": 9600000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1693,17 +1807,25 @@
         "newBuild": false
       },
       {
-        "address": "138, GREENBAY ROAD",
-        "postcode": "SE7 8PU",
-        "price": 155000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Flat/Maisonette",
+        "address": "5, EMPIRE CLOSE",
+        "postcode": "SE7 7FL",
+        "price": 587500,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "15, CEDAR COURT",
         "postcode": "SE7 7EH",
         "price": 315000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "138, GREENBAY ROAD",
+        "postcode": "SE7 8PU",
+        "price": 155000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1749,17 +1871,17 @@
         "newBuild": false
       },
       {
-        "address": "97, EASTCOMBE AVENUE",
-        "postcode": "SE7 7LL",
-        "price": 430000,
+        "address": "107B, CHARLTON CHURCH LANE",
+        "postcode": "SE7 7AB",
+        "price": 450000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "107B, CHARLTON CHURCH LANE",
-        "postcode": "SE7 7AB",
-        "price": 450000,
+        "address": "97, EASTCOMBE AVENUE",
+        "postcode": "SE7 7LL",
+        "price": 430000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1773,14 +1895,6 @@
         "newBuild": false
       },
       {
-        "address": "49, MARLBOROUGH LANE",
-        "postcode": "SE7 7DE",
-        "price": 620000,
-        "dateOfTransfer": "2025-03-17",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "41, KASHMIR ROAD",
         "postcode": "SE7 8QN",
         "price": 560000,
@@ -1789,10 +1903,26 @@
         "newBuild": false
       },
       {
+        "address": "49, MARLBOROUGH LANE",
+        "postcode": "SE7 7DE",
+        "price": 620000,
+        "dateOfTransfer": "2025-03-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "1, KINVEACHY GARDENS",
         "postcode": "SE7 8EE",
         "price": 630000,
         "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "52, SUTLEJ ROAD",
+        "postcode": "SE7 7DB",
+        "price": 650000,
+        "dateOfTransfer": "2025-03-10",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1805,11 +1935,11 @@
         "newBuild": false
       },
       {
-        "address": "52, SUTLEJ ROAD",
-        "postcode": "SE7 7DB",
-        "price": 650000,
-        "dateOfTransfer": "2025-03-10",
-        "propertyType": "Semi-detached",
+        "address": "42, FLAT 3, WELLINGTON GARDENS",
+        "postcode": "SE7 7PH",
+        "price": 412000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1818,14 +1948,6 @@
         "price": 840000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "42, FLAT 3, WELLINGTON GARDENS",
-        "postcode": "SE7 7PH",
-        "price": 412000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1861,9 +1983,9 @@
         "newBuild": false
       },
       {
-        "address": "37, CHARLTON LANE",
-        "postcode": "SE7 8LB",
-        "price": 510000,
+        "address": "46, TALLIS GROVE",
+        "postcode": "SE7 7LA",
+        "price": 650000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1877,9 +1999,9 @@
         "newBuild": false
       },
       {
-        "address": "46, TALLIS GROVE",
-        "postcode": "SE7 7LA",
-        "price": 650000,
+        "address": "37, CHARLTON LANE",
+        "postcode": "SE7 8LB",
+        "price": 510000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1933,9 +2055,9 @@
         "newBuild": false
       },
       {
-        "address": "32, INIGO JONES ROAD",
-        "postcode": "SE7 8PH",
-        "price": 488500,
+        "address": "114, EASTCOMBE AVENUE",
+        "postcode": "SE7 7LW",
+        "price": 805000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1949,9 +2071,9 @@
         "newBuild": false
       },
       {
-        "address": "114, EASTCOMBE AVENUE",
-        "postcode": "SE7 7LW",
-        "price": 805000,
+        "address": "32, INIGO JONES ROAD",
+        "postcode": "SE7 8PH",
+        "price": 488500,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1961,14 +2083,6 @@
         "postcode": "SE7 7NU",
         "price": 422500,
         "dateOfTransfer": "2025-02-12",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ST. JOSEPHS COURT, FLAT 4, BRAMHOPE LANE",
-        "postcode": "SE7 7HP",
-        "price": 140000,
-        "dateOfTransfer": "2025-02-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1989,10 +2103,10 @@
         "newBuild": false
       },
       {
-        "address": "41, HEATHWOOD GARDENS",
-        "postcode": "SE7 8ES",
-        "price": 421000,
-        "dateOfTransfer": "2025-02-06",
+        "address": "ST. JOSEPHS COURT, FLAT 4, BRAMHOPE LANE",
+        "postcode": "SE7 7HP",
+        "price": 140000,
+        "dateOfTransfer": "2025-02-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2005,11 +2119,11 @@
         "newBuild": false
       },
       {
-        "address": "63, BERNARD ASHLEY DRIVE",
-        "postcode": "SE7 7UD",
-        "price": 285000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Other",
+        "address": "41, HEATHWOOD GARDENS",
+        "postcode": "SE7 8ES",
+        "price": 421000,
+        "dateOfTransfer": "2025-02-06",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2021,35 +2135,11 @@
         "newBuild": false
       },
       {
-        "address": "4, CHARLTON PARK LANE",
-        "postcode": "SE7 8QU",
-        "price": 325000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "32, MAYHILL ROAD",
-        "postcode": "SE7 7JQ",
-        "price": 610000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "VAIZEY'S WHARF, 3, RIVERSIDE",
-        "postcode": "SE7 7SS",
-        "price": 788380,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "26A, TROUGHTON ROAD",
-        "postcode": "SE7 7QH",
-        "price": 320000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Flat/Maisonette",
+        "address": "63, BERNARD ASHLEY DRIVE",
+        "postcode": "SE7 7UD",
+        "price": 285000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2069,9 +2159,41 @@
         "newBuild": false
       },
       {
+        "address": "VAIZEY'S WHARF, 3, RIVERSIDE",
+        "postcode": "SE7 7SS",
+        "price": 788380,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "32, MAYHILL ROAD",
+        "postcode": "SE7 7JQ",
+        "price": 610000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "26A, TROUGHTON ROAD",
+        "postcode": "SE7 7QH",
+        "price": 320000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "25, NADINE STREET",
         "postcode": "SE7 7PQ",
         "price": 555000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, CHARLTON PARK LANE",
+        "postcode": "SE7 8QU",
+        "price": 325000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2117,19 +2239,19 @@
         "newBuild": false
       },
       {
-        "address": "23, MASCALLS ROAD",
-        "postcode": "SE7 7DZ",
-        "price": 545000,
-        "dateOfTransfer": "2025-01-23",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "92, HEATHWOOD GARDENS",
         "postcode": "SE7 8ER",
         "price": 835000,
         "dateOfTransfer": "2025-01-23",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, MASCALLS ROAD",
+        "postcode": "SE7 7DZ",
+        "price": 545000,
+        "dateOfTransfer": "2025-01-23",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2181,14 +2303,6 @@
         "newBuild": false
       },
       {
-        "address": "34, THE VILLAGE",
-        "postcode": "SE7 8UD",
-        "price": 300000,
-        "dateOfTransfer": "2025-01-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "110, CHARLTON ROAD",
         "postcode": "SE7 7EY",
         "price": 925000,
@@ -2202,6 +2316,14 @@
         "price": 520000,
         "dateOfTransfer": "2025-01-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, THE VILLAGE",
+        "postcode": "SE7 8UD",
+        "price": 300000,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2237,7 +2359,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 600450,
+    "averagePrice": 629911,
     "medianPrice": 490000
   },
   "representatives": {

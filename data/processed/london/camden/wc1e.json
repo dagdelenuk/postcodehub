@@ -3,8 +3,8 @@
   "slug": "wc1e",
   "city": "London",
   "borough": "Camden",
-  "latitude": 51.521720907407456,
-  "longitude": -0.13282808333333335,
+  "latitude": 51.521570382022475,
+  "longitude": -0.13287370786516856,
   "wards": [
     "Bloomsbury"
   ],
@@ -36,6 +36,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Gower Street, London",
         "postcode": "WC1E 6BT",
         "numberOfPupils": null,
@@ -47,6 +48,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Keppel Street, London",
         "postcode": "WC1E 7HT",
         "numberOfPupils": null,
@@ -58,6 +60,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Senate House, Malet Street, London",
         "postcode": "WC1E 7HU",
         "numberOfPupils": null,
@@ -69,6 +72,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Malet Street, London",
         "postcode": "WC1E 7HX",
         "numberOfPupils": null,
@@ -80,97 +84,113 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5823,
-        "violentCrimes": 1136,
-        "propertyCrimes": 3866
+        "totalCrimes": 5850,
+        "violentCrimes": 1144,
+        "propertyCrimes": 3881
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5213,
-        "violentCrimes": 1047,
-        "propertyCrimes": 3276
+        "totalCrimes": 5238,
+        "violentCrimes": 1057,
+        "propertyCrimes": 3295
       },
       {
         "month": "2025-09",
-        "totalCrimes": 5115,
-        "violentCrimes": 1088,
-        "propertyCrimes": 3287
+        "totalCrimes": 5152,
+        "violentCrimes": 1097,
+        "propertyCrimes": 3317
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5717,
-        "violentCrimes": 1134,
-        "propertyCrimes": 3769
+        "totalCrimes": 5747,
+        "violentCrimes": 1144,
+        "propertyCrimes": 3790
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6471,
-        "violentCrimes": 1100,
-        "propertyCrimes": 4566
+        "totalCrimes": 6508,
+        "violentCrimes": 1110,
+        "propertyCrimes": 4595
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6510,
-        "violentCrimes": 1125,
-        "propertyCrimes": 4602
+        "totalCrimes": 6535,
+        "violentCrimes": 1132,
+        "propertyCrimes": 4622
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4965,
-        "violentCrimes": 942,
-        "propertyCrimes": 3246
+        "totalCrimes": 4997,
+        "violentCrimes": 948,
+        "propertyCrimes": 3273
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4710,
-        "violentCrimes": 834,
-        "propertyCrimes": 3133
+        "totalCrimes": 4717,
+        "violentCrimes": 833,
+        "propertyCrimes": 3142
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4702,
-        "violentCrimes": 996,
-        "propertyCrimes": 2910
+        "totalCrimes": 4736,
+        "violentCrimes": 1006,
+        "propertyCrimes": 2931
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4857,
-        "violentCrimes": 1019,
-        "propertyCrimes": 2978
+        "totalCrimes": 4884,
+        "violentCrimes": 1028,
+        "propertyCrimes": 2992
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4746,
-        "violentCrimes": 1077,
-        "propertyCrimes": 2850
+        "totalCrimes": 4770,
+        "violentCrimes": 1079,
+        "propertyCrimes": 2871
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4717,
-        "violentCrimes": 1050,
-        "propertyCrimes": 2853
+        "totalCrimes": 4735,
+        "violentCrimes": 1052,
+        "propertyCrimes": 2863
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 7509,
-      "bicycle-theft": 738,
-      "burglary": 1474,
-      "criminal-damage-arson": 982,
-      "drugs": 1862,
-      "other-theft": 13462,
-      "possession-of-weapons": 193,
-      "public-order": 2371,
-      "robbery": 2227,
-      "shoplifting": 6756,
-      "theft-from-the-person": 16624,
-      "vehicle-crime": 1300,
-      "violent-crime": 7757,
-      "other-crime": 291
+      "anti-social-behaviour": 7514,
+      "bicycle-theft": 739,
+      "burglary": 1475,
+      "criminal-damage-arson": 993,
+      "drugs": 1860,
+      "other-theft": 13589,
+      "possession-of-weapons": 192,
+      "public-order": 2391,
+      "robbery": 2242,
+      "shoplifting": 6791,
+      "theft-from-the-person": 16686,
+      "vehicle-crime": 1299,
+      "violent-crime": 7805,
+      "other-crime": 293
     },
-    "totalLast12Months": 63546
+    "totalLast12Months": 63869
   },
   "property": {
     "sales": [
+      {
+        "address": "76, RIDGMOUNT GARDENS",
+        "postcode": "WC1E 7AX",
+        "price": 930000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, FLAT 40, HUNTLEY STREET",
+        "postcode": "WC1E 6AJ",
+        "price": 770000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "GOWER MEWS MANSIONS, FLAT 9, GOWER MEWS",
         "postcode": "WC1E 6HR",
@@ -192,6 +212,14 @@
         "postcode": "WC1E 6JP",
         "price": 360000,
         "dateOfTransfer": "2025-12-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30 - 40, FLAT 45, GRAFTON WAY",
+        "postcode": "WC1E 6DX",
+        "price": 370000,
+        "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -244,8 +272,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 799167,
-    "medianPrice": 820000
+    "averagePrice": 771875,
+    "medianPrice": 795000
   },
   "representatives": {
     "representatives": [

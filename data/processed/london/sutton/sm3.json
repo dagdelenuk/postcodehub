@@ -3,8 +3,8 @@
   "slug": "sm3",
   "city": "London",
   "borough": "Sutton",
-  "latitude": 51.37129450395777,
-  "longitude": -0.21624711609498673,
+  "latitude": 51.37127874456521,
+  "longitude": -0.21636158695652172,
   "wards": [
     "Cheam",
     "Lower Morden",
@@ -145,8 +145,9 @@
         "name": "St Dunstan's Cheam CofE Primary School",
         "urn": "102992",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "20/04/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Anne Boleyn's Walk, Cheam, Sutton",
         "postcode": "SM3 8DF",
         "numberOfPupils": 349,
@@ -157,7 +158,8 @@
         "urn": "136785",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Chatsworth Road, Cheam, Sutton",
         "postcode": "SM3 8PW",
         "numberOfPupils": 2119,
@@ -168,7 +170,8 @@
         "urn": "136795",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "25/05/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Ewell Road, Cheam, Sutton",
         "postcode": "SM3 8AB",
         "numberOfPupils": 1494,
@@ -179,7 +182,8 @@
         "urn": "136914",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "24/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Sutton Common Road, Sutton",
         "postcode": "SM3 9PS",
         "numberOfPupils": 1754,
@@ -191,6 +195,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Molesey Drive, Cheam, Sutton",
         "postcode": "SM3 9UU",
         "numberOfPupils": 916,
@@ -201,7 +206,8 @@
         "urn": "143375",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Stoughton Avenue, Cheam, Sutton",
         "postcode": "SM3 8PQ",
         "numberOfPupils": 471,
@@ -213,6 +219,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Ridge Road, North Cheam, Sutton",
         "postcode": "SM3 9LY",
         "numberOfPupils": 450,
@@ -224,6 +231,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "660 London Road, North Cheam",
         "postcode": "SM3 9BZ",
         "numberOfPupils": 78,
@@ -234,7 +242,8 @@
         "urn": "151891",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "29/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "London Road, North Cheam, Sutton",
         "postcode": "SM3 9DL",
         "numberOfPupils": 465,
@@ -270,7 +279,7 @@
       },
       {
         "month": "2025-11",
-        "totalCrimes": 245,
+        "totalCrimes": 247,
         "violentCrimes": 82,
         "propertyCrimes": 99
       },
@@ -282,14 +291,14 @@
       },
       {
         "month": "2026-01",
-        "totalCrimes": 250,
+        "totalCrimes": 251,
         "violentCrimes": 110,
         "propertyCrimes": 88
       },
       {
         "month": "2026-02",
-        "totalCrimes": 260,
-        "violentCrimes": 99,
+        "totalCrimes": 259,
+        "violentCrimes": 98,
         "propertyCrimes": 88
       },
       {
@@ -318,7 +327,7 @@
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 736,
+      "anti-social-behaviour": 739,
       "bicycle-theft": 22,
       "burglary": 152,
       "criminal-damage-arson": 160,
@@ -330,13 +339,53 @@
       "shoplifting": 219,
       "theft-from-the-person": 61,
       "vehicle-crime": 277,
-      "violent-crime": 980,
+      "violent-crime": 979,
       "other-crime": 43
     },
-    "totalLast12Months": 3298
+    "totalLast12Months": 3300
   },
   "property": {
     "sales": [
+      {
+        "address": "182, RIDGE ROAD",
+        "postcode": "SM3 9LZ",
+        "price": 450000,
+        "dateOfTransfer": "2026-07-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, THE SPINNEY, CHEAM",
+        "postcode": "SM3 8JG",
+        "price": 687500,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, FIELDSEND ROAD, CHEAM",
+        "postcode": "SM3 8NR",
+        "price": 540000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "164, HENLEY AVENUE, CHEAM",
+        "postcode": "SM3 9SA",
+        "price": 570000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, MATLOCK CRESCENT, CHEAM",
+        "postcode": "SM3 9SP",
+        "price": 535000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "77, EGHAM CRESCENT, CHEAM",
         "postcode": "SM3 9AP",
@@ -346,11 +395,43 @@
         "newBuild": false
       },
       {
+        "address": "ELIZABETH HOUSE, 32, FLAT 20, MICKLEHAM GARDENS, CHEAM",
+        "postcode": "SM3 8AG",
+        "price": 300000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHARLESWORTH COURT, FLAT 13, WHYTE MEWS, CHEAM",
+        "postcode": "SM3 8DR",
+        "price": 525000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "138, MALDEN ROAD, CHEAM",
         "postcode": "SM3 8RA",
         "price": 465000,
         "dateOfTransfer": "2026-06-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "143, EPSOM ROAD",
+        "postcode": "SM3 9EY",
+        "price": 225000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "396, SUTTON COMMON ROAD",
+        "postcode": "SM3 9PL",
+        "price": 300000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -426,6 +507,14 @@
         "newBuild": false
       },
       {
+        "address": "38, PRIORY ROAD, CHEAM",
+        "postcode": "SM3 8LN",
+        "price": 625000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "82, BARRINGTON ROAD",
         "postcode": "SM3 9PR",
         "price": 715000,
@@ -450,17 +539,17 @@
         "newBuild": false
       },
       {
-        "address": "193, MALDEN ROAD, CHEAM",
-        "postcode": "SM3 8QY",
-        "price": 427000,
+        "address": "3, STOUGHTON AVENUE, CHEAM",
+        "postcode": "SM3 8PH",
+        "price": 607500,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "3, STOUGHTON AVENUE, CHEAM",
-        "postcode": "SM3 8PH",
-        "price": 607500,
+        "address": "193, MALDEN ROAD, CHEAM",
+        "postcode": "SM3 8QY",
+        "price": 427000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Terraced",
         "newBuild": false
@@ -471,14 +560,6 @@
         "price": 572000,
         "dateOfTransfer": "2026-05-07",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "57, ASH ROAD",
-        "postcode": "SM3 9LA",
-        "price": 675000,
-        "dateOfTransfer": "2026-05-01",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -498,9 +579,17 @@
         "newBuild": false
       },
       {
-        "address": "23, CHERTSEY DRIVE, CHEAM",
-        "postcode": "SM3 9UG",
-        "price": 595000,
+        "address": "57, ASH ROAD",
+        "postcode": "SM3 9LA",
+        "price": 675000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "92, BROCKS DRIVE, CHEAM",
+        "postcode": "SM3 9UR",
+        "price": 512000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -522,9 +611,9 @@
         "newBuild": false
       },
       {
-        "address": "92, BROCKS DRIVE, CHEAM",
-        "postcode": "SM3 9UR",
-        "price": 512000,
+        "address": "23, CHERTSEY DRIVE, CHEAM",
+        "postcode": "SM3 9UG",
+        "price": 595000,
         "dateOfTransfer": "2026-04-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -610,6 +699,14 @@
         "newBuild": false
       },
       {
+        "address": "521, LONDON ROAD, CHEAM",
+        "postcode": "SM3 8JR",
+        "price": 5000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "472, SUTTON COMMON ROAD",
         "postcode": "SM3 9JN",
         "price": 612500,
@@ -623,6 +720,14 @@
         "price": 460000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "114, ABBOTTS ROAD, CHEAM",
+        "postcode": "SM3 9SX",
+        "price": 510000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -642,6 +747,14 @@
         "newBuild": false
       },
       {
+        "address": "40, FROMONDES ROAD, CHEAM",
+        "postcode": "SM3 8QR",
+        "price": 700000,
+        "dateOfTransfer": "2026-03-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "QUEENSFIELD COURT, 26, LONDON ROAD, CHEAM",
         "postcode": "SM3 8JD",
         "price": 305000,
@@ -653,14 +766,6 @@
         "address": "13, SHERBORNE ROAD",
         "postcode": "SM3 9QA",
         "price": 535000,
-        "dateOfTransfer": "2026-03-19",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "40, FROMONDES ROAD, CHEAM",
-        "postcode": "SM3 8QR",
-        "price": 700000,
         "dateOfTransfer": "2026-03-19",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -698,10 +803,26 @@
         "newBuild": false
       },
       {
+        "address": "26, GLENTHORNE GARDENS",
+        "postcode": "SM3 9NL",
+        "price": 475000,
+        "dateOfTransfer": "2026-03-10",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "27, EGHAM CRESCENT, CHEAM",
         "postcode": "SM3 9AL",
         "price": 562500,
         "dateOfTransfer": "2026-03-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, CARLTON CRESCENT, CHEAM",
+        "postcode": "SM3 9TS",
+        "price": 650000,
+        "dateOfTransfer": "2026-03-06",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -722,6 +843,14 @@
         "newBuild": false
       },
       {
+        "address": "23, FROMONDES ROAD, CHEAM",
+        "postcode": "SM3 8QP",
+        "price": 657500,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "40, TONFIELD ROAD",
         "postcode": "SM3 9JP",
         "price": 630000,
@@ -730,11 +859,11 @@
         "newBuild": false
       },
       {
-        "address": "23, FROMONDES ROAD, CHEAM",
-        "postcode": "SM3 8QP",
-        "price": 657500,
+        "address": "460, GANDER GREEN LANE, CHEAM",
+        "postcode": "SM3 9RG",
+        "price": 416000,
         "dateOfTransfer": "2026-02-20",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -766,6 +895,14 @@
         "postcode": "SM3 8NP",
         "price": 677500,
         "dateOfTransfer": "2026-02-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "40, CHARTWELL GARDENS, CHEAM",
+        "postcode": "SM3 9TQ",
+        "price": 400000,
+        "dateOfTransfer": "2026-02-13",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -778,9 +915,25 @@
         "newBuild": false
       },
       {
+        "address": "25, WINDSOR AVENUE, CHEAM",
+        "postcode": "SM3 9RR",
+        "price": 515000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "95, ST MARGARETS AVENUE, CHEAM",
         "postcode": "SM3 9TX",
         "price": 525000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, WICKHAM AVENUE, CHEAM",
+        "postcode": "SM3 8DT",
+        "price": 700000,
         "dateOfTransfer": "2026-02-12",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -802,18 +955,26 @@
         "newBuild": false
       },
       {
-        "address": "13, WICKHAM AVENUE, CHEAM",
-        "postcode": "SM3 8DT",
-        "price": 700000,
-        "dateOfTransfer": "2026-02-12",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "46, RIDGE ROAD",
         "postcode": "SM3 9LJ",
         "price": 650000,
         "dateOfTransfer": "2026-02-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "190, CHURCH HILL ROAD, CHEAM",
+        "postcode": "SM3 8NQ",
+        "price": 600000,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "135, WICKHAM AVENUE, CHEAM",
+        "postcode": "SM3 8EB",
+        "price": 972000,
+        "dateOfTransfer": "2026-02-05",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -834,19 +995,19 @@
         "newBuild": false
       },
       {
-        "address": "8A, THE SPINNEY, CHEAM",
-        "postcode": "SM3 8JG",
-        "price": 402000,
-        "dateOfTransfer": "2026-02-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "76, ST MARGARETS AVENUE, CHEAM",
         "postcode": "SM3 9TT",
         "price": 565000,
         "dateOfTransfer": "2026-02-03",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "8A, THE SPINNEY, CHEAM",
+        "postcode": "SM3 8JG",
+        "price": 402000,
+        "dateOfTransfer": "2026-02-03",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -858,17 +1019,17 @@
         "newBuild": false
       },
       {
-        "address": "51, KINGSDOWN ROAD, CHEAM",
-        "postcode": "SM3 8NZ",
-        "price": 540000,
+        "address": "13, FIR ROAD",
+        "postcode": "SM3 9JY",
+        "price": 585000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "13, FIR ROAD",
-        "postcode": "SM3 9JY",
-        "price": 585000,
+        "address": "51, KINGSDOWN ROAD, CHEAM",
+        "postcode": "SM3 8NZ",
+        "price": 540000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -879,6 +1040,14 @@
         "price": 490000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "353, SUTTON COMMON ROAD",
+        "postcode": "SM3 9HZ",
+        "price": 825000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -898,6 +1067,14 @@
         "newBuild": false
       },
       {
+        "address": "56, KEW CRESCENT, CHEAM",
+        "postcode": "SM3 9RT",
+        "price": 570000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "16, SENHOUSE ROAD, CHEAM",
         "postcode": "SM3 8LE",
         "price": 559500,
@@ -906,10 +1083,10 @@
         "newBuild": false
       },
       {
-        "address": "56, KEW CRESCENT, CHEAM",
-        "postcode": "SM3 9RT",
-        "price": 570000,
-        "dateOfTransfer": "2026-01-23",
+        "address": "81, EGHAM CRESCENT, CHEAM",
+        "postcode": "SM3 9AP",
+        "price": 585000,
+        "dateOfTransfer": "2026-01-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -919,14 +1096,6 @@
         "price": 625000,
         "dateOfTransfer": "2026-01-21",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "81, EGHAM CRESCENT, CHEAM",
-        "postcode": "SM3 9AP",
-        "price": 585000,
-        "dateOfTransfer": "2026-01-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1250,14 +1419,6 @@
         "newBuild": false
       },
       {
-        "address": "93, EPSOM ROAD",
-        "postcode": "SM3 9EY",
-        "price": 350000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "125, WICKHAM AVENUE, CHEAM",
         "postcode": "SM3 8EB",
         "price": 760000,
@@ -1274,6 +1435,14 @@
         "newBuild": false
       },
       {
+        "address": "454, GANDER GREEN LANE, CHEAM",
+        "postcode": "SM3 9RG",
+        "price": 335000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "82, HAMILTON AVENUE, CHEAM",
         "postcode": "SM3 9RL",
         "price": 335000,
@@ -1282,11 +1451,11 @@
         "newBuild": false
       },
       {
-        "address": "454, GANDER GREEN LANE, CHEAM",
-        "postcode": "SM3 9RG",
-        "price": 335000,
+        "address": "93, EPSOM ROAD",
+        "postcode": "SM3 9EY",
+        "price": 350000,
         "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1330,19 +1499,19 @@
         "newBuild": false
       },
       {
-        "address": "3, THE MEADS, CHEAM",
-        "postcode": "SM3 9AX",
-        "price": 475000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "8A, NORTHFIELD CRESCENT, CHEAM",
         "postcode": "SM3 9SU",
         "price": 565000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, THE MEADS, CHEAM",
+        "postcode": "SM3 9AX",
+        "price": 475000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1498,6 +1667,22 @@
         "newBuild": false
       },
       {
+        "address": "22, BROCKS DRIVE, CHEAM",
+        "postcode": "SM3 9UR",
+        "price": 582500,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6A, HENLEY AVENUE, CHEAM",
+        "postcode": "SM3 9SQ",
+        "price": 475000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "56, WHITTAKER ROAD",
         "postcode": "SM3 9QG",
         "price": 550000,
@@ -1514,11 +1699,11 @@
         "newBuild": false
       },
       {
-        "address": "22, BROCKS DRIVE, CHEAM",
-        "postcode": "SM3 9UR",
-        "price": 582500,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Terraced",
+        "address": "279 - 281, MALDEN ROAD, CHEAM",
+        "postcode": "SM3 8ET",
+        "price": 10000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1714,6 +1899,14 @@
         "newBuild": false
       },
       {
+        "address": "152, HENLEY AVENUE, CHEAM",
+        "postcode": "SM3 9SA",
+        "price": 750000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "220, RIDGE ROAD",
         "postcode": "SM3 9LY",
         "price": 595000,
@@ -1725,14 +1918,6 @@
         "address": "137, WINDSOR AVENUE, CHEAM",
         "postcode": "SM3 9RY",
         "price": 535000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "152, HENLEY AVENUE, CHEAM",
-        "postcode": "SM3 9SA",
-        "price": 750000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1980,7 +2165,7 @@
       {
         "address": "283B, MALDEN ROAD",
         "postcode": "SM3 8ET",
-        "price": 203000,
+        "price": 169000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1988,7 +2173,7 @@
       {
         "address": "283B, MALDEN ROAD",
         "postcode": "SM3 8ET",
-        "price": 169000,
+        "price": 203000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2098,14 +2283,6 @@
         "newBuild": false
       },
       {
-        "address": "FITZNELL COURT, 12, FLAT 18, POND HILL GARDENS, CHEAM",
-        "postcode": "SM3 8QN",
-        "price": 420000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "27, PALMER AVENUE, CHEAM",
         "postcode": "SM3 8EF",
         "price": 1070000,
@@ -2119,6 +2296,14 @@
         "price": 452500,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "FITZNELL COURT, 12, FLAT 18, POND HILL GARDENS, CHEAM",
+        "postcode": "SM3 8QN",
+        "price": 420000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2146,6 +2331,14 @@
         "newBuild": false
       },
       {
+        "address": "QUEENSFIELD COURT, 12, LONDON ROAD, CHEAM",
+        "postcode": "SM3 8JD",
+        "price": 330600,
+        "dateOfTransfer": "2025-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "48, WORDSWORTH DRIVE, CHEAM",
         "postcode": "SM3 8HF",
         "price": 650000,
@@ -2157,14 +2350,6 @@
         "address": "MOUNTFORD HOUSE, 83, FLAT 2, WORDSWORTH DRIVE, CHEAM",
         "postcode": "SM3 8HH",
         "price": 435000,
-        "dateOfTransfer": "2025-06-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "QUEENSFIELD COURT, 12, LONDON ROAD, CHEAM",
-        "postcode": "SM3 8JD",
-        "price": 330600,
         "dateOfTransfer": "2025-06-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2426,27 +2611,27 @@
         "newBuild": false
       },
       {
+        "address": "824B, LONDON ROAD, CHEAM",
+        "postcode": "SM3 9BJ",
+        "price": 120000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "824B, LONDON ROAD, CHEAM",
+        "postcode": "SM3 9BJ",
+        "price": 120000,
+        "dateOfTransfer": "2025-04-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "SIDMOUTH COURT, GARAGE NO. 3, WORDSWORTH DRIVE",
         "postcode": "SM3 8HJ",
         "price": 17500,
         "dateOfTransfer": "2025-04-24",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "824B, LONDON ROAD, CHEAM",
-        "postcode": "SM3 9BJ",
-        "price": 120000,
-        "dateOfTransfer": "2025-04-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "824B, LONDON ROAD, CHEAM",
-        "postcode": "SM3 9BJ",
-        "price": 120000,
-        "dateOfTransfer": "2025-04-24",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2466,19 +2651,19 @@
         "newBuild": false
       },
       {
-        "address": "31, PRIORY CRESCENT, CHEAM",
-        "postcode": "SM3 8LR",
-        "price": 552500,
-        "dateOfTransfer": "2025-04-15",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "17, PARK ROAD, CHEAM",
         "postcode": "SM3 8QB",
         "price": 1224518,
         "dateOfTransfer": "2025-04-15",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "31, PRIORY CRESCENT, CHEAM",
+        "postcode": "SM3 8LR",
+        "price": 552500,
+        "dateOfTransfer": "2025-04-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2506,6 +2691,30 @@
         "newBuild": false
       },
       {
+        "address": "MOUNTFORD HOUSE, 83, FLAT 5, WORDSWORTH DRIVE, CHEAM",
+        "postcode": "SM3 8HH",
+        "price": 318000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "YARDLEY COURT, FLAT 11, HEMINGFORD ROAD, CHEAM",
+        "postcode": "SM3 8HL",
+        "price": 365000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, MORDEN WAY",
+        "postcode": "SM3 9PQ",
+        "price": 660000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "150, HENLEY AVENUE, CHEAM",
         "postcode": "SM3 9SA",
         "price": 700000,
@@ -2527,30 +2736,6 @@
         "price": 525000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "MOUNTFORD HOUSE, 83, FLAT 5, WORDSWORTH DRIVE, CHEAM",
-        "postcode": "SM3 8HH",
-        "price": 318000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "31, MORDEN WAY",
-        "postcode": "SM3 9PQ",
-        "price": 660000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "YARDLEY COURT, FLAT 11, HEMINGFORD ROAD, CHEAM",
-        "postcode": "SM3 8HL",
-        "price": 365000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2594,35 +2779,11 @@
         "newBuild": false
       },
       {
-        "address": "58, CHERTSEY DRIVE, CHEAM",
-        "postcode": "SM3 9UL",
-        "price": 592500,
+        "address": "74, TABOR GARDENS, CHEAM",
+        "postcode": "SM3 8RY",
+        "price": 766000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "YARDLEY COURT, FLAT 31, HEMINGFORD ROAD, CHEAM",
-        "postcode": "SM3 8HL",
-        "price": 347000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "29A, MALDEN ROAD, CHEAM",
-        "postcode": "SM3 8QW",
-        "price": 255000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "30, EWELL ROAD, CHEAM",
-        "postcode": "SM3 8BU",
-        "price": 300000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Other",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2650,6 +2811,22 @@
         "newBuild": false
       },
       {
+        "address": "30, EWELL ROAD, CHEAM",
+        "postcode": "SM3 8BU",
+        "price": 300000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "29A, MALDEN ROAD, CHEAM",
+        "postcode": "SM3 8QW",
+        "price": 255000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "GARAGE G3, OAKDENE MEWS",
         "postcode": "SM3 9LE",
         "price": 16000,
@@ -2658,9 +2835,9 @@
         "newBuild": false
       },
       {
-        "address": "74, TABOR GARDENS, CHEAM",
-        "postcode": "SM3 8RY",
-        "price": 766000,
+        "address": "3, GLENTHORNE CLOSE",
+        "postcode": "SM3 9NN",
+        "price": 536000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2682,11 +2859,19 @@
         "newBuild": false
       },
       {
-        "address": "3, GLENTHORNE CLOSE",
-        "postcode": "SM3 9NN",
-        "price": 536000,
+        "address": "58, CHERTSEY DRIVE, CHEAM",
+        "postcode": "SM3 9UL",
+        "price": 592500,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "YARDLEY COURT, FLAT 31, HEMINGFORD ROAD, CHEAM",
+        "postcode": "SM3 8HL",
+        "price": 347000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2695,14 +2880,6 @@
         "price": 565000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "4, TUDOR CLOSE, CHEAM",
-        "postcode": "SM3 8QS",
-        "price": 700000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2722,17 +2899,17 @@
         "newBuild": false
       },
       {
-        "address": "173, WINDSOR AVENUE, CHEAM",
-        "postcode": "SM3 9RY",
-        "price": 467000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
+        "address": "4, TUDOR CLOSE, CHEAM",
+        "postcode": "SM3 8QS",
+        "price": 700000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "80, HENLEY AVENUE, CHEAM",
-        "postcode": "SM3 9SF",
-        "price": 540000,
+        "address": "173, WINDSOR AVENUE, CHEAM",
+        "postcode": "SM3 9RY",
+        "price": 467000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2751,6 +2928,14 @@
         "price": 340000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "80, HENLEY AVENUE, CHEAM",
+        "postcode": "SM3 9SF",
+        "price": 540000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2786,22 +2971,6 @@
         "newBuild": false
       },
       {
-        "address": "5, HAYES CRESCENT, CHEAM",
-        "postcode": "SM3 9TL",
-        "price": 425000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "5, WARNER AVENUE, CHEAM",
-        "postcode": "SM3 9RH",
-        "price": 525000,
-        "dateOfTransfer": "2025-03-25",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "BROOK COURT, 78, FLAT 1, WORDSWORTH DRIVE, CHEAM",
         "postcode": "SM3 8HH",
         "price": 185000,
@@ -2826,6 +2995,14 @@
         "newBuild": false
       },
       {
+        "address": "5, WARNER AVENUE, CHEAM",
+        "postcode": "SM3 9RH",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "29, PALMER AVENUE, CHEAM",
         "postcode": "SM3 8EF",
         "price": 739000,
@@ -2837,6 +3014,14 @@
         "address": "26, TILEHURST ROAD, CHEAM",
         "postcode": "SM3 8PB",
         "price": 620000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, HAYES CRESCENT, CHEAM",
+        "postcode": "SM3 9TL",
+        "price": 425000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2890,6 +3075,14 @@
         "newBuild": false
       },
       {
+        "address": "277, SUTTON COMMON ROAD",
+        "postcode": "SM3 9QB",
+        "price": 645000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "204, RIDGE ROAD",
         "postcode": "SM3 9LS",
         "price": 430000,
@@ -2903,14 +3096,6 @@
         "price": 250000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "277, SUTTON COMMON ROAD",
-        "postcode": "SM3 9QB",
-        "price": 645000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3106,19 +3291,19 @@
         "newBuild": false
       },
       {
-        "address": "532, FLAT A, LONDON ROAD",
-        "postcode": "SM3 8HW",
-        "price": 515000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "303, SUTTON COMMON ROAD",
         "postcode": "SM3 9NH",
         "price": 640000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "532, FLAT A, LONDON ROAD",
+        "postcode": "SM3 8HW",
+        "price": 515000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3186,19 +3371,19 @@
         "newBuild": false
       },
       {
-        "address": "17, CAMBERLEY CLOSE, CHEAM",
-        "postcode": "SM3 9BH",
-        "price": 320000,
-        "dateOfTransfer": "2025-02-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "ENNOR COURT, 19, LONDON ROAD, CHEAM",
         "postcode": "SM3 8JL",
         "price": 320000,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, CAMBERLEY CLOSE, CHEAM",
+        "postcode": "SM3 9BH",
+        "price": 320000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3410,6 +3595,14 @@
         "newBuild": false
       },
       {
+        "address": "52, MATLOCK CRESCENT, CHEAM",
+        "postcode": "SM3 9SN",
+        "price": 650000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "43, KINGSDOWN ROAD, CHEAM",
         "postcode": "SM3 8NZ",
         "price": 480000,
@@ -3423,14 +3616,6 @@
         "price": 252500,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "52, MATLOCK CRESCENT, CHEAM",
-        "postcode": "SM3 9SN",
-        "price": 650000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3466,19 +3651,19 @@
         "newBuild": false
       },
       {
-        "address": "262, GANDER GREEN LANE, CHEAM",
-        "postcode": "SM3 9QF",
-        "price": 545000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "716A, LONDON ROAD, CHEAM",
         "postcode": "SM3 9BY",
         "price": 230000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "262, GANDER GREEN LANE, CHEAM",
+        "postcode": "SM3 9QF",
+        "price": 545000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3514,8 +3699,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 522349,
-    "medianPrice": 545000
+    "averagePrice": 520246,
+    "medianPrice": 540000
   },
   "representatives": {
     "representatives": [

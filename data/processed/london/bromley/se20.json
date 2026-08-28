@@ -3,8 +3,8 @@
   "slug": "se20",
   "city": "London",
   "borough": "Bromley",
-  "latitude": 51.412210331958754,
-  "longitude": -0.059494214432989745,
+  "latitude": 51.412155398734136,
+  "longitude": -0.05963591350210975,
   "wards": [
     "Clock House",
     "Crystal Palace & Anerley",
@@ -119,8 +119,9 @@
         "name": "Stewart Fleming Primary School",
         "urn": "137035",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "20/04/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Witham Road, Anerley, London",
         "postcode": "SE20 7YB",
         "numberOfPupils": 570,
@@ -130,8 +131,9 @@
         "name": "Harris Primary Academy Kent House",
         "urn": "139678",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "05/05/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "High Street, Penge, London",
         "postcode": "SE20 7QR",
         "numberOfPupils": 394,
@@ -143,6 +145,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Malcolm Road, Penge, London",
         "postcode": "SE20 8RH",
         "numberOfPupils": 369,
@@ -153,7 +156,8 @@
         "urn": "140648",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "17/12/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Maple Road, Penge, London",
         "postcode": "SE20 8HU",
         "numberOfPupils": 152,
@@ -163,8 +167,9 @@
         "name": "James Dixon Primary School",
         "urn": "143774",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "05/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "William Booth Road, Anerley, London",
         "postcode": "SE20 8BW",
         "numberOfPupils": 425,
@@ -176,6 +181,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Genoa Road, Anerley, London",
         "postcode": "SE20 8ES",
         "numberOfPupils": 183,
@@ -187,103 +193,263 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 536,
+        "totalCrimes": 538,
         "violentCrimes": 183,
         "propertyCrimes": 224
       },
       {
         "month": "2025-08",
-        "totalCrimes": 546,
+        "totalCrimes": 549,
         "violentCrimes": 177,
-        "propertyCrimes": 245
+        "propertyCrimes": 246
       },
       {
         "month": "2025-09",
-        "totalCrimes": 517,
-        "violentCrimes": 178,
-        "propertyCrimes": 204
+        "totalCrimes": 530,
+        "violentCrimes": 185,
+        "propertyCrimes": 205
       },
       {
         "month": "2025-10",
-        "totalCrimes": 468,
-        "violentCrimes": 158,
-        "propertyCrimes": 184
+        "totalCrimes": 471,
+        "violentCrimes": 157,
+        "propertyCrimes": 187
       },
       {
         "month": "2025-11",
-        "totalCrimes": 463,
-        "violentCrimes": 148,
+        "totalCrimes": 465,
+        "violentCrimes": 149,
         "propertyCrimes": 186
       },
       {
         "month": "2025-12",
-        "totalCrimes": 443,
+        "totalCrimes": 446,
         "violentCrimes": 150,
-        "propertyCrimes": 169
+        "propertyCrimes": 171
       },
       {
         "month": "2026-01",
-        "totalCrimes": 406,
-        "violentCrimes": 138,
-        "propertyCrimes": 151
+        "totalCrimes": 407,
+        "violentCrimes": 139,
+        "propertyCrimes": 150
       },
       {
         "month": "2026-02",
-        "totalCrimes": 447,
-        "violentCrimes": 171,
+        "totalCrimes": 451,
+        "violentCrimes": 174,
         "propertyCrimes": 144
       },
       {
         "month": "2026-03",
-        "totalCrimes": 426,
-        "violentCrimes": 163,
-        "propertyCrimes": 163
+        "totalCrimes": 431,
+        "violentCrimes": 167,
+        "propertyCrimes": 164
       },
       {
         "month": "2026-04",
-        "totalCrimes": 450,
-        "violentCrimes": 140,
-        "propertyCrimes": 185
+        "totalCrimes": 456,
+        "violentCrimes": 141,
+        "propertyCrimes": 189
       },
       {
         "month": "2026-05",
-        "totalCrimes": 532,
-        "violentCrimes": 211,
-        "propertyCrimes": 170
+        "totalCrimes": 541,
+        "violentCrimes": 213,
+        "propertyCrimes": 172
       },
       {
         "month": "2026-06",
-        "totalCrimes": 492,
-        "violentCrimes": 199,
-        "propertyCrimes": 160
+        "totalCrimes": 511,
+        "violentCrimes": 207,
+        "propertyCrimes": 162
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1216,
-      "bicycle-theft": 38,
-      "burglary": 221,
-      "criminal-damage-arson": 306,
-      "drugs": 243,
-      "other-theft": 362,
-      "possession-of-weapons": 33,
+      "anti-social-behaviour": 1241,
+      "bicycle-theft": 39,
+      "burglary": 224,
+      "criminal-damage-arson": 309,
+      "drugs": 246,
+      "other-theft": 369,
+      "possession-of-weapons": 35,
       "public-order": 321,
-      "robbery": 137,
-      "shoplifting": 459,
-      "theft-from-the-person": 146,
-      "vehicle-crime": 653,
-      "violent-crime": 1525,
-      "other-crime": 66
+      "robbery": 140,
+      "shoplifting": 460,
+      "theft-from-the-person": 147,
+      "vehicle-crime": 652,
+      "violent-crime": 1546,
+      "other-crime": 67
     },
-    "totalLast12Months": 5726
+    "totalLast12Months": 5796
   },
   "property": {
     "sales": [
+      {
+        "address": "KATHERINE COURT, 39, FLAT 8, STODART ROAD",
+        "postcode": "SE20 8ET",
+        "price": 350000,
+        "dateOfTransfer": "2026-07-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48A, THICKET ROAD",
+        "postcode": "SE20 8DR",
+        "price": 200000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "67, ROYSTON ROAD",
+        "postcode": "SE20 7QW",
+        "price": 515000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SYCAMORE HOUSE, 53A, FLAT 20, LENNARD ROAD",
+        "postcode": "SE20 7PQ",
+        "price": 370000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, FLAT 2, ELMERS END ROAD",
+        "postcode": "SE20 7SN",
+        "price": 315000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAMBOURNE HOUSE, FLAT 46, APPLE YARD",
+        "postcode": "SE20 8FU",
+        "price": 490000,
+        "dateOfTransfer": "2026-07-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "71, BREDHURST CLOSE",
+        "postcode": "SE20 7BH",
+        "price": 180000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "PENCEAT COURT, 17, FLAT 8, BOURDON ROAD",
+        "postcode": "SE20 7SH",
+        "price": 81000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, TREMAINE ROAD",
+        "postcode": "SE20 7UA",
+        "price": 362500,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "70 - 72, FLAT B, HIGH STREET",
+        "postcode": "SE20 7HB",
+        "price": 230000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34A, MOSSLEA ROAD",
+        "postcode": "SE20 7BW",
+        "price": 430000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAMBOURNE HOUSE, FLAT 139, APPLE YARD",
+        "postcode": "SE20 8FX",
+        "price": 455000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAMBOURNE HOUSE, FLAT 83, APPLE YARD",
+        "postcode": "SE20 8FW",
+        "price": 480000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LAMBOURNE HOUSE, FLAT 35, APPLE YARD",
+        "postcode": "SE20 8FU",
+        "price": 305000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "98, PARISH LANE",
+        "postcode": "SE20 7NR",
+        "price": 640000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "106, HIGH STREET",
+        "postcode": "SE20 7EZ",
+        "price": 170000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "99, FLAT 1, ANERLEY ROAD",
+        "postcode": "SE20 8AP",
+        "price": 160000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "122, FLAT 4, CROYDON ROAD",
         "postcode": "SE20 7YZ",
         "price": 340000,
         "dateOfTransfer": "2026-06-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, MADELINE ROAD",
+        "postcode": "SE20 8AY",
+        "price": 650000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CARFAX HOUSE, 4, FLAT 55, WORCESTER CLOSE",
+        "postcode": "SE20 8FL",
+        "price": 390000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, PRINCES ROAD",
+        "postcode": "SE20 7JN",
+        "price": 570000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -303,10 +469,58 @@
         "newBuild": false
       },
       {
+        "address": "37, BREDHURST CLOSE",
+        "postcode": "SE20 7BH",
+        "price": 250000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BENWICK COURT, FLAT 26, CROYDON ROAD",
+        "postcode": "SE20 7SS",
+        "price": 200000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, CASTLEDINE ROAD",
+        "postcode": "SE20 8PL",
+        "price": 364000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, CASTLEDINE ROAD",
+        "postcode": "SE20 8PL",
+        "price": 364000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "28, SAMOS ROAD, ANERLEY",
         "postcode": "SE20 7TU",
         "price": 435500,
         "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "112, FLAT 3, OAKFIELD ROAD",
+        "postcode": "SE20 8RQ",
+        "price": 205000,
+        "dateOfTransfer": "2026-06-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "112, FLAT 3, OAKFIELD ROAD",
+        "postcode": "SE20 8RQ",
+        "price": 184000,
+        "dateOfTransfer": "2026-06-16",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -324,6 +538,22 @@
         "price": 300000,
         "dateOfTransfer": "2026-06-12",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, FLAT 4, THORNSETT ROAD",
+        "postcode": "SE20 7XB",
+        "price": 228000,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, FLAT 2, CASTLEDINE ROAD",
+        "postcode": "SE20 8PL",
+        "price": 331500,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -359,19 +589,19 @@
         "newBuild": false
       },
       {
-        "address": "102, ORCHARD GROVE",
-        "postcode": "SE20 8DZ",
-        "price": 367500,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "70, MARLOW ROAD, ANERLEY",
         "postcode": "SE20 7UZ",
         "price": 485000,
         "dateOfTransfer": "2026-05-22",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "102, ORCHARD GROVE",
+        "postcode": "SE20 8DZ",
+        "price": 367500,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -415,22 +645,6 @@
         "newBuild": false
       },
       {
-        "address": "20C, CASTLEDINE ROAD",
-        "postcode": "SE20 8PL",
-        "price": 280000,
-        "dateOfTransfer": "2026-05-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, THORNSETT PLACE",
-        "postcode": "SE20 7XD",
-        "price": 490000,
-        "dateOfTransfer": "2026-05-01",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "44E, CROYDON ROAD",
         "postcode": "SE20 7AE",
         "price": 375000,
@@ -450,6 +664,30 @@
         "address": "25, WARWICK ROAD",
         "postcode": "SE20 7YN",
         "price": 600000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20C, CASTLEDINE ROAD",
+        "postcode": "SE20 8PL",
+        "price": 280000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49B, ANERLEY PARK",
+        "postcode": "SE20 8NQ",
+        "price": 100000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, THORNSETT PLACE",
+        "postcode": "SE20 7XD",
+        "price": 490000,
         "dateOfTransfer": "2026-05-01",
         "propertyType": "Terraced",
         "newBuild": false
@@ -511,14 +749,6 @@
         "newBuild": false
       },
       {
-        "address": "122, PARISH LANE",
-        "postcode": "SE20 7JH",
-        "price": 475000,
-        "dateOfTransfer": "2026-04-02",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "90, MARLOW ROAD, ANERLEY",
         "postcode": "SE20 7UZ",
         "price": 715000,
@@ -540,6 +770,14 @@
         "price": 491000,
         "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "122, PARISH LANE",
+        "postcode": "SE20 7JH",
+        "price": 475000,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -727,17 +965,17 @@
         "newBuild": false
       },
       {
-        "address": "LAMBOURNE HOUSE, FLAT 84, APPLE YARD",
-        "postcode": "SE20 8FW",
-        "price": 445000,
+        "address": "GLEN COURT, FLAT 8, JASMINE GROVE",
+        "postcode": "SE20 8JE",
+        "price": 230000,
         "dateOfTransfer": "2026-03-04",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "GLEN COURT, FLAT 8, JASMINE GROVE",
-        "postcode": "SE20 8JE",
-        "price": 230000,
+        "address": "LAMBOURNE HOUSE, FLAT 84, APPLE YARD",
+        "postcode": "SE20 8FW",
+        "price": 445000,
         "dateOfTransfer": "2026-03-04",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -747,6 +985,22 @@
         "postcode": "SE20 7QT",
         "price": 182000,
         "dateOfTransfer": "2026-03-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, PHOENIX ROAD",
+        "postcode": "SE20 7BT",
+        "price": 1020000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "GOLDEN MEWS, 15, FLAT 5, HOWARD ROAD",
+        "postcode": "SE20 8HQ",
+        "price": 326000,
+        "dateOfTransfer": "2026-02-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -764,6 +1018,14 @@
         "price": 500000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BLAKEWOOD COURT, FLAT 44, ANERLEY PARK",
+        "postcode": "SE20 8NS",
+        "price": 315000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -819,6 +1081,22 @@
         "postcode": "SE20 8PF",
         "price": 285000,
         "dateOfTransfer": "2026-02-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, CHESHAM CRESCENT",
+        "postcode": "SE20 7RL",
+        "price": 780000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "195, SECOND FLOOR FLAT, HIGH STREET",
+        "postcode": "SE20 7PF",
+        "price": 300000,
+        "dateOfTransfer": "2026-02-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -911,14 +1189,6 @@
         "newBuild": false
       },
       {
-        "address": "48, COTTINGHAM ROAD, PENGE",
-        "postcode": "SE20 7PT",
-        "price": 550000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "44, ALBERT ROAD",
         "postcode": "SE20 7JW",
         "price": 616000,
@@ -935,6 +1205,14 @@
         "newBuild": false
       },
       {
+        "address": "48, COTTINGHAM ROAD, PENGE",
+        "postcode": "SE20 7PT",
+        "price": 550000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "21, THORNSETT ROAD",
         "postcode": "SE20 7XB",
         "price": 1000000,
@@ -943,17 +1221,17 @@
         "newBuild": false
       },
       {
-        "address": "GILBERT HOUSE, 207, FLAT 3, ANERLEY ROAD",
-        "postcode": "SE20 8ER",
-        "price": 310000,
+        "address": "1, FLAT 1, ST JOHNS ROAD",
+        "postcode": "SE20 7EF",
+        "price": 360000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "1, FLAT 1, ST JOHNS ROAD",
-        "postcode": "SE20 7EF",
-        "price": 360000,
+        "address": "GILBERT HOUSE, 207, FLAT 3, ANERLEY ROAD",
+        "postcode": "SE20 8ER",
+        "price": 310000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -975,9 +1253,17 @@
         "newBuild": false
       },
       {
-        "address": "SANCTUARY COURT, 65, FLAT 5, CROYDON ROAD",
-        "postcode": "SE20 7TE",
-        "price": 300000,
+        "address": "5, CHARTWELL WAY",
+        "postcode": "SE20 8LX",
+        "price": 418750,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "152 - 154, FLAT 3, HIGH STREET",
+        "postcode": "SE20 7EU",
+        "price": 215000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -991,17 +1277,9 @@
         "newBuild": false
       },
       {
-        "address": "5, CHARTWELL WAY",
-        "postcode": "SE20 8LX",
-        "price": 418750,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "152 - 154, FLAT 3, HIGH STREET",
-        "postcode": "SE20 7EU",
-        "price": 215000,
+        "address": "SANCTUARY COURT, 65, FLAT 5, CROYDON ROAD",
+        "postcode": "SE20 7TE",
+        "price": 300000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1063,6 +1341,14 @@
         "newBuild": false
       },
       {
+        "address": "32, FLAT B, RALEIGH ROAD",
+        "postcode": "SE20 7JB",
+        "price": 450000,
+        "dateOfTransfer": "2025-12-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "SHERBORNE COURT, FLAT 62, ELMERS END ROAD",
         "postcode": "SE20 7SL",
         "price": 215000,
@@ -1103,19 +1389,19 @@
         "newBuild": false
       },
       {
-        "address": "5, MELVIN ROAD",
-        "postcode": "SE20 8EU",
-        "price": 725000,
-        "dateOfTransfer": "2025-12-18",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "4, ASHURST CLOSE",
         "postcode": "SE20 8LY",
         "price": 265000,
         "dateOfTransfer": "2025-12-18",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, MELVIN ROAD",
+        "postcode": "SE20 8EU",
+        "price": 725000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1255,9 +1541,25 @@
         "newBuild": false
       },
       {
+        "address": "77, CAMBRIDGE ROAD",
+        "postcode": "SE20 7XJ",
+        "price": 670000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "39, GREEN LANE",
         "postcode": "SE20 7JX",
         "price": 555000,
+        "dateOfTransfer": "2025-11-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "79A, CAMBRIDGE ROAD",
+        "postcode": "SE20 7XJ",
+        "price": 665000,
         "dateOfTransfer": "2025-11-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1369,7 +1671,7 @@
       {
         "address": "5B, CASTLEDINE ROAD",
         "postcode": "SE20 8PL",
-        "price": 510000,
+        "price": 530000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1431,19 +1733,19 @@
         "newBuild": false
       },
       {
-        "address": "55, PARISH LANE",
-        "postcode": "SE20 7LJ",
-        "price": 38500,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "31A, MOSSLEA ROAD",
         "postcode": "SE20 7BW",
         "price": 325000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "55, PARISH LANE",
+        "postcode": "SE20 7LJ",
+        "price": 38500,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1455,17 +1757,17 @@
         "newBuild": false
       },
       {
-        "address": "10A, AVINGTON GROVE",
-        "postcode": "SE20 8RY",
-        "price": 730000,
+        "address": "184A, CROYDON ROAD",
+        "postcode": "SE20 7YU",
+        "price": 362500,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "184A, CROYDON ROAD",
-        "postcode": "SE20 7YU",
-        "price": 362500,
+        "address": "10A, AVINGTON GROVE",
+        "postcode": "SE20 8RY",
+        "price": 730000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1475,6 +1777,14 @@
         "postcode": "SE20 8FT",
         "price": 500000,
         "dateOfTransfer": "2025-10-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "70, PARISH LANE",
+        "postcode": "SE20 7JP",
+        "price": 230000,
+        "dateOfTransfer": "2025-10-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1503,19 +1813,19 @@
         "newBuild": false
       },
       {
-        "address": "102C, CROYDON ROAD",
-        "postcode": "SE20 7AB",
-        "price": 262000,
-        "dateOfTransfer": "2025-10-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "10, KINGSWOOD ROAD, PENGE",
         "postcode": "SE20 7BN",
         "price": 900000,
         "dateOfTransfer": "2025-10-22",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "102C, CROYDON ROAD",
+        "postcode": "SE20 7AB",
+        "price": 262000,
+        "dateOfTransfer": "2025-10-22",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1551,6 +1861,14 @@
         "newBuild": false
       },
       {
+        "address": "18, PHOENIX ROAD",
+        "postcode": "SE20 7BT",
+        "price": 975000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "LAMBOURNE HOUSE, FLAT 92, APPLE YARD",
         "postcode": "SE20 8FW",
         "price": 127500,
@@ -1567,17 +1885,17 @@
         "newBuild": false
       },
       {
-        "address": "18, PHOENIX ROAD",
-        "postcode": "SE20 7BT",
-        "price": 975000,
+        "address": "71, WORDSWORTH ROAD",
+        "postcode": "SE20 7JF",
+        "price": 675000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "71, WORDSWORTH ROAD",
-        "postcode": "SE20 7JF",
-        "price": 675000,
+        "address": "80, CHESHAM ROAD, PENGE",
+        "postcode": "SE20 7RP",
+        "price": 620000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1596,6 +1914,14 @@
         "price": 450000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12A, TREMAINE ROAD",
+        "postcode": "SE20 7TZ",
+        "price": 445000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1620,14 +1946,6 @@
         "price": 275000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "12A, TREMAINE ROAD",
-        "postcode": "SE20 7TZ",
-        "price": 445000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1679,19 +1997,19 @@
         "newBuild": false
       },
       {
-        "address": "65, EDWARD ROAD",
-        "postcode": "SE20 7JR",
-        "price": 705000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "35, LULLINGTON ROAD",
         "postcode": "SE20 8DG",
         "price": 349000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "65, EDWARD ROAD",
+        "postcode": "SE20 7JR",
+        "price": 705000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1722,6 +2040,14 @@
         "address": "21 - 23, FLAT 5, ANERLEY PARK",
         "postcode": "SE20 8NF",
         "price": 350000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "108A, CROYDON ROAD",
+        "postcode": "SE20 7AB",
+        "price": 353700,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1767,6 +2093,14 @@
         "newBuild": false
       },
       {
+        "address": "19, KINGSDALE ROAD",
+        "postcode": "SE20 7PR",
+        "price": 715000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "50, CHESHAM ROAD, PENGE",
         "postcode": "SE20 7RJ",
         "price": 611000,
@@ -1799,6 +2133,14 @@
         "newBuild": false
       },
       {
+        "address": "MOLE COTTAGE, 123, VICTOR ROAD",
+        "postcode": "SE20 7JT",
+        "price": 690000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "ANERLEY COURT, FLAT 32, ANERLEY PARK",
         "postcode": "SE20 8NN",
         "price": 320600,
@@ -1815,11 +2157,11 @@
         "newBuild": false
       },
       {
-        "address": "MOLE COTTAGE, 123, VICTOR ROAD",
-        "postcode": "SE20 7JT",
-        "price": 690000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Semi-detached",
+        "address": "46, RALEIGH ROAD",
+        "postcode": "SE20 7JB",
+        "price": 500000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1831,14 +2173,6 @@
         "newBuild": false
       },
       {
-        "address": "ALEXANDRA COTTAGES, 5, HARDINGS LANE",
-        "postcode": "SE20 7JJ",
-        "price": 520000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "14, PARKSIDE CLOSE",
         "postcode": "SE20 7HQ",
         "price": 605000,
@@ -1847,9 +2181,9 @@
         "newBuild": false
       },
       {
-        "address": "3, MONTAGUE MEWS",
-        "postcode": "SE20 7BA",
-        "price": 600000,
+        "address": "ALEXANDRA COTTAGES, 5, HARDINGS LANE",
+        "postcode": "SE20 7JJ",
+        "price": 520000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1860,6 +2194,14 @@
         "price": 305000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, MONTAGUE MEWS",
+        "postcode": "SE20 7BA",
+        "price": 600000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1895,6 +2237,14 @@
         "newBuild": false
       },
       {
+        "address": "4, STODART ROAD",
+        "postcode": "SE20 8ET",
+        "price": 850000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "16, PHOENIX ROAD",
         "postcode": "SE20 7BT",
         "price": 835000,
@@ -1908,14 +2258,6 @@
         "price": 285000,
         "dateOfTransfer": "2025-08-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "4, STODART ROAD",
-        "postcode": "SE20 8ET",
-        "price": 850000,
-        "dateOfTransfer": "2025-08-28",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1983,14 +2325,6 @@
         "newBuild": false
       },
       {
-        "address": "27, KENILWORTH ROAD",
-        "postcode": "SE20 7QG",
-        "price": 825000,
-        "dateOfTransfer": "2025-08-18",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "16, RIDGEMOUNT CLOSE",
         "postcode": "SE20 8NJ",
         "price": 390000,
@@ -2004,6 +2338,14 @@
         "price": 830000,
         "dateOfTransfer": "2025-08-18",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, KENILWORTH ROAD",
+        "postcode": "SE20 7QG",
+        "price": 825000,
+        "dateOfTransfer": "2025-08-18",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2039,14 +2381,6 @@
         "newBuild": false
       },
       {
-        "address": "LAKE HOUSE, 1, THICKET ROAD",
-        "postcode": "SE20 8DP",
-        "price": 575000,
-        "dateOfTransfer": "2025-08-07",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "ROBERTS COURT, FLAT 21, MAPLE ROAD",
         "postcode": "SE20 8JJ",
         "price": 295000,
@@ -2060,6 +2394,14 @@
         "price": 585000,
         "dateOfTransfer": "2025-08-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "LAKE HOUSE, 1, THICKET ROAD",
+        "postcode": "SE20 8DP",
+        "price": 575000,
+        "dateOfTransfer": "2025-08-07",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2127,6 +2469,14 @@
         "newBuild": false
       },
       {
+        "address": "76B, CROYDON ROAD",
+        "postcode": "SE20 7AD",
+        "price": 135000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "115, ORCHARD GROVE",
         "postcode": "SE20 8DW",
         "price": 358000,
@@ -2140,14 +2490,6 @@
         "price": 1080000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "76B, CROYDON ROAD",
-        "postcode": "SE20 7AD",
-        "price": 135000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2172,6 +2514,14 @@
         "price": 422000,
         "dateOfTransfer": "2025-07-22",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12A, WARWICK ROAD",
+        "postcode": "SE20 7YL",
+        "price": 200000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2207,19 +2557,19 @@
         "newBuild": false
       },
       {
-        "address": "BENHURST COURT, 7, FLAT 6, MAPLE ROAD",
-        "postcode": "SE20 8EZ",
-        "price": 365000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "74, EDWARD ROAD",
         "postcode": "SE20 7JR",
         "price": 570000,
         "dateOfTransfer": "2025-07-18",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "BENHURST COURT, 7, FLAT 6, MAPLE ROAD",
+        "postcode": "SE20 8EZ",
+        "price": 365000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2263,6 +2613,14 @@
         "newBuild": false
       },
       {
+        "address": "21, GARDEN ROAD",
+        "postcode": "SE20 7RN",
+        "price": 700000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "AUSTEN APARTMENTS, 1, FLAT 34, WEIGHTON ROAD",
         "postcode": "SE20 8FB",
         "price": 280000,
@@ -2274,14 +2632,6 @@
         "address": "32, BURHAM CLOSE",
         "postcode": "SE20 8JF",
         "price": 465000,
-        "dateOfTransfer": "2025-07-11",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "21, GARDEN ROAD",
-        "postcode": "SE20 7RN",
-        "price": 700000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2343,6 +2693,14 @@
         "newBuild": false
       },
       {
+        "address": "LAMBOURNE HOUSE, FLAT 116, APPLE YARD",
+        "postcode": "SE20 8FW",
+        "price": 124500,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "SHERBORNE COURT, FLAT 40, ELMERS END ROAD",
         "postcode": "SE20 7SL",
         "price": 200000,
@@ -2395,6 +2753,14 @@
         "postcode": "SE20 7UE",
         "price": 465000,
         "dateOfTransfer": "2025-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30A, SAMOS ROAD, ANERLEY",
+        "postcode": "SE20 7TU",
+        "price": 445000,
+        "dateOfTransfer": "2025-06-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2455,14 +2821,6 @@
         "newBuild": false
       },
       {
-        "address": "30A, SAMOS ROAD, ANERLEY",
-        "postcode": "SE20 7TU",
-        "price": 445000,
-        "dateOfTransfer": "2025-06-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "38, FLAT 4, ANERLEY PARK",
         "postcode": "SE20 8ND",
         "price": 545000,
@@ -2503,17 +2861,17 @@
         "newBuild": false
       },
       {
-        "address": "12, LUCAS ROAD",
-        "postcode": "SE20 7EE",
-        "price": 675000,
+        "address": "21, WATERMENS SQUARE",
+        "postcode": "SE20 7EL",
+        "price": 420000,
         "dateOfTransfer": "2025-06-18",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "21, WATERMENS SQUARE",
-        "postcode": "SE20 7EL",
-        "price": 420000,
+        "address": "12, LUCAS ROAD",
+        "postcode": "SE20 7EE",
+        "price": 675000,
         "dateOfTransfer": "2025-06-18",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2703,19 +3061,19 @@
         "newBuild": false
       },
       {
-        "address": "32, FIRST FLOOR FLAT, MOSSLEA ROAD",
-        "postcode": "SE20 7BW",
-        "price": 230000,
-        "dateOfTransfer": "2025-05-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "COLMAN HOUSE, UNIT 2, HIGH STREET",
         "postcode": "SE20 7EX",
         "price": 10000,
         "dateOfTransfer": "2025-05-21",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "32, FIRST FLOOR FLAT, MOSSLEA ROAD",
+        "postcode": "SE20 7BW",
+        "price": 230000,
+        "dateOfTransfer": "2025-05-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2751,6 +3109,14 @@
         "newBuild": false
       },
       {
+        "address": "23A, SHERINGHAM ROAD",
+        "postcode": "SE20 7YH",
+        "price": 640000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "124, FLAT 3, MARLOW ROAD, ANERLEY",
         "postcode": "SE20 7XG",
         "price": 357000,
@@ -2764,14 +3130,6 @@
         "price": 435000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "23A, SHERINGHAM ROAD",
-        "postcode": "SE20 7YH",
-        "price": 640000,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2843,6 +3201,14 @@
         "postcode": "SE20 8DN",
         "price": 190000,
         "dateOfTransfer": "2025-05-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "125, BASEMENT FLAT, ANERLEY ROAD",
+        "postcode": "SE20 8AJ",
+        "price": 275000,
+        "dateOfTransfer": "2025-05-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3023,6 +3389,22 @@
         "newBuild": false
       },
       {
+        "address": "37, CAMBRIDGE ROAD",
+        "postcode": "SE20 7XJ",
+        "price": 438500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, TREMAINE ROAD",
+        "postcode": "SE20 7UA",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "203, ORCHARD GROVE",
         "postcode": "SE20 8BQ",
         "price": 268000,
@@ -3052,22 +3434,6 @@
         "price": 390000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "35, TREMAINE ROAD",
-        "postcode": "SE20 7UA",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "37, CAMBRIDGE ROAD",
-        "postcode": "SE20 7XJ",
-        "price": 438500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3143,6 +3509,14 @@
         "newBuild": false
       },
       {
+        "address": "66, ANERLEY PARK",
+        "postcode": "SE20 8NQ",
+        "price": 44750,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "ST. JOHNS COTTAGES, 6, MAPLE ROAD",
         "postcode": "SE20 8HX",
         "price": 567000,
@@ -3159,10 +3533,10 @@
         "newBuild": false
       },
       {
-        "address": "66, ANERLEY PARK",
-        "postcode": "SE20 8NQ",
-        "price": 44750,
-        "dateOfTransfer": "2025-03-25",
+        "address": "78, CROYDON ROAD",
+        "postcode": "SE20 7AB",
+        "price": 895000,
+        "dateOfTransfer": "2025-03-24",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -3180,14 +3554,6 @@
         "price": 300000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "78, CROYDON ROAD",
-        "postcode": "SE20 7AB",
-        "price": 895000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3263,17 +3629,17 @@
         "newBuild": false
       },
       {
-        "address": "75A, MARLOW ROAD, ANERLEY",
-        "postcode": "SE20 7YG",
-        "price": 285000,
+        "address": "36A, STATION ROAD",
+        "postcode": "SE20 7BQ",
+        "price": 340000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "36A, STATION ROAD",
-        "postcode": "SE20 7BQ",
-        "price": 340000,
+        "address": "75A, MARLOW ROAD, ANERLEY",
+        "postcode": "SE20 7YG",
+        "price": 285000,
         "dateOfTransfer": "2025-03-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3335,17 +3701,17 @@
         "newBuild": false
       },
       {
-        "address": "LAMBOURNE HOUSE, FLAT 109, APPLE YARD",
-        "postcode": "SE20 8FW",
-        "price": 330000,
+        "address": "35, QUEEN ADELAIDE ROAD",
+        "postcode": "SE20 7DX",
+        "price": 381000,
         "dateOfTransfer": "2025-03-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "35, QUEEN ADELAIDE ROAD",
-        "postcode": "SE20 7DX",
-        "price": 381000,
+        "address": "LAMBOURNE HOUSE, FLAT 109, APPLE YARD",
+        "postcode": "SE20 8FW",
+        "price": 330000,
         "dateOfTransfer": "2025-03-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3415,14 +3781,6 @@
         "newBuild": false
       },
       {
-        "address": "23, TRENHOLME ROAD",
-        "postcode": "SE20 8PP",
-        "price": 695000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "34, SEYMOUR VILLAS",
         "postcode": "SE20 8TU",
         "price": 575000,
@@ -3436,6 +3794,14 @@
         "price": 710000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, TRENHOLME ROAD",
+        "postcode": "SE20 8PP",
+        "price": 695000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3519,17 +3885,17 @@
         "newBuild": false
       },
       {
-        "address": "31, RALEIGH ROAD",
-        "postcode": "SE20 7JE",
-        "price": 597500,
+        "address": "75, ORCHARD GROVE",
+        "postcode": "SE20 8DW",
+        "price": 450000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "75, ORCHARD GROVE",
-        "postcode": "SE20 8DW",
-        "price": 450000,
+        "address": "31, RALEIGH ROAD",
+        "postcode": "SE20 7JE",
+        "price": 597500,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3548,6 +3914,14 @@
         "price": 375000,
         "dateOfTransfer": "2025-02-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "BENWICK COURT, FLAT 46, CROYDON ROAD",
+        "postcode": "SE20 7SS",
+        "price": 301000,
+        "dateOfTransfer": "2025-02-18",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3647,17 +4021,17 @@
         "newBuild": false
       },
       {
-        "address": "5, HOWARD ROAD",
-        "postcode": "SE20 8HQ",
-        "price": 608380,
+        "address": "21, WARWICK ROAD",
+        "postcode": "SE20 7YN",
+        "price": 775000,
         "dateOfTransfer": "2025-01-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "21, WARWICK ROAD",
-        "postcode": "SE20 7YN",
-        "price": 775000,
+        "address": "5, HOWARD ROAD",
+        "postcode": "SE20 8HQ",
+        "price": 608380,
         "dateOfTransfer": "2025-01-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3679,14 +4053,6 @@
         "newBuild": false
       },
       {
-        "address": "188 - 190, MAPLE ROAD",
-        "postcode": "SE20 8HT",
-        "price": 300000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "25, TREMAINE ROAD",
         "postcode": "SE20 7UA",
         "price": 550000,
@@ -3695,17 +4061,25 @@
         "newBuild": false
       },
       {
-        "address": "81, GROUND FLOOR SHOP, HIGH STREET",
-        "postcode": "SE20 7HW",
-        "price": 120000,
+        "address": "167 - 169, HIGH STREET",
+        "postcode": "SE20 7DS",
+        "price": 900000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "167 - 169, HIGH STREET",
-        "postcode": "SE20 7DS",
-        "price": 900000,
+        "address": "188 - 190, MAPLE ROAD",
+        "postcode": "SE20 8HT",
+        "price": 300000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "81, GROUND FLOOR SHOP, HIGH STREET",
+        "postcode": "SE20 7HW",
+        "price": 120000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Other",
         "newBuild": false
@@ -3783,19 +4157,19 @@
         "newBuild": false
       },
       {
-        "address": "98, FLAT 1, LENNARD ROAD",
-        "postcode": "SE20 7LY",
-        "price": 1312500,
-        "dateOfTransfer": "2025-01-14",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "63, TOVIL CLOSE",
         "postcode": "SE20 8SZ",
         "price": 220000,
         "dateOfTransfer": "2025-01-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "98, FLAT 1, LENNARD ROAD",
+        "postcode": "SE20 7LY",
+        "price": 1312500,
+        "dateOfTransfer": "2025-01-14",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3847,8 +4221,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 446507,
-    "medianPrice": 410000
+    "averagePrice": 440198,
+    "medianPrice": 400000
   },
   "representatives": {
     "representatives": [

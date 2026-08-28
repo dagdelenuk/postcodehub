@@ -3,8 +3,8 @@
   "slug": "se27",
   "city": "London",
   "borough": "Lambeth",
-  "latitude": 51.430640350923454,
-  "longitude": -0.10241802638522428,
+  "latitude": 51.43066726575341,
+  "longitude": -0.10253823835616434,
   "wards": [
     "Gipsy Hill",
     "Knight's Hill",
@@ -139,7 +139,8 @@
         "urn": "100574",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Gipsy Road, London",
         "postcode": "SE27 9RD",
         "numberOfPupils": 362,
@@ -150,7 +151,8 @@
         "urn": "100597",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Carnac Street, West Norwood, London",
         "postcode": "SE27 9RR",
         "numberOfPupils": 364,
@@ -160,8 +162,9 @@
         "name": "Julian's School",
         "urn": "100602",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "08/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "16 Wolfington Road, West Norwood, London",
         "postcode": "SE27 0JF",
         "numberOfPupils": 908,
@@ -172,7 +175,8 @@
         "urn": "144309",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "29/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Elmcourt Road, Tulse Hill, London",
         "postcode": "SE27 9BZ",
         "numberOfPupils": 1082,
@@ -183,7 +187,8 @@
         "urn": "145616",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "24/05/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Linton Grove, West Norwood, London",
         "postcode": "SE27 0DZ",
         "numberOfPupils": 201,
@@ -201,9 +206,9 @@
       },
       {
         "month": "2025-08",
-        "totalCrimes": 530,
+        "totalCrimes": 531,
         "violentCrimes": 173,
-        "propertyCrimes": 212
+        "propertyCrimes": 213
       },
       {
         "month": "2025-09",
@@ -231,8 +236,8 @@
       },
       {
         "month": "2026-01",
-        "totalCrimes": 449,
-        "violentCrimes": 177,
+        "totalCrimes": 448,
+        "violentCrimes": 176,
         "propertyCrimes": 145
       },
       {
@@ -250,19 +255,19 @@
       {
         "month": "2026-04",
         "totalCrimes": 492,
-        "violentCrimes": 172,
-        "propertyCrimes": 188
+        "violentCrimes": 173,
+        "propertyCrimes": 187
       },
       {
         "month": "2026-05",
-        "totalCrimes": 518,
-        "violentCrimes": 169,
+        "totalCrimes": 516,
+        "violentCrimes": 167,
         "propertyCrimes": 173
       },
       {
         "month": "2026-06",
-        "totalCrimes": 539,
-        "violentCrimes": 220,
+        "totalCrimes": 540,
+        "violentCrimes": 221,
         "propertyCrimes": 179
       }
     ],
@@ -270,7 +275,7 @@
       "anti-social-behaviour": 1367,
       "bicycle-theft": 61,
       "burglary": 267,
-      "criminal-damage-arson": 248,
+      "criminal-damage-arson": 247,
       "drugs": 199,
       "other-theft": 471,
       "possession-of-weapons": 53,
@@ -278,14 +283,118 @@
       "robbery": 158,
       "shoplifting": 330,
       "theft-from-the-person": 108,
-      "vehicle-crime": 585,
-      "violent-crime": 1640,
+      "vehicle-crime": 586,
+      "violent-crime": 1639,
       "other-crime": 66
     },
-    "totalLast12Months": 5841
+    "totalLast12Months": 5840
   },
   "property": {
     "sales": [
+      {
+        "address": "147, HALL FLOOR FLAT, GIPSY ROAD",
+        "postcode": "SE27 9QT",
+        "price": 335000,
+        "dateOfTransfer": "2026-07-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, CHICHESTER MEWS",
+        "postcode": "SE27 0NS",
+        "price": 537500,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "REDPATH HOUSE, 355, FLAT 9, NORWOOD ROAD",
+        "postcode": "SE27 9BQ",
+        "price": 280000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "187, CASEWICK ROAD",
+        "postcode": "SE27 0TA",
+        "price": 1258000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "120, ROMMANY ROAD",
+        "postcode": "SE27 9PT",
+        "price": 690000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "54, NORWOOD PARK ROAD, WEST NORWOOD",
+        "postcode": "SE27 9UA",
+        "price": 710000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HOGARTH HOUSE, FLAT 16, BENTONS LANE",
+        "postcode": "SE27 9TR",
+        "price": 240000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14, IDMISTON ROAD",
+        "postcode": "SE27 9HG",
+        "price": 890000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "74, TULSEMERE ROAD",
+        "postcode": "SE27 9EJ",
+        "price": 710000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51, THURLESTONE ROAD",
+        "postcode": "SE27 0PE",
+        "price": 1150000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "55, FLAT C, BROXHOLM ROAD",
+        "postcode": "SE27 0NA",
+        "price": 550000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, CHESTNUT ROAD",
+        "postcode": "SE27 9LF",
+        "price": 2400000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 10, HARRY DAY MEWS",
+        "postcode": "SE27 9AR",
+        "price": 340000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "JEAN HUMBERT HOUSE, FLAT 16, CARNAC STREET",
         "postcode": "SE27 9RS",
@@ -295,9 +404,25 @@
         "newBuild": false
       },
       {
+        "address": "29, LAMBERHURST ROAD",
+        "postcode": "SE27 0SD",
+        "price": 700000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "51, HAMILTON ROAD",
         "postcode": "SE27 9RZ",
         "price": 573000,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, HARPENDEN ROAD, WEST NORWOOD",
+        "postcode": "SE27 0AE",
+        "price": 655000,
         "dateOfTransfer": "2026-06-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -359,6 +484,14 @@
         "newBuild": false
       },
       {
+        "address": "43, DURBAN ROAD",
+        "postcode": "SE27 9RW",
+        "price": 200000,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "112, NORWOOD HIGH STREET",
         "postcode": "SE27 9NH",
         "price": 320000,
@@ -391,14 +524,6 @@
         "newBuild": false
       },
       {
-        "address": "16, ST LOUIS ROAD",
-        "postcode": "SE27 9QW",
-        "price": 720000,
-        "dateOfTransfer": "2026-05-15",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "39, HEXHAM ROAD",
         "postcode": "SE27 9EF",
         "price": 885000,
@@ -412,6 +537,14 @@
         "price": 520000,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "16, ST LOUIS ROAD",
+        "postcode": "SE27 9QW",
+        "price": 720000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -527,17 +660,17 @@
         "newBuild": false
       },
       {
-        "address": "42, DARLINGTON ROAD",
-        "postcode": "SE27 0UD",
-        "price": 280000,
+        "address": "60, HARPENDEN ROAD, WEST NORWOOD",
+        "postcode": "SE27 0AF",
+        "price": 495500,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "60, HARPENDEN ROAD, WEST NORWOOD",
-        "postcode": "SE27 0AF",
-        "price": 495500,
+        "address": "42, DARLINGTON ROAD",
+        "postcode": "SE27 0UD",
+        "price": 280000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -575,6 +708,14 @@
         "newBuild": false
       },
       {
+        "address": "73, THURLESTONE ROAD",
+        "postcode": "SE27 0PE",
+        "price": 1233000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "56, FLAT 1, NORWOOD HIGH STREET",
         "postcode": "SE27 9NR",
         "price": 120000,
@@ -596,6 +737,30 @@
         "price": 586000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, YEOMAN CLOSE",
+        "postcode": "SE27 0PS",
+        "price": 298900,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT 2, AUCKLAND HILL",
+        "postcode": "SE27 9PF",
+        "price": 450000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "187, KNIGHTS HILL",
+        "postcode": "SE27 0PZ",
+        "price": 535000,
+        "dateOfTransfer": "2026-03-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -623,17 +788,25 @@
         "newBuild": false
       },
       {
-        "address": "25, AUCKLAND HILL",
-        "postcode": "SE27 9PF",
-        "price": 625000,
+        "address": "7B, WOLFINGTON ROAD",
+        "postcode": "SE27 0JF",
+        "price": 395000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "7B, WOLFINGTON ROAD",
-        "postcode": "SE27 0JF",
-        "price": 395000,
+        "address": "56C, KNIGHTS HILL",
+        "postcode": "SE27 0JD",
+        "price": 139500,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25, AUCKLAND HILL",
+        "postcode": "SE27 9PF",
+        "price": 625000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -657,7 +830,7 @@
       {
         "address": "9, LAKEVIEW ROAD",
         "postcode": "SE27 0QH",
-        "price": 285000,
+        "price": 285500,
         "dateOfTransfer": "2026-02-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -706,6 +879,14 @@
         "address": "CHESTNUT HOUSE, FLAT 16, BARSTON ROAD",
         "postcode": "SE27 9HD",
         "price": 410000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "148, FIRST FLOOR FLAT, GIPSY ROAD",
+        "postcode": "SE27 9RE",
+        "price": 275000,
         "dateOfTransfer": "2026-02-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -775,6 +956,14 @@
         "newBuild": false
       },
       {
+        "address": "11A, AVENUE PARK ROAD",
+        "postcode": "SE27 9BT",
+        "price": 555000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "40, ELDER ROAD, WEST NORWOOD",
         "postcode": "SE27 9ND",
         "price": 565000,
@@ -807,14 +996,6 @@
         "newBuild": false
       },
       {
-        "address": "131, FLAT B, GIPSY ROAD",
-        "postcode": "SE27 9QT",
-        "price": 518500,
-        "dateOfTransfer": "2026-01-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "137, CASEWICK ROAD",
         "postcode": "SE27 0TA",
         "price": 940000,
@@ -828,6 +1009,14 @@
         "price": 575000,
         "dateOfTransfer": "2026-01-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "131, FLAT B, GIPSY ROAD",
+        "postcode": "SE27 9QT",
+        "price": 518500,
+        "dateOfTransfer": "2026-01-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1223,9 +1412,9 @@
         "newBuild": false
       },
       {
-        "address": "49, THORNLAW ROAD",
-        "postcode": "SE27 0SH",
-        "price": 550000,
+        "address": "8, CASEWICK ROAD",
+        "postcode": "SE27 0SY",
+        "price": 466000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1255,9 +1444,9 @@
         "newBuild": false
       },
       {
-        "address": "8, CASEWICK ROAD",
-        "postcode": "SE27 0SY",
-        "price": 466000,
+        "address": "49, THORNLAW ROAD",
+        "postcode": "SE27 0SH",
+        "price": 550000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1343,6 +1532,14 @@
         "newBuild": false
       },
       {
+        "address": "9, BASEMENT FLAT, BLOOM GROVE",
+        "postcode": "SE27 0HZ",
+        "price": 250000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2B, THORNLAW ROAD",
         "postcode": "SE27 0SA",
         "price": 710000,
@@ -1354,14 +1551,6 @@
         "address": "1E, ROBSON ROAD",
         "postcode": "SE27 9LA",
         "price": 400000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "9, BASEMENT FLAT, BLOOM GROVE",
-        "postcode": "SE27 0HZ",
-        "price": 250000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1487,6 +1676,14 @@
         "newBuild": false
       },
       {
+        "address": "45, CARNAC STREET",
+        "postcode": "SE27 9RR",
+        "price": 540000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "LEVEHURST HOUSE, FLAT 21, WOODVALE WALK",
         "postcode": "SE27 0HA",
         "price": 405000,
@@ -1503,14 +1700,6 @@
         "newBuild": false
       },
       {
-        "address": "2C, HARPENDEN ROAD",
-        "postcode": "SE27 0AE",
-        "price": 285000,
-        "dateOfTransfer": "2025-09-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "48, DARLINGTON ROAD",
         "postcode": "SE27 0UD",
         "price": 268500,
@@ -1519,25 +1708,25 @@
         "newBuild": false
       },
       {
-        "address": "25, ST CLOUD ROAD",
-        "postcode": "SE27 9PN",
-        "price": 788000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "23, ROBSON ROAD",
-        "postcode": "SE27 9LA",
-        "price": 538000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Terraced",
+        "address": "2C, HARPENDEN ROAD",
+        "postcode": "SE27 0AE",
+        "price": 285000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "34, TIVOLI ROAD",
         "postcode": "SE27 0EB",
         "price": 578400,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, ST CLOUD ROAD",
+        "postcode": "SE27 9PN",
+        "price": 788000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1559,10 +1748,10 @@
         "newBuild": false
       },
       {
-        "address": "35, IDMISTON ROAD",
-        "postcode": "SE27 9HL",
-        "price": 2396500,
-        "dateOfTransfer": "2025-09-18",
+        "address": "23, ROBSON ROAD",
+        "postcode": "SE27 9LA",
+        "price": 538000,
+        "dateOfTransfer": "2025-09-19",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1572,6 +1761,14 @@
         "price": 625000,
         "dateOfTransfer": "2025-09-18",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "35, IDMISTON ROAD",
+        "postcode": "SE27 9HL",
+        "price": 2396500,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1631,6 +1828,14 @@
         "newBuild": false
       },
       {
+        "address": "551A, FLAT 3, NORWOOD ROAD",
+        "postcode": "SE27 9DL",
+        "price": 318000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "66, FLAT 1, CHESTNUT ROAD",
         "postcode": "SE27 9LE",
         "price": 345000,
@@ -1684,6 +1889,14 @@
         "price": 770000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "149, GIPSY ROAD",
+        "postcode": "SE27 9QT",
+        "price": 15400,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1783,17 +1996,17 @@
         "newBuild": false
       },
       {
-        "address": "10, FLAT A, DODBROOKE ROAD",
-        "postcode": "SE27 0PF",
-        "price": 495000,
+        "address": "10, FLAT 2, PAXTON PLACE",
+        "postcode": "SE27 9SS",
+        "price": 383000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "10, FLAT 2, PAXTON PLACE",
-        "postcode": "SE27 9SS",
-        "price": 383000,
+        "address": "10, FLAT A, DODBROOKE ROAD",
+        "postcode": "SE27 0PF",
+        "price": 495000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1823,17 +2036,17 @@
         "newBuild": false
       },
       {
-        "address": "97, BROXHOLM ROAD",
-        "postcode": "SE27 0BJ",
-        "price": 850000,
+        "address": "51, TIVOLI ROAD",
+        "postcode": "SE27 0ED",
+        "price": 700000,
         "dateOfTransfer": "2025-08-05",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "51, TIVOLI ROAD",
-        "postcode": "SE27 0ED",
-        "price": 700000,
+        "address": "97, BROXHOLM ROAD",
+        "postcode": "SE27 0BJ",
+        "price": 850000,
         "dateOfTransfer": "2025-08-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1935,19 +2148,19 @@
         "newBuild": false
       },
       {
-        "address": "160, GROUND FLOOR AND BASEMENT, NORWOOD ROAD",
-        "postcode": "SE27 9AZ",
-        "price": 15000,
-        "dateOfTransfer": "2025-07-22",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "35, WOLFINGTON ROAD",
         "postcode": "SE27 0RH",
         "price": 592500,
         "dateOfTransfer": "2025-07-22",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "160, GROUND FLOOR AND BASEMENT, NORWOOD ROAD",
+        "postcode": "SE27 9AZ",
+        "price": 15000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2071,19 +2284,19 @@
         "newBuild": false
       },
       {
-        "address": "69, ROBSON ROAD",
-        "postcode": "SE27 9LB",
-        "price": 600000,
-        "dateOfTransfer": "2025-07-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "LONGMEAD HOUSE, FLAT 29, WOODVALE WALK",
         "postcode": "SE27 0HE",
         "price": 359000,
         "dateOfTransfer": "2025-07-03",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "69, ROBSON ROAD",
+        "postcode": "SE27 9LB",
+        "price": 600000,
+        "dateOfTransfer": "2025-07-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2103,22 +2316,6 @@
         "newBuild": false
       },
       {
-        "address": "25A, ST LOUIS ROAD",
-        "postcode": "SE27 9QN",
-        "price": 645000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "23, BROXHOLM ROAD",
-        "postcode": "SE27 0NA",
-        "price": 340000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "HOGARTH HOUSE, FLAT 1, BENTONS LANE",
         "postcode": "SE27 9TR",
         "price": 260000,
@@ -2132,6 +2329,14 @@
         "price": 2060000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25A, ST LOUIS ROAD",
+        "postcode": "SE27 9QN",
+        "price": 645000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2455,19 +2660,19 @@
         "newBuild": false
       },
       {
-        "address": "30, CHATSWORTH WAY",
-        "postcode": "SE27 9HN",
-        "price": 1782000,
-        "dateOfTransfer": "2025-04-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "195, GIPSY ROAD",
         "postcode": "SE27 9QY",
         "price": 460000,
         "dateOfTransfer": "2025-04-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, CHATSWORTH WAY",
+        "postcode": "SE27 9HN",
+        "price": 1782000,
+        "dateOfTransfer": "2025-04-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2482,6 +2687,46 @@
         "address": "33, FLAT C, LANCASTER AVENUE",
         "postcode": "SE27 9EL",
         "price": 600000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "VIOLETTE SZABO HOUSE, FLAT 19, VINCENNES ESTATE",
+        "postcode": "SE27 9RU",
+        "price": 280000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24A, ROBSON ROAD",
+        "postcode": "SE27 9LA",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39A, THURLESTONE ROAD",
+        "postcode": "SE27 0PE",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "157, AUCKLAND HILL",
+        "postcode": "SE27 9PG",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ORFORD COURT, FLAT 50, ELMCOURT ROAD",
+        "postcode": "SE27 9DB",
+        "price": 325000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2511,46 +2756,6 @@
         "newBuild": false
       },
       {
-        "address": "39A, THURLESTONE ROAD",
-        "postcode": "SE27 0PE",
-        "price": 625000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "VIOLETTE SZABO HOUSE, FLAT 19, VINCENNES ESTATE",
-        "postcode": "SE27 9RU",
-        "price": 280000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "24A, ROBSON ROAD",
-        "postcode": "SE27 9LA",
-        "price": 600000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "157, AUCKLAND HILL",
-        "postcode": "SE27 9PG",
-        "price": 490000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ORFORD COURT, FLAT 50, ELMCOURT ROAD",
-        "postcode": "SE27 9DB",
-        "price": 325000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "83, UFFINGTON ROAD",
         "postcode": "SE27 0NE",
         "price": 700000,
@@ -2559,9 +2764,97 @@
         "newBuild": false
       },
       {
+        "address": "37, WOLFINGTON ROAD",
+        "postcode": "SE27 0RH",
+        "price": 1080000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "16, ROBSON ROAD",
+        "postcode": "SE27 9LA",
+        "price": 480000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "148, CASEWICK ROAD",
+        "postcode": "SE27 0SZ",
+        "price": 556000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, GLENNIE ROAD",
+        "postcode": "SE27 0LY",
+        "price": 875000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "66A, DURBAN ROAD",
+        "postcode": "SE27 9RP",
+        "price": 485000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "66, NORWOOD PARK ROAD, WEST NORWOOD",
+        "postcode": "SE27 9UA",
+        "price": 487500,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, GREENHURST ROAD",
+        "postcode": "SE27 0LH",
+        "price": 700000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, SELSDON ROAD",
+        "postcode": "SE27 0PG",
+        "price": 960000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "22, IDMISTON ROAD",
+        "postcode": "SE27 9HG",
+        "price": 1400000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "10, ST DENIS ROAD",
+        "postcode": "SE27 9PP",
+        "price": 742000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "45, TIVOLI ROAD",
         "postcode": "SE27 0ED",
         "price": 575000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44, IDMISTON ROAD",
+        "postcode": "SE27 9HG",
+        "price": 1235099,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2596,94 +2889,6 @@
         "price": 517500,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "16, ROBSON ROAD",
-        "postcode": "SE27 9LA",
-        "price": 480000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "148, CASEWICK ROAD",
-        "postcode": "SE27 0SZ",
-        "price": 556000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "24, GLENNIE ROAD",
-        "postcode": "SE27 0LY",
-        "price": 875000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "44, IDMISTON ROAD",
-        "postcode": "SE27 9HG",
-        "price": 1235099,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "37, WOLFINGTON ROAD",
-        "postcode": "SE27 0RH",
-        "price": 1080000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "66A, DURBAN ROAD",
-        "postcode": "SE27 9RP",
-        "price": 485000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "66, NORWOOD PARK ROAD, WEST NORWOOD",
-        "postcode": "SE27 9UA",
-        "price": 487500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "10, ST DENIS ROAD",
-        "postcode": "SE27 9PP",
-        "price": 742000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "22, IDMISTON ROAD",
-        "postcode": "SE27 9HG",
-        "price": 1400000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "18, GREENHURST ROAD",
-        "postcode": "SE27 0LH",
-        "price": 700000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "38, SELSDON ROAD",
-        "postcode": "SE27 0PG",
-        "price": 960000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2735,22 +2940,6 @@
         "newBuild": false
       },
       {
-        "address": "16, FLAT A, ST JULIAN'S FARM ROAD",
-        "postcode": "SE27 0JJ",
-        "price": 615000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "80, FLAT C, BROXHOLM ROAD",
-        "postcode": "SE27 0BT",
-        "price": 475000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "66, FLAT 5, KNIGHTS HILL",
         "postcode": "SE27 0JD",
         "price": 402000,
@@ -2783,6 +2972,14 @@
         "newBuild": false
       },
       {
+        "address": "21, ROMMANY ROAD",
+        "postcode": "SE27 9PY",
+        "price": 600000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "13A, ST LOUIS ROAD",
         "postcode": "SE27 9QW",
         "price": 480000,
@@ -2799,18 +2996,18 @@
         "newBuild": false
       },
       {
-        "address": "21, ROMMANY ROAD",
-        "postcode": "SE27 9PY",
-        "price": 600000,
+        "address": "16, FLAT A, ST JULIAN'S FARM ROAD",
+        "postcode": "SE27 0JJ",
+        "price": 615000,
         "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "2G, CHATSWORTH WAY",
-        "postcode": "SE27 9HR",
-        "price": 405000,
-        "dateOfTransfer": "2025-03-25",
+        "address": "80, FLAT C, BROXHOLM ROAD",
+        "postcode": "SE27 0BT",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2818,6 +3015,14 @@
         "address": "FLAT 1, 9, ROMMANY ROAD",
         "postcode": "SE27 9PY",
         "price": 367000,
+        "dateOfTransfer": "2025-03-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2G, CHATSWORTH WAY",
+        "postcode": "SE27 9HR",
+        "price": 405000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2863,14 +3068,6 @@
         "newBuild": false
       },
       {
-        "address": "96, THORNLAW ROAD",
-        "postcode": "SE27 0SB",
-        "price": 550000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "38, ELDERWOOD PLACE",
         "postcode": "SE27 0HL",
         "price": 515000,
@@ -2890,6 +3087,14 @@
         "address": "11, FLAT 1, GIPSY ROAD",
         "postcode": "SE27 9NP",
         "price": 528500,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "96, THORNLAW ROAD",
+        "postcode": "SE27 0SB",
+        "price": 550000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2927,19 +3132,19 @@
         "newBuild": false
       },
       {
-        "address": "63, AUCKLAND HILL",
-        "postcode": "SE27 9PF",
-        "price": 375000,
-        "dateOfTransfer": "2025-03-11",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "8, ARDLUI ROAD",
         "postcode": "SE27 9HB",
         "price": 1955000,
         "dateOfTransfer": "2025-03-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "63, AUCKLAND HILL",
+        "postcode": "SE27 9PF",
+        "price": 375000,
+        "dateOfTransfer": "2025-03-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2975,14 +3180,6 @@
         "newBuild": false
       },
       {
-        "address": "1, ULLSWATER ROAD",
-        "postcode": "SE27 0AL",
-        "price": 450000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "5, GLADSTONE TERRACE",
         "postcode": "SE27 9TP",
         "price": 525000,
@@ -2996,6 +3193,14 @@
         "price": 395000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, ULLSWATER ROAD",
+        "postcode": "SE27 0AL",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3015,14 +3220,6 @@
         "newBuild": false
       },
       {
-        "address": "233, FLAT 4, GIPSY ROAD",
-        "postcode": "SE27 9QY",
-        "price": 275000,
-        "dateOfTransfer": "2025-02-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "WAKEFIELD, 1A, FLAT 2, CHATSWORTH WAY",
         "postcode": "SE27 9HR",
         "price": 450000,
@@ -3031,10 +3228,10 @@
         "newBuild": false
       },
       {
-        "address": "131, FLAT B, GIPSY ROAD",
-        "postcode": "SE27 9QT",
-        "price": 292450,
-        "dateOfTransfer": "2025-02-21",
+        "address": "233, FLAT 4, GIPSY ROAD",
+        "postcode": "SE27 9QY",
+        "price": 275000,
+        "dateOfTransfer": "2025-02-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -3047,18 +3244,18 @@
         "newBuild": false
       },
       {
+        "address": "131, FLAT B, GIPSY ROAD",
+        "postcode": "SE27 9QT",
+        "price": 292450,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "55, ST GOTHARD ROAD",
         "postcode": "SE27 9QR",
         "price": 750000,
         "dateOfTransfer": "2025-02-18",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "81, WOODVALE WALK",
-        "postcode": "SE27 0EY",
-        "price": 500000,
-        "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3079,19 +3276,11 @@
         "newBuild": false
       },
       {
-        "address": "30, FRIAR MEWS",
-        "postcode": "SE27 0PU",
-        "price": 480000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "12, FLAT A, ULVERSTONE ROAD",
-        "postcode": "SE27 0AJ",
-        "price": 627000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
+        "address": "81, WOODVALE WALK",
+        "postcode": "SE27 0EY",
+        "price": 500000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3108,6 +3297,22 @@
         "price": 895000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "30, FRIAR MEWS",
+        "postcode": "SE27 0PU",
+        "price": 480000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "12, FLAT A, ULVERSTONE ROAD",
+        "postcode": "SE27 0AJ",
+        "price": 627000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3151,17 +3356,17 @@
         "newBuild": false
       },
       {
-        "address": "1, SYDENHAM PLACE",
-        "postcode": "SE27 0AP",
-        "price": 380000,
+        "address": "208, GIPSY ROAD",
+        "postcode": "SE27 9RB",
+        "price": 648000,
         "dateOfTransfer": "2025-01-23",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "208, GIPSY ROAD",
-        "postcode": "SE27 9RB",
-        "price": 648000,
+        "address": "1, SYDENHAM PLACE",
+        "postcode": "SE27 0AP",
+        "price": 380000,
         "dateOfTransfer": "2025-01-23",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3215,19 +3420,19 @@
         "newBuild": false
       },
       {
-        "address": "FLAT A, 13B, ULVERSTONE ROAD",
-        "postcode": "SE27 0AJ",
-        "price": 444000,
-        "dateOfTransfer": "2025-01-10",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "48, NORWOOD PARK ROAD, WEST NORWOOD",
         "postcode": "SE27 9UA",
         "price": 675176,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FLAT A, 13B, ULVERSTONE ROAD",
+        "postcode": "SE27 0AJ",
+        "price": 444000,
+        "dateOfTransfer": "2025-01-10",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3255,14 +3460,6 @@
         "newBuild": false
       },
       {
-        "address": "157A, GIPSY ROAD",
-        "postcode": "SE27 9QT",
-        "price": 427000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "57, ROBSON ROAD",
         "postcode": "SE27 9LB",
         "price": 565000,
@@ -3279,6 +3476,14 @@
         "newBuild": false
       },
       {
+        "address": "157A, GIPSY ROAD",
+        "postcode": "SE27 9QT",
+        "price": 427000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "262B, KNIGHTS HILL",
         "postcode": "SE27 0QP",
         "price": 725000,
@@ -3287,7 +3492,7 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 675645,
+    "averagePrice": 672582,
     "medianPrice": 540000
   },
   "representatives": {

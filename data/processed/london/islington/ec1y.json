@@ -3,8 +3,8 @@
   "slug": "ec1y",
   "city": "London",
   "borough": "Islington",
-  "latitude": 51.523085231638404,
-  "longitude": -0.0923844011299435,
+  "latitude": 51.523086006250004,
+  "longitude": -0.09240493750000003,
   "wards": [
     "Bunhill",
     "Clerkenwell",
@@ -56,7 +56,8 @@
         "urn": "100434",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/09/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "101 Whitecross Street, London",
         "postcode": "EC1Y 8JA",
         "numberOfPupils": 270,
@@ -67,7 +68,8 @@
         "urn": "143020",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/11/2019",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "15 Baltic Street West, London",
         "postcode": "EC1Y 0AE",
         "numberOfPupils": 348,
@@ -79,97 +81,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2742,
-        "violentCrimes": 693,
-        "propertyCrimes": 1480
+        "totalCrimes": 2746,
+        "violentCrimes": 696,
+        "propertyCrimes": 1481
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2692,
-        "violentCrimes": 692,
-        "propertyCrimes": 1462
+        "totalCrimes": 2701,
+        "violentCrimes": 696,
+        "propertyCrimes": 1466
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2474,
-        "violentCrimes": 640,
-        "propertyCrimes": 1357
+        "totalCrimes": 2486,
+        "violentCrimes": 643,
+        "propertyCrimes": 1366
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2518,
-        "violentCrimes": 644,
-        "propertyCrimes": 1445
+        "totalCrimes": 2525,
+        "violentCrimes": 646,
+        "propertyCrimes": 1447
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2479,
-        "violentCrimes": 647,
-        "propertyCrimes": 1367
+        "totalCrimes": 2489,
+        "violentCrimes": 651,
+        "propertyCrimes": 1372
       },
       {
         "month": "2025-12",
-        "totalCrimes": 2529,
-        "violentCrimes": 682,
-        "propertyCrimes": 1413
+        "totalCrimes": 2535,
+        "violentCrimes": 684,
+        "propertyCrimes": 1416
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2207,
+        "totalCrimes": 2208,
         "violentCrimes": 550,
-        "propertyCrimes": 1245
+        "propertyCrimes": 1246
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2320,
-        "violentCrimes": 589,
-        "propertyCrimes": 1311
+        "totalCrimes": 2324,
+        "violentCrimes": 590,
+        "propertyCrimes": 1314
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2449,
-        "violentCrimes": 646,
-        "propertyCrimes": 1347
+        "totalCrimes": 2455,
+        "violentCrimes": 647,
+        "propertyCrimes": 1352
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2444,
-        "violentCrimes": 596,
-        "propertyCrimes": 1410
+        "totalCrimes": 2449,
+        "violentCrimes": 598,
+        "propertyCrimes": 1413
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2464,
-        "violentCrimes": 622,
-        "propertyCrimes": 1409
+        "totalCrimes": 2471,
+        "violentCrimes": 625,
+        "propertyCrimes": 1413
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2581,
+        "totalCrimes": 2586,
         "violentCrimes": 648,
-        "propertyCrimes": 1479
+        "propertyCrimes": 1484
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3723,
-      "bicycle-theft": 982,
-      "burglary": 1394,
-      "criminal-damage-arson": 770,
-      "drugs": 1635,
-      "other-theft": 4631,
+      "anti-social-behaviour": 3727,
+      "bicycle-theft": 983,
+      "burglary": 1396,
+      "criminal-damage-arson": 773,
+      "drugs": 1636,
+      "other-theft": 4645,
       "possession-of-weapons": 152,
-      "public-order": 1485,
-      "robbery": 1008,
-      "shoplifting": 4083,
-      "theft-from-the-person": 4078,
+      "public-order": 1488,
+      "robbery": 1011,
+      "shoplifting": 4092,
+      "theft-from-the-person": 4094,
       "vehicle-crime": 787,
-      "violent-crime": 5004,
-      "other-crime": 167
+      "violent-crime": 5023,
+      "other-crime": 168
     },
-    "totalLast12Months": 29899
+    "totalLast12Months": 29975
   },
   "property": {
     "sales": [
+      {
+        "address": "153, FLAT 1, WHITECROSS STREET",
+        "postcode": "EC1Y 8JL",
+        "price": 710000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "LEXINGTON APARTMENTS, 40, 66, CITY ROAD",
         "postcode": "EC1Y 2AN",
@@ -192,6 +202,14 @@
         "price": 535000,
         "dateOfTransfer": "2026-06-01",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "115, GOLDEN LANE",
+        "postcode": "EC1Y 0TJ",
+        "price": 5234939,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -515,8 +533,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1719105,
-    "medianPrice": 650000
+    "averagePrice": 1774810,
+    "medianPrice": 670000
   },
   "representatives": {
     "representatives": [

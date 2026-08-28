@@ -3,8 +3,8 @@
   "slug": "ec1m",
   "city": "London",
   "borough": "Islington",
-  "latitude": 51.52128734319528,
-  "longitude": -0.10230229585798822,
+  "latitude": 51.52127232258065,
+  "longitude": -0.1022727290322581,
   "wards": [
     "Bunhill",
     "Clerkenwell",
@@ -85,6 +85,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "33-40 Charterhouse Square, London",
         "postcode": "EC1M 6EA",
         "numberOfPupils": 301,
@@ -188,6 +189,14 @@
   "property": {
     "sales": [
       {
+        "address": "CITY PAVILION, 33, FLAT 416, BRITTON STREET",
+        "postcode": "EC1M 5UG",
+        "price": 840000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "9B, APARTMENT 306, CLERKENWELL ROAD",
         "postcode": "EC1M 5PY",
         "price": 825000,
@@ -217,6 +226,14 @@
         "price": 700000,
         "dateOfTransfer": "2026-03-12",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "FLORIN COURT, 6 - 9, FLAT 6A, CHARTERHOUSE SQUARE",
+        "postcode": "EC1M 6ET",
+        "price": 437500,
+        "dateOfTransfer": "2026-03-04",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -348,17 +365,17 @@
         "newBuild": false
       },
       {
-        "address": "10, FLAT 6, EAGLE COURT",
-        "postcode": "EC1M 5QD",
-        "price": 390000,
+        "address": "9B, APARTMENT 402, CLERKENWELL ROAD",
+        "postcode": "EC1M 5PY",
+        "price": 465000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "9B, APARTMENT 402, CLERKENWELL ROAD",
-        "postcode": "EC1M 5PY",
-        "price": 465000,
+        "address": "10, FLAT 6, EAGLE COURT",
+        "postcode": "EC1M 5QD",
+        "price": 390000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -385,6 +402,14 @@
         "price": 245000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BASEMENT RESTAURANT, 44 - 46, ST JOHN STREET",
+        "postcode": "EC1M 4DF",
+        "price": 620000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -556,8 +581,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 939359,
-    "medianPrice": 530000
+    "averagePrice": 920571,
+    "medianPrice": 535000
   },
   "representatives": {
     "representatives": [

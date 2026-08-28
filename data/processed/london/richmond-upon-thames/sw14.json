@@ -3,8 +3,8 @@
   "slug": "sw14",
   "city": "London",
   "borough": "Richmond upon Thames",
-  "latitude": 51.46537598637598,
-  "longitude": -0.26699765940054476,
+  "latitude": 51.465246757834784,
+  "longitude": -0.26708302564102565,
   "wards": [
     "East Sheen",
     "Mortlake & Barnes Common",
@@ -98,7 +98,8 @@
         "urn": "102885",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "18/04/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Upper Richmond Road West, East Sheen, London",
         "postcode": "SW14 8ED",
         "numberOfPupils": 593,
@@ -109,7 +110,8 @@
         "urn": "102897",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/05/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "West Temple, East Sheen, London",
         "postcode": "SW14 7RT",
         "numberOfPupils": 598,
@@ -120,7 +122,8 @@
         "urn": "102909",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Worple Street, London",
         "postcode": "SW14 8HE",
         "numberOfPupils": 152,
@@ -132,6 +135,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "188 Sheen Lane, Richmond, London",
         "postcode": "SW14 8LF",
         "numberOfPupils": 181,
@@ -141,8 +145,9 @@
         "name": "Lift Richmond Park",
         "urn": "136208",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "08/12/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Park Avenue, London",
         "postcode": "SW14 8RG",
         "numberOfPupils": 1046,
@@ -153,7 +158,8 @@
         "urn": "139549",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/07/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "27 Sheen Lane, London",
         "postcode": "SW14 8HY",
         "numberOfPupils": 366,
@@ -165,97 +171,177 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 291,
-        "violentCrimes": 93,
-        "propertyCrimes": 125
+        "totalCrimes": 274,
+        "violentCrimes": 90,
+        "propertyCrimes": 111
       },
       {
         "month": "2025-08",
-        "totalCrimes": 254,
-        "violentCrimes": 81,
-        "propertyCrimes": 92
+        "totalCrimes": 233,
+        "violentCrimes": 74,
+        "propertyCrimes": 81
       },
       {
         "month": "2025-09",
-        "totalCrimes": 202,
-        "violentCrimes": 58,
-        "propertyCrimes": 89
+        "totalCrimes": 193,
+        "violentCrimes": 56,
+        "propertyCrimes": 82
       },
       {
         "month": "2025-10",
-        "totalCrimes": 240,
-        "violentCrimes": 71,
-        "propertyCrimes": 118
+        "totalCrimes": 224,
+        "violentCrimes": 69,
+        "propertyCrimes": 104
       },
       {
         "month": "2025-11",
-        "totalCrimes": 191,
-        "violentCrimes": 39,
-        "propertyCrimes": 99
+        "totalCrimes": 186,
+        "violentCrimes": 38,
+        "propertyCrimes": 96
       },
       {
         "month": "2025-12",
-        "totalCrimes": 226,
-        "violentCrimes": 68,
-        "propertyCrimes": 106
+        "totalCrimes": 215,
+        "violentCrimes": 66,
+        "propertyCrimes": 98
       },
       {
         "month": "2026-01",
-        "totalCrimes": 239,
-        "violentCrimes": 71,
-        "propertyCrimes": 106
+        "totalCrimes": 230,
+        "violentCrimes": 70,
+        "propertyCrimes": 99
       },
       {
         "month": "2026-02",
-        "totalCrimes": 200,
-        "violentCrimes": 58,
-        "propertyCrimes": 91
+        "totalCrimes": 194,
+        "violentCrimes": 56,
+        "propertyCrimes": 87
       },
       {
         "month": "2026-03",
-        "totalCrimes": 249,
-        "violentCrimes": 55,
-        "propertyCrimes": 143
+        "totalCrimes": 238,
+        "violentCrimes": 54,
+        "propertyCrimes": 134
       },
       {
         "month": "2026-04",
-        "totalCrimes": 248,
+        "totalCrimes": 239,
         "violentCrimes": 77,
-        "propertyCrimes": 120
+        "propertyCrimes": 112
       },
       {
         "month": "2026-05",
-        "totalCrimes": 194,
-        "violentCrimes": 69,
-        "propertyCrimes": 67
+        "totalCrimes": 186,
+        "violentCrimes": 66,
+        "propertyCrimes": 62
       },
       {
         "month": "2026-06",
-        "totalCrimes": 217,
-        "violentCrimes": 65,
-        "propertyCrimes": 87
+        "totalCrimes": 210,
+        "violentCrimes": 64,
+        "propertyCrimes": 81
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 591,
-      "bicycle-theft": 73,
-      "burglary": 165,
-      "criminal-damage-arson": 128,
-      "drugs": 84,
-      "other-theft": 243,
+      "anti-social-behaviour": 585,
+      "bicycle-theft": 71,
+      "burglary": 163,
+      "criminal-damage-arson": 125,
+      "drugs": 83,
+      "other-theft": 226,
       "possession-of-weapons": 9,
-      "public-order": 129,
-      "robbery": 39,
-      "shoplifting": 154,
+      "public-order": 125,
+      "robbery": 36,
+      "shoplifting": 112,
       "theft-from-the-person": 37,
-      "vehicle-crime": 443,
-      "violent-crime": 628,
-      "other-crime": 28
+      "vehicle-crime": 413,
+      "violent-crime": 610,
+      "other-crime": 27
     },
-    "totalLast12Months": 2751
+    "totalLast12Months": 2622
   },
   "property": {
     "sales": [
+      {
+        "address": "CHERTSEY COURT, FLAT 104, CLIFFORD AVENUE",
+        "postcode": "SW14 7BX",
+        "price": 365000,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, WALDECK TERRACE",
+        "postcode": "SW14 7HE",
+        "price": 720000,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "148, UPPER RICHMOND ROAD WEST",
+        "postcode": "SW14 8DP",
+        "price": 470224,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "123, AVONDALE ROAD",
+        "postcode": "SW14 8PU",
+        "price": 650000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, LODGE AVENUE",
+        "postcode": "SW14 8PQ",
+        "price": 640000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "89, AVONDALE ROAD",
+        "postcode": "SW14 8PU",
+        "price": 750000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "169, UPPER RICHMOND ROAD WEST",
+        "postcode": "SW14 8EB",
+        "price": 1950000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "110, ASHLEIGH ROAD",
+        "postcode": "SW14 8PX",
+        "price": 780000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, ST LEONARDS ROAD",
+        "postcode": "SW14 7LY",
+        "price": 1417000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68, STANLEY ROAD",
+        "postcode": "SW14 7DZ",
+        "price": 1335000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
       {
         "address": "33, VICTORIA ROAD",
         "postcode": "SW14 8EX",
@@ -289,6 +375,14 @@
         "newBuild": false
       },
       {
+        "address": "ST LEONARDS COURT, FLAT 54, ST LEONARDS ROAD",
+        "postcode": "SW14 7LS",
+        "price": 575000,
+        "dateOfTransfer": "2026-06-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "54, QUEENS ROAD",
         "postcode": "SW14 8PJ",
         "price": 1450000,
@@ -302,6 +396,14 @@
         "price": 1200000,
         "dateOfTransfer": "2026-06-02",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44A, UPPER RICHMOND ROAD WEST",
+        "postcode": "SW14 8DD",
+        "price": 680000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -337,17 +439,17 @@
         "newBuild": false
       },
       {
-        "address": "COWLEY MANSIONS, FLAT 328A, MORTLAKE HIGH STREET",
-        "postcode": "SW14 8SL",
-        "price": 300000,
+        "address": "THE POINT, 18A, FLAT 3, HANSON CLOSE",
+        "postcode": "SW14 7SJ",
+        "price": 365000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "THE POINT, 18A, FLAT 3, HANSON CLOSE",
-        "postcode": "SW14 7SJ",
-        "price": 365000,
+        "address": "COWLEY MANSIONS, FLAT 328A, MORTLAKE HIGH STREET",
+        "postcode": "SW14 8SL",
+        "price": 300000,
         "dateOfTransfer": "2026-05-08",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -385,19 +487,19 @@
         "newBuild": false
       },
       {
-        "address": "76, QUEENS ROAD",
-        "postcode": "SW14 8PJ",
-        "price": 1380000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "43, ASHLEIGH ROAD",
         "postcode": "SW14 8PY",
         "price": 835000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76, QUEENS ROAD",
+        "postcode": "SW14 8PJ",
+        "price": 1380000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -409,19 +511,19 @@
         "newBuild": false
       },
       {
-        "address": "92, RICHMOND PARK ROAD",
-        "postcode": "SW14 8LA",
-        "price": 1750000,
-        "dateOfTransfer": "2026-04-16",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "338, UPPER RICHMOND ROAD WEST, EAST SHEEN",
         "postcode": "SW14 7JR",
         "price": 1000000,
         "dateOfTransfer": "2026-04-16",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "92, RICHMOND PARK ROAD",
+        "postcode": "SW14 8LA",
+        "price": 1750000,
+        "dateOfTransfer": "2026-04-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -473,11 +575,27 @@
         "newBuild": false
       },
       {
+        "address": "6, GROSVENOR AVENUE",
+        "postcode": "SW14 8BX",
+        "price": 1557000,
+        "dateOfTransfer": "2026-03-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "90, COWLEY ROAD",
         "postcode": "SW14 8QB",
         "price": 620000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, GRAEMESDYKE AVENUE",
+        "postcode": "SW14 7BJ",
+        "price": 1010000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -537,6 +655,22 @@
         "newBuild": false
       },
       {
+        "address": "41, CHRISTCHURCH ROAD",
+        "postcode": "SW14 7AQ",
+        "price": 880000,
+        "dateOfTransfer": "2026-02-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "104, COWLEY ROAD",
+        "postcode": "SW14 8QB",
+        "price": 565000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "KENDAL COURT, 10, FLAT 8, ROSEMARY LANE",
         "postcode": "SW14 7HG",
         "price": 280101,
@@ -550,6 +684,22 @@
         "price": 890000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "53, FIRST AVENUE",
+        "postcode": "SW14 8SP",
+        "price": 1250000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, ENMORE GARDENS",
+        "postcode": "SW14 8RF",
+        "price": 1425000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -673,6 +823,14 @@
         "newBuild": false
       },
       {
+        "address": "19F, SHEEN LANE",
+        "postcode": "SW14 8HY",
+        "price": 405000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "31, ENMORE GARDENS",
         "postcode": "SW14 8RF",
         "price": 1305000,
@@ -686,14 +844,6 @@
         "price": 690000,
         "dateOfTransfer": "2026-01-09",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "19F, SHEEN LANE",
-        "postcode": "SW14 8HY",
-        "price": 405000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -713,14 +863,6 @@
         "newBuild": false
       },
       {
-        "address": "ST LEONARDS COURT, FLAT 62, ST LEONARDS ROAD",
-        "postcode": "SW14 7LS",
-        "price": 425000,
-        "dateOfTransfer": "2026-01-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "45, ENMORE GARDENS",
         "postcode": "SW14 8RF",
         "price": 1350000,
@@ -732,6 +874,14 @@
         "address": "5A, SHEEN GATE GARDENS",
         "postcode": "SW14 7PD",
         "price": 470000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST LEONARDS COURT, FLAT 62, ST LEONARDS ROAD",
+        "postcode": "SW14 7LS",
+        "price": 425000,
         "dateOfTransfer": "2026-01-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -753,19 +903,19 @@
         "newBuild": false
       },
       {
-        "address": "10, OBSERVATORY ROAD",
-        "postcode": "SW14 7QD",
-        "price": 1550000,
-        "dateOfTransfer": "2025-12-18",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "300, FLAT 1, UPPER RICHMOND ROAD WEST",
         "postcode": "SW14 7JG",
         "price": 315000,
         "dateOfTransfer": "2025-12-18",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, OBSERVATORY ROAD",
+        "postcode": "SW14 7QD",
+        "price": 1550000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -865,19 +1015,19 @@
         "newBuild": false
       },
       {
-        "address": "101, EAST SHEEN AVENUE",
-        "postcode": "SW14 8AX",
-        "price": 1125000,
-        "dateOfTransfer": "2025-11-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "8, STONEHILL CLOSE",
         "postcode": "SW14 8RP",
         "price": 2810000,
         "dateOfTransfer": "2025-11-28",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "101, EAST SHEEN AVENUE",
+        "postcode": "SW14 8AX",
+        "price": 2250000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -985,22 +1135,6 @@
         "newBuild": false
       },
       {
-        "address": "35B, SHEEN LANE",
-        "postcode": "SW14 8AB",
-        "price": 330000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "21, KINGSWAY",
-        "postcode": "SW14 7HL",
-        "price": 1425000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "55, AVONDALE ROAD",
         "postcode": "SW14 8PU",
         "price": 852550,
@@ -1022,6 +1156,22 @@
         "price": 980000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35B, SHEEN LANE",
+        "postcode": "SW14 8AB",
+        "price": 330000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, KINGSWAY",
+        "postcode": "SW14 7HL",
+        "price": 1425000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1105,11 +1255,19 @@
         "newBuild": false
       },
       {
-        "address": "481, UPPER RICHMOND ROAD WEST, EAST SHEEN",
-        "postcode": "SW14 7PU",
-        "price": 14750,
+        "address": "41, CHURCH AVENUE",
+        "postcode": "SW14 8NW",
+        "price": 510000,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "40, GROUND FLOOR FLAT, PRIESTS BRIDGE",
+        "postcode": "SW14 8TA",
+        "price": 1012000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1137,11 +1295,11 @@
         "newBuild": false
       },
       {
-        "address": "41, CHURCH AVENUE",
-        "postcode": "SW14 8NW",
-        "price": 510000,
+        "address": "481, UPPER RICHMOND ROAD WEST, EAST SHEEN",
+        "postcode": "SW14 7PU",
+        "price": 14750,
         "dateOfTransfer": "2025-10-17",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1209,14 +1367,6 @@
         "newBuild": false
       },
       {
-        "address": "CHERTSEY COURT, FLAT 110, CLIFFORD AVENUE",
-        "postcode": "SW14 7BX",
-        "price": 310000,
-        "dateOfTransfer": "2025-09-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "56, ALEXANDRA ROAD",
         "postcode": "SW14 8DN",
         "price": 610000,
@@ -1225,19 +1375,19 @@
         "newBuild": false
       },
       {
+        "address": "CHERTSEY COURT, FLAT 110, CLIFFORD AVENUE",
+        "postcode": "SW14 7BX",
+        "price": 310000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "22, GORDON AVENUE",
         "postcode": "SW14 8DZ",
         "price": 1475000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "ST LEONARDS COURT, SHED 32, ST LEONARDS ROAD",
-        "postcode": "SW14 7NG",
-        "price": 2000,
-        "dateOfTransfer": "2025-09-25",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1254,6 +1404,14 @@
         "price": 785000,
         "dateOfTransfer": "2025-09-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST LEONARDS COURT, SHED 32, ST LEONARDS ROAD",
+        "postcode": "SW14 7NG",
+        "price": 2000,
+        "dateOfTransfer": "2025-09-25",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1284,6 +1442,14 @@
         "address": "43, GRAEMESDYKE AVENUE",
         "postcode": "SW14 7BH",
         "price": 1300000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, GILPIN AVENUE",
+        "postcode": "SW14 8QX",
+        "price": 1250000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1369,17 +1535,17 @@
         "newBuild": false
       },
       {
-        "address": "17, PRINCES ROAD",
-        "postcode": "SW14 8PE",
-        "price": 735000,
+        "address": "28, PALEWELL PARK",
+        "postcode": "SW14 8JG",
+        "price": 2050000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "28, PALEWELL PARK",
-        "postcode": "SW14 8JG",
-        "price": 2050000,
+        "address": "17, PRINCES ROAD",
+        "postcode": "SW14 8PE",
+        "price": 735000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1497,19 +1663,19 @@
         "newBuild": false
       },
       {
-        "address": "87, AVONDALE ROAD",
-        "postcode": "SW14 8PU",
-        "price": 765000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "36, CARLTON ROAD",
         "postcode": "SW14 7RJ",
         "price": 1447000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "87, AVONDALE ROAD",
+        "postcode": "SW14 8PU",
+        "price": 765000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1537,19 +1703,19 @@
         "newBuild": false
       },
       {
-        "address": "345, UPPER RICHMOND ROAD WEST, EAST SHEEN",
-        "postcode": "SW14 8QN",
-        "price": 400000,
-        "dateOfTransfer": "2025-08-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "6, MEDCROFT GARDENS",
         "postcode": "SW14 7RN",
         "price": 1236500,
         "dateOfTransfer": "2025-08-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "345, UPPER RICHMOND ROAD WEST, EAST SHEEN",
+        "postcode": "SW14 8QN",
+        "price": 400000,
+        "dateOfTransfer": "2025-08-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1801,19 +1967,19 @@
         "newBuild": false
       },
       {
-        "address": "158A, UPPER RICHMOND ROAD WEST, EAST SHEEN",
-        "postcode": "SW14 8AW",
-        "price": 530000,
-        "dateOfTransfer": "2025-06-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "36, SHREWSBURY AVENUE",
         "postcode": "SW14 8JZ",
         "price": 1085000,
         "dateOfTransfer": "2025-06-26",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "158A, UPPER RICHMOND ROAD WEST, EAST SHEEN",
+        "postcode": "SW14 8AW",
+        "price": 530000,
+        "dateOfTransfer": "2025-06-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1953,19 +2119,19 @@
         "newBuild": false
       },
       {
-        "address": "30, VICARAGE DRIVE",
-        "postcode": "SW14 8RX",
-        "price": 1800000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "21, STANLEY ROAD",
         "postcode": "SW14 7EB",
         "price": 1225000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, VICARAGE DRIVE",
+        "postcode": "SW14 8RX",
+        "price": 1800000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2225,9 +2391,9 @@
         "newBuild": false
       },
       {
-        "address": "3, SOUTH WORPLE WAY",
-        "postcode": "SW14 8ST",
-        "price": 850000,
+        "address": "424, UPPER RICHMOND ROAD WEST, EAST SHEEN",
+        "postcode": "SW14 7JX",
+        "price": 1700000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2257,19 +2423,19 @@
         "newBuild": false
       },
       {
+        "address": "3, SOUTH WORPLE WAY",
+        "postcode": "SW14 8ST",
+        "price": 850000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "CHERTSEY COURT, FLAT 41, CLIFFORD AVENUE",
         "postcode": "SW14 7RD",
         "price": 375000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "424, UPPER RICHMOND ROAD WEST, EAST SHEEN",
-        "postcode": "SW14 7JX",
-        "price": 1700000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2289,11 +2455,11 @@
         "newBuild": false
       },
       {
-        "address": "ST LEONARDS COURT, FLAT 5, ST LEONARDS ROAD",
-        "postcode": "SW14 7NG",
-        "price": 450000,
+        "address": "120, UPPER RICHMOND ROAD WEST, EAST SHEEN",
+        "postcode": "SW14 8DT",
+        "price": 1172970,
         "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2313,11 +2479,11 @@
         "newBuild": false
       },
       {
-        "address": "120, UPPER RICHMOND ROAD WEST, EAST SHEEN",
-        "postcode": "SW14 8DT",
-        "price": 1172970,
+        "address": "ST LEONARDS COURT, FLAT 5, ST LEONARDS ROAD",
+        "postcode": "SW14 7NG",
+        "price": 450000,
         "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2326,14 +2492,6 @@
         "price": 700000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "SHEEN STABLES REAR OF 119, MEWS HOUSE A, SHEEN LANE",
-        "postcode": "SW14 8AE",
-        "price": 615000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2369,10 +2527,74 @@
         "newBuild": false
       },
       {
+        "address": "SHEEN STABLES REAR OF 119, MEWS HOUSE A, SHEEN LANE",
+        "postcode": "SW14 8AE",
+        "price": 615000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "78, DEANHILL COURT, EAST SHEEN",
         "postcode": "SW14 7DN",
         "price": 460000,
         "dateOfTransfer": "2025-03-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "192A, SHEEN LANE",
+        "postcode": "SW14 8LF",
+        "price": 1650000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, COVAL GARDENS",
+        "postcode": "SW14 7DG",
+        "price": 2012000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, LEWIN ROAD",
+        "postcode": "SW14 8DR",
+        "price": 965000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PARK SHEEN, FLAT 16, DERBY ROAD",
+        "postcode": "SW14 7DR",
+        "price": 381000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, SECOND AVENUE",
+        "postcode": "SW14 8QF",
+        "price": 690000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "94, ASHLEIGH ROAD",
+        "postcode": "SW14 8PX",
+        "price": 660000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "70, THE WILLOUGHBYS",
+        "postcode": "SW14 8DF",
+        "price": 380000,
+        "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2406,62 +2628,6 @@
         "price": 2570000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "192A, SHEEN LANE",
-        "postcode": "SW14 8LF",
-        "price": 1650000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "30, COVAL GARDENS",
-        "postcode": "SW14 7DG",
-        "price": 2012000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "PARK SHEEN, FLAT 16, DERBY ROAD",
-        "postcode": "SW14 7DR",
-        "price": 381000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "94, ASHLEIGH ROAD",
-        "postcode": "SW14 8PX",
-        "price": 660000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "70, THE WILLOUGHBYS",
-        "postcode": "SW14 8DF",
-        "price": 380000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "19, LEWIN ROAD",
-        "postcode": "SW14 8DR",
-        "price": 965000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "15, SECOND AVENUE",
-        "postcode": "SW14 8QF",
-        "price": 690000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2561,14 +2727,6 @@
         "newBuild": false
       },
       {
-        "address": "20, VICARAGE DRIVE",
-        "postcode": "SW14 8RX",
-        "price": 2100000,
-        "dateOfTransfer": "2025-03-07",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "23, DOVECOTE GARDENS",
         "postcode": "SW14 8PN",
         "price": 460000,
@@ -2585,11 +2743,11 @@
         "newBuild": false
       },
       {
-        "address": "20, COLSTON ROAD",
-        "postcode": "SW14 7PQ",
-        "price": 350000,
+        "address": "20, VICARAGE DRIVE",
+        "postcode": "SW14 8RX",
+        "price": 2100000,
         "dateOfTransfer": "2025-03-07",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2598,6 +2756,14 @@
         "price": 1485000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, COLSTON ROAD",
+        "postcode": "SW14 7PQ",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2620,14 +2786,6 @@
         "address": "KENDAL COURT, 10, FLAT 1, ROSEMARY LANE",
         "postcode": "SW14 7HG",
         "price": 317500,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "192, FLAT A, UPPER RICHMOND ROAD WEST, EAST SHEEN",
-        "postcode": "SW14 8AN",
-        "price": 610000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2657,10 +2815,10 @@
         "newBuild": false
       },
       {
-        "address": "13, GROUND FLOOR FLAT, HOLMESDALE AVENUE",
-        "postcode": "SW14 7BQ",
-        "price": 660000,
-        "dateOfTransfer": "2025-02-27",
+        "address": "192, FLAT A, UPPER RICHMOND ROAD WEST, EAST SHEEN",
+        "postcode": "SW14 8AN",
+        "price": 610000,
+        "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2668,6 +2826,14 @@
         "address": "ADDINGTON COURT, 29, FLAT 3, MULLINS PATH",
         "postcode": "SW14 8EZ",
         "price": 500000,
+        "dateOfTransfer": "2025-02-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, GROUND FLOOR FLAT, HOLMESDALE AVENUE",
+        "postcode": "SW14 7BQ",
+        "price": 660000,
         "dateOfTransfer": "2025-02-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2745,19 +2911,19 @@
         "newBuild": false
       },
       {
-        "address": "201, UPPER RICHMOND ROAD WEST, EAST SHEEN",
-        "postcode": "SW14 8QT",
-        "price": 45000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "26, LEWIN ROAD",
         "postcode": "SW14 8DR",
         "price": 815000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "201, UPPER RICHMOND ROAD WEST, EAST SHEEN",
+        "postcode": "SW14 8QT",
+        "price": 45000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2833,19 +2999,19 @@
         "newBuild": false
       },
       {
-        "address": "97, KINGSWAY",
-        "postcode": "SW14 7HN",
-        "price": 662000,
-        "dateOfTransfer": "2025-01-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "8, WRIGHTS WALK",
         "postcode": "SW14 8EU",
         "price": 900000,
         "dateOfTransfer": "2025-01-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "97, KINGSWAY",
+        "postcode": "SW14 7HN",
+        "price": 662000,
+        "dateOfTransfer": "2025-01-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2878,22 +3044,6 @@
         "price": 1710000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "17, CLIFFORD AVENUE",
-        "postcode": "SW14 7BT",
-        "price": 825000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "COWLEY MANSIONS, FLAT 262B, MORTLAKE HIGH STREET",
-        "postcode": "SW14 8SL",
-        "price": 425000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2937,6 +3087,22 @@
         "newBuild": false
       },
       {
+        "address": "17, CLIFFORD AVENUE",
+        "postcode": "SW14 7BT",
+        "price": 825000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "COWLEY MANSIONS, FLAT 262B, MORTLAKE HIGH STREET",
+        "postcode": "SW14 8SL",
+        "price": 425000,
+        "dateOfTransfer": "2025-01-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "29, DEANHILL ROAD",
         "postcode": "SW14 7DQ",
         "price": 1791500,
@@ -2953,19 +3119,19 @@
         "newBuild": false
       },
       {
-        "address": "51, COVAL ROAD",
-        "postcode": "SW14 7RW",
-        "price": 1460000,
-        "dateOfTransfer": "2025-01-16",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "7, LEWIN ROAD",
         "postcode": "SW14 8DR",
         "price": 830000,
         "dateOfTransfer": "2025-01-16",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51, COVAL ROAD",
+        "postcode": "SW14 7RW",
+        "price": 1460000,
+        "dateOfTransfer": "2025-01-16",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3009,19 +3175,19 @@
         "newBuild": false
       },
       {
-        "address": "32, SHREWSBURY AVENUE",
-        "postcode": "SW14 8JZ",
-        "price": 962500,
-        "dateOfTransfer": "2025-01-08",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "PARKWAY HOUSE, SHEEN LANE",
         "postcode": "SW14 8LS",
         "price": 8500000,
         "dateOfTransfer": "2025-01-08",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "32, SHREWSBURY AVENUE",
+        "postcode": "SW14 8JZ",
+        "price": 962500,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3049,8 +3215,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 1061505,
-    "medianPrice": 890000
+    "averagePrice": 1059272,
+    "medianPrice": 885000
   },
   "representatives": {
     "representatives": [

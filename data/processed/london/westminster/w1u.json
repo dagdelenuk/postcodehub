@@ -3,8 +3,8 @@
   "slug": "w1u",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.51870133644865,
-  "longitude": -0.15347527943925224,
+  "latitude": 51.518712401742526,
+  "longitude": -0.15349545111326182,
   "wards": [
     "Marylebone",
     "West End"
@@ -102,7 +102,8 @@
         "urn": "137353",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/02/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "64 Marylebone High Street, London",
         "postcode": "W1U 5BA",
         "numberOfPupils": 1181,
@@ -114,6 +115,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "100 Marylebone Lane, Marylebone, London",
         "postcode": "W1U 2QU",
         "numberOfPupils": 406,
@@ -125,6 +127,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "St Vincent Street, London",
         "postcode": "W1U 4DF",
         "numberOfPupils": null,
@@ -227,6 +230,22 @@
   },
   "property": {
     "sales": [
+      {
+        "address": "159, MONTAGU MANSIONS",
+        "postcode": "W1U 6LQ",
+        "price": 1350000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, FLAT C, GEORGE STREET",
+        "postcode": "W1U 7DP",
+        "price": 1490000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "36, THIRD FLOOR FLAT 5, NOTTINGHAM PLACE",
         "postcode": "W1U 5NT",
@@ -340,6 +359,22 @@
         "newBuild": false
       },
       {
+        "address": "ADMIRAL COURT, 45, FLAT 12, BLANDFORD STREET",
+        "postcode": "W1U 7HG",
+        "price": 770000,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BICKENHALL MANSIONS, PENTHOUSE 19, BICKENHALL STREET",
+        "postcode": "W1U 6BP",
+        "price": 6750000,
+        "dateOfTransfer": "2026-02-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "WENDOVER COURT, FLAT 74, CHILTERN STREET",
         "postcode": "W1U 7NX",
         "price": 750000,
@@ -380,6 +415,14 @@
         "newBuild": false
       },
       {
+        "address": "5, PADDINGTON STREET",
+        "postcode": "W1U 5QF",
+        "price": 3400000,
+        "dateOfTransfer": "2025-12-05",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "30, FLAT 58, BLANDFORD STREET",
         "postcode": "W1U 4BY",
         "price": 1150000,
@@ -410,6 +453,14 @@
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT A408, AYBROOK STREET",
+        "postcode": "W1U 4FA",
+        "price": 8350000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "19, FLAT 40, BARRETT STREET",
@@ -452,6 +503,14 @@
         "newBuild": false
       },
       {
+        "address": "100, APARTMENT E304, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 3684800,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "35, FLAT 8, GEORGE STREET",
         "postcode": "W1U 3QP",
         "price": 1400000,
@@ -473,6 +532,14 @@
         "price": 1196000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29A, JAMES STREET",
+        "postcode": "W1U 1DZ",
+        "price": 175000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -508,14 +575,6 @@
         "newBuild": false
       },
       {
-        "address": "100, APARTMENT W501, GEORGE STREET",
-        "postcode": "W1U 8AW",
-        "price": 9260000,
-        "dateOfTransfer": "2025-09-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "100, APARTMENT E204, GEORGE STREET",
         "postcode": "W1U 8AW",
         "price": 3700000,
@@ -535,6 +594,14 @@
         "address": "100, APARTMENT E103, GEORGE STREET",
         "postcode": "W1U 8AW",
         "price": 5500000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "100, APARTMENT W501, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 9260000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
@@ -564,9 +631,49 @@
         "newBuild": true
       },
       {
+        "address": "100, APARTMENT W203, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 2950000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "100, APARTMENT E303, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 2897500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "100, APARTMENT W103, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 5285000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "100, APARTMENT E404, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 3935000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "100, APARTMENT W204, GEORGE STREET",
         "postcode": "W1U 8AW",
         "price": 3950000,
+        "dateOfTransfer": "2025-09-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "100, APARTMENT E101, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 5500000,
         "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
@@ -578,6 +685,30 @@
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Terraced",
         "newBuild": false
+      },
+      {
+        "address": "BICKENHALL MANSIONS, 30, BICKENHALL STREET",
+        "postcode": "W1U 6BR",
+        "price": 1150000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "100, APARTMENT W303, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 2800000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "100, APARTMENT W304, GEORGE STREET",
+        "postcode": "W1U 8AW",
+        "price": 3725000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "10, WIGMORE PLACE",
@@ -612,19 +743,19 @@
         "newBuild": false
       },
       {
-        "address": "35, FLAT 12, GEORGE STREET",
-        "postcode": "W1U 3QP",
-        "price": 1640000,
-        "dateOfTransfer": "2025-09-02",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "41, PADDINGTON STREET",
         "postcode": "W1U 4HN",
         "price": 3000000,
         "dateOfTransfer": "2025-09-02",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "35, FLAT 12, GEORGE STREET",
+        "postcode": "W1U 3QP",
+        "price": 1640000,
+        "dateOfTransfer": "2025-09-02",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -884,20 +1015,20 @@
         "newBuild": false
       },
       {
-        "address": "1, APARTMENT A310, AYBROOK STREET",
-        "postcode": "W1U 4FA",
-        "price": 5645000,
-        "dateOfTransfer": "2025-05-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "PORTMAN MANSIONS, FLAT 8C, PORTER STREET",
         "postcode": "W1U 6DE",
         "price": 2400000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT A310, AYBROOK STREET",
+        "postcode": "W1U 4FA",
+        "price": 5645000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "21, THIRD FLOOR FLAT, BULSTRODE STREET",
@@ -972,14 +1103,6 @@
         "newBuild": false
       },
       {
-        "address": "43A, FLAT 19, CHILTERN STREET",
-        "postcode": "W1U 6LT",
-        "price": 410000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "BRENDON HOUSE, 3, FLAT 10, NOTTINGHAM PLACE",
         "postcode": "W1U 5LB",
         "price": 1280000,
@@ -988,10 +1111,10 @@
         "newBuild": false
       },
       {
-        "address": "LUXBOROUGH HOUSE, FLAT 6, LUXBOROUGH STREET",
-        "postcode": "W1U 5BJ",
-        "price": 935000,
-        "dateOfTransfer": "2025-03-28",
+        "address": "43A, FLAT 19, CHILTERN STREET",
+        "postcode": "W1U 6LT",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -999,6 +1122,14 @@
         "address": "40, FLAT 21, BLANDFORD STREET",
         "postcode": "W1U 4ED",
         "price": 700000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LUXBOROUGH HOUSE, FLAT 6, LUXBOROUGH STREET",
+        "postcode": "W1U 5BJ",
+        "price": 935000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1012,17 +1143,17 @@
         "newBuild": false
       },
       {
-        "address": "BICKENHALL MANSIONS, PENTHOUSE 14, BICKENHALL STREET",
-        "postcode": "W1U 6BR",
-        "price": 3100000,
+        "address": "3, FLAT 4, NOTTINGHAM STREET",
+        "postcode": "W1U 5EG",
+        "price": 570000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "3, FLAT 4, NOTTINGHAM STREET",
-        "postcode": "W1U 5EG",
-        "price": 570000,
+        "address": "BICKENHALL MANSIONS, PENTHOUSE 14, BICKENHALL STREET",
+        "postcode": "W1U 6BR",
+        "price": 3100000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1172,8 +1303,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 3185909,
-    "medianPrice": 1475000
+    "averagePrice": 3210072,
+    "medianPrice": 1560000
   },
   "representatives": {
     "representatives": [

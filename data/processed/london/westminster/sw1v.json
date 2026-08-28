@@ -3,8 +3,8 @@
   "slug": "sw1v",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.48950522164052,
-  "longitude": -0.13998562303664921,
+  "latitude": 51.48951443599262,
+  "longitude": -0.14001840445269012,
   "wards": [
     "Knightsbridge & Belgravia",
     "Nine Elms",
@@ -155,7 +155,8 @@
         "urn": "101104",
         "phaseOfEducation": "Nursery",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "08/07/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Aylesford Street, London",
         "postcode": "SW1V 3RT",
         "numberOfPupils": 52,
@@ -165,8 +166,9 @@
         "name": "St Gabriel's CofE Primary School",
         "urn": "101129",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "16/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Churchill Gardens Road, London",
         "postcode": "SW1V 3AG",
         "numberOfPupils": 187,
@@ -178,6 +180,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "55-57 Eccleston Square, London",
         "postcode": "SW1V 1PH",
         "numberOfPupils": 222,
@@ -188,7 +191,8 @@
         "urn": "135676",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "05/10/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lupus Street, Pimlico, London",
         "postcode": "SW1V 3AT",
         "numberOfPupils": 1079,
@@ -199,7 +203,8 @@
         "urn": "139898",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "20/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Lupus Street, Westminster, London",
         "postcode": "SW1V 3AT",
         "numberOfPupils": 331,
@@ -211,6 +216,7 @@
         "phaseOfEducation": "16 plus",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "1, Sutherland Street, Pimlico, London",
         "postcode": "SW1V 4LD",
         "numberOfPupils": null,
@@ -264,14 +270,14 @@
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1275,
+        "totalCrimes": 1276,
         "violentCrimes": 298,
-        "propertyCrimes": 661
+        "propertyCrimes": 662
       },
       {
         "month": "2026-03",
-        "totalCrimes": 1385,
-        "violentCrimes": 345,
+        "totalCrimes": 1387,
+        "violentCrimes": 347,
         "propertyCrimes": 691
       },
       {
@@ -301,18 +307,114 @@
       "drugs": 472,
       "other-theft": 2202,
       "possession-of-weapons": 102,
-      "public-order": 938,
+      "public-order": 939,
       "robbery": 676,
       "shoplifting": 1492,
-      "theft-from-the-person": 3391,
+      "theft-from-the-person": 3392,
       "vehicle-crime": 546,
-      "violent-crime": 3136,
+      "violent-crime": 3137,
       "other-crime": 125
     },
-    "totalLast12Months": 18719
+    "totalLast12Months": 18722
   },
   "property": {
     "sales": [
+      {
+        "address": "80, FLAT C, DENBIGH STREET",
+        "postcode": "SW1V 2EX",
+        "price": 610000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "69, FLAT 2, WARWICK SQUARE",
+        "postcode": "SW1V 2AR",
+        "price": 1380000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "78A, CLAVERTON STREET",
+        "postcode": "SW1V 3AX",
+        "price": 750000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "89, FLAT 2, GLOUCESTER STREET",
+        "postcode": "SW1V 4EB",
+        "price": 483000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18 - 19, FLAT K, WARWICK SQUARE",
+        "postcode": "SW1V 2AB",
+        "price": 1367212,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 64, VAUXHALL BRIDGE ROAD",
+        "postcode": "SW1V 2RD",
+        "price": 710000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CATHEDRAL MANSIONS, FLAT 6, VAUXHALL BRIDGE ROAD",
+        "postcode": "SW1V 1BP",
+        "price": 585000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "90, FLAT 3, CAMBRIDGE STREET",
+        "postcode": "SW1V 4QG",
+        "price": 655101,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "149, FLAT 3, CAMBRIDGE STREET",
+        "postcode": "SW1V 4QB",
+        "price": 690000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "28, FLAT B4, GUILDHOUSE STREET",
+        "postcode": "SW1V 1JJ",
+        "price": 885000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "38, FLAT 7, DENBIGH STREET",
+        "postcode": "SW1V 2ER",
+        "price": 638000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "74, FLAT 2, WARWICK SQUARE",
+        "postcode": "SW1V 2AR",
+        "price": 632500,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "81, FLAT 2, WINCHESTER STREET",
         "postcode": "SW1V 4NU",
@@ -326,6 +428,22 @@
         "postcode": "SW1V 2NX",
         "price": 950500,
         "dateOfTransfer": "2026-06-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, FLAT 2, SUSSEX STREET",
+        "postcode": "SW1V 4RW",
+        "price": 511999,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "GEORGE ELIOT HOUSE, FLAT 33, VAUXHALL BRIDGE ROAD",
+        "postcode": "SW1V 2SR",
+        "price": 245000,
+        "dateOfTransfer": "2026-06-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -418,6 +536,14 @@
         "newBuild": false
       },
       {
+        "address": "16B, DENBIGH STREET",
+        "postcode": "SW1V 2ER",
+        "price": 585000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "27 - 31, FLAT G, SUTHERLAND STREET",
         "postcode": "SW1V 4JU",
         "price": 520000,
@@ -446,6 +572,14 @@
         "postcode": "SW1V 2RD",
         "price": 600000,
         "dateOfTransfer": "2026-05-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13, FLAT A, RANELAGH ROAD",
+        "postcode": "SW1V 3EX",
+        "price": 1010000,
+        "dateOfTransfer": "2026-05-06",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -506,17 +640,17 @@
         "newBuild": false
       },
       {
-        "address": "BELGRAVE HOUSE 92-94, FLAT 6, BELGRAVE ROAD",
-        "postcode": "SW1V 2BJ",
-        "price": 605000,
+        "address": "41, FLAT 6, ECCLESTON SQUARE",
+        "postcode": "SW1V 1PB",
+        "price": 620000,
         "dateOfTransfer": "2026-04-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "41, FLAT 6, ECCLESTON SQUARE",
-        "postcode": "SW1V 1PB",
-        "price": 620000,
+        "address": "BELGRAVE HOUSE 92-94, FLAT 6, BELGRAVE ROAD",
+        "postcode": "SW1V 2BJ",
+        "price": 605000,
         "dateOfTransfer": "2026-04-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -546,6 +680,14 @@
         "newBuild": false
       },
       {
+        "address": "35A, ECCLESTON SQUARE",
+        "postcode": "SW1V 1PB",
+        "price": 1650000,
+        "dateOfTransfer": "2026-04-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "75, LOWER GROUND FLOOR FLAT, ST GEORGES DRIVE",
         "postcode": "SW1V 4DB",
         "price": 822200,
@@ -554,10 +696,10 @@
         "newBuild": false
       },
       {
-        "address": "35A, ECCLESTON SQUARE",
-        "postcode": "SW1V 1PB",
-        "price": 1650000,
-        "dateOfTransfer": "2026-04-14",
+        "address": "83, FIRST FLOOR REAR FLAT, ALDERNEY STREET",
+        "postcode": "SW1V 4HF",
+        "price": 275000,
+        "dateOfTransfer": "2026-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -578,17 +720,17 @@
         "newBuild": false
       },
       {
-        "address": "47, FLAT D, GLOUCESTER STREET",
-        "postcode": "SW1V 2DB",
-        "price": 410000,
+        "address": "REPTON HOUSE, FLAT 3, CHARLWOOD STREET",
+        "postcode": "SW1V 2LD",
+        "price": 620000,
         "dateOfTransfer": "2026-03-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "REPTON HOUSE, FLAT 3, CHARLWOOD STREET",
-        "postcode": "SW1V 2LD",
-        "price": 620000,
+        "address": "47, FLAT D, GLOUCESTER STREET",
+        "postcode": "SW1V 2DB",
+        "price": 410000,
         "dateOfTransfer": "2026-03-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -654,6 +796,14 @@
         "postcode": "SW1V 2HU",
         "price": 667725,
         "dateOfTransfer": "2026-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "RIVERMILL, 151, FLAT 31, GROSVENOR ROAD",
+        "postcode": "SW1V 3JN",
+        "price": 830000,
+        "dateOfTransfer": "2026-03-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -746,10 +896,26 @@
         "newBuild": false
       },
       {
+        "address": "10, FLAT 3, ST GEORGES SQUARE",
+        "postcode": "SW1V 2HP",
+        "price": 750000,
+        "dateOfTransfer": "2026-02-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "ROYAL BELGRAVE HOUSE, FLAT 11, HUGH STREET",
         "postcode": "SW1V 1RR",
         "price": 615000,
         "dateOfTransfer": "2026-02-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "THORNDIKE HOUSE, 35, FLAT 45, VAUXHALL BRIDGE ROAD",
+        "postcode": "SW1V 2TH",
+        "price": 302000,
+        "dateOfTransfer": "2026-01-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -778,6 +944,14 @@
         "newBuild": false
       },
       {
+        "address": "GROSVENOR LODGE, 94, FLAT 8, GROSVENOR ROAD",
+        "postcode": "SW1V 3LF",
+        "price": 422000,
+        "dateOfTransfer": "2026-01-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "6, GARDEN TERRACE",
         "postcode": "SW1V 2PX",
         "price": 375000,
@@ -786,10 +960,10 @@
         "newBuild": false
       },
       {
-        "address": "GROSVENOR LODGE, 94, FLAT 8, GROSVENOR ROAD",
-        "postcode": "SW1V 3LF",
-        "price": 422000,
-        "dateOfTransfer": "2026-01-28",
+        "address": "55, FLAT 3, ALDERNEY STREET",
+        "postcode": "SW1V 4HH",
+        "price": 465000,
+        "dateOfTransfer": "2026-01-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -802,17 +976,17 @@
         "newBuild": false
       },
       {
-        "address": "26, LOWER GROUND FLOOR FLAT, MORETON PLACE",
+        "address": "26, MORETON PLACE",
         "postcode": "SW1V 2NR",
-        "price": 700000,
+        "price": 1900000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "26, MORETON PLACE",
+        "address": "26, LOWER GROUND FLOOR FLAT, MORETON PLACE",
         "postcode": "SW1V 2NR",
-        "price": 1900000,
+        "price": 700000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -839,6 +1013,14 @@
         "price": 410000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1B, WINCHESTER STREET",
+        "postcode": "SW1V 4PA",
+        "price": 1100000,
+        "dateOfTransfer": "2026-01-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -882,17 +1064,17 @@
         "newBuild": false
       },
       {
-        "address": "PRIORY HOUSE, 12, FLAT 14, RAMPAYNE STREET",
-        "postcode": "SW1V 2QT",
-        "price": 249000,
+        "address": "99, FIRST FLOOR FLAT, BELGRAVE ROAD",
+        "postcode": "SW1V 2BH",
+        "price": 655000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "99, FIRST FLOOR FLAT, BELGRAVE ROAD",
-        "postcode": "SW1V 2BH",
-        "price": 655000,
+        "address": "PRIORY HOUSE, 12, FLAT 14, RAMPAYNE STREET",
+        "postcode": "SW1V 2QT",
+        "price": 249000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1122,19 +1304,19 @@
         "newBuild": false
       },
       {
-        "address": "5, HUGH MEWS",
-        "postcode": "SW1V 1QH",
-        "price": 70000,
-        "dateOfTransfer": "2025-10-30",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "84, FIRST FLOOR FLAT, TACHBROOK STREET",
         "postcode": "SW1V 2NB",
         "price": 700000,
         "dateOfTransfer": "2025-10-30",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, HUGH MEWS",
+        "postcode": "SW1V 1QH",
+        "price": 70000,
+        "dateOfTransfer": "2025-10-30",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1210,6 +1392,14 @@
         "newBuild": false
       },
       {
+        "address": "29, FLAT B, WARWICK SQUARE",
+        "postcode": "SW1V 2AD",
+        "price": 1555000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "129, LAND AT THE BACK OF, GROSVENOR ROAD",
         "postcode": "SW1V 3JY",
         "price": 30000,
@@ -1221,6 +1411,14 @@
         "address": "89 - 91, FLAT 2, ST GEORGES SQUARE",
         "postcode": "SW1V 3QW",
         "price": 1000000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LENTHALL HOUSE, FLAT 19, CHURCHILL GARDENS",
+        "postcode": "SW1V 3BA",
+        "price": 330000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1266,9 +1464,9 @@
         "newBuild": false
       },
       {
-        "address": "HERRING HOUSE, 18, FLAT 5, GLOUCESTER STREET",
-        "postcode": "SW1V 2DN",
-        "price": 851000,
+        "address": "114, FLAT 17, BELGRAVE ROAD",
+        "postcode": "SW1V 2BL",
+        "price": 570000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1282,9 +1480,9 @@
         "newBuild": false
       },
       {
-        "address": "114, FLAT 17, BELGRAVE ROAD",
-        "postcode": "SW1V 2BL",
-        "price": 570000,
+        "address": "HERRING HOUSE, 18, FLAT 5, GLOUCESTER STREET",
+        "postcode": "SW1V 2DN",
+        "price": 851000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1370,10 +1568,10 @@
         "newBuild": false
       },
       {
-        "address": "45 - 47, FLAT C, ST GEORGES SQUARE",
+        "address": "69, FLAT 3, ST GEORGES SQUARE",
         "postcode": "SW1V 3QN",
-        "price": 1050000,
-        "dateOfTransfer": "2025-09-15",
+        "price": 1600000,
+        "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1381,6 +1579,14 @@
         "address": "66, APARTMENT B, WARWICK SQUARE",
         "postcode": "SW1V 2AP",
         "price": 830000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45 - 47, FLAT C, ST GEORGES SQUARE",
+        "postcode": "SW1V 3QN",
+        "price": 1050000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1407,6 +1613,14 @@
         "price": 576290,
         "dateOfTransfer": "2025-09-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, CAMBRIDGE STREET",
+        "postcode": "SW1V 4QQ",
+        "price": 2800000,
+        "dateOfTransfer": "2025-09-10",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1474,14 +1688,6 @@
         "newBuild": false
       },
       {
-        "address": "41, FLAT 5, GLOUCESTER STREET",
-        "postcode": "SW1V 2DB",
-        "price": 1200000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "146, THIRD FLOOR FLAT, TACHBROOK STREET",
         "postcode": "SW1V 2NE",
         "price": 309000,
@@ -1493,6 +1699,14 @@
         "address": "81, FLAT 2, ST GEORGES DRIVE",
         "postcode": "SW1V 4DB",
         "price": 615000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "41, FLAT 5, GLOUCESTER STREET",
+        "postcode": "SW1V 2DB",
+        "price": 1200000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1634,6 +1848,14 @@
         "newBuild": false
       },
       {
+        "address": "6, FLAT C, WINCHESTER STREET",
+        "postcode": "SW1V 4ND",
+        "price": 352500,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "45, SECOND & THIRD FLOOR FLAT, MORETON TERRACE",
         "postcode": "SW1V 2NS",
         "price": 1220000,
@@ -1762,17 +1984,17 @@
         "newBuild": false
       },
       {
-        "address": "LITTLETON HOUSE, FLAT 16, LUPUS STREET",
-        "postcode": "SW1V 3EP",
-        "price": 600000,
+        "address": "SECOND AND THIRD FLOOR FLAT, 66, CAMBRIDGE STREET",
+        "postcode": "SW1V 4QQ",
+        "price": 1470000,
         "dateOfTransfer": "2025-07-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "SECOND AND THIRD FLOOR FLAT, 66, CAMBRIDGE STREET",
-        "postcode": "SW1V 4QQ",
-        "price": 1470000,
+        "address": "LITTLETON HOUSE, FLAT 16, LUPUS STREET",
+        "postcode": "SW1V 3EP",
+        "price": 600000,
         "dateOfTransfer": "2025-07-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1858,14 +2080,6 @@
         "newBuild": false
       },
       {
-        "address": "6A, WINCHESTER STREET",
-        "postcode": "SW1V 4ND",
-        "price": 452500,
-        "dateOfTransfer": "2025-06-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "119, BASEMENT FLAT, ST GEORGES DRIVE",
         "postcode": "SW1V 4DA",
         "price": 880000,
@@ -1877,6 +2091,14 @@
         "address": "84, FLAT 4, GLOUCESTER STREET",
         "postcode": "SW1V 4EE",
         "price": 1090000,
+        "dateOfTransfer": "2025-06-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6A, WINCHESTER STREET",
+        "postcode": "SW1V 4ND",
+        "price": 452500,
         "dateOfTransfer": "2025-06-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1994,14 +2216,6 @@
         "newBuild": false
       },
       {
-        "address": "7, FLAT 3, WINCHESTER STREET",
-        "postcode": "SW1V 4PA",
-        "price": 565000,
-        "dateOfTransfer": "2025-05-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "30, UPPER TACHBROOK STREET",
         "postcode": "SW1V 1SW",
         "price": 365000,
@@ -2015,6 +2229,14 @@
         "price": 420000,
         "dateOfTransfer": "2025-05-23",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "7, FLAT 3, WINCHESTER STREET",
+        "postcode": "SW1V 4PA",
+        "price": 565000,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2090,14 +2312,6 @@
         "newBuild": false
       },
       {
-        "address": "22, FOURTH FLOOR FLAT, LUPUS STREET",
-        "postcode": "SW1V 3DZ",
-        "price": 600000,
-        "dateOfTransfer": "2025-04-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "112A, DENBIGH STREET",
         "postcode": "SW1V 2EX",
         "price": 610000,
@@ -2111,6 +2325,14 @@
         "price": 1500810,
         "dateOfTransfer": "2025-04-28",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "22, FOURTH FLOOR FLAT, LUPUS STREET",
+        "postcode": "SW1V 3DZ",
+        "price": 600000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2186,38 +2408,6 @@
         "newBuild": false
       },
       {
-        "address": "WILKINS HOUSE, FLAT 41, CHURCHILL GARDENS",
-        "postcode": "SW1V 3BY",
-        "price": 439888,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "12, GARDEN TERRACE",
-        "postcode": "SW1V 2PX",
-        "price": 385000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "14B, CUMBERLAND STREET",
-        "postcode": "SW1V 4LT",
-        "price": 785001,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "45A, MORETON TERRACE",
-        "postcode": "SW1V 2NS",
-        "price": 913000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "71, FLAT 5, ECCLESTON SQUARE",
         "postcode": "SW1V 1PJ",
         "price": 1880000,
@@ -2242,9 +2432,33 @@
         "newBuild": false
       },
       {
+        "address": "12, GARDEN TERRACE",
+        "postcode": "SW1V 2PX",
+        "price": 385000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "14B, CUMBERLAND STREET",
+        "postcode": "SW1V 4LT",
+        "price": 785001,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "HENRY WISE HOUSE, FLAT 50, VAUXHALL BRIDGE ROAD",
         "postcode": "SW1V 2SU",
         "price": 410000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "45A, MORETON TERRACE",
+        "postcode": "SW1V 2NS",
+        "price": 913000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2258,27 +2472,19 @@
         "newBuild": false
       },
       {
-        "address": "26, FLAT B2, LUPUS STREET",
-        "postcode": "SW1V 3DZ",
-        "price": 245000,
-        "dateOfTransfer": "2025-03-28",
+        "address": "WILKINS HOUSE, FLAT 41, CHURCHILL GARDENS",
+        "postcode": "SW1V 3BY",
+        "price": 439888,
+        "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "6, TELFORD TERRACE",
-        "postcode": "SW1V 3AE",
-        "price": 1000000,
+        "address": "61 - 62, FLAT 8, ECCLESTON SQUARE",
+        "postcode": "SW1V 1PH",
+        "price": 1950000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "31, HUGH STREET",
-        "postcode": "SW1V 1QJ",
-        "price": 2150000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2287,14 +2493,6 @@
         "price": 420000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "GIFFORD HOUSE, FLAT 13, CHURCHILL GARDENS",
-        "postcode": "SW1V 3DQ",
-        "price": 295000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2322,6 +2520,22 @@
         "newBuild": false
       },
       {
+        "address": "6, TELFORD TERRACE",
+        "postcode": "SW1V 3AE",
+        "price": 1000000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31, HUGH STREET",
+        "postcode": "SW1V 1QJ",
+        "price": 2150000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "2, GARDEN FLAT, WINCHESTER STREET",
         "postcode": "SW1V 4ND",
         "price": 400000,
@@ -2330,17 +2544,25 @@
         "newBuild": false
       },
       {
-        "address": "61 - 62, FLAT 8, ECCLESTON SQUARE",
-        "postcode": "SW1V 1PH",
-        "price": 1950000,
+        "address": "26, FLAT B2, LUPUS STREET",
+        "postcode": "SW1V 3DZ",
+        "price": 245000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "5, FLAT 3, CLAVERTON STREET",
-        "postcode": "SW1V 3AY",
-        "price": 510000,
+        "address": "GIFFORD HOUSE, FLAT 13, CHURCHILL GARDENS",
+        "postcode": "SW1V 3DQ",
+        "price": 295000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "HENRY WISE HOUSE, FLAT 94, VAUXHALL BRIDGE ROAD",
+        "postcode": "SW1V 2SX",
+        "price": 465000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2354,14 +2576,6 @@
         "newBuild": false
       },
       {
-        "address": "96, FLAT 18, BELGRAVE ROAD",
-        "postcode": "SW1V 2BJ",
-        "price": 853000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "65, FLAT J, WARWICK SQUARE",
         "postcode": "SW1V 2AL",
         "price": 725000,
@@ -2370,9 +2584,17 @@
         "newBuild": false
       },
       {
-        "address": "HENRY WISE HOUSE, FLAT 94, VAUXHALL BRIDGE ROAD",
-        "postcode": "SW1V 2SX",
-        "price": 465000,
+        "address": "5, FLAT 3, CLAVERTON STREET",
+        "postcode": "SW1V 3AY",
+        "price": 510000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "96, FLAT 18, BELGRAVE ROAD",
+        "postcode": "SW1V 2BJ",
+        "price": 853000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2586,17 +2808,17 @@
         "newBuild": false
       },
       {
-        "address": "15A, HUGH STREET",
-        "postcode": "SW1V 1QJ",
-        "price": 700000,
+        "address": "128, FLAT B, WARWICK WAY",
+        "postcode": "SW1V 4JA",
+        "price": 375000,
         "dateOfTransfer": "2025-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "128, FLAT B, WARWICK WAY",
-        "postcode": "SW1V 4JA",
-        "price": 375000,
+        "address": "15A, HUGH STREET",
+        "postcode": "SW1V 1QJ",
+        "price": 700000,
         "dateOfTransfer": "2025-02-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2706,17 +2928,17 @@
         "newBuild": false
       },
       {
-        "address": "LITTLETON HOUSE, FLAT 42, LUPUS STREET",
-        "postcode": "SW1V 3EP",
-        "price": 610000,
+        "address": "10, GROUND FLOOR FLAT, CHARLWOOD PLACE",
+        "postcode": "SW1V 2LU",
+        "price": 516000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "10, GROUND FLOOR FLAT, CHARLWOOD PLACE",
-        "postcode": "SW1V 2LU",
-        "price": 516000,
+        "address": "LITTLETON HOUSE, FLAT 42, LUPUS STREET",
+        "postcode": "SW1V 3EP",
+        "price": 610000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2794,8 +3016,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 833564,
-    "medianPrice": 622500
+    "averagePrice": 832351,
+    "medianPrice": 630000
   },
   "representatives": {
     "representatives": [

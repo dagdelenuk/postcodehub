@@ -3,8 +3,8 @@
   "slug": "tw1",
   "city": "London",
   "borough": "Richmond upon Thames",
-  "latitude": 51.451017942942954,
-  "longitude": -0.32538165765765764,
+  "latitude": 51.450798068515525,
+  "longitude": -0.32481184665579166,
   "wards": [
     "Isleworth",
     "South Twickenham",
@@ -190,7 +190,8 @@
         "urn": "102895",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "25/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Hartington Road, Twickenham",
         "postcode": "TW1 3EN",
         "numberOfPupils": 429,
@@ -201,7 +202,8 @@
         "urn": "102914",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "16/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Amyand Park Road, Twickenham",
         "postcode": "TW1 3HE",
         "numberOfPupils": 619,
@@ -211,8 +213,9 @@
         "name": "St Stephen's C E Primary School",
         "urn": "102915",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "22/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Winchester Road, Twickenham",
         "postcode": "TW1 1LF",
         "numberOfPupils": 417,
@@ -224,6 +227,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Waldegrave Park, Twickenham",
         "postcode": "TW1 4TQ",
         "numberOfPupils": 392,
@@ -235,6 +239,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Cross Deep, Twickenham, UK",
         "postcode": "TW1 4QJ",
         "numberOfPupils": 381,
@@ -246,6 +251,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Waldegrave Road, Strawberry Hill, Twickenham",
         "postcode": "TW1 4SX",
         "numberOfPupils": null,
@@ -257,6 +263,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Pope's Villa, Cross Deep, Twickenham",
         "postcode": "TW1 4QG",
         "numberOfPupils": 471,
@@ -266,8 +273,9 @@
         "name": "Orleans Park School",
         "urn": "138651",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "23/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Richmond Road, Twickenham",
         "postcode": "TW1 3BB",
         "numberOfPupils": 1403,
@@ -277,8 +285,9 @@
         "name": "Deer Park School",
         "urn": "142012",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "24/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "389 Richmond Road, Twickenham",
         "postcode": "TW1 2EF",
         "numberOfPupils": 417,
@@ -288,8 +297,9 @@
         "name": "Strathmore School",
         "urn": "143318",
         "phaseOfEducation": "Not applicable",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "01/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Station Road, Twickenham",
         "postcode": "TW1 4DQ",
         "numberOfPupils": 108,
@@ -299,8 +309,9 @@
         "name": "St Richard Reynolds Catholic High School",
         "urn": "149297",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Outstanding",
+        "ofstedLastInspection": "07/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Clifden Road, Twickenham, London",
         "postcode": "TW1 4LT",
         "numberOfPupils": 1175,
@@ -311,7 +322,8 @@
         "urn": "149298",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "23/01/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Clifden Road, Twickenham, London",
         "postcode": "TW1 4LT",
         "numberOfPupils": 210,
@@ -323,6 +335,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "11 Waldegrave Park, Twickenham",
         "postcode": "TW1 4TL",
         "numberOfPupils": 21,
@@ -334,97 +347,225 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 322,
-        "violentCrimes": 94,
-        "propertyCrimes": 146
+        "totalCrimes": 325,
+        "violentCrimes": 95,
+        "propertyCrimes": 147
       },
       {
         "month": "2025-08",
-        "totalCrimes": 283,
-        "violentCrimes": 71,
+        "totalCrimes": 285,
+        "violentCrimes": 73,
         "propertyCrimes": 133
       },
       {
         "month": "2025-09",
-        "totalCrimes": 312,
-        "violentCrimes": 80,
-        "propertyCrimes": 163
+        "totalCrimes": 314,
+        "violentCrimes": 81,
+        "propertyCrimes": 164
       },
       {
         "month": "2025-10",
-        "totalCrimes": 337,
-        "violentCrimes": 98,
-        "propertyCrimes": 148
+        "totalCrimes": 341,
+        "violentCrimes": 100,
+        "propertyCrimes": 150
       },
       {
         "month": "2025-11",
-        "totalCrimes": 292,
+        "totalCrimes": 295,
         "violentCrimes": 89,
-        "propertyCrimes": 124
+        "propertyCrimes": 126
       },
       {
         "month": "2025-12",
-        "totalCrimes": 269,
-        "violentCrimes": 90,
+        "totalCrimes": 276,
+        "violentCrimes": 95,
         "propertyCrimes": 122
       },
       {
         "month": "2026-01",
-        "totalCrimes": 278,
-        "violentCrimes": 78,
-        "propertyCrimes": 130
+        "totalCrimes": 284,
+        "violentCrimes": 81,
+        "propertyCrimes": 132
       },
       {
         "month": "2026-02",
-        "totalCrimes": 301,
+        "totalCrimes": 306,
         "violentCrimes": 97,
-        "propertyCrimes": 148
+        "propertyCrimes": 151
       },
       {
         "month": "2026-03",
-        "totalCrimes": 258,
-        "violentCrimes": 84,
-        "propertyCrimes": 116
+        "totalCrimes": 263,
+        "violentCrimes": 87,
+        "propertyCrimes": 117
       },
       {
         "month": "2026-04",
-        "totalCrimes": 270,
-        "violentCrimes": 80,
-        "propertyCrimes": 126
+        "totalCrimes": 277,
+        "violentCrimes": 81,
+        "propertyCrimes": 128
       },
       {
         "month": "2026-05",
-        "totalCrimes": 261,
-        "violentCrimes": 121,
-        "propertyCrimes": 88
+        "totalCrimes": 267,
+        "violentCrimes": 124,
+        "propertyCrimes": 90
       },
       {
         "month": "2026-06",
-        "totalCrimes": 324,
-        "violentCrimes": 132,
-        "propertyCrimes": 125
+        "totalCrimes": 327,
+        "violentCrimes": 133,
+        "propertyCrimes": 126
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 692,
-      "bicycle-theft": 85,
-      "burglary": 156,
-      "criminal-damage-arson": 402,
+      "anti-social-behaviour": 706,
+      "bicycle-theft": 89,
+      "burglary": 162,
+      "criminal-damage-arson": 403,
       "drugs": 93,
-      "other-theft": 262,
+      "other-theft": 266,
       "possession-of-weapons": 8,
-      "public-order": 207,
-      "robbery": 60,
+      "public-order": 211,
+      "robbery": 62,
       "shoplifting": 239,
-      "theft-from-the-person": 63,
-      "vehicle-crime": 362,
-      "violent-crime": 839,
+      "theft-from-the-person": 64,
+      "vehicle-crime": 363,
+      "violent-crime": 855,
       "other-crime": 39
     },
-    "totalLast12Months": 3507
+    "totalLast12Months": 3560
   },
   "property": {
     "sales": [
+      {
+        "address": "3, QUEENS ROAD",
+        "postcode": "TW1 4EZ",
+        "price": 470000,
+        "dateOfTransfer": "2026-07-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "95A, ST MARGARETS ROAD",
+        "postcode": "TW1 2LJ",
+        "price": 425000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "164A, AMYAND PARK ROAD, ST MARGARETS",
+        "postcode": "TW1 3HY",
+        "price": 520000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "86, KENLEY ROAD",
+        "postcode": "TW1 1JU",
+        "price": 555000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, GROVE AVENUE",
+        "postcode": "TW1 4HY",
+        "price": 986500,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "103B, HEATH ROAD",
+        "postcode": "TW1 4AZ",
+        "price": 290000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, CHALMERS WAY",
+        "postcode": "TW1 1QG",
+        "price": 610000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, SHERLAND ROAD",
+        "postcode": "TW1 4HD",
+        "price": 772500,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31, COPTHALL GARDENS",
+        "postcode": "TW1 4HH",
+        "price": 450000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25A, LONDON ROAD",
+        "postcode": "TW1 3SX",
+        "price": 405000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "DEACONS COURT, 6, POPES GROVE",
+        "postcode": "TW1 4JU",
+        "price": 427000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "217, LONDON ROAD",
+        "postcode": "TW1 1ES",
+        "price": 1150000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "66, NORTHCOTE ROAD",
+        "postcode": "TW1 1PA",
+        "price": 1260000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, STRAWBERRY HILL CLOSE",
+        "postcode": "TW1 4PX",
+        "price": 761000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "GREEN HEDGES, FLAT 11, RIVERDALE GARDENS",
+        "postcode": "TW1 2BU",
+        "price": 573000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, STRAFFORD ROAD",
+        "postcode": "TW1 3AE",
+        "price": 3850000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
       {
         "address": "8, KENLEY ROAD",
         "postcode": "TW1 1JU",
@@ -434,10 +575,34 @@
         "newBuild": false
       },
       {
-        "address": "10, FLAT 2, RIVERDALE ROAD",
-        "postcode": "TW1 2BS",
-        "price": 620000,
-        "dateOfTransfer": "2026-06-19",
+        "address": "13, FLAT 2, ST GEORGES ROAD",
+        "postcode": "TW1 1QS",
+        "price": 650000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, RICHMOND ROAD",
+        "postcode": "TW1 3AB",
+        "price": 1490000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "81, HALIBURTON ROAD",
+        "postcode": "TW1 1PD",
+        "price": 860000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, ST STEPHENS GARDENS",
+        "postcode": "TW1 2LT",
+        "price": 485000,
+        "dateOfTransfer": "2026-06-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -445,6 +610,14 @@
         "address": "73, VARSITY DRIVE",
         "postcode": "TW1 1AH",
         "price": 260000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, FLAT 2, RIVERDALE ROAD",
+        "postcode": "TW1 2BS",
+        "price": 620000,
         "dateOfTransfer": "2026-06-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -458,18 +631,18 @@
         "newBuild": false
       },
       {
-        "address": "121, FLAT 10, HEATH ROAD",
-        "postcode": "TW1 4BF",
-        "price": 326000,
-        "dateOfTransfer": "2026-06-15",
+        "address": "15, BEAULIEU CLOSE",
+        "postcode": "TW1 2JR",
+        "price": 550000,
+        "dateOfTransfer": "2026-06-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "20C, QUEENS ROAD",
-        "postcode": "TW1 4EX",
-        "price": 386875,
-        "dateOfTransfer": "2026-06-12",
+        "address": "121, FLAT 10, HEATH ROAD",
+        "postcode": "TW1 4BF",
+        "price": 326000,
+        "dateOfTransfer": "2026-06-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -482,10 +655,26 @@
         "newBuild": false
       },
       {
+        "address": "20C, QUEENS ROAD",
+        "postcode": "TW1 4EX",
+        "price": 386875,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "10, FLAT 4, RIVERDALE ROAD",
         "postcode": "TW1 2BS",
         "price": 790000,
         "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "WINCHESTER HOUSE, FLAT 2, CAMBRIDGE PARK",
+        "postcode": "TW1 2JG",
+        "price": 705000,
+        "dateOfTransfer": "2026-06-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -514,6 +703,22 @@
         "newBuild": false
       },
       {
+        "address": "67, FLAT 3, ST MARGARETS ROAD",
+        "postcode": "TW1 2LL",
+        "price": 337000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76, WALDEGRAVE PARK",
+        "postcode": "TW1 4TQ",
+        "price": 700000,
+        "dateOfTransfer": "2026-06-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "9, CUSACK CLOSE",
         "postcode": "TW1 4TB",
         "price": 750000,
@@ -538,6 +743,14 @@
         "newBuild": false
       },
       {
+        "address": "41, CAMBRIDGE ROAD",
+        "postcode": "TW1 2TJ",
+        "price": 1450000,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "16, THE GROVE",
         "postcode": "TW1 1RB",
         "price": 405000,
@@ -551,6 +764,30 @@
         "price": 860000,
         "dateOfTransfer": "2026-05-26",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "RAVENSBOURNE HOUSE, 12, ARLINGTON ROAD",
+        "postcode": "TW1 2AX",
+        "price": 370000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3 - 5, FLAT 2, YORK STREET",
+        "postcode": "TW1 3JZ",
+        "price": 450000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, KILMOREY GARDENS",
+        "postcode": "TW1 1PY",
+        "price": 940000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -583,6 +820,14 @@
         "price": 665000,
         "dateOfTransfer": "2026-05-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, RADNOR GARDENS",
+        "postcode": "TW1 4NA",
+        "price": 960000,
+        "dateOfTransfer": "2026-05-14",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -706,14 +951,6 @@
         "newBuild": false
       },
       {
-        "address": "76, STRAWBERRY VALE",
-        "postcode": "TW1 4SE",
-        "price": 1325000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "167, AMYAND PARK ROAD, ST MARGARETS",
         "postcode": "TW1 3HN",
         "price": 825000,
@@ -735,6 +972,14 @@
         "price": 321500,
         "dateOfTransfer": "2026-04-17",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "76, STRAWBERRY VALE",
+        "postcode": "TW1 4SE",
+        "price": 1325000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -762,11 +1007,11 @@
         "newBuild": false
       },
       {
-        "address": "17, HEATH GARDENS",
-        "postcode": "TW1 4LY",
-        "price": 791000,
-        "dateOfTransfer": "2026-03-30",
-        "propertyType": "Semi-detached",
+        "address": "4, POMEROY CLOSE",
+        "postcode": "TW1 1QB",
+        "price": 2250000,
+        "dateOfTransfer": "2026-03-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -778,17 +1023,25 @@
         "newBuild": false
       },
       {
-        "address": "LEESON HOUSE, 7, HAGGARD ROAD",
-        "postcode": "TW1 3AJ",
-        "price": 425000,
-        "dateOfTransfer": "2026-03-27",
-        "propertyType": "Flat/Maisonette",
+        "address": "17, HEATH GARDENS",
+        "postcode": "TW1 4LY",
+        "price": 791000,
+        "dateOfTransfer": "2026-03-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
         "address": "23, CUMBERLAND CLOSE",
         "postcode": "TW1 1RS",
         "price": 530000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "LEESON HOUSE, 7, HAGGARD ROAD",
+        "postcode": "TW1 3AJ",
+        "price": 425000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -802,17 +1055,17 @@
         "newBuild": false
       },
       {
-        "address": "LANGHAM COURT, 5, PARK ROAD",
-        "postcode": "TW1 2PS",
-        "price": 505000,
+        "address": "RICHMOND PARADE, 355, 7A, RICHMOND ROAD",
+        "postcode": "TW1 2ET",
+        "price": 494500,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "RICHMOND PARADE, 355, 7A, RICHMOND ROAD",
-        "postcode": "TW1 2ET",
-        "price": 494500,
+        "address": "LANGHAM COURT, 5, PARK ROAD",
+        "postcode": "TW1 2PS",
+        "price": 505000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -826,10 +1079,34 @@
         "newBuild": false
       },
       {
+        "address": "83, WHITTON ROAD",
+        "postcode": "TW1 1BT",
+        "price": 1250000,
+        "dateOfTransfer": "2026-03-11",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "23A, GROSVENOR ROAD",
         "postcode": "TW1 4AD",
         "price": 475000,
         "dateOfTransfer": "2026-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "15, FLAT 1, CAMBRIDGE PARK",
+        "postcode": "TW1 2JE",
+        "price": 1140000,
+        "dateOfTransfer": "2026-03-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "82, FLAT 2, COLE PARK ROAD",
+        "postcode": "TW1 1JA",
+        "price": 450000,
+        "dateOfTransfer": "2026-03-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -842,11 +1119,11 @@
         "newBuild": false
       },
       {
-        "address": "15, FLAT 1, CAMBRIDGE PARK",
-        "postcode": "TW1 2JE",
-        "price": 1140000,
-        "dateOfTransfer": "2026-03-02",
-        "propertyType": "Flat/Maisonette",
+        "address": "18, RADNOR GARDENS",
+        "postcode": "TW1 4NA",
+        "price": 637500,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -890,18 +1167,18 @@
         "newBuild": false
       },
       {
-        "address": "18, RADNOR GARDENS",
-        "postcode": "TW1 4NA",
-        "price": 637500,
+        "address": "49, NEWRY ROAD",
+        "postcode": "TW1 1PJ",
+        "price": 1555000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "49, NEWRY ROAD",
-        "postcode": "TW1 1PJ",
-        "price": 1555000,
-        "dateOfTransfer": "2026-02-27",
+        "address": "35, HALIBURTON ROAD",
+        "postcode": "TW1 1PD",
+        "price": 945000,
+        "dateOfTransfer": "2026-02-23",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -911,6 +1188,22 @@
         "price": 1275000,
         "dateOfTransfer": "2026-02-23",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "45, ORCHARD ROAD",
+        "postcode": "TW1 1LX",
+        "price": 1400000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, UPPER GROTTO ROAD",
+        "postcode": "TW1 4NG",
+        "price": 1100000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -994,6 +1287,30 @@
         "newBuild": false
       },
       {
+        "address": "13, BROADWAY AVENUE",
+        "postcode": "TW1 1RH",
+        "price": 1960000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 4, RIVERDALE ROAD",
+        "postcode": "TW1 2BT",
+        "price": 1248500,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "186, LONDON ROAD",
+        "postcode": "TW1 1EX",
+        "price": 1550000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "CROWN COURT, 6, CROWN ROAD, ST MARGARETS",
         "postcode": "TW1 3ES",
         "price": 300000,
@@ -1066,19 +1383,19 @@
         "newBuild": false
       },
       {
-        "address": "5, VARSITY DRIVE",
-        "postcode": "TW1 1AG",
-        "price": 330000,
-        "dateOfTransfer": "2026-01-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "6, BEAUCHAMP ROAD",
         "postcode": "TW1 3JD",
         "price": 700000,
         "dateOfTransfer": "2026-01-21",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "5, VARSITY DRIVE",
+        "postcode": "TW1 1AG",
+        "price": 330000,
+        "dateOfTransfer": "2026-01-21",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1098,14 +1415,6 @@
         "newBuild": false
       },
       {
-        "address": "7, POULETT GARDENS",
-        "postcode": "TW1 4QS",
-        "price": 1540000,
-        "dateOfTransfer": "2026-01-16",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "144, HEATHCOTE ROAD, ST MARGARETS",
         "postcode": "TW1 1SD",
         "price": 290000,
@@ -1122,10 +1431,10 @@
         "newBuild": false
       },
       {
-        "address": "25, LIME GROVE",
-        "postcode": "TW1 1EL",
-        "price": 1380000,
-        "dateOfTransfer": "2026-01-14",
+        "address": "7, POULETT GARDENS",
+        "postcode": "TW1 4QS",
+        "price": 1540000,
+        "dateOfTransfer": "2026-01-16",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1135,6 +1444,14 @@
         "price": 990000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "25, LIME GROVE",
+        "postcode": "TW1 1EL",
+        "price": 1380000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1151,6 +1468,14 @@
         "price": 2315000,
         "dateOfTransfer": "2026-01-12",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "4, FAIRLAWNS",
+        "postcode": "TW1 2JY",
+        "price": 905000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1194,14 +1519,6 @@
         "newBuild": false
       },
       {
-        "address": "BRENTFORD HOUSE, 15, HAGGARD ROAD",
-        "postcode": "TW1 3AH",
-        "price": 443000,
-        "dateOfTransfer": "2026-01-06",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "61, LAUREL AVENUE",
         "postcode": "TW1 4HZ",
         "price": 1090000,
@@ -1210,11 +1527,27 @@
         "newBuild": false
       },
       {
+        "address": "BRENTFORD HOUSE, 15, HAGGARD ROAD",
+        "postcode": "TW1 3AH",
+        "price": 443000,
+        "dateOfTransfer": "2026-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "120, HALIBURTON ROAD",
         "postcode": "TW1 1PH",
         "price": 1075000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "SWANSTON COURT, 1, FLAT 5, QUEENS ROAD",
+        "postcode": "TW1 4EZ",
+        "price": 380000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1229,14 +1562,6 @@
         "address": "64, WINCHESTER ROAD",
         "postcode": "TW1 1LD",
         "price": 630000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "SWANSTON COURT, 1, FLAT 5, QUEENS ROAD",
-        "postcode": "TW1 4EZ",
-        "price": 380000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1346,6 +1671,14 @@
         "newBuild": false
       },
       {
+        "address": "418, RICHMOND ROAD",
+        "postcode": "TW1 2EB",
+        "price": 282000,
+        "dateOfTransfer": "2025-12-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "56, NEWRY ROAD",
         "postcode": "TW1 1PL",
         "price": 1165000,
@@ -1359,14 +1692,6 @@
         "price": 2400000,
         "dateOfTransfer": "2025-12-12",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "418, RICHMOND ROAD",
-        "postcode": "TW1 2EB",
-        "price": 282000,
-        "dateOfTransfer": "2025-12-12",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1434,17 +1759,17 @@
         "newBuild": false
       },
       {
-        "address": "18, MOOR MEAD ROAD",
-        "postcode": "TW1 1JS",
-        "price": 613500,
+        "address": "19, FULWOOD GARDENS",
+        "postcode": "TW1 1EN",
+        "price": 500000,
         "dateOfTransfer": "2025-12-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "19, FULWOOD GARDENS",
-        "postcode": "TW1 1EN",
-        "price": 500000,
+        "address": "18, MOOR MEAD ROAD",
+        "postcode": "TW1 1JS",
+        "price": 613500,
         "dateOfTransfer": "2025-12-05",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1463,6 +1788,14 @@
         "price": 400000,
         "dateOfTransfer": "2025-12-02",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, SHERLAND ROAD",
+        "postcode": "TW1 4HD",
+        "price": 850000,
+        "dateOfTransfer": "2025-12-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1506,17 +1839,17 @@
         "newBuild": false
       },
       {
-        "address": "85, CROWN ROAD, ST MARGARETS",
-        "postcode": "TW1 3EX",
-        "price": 1700000,
+        "address": "46, TENNYSON AVENUE",
+        "postcode": "TW1 4QY",
+        "price": 950000,
         "dateOfTransfer": "2025-11-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "46, TENNYSON AVENUE",
-        "postcode": "TW1 4QY",
-        "price": 950000,
+        "address": "85, CROWN ROAD, ST MARGARETS",
+        "postcode": "TW1 3EX",
+        "price": 1700000,
         "dateOfTransfer": "2025-11-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1538,17 +1871,17 @@
         "newBuild": false
       },
       {
-        "address": "81, LION ROAD",
-        "postcode": "TW1 4HT",
-        "price": 572000,
+        "address": "43, HARTINGTON ROAD",
+        "postcode": "TW1 3EL",
+        "price": 1184000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "43, HARTINGTON ROAD",
-        "postcode": "TW1 3EL",
-        "price": 1184000,
+        "address": "81, LION ROAD",
+        "postcode": "TW1 4HT",
+        "price": 572000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1650,19 +1983,19 @@
         "newBuild": false
       },
       {
-        "address": "61, CAMBRIDGE ROAD",
-        "postcode": "TW1 2TJ",
-        "price": 1755000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "216, VARSITY DRIVE",
         "postcode": "TW1 1AN",
         "price": 330000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "61, CAMBRIDGE ROAD",
+        "postcode": "TW1 2TJ",
+        "price": 1755000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1698,14 +2031,6 @@
         "newBuild": false
       },
       {
-        "address": "21, AILSA AVENUE",
-        "postcode": "TW1 1NF",
-        "price": 1131544,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "19, STRAFFORD ROAD",
         "postcode": "TW1 3AD",
         "price": 900000,
@@ -1719,6 +2044,14 @@
         "price": 575000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "21, AILSA AVENUE",
+        "postcode": "TW1 1NF",
+        "price": 1131544,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1778,9 +2111,65 @@
         "newBuild": false
       },
       {
+        "address": "67, VARSITY DRIVE",
+        "postcode": "TW1 1AH",
+        "price": 268000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BIRNAM HOUSE, 20, FLAT 10, CAMBRIDGE PARK",
+        "postcode": "TW1 2JD",
+        "price": 650000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "BLANCHARD HOUSE, 28, FLAT 21, CLEVEDON ROAD",
         "postcode": "TW1 2TD",
         "price": 2425000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, FLAT 2, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 315000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "2, FLAT 1, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 410000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT A, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 420000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4B, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 440000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT 4, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 345000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1802,22 +2191,6 @@
         "newBuild": false
       },
       {
-        "address": "BIRNAM HOUSE, 20, FLAT 10, CAMBRIDGE PARK",
-        "postcode": "TW1 2JD",
-        "price": 650000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "67, VARSITY DRIVE",
-        "postcode": "TW1 1AH",
-        "price": 268000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "3, MARBLE HILL CLOSE",
         "postcode": "TW1 3AY",
         "price": 1400000,
@@ -1830,6 +2203,14 @@
         "postcode": "TW1 3HY",
         "price": 255000,
         "dateOfTransfer": "2025-10-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, SION ROAD",
+        "postcode": "TW1 3DR",
+        "price": 2275000,
+        "dateOfTransfer": "2025-10-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1866,14 +2247,6 @@
         "newBuild": false
       },
       {
-        "address": "12, SION ROAD",
-        "postcode": "TW1 3DR",
-        "price": 2275000,
-        "dateOfTransfer": "2025-10-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "65, MALLARD PLACE",
         "postcode": "TW1 4SW",
         "price": 855000,
@@ -1906,6 +2279,14 @@
         "newBuild": false
       },
       {
+        "address": "5, FLAT 7, RIVERDALE GARDENS",
+        "postcode": "TW1 2BX",
+        "price": 475000,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "4, RIVERVIEW GARDENS",
         "postcode": "TW1 4RT",
         "price": 1165000,
@@ -1922,17 +2303,25 @@
         "newBuild": false
       },
       {
-        "address": "90, VARSITY DRIVE",
-        "postcode": "TW1 1AH",
-        "price": 405000,
-        "dateOfTransfer": "2025-10-10",
-        "propertyType": "Semi-detached",
+        "address": "54, RICHMOND ROAD",
+        "postcode": "TW1 3BE",
+        "price": 541000,
+        "dateOfTransfer": "2025-10-14",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "4, CUMBERLAND CLOSE",
-        "postcode": "TW1 1RS",
-        "price": 530000,
+        "address": "12, ORLEANS ROAD",
+        "postcode": "TW1 3BL",
+        "price": 990000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "18, CLAREMONT ROAD",
+        "postcode": "TW1 2QY",
+        "price": 670000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1954,19 +2343,19 @@
         "newBuild": false
       },
       {
-        "address": "18, CLAREMONT ROAD",
-        "postcode": "TW1 2QY",
-        "price": 670000,
+        "address": "90, VARSITY DRIVE",
+        "postcode": "TW1 1AH",
+        "price": 405000,
         "dateOfTransfer": "2025-10-10",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "12, ORLEANS ROAD",
-        "postcode": "TW1 3BL",
-        "price": 990000,
+        "address": "4, CUMBERLAND CLOSE",
+        "postcode": "TW1 1RS",
+        "price": 530000,
         "dateOfTransfer": "2025-10-10",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1986,6 +2375,14 @@
         "newBuild": false
       },
       {
+        "address": "18A, SIDNEY ROAD",
+        "postcode": "TW1 1JR",
+        "price": 716500,
+        "dateOfTransfer": "2025-10-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "36, GORDON AVENUE",
         "postcode": "TW1 1NQ",
         "price": 1340000,
@@ -1994,11 +2391,11 @@
         "newBuild": false
       },
       {
-        "address": "18A, SIDNEY ROAD",
-        "postcode": "TW1 1JR",
-        "price": 716500,
-        "dateOfTransfer": "2025-10-08",
-        "propertyType": "Flat/Maisonette",
+        "address": "9, STRAFFORD ROAD",
+        "postcode": "TW1 3AD",
+        "price": 1885000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2026,11 +2423,11 @@
         "newBuild": false
       },
       {
-        "address": "9, STRAFFORD ROAD",
-        "postcode": "TW1 3AD",
-        "price": 1885000,
+        "address": "38, SAVILLE ROAD",
+        "postcode": "TW1 4BQ",
+        "price": 980000,
         "dateOfTransfer": "2025-10-03",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2039,6 +2436,14 @@
         "price": 525000,
         "dateOfTransfer": "2025-10-02",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, DEVONCROFT GARDENS",
+        "postcode": "TW1 3PB",
+        "price": 980000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2058,11 +2463,11 @@
         "newBuild": false
       },
       {
-        "address": "17, DEVONCROFT GARDENS",
-        "postcode": "TW1 3PB",
-        "price": 980000,
-        "dateOfTransfer": "2025-10-01",
-        "propertyType": "Terraced",
+        "address": "71, SOUTH WESTERN ROAD",
+        "postcode": "TW1 1LG",
+        "price": 1400000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2095,14 +2500,6 @@
         "price": 550500,
         "dateOfTransfer": "2025-09-30",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "71, SOUTH WESTERN ROAD",
-        "postcode": "TW1 1LG",
-        "price": 1400000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2178,6 +2575,14 @@
         "newBuild": false
       },
       {
+        "address": "1A, HARTINGTON ROAD",
+        "postcode": "TW1 3EL",
+        "price": 530000,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "MELTON COURT, 2, AMYAND PARK ROAD, ST MARGARETS",
         "postcode": "TW1 3HT",
         "price": 490000,
@@ -2194,19 +2599,19 @@
         "newBuild": false
       },
       {
-        "address": "7, TOWER ROAD",
-        "postcode": "TW1 4PD",
-        "price": 559764,
-        "dateOfTransfer": "2025-09-22",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "CARADON COURT, 1A, FLAT 15, ELLESMERE ROAD",
         "postcode": "TW1 2DN",
         "price": 375000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, TOWER ROAD",
+        "postcode": "TW1 4PD",
+        "price": 559764,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2274,6 +2679,14 @@
         "newBuild": false
       },
       {
+        "address": "40, UPPER GROTTO ROAD",
+        "postcode": "TW1 4NF",
+        "price": 1200000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "69, AILSA AVENUE",
         "postcode": "TW1 1NF",
         "price": 1217500,
@@ -2282,9 +2695,9 @@
         "newBuild": false
       },
       {
-        "address": "30, KENLEY ROAD",
-        "postcode": "TW1 1JU",
-        "price": 640000,
+        "address": "ADDISON COURT, 15, FLAT 3, HEATH ROAD",
+        "postcode": "TW1 4AG",
+        "price": 345000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2298,19 +2711,11 @@
         "newBuild": false
       },
       {
-        "address": "ADDISON COURT, 15, FLAT 3, HEATH ROAD",
-        "postcode": "TW1 4AG",
-        "price": 345000,
+        "address": "30, KENLEY ROAD",
+        "postcode": "TW1 1JU",
+        "price": 640000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "40, UPPER GROTTO ROAD",
-        "postcode": "TW1 4NF",
-        "price": 1200000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2346,19 +2751,19 @@
         "newBuild": false
       },
       {
-        "address": "8D, STATION ROAD",
-        "postcode": "TW1 4LL",
-        "price": 294000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CROSS DEEP, CROSS DEEP",
         "postcode": "TW1 4QJ",
         "price": 5930750,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "8D, STATION ROAD",
+        "postcode": "TW1 4LL",
+        "price": 294000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2386,14 +2791,6 @@
         "newBuild": false
       },
       {
-        "address": "11, VARSITY DRIVE",
-        "postcode": "TW1 1AG",
-        "price": 260000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "54, HEATHCOTE ROAD, ST MARGARETS",
         "postcode": "TW1 1SD",
         "price": 400000,
@@ -2410,6 +2807,14 @@
         "newBuild": false
       },
       {
+        "address": "6, LION AVENUE",
+        "postcode": "TW1 4JG",
+        "price": 995000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "50, COPTHALL GARDENS",
         "postcode": "TW1 4HJ",
         "price": 1520000,
@@ -2418,11 +2823,11 @@
         "newBuild": false
       },
       {
-        "address": "6, LION AVENUE",
-        "postcode": "TW1 4JG",
-        "price": 995000,
+        "address": "5, FLAT 3, RIVERDALE ROAD",
+        "postcode": "TW1 2BT",
+        "price": 1325000,
         "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2434,9 +2839,9 @@
         "newBuild": false
       },
       {
-        "address": "5, FLAT 3, RIVERDALE ROAD",
-        "postcode": "TW1 2BT",
-        "price": 1325000,
+        "address": "11, VARSITY DRIVE",
+        "postcode": "TW1 1AG",
+        "price": 260000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2474,11 +2879,27 @@
         "newBuild": false
       },
       {
+        "address": "29, PARK ROAD",
+        "postcode": "TW1 2QD",
+        "price": 100000,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Other",
+        "newBuild": true
+      },
+      {
         "address": "FARRER COURT, 23, 9, CAMBRIDGE PARK",
         "postcode": "TW1 2LB",
         "price": 485000,
         "dateOfTransfer": "2025-08-26",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, MICHELHAM GARDENS",
+        "postcode": "TW1 4SB",
+        "price": 1150000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2506,19 +2927,19 @@
         "newBuild": false
       },
       {
-        "address": "2, SUSSEX CLOSE",
-        "postcode": "TW1 1RW",
-        "price": 525000,
+        "address": "RICHMOND BRIDGE MANSIONS, 2, WILLOUGHBY ROAD",
+        "postcode": "TW1 2QJ",
+        "price": 1485298,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "58, MICHELHAM GARDENS",
-        "postcode": "TW1 4SB",
-        "price": 1150000,
+        "address": "2, SUSSEX CLOSE",
+        "postcode": "TW1 1RW",
+        "price": 525000,
         "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2570,14 +2991,6 @@
         "newBuild": false
       },
       {
-        "address": "4, FLAT 5, RIVERDALE GARDENS",
-        "postcode": "TW1 2BZ",
-        "price": 380000,
-        "dateOfTransfer": "2025-08-19",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2, FLAT 2, RIVERDALE GARDENS",
         "postcode": "TW1 2BZ",
         "price": 290000,
@@ -2610,10 +3023,10 @@
         "newBuild": false
       },
       {
-        "address": "206, AMYAND PARK ROAD, ST MARGARETS",
-        "postcode": "TW1 3HY",
-        "price": 620000,
-        "dateOfTransfer": "2025-08-15",
+        "address": "4, FLAT 5, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 380000,
+        "dateOfTransfer": "2025-08-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2623,6 +3036,14 @@
         "price": 700000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6D, QUEENS ROAD",
+        "postcode": "TW1 4EX",
+        "price": 360000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2658,19 +3079,19 @@
         "newBuild": false
       },
       {
-        "address": "6D, QUEENS ROAD",
-        "postcode": "TW1 4EX",
-        "price": 360000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "6, STRAWBERRY HILL ROAD",
         "postcode": "TW1 4PT",
         "price": 1700000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "206, AMYAND PARK ROAD, ST MARGARETS",
+        "postcode": "TW1 3HY",
+        "price": 620000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2690,19 +3111,27 @@
         "newBuild": false
       },
       {
-        "address": "116A, AMYAND PARK ROAD, ST MARGARETS",
-        "postcode": "TW1 3HP",
-        "price": 2541495,
-        "dateOfTransfer": "2025-08-11",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "110, HEATH ROAD",
         "postcode": "TW1 4BW",
         "price": 625000,
         "dateOfTransfer": "2025-08-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6B, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 300000,
+        "dateOfTransfer": "2025-08-11",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "116A, AMYAND PARK ROAD, ST MARGARETS",
+        "postcode": "TW1 3HP",
+        "price": 2541495,
+        "dateOfTransfer": "2025-08-11",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2770,14 +3199,6 @@
         "newBuild": false
       },
       {
-        "address": "5A, HARTINGTON ROAD",
-        "postcode": "TW1 3EL",
-        "price": 445000,
-        "dateOfTransfer": "2025-08-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "15 - 19, GROUND FLOOR AND BASEMENT, YORK STREET",
         "postcode": "TW1 3JX",
         "price": 850000,
@@ -2786,10 +3207,26 @@
         "newBuild": false
       },
       {
+        "address": "5A, HARTINGTON ROAD",
+        "postcode": "TW1 3EL",
+        "price": 445000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "NEWLANDS HOUSE, 38, FLAT 3, OAK LANE",
         "postcode": "TW1 3PA",
         "price": 742500,
         "dateOfTransfer": "2025-08-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, FLAT F, ROSSLYN ROAD",
+        "postcode": "TW1 2AR",
+        "price": 300000,
+        "dateOfTransfer": "2025-08-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2805,14 +3242,6 @@
         "address": "66, GODSTONE ROAD",
         "postcode": "TW1 1JX",
         "price": 675000,
-        "dateOfTransfer": "2025-08-01",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "1, FLAT F, ROSSLYN ROAD",
-        "postcode": "TW1 2AR",
-        "price": 300000,
         "dateOfTransfer": "2025-08-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2887,6 +3316,14 @@
         "price": 620000,
         "dateOfTransfer": "2025-07-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50, HEATH GARDENS",
+        "postcode": "TW1 4LZ",
+        "price": 1130000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3066,14 +3503,6 @@
         "newBuild": false
       },
       {
-        "address": "2, FLAT B, RIVERDALE GARDENS",
-        "postcode": "TW1 2BZ",
-        "price": 350000,
-        "dateOfTransfer": "2025-07-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "2, FLAT C, RIVERDALE GARDENS",
         "postcode": "TW1 2BZ",
         "price": 400000,
@@ -3093,6 +3522,14 @@
         "address": "8B, STRAFFORD ROAD",
         "postcode": "TW1 3AE",
         "price": 407000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "2, FLAT B, RIVERDALE GARDENS",
+        "postcode": "TW1 2BZ",
+        "price": 350000,
         "dateOfTransfer": "2025-07-04",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3522,17 +3959,17 @@
         "newBuild": false
       },
       {
-        "address": "10, HERON ROAD",
-        "postcode": "TW1 1PG",
-        "price": 1125000,
+        "address": "13, FERRY ROAD",
+        "postcode": "TW1 3DW",
+        "price": 800000,
         "dateOfTransfer": "2025-05-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "13, FERRY ROAD",
-        "postcode": "TW1 3DW",
-        "price": 800000,
+        "address": "10, HERON ROAD",
+        "postcode": "TW1 1PG",
+        "price": 1125000,
         "dateOfTransfer": "2025-05-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3770,11 +4207,11 @@
         "newBuild": false
       },
       {
-        "address": "CROWN WORKS, UNIT 1, CROWN ROAD, ST MARGARETS",
-        "postcode": "TW1 3EE",
-        "price": 430000,
+        "address": "15, FLAT 3, QUEENS ROAD",
+        "postcode": "TW1 4EZ",
+        "price": 620000,
         "dateOfTransfer": "2025-04-30",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3786,11 +4223,11 @@
         "newBuild": false
       },
       {
-        "address": "15, FLAT 3, QUEENS ROAD",
-        "postcode": "TW1 4EZ",
-        "price": 620000,
+        "address": "CROWN WORKS, UNIT 1, CROWN ROAD, ST MARGARETS",
+        "postcode": "TW1 3EE",
+        "price": 430000,
         "dateOfTransfer": "2025-04-30",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3962,19 +4399,19 @@
         "newBuild": false
       },
       {
-        "address": "163, AMYAND PARK ROAD, ST MARGARETS",
-        "postcode": "TW1 3HN",
-        "price": 1150000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "RICHMOND PARADE, 359, 5A, RICHMOND ROAD",
         "postcode": "TW1 2ET",
         "price": 420000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "163, AMYAND PARK ROAD, ST MARGARETS",
+        "postcode": "TW1 3HN",
+        "price": 1150000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4042,22 +4479,6 @@
         "newBuild": false
       },
       {
-        "address": "317A, RICHMOND ROAD",
-        "postcode": "TW1 2PB",
-        "price": 665000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "18D, QUEENS ROAD",
-        "postcode": "TW1 4EX",
-        "price": 363000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "KELVIN COURT, 26, KELVIN DRIVE",
         "postcode": "TW1 2AH",
         "price": 510000,
@@ -4082,6 +4503,14 @@
         "newBuild": false
       },
       {
+        "address": "45, VARSITY DRIVE",
+        "postcode": "TW1 1AG",
+        "price": 340000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "33, FLAT 2, CANDLER MEWS",
         "postcode": "TW1 3JF",
         "price": 550000,
@@ -4095,6 +4524,14 @@
         "price": 1160000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "26, WHITTON ROAD",
+        "postcode": "TW1 1BJ",
+        "price": 1200000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4114,17 +4551,17 @@
         "newBuild": false
       },
       {
-        "address": "26, WHITTON ROAD",
-        "postcode": "TW1 1BJ",
-        "price": 1200000,
+        "address": "317A, RICHMOND ROAD",
+        "postcode": "TW1 2PB",
+        "price": 665000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "45, VARSITY DRIVE",
-        "postcode": "TW1 1AG",
-        "price": 340000,
+        "address": "18D, QUEENS ROAD",
+        "postcode": "TW1 4EX",
+        "price": 363000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4143,6 +4580,54 @@
         "price": 1150000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, TUDOR GARDENS",
+        "postcode": "TW1 4LE",
+        "price": 670000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, STRAWBERRY VALE",
+        "postcode": "TW1 4RU",
+        "price": 1700000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "26B, QUEENS ROAD",
+        "postcode": "TW1 4EX",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, CANDLER MEWS",
+        "postcode": "TW1 3JF",
+        "price": 545000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "97, FIRST FLOOR FLAT, STRAWBERRY VALE",
+        "postcode": "TW1 4SJ",
+        "price": 477000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "POPLAR COURT, 12, RICHMOND ROAD",
+        "postcode": "TW1 2DS",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4210,54 +4695,6 @@
         "newBuild": false
       },
       {
-        "address": "1, TUDOR GARDENS",
-        "postcode": "TW1 4LE",
-        "price": 670000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "26B, QUEENS ROAD",
-        "postcode": "TW1 4EX",
-        "price": 410000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "18, CANDLER MEWS",
-        "postcode": "TW1 3JF",
-        "price": 545000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "34, STRAWBERRY VALE",
-        "postcode": "TW1 4RU",
-        "price": 1700000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "POPLAR COURT, 12, RICHMOND ROAD",
-        "postcode": "TW1 2DS",
-        "price": 590000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "97, FIRST FLOOR FLAT, STRAWBERRY VALE",
-        "postcode": "TW1 4SJ",
-        "price": 477000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "24, BEAUCHAMP ROAD",
         "postcode": "TW1 3JD",
         "price": 953000,
@@ -4306,6 +4743,14 @@
         "newBuild": false
       },
       {
+        "address": "5, ST PETERS ROAD",
+        "postcode": "TW1 1QY",
+        "price": 1770000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "150, WHITTON ROAD",
         "postcode": "TW1 1DE",
         "price": 990000,
@@ -4322,43 +4767,11 @@
         "newBuild": false
       },
       {
-        "address": "5, ST PETERS ROAD",
-        "postcode": "TW1 1QY",
-        "price": 1770000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "21, YORK STREET",
         "postcode": "TW1 3JZ",
         "price": 707500,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "CAMBRIDGE PARK COURT, 25, CAMBRIDGE PARK",
-        "postcode": "TW1 2JN",
-        "price": 590000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "4, TOP FLOOR FLAT, CAMBRIDGE PARK",
-        "postcode": "TW1 2PF",
-        "price": 475000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "60, LION ROAD",
-        "postcode": "TW1 4JF",
-        "price": 747500,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4378,6 +4791,30 @@
         "newBuild": false
       },
       {
+        "address": "4, TOP FLOOR FLAT, CAMBRIDGE PARK",
+        "postcode": "TW1 2PF",
+        "price": 475000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CAMBRIDGE PARK COURT, 25, CAMBRIDGE PARK",
+        "postcode": "TW1 2JN",
+        "price": 590000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, LION ROAD",
+        "postcode": "TW1 4JF",
+        "price": 747500,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "14, GREVILLE CLOSE",
         "postcode": "TW1 3HR",
         "price": 500500,
@@ -4386,9 +4823,9 @@
         "newBuild": false
       },
       {
-        "address": "5B, STATION ROAD",
-        "postcode": "TW1 4LL",
-        "price": 400000,
+        "address": "14, FLAT 5, RIVERDALE ROAD",
+        "postcode": "TW1 2BS",
+        "price": 625000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4402,9 +4839,9 @@
         "newBuild": false
       },
       {
-        "address": "14, FLAT 5, RIVERDALE ROAD",
-        "postcode": "TW1 2BS",
-        "price": 625000,
+        "address": "5B, STATION ROAD",
+        "postcode": "TW1 4LL",
+        "price": 400000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4458,14 +4895,6 @@
         "newBuild": false
       },
       {
-        "address": "5, FLAT 5, RIVERDALE ROAD",
-        "postcode": "TW1 2BT",
-        "price": 910000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "279, VARSITY DRIVE",
         "postcode": "TW1 1AP",
         "price": 335000,
@@ -4477,6 +4906,14 @@
         "address": "WESTBOURNE HOUSE, 9, RICHMOND ROAD",
         "postcode": "TW1 3AS",
         "price": 610000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 5, RIVERDALE ROAD",
+        "postcode": "TW1 2BT",
+        "price": 910000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4562,6 +4999,14 @@
         "newBuild": false
       },
       {
+        "address": "29, FLAT 2, YORK STREET",
+        "postcode": "TW1 3JZ",
+        "price": 285000,
+        "dateOfTransfer": "2025-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "15, ST STEPHENS GARDENS",
         "postcode": "TW1 2LT",
         "price": 2400000,
@@ -4570,10 +5015,18 @@
         "newBuild": false
       },
       {
-        "address": "29, FLAT 2, YORK STREET",
-        "postcode": "TW1 3JZ",
-        "price": 285000,
-        "dateOfTransfer": "2025-03-03",
+        "address": "34A, QUEENS ROAD",
+        "postcode": "TW1 4EX",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "279, FLAT 1, WALDEGRAVE ROAD",
+        "postcode": "TW1 4SU",
+        "price": 1119500,
+        "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4589,22 +5042,6 @@
         "address": "LEBANON COURT, 7, RICHMOND ROAD",
         "postcode": "TW1 3DA",
         "price": 445000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "34A, QUEENS ROAD",
-        "postcode": "TW1 4EX",
-        "price": 450000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "279, FLAT 1, WALDEGRAVE ROAD",
-        "postcode": "TW1 4SU",
-        "price": 1119500,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4642,6 +5079,14 @@
         "newBuild": false
       },
       {
+        "address": "PULLMAN COURT, 92, FLAT 5, LONDON ROAD",
+        "postcode": "TW1 1FE",
+        "price": 600000,
+        "dateOfTransfer": "2025-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "1, MESSOM MEWS",
         "postcode": "TW1 4DP",
         "price": 64000,
@@ -4658,10 +5103,18 @@
         "newBuild": false
       },
       {
-        "address": "PULLMAN COURT, 92, FLAT 5, LONDON ROAD",
-        "postcode": "TW1 1FE",
-        "price": 600000,
-        "dateOfTransfer": "2025-02-24",
+        "address": "45, GROSVENOR ROAD",
+        "postcode": "TW1 4AD",
+        "price": 670000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, FLAT 2, GLEBE SIDE",
+        "postcode": "TW1 1DB",
+        "price": 365000,
+        "dateOfTransfer": "2025-02-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -4690,22 +5143,6 @@
         "newBuild": false
       },
       {
-        "address": "45, GROSVENOR ROAD",
-        "postcode": "TW1 4AD",
-        "price": 670000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "21, FLAT 2, GLEBE SIDE",
-        "postcode": "TW1 1DB",
-        "price": 365000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "37, CROWN ROAD, ST MARGARETS",
         "postcode": "TW1 3EJ",
         "price": 2500,
@@ -4714,17 +5151,17 @@
         "newBuild": false
       },
       {
-        "address": "BONNEPALM HOUSE, 1, FLAT 1, WALDEGRAVE PARK",
-        "postcode": "TW1 4TT",
-        "price": 260000,
+        "address": "7, AMYAND PARK ROAD, ST MARGARETS",
+        "postcode": "TW1 3HB",
+        "price": 540000,
         "dateOfTransfer": "2025-02-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "7, AMYAND PARK ROAD, ST MARGARETS",
-        "postcode": "TW1 3HB",
-        "price": 540000,
+        "address": "BONNEPALM HOUSE, 1, FLAT 1, WALDEGRAVE PARK",
+        "postcode": "TW1 4TT",
+        "price": 260000,
         "dateOfTransfer": "2025-02-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4762,14 +5199,6 @@
         "newBuild": false
       },
       {
-        "address": "20, FIRST FLOOR FLAT, CRESSWELL ROAD",
-        "postcode": "TW1 2DZ",
-        "price": 1250000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "19, FLAT 3, THE BARONS",
         "postcode": "TW1 2AP",
         "price": 720000,
@@ -4781,6 +5210,14 @@
         "address": "ASHE HOUSE, 33, FLAT 9, CLEVEDON ROAD",
         "postcode": "TW1 2TT",
         "price": 845000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, FIRST FLOOR FLAT, CRESSWELL ROAD",
+        "postcode": "TW1 2DZ",
+        "price": 1250000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4826,22 +5263,6 @@
         "newBuild": false
       },
       {
-        "address": "1, AILSA AVENUE",
-        "postcode": "TW1 1NF",
-        "price": 942000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "43, KENLEY ROAD",
-        "postcode": "TW1 1JT",
-        "price": 740000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "26, BROOK ROAD",
         "postcode": "TW1 1JE",
         "price": 665000,
@@ -4853,6 +5274,22 @@
         "address": "GROUND FLOOR MAISONETTE, 57, QUEENS ROAD",
         "postcode": "TW1 4EZ",
         "price": 495000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, AILSA AVENUE",
+        "postcode": "TW1 1NF",
+        "price": 942000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "43, KENLEY ROAD",
+        "postcode": "TW1 1JT",
+        "price": 740000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -4882,19 +5319,19 @@
         "newBuild": false
       },
       {
-        "address": "214, ST MARGARETS ROAD",
-        "postcode": "TW1 1NP",
-        "price": 24901,
-        "dateOfTransfer": "2025-02-05",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "17, VIVIENNE CLOSE",
         "postcode": "TW1 2JX",
         "price": 1456000,
         "dateOfTransfer": "2025-02-05",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "214, ST MARGARETS ROAD",
+        "postcode": "TW1 1NP",
+        "price": 24901,
+        "dateOfTransfer": "2025-02-05",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4914,6 +5351,14 @@
         "newBuild": false
       },
       {
+        "address": "8, HARTINGTON ROAD",
+        "postcode": "TW1 3EN",
+        "price": 1625000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "PARKVIEW COURT, 19, 9, CAMBRIDGE PARK",
         "postcode": "TW1 2JF",
         "price": 410000,
@@ -4927,14 +5372,6 @@
         "price": 515000,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "8, HARTINGTON ROAD",
-        "postcode": "TW1 3EN",
-        "price": 1625000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5098,14 +5535,6 @@
         "newBuild": false
       },
       {
-        "address": "23, MALLARD PLACE",
-        "postcode": "TW1 4SW",
-        "price": 386500,
-        "dateOfTransfer": "2025-01-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "18, WALDEGRAVE GARDENS",
         "postcode": "TW1 4PG",
         "price": 2270000,
@@ -5114,18 +5543,10 @@
         "newBuild": false
       },
       {
-        "address": "22, NORTHCOTE ROAD",
-        "postcode": "TW1 1PA",
-        "price": 1375000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "6, BAYLIS MEWS",
-        "postcode": "TW1 3HQ",
-        "price": 395000,
-        "dateOfTransfer": "2025-01-06",
+        "address": "23, MALLARD PLACE",
+        "postcode": "TW1 4SW",
+        "price": 386500,
+        "dateOfTransfer": "2025-01-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -5138,11 +5559,19 @@
         "newBuild": false
       },
       {
-        "address": "31, LIME GROVE",
-        "postcode": "TW1 1EL",
-        "price": 1275000,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Semi-detached",
+        "address": "6, BAYLIS MEWS",
+        "postcode": "TW1 3HQ",
+        "price": 395000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, NORTHCOTE ROAD",
+        "postcode": "TW1 1PA",
+        "price": 1375000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5160,10 +5589,18 @@
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Semi-detached",
         "newBuild": false
+      },
+      {
+        "address": "31, LIME GROVE",
+        "postcode": "TW1 1EL",
+        "price": 1275000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
       }
     ],
-    "averagePrice": 858165,
-    "medianPrice": 656250
+    "averagePrice": 857155,
+    "medianPrice": 652500
   },
   "representatives": {
     "representatives": [

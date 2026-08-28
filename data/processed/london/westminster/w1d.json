@@ -3,8 +3,8 @@
   "slug": "w1d",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.51331648776977,
-  "longitude": -0.13268913237410054,
+  "latitude": 51.51332751718986,
+  "longitude": -0.1327184917787742,
   "wards": [
     "St James's",
     "West End"
@@ -98,8 +98,9 @@
         "name": "Soho Parish CofE Primary School",
         "urn": "101131",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "09/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "23 Great Windmill Street, London",
         "postcode": "W1D 7LF",
         "numberOfPupils": 90,
@@ -111,27 +112,27 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5929,
+        "totalCrimes": 5925,
         "violentCrimes": 1150,
-        "propertyCrimes": 4043
+        "propertyCrimes": 4041
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5398,
-        "violentCrimes": 1108,
-        "propertyCrimes": 3446
+        "totalCrimes": 5394,
+        "violentCrimes": 1107,
+        "propertyCrimes": 3443
       },
       {
         "month": "2025-09",
-        "totalCrimes": 5306,
-        "violentCrimes": 1241,
-        "propertyCrimes": 3371
+        "totalCrimes": 5302,
+        "violentCrimes": 1240,
+        "propertyCrimes": 3370
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5834,
-        "violentCrimes": 1160,
-        "propertyCrimes": 3905
+        "totalCrimes": 5826,
+        "violentCrimes": 1157,
+        "propertyCrimes": 3901
       },
       {
         "month": "2025-11",
@@ -141,67 +142,75 @@
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6739,
+        "totalCrimes": 6738,
         "violentCrimes": 1171,
         "propertyCrimes": 4790
       },
       {
         "month": "2026-01",
-        "totalCrimes": 5054,
-        "violentCrimes": 979,
-        "propertyCrimes": 3375
+        "totalCrimes": 5047,
+        "violentCrimes": 976,
+        "propertyCrimes": 3372
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4764,
-        "violentCrimes": 851,
-        "propertyCrimes": 3239
+        "totalCrimes": 4759,
+        "violentCrimes": 849,
+        "propertyCrimes": 3237
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4675,
-        "violentCrimes": 978,
-        "propertyCrimes": 3015
+        "totalCrimes": 4658,
+        "violentCrimes": 970,
+        "propertyCrimes": 3007
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4816,
+        "totalCrimes": 4807,
         "violentCrimes": 1006,
-        "propertyCrimes": 3085
+        "propertyCrimes": 3077
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4748,
-        "violentCrimes": 1121,
-        "propertyCrimes": 2886
+        "totalCrimes": 4741,
+        "violentCrimes": 1120,
+        "propertyCrimes": 2880
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4688,
-        "violentCrimes": 1050,
-        "propertyCrimes": 2889
+        "totalCrimes": 4681,
+        "violentCrimes": 1046,
+        "propertyCrimes": 2887
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6858,
-      "bicycle-theft": 723,
-      "burglary": 1349,
-      "criminal-damage-arson": 1030,
+      "anti-social-behaviour": 6847,
+      "bicycle-theft": 721,
+      "burglary": 1337,
+      "criminal-damage-arson": 1027,
       "drugs": 1698,
-      "other-theft": 13954,
+      "other-theft": 13948,
       "possession-of-weapons": 231,
-      "public-order": 2575,
-      "robbery": 2275,
-      "shoplifting": 6947,
-      "theft-from-the-person": 17750,
+      "public-order": 2568,
+      "robbery": 2271,
+      "shoplifting": 6934,
+      "theft-from-the-person": 17747,
       "vehicle-crime": 1156,
-      "violent-crime": 7901,
+      "violent-crime": 7889,
       "other-crime": 276
     },
-    "totalLast12Months": 64723
+    "totalLast12Months": 64650
   },
   "property": {
     "sales": [
+      {
+        "address": "12, FLAT 9, BOURCHIER STREET",
+        "postcode": "W1D 4HZ",
+        "price": 1250000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "16, FLAT 1B, BATEMAN STREET",
         "postcode": "W1D 3AH",
@@ -243,17 +252,17 @@
         "newBuild": false
       },
       {
-        "address": "14, FRITH STREET",
-        "postcode": "W1D 4RD",
-        "price": 2500000,
+        "address": "13, SOHO SQUARE",
+        "postcode": "W1D 3QF",
+        "price": 6250000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "13, SOHO SQUARE",
-        "postcode": "W1D 3QF",
-        "price": 6250000,
+        "address": "14, FRITH STREET",
+        "postcode": "W1D 4RD",
+        "price": 2500000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Other",
         "newBuild": false
@@ -515,8 +524,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 9211968,
-    "medianPrice": 750000
+    "averagePrice": 9012919,
+    "medianPrice": 757500
   },
   "representatives": {
     "representatives": [

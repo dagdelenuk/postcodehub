@@ -5,6 +5,14 @@ export interface HierarchyOutcode {
   longitude: number;
   wards: string[];
   parliamentaryConstituency: string;
+  /**
+   * True when this borough has the largest real-postcode share of this
+   * outcode (from ONS NSPL, not just "touches it at all") - only
+   * primary-borough outcodes get summed into that borough's aggregate
+   * totals (getBoroughSummary), so a boundary outcode's stats aren't
+   * double-counted or inflate a borough it barely reaches into.
+   */
+  isPrimaryBorough: boolean;
 }
 
 export interface HierarchyBorough {
@@ -54,6 +62,10 @@ export interface School {
   phaseOfEducation: string;
   ofstedRating: string | null;
   ofstedLastInspection: string | null;
+  /** True when Ofsted inspected and graded every individual area under its
+   * post-Sept-2024 framework but deliberately publishes no single combined
+   * grade - distinct from a school with no current inspection data at all. */
+  ofstedNotJudgedUnderNewFramework: boolean;
   address: string;
   postcode: string;
   numberOfPupils: number | null;

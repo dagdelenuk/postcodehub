@@ -3,8 +3,8 @@
   "slug": "sw10",
   "city": "London",
   "borough": "Kensington and Chelsea",
-  "latitude": 51.48368037179484,
-  "longitude": -0.1827495534188034,
+  "latitude": 51.48361181900456,
+  "longitude": -0.18274796153846154,
   "wards": [
     "Chelsea Riverside",
     "Courtfield",
@@ -87,7 +87,8 @@
         "urn": "100477",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/01/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "17 Blantyre Street, London",
         "postcode": "SW10 0DT",
         "numberOfPupils": 138,
@@ -97,8 +98,9 @@
         "name": "Park Walk Primary School",
         "urn": "100486",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "04/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Park Walk, King's Road, London",
         "postcode": "SW10 0AY",
         "numberOfPupils": 192,
@@ -109,7 +111,8 @@
         "urn": "100500",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "08/12/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "252 Fulham Road, London",
         "postcode": "SW10 9NA",
         "numberOfPupils": 208,
@@ -120,7 +123,8 @@
         "urn": "135531",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "27/09/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lots Road, Chelsea, London",
         "postcode": "SW10 0AB",
         "numberOfPupils": 1106,
@@ -132,21 +136,21 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 1371,
+        "totalCrimes": 1370,
         "violentCrimes": 397,
-        "propertyCrimes": 574
+        "propertyCrimes": 573
       },
       {
         "month": "2025-08",
-        "totalCrimes": 1310,
+        "totalCrimes": 1309,
         "violentCrimes": 354,
-        "propertyCrimes": 554
+        "propertyCrimes": 553
       },
       {
         "month": "2025-09",
-        "totalCrimes": 1296,
+        "totalCrimes": 1295,
         "violentCrimes": 359,
-        "propertyCrimes": 549
+        "propertyCrimes": 548
       },
       {
         "month": "2025-10",
@@ -156,45 +160,45 @@
       },
       {
         "month": "2025-11",
-        "totalCrimes": 1293,
-        "violentCrimes": 354,
+        "totalCrimes": 1292,
+        "violentCrimes": 353,
         "propertyCrimes": 587
       },
       {
         "month": "2025-12",
-        "totalCrimes": 1216,
+        "totalCrimes": 1214,
         "violentCrimes": 357,
-        "propertyCrimes": 522
+        "propertyCrimes": 520
       },
       {
         "month": "2026-01",
-        "totalCrimes": 1256,
+        "totalCrimes": 1255,
         "violentCrimes": 393,
-        "propertyCrimes": 521
+        "propertyCrimes": 520
       },
       {
         "month": "2026-02",
-        "totalCrimes": 1119,
+        "totalCrimes": 1117,
         "violentCrimes": 319,
-        "propertyCrimes": 478
+        "propertyCrimes": 476
       },
       {
         "month": "2026-03",
-        "totalCrimes": 1260,
+        "totalCrimes": 1258,
         "violentCrimes": 368,
-        "propertyCrimes": 532
+        "propertyCrimes": 531
       },
       {
         "month": "2026-04",
-        "totalCrimes": 1223,
-        "violentCrimes": 376,
-        "propertyCrimes": 535
+        "totalCrimes": 1221,
+        "violentCrimes": 375,
+        "propertyCrimes": 534
       },
       {
         "month": "2026-05",
-        "totalCrimes": 1284,
-        "violentCrimes": 409,
-        "propertyCrimes": 473
+        "totalCrimes": 1282,
+        "violentCrimes": 408,
+        "propertyCrimes": 472
       },
       {
         "month": "2026-06",
@@ -204,25 +208,73 @@
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 3595,
+      "anti-social-behaviour": 3594,
       "bicycle-theft": 270,
-      "burglary": 781,
+      "burglary": 780,
       "criminal-damage-arson": 524,
       "drugs": 600,
-      "other-theft": 1671,
+      "other-theft": 1663,
       "possession-of-weapons": 67,
-      "public-order": 799,
+      "public-order": 797,
       "robbery": 279,
       "shoplifting": 1168,
-      "theft-from-the-person": 739,
+      "theft-from-the-person": 737,
       "vehicle-crime": 1220,
-      "violent-crime": 3298,
+      "violent-crime": 3297,
       "other-crime": 104
     },
-    "totalLast12Months": 15115
+    "totalLast12Months": 15100
   },
   "property": {
     "sales": [
+      {
+        "address": "PRIORY MANSIONS, 90, FLAT 19, DRAYTON GARDENS",
+        "postcode": "SW10 9RG",
+        "price": 345000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, FLAT 4, ELM PARK GARDENS",
+        "postcode": "SW10 9NY",
+        "price": 1606961,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, FLAT 4, FINBOROUGH ROAD",
+        "postcode": "SW10 9EQ",
+        "price": 385000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "59, FLAT E, CATHCART ROAD",
+        "postcode": "SW10 9DH",
+        "price": 723500,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, FLAT 13, ELM PARK GARDENS",
+        "postcode": "SW10 9QQ",
+        "price": 590000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "65, PARK WALK",
+        "postcode": "SW10 0AZ",
+        "price": 4700000,
+        "dateOfTransfer": "2026-06-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "ELIZABETH COURT, 47, FLAT 5, MILMANS STREET",
         "postcode": "SW10 0DA",
@@ -248,6 +300,14 @@
         "newBuild": false
       },
       {
+        "address": "ELM PARK HOUSE, FLAT 50, FULHAM ROAD",
+        "postcode": "SW10 9QD",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "42, UPCERNE ROAD",
         "postcode": "SW10 0SQ",
         "price": 465000,
@@ -267,6 +327,14 @@
         "address": "7, FLAT 1, ELM PARK GARDENS",
         "postcode": "SW10 9QG",
         "price": 490000,
+        "dateOfTransfer": "2026-05-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "143, FLAT 1, FINBOROUGH ROAD",
+        "postcode": "SW10 9AW",
+        "price": 725000,
         "dateOfTransfer": "2026-05-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -408,6 +476,14 @@
         "newBuild": false
       },
       {
+        "address": "9, CARLYLE COURT",
+        "postcode": "SW10 0UQ",
+        "price": 900000,
+        "dateOfTransfer": "2026-04-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "62, FLAT 1, IFIELD ROAD",
         "postcode": "SW10 9AD",
         "price": 690000,
@@ -424,19 +500,19 @@
         "newBuild": false
       },
       {
-        "address": "20A, STUDIO FLAT, GUNTER GROVE",
-        "postcode": "SW10 0UJ",
-        "price": 975500,
-        "dateOfTransfer": "2026-04-08",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "11, SHALCOMB STREET",
         "postcode": "SW10 0HZ",
         "price": 4875000,
         "dateOfTransfer": "2026-04-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20A, STUDIO FLAT, GUNTER GROVE",
+        "postcode": "SW10 0UJ",
+        "price": 975500,
+        "dateOfTransfer": "2026-04-08",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -448,17 +524,17 @@
         "newBuild": false
       },
       {
-        "address": "LUCAS HOUSE, 19, COLERIDGE GARDENS",
-        "postcode": "SW10 0RE",
-        "price": 620000,
+        "address": "LIGHTERMAN TOWERS, 1, B14, HARBOUR AVENUE",
+        "postcode": "SW10 0HQ",
+        "price": 1575000,
         "dateOfTransfer": "2026-04-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "LIGHTERMAN TOWERS, 1, B14, HARBOUR AVENUE",
-        "postcode": "SW10 0HQ",
-        "price": 1575000,
+        "address": "LUCAS HOUSE, 19, COLERIDGE GARDENS",
+        "postcode": "SW10 0RE",
+        "price": 620000,
         "dateOfTransfer": "2026-04-01",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -544,6 +620,22 @@
         "newBuild": false
       },
       {
+        "address": "121, FLAT 1, CHEYNE WALK",
+        "postcode": "SW10 0ES",
+        "price": 480000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "47, IFIELD ROAD",
+        "postcode": "SW10 9AX",
+        "price": 3600000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "4B - 4C, GUNTER GROVE",
         "postcode": "SW10 0UJ",
         "price": 500000,
@@ -584,11 +676,43 @@
         "newBuild": false
       },
       {
+        "address": "60, FLAT 1, REDCLIFFE SQUARE",
+        "postcode": "SW10 9BN",
+        "price": 580000,
+        "dateOfTransfer": "2026-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "60, FLAT 1, REDCLIFFE SQUARE",
+        "postcode": "SW10 9BN",
+        "price": 580000,
+        "dateOfTransfer": "2026-02-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "23, FLAT 5, FINBOROUGH ROAD",
+        "postcode": "SW10 9DF",
+        "price": 595000,
+        "dateOfTransfer": "2026-02-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "55, UPPER DARTREY WALK",
         "postcode": "SW10 0EN",
         "price": 183972,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, SEYMOUR WALK",
+        "postcode": "SW10 9NF",
+        "price": 2675000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -608,6 +732,30 @@
         "newBuild": false
       },
       {
+        "address": "17, THIRD FLOOR FLAT, COLEHERNE ROAD",
+        "postcode": "SW10 9BS",
+        "price": 690000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "501, THIRD FLOOR, KINGS ROAD",
+        "postcode": "SW10 0TU",
+        "price": 415250,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "19, FLAT 1, REDCLIFFE SQUARE",
+        "postcode": "SW10 9JX",
+        "price": 1450000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "80A, LOTS ROAD",
         "postcode": "SW10 0QD",
         "price": 460000,
@@ -620,6 +768,14 @@
         "postcode": "SW10 9BJ",
         "price": 1010000,
         "dateOfTransfer": "2026-02-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, FLAT B, REDCLIFFE GARDENS",
+        "postcode": "SW10 9BG",
+        "price": 499000,
+        "dateOfTransfer": "2026-02-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -712,6 +868,22 @@
         "newBuild": false
       },
       {
+        "address": "15, HOBURY STREET",
+        "postcode": "SW10 0JB",
+        "price": 4400000,
+        "dateOfTransfer": "2026-01-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "9, FLAT A-D, TADEMA ROAD",
+        "postcode": "SW10 0NU",
+        "price": 300000,
+        "dateOfTransfer": "2026-01-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "9, FLAT A-D, TADEMA ROAD",
         "postcode": "SW10 0NU",
         "price": 300000,
@@ -725,14 +897,6 @@
         "price": 1200000,
         "dateOfTransfer": "2026-01-13",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "9, FLAT A-D, TADEMA ROAD",
-        "postcode": "SW10 0NU",
-        "price": 300000,
-        "dateOfTransfer": "2026-01-13",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -768,14 +932,6 @@
         "newBuild": false
       },
       {
-        "address": "7, REDCLIFFE GARDENS",
-        "postcode": "SW10 9BG",
-        "price": 2300000,
-        "dateOfTransfer": "2025-12-22",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "7, GROUND FLOOR FLAT, REDCLIFFE GARDENS",
         "postcode": "SW10 9BG",
         "price": 550000,
@@ -797,6 +953,14 @@
         "price": 570000,
         "dateOfTransfer": "2025-12-22",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7, REDCLIFFE GARDENS",
+        "postcode": "SW10 9BG",
+        "price": 2300000,
+        "dateOfTransfer": "2025-12-22",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -936,6 +1100,14 @@
         "newBuild": false
       },
       {
+        "address": "1, APARTMENT 12.2, WATERFRONT DRIVE",
+        "postcode": "SW10 0AA",
+        "price": 3365000,
+        "dateOfTransfer": "2025-11-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "STANLEY MANSIONS, FLAT 9, PARK WALK",
         "postcode": "SW10 0AG",
         "price": 1950000,
@@ -984,6 +1156,14 @@
         "newBuild": false
       },
       {
+        "address": "5, FLAT 4, FINBOROUGH ROAD",
+        "postcode": "SW10 9DA",
+        "price": 470000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "7, STADIUM STREET",
         "postcode": "SW10 0PU",
         "price": 2000000,
@@ -992,17 +1172,17 @@
         "newBuild": false
       },
       {
-        "address": "8, FLAT 5, COLEHERNE ROAD",
-        "postcode": "SW10 9BP",
-        "price": 725000,
+        "address": "66A, IFIELD ROAD",
+        "postcode": "SW10 9AD",
+        "price": 570000,
         "dateOfTransfer": "2025-11-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "66A, IFIELD ROAD",
-        "postcode": "SW10 9AD",
-        "price": 570000,
+        "address": "8, FLAT 5, COLEHERNE ROAD",
+        "postcode": "SW10 9BP",
+        "price": 725000,
         "dateOfTransfer": "2025-11-12",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1048,10 +1228,26 @@
         "newBuild": false
       },
       {
+        "address": "94, FINBOROUGH ROAD",
+        "postcode": "SW10 9ED",
+        "price": 20606,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "ELM PARK MANSIONS, FLAT 68, PARK WALK",
         "postcode": "SW10 0AP",
         "price": 875000,
         "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "34, FLAT 3, REDCLIFFE SQUARE",
+        "postcode": "SW10 9JY",
+        "price": 1550000,
+        "dateOfTransfer": "2025-10-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1144,6 +1340,14 @@
         "newBuild": false
       },
       {
+        "address": "FERNSHAW MANSIONS, FLAT 2A, FERNSHAW ROAD",
+        "postcode": "SW10 0TD",
+        "price": 385000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "116C, LOTS ROAD",
         "postcode": "SW10 0RJ",
         "price": 345000,
@@ -1152,11 +1356,35 @@
         "newBuild": false
       },
       {
-        "address": "FERNSHAW MANSIONS, FLAT 2A, FERNSHAW ROAD",
-        "postcode": "SW10 0TD",
-        "price": 385000,
+        "address": "39, APARTMENT E3.1, LOTS ROAD",
+        "postcode": "SW10 0JS",
+        "price": 2500000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "70, IFIELD ROAD",
+        "postcode": "SW10 9AD",
+        "price": 2400000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 18.2, WATERFRONT DRIVE",
+        "postcode": "SW10 0AA",
+        "price": 3605000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
+        "address": "11, TREGUNTER ROAD",
+        "postcode": "SW10 9LS",
+        "price": 23500000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1168,19 +1396,11 @@
         "newBuild": false
       },
       {
-        "address": "11, TREGUNTER ROAD",
-        "postcode": "SW10 9LS",
-        "price": 23500000,
-        "dateOfTransfer": "2025-10-02",
+        "address": "38, SLAIDBURN STREET",
+        "postcode": "SW10 0JW",
+        "price": 1750000,
+        "dateOfTransfer": "2025-10-01",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "19, THE QUADRANGLE",
-        "postcode": "SW10 0UG",
-        "price": 775000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1208,6 +1428,30 @@
         "newBuild": false
       },
       {
+        "address": "41, BURNABY STREET",
+        "postcode": "SW10 0PP",
+        "price": 2000000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "19, THE QUADRANGLE",
+        "postcode": "SW10 0UG",
+        "price": 775000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, APARTMENT 26.1, WATERFRONT DRIVE",
+        "postcode": "SW10 0AA",
+        "price": 4773230,
+        "dateOfTransfer": "2025-09-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "MATHISON HOUSE, FLAT 48, COLERIDGE GARDENS",
         "postcode": "SW10 0RR",
         "price": 1350000,
@@ -1216,9 +1460,9 @@
         "newBuild": false
       },
       {
-        "address": "2 - 4, FLAT 3, REDCLIFFE GARDENS",
-        "postcode": "SW10 9EU",
-        "price": 725000,
+        "address": "34 - 37, FLAT C, GERTRUDE STREET",
+        "postcode": "SW10 0JG",
+        "price": 1245000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1232,9 +1476,9 @@
         "newBuild": false
       },
       {
-        "address": "34 - 37, FLAT C, GERTRUDE STREET",
-        "postcode": "SW10 0JG",
-        "price": 1245000,
+        "address": "2 - 4, FLAT 3, REDCLIFFE GARDENS",
+        "postcode": "SW10 9EU",
+        "price": 725000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1248,17 +1492,17 @@
         "newBuild": false
       },
       {
-        "address": "35, FLAT 3, COLEHERNE ROAD",
-        "postcode": "SW10 9BS",
-        "price": 650000,
+        "address": "280, FLAT 8, FULHAM ROAD",
+        "postcode": "SW10 9EW",
+        "price": 435000,
         "dateOfTransfer": "2025-09-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "280, FLAT 8, FULHAM ROAD",
-        "postcode": "SW10 9EW",
-        "price": 435000,
+        "address": "35, FLAT 3, COLEHERNE ROAD",
+        "postcode": "SW10 9BS",
+        "price": 650000,
         "dateOfTransfer": "2025-09-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1280,19 +1524,19 @@
         "newBuild": false
       },
       {
-        "address": "3, FARRIER WALK",
-        "postcode": "SW10 9FW",
-        "price": 1887290,
-        "dateOfTransfer": "2025-09-04",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "4, LOWER GROUND FLOOR FLAT, WESTGATE TERRACE",
         "postcode": "SW10 9BJ",
         "price": 872000,
         "dateOfTransfer": "2025-09-04",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, FARRIER WALK",
+        "postcode": "SW10 9FW",
+        "price": 1887290,
+        "dateOfTransfer": "2025-09-04",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1326,6 +1570,14 @@
         "dateOfTransfer": "2025-09-01",
         "propertyType": "Terraced",
         "newBuild": false
+      },
+      {
+        "address": "39, APARTMENT E1.1, LOTS ROAD",
+        "postcode": "SW10 0JS",
+        "price": 2445000,
+        "dateOfTransfer": "2025-09-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "409, FULHAM ROAD",
@@ -1384,17 +1636,17 @@
         "newBuild": false
       },
       {
-        "address": "9, THE BELVEDERE",
-        "postcode": "SW10 0XA",
-        "price": 1380000,
+        "address": "19, FLAT 5, REDCLIFFE GARDENS",
+        "postcode": "SW10 9BG",
+        "price": 635000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "19, FLAT 5, REDCLIFFE GARDENS",
-        "postcode": "SW10 9BG",
-        "price": 635000,
+        "address": "9, THE BELVEDERE",
+        "postcode": "SW10 0XA",
+        "price": 1380000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1509,6 +1761,14 @@
         "price": 875000,
         "dateOfTransfer": "2025-08-04",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "124, FINBOROUGH ROAD",
+        "postcode": "SW10 9AQ",
+        "price": 2055000,
+        "dateOfTransfer": "2025-07-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1712,17 +1972,17 @@
         "newBuild": true
       },
       {
-        "address": "70, THIRD FLOOR FLAT, REDCLIFFE GARDENS",
-        "postcode": "SW10 9HE",
-        "price": 770000,
+        "address": "DRAYTON COURT, FLAT 10A, DRAYTON GARDENS",
+        "postcode": "SW10 9RQ",
+        "price": 1180000,
         "dateOfTransfer": "2025-06-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "DRAYTON COURT, FLAT 10A, DRAYTON GARDENS",
-        "postcode": "SW10 9RQ",
-        "price": 1180000,
+        "address": "70, THIRD FLOOR FLAT, REDCLIFFE GARDENS",
+        "postcode": "SW10 9HE",
+        "price": 770000,
         "dateOfTransfer": "2025-06-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1824,6 +2084,14 @@
         "newBuild": false
       },
       {
+        "address": "DRAYTON COURT, FLAT 21, DRAYTON GARDENS",
+        "postcode": "SW10 9RH",
+        "price": 2256500,
+        "dateOfTransfer": "2025-05-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "31, CARLYLE COURT",
         "postcode": "SW10 0UQ",
         "price": 930000,
@@ -1840,20 +2108,20 @@
         "newBuild": false
       },
       {
-        "address": "DRAYTON COURT, FLAT 21, DRAYTON GARDENS",
-        "postcode": "SW10 9RH",
-        "price": 2256500,
-        "dateOfTransfer": "2025-05-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "LIGHTERMAN TOWERS, 1, B27, HARBOUR AVENUE",
         "postcode": "SW10 0HQ",
         "price": 1750000,
         "dateOfTransfer": "2025-05-20",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "53, APARTMENT 1.2, LOTS ROAD",
+        "postcode": "SW10 0JU",
+        "price": 10366300,
+        "dateOfTransfer": "2025-05-19",
+        "propertyType": "Other",
+        "newBuild": false
       },
       {
         "address": "39, APARTMENT E2.1, LOTS ROAD",
@@ -1920,14 +2188,6 @@
         "newBuild": false
       },
       {
-        "address": "FLAT D, 3, TADEMA ROAD",
-        "postcode": "SW10 0NU",
-        "price": 330000,
-        "dateOfTransfer": "2025-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "10, THE SANDHILLS",
         "postcode": "SW10 0BG",
         "price": 850000,
@@ -1944,18 +2204,10 @@
         "newBuild": false
       },
       {
-        "address": "8, CHELSEA CRESCENT",
-        "postcode": "SW10 0XB",
-        "price": 1275000,
-        "dateOfTransfer": "2025-04-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "48A, CATHCART ROAD",
-        "postcode": "SW10 9JQ",
-        "price": 845000,
-        "dateOfTransfer": "2025-04-28",
+        "address": "FLAT D, 3, TADEMA ROAD",
+        "postcode": "SW10 0NU",
+        "price": 330000,
+        "dateOfTransfer": "2025-04-30",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1971,6 +2223,22 @@
         "address": "BERENGER TOWER, FLAT 32, WORLDS END ESTATE",
         "postcode": "SW10 0EF",
         "price": 510000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "8, CHELSEA CRESCENT",
+        "postcode": "SW10 0XB",
+        "price": 1275000,
+        "dateOfTransfer": "2025-04-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48A, CATHCART ROAD",
+        "postcode": "SW10 9JQ",
+        "price": 845000,
         "dateOfTransfer": "2025-04-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2024,9 +2292,9 @@
         "newBuild": false
       },
       {
-        "address": "119, FLAT 2, IFIELD ROAD",
-        "postcode": "SW10 9AR",
-        "price": 875000,
+        "address": "ASHBURNHAM MANSIONS, FLAT 7, ASHBURNHAM ROAD",
+        "postcode": "SW10 0PA",
+        "price": 840000,
         "dateOfTransfer": "2025-04-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2044,15 +2312,15 @@
         "postcode": "SW10 0PA",
         "price": 840000,
         "dateOfTransfer": "2025-04-10",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
-        "address": "ASHBURNHAM MANSIONS, FLAT 7, ASHBURNHAM ROAD",
-        "postcode": "SW10 0PA",
-        "price": 840000,
+        "address": "119, FLAT 2, IFIELD ROAD",
+        "postcode": "SW10 9AR",
+        "price": 875000,
         "dateOfTransfer": "2025-04-10",
-        "propertyType": "Other",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2080,9 +2348,9 @@
         "newBuild": true
       },
       {
-        "address": "80, FLAT A, EDITH GROVE",
-        "postcode": "SW10 0NH",
-        "price": 535000,
+        "address": "23, THIRD FLOOR FLAT, COLEHERNE ROAD",
+        "postcode": "SW10 9BS",
+        "price": 830000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2093,6 +2361,14 @@
         "price": 2900000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "80, FLAT A, EDITH GROVE",
+        "postcode": "SW10 0NH",
+        "price": 535000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2109,14 +2385,6 @@
         "price": 3250000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "23, THIRD FLOOR FLAT, COLEHERNE ROAD",
-        "postcode": "SW10 9BS",
-        "price": 830000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2144,17 +2412,25 @@
         "newBuild": false
       },
       {
-        "address": "69, GROUND FLOOR FLAT, REDCLIFFE GARDENS",
-        "postcode": "SW10 9JJ",
-        "price": 1040000,
+        "address": "9B, EDITH TERRACE",
+        "postcode": "SW10 0TQ",
+        "price": 735000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "9B, EDITH TERRACE",
-        "postcode": "SW10 0TQ",
-        "price": 735000,
+        "address": "9, FLAT 7, REDCLIFFE SQUARE",
+        "postcode": "SW10 9LA",
+        "price": 900000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "156A, FINBOROUGH ROAD",
+        "postcode": "SW10 9AH",
+        "price": 658000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2168,9 +2444,9 @@
         "newBuild": false
       },
       {
-        "address": "156A, FINBOROUGH ROAD",
-        "postcode": "SW10 9AH",
-        "price": 658000,
+        "address": "69, GROUND FLOOR FLAT, REDCLIFFE GARDENS",
+        "postcode": "SW10 9JJ",
+        "price": 1040000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2179,14 +2455,6 @@
         "address": "4, FLAT 3, WESTGATE TERRACE",
         "postcode": "SW10 9BJ",
         "price": 645000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "9, FLAT 7, REDCLIFFE SQUARE",
-        "postcode": "SW10 9LA",
-        "price": 900000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2240,11 +2508,11 @@
         "newBuild": false
       },
       {
-        "address": "3, GUNTER GROVE",
-        "postcode": "SW10 0UN",
-        "price": 1300000,
+        "address": "11, IFIELD ROAD",
+        "postcode": "SW10 9AZ",
+        "price": 825000,
         "dateOfTransfer": "2025-03-21",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2256,19 +2524,19 @@
         "newBuild": false
       },
       {
-        "address": "11, IFIELD ROAD",
-        "postcode": "SW10 9AZ",
-        "price": 825000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "104A, FINBOROUGH ROAD",
         "postcode": "SW10 9ED",
         "price": 593885,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "3, GUNTER GROVE",
+        "postcode": "SW10 0UN",
+        "price": 1300000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2304,17 +2572,17 @@
         "newBuild": false
       },
       {
-        "address": "PRIORY MANSIONS, 90, FLAT 11, DRAYTON GARDENS",
-        "postcode": "SW10 9RG",
-        "price": 1525000,
+        "address": "21D, TADEMA ROAD",
+        "postcode": "SW10 0NX",
+        "price": 390000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "21D, TADEMA ROAD",
-        "postcode": "SW10 0NX",
-        "price": 390000,
+        "address": "PRIORY MANSIONS, 90, FLAT 11, DRAYTON GARDENS",
+        "postcode": "SW10 9RG",
+        "price": 1525000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2352,19 +2620,19 @@
         "newBuild": false
       },
       {
-        "address": "72, FLAT 3, CATHCART ROAD",
-        "postcode": "SW10 9DJ",
-        "price": 570000,
-        "dateOfTransfer": "2025-03-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "41A, REDCLIFFE GARDENS",
         "postcode": "SW10 9JH",
         "price": 4100000,
         "dateOfTransfer": "2025-03-04",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "72, FLAT 3, CATHCART ROAD",
+        "postcode": "SW10 9DJ",
+        "price": 570000,
+        "dateOfTransfer": "2025-03-04",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2528,20 +2796,20 @@
         "newBuild": false
       },
       {
-        "address": "5, FLAT 39, ELM PARK GARDENS",
-        "postcode": "SW10 9QQ",
-        "price": 375000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "LIGHTERMAN TOWERS, 1, C43, HARBOUR AVENUE",
         "postcode": "SW10 0HW",
         "price": 2050000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
+      },
+      {
+        "address": "5, FLAT 39, ELM PARK GARDENS",
+        "postcode": "SW10 9QQ",
+        "price": 375000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       },
       {
         "address": "26A, REDCLIFFE GARDENS",
@@ -2560,14 +2828,6 @@
         "newBuild": false
       },
       {
-        "address": "4, THE BELVEDERE",
-        "postcode": "SW10 0XA",
-        "price": 2750000,
-        "dateOfTransfer": "2025-02-04",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "1, APARTMENT 14.1, WATERFRONT DRIVE",
         "postcode": "SW10 0AA",
         "price": 4700000,
@@ -2576,10 +2836,34 @@
         "newBuild": true
       },
       {
+        "address": "4, THE BELVEDERE",
+        "postcode": "SW10 0XA",
+        "price": 2750000,
+        "dateOfTransfer": "2025-02-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "17, LANGTON STREET",
         "postcode": "SW10 0JL",
         "price": 10000,
         "dateOfTransfer": "2025-02-03",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "18, FLAT 1B, WESTGATE TERRACE",
+        "postcode": "SW10 9BJ",
+        "price": 480000,
+        "dateOfTransfer": "2025-01-30",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "45C, FERNSHAW ROAD",
+        "postcode": "SW10 0TN",
+        "price": 15000,
+        "dateOfTransfer": "2025-01-30",
         "propertyType": "Other",
         "newBuild": false
       },
@@ -2601,22 +2885,6 @@
       },
       {
         "address": "45A, FERNSHAW ROAD",
-        "postcode": "SW10 0TN",
-        "price": 15000,
-        "dateOfTransfer": "2025-01-30",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "18, FLAT 1B, WESTGATE TERRACE",
-        "postcode": "SW10 9BJ",
-        "price": 480000,
-        "dateOfTransfer": "2025-01-30",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "45C, FERNSHAW ROAD",
         "postcode": "SW10 0TN",
         "price": 15000,
         "dateOfTransfer": "2025-01-30",
@@ -2736,7 +3004,7 @@
         "newBuild": true
       }
     ],
-    "averagePrice": 1785129,
+    "averagePrice": 1798906,
     "medianPrice": 915000
   },
   "representatives": {

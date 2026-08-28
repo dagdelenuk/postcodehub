@@ -3,8 +3,8 @@
   "slug": "ig9",
   "city": "London",
   "borough": "Redbridge",
-  "latitude": 51.62580230821922,
-  "longitude": 0.04044302054794521,
+  "latitude": 51.625783556338035,
+  "longitude": 0.04045475704225353,
   "wards": [
     "Bridge",
     "Buckhurst Hill East & Whitebridge",
@@ -100,6 +100,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "103 Palmerston Road, BUCKHURST HILL",
         "postcode": "IG9 5NH",
         "numberOfPupils": 138,
@@ -111,6 +112,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "68 Palmerston Road, Buckhurst Hill",
         "postcode": "IG9 5LG",
         "numberOfPupils": 95,
@@ -120,8 +122,9 @@
         "name": "St John's Church of England Voluntary Controlled Primary School, Buckhurst Hill",
         "urn": "145599",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "23/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "High Road, Buckhurst Hill",
         "postcode": "IG9 5RX",
         "numberOfPupils": 412,
@@ -133,6 +136,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lower Queen's Road, Buckhurst Hill",
         "postcode": "IG9 6DS",
         "numberOfPupils": 389,
@@ -236,11 +240,75 @@
   "property": {
     "sales": [
       {
+        "address": "28, WILLOW CLOSE",
+        "postcode": "IG9 6HS",
+        "price": 645000,
+        "dateOfTransfer": "2026-07-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "199, BUCKHURST WAY",
+        "postcode": "IG9 6JB",
+        "price": 585000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HAREFIELD HOUSE, 99, FLAT 11, PALMERSTON ROAD",
+        "postcode": "IG9 5NH",
+        "price": 237000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "SHORE POINT, 46, FLAT 21, HIGH ROAD",
+        "postcode": "IG9 5JE",
+        "price": 400000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "79, CHESTNUT AVENUE",
+        "postcode": "IG9 6EP",
+        "price": 822500,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, FIELD CLOSE",
+        "postcode": "IG9 5AQ",
+        "price": 1275000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "162, PRINCES ROAD",
         "postcode": "IG9 5DJ",
         "price": 742500,
         "dateOfTransfer": "2026-06-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "SHORE POINT, 46, FLAT 24, HIGH ROAD",
+        "postcode": "IG9 5JE",
+        "price": 410000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "22, THE MEADWAY",
+        "postcode": "IG9 5PG",
+        "price": 1260000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -420,6 +488,22 @@
         "newBuild": false
       },
       {
+        "address": "32, FLAT 13, PALMERSTON ROAD",
+        "postcode": "IG9 5LW",
+        "price": 665000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "176, PRINCES ROAD",
+        "postcode": "IG9 5DJ",
+        "price": 1220000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "16, MAPLE CLOSE",
         "postcode": "IG9 6HW",
         "price": 810500,
@@ -433,14 +517,6 @@
         "price": 600000,
         "dateOfTransfer": "2026-04-01",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "176, PRINCES ROAD",
-        "postcode": "IG9 5DJ",
-        "price": 1220000,
-        "dateOfTransfer": "2026-04-01",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -500,6 +576,14 @@
         "newBuild": false
       },
       {
+        "address": "23, LOWER QUEENS ROAD",
+        "postcode": "IG9 6DN",
+        "price": 675000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "REGENCY LODGE, 55, ALBERT ROAD",
         "postcode": "IG9 6EF",
         "price": 140000,
@@ -508,17 +592,17 @@
         "newBuild": false
       },
       {
-        "address": "MAKINEN HOUSE, 49, 15, PALMERSTON ROAD",
-        "postcode": "IG9 5NZ",
-        "price": 325000,
+        "address": "MARLBOROUGH COURT, 5, QUEENS ROAD",
+        "postcode": "IG9 5BN",
+        "price": 385000,
         "dateOfTransfer": "2026-02-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "MARLBOROUGH COURT, 5, QUEENS ROAD",
-        "postcode": "IG9 5BN",
-        "price": 385000,
+        "address": "MAKINEN HOUSE, 49, 15, PALMERSTON ROAD",
+        "postcode": "IG9 5NZ",
+        "price": 325000,
         "dateOfTransfer": "2026-02-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -564,6 +648,14 @@
         "newBuild": false
       },
       {
+        "address": "34, AMBERLEY ROAD",
+        "postcode": "IG9 5QW",
+        "price": 1050000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "68, BUCKHURST WAY",
         "postcode": "IG9 6HP",
         "price": 720000,
@@ -577,14 +669,6 @@
         "price": 760000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "34, AMBERLEY ROAD",
-        "postcode": "IG9 5QW",
-        "price": 1050000,
-        "dateOfTransfer": "2026-02-06",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -608,6 +692,14 @@
         "postcode": "IG9 5TB",
         "price": 670000,
         "dateOfTransfer": "2026-02-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "233, BUCKHURST WAY",
+        "postcode": "IG9 6JB",
+        "price": 565000,
+        "dateOfTransfer": "2026-02-02",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -796,14 +888,6 @@
         "newBuild": false
       },
       {
-        "address": "76, ALFRED ROAD",
-        "postcode": "IG9 6DR",
-        "price": 1755000,
-        "dateOfTransfer": "2025-11-25",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "1, THE RISE",
         "postcode": "IG9 6AG",
         "price": 931000,
@@ -812,17 +896,25 @@
         "newBuild": false
       },
       {
-        "address": "22, ORMONDE RISE",
-        "postcode": "IG9 5QQ",
-        "price": 1100000,
-        "dateOfTransfer": "2025-11-24",
-        "propertyType": "Detached",
+        "address": "76, ALFRED ROAD",
+        "postcode": "IG9 6DR",
+        "price": 1755000,
+        "dateOfTransfer": "2025-11-25",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
         "address": "214, FOREST EDGE",
         "postcode": "IG9 5AF",
         "price": 1173500,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, ORMONDE RISE",
+        "postcode": "IG9 5QQ",
+        "price": 1100000,
         "dateOfTransfer": "2025-11-24",
         "propertyType": "Detached",
         "newBuild": false
@@ -900,17 +992,17 @@
         "newBuild": false
       },
       {
-        "address": "THE GREEN, 14, PALMERSTON ROAD",
-        "postcode": "IG9 5NQ",
-        "price": 425000,
+        "address": "REGENCY LODGE, 15, ALBERT ROAD",
+        "postcode": "IG9 6EF",
+        "price": 250000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "REGENCY LODGE, 15, ALBERT ROAD",
-        "postcode": "IG9 6EF",
-        "price": 250000,
+        "address": "THE GREEN, 14, PALMERSTON ROAD",
+        "postcode": "IG9 5NQ",
+        "price": 425000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1020,14 +1112,6 @@
         "newBuild": false
       },
       {
-        "address": "PALMERSTON COURT, 48, 5, PALMERSTON ROAD",
-        "postcode": "IG9 5LJ",
-        "price": 365000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "ICENI COURT, 66, FLAT 9, EPPING NEW ROAD",
         "postcode": "IG9 5TJ",
         "price": 485000,
@@ -1036,11 +1120,11 @@
         "newBuild": false
       },
       {
-        "address": "10, BANCROFT AVENUE",
-        "postcode": "IG9 5JW",
-        "price": 1075000,
-        "dateOfTransfer": "2025-10-23",
-        "propertyType": "Detached",
+        "address": "PALMERSTON COURT, 48, 5, PALMERSTON ROAD",
+        "postcode": "IG9 5LJ",
+        "price": 365000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1068,6 +1152,14 @@
         "newBuild": false
       },
       {
+        "address": "10, BANCROFT AVENUE",
+        "postcode": "IG9 5JW",
+        "price": 1075000,
+        "dateOfTransfer": "2025-10-23",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "62, WALNUT WAY",
         "postcode": "IG9 6HX",
         "price": 715000,
@@ -1076,9 +1168,9 @@
         "newBuild": false
       },
       {
-        "address": "38, RUSSELL ROAD",
-        "postcode": "IG9 5QE",
-        "price": 1025000,
+        "address": "16, CASCADE CLOSE",
+        "postcode": "IG9 6DY",
+        "price": 585000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1092,9 +1184,9 @@
         "newBuild": false
       },
       {
-        "address": "16, CASCADE CLOSE",
-        "postcode": "IG9 6DY",
-        "price": 585000,
+        "address": "38, RUSSELL ROAD",
+        "postcode": "IG9 5QE",
+        "price": 1025000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1140,19 +1232,19 @@
         "newBuild": false
       },
       {
-        "address": "12, STRADBROKE GROVE",
-        "postcode": "IG9 5PD",
-        "price": 970000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "58, PALMERSTON ROAD",
         "postcode": "IG9 5LH",
         "price": 712500,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, STRADBROKE GROVE",
+        "postcode": "IG9 5PD",
+        "price": 970000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1180,11 +1272,27 @@
         "newBuild": false
       },
       {
+        "address": "24, WOODSIDE",
+        "postcode": "IG9 5DR",
+        "price": 950000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "39, ALFRED ROAD",
         "postcode": "IG9 6DW",
         "price": 627800,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "172, HORNBEAM ROAD",
+        "postcode": "IG9 6LA",
+        "price": 151000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1252,17 +1360,17 @@
         "newBuild": false
       },
       {
-        "address": "13, BLACKMORE ROAD",
-        "postcode": "IG9 6AP",
-        "price": 310000,
+        "address": "BLOCK B, FLAT 10, HAWSTED",
+        "postcode": "IG9 5SS",
+        "price": 640000,
         "dateOfTransfer": "2025-09-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "BLOCK B, FLAT 10, HAWSTED",
-        "postcode": "IG9 5SS",
-        "price": 640000,
+        "address": "13, BLACKMORE ROAD",
+        "postcode": "IG9 6AP",
+        "price": 310000,
         "dateOfTransfer": "2025-09-11",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1273,14 +1381,6 @@
         "price": 885000,
         "dateOfTransfer": "2025-09-09",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "FOREST HEIGHTS, FLAT 6, EPPING NEW ROAD",
-        "postcode": "IG9 5TE",
-        "price": 950000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1305,6 +1405,22 @@
         "price": 685000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "FOREST HEIGHTS, FLAT 6, EPPING NEW ROAD",
+        "postcode": "IG9 5TE",
+        "price": 950000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BRAESIDE SCHOOL, 130, HIGH ROAD",
+        "postcode": "IG9 5SD",
+        "price": 5100000,
+        "dateOfTransfer": "2025-09-04",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1396,19 +1512,19 @@
         "newBuild": false
       },
       {
-        "address": "MAKINEN HOUSE, 49, 18, PALMERSTON ROAD",
-        "postcode": "IG9 5NZ",
-        "price": 290000,
-        "dateOfTransfer": "2025-08-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "67, STRADBROKE GROVE",
         "postcode": "IG9 5PE",
         "price": 1125000,
         "dateOfTransfer": "2025-08-14",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "MAKINEN HOUSE, 49, 18, PALMERSTON ROAD",
+        "postcode": "IG9 5NZ",
+        "price": 290000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1748,19 +1864,19 @@
         "newBuild": false
       },
       {
-        "address": "38, PALMERSTON ROAD",
-        "postcode": "IG9 5LW",
-        "price": 751000,
-        "dateOfTransfer": "2025-05-02",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "BLOCK A, FLAT 27, ARDMORE LANE",
         "postcode": "IG9 5RY",
         "price": 410000,
         "dateOfTransfer": "2025-05-02",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "38, PALMERSTON ROAD",
+        "postcode": "IG9 5LW",
+        "price": 751000,
+        "dateOfTransfer": "2025-05-02",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1780,19 +1896,19 @@
         "newBuild": false
       },
       {
-        "address": "5, ALMONDS AVENUE",
-        "postcode": "IG9 5JN",
-        "price": 925000,
-        "dateOfTransfer": "2025-04-25",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "2, KINGS AVENUE",
         "postcode": "IG9 5LP",
         "price": 270000,
         "dateOfTransfer": "2025-04-25",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "5, ALMONDS AVENUE",
+        "postcode": "IG9 5JN",
+        "price": 925000,
+        "dateOfTransfer": "2025-04-25",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -1828,22 +1944,6 @@
         "newBuild": false
       },
       {
-        "address": "29, ALFRED ROAD",
-        "postcode": "IG9 6DW",
-        "price": 490000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "MALDON HOUSE, 1, PENTLOW WAY",
-        "postcode": "IG9 6DA",
-        "price": 355000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "69, CHERRY TREE RISE",
         "postcode": "IG9 6EZ",
         "price": 595000,
@@ -1855,22 +1955,6 @@
         "address": "9, POWELL ROAD",
         "postcode": "IG9 5RD",
         "price": 1052500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "26, STARLING CLOSE",
-        "postcode": "IG9 5TN",
-        "price": 960000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "10, LUCTONS AVENUE",
-        "postcode": "IG9 5SG",
-        "price": 1125000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Detached",
         "newBuild": false
@@ -1892,6 +1976,22 @@
         "newBuild": false
       },
       {
+        "address": "26, STARLING CLOSE",
+        "postcode": "IG9 5TN",
+        "price": 960000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "10, LUCTONS AVENUE",
+        "postcode": "IG9 5SG",
+        "price": 1125000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "THE BAKE HOUSE, 12A, QUEENS ROAD",
         "postcode": "IG9 5BY",
         "price": 570000,
@@ -1903,6 +2003,22 @@
         "address": "751, HIGH ROAD",
         "postcode": "IG9 5HW",
         "price": 383000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "29, ALFRED ROAD",
+        "postcode": "IG9 6DW",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "MALDON HOUSE, 1, PENTLOW WAY",
+        "postcode": "IG9 6DA",
+        "price": 355000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1972,6 +2088,14 @@
         "newBuild": false
       },
       {
+        "address": "39, BUSH ROAD",
+        "postcode": "IG9 6ES",
+        "price": 525000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "23, PALACE GARDENS",
         "postcode": "IG9 5PQ",
         "price": 585000,
@@ -1980,11 +2104,19 @@
         "newBuild": false
       },
       {
-        "address": "39, BUSH ROAD",
-        "postcode": "IG9 6ES",
-        "price": 525000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
+        "address": "GREENHILL, FLAT 34, HIGH ROAD",
+        "postcode": "IG9 5SH",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ST JAMES GATE, 105, FLAT 12, PALMERSTON ROAD",
+        "postcode": "IG9 5NJ",
+        "price": 239000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2009,22 +2141,6 @@
         "price": 1190000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "GREENHILL, FLAT 34, HIGH ROAD",
-        "postcode": "IG9 5SH",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ST JAMES GATE, 105, FLAT 12, PALMERSTON ROAD",
-        "postcode": "IG9 5NJ",
-        "price": 239000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2092,14 +2208,6 @@
         "newBuild": false
       },
       {
-        "address": "8, MONARCH PLACE",
-        "postcode": "IG9 5DP",
-        "price": 575000,
-        "dateOfTransfer": "2025-03-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "VICTORIA HOUSE, VICTORIA ROAD",
         "postcode": "IG9 5EX",
         "price": 2744250,
@@ -2113,6 +2221,14 @@
         "price": 2455000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "8, MONARCH PLACE",
+        "postcode": "IG9 5DP",
+        "price": 575000,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2220,6 +2336,14 @@
         "newBuild": false
       },
       {
+        "address": "29, ST JOHNS COURT",
+        "postcode": "IG9 5SP",
+        "price": 535000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "17, CASCADE ROAD",
         "postcode": "IG9 6DX",
         "price": 283000,
@@ -2241,14 +2365,6 @@
         "price": 655000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "29, ST JOHNS COURT",
-        "postcode": "IG9 5SP",
-        "price": 535000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2412,19 +2528,19 @@
         "newBuild": false
       },
       {
-        "address": "53, PALACE GARDENS",
-        "postcode": "IG9 5PQ",
-        "price": 760000,
-        "dateOfTransfer": "2025-01-08",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "20, KNIGHTON LANE",
         "postcode": "IG9 5HQ",
         "price": 1500000,
         "dateOfTransfer": "2025-01-08",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "53, PALACE GARDENS",
+        "postcode": "IG9 5PQ",
+        "price": 760000,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2436,8 +2552,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 966030,
-    "medianPrice": 616500
+    "averagePrice": 966778,
+    "medianPrice": 620000
   },
   "representatives": {
     "representatives": [

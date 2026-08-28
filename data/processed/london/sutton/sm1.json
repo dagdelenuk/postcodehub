@@ -3,8 +3,8 @@
   "slug": "sm1",
   "city": "London",
   "borough": "Sutton",
-  "latitude": 51.36712060426543,
-  "longitude": -0.19280889454976297,
+  "latitude": 51.367498388398445,
+  "longitude": -0.192801259773014,
   "wards": [
     "Carshalton Central",
     "Cheam",
@@ -209,7 +209,8 @@
         "urn": "102956",
         "phaseOfEducation": "Nursery",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Robin Hood Lane, Sutton",
         "postcode": "SM1 2SF",
         "numberOfPupils": 98,
@@ -220,7 +221,8 @@
         "urn": "102981",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "23/03/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Robin Hood Lane, Sutton",
         "postcode": "SM1 2SF",
         "numberOfPupils": 239,
@@ -230,8 +232,9 @@
         "name": "Robin Hood Junior School",
         "urn": "102984",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "09/12/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Thorncroft Road, Sutton",
         "postcode": "SM1 1RL",
         "numberOfPupils": 359,
@@ -243,6 +246,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "All Saints Road, Sutton",
         "postcode": "SM1 3DA",
         "numberOfPupils": 462,
@@ -254,6 +258,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Western Road, Sutton",
         "postcode": "SM1 2TE",
         "numberOfPupils": 224,
@@ -265,6 +270,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "55 Cheam Road, Sutton",
         "postcode": "SM1 2AX",
         "numberOfPupils": 878,
@@ -276,6 +282,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Copthall House, Sutton",
         "postcode": "SM1 1DA",
         "numberOfPupils": null,
@@ -287,6 +294,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "St Nicholas Way, Sutton",
         "postcode": "SM1 1EA",
         "numberOfPupils": null,
@@ -297,7 +305,8 @@
         "urn": "136787",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/06/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Manor Lane, Sutton",
         "postcode": "SM1 4AS",
         "numberOfPupils": 1061,
@@ -308,7 +317,8 @@
         "urn": "136796",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "21/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Anton Crescent, Collingwood Road, Sutton",
         "postcode": "SM1 2NT",
         "numberOfPupils": 656,
@@ -319,7 +329,8 @@
         "urn": "136800",
         "phaseOfEducation": "Secondary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/10/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Grennell Road, Sutton",
         "postcode": "SM1 3DY",
         "numberOfPupils": 1977,
@@ -330,7 +341,8 @@
         "urn": "145484",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "10/06/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Greyhound Road, Sutton",
         "postcode": "SM1 4AW",
         "numberOfPupils": 710,
@@ -341,7 +353,8 @@
         "urn": "145704",
         "phaseOfEducation": "Not applicable",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "19/10/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Sutton West Centre, Sutton",
         "postcode": "SM1 2SD",
         "numberOfPupils": 61,
@@ -353,6 +366,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "36-46 Grove Road, Sutton",
         "postcode": "SM1 1BT",
         "numberOfPupils": 27,
@@ -364,103 +378,263 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 534,
-        "violentCrimes": 233,
-        "propertyCrimes": 173
+        "totalCrimes": 545,
+        "violentCrimes": 242,
+        "propertyCrimes": 174
       },
       {
         "month": "2025-08",
-        "totalCrimes": 456,
-        "violentCrimes": 172,
-        "propertyCrimes": 150
+        "totalCrimes": 453,
+        "violentCrimes": 169,
+        "propertyCrimes": 149
       },
       {
         "month": "2025-09",
-        "totalCrimes": 491,
-        "violentCrimes": 228,
-        "propertyCrimes": 151
+        "totalCrimes": 495,
+        "violentCrimes": 229,
+        "propertyCrimes": 152
       },
       {
         "month": "2025-10",
-        "totalCrimes": 503,
-        "violentCrimes": 218,
-        "propertyCrimes": 157
+        "totalCrimes": 500,
+        "violentCrimes": 220,
+        "propertyCrimes": 154
       },
       {
         "month": "2025-11",
-        "totalCrimes": 509,
-        "violentCrimes": 220,
-        "propertyCrimes": 173
+        "totalCrimes": 510,
+        "violentCrimes": 215,
+        "propertyCrimes": 176
       },
       {
         "month": "2025-12",
-        "totalCrimes": 456,
-        "violentCrimes": 170,
+        "totalCrimes": 459,
+        "violentCrimes": 171,
         "propertyCrimes": 169
       },
       {
         "month": "2026-01",
         "totalCrimes": 402,
-        "violentCrimes": 184,
+        "violentCrimes": 183,
         "propertyCrimes": 136
       },
       {
         "month": "2026-02",
-        "totalCrimes": 414,
+        "totalCrimes": 415,
         "violentCrimes": 167,
-        "propertyCrimes": 137
+        "propertyCrimes": 138
       },
       {
         "month": "2026-03",
-        "totalCrimes": 496,
-        "violentCrimes": 223,
+        "totalCrimes": 498,
+        "violentCrimes": 226,
         "propertyCrimes": 157
       },
       {
         "month": "2026-04",
-        "totalCrimes": 510,
-        "violentCrimes": 197,
-        "propertyCrimes": 165
+        "totalCrimes": 516,
+        "violentCrimes": 200,
+        "propertyCrimes": 168
       },
       {
         "month": "2026-05",
-        "totalCrimes": 487,
-        "violentCrimes": 236,
-        "propertyCrimes": 135
+        "totalCrimes": 498,
+        "violentCrimes": 244,
+        "propertyCrimes": 137
       },
       {
         "month": "2026-06",
-        "totalCrimes": 488,
-        "violentCrimes": 223,
-        "propertyCrimes": 147
+        "totalCrimes": 493,
+        "violentCrimes": 225,
+        "propertyCrimes": 148
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1121,
+      "anti-social-behaviour": 1126,
       "bicycle-theft": 38,
       "burglary": 231,
-      "criminal-damage-arson": 286,
-      "drugs": 240,
-      "other-theft": 356,
-      "possession-of-weapons": 36,
-      "public-order": 480,
+      "criminal-damage-arson": 284,
+      "drugs": 244,
+      "other-theft": 358,
+      "possession-of-weapons": 37,
+      "public-order": 485,
       "robbery": 117,
       "shoplifting": 428,
-      "theft-from-the-person": 115,
-      "vehicle-crime": 396,
-      "violent-crime": 1838,
-      "other-crime": 64
+      "theft-from-the-person": 116,
+      "vehicle-crime": 403,
+      "violent-crime": 1852,
+      "other-crime": 65
     },
-    "totalLast12Months": 5746
+    "totalLast12Months": 5784
   },
   "property": {
     "sales": [
+      {
+        "address": "75, ERSKINE ROAD",
+        "postcode": "SM1 3AT",
+        "price": 545000,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "23, FREDERICK ROAD, CHEAM",
+        "postcode": "SM1 2HP",
+        "price": 580000,
+        "dateOfTransfer": "2026-07-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, FREDERICK CLOSE, CHEAM",
+        "postcode": "SM1 2HY",
+        "price": 625000,
+        "dateOfTransfer": "2026-07-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, BROWNING AVENUE",
+        "postcode": "SM1 3QU",
+        "price": 520000,
+        "dateOfTransfer": "2026-07-13",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HILTON HEIGHTS, 79, FLAT 3, CHEAM ROAD",
+        "postcode": "SM1 2BD",
+        "price": 250000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, OAKHILL ROAD",
+        "postcode": "SM1 3AA",
+        "price": 400000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "331, HIGH STREET",
+        "postcode": "SM1 1LW",
+        "price": 255000,
+        "dateOfTransfer": "2026-07-07",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "KINGFISHER COURT, 37, FLAT 8, GROVE ROAD",
+        "postcode": "SM1 2AG",
+        "price": 135000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "33, COLBURN WAY",
+        "postcode": "SM1 3AU",
+        "price": 595000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25, OLIVER ROAD",
+        "postcode": "SM1 4QF",
+        "price": 450000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "BRUNSWICK COURT, 27, FLAT 4, BRUNSWICK ROAD",
+        "postcode": "SM1 4EH",
+        "price": 160000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, REVELL ROAD, CHEAM",
+        "postcode": "SM1 2ED",
+        "price": 875500,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "95, BENHILL AVENUE",
+        "postcode": "SM1 4DJ",
+        "price": 480000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, MONTANA GARDENS",
+        "postcode": "SM1 4FP",
+        "price": 302500,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, DANESCOURT CRESCENT",
+        "postcode": "SM1 3EA",
+        "price": 505000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "HOGARTH HOUSE, FLAT 9, SUTTON GROVE",
+        "postcode": "SM1 4TG",
+        "price": 221900,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "139, WESTMINSTER ROAD",
+        "postcode": "SM1 3NQ",
+        "price": 360000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HUDSON LODGE, 137, APARTMENT 6, CHEAM ROAD, CHEAM",
+        "postcode": "SM1 2DU",
+        "price": 275000,
+        "dateOfTransfer": "2026-06-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "110, FLAT 2, BENHILL ROAD",
+        "postcode": "SM1 3RS",
+        "price": 260000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "69A, ST ALBANS ROAD, CHEAM",
         "postcode": "SM1 2JH",
         "price": 325000,
         "dateOfTransfer": "2026-06-18",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "20, SHIRLEY AVENUE",
+        "postcode": "SM1 3QT",
+        "price": 582500,
+        "dateOfTransfer": "2026-06-17",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -472,11 +646,35 @@
         "newBuild": false
       },
       {
+        "address": "36, AULTONE WAY",
+        "postcode": "SM1 3LE",
+        "price": 635000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "55A, WESTMEAD ROAD",
+        "postcode": "SM1 4JN",
+        "price": 350000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "74A, WAVERLEY AVENUE",
         "postcode": "SM1 3JY",
         "price": 490000,
         "dateOfTransfer": "2026-06-10",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "70, SUTTON COMMON ROAD",
+        "postcode": "SM1 3HY",
+        "price": 470000,
+        "dateOfTransfer": "2026-06-08",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -493,6 +691,14 @@
         "price": 600000,
         "dateOfTransfer": "2026-06-05",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "2, SALTASH CLOSE, CHEAM",
+        "postcode": "SM1 2JL",
+        "price": 376000,
+        "dateOfTransfer": "2026-06-03",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -536,6 +742,14 @@
         "newBuild": false
       },
       {
+        "address": "12, OLIVER ROAD",
+        "postcode": "SM1 4QF",
+        "price": 465000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "41, BEULAH ROAD",
         "postcode": "SM1 2QG",
         "price": 450000,
@@ -544,19 +758,19 @@
         "newBuild": false
       },
       {
-        "address": "30, KIRK RISE",
-        "postcode": "SM1 3BF",
-        "price": 240000,
-        "dateOfTransfer": "2026-05-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "8, ANTROBUS CLOSE, CHEAM",
         "postcode": "SM1 2EL",
         "price": 515000,
         "dateOfTransfer": "2026-05-22",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "30, KIRK RISE",
+        "postcode": "SM1 3BF",
+        "price": 240000,
+        "dateOfTransfer": "2026-05-22",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -584,17 +798,17 @@
         "newBuild": false
       },
       {
-        "address": "OLD MARKET COURT, 3, FLAT 6, CROWN ROAD",
-        "postcode": "SM1 1SD",
-        "price": 115000,
+        "address": "GREBE COURT, FLAT 11, SANDPIPER ROAD, CHEAM",
+        "postcode": "SM1 2UF",
+        "price": 328000,
         "dateOfTransfer": "2026-05-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "GREBE COURT, FLAT 11, SANDPIPER ROAD, CHEAM",
-        "postcode": "SM1 2UF",
-        "price": 328000,
+        "address": "OLD MARKET COURT, 3, FLAT 6, CROWN ROAD",
+        "postcode": "SM1 1SD",
+        "price": 115000,
         "dateOfTransfer": "2026-05-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -656,6 +870,14 @@
         "newBuild": false
       },
       {
+        "address": "1, COLERIDGE AVENUE",
+        "postcode": "SM1 3RQ",
+        "price": 370000,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "50, ROBIN HOOD LANE",
         "postcode": "SM1 2RG",
         "price": 315500,
@@ -664,11 +886,19 @@
         "newBuild": false
       },
       {
-        "address": "1, COLERIDGE AVENUE",
-        "postcode": "SM1 3RQ",
+        "address": "35, FLAT 1, ST JAMES ROAD",
+        "postcode": "SM1 2TP",
         "price": 370000,
-        "dateOfTransfer": "2026-05-01",
-        "propertyType": "Semi-detached",
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "4, FLAT 9, ROSE HILL",
+        "postcode": "SM1 3EU",
+        "price": 380000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -696,22 +926,6 @@
         "newBuild": false
       },
       {
-        "address": "35, FLAT 1, ST JAMES ROAD",
-        "postcode": "SM1 2TP",
-        "price": 370000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "4, FLAT 9, ROSE HILL",
-        "postcode": "SM1 3EU",
-        "price": 380000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "37, WENDLING ROAD",
         "postcode": "SM1 3ND",
         "price": 412000,
@@ -725,6 +939,14 @@
         "price": 615000,
         "dateOfTransfer": "2026-04-23",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "36, WOODEND",
+        "postcode": "SM1 3LJ",
+        "price": 675000,
+        "dateOfTransfer": "2026-04-23",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -768,11 +990,11 @@
         "newBuild": false
       },
       {
-        "address": "25, SUMMERVILLE GARDENS, CHEAM",
-        "postcode": "SM1 2BU",
-        "price": 805000,
+        "address": "18, FLAT 1, CRESSINGHAM GROVE",
+        "postcode": "SM1 4ER",
+        "price": 247500,
         "dateOfTransfer": "2026-04-15",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -784,19 +1006,19 @@
         "newBuild": false
       },
       {
+        "address": "25, SUMMERVILLE GARDENS, CHEAM",
+        "postcode": "SM1 2BU",
+        "price": 805000,
+        "dateOfTransfer": "2026-04-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "166, GANDER GREEN LANE",
         "postcode": "SM1 2HG",
         "price": 427125,
         "dateOfTransfer": "2026-04-15",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "18, FLAT 1, CRESSINGHAM GROVE",
-        "postcode": "SM1 4ER",
-        "price": 226000,
-        "dateOfTransfer": "2026-04-14",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -808,17 +1030,17 @@
         "newBuild": false
       },
       {
-        "address": "9, FLAT 1, RINGSTEAD ROAD",
-        "postcode": "SM1 4SE",
-        "price": 200000,
+        "address": "13, KESWICK CLOSE",
+        "postcode": "SM1 4HH",
+        "price": 340000,
         "dateOfTransfer": "2026-04-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "13, KESWICK CLOSE",
-        "postcode": "SM1 4HH",
-        "price": 340000,
+        "address": "9, FLAT 1, RINGSTEAD ROAD",
+        "postcode": "SM1 4SE",
+        "price": 200000,
         "dateOfTransfer": "2026-04-10",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1016,6 +1238,14 @@
         "newBuild": false
       },
       {
+        "address": "43, COLBURN WAY",
+        "postcode": "SM1 3AU",
+        "price": 671000,
+        "dateOfTransfer": "2026-03-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "86, CONNAUGHT ROAD",
         "postcode": "SM1 3PQ",
         "price": 500000,
@@ -1045,6 +1275,22 @@
         "price": 580000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "27, OAKHILL ROAD",
+        "postcode": "SM1 3AA",
+        "price": 380000,
+        "dateOfTransfer": "2026-03-11",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, ST ALBANS ROAD, CHEAM",
+        "postcode": "SM1 2JG",
+        "price": 446000,
+        "dateOfTransfer": "2026-03-11",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1088,19 +1334,19 @@
         "newBuild": false
       },
       {
-        "address": "38, THROWLEY WAY",
-        "postcode": "SM1 4AF",
-        "price": 500000,
+        "address": "19, BRAMLEY ROAD",
+        "postcode": "SM1 4NN",
+        "price": 765000,
         "dateOfTransfer": "2026-03-03",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "27, OAKHILL ROAD",
-        "postcode": "SM1 3AA",
-        "price": 380000,
-        "dateOfTransfer": "2026-03-01",
-        "propertyType": "Terraced",
+        "address": "38, THROWLEY WAY",
+        "postcode": "SM1 4AF",
+        "price": 500000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1120,19 +1366,19 @@
         "newBuild": false
       },
       {
-        "address": "WHEATCROFT COURT, FLAT 17, CLEEVE WAY",
-        "postcode": "SM1 3TT",
-        "price": 285000,
-        "dateOfTransfer": "2026-02-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "11, WARWICK ROAD",
         "postcode": "SM1 4AP",
         "price": 420000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "WHEATCROFT COURT, FLAT 17, CLEEVE WAY",
+        "postcode": "SM1 3TT",
+        "price": 285000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1152,6 +1398,14 @@
         "newBuild": false
       },
       {
+        "address": "141, GANDER GREEN LANE",
+        "postcode": "SM1 2EU",
+        "price": 575000,
+        "dateOfTransfer": "2026-02-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "72, PAGET AVENUE",
         "postcode": "SM1 3BE",
         "price": 525000,
@@ -1160,11 +1414,11 @@
         "newBuild": false
       },
       {
-        "address": "141, GANDER GREEN LANE",
-        "postcode": "SM1 2EU",
-        "price": 575000,
-        "dateOfTransfer": "2026-02-25",
-        "propertyType": "Semi-detached",
+        "address": "16, HAROLD ROAD",
+        "postcode": "SM1 4HZ",
+        "price": 355000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1192,14 +1446,6 @@
         "newBuild": false
       },
       {
-        "address": "27, OLIVER ROAD",
-        "postcode": "SM1 4QF",
-        "price": 445000,
-        "dateOfTransfer": "2026-02-20",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "116A, HIGH STREET",
         "postcode": "SM1 1LU",
         "price": 526000,
@@ -1208,11 +1454,11 @@
         "newBuild": false
       },
       {
-        "address": "HUDSON LODGE, 137, APARTMENT 4, CHEAM ROAD, CHEAM",
-        "postcode": "SM1 2DU",
-        "price": 340000,
+        "address": "27, OLIVER ROAD",
+        "postcode": "SM1 4QF",
+        "price": 445000,
         "dateOfTransfer": "2026-02-20",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1232,6 +1478,22 @@
         "newBuild": false
       },
       {
+        "address": "LEBEN COURT, 36, FLAT 63, SUTTON COURT ROAD",
+        "postcode": "SM1 4FF",
+        "price": 275000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HUDSON LODGE, 137, APARTMENT 4, CHEAM ROAD, CHEAM",
+        "postcode": "SM1 2DU",
+        "price": 340000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "52, FLAT 5, ST JAMES ROAD",
         "postcode": "SM1 2TS",
         "price": 238500,
@@ -1240,10 +1502,18 @@
         "newBuild": false
       },
       {
-        "address": "LEBEN COURT, 36, FLAT 63, SUTTON COURT ROAD",
-        "postcode": "SM1 4FF",
-        "price": 275000,
-        "dateOfTransfer": "2026-02-20",
+        "address": "60 - 62, HIGH STREET",
+        "postcode": "SM1 1EZ",
+        "price": 1445499,
+        "dateOfTransfer": "2026-02-19",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "42 - 46, FLAT 2, BENHILL WOOD ROAD",
+        "postcode": "SM1 4HN",
+        "price": 240000,
+        "dateOfTransfer": "2026-02-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -1272,14 +1542,6 @@
         "newBuild": false
       },
       {
-        "address": "12, BEULAH ROAD",
-        "postcode": "SM1 2QQ",
-        "price": 401000,
-        "dateOfTransfer": "2026-02-13",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "30, BENFLEET CLOSE",
         "postcode": "SM1 3SE",
         "price": 650000,
@@ -1288,11 +1550,11 @@
         "newBuild": false
       },
       {
-        "address": "26, HOMEFIELD PARK",
-        "postcode": "SM1 2AN",
-        "price": 286000,
-        "dateOfTransfer": "2026-02-12",
-        "propertyType": "Flat/Maisonette",
+        "address": "12, BEULAH ROAD",
+        "postcode": "SM1 2QQ",
+        "price": 401000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1304,11 +1566,19 @@
         "newBuild": false
       },
       {
-        "address": "80, ROSE HILL PARK WEST",
-        "postcode": "SM1 3LB",
-        "price": 400000,
+        "address": "26, HOMEFIELD PARK",
+        "postcode": "SM1 2AN",
+        "price": 286000,
+        "dateOfTransfer": "2026-02-12",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "17, GLOUCESTER GARDENS",
+        "postcode": "SM1 3EY",
+        "price": 450000,
         "dateOfTransfer": "2026-02-11",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1320,11 +1590,11 @@
         "newBuild": false
       },
       {
-        "address": "17, GLOUCESTER GARDENS",
-        "postcode": "SM1 3EY",
-        "price": 450000,
+        "address": "80, ROSE HILL PARK WEST",
+        "postcode": "SM1 3LB",
+        "price": 400000,
         "dateOfTransfer": "2026-02-11",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1360,6 +1630,14 @@
         "newBuild": false
       },
       {
+        "address": "56, CLARENCE ROAD",
+        "postcode": "SM1 1RQ",
+        "price": 575500,
+        "dateOfTransfer": "2026-02-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "11, FALCOURT CLOSE",
         "postcode": "SM1 2RQ",
         "price": 380000,
@@ -1373,14 +1651,6 @@
         "price": 290000,
         "dateOfTransfer": "2026-02-05",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "56, CLARENCE ROAD",
-        "postcode": "SM1 1RQ",
-        "price": 575500,
-        "dateOfTransfer": "2026-02-05",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1400,14 +1670,6 @@
         "newBuild": false
       },
       {
-        "address": "48, ALEXANDRA AVENUE",
-        "postcode": "SM1 2PA",
-        "price": 470000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "HONEYSUCKLE COURT, 43, FLAT 12, GROVE ROAD",
         "postcode": "SM1 2AW",
         "price": 250000,
@@ -1416,11 +1678,27 @@
         "newBuild": false
       },
       {
+        "address": "48, ALEXANDRA AVENUE",
+        "postcode": "SM1 2PA",
+        "price": 470000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "2, CARSHALTON GROVE",
         "postcode": "SM1 4LY",
         "price": 550000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "52, GANDER GREEN LANE",
+        "postcode": "SM1 2EJ",
+        "price": 490000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1440,25 +1718,17 @@
         "newBuild": false
       },
       {
-        "address": "52, GANDER GREEN LANE",
-        "postcode": "SM1 2EJ",
-        "price": 490000,
-        "dateOfTransfer": "2026-01-29",
+        "address": "1, LONGFORD GARDENS",
+        "postcode": "SM1 3DR",
+        "price": 475000,
+        "dateOfTransfer": "2026-01-28",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "30, ST BARNABAS ROAD",
-        "postcode": "SM1 4NS",
-        "price": 340000,
-        "dateOfTransfer": "2026-01-23",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "STANSTEAD MANOR, 44, ST JAMES ROAD",
-        "postcode": "SM1 2AZ",
-        "price": 330000,
+        "address": "BANK HOUSE, 5, FLAT 12, SUTTON COURT ROAD",
+        "postcode": "SM1 4SY",
+        "price": 365000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1475,6 +1745,22 @@
         "address": "3, FLAT 3, CROFT ROAD",
         "postcode": "SM1 4NE",
         "price": 161000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "30, ST BARNABAS ROAD",
+        "postcode": "SM1 4NS",
+        "price": 340000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "STANSTEAD MANOR, 44, ST JAMES ROAD",
+        "postcode": "SM1 2AZ",
+        "price": 330000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1784,17 +2070,17 @@
         "newBuild": false
       },
       {
-        "address": "44, WESTFIELD ROAD, CHEAM",
-        "postcode": "SM1 2LB",
-        "price": 816000,
+        "address": "117, OAKHILL ROAD",
+        "postcode": "SM1 3AN",
+        "price": 585000,
         "dateOfTransfer": "2025-12-09",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "117, OAKHILL ROAD",
-        "postcode": "SM1 3AN",
-        "price": 585000,
+        "address": "44, WESTFIELD ROAD, CHEAM",
+        "postcode": "SM1 2LB",
+        "price": 816000,
         "dateOfTransfer": "2025-12-09",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1872,19 +2158,19 @@
         "newBuild": false
       },
       {
-        "address": "REGENCY COURT, 29, FLAT 2, BRUNSWICK ROAD",
-        "postcode": "SM1 4EH",
-        "price": 290000,
-        "dateOfTransfer": "2025-12-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "CRANFORD COURT, 7, CRESSINGHAM GROVE",
         "postcode": "SM1 4ES",
         "price": 305000,
         "dateOfTransfer": "2025-12-03",
         "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "REGENCY COURT, 29, FLAT 2, BRUNSWICK ROAD",
+        "postcode": "SM1 4EH",
+        "price": 290000,
+        "dateOfTransfer": "2025-12-03",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1992,14 +2278,6 @@
         "newBuild": false
       },
       {
-        "address": "14, MEAD CRESCENT",
-        "postcode": "SM1 3QS",
-        "price": 632000,
-        "dateOfTransfer": "2025-11-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "73, WESTFIELD ROAD, CHEAM",
         "postcode": "SM1 2LA",
         "price": 545000,
@@ -2024,6 +2302,14 @@
         "newBuild": false
       },
       {
+        "address": "14, MEAD CRESCENT",
+        "postcode": "SM1 3QS",
+        "price": 632000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "8, OSBORNE PLACE",
         "postcode": "SM1 4RJ",
         "price": 125000,
@@ -2040,19 +2326,19 @@
         "newBuild": false
       },
       {
-        "address": "93A, HIGH STREET",
-        "postcode": "SM1 1JF",
-        "price": 795000,
-        "dateOfTransfer": "2025-11-27",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "TAVERNELLE HOUSE, 289, FLAT 26, HIGH STREET",
         "postcode": "SM1 1AH",
         "price": 255000,
         "dateOfTransfer": "2025-11-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "93A, HIGH STREET",
+        "postcode": "SM1 1JF",
+        "price": 795000,
+        "dateOfTransfer": "2025-11-27",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2080,19 +2366,19 @@
         "newBuild": false
       },
       {
-        "address": "39, CLARENCE ROAD",
-        "postcode": "SM1 1RH",
-        "price": 417500,
-        "dateOfTransfer": "2025-11-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "4, FLAT 6, ST JAMES ROAD",
         "postcode": "SM1 2BA",
         "price": 300000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "39, CLARENCE ROAD",
+        "postcode": "SM1 1RH",
+        "price": 417500,
+        "dateOfTransfer": "2025-11-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2176,25 +2462,9 @@
         "newBuild": false
       },
       {
-        "address": "50, ORCHARD WAY",
-        "postcode": "SM1 3QQ",
-        "price": 490000,
-        "dateOfTransfer": "2025-11-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "65, HOMEFIELD PARK",
         "postcode": "SM1 2AN",
         "price": 170000,
-        "dateOfTransfer": "2025-11-14",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "CHARLOTTE HOUSE, 303, 18, HIGH STREET",
-        "postcode": "SM1 1AJ",
-        "price": 133000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2213,6 +2483,30 @@
         "price": 335000,
         "dateOfTransfer": "2025-11-14",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CHARLOTTE HOUSE, 303, 18, HIGH STREET",
+        "postcode": "SM1 1AJ",
+        "price": 133000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CRAMHURST HOUSE, FLAT 2, SUTTON GROVE",
+        "postcode": "SM1 4TH",
+        "price": 235000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "50, ORCHARD WAY",
+        "postcode": "SM1 3QQ",
+        "price": 490000,
+        "dateOfTransfer": "2025-11-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2240,22 +2534,6 @@
         "newBuild": false
       },
       {
-        "address": "120, OLDFIELDS ROAD",
-        "postcode": "SM1 2NN",
-        "price": 550000,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "68, BEAUCHAMP ROAD",
-        "postcode": "SM1 2PZ",
-        "price": 482500,
-        "dateOfTransfer": "2025-11-07",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "122, GANDER GREEN LANE",
         "postcode": "SM1 2HH",
         "price": 580000,
@@ -2275,6 +2553,22 @@
         "address": "5, COURT DRIVE",
         "postcode": "SM1 3RG",
         "price": 595000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "120, OLDFIELDS ROAD",
+        "postcode": "SM1 2NN",
+        "price": 550000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68, BEAUCHAMP ROAD",
+        "postcode": "SM1 2PZ",
+        "price": 482500,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2344,9 +2638,9 @@
         "newBuild": false
       },
       {
-        "address": "8, PAGET AVENUE",
-        "postcode": "SM1 3BE",
-        "price": 365000,
+        "address": "JEWELL COURT, 91, FLAT 3, CHEAM ROAD",
+        "postcode": "SM1 2BE",
+        "price": 360000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2363,14 +2657,6 @@
         "address": "AYLESBURY COURT, 9, BENHILL WOOD ROAD",
         "postcode": "SM1 3SW",
         "price": 250000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "JEWELL COURT, 91, FLAT 3, CHEAM ROAD",
-        "postcode": "SM1 2BE",
-        "price": 360000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2464,14 +2750,6 @@
         "newBuild": false
       },
       {
-        "address": "73, ELM GROVE",
-        "postcode": "SM1 4EX",
-        "price": 427500,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "49, UPPER VERNON ROAD",
         "postcode": "SM1 4NW",
         "price": 915000,
@@ -2485,6 +2763,14 @@
         "price": 650000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "73, ELM GROVE",
+        "postcode": "SM1 4EX",
+        "price": 427500,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2568,6 +2854,22 @@
         "newBuild": false
       },
       {
+        "address": "24A, ALBERT ROAD",
+        "postcode": "SM1 4RX",
+        "price": 310000,
+        "dateOfTransfer": "2025-10-16",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, ROSEHILL AVENUE",
+        "postcode": "SM1 3HG",
+        "price": 652000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "6, SALTASH CLOSE, CHEAM",
         "postcode": "SM1 2JL",
         "price": 390000,
@@ -2584,11 +2886,11 @@
         "newBuild": false
       },
       {
-        "address": "33, ROSEHILL AVENUE",
-        "postcode": "SM1 3HG",
-        "price": 652000,
-        "dateOfTransfer": "2025-10-15",
-        "propertyType": "Terraced",
+        "address": "65, SHIRLEY AVENUE",
+        "postcode": "SM1 3QT",
+        "price": 764009,
+        "dateOfTransfer": "2025-10-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2613,14 +2915,6 @@
         "price": 603000,
         "dateOfTransfer": "2025-10-14",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "65, SHIRLEY AVENUE",
-        "postcode": "SM1 3QT",
-        "price": 764009,
-        "dateOfTransfer": "2025-10-14",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2696,11 +2990,11 @@
         "newBuild": false
       },
       {
-        "address": "68, ELM GROVE",
-        "postcode": "SM1 4EX",
-        "price": 427500,
+        "address": "27, SUMMERVILLE GARDENS, CHEAM",
+        "postcode": "SM1 2BU",
+        "price": 870000,
         "dateOfTransfer": "2025-10-06",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2720,11 +3014,43 @@
         "newBuild": false
       },
       {
+        "address": "68, ELM GROVE",
+        "postcode": "SM1 4EX",
+        "price": 427500,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "23, GREYHOUND ROAD",
         "postcode": "SM1 4BY",
         "price": 500000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, PRINCE OF WALES ROAD",
+        "postcode": "SM1 3PE",
+        "price": 660000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, HOMEFIELD PARK",
+        "postcode": "SM1 2AN",
+        "price": 275000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROSEHILL RECREATION GROUND, ROSE HILL",
+        "postcode": "SM1 3HH",
+        "price": 200000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2736,11 +3062,19 @@
         "newBuild": false
       },
       {
-        "address": "ROSEHILL RECREATION GROUND, ROSE HILL",
-        "postcode": "SM1 3HH",
-        "price": 200000,
+        "address": "14, CARSHALTON GROVE",
+        "postcode": "SM1 4LY",
+        "price": 715000,
         "dateOfTransfer": "2025-09-30",
-        "propertyType": "Other",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, HURSTCOURT ROAD",
+        "postcode": "SM1 3JD",
+        "price": 470000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2864,6 +3198,14 @@
         "newBuild": false
       },
       {
+        "address": "45A, LOWER ROAD",
+        "postcode": "SM1 4QR",
+        "price": 180000,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2B, VERNON ROAD",
         "postcode": "SM1 4QX",
         "price": 675000,
@@ -2875,6 +3217,14 @@
         "address": "121A, GANDER GREEN LANE",
         "postcode": "SM1 2EU",
         "price": 351500,
+        "dateOfTransfer": "2025-09-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CROMER MANSIONS, FLAT 2, CHEAM ROAD",
+        "postcode": "SM1 2SR",
+        "price": 285000,
         "dateOfTransfer": "2025-09-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2928,10 +3278,10 @@
         "newBuild": false
       },
       {
-        "address": "45A, LOWER ROAD",
-        "postcode": "SM1 4QR",
-        "price": 180000,
-        "dateOfTransfer": "2025-09-19",
+        "address": "18A, ROSEHILL AVENUE",
+        "postcode": "SM1 3HG",
+        "price": 240000,
+        "dateOfTransfer": "2025-09-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -2952,19 +3302,19 @@
         "newBuild": false
       },
       {
-        "address": "9, AULTONE WAY",
-        "postcode": "SM1 3LD",
-        "price": 550000,
-        "dateOfTransfer": "2025-09-15",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "28, GREYHOUND ROAD",
         "postcode": "SM1 4AN",
         "price": 190000,
         "dateOfTransfer": "2025-09-15",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, AULTONE WAY",
+        "postcode": "SM1 3LD",
+        "price": 550000,
+        "dateOfTransfer": "2025-09-15",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3064,17 +3414,17 @@
         "newBuild": false
       },
       {
-        "address": "BEECHWOOD COURT, 28, 11, ST JAMES ROAD",
-        "postcode": "SM1 2TW",
-        "price": 260000,
+        "address": "9, HOVE GARDENS",
+        "postcode": "SM1 3EZ",
+        "price": 305000,
         "dateOfTransfer": "2025-09-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "9, HOVE GARDENS",
-        "postcode": "SM1 3EZ",
-        "price": 305000,
+        "address": "BEECHWOOD COURT, 28, 11, ST JAMES ROAD",
+        "postcode": "SM1 2TW",
+        "price": 260000,
         "dateOfTransfer": "2025-09-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3120,14 +3470,6 @@
         "newBuild": false
       },
       {
-        "address": "17, FLAT 4, BURNELL ROAD",
-        "postcode": "SM1 4EE",
-        "price": 275000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "40, BEAUCHAMP ROAD",
         "postcode": "SM1 2PZ",
         "price": 500000,
@@ -3141,6 +3483,14 @@
         "price": 533000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "17, FLAT 4, BURNELL ROAD",
+        "postcode": "SM1 4EE",
+        "price": 275000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3176,11 +3526,11 @@
         "newBuild": false
       },
       {
-        "address": "63, LOWER ROAD",
-        "postcode": "SM1 4QR",
-        "price": 450000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Semi-detached",
+        "address": "1, CROWN ROAD",
+        "postcode": "SM1 1SE",
+        "price": 3688500,
+        "dateOfTransfer": "2025-08-26",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3200,10 +3550,10 @@
         "newBuild": false
       },
       {
-        "address": "33, GANDER GREEN LANE",
-        "postcode": "SM1 2EG",
-        "price": 710000,
-        "dateOfTransfer": "2025-08-21",
+        "address": "63, LOWER ROAD",
+        "postcode": "SM1 4QR",
+        "price": 450000,
+        "dateOfTransfer": "2025-08-22",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -3211,6 +3561,14 @@
         "address": "1, DANESCOURT CRESCENT",
         "postcode": "SM1 3DZ",
         "price": 565000,
+        "dateOfTransfer": "2025-08-21",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "33, GANDER GREEN LANE",
+        "postcode": "SM1 2EG",
+        "price": 710000,
         "dateOfTransfer": "2025-08-21",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3264,14 +3622,6 @@
         "newBuild": false
       },
       {
-        "address": "91, CONNAUGHT ROAD",
-        "postcode": "SM1 3PJ",
-        "price": 472000,
-        "dateOfTransfer": "2025-08-19",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "28, ST BARNABAS ROAD",
         "postcode": "SM1 4NP",
         "price": 425000,
@@ -3280,9 +3630,9 @@
         "newBuild": false
       },
       {
-        "address": "26, BUSHEY ROAD",
-        "postcode": "SM1 1QS",
-        "price": 400000,
+        "address": "91, CONNAUGHT ROAD",
+        "postcode": "SM1 3PJ",
+        "price": 472000,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3293,6 +3643,14 @@
         "price": 646250,
         "dateOfTransfer": "2025-08-19",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "26, BUSHEY ROAD",
+        "postcode": "SM1 1QS",
+        "price": 400000,
+        "dateOfTransfer": "2025-08-19",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3352,14 +3710,6 @@
         "newBuild": false
       },
       {
-        "address": "21, MEAD CRESCENT",
-        "postcode": "SM1 3QS",
-        "price": 795000,
-        "dateOfTransfer": "2025-08-14",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "7, HILLVIEW ROAD",
         "postcode": "SM1 3NS",
         "price": 590000,
@@ -3368,11 +3718,11 @@
         "newBuild": false
       },
       {
-        "address": "67, ELM GROVE",
-        "postcode": "SM1 4EX",
-        "price": 430000,
-        "dateOfTransfer": "2025-08-13",
-        "propertyType": "Terraced",
+        "address": "21, MEAD CRESCENT",
+        "postcode": "SM1 3QS",
+        "price": 795000,
+        "dateOfTransfer": "2025-08-14",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3392,11 +3742,11 @@
         "newBuild": false
       },
       {
-        "address": "170, BENHILL ROAD",
-        "postcode": "SM1 3SA",
-        "price": 428000,
-        "dateOfTransfer": "2025-08-12",
-        "propertyType": "Semi-detached",
+        "address": "67, ELM GROVE",
+        "postcode": "SM1 4EX",
+        "price": 430000,
+        "dateOfTransfer": "2025-08-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3405,6 +3755,14 @@
         "price": 350000,
         "dateOfTransfer": "2025-08-12",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "170, BENHILL ROAD",
+        "postcode": "SM1 3SA",
+        "price": 428000,
+        "dateOfTransfer": "2025-08-12",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3512,6 +3870,14 @@
         "newBuild": false
       },
       {
+        "address": "65, WESTMEAD ROAD",
+        "postcode": "SM1 4JG",
+        "price": 530000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "9, APARTMENT 18, SUTTON COURT ROAD",
         "postcode": "SM1 4FQ",
         "price": 225000,
@@ -3520,10 +3886,10 @@
         "newBuild": false
       },
       {
-        "address": "65, WESTMEAD ROAD",
-        "postcode": "SM1 4JG",
-        "price": 530000,
-        "dateOfTransfer": "2025-07-31",
+        "address": "18, WARWICK ROAD",
+        "postcode": "SM1 4AP",
+        "price": 445350,
+        "dateOfTransfer": "2025-07-30",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -3533,14 +3899,6 @@
         "price": 560000,
         "dateOfTransfer": "2025-07-30",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "18, WARWICK ROAD",
-        "postcode": "SM1 4AP",
-        "price": 445350,
-        "dateOfTransfer": "2025-07-30",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3624,14 +3982,6 @@
         "newBuild": false
       },
       {
-        "address": "255, GANDER GREEN LANE",
-        "postcode": "SM1 2HD",
-        "price": 490000,
-        "dateOfTransfer": "2025-07-18",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "103, FREDERICK ROAD, CHEAM",
         "postcode": "SM1 2HT",
         "price": 560000,
@@ -3656,6 +4006,14 @@
         "newBuild": false
       },
       {
+        "address": "255, GANDER GREEN LANE",
+        "postcode": "SM1 2HD",
+        "price": 490000,
+        "dateOfTransfer": "2025-07-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "78A, WESTMEAD ROAD",
         "postcode": "SM1 4JF",
         "price": 325000,
@@ -3667,30 +4025,6 @@
         "address": "78, WESTMEAD ROAD",
         "postcode": "SM1 4JF",
         "price": 400000,
-        "dateOfTransfer": "2025-07-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "HAZEL HOUSE, 76, FLAT 9, WESTMEAD ROAD",
-        "postcode": "SM1 4JF",
-        "price": 270000,
-        "dateOfTransfer": "2025-07-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "HAZEL HOUSE, 76, FLAT 10, WESTMEAD ROAD",
-        "postcode": "SM1 4JF",
-        "price": 270000,
-        "dateOfTransfer": "2025-07-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "HAZEL HOUSE, 76, FLAT 11, WESTMEAD ROAD",
-        "postcode": "SM1 4JF",
-        "price": 270000,
         "dateOfTransfer": "2025-07-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3717,6 +4051,30 @@
         "price": 605000,
         "dateOfTransfer": "2025-07-15",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "HAZEL HOUSE, 76, FLAT 9, WESTMEAD ROAD",
+        "postcode": "SM1 4JF",
+        "price": 270000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HAZEL HOUSE, 76, FLAT 10, WESTMEAD ROAD",
+        "postcode": "SM1 4JF",
+        "price": 270000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HAZEL HOUSE, 76, FLAT 11, WESTMEAD ROAD",
+        "postcode": "SM1 4JF",
+        "price": 270000,
+        "dateOfTransfer": "2025-07-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3976,6 +4334,14 @@
         "newBuild": false
       },
       {
+        "address": "ASPECTS, 1, FLAT 113, THROWLEY WAY",
+        "postcode": "SM1 4FE",
+        "price": 250000,
+        "dateOfTransfer": "2025-06-27",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "REGENCY COURT, 29, FLAT 38, BRUNSWICK ROAD",
         "postcode": "SM1 4EH",
         "price": 260000,
@@ -3989,14 +4355,6 @@
         "price": 450000,
         "dateOfTransfer": "2025-06-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "ASPECTS, 1, FLAT 113, THROWLEY WAY",
-        "postcode": "SM1 4FE",
-        "price": 250000,
-        "dateOfTransfer": "2025-06-27",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4216,6 +4574,14 @@
         "newBuild": false
       },
       {
+        "address": "149A, STAYTON ROAD",
+        "postcode": "SM1 2PS",
+        "price": 270000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "44, HILLVIEW ROAD",
         "postcode": "SM1 3NT",
         "price": 280000,
@@ -4253,14 +4619,6 @@
         "price": 360100,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "149A, STAYTON ROAD",
-        "postcode": "SM1 2PS",
-        "price": 270000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4416,19 +4774,19 @@
         "newBuild": false
       },
       {
-        "address": "BRYANSTONE COURT, 9, OAKHILL ROAD",
-        "postcode": "SM1 3AF",
-        "price": 292000,
-        "dateOfTransfer": "2025-05-15",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "26, WATERLOO ROAD",
         "postcode": "SM1 4LW",
         "price": 645000,
         "dateOfTransfer": "2025-05-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "BRYANSTONE COURT, 9, OAKHILL ROAD",
+        "postcode": "SM1 3AF",
+        "price": 292000,
+        "dateOfTransfer": "2025-05-15",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4688,14 +5046,6 @@
         "newBuild": false
       },
       {
-        "address": "2, ST DUNSTANS HILL, CHEAM",
-        "postcode": "SM1 2UE",
-        "price": 928453,
-        "dateOfTransfer": "2025-04-15",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "40, FREDERICK ROAD, CHEAM",
         "postcode": "SM1 2HR",
         "price": 389000,
@@ -4704,11 +5054,11 @@
         "newBuild": false
       },
       {
-        "address": "3, JENGAR CLOSE",
-        "postcode": "SM1 4DX",
-        "price": 222500,
-        "dateOfTransfer": "2025-04-11",
-        "propertyType": "Flat/Maisonette",
+        "address": "2, ST DUNSTANS HILL, CHEAM",
+        "postcode": "SM1 2UE",
+        "price": 928453,
+        "dateOfTransfer": "2025-04-15",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4717,6 +5067,14 @@
         "price": 540000,
         "dateOfTransfer": "2025-04-11",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "3, JENGAR CLOSE",
+        "postcode": "SM1 4DX",
+        "price": 222500,
+        "dateOfTransfer": "2025-04-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4784,19 +5142,11 @@
         "newBuild": false
       },
       {
-        "address": "89, ST JAMES ROAD",
-        "postcode": "SM1 2TJ",
-        "price": 935000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "40, FLAT 3, CARSHALTON GROVE",
-        "postcode": "SM1 4LZ",
+        "address": "5, VINE CLOSE",
+        "postcode": "SM1 3SX",
         "price": 235000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -4816,11 +5166,27 @@
         "newBuild": false
       },
       {
+        "address": "40, FLAT 3, CARSHALTON GROVE",
+        "postcode": "SM1 4LZ",
+        "price": 235000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "21, FLAT 5, WOODSIDE ROAD",
         "postcode": "SM1 3SU",
         "price": 205000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "89, ST JAMES ROAD",
+        "postcode": "SM1 2TJ",
+        "price": 935000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -4872,14 +5238,6 @@
         "newBuild": false
       },
       {
-        "address": "5, VINE CLOSE",
-        "postcode": "SM1 3SX",
-        "price": 235000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "20, GLOUCESTER GARDENS",
         "postcode": "SM1 3EY",
         "price": 440000,
@@ -4912,14 +5270,6 @@
         "newBuild": false
       },
       {
-        "address": "CHARLOTTE HOUSE, 303, 70, HIGH STREET",
-        "postcode": "SM1 1AJ",
-        "price": 375000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "4A, HIGHFIELD ROAD",
         "postcode": "SM1 4JX",
         "price": 615000,
@@ -4928,11 +5278,51 @@
         "newBuild": false
       },
       {
-        "address": "22, ROSSDALE",
-        "postcode": "SM1 4JU",
-        "price": 646000,
+        "address": "CHARLOTTE HOUSE, 303, 70, HIGH STREET",
+        "postcode": "SM1 1AJ",
+        "price": 375000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Detached",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "7A, ELMBROOK ROAD, CHEAM",
+        "postcode": "SM1 2JF",
+        "price": 325000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "181, SUTTON COMMON ROAD",
+        "postcode": "SM1 3HT",
+        "price": 495000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "NIGHTINGALE COURT, 19, FLAT 17, LIND ROAD",
+        "postcode": "SM1 4RH",
+        "price": 340000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "44C, ST JAMES ROAD",
+        "postcode": "SM1 2TN",
+        "price": 380000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, VALE ROAD",
+        "postcode": "SM1 1QH",
+        "price": 420000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5000,41 +5390,9 @@
         "newBuild": false
       },
       {
-        "address": "7A, ELMBROOK ROAD, CHEAM",
-        "postcode": "SM1 2JF",
-        "price": 325000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "181, SUTTON COMMON ROAD",
-        "postcode": "SM1 3HT",
-        "price": 495000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "NIGHTINGALE COURT, 19, FLAT 17, LIND ROAD",
-        "postcode": "SM1 4RH",
-        "price": 340000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "44C, ST JAMES ROAD",
-        "postcode": "SM1 2TN",
-        "price": 380000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "58, VALE ROAD",
-        "postcode": "SM1 1QH",
-        "price": 420000,
+        "address": "14, LEAFIELD ROAD",
+        "postcode": "SM1 2NH",
+        "price": 830000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5072,17 +5430,17 @@
         "newBuild": false
       },
       {
-        "address": "11, ALBANY MEWS",
-        "postcode": "SM1 2RE",
-        "price": 417000,
+        "address": "22, ROSSDALE",
+        "postcode": "SM1 4JU",
+        "price": 646000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
-        "address": "14, LEAFIELD ROAD",
-        "postcode": "SM1 2NH",
-        "price": 830000,
+        "address": "11, ALBANY MEWS",
+        "postcode": "SM1 2RE",
+        "price": 417000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5112,19 +5470,19 @@
         "newBuild": false
       },
       {
-        "address": "65, BENFLEET CLOSE",
-        "postcode": "SM1 3SD",
-        "price": 625000,
+        "address": "22, GROVE AVENUE",
+        "postcode": "SM1 2DP",
+        "price": 393000,
         "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "18, JEFFS ROAD, CHEAM",
-        "postcode": "SM1 2JE",
-        "price": 635000,
+        "address": "74, ROSE HILL",
+        "postcode": "SM1 3EX",
+        "price": 560000,
         "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5163,22 +5521,6 @@
         "address": "71, WENDLING ROAD",
         "postcode": "SM1 3NE",
         "price": 470000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "22, GROVE AVENUE",
-        "postcode": "SM1 2DP",
-        "price": 393000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "74, ROSE HILL",
-        "postcode": "SM1 3EX",
-        "price": 560000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -5224,6 +5566,22 @@
         "newBuild": false
       },
       {
+        "address": "65, BENFLEET CLOSE",
+        "postcode": "SM1 3SD",
+        "price": 625000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, JEFFS ROAD, CHEAM",
+        "postcode": "SM1 2JE",
+        "price": 635000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "LYMINGTON COURT, 21, ALL SAINTS ROAD",
         "postcode": "SM1 3DE",
         "price": 350000,
@@ -5256,11 +5614,11 @@
         "newBuild": false
       },
       {
-        "address": "140A, CLENSHAM LANE",
-        "postcode": "SM1 2NG",
-        "price": 455000,
+        "address": "1, CONNAUGHT CLOSE",
+        "postcode": "SM1 3PH",
+        "price": 620000,
         "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -5272,11 +5630,11 @@
         "newBuild": false
       },
       {
-        "address": "1, CONNAUGHT CLOSE",
-        "postcode": "SM1 3PH",
-        "price": 620000,
+        "address": "140A, CLENSHAM LANE",
+        "postcode": "SM1 2NG",
+        "price": 455000,
         "dateOfTransfer": "2025-03-26",
-        "propertyType": "Detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -5312,9 +5670,9 @@
         "newBuild": false
       },
       {
-        "address": "LYMINGTON COURT, 17, ALL SAINTS ROAD",
-        "postcode": "SM1 3DE",
-        "price": 360000,
+        "address": "WOODVILLE HOUSE, 1, FLAT 31, BRUNSWICK ROAD",
+        "postcode": "SM1 4DE",
+        "price": 153000,
         "dateOfTransfer": "2025-03-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5336,11 +5694,11 @@
         "newBuild": false
       },
       {
-        "address": "WOODVILLE HOUSE, 1, FLAT 31, BRUNSWICK ROAD",
-        "postcode": "SM1 4DE",
-        "price": 153000,
+        "address": "45, MILTON AVENUE",
+        "postcode": "SM1 3QE",
+        "price": 670000,
         "dateOfTransfer": "2025-03-25",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5352,11 +5710,11 @@
         "newBuild": false
       },
       {
-        "address": "45, MILTON AVENUE",
-        "postcode": "SM1 3QE",
-        "price": 670000,
+        "address": "LYMINGTON COURT, 17, ALL SAINTS ROAD",
+        "postcode": "SM1 3DE",
+        "price": 360000,
         "dateOfTransfer": "2025-03-25",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5365,14 +5723,6 @@
         "price": 447000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "9, KINGSLEY AVENUE",
-        "postcode": "SM1 3RE",
-        "price": 835000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -5387,6 +5737,14 @@
         "address": "23, LONGFORD GARDENS",
         "postcode": "SM1 3DR",
         "price": 512000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "9, KINGSLEY AVENUE",
+        "postcode": "SM1 3RE",
+        "price": 835000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Detached",
         "newBuild": false
@@ -5416,6 +5774,14 @@
         "newBuild": false
       },
       {
+        "address": "116, FLAT 1, ROBIN HOOD LANE",
+        "postcode": "SM1 2SE",
+        "price": 230000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "2D, VICTORIA ROAD",
         "postcode": "SM1 4RT",
         "price": 418000,
@@ -5437,14 +5803,6 @@
         "price": 515000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "116, FLAT 1, ROBIN HOOD LANE",
-        "postcode": "SM1 2SE",
-        "price": 230000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5480,19 +5838,19 @@
         "newBuild": false
       },
       {
-        "address": "RAVENSBURY COURT, 2, RINGSTEAD ROAD",
-        "postcode": "SM1 4SQ",
-        "price": 335000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "44, UPPER VERNON ROAD",
         "postcode": "SM1 4NW",
         "price": 530000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "RAVENSBURY COURT, 2, RINGSTEAD ROAD",
+        "postcode": "SM1 4SQ",
+        "price": 335000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -5560,6 +5918,22 @@
         "newBuild": false
       },
       {
+        "address": "57, SALISBURY AVENUE, CHEAM",
+        "postcode": "SM1 2DH",
+        "price": 950000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
+        "address": "57, SALISBURY AVENUE, CHEAM",
+        "postcode": "SM1 2DH",
+        "price": 950000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "29, THE MAISONETTES, CHEAM",
         "postcode": "SM1 2LQ",
         "price": 275000,
@@ -5584,22 +5958,6 @@
         "newBuild": false
       },
       {
-        "address": "57, SALISBURY AVENUE, CHEAM",
-        "postcode": "SM1 2DH",
-        "price": 950000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "57, SALISBURY AVENUE, CHEAM",
-        "postcode": "SM1 2DH",
-        "price": 950000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "41, HILLDALE ROAD, CHEAM",
         "postcode": "SM1 2JA",
         "price": 680000,
@@ -5616,17 +5974,17 @@
         "newBuild": false
       },
       {
-        "address": "34, HILLDALE ROAD, CHEAM",
-        "postcode": "SM1 2JD",
-        "price": 375500,
+        "address": "16, FLAT 7, BURNELL ROAD",
+        "postcode": "SM1 4EE",
+        "price": 300000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "16, FLAT 7, BURNELL ROAD",
-        "postcode": "SM1 4EE",
-        "price": 300000,
+        "address": "34, HILLDALE ROAD, CHEAM",
+        "postcode": "SM1 2JD",
+        "price": 375500,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -5672,19 +6030,19 @@
         "newBuild": false
       },
       {
-        "address": "33 - 35, HIGH STREET",
-        "postcode": "SM1 1DJ",
-        "price": 1662500,
-        "dateOfTransfer": "2025-03-06",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "24, FAIRLANDS AVENUE",
         "postcode": "SM1 3JE",
         "price": 575000,
         "dateOfTransfer": "2025-03-06",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "33 - 35, HIGH STREET",
+        "postcode": "SM1 1DJ",
+        "price": 1662500,
+        "dateOfTransfer": "2025-03-06",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -5736,14 +6094,6 @@
         "newBuild": false
       },
       {
-        "address": "49, SHIRLEY AVENUE",
-        "postcode": "SM1 3QT",
-        "price": 590000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "41, GANDER GREEN LANE",
         "postcode": "SM1 2EG",
         "price": 512000,
@@ -5789,6 +6139,14 @@
         "price": 430000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "49, SHIRLEY AVENUE",
+        "postcode": "SM1 3QT",
+        "price": 590000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -5888,19 +6246,19 @@
         "newBuild": false
       },
       {
-        "address": "41, BEAUCHAMP ROAD",
-        "postcode": "SM1 2PY",
-        "price": 520000,
-        "dateOfTransfer": "2025-02-21",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "27, WEIHURST GARDENS",
         "postcode": "SM1 4PQ",
         "price": 550000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "41, BEAUCHAMP ROAD",
+        "postcode": "SM1 2PY",
+        "price": 520000,
+        "dateOfTransfer": "2025-02-21",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6032,14 +6390,6 @@
         "newBuild": false
       },
       {
-        "address": "61, GANDER GREEN LANE",
-        "postcode": "SM1 2EP",
-        "price": 725000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "15, ENNERDALE CLOSE, CHEAM",
         "postcode": "SM1 2JP",
         "price": 215000,
@@ -6096,6 +6446,14 @@
         "newBuild": false
       },
       {
+        "address": "61, GANDER GREEN LANE",
+        "postcode": "SM1 2EP",
+        "price": 725000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "6, PETERSHAM CLOSE",
         "postcode": "SM1 2SZ",
         "price": 575000,
@@ -6109,22 +6467,6 @@
         "price": 515000,
         "dateOfTransfer": "2025-02-11",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "25A, ROSEHILL AVENUE",
-        "postcode": "SM1 3HG",
-        "price": 255000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "25A, ROSEHILL AVENUE",
-        "postcode": "SM1 3HG",
-        "price": 255000,
-        "dateOfTransfer": "2025-02-07",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -6157,6 +6499,22 @@
         "price": 575000,
         "dateOfTransfer": "2025-02-07",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "25A, ROSEHILL AVENUE",
+        "postcode": "SM1 3HG",
+        "price": 255000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "25A, ROSEHILL AVENUE",
+        "postcode": "SM1 3HG",
+        "price": 255000,
+        "dateOfTransfer": "2025-02-07",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -6232,27 +6590,11 @@
         "newBuild": false
       },
       {
-        "address": "2, SHEARWATER ROAD, CHEAM",
-        "postcode": "SM1 2AR",
-        "price": 480000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "8, JENGAR CLOSE",
         "postcode": "SM1 4DX",
         "price": 220000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "22, WILLIAM ROAD",
-        "postcode": "SM1 4QT",
-        "price": 425000,
-        "dateOfTransfer": "2025-01-31",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6264,11 +6606,27 @@
         "newBuild": false
       },
       {
+        "address": "22, WILLIAM ROAD",
+        "postcode": "SM1 4QT",
+        "price": 425000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "28, ASHLEIGH GARDENS",
         "postcode": "SM1 3EN",
         "price": 565000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "2, SHEARWATER ROAD, CHEAM",
+        "postcode": "SM1 2AR",
+        "price": 480000,
+        "dateOfTransfer": "2025-01-31",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6296,11 +6654,11 @@
         "newBuild": false
       },
       {
-        "address": "50, LONGFORD GARDENS",
-        "postcode": "SM1 3DR",
-        "price": 460000,
+        "address": "9, THE MAISONETTES, CHEAM",
+        "postcode": "SM1 2LQ",
+        "price": 250000,
         "dateOfTransfer": "2025-01-24",
-        "propertyType": "Detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -6312,6 +6670,14 @@
         "newBuild": false
       },
       {
+        "address": "50, LONGFORD GARDENS",
+        "postcode": "SM1 3DR",
+        "price": 460000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "ASPECTS, 1, FLAT 133, THROWLEY WAY",
         "postcode": "SM1 4FE",
         "price": 288000,
@@ -6320,10 +6686,10 @@
         "newBuild": false
       },
       {
-        "address": "9, THE MAISONETTES, CHEAM",
-        "postcode": "SM1 2LQ",
-        "price": 250000,
-        "dateOfTransfer": "2025-01-24",
+        "address": "193A, FLAT 1, HIGH STREET",
+        "postcode": "SM1 1JU",
+        "price": 200000,
+        "dateOfTransfer": "2025-01-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -6344,25 +6710,17 @@
         "newBuild": false
       },
       {
-        "address": "193A, FLAT 1, HIGH STREET",
-        "postcode": "SM1 1JU",
-        "price": 200000,
-        "dateOfTransfer": "2025-01-17",
-        "propertyType": "Flat/Maisonette",
+        "address": "46, GANDER GREEN LANE",
+        "postcode": "SM1 2EJ",
+        "price": 510000,
+        "dateOfTransfer": "2025-01-16",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
         "address": "19, HILLVIEW ROAD",
         "postcode": "SM1 3NS",
         "price": 568500,
-        "dateOfTransfer": "2025-01-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "46, GANDER GREEN LANE",
-        "postcode": "SM1 2EJ",
-        "price": 510000,
         "dateOfTransfer": "2025-01-16",
         "propertyType": "Terraced",
         "newBuild": false
@@ -6392,17 +6750,17 @@
         "newBuild": false
       },
       {
-        "address": "CHARLOTTE HOUSE, 303, 12, HIGH STREET",
-        "postcode": "SM1 1AJ",
-        "price": 380000,
+        "address": "STANCLIFFE HOUSE, 2, FLAT 19, BRUNSWICK ROAD",
+        "postcode": "SM1 4DF",
+        "price": 311702,
         "dateOfTransfer": "2025-01-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "STANCLIFFE HOUSE, 2, FLAT 19, BRUNSWICK ROAD",
-        "postcode": "SM1 4DF",
-        "price": 311702,
+        "address": "CHARLOTTE HOUSE, 303, 12, HIGH STREET",
+        "postcode": "SM1 1AJ",
+        "price": 380000,
         "dateOfTransfer": "2025-01-13",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -6472,14 +6830,6 @@
         "newBuild": false
       },
       {
-        "address": "267, GANDER GREEN LANE",
-        "postcode": "SM1 2HD",
-        "price": 386500,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "24, WHITBY GARDENS",
         "postcode": "SM1 3NA",
         "price": 390000,
@@ -6493,6 +6843,14 @@
         "price": 602000,
         "dateOfTransfer": "2025-01-06",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "267, GANDER GREEN LANE",
+        "postcode": "SM1 2HD",
+        "price": 386500,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -6528,8 +6886,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 538640,
-    "medianPrice": 428000
+    "averagePrice": 539082,
+    "medianPrice": 429000
   },
   "representatives": {
     "representatives": [

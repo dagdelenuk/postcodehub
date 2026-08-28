@@ -3,8 +3,8 @@
   "slug": "e20",
   "city": "London",
   "borough": "Newham",
-  "latitude": 51.54630548245614,
-  "longitude": -0.010622491228070175,
+  "latitude": 51.546333475770915,
+  "longitude": -0.010624656387665202,
   "wards": [
     "Bow East",
     "Hackney Wick",
@@ -53,7 +53,8 @@
         "urn": "139703",
         "phaseOfEducation": "All-through",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "13/05/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "40 Cheering Lane, London",
         "postcode": "E20 1BD",
         "numberOfPupils": 2047,
@@ -64,7 +65,8 @@
         "urn": "144739",
         "phaseOfEducation": "All-through",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/10/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "1 Siding Street, Queen Elizabeth Olympic Park, London",
         "postcode": "E20 2AE",
         "numberOfPupils": 971,
@@ -168,6 +170,30 @@
   "property": {
     "sales": [
       {
+        "address": "7, DERNY AVENUE",
+        "postcode": "E20 1HL",
+        "price": 750000,
+        "dateOfTransfer": "2026-07-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CASSIA POINT, 2, 1901, GLASSHOUSE GARDENS",
+        "postcode": "E20 1HX",
+        "price": 480000,
+        "dateOfTransfer": "2026-07-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "CASSIA POINT, 2, 1206, GLASSHOUSE GARDENS",
+        "postcode": "E20 1HW",
+        "price": 635000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "HYETT COURT, 7, HONOUR LEA AVENUE",
         "postcode": "E20 1HH",
         "price": 490000,
@@ -256,6 +282,14 @@
         "newBuild": true
       },
       {
+        "address": "GOSWELL COURT, FLAT 34, HONOUR LEA AVENUE",
+        "postcode": "E20 1LL",
+        "price": 453000,
+        "dateOfTransfer": "2026-03-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "17, FLAT 4, WATERDEN ROAD",
         "postcode": "E20 3AP",
         "price": 240000,
@@ -285,6 +319,14 @@
         "price": 1300000,
         "dateOfTransfer": "2026-02-20",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CAVESSON HOUSE, 2, FLAT 44, RIBBONS WALK, OLYMPIC PARK",
+        "postcode": "E20 1AZ",
+        "price": 360000,
+        "dateOfTransfer": "2026-01-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -400,17 +442,17 @@
         "newBuild": false
       },
       {
-        "address": "VERNA HOUSE, 24, FLAT 34, SUNRISE CLOSE, OLYMPIC PARK",
-        "postcode": "E20 1DS",
-        "price": 273000,
+        "address": "PARK VIEW MANSIONS, 34, OLYMPIC PARK AVENUE",
+        "postcode": "E20 1FA",
+        "price": 885000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "PARK VIEW MANSIONS, 34, OLYMPIC PARK AVENUE",
-        "postcode": "E20 1FA",
-        "price": 885000,
+        "address": "VERNA HOUSE, 24, FLAT 34, SUNRISE CLOSE, OLYMPIC PARK",
+        "postcode": "E20 1DS",
+        "price": 273000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -448,12 +490,28 @@
         "newBuild": false
       },
       {
+        "address": "96, APARTMENT 34, WATERDEN ROAD",
+        "postcode": "E20 3BE",
+        "price": 742500,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
+      },
+      {
         "address": "ZELLER HOUSE, 21, APARTMENT 15, SCARLET CLOSE, OLYMPIC PARK",
         "postcode": "E20 1FL",
         "price": 555000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "74, APARTMENT 12, WATERDEN ROAD",
+        "postcode": "E20 3BF",
+        "price": 585000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "92, WATERDEN ROAD",
@@ -488,6 +546,14 @@
         "newBuild": true
       },
       {
+        "address": "PARK VIEW MANSIONS, 45, OLYMPIC PARK AVENUE",
+        "postcode": "E20 1FA",
+        "price": 865000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "FESTIVE MANSIONS, 10, FLAT 9, NAPA CLOSE, OLYMPIC PARK",
         "postcode": "E20 1EA",
         "price": 590000,
@@ -518,6 +584,14 @@
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "74, APARTMENT 37, WATERDEN ROAD",
+        "postcode": "E20 3BF",
+        "price": 790000,
+        "dateOfTransfer": "2025-08-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "74, APARTMENT 31, WATERDEN ROAD",
@@ -632,20 +706,20 @@
         "newBuild": true
       },
       {
-        "address": "96, APARTMENT 37, WATERDEN ROAD",
-        "postcode": "E20 3BE",
-        "price": 670000,
-        "dateOfTransfer": "2025-07-22",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": true
-      },
-      {
         "address": "TAYBERRY HOUSE, 10, FLAT 39, RAVENS WALK, OLYMPIC PARK",
         "postcode": "E20 1DQ",
         "price": 585000,
         "dateOfTransfer": "2025-07-22",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
+      },
+      {
+        "address": "96, APARTMENT 37, WATERDEN ROAD",
+        "postcode": "E20 3BE",
+        "price": 670000,
+        "dateOfTransfer": "2025-07-22",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": true
       },
       {
         "address": "96, APARTMENT 9, WATERDEN ROAD",
@@ -664,6 +738,14 @@
         "newBuild": true
       },
       {
+        "address": "HYETT COURT, 3, HONOUR LEA AVENUE",
+        "postcode": "E20 1HH",
+        "price": 635000,
+        "dateOfTransfer": "2025-07-21",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "LANTANA HEIGHTS, 1, 905, GLASSHOUSE GARDENS",
         "postcode": "E20 1HT",
         "price": 460000,
@@ -678,14 +760,6 @@
         "dateOfTransfer": "2025-07-21",
         "propertyType": "Flat/Maisonette",
         "newBuild": true
-      },
-      {
-        "address": "HYETT COURT, 3, HONOUR LEA AVENUE",
-        "postcode": "E20 1HH",
-        "price": 635000,
-        "dateOfTransfer": "2025-07-21",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
       },
       {
         "address": "96, APARTMENT 17, WATERDEN ROAD",
@@ -776,14 +850,6 @@
         "newBuild": false
       },
       {
-        "address": "LANTANA HEIGHTS, 1, 708, GLASSHOUSE GARDENS",
-        "postcode": "E20 1HR",
-        "price": 445000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "MEANDER HOUSE, 20, 28, LOGAN CLOSE, OLYMPIC PARK",
         "postcode": "E20 1FG",
         "price": 580000,
@@ -792,10 +858,10 @@
         "newBuild": false
       },
       {
-        "address": "HYETT COURT, 8, HONOUR LEA AVENUE",
-        "postcode": "E20 1HH",
-        "price": 690000,
-        "dateOfTransfer": "2025-03-28",
+        "address": "LANTANA HEIGHTS, 1, 708, GLASSHOUSE GARDENS",
+        "postcode": "E20 1HR",
+        "price": 445000,
+        "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -811,6 +877,14 @@
         "address": "SABLE HOUSE, 15, 16, HONOUR LEA AVENUE",
         "postcode": "E20 1DX",
         "price": 720000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "HYETT COURT, 8, HONOUR LEA AVENUE",
+        "postcode": "E20 1HH",
+        "price": 690000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -928,8 +1002,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 631903,
-    "medianPrice": 644000
+    "averagePrice": 631647,
+    "medianPrice": 642000
   },
   "representatives": {
     "representatives": [

@@ -3,8 +3,8 @@
   "slug": "da8",
   "city": "London",
   "borough": "Bexley",
-  "latitude": 51.47576236140894,
-  "longitude": 0.1755843843797856,
+  "latitude": 51.47569920583471,
+  "longitude": 0.17494742949756878,
   "wards": [
     "Barnehurst",
     "Belvedere",
@@ -127,7 +127,8 @@
         "urn": "101458",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "18/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bexley Road, Erith",
         "postcode": "DA8 3HQ",
         "numberOfPupils": 459,
@@ -138,7 +139,8 @@
         "urn": "137380",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/07/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Wheelock Close, Northumberland Heath, Erith",
         "postcode": "DA8 1JE",
         "numberOfPupils": 442,
@@ -150,6 +152,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Peareswood Road, Erith",
         "postcode": "DA8 3PR",
         "numberOfPupils": 418,
@@ -160,7 +163,8 @@
         "urn": "139212",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "03/06/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Lesney Park Road, Erith",
         "postcode": "DA8 3DG",
         "numberOfPupils": 498,
@@ -171,7 +175,8 @@
         "urn": "140320",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "08/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Barnehurst Close, Northumberland Heath, Erith",
         "postcode": "DA8 3NL",
         "numberOfPupils": 218,
@@ -182,7 +187,8 @@
         "urn": "140321",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "29/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Barnehurst Close, Northumberland Heath, Erith",
         "postcode": "DA8 3NL",
         "numberOfPupils": 240,
@@ -194,6 +200,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "2 Sandy Road, Erith",
         "postcode": "DA8 1FJ",
         "numberOfPupils": 192,
@@ -204,7 +211,8 @@
         "urn": "145011",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "19/09/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Slade Green Road, ERITH",
         "postcode": "DA8 2HX",
         "numberOfPupils": 348,
@@ -214,8 +222,9 @@
         "name": "Belmont Academy",
         "urn": "146870",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "04/07/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Belmont Road, Erith",
         "postcode": "DA8 1LE",
         "numberOfPupils": 436,
@@ -225,8 +234,9 @@
         "name": "Woodside Academy",
         "urn": "146885",
         "phaseOfEducation": "Not applicable",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "14/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Colyers Lane, Erith",
         "postcode": "DA8 3PB",
         "numberOfPupils": 206,
@@ -237,7 +247,8 @@
         "urn": "147356",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/02/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Chrome Road, Slade Green, Erith",
         "postcode": "DA8 2EL",
         "numberOfPupils": 280,
@@ -248,7 +259,8 @@
         "urn": "149898",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Inadequate",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "04/05/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Avenue Road, Erith",
         "postcode": "DA8 3BN",
         "numberOfPupils": 873,
@@ -260,33 +272,33 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 364,
-        "violentCrimes": 154,
+        "totalCrimes": 356,
+        "violentCrimes": 147,
         "propertyCrimes": 96
       },
       {
         "month": "2025-08",
-        "totalCrimes": 346,
+        "totalCrimes": 344,
         "violentCrimes": 157,
-        "propertyCrimes": 98
+        "propertyCrimes": 99
       },
       {
         "month": "2025-09",
-        "totalCrimes": 390,
-        "violentCrimes": 181,
-        "propertyCrimes": 110
+        "totalCrimes": 385,
+        "violentCrimes": 177,
+        "propertyCrimes": 109
       },
       {
         "month": "2025-10",
-        "totalCrimes": 384,
-        "violentCrimes": 172,
-        "propertyCrimes": 100
+        "totalCrimes": 377,
+        "violentCrimes": 168,
+        "propertyCrimes": 98
       },
       {
         "month": "2025-11",
-        "totalCrimes": 353,
-        "violentCrimes": 153,
-        "propertyCrimes": 117
+        "totalCrimes": 354,
+        "violentCrimes": 154,
+        "propertyCrimes": 118
       },
       {
         "month": "2025-12",
@@ -302,61 +314,181 @@
       },
       {
         "month": "2026-02",
-        "totalCrimes": 314,
-        "violentCrimes": 139,
-        "propertyCrimes": 85
+        "totalCrimes": 311,
+        "violentCrimes": 138,
+        "propertyCrimes": 86
       },
       {
         "month": "2026-03",
-        "totalCrimes": 385,
-        "violentCrimes": 164,
+        "totalCrimes": 383,
+        "violentCrimes": 162,
         "propertyCrimes": 115
       },
       {
         "month": "2026-04",
-        "totalCrimes": 349,
-        "violentCrimes": 155,
+        "totalCrimes": 346,
+        "violentCrimes": 152,
         "propertyCrimes": 99
       },
       {
         "month": "2026-05",
-        "totalCrimes": 369,
-        "violentCrimes": 159,
+        "totalCrimes": 364,
+        "violentCrimes": 157,
         "propertyCrimes": 100
       },
       {
         "month": "2026-06",
-        "totalCrimes": 423,
-        "violentCrimes": 215,
+        "totalCrimes": 422,
+        "violentCrimes": 214,
         "propertyCrimes": 101
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 886,
+      "anti-social-behaviour": 873,
       "bicycle-theft": 14,
-      "burglary": 166,
-      "criminal-damage-arson": 291,
+      "burglary": 168,
+      "criminal-damage-arson": 294,
       "drugs": 228,
       "other-theft": 259,
-      "possession-of-weapons": 40,
-      "public-order": 287,
+      "possession-of-weapons": 39,
+      "public-order": 286,
       "robbery": 80,
       "shoplifting": 163,
       "theft-from-the-person": 42,
-      "vehicle-crime": 292,
-      "violent-crime": 1510,
-      "other-crime": 65
+      "vehicle-crime": 287,
+      "violent-crime": 1489,
+      "other-crime": 66
     },
-    "totalLast12Months": 4323
+    "totalLast12Months": 4288
   },
   "property": {
     "sales": [
+      {
+        "address": "4, NEWBERY ROAD",
+        "postcode": "DA8 2BY",
+        "price": 430000,
+        "dateOfTransfer": "2026-07-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "187, BRIDGE ROAD",
+        "postcode": "DA8 2HS",
+        "price": 310000,
+        "dateOfTransfer": "2026-07-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "137, CHANDLERS DRIVE",
+        "postcode": "DA8 1LW",
+        "price": 173000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "51, SUSSEX ROAD",
+        "postcode": "DA8 1JB",
+        "price": 425000,
+        "dateOfTransfer": "2026-07-15",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "151, MANOR ROAD",
+        "postcode": "DA8 2AQ",
+        "price": 300000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, THWAITE CLOSE",
+        "postcode": "DA8 1DP",
+        "price": 290000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "148, AVENUE ROAD",
+        "postcode": "DA8 3AZ",
+        "price": 600000,
+        "dateOfTransfer": "2026-07-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "48, NORTHUMBERLAND WAY",
+        "postcode": "DA8 3NN",
+        "price": 485000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "19, MAYNARD CLOSE",
+        "postcode": "DA8 2BQ",
+        "price": 417500,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "4, MOAT LANE",
         "postcode": "DA8 2NQ",
         "price": 600000,
         "dateOfTransfer": "2026-06-26",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, HALSTEAD ROAD",
+        "postcode": "DA8 3HX",
+        "price": 325000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "CINNABAR COURT, 4, FLAT 14, SAYERS WAY",
+        "postcode": "DA8 2FT",
+        "price": 270000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "198, SLADE GREEN ROAD",
+        "postcode": "DA8 2JG",
+        "price": 370000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "73, NEPTUNE WALK",
+        "postcode": "DA8 1NT",
+        "price": 200000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "58, WESSEX DRIVE",
+        "postcode": "DA8 3AF",
+        "price": 223000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "59, SANDCLIFF ROAD",
+        "postcode": "DA8 1PB",
+        "price": 350000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -371,6 +503,14 @@
         "address": "223, AVENUE ROAD",
         "postcode": "DA8 3BT",
         "price": 520000,
+        "dateOfTransfer": "2026-06-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "77, HENGIST ROAD",
+        "postcode": "DA8 1EZ",
+        "price": 375000,
         "dateOfTransfer": "2026-06-12",
         "propertyType": "Terraced",
         "newBuild": false
@@ -400,11 +540,19 @@
         "newBuild": false
       },
       {
-        "address": "EMERALD COURT, 4, RAINBOW ROAD",
-        "postcode": "DA8 2ED",
-        "price": 250000,
-        "dateOfTransfer": "2026-05-29",
-        "propertyType": "Flat/Maisonette",
+        "address": "74, SILVER SPRING CLOSE",
+        "postcode": "DA8 1EQ",
+        "price": 350000,
+        "dateOfTransfer": "2026-06-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "53, BATTLE ROAD",
+        "postcode": "DA8 1BJ",
+        "price": 345000,
+        "dateOfTransfer": "2026-06-01",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -413,6 +561,14 @@
         "price": 495000,
         "dateOfTransfer": "2026-05-29",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "EMERALD COURT, 4, RAINBOW ROAD",
+        "postcode": "DA8 2ED",
+        "price": 250000,
+        "dateOfTransfer": "2026-05-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -448,17 +604,17 @@
         "newBuild": false
       },
       {
-        "address": "71, RAINBOW ROAD",
-        "postcode": "DA8 2BT",
-        "price": 540000,
+        "address": "28, DRUMMOND CLOSE",
+        "postcode": "DA8 3QS",
+        "price": 245000,
         "dateOfTransfer": "2026-05-19",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "28, DRUMMOND CLOSE",
-        "postcode": "DA8 3QS",
-        "price": 245000,
+        "address": "71, RAINBOW ROAD",
+        "postcode": "DA8 2BT",
+        "price": 540000,
         "dateOfTransfer": "2026-05-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -528,22 +684,6 @@
         "newBuild": false
       },
       {
-        "address": "36, HURST ROAD",
-        "postcode": "DA8 3EN",
-        "price": 361000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "232, BELMONT ROAD",
-        "postcode": "DA8 1LG",
-        "price": 460000,
-        "dateOfTransfer": "2026-04-30",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "67A, NORTHUMBERLAND WAY",
         "postcode": "DA8 3NT",
         "price": 400000,
@@ -568,10 +708,26 @@
         "newBuild": false
       },
       {
-        "address": "31, GLENDALE ROAD",
-        "postcode": "DA8 1BP",
-        "price": 370000,
-        "dateOfTransfer": "2026-04-28",
+        "address": "232, BELMONT ROAD",
+        "postcode": "DA8 1LG",
+        "price": 460000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "36, HURST ROAD",
+        "postcode": "DA8 3EN",
+        "price": 361000,
+        "dateOfTransfer": "2026-04-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "33, NURSTEAD ROAD",
+        "postcode": "DA8 1LS",
+        "price": 417500,
+        "dateOfTransfer": "2026-04-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -581,6 +737,14 @@
         "price": 135000,
         "dateOfTransfer": "2026-04-28",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "31, GLENDALE ROAD",
+        "postcode": "DA8 1BP",
+        "price": 370000,
+        "dateOfTransfer": "2026-04-28",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -621,6 +785,22 @@
         "price": 565000,
         "dateOfTransfer": "2026-04-17",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "BELLINGHAM COURT, 28, LARNER ROAD",
+        "postcode": "DA8 3FJ",
+        "price": 277000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "BELLINGHAM COURT, 28, LARNER ROAD",
+        "postcode": "DA8 3FJ",
+        "price": 277000,
+        "dateOfTransfer": "2026-04-13",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -672,14 +852,6 @@
         "newBuild": false
       },
       {
-        "address": "87, HENGIST ROAD",
-        "postcode": "DA8 1EZ",
-        "price": 375000,
-        "dateOfTransfer": "2026-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "23, CHANDLERS DRIVE",
         "postcode": "DA8 1LL",
         "price": 215000,
@@ -688,11 +860,11 @@
         "newBuild": false
       },
       {
-        "address": "28, CRAYDENE ROAD",
-        "postcode": "DA8 2HR",
-        "price": 372000,
-        "dateOfTransfer": "2026-03-26",
-        "propertyType": "Semi-detached",
+        "address": "87, HENGIST ROAD",
+        "postcode": "DA8 1EZ",
+        "price": 375000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -701,6 +873,14 @@
         "price": 435000,
         "dateOfTransfer": "2026-03-26",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "28, CRAYDENE ROAD",
+        "postcode": "DA8 2HR",
+        "price": 372000,
+        "dateOfTransfer": "2026-03-26",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -744,19 +924,19 @@
         "newBuild": false
       },
       {
-        "address": "1, HILARY CLOSE",
-        "postcode": "DA8 3NH",
-        "price": 375000,
-        "dateOfTransfer": "2026-03-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "SCHOONER HOUSE, FLAT 17, CHICHESTER WHARF",
         "postcode": "DA8 1BF",
         "price": 276000,
         "dateOfTransfer": "2026-03-20",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "1, HILARY CLOSE",
+        "postcode": "DA8 3NH",
+        "price": 375000,
+        "dateOfTransfer": "2026-03-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -792,14 +972,6 @@
         "newBuild": false
       },
       {
-        "address": "8, OAK ROAD",
-        "postcode": "DA8 2NL",
-        "price": 345000,
-        "dateOfTransfer": "2026-03-13",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "4, BEACON ROAD",
         "postcode": "DA8 2JS",
         "price": 286000,
@@ -808,11 +980,27 @@
         "newBuild": false
       },
       {
+        "address": "8, OAK ROAD",
+        "postcode": "DA8 2NL",
+        "price": 345000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "3, AUSTEN ROAD",
         "postcode": "DA8 1YA",
         "price": 438000,
         "dateOfTransfer": "2026-03-13",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "15, LOWRY CLOSE",
+        "postcode": "DA8 1PN",
+        "price": 400000,
+        "dateOfTransfer": "2026-03-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -832,6 +1020,14 @@
         "newBuild": false
       },
       {
+        "address": "126, PARK CRESCENT",
+        "postcode": "DA8 3DY",
+        "price": 520000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "74, BRIDGE ROAD",
         "postcode": "DA8 2DQ",
         "price": 390000,
@@ -845,14 +1041,6 @@
         "price": 340000,
         "dateOfTransfer": "2026-03-06",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "126, PARK CRESCENT",
-        "postcode": "DA8 3DY",
-        "price": 520000,
-        "dateOfTransfer": "2026-03-06",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -912,6 +1100,14 @@
         "newBuild": false
       },
       {
+        "address": "11, PEARTREE CLOSE",
+        "postcode": "DA8 3NU",
+        "price": 400000,
+        "dateOfTransfer": "2026-02-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "74, HOWBURY LANE",
         "postcode": "DA8 2DR",
         "price": 330000,
@@ -936,26 +1132,10 @@
         "newBuild": false
       },
       {
-        "address": "11, PEARTREE CLOSE",
-        "postcode": "DA8 3NU",
-        "price": 400000,
-        "dateOfTransfer": "2026-02-25",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "33, SLADE GARDENS",
         "postcode": "DA8 2HT",
         "price": 315000,
         "dateOfTransfer": "2026-02-23",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "49, HURST ROAD",
-        "postcode": "DA8 3EW",
-        "price": 366000,
-        "dateOfTransfer": "2026-02-20",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -965,6 +1145,14 @@
         "price": 280000,
         "dateOfTransfer": "2026-02-20",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "49, HURST ROAD",
+        "postcode": "DA8 3EW",
+        "price": 366000,
+        "dateOfTransfer": "2026-02-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1000,6 +1188,14 @@
         "newBuild": false
       },
       {
+        "address": "6, DORIS AVENUE",
+        "postcode": "DA8 3ND",
+        "price": 400000,
+        "dateOfTransfer": "2026-02-06",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "73, SLADE GREEN ROAD",
         "postcode": "DA8 2FP",
         "price": 440000,
@@ -1011,14 +1207,6 @@
         "address": "2, NEWHAM WAY",
         "postcode": "DA8 2FL",
         "price": 460000,
-        "dateOfTransfer": "2026-02-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "6, DORIS AVENUE",
-        "postcode": "DA8 3ND",
-        "price": 400000,
         "dateOfTransfer": "2026-02-06",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1040,6 +1228,22 @@
         "newBuild": false
       },
       {
+        "address": "CRYSTAL COURT, 3, RAINBOW ROAD",
+        "postcode": "DA8 2FA",
+        "price": 255000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "68, AVENUE ROAD",
+        "postcode": "DA8 3AS",
+        "price": 1210000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
         "address": "50, NORTHUMBERLAND WAY",
         "postcode": "DA8 3NN",
         "price": 502000,
@@ -1048,11 +1252,11 @@
         "newBuild": false
       },
       {
-        "address": "CRYSTAL COURT, 3, RAINBOW ROAD",
-        "postcode": "DA8 2FA",
-        "price": 255000,
+        "address": "153B, AVENUE ROAD",
+        "postcode": "DA8 3BH",
+        "price": 405000,
         "dateOfTransfer": "2026-01-30",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1072,10 +1276,10 @@
         "newBuild": false
       },
       {
-        "address": "153B, AVENUE ROAD",
-        "postcode": "DA8 3BH",
-        "price": 405000,
-        "dateOfTransfer": "2026-01-30",
+        "address": "19, ELMSTEAD ROAD",
+        "postcode": "DA8 3JA",
+        "price": 435000,
+        "dateOfTransfer": "2026-01-28",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1088,18 +1292,18 @@
         "newBuild": false
       },
       {
-        "address": "19, ELMSTEAD ROAD",
-        "postcode": "DA8 3JA",
-        "price": 435000,
-        "dateOfTransfer": "2026-01-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "86, SILVER SPRING CLOSE",
         "postcode": "DA8 1EQ",
         "price": 380000,
         "dateOfTransfer": "2026-01-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "91, RIVERDALE ROAD",
+        "postcode": "DA8 1PU",
+        "price": 375000,
+        "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1109,6 +1313,14 @@
         "price": 385000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "147, FROBISHER ROAD",
+        "postcode": "DA8 2PU",
+        "price": 135395,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1128,17 +1340,17 @@
         "newBuild": false
       },
       {
-        "address": "38, CANADA ROAD",
-        "postcode": "DA8 2HE",
-        "price": 400000,
+        "address": "7, STEELE WALK",
+        "postcode": "DA8 1YH",
+        "price": 320000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "7, STEELE WALK",
-        "postcode": "DA8 1YH",
-        "price": 320000,
+        "address": "38, CANADA ROAD",
+        "postcode": "DA8 2HE",
+        "price": 400000,
         "dateOfTransfer": "2026-01-16",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1149,6 +1361,14 @@
         "price": 365000,
         "dateOfTransfer": "2026-01-12",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "6, SUN COURT",
+        "postcode": "DA8 2DY",
+        "price": 360000,
+        "dateOfTransfer": "2026-01-09",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1168,19 +1388,19 @@
         "newBuild": false
       },
       {
-        "address": "6, SUN COURT",
-        "postcode": "DA8 2DY",
-        "price": 360000,
-        "dateOfTransfer": "2026-01-09",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "30, ALEXANDRA ROAD",
         "postcode": "DA8 2BA",
         "price": 388000,
         "dateOfTransfer": "2026-01-08",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "7, BROOK STREET",
+        "postcode": "DA8 1JJ",
+        "price": 260000,
+        "dateOfTransfer": "2025-12-23",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1216,17 +1436,17 @@
         "newBuild": false
       },
       {
-        "address": "3, MILDRED ROAD",
-        "postcode": "DA8 1AL",
-        "price": 200000,
+        "address": "15, BROOK VALE",
+        "postcode": "DA8 1JP",
+        "price": 335000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "15, BROOK VALE",
-        "postcode": "DA8 1JP",
-        "price": 335000,
+        "address": "3, MILDRED ROAD",
+        "postcode": "DA8 1AL",
+        "price": 200000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1285,6 +1505,14 @@
         "price": 380000,
         "dateOfTransfer": "2025-12-17",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1, STARKEY PLACE",
+        "postcode": "DA8 3EY",
+        "price": 145000,
+        "dateOfTransfer": "2025-12-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1632,19 +1860,19 @@
         "newBuild": false
       },
       {
-        "address": "AMETHYST COURT, 2, RAINBOW ROAD",
-        "postcode": "DA8 2EH",
-        "price": 255000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "45, NORTHUMBERLAND WAY",
         "postcode": "DA8 3NT",
         "price": 462000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "AMETHYST COURT, 2, RAINBOW ROAD",
+        "postcode": "DA8 2EH",
+        "price": 255000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1696,6 +1924,14 @@
         "newBuild": false
       },
       {
+        "address": "24, BARNEHURST CLOSE",
+        "postcode": "DA8 3NL",
+        "price": 515000,
+        "dateOfTransfer": "2025-10-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "76, SANDPIPER DRIVE",
         "postcode": "DA8 2NY",
         "price": 330000,
@@ -1709,14 +1945,6 @@
         "price": 117000,
         "dateOfTransfer": "2025-10-27",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "24, BARNEHURST CLOSE",
-        "postcode": "DA8 3NL",
-        "price": 515000,
-        "dateOfTransfer": "2025-10-27",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1784,6 +2012,14 @@
         "newBuild": false
       },
       {
+        "address": "21, ATHOL ROAD",
+        "postcode": "DA8 1PT",
+        "price": 272000,
+        "dateOfTransfer": "2025-10-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "71, MANOR ROAD",
         "postcode": "DA8 2AE",
         "price": 260000,
@@ -1800,17 +2036,17 @@
         "newBuild": false
       },
       {
-        "address": "18, BEECHFIELD ROAD",
-        "postcode": "DA8 3BB",
-        "price": 341000,
+        "address": "36, BARNEHURST CLOSE",
+        "postcode": "DA8 3NL",
+        "price": 515000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "36, BARNEHURST CLOSE",
-        "postcode": "DA8 3NL",
-        "price": 515000,
+        "address": "18, BEECHFIELD ROAD",
+        "postcode": "DA8 3BB",
+        "price": 341000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1896,19 +2132,19 @@
         "newBuild": false
       },
       {
-        "address": "24, RANWORTH CLOSE",
-        "postcode": "DA8 3AD",
-        "price": 202000,
-        "dateOfTransfer": "2025-10-03",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "59, HOLLY HILL ROAD",
         "postcode": "DA8 1QB",
         "price": 335000,
         "dateOfTransfer": "2025-10-03",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, RANWORTH CLOSE",
+        "postcode": "DA8 3AD",
+        "price": 202000,
+        "dateOfTransfer": "2025-10-03",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1976,17 +2212,17 @@
         "newBuild": false
       },
       {
-        "address": "30, COLLINDALE AVENUE",
-        "postcode": "DA8 1EE",
-        "price": 395000,
+        "address": "16, LOWRY CLOSE",
+        "postcode": "DA8 1PN",
+        "price": 300000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "16, LOWRY CLOSE",
-        "postcode": "DA8 1PN",
-        "price": 300000,
+        "address": "30, COLLINDALE AVENUE",
+        "postcode": "DA8 1EE",
+        "price": 395000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2104,6 +2340,14 @@
         "newBuild": false
       },
       {
+        "address": "72, MILL ROAD",
+        "postcode": "DA8 1HN",
+        "price": 250000,
+        "dateOfTransfer": "2025-09-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "85, WESSEX DRIVE",
         "postcode": "DA8 3AE",
         "price": 290000,
@@ -2115,14 +2359,6 @@
         "address": "15, ST JOHNS ROAD",
         "postcode": "DA8 1NX",
         "price": 230000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "72, MILL ROAD",
-        "postcode": "DA8 1HN",
-        "price": 250000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2192,14 +2428,6 @@
         "newBuild": false
       },
       {
-        "address": "223, BEXLEY ROAD",
-        "postcode": "DA8 3EU",
-        "price": 285000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "21, NORTHUMBERLAND PARK",
         "postcode": "DA8 1HG",
         "price": 375000,
@@ -2211,6 +2439,14 @@
         "address": "236, BROOK STREET",
         "postcode": "DA8 1DZ",
         "price": 395000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "223, BEXLEY ROAD",
+        "postcode": "DA8 3EU",
+        "price": 285000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2248,14 +2484,6 @@
         "newBuild": false
       },
       {
-        "address": "84, BEXLEY ROAD",
-        "postcode": "DA8 3SP",
-        "price": 500000,
-        "dateOfTransfer": "2025-08-15",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "265, BROOK STREET",
         "postcode": "DA8 1EB",
         "price": 280000,
@@ -2277,6 +2505,14 @@
         "price": 415000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "84, BEXLEY ROAD",
+        "postcode": "DA8 3SP",
+        "price": 500000,
+        "dateOfTransfer": "2025-08-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2304,19 +2540,11 @@
         "newBuild": false
       },
       {
-        "address": "6, DRUMMOND CLOSE",
-        "postcode": "DA8 3QS",
-        "price": 340000,
+        "address": "125, COLYERS LANE",
+        "postcode": "DA8 3PE",
+        "price": 375000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "53, BEXLEY ROAD",
-        "postcode": "DA8 3SH",
-        "price": 290000,
-        "dateOfTransfer": "2025-08-08",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2336,9 +2564,17 @@
         "newBuild": false
       },
       {
-        "address": "125, COLYERS LANE",
-        "postcode": "DA8 3PE",
-        "price": 375000,
+        "address": "53, BEXLEY ROAD",
+        "postcode": "DA8 3SH",
+        "price": 290000,
+        "dateOfTransfer": "2025-08-08",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "6, DRUMMOND CLOSE",
+        "postcode": "DA8 3QS",
+        "price": 340000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2376,14 +2612,6 @@
         "newBuild": false
       },
       {
-        "address": "22, HENGIST ROAD",
-        "postcode": "DA8 1HA",
-        "price": 330000,
-        "dateOfTransfer": "2025-08-01",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "2, LUDDESDON ROAD",
         "postcode": "DA8 1NG",
         "price": 446500,
@@ -2416,6 +2644,14 @@
         "newBuild": false
       },
       {
+        "address": "22, HENGIST ROAD",
+        "postcode": "DA8 1HA",
+        "price": 330000,
+        "dateOfTransfer": "2025-08-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "210, PARK CRESCENT",
         "postcode": "DA8 3ED",
         "price": 685000,
@@ -2440,14 +2676,6 @@
         "newBuild": false
       },
       {
-        "address": "87, WESSEX DRIVE",
-        "postcode": "DA8 3AE",
-        "price": 285000,
-        "dateOfTransfer": "2025-07-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "WATERSEDGE COURT, 1, FLAT 14, WHARFSIDE CLOSE",
         "postcode": "DA8 1QW",
         "price": 205000,
@@ -2459,6 +2687,14 @@
         "address": "270, RIVERDALE ROAD",
         "postcode": "DA8 1QE",
         "price": 276000,
+        "dateOfTransfer": "2025-07-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "87, WESSEX DRIVE",
+        "postcode": "DA8 3AE",
+        "price": 285000,
         "dateOfTransfer": "2025-07-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2552,19 +2788,19 @@
         "newBuild": false
       },
       {
-        "address": "14, CRESCENT ROAD",
-        "postcode": "DA8 2AU",
-        "price": 220000,
-        "dateOfTransfer": "2025-07-11",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "25, CHRISTCHURCH AVENUE",
         "postcode": "DA8 3AP",
         "price": 400000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "14, CRESCENT ROAD",
+        "postcode": "DA8 2AU",
+        "price": 220000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2600,6 +2836,14 @@
         "newBuild": false
       },
       {
+        "address": "18, HIGHFIELD AVENUE",
+        "postcode": "DA8 1EL",
+        "price": 250000,
+        "dateOfTransfer": "2025-07-04",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "4, WARD CLOSE",
         "postcode": "DA8 3EH",
         "price": 450000,
@@ -2624,14 +2868,6 @@
         "newBuild": false
       },
       {
-        "address": "124, FRINSTED ROAD",
-        "postcode": "DA8 3LB",
-        "price": 270000,
-        "dateOfTransfer": "2025-06-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "34, CONISTON CLOSE",
         "postcode": "DA8 3BD",
         "price": 405000,
@@ -2643,6 +2879,14 @@
         "address": "16, THE NURSERY",
         "postcode": "DA8 2EZ",
         "price": 380000,
+        "dateOfTransfer": "2025-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "124, FRINSTED ROAD",
+        "postcode": "DA8 3LB",
+        "price": 270000,
         "dateOfTransfer": "2025-06-30",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2784,6 +3028,22 @@
         "newBuild": false
       },
       {
+        "address": "37, DURIUN WAY",
+        "postcode": "DA8 2HG",
+        "price": 445000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, DURIUN WAY",
+        "postcode": "DA8 2HG",
+        "price": 445000,
+        "dateOfTransfer": "2025-05-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "UNIT 15, LANDAU WAY",
         "postcode": "DA8 2LF",
         "price": 200000,
@@ -2797,22 +3057,6 @@
         "price": 1335000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Other",
-        "newBuild": false
-      },
-      {
-        "address": "37, DURIUN WAY",
-        "postcode": "DA8 2HG",
-        "price": 445000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "37, DURIUN WAY",
-        "postcode": "DA8 2HG",
-        "price": 445000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2880,17 +3124,17 @@
         "newBuild": false
       },
       {
-        "address": "52, SLADE GREEN ROAD",
-        "postcode": "DA8 2HX",
-        "price": 499000,
+        "address": "9, LINCOLN ROAD",
+        "postcode": "DA8 2DX",
+        "price": 310000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "9, LINCOLN ROAD",
-        "postcode": "DA8 2DX",
-        "price": 310000,
+        "address": "52, SLADE GREEN ROAD",
+        "postcode": "DA8 2HX",
+        "price": 499000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2984,14 +3228,6 @@
         "newBuild": false
       },
       {
-        "address": "ROSEMARY COURT, 50, FURNERS CLOSE",
-        "postcode": "DA8 3FA",
-        "price": 275000,
-        "dateOfTransfer": "2025-04-25",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "4, FRIDAY ROAD",
         "postcode": "DA8 1PL",
         "price": 340000,
@@ -3003,6 +3239,14 @@
         "address": "82, CRICKETERS CLOSE",
         "postcode": "DA8 1TX",
         "price": 101000,
+        "dateOfTransfer": "2025-04-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "ROSEMARY COURT, 50, FURNERS CLOSE",
+        "postcode": "DA8 3FA",
+        "price": 275000,
         "dateOfTransfer": "2025-04-25",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -3112,6 +3356,14 @@
         "newBuild": false
       },
       {
+        "address": "23, LINCOLN ROAD",
+        "postcode": "DA8 2DX",
+        "price": 410000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "32, SLADE GARDENS",
         "postcode": "DA8 2HT",
         "price": 350000,
@@ -3125,14 +3377,6 @@
         "price": 422000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "23, LINCOLN ROAD",
-        "postcode": "DA8 2DX",
-        "price": 410000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3208,25 +3452,9 @@
         "newBuild": false
       },
       {
-        "address": "15, SLADE GARDENS",
-        "postcode": "DA8 2HT",
-        "price": 392500,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "47, SELKIRK DRIVE",
-        "postcode": "DA8 3QR",
-        "price": 130000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "17, ST PAULS ROAD",
-        "postcode": "DA8 1HL",
-        "price": 405000,
+        "address": "15, MEYER ROAD",
+        "postcode": "DA8 3SJ",
+        "price": 420000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -3248,11 +3476,19 @@
         "newBuild": false
       },
       {
-        "address": "15, MEYER ROAD",
-        "postcode": "DA8 3SJ",
-        "price": 420000,
+        "address": "15, SLADE GARDENS",
+        "postcode": "DA8 2HT",
+        "price": 392500,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "47, SELKIRK DRIVE",
+        "postcode": "DA8 3QR",
+        "price": 130000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3288,6 +3524,14 @@
         "newBuild": false
       },
       {
+        "address": "BELLINGHAM COURT, 8, LARNER ROAD",
+        "postcode": "DA8 3FJ",
+        "price": 126000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "51, LUDDESDON ROAD",
         "postcode": "DA8 1NQ",
         "price": 451609,
@@ -3304,11 +3548,11 @@
         "newBuild": false
       },
       {
-        "address": "BELLINGHAM COURT, 8, LARNER ROAD",
-        "postcode": "DA8 3FJ",
-        "price": 126000,
+        "address": "17, ST PAULS ROAD",
+        "postcode": "DA8 1HL",
+        "price": 405000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3336,27 +3580,11 @@
         "newBuild": false
       },
       {
-        "address": "251, COLYERS LANE",
-        "postcode": "DA8 3QD",
-        "price": 305000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "30, RANWORTH CLOSE",
         "postcode": "DA8 3AD",
         "price": 410000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "WATERS EDGE COURT, 1, FLAT 61, WHARFSIDE CLOSE",
-        "postcode": "DA8 1QW",
-        "price": 190000,
-        "dateOfTransfer": "2025-03-27",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3376,11 +3604,11 @@
         "newBuild": false
       },
       {
-        "address": "10, PEARTREE CLOSE",
-        "postcode": "DA8 3NU",
-        "price": 437500,
+        "address": "WATERS EDGE COURT, 1, FLAT 61, WHARFSIDE CLOSE",
+        "postcode": "DA8 1QW",
+        "price": 190000,
         "dateOfTransfer": "2025-03-27",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3389,6 +3617,14 @@
         "price": 105000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "10, PEARTREE CLOSE",
+        "postcode": "DA8 3NU",
+        "price": 437500,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3408,11 +3644,43 @@
         "newBuild": false
       },
       {
+        "address": "251, COLYERS LANE",
+        "postcode": "DA8 3QD",
+        "price": 305000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "59, NORTHUMBERLAND WAY",
         "postcode": "DA8 3NT",
         "price": 560000,
         "dateOfTransfer": "2025-03-27",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "VANACKER COURT, 24, LARNER ROAD",
+        "postcode": "DA8 3FN",
+        "price": 290000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "24, HORSA ROAD",
+        "postcode": "DA8 1HD",
+        "price": 375000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "49, RIVERDALE ROAD",
+        "postcode": "DA8 1PU",
+        "price": 210000,
+        "dateOfTransfer": "2025-03-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3437,30 +3705,6 @@
         "price": 377500,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "24, HORSA ROAD",
-        "postcode": "DA8 1HD",
-        "price": 375000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "49, RIVERDALE ROAD",
-        "postcode": "DA8 1PU",
-        "price": 210000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "VANACKER COURT, 24, LARNER ROAD",
-        "postcode": "DA8 3FN",
-        "price": 290000,
-        "dateOfTransfer": "2025-03-26",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3504,17 +3748,17 @@
         "newBuild": false
       },
       {
-        "address": "34, NORTHUMBERLAND PARK",
-        "postcode": "DA8 1HQ",
-        "price": 365000,
+        "address": "4, DALMENY ROAD",
+        "postcode": "DA8 1JX",
+        "price": 360000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "4, DALMENY ROAD",
-        "postcode": "DA8 1JX",
-        "price": 360000,
+        "address": "34, NORTHUMBERLAND PARK",
+        "postcode": "DA8 1HQ",
+        "price": 365000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3592,19 +3836,19 @@
         "newBuild": false
       },
       {
-        "address": "6, VICTORIA ROAD",
-        "postcode": "DA8 3AW",
-        "price": 1025000,
-        "dateOfTransfer": "2025-03-10",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "8, LINCOLN CLOSE",
         "postcode": "DA8 2EB",
         "price": 385000,
         "dateOfTransfer": "2025-03-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, VICTORIA ROAD",
+        "postcode": "DA8 3AW",
+        "price": 1025000,
+        "dateOfTransfer": "2025-03-10",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3776,17 +4020,17 @@
         "newBuild": false
       },
       {
-        "address": "24, MILL ROAD",
-        "postcode": "DA8 1HN",
-        "price": 295000,
+        "address": "90, BELMONT ROAD",
+        "postcode": "DA8 1LD",
+        "price": 391000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "90, BELMONT ROAD",
-        "postcode": "DA8 1LD",
-        "price": 391000,
+        "address": "24, MILL ROAD",
+        "postcode": "DA8 1HN",
+        "price": 295000,
         "dateOfTransfer": "2025-02-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3800,19 +4044,19 @@
         "newBuild": false
       },
       {
-        "address": "36, SWANTON ROAD",
-        "postcode": "DA8 1LP",
-        "price": 460000,
-        "dateOfTransfer": "2025-02-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "15, THORNE CLOSE",
         "postcode": "DA8 1EU",
         "price": 237000,
         "dateOfTransfer": "2025-02-20",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "36, SWANTON ROAD",
+        "postcode": "DA8 1LP",
+        "price": 460000,
+        "dateOfTransfer": "2025-02-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3829,14 +4073,6 @@
         "price": 515000,
         "dateOfTransfer": "2025-02-17",
         "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "124, BROOK STREET",
-        "postcode": "DA8 1JF",
-        "price": 285000,
-        "dateOfTransfer": "2025-02-14",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3861,6 +4097,14 @@
         "price": 180000,
         "dateOfTransfer": "2025-02-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "124, BROOK STREET",
+        "postcode": "DA8 1JF",
+        "price": 285000,
+        "dateOfTransfer": "2025-02-14",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4032,19 +4276,19 @@
         "newBuild": false
       },
       {
-        "address": "46, SANDPIPER DRIVE",
-        "postcode": "DA8 2NY",
-        "price": 330000,
-        "dateOfTransfer": "2025-01-20",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "20, LESNEY PARK ROAD",
         "postcode": "DA8 3DG",
         "price": 1050000,
         "dateOfTransfer": "2025-01-20",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, SANDPIPER DRIVE",
+        "postcode": "DA8 2NY",
+        "price": 330000,
+        "dateOfTransfer": "2025-01-20",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4080,17 +4324,17 @@
         "newBuild": false
       },
       {
-        "address": "38, NORTHUMBERLAND WAY",
-        "postcode": "DA8 3NN",
-        "price": 517500,
+        "address": "5, MASEFIELD CLOSE",
+        "postcode": "DA8 2DG",
+        "price": 520000,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "5, MASEFIELD CLOSE",
-        "postcode": "DA8 2DG",
-        "price": 520000,
+        "address": "38, NORTHUMBERLAND WAY",
+        "postcode": "DA8 3NN",
+        "price": 517500,
         "dateOfTransfer": "2025-01-10",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -4128,23 +4372,23 @@
         "newBuild": false
       },
       {
-        "address": "7B, THE DRIVE, NORTHUMBERLAND HEATH",
-        "postcode": "DA8 1ED",
-        "price": 215000,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "14, BEACON ROAD",
         "postcode": "DA8 2JS",
         "price": 512000,
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Terraced",
         "newBuild": false
+      },
+      {
+        "address": "7B, THE DRIVE, NORTHUMBERLAND HEATH",
+        "postcode": "DA8 1ED",
+        "price": 215000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
       }
     ],
-    "averagePrice": 354878,
+    "averagePrice": 354810,
     "medianPrice": 360000
   },
   "representatives": {

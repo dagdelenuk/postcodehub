@@ -3,8 +3,8 @@
   "slug": "rm5",
   "city": "London",
   "borough": "Havering",
-  "latitude": 51.601312377308716,
-  "longitude": 0.1647637941952506,
+  "latitude": 51.601328860962546,
+  "longitude": 0.16481130748663095,
   "wards": [
     "Chadwell Heath",
     "Hainault",
@@ -94,7 +94,8 @@
         "urn": "102291",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "14/06/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Clockhouse Lane, Collier Row, Romford",
         "postcode": "RM5 3QR",
         "numberOfPupils": 705,
@@ -104,8 +105,9 @@
         "name": "St Patrick's Catholic Primary School",
         "urn": "102331",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "12/01/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Lowshoe Lane, Collier Row, Romford",
         "postcode": "RM5 2AP",
         "numberOfPupils": 396,
@@ -115,8 +117,9 @@
         "name": "Oasis Academy Pinewood",
         "urn": "140022",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "11/11/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Thistledene Avenue, Collier Row, Romford",
         "postcode": "RM5 2TX",
         "numberOfPupils": 338,
@@ -134,9 +137,9 @@
       },
       {
         "month": "2025-08",
-        "totalCrimes": 211,
-        "violentCrimes": 61,
-        "propertyCrimes": 96
+        "totalCrimes": 207,
+        "violentCrimes": 60,
+        "propertyCrimes": 94
       },
       {
         "month": "2025-09",
@@ -158,26 +161,26 @@
       },
       {
         "month": "2025-12",
-        "totalCrimes": 185,
-        "violentCrimes": 75,
+        "totalCrimes": 184,
+        "violentCrimes": 74,
         "propertyCrimes": 63
       },
       {
         "month": "2026-01",
-        "totalCrimes": 146,
+        "totalCrimes": 144,
         "violentCrimes": 52,
-        "propertyCrimes": 52
+        "propertyCrimes": 51
       },
       {
         "month": "2026-02",
-        "totalCrimes": 157,
-        "violentCrimes": 51,
+        "totalCrimes": 153,
+        "violentCrimes": 47,
         "propertyCrimes": 58
       },
       {
         "month": "2026-03",
-        "totalCrimes": 187,
-        "violentCrimes": 75,
+        "totalCrimes": 182,
+        "violentCrimes": 70,
         "propertyCrimes": 61
       },
       {
@@ -188,9 +191,9 @@
       },
       {
         "month": "2026-05",
-        "totalCrimes": 173,
+        "totalCrimes": 172,
         "violentCrimes": 62,
-        "propertyCrimes": 56
+        "propertyCrimes": 55
       },
       {
         "month": "2026-06",
@@ -200,25 +203,105 @@
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 433,
+      "anti-social-behaviour": 432,
       "bicycle-theft": 4,
-      "burglary": 111,
-      "criminal-damage-arson": 108,
-      "drugs": 128,
-      "other-theft": 178,
+      "burglary": 110,
+      "criminal-damage-arson": 107,
+      "drugs": 127,
+      "other-theft": 177,
       "possession-of-weapons": 13,
       "public-order": 92,
       "robbery": 36,
       "shoplifting": 165,
-      "vehicle-crime": 170,
-      "violent-crime": 659,
+      "vehicle-crime": 169,
+      "violent-crime": 648,
       "other-crime": 32,
       "theft-from-the-person": 17
     },
-    "totalLast12Months": 2146
+    "totalLast12Months": 2129
   },
   "property": {
     "sales": [
+      {
+        "address": "139, CHASE CROSS ROAD",
+        "postcode": "RM5 3YS",
+        "price": 650000,
+        "dateOfTransfer": "2026-07-17",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "284, COLLIER ROW LANE",
+        "postcode": "RM5 3NL",
+        "price": 525000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "49, CHASE CROSS ROAD",
+        "postcode": "RM5 3PL",
+        "price": 483000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "75, MOWBRAYS ROAD",
+        "postcode": "RM5 3EL",
+        "price": 365000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "260, COLLIER ROW LANE",
+        "postcode": "RM5 3NJ",
+        "price": 415000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "5, LOWSHOE LANE",
+        "postcode": "RM5 2AA",
+        "price": 460000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, THE DRIVE, COLLIER ROW",
+        "postcode": "RM5 3TR",
+        "price": 485000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "40, GOBIONS AVENUE",
+        "postcode": "RM5 3SP",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, HIGHFIELD CLOSE",
+        "postcode": "RM5 3RX",
+        "price": 475000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "44, FRINTON ROAD",
+        "postcode": "RM5 2EP",
+        "price": 390000,
+        "dateOfTransfer": "2026-06-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
       {
         "address": "13, HILLRISE ROAD",
         "postcode": "RM5 3BG",
@@ -228,10 +311,34 @@
         "newBuild": false
       },
       {
+        "address": "HENHAM COURT, FLAT 8, MOWBRAYS ROAD",
+        "postcode": "RM5 3EN",
+        "price": 187500,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "5, ERITH CRESCENT",
         "postcode": "RM5 3JJ",
         "price": 221000,
         "dateOfTransfer": "2026-06-19",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, NORMAN CLOSE",
+        "postcode": "RM5 3EJ",
+        "price": 503000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "71, THE DRIVE, COLLIER ROW",
+        "postcode": "RM5 3UH",
+        "price": 500000,
+        "dateOfTransfer": "2026-06-17",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -284,9 +391,25 @@
         "newBuild": false
       },
       {
+        "address": "4, BROWNE CLOSE",
+        "postcode": "RM5 2HD",
+        "price": 290000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "18, OATES ROAD",
         "postcode": "RM5 2HT",
         "price": 450000,
+        "dateOfTransfer": "2026-05-26",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "13, LARCHWOOD CLOSE, COLLIER ROW",
+        "postcode": "RM5 3QX",
+        "price": 425000,
         "dateOfTransfer": "2026-05-26",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -300,26 +423,10 @@
         "newBuild": false
       },
       {
-        "address": "13, LARCHWOOD CLOSE, COLLIER ROW",
-        "postcode": "RM5 3QX",
-        "price": 425000,
-        "dateOfTransfer": "2026-05-26",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "15, WILTON DRIVE",
         "postcode": "RM5 3TJ",
         "price": 525000,
         "dateOfTransfer": "2026-05-26",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "148, CHARLOTTE GARDENS",
-        "postcode": "RM5 2PS",
-        "price": 385000,
-        "dateOfTransfer": "2026-05-15",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -329,6 +436,14 @@
         "price": 320000,
         "dateOfTransfer": "2026-05-15",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "148, CHARLOTTE GARDENS",
+        "postcode": "RM5 2PS",
+        "price": 385000,
+        "dateOfTransfer": "2026-05-15",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -372,6 +487,14 @@
         "newBuild": false
       },
       {
+        "address": "180, TURPIN AVENUE",
+        "postcode": "RM5 2HZ",
+        "price": 407500,
+        "dateOfTransfer": "2026-05-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "113, RIVERSDALE ROAD",
         "postcode": "RM5 2NR",
         "price": 247000,
@@ -404,16 +527,16 @@
         "newBuild": false
       },
       {
-        "address": "34, FRY CLOSE",
-        "postcode": "RM5 2QE",
+        "address": "17, WARDEN AVENUE",
+        "postcode": "RM5 2SP",
         "price": 445000,
         "dateOfTransfer": "2026-04-23",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "17, WARDEN AVENUE",
-        "postcode": "RM5 2SP",
+        "address": "34, FRY CLOSE",
+        "postcode": "RM5 2QE",
         "price": 445000,
         "dateOfTransfer": "2026-04-23",
         "propertyType": "Semi-detached",
@@ -425,14 +548,6 @@
         "price": 524000,
         "dateOfTransfer": "2026-04-20",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "16, WILTON DRIVE",
-        "postcode": "RM5 3TJ",
-        "price": 485000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -452,14 +567,6 @@
         "newBuild": false
       },
       {
-        "address": "76, HILLRISE ROAD",
-        "postcode": "RM5 3BQ",
-        "price": 395000,
-        "dateOfTransfer": "2026-04-17",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "50, LAWNS WAY",
         "postcode": "RM5 3TH",
         "price": 695000,
@@ -468,18 +575,26 @@
         "newBuild": false
       },
       {
+        "address": "76, HILLRISE ROAD",
+        "postcode": "RM5 3BQ",
+        "price": 395000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "16, WILTON DRIVE",
+        "postcode": "RM5 3TJ",
+        "price": 485000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "22, UDALL GARDENS",
         "postcode": "RM5 2JX",
         "price": 282500,
         "dateOfTransfer": "2026-04-13",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "SOUTHALL LODGE, 9, FLAT 13, WEMBLEY CLOSE, COLLIER ROW",
-        "postcode": "RM5 3FY",
-        "price": 101500,
-        "dateOfTransfer": "2026-04-02",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -500,6 +615,22 @@
         "newBuild": false
       },
       {
+        "address": "SOUTHALL LODGE, 9, FLAT 13, WEMBLEY CLOSE, COLLIER ROW",
+        "postcode": "RM5 3FY",
+        "price": 101500,
+        "dateOfTransfer": "2026-04-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "18, ASHVALE GARDENS",
+        "postcode": "RM5 3QA",
+        "price": 392000,
+        "dateOfTransfer": "2026-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "7, BAMFORD WAY",
         "postcode": "RM5 2HS",
         "price": 405000,
@@ -511,14 +642,6 @@
         "address": "3, MOWBRAYS ROAD",
         "postcode": "RM5 3ET",
         "price": 513000,
-        "dateOfTransfer": "2026-03-27",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "18, ASHVALE GARDENS",
-        "postcode": "RM5 3QA",
-        "price": 392000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -537,6 +660,14 @@
         "price": 370000,
         "dateOfTransfer": "2026-03-25",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, MERLIN GARDENS",
+        "postcode": "RM5 3YD",
+        "price": 323000,
+        "dateOfTransfer": "2026-03-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -596,6 +727,14 @@
         "newBuild": false
       },
       {
+        "address": "54, BOXMOOR ROAD",
+        "postcode": "RM5 2SJ",
+        "price": 450000,
+        "dateOfTransfer": "2026-03-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "14, LITTEN CLOSE, COLLIER ROW",
         "postcode": "RM5 2LG",
         "price": 510000,
@@ -604,11 +743,11 @@
         "newBuild": false
       },
       {
-        "address": "54, BOXMOOR ROAD",
-        "postcode": "RM5 2SJ",
-        "price": 450000,
+        "address": "24A, ERITH CRESCENT",
+        "postcode": "RM5 3JP",
+        "price": 260000,
         "dateOfTransfer": "2026-03-06",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -660,6 +799,14 @@
         "newBuild": false
       },
       {
+        "address": "5A, COLLIER ROW ROAD",
+        "postcode": "RM5 3NP",
+        "price": 110000,
+        "dateOfTransfer": "2026-02-23",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "30, BERKELEY AVENUE",
         "postcode": "RM5 3TA",
         "price": 457500,
@@ -684,6 +831,14 @@
         "newBuild": false
       },
       {
+        "address": "101, UDALL GARDENS",
+        "postcode": "RM5 2LA",
+        "price": 400000,
+        "dateOfTransfer": "2026-02-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "102, CLOCKHOUSE LANE",
         "postcode": "RM5 3QT",
         "price": 575000,
@@ -697,6 +852,22 @@
         "price": 555000,
         "dateOfTransfer": "2026-02-17",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "70, FAIRCROSS AVENUE",
+        "postcode": "RM5 3UB",
+        "price": 425000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "59, HILLFOOT AVENUE",
+        "postcode": "RM5 3LJ",
+        "price": 400000,
+        "dateOfTransfer": "2026-02-13",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1092,6 +1263,14 @@
         "newBuild": false
       },
       {
+        "address": "50, FRINTON ROAD",
+        "postcode": "RM5 2ER",
+        "price": 460000,
+        "dateOfTransfer": "2025-11-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "25, LARCHWOOD AVENUE",
         "postcode": "RM5 2QL",
         "price": 585000,
@@ -1164,14 +1343,6 @@
         "newBuild": false
       },
       {
-        "address": "48, LARCHWOOD AVENUE",
-        "postcode": "RM5 2QJ",
-        "price": 417440,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "42, BARTLOW GARDENS",
         "postcode": "RM5 3TX",
         "price": 474000,
@@ -1185,6 +1356,14 @@
         "price": 175000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48, LARCHWOOD AVENUE",
+        "postcode": "RM5 2QJ",
+        "price": 417440,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1228,17 +1407,17 @@
         "newBuild": false
       },
       {
-        "address": "4, HOLLYBUSH CLOSE",
-        "postcode": "RM5 3GQ",
-        "price": 440000,
+        "address": "102, HILLFOOT ROAD, COLLIER ROW",
+        "postcode": "RM5 3LS",
+        "price": 515000,
         "dateOfTransfer": "2025-10-23",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
-        "address": "102, HILLFOOT ROAD, COLLIER ROW",
-        "postcode": "RM5 3LS",
-        "price": 515000,
+        "address": "4, HOLLYBUSH CLOSE",
+        "postcode": "RM5 3GQ",
+        "price": 440000,
         "dateOfTransfer": "2025-10-23",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1260,6 +1439,14 @@
         "newBuild": false
       },
       {
+        "address": "33, MAIDSTONE AVENUE",
+        "postcode": "RM5 3DB",
+        "price": 471500,
+        "dateOfTransfer": "2025-10-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "3, WILLIAM CLOSE, COLLIER ROW",
         "postcode": "RM5 3EX",
         "price": 375000,
@@ -1268,10 +1455,10 @@
         "newBuild": false
       },
       {
-        "address": "33, MAIDSTONE AVENUE",
-        "postcode": "RM5 3DB",
-        "price": 471500,
-        "dateOfTransfer": "2025-10-17",
+        "address": "163, COLLIER ROW LANE",
+        "postcode": "RM5 3ED",
+        "price": 235000,
+        "dateOfTransfer": "2025-10-16",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1284,9 +1471,9 @@
         "newBuild": false
       },
       {
-        "address": "163, COLLIER ROW LANE",
-        "postcode": "RM5 3ED",
-        "price": 235000,
+        "address": "42, RIVERSDALE ROAD",
+        "postcode": "RM5 2NP",
+        "price": 435000,
         "dateOfTransfer": "2025-10-16",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1316,19 +1503,19 @@
         "newBuild": false
       },
       {
-        "address": "14, LODGE LANE",
-        "postcode": "RM5 2EJ",
-        "price": 555000,
-        "dateOfTransfer": "2025-10-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "2, DUNSTER CLOSE",
         "postcode": "RM5 3AT",
         "price": 460000,
         "dateOfTransfer": "2025-10-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, LODGE LANE",
+        "postcode": "RM5 2EJ",
+        "price": 555000,
+        "dateOfTransfer": "2025-10-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1340,6 +1527,14 @@
         "newBuild": false
       },
       {
+        "address": "TAZ HOUSE, 92, FLAT 1, THE DRIVE, COLLIER ROW",
+        "postcode": "RM5 3UH",
+        "price": 230000,
+        "dateOfTransfer": "2025-10-09",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "19, GELSTHORPE ROAD",
         "postcode": "RM5 2NB",
         "price": 450000,
@@ -1348,11 +1543,11 @@
         "newBuild": false
       },
       {
-        "address": "TAZ HOUSE, 92, FLAT 1, THE DRIVE, COLLIER ROW",
-        "postcode": "RM5 3UH",
-        "price": 230000,
+        "address": "277, COLLIER ROW LANE",
+        "postcode": "RM5 3NH",
+        "price": 406000,
         "dateOfTransfer": "2025-10-09",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1372,6 +1567,14 @@
         "newBuild": false
       },
       {
+        "address": "96, CLOCKHOUSE LANE",
+        "postcode": "RM5 3QT",
+        "price": 585000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "165, TURPIN AVENUE",
         "postcode": "RM5 2LT",
         "price": 196000,
@@ -1380,11 +1583,11 @@
         "newBuild": false
       },
       {
-        "address": "96, CLOCKHOUSE LANE",
-        "postcode": "RM5 3QT",
-        "price": 585000,
+        "address": "49, BELLE VUE ROAD",
+        "postcode": "RM5 3SB",
+        "price": 440000,
         "dateOfTransfer": "2025-10-06",
-        "propertyType": "Semi-detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1412,6 +1615,14 @@
         "newBuild": false
       },
       {
+        "address": "124, LODGE LANE",
+        "postcode": "RM5 2ET",
+        "price": 485000,
+        "dateOfTransfer": "2025-10-01",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "6, FERNDALE ROAD",
         "postcode": "RM5 3ER",
         "price": 457500,
@@ -1420,11 +1631,11 @@
         "newBuild": false
       },
       {
-        "address": "124, LODGE LANE",
-        "postcode": "RM5 2ET",
-        "price": 485000,
-        "dateOfTransfer": "2025-10-01",
-        "propertyType": "Semi-detached",
+        "address": "24, LULWORTH DRIVE",
+        "postcode": "RM5 2UA",
+        "price": 265000,
+        "dateOfTransfer": "2025-09-30",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1444,11 +1655,11 @@
         "newBuild": false
       },
       {
-        "address": "24, LULWORTH DRIVE",
-        "postcode": "RM5 2UA",
-        "price": 265000,
-        "dateOfTransfer": "2025-09-30",
-        "propertyType": "Flat/Maisonette",
+        "address": "51, MOWBRAYS ROAD",
+        "postcode": "RM5 3EL",
+        "price": 460000,
+        "dateOfTransfer": "2025-09-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1460,11 +1671,11 @@
         "newBuild": false
       },
       {
-        "address": "51, MOWBRAYS ROAD",
-        "postcode": "RM5 3EL",
-        "price": 460000,
-        "dateOfTransfer": "2025-09-29",
-        "propertyType": "Terraced",
+        "address": "161, CHASE CROSS ROAD",
+        "postcode": "RM5 3YR",
+        "price": 260000,
+        "dateOfTransfer": "2025-09-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1473,14 +1684,6 @@
         "price": 419000,
         "dateOfTransfer": "2025-09-26",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "161, CHASE CROSS ROAD",
-        "postcode": "RM5 3YR",
-        "price": 260000,
-        "dateOfTransfer": "2025-09-26",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1548,9 +1751,9 @@
         "newBuild": false
       },
       {
-        "address": "4, OAKS AVENUE",
-        "postcode": "RM5 3BS",
-        "price": 439000,
+        "address": "26, CARTER DRIVE",
+        "postcode": "RM5 2PD",
+        "price": 470000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1564,19 +1767,11 @@
         "newBuild": false
       },
       {
-        "address": "26, CARTER DRIVE",
-        "postcode": "RM5 2PD",
-        "price": 470000,
+        "address": "4, OAKS AVENUE",
+        "postcode": "RM5 3BS",
+        "price": 439000,
         "dateOfTransfer": "2025-09-12",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "1B, MOWBRAYS ROAD",
-        "postcode": "RM5 3ET",
-        "price": 315000,
-        "dateOfTransfer": "2025-09-11",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1585,6 +1780,14 @@
         "price": 300000,
         "dateOfTransfer": "2025-09-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "1B, MOWBRAYS ROAD",
+        "postcode": "RM5 3ET",
+        "price": 315000,
+        "dateOfTransfer": "2025-09-11",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1612,11 +1815,11 @@
         "newBuild": false
       },
       {
-        "address": "34, UDALL GARDENS",
-        "postcode": "RM5 2JX",
-        "price": 260000,
+        "address": "50, CLOCKHOUSE LANE",
+        "postcode": "RM5 3QP",
+        "price": 577500,
         "dateOfTransfer": "2025-09-02",
-        "propertyType": "Flat/Maisonette",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1628,10 +1831,26 @@
         "newBuild": false
       },
       {
-        "address": "50, CLOCKHOUSE LANE",
-        "postcode": "RM5 3QP",
-        "price": 577500,
+        "address": "34, UDALL GARDENS",
+        "postcode": "RM5 2JX",
+        "price": 260000,
         "dateOfTransfer": "2025-09-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "26A, ERITH CRESCENT",
+        "postcode": "RM5 3JP",
+        "price": 250000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "267, CARTER DRIVE",
+        "postcode": "RM5 2TT",
+        "price": 457000,
+        "dateOfTransfer": "2025-08-29",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1639,14 +1858,6 @@
         "address": "85, KINGSHILL AVENUE",
         "postcode": "RM5 2SA",
         "price": 425000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "267, CARTER DRIVE",
-        "postcode": "RM5 2TT",
-        "price": 457000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -1676,11 +1887,11 @@
         "newBuild": false
       },
       {
-        "address": "26A, ERITH CRESCENT",
-        "postcode": "RM5 3JP",
-        "price": 250000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Flat/Maisonette",
+        "address": "16, JUDITH AVENUE",
+        "postcode": "RM5 2PL",
+        "price": 438000,
+        "dateOfTransfer": "2025-08-22",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1689,14 +1900,6 @@
         "price": 170000,
         "dateOfTransfer": "2025-08-22",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "16, JUDITH AVENUE",
-        "postcode": "RM5 2PL",
-        "price": 438000,
-        "dateOfTransfer": "2025-08-22",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1820,6 +2023,14 @@
         "newBuild": false
       },
       {
+        "address": "16, RAY ROAD",
+        "postcode": "RM5 2HB",
+        "price": 450000,
+        "dateOfTransfer": "2025-07-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "20, CHARLOTTE GARDENS",
         "postcode": "RM5 2ED",
         "price": 400000,
@@ -1833,14 +2044,6 @@
         "price": 330000,
         "dateOfTransfer": "2025-07-29",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "16, RAY ROAD",
-        "postcode": "RM5 2HB",
-        "price": 450000,
-        "dateOfTransfer": "2025-07-29",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2316,17 +2519,17 @@
         "newBuild": false
       },
       {
-        "address": "70, MOUNT PLEASANT ROAD",
-        "postcode": "RM5 3YL",
-        "price": 490000,
+        "address": "228, CHASE CROSS ROAD",
+        "postcode": "RM5 3XP",
+        "price": 260000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "HITCHMAN HOUSE, 19A, FLAT 1, COLLIER ROW ROAD",
-        "postcode": "RM5 3NQ",
-        "price": 252000,
+        "address": "4A, FIRBANK ROAD, COLLIER ROW",
+        "postcode": "RM5 2TP",
+        "price": 235000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2348,6 +2551,14 @@
         "newBuild": false
       },
       {
+        "address": "70, MOUNT PLEASANT ROAD",
+        "postcode": "RM5 3YL",
+        "price": 490000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "50, THE DRIVE, COLLIER ROW",
         "postcode": "RM5 3TR",
         "price": 460000,
@@ -2356,35 +2567,11 @@
         "newBuild": false
       },
       {
-        "address": "228, CHASE CROSS ROAD",
-        "postcode": "RM5 3XP",
-        "price": 260000,
+        "address": "HITCHMAN HOUSE, 19A, FLAT 1, COLLIER ROW ROAD",
+        "postcode": "RM5 3NQ",
+        "price": 252000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "4A, FIRBANK ROAD, COLLIER ROW",
-        "postcode": "RM5 2TP",
-        "price": 235000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "143, TURPIN AVENUE",
-        "postcode": "RM5 2LU",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "31, LAWNS WAY",
-        "postcode": "RM5 3TT",
-        "price": 480000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2399,6 +2586,22 @@
         "address": "75, HAINAULT ROAD",
         "postcode": "RM5 3AD",
         "price": 395000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "143, TURPIN AVENUE",
+        "postcode": "RM5 2LU",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "31, LAWNS WAY",
+        "postcode": "RM5 3TT",
+        "price": 480000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2460,11 +2663,11 @@
         "newBuild": false
       },
       {
-        "address": "3, SUNNY MEWS",
-        "postcode": "RM5 3PN",
-        "price": 490000,
+        "address": "84, BELLE VUE ROAD",
+        "postcode": "RM5 3AZ",
+        "price": 415000,
         "dateOfTransfer": "2025-03-25",
-        "propertyType": "Detached",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2484,25 +2687,25 @@
         "newBuild": false
       },
       {
-        "address": "84, BELLE VUE ROAD",
-        "postcode": "RM5 3AZ",
-        "price": 415000,
+        "address": "3, SUNNY MEWS",
+        "postcode": "RM5 3PN",
+        "price": 490000,
         "dateOfTransfer": "2025-03-25",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, KINGSHILL AVENUE",
-        "postcode": "RM5 2SD",
-        "price": 492000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Semi-detached",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
         "address": "60, BOXMOOR ROAD",
         "postcode": "RM5 2SJ",
         "price": 490000,
+        "dateOfTransfer": "2025-03-24",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "12, KINGSHILL AVENUE",
+        "postcode": "RM5 2SD",
+        "price": 492000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2548,14 +2751,6 @@
         "newBuild": false
       },
       {
-        "address": "27, CLITHEROE ROAD",
-        "postcode": "RM5 2ST",
-        "price": 452000,
-        "dateOfTransfer": "2025-03-20",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "11, FULLERS CLOSE",
         "postcode": "RM5 3JS",
         "price": 385000,
@@ -2580,11 +2775,11 @@
         "newBuild": false
       },
       {
-        "address": "18, AVELON ROAD",
-        "postcode": "RM5 3XX",
-        "price": 390000,
+        "address": "27, CLITHEROE ROAD",
+        "postcode": "RM5 2ST",
+        "price": 452000,
         "dateOfTransfer": "2025-03-20",
-        "propertyType": "Detached",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2593,6 +2788,14 @@
         "price": 450000,
         "dateOfTransfer": "2025-03-20",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "18, AVELON ROAD",
+        "postcode": "RM5 3XX",
+        "price": 390000,
+        "dateOfTransfer": "2025-03-20",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -2628,22 +2831,6 @@
         "newBuild": false
       },
       {
-        "address": "67, HILLFOOT ROAD, COLLIER ROW",
-        "postcode": "RM5 3LR",
-        "price": 485000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "22, LYNWOOD DRIVE",
-        "postcode": "RM5 2RA",
-        "price": 385000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "53, HIGHFIELD ROAD",
         "postcode": "RM5 3SA",
         "price": 460000,
@@ -2657,6 +2844,22 @@
         "price": 460000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "67, HILLFOOT ROAD, COLLIER ROW",
+        "postcode": "RM5 3LR",
+        "price": 485000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "22, LYNWOOD DRIVE",
+        "postcode": "RM5 2RA",
+        "price": 385000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2684,19 +2887,19 @@
         "newBuild": false
       },
       {
-        "address": "46, DOMINION DRIVE",
-        "postcode": "RM5 2QP",
-        "price": 500000,
-        "dateOfTransfer": "2025-03-13",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "4, FELSTEAD ROAD",
         "postcode": "RM5 3RH",
         "price": 525000,
         "dateOfTransfer": "2025-03-13",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "46, DOMINION DRIVE",
+        "postcode": "RM5 2QP",
+        "price": 500000,
+        "dateOfTransfer": "2025-03-13",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2740,22 +2943,6 @@
         "newBuild": false
       },
       {
-        "address": "20, AVELON ROAD",
-        "postcode": "RM5 3XX",
-        "price": 425000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
-        "address": "133, TURPIN AVENUE",
-        "postcode": "RM5 2LU",
-        "price": 450000,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "2, CLITHEROE ROAD",
         "postcode": "RM5 2ST",
         "price": 382000,
@@ -2772,18 +2959,26 @@
         "newBuild": false
       },
       {
-        "address": "11, NORMAN CLOSE",
-        "postcode": "RM5 3EJ",
-        "price": 471000,
-        "dateOfTransfer": "2025-02-27",
+        "address": "133, TURPIN AVENUE",
+        "postcode": "RM5 2LU",
+        "price": 450000,
+        "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "1, PENN GARDENS",
-        "postcode": "RM5 2JF",
-        "price": 272000,
-        "dateOfTransfer": "2025-02-26",
+        "address": "20, AVELON ROAD",
+        "postcode": "RM5 3XX",
+        "price": 425000,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "11, NORMAN CLOSE",
+        "postcode": "RM5 3EJ",
+        "price": 471000,
+        "dateOfTransfer": "2025-02-27",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -2793,6 +2988,14 @@
         "price": 435000,
         "dateOfTransfer": "2025-02-26",
         "propertyType": "Detached",
+        "newBuild": false
+      },
+      {
+        "address": "1, PENN GARDENS",
+        "postcode": "RM5 2JF",
+        "price": 272000,
+        "dateOfTransfer": "2025-02-26",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2932,19 +3135,19 @@
         "newBuild": false
       },
       {
-        "address": "141, CHASE CROSS ROAD",
-        "postcode": "RM5 3YS",
-        "price": 530000,
-        "dateOfTransfer": "2025-02-03",
-        "propertyType": "Detached",
-        "newBuild": false
-      },
-      {
         "address": "29, RAVENSWOOD CLOSE",
         "postcode": "RM5 2UD",
         "price": 444000,
         "dateOfTransfer": "2025-02-03",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "141, CHASE CROSS ROAD",
+        "postcode": "RM5 3YS",
+        "price": 530000,
+        "dateOfTransfer": "2025-02-03",
+        "propertyType": "Detached",
         "newBuild": false
       },
       {
@@ -3004,19 +3207,19 @@
         "newBuild": false
       },
       {
-        "address": "28, MAIDSTONE AVENUE",
-        "postcode": "RM5 3DB",
-        "price": 625000,
-        "dateOfTransfer": "2025-01-24",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "9, WILLIAM CLOSE, COLLIER ROW",
         "postcode": "RM5 3EX",
         "price": 590000,
         "dateOfTransfer": "2025-01-24",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "28, MAIDSTONE AVENUE",
+        "postcode": "RM5 3DB",
+        "price": 625000,
+        "dateOfTransfer": "2025-01-24",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3076,6 +3279,14 @@
         "newBuild": false
       },
       {
+        "address": "82, DOMINION DRIVE",
+        "postcode": "RM5 2QP",
+        "price": 470000,
+        "dateOfTransfer": "2025-01-06",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "52, HILLFOOT ROAD, COLLIER ROW",
         "postcode": "RM5 3LL",
         "price": 537500,
@@ -3092,14 +3303,6 @@
         "newBuild": false
       },
       {
-        "address": "82, DOMINION DRIVE",
-        "postcode": "RM5 2QP",
-        "price": 470000,
-        "dateOfTransfer": "2025-01-06",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "126, CARTER DRIVE",
         "postcode": "RM5 2TT",
         "price": 475000,
@@ -3108,8 +3311,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 426569,
-    "medianPrice": 439000
+    "averagePrice": 425612,
+    "medianPrice": 438000
   },
   "representatives": {
     "representatives": [

@@ -3,8 +3,8 @@
   "slug": "wc2b",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.51493676000001,
-  "longitude": -0.1204733657142858,
+  "latitude": 51.514969089171984,
+  "longitude": -0.12065838853503186,
   "wards": [
     "Clerkenwell",
     "Holborn & Covent Garden",
@@ -46,7 +46,8 @@
         "urn": "100041",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "23/04/2025",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Macklin Street, Covent Garden, London",
         "postcode": "WC2B 5NA",
         "numberOfPupils": 133,
@@ -57,7 +58,8 @@
         "urn": "101127",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "12/11/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "118 Drury Lane, Covent Garden, LONDON",
         "postcode": "WC2B 5SU",
         "numberOfPupils": 193,
@@ -69,6 +71,7 @@
         "phaseOfEducation": "16 plus",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Keeley Street, Covent Garden, London",
         "postcode": "WC2B 4BA",
         "numberOfPupils": null,
@@ -80,97 +83,105 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 5541,
-        "violentCrimes": 1113,
-        "propertyCrimes": 3663
+        "totalCrimes": 5521,
+        "violentCrimes": 1109,
+        "propertyCrimes": 3652
       },
       {
         "month": "2025-08",
-        "totalCrimes": 5185,
-        "violentCrimes": 1116,
-        "propertyCrimes": 3197
+        "totalCrimes": 5163,
+        "violentCrimes": 1111,
+        "propertyCrimes": 3184
       },
       {
         "month": "2025-09",
-        "totalCrimes": 4989,
-        "violentCrimes": 1173,
-        "propertyCrimes": 3114
+        "totalCrimes": 4969,
+        "violentCrimes": 1171,
+        "propertyCrimes": 3093
       },
       {
         "month": "2025-10",
-        "totalCrimes": 5554,
+        "totalCrimes": 5522,
         "violentCrimes": 1117,
-        "propertyCrimes": 3678
+        "propertyCrimes": 3649
       },
       {
         "month": "2025-11",
-        "totalCrimes": 6307,
-        "violentCrimes": 1142,
-        "propertyCrimes": 4431
+        "totalCrimes": 6283,
+        "violentCrimes": 1138,
+        "propertyCrimes": 4412
       },
       {
         "month": "2025-12",
-        "totalCrimes": 6127,
-        "violentCrimes": 1101,
-        "propertyCrimes": 4268
+        "totalCrimes": 6100,
+        "violentCrimes": 1102,
+        "propertyCrimes": 4241
       },
       {
         "month": "2026-01",
-        "totalCrimes": 4870,
-        "violentCrimes": 1003,
-        "propertyCrimes": 3176
+        "totalCrimes": 4829,
+        "violentCrimes": 992,
+        "propertyCrimes": 3149
       },
       {
         "month": "2026-02",
-        "totalCrimes": 4579,
-        "violentCrimes": 875,
-        "propertyCrimes": 3024
+        "totalCrimes": 4568,
+        "violentCrimes": 870,
+        "propertyCrimes": 3020
       },
       {
         "month": "2026-03",
-        "totalCrimes": 4482,
-        "violentCrimes": 975,
-        "propertyCrimes": 2762
+        "totalCrimes": 4464,
+        "violentCrimes": 971,
+        "propertyCrimes": 2747
       },
       {
         "month": "2026-04",
-        "totalCrimes": 4721,
-        "violentCrimes": 1058,
-        "propertyCrimes": 2911
+        "totalCrimes": 4701,
+        "violentCrimes": 1057,
+        "propertyCrimes": 2895
       },
       {
         "month": "2026-05",
-        "totalCrimes": 4597,
+        "totalCrimes": 4581,
         "violentCrimes": 1102,
-        "propertyCrimes": 2737
+        "propertyCrimes": 2721
       },
       {
         "month": "2026-06",
-        "totalCrimes": 4576,
-        "violentCrimes": 1060,
-        "propertyCrimes": 2794
+        "totalCrimes": 4561,
+        "violentCrimes": 1056,
+        "propertyCrimes": 2784
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 6939,
-      "bicycle-theft": 858,
-      "burglary": 1388,
-      "criminal-damage-arson": 1027,
-      "drugs": 1750,
-      "other-theft": 13408,
-      "possession-of-weapons": 225,
-      "public-order": 2507,
-      "robbery": 2200,
-      "shoplifting": 5843,
-      "theft-from-the-person": 16361,
-      "vehicle-crime": 870,
-      "violent-crime": 7903,
+      "anti-social-behaviour": 6922,
+      "bicycle-theft": 832,
+      "burglary": 1392,
+      "criminal-damage-arson": 1017,
+      "drugs": 1748,
+      "other-theft": 13400,
+      "possession-of-weapons": 223,
+      "public-order": 2503,
+      "robbery": 2184,
+      "shoplifting": 5690,
+      "theft-from-the-person": 16335,
+      "vehicle-crime": 881,
+      "violent-crime": 7886,
       "other-crime": 249
     },
-    "totalLast12Months": 61528
+    "totalLast12Months": 61262
   },
   "property": {
     "sales": [
+      {
+        "address": "10, FLAT 3, MACKLIN STREET",
+        "postcode": "WC2B 5NF",
+        "price": 2300000,
+        "dateOfTransfer": "2026-03-16",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "22, GREAT QUEEN STREET",
         "postcode": "WC2B 5BH",
@@ -364,8 +375,8 @@
         "newBuild": false
       }
     ],
-    "averagePrice": 4381083,
-    "medianPrice": 1137500
+    "averagePrice": 4297840,
+    "medianPrice": 1375000
   },
   "representatives": {
     "representatives": [

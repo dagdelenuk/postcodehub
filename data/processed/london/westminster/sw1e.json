@@ -3,8 +3,8 @@
   "slug": "sw1e",
   "city": "London",
   "borough": "Westminster",
-  "latitude": 51.4980835909091,
-  "longitude": -0.13982122727272725,
+  "latitude": 51.498305320512834,
+  "longitude": -0.13994358974358972,
   "wards": [
     "Nine Elms",
     "Pimlico North",
@@ -57,8 +57,9 @@
         "name": "Westminster City School",
         "urn": "138312",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "23/03/2022",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "55 Palace Street, London",
         "postcode": "SW1E 5HJ",
         "numberOfPupils": 790,
@@ -70,6 +71,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Westminster Chapel, Buckingham Gate, London",
         "postcode": "SW1E 6BS",
         "numberOfPupils": null,
@@ -81,94 +83,94 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 2967,
-        "violentCrimes": 693,
-        "propertyCrimes": 1666
+        "totalCrimes": 3034,
+        "violentCrimes": 711,
+        "propertyCrimes": 1710
       },
       {
         "month": "2025-08",
-        "totalCrimes": 2843,
-        "violentCrimes": 669,
-        "propertyCrimes": 1509
+        "totalCrimes": 2913,
+        "violentCrimes": 687,
+        "propertyCrimes": 1553
       },
       {
         "month": "2025-09",
-        "totalCrimes": 2712,
-        "violentCrimes": 731,
-        "propertyCrimes": 1460
+        "totalCrimes": 2801,
+        "violentCrimes": 766,
+        "propertyCrimes": 1501
       },
       {
         "month": "2025-10",
-        "totalCrimes": 2837,
-        "violentCrimes": 699,
-        "propertyCrimes": 1568
+        "totalCrimes": 2947,
+        "violentCrimes": 730,
+        "propertyCrimes": 1639
       },
       {
         "month": "2025-11",
-        "totalCrimes": 2888,
-        "violentCrimes": 692,
-        "propertyCrimes": 1717
+        "totalCrimes": 2996,
+        "violentCrimes": 715,
+        "propertyCrimes": 1792
       },
       {
         "month": "2025-12",
-        "totalCrimes": 3170,
-        "violentCrimes": 727,
-        "propertyCrimes": 1910
+        "totalCrimes": 3255,
+        "violentCrimes": 736,
+        "propertyCrimes": 1979
       },
       {
         "month": "2026-01",
-        "totalCrimes": 2433,
-        "violentCrimes": 624,
-        "propertyCrimes": 1317
+        "totalCrimes": 2515,
+        "violentCrimes": 644,
+        "propertyCrimes": 1374
       },
       {
         "month": "2026-02",
-        "totalCrimes": 2159,
-        "violentCrimes": 514,
-        "propertyCrimes": 1214
+        "totalCrimes": 2219,
+        "violentCrimes": 532,
+        "propertyCrimes": 1250
       },
       {
         "month": "2026-03",
-        "totalCrimes": 2137,
-        "violentCrimes": 524,
-        "propertyCrimes": 1175
+        "totalCrimes": 2187,
+        "violentCrimes": 536,
+        "propertyCrimes": 1207
       },
       {
         "month": "2026-04",
-        "totalCrimes": 2136,
-        "violentCrimes": 568,
-        "propertyCrimes": 1091
+        "totalCrimes": 2171,
+        "violentCrimes": 577,
+        "propertyCrimes": 1111
       },
       {
         "month": "2026-05",
-        "totalCrimes": 2259,
-        "violentCrimes": 703,
-        "propertyCrimes": 1042
+        "totalCrimes": 2320,
+        "violentCrimes": 715,
+        "propertyCrimes": 1083
       },
       {
         "month": "2026-06",
-        "totalCrimes": 2319,
-        "violentCrimes": 669,
-        "propertyCrimes": 1148
+        "totalCrimes": 2371,
+        "violentCrimes": 685,
+        "propertyCrimes": 1173
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 5183,
-      "bicycle-theft": 285,
-      "burglary": 671,
-      "criminal-damage-arson": 757,
-      "drugs": 903,
-      "other-theft": 5217,
-      "possession-of-weapons": 173,
-      "public-order": 1578,
-      "robbery": 1061,
-      "shoplifting": 2109,
-      "theft-from-the-person": 6868,
-      "vehicle-crime": 910,
-      "violent-crime": 5001,
-      "other-crime": 144
+      "anti-social-behaviour": 5226,
+      "bicycle-theft": 286,
+      "burglary": 677,
+      "criminal-damage-arson": 771,
+      "drugs": 950,
+      "other-theft": 5451,
+      "possession-of-weapons": 174,
+      "public-order": 1626,
+      "robbery": 1099,
+      "shoplifting": 2120,
+      "theft-from-the-person": 7144,
+      "vehicle-crime": 923,
+      "violent-crime": 5135,
+      "other-crime": 147
     },
-    "totalLast12Months": 30860
+    "totalLast12Months": 31729
   },
   "property": {
     "sales": [
@@ -189,17 +191,17 @@
         "newBuild": false
       },
       {
-        "address": "20, FLAT 605, PALACE STREET",
-        "postcode": "SW1E 5BA",
-        "price": 1017500,
+        "address": "7, BUCKINGHAM GATE",
+        "postcode": "SW1E 6JP",
+        "price": 775000,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "7, BUCKINGHAM GATE",
-        "postcode": "SW1E 6JP",
-        "price": 775000,
+        "address": "20, FLAT 605, PALACE STREET",
+        "postcode": "SW1E 5BA",
+        "price": 1017500,
         "dateOfTransfer": "2025-12-19",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -245,6 +247,22 @@
         "newBuild": false
       },
       {
+        "address": "16, FLAT 3, WARWICK ROW",
+        "postcode": "SW1E 5ER",
+        "price": 925000,
+        "dateOfTransfer": "2025-10-15",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "NOVA NORTH, 11, FLOOR 8, BRESSENDEN PLACE",
+        "postcode": "SW1E 5BY",
+        "price": 575000,
+        "dateOfTransfer": "2025-10-02",
+        "propertyType": "Other",
+        "newBuild": false
+      },
+      {
         "address": "FLAT 1, 33, CATHERINE PLACE",
         "postcode": "SW1E 6DY",
         "price": 1550000,
@@ -285,6 +303,14 @@
         "newBuild": false
       },
       {
+        "address": "4, APARTMENT 4, CASTLE LANE",
+        "postcode": "SW1E 6BG",
+        "price": 3121197,
+        "dateOfTransfer": "2025-05-12",
+        "propertyType": "Other",
+        "newBuild": true
+      },
+      {
         "address": "24, WILFRED STREET",
         "postcode": "SW1E 6PL",
         "price": 1650000,
@@ -317,8 +343,8 @@
         "newBuild": true
       }
     ],
-    "averagePrice": 3067324,
-    "medianPrice": 1091250
+    "averagePrice": 2849192,
+    "medianPrice": 1017500
   },
   "representatives": {
     "representatives": [

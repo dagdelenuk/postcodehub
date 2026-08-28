@@ -3,8 +3,8 @@
   "slug": "rm8",
   "city": "London",
   "borough": "Barking and Dagenham",
-  "latitude": 51.557134151618435,
-  "longitude": 0.12933595059625214,
+  "latitude": 51.55701117013885,
+  "longitude": 0.12909858506944447,
   "wards": [
     "Becontree",
     "Eastbrook & Rush Green",
@@ -183,6 +183,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Davington Road, Dagenham",
         "postcode": "RM8 2LL",
         "numberOfPupils": 223,
@@ -192,8 +193,9 @@
         "name": "Manor Primary School",
         "urn": "101193",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "13/03/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "40 Scholars Way, Dagenham",
         "postcode": "RM8 2FL",
         "numberOfPupils": 1135,
@@ -205,6 +207,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Grafton Primary School, Grafton Road, Dagenham",
         "postcode": "RM8 3EX",
         "numberOfPupils": 892,
@@ -214,8 +217,9 @@
         "name": "Valence Primary School",
         "urn": "101222",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "12/06/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Bonham Road, Dagenham",
         "postcode": "RM8 3AR",
         "numberOfPupils": 848,
@@ -225,8 +229,9 @@
         "name": "Henry Green Primary School",
         "urn": "101229",
         "phaseOfEducation": "Primary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "01/12/2021",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Green Lane, Dagenham",
         "postcode": "RM8 1UR",
         "numberOfPupils": 460,
@@ -237,7 +242,8 @@
         "urn": "101231",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "18/07/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Stevens Road, Dagenham",
         "postcode": "RM8 2QR",
         "numberOfPupils": 458,
@@ -248,7 +254,8 @@
         "urn": "101245",
         "phaseOfEducation": "All-through",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "22/11/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Gosfield Road, Dagenham",
         "postcode": "RM8 1JU",
         "numberOfPupils": 3231,
@@ -259,7 +266,8 @@
         "urn": "101247",
         "phaseOfEducation": "Secondary",
         "ofstedRating": "Outstanding",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "01/05/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Terling Road, Wood Lane, Dagenham",
         "postcode": "RM8 1JT",
         "numberOfPupils": 1345,
@@ -269,8 +277,9 @@
         "name": "Mayfield School",
         "urn": "102858",
         "phaseOfEducation": "Secondary",
-        "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedRating": "Good",
+        "ofstedLastInspection": "17/04/2024",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Pedley Road, Dagenham",
         "postcode": "RM8 1XE",
         "numberOfPupils": 1790,
@@ -281,7 +290,8 @@
         "urn": "140687",
         "phaseOfEducation": "Primary",
         "ofstedRating": "Good",
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "28/03/2023",
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Ivinghoe Road, Dagenham",
         "postcode": "RM8 2NB",
         "numberOfPupils": 294,
@@ -292,7 +302,8 @@
         "urn": "147330",
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
-        "ofstedLastInspection": null,
+        "ofstedLastInspection": "24/09/2024",
+        "ofstedNotJudgedUnderNewFramework": true,
         "address": "Bowes Road, Dagenham",
         "postcode": "RM8 2XJ",
         "numberOfPupils": 230,
@@ -304,6 +315,7 @@
         "phaseOfEducation": "Primary",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "Burnside Road, Dagenham",
         "postcode": "RM8 2JN",
         "numberOfPupils": 216,
@@ -315,6 +327,7 @@
         "phaseOfEducation": "Not applicable",
         "ofstedRating": null,
         "ofstedLastInspection": null,
+        "ofstedNotJudgedUnderNewFramework": false,
         "address": "195-211 Becontree Avenue, Dagenham",
         "postcode": "RM8 2UT",
         "numberOfPupils": null,
@@ -326,97 +339,217 @@
     "monthlyTrend": [
       {
         "month": "2025-07",
-        "totalCrimes": 672,
-        "violentCrimes": 271,
-        "propertyCrimes": 235
+        "totalCrimes": 676,
+        "violentCrimes": 272,
+        "propertyCrimes": 237
       },
       {
         "month": "2025-08",
-        "totalCrimes": 600,
-        "violentCrimes": 233,
-        "propertyCrimes": 208
+        "totalCrimes": 603,
+        "violentCrimes": 234,
+        "propertyCrimes": 210
       },
       {
         "month": "2025-09",
-        "totalCrimes": 565,
-        "violentCrimes": 248,
-        "propertyCrimes": 184
+        "totalCrimes": 567,
+        "violentCrimes": 249,
+        "propertyCrimes": 185
       },
       {
         "month": "2025-10",
-        "totalCrimes": 607,
-        "violentCrimes": 237,
-        "propertyCrimes": 225
+        "totalCrimes": 612,
+        "violentCrimes": 241,
+        "propertyCrimes": 226
       },
       {
         "month": "2025-11",
-        "totalCrimes": 508,
-        "violentCrimes": 218,
-        "propertyCrimes": 202
+        "totalCrimes": 511,
+        "violentCrimes": 220,
+        "propertyCrimes": 203
       },
       {
         "month": "2025-12",
-        "totalCrimes": 589,
-        "violentCrimes": 215,
-        "propertyCrimes": 229
+        "totalCrimes": 594,
+        "violentCrimes": 218,
+        "propertyCrimes": 230
       },
       {
         "month": "2026-01",
-        "totalCrimes": 524,
-        "violentCrimes": 232,
-        "propertyCrimes": 165
+        "totalCrimes": 528,
+        "violentCrimes": 235,
+        "propertyCrimes": 166
       },
       {
         "month": "2026-02",
-        "totalCrimes": 501,
+        "totalCrimes": 505,
         "violentCrimes": 218,
-        "propertyCrimes": 173
+        "propertyCrimes": 174
       },
       {
         "month": "2026-03",
-        "totalCrimes": 589,
-        "violentCrimes": 256,
-        "propertyCrimes": 225
+        "totalCrimes": 593,
+        "violentCrimes": 257,
+        "propertyCrimes": 226
       },
       {
         "month": "2026-04",
-        "totalCrimes": 550,
-        "violentCrimes": 239,
-        "propertyCrimes": 207
+        "totalCrimes": 556,
+        "violentCrimes": 241,
+        "propertyCrimes": 209
       },
       {
         "month": "2026-05",
-        "totalCrimes": 611,
-        "violentCrimes": 256,
-        "propertyCrimes": 195
+        "totalCrimes": 623,
+        "violentCrimes": 263,
+        "propertyCrimes": 199
       },
       {
         "month": "2026-06",
-        "totalCrimes": 571,
-        "violentCrimes": 274,
-        "propertyCrimes": 175
+        "totalCrimes": 575,
+        "violentCrimes": 277,
+        "propertyCrimes": 176
       }
     ],
     "categoryBreakdown": {
-      "anti-social-behaviour": 1198,
+      "anti-social-behaviour": 1199,
       "bicycle-theft": 44,
-      "burglary": 307,
-      "criminal-damage-arson": 343,
-      "drugs": 275,
-      "other-theft": 378,
+      "burglary": 309,
+      "criminal-damage-arson": 345,
+      "drugs": 284,
+      "other-theft": 383,
       "possession-of-weapons": 46,
-      "public-order": 335,
-      "robbery": 213,
+      "public-order": 339,
+      "robbery": 219,
       "shoplifting": 568,
-      "theft-from-the-person": 157,
-      "vehicle-crime": 626,
-      "violent-crime": 2303,
+      "theft-from-the-person": 161,
+      "vehicle-crime": 631,
+      "violent-crime": 2321,
       "other-crime": 94
     },
-    "totalLast12Months": 6887
+    "totalLast12Months": 6943
   },
   "property": {
     "sales": [
+      {
+        "address": "2, FULLER ROAD",
+        "postcode": "RM8 2TT",
+        "price": 425000,
+        "dateOfTransfer": "2026-07-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "109, TURNAGE ROAD",
+        "postcode": "RM8 1QT",
+        "price": 380000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "23, MARGERY ROAD",
+        "postcode": "RM8 3AX",
+        "price": 355000,
+        "dateOfTransfer": "2026-07-20",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "94, HAYDON ROAD",
+        "postcode": "RM8 3RR",
+        "price": 397000,
+        "dateOfTransfer": "2026-07-10",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "512, BECONTREE AVENUE",
+        "postcode": "RM8 3HR",
+        "price": 367000,
+        "dateOfTransfer": "2026-07-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ACADEMY COURT, 566, FLAT 126, LONGBRIDGE ROAD",
+        "postcode": "RM8 2AR",
+        "price": 245000,
+        "dateOfTransfer": "2026-07-02",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "158, BENTRY ROAD",
+        "postcode": "RM8 3PT",
+        "price": 380000,
+        "dateOfTransfer": "2026-07-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "158, BURNSIDE ROAD",
+        "postcode": "RM8 2JW",
+        "price": 378000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "34, BONHAM ROAD",
+        "postcode": "RM8 3BD",
+        "price": 405000,
+        "dateOfTransfer": "2026-06-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "61, BROMHALL ROAD",
+        "postcode": "RM8 2HN",
+        "price": 410000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "14, TENTERDEN ROAD",
+        "postcode": "RM8 1QA",
+        "price": 422000,
+        "dateOfTransfer": "2026-06-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "50, STONARD ROAD",
+        "postcode": "RM8 2HT",
+        "price": 393000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "90, CORNWORTHY ROAD",
+        "postcode": "RM8 2DF",
+        "price": 220000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "35, DOROTHY GARDENS",
+        "postcode": "RM8 2HR",
+        "price": 345000,
+        "dateOfTransfer": "2026-06-26",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "37, EASEBOURNE ROAD",
+        "postcode": "RM8 2DW",
+        "price": 234000,
+        "dateOfTransfer": "2026-06-25",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
       {
         "address": "EXETER HOUSE, 41, FLAT 403, ACADEMY WAY",
         "postcode": "RM8 2FP",
@@ -426,10 +559,50 @@
         "newBuild": false
       },
       {
+        "address": "WARWICK HOUSE, 2, FLAT 213, CHANCELLOR WAY",
+        "postcode": "RM8 2GP",
+        "price": 128250,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "11, STOCKDALE ROAD",
+        "postcode": "RM8 3PS",
+        "price": 370000,
+        "dateOfTransfer": "2026-06-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "53, AYLMER ROAD",
         "postcode": "RM8 3LP",
         "price": 370000,
         "dateOfTransfer": "2026-06-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "12, AGNES GARDENS",
+        "postcode": "RM8 3BS",
+        "price": 390000,
+        "dateOfTransfer": "2026-06-18",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "21, ALBERT ROAD",
+        "postcode": "RM8 1LR",
+        "price": 425000,
+        "dateOfTransfer": "2026-06-15",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "761, GREEN LANE",
+        "postcode": "RM8 1DB",
+        "price": 400000,
+        "dateOfTransfer": "2026-06-10",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -487,6 +660,14 @@
         "price": 392000,
         "dateOfTransfer": "2026-05-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "38, GREENWAY",
+        "postcode": "RM8 1UL",
+        "price": 555000,
+        "dateOfTransfer": "2026-05-27",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -594,17 +775,9 @@
         "newBuild": false
       },
       {
-        "address": "72, TEMPLE AVENUE",
-        "postcode": "RM8 1LS",
-        "price": 380000,
-        "dateOfTransfer": "2026-04-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "27, BLUNDEN CLOSE",
-        "postcode": "RM8 1YG",
-        "price": 240000,
+        "address": "12, STOCKDALE ROAD",
+        "postcode": "RM8 3PS",
+        "price": 410000,
         "dateOfTransfer": "2026-04-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -634,6 +807,22 @@
         "newBuild": false
       },
       {
+        "address": "27, BLUNDEN CLOSE",
+        "postcode": "RM8 1YG",
+        "price": 240000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "72, TEMPLE AVENUE",
+        "postcode": "RM8 1LS",
+        "price": 380000,
+        "dateOfTransfer": "2026-04-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "52, CAMPUS AVENUE",
         "postcode": "RM8 2FW",
         "price": 478000,
@@ -646,14 +835,6 @@
         "postcode": "RM8 1LN",
         "price": 155000,
         "dateOfTransfer": "2026-04-20",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "ACADEMY COURT, 566, FLAT 319, LONGBRIDGE ROAD",
-        "postcode": "RM8 2FF",
-        "price": 335000,
-        "dateOfTransfer": "2026-04-17",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
@@ -671,6 +852,14 @@
         "price": 507000,
         "dateOfTransfer": "2026-04-17",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "ACADEMY COURT, 566, FLAT 319, LONGBRIDGE ROAD",
+        "postcode": "RM8 2FF",
+        "price": 335000,
+        "dateOfTransfer": "2026-04-17",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -698,14 +887,6 @@
         "newBuild": false
       },
       {
-        "address": "18, CHARLECOTE ROAD",
-        "postcode": "RM8 3LB",
-        "price": 355000,
-        "dateOfTransfer": "2026-04-02",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "23, LICHFIELD ROAD",
         "postcode": "RM8 2AT",
         "price": 407000,
@@ -714,10 +895,10 @@
         "newBuild": false
       },
       {
-        "address": "4, ELLIS AVENUE",
-        "postcode": "RM8 1FF",
-        "price": 494000,
-        "dateOfTransfer": "2026-04-01",
+        "address": "18, CHARLECOTE ROAD",
+        "postcode": "RM8 3LB",
+        "price": 355000,
+        "dateOfTransfer": "2026-04-02",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -725,6 +906,14 @@
         "address": "167, BENTRY ROAD",
         "postcode": "RM8 3PL",
         "price": 380000,
+        "dateOfTransfer": "2026-04-01",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "4, ELLIS AVENUE",
+        "postcode": "RM8 1FF",
+        "price": 494000,
         "dateOfTransfer": "2026-04-01",
         "propertyType": "Terraced",
         "newBuild": false
@@ -762,17 +951,17 @@
         "newBuild": false
       },
       {
-        "address": "37, GROSVENOR ROAD",
-        "postcode": "RM8 1NP",
-        "price": 495000,
+        "address": "27, WARLEY AVENUE",
+        "postcode": "RM8 1JS",
+        "price": 420000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "27, WARLEY AVENUE",
-        "postcode": "RM8 1JS",
-        "price": 420000,
+        "address": "37, GROSVENOR ROAD",
+        "postcode": "RM8 1NP",
+        "price": 495000,
         "dateOfTransfer": "2026-03-27",
         "propertyType": "Terraced",
         "newBuild": false
@@ -802,17 +991,17 @@
         "newBuild": false
       },
       {
-        "address": "27, GORING GARDENS",
-        "postcode": "RM8 2AD",
-        "price": 375000,
+        "address": "138, VALENCE AVENUE",
+        "postcode": "RM8 1TL",
+        "price": 380000,
         "dateOfTransfer": "2026-03-19",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "138, VALENCE AVENUE",
-        "postcode": "RM8 1TL",
-        "price": 380000,
+        "address": "27, GORING GARDENS",
+        "postcode": "RM8 2AD",
+        "price": 375000,
         "dateOfTransfer": "2026-03-19",
         "propertyType": "Terraced",
         "newBuild": false
@@ -858,6 +1047,22 @@
         "newBuild": false
       },
       {
+        "address": "236, VALENCE AVENUE",
+        "postcode": "RM8 1TJ",
+        "price": 416000,
+        "dateOfTransfer": "2026-03-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "20, PURLAND CLOSE",
+        "postcode": "RM8 1AS",
+        "price": 385000,
+        "dateOfTransfer": "2026-02-27",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
         "address": "228, BENNETTS CASTLE LANE",
         "postcode": "RM8 3XP",
         "price": 250000,
@@ -882,19 +1087,19 @@
         "newBuild": false
       },
       {
-        "address": "20, PURLAND CLOSE",
-        "postcode": "RM8 1AS",
-        "price": 385000,
-        "dateOfTransfer": "2026-02-27",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "19, BUSHWAY",
         "postcode": "RM8 3XH",
         "price": 390000,
         "dateOfTransfer": "2026-02-27",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "CANTERBURY HOUSE, 1, FLAT 604, HONOUR GARDENS",
+        "postcode": "RM8 2GF",
+        "price": 390000,
+        "dateOfTransfer": "2026-02-26",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -978,6 +1183,14 @@
         "newBuild": false
       },
       {
+        "address": "65, GROSVENOR ROAD",
+        "postcode": "RM8 1NJ",
+        "price": 535000,
+        "dateOfTransfer": "2026-02-17",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "93, WHALEBONE LANE SOUTH",
         "postcode": "RM8 1AJ",
         "price": 302288,
@@ -1002,17 +1215,17 @@
         "newBuild": false
       },
       {
-        "address": "68, NEASHAM ROAD",
-        "postcode": "RM8 2LX",
-        "price": 423000,
+        "address": "13, CORIES CLOSE",
+        "postcode": "RM8 3DF",
+        "price": 430000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "13, CORIES CLOSE",
-        "postcode": "RM8 3DF",
-        "price": 430000,
+        "address": "68, NEASHAM ROAD",
+        "postcode": "RM8 2LX",
+        "price": 423000,
         "dateOfTransfer": "2026-02-13",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1050,6 +1263,14 @@
         "newBuild": false
       },
       {
+        "address": "95, GAINSBOROUGH ROAD",
+        "postcode": "RM8 2DP",
+        "price": 435000,
+        "dateOfTransfer": "2026-02-09",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "72, BABINGTON ROAD",
         "postcode": "RM8 2XP",
         "price": 367500,
@@ -1058,10 +1279,10 @@
         "newBuild": false
       },
       {
-        "address": "95, GAINSBOROUGH ROAD",
-        "postcode": "RM8 2DP",
-        "price": 435000,
-        "dateOfTransfer": "2026-02-09",
+        "address": "60, ILCHESTER ROAD",
+        "postcode": "RM8 2YU",
+        "price": 403000,
+        "dateOfTransfer": "2026-02-06",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1082,10 +1303,10 @@
         "newBuild": false
       },
       {
-        "address": "22, PLOWMAN WAY",
-        "postcode": "RM8 1YF",
-        "price": 380000,
-        "dateOfTransfer": "2026-02-03",
+        "address": "431, BECONTREE AVENUE",
+        "postcode": "RM8 3UH",
+        "price": 350000,
+        "dateOfTransfer": "2026-02-06",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1098,9 +1319,49 @@
         "newBuild": false
       },
       {
+        "address": "22, PLOWMAN WAY",
+        "postcode": "RM8 1YF",
+        "price": 380000,
+        "dateOfTransfer": "2026-02-03",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "9, BANNER LANE",
         "postcode": "RM8 1EN",
         "price": 430000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "24, PATRICK CRESCENT",
+        "postcode": "RM8 1EU",
+        "price": 440000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "51, GIBSON ROAD",
+        "postcode": "RM8 1YE",
+        "price": 306667,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "35, CLARIDGE ROAD",
+        "postcode": "RM8 1TT",
+        "price": 400000,
+        "dateOfTransfer": "2026-01-30",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "47, BONHAM ROAD",
+        "postcode": "RM8 3BD",
+        "price": 380000,
         "dateOfTransfer": "2026-01-30",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1122,38 +1383,6 @@
         "newBuild": false
       },
       {
-        "address": "35, CLARIDGE ROAD",
-        "postcode": "RM8 1TT",
-        "price": 400000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "47, BONHAM ROAD",
-        "postcode": "RM8 3BD",
-        "price": 380000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "51, GIBSON ROAD",
-        "postcode": "RM8 1YE",
-        "price": 306667,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "24, PATRICK CRESCENT",
-        "postcode": "RM8 1EU",
-        "price": 440000,
-        "dateOfTransfer": "2026-01-30",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "98, GRAFTON ROAD",
         "postcode": "RM8 3EX",
         "price": 371000,
@@ -1170,17 +1399,17 @@
         "newBuild": false
       },
       {
-        "address": "39, WINDING WAY",
-        "postcode": "RM8 2TD",
-        "price": 470000,
+        "address": "101, FITZSTEPHEN ROAD",
+        "postcode": "RM8 2YH",
+        "price": 377000,
         "dateOfTransfer": "2026-01-26",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "101, FITZSTEPHEN ROAD",
-        "postcode": "RM8 2YH",
-        "price": 377000,
+        "address": "39, WINDING WAY",
+        "postcode": "RM8 2TD",
+        "price": 470000,
         "dateOfTransfer": "2026-01-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1194,9 +1423,9 @@
         "newBuild": false
       },
       {
-        "address": "587, BECONTREE AVENUE",
-        "postcode": "RM8 3HP",
-        "price": 350000,
+        "address": "31, MILNER ROAD",
+        "postcode": "RM8 2PX",
+        "price": 305000,
         "dateOfTransfer": "2026-01-23",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1218,6 +1447,22 @@
         "newBuild": false
       },
       {
+        "address": "84, MARKYATE ROAD",
+        "postcode": "RM8 2LD",
+        "price": 355000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "587, BECONTREE AVENUE",
+        "postcode": "RM8 3HP",
+        "price": 350000,
+        "dateOfTransfer": "2026-01-23",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "16, HENNESSEY MEWS",
         "postcode": "RM8 1EL",
         "price": 510000,
@@ -1231,6 +1476,14 @@
         "price": 365000,
         "dateOfTransfer": "2026-01-19",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "60B, WHALEBONE LANE SOUTH",
+        "postcode": "RM8 1BB",
+        "price": 100000,
+        "dateOfTransfer": "2026-01-16",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1250,17 +1503,17 @@
         "newBuild": false
       },
       {
-        "address": "EXETER HOUSE, 41, FLAT 303, ACADEMY WAY",
-        "postcode": "RM8 2FP",
-        "price": 265000,
+        "address": "347A, BECONTREE AVENUE",
+        "postcode": "RM8 2UU",
+        "price": 245000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
-        "address": "347A, BECONTREE AVENUE",
-        "postcode": "RM8 2UU",
-        "price": 245000,
+        "address": "EXETER HOUSE, 41, FLAT 303, ACADEMY WAY",
+        "postcode": "RM8 2FP",
+        "price": 265000,
         "dateOfTransfer": "2026-01-14",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1298,6 +1551,14 @@
         "newBuild": false
       },
       {
+        "address": "332, BONHAM ROAD",
+        "postcode": "RM8 3BP",
+        "price": 385000,
+        "dateOfTransfer": "2026-01-05",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "874, GREEN LANE",
         "postcode": "RM8 1BX",
         "price": 510000,
@@ -1330,22 +1591,6 @@
         "newBuild": false
       },
       {
-        "address": "20, WARRINGTON ROAD",
-        "postcode": "RM8 3JH",
-        "price": 447500,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "133, MAYFIELD ROAD",
-        "postcode": "RM8 1XL",
-        "price": 448000,
-        "dateOfTransfer": "2025-12-19",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "48, BROMHALL ROAD",
         "postcode": "RM8 2BJ",
         "price": 350000,
@@ -1362,11 +1607,19 @@
         "newBuild": false
       },
       {
-        "address": "15, AMIDAS GARDENS",
-        "postcode": "RM8 2HX",
-        "price": 400000,
+        "address": "20, WARRINGTON ROAD",
+        "postcode": "RM8 3JH",
+        "price": 447500,
         "dateOfTransfer": "2025-12-19",
-        "propertyType": "Terraced",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "133, MAYFIELD ROAD",
+        "postcode": "RM8 1XL",
+        "price": 448000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1378,9 +1631,33 @@
         "newBuild": false
       },
       {
+        "address": "15, AMIDAS GARDENS",
+        "postcode": "RM8 2HX",
+        "price": 400000,
+        "dateOfTransfer": "2025-12-19",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "ANGLIA COURT, FLAT 22, SPRING CLOSE",
         "postcode": "RM8 1SW",
         "price": 120000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "OXFORD HOUSE, 2, FLAT 201, DEAN PATH",
+        "postcode": "RM8 2FA",
+        "price": 205000,
+        "dateOfTransfer": "2025-12-18",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "219, GRAFTON ROAD",
+        "postcode": "RM8 3QA",
+        "price": 200000,
         "dateOfTransfer": "2025-12-18",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -1399,14 +1676,6 @@
         "price": 440000,
         "dateOfTransfer": "2025-12-18",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "OXFORD HOUSE, 2, FLAT 201, DEAN PATH",
-        "postcode": "RM8 2FA",
-        "price": 205000,
-        "dateOfTransfer": "2025-12-18",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1506,14 +1775,6 @@
         "newBuild": false
       },
       {
-        "address": "50, PEDLEY ROAD",
-        "postcode": "RM8 1XE",
-        "price": 248000,
-        "dateOfTransfer": "2025-11-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "43, RUTLAND GARDENS",
         "postcode": "RM8 2HH",
         "price": 300000,
@@ -1527,6 +1788,14 @@
         "price": 327000,
         "dateOfTransfer": "2025-11-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "50, PEDLEY ROAD",
+        "postcode": "RM8 1XE",
+        "price": 248000,
+        "dateOfTransfer": "2025-11-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -1570,17 +1839,17 @@
         "newBuild": false
       },
       {
-        "address": "57, BABINGTON ROAD",
-        "postcode": "RM8 2XP",
-        "price": 360000,
+        "address": "9, PEACOCK CLOSE",
+        "postcode": "RM8 1YN",
+        "price": 400000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "9, PEACOCK CLOSE",
-        "postcode": "RM8 1YN",
-        "price": 400000,
+        "address": "57, BABINGTON ROAD",
+        "postcode": "RM8 2XP",
+        "price": 360000,
         "dateOfTransfer": "2025-11-21",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1658,10 +1927,10 @@
         "newBuild": false
       },
       {
-        "address": "9, HARROLD ROAD",
-        "postcode": "RM8 2ND",
-        "price": 503000,
-        "dateOfTransfer": "2025-11-07",
+        "address": "20, ALLEYNDALE ROAD",
+        "postcode": "RM8 2JQ",
+        "price": 360000,
+        "dateOfTransfer": "2025-11-10",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -1687,6 +1956,14 @@
         "price": 235000,
         "dateOfTransfer": "2025-11-07",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "9, HARROLD ROAD",
+        "postcode": "RM8 2ND",
+        "price": 503000,
+        "dateOfTransfer": "2025-11-07",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1738,19 +2015,19 @@
         "newBuild": false
       },
       {
-        "address": "55, BUSHGROVE ROAD",
-        "postcode": "RM8 3SL",
-        "price": 465000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
         "address": "ACADEMY COURT, 566, FLAT 402, LONGBRIDGE ROAD",
         "postcode": "RM8 2FF",
         "price": 535000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "55, BUSHGROVE ROAD",
+        "postcode": "RM8 3SL",
+        "price": 465000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -1770,14 +2047,6 @@
         "newBuild": false
       },
       {
-        "address": "284, PORTERS AVENUE",
-        "postcode": "RM8 2EQ",
-        "price": 650000,
-        "dateOfTransfer": "2025-10-31",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "BRUNEL HOUSE, 4, FLAT 203, CHANCELLOR WAY",
         "postcode": "RM8 2GQ",
         "price": 200000,
@@ -1791,6 +2060,14 @@
         "price": 420000,
         "dateOfTransfer": "2025-10-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "284, PORTERS AVENUE",
+        "postcode": "RM8 2EQ",
+        "price": 650000,
+        "dateOfTransfer": "2025-10-31",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -1850,6 +2127,14 @@
         "newBuild": false
       },
       {
+        "address": "12, ILCHESTER ROAD",
+        "postcode": "RM8 2YS",
+        "price": 360000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "106, GRAFTON ROAD",
         "postcode": "RM8 3EX",
         "price": 325000,
@@ -1863,22 +2148,6 @@
         "price": 380000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "65, GAINSBOROUGH ROAD",
-        "postcode": "RM8 2DP",
-        "price": 410000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "12, ILCHESTER ROAD",
-        "postcode": "RM8 2YS",
-        "price": 360000,
-        "dateOfTransfer": "2025-10-24",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -1901,6 +2170,14 @@
         "address": "25, PATRICK CRESCENT",
         "postcode": "RM8 1EU",
         "price": 430000,
+        "dateOfTransfer": "2025-10-24",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "65, GAINSBOROUGH ROAD",
+        "postcode": "RM8 2DP",
+        "price": 410000,
         "dateOfTransfer": "2025-10-24",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1930,17 +2207,17 @@
         "newBuild": false
       },
       {
-        "address": "16, STANLEY AVENUE",
-        "postcode": "RM8 1JB",
-        "price": 485000,
+        "address": "41, CROSSWAY",
+        "postcode": "RM8 2SH",
+        "price": 490000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "41, CROSSWAY",
-        "postcode": "RM8 2SH",
-        "price": 490000,
+        "address": "16, STANLEY AVENUE",
+        "postcode": "RM8 1JB",
+        "price": 485000,
         "dateOfTransfer": "2025-10-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -1958,14 +2235,6 @@
         "postcode": "RM8 2AD",
         "price": 398000,
         "dateOfTransfer": "2025-10-13",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "27, GROVEWAY",
-        "postcode": "RM8 3XA",
-        "price": 387000,
-        "dateOfTransfer": "2025-10-10",
         "propertyType": "Semi-detached",
         "newBuild": false
       },
@@ -1991,6 +2260,14 @@
         "price": 372000,
         "dateOfTransfer": "2025-10-10",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "27, GROVEWAY",
+        "postcode": "RM8 3XA",
+        "price": 387000,
+        "dateOfTransfer": "2025-10-10",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -2026,19 +2303,19 @@
         "newBuild": false
       },
       {
-        "address": "13A, CHARLECOTE ROAD",
-        "postcode": "RM8 3LD",
-        "price": 214000,
-        "dateOfTransfer": "2025-10-06",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "12, ROSSLYN AVENUE",
         "postcode": "RM8 1JR",
         "price": 290000,
         "dateOfTransfer": "2025-10-06",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "13A, CHARLECOTE ROAD",
+        "postcode": "RM8 3LD",
+        "price": 214000,
+        "dateOfTransfer": "2025-10-06",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2106,6 +2383,14 @@
         "newBuild": false
       },
       {
+        "address": "22, AMIDAS GARDENS",
+        "postcode": "RM8 2HX",
+        "price": 370000,
+        "dateOfTransfer": "2025-09-22",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "28, BURNSIDE ROAD",
         "postcode": "RM8 1XD",
         "price": 395000,
@@ -2117,14 +2402,6 @@
         "address": "277, BECONTREE AVENUE",
         "postcode": "RM8 2UT",
         "price": 410000,
-        "dateOfTransfer": "2025-09-22",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "22, AMIDAS GARDENS",
-        "postcode": "RM8 2HX",
-        "price": 370000,
         "dateOfTransfer": "2025-09-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2162,14 +2439,6 @@
         "newBuild": false
       },
       {
-        "address": "41, ROSSLYN AVENUE",
-        "postcode": "RM8 1JP",
-        "price": 395000,
-        "dateOfTransfer": "2025-09-12",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "815, GREEN LANE",
         "postcode": "RM8 1DD",
         "price": 379500,
@@ -2186,6 +2455,14 @@
         "newBuild": false
       },
       {
+        "address": "41, ROSSLYN AVENUE",
+        "postcode": "RM8 1JP",
+        "price": 395000,
+        "dateOfTransfer": "2025-09-12",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "10, CHARLECOTE ROAD",
         "postcode": "RM8 3LB",
         "price": 345000,
@@ -2198,6 +2475,14 @@
         "postcode": "RM8 2LH",
         "price": 347500,
         "dateOfTransfer": "2025-09-08",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "68, FORDYKE ROAD",
+        "postcode": "RM8 1PD",
+        "price": 520000,
+        "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -2221,14 +2506,6 @@
         "address": "52, VALENCE WOOD ROAD",
         "postcode": "RM8 3AS",
         "price": 380000,
-        "dateOfTransfer": "2025-09-05",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "68, FORDYKE ROAD",
-        "postcode": "RM8 1PD",
-        "price": 520000,
         "dateOfTransfer": "2025-09-05",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2274,9 +2551,25 @@
         "newBuild": false
       },
       {
+        "address": "83, LODGE AVENUE",
+        "postcode": "RM8 2JH",
+        "price": 325000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "29, LODGE AVENUE",
         "postcode": "RM8 2JA",
         "price": 480000,
+        "dateOfTransfer": "2025-08-29",
+        "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "56A, LICHFIELD ROAD",
+        "postcode": "RM8 2AU",
+        "price": 315000,
         "dateOfTransfer": "2025-08-29",
         "propertyType": "Semi-detached",
         "newBuild": false
@@ -2290,19 +2583,11 @@
         "newBuild": false
       },
       {
-        "address": "83, LODGE AVENUE",
-        "postcode": "RM8 2JH",
-        "price": 325000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "56A, LICHFIELD ROAD",
-        "postcode": "RM8 2AU",
-        "price": 315000,
-        "dateOfTransfer": "2025-08-29",
-        "propertyType": "Semi-detached",
+        "address": "176, WHALEBONE LANE SOUTH",
+        "postcode": "RM8 1BA",
+        "price": 192500,
+        "dateOfTransfer": "2025-08-27",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2311,14 +2596,6 @@
         "price": 380000,
         "dateOfTransfer": "2025-08-27",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "176, WHALEBONE LANE SOUTH",
-        "postcode": "RM8 1BA",
-        "price": 192500,
-        "dateOfTransfer": "2025-08-27",
-        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2402,9 +2679,9 @@
         "newBuild": false
       },
       {
-        "address": "MAPLE COURT, FLAT 11, SPRING CLOSE",
-        "postcode": "RM8 1SW",
-        "price": 243000,
+        "address": "290, FIRST FLOOR FLAT, LODGE AVENUE",
+        "postcode": "RM8 2HF",
+        "price": 150000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2418,9 +2695,9 @@
         "newBuild": false
       },
       {
-        "address": "290, FIRST FLOOR FLAT, LODGE AVENUE",
-        "postcode": "RM8 2HF",
-        "price": 150000,
+        "address": "MAPLE COURT, FLAT 11, SPRING CLOSE",
+        "postcode": "RM8 1SW",
+        "price": 243000,
         "dateOfTransfer": "2025-08-15",
         "propertyType": "Flat/Maisonette",
         "newBuild": false
@@ -2458,17 +2735,17 @@
         "newBuild": false
       },
       {
-        "address": "414, VALENCE AVENUE",
-        "postcode": "RM8 3QL",
-        "price": 375000,
+        "address": "97, LODGE AVENUE",
+        "postcode": "RM8 2JJ",
+        "price": 395000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "97, LODGE AVENUE",
-        "postcode": "RM8 2JJ",
-        "price": 395000,
+        "address": "414, VALENCE AVENUE",
+        "postcode": "RM8 3QL",
+        "price": 375000,
         "dateOfTransfer": "2025-08-08",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2498,14 +2775,6 @@
         "newBuild": false
       },
       {
-        "address": "6, CLARIDGE ROAD",
-        "postcode": "RM8 1TT",
-        "price": 390000,
-        "dateOfTransfer": "2025-08-04",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "510, VALENCE AVENUE",
         "postcode": "RM8 3QH",
         "price": 335000,
@@ -2517,6 +2786,14 @@
         "address": "36, STANLEY AVENUE",
         "postcode": "RM8 1JH",
         "price": 397000,
+        "dateOfTransfer": "2025-08-04",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "6, CLARIDGE ROAD",
+        "postcode": "RM8 1TT",
+        "price": 390000,
         "dateOfTransfer": "2025-08-04",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2546,6 +2823,14 @@
         "newBuild": false
       },
       {
+        "address": "149, BARON ROAD",
+        "postcode": "RM8 3RS",
+        "price": 500000,
+        "dateOfTransfer": "2025-07-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "13, BARON ROAD",
         "postcode": "RM8 1UB",
         "price": 300000,
@@ -2557,14 +2842,6 @@
         "address": "382, VALENCE AVENUE",
         "postcode": "RM8 3QU",
         "price": 395000,
-        "dateOfTransfer": "2025-07-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "149, BARON ROAD",
-        "postcode": "RM8 3RS",
-        "price": 500000,
         "dateOfTransfer": "2025-07-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2594,19 +2871,19 @@
         "newBuild": false
       },
       {
-        "address": "20, GIBSON ROAD",
-        "postcode": "RM8 1YE",
-        "price": 401000,
-        "dateOfTransfer": "2025-07-29",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "59, ROSSLYN AVENUE",
         "postcode": "RM8 1JP",
         "price": 457000,
         "dateOfTransfer": "2025-07-29",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "20, GIBSON ROAD",
+        "postcode": "RM8 1YE",
+        "price": 401000,
+        "dateOfTransfer": "2025-07-29",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -2626,19 +2903,19 @@
         "newBuild": false
       },
       {
-        "address": "211, GRAFTON ROAD",
-        "postcode": "RM8 3QA",
-        "price": 220000,
-        "dateOfTransfer": "2025-07-29",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "72, FITZSTEPHEN ROAD",
         "postcode": "RM8 2YL",
         "price": 504100,
         "dateOfTransfer": "2025-07-29",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "211, GRAFTON ROAD",
+        "postcode": "RM8 3QA",
+        "price": 220000,
+        "dateOfTransfer": "2025-07-29",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -2666,17 +2943,17 @@
         "newBuild": false
       },
       {
-        "address": "569, BECONTREE AVENUE",
-        "postcode": "RM8 3JR",
-        "price": 410000,
+        "address": "42, BENNETTS CASTLE LANE",
+        "postcode": "RM8 3XU",
+        "price": 347500,
         "dateOfTransfer": "2025-07-22",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "42, BENNETTS CASTLE LANE",
-        "postcode": "RM8 3XU",
-        "price": 347500,
+        "address": "569, BECONTREE AVENUE",
+        "postcode": "RM8 3JR",
+        "price": 410000,
         "dateOfTransfer": "2025-07-22",
         "propertyType": "Terraced",
         "newBuild": false
@@ -2722,19 +2999,19 @@
         "newBuild": false
       },
       {
-        "address": "48A, WHALEBONE LANE SOUTH",
-        "postcode": "RM8 1BB",
-        "price": 360000,
-        "dateOfTransfer": "2025-07-11",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "48A, CHARLECOTE ROAD",
         "postcode": "RM8 3LD",
         "price": 240000,
         "dateOfTransfer": "2025-07-11",
         "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "48A, WHALEBONE LANE SOUTH",
+        "postcode": "RM8 1BB",
+        "price": 360000,
+        "dateOfTransfer": "2025-07-11",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -2970,14 +3247,6 @@
         "newBuild": false
       },
       {
-        "address": "39, BENNETTS CASTLE LANE",
-        "postcode": "RM8 3XX",
-        "price": 437000,
-        "dateOfTransfer": "2025-06-11",
-        "propertyType": "Other",
-        "newBuild": false
-      },
-      {
         "address": "32, STEVENS ROAD",
         "postcode": "RM8 2QR",
         "price": 350000,
@@ -2991,6 +3260,14 @@
         "price": 385000,
         "dateOfTransfer": "2025-06-11",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "39, BENNETTS CASTLE LANE",
+        "postcode": "RM8 3XX",
+        "price": 437000,
+        "dateOfTransfer": "2025-06-11",
+        "propertyType": "Other",
         "newBuild": false
       },
       {
@@ -3058,6 +3335,14 @@
         "newBuild": false
       },
       {
+        "address": "376, VALENCE AVENUE",
+        "postcode": "RM8 3QU",
+        "price": 410000,
+        "dateOfTransfer": "2025-06-02",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "63, GRAFTON ROAD",
         "postcode": "RM8 3ET",
         "price": 382000,
@@ -3066,10 +3351,10 @@
         "newBuild": false
       },
       {
-        "address": "376, VALENCE AVENUE",
-        "postcode": "RM8 3QU",
-        "price": 410000,
-        "dateOfTransfer": "2025-06-02",
+        "address": "5, BROMHALL ROAD",
+        "postcode": "RM8 2HW",
+        "price": 329000,
+        "dateOfTransfer": "2025-05-30",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3087,14 +3372,6 @@
         "price": 315000,
         "dateOfTransfer": "2025-05-30",
         "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "5, BROMHALL ROAD",
-        "postcode": "RM8 2HW",
-        "price": 329000,
-        "dateOfTransfer": "2025-05-30",
-        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3170,6 +3447,14 @@
         "newBuild": false
       },
       {
+        "address": "183, BARON ROAD",
+        "postcode": "RM8 3RS",
+        "price": 300000,
+        "dateOfTransfer": "2025-05-16",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "27, DAVID ROAD",
         "postcode": "RM8 1RH",
         "price": 350000,
@@ -3181,14 +3466,6 @@
         "address": "9, HAMMONDS CLOSE",
         "postcode": "RM8 2RN",
         "price": 395000,
-        "dateOfTransfer": "2025-05-16",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "183, BARON ROAD",
-        "postcode": "RM8 3RS",
-        "price": 300000,
         "dateOfTransfer": "2025-05-16",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3298,35 +3575,11 @@
         "newBuild": false
       },
       {
-        "address": "110, WINDING WAY",
-        "postcode": "RM8 2TB",
-        "price": 440000,
+        "address": "12, HOMESTEAD ROAD",
+        "postcode": "RM8 3DT",
+        "price": 463000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "302, VALENCE AVENUE",
-        "postcode": "RM8 3QX",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "102, HAYDON ROAD",
-        "postcode": "RM8 3RR",
-        "price": 407000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "69, PEDLEY ROAD",
-        "postcode": "RM8 1XQ",
-        "price": 250000,
-        "dateOfTransfer": "2025-03-31",
-        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -3338,17 +3591,25 @@
         "newBuild": false
       },
       {
-        "address": "12, HOMESTEAD ROAD",
-        "postcode": "RM8 3DT",
-        "price": 463000,
+        "address": "69, PEDLEY ROAD",
+        "postcode": "RM8 1XQ",
+        "price": 250000,
         "dateOfTransfer": "2025-03-31",
-        "propertyType": "Terraced",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
         "address": "11, BENTRY ROAD",
         "postcode": "RM8 3PA",
         "price": 380000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "110, WINDING WAY",
+        "postcode": "RM8 2TB",
+        "price": 440000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3362,11 +3623,27 @@
         "newBuild": false
       },
       {
+        "address": "302, VALENCE AVENUE",
+        "postcode": "RM8 3QX",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "33, GERALD ROAD",
         "postcode": "RM8 1PT",
         "price": 445000,
         "dateOfTransfer": "2025-03-31",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "102, HAYDON ROAD",
+        "postcode": "RM8 3RR",
+        "price": 407000,
+        "dateOfTransfer": "2025-03-31",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3418,6 +3695,38 @@
         "newBuild": false
       },
       {
+        "address": "247, ILCHESTER ROAD",
+        "postcode": "RM8 2YA",
+        "price": 266000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
+        "address": "524, BECONTREE AVENUE",
+        "postcode": "RM8 3HR",
+        "price": 427000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "140, ILCHESTER ROAD",
+        "postcode": "RM8 2YX",
+        "price": 400000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "ACADEMY COURT, 566, FLAT 114, LONGBRIDGE ROAD",
+        "postcode": "RM8 2AR",
+        "price": 243000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Flat/Maisonette",
+        "newBuild": false
+      },
+      {
         "address": "5, ADOMAR ROAD",
         "postcode": "RM8 3LR",
         "price": 385000,
@@ -3439,6 +3748,14 @@
         "price": 390000,
         "dateOfTransfer": "2025-03-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "44, BRITTAIN ROAD",
+        "postcode": "RM8 3DB",
+        "price": 260000,
+        "dateOfTransfer": "2025-03-28",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3474,58 +3791,10 @@
         "newBuild": false
       },
       {
-        "address": "524, BECONTREE AVENUE",
-        "postcode": "RM8 3HR",
-        "price": 427000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "140, ILCHESTER ROAD",
-        "postcode": "RM8 2YX",
-        "price": 400000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "247, ILCHESTER ROAD",
-        "postcode": "RM8 2YA",
-        "price": 266000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "7, MORRIS ROAD",
         "postcode": "RM8 3NU",
         "price": 435000,
         "dateOfTransfer": "2025-03-28",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "44, BRITTAIN ROAD",
-        "postcode": "RM8 3DB",
-        "price": 260000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Semi-detached",
-        "newBuild": false
-      },
-      {
-        "address": "ACADEMY COURT, 566, FLAT 114, LONGBRIDGE ROAD",
-        "postcode": "RM8 2AR",
-        "price": 243000,
-        "dateOfTransfer": "2025-03-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
-        "address": "105, LYMINGTON ROAD",
-        "postcode": "RM8 1RT",
-        "price": 350000,
-        "dateOfTransfer": "2025-03-27",
         "propertyType": "Terraced",
         "newBuild": false
       },
@@ -3554,9 +3823,17 @@
         "newBuild": false
       },
       {
-        "address": "28, WINDING WAY",
-        "postcode": "RM8 2TB",
-        "price": 430000,
+        "address": "105, LYMINGTON ROAD",
+        "postcode": "RM8 1RT",
+        "price": 350000,
+        "dateOfTransfer": "2025-03-27",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "67, BECONTREE AVENUE",
+        "postcode": "RM8 2UJ",
+        "price": 370000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3570,17 +3847,17 @@
         "newBuild": false
       },
       {
-        "address": "6, WARRINGTON ROAD",
-        "postcode": "RM8 3JH",
-        "price": 375000,
+        "address": "28, WINDING WAY",
+        "postcode": "RM8 2TB",
+        "price": 430000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "67, BECONTREE AVENUE",
-        "postcode": "RM8 2UJ",
-        "price": 370000,
+        "address": "6, WARRINGTON ROAD",
+        "postcode": "RM8 3JH",
+        "price": 375000,
         "dateOfTransfer": "2025-03-26",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3594,14 +3871,6 @@
         "newBuild": false
       },
       {
-        "address": "100, MANOR SQUARE",
-        "postcode": "RM8 3RX",
-        "price": 425000,
-        "dateOfTransfer": "2025-03-24",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "CODY APARTMENTS, 34, 9, AGER AVENUE",
         "postcode": "RM8 1EF",
         "price": 226000,
@@ -3610,27 +3879,19 @@
         "newBuild": false
       },
       {
-        "address": "96, STANLEY AVENUE",
-        "postcode": "RM8 1JJ",
-        "price": 395000,
+        "address": "100, MANOR SQUARE",
+        "postcode": "RM8 3RX",
+        "price": 425000,
         "dateOfTransfer": "2025-03-24",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "3, MOUNT ROAD",
-        "postcode": "RM8 1NA",
-        "price": 450000,
-        "dateOfTransfer": "2025-03-21",
+        "address": "96, STANLEY AVENUE",
+        "postcode": "RM8 1JJ",
+        "price": 395000,
+        "dateOfTransfer": "2025-03-24",
         "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "11, BUSHWAY",
-        "postcode": "RM8 3XH",
-        "price": 415000,
-        "dateOfTransfer": "2025-03-21",
-        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3650,11 +3911,27 @@
         "newBuild": false
       },
       {
+        "address": "3, MOUNT ROAD",
+        "postcode": "RM8 1NA",
+        "price": 450000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "483, VALENCE AVENUE",
         "postcode": "RM8 3RD",
         "price": 500000,
         "dateOfTransfer": "2025-03-21",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "11, BUSHWAY",
+        "postcode": "RM8 3XH",
+        "price": 415000,
+        "dateOfTransfer": "2025-03-21",
+        "propertyType": "Semi-detached",
         "newBuild": false
       },
       {
@@ -3714,6 +3991,14 @@
         "newBuild": false
       },
       {
+        "address": "24, COOTE ROAD",
+        "postcode": "RM8 3EA",
+        "price": 420000,
+        "dateOfTransfer": "2025-03-14",
+        "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
         "address": "3, EXTON GARDENS",
         "postcode": "RM8 2HB",
         "price": 383000,
@@ -3749,14 +4034,6 @@
         "address": "45, HEWETT ROAD",
         "postcode": "RM8 2XT",
         "price": 365000,
-        "dateOfTransfer": "2025-03-14",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
-        "address": "24, COOTE ROAD",
-        "postcode": "RM8 3EA",
-        "price": 420000,
         "dateOfTransfer": "2025-03-14",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3810,17 +4087,17 @@
         "newBuild": false
       },
       {
-        "address": "524, VALENCE AVENUE",
-        "postcode": "RM8 3QH",
-        "price": 370000,
+        "address": "231, WOOD LANE",
+        "postcode": "RM8 3JU",
+        "price": 327500,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "231, WOOD LANE",
-        "postcode": "RM8 3JU",
-        "price": 327500,
+        "address": "524, VALENCE AVENUE",
+        "postcode": "RM8 3QH",
+        "price": 370000,
         "dateOfTransfer": "2025-03-07",
         "propertyType": "Terraced",
         "newBuild": false
@@ -3850,19 +4127,19 @@
         "newBuild": false
       },
       {
-        "address": "158, BONHAM ROAD",
-        "postcode": "RM8 3BJ",
-        "price": 342000,
-        "dateOfTransfer": "2025-03-05",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "33, MAYESBROOK ROAD",
         "postcode": "RM8 2EA",
         "price": 510000,
         "dateOfTransfer": "2025-03-05",
         "propertyType": "Semi-detached",
+        "newBuild": false
+      },
+      {
+        "address": "158, BONHAM ROAD",
+        "postcode": "RM8 3BJ",
+        "price": 342000,
+        "dateOfTransfer": "2025-03-05",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -3898,19 +4175,19 @@
         "newBuild": false
       },
       {
-        "address": "PEMBROKE HOUSE, 21, FLAT 201, ACADEMY WAY",
-        "postcode": "RM8 2FE",
-        "price": 279500,
-        "dateOfTransfer": "2025-02-28",
-        "propertyType": "Flat/Maisonette",
-        "newBuild": false
-      },
-      {
         "address": "98, WINDING WAY",
         "postcode": "RM8 2TB",
         "price": 400000,
         "dateOfTransfer": "2025-02-28",
         "propertyType": "Terraced",
+        "newBuild": false
+      },
+      {
+        "address": "PEMBROKE HOUSE, 21, FLAT 201, ACADEMY WAY",
+        "postcode": "RM8 2FE",
+        "price": 279500,
+        "dateOfTransfer": "2025-02-28",
+        "propertyType": "Flat/Maisonette",
         "newBuild": false
       },
       {
@@ -4202,17 +4479,17 @@
         "newBuild": false
       },
       {
-        "address": "24, CAMPUS AVENUE",
-        "postcode": "RM8 2FW",
-        "price": 460000,
+        "address": "5, MORRIS ROAD",
+        "postcode": "RM8 3NU",
+        "price": 382000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "5, MORRIS ROAD",
-        "postcode": "RM8 3NU",
-        "price": 382000,
+        "address": "24, CAMPUS AVENUE",
+        "postcode": "RM8 2FW",
+        "price": 460000,
         "dateOfTransfer": "2025-01-31",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4290,17 +4567,17 @@
         "newBuild": false
       },
       {
-        "address": "42, BROMHALL ROAD",
-        "postcode": "RM8 2BJ",
-        "price": 245000,
+        "address": "158, TEMPLE AVENUE",
+        "postcode": "RM8 1NB",
+        "price": 431000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
       },
       {
-        "address": "158, TEMPLE AVENUE",
-        "postcode": "RM8 1NB",
-        "price": 431000,
+        "address": "42, BROMHALL ROAD",
+        "postcode": "RM8 2BJ",
+        "price": 245000,
         "dateOfTransfer": "2025-01-17",
         "propertyType": "Terraced",
         "newBuild": false
@@ -4354,14 +4631,6 @@
         "newBuild": false
       },
       {
-        "address": "30, FITZSTEPHEN ROAD",
-        "postcode": "RM8 2YP",
-        "price": 387500,
-        "dateOfTransfer": "2025-01-08",
-        "propertyType": "Terraced",
-        "newBuild": false
-      },
-      {
         "address": "787, LONGBRIDGE ROAD",
         "postcode": "RM8 2DB",
         "price": 200000,
@@ -4370,11 +4639,11 @@
         "newBuild": false
       },
       {
-        "address": "3, STANLEY AVENUE",
-        "postcode": "RM8 1JA",
-        "price": 420000,
-        "dateOfTransfer": "2025-01-03",
-        "propertyType": "Semi-detached",
+        "address": "30, FITZSTEPHEN ROAD",
+        "postcode": "RM8 2YP",
+        "price": 387500,
+        "dateOfTransfer": "2025-01-08",
+        "propertyType": "Terraced",
         "newBuild": false
       },
       {
@@ -4384,9 +4653,17 @@
         "dateOfTransfer": "2025-01-03",
         "propertyType": "Terraced",
         "newBuild": false
+      },
+      {
+        "address": "3, STANLEY AVENUE",
+        "postcode": "RM8 1JA",
+        "price": 420000,
+        "dateOfTransfer": "2025-01-03",
+        "propertyType": "Semi-detached",
+        "newBuild": false
       }
     ],
-    "averagePrice": 374067,
+    "averagePrice": 373101,
     "medianPrice": 380000
   },
   "representatives": {
