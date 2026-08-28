@@ -34,14 +34,14 @@ const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
     <div class="rounded-lg border border-stone-200 bg-white p-4 flex items-end gap-1 h-40">
       {
         data.safety.monthlyTrend.map((m) => (
-          <div class="flex-1 flex flex-col items-end gap-1 h-full">
+          <div class="flex-1 flex flex-col items-center gap-1 h-full">
             <div class="w-full flex-1 flex items-end">
               <div
                 class="w-full bg-emerald-600/80 rounded-t"
                 style={`height: ${Math.max((m.totalCrimes / maxMonthly) * 100, 2)}px`}
               />
             </div>
-            <span class="text-[10px] text-stone-400 whitespace-nowrap -rotate-45 origin-top-left translate-y-2">{m.month.slice(2)}</span>
+            <span class="text-[10px] text-stone-400 whitespace-nowrap rotate-90 mt-3">{m.month.slice(2)}</span>
           </div>
         ))
       }
