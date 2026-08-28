@@ -1,6 +1,6 @@
 ---
 interface Props {
-  counts: { gp: number; dentist: number; pharmacy: number };
+  counts: { gp: number; dentist: number; pharmacy: number; hospital: number };
 }
 
 const { counts } = Astro.props;
@@ -9,6 +9,7 @@ const TYPES = [
   { kind: "gp", label: "GP surgeries" },
   { kind: "dentist", label: "Dentists" },
   { kind: "pharmacy", label: "Pharmacies" },
+  { kind: "hospital", label: "Hospitals" },
 ] as const;
 
 const available = TYPES.filter((t) => counts[t.kind] > 0);

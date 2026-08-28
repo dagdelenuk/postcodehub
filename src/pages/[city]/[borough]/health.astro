@@ -19,17 +19,18 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.props;
 const groups = getBoroughHealth(city.slug, borough.slug);
-const totalGp = groups.reduce((sum, g) => sum + g.gpSurgeries.length, 0);
 const counts = {
-  gp: totalGp,
+  gp: groups.reduce((sum, g) => sum + g.gpSurgeries.length, 0),
   dentist: groups.reduce((sum, g) => sum + g.dentists.length, 0),
   pharmacy: groups.reduce((sum, g) => sum + g.pharmacies.length, 0),
+  hospital: groups.reduce((sum, g) => sum + g.hospitals.length, 0),
 };
+const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hospital;
 ---
 
 <BaseLayout
   title={`Health in ${borough.name}`}
-  description={`GP surgeries, dentists, and pharmacies across ${borough.name}.`}
+  description={`GP surgeries, dentists, pharmacies, and hospitals across ${borough.name}.`}
   menuLevel="borough"
   citySlug={city.slug}
   boroughSlug={borough.slug}
@@ -45,7 +46,7 @@ const counts = {
   />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
-    <h1 class="text-2xl font-bold mb-4">Health services in {borough.name} ({totalGp} GP surgeries)</h1>
+    <h1 class="text-2xl font-bold mb-4">Health services in {borough.name} ({totalServices})</h1>
 
     <HealthFilters counts={counts} />
 
@@ -61,6 +62,7 @@ const counts = {
             { title: "GP surgeries", items: group.gpSurgeries, kind: "gp" as const },
             { title: "Dentists", items: group.dentists, kind: "dentist" as const },
             { title: "Pharmacies", items: group.pharmacies, kind: "pharmacy" as const },
+            { title: "Hospitals", items: group.hospitals, kind: "hospital" as const },
           ].map(
             (section) =>
               section.items.length > 0 && (

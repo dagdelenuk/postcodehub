@@ -65,7 +65,7 @@ async function main() {
       latitude: entry.outcode.latitude,
       longitude: entry.outcode.longitude,
       wards: entry.outcode.wards,
-      health: health[outcode] ?? { gpSurgeries: [], dentists: [], pharmacies: [] },
+      health: health[outcode] ?? { gpSurgeries: [], dentists: [], pharmacies: [], hospitals: [] },
       schools: schools[outcode] ?? { schools: [] },
       safety: crime[outcode] ?? { monthlyTrend: [], categoryBreakdown: {}, totalLast12Months: 0 },
       property: property[outcode] ?? { sales: [], averagePrice: null, medianPrice: null },

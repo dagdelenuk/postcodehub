@@ -16,6 +16,7 @@ const counts = {
   gp: data.health.gpSurgeries.length,
   dentist: data.health.dentists.length,
   pharmacy: data.health.pharmacies.length,
+  hospital: data.health.hospitals.length,
 };
 ---
 
@@ -25,7 +26,7 @@ const counts = {
   boroughSlug={borough!}
   active="health"
   title={`Health in ${data.outcode}`}
-  description={`GP surgeries, dentists, and pharmacies serving the ${data.outcode} area.`}
+  description={`GP surgeries, dentists, pharmacies, and hospitals serving the ${data.outcode} area.`}
 >
   <h1 class="text-2xl font-bold mb-4">Health services in {data.outcode}</h1>
 
@@ -36,6 +37,7 @@ const counts = {
       { title: "GP surgeries", items: data.health.gpSurgeries, kind: "gp" as const },
       { title: "Dentists", items: data.health.dentists, kind: "dentist" as const },
       { title: "Pharmacies", items: data.health.pharmacies, kind: "pharmacy" as const },
+      { title: "Hospitals", items: data.health.hospitals, kind: "hospital" as const },
     ].map(
       (section) =>
         section.items.length > 0 && (

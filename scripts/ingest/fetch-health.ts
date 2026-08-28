@@ -15,6 +15,11 @@ const ROLES = {
   gpSurgeries: "RO177", // GP practice (prescribing cost centre)
   dentists: "RO110", // General dental practice
   pharmacies: "RO182", // Pharmacy
+  // ODS has no single clean "hospital" role - NHS trust sites (RO198) and
+  // independent-sector provider sites (RO176) both include plenty of
+  // non-hospital premises (clinics, schools, care homes), confirmed live,
+  // so this is combined with a name filter for "hospital" in fetchCategory.
+  hospitals: "RO198,RO176",
 } as const;
 
 interface OrgListItem {
@@ -70,8 +75,9 @@ async function getOrgDetail(orgId: string): Promise<GpSurgery> {
   };
 }
 
-async function fetchCategory(outcode: string, roleId: string): Promise<GpSurgery[]> {
-  const orgs = await listActiveOrgs(outcode, roleId);
+async function fetchCategory(outcode: string, roleId: string, nameFilter?: RegExp): Promise<GpSurgery[]> {
+  let orgs = await listActiveOrgs(outcode, roleId);
+  if (nameFilter) orgs = orgs.filter((org) => nameFilter.test(org.Name));
   const results: GpSurgery[] = [];
   // Small concurrency + delay: ODS has no published rate limit, but this is a
   // shared public NHS service, so stay polite rather than firing everything at once.
@@ -95,15 +101,16 @@ async function main() {
   const byOutcode: Record<string, HealthData> = {};
 
   for (const outcode of outcodeIndex.keys()) {
-    const [gpSurgeries, dentists, pharmacies] = await Promise.all([
+    const [gpSurgeries, dentists, pharmacies, hospitals] = await Promise.all([
       fetchCategory(outcode, ROLES.gpSurgeries),
       fetchCategory(outcode, ROLES.dentists),
       fetchCategory(outcode, ROLES.pharmacies),
+      fetchCategory(outcode, ROLES.hospitals, /hospital/i),
     ]);
-    byOutcode[outcode] = { gpSurgeries, dentists, pharmacies };
+    byOutcode[outcode] = { gpSurgeries, dentists, pharmacies, hospitals };
     logStep(
       STEP,
-      `${outcode}: ${gpSurgeries.length} GPs, ${dentists.length} dentists, ${pharmacies.length} pharmacies`
+      `${outcode}: ${gpSurgeries.length} GPs, ${dentists.length} dentists, ${pharmacies.length} pharmacies, ${hospitals.length} hospitals`
     );
   }
 

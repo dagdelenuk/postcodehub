@@ -358,11 +358,12 @@ export interface BoroughHealthGroup {
   gpSurgeries: GpSurgery[];
   dentists: GpSurgery[];
   pharmacies: GpSurgery[];
+  hospitals: GpSurgery[];
 }
 
 /**
- * GP surgeries/dentists/pharmacies for every outcode this borough is the
- * primary owner of, grouped by outcode - same primary-only filter as
+ * GP surgeries/dentists/pharmacies/hospitals for every outcode this borough
+ * is the primary owner of, grouped by outcode - same primary-only filter as
  * getBoroughSummary(), so a boundary outcode's practices aren't listed
  * under every borough it touches.
  */
@@ -372,9 +373,16 @@ export function getBoroughHealth(citySlug: string, boroughSlug: string): Borough
     .filter((o) => o.isPrimaryBorough)
     .map((o) => {
       const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
-      return { outcode: o.outcode, outcodeSlug: o.slug, gpSurgeries: data.health.gpSurgeries, dentists: data.health.dentists, pharmacies: data.health.pharmacies };
+      return {
+        outcode: o.outcode,
+        outcodeSlug: o.slug,
+        gpSurgeries: data.health.gpSurgeries,
+        dentists: data.health.dentists,
+        pharmacies: data.health.pharmacies,
+        hospitals: data.health.hospitals,
+      };
     })
-    .filter((g) => g.gpSurgeries.length + g.dentists.length + g.pharmacies.length > 0)
+    .filter((g) => g.gpSurgeries.length + g.dentists.length + g.pharmacies.length + g.hospitals.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));
 }
 

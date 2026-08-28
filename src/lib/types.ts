@@ -54,6 +54,7 @@ export interface HealthData {
   gpSurgeries: GpSurgery[];
   dentists: GpSurgery[];
   pharmacies: GpSurgery[];
+  hospitals: GpSurgery[];
 }
 
 export interface School {

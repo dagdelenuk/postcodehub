@@ -3,15 +3,16 @@ import type { GpSurgery } from "../lib/types";
 
 interface Props {
   org: GpSurgery;
-  kind: "gp" | "dentist" | "pharmacy";
+  kind: "gp" | "dentist" | "pharmacy" | "hospital";
 }
 
 const { org, kind } = Astro.props;
 
 const ICONS: Record<Props["kind"], { emoji: string; text: string }> = {
-  gp: { emoji: "🏥", text: "text-rose-600" },
+  gp: { emoji: "🩺", text: "text-rose-600" },
   dentist: { emoji: "🦷", text: "text-cyan-600" },
   pharmacy: { emoji: "💊", text: "text-emerald-600" },
+  hospital: { emoji: "🏥", text: "text-red-600" },
 };
 
 const icon = ICONS[kind];
