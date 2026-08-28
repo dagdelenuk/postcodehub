@@ -55,13 +55,19 @@ function formatOfstedDate(raw: string | null): string | null {
             )}
           </div>
           <p class="text-sm text-stone-500 mt-1">{school.phaseOfEducation} &middot; {school.address}</p>
-          {school.ofstedRating && formatOfstedDate(school.ofstedLastInspection) && (
+          {school.ofstedRating && !school.ofstedRatingDerivedFromAreaGrades && formatOfstedDate(school.ofstedLastInspection) && (
             <p class="text-xs text-stone-400 mt-1">Inspected {formatOfstedDate(school.ofstedLastInspection)}</p>
           )}
-          {school.ofstedNotJudgedUnderNewFramework && (
+          {school.ofstedRating && school.ofstedRatingDerivedFromAreaGrades && (
             <p class="text-xs text-stone-400 mt-1">
               {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
-              no single overall grade under Ofsted's post-2024 framework
+              {school.ofstedRating.toLowerCase()} in every graded area - Ofsted's post-2024 framework doesn't publish a composite label
+            </p>
+          )}
+          {!school.ofstedRating && school.ofstedNotJudgedUnderNewFramework && (
+            <p class="text-xs text-stone-400 mt-1">
+              {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
+              mixed grades across areas, no single overall grade under Ofsted's post-2024 framework
             </p>
           )}
           {school.numberOfPupils && (

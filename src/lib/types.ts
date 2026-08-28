@@ -66,6 +66,9 @@ export interface School {
    * post-Sept-2024 framework but deliberately publishes no single combined
    * grade - distinct from a school with no current inspection data at all. */
   ofstedNotJudgedUnderNewFramework: boolean;
+  /** True when ofstedRating isn't Ofsted's own composite label but was
+   * derived because every core area happened to land on the same grade. */
+  ofstedRatingDerivedFromAreaGrades: boolean;
   address: string;
   postcode: string;
   numberOfPupils: number | null;

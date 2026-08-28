@@ -23,6 +23,30 @@ function normaliseOfstedRating(raw: string | undefined): string | null {
   return OFSTED_RATING_LABELS[raw] ?? null;
 }
 
+const OEIF_CORE_AREA_COLUMNS = [
+  "Latest OEIF quality of education",
+  "Latest OEIF behaviour and attitudes",
+  "Latest OEIF personal development",
+  "Latest OEIF effectiveness of leadership and management",
+];
+
+/**
+ * Under Ofsted's post-Sept-2024 framework, "Latest OEIF overall effectiveness"
+ * is deliberately left as "Not judged" - Ofsted no longer publishes a single
+ * combined grade. But it still grades each area individually (1-4), and when
+ * every core area lands on the same grade, that IS an unambiguous overall
+ * picture - e.g. Collis Primary is graded "1" (Outstanding) on quality of
+ * education, behaviour, personal development, and leadership alike. Mixed
+ * area grades are left unlabelled rather than guessing which one "wins".
+ */
+function ratingFromUniformAreaGrades(row: Record<string, string>): string | null {
+  const grades = OEIF_CORE_AREA_COLUMNS.map((col) => row[col]).filter((v) => v && v !== "NULL" && v !== "9");
+  if (grades.length === 0) return null;
+  const [first, ...rest] = grades;
+  if (rest.some((g) => g !== first)) return null;
+  return OFSTED_RATING_LABELS[first] ?? null;
+}
+
 /**
  * A school with no full re-grade in this window can still have a lighter-touch
  * "ungraded" (S8) monitoring visit that just confirms its old grade still
@@ -71,6 +95,9 @@ interface OfstedRating {
    * its post-Sept-2024 framework, but deliberately publishes no single
    * combined grade - distinct from "no data at all" for display purposes. */
   notJudgedUnderNewFramework: boolean;
+  /** True when `rating` isn't Ofsted's own composite label but was derived
+   * here because every core area happened to land on the same grade. */
+  derivedFromAreaGrades: boolean;
 }
 
 /**
@@ -113,12 +140,23 @@ async function fetchOfstedRatings(): Promise<Map<string, OfstedRating>> {
         const gradedRating = normaliseOfstedRating(overallRaw);
         if (gradedRating) {
           const dateRaw = row["Inspection start date of latest OEIF graded inspection"];
-          ratings.set(urn, { rating: gradedRating, inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null, notJudgedUnderNewFramework: false });
+          ratings.set(urn, {
+            rating: gradedRating,
+            inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null,
+            notJudgedUnderNewFramework: false,
+            derivedFromAreaGrades: false,
+          });
           continue;
         }
         if (overallRaw === "Not judged") {
           const dateRaw = row["Inspection start date of latest OEIF graded inspection"];
-          ratings.set(urn, { rating: null, inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null, notJudgedUnderNewFramework: true });
+          const uniformRating = ratingFromUniformAreaGrades(row);
+          ratings.set(urn, {
+            rating: uniformRating,
+            inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null,
+            notJudgedUnderNewFramework: true,
+            derivedFromAreaGrades: uniformRating !== null,
+          });
           continue;
         }
 
@@ -127,7 +165,12 @@ async function fetchOfstedRatings(): Promise<Map<string, OfstedRating>> {
         const ungradedRating = ratingFromUngradedOutcome(row["Ungraded inspection overall outcome"]);
         if (ungradedRating) {
           const dateRaw = row["Date of latest ungraded inspection"];
-          ratings.set(urn, { rating: ungradedRating, inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null, notJudgedUnderNewFramework: false });
+          ratings.set(urn, {
+            rating: ungradedRating,
+            inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null,
+            notJudgedUnderNewFramework: false,
+            derivedFromAreaGrades: false,
+          });
         }
       }
       logStep(STEP, `Loaded Ofsted ratings for ${ratings.size} schools.`);
@@ -163,6 +206,7 @@ async function main() {
       ofstedRating: ofsted?.rating ?? null,
       ofstedLastInspection: ofsted?.inspectionDate ?? null,
       ofstedNotJudgedUnderNewFramework: ofsted?.notJudgedUnderNewFramework ?? false,
+      ofstedRatingDerivedFromAreaGrades: ofsted?.derivedFromAreaGrades ?? false,
       address: [row["Street"], row["Locality"], row["Town"]].filter(Boolean).join(", "),
       postcode,
       numberOfPupils: row["NumberOfPupils"] ? Number(row["NumberOfPupils"]) : null,
