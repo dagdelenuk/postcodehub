@@ -35,7 +35,7 @@ const TYPE_ICON: Record<string, string> = {
     </button>
   </form>
   <p data-postcode-search-message class="hidden absolute left-0 top-full mt-1 text-xs text-stone-500 bg-white border border-stone-200 rounded-md px-3 py-2 shadow-sm z-10"></p>
-  <ul data-postcode-search-results class="hidden absolute left-0 top-full mt-1 w-full max-h-80 overflow-y-auto bg-white border border-stone-200 rounded-md shadow-sm z-10 py-1"></ul>
+  <ul data-postcode-search-results class="hidden absolute left-0 top-full mt-1 w-96 max-w-[90vw] max-h-80 overflow-y-auto bg-white border border-stone-200 rounded-md shadow-sm z-10 py-1"></ul>
 </div>
 
 <script type="application/json" id="postcode-search-index" set:html={JSON.stringify(index)} />
@@ -49,6 +49,13 @@ const TYPE_ICON: Record<string, string> = {
     sublabel: string;
     href: string;
     keywords: string;
+    wards?: string[];
+  }
+
+  /** Same "word starts with, or plain substring" rule used for whole-entry scoring, applied to one ward name. */
+  function wardMatches(ward: string, q: string): boolean {
+    const lower = ward.toLowerCase();
+    return lower.split(/[\s,&]+/).some((word) => word.startsWith(q)) || lower.includes(q);
   }
 
   function postcodeToOutcode(raw: string): string | null {
@@ -107,12 +114,13 @@ const TYPE_ICON: Record<string, string> = {
       results!.innerHTML = "";
     }
 
-    function renderResults(entries: QuickSearchEntry[]) {
+    function renderResults(entries: QuickSearchEntry[], query: string) {
       results!.innerHTML = "";
       if (entries.length === 0) {
         hideResults();
         return;
       }
+      const q = query.trim().toLowerCase();
       for (const entry of entries) {
         const li = document.createElement("li");
         const button = document.createElement("button");
@@ -127,9 +135,13 @@ const TYPE_ICON: Record<string, string> = {
         const label = document.createElement("span");
         label.className = "block font-medium truncate";
         label.textContent = entry.label;
+        // For an outcode matched via a ward name, show the matching ward(s)
+        // next to the postcode instead of the generic borough/city line -
+        // that's specifically what the visitor searched for.
+        const matchedWards = entry.wards?.filter((w) => wardMatches(w, q)) ?? [];
         const sublabel = document.createElement("span");
         sublabel.className = "block text-xs text-stone-500 truncate";
-        sublabel.textContent = entry.sublabel;
+        sublabel.textContent = matchedWards.length > 0 ? matchedWards.join(", ") : entry.sublabel;
         text.append(label, sublabel);
         button.append(icon, text);
         // mousedown (not click) fires before the input's blur hides the list.
@@ -160,11 +172,11 @@ const TYPE_ICON: Record<string, string> = {
 
     input.addEventListener("input", () => {
       message.classList.add("hidden");
-      renderResults(rankResults(quickIndex, input.value));
+      renderResults(rankResults(quickIndex, input.value), input.value);
     });
 
     input.addEventListener("focus", () => {
-      if (input.value.trim()) renderResults(rankResults(quickIndex, input.value));
+      if (input.value.trim()) renderResults(rankResults(quickIndex, input.value), input.value);
     });
 
     input.addEventListener("keydown", (e) => {
