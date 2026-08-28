@@ -125,38 +125,134 @@ const BOROUGH_HISTORY: Record<string, string> = {
 };
 
 const BOROUGH_PLACES: Record<string, Place[]> = {
-  "Barking and Dagenham": [{ name: "Eastbrookend Country Park", category: "park", address: "Dagenham", description: "A large country park with lakes and nature trails on the site of former gravel pits." }],
-  Barnet: [{ name: "RAF Museum London", category: "community-hub", address: "Hendon", description: "The Royal Air Force's national museum, built around historic Hendon Aerodrome." }],
-  Bexley: [{ name: "Hall Place and Gardens", category: "community-hub", address: "Bexley", description: "A Tudor manor house with Grade I and II listed formal gardens, open to the public." }],
-  Brent: [{ name: "Wembley Stadium", category: "leisure-centre", address: "Wembley", description: "England's national football stadium, with an 90,000 capacity." }],
-  Bromley: [{ name: "Crystal Palace Park", category: "park", address: "Bromley/Croydon border", description: "A large Victorian park containing the world-famous Crystal Palace Dinosaurs sculptures." }],
-  Camden: [{ name: "Camden Market", category: "community-hub", address: "Camden Town", description: "One of the UK's most visited attractions, a sprawling market for fashion, food, and crafts." }],
-  "City of London": [{ name: "St Paul's Cathedral", category: "community-hub", address: "City of London", description: "Sir Christopher Wren's Baroque cathedral, completed in 1710, at the heart of the Square Mile." }],
-  Croydon: [{ name: "Lloyd Park", category: "park", address: "Croydon", description: "A large public park in the shadow of Croydon's historic Addington Hills." }],
-  Ealing: [{ name: "Walpole Park", category: "park", address: "Ealing", description: "A historic park surrounding Pitzhanger Manor, designed in part by Sir John Soane." }],
-  Enfield: [{ name: "Forty Hall", category: "community-hub", address: "Enfield", description: "A Jacobean mansion set in a 275-acre country park, now a museum and gallery." }],
-  Greenwich: [{ name: "Royal Observatory Greenwich", category: "community-hub", address: "Greenwich Park", description: "Home of the Prime Meridian and Greenwich Mean Time, within a UNESCO World Heritage Site." }],
-  Hackney: [{ name: "Victoria Park", category: "park", address: "Hackney/Tower Hamlets border", description: "One of London's oldest public parks, opened in 1845 for the East End." }],
-  "Hammersmith and Fulham": [{ name: "Bishops Park", category: "park", address: "Fulham", description: "A riverside park next to Fulham Palace, the former residence of the Bishops of London." }],
-  Haringey: [{ name: "Alexandra Palace", category: "community-hub", address: "Alexandra Park", description: "A Victorian entertainment venue on a hilltop park, site of the BBC's first TV broadcasts in 1936." }],
-  Harrow: [{ name: "Harrow School", category: "community-hub", address: "Harrow-on-the-Hill", description: "One of England's oldest public schools, founded in 1572." }],
-  Havering: [{ name: "Raphael Park", category: "park", address: "Romford", description: "A Victorian park with a boating lake, adjoining the historic Gidea Park estate." }],
-  Hillingdon: [{ name: "Cranford Country Park", category: "park", address: "Hillingdon", description: "Woodland and meadows around the former Cranford House estate." }],
-  Hounslow: [{ name: "Chiswick House and Gardens", category: "community-hub", address: "Chiswick", description: "A celebrated 18th-century Palladian villa with historic landscape gardens." }],
-  Islington: [{ name: "Sadler's Wells", category: "leisure-centre", address: "Islington", description: "A leading dance theatre with roots going back to a 17th-century well." }],
-  "Kensington and Chelsea": [{ name: "Natural History Museum", category: "community-hub", address: "South Kensington", description: "One of the world's great natural history collections, housed in a landmark Victorian building." }],
-  "Kingston upon Thames": [{ name: "Kingston Market Place", category: "community-hub", address: "Kingston upon Thames", description: "A historic market place, home to the ancient Coronation Stone of Anglo-Saxon kings." }],
-  Lambeth: [{ name: "Lambeth Palace", category: "community-hub", address: "Lambeth", description: "The official London residence of the Archbishop of Canterbury for over 800 years." }],
-  Lewisham: [{ name: "Horniman Museum and Gardens", category: "community-hub", address: "Forest Hill", description: "A free museum of anthropology and natural history set in 16 acres of gardens." }],
-  Merton: [{ name: "All England Lawn Tennis Club", category: "leisure-centre", address: "Wimbledon", description: "Host of the Wimbledon Championships, the oldest tennis tournament in the world, since 1877." }],
-  Newham: [{ name: "Queen Elizabeth Olympic Park", category: "park", address: "Stratford", description: "The main venue for the London 2012 Olympics, now a public park and sports venue." }],
-  Redbridge: [{ name: "Valentines Park", category: "park", address: "Ilford", description: "A large Victorian park surrounding the historic Valentines Mansion." }],
-  Southwark: [{ name: "Borough Market", category: "community-hub", address: "Southwark", description: "One of London's oldest food markets, trading in some form since the 12th century." }],
-  Sutton: [{ name: "Carshalton Park", category: "park", address: "Carshalton", description: "A green space in one of Sutton's oldest villages, known for its ponds and lavender fields nearby." }],
-  "Tower Hamlets": [{ name: "Victoria Park", category: "park", address: "Tower Hamlets/Hackney border", description: "One of London's oldest public parks, opened in 1845 for the East End." }],
-  "Waltham Forest": [{ name: "William Morris Gallery", category: "community-hub", address: "Walthamstow", description: "A free gallery in the childhood home of designer and writer William Morris." }],
-  Wandsworth: [{ name: "Battersea Park", category: "park", address: "Battersea", description: "A large Thames-side park opened in 1858, near the landmark Battersea Power Station." }],
-  Westminster: [{ name: "Westminster Abbey", category: "community-hub", address: "Westminster", description: "The historic coronation church of English and British monarchs since 1066." }],
+  "Barking and Dagenham": [
+    { name: "Eastbrookend Country Park", category: "park", address: "Dagenham", description: "A large country park with lakes and nature trails on the site of former gravel pits." },
+    { name: "Valence House Museum", category: "community-hub", address: "Becontree Avenue, Dagenham, RM8 3HT", description: "A moated medieval manor house, now a free local history museum for the borough." },
+  ],
+  Barnet: [
+    { name: "RAF Museum London", category: "community-hub", address: "Hendon", description: "The Royal Air Force's national museum, built around historic Hendon Aerodrome." },
+    { name: "Hadley Highstone", category: "community-hub", address: "Great North Road, Monken Hadley, EN5 4QQ", description: "An 18th-century obelisk marking the site of the 1471 Battle of Barnet, a decisive clash in the Wars of the Roses." },
+  ],
+  Bexley: [
+    { name: "Hall Place and Gardens", category: "community-hub", address: "Bexley", description: "A Tudor manor house with Grade I and II listed formal gardens, open to the public." },
+    { name: "Danson House", category: "community-hub", address: "Danson Park, Bexleyheath, DA6 8HL", description: "A Grade I listed Palladian villa built in the 1760s, at the centre of Danson Park." },
+  ],
+  Brent: [
+    { name: "Wembley Stadium", category: "leisure-centre", address: "Wembley", description: "England's national football stadium, with an 90,000 capacity." },
+    { name: "BAPS Shri Swaminarayan Mandir", category: "community-hub", address: "105-119 Brentfield Road, Neasden, NW10 8LD", description: "The largest traditional Hindu stone temple outside India, opened in 1995 and known as Neasden Temple." },
+  ],
+  Bromley: [
+    { name: "Crystal Palace Park", category: "park", address: "Bromley/Croydon border", description: "A large Victorian park containing the world-famous Crystal Palace Dinosaurs sculptures." },
+    { name: "Down House", category: "community-hub", address: "Luxted Road, Downe, BR6 7JT", description: "Charles Darwin's family home for 40 years, where he wrote On the Origin of Species; now an English Heritage museum." },
+  ],
+  Camden: [
+    { name: "Camden Market", category: "community-hub", address: "Camden Town", description: "One of the UK's most visited attractions, a sprawling market for fashion, food, and crafts." },
+    { name: "British Museum", category: "community-hub", address: "Great Russell Street, WC1B 3DG", description: "One of the world's great museums of human history and culture, free to enter since its founding in 1753." },
+  ],
+  "City of London": [
+    { name: "St Paul's Cathedral", category: "community-hub", address: "City of London", description: "Sir Christopher Wren's Baroque cathedral, completed in 1710, at the heart of the Square Mile." },
+    { name: "Bank of England Museum", category: "community-hub", address: "Bartholomew Lane, EC2R 8AH", description: "A free museum inside the Bank of England telling the story of the UK's central bank since 1694." },
+  ],
+  Croydon: [
+    { name: "Lloyd Park", category: "park", address: "Croydon", description: "A large public park in the shadow of Croydon's historic Addington Hills." },
+    { name: "Fairfield Halls", category: "leisure-centre", address: "Park Lane, Croydon, CR9 1DG", description: "Croydon's main concert hall and theatre complex, home to the Ashcroft Theatre." },
+  ],
+  Ealing: [
+    { name: "Walpole Park", category: "park", address: "Ealing", description: "A historic park surrounding Pitzhanger Manor, designed in part by Sir John Soane." },
+    { name: "Ealing Studios", category: "community-hub", address: "Ealing Green, W5 5EP", description: "The oldest continuously working film studio facility in the world, in operation since 1902." },
+  ],
+  Enfield: [
+    { name: "Forty Hall", category: "community-hub", address: "Enfield", description: "A Jacobean mansion set in a 275-acre country park, now a museum and gallery." },
+    { name: "Myddelton House Gardens", category: "park", address: "Bulls Cross, Enfield, EN2 9HG", description: "Historic gardens developed by plantsman E. A. Bowles, now managed by Lee Valley Regional Park." },
+  ],
+  Greenwich: [
+    { name: "Royal Observatory Greenwich", category: "community-hub", address: "Greenwich Park", description: "Home of the Prime Meridian and Greenwich Mean Time, within a UNESCO World Heritage Site." },
+    { name: "Cutty Sark", category: "community-hub", address: "King William Walk, Greenwich, SE10 9HT", description: "The last surviving tea clipper ship in the world, preserved as a museum ship since the 1950s." },
+  ],
+  Hackney: [
+    { name: "Victoria Park", category: "park", address: "Hackney/Tower Hamlets border", description: "One of London's oldest public parks, opened in 1845 for the East End." },
+    { name: "Hackney Empire", category: "leisure-centre", address: "291 Mare Street, E8 1EJ", description: "A Grade II* listed Edwardian variety theatre, still a leading live entertainment venue today." },
+  ],
+  "Hammersmith and Fulham": [
+    { name: "Bishops Park", category: "park", address: "Fulham", description: "A riverside park next to Fulham Palace, the former residence of the Bishops of London." },
+    { name: "Stamford Bridge", category: "leisure-centre", address: "Fulham Road, SW6 1HS", description: "Home of Chelsea Football Club since 1905, despite its name referencing neighbouring Fulham." },
+  ],
+  Haringey: [
+    { name: "Alexandra Palace", category: "community-hub", address: "Alexandra Park", description: "A Victorian entertainment venue on a hilltop park, site of the BBC's first TV broadcasts in 1936." },
+    { name: "Bruce Castle Museum", category: "community-hub", address: "Lordship Lane, Tottenham, N17 8NU", description: "A 16th-century manor house, now a free museum of local history for Haringey." },
+  ],
+  Harrow: [
+    { name: "Harrow School", category: "community-hub", address: "Harrow-on-the-Hill", description: "One of England's oldest public schools, founded in 1572." },
+    { name: "Headstone Manor and Museum", category: "community-hub", address: "Pinner View, Harrow, HA2 6PX", description: "A moated 14th-century manor house, the oldest of its kind in Middlesex, now Harrow's local museum." },
+  ],
+  Havering: [
+    { name: "Raphael Park", category: "park", address: "Romford", description: "A Victorian park with a boating lake, adjoining the historic Gidea Park estate." },
+    { name: "Romford Market", category: "community-hub", address: "Market Place, Romford, RM1 3AB", description: "An outdoor market trading since a royal charter of 1247, still held several days a week." },
+  ],
+  Hillingdon: [
+    { name: "Cranford Country Park", category: "park", address: "Hillingdon", description: "Woodland and meadows around the former Cranford House estate." },
+    { name: "Battle of Britain Bunker", category: "community-hub", address: "Wren Avenue, Uxbridge, UB10 0BE", description: "The underground WWII operations room at former RAF Uxbridge that directed fighter squadrons during the Battle of Britain." },
+  ],
+  Hounslow: [
+    { name: "Chiswick House and Gardens", category: "community-hub", address: "Chiswick", description: "A celebrated 18th-century Palladian villa with historic landscape gardens." },
+    { name: "Syon House", category: "community-hub", address: "Syon Park, Brentford, TW8 8JF", description: "The London home of the Duke of Northumberland for over 400 years, with interiors by Robert Adam." },
+  ],
+  Islington: [
+    { name: "Sadler's Wells", category: "leisure-centre", address: "Islington", description: "A leading dance theatre with roots going back to a 17th-century well." },
+    { name: "Emirates Stadium", category: "leisure-centre", address: "75 Drayton Park, N5 1BU", description: "Arsenal Football Club's home ground since 2006." },
+  ],
+  "Kensington and Chelsea": [
+    { name: "Natural History Museum", category: "community-hub", address: "South Kensington", description: "One of the world's great natural history collections, housed in a landmark Victorian building." },
+    { name: "Science Museum", category: "community-hub", address: "Exhibition Road, SW7 2DD", description: "One of the world's leading science museums, part of South Kensington's cluster of free national museums." },
+  ],
+  "Kingston upon Thames": [
+    { name: "Kingston Market Place", category: "community-hub", address: "Kingston upon Thames", description: "A historic market place, home to the ancient Coronation Stone of Anglo-Saxon kings." },
+    { name: "Bentall Centre", category: "community-hub", address: "Wood Street, Kingston upon Thames, KT1 1TP", description: "A large town-centre shopping centre built around the historic Bentalls department store." },
+  ],
+  Lambeth: [
+    { name: "Lambeth Palace", category: "community-hub", address: "Lambeth", description: "The official London residence of the Archbishop of Canterbury for over 800 years." },
+    { name: "Royal Festival Hall", category: "leisure-centre", address: "Belvedere Road, SE1 8XX", description: "The centrepiece concert hall of the South Bank Centre, built for the 1951 Festival of Britain." },
+  ],
+  Lewisham: [
+    { name: "Horniman Museum and Gardens", category: "community-hub", address: "Forest Hill", description: "A free museum of anthropology and natural history set in 16 acres of gardens." },
+    { name: "Manor House Gardens", category: "park", address: "Old Road, Lee, SE13 5TA", description: "A Green Flag-winning park around a Grade II listed 18th-century manor house, with a 250-year-old ice house." },
+  ],
+  Merton: [
+    { name: "All England Lawn Tennis Club", category: "leisure-centre", address: "Wimbledon", description: "Host of the Wimbledon Championships, the oldest tennis tournament in the world, since 1877." },
+    { name: "Wimbledon Windmill Museum", category: "community-hub", address: "Windmill Road, Wimbledon Common, SW19 5NQ", description: "A rare surviving hollow-post flour mill on Wimbledon Common, now a small museum." },
+  ],
+  Newham: [
+    { name: "Queen Elizabeth Olympic Park", category: "park", address: "Stratford", description: "The main venue for the London 2012 Olympics, now a public park and sports venue." },
+    { name: "ExCeL London", category: "community-hub", address: "Western Gateway, E16 1XL", description: "A major exhibition and convention centre on the Royal Victoria Dock in the Docklands." },
+  ],
+  Redbridge: [
+    { name: "Valentines Park", category: "park", address: "Ilford", description: "A large Victorian park surrounding the historic Valentines Mansion." },
+    { name: "Hainault Forest Country Park", category: "park", address: "Romford Road, Hainault, IG7 4QJ", description: "A surviving fragment of the ancient Forest of Essex, with woodland, a lake, and a small farm park." },
+  ],
+  Southwark: [
+    { name: "Borough Market", category: "community-hub", address: "Southwark", description: "One of London's oldest food markets, trading in some form since the 12th century." },
+    { name: "Shakespeare's Globe", category: "leisure-centre", address: "21 New Globe Walk, SE1 9DT", description: "A faithful reconstruction of Shakespeare's original Elizabethan theatre, close to its original Bankside site." },
+  ],
+  Sutton: [
+    { name: "Carshalton Park", category: "park", address: "Carshalton", description: "A green space in one of Sutton's oldest villages, known for its ponds and lavender fields nearby." },
+    { name: "Nonsuch Park", category: "park", address: "Ewell Road, Sutton, SM3 8AB", description: "Former grounds of Henry VIII's lost Nonsuch Palace, straddling the Sutton and Epsom & Ewell border." },
+  ],
+  "Tower Hamlets": [
+    { name: "Victoria Park", category: "park", address: "Tower Hamlets/Hackney border", description: "One of London's oldest public parks, opened in 1845 for the East End." },
+    { name: "Canary Wharf", category: "community-hub", address: "Canary Wharf", description: "One of the UK's two main financial centres, developed from the 1980s on former Docklands land." },
+  ],
+  "Waltham Forest": [
+    { name: "William Morris Gallery", category: "community-hub", address: "Walthamstow", description: "A free gallery in the childhood home of designer and writer William Morris." },
+    { name: "Walthamstow Wetlands", category: "park", address: "2 Forest Road, N17 9NH", description: "Europe's largest urban wetland nature reserve, created from Victorian reservoirs still supplying London's drinking water." },
+  ],
+  Wandsworth: [
+    { name: "Battersea Park", category: "park", address: "Battersea", description: "A large Thames-side park opened in 1858, near the landmark Battersea Power Station." },
+    { name: "Battersea Power Station", category: "community-hub", address: "188 Kirtling Street, SW8 5BN", description: "The iconic decommissioned coal-fired power station on the Thames, redeveloped into shops, homes, and offices." },
+  ],
+  Westminster: [
+    { name: "Westminster Abbey", category: "community-hub", address: "Westminster", description: "The historic coronation church of English and British monarchs since 1066." },
+    { name: "Buckingham Palace", category: "community-hub", address: "Westminster, SW1A 1AA", description: "The monarch's administrative headquarters and London residence since 1837." },
+  ],
 };
 
 // A single verified, borough-agnostic London events resource, used as the
