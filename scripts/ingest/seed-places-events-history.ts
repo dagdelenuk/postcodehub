@@ -39,9 +39,14 @@ const OUTCODE_PLACES: Record<string, Place[]> = {
   ],
   TW11: [
     { name: "Teddington Lock", category: "park", address: "Teddington, TW11", description: "The largest lock complex on the Thames and the river's tidal limit." },
+    { name: "Landmark Arts Centre", category: "community-hub", address: "Ferry Road, Teddington, TW11 9NN", description: "A Grade II listed former Victorian church on the riverside, now a community arts venue for exhibitions, concerts, and events." },
+    { name: "Bushy Park", category: "park", address: "Teddington, TW11", description: "London's second-largest Royal Park, known for its wild deer herds and Chestnut Avenue; its Teddington side borders TW11." },
   ],
   TW12: [
     { name: "Bushy Park", category: "park", address: "Hampton, TW12", description: "London's second-largest Royal Park, known for its wild deer herds and Chestnut Avenue." },
+  ],
+  KT1: [
+    { name: "Royal Paddocks Allotments", category: "community-hub", address: "Hampton Wick, KT1", description: "Allotments granted by Royal Warrant in 1921 on the site of the king's former horse paddocks, enclosed within the walls of Bushy Park." },
   ],
   KT8: [
     { name: "Hampton Court Palace", category: "community-hub", address: "Hampton Court, KT8", description: "Former residence of Henry VIII, now a Historic Royal Palace open to visitors." },
