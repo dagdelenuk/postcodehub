@@ -135,14 +135,17 @@ const TYPE_ICON: Record<string, string> = {
         text.className = "min-w-0";
         const label = document.createElement("span");
         label.className = "block font-medium truncate";
-        label.textContent = entry.label;
-        // For an outcode matched via a ward name, show the matching ward(s)
-        // next to the postcode instead of the generic borough/city line -
-        // that's specifically what the visitor searched for.
+        // Outcode entries put the borough right on the label line ("KT1 ·
+        // Kingston upon Thames"); the line below is reserved for wards.
+        label.textContent = entry.type === "outcode" && entry.borough ? `${entry.label} · ${entry.borough}` : entry.label;
+        // Prefer the ward(s) that actually matched the query; otherwise fall
+        // back to the outcode's full ward list as general context (e.g. when
+        // the match came from the postcode itself, not a ward name).
         const matchedWards = entry.wards?.filter((w) => wardMatches(w, q)) ?? [];
+        const wardLine = matchedWards.length > 0 ? matchedWards : entry.wards;
         const sublabel = document.createElement("span");
         sublabel.className = "block text-xs text-stone-500 truncate";
-        sublabel.textContent = matchedWards.length > 0 && entry.borough ? `${matchedWards.join(", ")} · ${entry.borough}` : entry.sublabel;
+        sublabel.textContent = wardLine && wardLine.length > 0 ? wardLine.join(", ") : entry.sublabel;
         text.append(label, sublabel);
         button.append(icon, text);
         // mousedown (not click) fires before the input's blur hides the list.
