@@ -4,6 +4,36 @@ import FavoriteStar from "../components/FavoriteStar.astro";
 import { getBannerImages, loadHierarchy } from "../lib/data";
 
 const hierarchy = loadHierarchy();
+
+// Favourites live in the visitor's localStorage, unknown at build time, so
+// every possible favourite (every city/borough/outcode) gets a lookup entry
+// here; client-side JS (favorites.ts logic in FavoriteStar.astro) reads this
+// to render the "Your Favourites" section for whichever keys are actually
+// favourited, without needing to fetch anything at runtime.
+const favouritesLookup: Record<string, { label: string; sublabel: string; href: string; thumb?: string }> = {};
+for (const city of hierarchy.cities) {
+  favouritesLookup[`city:${city.slug}`] = {
+    label: city.name,
+    sublabel: `${city.boroughs.length} council ${city.boroughs.length === 1 ? "authority" : "authorities"} covered`,
+    href: `/${city.slug}/`,
+    thumb: getBannerImages(city.slug)[0]?.src,
+  };
+  for (const borough of city.boroughs) {
+    favouritesLookup[`borough:${borough.slug}`] = {
+      label: borough.name,
+      sublabel: `${borough.outcodes.length} postcode areas`,
+      href: `/${city.slug}/${borough.slug}/`,
+      thumb: getBannerImages(borough.slug)[0]?.src,
+    };
+    for (const outcode of borough.outcodes) {
+      favouritesLookup[`outcode:${city.slug}/${borough.slug}/${outcode.slug}`] = {
+        label: outcode.outcode,
+        sublabel: outcode.wards.slice(0, 2).join(", "),
+        href: `/${city.slug}/${borough.slug}/${outcode.slug}/`,
+      };
+    }
+  }
+}
 ---
 
 <BaseLayout title="Home" description="A non-commercial community information hub for UK neighbourhoods, covering health, safety, transport, schools, and civic data by postcode." menuLevel="home">
@@ -22,6 +52,13 @@ const hierarchy = loadHierarchy();
       </p>
     </section>
   </div>
+
+  <script type="application/json" id="favourites-lookup" set:html={JSON.stringify(favouritesLookup)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-8 pb-4 hidden" data-favourites-section>
+    <h2 class="text-xl font-semibold mb-4">Your Favourites</h2>
+    <div class="grid gap-3 sm:grid-cols-2" data-favourites-list></div>
+  </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-16">
     <h2 class="text-xl font-semibold mb-4">Browse by city</h2>
