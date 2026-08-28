@@ -81,7 +81,7 @@ async function fetchCategory(outcode: string, roleId: string): Promise<GpSurgery
     const detailed = await Promise.all(
       batch.map(async (org) => {
         const detail = await getOrgDetail(org.OrgId);
-        return { ...detail, name: org.Name };
+        return { ...detail, name: toTitleCase(org.Name) };
       })
     );
     results.push(...detailed);

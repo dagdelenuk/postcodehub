@@ -26,6 +26,7 @@ const available = new Set<CategoryKey>(
 
 <BaseLayout title={title} description={description} menuLevel="outcode" citySlug={citySlug} boroughSlug={boroughSlug}>
   <Breadcrumbs
+    sticky
     crumbs={[
       { label: "PostcodeHub", href: "/" },
       { label: data.city, href: `/${citySlug}/` },

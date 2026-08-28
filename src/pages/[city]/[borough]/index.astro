@@ -30,6 +30,7 @@ const summaryStats = [
 
 <BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}>
   <Breadcrumbs
+    sticky
     crumbs={[
       { label: "PostcodeHub", href: "/" },
       { label: city.name, href: `/${city.slug}/` },
