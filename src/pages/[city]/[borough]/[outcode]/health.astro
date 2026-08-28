@@ -1,6 +1,7 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import HealthOrgCard from "../../../../components/HealthOrgCard.astro";
+import HealthFilters from "../../../../components/HealthFilters.astro";
 import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -11,6 +12,11 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.params;
 const { data } = Astro.props;
+const counts = {
+  gp: data.health.gpSurgeries.length,
+  dentist: data.health.dentists.length,
+  pharmacy: data.health.pharmacies.length,
+};
 ---
 
 <LocalityLayout
@@ -21,7 +27,9 @@ const { data } = Astro.props;
   title={`Health in ${data.outcode}`}
   description={`GP surgeries, dentists, and pharmacies serving the ${data.outcode} area.`}
 >
-  <h1 class="text-2xl font-bold mb-6">Health services in {data.outcode}</h1>
+  <h1 class="text-2xl font-bold mb-4">Health services in {data.outcode}</h1>
+
+  <HealthFilters counts={counts} />
 
   {
     [
@@ -31,7 +39,7 @@ const { data } = Astro.props;
     ].map(
       (section) =>
         section.items.length > 0 && (
-          <section class="mb-8">
+          <section class="mb-8" data-health-type-block data-health-kind={section.kind}>
             <h2 class="text-lg font-semibold mb-3">{section.title} ({section.items.length})</h2>
             <div class="grid gap-3 sm:grid-cols-2">
               {section.items.map((org) => (

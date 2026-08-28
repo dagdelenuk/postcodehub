@@ -2,6 +2,7 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import HealthOrgCard from "../../../components/HealthOrgCard.astro";
+import HealthFilters from "../../../components/HealthFilters.astro";
 import { getBoroughHealth, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
@@ -19,6 +20,11 @@ export function getStaticPaths() {
 const { city, borough } = Astro.props;
 const groups = getBoroughHealth(city.slug, borough.slug);
 const totalGp = groups.reduce((sum, g) => sum + g.gpSurgeries.length, 0);
+const counts = {
+  gp: totalGp,
+  dentist: groups.reduce((sum, g) => sum + g.dentists.length, 0),
+  pharmacy: groups.reduce((sum, g) => sum + g.pharmacies.length, 0),
+};
 ---
 
 <BaseLayout
@@ -38,11 +44,13 @@ const totalGp = groups.reduce((sum, g) => sum + g.gpSurgeries.length, 0);
   />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
-    <h1 class="text-2xl font-bold mb-6">Health services in {borough.name} ({totalGp} GP surgeries)</h1>
+    <h1 class="text-2xl font-bold mb-4">Health services in {borough.name} ({totalGp} GP surgeries)</h1>
+
+    <HealthFilters counts={counts} />
 
     {
       groups.map((group) => (
-        <div class="mb-8">
+        <div class="mb-8" data-health-group>
           <h2 class="text-lg font-semibold mb-3">
             <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/health/`} class="hover:text-emerald-700">
               {group.outcode}
@@ -55,7 +63,7 @@ const totalGp = groups.reduce((sum, g) => sum + g.gpSurgeries.length, 0);
           ].map(
             (section) =>
               section.items.length > 0 && (
-                <div class="mb-4">
+                <div class="mb-4" data-health-type-block data-health-kind={section.kind}>
                   <p class="text-xs uppercase tracking-wide text-stone-400 mb-2">
                     {section.title} ({section.items.length})
                   </p>

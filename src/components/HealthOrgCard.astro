@@ -17,7 +17,7 @@ const ICONS: Record<Props["kind"], { emoji: string; text: string }> = {
 const icon = ICONS[kind];
 ---
 
-<div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4">
+<div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-health-card data-health-kind={kind}>
   <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none", icon.text]} aria-hidden="true">
     {icon.emoji}
   </span>

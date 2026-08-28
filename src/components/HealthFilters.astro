@@ -1,0 +1,99 @@
+---
+interface Props {
+  counts: { gp: number; dentist: number; pharmacy: number };
+}
+
+const { counts } = Astro.props;
+
+const TYPES = [
+  { kind: "gp", label: "GP surgeries" },
+  { kind: "dentist", label: "Dentists" },
+  { kind: "pharmacy", label: "Pharmacies" },
+] as const;
+
+const available = TYPES.filter((t) => counts[t.kind] > 0);
+const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors";
+---
+
+{
+  available.length > 1 && (
+    <div>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2" data-health-filters>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <span class="text-xs text-stone-400">Type:</span>
+          {available.map((t) => (
+            <button type="button" class={PILL_BASE} data-filter-value={t.kind}>
+              {t.label}
+            </button>
+          ))}
+        </div>
+        <button type="button" class="text-xs text-stone-400 underline hidden" data-filter-clear>
+          Clear filters
+        </button>
+      </div>
+      <p class="text-xs text-stone-400 mb-6" data-filter-count />
+    </div>
+  )
+}
+
+<style>
+  [data-filter-value] {
+    border-color: #d6d3d1;
+    color: #57534e;
+    background: white;
+  }
+  [data-filter-value].is-active {
+    border-color: #059669;
+    background: #ecfdf5;
+    color: #065f46;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-health-filters]").forEach((bar) => {
+    const pills = [...bar.querySelectorAll<HTMLButtonElement>("[data-filter-value]")];
+    const clearBtn = bar.querySelector<HTMLElement>("[data-filter-clear]");
+    const countEl = document.querySelector<HTMLElement>("[data-filter-count]");
+    const cards = [...document.querySelectorAll<HTMLElement>("[data-health-card]")];
+    const typeBlocks = [...document.querySelectorAll<HTMLElement>("[data-health-type-block]")];
+    const groups = [...document.querySelectorAll<HTMLElement>("[data-health-group]")];
+    const totalCount = cards.length;
+
+    const active = new Set<string>();
+
+    function apply() {
+      let visible = 0;
+      for (const card of cards) {
+        const matches = active.size === 0 || active.has(card.dataset.healthKind ?? "");
+        card.classList.toggle("hidden", !matches);
+        if (matches) visible++;
+      }
+      for (const block of typeBlocks) {
+        const matches = active.size === 0 || active.has(block.dataset.healthKind ?? "");
+        block.classList.toggle("hidden", !matches);
+      }
+      for (const group of groups) {
+        const anyVisible = [...group.querySelectorAll<HTMLElement>("[data-health-type-block]")].some((b) => !b.classList.contains("hidden"));
+        group.classList.toggle("hidden", !anyVisible);
+      }
+      clearBtn?.classList.toggle("hidden", active.size === 0);
+      if (countEl) countEl.textContent = active.size > 0 ? `Showing ${visible} of ${totalCount} results` : "";
+    }
+
+    pills.forEach((pill) => {
+      const value = pill.dataset.filterValue!;
+      pill.addEventListener("click", () => {
+        if (active.has(value)) active.delete(value);
+        else active.add(value);
+        pill.classList.toggle("is-active", active.has(value));
+        apply();
+      });
+    });
+
+    clearBtn?.addEventListener("click", () => {
+      active.clear();
+      pills.forEach((p) => p.classList.remove("is-active"));
+      apply();
+    });
+  });
+</script>
