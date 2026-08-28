@@ -6,9 +6,10 @@ interface Props {
   basePath: string;
   active?: CategoryKey | "overview";
   available: Set<CategoryKey>;
+  overviewLabel?: string;
 }
 
-const { basePath, active, available } = Astro.props;
+const { basePath, active, available, overviewLabel = "🏠" } = Astro.props;
 ---
 
 <nav class="border-b border-stone-200 bg-white sticky top-[114px] z-10">
@@ -21,10 +22,10 @@ const { basePath, active, available } = Astro.props;
           title="Overview"
           class:list={[
             "inline-block px-1.5 sm:px-2 py-3 border-b-2 -mb-px transition-colors",
-            active === "overview" ? "border-emerald-700 text-emerald-800" : "border-transparent text-stone-600 hover:text-stone-900",
+            active === "overview" ? "border-emerald-700 text-emerald-800 font-medium" : "border-transparent text-stone-600 hover:text-stone-900",
           ]}
         >
-          🏠
+          {overviewLabel}
         </a>
       </li>
       {
