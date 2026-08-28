@@ -235,6 +235,56 @@ export function getCityPropertyTrend(citySlug: string): CityTrendData {
   return aggregateBoroughTrend(citySlug, (data) => data.property.sales.map((s) => [s.dateOfTransfer.slice(0, 7), 1]));
 }
 
+export interface BoroughCrimeTrend {
+  /** "YYYY-MM", ascending. */
+  months: string[];
+  outcodes: { outcode: string; slug: string; total: number[]; violent: number[]; property: number[] }[];
+  /** Mean value-per-outcode for each month, one series per crime dimension. */
+  average: { total: number[]; violent: number[]; property: number[] };
+}
+
+/**
+ * Monthly crime trend per postcode area within one borough (every outcode
+ * shown on the borough's own page, not just primary-owned ones - unlike the
+ * summary totals, this isn't being summed anywhere so there's no
+ * double-counting risk from including a boundary outcode), split by Total /
+ * Violent / Property. For the comparative chart on each outcode's Safety page.
+ */
+export function getBoroughCrimeTrend(citySlug: string, boroughSlug: string): BoroughCrimeTrend {
+  const borough = getBorough(citySlug, boroughSlug);
+  const monthsSeen = new Set<string>();
+  const perOutcode: { outcode: string; slug: string; byMonth: Map<string, { total: number; violent: number; property: number }> }[] = [];
+
+  for (const outcode of borough?.outcodes ?? []) {
+    const data = loadOutcodeData(citySlug, boroughSlug, outcode.slug);
+    const byMonth = new Map<string, { total: number; violent: number; property: number }>();
+    for (const m of data.safety.monthlyTrend) {
+      monthsSeen.add(m.month);
+      byMonth.set(m.month, { total: m.totalCrimes, violent: m.violentCrimes, property: m.propertyCrimes });
+    }
+    if (byMonth.size > 0) perOutcode.push({ outcode: outcode.outcode, slug: outcode.slug, byMonth });
+  }
+
+  const months = [...monthsSeen].sort();
+  const outcodes = perOutcode
+    .map((o) => ({
+      outcode: o.outcode,
+      slug: o.slug,
+      total: months.map((m) => o.byMonth.get(m)?.total ?? 0),
+      violent: months.map((m) => o.byMonth.get(m)?.violent ?? 0),
+      property: months.map((m) => o.byMonth.get(m)?.property ?? 0),
+    }))
+    .sort((a, b) => a.outcode.localeCompare(b.outcode));
+
+  const avgOf = (key: "total" | "violent" | "property") =>
+    months.map((_, i) => {
+      const values = outcodes.map((o) => o[key][i]);
+      return values.reduce((sum, v) => sum + v, 0) / (values.length || 1);
+    });
+
+  return { months, outcodes, average: { total: avgOf("total"), violent: avgOf("violent"), property: avgOf("property") } };
+}
+
 export interface BoroughHealthGroup {
   outcode: string;
   outcodeSlug: string;

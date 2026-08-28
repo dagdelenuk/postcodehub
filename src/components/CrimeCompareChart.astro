@@ -1,0 +1,270 @@
+---
+import type { BoroughCrimeTrend } from "../lib/data";
+
+interface Props {
+  trend: BoroughCrimeTrend;
+  averageLabel: string;
+  /** Slug to pre-select (with the average) when no ?highlight= query param is present - e.g. the outcode whose own page this chart sits on. */
+  defaultHighlightSlug?: string;
+  chartId: string;
+}
+
+const { trend, averageLabel, defaultHighlightSlug, chartId } = Astro.props;
+
+const METRICS = [
+  { key: "total", label: "All crimes" },
+  { key: "violent", label: "Violent crime" },
+  { key: "property", label: "Property crime" },
+] as const;
+
+// month is stored "YYYY-MM"; display as "MM-YY" (Ay-Yil).
+function formatMonthLabel(month: string): string {
+  const [year, mon] = month.split("-");
+  return `${mon}-${year.slice(2)}`;
+}
+
+// Golden-angle hue rotation gives maximally distinct colours for any outcode
+// count without clustering, unlike a fixed palette that runs out or repeats.
+function colorFor(index: number): string {
+  const hue = (index * 137.508) % 360;
+  return `hsl(${hue.toFixed(0)}, 62%, 42%)`;
+}
+
+const PAD_LEFT = 56;
+const PAD_RIGHT = 16;
+const PAD_TOP = 16;
+const PAD_BOTTOM = 36;
+const CHART_WIDTH = 900;
+const CHART_HEIGHT = 360;
+
+const monthCount = trend.months.length;
+
+function xAt(i: number): number {
+  return PAD_LEFT + (monthCount <= 1 ? 0 : (i / (monthCount - 1)) * (CHART_WIDTH - PAD_LEFT - PAD_RIGHT));
+}
+
+const gridFracs = [0, 0.25, 0.5, 0.75, 1];
+const outcodesWithColor = trend.outcodes.map((o, i) => ({ ...o, color: colorFor(i) }));
+
+const chartData = {
+  months: trend.months,
+  average: trend.average,
+  entities: outcodesWithColor.map((o) => ({ slug: o.slug, total: o.total, violent: o.violent, property: o.property })),
+  geometry: { PAD_LEFT, PAD_RIGHT, PAD_TOP, PAD_BOTTOM, CHART_WIDTH, CHART_HEIGHT },
+};
+---
+
+<div class="rounded-lg border border-stone-200 bg-white p-4 overflow-x-auto" data-crime-compare-chart data-chart-id={chartId} data-default-highlight={defaultHighlightSlug}>
+  <svg viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`} class="w-full min-w-[640px]" role="img" aria-label="Monthly crime trend by postcode area">
+    {
+      gridFracs.map((frac) => (
+        <>
+          <line x1={PAD_LEFT} y1={PAD_TOP + (1 - frac) * (CHART_HEIGHT - PAD_TOP - PAD_BOTTOM)} x2={CHART_WIDTH - PAD_RIGHT} y2={PAD_TOP + (1 - frac) * (CHART_HEIGHT - PAD_TOP - PAD_BOTTOM)} stroke="#e7e5e4" stroke-width="1" />
+          <text x={PAD_LEFT - 8} y={PAD_TOP + (1 - frac) * (CHART_HEIGHT - PAD_TOP - PAD_BOTTOM) + 4} text-anchor="end" font-size="10" fill="#a8a29e" data-grid-label data-grid-frac={frac} />
+        </>
+      ))
+    }
+    {
+      trend.months.map((m, i) => (
+        <text x={xAt(i)} y={CHART_HEIGHT - PAD_BOTTOM + 16} text-anchor="middle" font-size="10" fill="#a8a29e">
+          {formatMonthLabel(m)}
+        </text>
+      ))
+    }
+
+    {
+      outcodesWithColor.map((o) => (
+        <polyline fill="none" stroke={o.color} stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round" data-entity-line data-entity-slug={o.slug}>
+          <title>{o.outcode}</title>
+        </polyline>
+      ))
+    }
+
+    <polyline fill="none" stroke="#1c1917" stroke-width="2.5" stroke-dasharray="6 4" stroke-linejoin="round" stroke-linecap="round" data-average-line>
+      <title>{averageLabel}</title>
+    </polyline>
+  </svg>
+</div>
+<script type="application/json" data-chart-json={chartId} set:html={JSON.stringify(chartData)} />
+
+<div class="flex flex-wrap items-center gap-1.5 mt-4" data-crime-compare-metrics data-chart-id={chartId}>
+  <span class="text-xs text-stone-400">Show:</span>
+  {
+    METRICS.map((m) => (
+      <button type="button" class="legend-pill" data-metric-toggle={m.key}>
+        {m.label}
+      </button>
+    ))
+  }
+</div>
+
+<div class="flex flex-wrap items-center gap-2 mt-2" data-crime-compare-legend data-chart-id={chartId}>
+  <button type="button" class="legend-pill is-average" data-legend-toggle="average">
+    <span class="legend-dot" style="background:#1c1917" /> {averageLabel}
+  </button>
+  {
+    outcodesWithColor.map((o) => (
+      <button type="button" class="legend-pill" data-legend-toggle={o.slug}>
+        <span class="legend-dot" style={`background:${o.color}`} /> {o.outcode}
+      </button>
+    ))
+  }
+  <button type="button" class="text-xs text-stone-400 underline ml-1" data-legend-show-all>
+    Show all
+  </button>
+  <button type="button" class="text-xs text-stone-400 underline" data-legend-clear-all>
+    Clear all
+  </button>
+</div>
+
+<style>
+  .legend-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    padding: 3px 10px 3px 8px;
+    border-radius: 9999px;
+    border: 1px solid #e7e5e4;
+    background: white;
+    color: #57534e;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+  }
+  .legend-pill.is-active {
+    border-color: #059669;
+    background: #ecfdf5;
+    color: #065f46;
+  }
+  .legend-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    flex-shrink: 0;
+  }
+  [data-entity-line].is-emphasised {
+    stroke-width: 3.5;
+  }
+  [data-entity-line].is-hidden,
+  [data-average-line].is-hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  type Metric = "total" | "violent" | "property";
+
+  document.querySelectorAll<HTMLElement>("[data-crime-compare-chart]").forEach((chart) => {
+    const chartId = chart.dataset.chartId!;
+    const legend = document.querySelector<HTMLElement>(`[data-crime-compare-legend][data-chart-id="${chartId}"]`);
+    const metricBar = document.querySelector<HTMLElement>(`[data-crime-compare-metrics][data-chart-id="${chartId}"]`);
+    if (!legend || !metricBar) return;
+
+    const lines = [...chart.querySelectorAll<SVGPolylineElement>("[data-entity-line]")];
+    const averageLine = chart.querySelector<SVGPolylineElement>("[data-average-line]");
+    const gridLabels = [...chart.querySelectorAll<SVGTextElement>("[data-grid-label]")];
+    const pills = [...legend.querySelectorAll<HTMLButtonElement>("[data-legend-toggle]")];
+    const metricPills = [...metricBar.querySelectorAll<HTMLButtonElement>("[data-metric-toggle]")];
+    const showAllBtn = legend.querySelector<HTMLElement>("[data-legend-show-all]");
+    const clearAllBtn = legend.querySelector<HTMLElement>("[data-legend-clear-all]");
+    const allSlugs = ["average", ...lines.map((l) => l.dataset.entitySlug!)];
+
+    const dataEl = document.querySelector<HTMLScriptElement>(`[data-chart-json="${chartId}"]`);
+    const raw: {
+      months: string[];
+      average: Record<Metric, number[]>;
+      entities: ({ slug: string } & Record<Metric, number[]>)[];
+      geometry: { PAD_LEFT: number; PAD_RIGHT: number; PAD_TOP: number; PAD_BOTTOM: number; CHART_WIDTH: number; CHART_HEIGHT: number };
+    } = JSON.parse(dataEl?.textContent ?? "null");
+
+    let metric: Metric = "total";
+    let selected = new Set<string>(allSlugs);
+
+    function pillFor(slug: string) {
+      return pills.find((p) => p.dataset.legendToggle === slug);
+    }
+
+    function rescale() {
+      if (!raw) return;
+      const { PAD_LEFT, PAD_RIGHT, PAD_TOP, PAD_BOTTOM, CHART_WIDTH, CHART_HEIGHT } = raw.geometry;
+      const plotWidth = CHART_WIDTH - PAD_LEFT - PAD_RIGHT;
+      const plotHeight = CHART_HEIGHT - PAD_TOP - PAD_BOTTOM;
+      const monthCount = raw.months.length;
+
+      const seriesInPlay: number[][] = [];
+      if (selected.has("average")) seriesInPlay.push(raw.average[metric]);
+      for (const e of raw.entities) {
+        if (selected.has(e.slug)) seriesInPlay.push(e[metric]);
+      }
+      const values = seriesInPlay.flat();
+      const maxValue = (values.length > 0 ? Math.max(...values, 1) : 100) * 1.08;
+
+      const xAt = (i: number) => PAD_LEFT + (monthCount <= 1 ? 0 : (i / (monthCount - 1)) * plotWidth);
+      const yAt = (v: number) => PAD_TOP + (1 - v / maxValue) * plotHeight;
+      const pointsFor = (series: number[]) => series.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(" ");
+
+      averageLine?.setAttribute("points", pointsFor(raw.average[metric]));
+      for (const line of lines) {
+        const e = raw.entities.find((x) => x.slug === line.dataset.entitySlug);
+        if (e) line.setAttribute("points", pointsFor(e[metric]));
+      }
+      for (const label of gridLabels) {
+        const frac = Number(label.dataset.gridFrac);
+        label.textContent = Math.round(maxValue * frac).toLocaleString();
+      }
+    }
+
+    function refresh() {
+      for (const line of lines) {
+        line.classList.toggle("is-hidden", !selected.has(line.dataset.entitySlug!));
+      }
+      averageLine?.classList.toggle("is-hidden", !selected.has("average"));
+      for (const pill of pills) {
+        pill.classList.toggle("is-active", selected.has(pill.dataset.legendToggle!));
+      }
+      for (const mp of metricPills) {
+        mp.classList.toggle("is-active", mp.dataset.metricToggle === metric);
+      }
+      rescale();
+    }
+
+    pills.forEach((pill) => {
+      pill.addEventListener("click", () => {
+        const slug = pill.dataset.legendToggle!;
+        if (selected.has(slug)) selected.delete(slug);
+        else selected.add(slug);
+        refresh();
+      });
+    });
+
+    metricPills.forEach((mp) => {
+      mp.addEventListener("click", () => {
+        metric = mp.dataset.metricToggle as Metric;
+        refresh();
+      });
+    });
+
+    showAllBtn?.addEventListener("click", () => {
+      selected = new Set(allSlugs);
+      for (const line of lines) line.classList.remove("is-emphasised");
+      refresh();
+    });
+
+    clearAllBtn?.addEventListener("click", () => {
+      selected = new Set();
+      for (const line of lines) line.classList.remove("is-emphasised");
+      refresh();
+    });
+
+    const params = new URLSearchParams(location.search);
+    const highlight = params.get("highlight") ?? chart.dataset.defaultHighlight ?? null;
+    if (highlight && lines.some((l) => l.dataset.entitySlug === highlight)) {
+      selected = new Set(["average", highlight]);
+      lines.find((l) => l.dataset.entitySlug === highlight)?.classList.add("is-emphasised");
+      pillFor(highlight)?.scrollIntoView({ block: "nearest", inline: "center" });
+    }
+
+    refresh();
+  });
+</script>

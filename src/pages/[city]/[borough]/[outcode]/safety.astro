@@ -1,6 +1,7 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+import CrimeCompareChart from "../../../../components/CrimeCompareChart.astro";
+import { getAllOutcodeParams, getBoroughCrimeTrend, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -10,6 +11,8 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.params;
 const { data } = Astro.props;
+
+const boroughTrend = getBoroughCrimeTrend(city!, borough!);
 
 const maxMonthly = Math.max(...data.safety.monthlyTrend.map((m) => m.totalCrimes), 1);
 
@@ -60,6 +63,12 @@ const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
         }
       </div>
     </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold mb-1">Compare postcode areas in {data.borough}</h2>
+    <p class="text-stone-500 mb-3 text-sm">Monthly crime trend across every postcode area in {data.borough}, against the borough average.</p>
+    <CrimeCompareChart trend={boroughTrend} averageLabel={`${data.borough} average`} defaultHighlightSlug={data.slug} chartId="borough-crime" />
   </section>
 
   <section>
