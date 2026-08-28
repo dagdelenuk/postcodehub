@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import FavoriteStar from "../components/FavoriteStar.astro";
+import PostcodeSearch from "../components/PostcodeSearch.astro";
 import { getBannerImages, loadHierarchy } from "../lib/data";
 
 const hierarchy = loadHierarchy();
@@ -55,6 +56,9 @@ for (const city of hierarchy.cities) {
         Health services, transport, schools, safety, planning, local representatives, events, and property
         &mdash; built from open UK government data, organised by postcode.
       </p>
+      <div class="mt-6 max-w-xs">
+        <PostcodeSearch />
+      </div>
     </section>
   </div>
 
