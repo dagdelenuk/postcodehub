@@ -173,6 +173,50 @@ export function getCitySummary(citySlug: string): AreaSummary {
   return summariseOutcodes(entries);
 }
 
+export interface CityCrimeTrend {
+  /** "YYYY-MM", ascending. */
+  months: string[];
+  boroughs: { name: string; slug: string; series: number[] }[];
+  /** Mean crimes-per-borough for each month - not the city total, so it sits on the same scale as each borough's own line. */
+  average: number[];
+}
+
+/**
+ * Monthly crime trend per borough (summed across primary-borough outcodes,
+ * same rule as getBoroughSummary - a boundary outcode's monthly figures are
+ * only counted by whichever borough actually owns it), plus a per-month
+ * average across boroughs, for the comparative chart reached from a
+ * borough's "Crimes (12mo)" stat card.
+ */
+export function getCityCrimeTrend(citySlug: string): CityCrimeTrend {
+  const city = getCity(citySlug);
+  const monthsSeen = new Set<string>();
+  const perBorough: { name: string; slug: string; byMonth: Map<string, number> }[] = [];
+
+  for (const borough of city?.boroughs ?? []) {
+    const byMonth = new Map<string, number>();
+    for (const outcode of borough.outcodes.filter((o) => o.isPrimaryBorough)) {
+      const data = loadOutcodeData(citySlug, borough.slug, outcode.slug);
+      for (const m of data.safety.monthlyTrend) {
+        monthsSeen.add(m.month);
+        byMonth.set(m.month, (byMonth.get(m.month) ?? 0) + m.totalCrimes);
+      }
+    }
+    if (byMonth.size > 0) perBorough.push({ name: borough.name, slug: borough.slug, byMonth });
+  }
+
+  const months = [...monthsSeen].sort();
+  const boroughs = perBorough
+    .map((b) => ({ name: b.name, slug: b.slug, series: months.map((m) => b.byMonth.get(m) ?? 0) }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const average = months.map((_, i) => {
+    const values = boroughs.map((b) => b.series[i]);
+    return values.reduce((sum, v) => sum + v, 0) / (values.length || 1);
+  });
+
+  return { months, boroughs, average };
+}
+
 export interface BoroughHealthGroup {
   outcode: string;
   outcodeSlug: string;
