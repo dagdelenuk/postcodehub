@@ -28,14 +28,18 @@ const OUTCODE_PLACES: Record<string, Place[]> = {
   TW9: [
     { name: "Royal Botanic Gardens, Kew", category: "park", address: "Kew, Richmond upon Thames, TW9", description: "UNESCO World Heritage Site and the world's largest collection of living plants." },
     { name: "The National Archives", category: "community-hub", address: "Kew, Richmond upon Thames, TW9", description: "The UK government's official archive, holding over 1,000 years of records." },
+    { name: "Kew Palace", category: "community-hub", address: "Kew Green, Richmond upon Thames, TW9 3AB", description: "The smallest of the UK's royal palaces, once a country retreat for George III's family, set within Kew Gardens." },
   ],
   TW1: [
     { name: "Twickenham Stadium", category: "leisure-centre", address: "Twickenham, TW1", description: "The home of England Rugby, and the world's second-largest rugby union venue." },
     { name: "Marble Hill Park", category: "park", address: "Twickenham, TW1", description: "Riverside park surrounding Marble Hill House, an English Heritage Palladian villa." },
+    { name: "Eel Pie Island", category: "community-hub", address: "Twickenham, TW1 3DY", description: "A small Thames island reached by footbridge, home to a long-standing community of artists' studios and once a famous 1960s music venue." },
+    { name: "Strawberry Hill House", category: "community-hub", address: "268 Waldegrave Road, Twickenham, TW1 4ST", description: "Horace Walpole's 18th-century Gothic Revival villa, Britain's best-known example of the style." },
   ],
   TW10: [
     { name: "Ham House and Garden", category: "community-hub", address: "Ham, Richmond upon Thames, TW10", description: "A National Trust 17th-century house on the banks of the Thames." },
     { name: "Richmond Hill", category: "park", address: "Richmond, TW10", description: "Home to the View from Richmond Hill, the only view in England protected by its own Act of Parliament." },
+    { name: "Petersham Meadows", category: "park", address: "River Lane, Richmond, TW10 7AG", description: "A historic Thames-side water meadow between Richmond and Ham, protected by the same 1902 Act of Parliament and still grazed by cattle each summer." },
   ],
   TW11: [
     { name: "Teddington Lock", category: "park", address: "Teddington, TW11", description: "The largest lock complex on the Thames and the river's tidal limit." },
@@ -44,6 +48,13 @@ const OUTCODE_PLACES: Record<string, Place[]> = {
   ],
   TW12: [
     { name: "Bushy Park", category: "park", address: "Hampton, TW12", description: "London's second-largest Royal Park, known for its wild deer herds and Chestnut Avenue." },
+    { name: "Garrick's Temple to Shakespeare", category: "community-hub", address: "Hampton Court Road, Hampton, TW12 2EN", description: "A riverside garden temple built in 1756 by actor David Garrick in tribute to Shakespeare, now a small museum." },
+  ],
+  TW2: [
+    { name: "Kneller Hall", category: "community-hub", address: "Kneller Road, Whitton, TW2 7DU", description: "A Grade II listed 18th-century mansion, home to the Royal Military School of Music from 1857 until the Army vacated the site in 2021." },
+  ],
+  TW4: [
+    { name: "Hounslow Heath", category: "park", address: "Hounslow, TW4", description: "A large surviving remnant of the once much larger Hounslow Heath, today a local nature reserve." },
   ],
   KT1: [
     { name: "Royal Paddocks Allotments", category: "community-hub", address: "Hampton Wick, KT1", description: "Allotments granted by Royal Warrant in 1921 on the site of the king's former horse paddocks, enclosed within the walls of Bushy Park." },
@@ -57,18 +68,21 @@ const OUTCODE_PLACES: Record<string, Place[]> = {
   ],
   SW14: [
     { name: "East Sheen Common", category: "park", address: "East Sheen, SW14", description: "Woodland and open common bordering Richmond Park." },
+    { name: "Stag Brewery site", category: "community-hub", address: "Lower Richmond Road, Mortlake, SW14", description: "Site of the Mortlake Brewery, brewing on and off since the 15th century and known as the Stag Brewery from 1959 until closure in 2015; now being redeveloped." },
   ],
 };
 
 const OUTCODE_HISTORY: Record<string, string> = {
   TW9: "TW9 covers Kew and part of Richmond town, best known worldwide for the Royal Botanic Gardens, Kew — a UNESCO World Heritage Site since 2003 and one of the world's leading botanical research institutions.",
-  TW1: "TW1 covers Twickenham, internationally known as the home of England Rugby since Twickenham Stadium opened in 1909. The area also has Georgian riverside heritage around Marble Hill.",
+  TW1: "TW1 covers Twickenham, internationally known as the home of England Rugby since Twickenham Stadium opened in 1909. The area also has Georgian riverside heritage around Marble Hill and Strawberry Hill House, Horace Walpole's pioneering Gothic Revival villa.",
   TW10: "TW10 covers Richmond Hill and Ham. The view from Richmond Hill has been protected by Act of Parliament since 1902, making it the only view in England with statutory legal protection.",
   TW11: "TW11 covers Teddington, whose name is linked to the Thames tidal limit at Teddington Lock, the largest lock complex on the river.",
-  TW12: "TW12 covers Hampton, home to Bushy Park — London's second-largest Royal Park after Richmond Park itself.",
+  TW12: "TW12 covers Hampton, home to Bushy Park — London's second-largest Royal Park after Richmond Park itself — and to Garrick's Temple, actor David Garrick's 18th-century riverside tribute to Shakespeare.",
+  TW2: "TW2 covers Whitton and part of Twickenham. Kneller Hall, an 18th-century mansion once owned by court painter Sir Godfrey Kneller, was the home of the Royal Military School of Music from 1857 to 2021.",
+  TW4: "TW4 covers Hounslow West and Whitton, and includes Hounslow Heath — a surviving fragment of the much larger heath that once covered this part of Middlesex.",
   KT8: "KT8 spans part of Hampton Court, seat of Hampton Court Palace, the former Tudor residence of King Henry VIII.",
   SW13: "SW13 covers Barnes, a historic Thames-side village that lies along the Oxford v Cambridge Boat Race course and is home to the WWT London Wetland Centre.",
-  SW14: "SW14 covers Mortlake and East Sheen; the Boat Race finishes near Chiswick Bridge at the Mortlake end of the borough.",
+  SW14: "SW14 covers Mortlake and East Sheen; the Boat Race finishes near Chiswick Bridge at the Mortlake end of the borough, close to the historic Stag Brewery site.",
 };
 
 // One history summary + a few defining landmarks per London borough — the
