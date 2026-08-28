@@ -64,7 +64,7 @@ const icon = iconFor(school.phaseOfEducation);
       school.ofstedRating && school.ofstedRatingDerivedFromAreaGrades && (
         <p class="text-xs text-stone-400 mt-1">
           {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
-          {school.ofstedRating.toLowerCase()} in every graded area - Ofsted's post-2024 framework doesn't publish a composite label
+          based on its lowest-graded area ({school.ofstedRating.toLowerCase()}) - Ofsted's post-2024 framework doesn't publish a composite label
         </p>
       )
     }
@@ -72,7 +72,7 @@ const icon = iconFor(school.phaseOfEducation);
       !school.ofstedRating && school.ofstedNotJudgedUnderNewFramework && (
         <p class="text-xs text-stone-400 mt-1">
           {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
-          mixed grades across areas, no single overall grade under Ofsted's post-2024 framework
+          no graded areas to go on, no single overall grade under Ofsted's post-2024 framework
         </p>
       )
     }

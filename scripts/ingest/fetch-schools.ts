@@ -33,18 +33,18 @@ const OEIF_CORE_AREA_COLUMNS = [
 /**
  * Under Ofsted's post-Sept-2024 framework, "Latest OEIF overall effectiveness"
  * is deliberately left as "Not judged" - Ofsted no longer publishes a single
- * combined grade. But it still grades each area individually (1-4), and when
- * every core area lands on the same grade, that IS an unambiguous overall
- * picture - e.g. Collis Primary is graded "1" (Outstanding) on quality of
- * education, behaviour, personal development, and leadership alike. Mixed
- * area grades are left unlabelled rather than guessing which one "wins".
+ * combined grade. But it still grades each area individually (1-4, where a
+ * higher number is a WORSE grade), so take the worst of those as the overall
+ * picture - e.g. Marshgate Primary is graded quality of education 2, behaviour
+ * 1, personal development 1, leadership 2: displayed as "Good", the same way
+ * a holistic inspection would be capped by its weakest area. When every area
+ * happens to share the same grade this is just that grade, unchanged.
  */
-function ratingFromUniformAreaGrades(row: Record<string, string>): string | null {
+function ratingFromAreaGrades(row: Record<string, string>): string | null {
   const grades = OEIF_CORE_AREA_COLUMNS.map((col) => row[col]).filter((v) => v && v !== "NULL" && v !== "9");
   if (grades.length === 0) return null;
-  const [first, ...rest] = grades;
-  if (rest.some((g) => g !== first)) return null;
-  return OFSTED_RATING_LABELS[first] ?? null;
+  const worst = grades.reduce((worstSoFar, g) => (Number(g) > Number(worstSoFar) ? g : worstSoFar));
+  return OFSTED_RATING_LABELS[worst] ?? null;
 }
 
 /**
@@ -96,7 +96,7 @@ interface OfstedRating {
    * combined grade - distinct from "no data at all" for display purposes. */
   notJudgedUnderNewFramework: boolean;
   /** True when `rating` isn't Ofsted's own composite label but was derived
-   * here because every core area happened to land on the same grade. */
+   * here from the worst of its individually graded areas. */
   derivedFromAreaGrades: boolean;
 }
 
@@ -150,12 +150,12 @@ async function fetchOfstedRatings(): Promise<Map<string, OfstedRating>> {
         }
         if (overallRaw === "Not judged") {
           const dateRaw = row["Inspection start date of latest OEIF graded inspection"];
-          const uniformRating = ratingFromUniformAreaGrades(row);
+          const derivedRating = ratingFromAreaGrades(row);
           ratings.set(urn, {
-            rating: uniformRating,
+            rating: derivedRating,
             inspectionDate: dateRaw && dateRaw !== "NULL" ? dateRaw : null,
             notJudgedUnderNewFramework: true,
-            derivedFromAreaGrades: uniformRating !== null,
+            derivedFromAreaGrades: derivedRating !== null,
           });
           continue;
         }
