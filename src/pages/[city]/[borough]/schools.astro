@@ -76,6 +76,7 @@ const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap trans
       {
         hasOversubscribed && (
           <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">Admissions:</span>
             <button type="button" class={PILL_BASE} data-filter-group="oversubscribed" data-filter-value="true">
               Oversubscribed
             </button>
