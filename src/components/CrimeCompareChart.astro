@@ -181,10 +181,6 @@ const chartData = {
     let metric: Metric = "total";
     let selected = new Set<string>(allSlugs);
 
-    function pillFor(slug: string) {
-      return pills.find((p) => p.dataset.legendToggle === slug);
-    }
-
     function rescale() {
       if (!raw) return;
       const { PAD_LEFT, PAD_RIGHT, PAD_TOP, PAD_BOTTOM, CHART_WIDTH, CHART_HEIGHT } = raw.geometry;
@@ -262,7 +258,6 @@ const chartData = {
     if (highlight && lines.some((l) => l.dataset.entitySlug === highlight)) {
       selected = new Set(["average", highlight]);
       lines.find((l) => l.dataset.entitySlug === highlight)?.classList.add("is-emphasised");
-      pillFor(highlight)?.scrollIntoView({ block: "nearest", inline: "center" });
     }
 
     refresh();

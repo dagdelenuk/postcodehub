@@ -44,15 +44,28 @@ async function listActiveOrgs(outcode: string, roleId: string): Promise<OrgListI
   return orgs.filter((org) => postcodeToOutcode(org.PostCode) === outcode);
 }
 
+// NHS ODS returns address lines in ALL CAPS ("STATION ROAD, BARNES, LONDON");
+// title-case them to match how GIAS's school addresses already read.
+function toTitleCase(s: string): string {
+  return s
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 async function getOrgDetail(orgId: string): Promise<GpSurgery> {
   const data = await withRetry(() => fetchJson<OrgDetailResponse>(`${ORD_BASE}/organisations/${orgId}`));
   const loc = data.Organisation.GeoLoc?.Location;
   const tel = data.Organisation.Contacts?.Contact?.find((c) => c.type === "tel")?.value;
+  const postcode = loc?.PostCode ?? "";
+  const addressParts = [loc?.AddrLn1, loc?.AddrLn2, loc?.Town].filter(Boolean).map(toTitleCase);
+  if (postcode) addressParts.splice(1, 0, postcode);
   return {
     name: "", // filled in by caller from the list item (detail omits it in some records)
     odsCode: orgId,
-    address: [loc?.AddrLn1, loc?.AddrLn2, loc?.Town].filter(Boolean).join(", "),
-    postcode: loc?.PostCode ?? "",
+    address: addressParts.join(", "),
+    postcode,
     telephone: tel,
   };
 }
