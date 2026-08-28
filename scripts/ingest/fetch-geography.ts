@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { getOutcode } from "./lib/postcodes.js";
 import { ensureNsplZip, listZipEntries, readLadNameLookup, readNsplArea } from "./lib/nspl.js";
+import { fetchWardPopulations } from "./lib/wards.js";
 import { logStep, sleep } from "./lib/fetch-utils.js";
 import type { Hierarchy, HierarchyOutcode } from "../../src/lib/types.js";
 
@@ -153,16 +154,28 @@ async function main() {
 
   for (const boroughName of LONDON_BOROUGHS) {
     const ladCode = boroughLadCode.get(boroughName)!;
+    let wardPopulation: Map<string, number>;
+    try {
+      wardPopulation = await fetchWardPopulations(ladCode);
+    } catch (err) {
+      logStep(STEP, `WARNING: couldn't fetch ward populations for ${boroughName} (${err instanceof Error ? err.message : err}) - wards will keep their postcodes.io order.`);
+      wardPopulation = new Map();
+    }
+
     const outcodes: HierarchyOutcode[] = [];
     for (const a of relevant) {
       if (!a.touchingLads.has(ladCode)) continue;
       const e = enrichment.get(a.outcode)!;
+      // Most-populous ward first - unmatched ward names (rare naming
+      // mismatches between postcodes.io and Nomis) sink to the end rather
+      // than breaking the sort.
+      const wards = [...e.wards].sort((x, y) => (wardPopulation.get(y) ?? -1) - (wardPopulation.get(x) ?? -1));
       outcodes.push({
         outcode: a.outcode,
         slug: slugify(a.outcode),
         latitude: a.latitude,
         longitude: a.longitude,
-        wards: e.wards,
+        wards,
         parliamentaryConstituency: e.constituency,
         isPrimaryBorough: a.primaryLad === ladCode,
       });

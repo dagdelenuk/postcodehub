@@ -35,7 +35,7 @@ const available = new Set<CategoryKey>(
   />
   <div class="mx-auto max-w-5xl px-4 pt-4">
     <h1 class="text-3xl font-bold tracking-tight">{data.outcode}</h1>
-    <p class="text-stone-500 mt-1">{data.borough}, {data.city} &middot; {data.wards.join(", ")}</p>
+    <p class="text-stone-500 mt-1">{data.wards.join(", ")}</p>
   </div>
   <CategoryNav basePath={basePath} active={active} available={available} />
   <div class="mx-auto max-w-5xl px-4 py-8">
