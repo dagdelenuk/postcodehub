@@ -173,22 +173,22 @@ export function getCitySummary(citySlug: string): AreaSummary {
   return summariseOutcodes(entries);
 }
 
-export interface CityCrimeTrend {
+export interface CityTrendData {
   /** "YYYY-MM", ascending. */
   months: string[];
   boroughs: { name: string; slug: string; series: number[] }[];
-  /** Mean crimes-per-borough for each month - not the city total, so it sits on the same scale as each borough's own line. */
+  /** Mean value-per-borough for each month - not the city total, so it sits on the same scale as each borough's own line. */
   average: number[];
 }
 
 /**
- * Monthly crime trend per borough (summed across primary-borough outcodes,
- * same rule as getBoroughSummary - a boundary outcode's monthly figures are
- * only counted by whichever borough actually owns it), plus a per-month
- * average across boroughs, for the comparative chart reached from a
- * borough's "Crimes (12mo)" stat card.
+ * Shared aggregator for any per-borough monthly comparison chart: sums
+ * `monthValues(data)` entries across every primary-borough outcode (same
+ * rule as getBoroughSummary - a boundary outcode's figures are only counted
+ * by whichever borough actually owns it), then adds a per-month average
+ * across boroughs.
  */
-export function getCityCrimeTrend(citySlug: string): CityCrimeTrend {
+function aggregateBoroughTrend(citySlug: string, monthValues: (data: OutcodeData) => [month: string, value: number][]): CityTrendData {
   const city = getCity(citySlug);
   const monthsSeen = new Set<string>();
   const perBorough: { name: string; slug: string; byMonth: Map<string, number> }[] = [];
@@ -197,9 +197,9 @@ export function getCityCrimeTrend(citySlug: string): CityCrimeTrend {
     const byMonth = new Map<string, number>();
     for (const outcode of borough.outcodes.filter((o) => o.isPrimaryBorough)) {
       const data = loadOutcodeData(citySlug, borough.slug, outcode.slug);
-      for (const m of data.safety.monthlyTrend) {
-        monthsSeen.add(m.month);
-        byMonth.set(m.month, (byMonth.get(m.month) ?? 0) + m.totalCrimes);
+      for (const [month, value] of monthValues(data)) {
+        monthsSeen.add(month);
+        byMonth.set(month, (byMonth.get(month) ?? 0) + value);
       }
     }
     if (byMonth.size > 0) perBorough.push({ name: borough.name, slug: borough.slug, byMonth });
@@ -215,6 +215,24 @@ export function getCityCrimeTrend(citySlug: string): CityCrimeTrend {
   });
 
   return { months, boroughs, average };
+}
+
+/**
+ * Monthly crime trend per borough, for the comparative chart reached from a
+ * borough's "Crimes (12mo)" stat card.
+ */
+export function getCityCrimeTrend(citySlug: string): CityTrendData {
+  return aggregateBoroughTrend(citySlug, (data) => data.safety.monthlyTrend.map((m) => [m.month, m.totalCrimes]));
+}
+
+/**
+ * Monthly sale COUNT per borough (not price - HM Land Registry data here
+ * covers roughly the last two calendar years, not a fixed rolling window,
+ * so every month we actually have data for is included), for the
+ * comparative chart reached from a borough's "Property sales" stat card.
+ */
+export function getCityPropertyTrend(citySlug: string): CityTrendData {
+  return aggregateBoroughTrend(citySlug, (data) => data.property.sales.map((s) => [s.dateOfTransfer.slice(0, 7), 1]));
 }
 
 export interface BoroughHealthGroup {

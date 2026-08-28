@@ -24,7 +24,7 @@ const summaryStats = [
   { label: "GP surgeries", value: summary.gpSurgeries, href: hasHealth ? `/${city.slug}/${borough.slug}/health/` : null },
   { label: "Schools", value: summary.schools, href: hasSchools ? `/${city.slug}/${borough.slug}/schools/` : null },
   { label: "Crimes (12mo)", value: summary.crimes12mo, href: `/${city.slug}/safety/?highlight=${borough.slug}` },
-  { label: "Property sales", value: summary.propertySales, href: null },
+  { label: "Property sales", value: summary.propertySales, href: `/${city.slug}/property/?highlight=${borough.slug}` },
 ];
 ---
 

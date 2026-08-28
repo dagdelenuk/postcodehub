@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
+import { getCityPropertyTrend, loadHierarchy } from "../../lib/data";
+
+export function getStaticPaths() {
+  const hierarchy = loadHierarchy();
+  return hierarchy.cities
+    .filter((city) => getCityPropertyTrend(city.slug).boroughs.length > 0)
+    .map((city) => ({ params: { city: city.slug }, props: { city } }));
+}
+
+const { city } = Astro.props;
+const trend = getCityPropertyTrend(city.slug);
+---
+
+<BaseLayout
+  title={`Property sales comparison across ${city.name}`}
+  description={`Monthly property sale volumes compared across every borough in ${city.name}, with a city average.`}
+  menuLevel="city"
+  citySlug={city.slug}
+>
+  <Breadcrumbs
+    crumbs={[
+      { label: "PostcodeHub", href: "/" },
+      { label: city.name, href: `/${city.slug}/` },
+      { label: "Property sales comparison" },
+    ]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-6">
+    <h1 class="text-2xl font-bold mb-1">Property sales comparison across {city.name}</h1>
+    <p class="text-stone-500 mb-6">Number of residential sales completed per month in each borough, covering roughly the last two years.</p>
+
+    <BoroughTrendChart trend={trend} averageLabel={`${city.name} average`} chartId="property" />
+
+    <p class="text-xs text-stone-400 mt-6">Source: HM Land Registry Price Paid Data.</p>
+  </section>
+</BaseLayout>
