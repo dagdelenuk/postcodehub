@@ -9,59 +9,78 @@ interface Props {
 const { school } = Astro.props;
 
 const isOversubscribed = school.numberOfPupils != null && school.schoolCapacity != null && school.numberOfPupils > school.schoolCapacity;
+
+// GIAS's phase/establishment-type strings are free text (and, since our
+// "Not applicable" fallback, can be any establishment type), so match by
+// keyword rather than an exhaustive exact-value map - covers new/unseen
+// variants with a sensible fallback instead of silently showing nothing.
+function iconFor(phase: string): { emoji: string; bg: string; text: string } {
+  const p = phase.toLowerCase();
+  if (p.includes("nursery")) return { emoji: "🧸", bg: "bg-amber-100", text: "text-amber-700" };
+  if (p.includes("primary")) return { emoji: "🎒", bg: "bg-sky-100", text: "text-sky-700" };
+  if (p.includes("secondary")) return { emoji: "📚", bg: "bg-indigo-100", text: "text-indigo-700" };
+  if (p.includes("all-through")) return { emoji: "🏫", bg: "bg-teal-100", text: "text-teal-700" };
+  if (p.includes("pupil referral") || p.includes("alternative provision")) return { emoji: "🧭", bg: "bg-rose-100", text: "text-rose-700" };
+  if (p.includes("special")) return { emoji: "🧩", bg: "bg-violet-100", text: "text-violet-700" };
+  if (p.includes("16 plus") || p.includes("sixth form") || p.includes("post 16") || p.includes("higher education")) return { emoji: "🎓", bg: "bg-purple-100", text: "text-purple-700" };
+  if (p.includes("independent")) return { emoji: "🏛️", bg: "bg-emerald-100", text: "text-emerald-700" };
+  if (p.includes("service children")) return { emoji: "🎖️", bg: "bg-slate-100", text: "text-slate-700" };
+  return { emoji: "🏫", bg: "bg-stone-100", text: "text-stone-500" };
+}
+
+const icon = iconFor(school.phaseOfEducation);
 ---
 
-<div
-  class="rounded-lg border border-stone-200 bg-white p-4"
-  data-school-card
-  data-school-rating={school.ofstedRating ?? "none"}
-  data-school-phase={school.phaseOfEducation}
-  data-school-oversubscribed={isOversubscribed}
->
-  <div class="flex items-start justify-between gap-2">
-    <p class="font-medium">{school.name}</p>
-    <span class="flex items-center gap-1 shrink-0">
-      {
-        isOversubscribed && (
-          <span class="text-xs px-2 py-0.5 rounded-full whitespace-nowrap bg-amber-100 text-amber-800">Oversubscribed</span>
-        )
-      }
-      {
-        school.ofstedRating && (
-          <span class:list={["text-xs px-2 py-0.5 rounded-full whitespace-nowrap", OFSTED_RATING_COLORS[school.ofstedRating] ?? "bg-stone-100 text-stone-600"]}>
-            {school.ofstedRating}
-          </span>
-        )
-      }
-    </span>
+<div class="flex rounded-lg border border-stone-200 bg-white overflow-hidden" data-school-card data-school-rating={school.ofstedRating ?? "none"} data-school-phase={school.phaseOfEducation} data-school-oversubscribed={isOversubscribed}>
+  <div class:list={["w-12 shrink-0 flex items-center justify-center text-xl", icon.bg, icon.text]} aria-hidden="true">
+    {icon.emoji}
   </div>
-  <p class="text-sm text-stone-500 mt-1">{school.phaseOfEducation} &middot; {school.address}</p>
-  {
-    school.ofstedRating && !school.ofstedRatingDerivedFromAreaGrades && formatOfstedDate(school.ofstedLastInspection) && (
-      <p class="text-xs text-stone-400 mt-1">Inspected {formatOfstedDate(school.ofstedLastInspection)}</p>
-    )
-  }
-  {
-    school.ofstedRating && school.ofstedRatingDerivedFromAreaGrades && (
-      <p class="text-xs text-stone-400 mt-1">
-        {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
-        {school.ofstedRating.toLowerCase()} in every graded area - Ofsted's post-2024 framework doesn't publish a composite label
-      </p>
-    )
-  }
-  {
-    !school.ofstedRating && school.ofstedNotJudgedUnderNewFramework && (
-      <p class="text-xs text-stone-400 mt-1">
-        {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
-        mixed grades across areas, no single overall grade under Ofsted's post-2024 framework
-      </p>
-    )
-  }
-  {
-    school.numberOfPupils && (
-      <p class="text-xs text-stone-400 mt-1">
-        {school.numberOfPupils} pupils{school.schoolCapacity ? ` / capacity ${school.schoolCapacity}` : ""}
-      </p>
-    )
-  }
+  <div class="flex-1 min-w-0 p-4">
+    <div class="flex items-start justify-between gap-2">
+      <p class="font-medium">{school.name}</p>
+      <span class="flex items-center gap-1 shrink-0">
+        {
+          isOversubscribed && (
+            <span class="text-xs px-2 py-0.5 rounded-full whitespace-nowrap bg-amber-100 text-amber-800">Oversubscribed</span>
+          )
+        }
+        {
+          school.ofstedRating && (
+            <span class:list={["text-xs px-2 py-0.5 rounded-full whitespace-nowrap", OFSTED_RATING_COLORS[school.ofstedRating] ?? "bg-stone-100 text-stone-600"]}>
+              {school.ofstedRating}
+            </span>
+          )
+        }
+      </span>
+    </div>
+    <p class="text-sm text-stone-500 mt-1">{school.phaseOfEducation} &middot; {school.address}</p>
+    {
+      school.ofstedRating && !school.ofstedRatingDerivedFromAreaGrades && formatOfstedDate(school.ofstedLastInspection) && (
+        <p class="text-xs text-stone-400 mt-1">Inspected {formatOfstedDate(school.ofstedLastInspection)}</p>
+      )
+    }
+    {
+      school.ofstedRating && school.ofstedRatingDerivedFromAreaGrades && (
+        <p class="text-xs text-stone-400 mt-1">
+          {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
+          {school.ofstedRating.toLowerCase()} in every graded area - Ofsted's post-2024 framework doesn't publish a composite label
+        </p>
+      )
+    }
+    {
+      !school.ofstedRating && school.ofstedNotJudgedUnderNewFramework && (
+        <p class="text-xs text-stone-400 mt-1">
+          {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
+          mixed grades across areas, no single overall grade under Ofsted's post-2024 framework
+        </p>
+      )
+    }
+    {
+      school.numberOfPupils && (
+        <p class="text-xs text-stone-400 mt-1">
+          {school.numberOfPupils} pupils{school.schoolCapacity ? ` / capacity ${school.schoolCapacity}` : ""}
+        </p>
+      )
+    }
+  </div>
 </div>
