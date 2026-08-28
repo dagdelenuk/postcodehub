@@ -14,18 +14,18 @@ const isOversubscribed = school.numberOfPupils != null && school.schoolCapacity 
 // "Not applicable" fallback, can be any establishment type), so match by
 // keyword rather than an exhaustive exact-value map - covers new/unseen
 // variants with a sensible fallback instead of silently showing nothing.
-function iconFor(phase: string): { emoji: string; bg: string; text: string } {
+function iconFor(phase: string): { emoji: string; text: string } {
   const p = phase.toLowerCase();
-  if (p.includes("nursery")) return { emoji: "🧸", bg: "bg-amber-50", text: "text-amber-700" };
-  if (p.includes("primary")) return { emoji: "🎒", bg: "bg-sky-50", text: "text-sky-700" };
-  if (p.includes("secondary")) return { emoji: "📚", bg: "bg-indigo-50", text: "text-indigo-700" };
-  if (p.includes("all-through")) return { emoji: "🏫", bg: "bg-teal-50", text: "text-teal-700" };
-  if (p.includes("pupil referral") || p.includes("alternative provision")) return { emoji: "🧭", bg: "bg-rose-50", text: "text-rose-700" };
-  if (p.includes("special")) return { emoji: "🧩", bg: "bg-violet-50", text: "text-violet-700" };
-  if (p.includes("16 plus") || p.includes("sixth form") || p.includes("post 16") || p.includes("higher education")) return { emoji: "🎓", bg: "bg-purple-50", text: "text-purple-700" };
-  if (p.includes("independent")) return { emoji: "🏛️", bg: "bg-emerald-50", text: "text-emerald-700" };
-  if (p.includes("service children")) return { emoji: "🎖️", bg: "bg-slate-50", text: "text-slate-700" };
-  return { emoji: "🏫", bg: "bg-stone-100", text: "text-stone-500" };
+  if (p.includes("nursery")) return { emoji: "🧸", text: "text-amber-700" };
+  if (p.includes("primary")) return { emoji: "🎒", text: "text-sky-700" };
+  if (p.includes("secondary")) return { emoji: "📚", text: "text-indigo-700" };
+  if (p.includes("all-through")) return { emoji: "🏫", text: "text-teal-700" };
+  if (p.includes("pupil referral") || p.includes("alternative provision")) return { emoji: "🧭", text: "text-rose-700" };
+  if (p.includes("special")) return { emoji: "🧩", text: "text-violet-700" };
+  if (p.includes("16 plus") || p.includes("sixth form") || p.includes("post 16") || p.includes("higher education")) return { emoji: "🎓", text: "text-purple-700" };
+  if (p.includes("independent")) return { emoji: "🏛️", text: "text-emerald-700" };
+  if (p.includes("service children")) return { emoji: "🎖️", text: "text-slate-700" };
+  return { emoji: "🏫", text: "text-stone-500" };
 }
 
 const icon = iconFor(school.phaseOfEducation);
@@ -38,12 +38,7 @@ const icon = iconFor(school.phaseOfEducation);
 
   <div class="relative">
     <div class="flex items-start justify-between gap-2">
-      <span class="flex items-start gap-2.5 min-w-0">
-        <span class:list={["shrink-0 h-8 w-8 rounded-lg flex items-center justify-center text-base", icon.bg]} aria-hidden="true">
-          {icon.emoji}
-        </span>
-        <p class="font-medium">{school.name}</p>
-      </span>
+      <p class="font-medium">{school.name}</p>
       <span class="flex items-center gap-1 shrink-0">
         {
           isOversubscribed && (
@@ -59,15 +54,15 @@ const icon = iconFor(school.phaseOfEducation);
         }
       </span>
     </div>
-    <p class="text-sm text-stone-500 mt-1 pl-[42px]">{school.phaseOfEducation} &middot; {school.address}</p>
+    <p class="text-sm text-stone-500 mt-1">{school.phaseOfEducation} &middot; {school.address}</p>
     {
       school.ofstedRating && !school.ofstedRatingDerivedFromAreaGrades && formatOfstedDate(school.ofstedLastInspection) && (
-        <p class="text-xs text-stone-400 mt-1 pl-[42px]">Inspected {formatOfstedDate(school.ofstedLastInspection)}</p>
+        <p class="text-xs text-stone-400 mt-1">Inspected {formatOfstedDate(school.ofstedLastInspection)}</p>
       )
     }
     {
       school.ofstedRating && school.ofstedRatingDerivedFromAreaGrades && (
-        <p class="text-xs text-stone-400 mt-1 pl-[42px]">
+        <p class="text-xs text-stone-400 mt-1">
           {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
           {school.ofstedRating.toLowerCase()} in every graded area - Ofsted's post-2024 framework doesn't publish a composite label
         </p>
@@ -75,7 +70,7 @@ const icon = iconFor(school.phaseOfEducation);
     }
     {
       !school.ofstedRating && school.ofstedNotJudgedUnderNewFramework && (
-        <p class="text-xs text-stone-400 mt-1 pl-[42px]">
+        <p class="text-xs text-stone-400 mt-1">
           {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
           mixed grades across areas, no single overall grade under Ofsted's post-2024 framework
         </p>
@@ -83,7 +78,7 @@ const icon = iconFor(school.phaseOfEducation);
     }
     {
       school.numberOfPupils && (
-        <p class="text-xs text-stone-400 mt-1 pl-[42px]">
+        <p class="text-xs text-stone-400 mt-1">
           {school.numberOfPupils} pupils{school.schoolCapacity ? ` / capacity ${school.schoolCapacity}` : ""}
         </p>
       )
