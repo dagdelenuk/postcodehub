@@ -69,11 +69,11 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
 
       {
         boroughs.length > 0 && (
-          <div data-borough-list>
+          <div data-borough-list class:list={[!currentBorough && "sm:col-span-2"]}>
             <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">
               Boroughs in<br />{city!.name}
             </h2>
-            <ul class="mt-3 space-y-2 text-sm">
+            <ul class:list={["mt-3 text-sm", currentBorough ? "space-y-2" : "grid grid-cols-2 gap-x-6 gap-y-2"]}>
               {boroughs.slice(0, 10).map((b) => (
                 <li>
                   <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700">
@@ -85,7 +85,10 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
             {
               boroughs.length > 10 && (
                 <>
-                  <ul class="mt-2 space-y-2 text-sm hidden" data-boroughs-extra>
+                  <ul
+                    class:list={["mt-2 text-sm hidden", currentBorough ? "space-y-2" : "grid grid-cols-2 gap-x-6 gap-y-2"]}
+                    data-boroughs-extra
+                  >
                     {boroughs.slice(10).map((b) => (
                       <li>
                         <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700">
@@ -125,8 +128,8 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
     </div>
 
     <p class="mt-8 pt-6 border-t border-stone-100 text-xs text-stone-400">
-      PostcodeHub.UK is a non-commercial, independent project and is not affiliated with Royal Mail, the NHS, the
-      Metropolitan Police, or any local council.
+      PostcodeHub.UK is an independent project and is not affiliated with Royal Mail, the NHS, the Metropolitan
+      Police, or any local council.
     </p>
   </div>
 </footer>
