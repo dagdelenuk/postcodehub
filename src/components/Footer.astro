@@ -1,12 +1,26 @@
 ---
-// Boroughs are pulled straight from the hierarchy at build time, so the
-// footer always reflects whatever cities/boroughs the site actually covers
-// rather than a hand-maintained list that can drift out of date.
-import { loadHierarchy } from "../lib/data";
+// Boroughs (and, when viewing a specific borough, its post towns) are pulled
+// straight from the hierarchy at build time, so the footer always reflects
+// whatever cities/boroughs/outcodes the site actually covers rather than a
+// hand-maintained list that can drift out of date.
+import { getBorough, loadHierarchy } from "../lib/data";
+
+interface Props {
+  citySlug?: string;
+  boroughSlug?: string;
+}
+
+const { citySlug, boroughSlug } = Astro.props;
 
 const hierarchy = loadHierarchy();
 const city = hierarchy.cities[0];
 const boroughs = city ? [...city.boroughs].sort((a, b) => a.name.localeCompare(b.name)) : [];
+
+// Only populated when the current page has a borough in context (borough
+// pages and their outcode subpages) - the homepage/city page has no single
+// borough to show post towns for.
+const currentBorough = citySlug && boroughSlug ? getBorough(citySlug, boroughSlug) : undefined;
+const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, b) => a.outcode.localeCompare(b.outcode)) : [];
 ---
 
 <footer class="border-t border-stone-200 bg-white mt-12">
@@ -55,15 +69,34 @@ const boroughs = city ? [...city.boroughs].sort((a, b) => a.name.localeCompare(b
 
       {
         boroughs.length > 0 && (
-          <div class="sm:col-span-2">
-            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">Boroughs</h2>
-            <div class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+          <div>
+            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">London Boroughs</h2>
+            <ul class="mt-3 space-y-2 text-sm">
               {boroughs.map((b) => (
-                <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700 truncate">
-                  {b.name}
-                </a>
+                <li>
+                  <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700">
+                    {b.name}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
+          </div>
+        )
+      }
+
+      {
+        currentBorough && postTownOutcodes.length > 0 && (
+          <div>
+            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">Post towns in {currentBorough.name}</h2>
+            <ul class="mt-3 space-y-2 text-sm">
+              {postTownOutcodes.map((o) => (
+                <li>
+                  <a href={`/${city!.slug}/${boroughSlug}/${o.slug}/`} class="text-stone-600 hover:text-emerald-700">
+                    {o.postTown} - {o.outcode}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         )
       }
