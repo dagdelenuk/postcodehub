@@ -43,14 +43,14 @@ const policeStationsByBorough = trend.boroughs.map((b) => ({
   <HighlightBreadcrumbCrumb citySlug={city.slug} entities={trend.boroughs} />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
-    <h1 class="text-2xl font-bold mb-1">Crime comparison across {city.name}</h1>
-    <p class="text-stone-500 mb-6">Monthly recorded crimes per borough, each estimated within roughly 1 mile of its postcode areas' centres.</p>
-
     <section class="mb-8 hidden" data-police-stations-section>
       <h2 class="text-lg font-semibold mb-1" data-police-stations-heading>Police stations</h2>
       <p class="text-stone-500 mb-3 text-sm" data-police-stations-sub></p>
       <div class="grid gap-3 sm:grid-cols-2" data-police-stations-list></div>
     </section>
+
+    <h1 class="text-2xl font-bold mb-1">Crime comparison across {city.name}</h1>
+    <p class="text-stone-500 mb-6">Monthly recorded crimes per borough, each estimated within roughly 1 mile of its postcode areas' centres.</p>
 
     <BoroughTrendChart trend={trend} averageLabel={`${city.name} average`} chartId="crime" />
 
