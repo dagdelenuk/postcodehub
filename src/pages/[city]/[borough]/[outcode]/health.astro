@@ -18,6 +18,7 @@ const counts = {
   pharmacy: data.health.pharmacies.length,
   hospital: data.health.hospitals.length,
 };
+const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hospital;
 ---
 
 <LocalityLayout
@@ -28,7 +29,7 @@ const counts = {
   title={`Health in ${data.outcode}`}
   description={`GP surgeries, dentists, pharmacies, and hospitals serving the ${data.outcode} area.`}
 >
-  <h1 class="text-2xl font-bold mb-4">Health services in {data.outcode}</h1>
+  <h1 class="text-2xl font-bold mb-4">Health services in {data.postTown} - {data.outcode} ({totalServices})</h1>
 
   <HealthFilters counts={counts} />
 

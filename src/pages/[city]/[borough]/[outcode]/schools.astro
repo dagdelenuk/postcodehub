@@ -22,7 +22,7 @@ const { data } = Astro.props;
   title={`Schools in ${data.outcode}`}
   description={`Schools and Ofsted ratings in the ${data.outcode} area.`}
 >
-  <h1 class="text-2xl font-bold mb-4">Schools in {data.outcode} ({data.schools.schools.length})</h1>
+  <h1 class="text-2xl font-bold mb-4">Schools in {data.postTown} - {data.outcode} ({data.schools.schools.length})</h1>
 
   <SchoolFilters schools={data.schools.schools} />
 

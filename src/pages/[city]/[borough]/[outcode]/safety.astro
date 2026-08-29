@@ -38,7 +38,7 @@ const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
   {
     data.safety.policeStations.length > 0 && (
       <section class="mb-8">
-        <h2 class="text-2xl font-bold mb-2">Police stations in {data.postTown}</h2>
+        <h2 class="text-2xl font-bold mb-2">Police stations in {data.postTown} - {data.outcode} ({data.safety.policeStations.length})</h2>
         <div class="grid gap-3 sm:grid-cols-2">
           {data.safety.policeStations.map((station) => (
             <div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4">
