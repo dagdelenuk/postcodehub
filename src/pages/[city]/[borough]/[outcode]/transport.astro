@@ -14,6 +14,15 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.params;
 const { data } = Astro.props;
+
+// Only these two have a real, PD-licensed logo checked in under public/logos/
+// (Wikimedia Commons: National_Rail_logo.svg and Underground.svg, both
+// public domain). Any other mode TfL's StopPoint API could still return for
+// these stopTypes (dlr, overground, elizabeth-line, tram) falls back to text.
+const MODE_LOGOS: Record<string, { src: string; alt: string }> = {
+  "national-rail": { src: "/logos/national-rail.svg", alt: "National Rail" },
+  tube: { src: "/logos/underground.svg", alt: "London Underground" },
+};
 ---
 
 <LocalityLayout
@@ -38,7 +47,15 @@ const { data } = Astro.props;
           {data.transport.nearbyStations.map((station) => (
             <div class="rounded-lg border border-stone-200 bg-white p-4">
               <p class="font-medium">{station.name}</p>
-              <p class="text-sm text-stone-500 mt-1">{station.modes.join(", ")}</p>
+              <div class="flex items-center gap-1.5 mt-1">
+                {station.modes.map((mode) =>
+                  MODE_LOGOS[mode] ? (
+                    <img src={MODE_LOGOS[mode].src} alt={MODE_LOGOS[mode].alt} title={MODE_LOGOS[mode].alt} class="h-4 w-auto" />
+                  ) : (
+                    <span class="text-xs text-stone-500 capitalize">{mode.replace(/-/g, " ")}</span>
+                  )
+                )}
+              </div>
               <p class="text-xs text-stone-400 mt-1">{(station.distanceKm * 0.621371).toFixed(1)} mi away</p>
             </div>
           ))}
