@@ -227,6 +227,56 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "central",
+      "jubilee",
+      "piccadilly",
+      "victoria",
+      "bakerloo",
+      "circle",
+      "hammersmith-city",
+      "metropolitan"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Bond Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Bond Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Marble Arch Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Green Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Oxford Circus Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

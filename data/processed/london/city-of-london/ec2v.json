@@ -162,6 +162,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "circle",
+      "district",
+      "dlr",
+      "northern",
+      "waterloo-city",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "weaver",
+      "jubilee"
+    ],
+    "nearbyStations": [
+      {
+        "name": "St. Paul's Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Mansion House Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Bank DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Cannon Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London Cannon Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

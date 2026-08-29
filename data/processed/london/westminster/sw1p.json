@@ -390,6 +390,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "victoria",
+      "circle",
+      "district",
+      "jubilee",
+      "bakerloo"
+    ],
+    "nearbyStations": [
+      {
+        "name": "St. James's Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Pimlico Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Victoria Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "London Victoria Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Westminster Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

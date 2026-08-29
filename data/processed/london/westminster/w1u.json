@@ -312,6 +312,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "jubilee",
+      "elizabeth",
+      "bakerloo",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "victoria",
+      "district",
+      "northern",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Baker Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Bond Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bond Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Marble Arch Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Regent's Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

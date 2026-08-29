@@ -606,6 +606,49 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "jubilee"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Canada Water Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Canada Water Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Surrey Quays Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Rotherhithe Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Bermondsey Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -475,6 +475,36 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Gipsy Hill Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Crystal Palace Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Anerley Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

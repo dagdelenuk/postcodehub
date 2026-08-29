@@ -752,6 +752,29 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "dlr",
+      "district",
+      "hammersmith-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "East Ham Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Beckton DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 1.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

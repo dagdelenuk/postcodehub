@@ -167,6 +167,59 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "dlr",
+      "central",
+      "northern",
+      "waterloo-city",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "district",
+      "elizabeth",
+      "weaver",
+      "jubilee",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Bank DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Moorgate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Moorgate Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Bank Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Cannon Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

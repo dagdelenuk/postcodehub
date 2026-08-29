@@ -559,6 +559,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "mildmay",
+      "weaver"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Homerton Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Hackney Central Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Hackney Wick Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "London Fields Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Hackney Downs Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

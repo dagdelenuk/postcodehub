@@ -822,6 +822,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "hammersmith-city",
+      "central",
+      "mildmay"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Shepherd's Bush Market Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Wood Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "White City Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Goldhawk Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Shepherd's Bush (Central) Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

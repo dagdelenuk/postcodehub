@@ -921,6 +921,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "lioness",
+      "victoria",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "mildmay",
+      "bakerloo",
+      "jubilee",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Mornington Crescent Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Camden Town Station  / Bayham Street",
+        "modes": [
+          "bus"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Camden Town Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "London Euston Rail Station",
+        "modes": [
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Camden Road Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -431,6 +431,54 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "district",
+      "mildmay",
+      "piccadilly",
+      "circle",
+      "hammersmith-city",
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Kensington (Olympia) Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Kensington (Olympia) Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "West Kensington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Barons Court Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Hammersmith (Dist&Picc Line) Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

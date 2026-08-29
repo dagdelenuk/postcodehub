@@ -549,6 +549,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "district",
+      "mildmay",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Chiswick Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Gunnersbury Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Gunnersbury Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Turnham Green Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "South Acton Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

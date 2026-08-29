@@ -470,6 +470,48 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Maze Hill Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Cutty Sark (for Maritime Greenwich) DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Island Gardens DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Greenwich Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Greenwich DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -1125,6 +1125,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "victoria",
+      "weaver",
+      "suffragette"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Walthamstow Central Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Walthamstow Central Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Walthamstow Queens Road Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "St James Street (London) Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Wood Street Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

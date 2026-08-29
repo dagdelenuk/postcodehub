@@ -304,6 +304,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "mildmay",
+      "district",
+      "circle",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Imperial Wharf Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Fulham Broadway Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "West Brompton Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "West Brompton Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Gloucester Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

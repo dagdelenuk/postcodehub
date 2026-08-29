@@ -553,6 +553,48 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Lewisham DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Lewisham Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Ladywell Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Hither Green Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Elverson Road DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -440,6 +440,41 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern"
+    ],
+    "nearbyStations": [
+      {
+        "name": "St Helier (London) Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Morden South Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Morden Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "South Merton Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

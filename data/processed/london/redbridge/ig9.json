@@ -308,6 +308,28 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Buckhurst Hill Underground Station",
+        "modes": [
+          "bus",
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Roding Valley Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

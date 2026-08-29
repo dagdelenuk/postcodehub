@@ -195,6 +195,57 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "bakerloo",
+      "circle",
+      "district",
+      "northern",
+      "piccadilly",
+      "jubilee",
+      "elizabeth",
+      "waterloo-city",
+      "central",
+      "victoria"
+    ],
+    "nearbyStations": [
+      {
+        "name": "London Charing Cross Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Charing Cross Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Embankment Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Leicester Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Covent Garden Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

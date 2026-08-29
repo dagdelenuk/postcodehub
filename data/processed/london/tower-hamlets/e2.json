@@ -717,6 +717,55 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "weaver",
+      "central",
+      "windrush",
+      "district",
+      "hammersmith-city",
+      "elizabeth"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Cambridge Heath (London) Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Bethnal Green Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bethnal Green Rail Station",
+        "modes": [
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Hoxton Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Whitechapel Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

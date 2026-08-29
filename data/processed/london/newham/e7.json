@@ -655,6 +655,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "suffragette",
+      "district",
+      "hammersmith-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Forest Gate Rail Station",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Wanstead Park Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Woodgrange Park Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Upton Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Manor Park Rail Station",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

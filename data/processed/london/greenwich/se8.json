@@ -437,6 +437,49 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Deptford Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "New Cross Rail Station",
+        "modes": [],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "New Cross ELL Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Deptford Bridge DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "New Cross Gate Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

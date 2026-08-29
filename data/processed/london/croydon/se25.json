@@ -490,6 +490,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "tram"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Norwood Junction Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Selhurst Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Harrington Road Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Woodside Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Arena Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

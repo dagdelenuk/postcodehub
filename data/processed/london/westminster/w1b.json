@@ -234,6 +234,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "bakerloo",
+      "central",
+      "victoria",
+      "piccadilly",
+      "elizabeth",
+      "jubilee",
+      "northern",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "district"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Oxford Circus Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Bond Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bond Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Piccadilly Circus Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Tottenham Court Road",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -172,6 +172,61 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "dlr",
+      "weaver",
+      "northern",
+      "waterloo-city",
+      "district",
+      "jubilee",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Liverpool Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Liverpool Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Bank DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "London Liverpool Street Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Bank Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

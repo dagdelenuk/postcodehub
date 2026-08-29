@@ -210,6 +210,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "central",
+      "elizabeth",
+      "weaver",
+      "dlr",
+      "windrush",
+      "district",
+      "waterloo-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Old Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Old Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Barbican Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Moorgate Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Moorgate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -1064,6 +1064,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "mildmay",
+      "windrush",
+      "victoria"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Essex Road Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Angel Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Highbury & Islington Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Highbury & Islington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Canonbury Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

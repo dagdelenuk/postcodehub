@@ -315,6 +315,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "central",
+      "piccadilly",
+      "mildmay"
+    ],
+    "nearbyStations": [
+      {
+        "name": "High Street Kensington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Notting Hill Gate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Earl's Court Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Holland Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Gloucester Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

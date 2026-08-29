@@ -236,6 +236,54 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "victoria",
+      "jubilee",
+      "piccadilly",
+      "bakerloo",
+      "northern"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Victoria Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St. James's Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London Victoria Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Green Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Hyde Park Corner Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

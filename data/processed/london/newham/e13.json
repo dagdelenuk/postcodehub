@@ -690,6 +690,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "district",
+      "hammersmith-city",
+      "jubilee",
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Plaistow Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Upton Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "West Ham Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.5
+      },
+      {
+        "name": "West Ham Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.5
+      },
+      {
+        "name": "West Ham DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 1.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

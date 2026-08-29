@@ -950,6 +950,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "mildmay",
+      "jubilee",
+      "metropolitan",
+      "lioness"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Belsize Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Hampstead Heath Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Hampstead Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Finchley Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Finchley Road & Frognal Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -359,6 +359,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "tram"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Anerley Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Penge West Rail Station",
+        "modes": [
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Avenue Road Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Penge East Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Birkbeck Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

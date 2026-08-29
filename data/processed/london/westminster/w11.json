@@ -501,6 +501,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "circle",
+      "hammersmith-city",
+      "district",
+      "mildmay"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Holland Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Ladbroke Grove Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Latimer Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Notting Hill Gate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Shepherds Bush Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -672,6 +672,43 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "metropolitan",
+      "piccadilly",
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Ruislip Manor Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Ruislip Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Ruislip Gardens Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Eastcote Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

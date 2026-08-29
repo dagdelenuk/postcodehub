@@ -1000,6 +1000,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "tram",
+      "district",
+      "northern"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Wimbledon Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Wimbledon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Wimbledon Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Dundonald Road Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Haydons Road Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

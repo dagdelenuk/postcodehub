@@ -484,6 +484,37 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "suffragette",
+      "district",
+      "hammersmith-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Manor Park Rail Station",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Woodgrange Park Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "East Ham Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

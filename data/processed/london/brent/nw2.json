@@ -713,6 +713,42 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "jubilee",
+      "metropolitan"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Cricklewood Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Willesden Green Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Brent Cross West Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Dollis Hill Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

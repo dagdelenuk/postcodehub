@@ -796,6 +796,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "district",
+      "mildmay"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Parsons Green Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Fulham Broadway Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Putney Bridge Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "West Brompton Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Imperial Wharf Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

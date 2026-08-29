@@ -409,6 +409,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "South Kensington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Gloucester Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Earl's Court Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "High Street Kensington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Knightsbridge Underground Station",
+        "modes": [
+          "bus",
+          "tube"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -494,6 +494,42 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Hanwell Rail Station",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Drayton Green Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "West Ealing Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "national-rail"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Castle Bar Park Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

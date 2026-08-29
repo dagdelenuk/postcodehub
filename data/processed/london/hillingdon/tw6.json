@@ -221,6 +221,48 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "elizabeth"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Heathrow Terminals 2 & 3 Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Heathrow Central Bus Stn (Rail-Air)",
+        "modes": [
+          "bus"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Heathrow Terminals 2 & 3 Rail Station",
+        "modes": [
+          "national-rail",
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Heathrow Terminal 4 (Rail-Air)",
+        "modes": [],
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Heathrow Terminal 4 Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

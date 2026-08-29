@@ -16,6 +16,7 @@ import type {
   RepresentativesData,
   CrimeData,
   SchoolsData,
+  TransportData,
 } from "../../src/lib/types.js";
 
 const STEP = "build-outcode-data";
@@ -71,7 +72,7 @@ async function main() {
   const policeByBorough = await loadStationsByBorough("police-stations.json");
   const fireByBorough = await loadStationsByBorough("fire-stations.json");
 
-  const [health, schools, crime, property, representatives, planning, places, events, history] = await Promise.all([
+  const [health, schools, crime, transport, property, representatives, planning, places, events, history] = await Promise.all([
     loadRaw<HealthData>("health-by-outcode.json"),
     loadRaw<SchoolsData>("schools-by-outcode.json").then((raw) => {
       // schools raw is keyed by outcode -> School[], not { schools: [] }
@@ -82,6 +83,7 @@ async function main() {
       return wrapped;
     }),
     loadRaw<CrimeData>("crime-by-outcode.json"),
+    loadRaw<TransportData>("transport-by-outcode.json"),
     loadRaw<PropertyData>("property-by-outcode.json"),
     loadRaw<RepresentativesData>("representatives-by-outcode.json"),
     loadRaw<PlanningData>("planning-by-outcode.json"),
@@ -116,6 +118,7 @@ async function main() {
       health: health[outcode] ?? { gpSurgeries: [], dentists: [], pharmacies: [], hospitals: [] },
       schools: schools[outcode] ?? { schools: [] },
       safety,
+      transport: transport[outcode] ?? { lines: [], nearbyStations: [] },
       property: property[outcode] ?? { sales: [], averagePrice: null, medianPrice: null },
       representatives: representatives[key] ?? { representatives: [] },
       planning: planning[key] ?? { applications: [], searchUrl: null },

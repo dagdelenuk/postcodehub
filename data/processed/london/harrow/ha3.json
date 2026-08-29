@@ -853,6 +853,43 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "lioness",
+      "bakerloo"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Harrow & Wealdstone Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Harrow & Wealdstone Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Kenton Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Kenton Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

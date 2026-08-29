@@ -622,6 +622,48 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Wood Green Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Alexandra Palace Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Bowes Park Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Turnpike Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Bounds Green Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

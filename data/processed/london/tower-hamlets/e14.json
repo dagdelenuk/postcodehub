@@ -1104,6 +1104,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "jubilee",
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Canary Wharf",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Poplar DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "West India Quay DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Canary Wharf Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Canary Wharf DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

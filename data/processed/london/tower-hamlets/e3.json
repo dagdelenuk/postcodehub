@@ -679,6 +679,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "district",
+      "hammersmith-city",
+      "dlr",
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Bow Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Bow Church DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Mile End Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Devons Road DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Bromley-by-Bow Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

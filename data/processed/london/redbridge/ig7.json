@@ -360,6 +360,28 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Grange Hill Underground Station",
+        "modes": [
+          "bus",
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Hainault Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -509,6 +509,59 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "bakerloo",
+      "central",
+      "jubilee",
+      "victoria",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "northern",
+      "district",
+      "piccadilly",
+      "lioness"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Regent's Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Bond Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Oxford Circus Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Great Portland Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bond Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

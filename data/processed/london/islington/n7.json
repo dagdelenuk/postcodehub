@@ -584,6 +584,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "mildmay",
+      "windrush",
+      "victoria",
+      "suffragette",
+      "northern"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Holloway Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Caledonian Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Drayton Park Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Arsenal Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Caledonian Road & Barnsbury Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

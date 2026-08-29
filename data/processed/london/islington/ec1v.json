@@ -337,6 +337,54 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "central",
+      "weaver"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Old Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Old Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Barbican Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Farringdon Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Farringdon",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.9
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

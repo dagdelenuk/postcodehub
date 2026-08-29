@@ -209,6 +209,61 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "weaver",
+      "northern",
+      "dlr",
+      "waterloo-city",
+      "district",
+      "windrush",
+      "jubilee"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Liverpool Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0
+      },
+      {
+        "name": "Liverpool Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "London Liverpool Street Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Moorgate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Moorgate Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -288,6 +288,56 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "circle",
+      "district",
+      "hammersmith-city",
+      "bakerloo",
+      "jubilee",
+      "metropolitan",
+      "elizabeth",
+      "victoria"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Marble Arch Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Edgware Road (Circle Line) Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Marylebone Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London Marylebone Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Baker Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

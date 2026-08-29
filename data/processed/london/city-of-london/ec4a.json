@@ -151,6 +151,59 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "circle",
+      "district",
+      "elizabeth",
+      "hammersmith-city",
+      "metropolitan",
+      "piccadilly",
+      "jubilee",
+      "bakerloo",
+      "northern",
+      "dlr",
+      "waterloo-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "City Thameslink Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "London Blackfriars Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Blackfriars Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Farringdon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

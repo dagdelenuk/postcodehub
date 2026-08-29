@@ -168,6 +168,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "central",
+      "northern",
+      "waterloo-city",
+      "dlr",
+      "hammersmith-city",
+      "metropolitan",
+      "jubilee",
+      "elizabeth",
+      "weaver"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Cannon Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "London Cannon Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Bank Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Bank DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Mansion House Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -1044,6 +1044,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "lioness",
+      "bakerloo",
+      "mildmay",
+      "jubilee"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Harlesden Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Harlesden Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Willesden Junction Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Willesden Junction Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Dollis Hill Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -659,6 +659,48 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "tram"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Mitcham Eastfields Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Mitcham Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Mitcham Junction Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Mitcham Junction Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Belgrave Walk Tram Stop",
+        "modes": [
+          "tram"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

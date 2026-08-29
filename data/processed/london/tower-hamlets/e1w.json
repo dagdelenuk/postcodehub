@@ -302,6 +302,55 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "dlr",
+      "jubilee",
+      "circle",
+      "district",
+      "hammersmith-city",
+      "elizabeth",
+      "metropolitan"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Wapping Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Shadwell Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Shadwell DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Rotherhithe Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Bermondsey Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

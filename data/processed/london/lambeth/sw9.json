@@ -655,6 +655,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "victoria",
+      "northern",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Brixton Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Stockwell Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Brixton Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Loughborough Junction Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Clapham North Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

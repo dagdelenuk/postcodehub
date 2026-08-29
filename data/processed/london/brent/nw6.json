@@ -812,6 +812,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "mildmay",
+      "lioness",
+      "jubilee",
+      "bakerloo",
+      "metropolitan"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Brondesbury Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Kilburn High Road Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "West Hampstead Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "West Hampstead Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "West Hampstead Thameslink Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

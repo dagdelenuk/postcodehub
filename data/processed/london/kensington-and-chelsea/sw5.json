@@ -321,6 +321,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "district",
+      "piccadilly",
+      "mildmay",
+      "circle"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Earl's Court Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "West Brompton Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "West Brompton Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Gloucester Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "West Kensington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

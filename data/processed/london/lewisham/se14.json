@@ -382,6 +382,48 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "New Cross Gate ELL Rail Station",
+        "modes": [],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "New Cross Gate Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "New Cross ELL Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "New Cross Rail Station",
+        "modes": [],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Queens Road Peckham Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

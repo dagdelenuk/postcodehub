@@ -419,6 +419,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "district",
+      "mildmay"
+    ],
+    "nearbyStations": [
+      {
+        "name": "North Sheen Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Kew Gardens Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Kew Gardens Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Richmond Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Richmond (London) Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -216,6 +216,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "central",
+      "elizabeth",
+      "district",
+      "northern",
+      "dlr",
+      "waterloo-city",
+      "weaver",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Barbican Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "St. Paul's Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Farringdon",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Farringdon Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Farringdon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

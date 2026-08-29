@@ -592,6 +592,41 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Greenford Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "South Greenford Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Greenford Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Perivale Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

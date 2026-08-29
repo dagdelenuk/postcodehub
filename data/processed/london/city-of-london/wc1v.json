@@ -207,6 +207,56 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "piccadilly",
+      "circle",
+      "district",
+      "elizabeth",
+      "hammersmith-city",
+      "metropolitan",
+      "northern",
+      "bakerloo"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Holborn Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Temple Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Covent Garden Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Farringdon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

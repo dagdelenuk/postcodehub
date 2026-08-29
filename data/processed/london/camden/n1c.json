@@ -269,6 +269,55 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "northern",
+      "piccadilly",
+      "victoria",
+      "mildmay",
+      "lioness"
+    ],
+    "nearbyStations": [
+      {
+        "name": "London St Pancras International Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London St Pancras International Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London St Pancras International LL Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London King's Cross Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "King's Cross St. Pancras Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

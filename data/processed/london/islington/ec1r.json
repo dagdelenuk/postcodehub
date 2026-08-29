@@ -228,6 +228,55 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "central",
+      "northern",
+      "piccadilly",
+      "victoria"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Farringdon Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Farringdon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Farringdon",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Angel Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

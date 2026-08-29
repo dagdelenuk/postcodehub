@@ -625,6 +625,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Custom House Rail Station",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Custom House (for ExCel) DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Prince Regent DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Royal Victoria DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Pontoon Dock DLR Station",
+        "modes": [
+          "dlr",
+          "bus"
+        ],
+        "distanceKm": 0.9
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

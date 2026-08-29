@@ -499,6 +499,36 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "weaver"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Enfield Town Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Southbury Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Bush Hill Park Rail Station",
+        "modes": [
+          "bus",
+          "overground"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -472,6 +472,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "victoria",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Nine Elms Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Stockwell Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Battersea Power Station Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Wandsworth Road Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Queenstown Road (Battersea) Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

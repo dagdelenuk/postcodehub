@@ -265,6 +265,56 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "central",
+      "piccadilly",
+      "district",
+      "northern",
+      "dlr"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Farringdon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Farringdon",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Farringdon Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "City Thameslink Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

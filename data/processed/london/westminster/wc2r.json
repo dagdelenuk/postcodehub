@@ -208,6 +208,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "piccadilly",
+      "bakerloo",
+      "northern",
+      "central",
+      "jubilee",
+      "waterloo-city",
+      "elizabeth",
+      "hammersmith-city",
+      "metropolitan"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Temple Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Covent Garden Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Embankment Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "London Charing Cross Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Leicester Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

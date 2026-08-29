@@ -228,6 +228,60 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "northern",
+      "elizabeth",
+      "weaver",
+      "central",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "district",
+      "dlr",
+      "waterloo-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Old Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Shoreditch High Street Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Old Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London Liverpool Street Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Liverpool Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

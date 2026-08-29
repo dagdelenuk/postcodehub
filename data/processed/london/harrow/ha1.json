@@ -667,6 +667,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "metropolitan",
+      "lioness",
+      "bakerloo"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Harrow-on-the-Hill Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Harrow-on-the-Hill Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "West Harrow Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Harrow & Wealdstone Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Harrow & Wealdstone Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

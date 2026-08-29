@@ -192,6 +192,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "northern",
+      "central",
+      "dlr",
+      "district",
+      "elizabeth",
+      "weaver",
+      "waterloo-city",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Moorgate Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Barbican Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Moorgate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St. Paul's Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Liverpool Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

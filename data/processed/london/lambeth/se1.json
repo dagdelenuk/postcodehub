@@ -1258,6 +1258,54 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "jubilee",
+      "bakerloo",
+      "circle",
+      "district",
+      "central",
+      "waterloo-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Borough Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "London Bridge Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "London Bridge Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Elephant & Castle Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Elephant & Castle Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -234,6 +234,56 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "northern",
+      "victoria",
+      "central",
+      "elizabeth",
+      "lioness"
+    ],
+    "nearbyStations": [
+      {
+        "name": "King's Cross St. Pancras Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "London King's Cross Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Russell Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Angel Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

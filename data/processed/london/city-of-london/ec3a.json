@@ -172,6 +172,61 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "metropolitan",
+      "elizabeth",
+      "district",
+      "hammersmith-city",
+      "central",
+      "weaver",
+      "dlr",
+      "northern",
+      "waterloo-city",
+      "windrush",
+      "jubilee"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Aldgate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "London Fenchurch Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Liverpool Street",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Liverpool Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "London Liverpool Street Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

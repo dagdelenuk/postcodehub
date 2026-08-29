@@ -256,6 +256,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "piccadilly",
+      "circle",
+      "district",
+      "elizabeth",
+      "hammersmith-city",
+      "metropolitan",
+      "northern",
+      "bakerloo",
+      "jubilee",
+      "waterloo-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Holborn Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Temple Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "City Thameslink Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Farringdon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

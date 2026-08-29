@@ -393,6 +393,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "victoria",
+      "circle",
+      "district",
+      "northern"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Pimlico Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "London Victoria Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Victoria Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Battersea Power Station Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Vauxhall Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

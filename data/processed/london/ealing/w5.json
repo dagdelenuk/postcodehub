@@ -674,6 +674,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "central",
+      "district",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Ealing Broadway Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "national-rail"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Ealing Broadway Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Ealing Common Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "North Ealing Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "West Ealing Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "national-rail"
+        ],
+        "distanceKm": 1.3
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

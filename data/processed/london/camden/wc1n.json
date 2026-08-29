@@ -362,6 +362,57 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "central",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "northern",
+      "victoria",
+      "lioness",
+      "district"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Russell Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Holborn Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "King's Cross St. Pancras Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "London King's Cross Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.9
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

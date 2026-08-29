@@ -569,6 +569,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "victoria",
+      "suffragette"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Manor House Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Finsbury Park Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Finsbury Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Harringay Green Lanes Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Harringay Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

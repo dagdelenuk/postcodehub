@@ -491,6 +491,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "bakerloo",
+      "circle",
+      "hammersmith-city",
+      "lioness",
+      "elizabeth"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Maida Vale Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Warwick Avenue Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Royal Oak Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Westbourne Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Kilburn Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

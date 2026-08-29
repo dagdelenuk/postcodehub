@@ -209,6 +209,55 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "jubilee",
+      "victoria",
+      "bakerloo",
+      "northern",
+      "piccadilly",
+      "waterloo-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "St. James's Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0
+      },
+      {
+        "name": "Westminster Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Victoria Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "London Victoria Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Charing Cross Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

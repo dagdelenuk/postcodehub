@@ -737,6 +737,56 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "dlr",
+      "central",
+      "jubilee",
+      "elizabeth",
+      "mildmay",
+      "district",
+      "hammersmith-city"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Stratford High Street DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Stratford DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Stratford Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Stratford (London) Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Maryland Rail Station",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

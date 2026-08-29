@@ -447,6 +447,42 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "suffragette",
+      "northern"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Upper Holloway Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Archway Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Tufnell Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Crouch Hill Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

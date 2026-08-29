@@ -237,6 +237,59 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "dlr",
+      "circle",
+      "district",
+      "metropolitan",
+      "hammersmith-city",
+      "central",
+      "northern",
+      "waterloo-city",
+      "elizabeth",
+      "weaver",
+      "jubilee",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Tower Gateway DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Tower Hill Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "London Fenchurch Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Aldgate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Aldgate East Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

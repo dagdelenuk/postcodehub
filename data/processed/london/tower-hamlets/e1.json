@@ -1174,6 +1174,56 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush",
+      "elizabeth",
+      "district",
+      "hammersmith-city",
+      "dlr",
+      "weaver",
+      "central",
+      "circle",
+      "metropolitan"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Whitechapel Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Whitechapel",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Whitechapel Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Shadwell DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Shadwell Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -499,6 +499,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "weaver",
+      "windrush",
+      "mildmay"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Dalston Junction Rail Station",
+        "modes": [
+          "bus",
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Hackney Downs Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "London Fields Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Hackney Central Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Dalston Kingsland Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

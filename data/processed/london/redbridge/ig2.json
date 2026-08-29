@@ -409,6 +409,39 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Newbury Park Station",
+        "modes": [],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Newbury Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Gants Hill Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Barkingside Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

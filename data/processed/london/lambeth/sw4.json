@@ -573,6 +573,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "windrush",
+      "victoria"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Clapham Common Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Clapham High Street Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Clapham North Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Wandsworth Road Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Clapham South Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

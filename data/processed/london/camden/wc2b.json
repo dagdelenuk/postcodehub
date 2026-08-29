@@ -278,6 +278,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "central",
+      "circle",
+      "district",
+      "northern",
+      "elizabeth",
+      "bakerloo",
+      "jubilee",
+      "waterloo-city",
+      "hammersmith-city",
+      "metropolitan"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Covent Garden Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Holborn Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Temple Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Leicester Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Tottenham Court Road",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

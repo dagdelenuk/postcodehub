@@ -329,6 +329,52 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "mildmay",
+      "windrush",
+      "victoria",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Drayton Park Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Canonbury Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Arsenal Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Highbury & Islington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Highbury & Islington Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.9
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

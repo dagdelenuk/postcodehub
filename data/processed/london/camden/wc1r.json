@@ -226,6 +226,57 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "piccadilly",
+      "elizabeth",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "district",
+      "northern",
+      "victoria",
+      "bakerloo"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Chancery Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Holborn Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Farringdon Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Russell Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Farringdon",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.8
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

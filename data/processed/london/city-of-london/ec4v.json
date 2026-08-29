@@ -166,6 +166,59 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "central",
+      "dlr",
+      "northern",
+      "waterloo-city",
+      "hammersmith-city",
+      "metropolitan",
+      "jubilee",
+      "elizabeth",
+      "weaver",
+      "bakerloo"
+    ],
+    "nearbyStations": [
+      {
+        "name": "London Blackfriars Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Blackfriars Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St. Paul's Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "City Thameslink Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Mansion House Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

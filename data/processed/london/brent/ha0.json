@@ -549,6 +549,51 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "bakerloo",
+      "lioness",
+      "piccadilly"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Wembley Central Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Wembley Central Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Sudbury Town Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Sudbury & Harrow Road Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Alperton Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

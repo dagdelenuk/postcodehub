@@ -943,6 +943,45 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "weaver"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Stoke Newington Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Rectory Road Rail Station",
+        "modes": [
+          "overground",
+          "national-rail"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Clapton Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Stamford Hill Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

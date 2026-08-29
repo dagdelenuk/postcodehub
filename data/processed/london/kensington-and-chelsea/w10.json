@@ -742,6 +742,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "hammersmith-city",
+      "bakerloo",
+      "lioness",
+      "mildmay",
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Ladbroke Grove Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Westbourne Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Kensal Green Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Kensal Green Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Latimer Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.2
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

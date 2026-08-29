@@ -728,6 +728,54 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "elizabeth",
+      "circle",
+      "hammersmith-city",
+      "bakerloo",
+      "district",
+      "central"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Paddington",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Paddington (H&C Line)-Underground",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "London Paddington Rail Station",
+        "modes": [
+          "elizabeth-line",
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Paddington Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Lancaster Gate Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

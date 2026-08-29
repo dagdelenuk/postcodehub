@@ -562,6 +562,50 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "mildmay",
+      "suffragette"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Kentish Town Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Kentish Town Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Gospel Oak Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Kentish Town West Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Tufnell Park Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

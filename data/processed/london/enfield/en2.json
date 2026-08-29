@@ -449,6 +449,34 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "weaver"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Gordon Hill Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Enfield Chase Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Enfield Town Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

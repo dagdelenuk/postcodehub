@@ -243,6 +243,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "central",
+      "piccadilly",
+      "northern",
+      "elizabeth",
+      "circle",
+      "district",
+      "bakerloo",
+      "victoria",
+      "hammersmith-city",
+      "metropolitan",
+      "lioness"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Holborn Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Tottenham Court Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Covent Garden Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Tottenham Court Road",
+        "modes": [
+          "elizabeth-line"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Russell Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

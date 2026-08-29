@@ -564,6 +564,42 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "suffragette"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Hornsey Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Harringay Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Turnpike Lane Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Crouch Hill Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

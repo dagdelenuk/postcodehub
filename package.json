@@ -13,6 +13,7 @@
     "astro": "astro",
     "ingest": "tsx scripts/ingest/run-all.ts",
     "ingest:geography": "tsx scripts/ingest/fetch-geography.ts",
+    "ingest:transport": "tsx scripts/ingest/fetch-transport.ts",
     "ingest:health": "tsx scripts/ingest/fetch-health.ts",
     "ingest:schools": "tsx scripts/ingest/fetch-schools.ts",
     "ingest:crime": "tsx scripts/ingest/fetch-crime.ts",

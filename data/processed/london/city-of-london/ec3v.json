@@ -153,6 +153,59 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "central",
+      "northern",
+      "waterloo-city",
+      "dlr",
+      "hammersmith-city",
+      "metropolitan",
+      "elizabeth",
+      "weaver",
+      "jubilee",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Monument Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Bank Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Bank DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "London Cannon Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Cannon Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

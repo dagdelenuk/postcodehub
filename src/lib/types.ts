@@ -183,6 +183,19 @@ export interface HistoryData {
   keyFacts: string[];
 }
 
+export interface NearbyStation {
+  name: string;
+  modes: string[];
+  distanceKm: number;
+}
+
+export interface TransportData {
+  /** Canonical TfL line ids (tube/DLR/overground/Elizabeth line/tram) within walking distance - empty when none serve this outcode. */
+  lines: string[];
+  /** Nearest rail/metro stations regardless of mode, nearest-first - shown even when `lines` is empty (e.g. a National Rail-only station). */
+  nearbyStations: NearbyStation[];
+}
+
 export interface OutcodeData {
   outcode: string;
   slug: string;
@@ -195,6 +208,7 @@ export interface OutcodeData {
   health: HealthData;
   schools: SchoolsData;
   safety: CrimeData;
+  transport: TransportData;
   property: PropertyData;
   representatives: RepresentativesData;
   planning: PlanningData;

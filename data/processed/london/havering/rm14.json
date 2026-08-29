@@ -460,6 +460,29 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "liberty",
+      "district"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Upminster Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Upminster Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -167,6 +167,59 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "circle",
+      "district",
+      "central",
+      "northern",
+      "waterloo-city",
+      "dlr",
+      "metropolitan",
+      "hammersmith-city",
+      "elizabeth",
+      "jubilee",
+      "weaver",
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "London Fenchurch Street Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Monument Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Tower Hill Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Bank Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Tower Gateway DLR Station",
+        "modes": [
+          "dlr"
+        ],
+        "distanceKm": 0.5
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

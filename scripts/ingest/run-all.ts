@@ -9,6 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // against, and build-outcode-data must run last to merge everything.
 const STEPS = [
   "fetch-geography.ts",
+  "fetch-transport.ts",
   "fetch-health.ts",
   "fetch-schools.ts",
   "fetch-crime.ts",

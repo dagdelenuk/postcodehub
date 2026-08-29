@@ -688,6 +688,36 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "windrush"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Peckham Rye Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Queens Road Peckham Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Nunhead Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 1.1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -4,8 +4,11 @@ import LiveTflWidget from "../../../../components/LiveTflWidget.astro";
 import { getAllOutcodeParams, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
-  // Transport has no build-time data of its own (it's fetched live in the
-  // browser), so every outcode gets this page regardless of other categories.
+  // Every outcode gets a Transport page unconditionally, even one with no
+  // nearby stations at all - the static journey-planner/rail links and the
+  // "no nearby stations" message are still useful. Only the live disruption
+  // status itself is fetched client-side (LiveTflWidget); which lines/stations
+  // are actually nearby is a real build-time fact from fetch-transport.ts.
   return getAllOutcodeParams().map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }));
 }
 
@@ -24,8 +27,25 @@ const { data } = Astro.props;
   <h1 class="text-2xl font-bold mb-6">Transport in {data.outcode}</h1>
 
   <div class="grid gap-4 sm:grid-cols-2 mb-8">
-    <LiveTflWidget />
+    <LiveTflWidget lines={data.transport.lines} nearestStationName={data.transport.nearbyStations[0]?.name} />
   </div>
+
+  {
+    data.transport.nearbyStations.length > 0 && (
+      <section class="mb-8">
+        <h2 class="text-lg font-semibold mb-3">Nearby stations</h2>
+        <div class="grid gap-3 sm:grid-cols-2">
+          {data.transport.nearbyStations.map((station) => (
+            <div class="rounded-lg border border-stone-200 bg-white p-4">
+              <p class="font-medium">{station.name}</p>
+              <p class="text-sm text-stone-500 mt-1">{station.modes.join(", ")}</p>
+              <p class="text-xs text-stone-400 mt-1">{(station.distanceKm * 0.621371).toFixed(1)} mi away</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <section class="grid gap-3 sm:grid-cols-3">
     <a href="https://tfl.gov.uk/plan-a-journey/" target="_blank" rel="noopener" class="rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors">

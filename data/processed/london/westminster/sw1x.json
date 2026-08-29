@@ -277,6 +277,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "piccadilly",
+      "circle",
+      "district",
+      "victoria",
+      "jubilee"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Knightsbridge Underground Station",
+        "modes": [
+          "bus",
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Hyde Park Corner Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Sloane Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.7
+      },
+      {
+        "name": "London Victoria Rail Station",
+        "modes": [
+          "national-rail"
+        ],
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Victoria Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 1
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

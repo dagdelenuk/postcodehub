@@ -299,6 +299,58 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "northern",
+      "central",
+      "circle",
+      "hammersmith-city",
+      "metropolitan",
+      "piccadilly",
+      "elizabeth",
+      "victoria",
+      "lioness",
+      "bakerloo",
+      "jubilee"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Goodge Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Euston Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Warren Street Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Tottenham Court Road Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Russell Square Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.6
+      }
+    ]
+  },
   "property": {
     "sales": [
       {

@@ -614,6 +614,53 @@
       }
     ]
   },
+  "transport": {
+    "lines": [
+      "weaver",
+      "victoria",
+      "suffragette"
+    ],
+    "nearbyStations": [
+      {
+        "name": "Seven Sisters Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Seven Sisters Underground Station",
+        "modes": [
+          "tube"
+        ],
+        "distanceKm": 0.5
+      },
+      {
+        "name": "South Tottenham Rail Station",
+        "modes": [
+          "overground"
+        ],
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Stamford Hill Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1
+      },
+      {
+        "name": "Bruce Grove Rail Station",
+        "modes": [
+          "national-rail",
+          "overground"
+        ],
+        "distanceKm": 1.4
+      }
+    ]
+  },
   "property": {
     "sales": [
       {
