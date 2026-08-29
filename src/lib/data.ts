@@ -101,10 +101,12 @@ export interface QuickSearchEntry {
   href: string;
   /** Lowercased, space-joined blob of everything this entry should match on. */
   keywords: string;
-  /** Outcode entries only - lets the dropdown show which specific ward(s) matched instead of the generic borough/city sublabel. */
+  /** Outcode entries only - wards have no page of their own, so they're kept only as extra keyword matches, not shown in the dropdown. */
   wards?: string[];
-  /** Outcode entries only - kept separate from `sublabel` so a ward-matched result can still show "{wards} · {borough}" rather than losing the borough entirely. */
+  /** Outcode entries only - kept separate from `sublabel` so the label line can show "{outcode} · {borough}". */
   borough?: string;
+  /** Outcode entries only - Royal Mail post town (e.g. "Teddington" for TW11), shown as the dropdown sub-line instead of ward names. */
+  postTown?: string;
 }
 
 /**
@@ -151,6 +153,7 @@ export function getQuickSearchIndex(): QuickSearchEntry[] {
             keywords: `${outcode.outcode} ${borough.name} ${city.name} ${outcode.wards.join(" ")}`.toLowerCase(),
             wards: outcode.wards,
             borough: borough.name,
+            postTown: outcode.postTown,
           },
         });
       }
