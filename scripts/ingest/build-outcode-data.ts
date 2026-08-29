@@ -78,6 +78,8 @@ async function main() {
         address: s.address,
         postcode: s.postcode,
         telephone: s.telephone,
+        latitude: s.latitude,
+        longitude: s.longitude,
         distanceKm: Math.round(haversineKm(entry.outcode.latitude, entry.outcode.longitude, s.latitude, s.longitude) * 10) / 10,
       }))
       .sort((a, b) => a.distanceKm - b.distanceKm);

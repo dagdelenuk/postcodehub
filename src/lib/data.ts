@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import type { Banners, BannerImage, GpSurgery, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData, School } from "./types";
+import type { Banners, BannerImage, GpSurgery, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData, PoliceStation, School } from "./types";
 
 const PROCESSED_DIR = path.resolve(process.cwd(), "data/processed");
 
@@ -403,6 +403,37 @@ export function getBoroughSchools(citySlug: string, boroughSlug: string): Boroug
     })
     .filter((g) => g.schools.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));
+}
+
+function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 6371;
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLon = ((lon2 - lon1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+/**
+ * Every distinct police station in a borough, nearest-to-furthest from the
+ * borough's centroid. Every primary-borough outcode's `safety.policeStations`
+ * already carries the FULL set of stations in that outcode's borough (built
+ * once per borough at ingest time, just distance-sorted per outcode) - so any
+ * one primary outcode's list already IS the deduplicated borough set, just
+ * needing its distances recomputed against the borough centroid instead of
+ * that one outcode.
+ */
+export function getBoroughPoliceStations(citySlug: string, boroughSlug: string): PoliceStation[] {
+  const borough = getBorough(citySlug, boroughSlug);
+  const firstPrimary = (borough?.outcodes ?? []).find((o) => o.isPrimaryBorough);
+  if (!firstPrimary) return [];
+
+  const summary = getBoroughSummary(citySlug, boroughSlug);
+  const data = loadOutcodeData(citySlug, boroughSlug, firstPrimary.slug);
+  return data.safety.policeStations
+    .map((s) => ({ ...s, distanceKm: Math.round(haversineKm(summary.latitude, summary.longitude, s.latitude, s.longitude) * 10) / 10 }))
+    .sort((a, b) => a.distanceKm - b.distanceKm);
 }
 
 /**

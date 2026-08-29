@@ -25,7 +25,7 @@ const STAT_COLORS: Record<string, string> = {
 const summaryStats = [
   { label: "GP surgeries", value: data.health.gpSurgeries.length, category: "health" as const },
   { label: "Schools", value: data.schools.schools.length, category: "schools" as const },
-  { label: "Crimes (12mo)", value: data.safety.totalLast12Months, category: "safety" as const },
+  { label: "Safety & Crime (12mo)", value: data.safety.totalLast12Months, category: "safety" as const },
   { label: "Property sales", value: data.property.sales.length, category: "property" as const },
 ];
 ---

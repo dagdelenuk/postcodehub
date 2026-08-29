@@ -94,6 +94,8 @@ export interface PoliceStation {
   address: string;
   postcode: string;
   telephone?: string;
+  latitude: number;
+  longitude: number;
   /** Distance from the outcode this record is attached to, in kilometres. */
   distanceKm: number;
 }
