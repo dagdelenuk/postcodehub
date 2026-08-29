@@ -89,10 +89,20 @@ export interface CrimeMonthSummary {
   propertyCrimes: number;
 }
 
+export interface PoliceStation {
+  name: string;
+  address: string;
+  postcode: string;
+  telephone?: string;
+  /** Distance from the outcode this record is attached to, in kilometres. */
+  distanceKm: number;
+}
+
 export interface CrimeData {
   monthlyTrend: CrimeMonthSummary[];
   categoryBreakdown: Record<string, number>;
   totalLast12Months: number;
+  policeStations: PoliceStation[];
 }
 
 export interface PropertySale {

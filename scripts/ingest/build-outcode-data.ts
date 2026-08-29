@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { logStep } from "./lib/fetch-utils.js";
-import { boroughOutcodeKey, loadOutcodeBoroughPairs } from "./lib/geo.js";
+import { boroughOutcodeKey, haversineKm, loadOutcodeBoroughPairs } from "./lib/geo.js";
 import type {
   EventsData,
   HealthData,
@@ -10,6 +10,7 @@ import type {
   OutcodeData,
   PlacesData,
   PlanningData,
+  PoliceStation,
   PropertyData,
   RepresentativesData,
   CrimeData,
@@ -34,6 +35,19 @@ async function main() {
   // outcode shared between boroughs is not deduplicated away.
   const pairs = await loadOutcodeBoroughPairs();
 
+  // Police stations are a flat, borough-tagged list (not keyed by outcode -
+  // an outcode's nearest station is often outside it), grouped here so each
+  // outcode can be matched against every station in its own borough.
+  const allStations = JSON.parse(
+    await readFile(path.join(RAW_DIR, "police-stations.json"), "utf-8")
+  ) as (PoliceStation & { borough: string; latitude: number; longitude: number })[];
+  const stationsByBorough = new Map<string, typeof allStations>();
+  for (const station of allStations) {
+    const list = stationsByBorough.get(station.borough) ?? [];
+    list.push(station);
+    stationsByBorough.set(station.borough, list);
+  }
+
   const [health, schools, crime, property, representatives, planning, places, events, history] = await Promise.all([
     loadRaw<HealthData>("health-by-outcode.json"),
     loadRaw<SchoolsData>("schools-by-outcode.json").then((raw) => {
@@ -57,6 +71,22 @@ async function main() {
   for (const entry of pairs) {
     const outcode = entry.outcode.outcode;
     const key = boroughOutcodeKey(entry.boroughSlug, outcode);
+
+    const policeStations: PoliceStation[] = (stationsByBorough.get(entry.borough) ?? [])
+      .map((s) => ({
+        name: s.name,
+        address: s.address,
+        postcode: s.postcode,
+        telephone: s.telephone,
+        distanceKm: Math.round(haversineKm(entry.outcode.latitude, entry.outcode.longitude, s.latitude, s.longitude) * 10) / 10,
+      }))
+      .sort((a, b) => a.distanceKm - b.distanceKm);
+
+    const safety: CrimeData = {
+      ...(crime[outcode] ?? { monthlyTrend: [], categoryBreakdown: {}, totalLast12Months: 0 }),
+      policeStations,
+    };
+
     const outcodeData: OutcodeData = {
       outcode,
       slug: entry.outcode.slug,
@@ -68,7 +98,7 @@ async function main() {
       postTown: entry.outcode.postTown,
       health: health[outcode] ?? { gpSurgeries: [], dentists: [], pharmacies: [], hospitals: [] },
       schools: schools[outcode] ?? { schools: [] },
-      safety: crime[outcode] ?? { monthlyTrend: [], categoryBreakdown: {}, totalLast12Months: 0 },
+      safety,
       property: property[outcode] ?? { sales: [], averagePrice: null, medianPrice: null },
       representatives: representatives[key] ?? { representatives: [] },
       planning: planning[key] ?? { applications: [], searchUrl: null },

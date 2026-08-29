@@ -48,3 +48,35 @@ export async function findNearbyOutcodes(
 export function filterByDistrict(outcodes: OutcodeResult[], districtName: string): OutcodeResult[] {
   return (outcodes ?? []).filter((o) => o.admin_district.includes(districtName));
 }
+
+interface BulkReverseGeocodeResponse {
+  status: number;
+  result: { query: { longitude: number; latitude: number }; result: { postcode: string; admin_district: string }[] | null }[];
+}
+
+/**
+ * Reverse-geocodes up to 100 points at a time (postcodes.io's bulk limit) to
+ * their nearest postcode + local authority. Used to assign a borough/postcode
+ * to points from a source (like OSM) that has no postcode of its own.
+ */
+export async function bulkReverseGeocode(
+  points: { latitude: number; longitude: number }[]
+): Promise<{ postcode: string | null; adminDistrict: string | null }[]> {
+  const results: { postcode: string | null; adminDistrict: string | null }[] = [];
+  const BATCH = 100;
+  for (let i = 0; i < points.length; i += BATCH) {
+    const batch = points.slice(i, i + BATCH);
+    const data = await fetchJson<BulkReverseGeocodeResponse>(`${POSTCODES_IO_BASE}/postcodes`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        geolocations: batch.map((p) => ({ longitude: p.longitude, latitude: p.latitude, radius: 2000, limit: 1 })),
+      }),
+    });
+    for (const entry of data.result) {
+      const nearest = entry.result?.[0];
+      results.push({ postcode: nearest?.postcode ?? null, adminDistrict: nearest?.admin_district ?? null });
+    }
+  }
+  return results;
+}
