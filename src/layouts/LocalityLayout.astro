@@ -37,7 +37,8 @@ const available = new Set<CategoryKey>(
   <CategoryNav basePath={basePath} active={active} available={available} overviewLabel={data.outcode} />
   <div class="mx-auto max-w-5xl px-4 pt-4">
     <h1 class="sr-only">{data.outcode}</h1>
-    <p class="text-stone-500">{data.wards.join(", ")}</p>
+    {data.postTown && <p class="text-lg font-bold text-stone-900">{data.postTown}</p>}
+    <p class="text-xs text-stone-600 mt-0.5">{data.wards.join(", ")}</p>
   </div>
   <div class="mx-auto max-w-5xl px-4 py-8">
     <slot />

@@ -4,6 +4,8 @@ export interface HierarchyOutcode {
   latitude: number;
   longitude: number;
   wards: string[];
+  /** Royal Mail post town for this district, e.g. "Teddington" for TW11. */
+  postTown: string;
   parliamentaryConstituency: string;
   /**
    * True when this borough has the largest real-postcode share of this
@@ -173,6 +175,7 @@ export interface OutcodeData {
   latitude: number;
   longitude: number;
   wards: string[];
+  postTown: string;
   health: HealthData;
   schools: SchoolsData;
   safety: CrimeData;

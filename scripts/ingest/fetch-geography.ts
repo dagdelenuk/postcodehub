@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { getOutcode } from "./lib/postcodes.js";
@@ -14,6 +14,15 @@ const RAW_DIR = path.resolve(__dirname, "../../data/raw");
 const NSPL_ZIP_PATH = path.join(RAW_DIR, "nspl.zip");
 
 const CITY = { name: "London", slug: "london" };
+
+// Royal Mail post towns per postcode district (e.g. "Teddington" for TW11),
+// scraped from Wikipedia's "List of postcode districts in the United
+// Kingdom" (sourced from Royal Mail's Address Management Guide) - not
+// available from postcodes.io or ONS NSPL, so kept as a static reference
+// file rather than fetched live.
+const POST_TOWNS: Record<string, string> = JSON.parse(
+  await readFile(path.resolve(__dirname, "../../data/reference/post-towns.json"), "utf8")
+);
 
 // All 33 London boroughs (32 boroughs + the City of London). Matched by exact
 // name against ONS's own LAD25NM field (confirmed live - all 33 match with no
@@ -176,6 +185,7 @@ async function main() {
         latitude: a.latitude,
         longitude: a.longitude,
         wards,
+        postTown: POST_TOWNS[a.outcode] ?? "",
         parliamentaryConstituency: e.constituency,
         isPrimaryBorough: a.primaryLad === ladCode,
       });
