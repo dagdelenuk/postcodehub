@@ -11,7 +11,10 @@ const rotates = images.length > 1;
 
 {
   images.length > 0 && (
-    <div class="relative h-56 sm:h-72 overflow-hidden rounded-lg bg-stone-200" data-banner={rotates ? "rotating" : undefined}>
+    <div
+      class="relative h-56 sm:h-72 overflow-hidden rounded-lg bg-stone-200 touch-pan-y"
+      data-banner={rotates ? "rotating" : undefined}
+    >
       {images.map((img, i) => (
         <img
           src={img.src}
@@ -121,6 +124,35 @@ const rotates = images.length > 1;
             restartTimer();
           })
         );
+
+        // Swipe/drag anywhere on the banner to move between photos - Pointer
+        // Events cover touch, mouse, and pen with one API. touch-pan-y on the
+        // container lets vertical page scroll still pass through untouched.
+        const SWIPE_THRESHOLD_PX = 40;
+        let startX = 0;
+        let startY = 0;
+        let tracking = false;
+
+        banner.addEventListener("pointerdown", (e) => {
+          tracking = true;
+          startX = e.clientX;
+          startY = e.clientY;
+        });
+
+        banner.addEventListener("pointerup", (e) => {
+          if (!tracking) return;
+          tracking = false;
+          const dx = e.clientX - startX;
+          const dy = e.clientY - startY;
+          if (Math.abs(dx) > SWIPE_THRESHOLD_PX && Math.abs(dx) > Math.abs(dy)) {
+            show(current + (dx < 0 ? 1 : -1));
+            restartTimer();
+          }
+        });
+
+        banner.addEventListener("pointercancel", () => {
+          tracking = false;
+        });
 
         restartTimer();
       });
