@@ -6,12 +6,6 @@ import { getBannerImages, loadHierarchy } from "../lib/data";
 
 const hierarchy = loadHierarchy();
 
-// Next in line for real data ingestion (per the spec doc's "Top Major UK
-// Cities" list) - shown as non-interactive placeholders so visitors can see
-// what's planned, without pretending there's real borough/outcode data for
-// them yet.
-const COMING_SOON_CITIES = ["Birmingham", "Manchester", "Glasgow", "Liverpool", "Leeds", "Sheffield", "Edinburgh", "Bristol", "Newcastle"];
-
 // Favourites live in the visitor's localStorage, unknown at build time, so
 // every possible favourite (every city/borough/outcode) gets a lookup entry
 // here; client-side JS (favorites.ts logic in FavoriteStar.astro) reads this
@@ -94,17 +88,13 @@ for (const city of hierarchy.cities) {
           );
         })
       }
-      {
-        COMING_SOON_CITIES.map((name) => (
-          <div class="flex items-center gap-4 rounded-lg border border-dashed border-stone-200 bg-stone-50 p-6 text-stone-400">
-            <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-stone-100 text-2xl">🏙️</span>
-            <div>
-              <h3 class="text-lg font-semibold text-stone-500">{name}</h3>
-              <span class="inline-block mt-1 rounded-full bg-stone-200 px-2 py-0.5 text-xs font-medium text-stone-500">Coming soon</span>
-            </div>
-          </div>
-        ))
-      }
+      <div class="flex items-center gap-4 rounded-lg border border-dashed border-stone-200 bg-stone-50 p-6 text-stone-400">
+        <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-stone-100 text-2xl">🏙️</span>
+        <div>
+          <h3 class="text-lg font-semibold text-stone-500">Other Cities</h3>
+          <span class="inline-block mt-1 rounded-full bg-stone-200 px-2 py-0.5 text-xs font-medium text-stone-500">Coming soon</span>
+        </div>
+      </div>
     </div>
   </section>
 </BaseLayout>
