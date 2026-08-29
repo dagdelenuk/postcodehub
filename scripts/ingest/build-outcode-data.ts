@@ -5,6 +5,7 @@ import { logStep } from "./lib/fetch-utils.js";
 import { boroughOutcodeKey, haversineKm, loadOutcodeBoroughPairs } from "./lib/geo.js";
 import type {
   EventsData,
+  FireStation,
   HealthData,
   HistoryData,
   OutcodeData,
@@ -27,6 +28,35 @@ async function loadRaw<T>(filename: string): Promise<Record<string, T>> {
   return JSON.parse(raw) as Record<string, T>;
 }
 
+type RawStation = PoliceStation & { borough: string };
+
+/** Groups a flat, borough-tagged station list (police or fire) by borough name. */
+async function loadStationsByBorough(filename: string): Promise<Map<string, RawStation[]>> {
+  const all = JSON.parse(await readFile(path.join(RAW_DIR, filename), "utf-8")) as RawStation[];
+  const byBorough = new Map<string, RawStation[]>();
+  for (const station of all) {
+    const list = byBorough.get(station.borough) ?? [];
+    list.push(station);
+    byBorough.set(station.borough, list);
+  }
+  return byBorough;
+}
+
+/** Every station in `borough`, with distance recomputed from (lat, lon) and sorted nearest-first. */
+function stationsNearestTo(byBorough: Map<string, RawStation[]>, borough: string, lat: number, lon: number): PoliceStation[] {
+  return (byBorough.get(borough) ?? [])
+    .map((s) => ({
+      name: s.name,
+      address: s.address,
+      postcode: s.postcode,
+      telephone: s.telephone,
+      latitude: s.latitude,
+      longitude: s.longitude,
+      distanceKm: Math.round(haversineKm(lat, lon, s.latitude, s.longitude) * 10) / 10,
+    }))
+    .sort((a, b) => a.distanceKm - b.distanceKm);
+}
+
 async function main() {
   // health/schools/crime/property are keyed by plain outcode (borough-agnostic
   // raw facts); representatives/planning/places/events/history are keyed by
@@ -35,18 +65,11 @@ async function main() {
   // outcode shared between boroughs is not deduplicated away.
   const pairs = await loadOutcodeBoroughPairs();
 
-  // Police stations are a flat, borough-tagged list (not keyed by outcode -
+  // Police/fire stations are flat, borough-tagged lists (not keyed by outcode -
   // an outcode's nearest station is often outside it), grouped here so each
   // outcode can be matched against every station in its own borough.
-  const allStations = JSON.parse(
-    await readFile(path.join(RAW_DIR, "police-stations.json"), "utf-8")
-  ) as (PoliceStation & { borough: string; latitude: number; longitude: number })[];
-  const stationsByBorough = new Map<string, typeof allStations>();
-  for (const station of allStations) {
-    const list = stationsByBorough.get(station.borough) ?? [];
-    list.push(station);
-    stationsByBorough.set(station.borough, list);
-  }
+  const policeByBorough = await loadStationsByBorough("police-stations.json");
+  const fireByBorough = await loadStationsByBorough("fire-stations.json");
 
   const [health, schools, crime, property, representatives, planning, places, events, history] = await Promise.all([
     loadRaw<HealthData>("health-by-outcode.json"),
@@ -72,21 +95,13 @@ async function main() {
     const outcode = entry.outcode.outcode;
     const key = boroughOutcodeKey(entry.boroughSlug, outcode);
 
-    const policeStations: PoliceStation[] = (stationsByBorough.get(entry.borough) ?? [])
-      .map((s) => ({
-        name: s.name,
-        address: s.address,
-        postcode: s.postcode,
-        telephone: s.telephone,
-        latitude: s.latitude,
-        longitude: s.longitude,
-        distanceKm: Math.round(haversineKm(entry.outcode.latitude, entry.outcode.longitude, s.latitude, s.longitude) * 10) / 10,
-      }))
-      .sort((a, b) => a.distanceKm - b.distanceKm);
+    const policeStations = stationsNearestTo(policeByBorough, entry.borough, entry.outcode.latitude, entry.outcode.longitude);
+    const fireStations: FireStation[] = stationsNearestTo(fireByBorough, entry.borough, entry.outcode.latitude, entry.outcode.longitude);
 
     const safety: CrimeData = {
       ...(crime[outcode] ?? { monthlyTrend: [], categoryBreakdown: {}, totalLast12Months: 0 }),
       policeStations,
+      fireStations,
     };
 
     const outcodeData: OutcodeData = {

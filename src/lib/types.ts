@@ -100,11 +100,15 @@ export interface PoliceStation {
   distanceKm: number;
 }
 
+/** Same shape as a police station - name, address, and a distance from the outcode/borough it's attached to. */
+export type FireStation = PoliceStation;
+
 export interface CrimeData {
   monthlyTrend: CrimeMonthSummary[];
   categoryBreakdown: Record<string, number>;
   totalLast12Months: number;
   policeStations: PoliceStation[];
+  fireStations: FireStation[];
 }
 
 export interface PropertySale {

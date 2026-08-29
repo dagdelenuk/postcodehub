@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 import HamburgerMenu from "../components/HamburgerMenu.astro";
 import PostcodeSearch from "../components/PostcodeSearch.astro";
 
@@ -57,11 +58,6 @@ const {
       <slot />
     </main>
 
-    <footer class="border-t border-stone-200 bg-white mt-12">
-      <div class="mx-auto max-w-5xl px-4 py-8 text-xs text-stone-400 space-y-2">
-        <p>Health, safety, transport, schools, and local civic data for UK neighbourhoods.</p>
-        <p>Built from open data: NHS Organisation Data Service, DfE Get Information about Schools, Ofsted, data.police.uk, HM Land Registry, UK Parliament, and each local council.</p>
-      </div>
-    </footer>
+    {menuLevel !== "outcode" && <Footer />}
   </body>
 </html>

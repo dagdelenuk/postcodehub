@@ -1,0 +1,77 @@
+---
+// Boroughs are pulled straight from the hierarchy at build time, so the
+// footer always reflects whatever cities/boroughs the site actually covers
+// rather than a hand-maintained list that can drift out of date.
+import { loadHierarchy } from "../lib/data";
+
+const hierarchy = loadHierarchy();
+const city = hierarchy.cities[0];
+const boroughs = city ? [...city.boroughs].sort((a, b) => a.name.localeCompare(b.name)) : [];
+---
+
+<footer class="border-t border-stone-200 bg-white mt-12">
+  <div class="mx-auto max-w-5xl px-4 py-10">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-4">
+      <div>
+        <a href="/" class="text-lg font-extrabold tracking-tight">
+          Postcode<span class="text-emerald-700">Hub</span>.UK
+        </a>
+        <p class="mt-3 text-xs text-stone-500">
+          Health, safety, transport, schools, and local civic data for UK neighbourhoods.
+        </p>
+        <p class="mt-2 text-xs text-stone-400">
+          Built from open data: NHS Organisation Data Service, DfE Get Information about Schools, Ofsted,
+          data.police.uk, OpenStreetMap, HM Land Registry, UK Parliament, and each local council.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">Explore</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/" class="text-stone-600 hover:text-emerald-700">Home</a></li>
+          {
+            city && (
+              <>
+                <li>
+                  <a href={`/${city.slug}/`} class="text-stone-600 hover:text-emerald-700">
+                    {city.name}
+                  </a>
+                </li>
+                <li>
+                  <a href={`/${city.slug}/safety/`} class="text-stone-600 hover:text-emerald-700">
+                    Crime comparison
+                  </a>
+                </li>
+                <li>
+                  <a href={`/${city.slug}/property/`} class="text-stone-600 hover:text-emerald-700">
+                    Property prices
+                  </a>
+                </li>
+              </>
+            )
+          }
+        </ul>
+      </div>
+
+      {
+        boroughs.length > 0 && (
+          <div class="sm:col-span-2">
+            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">Boroughs</h2>
+            <div class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+              {boroughs.map((b) => (
+                <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700 truncate">
+                  {b.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        )
+      }
+    </div>
+
+    <p class="mt-8 pt-6 border-t border-stone-100 text-xs text-stone-400">
+      PostcodeHub.UK is a non-commercial, independent project and is not affiliated with Royal Mail, the NHS, the
+      Metropolitan Police, or any local council.
+    </p>
+  </div>
+</footer>

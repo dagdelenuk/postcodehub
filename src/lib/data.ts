@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import type { Banners, BannerImage, GpSurgery, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData, PoliceStation, School } from "./types";
+import type { Banners, BannerImage, FireStation, GpSurgery, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData, PoliceStation, School } from "./types";
 
 const PROCESSED_DIR = path.resolve(process.cwd(), "data/processed");
 
@@ -419,24 +419,32 @@ function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): nu
 }
 
 /**
- * Every distinct police station in a borough, nearest-to-furthest from the
- * borough's centroid. Every primary-borough outcode's `safety.policeStations`
- * already carries the FULL set of stations in that outcode's borough (built
- * once per borough at ingest time, just distance-sorted per outcode) - so any
- * one primary outcode's list already IS the deduplicated borough set, just
- * needing its distances recomputed against the borough centroid instead of
- * that one outcode.
+ * Every distinct station (police or fire) in a borough, nearest-to-furthest
+ * from the borough's centroid. Every primary-borough outcode's `safety.*`
+ * list already carries the FULL set of that kind of station in that outcode's
+ * borough (built once per borough at ingest time, just distance-sorted per
+ * outcode) - so any one primary outcode's list already IS the deduplicated
+ * borough set, just needing its distances recomputed against the borough
+ * centroid instead of that one outcode.
  */
-export function getBoroughPoliceStations(citySlug: string, boroughSlug: string): PoliceStation[] {
+function boroughStations(citySlug: string, boroughSlug: string, pick: (data: OutcodeData) => PoliceStation[]): PoliceStation[] {
   const borough = getBorough(citySlug, boroughSlug);
   const firstPrimary = (borough?.outcodes ?? []).find((o) => o.isPrimaryBorough);
   if (!firstPrimary) return [];
 
   const summary = getBoroughSummary(citySlug, boroughSlug);
   const data = loadOutcodeData(citySlug, boroughSlug, firstPrimary.slug);
-  return data.safety.policeStations
+  return pick(data)
     .map((s) => ({ ...s, distanceKm: Math.round(haversineKm(summary.latitude, summary.longitude, s.latitude, s.longitude) * 10) / 10 }))
     .sort((a, b) => a.distanceKm - b.distanceKm);
+}
+
+export function getBoroughPoliceStations(citySlug: string, boroughSlug: string): PoliceStation[] {
+  return boroughStations(citySlug, boroughSlug, (data) => data.safety.policeStations);
+}
+
+export function getBoroughFireStations(citySlug: string, boroughSlug: string): FireStation[] {
+  return boroughStations(citySlug, boroughSlug, (data) => data.safety.fireStations);
 }
 
 /**
