@@ -2,7 +2,7 @@
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import HealthOrgCard from "../../../../components/HealthOrgCard.astro";
 import HealthFilters from "../../../../components/HealthFilters.astro";
-import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { displayPlaceName, getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -19,6 +19,7 @@ const counts = {
   hospital: data.health.hospitals.length,
 };
 const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hospital;
+const placeName = displayPlaceName(data.postTown, data.wards, data.city);
 ---
 
 <LocalityLayout
@@ -29,7 +30,7 @@ const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hosp
   title={`Health in ${data.outcode}`}
   description={`GP surgeries, dentists, pharmacies, and hospitals serving the ${data.outcode} area.`}
 >
-  <h1 class="text-2xl font-bold mb-4">Health services in {data.postTown} - {data.outcode} ({totalServices})</h1>
+  <h1 class="text-2xl font-bold mb-4">Health services in {placeName} - {data.outcode} ({totalServices})</h1>
 
   <HealthFilters counts={counts} />
 

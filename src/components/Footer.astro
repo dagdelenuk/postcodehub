@@ -3,7 +3,7 @@
 // straight from the hierarchy at build time, so the footer always reflects
 // whatever cities/boroughs/outcodes the site actually covers rather than a
 // hand-maintained list that can drift out of date.
-import { getBorough, loadHierarchy } from "../lib/data";
+import { displayPlaceName, getBorough, loadHierarchy } from "../lib/data";
 
 interface Props {
   citySlug?: string;
@@ -92,7 +92,7 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
               {postTownOutcodes.map((o) => (
                 <li>
                   <a href={`/${city!.slug}/${boroughSlug}/${o.slug}/`} class="text-stone-600 hover:text-emerald-700">
-                    {o.postTown} - {o.outcode}
+                    {displayPlaceName(o.postTown, o.wards, city!.name)} - {o.outcode}
                   </a>
                 </li>
               ))}

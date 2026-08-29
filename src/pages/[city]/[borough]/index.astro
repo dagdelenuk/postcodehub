@@ -4,7 +4,7 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
 import FavoriteStar from "../../../components/FavoriteStar.astro";
-import { getBannerImages, getBoroughHealth, getBoroughSchools, getBoroughSummary, loadHierarchy } from "../../../lib/data";
+import { displayPlaceName, getBannerImages, getBoroughHealth, getBoroughSchools, getBoroughSummary, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -88,7 +88,7 @@ const summaryStats = [
           return (
             <div class="relative rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>
               <a href={`/${city.slug}/${borough.slug}/${outcode.slug}/`} class="block px-4 py-3 pr-9 hover:border-emerald-600 rounded-lg transition-colors">
-                <span class="font-semibold">{outcode.postTown} - {outcode.outcode}</span>
+                <span class="font-semibold">{displayPlaceName(outcode.postTown, outcode.wards, city.name)} - {outcode.outcode}</span>
                 <span class="block text-xs text-stone-500 mt-0.5 truncate">{outcode.wards.slice(0, 2).join(", ")}</span>
               </a>
               <div class="absolute top-1.5 right-1.5">

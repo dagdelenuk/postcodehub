@@ -153,7 +153,7 @@ export function getQuickSearchIndex(): QuickSearchEntry[] {
             keywords: `${outcode.outcode} ${borough.name} ${city.name} ${outcode.wards.join(" ")}`.toLowerCase(),
             wards: outcode.wards,
             borough: borough.name,
-            postTown: outcode.postTown,
+            postTown: displayPlaceName(outcode.postTown, outcode.wards, city.name),
           },
         });
       }
@@ -416,6 +416,20 @@ function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): nu
     Math.sin(dLat / 2) ** 2 +
     Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+/**
+ * The post town for the ~10 inner-London postcode areas (E, EC, N, NW, SE,
+ * SW, W, WC) is officially just "London" (Royal Mail's historic 1857-1866
+ * London postal district) - repeating that on every outcode card in a
+ * borough like Hackney (100% inner-London postcodes) adds nothing, since
+ * the city name is already shown elsewhere on the page. Falls back to the
+ * most-populous ward name (wards are pre-sorted - see fetch-geography.ts)
+ * so every card still gets a locally-recognisable place name either way.
+ */
+export function displayPlaceName(postTown: string, wards: string[], cityName: string): string {
+  if (postTown && postTown !== cityName) return postTown;
+  return wards[0] ?? postTown;
 }
 
 /**
