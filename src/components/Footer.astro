@@ -69,10 +69,12 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
 
       {
         boroughs.length > 0 && (
-          <div>
-            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">London Boroughs</h2>
+          <div data-borough-list>
+            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">
+              Boroughs in<br />{city!.name}
+            </h2>
             <ul class="mt-3 space-y-2 text-sm">
-              {boroughs.map((b) => (
+              {boroughs.slice(0, 10).map((b) => (
                 <li>
                   <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700">
                     {b.name}
@@ -80,6 +82,24 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
                 </li>
               ))}
             </ul>
+            {
+              boroughs.length > 10 && (
+                <>
+                  <ul class="mt-2 space-y-2 text-sm hidden" data-boroughs-extra>
+                    {boroughs.slice(10).map((b) => (
+                      <li>
+                        <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700">
+                          {b.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  <button type="button" class="mt-2 text-xs text-stone-400 hover:text-stone-600" data-boroughs-toggle>
+                    Show more
+                  </button>
+                </>
+              )
+            }
           </div>
         )
       }
@@ -87,12 +107,14 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
       {
         currentBorough && postTownOutcodes.length > 0 && (
           <div>
-            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">Post towns in {currentBorough.name}</h2>
+            <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">
+              Post towns in<br />{currentBorough.name}
+            </h2>
             <ul class="mt-3 space-y-2 text-sm">
               {postTownOutcodes.map((o) => (
                 <li>
                   <a href={`/${city!.slug}/${boroughSlug}/${o.slug}/`} class="text-stone-600 hover:text-emerald-700">
-                    {displayPlaceName(o.postTown, o.wards, city!.name)} - {o.outcode}
+                    {o.outcode} - {displayPlaceName(o.postTown, o.wards, city!.name)}
                   </a>
                 </li>
               ))}
@@ -108,3 +130,15 @@ const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, 
     </p>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-borough-list]").forEach((container) => {
+    const extra = container.querySelector<HTMLElement>("[data-boroughs-extra]");
+    const toggle = container.querySelector<HTMLElement>("[data-boroughs-toggle]");
+    if (!extra || !toggle) return;
+    toggle.addEventListener("click", () => {
+      extra.classList.remove("hidden");
+      toggle.remove();
+    });
+  });
+</script>
