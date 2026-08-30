@@ -63,6 +63,10 @@ const dims = size === "sm" ? "14" : "18";
         const key = el.dataset.favoriteKey;
         el.classList.toggle("is-favorited-item", Boolean(key && favs.has(key)));
       }
+      // Some lists (e.g. an alphabetical "London Boroughs"/"Postcodes" listing)
+      // want the highlight above without the reorder-to-front - the sort order
+      // itself is the point, favourites should just stand out in place.
+      if (list.dataset.noReorder !== undefined) return;
       const favItems = items.filter((el) => el.dataset.favoriteKey && favs.has(el.dataset.favoriteKey));
       const rest = items.filter((el) => !favItems.includes(el));
       for (const el of [...favItems, ...rest]) {
@@ -96,13 +100,17 @@ const dims = size === "sm" ? "14" : "18";
     sublabel: string;
     href: string;
     thumb?: string;
+    type: "city" | "borough" | "outcode";
+    sortKey: string;
   }
 
+  const FAVOURITE_TYPE_ORDER: Record<FavouriteEntry["type"], number> = { city: 0, borough: 1, outcode: 2 };
+
   /**
-   * Home page only: renders the "Your Favourites" roll-up (cities, boroughs,
-   * outcodes together) above "Browse by city" from the page's embedded
-   * lookup - see favouritesLookup in src/pages/index.astro. No-ops anywhere
-   * else, since only the home page has this markup.
+   * Renders the "Your Favourites" roll-up (cities, then boroughs, then
+   * postcodes, each A-Z) from the page's embedded lookup - see
+   * favouritesLookup in index.astro/[city]/index.astro/[city]/[borough]/index.astro.
+   * No-ops on pages without this markup.
    */
   function renderFavouritesSection(favs: Set<string>) {
     const section = document.querySelector<HTMLElement>("[data-favourites-section]");
@@ -119,7 +127,11 @@ const dims = size === "sm" ? "14" : "18";
 
     const entries = [...favs]
       .map((key) => ({ key, entry: lookup[key] }))
-      .filter((e): e is { key: string; entry: FavouriteEntry } => Boolean(e.entry));
+      .filter((e): e is { key: string; entry: FavouriteEntry } => Boolean(e.entry))
+      .sort((a, b) => {
+        const typeDiff = FAVOURITE_TYPE_ORDER[a.entry.type] - FAVOURITE_TYPE_ORDER[b.entry.type];
+        return typeDiff !== 0 ? typeDiff : a.entry.sortKey.localeCompare(b.entry.sortKey);
+      });
 
     if (entries.length === 0) {
       section.classList.add("hidden");

@@ -4,7 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../components/LiveWeatherWidget.astro";
 import FavoriteStar from "../../components/FavoriteStar.astro";
-import { getBannerImages, getCityFact, getCitySummary, loadHierarchy } from "../../lib/data";
+import { getBannerImages, getCityFact, getCitySummary, getFavouritesLookup, loadHierarchy } from "../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -17,6 +17,7 @@ export function getStaticPaths() {
 const { city } = Astro.props;
 const summary = getCitySummary(city.slug);
 const cityFact = getCityFact(city.slug) ?? summary.historySummary;
+const favouritesLookup = getFavouritesLookup();
 ---
 
 <BaseLayout title={city.name} description={`Community information for ${city.name}, organised by council authority and postcode.`} menuLevel="city" citySlug={city.slug}>
@@ -40,10 +41,18 @@ const cityFact = getCityFact(city.slug) ?? summary.historySummary;
     </div>
   </section>
 
+  <script type="application/json" id="favourites-lookup" set:html={JSON.stringify(favouritesLookup)} />
+
+  <section class="mx-auto max-w-5xl px-4 pb-4 hidden" data-favourites-section>
+    <h2 class="text-xl font-semibold mb-4">Your Favourites</h2>
+    <div class="grid gap-3 sm:grid-cols-2" data-favourites-list></div>
+  </section>
+
   <section class="mx-auto max-w-5xl px-4 pb-16">
-    <div class="grid gap-4 sm:grid-cols-2" data-favorite-list>
+    <h2 class="text-xl font-semibold mb-4">London Boroughs</h2>
+    <div class="grid gap-4 sm:grid-cols-2" data-favorite-list data-no-reorder>
       {
-        city.boroughs.map((borough) => {
+        [...city.boroughs].sort((a, b) => a.name.localeCompare(b.name)).map((borough) => {
           const thumb = getBannerImages(borough.slug)[0];
           const favKey = `borough:${borough.slug}`;
           return (

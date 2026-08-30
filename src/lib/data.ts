@@ -28,6 +28,62 @@ export function getBannerImages(slug: string): BannerImage[] {
   return loadBanners()[slug] ?? [];
 }
 
+export interface FavouriteEntry {
+  label: string;
+  sublabel: string;
+  href: string;
+  thumb?: string;
+  /** Groups the "Your Favourites" roll-up: cities, then boroughs, then postcodes. */
+  type: "city" | "borough" | "outcode";
+  /** A-Z sort key within a type - the post town name for outcodes, not the outcode code itself. */
+  sortKey: string;
+}
+
+/**
+ * Every possible favourite (every city/borough/outcode) in one flat lookup,
+ * keyed the same way FavoriteStar's favKey props are ("city:slug",
+ * "borough:slug", "outcode:city/borough/slug") - favourites live in the
+ * visitor's localStorage, unknown at build time, so any page that wants a
+ * "Your Favourites" roll-up embeds this whole lookup and lets the shared
+ * client-side script in FavoriteStar.astro pick out whichever keys are
+ * actually favourited, without needing to fetch anything at runtime.
+ */
+export function getFavouritesLookup(): Record<string, FavouriteEntry> {
+  const hierarchy = loadHierarchy();
+  const lookup: Record<string, FavouriteEntry> = {};
+  for (const city of hierarchy.cities) {
+    lookup[`city:${city.slug}`] = {
+      label: city.name,
+      sublabel: `${city.boroughs.length} council ${city.boroughs.length === 1 ? "authority" : "authorities"} covered`,
+      href: `/${city.slug}/`,
+      thumb: getBannerImages(city.slug)[0]?.src,
+      type: "city",
+      sortKey: city.name,
+    };
+    for (const borough of city.boroughs) {
+      lookup[`borough:${borough.slug}`] = {
+        label: borough.name,
+        sublabel: `${borough.outcodes.length} postcode areas`,
+        href: `/${city.slug}/${borough.slug}/`,
+        thumb: getBannerImages(borough.slug)[0]?.src,
+        type: "borough",
+        sortKey: borough.name,
+      };
+      for (const outcode of borough.outcodes) {
+        const postTown = displayPlaceName(outcode.postTown, outcode.wards, city.name);
+        lookup[`outcode:${city.slug}/${borough.slug}/${outcode.slug}`] = {
+          label: `${outcode.outcode} - ${postTown}`,
+          sublabel: outcode.wards.slice(0, 2).join(", "),
+          href: `/${city.slug}/${borough.slug}/${outcode.slug}/`,
+          type: "outcode",
+          sortKey: postTown,
+        };
+      }
+    }
+  }
+  return lookup;
+}
+
 export interface CouncilTaxBands {
   boroughName: string;
   /** Band D figure the other bands are derived from - the "area" total, i.e. inclusive of the GLA precept for London boroughs. */

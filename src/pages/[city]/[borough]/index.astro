@@ -4,7 +4,15 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
 import FavoriteStar from "../../../components/FavoriteStar.astro";
-import { displayPlaceName, getBannerImages, getBoroughHealth, getBoroughSchools, getBoroughSummary, loadHierarchy } from "../../../lib/data";
+import {
+  displayPlaceName,
+  getBannerImages,
+  getBoroughHealth,
+  getBoroughSchools,
+  getBoroughSummary,
+  getFavouritesLookup,
+  loadHierarchy,
+} from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -26,6 +34,7 @@ const summaryStats = [
   { label: "Safety & Crime (12mo)", value: summary.crimes12mo, href: `/${city.slug}/safety/?highlight=${borough.slug}`, icon: "🚨", color: "text-amber-600" },
   { label: "Housing & Sales", value: summary.propertySales, href: `/${city.slug}/property/?highlight=${borough.slug}`, icon: "🏠", color: "text-emerald-600" },
 ];
+const favouritesLookup = getFavouritesLookup();
 ---
 
 <BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}>
@@ -80,8 +89,16 @@ const summaryStats = [
     </div>
   </section>
 
+  <script type="application/json" id="favourites-lookup" set:html={JSON.stringify(favouritesLookup)} />
+
+  <section class="mx-auto max-w-5xl px-4 pb-4 hidden" data-favourites-section>
+    <h2 class="text-xl font-semibold mb-4">Your Favourites</h2>
+    <div class="grid gap-3 sm:grid-cols-2" data-favourites-list></div>
+  </section>
+
   <section class="mx-auto max-w-5xl px-4 pb-16">
-    <div class="grid gap-3 sm:grid-cols-3" data-favorite-list>
+    <h2 class="text-xl font-semibold mb-4">Postcodes - Post towns in {borough.name}</h2>
+    <div class="grid gap-3 sm:grid-cols-3" data-favorite-list data-no-reorder>
       {
         [...borough.outcodes]
           .sort((a, b) =>
