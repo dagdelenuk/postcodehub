@@ -331,6 +331,47 @@ export function getCityPropertyTrend(citySlug: string): CityTrendData {
   return aggregateBoroughTrend(citySlug, (data) => data.property.sales.map((s) => [s.dateOfTransfer.slice(0, 7), 1]));
 }
 
+export interface BoroughPostTownTrend {
+  months: string[];
+  postTowns: { name: string; series: number[] }[];
+  average: number[];
+}
+
+/**
+ * Monthly property sale count within one borough, grouped by Royal Mail post
+ * town (multiple outcodes can share one - e.g. TW1+TW2 are both Twickenham).
+ * Same primary-only filter as aggregateBoroughTrend/getBoroughSummary, since
+ * this sums per-outcode counts into buckets (unlike getBoroughCrimeTrend,
+ * which plots one line per outcode with nothing summed, so needs no filter).
+ */
+export function getBoroughPropertyTrendByPostTown(citySlug: string, boroughSlug: string): BoroughPostTownTrend {
+  const borough = getBorough(citySlug, boroughSlug);
+  const monthsSeen = new Set<string>();
+  const byPostTown = new Map<string, Map<string, number>>();
+
+  for (const outcode of (borough?.outcodes ?? []).filter((o) => o.isPrimaryBorough)) {
+    const data = loadOutcodeData(citySlug, boroughSlug, outcode.slug);
+    const byMonth = byPostTown.get(outcode.postTown) ?? new Map<string, number>();
+    for (const sale of data.property.sales) {
+      const month = sale.dateOfTransfer.slice(0, 7);
+      monthsSeen.add(month);
+      byMonth.set(month, (byMonth.get(month) ?? 0) + 1);
+    }
+    byPostTown.set(outcode.postTown, byMonth);
+  }
+
+  const months = [...monthsSeen].sort();
+  const postTowns = [...byPostTown.entries()]
+    .map(([name, byMonth]) => ({ name, series: months.map((m) => byMonth.get(m) ?? 0) }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const average = months.map((_, i) => {
+    const values = postTowns.map((p) => p.series[i]);
+    return values.reduce((sum, v) => sum + v, 0) / (values.length || 1);
+  });
+
+  return { months, postTowns, average };
+}
+
 export interface BoroughCrimeTrend {
   /** "YYYY-MM", ascending. */
   months: string[];

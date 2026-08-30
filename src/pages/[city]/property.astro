@@ -3,7 +3,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getCityPropertyTrend, getCouncilTax, loadHierarchy } from "../../lib/data";
+import { getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, loadHierarchy } from "../../lib/data";
+
+function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -22,6 +26,27 @@ const trend = getCityPropertyTrend(city.slug);
 const councilTaxByBorough = trend.boroughs
   .map((b) => ({ slug: b.slug, name: b.name, councilTax: getCouncilTax(b.slug) }))
   .filter((b) => b.councilTax);
+
+// Same precompute-every-borough-then-toggle-client-side approach: property
+// sales within the highlighted borough, grouped by Royal Mail post town
+// (multiple outcodes can share one, e.g. Twickenham covers TW1 and TW2).
+// BoroughTrendChart is reused as-is - its "boroughs" entities just happen to
+// be post towns here, with a locally slugified id used only for this chart's
+// own legend-toggle DOM matching, not a real route.
+const postTownTrendsByBorough = trend.boroughs
+  .map((b) => {
+    const postTownTrend = getBoroughPropertyTrendByPostTown(city.slug, b.slug);
+    return {
+      slug: b.slug,
+      name: b.name,
+      trend: {
+        months: postTownTrend.months,
+        boroughs: postTownTrend.postTowns.map((p) => ({ name: p.name, slug: slugify(p.name), series: p.series })),
+        average: postTownTrend.average,
+      },
+    };
+  })
+  .filter((b) => b.trend.boroughs.length > 0);
 ---
 
 <BaseLayout
@@ -56,6 +81,16 @@ const councilTaxByBorough = trend.boroughs
         </table>
       </div>
     </section>
+
+    {
+      postTownTrendsByBorough.map((b) => (
+        <div class="hidden mb-8" data-post-town-section data-borough-slug={b.slug}>
+          <h2 class="text-2xl font-bold mb-1">Property sales comparison across {b.name}, grouped by post town</h2>
+          <p class="text-stone-500 mb-3 text-sm">Monthly residential sales by post town within {b.name}, against the borough average.</p>
+          <BoroughTrendChart trend={b.trend} averageLabel={`${b.name} average`} chartId={`property-posttown-${b.slug}`} />
+        </div>
+      ))
+    }
 
     <h1 class="text-2xl font-bold mb-1">Property sales comparison across {city.name}</h1>
     <p class="text-stone-500 mb-6">Number of residential sales completed per month in each borough, covering roughly the last two years.</p>
@@ -119,5 +154,12 @@ const councilTaxByBorough = trend.boroughs
 
       section.classList.remove("hidden");
     });
+  </script>
+
+  <script>
+    const highlight = new URLSearchParams(location.search).get("highlight");
+    if (highlight) {
+      document.querySelector(`[data-post-town-section][data-borough-slug="${highlight}"]`)?.classList.remove("hidden");
+    }
   </script>
 </BaseLayout>
