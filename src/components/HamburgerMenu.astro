@@ -100,7 +100,7 @@ const pathLinks = [
       effectiveLevel === "city" && city && (
         <div class="px-2">
           <p class="px-3 pt-2 pb-1 text-xs font-medium uppercase tracking-wide text-stone-400">Boroughs</p>
-          <ul data-favorite-list data-no-reorder>
+          <ul data-favorite-list>
             {[...city.boroughs].sort((a, b) => a.name.localeCompare(b.name)).map((b) => {
               const thumb = getBannerImages(b.slug)[0];
               const favKey = `borough:${b.slug}`;
@@ -127,7 +127,7 @@ const pathLinks = [
       effectiveLevel === "borough" && borough && (
         <div class="px-2">
           <p class="px-3 pt-2 pb-1 text-xs font-medium uppercase tracking-wide text-stone-400">Postcode areas</p>
-          <ul data-favorite-list data-no-reorder>
+          <ul data-favorite-list>
             {[...borough.outcodes]
               .sort((a, b) =>
                 displayPlaceName(a.postTown, a.wards, city!.name).localeCompare(displayPlaceName(b.postTown, b.wards, city!.name))
