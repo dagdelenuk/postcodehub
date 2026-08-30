@@ -53,6 +53,22 @@ export function getCouncilTax(boroughSlug: string): CouncilTaxBands | undefined 
   return loadCouncilTax()[boroughSlug];
 }
 
+let cachedCouncilTaxAverage: CouncilTaxBands["bands"] | null = null;
+
+/** Mean Council Tax per band across every borough with data - for comparing one borough's own rates against the citywide picture. */
+export function getCouncilTaxAverage(): CouncilTaxBands["bands"] {
+  if (cachedCouncilTaxAverage) return cachedCouncilTaxAverage;
+  const all = Object.values(loadCouncilTax());
+  const bandKeys = ["A", "B", "C", "D", "E", "F", "G", "H"] as const;
+  const result = {} as CouncilTaxBands["bands"];
+  for (const band of bandKeys) {
+    const values = all.map((c) => c.bands[band]);
+    result[band] = values.length > 0 ? Math.round(values.reduce((sum, v) => sum + v, 0) / values.length) : 0;
+  }
+  cachedCouncilTaxAverage = result;
+  return result;
+}
+
 // A short, genuinely-about-the-city fact, used on the city page instead of
 // rolling up one borough's history text (which reads oddly generalised to
 // the whole city - "Formed in 1965 from the former boroughs of Barking and

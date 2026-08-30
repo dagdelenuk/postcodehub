@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, loadHierarchy } from "../../lib/data";
+import { getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, loadHierarchy } from "../../lib/data";
 
 function slugify(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -26,6 +26,7 @@ const trend = getCityPropertyTrend(city.slug);
 const councilTaxByBorough = trend.boroughs
   .map((b) => ({ slug: b.slug, name: b.name, councilTax: getCouncilTax(b.slug) }))
   .filter((b) => b.councilTax);
+const councilTaxLondonAverage = getCouncilTaxAverage();
 
 // Same precompute-every-borough-then-toggle-client-side approach: property
 // sales within the highlighted borough, grouped by Royal Mail post town
@@ -75,6 +76,7 @@ const postTownTrendsByBorough = trend.boroughs
             <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
               <th class="px-4 py-2 font-semibold">Band</th>
               <th class="px-4 py-2 font-semibold text-right">Annual Council Tax</th>
+              <th class="px-4 py-2 font-semibold text-right">Annual Council Tax (AVG London)</th>
             </tr>
           </thead>
           <tbody data-council-tax-rows></tbody>
@@ -104,6 +106,7 @@ const postTownTrendsByBorough = trend.boroughs
   </section>
 
   <script type="application/json" data-council-tax-data set:html={JSON.stringify(councilTaxByBorough)} />
+  <script type="application/json" data-council-tax-average set:html={JSON.stringify(councilTaxLondonAverage)} />
 
   <script>
     interface BoroughCouncilTax {
@@ -125,6 +128,9 @@ const postTownTrendsByBorough = trend.boroughs
       const match = highlight ? boroughs.find((b) => b.slug === highlight) : null;
       if (!match) return;
 
+      const averageEl = document.querySelector<HTMLScriptElement>("[data-council-tax-average]");
+      const londonAverage = JSON.parse(averageEl?.textContent ?? "{}") as Record<string, number>;
+
       const section = document.querySelector<HTMLElement>("[data-council-tax-section]");
       const heading = document.querySelector<HTMLElement>("[data-council-tax-heading]");
       const sub = document.querySelector<HTMLElement>("[data-council-tax-sub]");
@@ -137,6 +143,7 @@ const postTownTrendsByBorough = trend.boroughs
       for (const band of BAND_ORDER) {
         const amount = match.councilTax.bands[band];
         if (amount == null) continue;
+        const avgAmount = londonAverage[band];
         const tr = document.createElement("tr");
         tr.className = band === "D" ? "border-b border-stone-100 bg-emerald-50 font-semibold" : "border-b border-stone-100 last:border-0";
 
@@ -147,8 +154,19 @@ const postTownTrendsByBorough = trend.boroughs
         const amountCell = document.createElement("td");
         amountCell.className = "px-4 py-2 text-right";
         amountCell.textContent = GBP.format(amount);
+        if (avgAmount != null && amount !== avgAmount) {
+          const icon = document.createElement("span");
+          icon.className = amount > avgAmount ? "text-red-600 ml-1.5" : "text-emerald-600 ml-1.5";
+          icon.textContent = amount > avgAmount ? "▲" : "▼";
+          icon.title = amount > avgAmount ? "Above the London average" : "Below the London average";
+          amountCell.append(icon);
+        }
 
-        tr.append(bandCell, amountCell);
+        const avgCell = document.createElement("td");
+        avgCell.className = "px-4 py-2 text-right text-stone-500";
+        avgCell.textContent = avgAmount != null ? GBP.format(avgAmount) : "—";
+
+        tr.append(bandCell, amountCell, avgCell);
         rows.append(tr);
       }
 
