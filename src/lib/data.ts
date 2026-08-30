@@ -69,6 +69,23 @@ export function getCouncilTaxAverage(): CouncilTaxBands["bands"] {
   return result;
 }
 
+let cachedSchoolAdmissions: Record<string, string> | null = null;
+
+// Each council's own school admissions page - verified live one at a time
+// (not guessed from a URL pattern, since every council's site structure
+// differs), so this is a static reference table refreshed by hand, same as
+// council-tax-2026-27.json and post-towns.json.
+function loadSchoolAdmissions(): Record<string, string> {
+  if (cachedSchoolAdmissions) return cachedSchoolAdmissions;
+  const filePath = path.join(REFERENCE_DIR, "school-admissions.json");
+  cachedSchoolAdmissions = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as Record<string, string>) : {};
+  return cachedSchoolAdmissions;
+}
+
+export function getSchoolAdmissionsUrl(boroughSlug: string): string | undefined {
+  return loadSchoolAdmissions()[boroughSlug];
+}
+
 // A short, genuinely-about-the-city fact, used on the city page instead of
 // rolling up one borough's history text (which reads oddly generalised to
 // the whole city - "Formed in 1965 from the former boroughs of Barking and

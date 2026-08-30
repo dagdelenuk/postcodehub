@@ -3,7 +3,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import SchoolCard from "../../../components/SchoolCard.astro";
 import SchoolFilters from "../../../components/SchoolFilters.astro";
-import { getBoroughSchools, loadHierarchy } from "../../../lib/data";
+import { getBoroughSchools, getSchoolAdmissionsUrl, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -21,6 +21,7 @@ const { city, borough } = Astro.props;
 const groups = getBoroughSchools(city.slug, borough.slug);
 const allSchools = groups.flatMap((g) => g.schools);
 const totalSchools = allSchools.length;
+const admissionsUrl = getSchoolAdmissionsUrl(borough.slug);
 ---
 
 <BaseLayout
@@ -60,6 +61,29 @@ const totalSchools = allSchools.length;
           </div>
         </div>
       ))
+    }
+
+    {
+      admissionsUrl && (
+        <section class="mb-4">
+          <h2 class="text-lg font-semibold mb-3">School admissions</h2>
+          <a
+            href={admissionsUrl}
+            target="_blank"
+            rel="noopener"
+            class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors sm:max-w-md"
+          >
+            <span class="text-3xl leading-none" aria-hidden="true">📝</span>
+            <div>
+              <p class="font-medium">School admissions</p>
+              <p class="text-sm text-stone-500 mt-1">
+                Find out what school year group your child is in and what school application to make. Apply for primary or
+                secondary schools for your child and in-year admissions.
+              </p>
+            </div>
+          </a>
+        </section>
+      )
     }
 
     <p class="text-xs text-stone-400 mt-4">Source: DfE Get Information about Schools (GIAS) and Ofsted inspection outcomes.</p>
