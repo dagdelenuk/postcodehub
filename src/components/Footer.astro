@@ -20,7 +20,11 @@ const boroughs = city ? [...city.boroughs].sort((a, b) => a.name.localeCompare(b
 // pages and their outcode subpages) - the homepage/city page has no single
 // borough to show post towns for.
 const currentBorough = citySlug && boroughSlug ? getBorough(citySlug, boroughSlug) : undefined;
-const postTownOutcodes = currentBorough ? [...currentBorough.outcodes].sort((a, b) => a.outcode.localeCompare(b.outcode)) : [];
+const postTownOutcodes = currentBorough
+  ? [...currentBorough.outcodes].sort((a, b) =>
+      displayPlaceName(a.postTown, a.wards, city!.name).localeCompare(displayPlaceName(b.postTown, b.wards, city!.name))
+    )
+  : [];
 ---
 
 <footer class="border-t border-stone-200 bg-white mt-12">

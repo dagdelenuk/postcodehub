@@ -1,5 +1,5 @@
 ---
-import { getBannerImages, getBorough, getCity, loadHierarchy } from "../lib/data";
+import { displayPlaceName, getBannerImages, getBorough, getCity, loadHierarchy } from "../lib/data";
 import FavoriteStar from "./FavoriteStar.astro";
 
 interface Props {
@@ -128,18 +128,24 @@ const pathLinks = [
         <div class="px-2">
           <p class="px-3 pt-2 pb-1 text-xs font-medium uppercase tracking-wide text-stone-400">Postcode areas</p>
           <ul data-favorite-list>
-            {borough.outcodes.map((o) => {
-              const favKey = `outcode:${citySlug}/${borough.slug}/${o.slug}`;
-              return (
-                <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
-                  <a href={`/${citySlug}/${borough.slug}/${o.slug}/`} class="flex-1 block px-3 py-2 text-sm hover:bg-stone-100 rounded-md transition-colors">
-                    <span class="block font-medium text-stone-800">{o.outcode}</span>
-                    <span class="block text-xs text-stone-500 truncate">{o.wards.slice(0, 2).join(", ")}</span>
-                  </a>
-                  <FavoriteStar favKey={favKey} size="sm" />
-                </li>
-              );
-            })}
+            {[...borough.outcodes]
+              .sort((a, b) =>
+                displayPlaceName(a.postTown, a.wards, city!.name).localeCompare(displayPlaceName(b.postTown, b.wards, city!.name))
+              )
+              .map((o) => {
+                const favKey = `outcode:${citySlug}/${borough.slug}/${o.slug}`;
+                return (
+                  <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
+                    <a href={`/${citySlug}/${borough.slug}/${o.slug}/`} class="flex-1 block px-3 py-2 text-sm hover:bg-stone-100 rounded-md transition-colors">
+                      <span class="block font-medium text-stone-800">
+                        {o.outcode} - {displayPlaceName(o.postTown, o.wards, city!.name)}
+                      </span>
+                      <span class="block text-xs text-stone-500 truncate">{o.wards.slice(0, 2).join(", ")}</span>
+                    </a>
+                    <FavoriteStar favKey={favKey} size="sm" />
+                  </li>
+                );
+              })}
           </ul>
         </div>
       )
