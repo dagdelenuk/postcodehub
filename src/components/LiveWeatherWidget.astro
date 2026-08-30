@@ -8,62 +8,180 @@ const { latitude, longitude } = Astro.props;
 ---
 
 <div
-  class="rounded-lg border border-stone-200 bg-white p-4"
+  class="rounded-lg border border-stone-200 bg-white p-4 transition-colors duration-500"
   data-weather-widget
   data-lat={latitude}
   data-lon={longitude}
 >
-  <p class="text-xs uppercase tracking-wide text-stone-400 mb-1">Live weather &middot; Open-Meteo</p>
-  <p data-weather-output class="text-stone-600 text-sm">Loading current weather&hellip;</p>
+  <p class="text-xs uppercase tracking-wide text-stone-400 mb-2" data-weather-label>Live weather &middot; Open-Meteo</p>
+  <div data-weather-output>
+    <p class="text-stone-600 text-sm">Loading current weather&hellip;</p>
+  </div>
 </div>
 
 <script>
-  const WEATHER_CODES: Record<number, string> = {
-    0: "☀️ Clear sky",
-    1: "🌤️ Mainly clear",
-    2: "⛅ Partly cloudy",
-    3: "☁️ Overcast",
-    45: "🌫️ Fog",
-    48: "🌫️ Depositing rime fog",
-    51: "🌦️ Light drizzle",
-    53: "🌦️ Moderate drizzle",
-    55: "🌦️ Dense drizzle",
-    56: "🌧️ Light freezing drizzle",
-    57: "🌧️ Dense freezing drizzle",
-    61: "🌧️ Slight rain",
-    63: "🌧️ Moderate rain",
-    65: "🌧️ Heavy rain",
-    66: "🌧️ Light freezing rain",
-    67: "🌧️ Heavy freezing rain",
-    71: "🌨️ Slight snow",
-    73: "🌨️ Moderate snow",
-    75: "🌨️ Heavy snow",
-    77: "🌨️ Snow grains",
-    80: "🌦️ Slight rain showers",
-    81: "🌦️ Moderate rain showers",
-    82: "🌧️ Violent rain showers",
-    85: "🌨️ Slight snow showers",
-    86: "🌨️ Heavy snow showers",
-    95: "⛈️ Thunderstorm",
-    96: "⛈️ Thunderstorm with slight hail",
-    99: "⛈️ Thunderstorm with heavy hail",
+  type ConditionGroup = "clear" | "partly-cloudy" | "overcast" | "fog" | "drizzle" | "rain" | "snow" | "thunderstorm";
+
+  const CODE_GROUPS: Record<number, ConditionGroup> = {
+    0: "clear",
+    1: "clear",
+    2: "partly-cloudy",
+    3: "overcast",
+    45: "fog",
+    48: "fog",
+    51: "drizzle",
+    53: "drizzle",
+    55: "drizzle",
+    56: "drizzle",
+    57: "drizzle",
+    61: "rain",
+    63: "rain",
+    65: "rain",
+    66: "rain",
+    67: "rain",
+    80: "rain",
+    81: "rain",
+    82: "rain",
+    71: "snow",
+    73: "snow",
+    75: "snow",
+    77: "snow",
+    85: "snow",
+    86: "snow",
+    95: "thunderstorm",
+    96: "thunderstorm",
+    99: "thunderstorm",
+  };
+
+  const LABELS: Record<number, string> = {
+    0: "Clear sky",
+    1: "Mainly clear",
+    2: "Partly cloudy",
+    3: "Overcast",
+    45: "Fog",
+    48: "Depositing rime fog",
+    51: "Light drizzle",
+    53: "Moderate drizzle",
+    55: "Dense drizzle",
+    56: "Light freezing drizzle",
+    57: "Dense freezing drizzle",
+    61: "Slight rain",
+    63: "Moderate rain",
+    65: "Heavy rain",
+    66: "Light freezing rain",
+    67: "Heavy freezing rain",
+    71: "Slight snow",
+    73: "Moderate snow",
+    75: "Heavy snow",
+    77: "Snow grains",
+    80: "Slight rain showers",
+    81: "Moderate rain showers",
+    82: "Violent rain showers",
+    85: "Slight snow showers",
+    86: "Heavy snow showers",
+    95: "Thunderstorm",
+    96: "Thunderstorm with slight hail",
+    99: "Thunderstorm with heavy hail",
+  };
+
+  const ICONS: Record<ConditionGroup, { day: string; night: string }> = {
+    clear: { day: "☀️", night: "🌙" },
+    "partly-cloudy": { day: "⛅", night: "☁️" },
+    overcast: { day: "☁️", night: "☁️" },
+    fog: { day: "🌫️", night: "🌫️" },
+    drizzle: { day: "🌦️", night: "🌧️" },
+    rain: { day: "🌧️", night: "🌧️" },
+    snow: { day: "🌨️", night: "🌨️" },
+    thunderstorm: { day: "⛈️", night: "⛈️" },
+  };
+
+  // Kept dark/saturated enough throughout for white text, day or night, so
+  // there's no need to switch text colour per condition.
+  const BACKGROUNDS: Record<ConditionGroup, { day: string; night: string }> = {
+    clear: { day: "linear-gradient(135deg, #38bdf8, #2563eb)", night: "linear-gradient(135deg, #1e293b, #312e81)" },
+    "partly-cloudy": { day: "linear-gradient(135deg, #60a5fa, #64748b)", night: "linear-gradient(135deg, #1e293b, #334155)" },
+    overcast: { day: "linear-gradient(135deg, #64748b, #475569)", night: "linear-gradient(135deg, #334155, #1e293b)" },
+    fog: { day: "linear-gradient(135deg, #94a3b8, #64748b)", night: "linear-gradient(135deg, #475569, #334155)" },
+    drizzle: { day: "linear-gradient(135deg, #64748b, #2563eb)", night: "linear-gradient(135deg, #334155, #1e3a8a)" },
+    rain: { day: "linear-gradient(135deg, #475569, #1d4ed8)", night: "linear-gradient(135deg, #1e293b, #1e3a8a)" },
+    snow: { day: "linear-gradient(135deg, #60a5fa, #6366f1)", night: "linear-gradient(135deg, #334155, #4338ca)" },
+    thunderstorm: { day: "linear-gradient(135deg, #581c87, #1e293b)", night: "linear-gradient(135deg, #3b0764, #0f172a)" },
   };
 
   document.querySelectorAll<HTMLElement>("[data-weather-widget]").forEach(async (widget) => {
     const output = widget.querySelector<HTMLElement>("[data-weather-output]");
+    const label = widget.querySelector<HTMLElement>("[data-weather-label]");
     if (!output) return;
     const lat = widget.dataset.lat;
     const lon = widget.dataset.lon;
     try {
       const res = await fetch(
-        `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&timezone=auto`
+        `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min&timezone=auto`
       );
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       const temp = data.current.temperature_2m;
+      const feelsLike = data.current.apparent_temperature;
+      const humidity = data.current.relative_humidity_2m;
+      const wind = data.current.wind_speed_10m;
+      const isDay = data.current.is_day === 1;
       const code = data.current.weather_code;
-      const label = WEATHER_CODES[code] ?? "Weather";
-      output.textContent = `${label} · ${temp}°C`;
+      const high = data.daily?.temperature_2m_max?.[0];
+      const low = data.daily?.temperature_2m_min?.[0];
+
+      const group = CODE_GROUPS[code] ?? "overcast";
+      const icon = isDay ? ICONS[group].day : ICONS[group].night;
+      const conditionLabel = LABELS[code] ?? "Weather";
+
+      widget.style.background = isDay ? BACKGROUNDS[group].day : BACKGROUNDS[group].night;
+      widget.style.borderColor = "transparent";
+      widget.style.color = "white";
+      if (label) label.style.color = "rgba(255, 255, 255, 0.75)";
+
+      output.innerHTML = "";
+
+      const mainLine = document.createElement("div");
+      mainLine.className = "flex items-center gap-2";
+
+      const iconSpan = document.createElement("span");
+      iconSpan.className = "text-3xl leading-none";
+      iconSpan.textContent = icon;
+
+      const textWrap = document.createElement("div");
+      const conditionP = document.createElement("p");
+      conditionP.className = "font-semibold";
+      conditionP.textContent = conditionLabel;
+      const tempP = document.createElement("p");
+      tempP.className = "text-2xl font-bold leading-tight";
+      tempP.textContent = `${Math.round(temp)}°C`;
+      textWrap.append(conditionP, tempP);
+
+      mainLine.append(iconSpan, textWrap);
+      output.append(mainLine);
+
+      const stats: { label: string; value: string }[] = [];
+      if (feelsLike != null) stats.push({ label: "Feels like", value: `${Math.round(feelsLike)}°C` });
+      if (humidity != null) stats.push({ label: "Humidity", value: `${humidity}%` });
+      if (wind != null) stats.push({ label: "Wind", value: `${Math.round(wind)} km/h` });
+      if (high != null && low != null) stats.push({ label: "Today", value: `${Math.round(high)}° / ${Math.round(low)}°` });
+
+      if (stats.length > 0) {
+        const statsRow = document.createElement("div");
+        statsRow.className = "mt-3 pt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs";
+        statsRow.style.borderTop = "1px solid rgba(255, 255, 255, 0.25)";
+        for (const stat of stats) {
+          const item = document.createElement("span");
+          const statLabel = document.createElement("span");
+          statLabel.style.color = "rgba(255, 255, 255, 0.7)";
+          statLabel.textContent = `${stat.label}: `;
+          const statValue = document.createElement("span");
+          statValue.className = "font-medium";
+          statValue.textContent = stat.value;
+          item.append(statLabel, statValue);
+          statsRow.append(item);
+        }
+        output.append(statsRow);
+      }
     } catch {
       output.textContent = "Weather data unavailable right now.";
     }
