@@ -24,7 +24,7 @@ const summaryStats = [
   { label: "Health services", value: summary.gpSurgeries, href: hasHealth ? `/${city.slug}/${borough.slug}/health/` : null, icon: "🏥", color: "text-rose-600" },
   { label: "Schools", value: summary.schools, href: hasSchools ? `/${city.slug}/${borough.slug}/schools/` : null, icon: "🏫", color: "text-indigo-600" },
   { label: "Safety & Crime (12mo)", value: summary.crimes12mo, href: `/${city.slug}/safety/?highlight=${borough.slug}`, icon: "🚨", color: "text-amber-600" },
-  { label: "Property sales", value: summary.propertySales, href: `/${city.slug}/property/?highlight=${borough.slug}`, icon: "🏠", color: "text-emerald-600" },
+  { label: "Housing & Sales", value: summary.propertySales, href: `/${city.slug}/property/?highlight=${borough.slug}`, icon: "🏠", color: "text-emerald-600" },
 ];
 ---
 
