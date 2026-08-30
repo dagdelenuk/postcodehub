@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getCityPropertyTrend, loadHierarchy } from "../../lib/data";
+import { getCityPropertyTrend, getCouncilTax, loadHierarchy } from "../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -14,6 +14,14 @@ export function getStaticPaths() {
 
 const { city } = Astro.props;
 const trend = getCityPropertyTrend(city.slug);
+
+// ?highlight= (which borough the visitor arrived from) is only known once the
+// page loads in the browser, so every borough's Council Tax bands are
+// precomputed here and the right set is picked and rendered client-side -
+// same approach as the Police/Fire stations sections on the safety page.
+const councilTaxByBorough = trend.boroughs
+  .map((b) => ({ slug: b.slug, name: b.name, councilTax: getCouncilTax(b.slug) }))
+  .filter((b) => b.councilTax);
 ---
 
 <BaseLayout
@@ -33,11 +41,83 @@ const trend = getCityPropertyTrend(city.slug);
   <HighlightBreadcrumbCrumb citySlug={city.slug} entities={trend.boroughs} />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
+    <section class="mb-8 hidden" data-council-tax-section>
+      <h2 class="text-2xl font-bold mb-1" data-council-tax-heading>Council Tax bands</h2>
+      <p class="text-stone-500 mb-3 text-sm" data-council-tax-sub></p>
+      <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+              <th class="px-4 py-2 font-semibold">Band</th>
+              <th class="px-4 py-2 font-semibold text-right">Annual Council Tax</th>
+            </tr>
+          </thead>
+          <tbody data-council-tax-rows></tbody>
+        </table>
+      </div>
+    </section>
+
     <h1 class="text-2xl font-bold mb-1">Property sales comparison across {city.name}</h1>
     <p class="text-stone-500 mb-6">Number of residential sales completed per month in each borough, covering roughly the last two years.</p>
 
     <BoroughTrendChart trend={trend} averageLabel={`${city.name} average`} chartId="property" />
 
-    <p class="text-xs text-stone-400 mt-6">Source: HM Land Registry Price Paid Data.</p>
+    <p class="text-xs text-stone-400 mt-6">
+      Source: HM Land Registry Price Paid Data.
+      {councilTaxByBorough.length > 0 && " Council Tax: gov.uk, Council Tax levels set by local authorities in England 2026 to 2027 (Band D area council tax, including the GLA precept)."}
+    </p>
   </section>
+
+  <script type="application/json" data-council-tax-data set:html={JSON.stringify(councilTaxByBorough)} />
+
+  <script>
+    interface BoroughCouncilTax {
+      slug: string;
+      name: string;
+      councilTax: {
+        boroughName: string;
+        bandD: number;
+        bands: Record<string, number>;
+      };
+    }
+
+    const BAND_ORDER = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    const GBP = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+
+    document.querySelectorAll<HTMLScriptElement>("[data-council-tax-data]").forEach((el) => {
+      const boroughs = JSON.parse(el.textContent ?? "[]") as BoroughCouncilTax[];
+      const highlight = new URLSearchParams(location.search).get("highlight");
+      const match = highlight ? boroughs.find((b) => b.slug === highlight) : null;
+      if (!match) return;
+
+      const section = document.querySelector<HTMLElement>("[data-council-tax-section]");
+      const heading = document.querySelector<HTMLElement>("[data-council-tax-heading]");
+      const sub = document.querySelector<HTMLElement>("[data-council-tax-sub]");
+      const rows = document.querySelector<HTMLElement>("[data-council-tax-rows]");
+      if (!section || !heading || !sub || !rows) return;
+
+      heading.textContent = `Council Tax bands in ${match.name}`;
+      sub.textContent = `2026-27 rates, Band D (the reference band) is ${GBP.format(match.councilTax.bandD)} a year.`;
+
+      for (const band of BAND_ORDER) {
+        const amount = match.councilTax.bands[band];
+        if (amount == null) continue;
+        const tr = document.createElement("tr");
+        tr.className = band === "D" ? "border-b border-stone-100 bg-emerald-50 font-semibold" : "border-b border-stone-100 last:border-0";
+
+        const bandCell = document.createElement("td");
+        bandCell.className = "px-4 py-2";
+        bandCell.textContent = `Band ${band}`;
+
+        const amountCell = document.createElement("td");
+        amountCell.className = "px-4 py-2 text-right";
+        amountCell.textContent = GBP.format(amount);
+
+        tr.append(bandCell, amountCell);
+        rows.append(tr);
+      }
+
+      section.classList.remove("hidden");
+    });
+  </script>
 </BaseLayout>

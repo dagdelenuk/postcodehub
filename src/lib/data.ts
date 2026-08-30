@@ -3,6 +3,7 @@ import path from "node:path";
 import type { Banners, BannerImage, FireStation, GpSurgery, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData, PoliceStation, School } from "./types";
 
 const PROCESSED_DIR = path.resolve(process.cwd(), "data/processed");
+const REFERENCE_DIR = path.resolve(process.cwd(), "data/reference");
 
 let cachedHierarchy: Hierarchy | null = null;
 
@@ -25,6 +26,31 @@ export function loadBanners(): Banners {
 /** Never throws - a location with no verified free-licensed photos just gets no banner. */
 export function getBannerImages(slug: string): BannerImage[] {
   return loadBanners()[slug] ?? [];
+}
+
+export interface CouncilTaxBands {
+  boroughName: string;
+  /** Band D figure the other bands are derived from - the "area" total, i.e. inclusive of the GLA precept for London boroughs. */
+  bandD: number;
+  bands: Record<"A" | "B" | "C" | "D" | "E" | "F" | "G" | "H", number>;
+}
+
+let cachedCouncilTax: Record<string, CouncilTaxBands> | null = null;
+
+// Sourced once from gov.uk's "Council Tax levels set by local authorities in
+// England 2026 to 2027" (Band D area council tax, i.e. including the GLA
+// precept) - see data/reference/council-tax-2026-27.json. Not a live API:
+// councils set rates once a year each March, so this is refreshed by hand
+// the same way, not fetched per request.
+function loadCouncilTax(): Record<string, CouncilTaxBands> {
+  if (cachedCouncilTax) return cachedCouncilTax;
+  const filePath = path.join(REFERENCE_DIR, "council-tax-2026-27.json");
+  cachedCouncilTax = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as Record<string, CouncilTaxBands>) : {};
+  return cachedCouncilTax;
+}
+
+export function getCouncilTax(boroughSlug: string): CouncilTaxBands | undefined {
+  return loadCouncilTax()[boroughSlug];
 }
 
 // A short, genuinely-about-the-city fact, used on the city page instead of
