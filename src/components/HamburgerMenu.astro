@@ -84,7 +84,7 @@ const pathLinks = [
               const favKey = `city:${c.slug}`;
               return (
                 <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
-                  <a href={`/${c.slug}/`} class="flex-1 block px-3 py-2 text-sm text-stone-700 hover:bg-stone-100 rounded-md transition-colors">
+                  <a href={`/${c.slug}/`} class="flex-1 min-w-0 block truncate px-3 py-2 text-sm text-stone-700 hover:bg-stone-100 rounded-md transition-colors">
                     {c.name}
                   </a>
                   <FavoriteStar favKey={favKey} size="sm" />
@@ -106,13 +106,13 @@ const pathLinks = [
               const favKey = `borough:${b.slug}`;
               return (
                 <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
-                  <a href={`/${city.slug}/${b.slug}/`} class="flex-1 flex items-center gap-3 px-3 py-2 text-sm text-stone-700 hover:bg-stone-100 rounded-md transition-colors">
+                  <a href={`/${city.slug}/${b.slug}/`} class="flex-1 min-w-0 flex items-center gap-3 px-3 py-2 text-sm text-stone-700 hover:bg-stone-100 rounded-md transition-colors">
                     {thumb ? (
                       <img src={thumb.src} alt="" class="h-8 w-8 shrink-0 rounded object-cover" />
                     ) : (
                       <span class="h-8 w-8 shrink-0 rounded bg-stone-100" />
                     )}
-                    <span>{b.name}</span>
+                    <span class="truncate">{b.name}</span>
                   </a>
                   <FavoriteStar favKey={favKey} size="sm" />
                 </li>
@@ -136,8 +136,8 @@ const pathLinks = [
                 const favKey = `outcode:${citySlug}/${borough.slug}/${o.slug}`;
                 return (
                   <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>
-                    <a href={`/${citySlug}/${borough.slug}/${o.slug}/`} class="flex-1 block px-3 py-2 text-sm hover:bg-stone-100 rounded-md transition-colors">
-                      <span class="block font-medium text-stone-800">
+                    <a href={`/${citySlug}/${borough.slug}/${o.slug}/`} class="flex-1 min-w-0 block px-3 py-2 text-sm hover:bg-stone-100 rounded-md transition-colors">
+                      <span class="block truncate font-medium text-stone-800">
                         {o.outcode} - {displayPlaceName(o.postTown, o.wards, city!.name)}
                       </span>
                       <span class="block text-xs text-stone-500 truncate">{o.wards.slice(0, 2).join(", ")}</span>
