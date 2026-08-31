@@ -111,14 +111,49 @@ function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): nu
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-/** Drops candidates that share a normalised name and sit within DEDUPE_RADIUS_KM of one already kept - OSM often maps the same feature as more than one element. */
+/** Lowercases, strips a leading "the", and drops punctuation, so "The Sussex Arms" and "Sussex Arms" compare equal. */
+function normalizeName(name: string | null): string {
+  if (!name) return "";
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/^the\s+/, "")
+    .replace(/[^\p{L}\p{N}\s]/gu, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeAddress(address: string): string {
+  return address.toLowerCase().trim().replace(/\s+/g, " ");
+}
+
+/** "Very close" names - identical after normalising, or one is a prefix/suffix of the other (e.g. a branch suffix like "Sussex Arms (Twickenham)"). */
+function namesAreClose(a: string, b: string): boolean {
+  if (!a || !b) return false;
+  return a === b || a.includes(b) || b.includes(a);
+}
+
+/**
+ * Drops candidates that are almost certainly the same real-world place as
+ * one already kept:
+ *  - same address and a very close name (e.g. "Sussex Arms" vs "The Sussex
+ *    Arms" at the same street address), regardless of distance apart, or
+ *  - same normalised name and within DEDUPE_RADIUS_KM (OSM often maps the
+ *    same feature as more than one element - a park as both a way and a
+ *    member relation).
+ */
 function dedupeCandidates(candidates: Candidate[]): Candidate[] {
   const kept: Candidate[] = [];
   for (const candidate of candidates) {
-    const key = candidate.name?.trim().toLowerCase();
-    const isDuplicate = key
-      ? kept.some((k) => k.name?.trim().toLowerCase() === key && haversineKm(k.latitude, k.longitude, candidate.latitude, candidate.longitude) < DEDUPE_RADIUS_KM)
-      : false;
+    const name = normalizeName(candidate.name);
+    const address = normalizeAddress(candidate.address);
+    const isDuplicate = kept.some((k) => {
+      const kName = normalizeName(k.name);
+      const kAddress = normalizeAddress(k.address);
+      if (address && kAddress && address === kAddress && namesAreClose(name, kName)) return true;
+      if (name && name === kName && haversineKm(k.latitude, k.longitude, candidate.latitude, candidate.longitude) < DEDUPE_RADIUS_KM) return true;
+      return false;
+    });
     if (!isDuplicate) kept.push(candidate);
   }
   return kept;
