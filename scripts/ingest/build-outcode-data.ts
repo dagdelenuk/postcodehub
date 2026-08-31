@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { logStep } from "./lib/fetch-utils.js";
 import { boroughOutcodeKey, haversineKm, loadOutcodeBoroughPairs } from "./lib/geo.js";
+import { bulkForwardGeocode } from "./lib/postcodes.js";
 import type {
   EventsData,
   FireStation,
@@ -127,6 +128,39 @@ async function main() {
     loadRaw<EventsData>("events-by-outcode.json"),
     loadRaw<HistoryData>("history-by-outcode.json"),
   ]);
+
+  // GP surgeries and schools only carry a postcode from their source APIs
+  // (NHS ODS / DfE GIAS) - geocode those postcodes here, once, in bulk,
+  // rather than re-running the slow live fetches just to add coordinates
+  // for the card/map toggle's map view.
+  const healthPostcodes = new Set<string>();
+  for (const h of Object.values(health)) {
+    for (const org of [...h.gpSurgeries, ...h.dentists, ...h.pharmacies, ...h.hospitals]) {
+      if (org.postcode) healthPostcodes.add(org.postcode);
+    }
+  }
+  const schoolPostcodes = new Set<string>();
+  for (const s of Object.values(schools)) {
+    for (const school of s.schools) {
+      if (school.postcode) schoolPostcodes.add(school.postcode);
+    }
+  }
+  const geocoded = await bulkForwardGeocode([...healthPostcodes, ...schoolPostcodes]);
+  logStep(STEP, `Geocoded ${geocoded.size} of ${healthPostcodes.size + schoolPostcodes.size} unique health/school postcodes.`);
+
+  function withCoords<T extends { postcode: string }>(item: T): T & { latitude: number | null; longitude: number | null } {
+    const g = geocoded.get(item.postcode);
+    return { ...item, latitude: g?.latitude ?? null, longitude: g?.longitude ?? null };
+  }
+  for (const h of Object.values(health)) {
+    h.gpSurgeries = h.gpSurgeries.map(withCoords);
+    h.dentists = h.dentists.map(withCoords);
+    h.pharmacies = h.pharmacies.map(withCoords);
+    h.hospitals = h.hospitals.map(withCoords);
+  }
+  for (const s of Object.values(schools)) {
+    s.schools = s.schools.map(withCoords);
+  }
 
   let written = 0;
   for (const entry of pairs) {

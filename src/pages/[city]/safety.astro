@@ -207,7 +207,7 @@ const stationsByBorough = trend.boroughs.map((b) => ({
       const countEl = document.querySelector<HTMLElement>("[data-stations-filter-count]");
       if (!section || !heading || !list) return;
 
-      heading.textContent = `Safety Services in ${match.name} (${total})`;
+      heading.textContent = `Safety services in ${match.name} (${total})`;
 
       // Police first A-Z, then fire A-Z - no grouping/sub-headings, just filterable pills.
       const police = [...match.police].sort((a, b) => a.name.localeCompare(b.name));

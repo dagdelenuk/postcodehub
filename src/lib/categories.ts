@@ -13,9 +13,9 @@ export const CATEGORIES: CategoryDef[] = [
   { key: "safety", label: "Safety", icon: "🚨", description: "Crime statistics and trends" },
   { key: "transport", label: "Transport", icon: "🚌", description: "Live TfL status and transport links" },
   { key: "property", label: "Housing", icon: "🏠", description: "Recent property sales" },
+  { key: "places", label: "Places", icon: "📍", description: "Parks, libraries, leisure centres, and community spaces" },
   { key: "planning", label: "Planning", icon: "🏗️", description: "Planning applications" },
   { key: "representatives", label: "Representatives", icon: "🏛️", description: "Your MP and local councillors" },
-  { key: "places", label: "Places", icon: "📍", description: "Parks, libraries, leisure centres, and community spaces" },
   { key: "events", label: "Events", icon: "📅", description: "Local events and things to do" },
   { key: "history", label: "History", icon: "📜", description: "Local heritage and history" },
 ];

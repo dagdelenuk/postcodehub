@@ -50,6 +50,9 @@ export interface GpSurgery {
   address: string;
   postcode: string;
   telephone?: string;
+  /** Geocoded from postcode at merge time - null if the postcode couldn't be resolved. */
+  latitude: number | null;
+  longitude: number | null;
 }
 
 export interface HealthData {
@@ -76,6 +79,9 @@ export interface School {
   postcode: string;
   numberOfPupils: number | null;
   schoolCapacity: number | null;
+  /** Geocoded from postcode at merge time - null if the postcode couldn't be resolved. */
+  latitude: number | null;
+  longitude: number | null;
 }
 
 export interface SchoolsData {

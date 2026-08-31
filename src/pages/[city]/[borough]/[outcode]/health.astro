@@ -1,7 +1,8 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import HealthOrgCard from "../../../../components/HealthOrgCard.astro";
+import HealthCategorySection from "../../../../components/HealthCategorySection.astro";
 import HealthFilters from "../../../../components/HealthFilters.astro";
+import LeafletAssets from "../../../../components/LeafletAssets.astro";
 import { displayPlaceName, getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -32,6 +33,7 @@ const placeName = displayPlaceName(data.postTown, data.wards, data.city);
 >
   <h1 class="text-2xl font-bold mb-4">Health services in {placeName} - {data.outcode} ({totalServices})</h1>
 
+  <LeafletAssets />
   <HealthFilters counts={counts} />
 
   {
@@ -40,19 +42,7 @@ const placeName = displayPlaceName(data.postTown, data.wards, data.city);
       { title: "Dentists", items: data.health.dentists, kind: "dentist" as const },
       { title: "Pharmacies", items: data.health.pharmacies, kind: "pharmacy" as const },
       { title: "Hospitals", items: data.health.hospitals, kind: "hospital" as const },
-    ].map(
-      (section) =>
-        section.items.length > 0 && (
-          <section class="mb-8" data-health-type-block data-health-kind={section.kind}>
-            <h2 class="text-lg font-semibold mb-3">{section.title} ({section.items.length})</h2>
-            <div class="grid gap-3 sm:grid-cols-2">
-              {section.items.map((org) => (
-                <HealthOrgCard org={org} kind={section.kind} />
-              ))}
-            </div>
-          </section>
-        )
-    )
+    ].map((section) => section.items.length > 0 && <HealthCategorySection title={section.title} kind={section.kind} items={section.items} />)
   }
 
   <section class="mb-4">

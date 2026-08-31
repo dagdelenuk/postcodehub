@@ -1,7 +1,8 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import SchoolCard from "../../../../components/SchoolCard.astro";
+import LeafletAssets from "../../../../components/LeafletAssets.astro";
 import SchoolFilters from "../../../../components/SchoolFilters.astro";
+import SchoolListSection from "../../../../components/SchoolListSection.astro";
 import { displayPlaceName, getAllOutcodeParams, getSchoolAdmissionsUrl, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -27,14 +28,13 @@ const hasCompositeLabelNote = data.schools.schools.some((s) => s.ofstedRatingDer
 >
   <h1 class="text-2xl font-bold mb-4">Schools in {placeName} - {data.outcode} ({data.schools.schools.length})</h1>
 
+  <LeafletAssets />
   <SchoolFilters schools={data.schools.schools} />
 
-  <div class:list={["grid gap-3 sm:grid-cols-2", !hasCompositeLabelNote && "mb-8"]} data-school-group>
-    {data.schools.schools.map((school) => <SchoolCard school={school} />)}
-  </div>
+  <SchoolListSection heading={`Schools (${data.schools.schools.length})`} sectionKey="schools" schools={data.schools.schools} />
   {
     hasCompositeLabelNote && (
-      <p class="text-xs text-stone-400 mt-4 mb-8">
+      <p class="text-xs text-stone-400 -mt-4 mb-8">
         Some ratings above are based on a school's lowest-graded individual area, since Ofsted's post-2024 framework doesn't
         publish a single composite label.
       </p>

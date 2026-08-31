@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
-import SchoolCard from "../../../components/SchoolCard.astro";
+import LeafletAssets from "../../../components/LeafletAssets.astro";
 import SchoolFilters from "../../../components/SchoolFilters.astro";
-import { getBoroughSchools, getSchoolAdmissionsUrl, loadHierarchy } from "../../../lib/data";
+import SchoolListSection from "../../../components/SchoolListSection.astro";
+import { displayPlaceName, getBoroughSchools, getSchoolAdmissionsUrl, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -18,11 +19,15 @@ export function getStaticPaths() {
 }
 
 const { city, borough } = Astro.props;
-const groups = getBoroughSchools(city.slug, borough.slug);
+const groups = getBoroughSchools(city.slug, borough.slug).map((g) => ({
+  ...g,
+  placeName: displayPlaceName(g.postTown, g.wards, city.name),
+}));
 const allSchools = groups.flatMap((g) => g.schools);
 const totalSchools = allSchools.length;
 const admissionsUrl = getSchoolAdmissionsUrl(borough.slug);
 const hasCompositeLabelNote = allSchools.some((s) => s.ofstedRatingDerivedFromAreaGrades);
+const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.localeCompare(b));
 ---
 
 <BaseLayout
@@ -45,22 +50,18 @@ const hasCompositeLabelNote = allSchools.some((s) => s.ofstedRatingDerivedFromAr
   <section class="mx-auto max-w-5xl px-4 py-6">
     <h1 class="text-2xl font-bold mb-4">Schools in {borough.name} ({totalSchools})</h1>
 
-    <SchoolFilters schools={allSchools} />
+    <LeafletAssets />
+    <SchoolFilters schools={allSchools} postTowns={postTowns} />
 
     {
       groups.map((group) => (
-        <div class="mb-8" data-school-group>
-          <h2 class="text-lg font-semibold mb-3">
-            <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/schools/`} class="hover:text-emerald-700">
-              {group.outcode}
-            </a>
-          </h2>
-          <div class="grid gap-3 sm:grid-cols-2">
-            {group.schools.map((school) => (
-              <SchoolCard school={school} />
-            ))}
-          </div>
-        </div>
+        <SchoolListSection
+          heading={`${group.outcode} - ${group.placeName}`}
+          headingHref={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/schools/`}
+          sectionKey={group.outcodeSlug}
+          schools={group.schools}
+          postTown={group.placeName}
+        />
       ))
     }
 

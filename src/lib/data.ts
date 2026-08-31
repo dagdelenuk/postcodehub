@@ -551,6 +551,8 @@ export function getBoroughHealth(citySlug: string, boroughSlug: string): Borough
 export interface BoroughSchoolsGroup {
   outcode: string;
   outcodeSlug: string;
+  wards: string[];
+  postTown: string;
   schools: School[];
 }
 
@@ -561,7 +563,7 @@ export function getBoroughSchools(citySlug: string, boroughSlug: string): Boroug
     .filter((o) => o.isPrimaryBorough)
     .map((o) => {
       const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
-      return { outcode: o.outcode, outcodeSlug: o.slug, schools: data.schools.schools };
+      return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, schools: data.schools.schools };
     })
     .filter((g) => g.schools.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));

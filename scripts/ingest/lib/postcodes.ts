@@ -49,6 +49,35 @@ export function filterByDistrict(outcodes: OutcodeResult[], districtName: string
   return (outcodes ?? []).filter((o) => o.admin_district.includes(districtName));
 }
 
+interface BulkForwardGeocodeResponse {
+  status: number;
+  result: { query: string; result: { latitude: number; longitude: number } | null }[];
+}
+
+/**
+ * Forward-geocodes up to 100 full UK postcodes at a time (postcodes.io's
+ * bulk limit) to their latitude/longitude. Used to backfill coordinates for
+ * data sources (NHS ODS health orgs, DfE GIAS schools) that only carry a
+ * postcode string, not a lat/lon, so the merge step can plot them on a map
+ * without needing a second live fetch of the underlying dataset.
+ */
+export async function bulkForwardGeocode(postcodes: string[]): Promise<Map<string, { latitude: number; longitude: number }>> {
+  const result = new Map<string, { latitude: number; longitude: number }>();
+  const BATCH = 100;
+  for (let i = 0; i < postcodes.length; i += BATCH) {
+    const batch = postcodes.slice(i, i + BATCH);
+    const data = await fetchJson<BulkForwardGeocodeResponse>(`${POSTCODES_IO_BASE}/postcodes`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ postcodes: batch }),
+    });
+    for (const entry of data.result) {
+      if (entry.result) result.set(entry.query, { latitude: entry.result.latitude, longitude: entry.result.longitude });
+    }
+  }
+  return result;
+}
+
 interface BulkReverseGeocodeResponse {
   status: number;
   result: { query: { longitude: number; latitude: number }; result: { postcode: string; admin_district: string }[] | null }[];

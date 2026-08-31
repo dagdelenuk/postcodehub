@@ -3,9 +3,11 @@ import type { School } from "../lib/types";
 
 interface Props {
   schools: School[];
+  /** Only passed on the borough schools page - one pill per post town, filtering by whole outcode group. */
+  postTowns?: string[];
 }
 
-const { schools } = Astro.props;
+const { schools, postTowns = [] } = Astro.props;
 
 const RATING_ORDER = ["Outstanding", "Good", "Requires improvement", "Inadequate"];
 const ratings = RATING_ORDER.filter((r) => schools.some((s) => s.ofstedRating === r));
@@ -14,13 +16,23 @@ const hasOversubscribed = schools.some((s) => s.numberOfPupils != null && s.scho
 
 const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors";
 
-const hasAnyFilters = ratings.length > 0 || phases.length > 0 || hasOversubscribed;
+const hasAnyFilters = ratings.length > 0 || phases.length > 0 || hasOversubscribed || postTowns.length > 1;
 ---
 
 {
   hasAnyFilters && (
     <div>
       <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2" data-school-filters>
+        {postTowns.length > 1 && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">Post town:</span>
+            {postTowns.map((t) => (
+              <button type="button" class={PILL_BASE} data-filter-group="postTown" data-filter-value={t}>
+                {t}
+              </button>
+            ))}
+          </div>
+        )}
         {ratings.length > 0 && (
           <div class="flex flex-wrap items-center gap-1.5">
             <span class="text-xs text-stone-400">Rating:</span>
