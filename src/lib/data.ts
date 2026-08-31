@@ -10,6 +10,7 @@ import type {
   HierarchyCity,
   HierarchyOutcode,
   OutcodeData,
+  Place,
   PoliceStation,
   School,
 } from "./types";
@@ -582,6 +583,27 @@ export function getBoroughSchools(citySlug: string, boroughSlug: string): Boroug
       return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, schools: data.schools.schools };
     })
     .filter((g) => g.schools.length > 0)
+    .sort((a, b) => a.outcode.localeCompare(b.outcode));
+}
+
+export interface BoroughPlacesGroup {
+  outcode: string;
+  outcodeSlug: string;
+  wards: string[];
+  postTown: string;
+  places: Place[];
+}
+
+/** Places (parks, libraries, pubs, etc.) for every outcode this borough is the primary owner of, grouped by outcode. */
+export function getBoroughPlaces(citySlug: string, boroughSlug: string): BoroughPlacesGroup[] {
+  const borough = getBorough(citySlug, boroughSlug);
+  return (borough?.outcodes ?? [])
+    .filter((o) => o.isPrimaryBorough)
+    .map((o) => {
+      const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
+      return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, places: data.places.places };
+    })
+    .filter((g) => g.places.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));
 }
 

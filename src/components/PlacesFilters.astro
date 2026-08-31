@@ -53,6 +53,7 @@ const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap trans
     const countEl = document.querySelector<HTMLElement>("[data-filter-count]");
     const cards = [...document.querySelectorAll<HTMLElement>("[data-place-card]")];
     const typeBlocks = [...document.querySelectorAll<HTMLElement>("[data-place-type-block]")];
+    const groups = [...document.querySelectorAll<HTMLElement>("[data-place-group]")];
     const totalCount = cards.length;
 
     const active = new Set<string>();
@@ -67,6 +68,10 @@ const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap trans
       for (const block of typeBlocks) {
         const matches = active.size === 0 || active.has(block.dataset.placeKind ?? "");
         block.classList.toggle("hidden", !matches);
+      }
+      for (const group of groups) {
+        const anyVisible = [...group.querySelectorAll<HTMLElement>("[data-place-type-block]")].some((b) => !b.classList.contains("hidden"));
+        group.classList.toggle("hidden", !anyVisible);
       }
       clearBtn?.classList.toggle("hidden", active.size === 0);
       if (countEl) countEl.textContent = active.size > 0 ? `Showing ${visible} of ${totalCount} results` : "";

@@ -6,16 +6,18 @@ import PlaceCard from "./PlaceCard.astro";
 interface Props {
   cat: PlaceCategoryDef;
   items: Place[];
+  /** Overrides the map/toggle DOM scoping id - needed when this component renders more than once per category on a page (e.g. one outcode group per borough), since `cat.key` alone would collide. Defaults to `cat.key`. */
+  mapId?: string;
 }
 
-const { cat, items } = Astro.props;
+const { cat, items, mapId = cat.key } = Astro.props;
 const mapPoints = items.map((p) => ({ name: p.name, lat: p.latitude, lon: p.longitude }));
 ---
 
 <section class="mb-8" data-place-type-block data-place-kind={cat.key}>
   <div class="flex items-center justify-between mb-3 gap-2">
     <h2 class="text-lg font-semibold">{cat.label} ({items.length})</h2>
-    <div class="inline-flex items-center gap-0.5 rounded-full border border-stone-200 bg-white p-0.5 shrink-0" data-place-view-toggle data-map-id={cat.key}>
+    <div class="inline-flex items-center gap-0.5 rounded-full border border-stone-200 bg-white p-0.5 shrink-0" data-place-view-toggle data-map-id={mapId}>
       <button type="button" data-place-view="cards" aria-pressed="true" aria-label={`Show ${cat.label} as cards`} title="Card view" class="view-btn is-active">
         <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="2.5" y="2.5" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.4" />
@@ -33,15 +35,15 @@ const mapPoints = items.map((p) => ({ name: p.name, lat: p.latitude, lon: p.long
     </div>
   </div>
 
-  <div class="hidden rounded-lg border border-stone-200 overflow-hidden mb-3 relative isolate" data-place-map-wrap data-map-id={cat.key}>
+  <div class="hidden rounded-lg border border-stone-200 overflow-hidden mb-3 relative isolate" data-place-map-wrap data-map-id={mapId}>
     <div class="h-72 sm:h-96 w-full" data-place-map-canvas></div>
   </div>
 
-  <div class="grid gap-3 sm:grid-cols-2" data-place-cards data-map-id={cat.key}>
+  <div class="grid gap-3 sm:grid-cols-2" data-place-cards data-map-id={mapId}>
     {items.map((place) => <PlaceCard place={place} />)}
   </div>
 </section>
-<script type="application/json" data-place-map-json={cat.key} set:html={JSON.stringify(mapPoints)} />
+<script type="application/json" data-place-map-json={mapId} set:html={JSON.stringify(mapPoints)} />
 
 <style>
   .view-btn {

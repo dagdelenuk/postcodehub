@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import LeafletAssets from "../../../components/LeafletAssets.astro";
+import PlaceCategorySection from "../../../components/PlaceCategorySection.astro";
+import PlacesFilters from "../../../components/PlacesFilters.astro";
+import { displayPlaceName, getBoroughPlaces, loadHierarchy } from "../../../lib/data";
+import { PLACE_CATEGORIES } from "../../../lib/place-categories";
+import type { PlaceCategory } from "../../../lib/types";
+
+export function getStaticPaths() {
+  const hierarchy = loadHierarchy();
+  return hierarchy.cities.flatMap((city) =>
+    city.boroughs
+      .filter((borough) => getBoroughPlaces(city.slug, borough.slug).length > 0)
+      .map((borough) => ({
+        params: { city: city.slug, borough: borough.slug },
+        props: { city, borough },
+      }))
+  );
+}
+
+const { city, borough } = Astro.props;
+const groups = getBoroughPlaces(city.slug, borough.slug).map((g) => ({
+  ...g,
+  placeName: displayPlaceName(g.postTown, g.wards, city.name),
+}));
+
+const counts: Partial<Record<PlaceCategory, number>> = {};
+for (const group of groups) {
+  for (const place of group.places) {
+    counts[place.category] = (counts[place.category] ?? 0) + 1;
+  }
+}
+const total = groups.reduce((sum, g) => sum + g.places.length, 0);
+---
+
+<BaseLayout
+  title={`Places in ${borough.name}`}
+  description={`Parks, libraries, leisure centres, and community spaces across ${borough.name}.`}
+  menuLevel="borough"
+  citySlug={city.slug}
+  boroughSlug={borough.slug}
+>
+  <Breadcrumbs
+    sticky
+    crumbs={[
+      { label: "PostcodeHub", href: "/" },
+      { label: city.name, href: `/${city.slug}/` },
+      { label: borough.name, href: `/${city.slug}/${borough.slug}/` },
+      { label: "Places" },
+    ]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-6">
+    <h1 class="text-2xl font-bold mb-4">Places in {borough.name} ({total})</h1>
+
+    <LeafletAssets />
+    <PlacesFilters counts={counts} />
+
+    {
+      groups.map((group) => (
+        <div class="mb-8" data-place-group>
+          <h2 class="text-lg font-semibold mb-3">
+            <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/places/`} class="hover:text-emerald-700">
+              {group.outcode} - {group.placeName}
+            </a>
+          </h2>
+          {PLACE_CATEGORIES.map((cat) => {
+            const items = group.places.filter((p) => p.category === cat.key);
+            return items.length > 0 && <PlaceCategorySection cat={cat} items={items} mapId={`${group.outcodeSlug}-${cat.key}`} />;
+          })}
+        </div>
+      ))
+    }
+
+    <p class="text-xs text-stone-400 mt-4">Source: OpenStreetMap contributors.</p>
+  </section>
+</BaseLayout>
