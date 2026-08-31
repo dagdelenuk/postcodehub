@@ -14,6 +14,7 @@ const { city, borough } = Astro.params;
 const { data } = Astro.props;
 const placeName = displayPlaceName(data.postTown, data.wards, data.city);
 const admissionsUrl = getSchoolAdmissionsUrl(borough!);
+const hasCompositeLabelNote = data.schools.schools.some((s) => s.ofstedRatingDerivedFromAreaGrades);
 ---
 
 <LocalityLayout
@@ -28,9 +29,17 @@ const admissionsUrl = getSchoolAdmissionsUrl(borough!);
 
   <SchoolFilters schools={data.schools.schools} />
 
-  <div class="grid gap-3 sm:grid-cols-2 mb-8" data-school-group>
+  <div class:list={["grid gap-3 sm:grid-cols-2", !hasCompositeLabelNote && "mb-8"]} data-school-group>
     {data.schools.schools.map((school) => <SchoolCard school={school} />)}
   </div>
+  {
+    hasCompositeLabelNote && (
+      <p class="text-xs text-stone-400 mt-2 mb-8">
+        Some ratings above are based on a school's lowest-graded individual area, since Ofsted's post-2024 framework doesn't
+        publish a single composite label.
+      </p>
+    )
+  }
 
   {
     admissionsUrl && (

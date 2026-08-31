@@ -49,7 +49,7 @@ const mapsUrl = school.address ? `https://www.google.com/maps/search/?api=1&quer
       school.ofstedRating && school.ofstedRatingDerivedFromAreaGrades && (
         <p class="text-xs text-stone-400 mt-1">
           {formatOfstedDate(school.ofstedLastInspection) ? `Inspected ${formatOfstedDate(school.ofstedLastInspection)} · ` : ""}
-          based on its lowest-graded area ({school.ofstedRating.toLowerCase()}) - Ofsted's post-2024 framework doesn't publish a composite label
+          based on its lowest-graded area ({school.ofstedRating.toLowerCase()})
         </p>
       )
     }
