@@ -118,13 +118,20 @@ const postTownOutcodes = currentBorough
               Post towns in<br />{currentBorough.name}
             </h2>
             <ul class="mt-3 space-y-2 text-sm">
-              {postTownOutcodes.map((o) => (
-                <li>
-                  <a href={`/${city!.slug}/${boroughSlug}/${o.slug}/`} class="text-stone-600 hover:text-emerald-700">
-                    {o.outcode} - {displayPlaceName(o.postTown, o.wards, city!.name)}
-                  </a>
-                </li>
-              ))}
+              {postTownOutcodes.map((o) => {
+                const label = `${o.outcode} - ${displayPlaceName(o.postTown, o.wards, city!.name)}`;
+                return (
+                  <li>
+                    <a
+                      href={`/${city!.slug}/${boroughSlug}/${o.slug}/`}
+                      title={label}
+                      class="block truncate text-stone-600 hover:text-emerald-700"
+                    >
+                      {label}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )
