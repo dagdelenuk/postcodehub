@@ -19,15 +19,11 @@ const trend = getCityCrimeTrend(city.slug);
 // page loads in the browser, so every borough's stations are precomputed here
 // and the right set is picked and rendered client-side - same approach as
 // HighlightBreadcrumbCrumb and BoroughTrendChart's own highlight handling.
-const policeStationsByBorough = trend.boroughs.map((b) => ({
+const stationsByBorough = trend.boroughs.map((b) => ({
   slug: b.slug,
   name: b.name,
-  stations: getBoroughPoliceStations(city.slug, b.slug),
-}));
-const fireStationsByBorough = trend.boroughs.map((b) => ({
-  slug: b.slug,
-  name: b.name,
-  stations: getBoroughFireStations(city.slug, b.slug),
+  police: getBoroughPoliceStations(city.slug, b.slug),
+  fire: getBoroughFireStations(city.slug, b.slug),
 }));
 ---
 
@@ -48,16 +44,60 @@ const fireStationsByBorough = trend.boroughs.map((b) => ({
   <HighlightBreadcrumbCrumb citySlug={city.slug} entities={trend.boroughs} />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
-    <section class="mb-8 hidden" data-police-stations-section>
-      <h2 class="text-2xl font-bold mb-1" data-police-stations-heading>Police stations</h2>
-      <p class="text-stone-500 mb-3 text-sm" data-police-stations-sub></p>
-      <div class="grid gap-3 sm:grid-cols-2" data-police-stations-list></div>
+    <section class="mb-8 hidden" data-stations-section>
+      <h2 class="text-2xl font-bold mb-4" data-stations-heading />
+
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2 hidden" data-stations-filter-bar>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <span class="text-xs text-stone-400">Type:</span>
+          <button type="button" class="text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors border-stone-300 text-stone-600 bg-white" data-stations-pill="police">
+            Police stations
+          </button>
+          <button type="button" class="text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors border-stone-300 text-stone-600 bg-white" data-stations-pill="fire">
+            Fire stations
+          </button>
+        </div>
+        <button type="button" class="text-xs text-stone-400 underline hidden" data-stations-filter-clear>
+          Clear filters
+        </button>
+      </div>
+      <p class="text-xs text-stone-400 mb-6 hidden" data-stations-filter-count />
+
+      <div class="grid gap-3 sm:grid-cols-2" data-stations-list></div>
     </section>
 
-    <section class="mb-8 hidden" data-fire-stations-section>
-      <h2 class="text-2xl font-bold mb-1" data-fire-stations-heading>Fire stations</h2>
-      <p class="text-stone-500 mb-3 text-sm" data-fire-stations-sub></p>
-      <div class="grid gap-3 sm:grid-cols-2" data-fire-stations-list></div>
+    <section class="mb-8">
+      <h2 class="text-lg font-semibold mb-3">Emergency calls</h2>
+      <div class="grid gap-3 sm:grid-cols-2">
+        <a
+          href="https://www.police.uk/pu/contact-us"
+          target="_blank"
+          rel="noopener"
+          class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+        >
+          <span class="text-3xl leading-none" aria-hidden="true">🚓</span>
+          <div>
+            <p class="font-medium">Contact Police</p>
+            <p class="text-sm text-stone-500 mt-1">
+              Report a crime or find your local force online. If a crime is in progress or life is at risk, always call 999.
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://www.londonambulance.nhs.uk/our-services/emergency-care/calling-999/"
+          target="_blank"
+          rel="noopener"
+          class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+        >
+          <span class="text-3xl leading-none" aria-hidden="true">🚒</span>
+          <div>
+            <p class="font-medium">Contact Fire Brigade</p>
+            <p class="text-sm text-stone-500 mt-1">
+              999 is for life-threatening emergencies like fires, explosions, and situations where lives or property are at risk.
+            </p>
+          </div>
+        </a>
+      </div>
     </section>
 
     <h1 class="text-2xl font-bold mb-1">Crime comparison across {city.name}</h1>
@@ -70,106 +110,138 @@ const fireStationsByBorough = trend.boroughs.map((b) => ({
     </p>
   </section>
 
-  <script type="application/json" data-police-stations-data set:html={JSON.stringify(policeStationsByBorough)} />
-  <script type="application/json" data-fire-stations-data set:html={JSON.stringify(fireStationsByBorough)} />
+  <script type="application/json" data-stations-data set:html={JSON.stringify(stationsByBorough)} />
 
   <script>
+    interface Station {
+      name: string;
+      address: string;
+      postcode: string;
+      telephone?: string;
+      distanceKm: number;
+    }
     interface BoroughStations {
       slug: string;
       name: string;
-      stations: { name: string; address: string; postcode: string; telephone?: string; distanceKm: number }[];
+      police: Station[];
+      fire: Station[];
     }
 
-    function renderStationSection(config: {
-      dataAttr: string;
-      sectionAttr: string;
-      headingAttr: string;
-      subAttr: string;
-      listAttr: string;
-      kindLabel: string;
-      icon: string;
-      iconColorClass: string;
-    }) {
-      document.querySelectorAll<HTMLScriptElement>(`[${config.dataAttr}]`).forEach((el) => {
-        const boroughs = JSON.parse(el.textContent ?? "[]") as BoroughStations[];
-        const highlight = new URLSearchParams(location.search).get("highlight");
-        const match = highlight ? boroughs.find((b) => b.slug === highlight) : null;
-        if (!match || match.stations.length === 0) return;
+    const ICONS: Record<"police" | "fire", { icon: string; colorClass: string }> = {
+      police: { icon: "🚓", colorClass: "text-blue-700" },
+      fire: { icon: "🚒", colorClass: "text-red-600" },
+    };
+    const ACTIVE_CLASSES = ["border-emerald-600", "bg-emerald-50", "text-emerald-800"];
+    const INACTIVE_CLASSES = ["border-stone-300", "text-stone-600", "bg-white"];
 
-        const section = document.querySelector<HTMLElement>(`[${config.sectionAttr}]`);
-        const heading = document.querySelector<HTMLElement>(`[${config.headingAttr}]`);
-        const sub = document.querySelector<HTMLElement>(`[${config.subAttr}]`);
-        const list = document.querySelector<HTMLElement>(`[${config.listAttr}]`);
-        if (!section || !heading || !sub || !list) return;
+    function makeStationCard(station: Station, kind: "police" | "fire"): HTMLElement {
+      const { icon, colorClass } = ICONS[kind];
+      const card = document.createElement("div");
+      card.className = "relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4";
+      card.dataset.stationKind = kind;
 
-        heading.textContent = `${config.kindLabel}s in ${match.name}`;
-        sub.textContent = `${match.stations.length} ${config.kindLabel.toLowerCase()}${match.stations.length === 1 ? "" : "s"}, nearest to furthest from the centre of ${match.name}.`;
+      const iconEl = document.createElement("span");
+      iconEl.className = `pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none ${colorClass}`;
+      iconEl.setAttribute("aria-hidden", "true");
+      iconEl.textContent = icon;
 
-        for (const station of match.stations) {
-          const card = document.createElement("div");
-          card.className = "relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4";
+      const inner = document.createElement("div");
+      inner.className = "relative";
 
-          const icon = document.createElement("span");
-          icon.className = `pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none ${config.iconColorClass}`;
-          icon.setAttribute("aria-hidden", "true");
-          icon.textContent = config.icon;
+      const name = document.createElement("p");
+      name.className = "font-medium";
+      name.textContent = station.name;
+      inner.append(name);
 
-          const inner = document.createElement("div");
-          inner.className = "relative";
+      const addressLine = [station.address, station.postcode].filter(Boolean).join(", ");
+      if (addressLine) {
+        const addr = document.createElement("p");
+        addr.className = "text-sm text-stone-500 mt-1";
+        addr.textContent = addressLine;
+        inner.append(addr);
+      }
 
-          const name = document.createElement("p");
-          name.className = "font-medium";
-          name.textContent = station.name;
-          inner.append(name);
+      if (station.telephone) {
+        const tel = document.createElement("p");
+        tel.className = "text-sm text-stone-500";
+        tel.textContent = station.telephone;
+        inner.append(tel);
+      }
 
-          const addressLine = [station.address, station.postcode].filter(Boolean).join(", ");
-          if (addressLine) {
-            const addr = document.createElement("p");
-            addr.className = "text-sm text-stone-500 mt-1";
-            addr.textContent = addressLine;
-            inner.append(addr);
+      const dist = document.createElement("p");
+      dist.className = "text-xs text-stone-400 mt-1";
+      dist.textContent = `${(station.distanceKm * 0.621371).toFixed(1)} mi away`;
+      inner.append(dist);
+
+      card.append(iconEl, inner);
+      return card;
+    }
+
+    document.querySelectorAll<HTMLScriptElement>("[data-stations-data]").forEach((el) => {
+      const boroughs = JSON.parse(el.textContent ?? "[]") as BoroughStations[];
+      const highlight = new URLSearchParams(location.search).get("highlight");
+      const match = highlight ? boroughs.find((b) => b.slug === highlight) : null;
+      const total = match ? match.police.length + match.fire.length : 0;
+      if (!match || total === 0) return;
+
+      const section = document.querySelector<HTMLElement>("[data-stations-section]");
+      const heading = document.querySelector<HTMLElement>("[data-stations-heading]");
+      const list = document.querySelector<HTMLElement>("[data-stations-list]");
+      const filterBar = document.querySelector<HTMLElement>("[data-stations-filter-bar]");
+      const clearBtn = document.querySelector<HTMLElement>("[data-stations-filter-clear]");
+      const countEl = document.querySelector<HTMLElement>("[data-stations-filter-count]");
+      if (!section || !heading || !list) return;
+
+      heading.textContent = `Police & fire stations in ${match.name} (${total})`;
+
+      // Police first A-Z, then fire A-Z - no grouping/sub-headings, just filterable pills.
+      const police = [...match.police].sort((a, b) => a.name.localeCompare(b.name));
+      const fire = [...match.fire].sort((a, b) => a.name.localeCompare(b.name));
+      for (const station of police) list.append(makeStationCard(station, "police"));
+      for (const station of fire) list.append(makeStationCard(station, "fire"));
+
+      section.classList.remove("hidden");
+
+      if (police.length > 0 && fire.length > 0 && filterBar) {
+        filterBar.classList.remove("hidden");
+        const pills = [...filterBar.querySelectorAll<HTMLButtonElement>("[data-stations-pill]")];
+        const cards = [...list.querySelectorAll<HTMLElement>("[data-station-kind]")];
+        const active = new Set<string>();
+
+        function apply() {
+          let visible = 0;
+          for (const card of cards) {
+            const matches = active.size === 0 || active.has(card.dataset.stationKind ?? "");
+            card.classList.toggle("hidden", !matches);
+            if (matches) visible++;
           }
-
-          if (station.telephone) {
-            const tel = document.createElement("p");
-            tel.className = "text-sm text-stone-500";
-            tel.textContent = station.telephone;
-            inner.append(tel);
+          clearBtn?.classList.toggle("hidden", active.size === 0);
+          if (countEl) {
+            countEl.classList.toggle("hidden", active.size === 0);
+            countEl.textContent = active.size > 0 ? `Showing ${visible} of ${cards.length} results` : "";
           }
-
-          const dist = document.createElement("p");
-          dist.className = "text-xs text-stone-400 mt-1";
-          dist.textContent = `${(station.distanceKm * 0.621371).toFixed(1)} mi away`;
-          inner.append(dist);
-
-          card.append(icon, inner);
-          list.append(card);
         }
 
-        section.classList.remove("hidden");
-      });
-    }
+        pills.forEach((pill) => {
+          const value = pill.dataset.stationsPill!;
+          pill.addEventListener("click", () => {
+            if (active.has(value)) active.delete(value);
+            else active.add(value);
+            pill.classList.remove(...ACTIVE_CLASSES, ...INACTIVE_CLASSES);
+            pill.classList.add(...(active.has(value) ? ACTIVE_CLASSES : INACTIVE_CLASSES));
+            apply();
+          });
+        });
 
-    renderStationSection({
-      dataAttr: "data-police-stations-data",
-      sectionAttr: "data-police-stations-section",
-      headingAttr: "data-police-stations-heading",
-      subAttr: "data-police-stations-sub",
-      listAttr: "data-police-stations-list",
-      kindLabel: "Police station",
-      icon: "🚓",
-      iconColorClass: "text-blue-700",
-    });
-
-    renderStationSection({
-      dataAttr: "data-fire-stations-data",
-      sectionAttr: "data-fire-stations-section",
-      headingAttr: "data-fire-stations-heading",
-      subAttr: "data-fire-stations-sub",
-      listAttr: "data-fire-stations-list",
-      kindLabel: "Fire station",
-      icon: "🚒",
-      iconColorClass: "text-red-600",
+        clearBtn?.addEventListener("click", () => {
+          active.clear();
+          pills.forEach((p) => {
+            p.classList.remove(...ACTIVE_CLASSES);
+            p.classList.add(...INACTIVE_CLASSES);
+          });
+          apply();
+        });
+      }
     });
   </script>
 </BaseLayout>

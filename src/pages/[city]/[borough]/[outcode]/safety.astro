@@ -43,30 +43,20 @@ const totalStations = stationCounts.police + stationCounts.fire;
 >
   {
     totalStations > 0 && (
-      <>
+      <section class="mb-8">
         <h2 class="text-2xl font-bold mb-4">Police &amp; fire stations in {placeName} - {data.outcode} ({totalStations})</h2>
 
         <StationFilters counts={stationCounts} />
 
-        {
-          [
-            { title: "Police stations", items: data.safety.policeStations, kind: "police" as const },
-            { title: "Fire stations", items: data.safety.fireStations, kind: "fire" as const },
-          ].map(
-            (section) =>
-              section.items.length > 0 && (
-                <section class="mb-8" data-station-type-block data-station-kind={section.kind}>
-                  <h2 class="text-lg font-semibold mb-3">{section.title} ({section.items.length})</h2>
-                  <div class="grid gap-3 sm:grid-cols-2">
-                    {section.items.map((station) => (
-                      <StationCard station={station} kind={section.kind} />
-                    ))}
-                  </div>
-                </section>
-              )
-          )
-        }
-      </>
+        <div class="grid gap-3 sm:grid-cols-2">
+          {[...data.safety.policeStations].sort((a, b) => a.name.localeCompare(b.name)).map((station) => (
+            <StationCard station={station} kind="police" />
+          ))}
+          {[...data.safety.fireStations].sort((a, b) => a.name.localeCompare(b.name)).map((station) => (
+            <StationCard station={station} kind="fire" />
+          ))}
+        </div>
+      </section>
     )
   }
 
