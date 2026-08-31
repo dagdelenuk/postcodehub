@@ -129,12 +129,13 @@ const TYPE_ICON: Record<string, string> = {
         text.className = "min-w-0";
         const label = document.createElement("span");
         label.className = "block font-medium truncate";
-        // Outcode entries put the borough right on the label line ("KT1 ·
-        // Kingston upon Thames"); the line below shows the post town.
-        label.textContent = entry.type === "outcode" && entry.borough ? `${entry.label} · ${entry.borough}` : entry.label;
+        // Outcode entries put the post town right on the label line ("TW11 -
+        // Teddington"), matching the outcode-postTown format used elsewhere
+        // on the site; the line below shows the borough.
+        label.textContent = entry.type === "outcode" ? `${entry.label} - ${entry.postTown || entry.sublabel}` : entry.label;
         const sublabel = document.createElement("span");
         sublabel.className = "block text-xs text-stone-500 truncate";
-        sublabel.textContent = entry.type === "outcode" ? entry.postTown || entry.sublabel : entry.sublabel;
+        sublabel.textContent = entry.type === "outcode" ? entry.borough || entry.sublabel : entry.sublabel;
         text.append(label, sublabel);
         button.append(icon, text);
         // mousedown (not click) fires before the input's blur hides the list.
