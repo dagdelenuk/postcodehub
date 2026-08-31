@@ -6,9 +6,11 @@ interface Props {
   title: string;
   kind: "gp" | "dentist" | "pharmacy" | "hospital";
   items: GpSurgery[];
+  /** Overrides the map/toggle DOM scoping id - needed when this component renders more than once per kind on a page (e.g. one outcode group per borough), since `kind` alone would collide. Defaults to `kind`. */
+  mapId?: string;
 }
 
-const { title, kind, items } = Astro.props;
+const { title, kind, items, mapId = kind } = Astro.props;
 const mapPoints = items
   .filter((o) => o.latitude != null && o.longitude != null)
   .map((o) => ({ name: o.name, lat: o.latitude, lon: o.longitude }));
@@ -19,7 +21,7 @@ const mapPoints = items
     <h2 class="text-lg font-semibold">{title} ({items.length})</h2>
     {
       mapPoints.length > 0 && (
-        <div class="inline-flex items-center gap-0.5 rounded-full border border-stone-200 bg-white p-0.5 shrink-0" data-view-toggle data-map-id={kind}>
+        <div class="inline-flex items-center gap-0.5 rounded-full border border-stone-200 bg-white p-0.5 shrink-0" data-view-toggle data-map-id={mapId}>
           <button type="button" data-view="cards" aria-pressed="true" aria-label={`Show ${title} as cards`} title="Card view" class="view-btn is-active">
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="2.5" y="2.5" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.4" />
@@ -41,17 +43,17 @@ const mapPoints = items
 
   {
     mapPoints.length > 0 && (
-      <div class="hidden rounded-lg border border-stone-200 overflow-hidden mb-3 relative isolate" data-map-wrap data-map-id={kind}>
+      <div class="hidden rounded-lg border border-stone-200 overflow-hidden mb-3 relative isolate" data-map-wrap data-map-id={mapId}>
         <div class="h-72 sm:h-96 w-full" data-map-canvas />
       </div>
     )
   }
 
-  <div class="grid gap-3 sm:grid-cols-2" data-view-cards data-map-id={kind}>
+  <div class="grid gap-3 sm:grid-cols-2" data-view-cards data-map-id={mapId}>
     {items.map((org) => <HealthOrgCard org={org} kind={kind} />)}
   </div>
 </section>
-{mapPoints.length > 0 && <script type="application/json" data-map-json={kind} set:html={JSON.stringify(mapPoints)} />}
+{mapPoints.length > 0 && <script type="application/json" data-map-json={mapId} set:html={JSON.stringify(mapPoints)} />}
 
 <style>
   .view-btn {

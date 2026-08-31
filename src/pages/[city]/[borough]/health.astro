@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
-import HealthOrgCard from "../../../components/HealthOrgCard.astro";
+import HealthCategorySection from "../../../components/HealthCategorySection.astro";
 import HealthFilters from "../../../components/HealthFilters.astro";
-import { getBoroughHealth, loadHierarchy } from "../../../lib/data";
+import LeafletAssets from "../../../components/LeafletAssets.astro";
+import { displayPlaceName, getBoroughHealth, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -18,7 +19,10 @@ export function getStaticPaths() {
 }
 
 const { city, borough } = Astro.props;
-const groups = getBoroughHealth(city.slug, borough.slug);
+const groups = getBoroughHealth(city.slug, borough.slug).map((g) => ({
+  ...g,
+  placeName: displayPlaceName(g.postTown, g.wards, city.name),
+}));
 const counts = {
   gp: groups.reduce((sum, g) => sum + g.gpSurgeries.length, 0),
   dentist: groups.reduce((sum, g) => sum + g.dentists.length, 0),
@@ -48,6 +52,7 @@ const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hosp
   <section class="mx-auto max-w-5xl px-4 py-6">
     <h1 class="text-2xl font-bold mb-4">Health services in {borough.name} ({totalServices})</h1>
 
+    <LeafletAssets />
     <HealthFilters counts={counts} />
 
     {
@@ -55,7 +60,7 @@ const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hosp
         <div class="mb-8" data-health-group>
           <h2 class="text-lg font-semibold mb-3">
             <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/health/`} class="hover:text-emerald-700">
-              {group.outcode}
+              {group.outcode} - {group.placeName}
             </a>
           </h2>
           {[
@@ -66,16 +71,7 @@ const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hosp
           ].map(
             (section) =>
               section.items.length > 0 && (
-                <div class="mb-4" data-health-type-block data-health-kind={section.kind}>
-                  <p class="text-xs uppercase tracking-wide text-stone-400 mb-2">
-                    {section.title} ({section.items.length})
-                  </p>
-                  <div class="grid gap-3 sm:grid-cols-2">
-                    {section.items.map((org) => (
-                      <HealthOrgCard org={org} kind={section.kind} />
-                    ))}
-                  </div>
-                </div>
+                <HealthCategorySection title={section.title} kind={section.kind} items={section.items} mapId={`${group.outcodeSlug}-${section.kind}`} />
               )
           )}
         </div>

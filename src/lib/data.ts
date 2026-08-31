@@ -517,6 +517,8 @@ export function getBoroughCrimeTrend(citySlug: string, boroughSlug: string): Bor
 export interface BoroughHealthGroup {
   outcode: string;
   outcodeSlug: string;
+  wards: string[];
+  postTown: string;
   gpSurgeries: GpSurgery[];
   dentists: GpSurgery[];
   pharmacies: GpSurgery[];
@@ -538,6 +540,8 @@ export function getBoroughHealth(citySlug: string, boroughSlug: string): Borough
       return {
         outcode: o.outcode,
         outcodeSlug: o.slug,
+        wards: o.wards,
+        postTown: o.postTown,
         gpSurgeries: data.health.gpSurgeries,
         dentists: data.health.dentists,
         pharmacies: data.health.pharmacies,
