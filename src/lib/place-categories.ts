@@ -10,7 +10,7 @@ export interface PlaceCategoryDef {
 // Order here is display order on the places page (filter pills and section
 // order), independent of fetch-places.ts's OSM-filter precedence order.
 export const PLACE_CATEGORIES: PlaceCategoryDef[] = [
-  { key: "park", label: "Parks", emoji: "🌳", colorClass: "text-emerald-700" },
+  { key: "park", label: "Parks", emoji: "🌲", colorClass: "text-emerald-700" },
   { key: "library", label: "Libraries", emoji: "📚", colorClass: "text-amber-700" },
   { key: "community-hub", label: "Community hubs", emoji: "🏛️", colorClass: "text-indigo-700" },
   { key: "leisure-centre", label: "Leisure centres", emoji: "🏊", colorClass: "text-sky-700" },
