@@ -2,7 +2,7 @@ import { writeFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { getOutcode } from "./lib/postcodes.js";
-import { ensureNsplZip, listZipEntries, readLadNameLookup, readNsplArea } from "./lib/nspl.js";
+import { ensureNsplZip, listZipEntries, readLadNameLookup, readNsplArea, readWardNameLookup } from "./lib/nspl.js";
 import { fetchWardPopulations } from "./lib/wards.js";
 import { logStep, sleep } from "./lib/fetch-utils.js";
 import type { Hierarchy, HierarchyOutcode } from "../../src/lib/types.js";
@@ -67,6 +67,10 @@ interface OutcodeTally {
   count: number;
   latSum: number;
   lonSum: number;
+  /** wardCode -> real small-user postcode units of THIS outcode in THIS (outcode, LAD) slice. */
+  wards: Map<string, number>;
+  /** pconCode -> units, for picking the slice's modal parliamentary constituency. */
+  pcons: Map<string, number>;
 }
 
 interface OutcodeAssignment {
@@ -76,12 +80,23 @@ interface OutcodeAssignment {
   primaryLad: string;
   touchingLads: Set<string>;
   totalPostcodes: number;
+  /** ladCode -> that LAD's tally - kept (not discarded) so shares and borough-scoped ward lists can be computed per borough below without re-reading NSPL. */
+  byLad: Map<string, OutcodeTally>;
 }
+
+// A ward is kept in a slice's ward list if it holds at least this many real
+// postcode units, or at least this share of the slice - otherwise a ward the
+// slice only barely clips gets listed (and could even become wards[0], the
+// district's display name) as if it were local. The single largest ward in
+// a slice is always kept regardless, so the list is never empty.
+const WARD_MIN_UNITS = 5;
+const WARD_MIN_SHARE = 0.05;
 
 async function main() {
   await ensureNsplZip(NSPL_ZIP_PATH);
   const entries = listZipEntries(NSPL_ZIP_PATH);
   const ladNames = readLadNameLookup(NSPL_ZIP_PATH, entries);
+  const wardNames = readWardNameLookup(NSPL_ZIP_PATH, entries);
 
   const boroughLadCode = new Map<string, string>();
   for (const [code, name] of ladNames) {
@@ -105,10 +120,12 @@ async function main() {
         ladMap = new Map();
         tally.set(row.outcode, ladMap);
       }
-      const t = ladMap.get(row.ladCode) ?? { count: 0, latSum: 0, lonSum: 0 };
+      const t = ladMap.get(row.ladCode) ?? { count: 0, latSum: 0, lonSum: 0, wards: new Map(), pcons: new Map() };
       t.count++;
       t.latSum += row.lat;
       t.lonSum += row.lon;
+      if (row.wardCode) t.wards.set(row.wardCode, (t.wards.get(row.wardCode) ?? 0) + 1);
+      if (row.pconCode) t.pcons.set(row.pconCode, (t.pcons.get(row.pconCode) ?? 0) + 1);
       ladMap.set(row.ladCode, t);
     }
     logStep(STEP, `NSPL area ${prefix}: ${rows.length} rows, ${kept} real small-user postcodes kept.`);
@@ -133,7 +150,7 @@ async function main() {
       }
       if (t.count / total >= PRIMARY_THRESHOLD) touchingLads.add(lad);
     }
-    assignments.push({ outcode, latitude: latSum / total, longitude: lonSum / total, primaryLad, touchingLads, totalPostcodes: total });
+    assignments.push({ outcode, latitude: latSum / total, longitude: lonSum / total, primaryLad, touchingLads, totalPostcodes: total, byLad: ladMap });
   }
   logStep(STEP, `${assignments.length} real outcodes pass the ${MIN_SMALL_USER_POSTCODES}-postcode floor.`);
 
@@ -142,21 +159,44 @@ async function main() {
   const relevant = assignments.filter((a) => [...a.touchingLads].some((lad) => londonLadCodes.has(lad)));
   logStep(STEP, `${relevant.length} outcodes touch at least one London borough at the ${Math.round(PRIMARY_THRESHOLD * 100)}% floor.`);
 
-  // Enrich each unique outcode once (wards, constituency) - cached so a
-  // boundary outcode shared by several boroughs only costs one API call.
-  const enrichment = new Map<string, { wards: string[]; constituency: string }>();
+  // Enrich each unique outcode once with its parliamentary constituency -
+  // cached so a boundary outcode shared by several boroughs only costs one
+  // API call. Wards no longer come from here (see below) - postcodes.io's
+  // admin_ward is a single cross-borough list, not scoped to any one
+  // borough's slice, which is exactly the bug this pipeline is fixing.
+  const enrichment = new Map<string, { constituency: string }>();
   let i = 0;
   for (const a of relevant) {
     i++;
     try {
       const detail = await getOutcode(a.outcode);
-      enrichment.set(a.outcode, { wards: detail.admin_ward, constituency: detail.parliamentary_constituency[0] ?? "" });
+      enrichment.set(a.outcode, { constituency: detail.parliamentary_constituency[0] ?? "" });
     } catch {
-      enrichment.set(a.outcode, { wards: [], constituency: "" });
+      enrichment.set(a.outcode, { constituency: "" });
     }
     if (i % 50 === 0) logStep(STEP, `Enriched ${i}/${relevant.length} outcodes via postcodes.io...`);
     await sleep(50);
   }
+
+  // Whether an outcode is "split" - i.e. has a real page under 2+ London
+  // boroughs today - is a property of the OUTCODE, not of any one borough's
+  // slice, so compute it once per outcode rather than inside the per-borough
+  // loop below. Non-London authorities that also clear the touching
+  // threshold are recorded for provenance but never set isSplit - there's no
+  // page for them to be confused with.
+  const londonSplitStatus = new Map<string, { isSplit: boolean; outsideLondon: { name: string; sharePercent: number }[] }>();
+  for (const a of relevant) {
+    const londonTouching = [...a.touchingLads].filter((lad) => londonLadCodes.has(lad));
+    const outsideLondon = [...a.touchingLads]
+      .filter((lad) => !londonLadCodes.has(lad))
+      .map((lad) => ({
+        name: ladNames.get(lad) ?? lad,
+        sharePercent: Math.round(((a.byLad.get(lad)?.count ?? 0) / a.totalPostcodes) * 1000) / 10,
+      }));
+    londonSplitStatus.set(a.outcode, { isSplit: londonTouching.length >= 2, outsideLondon });
+  }
+  const splitCount = [...londonSplitStatus.values()].filter((s) => s.isSplit).length;
+  logStep(STEP, `${splitCount} outcodes are split across 2+ London boroughs at the ${Math.round(PRIMARY_THRESHOLD * 100)}% floor.`);
 
   const hierarchy: Hierarchy = { cities: [{ name: CITY.name, slug: CITY.slug, boroughs: [] }] };
   const city = hierarchy.cities[0];
@@ -167,18 +207,51 @@ async function main() {
     try {
       wardPopulation = await fetchWardPopulations(ladCode);
     } catch (err) {
-      logStep(STEP, `WARNING: couldn't fetch ward populations for ${boroughName} (${err instanceof Error ? err.message : err}) - wards will keep their postcodes.io order.`);
+      logStep(STEP, `WARNING: couldn't fetch ward populations for ${boroughName} (${err instanceof Error ? err.message : err}) - wards will keep their unit-count order.`);
       wardPopulation = new Map();
     }
 
     const outcodes: HierarchyOutcode[] = [];
+    let wardsMatched = 0;
+    let wardsUnmatched = 0;
+    let wardsDropped = 0;
     for (const a of relevant) {
       if (!a.touchingLads.has(ladCode)) continue;
       const e = enrichment.get(a.outcode)!;
-      // Most-populous ward first - unmatched ward names (rare naming
-      // mismatches between postcodes.io and Nomis) sink to the end rather
-      // than breaking the sort.
-      const wards = [...e.wards].sort((x, y) => (wardPopulation.get(y) ?? -1) - (wardPopulation.get(x) ?? -1));
+      const split = londonSplitStatus.get(a.outcode)!;
+      const slice = a.byLad.get(ladCode)!;
+
+      // Borough-scoped ward list: only wards with real presence in THIS
+      // slice, name-resolved via the NSPL ward lookup (not postcodes.io's
+      // outcode-wide, cross-borough list).
+      const wardEntries = [...slice.wards.entries()];
+      const maxWardUnits = Math.max(0, ...wardEntries.map(([, units]) => units));
+      const kept = wardEntries.filter(([, units]) => units === maxWardUnits || units >= WARD_MIN_UNITS || units / slice.count >= WARD_MIN_SHARE);
+      const named: { name: string; units: number }[] = [];
+      for (const [code, units] of kept) {
+        const name = wardNames.get(code);
+        if (name) {
+          named.push({ name, units });
+          wardsMatched++;
+        } else {
+          wardsUnmatched++;
+        }
+      }
+      wardsDropped += wardEntries.length - kept.length;
+
+      // Split slices sort by what's actually in the slice (truthful to the
+      // partial view); non-split districts keep the existing population-led
+      // order unchanged. `?? 0` (not `?? -1`) plus the units tiebreak means a
+      // Nomis name-match miss degrades to "ordered by real postcode counts"
+      // instead of sinking to the bottom.
+      const wards = named
+        .sort((x, y) =>
+          split.isSplit
+            ? y.units - x.units
+            : (wardPopulation.get(y.name) ?? 0) - (wardPopulation.get(x.name) ?? 0) || y.units - x.units
+        )
+        .map((w) => w.name);
+
       outcodes.push({
         outcode: a.outcode,
         slug: slugify(a.outcode),
@@ -188,12 +261,17 @@ async function main() {
         postTown: POST_TOWNS[a.outcode] ?? "",
         parliamentaryConstituency: e.constituency,
         isPrimaryBorough: a.primaryLad === ladCode,
+        sharePercent: Math.round((slice.count / a.totalPostcodes) * 1000) / 10,
+        unitCount: slice.count,
+        districtUnitCount: a.totalPostcodes,
+        isSplit: split.isSplit,
+        ...(split.outsideLondon.length > 0 ? { outsideLondon: split.outsideLondon } : {}),
       });
     }
     outcodes.sort((x, y) => x.outcode.localeCompare(y.outcode));
     city.boroughs.push({ name: boroughName, slug: slugify(boroughName), outcodes });
     const primaryCount = outcodes.filter((o) => o.isPrimaryBorough).length;
-    logStep(STEP, `${boroughName}: ${outcodes.length} outcodes (${primaryCount} primary)`);
+    logStep(STEP, `${boroughName}: ${outcodes.length} outcodes (${primaryCount} primary), ${wardsMatched} wards matched, ${wardsUnmatched} unmatched, ${wardsDropped} dropped below noise floor.`);
   }
 
   await mkdir(PROCESSED_DIR, { recursive: true });

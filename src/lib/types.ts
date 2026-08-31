@@ -3,6 +3,13 @@ export interface HierarchyOutcode {
   slug: string;
   latitude: number;
   longitude: number;
+  /**
+   * Wards actually inside THIS borough's slice of the district (tallied
+   * per (outcode, LAD, ward) from NSPL postcode units - wards never cross
+   * a LAD boundary, so this is exact, not approximated). For a split
+   * district, two boroughs' copies of the same outcode have different
+   * ward lists; for a non-split district there's only one slice anyway.
+   */
   wards: string[];
   /** Royal Mail post town for this district, e.g. "Teddington" for TW11. */
   postTown: string;
@@ -15,6 +22,20 @@ export interface HierarchyOutcode {
    * double-counted or inflate a borough it barely reaches into.
    */
   isPrimaryBorough: boolean;
+  /** This borough's share of the district's real small-user postcodes, 0-100, 1dp. */
+  sharePercent: number;
+  /** Real small-user postcode units of this district inside this borough. */
+  unitCount: number;
+  /** Units of this district across every LAD it touches - the denominator of sharePercent. */
+  districtUnitCount: number;
+  /**
+   * True when 2+ London boroughs each clear the same threshold that
+   * decides whether they get a page at all - i.e. this district has at
+   * least one sibling page under another borough today.
+   */
+  isSplit: boolean;
+  /** Non-London local authorities that also clear the threshold for this district - recorded for provenance, no page/link exists for these. */
+  outsideLondon?: { name: string; sharePercent: number }[];
 }
 
 export interface HierarchyBorough {

@@ -59,6 +59,14 @@ function listZipEntries(zipPath: string): string[] {
 export interface NsplRow {
   outcode: string;
   ladCode: string;
+  /** ONS 2025 electoral ward code (wd25cd) - wards never cross a LAD
+   * boundary, so (ladCode, wardCode) identifies a borough's slice of a
+   * ward. Empty string when NSPL has no ward code for this row. */
+  wardCode: string;
+  /** Westminster parliamentary constituency code (pcon24cd) - the column's
+   * year lags the ward column's, don't assume they match. Empty string when
+   * NSPL has no constituency code for this row. */
+  pconCode: string;
   lat: number;
   lon: number;
   terminated: boolean;
@@ -81,7 +89,16 @@ export function readNsplArea(zipPath: string, entries: string[], areaPrefix: str
     const lat = Number(rec.lat);
     const lon = Number(rec.long);
     if (!outcode || !rec.lad25cd || Number.isNaN(lat) || Number.isNaN(lon)) continue;
-    rows.push({ outcode, ladCode: rec.lad25cd, lat, lon, terminated: Boolean(rec.doterm), largeUser: rec.usrtypind === "1" });
+    rows.push({
+      outcode,
+      ladCode: rec.lad25cd,
+      wardCode: rec.wd25cd ?? "",
+      pconCode: rec.pcon24cd ?? "",
+      lat,
+      lon,
+      terminated: Boolean(rec.doterm),
+      largeUser: rec.usrtypind === "1",
+    });
   }
   return rows;
 }
@@ -95,6 +112,19 @@ export function readLadNameLookup(zipPath: string, entries: string[]): Map<strin
   const map = new Map<string, string>();
   for (const rec of records) {
     if (rec.LAD25CD && rec.LAD25NM) map.set(rec.LAD25CD, rec.LAD25NM);
+  }
+  return map;
+}
+
+/** Maps WD25CD -> WD25NM (e.g. "E05013938" -> "Hampton Wick & South Teddington") from the NSPL's bundled ward lookup doc. */
+export function readWardNameLookup(zipPath: string, entries: string[]): Map<string, string> {
+  const entry = entries.find((e) => e.includes("WD Ward names and codes"));
+  if (!entry) throw new Error("Could not find the ward name lookup file in the NSPL zip");
+  const csvText = extractZipEntry(zipPath, entry);
+  const records: Record<string, string>[] = parse(csvText, { columns: true, skip_empty_lines: true, relax_column_count: true });
+  const map = new Map<string, string>();
+  for (const rec of records) {
+    if (rec.WD25CD && rec.WD25NM) map.set(rec.WD25CD, rec.WD25NM);
   }
   return map;
 }
