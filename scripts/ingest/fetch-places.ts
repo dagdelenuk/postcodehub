@@ -26,6 +26,7 @@ const PLACE_FILTERS: OsmTagFilter[] = [
   { key: "amenity", value: "arts_centre", category: "culture" satisfies PlaceCategory },
   { key: "amenity", value: "theatre", category: "culture" satisfies PlaceCategory },
   { key: "amenity", value: "cinema", category: "culture" satisfies PlaceCategory },
+  { key: "amenity", value: "pub", category: "pub" satisfies PlaceCategory },
   { key: "amenity", value: "marketplace", category: "market" satisfies PlaceCategory },
 ];
 

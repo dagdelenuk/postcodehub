@@ -163,7 +163,8 @@ export type PlaceCategory =
   | "place-of-worship"
   | "post-office"
   | "culture"
-  | "market";
+  | "market"
+  | "pub";
 
 export interface Place {
   name: string;

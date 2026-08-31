@@ -18,6 +18,7 @@ export const PLACE_CATEGORIES: PlaceCategoryDef[] = [
   { key: "place-of-worship", label: "Places of worship", emoji: "⛪", colorClass: "text-violet-700" },
   { key: "post-office", label: "Post offices", emoji: "✉️", colorClass: "text-red-700" },
   { key: "culture", label: "Culture", emoji: "🎭", colorClass: "text-rose-700" },
+  { key: "pub", label: "Pubs", emoji: "🍺", colorClass: "text-yellow-700" },
   { key: "market", label: "Markets", emoji: "🛒", colorClass: "text-teal-700" },
 ];
 
