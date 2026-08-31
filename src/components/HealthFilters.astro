@@ -24,22 +24,22 @@ const hasAnyFilters = available.length > 1 || postTowns.length > 1;
   hasAnyFilters && (
     <div>
       <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2" data-health-filters>
-        {postTowns.length > 1 && (
-          <div class="flex flex-wrap items-center gap-1.5">
-            <span class="text-xs text-stone-400">Post town:</span>
-            {postTowns.map((t) => (
-              <button type="button" class={PILL_BASE} data-filter-group="postTown" data-filter-value={t}>
-                {t}
-              </button>
-            ))}
-          </div>
-        )}
         {available.length > 1 && (
           <div class="flex flex-wrap items-center gap-1.5">
             <span class="text-xs text-stone-400">Type:</span>
             {available.map((t) => (
               <button type="button" class={PILL_BASE} data-filter-group="kind" data-filter-value={t.kind}>
                 {t.label}
+              </button>
+            ))}
+          </div>
+        )}
+        {postTowns.length > 1 && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">Post town:</span>
+            {postTowns.map((t) => (
+              <button type="button" class={PILL_BASE} data-filter-group="postTown" data-filter-value={t}>
+                {t}
               </button>
             ))}
           </div>
