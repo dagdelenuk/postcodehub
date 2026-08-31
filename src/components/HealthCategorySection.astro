@@ -8,9 +8,11 @@ interface Props {
   items: GpSurgery[];
   /** Overrides the map/toggle DOM scoping id - needed when this component renders more than once per kind on a page (e.g. one outcode group per borough), since `kind` alone would collide. Defaults to `kind`. */
   mapId?: string;
+  /** Only passed on the borough page, where each section is one outcode's post town - forwarded to each card for the Post town filter. */
+  postTown?: string;
 }
 
-const { title, kind, items, mapId = kind } = Astro.props;
+const { title, kind, items, mapId = kind, postTown } = Astro.props;
 const mapPoints = items
   .filter((o) => o.latitude != null && o.longitude != null)
   .map((o) => ({ name: o.name, lat: o.latitude, lon: o.longitude }));
@@ -50,7 +52,7 @@ const mapPoints = items
   }
 
   <div class="grid gap-3 sm:grid-cols-2" data-view-cards data-map-id={mapId}>
-    {items.map((org) => <HealthOrgCard org={org} kind={kind} />)}
+    {items.map((org) => <HealthOrgCard org={org} kind={kind} postTown={postTown} />)}
   </div>
 </section>
 {mapPoints.length > 0 && <script type="application/json" data-map-json={mapId} set:html={JSON.stringify(mapPoints)} />}

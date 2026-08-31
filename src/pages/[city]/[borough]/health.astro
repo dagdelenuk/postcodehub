@@ -30,6 +30,7 @@ const counts = {
   hospital: groups.reduce((sum, g) => sum + g.hospitals.length, 0),
 };
 const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hospital;
+const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.localeCompare(b));
 ---
 
 <BaseLayout
@@ -53,7 +54,7 @@ const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hosp
     <h1 class="text-2xl font-bold mb-4">Health services in {borough.name} ({totalServices})</h1>
 
     <LeafletAssets />
-    <HealthFilters counts={counts} />
+    <HealthFilters counts={counts} postTowns={postTowns} />
 
     {
       groups.map((group) => (
@@ -71,7 +72,13 @@ const totalServices = counts.gp + counts.dentist + counts.pharmacy + counts.hosp
           ].map(
             (section) =>
               section.items.length > 0 && (
-                <HealthCategorySection title={section.title} kind={section.kind} items={section.items} mapId={`${group.outcodeSlug}-${section.kind}`} />
+                <HealthCategorySection
+                  title={section.title}
+                  kind={section.kind}
+                  items={section.items}
+                  mapId={`${group.outcodeSlug}-${section.kind}`}
+                  postTown={group.placeName}
+                />
               )
           )}
         </div>

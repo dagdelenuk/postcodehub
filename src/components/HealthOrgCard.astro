@@ -4,9 +4,11 @@ import type { GpSurgery } from "../lib/types";
 interface Props {
   org: GpSurgery;
   kind: "gp" | "dentist" | "pharmacy" | "hospital";
+  /** Only set on the borough page, where each section is one outcode's post town - used to tag cards for the Post town filter. */
+  postTown?: string;
 }
 
-const { org, kind } = Astro.props;
+const { org, kind, postTown } = Astro.props;
 
 const ICONS: Record<Props["kind"], { emoji: string; text: string }> = {
   gp: { emoji: "🩺", text: "text-rose-600" },
@@ -23,7 +25,7 @@ const mapsUrl = addressLine
 const telHref = org.telephone ? `tel:${org.telephone.replace(/[^\d+]/g, "")}` : null;
 ---
 
-<div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-health-card data-health-kind={kind}>
+<div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-health-card data-health-kind={kind} data-health-post-town={postTown}>
   <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none", icon.text]} aria-hidden="true">
     {icon.emoji}
   </span>

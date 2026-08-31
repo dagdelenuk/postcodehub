@@ -8,9 +8,11 @@ interface Props {
   items: Place[];
   /** Overrides the map/toggle DOM scoping id - needed when this component renders more than once per category on a page (e.g. one outcode group per borough), since `cat.key` alone would collide. Defaults to `cat.key`. */
   mapId?: string;
+  /** Only passed on the borough page, where each section is one outcode's post town - forwarded to each card for the Post town filter. */
+  postTown?: string;
 }
 
-const { cat, items, mapId = cat.key } = Astro.props;
+const { cat, items, mapId = cat.key, postTown } = Astro.props;
 const mapPoints = items.map((p) => ({ name: p.name, lat: p.latitude, lon: p.longitude }));
 ---
 
@@ -40,7 +42,7 @@ const mapPoints = items.map((p) => ({ name: p.name, lat: p.latitude, lon: p.long
   </div>
 
   <div class="grid gap-3 sm:grid-cols-2" data-place-cards data-map-id={mapId}>
-    {items.map((place) => <PlaceCard place={place} />)}
+    {items.map((place) => <PlaceCard place={place} postTown={postTown} />)}
   </div>
 </section>
 <script type="application/json" data-place-map-json={mapId} set:html={JSON.stringify(mapPoints)} />

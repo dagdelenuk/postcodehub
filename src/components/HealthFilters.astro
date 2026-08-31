@@ -1,9 +1,11 @@
 ---
 interface Props {
   counts: { gp: number; dentist: number; pharmacy: number; hospital: number };
+  /** Only passed on the borough health page - one pill per post town, filtering by whole outcode group. */
+  postTowns?: string[];
 }
 
-const { counts } = Astro.props;
+const { counts, postTowns = [] } = Astro.props;
 
 const TYPES = [
   { kind: "gp", label: "GP surgeries" },
@@ -14,20 +16,34 @@ const TYPES = [
 
 const available = TYPES.filter((t) => counts[t.kind] > 0);
 const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors";
+
+const hasAnyFilters = available.length > 1 || postTowns.length > 1;
 ---
 
 {
-  available.length > 1 && (
+  hasAnyFilters && (
     <div>
       <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2" data-health-filters>
-        <div class="flex flex-wrap items-center gap-1.5">
-          <span class="text-xs text-stone-400">Type:</span>
-          {available.map((t) => (
-            <button type="button" class={PILL_BASE} data-filter-value={t.kind}>
-              {t.label}
-            </button>
-          ))}
-        </div>
+        {postTowns.length > 1 && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">Post town:</span>
+            {postTowns.map((t) => (
+              <button type="button" class={PILL_BASE} data-filter-group="postTown" data-filter-value={t}>
+                {t}
+              </button>
+            ))}
+          </div>
+        )}
+        {available.length > 1 && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">Type:</span>
+            {available.map((t) => (
+              <button type="button" class={PILL_BASE} data-filter-group="kind" data-filter-value={t.kind}>
+                {t.label}
+              </button>
+            ))}
+          </div>
+        )}
         <button type="button" class="text-xs text-stone-400 underline hidden" data-filter-clear>
           Clear filters
         </button>
@@ -38,12 +54,12 @@ const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap trans
 }
 
 <style>
-  [data-filter-value] {
+  [data-filter-group] {
     border-color: #d6d3d1;
     color: #57534e;
     background: white;
   }
-  [data-filter-value].is-active {
+  [data-filter-group].is-active {
     border-color: #059669;
     background: #ecfdf5;
     color: #065f46;
@@ -52,7 +68,7 @@ const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap trans
 
 <script>
   document.querySelectorAll<HTMLElement>("[data-health-filters]").forEach((bar) => {
-    const pills = [...bar.querySelectorAll<HTMLButtonElement>("[data-filter-value]")];
+    const pills = [...bar.querySelectorAll<HTMLButtonElement>("[data-filter-group]")];
     const clearBtn = bar.querySelector<HTMLElement>("[data-filter-clear]");
     const countEl = document.querySelector<HTMLElement>("[data-filter-count]");
     const cards = [...document.querySelectorAll<HTMLElement>("[data-health-card]")];
@@ -60,39 +76,44 @@ const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap trans
     const groups = [...document.querySelectorAll<HTMLElement>("[data-health-group]")];
     const totalCount = cards.length;
 
-    const active = new Set<string>();
+    // active[group] = Set of selected values for that facet; empty set = no filter on that facet
+    const active: Record<string, Set<string>> = {};
 
     function apply() {
+      const activeGroups = Object.entries(active).filter(([, set]) => set.size > 0);
       let visible = 0;
       for (const card of cards) {
-        const matches = active.size === 0 || active.has(card.dataset.healthKind ?? "");
+        const matches = activeGroups.every(([group, values]) => values.has(card.dataset[`health${group[0].toUpperCase()}${group.slice(1)}`] ?? ""));
         card.classList.toggle("hidden", !matches);
         if (matches) visible++;
       }
       for (const block of typeBlocks) {
-        const matches = active.size === 0 || active.has(block.dataset.healthKind ?? "");
-        block.classList.toggle("hidden", !matches);
+        const anyVisible = [...block.querySelectorAll<HTMLElement>("[data-health-card]")].some((c) => !c.classList.contains("hidden"));
+        block.classList.toggle("hidden", !anyVisible);
       }
       for (const group of groups) {
         const anyVisible = [...group.querySelectorAll<HTMLElement>("[data-health-type-block]")].some((b) => !b.classList.contains("hidden"));
         group.classList.toggle("hidden", !anyVisible);
       }
-      clearBtn?.classList.toggle("hidden", active.size === 0);
-      if (countEl) countEl.textContent = active.size > 0 ? `Showing ${visible} of ${totalCount} results` : "";
+      const hasFilter = activeGroups.length > 0;
+      clearBtn?.classList.toggle("hidden", !hasFilter);
+      if (countEl) countEl.textContent = hasFilter ? `Showing ${visible} of ${totalCount} results` : "";
     }
 
     pills.forEach((pill) => {
+      const group = pill.dataset.filterGroup!;
       const value = pill.dataset.filterValue!;
+      active[group] ??= new Set();
       pill.addEventListener("click", () => {
-        if (active.has(value)) active.delete(value);
-        else active.add(value);
-        pill.classList.toggle("is-active", active.has(value));
+        if (active[group].has(value)) active[group].delete(value);
+        else active[group].add(value);
+        pill.classList.toggle("is-active", active[group].has(value));
         apply();
       });
     });
 
     clearBtn?.addEventListener("click", () => {
-      active.clear();
+      for (const key of Object.keys(active)) active[key].clear();
       pills.forEach((p) => p.classList.remove("is-active"));
       apply();
     });
