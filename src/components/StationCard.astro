@@ -15,7 +15,9 @@ const ICONS: Record<Props["kind"], { emoji: string; text: string }> = {
 
 const icon = ICONS[kind];
 const addressLine = [station.address, station.postcode].filter(Boolean).join(", ");
-const mapsUrl = addressLine ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressLine)}` : null;
+const mapsUrl = addressLine
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${station.name}, ${addressLine}`)}`
+  : null;
 ---
 
 <div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-station-card data-station-kind={kind}>

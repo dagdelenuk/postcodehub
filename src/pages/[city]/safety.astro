@@ -177,7 +177,7 @@ const stationsByBorough = trend.boroughs.map((b) => ({
 
       if (addressLine) {
         const navLink = document.createElement("a");
-        navLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressLine)}`;
+        navLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${station.name}, ${addressLine}`)}`;
         navLink.target = "_blank";
         navLink.rel = "noopener";
         navLink.setAttribute("aria-label", `Get directions to ${station.name}`);

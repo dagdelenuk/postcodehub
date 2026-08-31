@@ -17,7 +17,9 @@ const ICONS: Record<Props["kind"], { emoji: string; text: string }> = {
 
 const icon = ICONS[kind];
 const addressLine = org.address || org.postcode;
-const mapsUrl = addressLine ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressLine)}` : null;
+const mapsUrl = addressLine
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${org.name}, ${addressLine}`)}`
+  : null;
 const telHref = org.telephone ? `tel:${org.telephone.replace(/[^\d+]/g, "")}` : null;
 ---
 
