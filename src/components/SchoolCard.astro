@@ -37,15 +37,8 @@ const mapsUrl = school.address ? `https://www.google.com/maps/search/?api=1&quer
     {icon.emoji}
   </span>
 
-  <div class:list={["relative pr-8", school.ofstedRating && "pb-5"]}>
-    <div class="flex items-start justify-between gap-2">
-      <p class="font-medium">{school.name}</p>
-      {
-        isOversubscribed && (
-          <span class="text-xs px-2 py-0.5 rounded-full whitespace-nowrap bg-amber-100 text-amber-800 shrink-0">Oversubscribed</span>
-        )
-      }
-    </div>
+  <div class:list={["relative pr-8", (school.ofstedRating || isOversubscribed) && "pb-5"]}>
+    <p class="font-medium">{school.name}</p>
     <p class="text-sm text-stone-500 mt-1">{school.phaseOfEducation} &middot; {school.address}</p>
     {
       school.ofstedRating && !school.ofstedRatingDerivedFromAreaGrades && formatOfstedDate(school.ofstedLastInspection) && (
@@ -78,14 +71,25 @@ const mapsUrl = school.address ? `https://www.google.com/maps/search/?api=1&quer
   </div>
 
   {
-    school.ofstedRating && (
-      <span
-        class:list={[
-          "absolute bottom-2 right-2 text-xs px-2 py-0.5 rounded-full whitespace-nowrap",
-          OFSTED_RATING_COLORS[school.ofstedRating] ?? "bg-stone-100 text-stone-600",
-        ]}
-      >
-        {school.ofstedRating}
+    (isOversubscribed || school.ofstedRating) && (
+      <span class="absolute bottom-2 left-2 flex items-center gap-1">
+        {
+          isOversubscribed && (
+            <span class="text-xs px-2 py-0.5 rounded-full whitespace-nowrap bg-amber-100 text-amber-800">Oversubscribed</span>
+          )
+        }
+        {
+          school.ofstedRating && (
+            <span
+              class:list={[
+                "text-xs px-2 py-0.5 rounded-full whitespace-nowrap",
+                OFSTED_RATING_COLORS[school.ofstedRating] ?? "bg-stone-100 text-stone-600",
+              ]}
+            >
+              {school.ofstedRating}
+            </span>
+          )
+        }
       </span>
     )
   }
