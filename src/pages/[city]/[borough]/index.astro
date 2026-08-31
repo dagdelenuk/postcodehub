@@ -108,9 +108,17 @@ const favouritesLookup = getFavouritesLookup();
             const favKey = `outcode:${city.slug}/${borough.slug}/${outcode.slug}`;
             return (
               <div class="relative rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>
-                <a href={`/${city.slug}/${borough.slug}/${outcode.slug}/`} class="block px-4 py-3 pr-9 hover:border-emerald-600 rounded-lg transition-colors">
-                  <span class="font-semibold">{displayPlaceName(outcode.postTown, outcode.wards, city.name)} - {outcode.outcode}</span>
-                  <span class="block text-xs text-stone-500 mt-0.5 truncate">{outcode.wards.slice(0, 2).join(", ")}</span>
+                <a
+                  href={`/${city.slug}/${borough.slug}/${outcode.slug}/`}
+                  class="flex items-center gap-3 px-4 py-3 pr-9 hover:border-emerald-600 rounded-lg transition-colors"
+                >
+                  <span class="h-10 w-10 shrink-0 rounded-md border border-stone-200 bg-stone-100 text-stone-600 text-[11px] font-bold flex items-center justify-center">
+                    {outcode.outcode}
+                  </span>
+                  <span class="min-w-0 flex-1">
+                    <span class="block font-semibold truncate">{displayPlaceName(outcode.postTown, outcode.wards, city.name)}</span>
+                    <span class="block text-xs text-stone-500 truncate">{outcode.wards.join(", ")}</span>
+                  </span>
                 </a>
                 <div class="absolute top-1.5 right-1.5">
                   <FavoriteStar favKey={favKey} size="sm" />

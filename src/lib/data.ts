@@ -33,6 +33,8 @@ export interface FavouriteEntry {
   sublabel: string;
   href: string;
   thumb?: string;
+  /** Outcode code (e.g. "TW11") - only set for type "outcode", rendered as a text avatar in place of a thumb. */
+  code?: string;
   /** Groups the "Your Favourites" roll-up: cities, then boroughs, then postcodes. */
   type: "city" | "borough" | "outcode";
   /** A-Z sort key within a type - the post town name for outcodes, not the outcode code itself. */
@@ -72,9 +74,10 @@ export function getFavouritesLookup(): Record<string, FavouriteEntry> {
       for (const outcode of borough.outcodes) {
         const postTown = displayPlaceName(outcode.postTown, outcode.wards, city.name);
         lookup[`outcode:${city.slug}/${borough.slug}/${outcode.slug}`] = {
-          label: `${outcode.outcode} - ${postTown}`,
-          sublabel: outcode.wards.slice(0, 2).join(", "),
+          label: postTown,
+          sublabel: outcode.wards.join(", "),
           href: `/${city.slug}/${borough.slug}/${outcode.slug}/`,
+          code: outcode.outcode,
           type: "outcode",
           sortKey: postTown,
         };
