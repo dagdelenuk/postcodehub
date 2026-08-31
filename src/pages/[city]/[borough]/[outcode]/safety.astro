@@ -70,7 +70,31 @@ const totalStations = stationCounts.police + stationCounts.fire;
     )
   }
 
-  <h1 class="text-2xl font-bold mb-2">Crime in {data.outcode}</h1>
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold mb-3">Emergency calls</h2>
+    <div class="grid gap-3 sm:grid-cols-2">
+      <a
+        href="https://www.police.uk/pu/contact-us"
+        target="_blank"
+        rel="noopener"
+        class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+      >
+        <span class="text-3xl leading-none" aria-hidden="true">🚓</span>
+        <p class="font-medium">Contact Police</p>
+      </a>
+      <a
+        href="https://www.londonambulance.nhs.uk/our-services/emergency-care/calling-999/"
+        target="_blank"
+        rel="noopener"
+        class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+      >
+        <span class="text-3xl leading-none" aria-hidden="true">🚒</span>
+        <p class="font-medium">Contact Fire Brigade</p>
+      </a>
+    </div>
+  </section>
+
+  <h1 class="text-2xl font-bold mb-2">Crime Statistics in {data.outcode}</h1>
   <p class="text-stone-500 mb-6">{data.safety.totalLast12Months.toLocaleString()} recorded crimes over the last 12 months, within roughly 1 mile of the area centre.</p>
 
   <section class="mb-8">
