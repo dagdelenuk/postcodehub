@@ -2,6 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import CategoryNav from "../components/CategoryNav.astro";
+import SplitDistrictNotice from "../components/SplitDistrictNotice.astro";
 import { displayPlaceName, districtDescription, districtTitle, getSplitInfo, hasContent, topicDescription, topicTitle } from "../lib/data";
 import type { CategoryKey, OutcodeData } from "../lib/types";
 import { CATEGORY_KEYS } from "../lib/types";
@@ -32,6 +33,13 @@ const pageTitle = title ?? (topic ? topicTitle(topic, data.outcode, data.borough
 const pageDescription =
   description ?? (topic ? topicDescription(topic, data.outcode, data.borough, splitInfo) : districtDescription(data.outcode, data.borough, splitInfo));
 
+// Full notice on the overview; a condensed one-liner only on the sub-pages
+// where a council/ward boundary actually changes what's shown (planning,
+// property, representatives) - everywhere else the notice would just repeat
+// itself with no new information for the reader.
+const CONDENSED_NOTICE_TOPICS = new Set(["planning", "property", "representatives"]);
+const showNotice = splitInfo.isSplit && (isOverview || CONDENSED_NOTICE_TOPICS.has(active));
+
 const available = new Set<CategoryKey>(
   CATEGORY_KEYS.filter((key) => (key === "transport" ? true : hasContent(data, key)))
 );
@@ -52,6 +60,7 @@ const available = new Set<CategoryKey>(
     {isOverview ? <h1 class="text-xl font-bold text-stone-900">{heading}</h1> : <p class="text-xl font-bold text-stone-900">{heading}</p>}
     {placeName && <p class="text-base font-semibold text-stone-700 mt-1">{placeName}</p>}
     <p class="text-sm text-stone-500 mt-1">{data.wards.join(", ")}</p>
+    {showNotice && <SplitDistrictNotice info={splitInfo} variant={isOverview ? "full" : "condensed"} />}
   </div>
   <div class="mx-auto max-w-5xl px-4 py-8">
     <slot />
