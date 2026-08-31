@@ -1,0 +1,31 @@
+---
+import type { PoliceStation } from "../lib/types";
+
+interface Props {
+  station: PoliceStation;
+  kind: "police" | "fire";
+}
+
+const { station, kind } = Astro.props;
+
+const ICONS: Record<Props["kind"], { emoji: string; text: string }> = {
+  police: { emoji: "🚓", text: "text-blue-700" },
+  fire: { emoji: "🚒", text: "text-red-600" },
+};
+
+const icon = ICONS[kind];
+---
+
+<div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-station-card data-station-kind={kind}>
+  <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none", icon.text]} aria-hidden="true">
+    {icon.emoji}
+  </span>
+  <div class="relative">
+    <p class="font-medium">{station.name}</p>
+    {(station.address || station.postcode) && (
+      <p class="text-sm text-stone-500 mt-1">{[station.address, station.postcode].filter(Boolean).join(", ")}</p>
+    )}
+    {station.telephone && <p class="text-sm text-stone-500">{station.telephone}</p>}
+    <p class="text-xs text-stone-400 mt-1">{(station.distanceKm * 0.621371).toFixed(1)} mi away</p>
+  </div>
+</div>

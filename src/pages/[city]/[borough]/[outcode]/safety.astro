@@ -1,6 +1,8 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import CrimeCompareChart from "../../../../components/CrimeCompareChart.astro";
+import StationCard from "../../../../components/StationCard.astro";
+import StationFilters from "../../../../components/StationFilters.astro";
 import { displayPlaceName, getAllOutcodeParams, getBoroughCrimeTrend, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -26,6 +28,9 @@ const topCategories = Object.entries(data.safety.categoryBreakdown)
   .slice(0, 8);
 const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
 const placeName = displayPlaceName(data.postTown, data.wards, data.city);
+
+const stationCounts = { police: data.safety.policeStations.length, fire: data.safety.fireStations.length };
+const totalStations = stationCounts.police + stationCounts.fire;
 ---
 
 <LocalityLayout
@@ -37,52 +42,31 @@ const placeName = displayPlaceName(data.postTown, data.wards, data.city);
   description={`Crime statistics and trends for the ${data.outcode} area.`}
 >
   {
-    data.safety.policeStations.length > 0 && (
-      <section class="mb-8">
-        <h2 class="text-2xl font-bold mb-2">Police stations in {placeName} - {data.outcode} ({data.safety.policeStations.length})</h2>
-        <div class="grid gap-3 sm:grid-cols-2">
-          {data.safety.policeStations.map((station) => (
-            <div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4">
-              <span class="pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none text-blue-700" aria-hidden="true">
-                🚓
-              </span>
-              <div class="relative">
-                <p class="font-medium">{station.name}</p>
-                {(station.address || station.postcode) && (
-                  <p class="text-sm text-stone-500 mt-1">{[station.address, station.postcode].filter(Boolean).join(", ")}</p>
-                )}
-                {station.telephone && <p class="text-sm text-stone-500">{station.telephone}</p>}
-                <p class="text-xs text-stone-400 mt-1">{(station.distanceKm * 0.621371).toFixed(1)} mi away</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    )
-  }
+    totalStations > 0 && (
+      <>
+        <h2 class="text-2xl font-bold mb-4">Police &amp; fire stations in {placeName} - {data.outcode} ({totalStations})</h2>
 
-  {
-    data.safety.fireStations.length > 0 && (
-      <section class="mb-8">
-        <h2 class="text-2xl font-bold mb-2">Fire stations in {placeName} - {data.outcode} ({data.safety.fireStations.length})</h2>
-        <div class="grid gap-3 sm:grid-cols-2">
-          {data.safety.fireStations.map((station) => (
-            <div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4">
-              <span class="pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none text-red-600" aria-hidden="true">
-                🚒
-              </span>
-              <div class="relative">
-                <p class="font-medium">{station.name}</p>
-                {(station.address || station.postcode) && (
-                  <p class="text-sm text-stone-500 mt-1">{[station.address, station.postcode].filter(Boolean).join(", ")}</p>
-                )}
-                {station.telephone && <p class="text-sm text-stone-500">{station.telephone}</p>}
-                <p class="text-xs text-stone-400 mt-1">{(station.distanceKm * 0.621371).toFixed(1)} mi away</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+        <StationFilters counts={stationCounts} />
+
+        {
+          [
+            { title: "Police stations", items: data.safety.policeStations, kind: "police" as const },
+            { title: "Fire stations", items: data.safety.fireStations, kind: "fire" as const },
+          ].map(
+            (section) =>
+              section.items.length > 0 && (
+                <section class="mb-8" data-station-type-block data-station-kind={section.kind}>
+                  <h2 class="text-lg font-semibold mb-3">{section.title} ({section.items.length})</h2>
+                  <div class="grid gap-3 sm:grid-cols-2">
+                    {section.items.map((station) => (
+                      <StationCard station={station} kind={section.kind} />
+                    ))}
+                  </div>
+                </section>
+              )
+          )
+        }
+      </>
     )
   }
 
