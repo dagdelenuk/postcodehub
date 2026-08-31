@@ -77,7 +77,7 @@ export function getFavouritesLookup(): Record<string, FavouriteEntry> {
     for (const borough of city.boroughs) {
       lookup[`borough:${borough.slug}`] = {
         label: borough.name,
-        sublabel: `${borough.outcodes.length} postcode areas`,
+        sublabel: `${borough.outcodes.length} postcode districts`,
         href: `/${city.slug}/${borough.slug}/`,
         thumb: getBannerImages(borough.slug)[0]?.src,
         type: "borough",

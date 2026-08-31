@@ -4,14 +4,16 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
 import FavoriteStar from "../../../components/FavoriteStar.astro";
+import PartBadge from "../../../components/PartBadge.astro";
 import {
-  displayPlaceName,
+  districtLocalName,
   getBannerImages,
   getBoroughHealth,
   getBoroughSchools,
   getBoroughSummary,
   getFavouritesLookup,
   loadHierarchy,
+  partitionDistrictsForNav,
 } from "../../../lib/data";
 
 export function getStaticPaths() {
@@ -35,6 +37,8 @@ const summaryStats = [
   { label: "Housing & Sales", value: summary.propertySales, href: `/${city.slug}/property/?highlight=${borough.slug}`, icon: "🏠", color: "text-emerald-600" },
 ];
 const favouritesLookup = getFavouritesLookup();
+const districtGroups = partitionDistrictsForNav(borough.outcodes, city.name);
+const hasSplitDistricts = districtGroups.split.length > 0;
 ---
 
 <BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}>
@@ -50,7 +54,14 @@ const favouritesLookup = getFavouritesLookup();
   <section class="mx-auto max-w-5xl px-4 pt-6 pb-4">
     <RotatingBanner images={getBannerImages(borough.slug)} />
     <h1 class="text-3xl font-bold tracking-tight mt-4">{borough.name}</h1>
-    <p class="text-stone-500 mt-1">{borough.outcodes.length} postcode areas covered</p>
+    <p class="text-stone-500 mt-1">{borough.outcodes.length} postcode districts covered</p>
+    {
+      hasSplitDistricts && (
+        <p class="text-sm text-stone-500 mt-1">
+          Some postcode districts extend beyond the borough boundary. Districts marked <PartBadge /> are shared with a neighbouring borough.
+        </p>
+      )
+    }
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-8">
@@ -97,36 +108,66 @@ const favouritesLookup = getFavouritesLookup();
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-16">
-    <h2 class="text-xl font-semibold mb-4">Postcodes - Post towns in {borough.name}</h2>
+    <h2 class="text-xl font-semibold mb-4">Postcode districts in {borough.name}</h2>
     <div class="grid gap-3 sm:grid-cols-3" data-favorite-list data-no-reorder>
       {
-        [...borough.outcodes]
-          .sort((a, b) =>
-            displayPlaceName(a.postTown, a.wards, city.name).localeCompare(displayPlaceName(b.postTown, b.wards, city.name))
-          )
-          .map((outcode) => {
-            const favKey = `outcode:${city.slug}/${borough.slug}/${outcode.slug}`;
-            return (
-              <div class="relative rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>
-                <a
-                  href={`/${city.slug}/${borough.slug}/${outcode.slug}/`}
-                  class="flex items-center gap-3 px-4 py-3 pr-9 hover:border-emerald-600 rounded-lg transition-colors"
-                >
-                  <span class="h-10 w-10 shrink-0 rounded-md border border-stone-200 bg-stone-100 text-stone-600 text-[11px] font-bold flex items-center justify-center">
-                    {outcode.outcode}
-                  </span>
-                  <span class="min-w-0 flex-1">
-                    <span class="block font-semibold truncate">{displayPlaceName(outcode.postTown, outcode.wards, city.name)}</span>
-                    <span class="block text-xs text-stone-500 truncate">{outcode.wards.join(", ")}</span>
-                  </span>
-                </a>
-                <div class="absolute top-1.5 right-1.5">
-                  <FavoriteStar favKey={favKey} size="sm" />
-                </div>
+        districtGroups.full.map((outcode) => {
+          const favKey = `outcode:${city.slug}/${borough.slug}/${outcode.slug}`;
+          return (
+            <div class="relative rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>
+              <a
+                href={`/${city.slug}/${borough.slug}/${outcode.slug}/`}
+                class="flex items-center gap-3 px-4 py-3 pr-9 hover:border-emerald-600 rounded-lg transition-colors"
+              >
+                <span class="h-10 w-10 shrink-0 rounded-md border border-stone-200 bg-stone-100 text-stone-600 text-[11px] font-bold flex items-center justify-center">
+                  {outcode.outcode}
+                </span>
+                <span class="min-w-0 flex-1">
+                  <span class="block font-semibold truncate">{districtLocalName(outcode, city.name)}</span>
+                  <span class="block text-xs text-stone-500 truncate">{outcode.wards.join(", ")}</span>
+                </span>
+              </a>
+              <div class="absolute top-1.5 right-1.5">
+                <FavoriteStar favKey={favKey} size="sm" />
               </div>
-            );
-          })
+            </div>
+          );
+        })
       }
     </div>
+
+    {
+      hasSplitDistricts && (
+        <>
+          <h2 class="text-lg font-semibold mt-8 mb-4">Partly in this borough</h2>
+          <div class="grid gap-3 sm:grid-cols-3" data-favorite-list data-no-reorder>
+            {districtGroups.split.map((outcode) => {
+              const favKey = `outcode:${city.slug}/${borough.slug}/${outcode.slug}`;
+              return (
+                <div class="relative rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>
+                  <a
+                    href={`/${city.slug}/${borough.slug}/${outcode.slug}/`}
+                    class="flex items-center gap-3 px-4 py-3 pr-9 hover:border-emerald-600 rounded-lg transition-colors"
+                  >
+                    <span class="h-10 w-10 shrink-0 rounded-md border border-stone-200 bg-stone-100 text-stone-600 text-[11px] font-bold flex items-center justify-center">
+                      {outcode.outcode}
+                    </span>
+                    <span class="min-w-0 flex-1">
+                      <span class="flex items-center truncate font-semibold">
+                        <span class="truncate">{districtLocalName(outcode, city.name)}</span>
+                        <PartBadge borough={borough.name} />
+                      </span>
+                    </span>
+                  </a>
+                  <div class="absolute top-1.5 right-1.5">
+                    <FavoriteStar favKey={favKey} size="sm" />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </>
+      )
+    }
   </section>
 </BaseLayout>

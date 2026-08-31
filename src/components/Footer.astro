@@ -3,7 +3,8 @@
 // straight from the hierarchy at build time, so the footer always reflects
 // whatever cities/boroughs/outcodes the site actually covers rather than a
 // hand-maintained list that can drift out of date.
-import { displayPlaceName, getBorough, loadHierarchy } from "../lib/data";
+import { districtLocalName, getBorough, loadHierarchy, partitionDistrictsForNav } from "../lib/data";
+import PartBadge from "./PartBadge.astro";
 
 interface Props {
   citySlug?: string;
@@ -18,13 +19,9 @@ const boroughs = city ? [...city.boroughs].sort((a, b) => a.name.localeCompare(b
 
 // Only populated when the current page has a borough in context (borough
 // pages and their outcode subpages) - the homepage/city page has no single
-// borough to show post towns for.
+// borough to show districts for.
 const currentBorough = citySlug && boroughSlug ? getBorough(citySlug, boroughSlug) : undefined;
-const postTownOutcodes = currentBorough
-  ? [...currentBorough.outcodes].sort((a, b) =>
-      displayPlaceName(a.postTown, a.wards, city!.name).localeCompare(displayPlaceName(b.postTown, b.wards, city!.name))
-    )
-  : [];
+const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.outcodes, city!.name) : null;
 ---
 
 <footer class="border-t border-stone-200 bg-white mt-12">
@@ -112,14 +109,14 @@ const postTownOutcodes = currentBorough
       }
 
       {
-        currentBorough && postTownOutcodes.length > 0 && (
+        currentBorough && districtGroups && districtGroups.full.length + districtGroups.split.length > 0 && (
           <div>
             <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">
-              Post towns in<br />{currentBorough.name}
+              Postcode districts in<br />{currentBorough.name}
             </h2>
             <ul class="mt-3 space-y-2 text-sm">
-              {postTownOutcodes.map((o) => {
-                const label = `${o.outcode} - ${displayPlaceName(o.postTown, o.wards, city!.name)}`;
+              {districtGroups.full.map((o) => {
+                const label = `${o.outcode} - ${districtLocalName(o, city!.name)}`;
                 return (
                   <li>
                     <a
@@ -133,6 +130,32 @@ const postTownOutcodes = currentBorough
                 );
               })}
             </ul>
+            {
+              districtGroups.split.length > 0 && (
+                <>
+                  <p class="mt-3 text-[11px] font-medium uppercase tracking-wide text-stone-400">Partly in this borough</p>
+                  <ul class="mt-2 space-y-2 text-sm">
+                    {districtGroups.split.map((o) => {
+                      const label = `${o.outcode} - ${districtLocalName(o, city!.name)} (part)`;
+                      return (
+                        <li>
+                          <a
+                            href={`/${city!.slug}/${boroughSlug}/${o.slug}/`}
+                            title={label}
+                            class="flex min-w-0 items-center text-stone-600 hover:text-emerald-700"
+                          >
+                            <span class="truncate">
+                              {o.outcode} - {districtLocalName(o, city!.name)}
+                            </span>
+                            <PartBadge borough={currentBorough.name} />
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </>
+              )
+            }
           </div>
         )
       }
