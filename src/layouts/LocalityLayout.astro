@@ -2,7 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import CategoryNav from "../components/CategoryNav.astro";
-import { displayPlaceName, hasContent } from "../lib/data";
+import { displayPlaceName, districtDescription, districtTitle, getSplitInfo, hasContent, topicDescription, topicTitle } from "../lib/data";
 import type { CategoryKey, OutcodeData } from "../lib/types";
 import { CATEGORY_KEYS } from "../lib/types";
 
@@ -11,21 +11,33 @@ interface Props {
   citySlug: string;
   boroughSlug: string;
   active?: CategoryKey | "overview";
-  title: string;
+  /** Human-readable topic name for a sub-page (e.g. "Planning") - drives the
+   * default title/description pattern "Planning in KT1, Richmond upon
+   * Thames". Omit on the overview page. */
+  topic?: string;
+  /** Explicit overrides - when omitted, title/description are composed from `topic` (or the district itself, on the overview page) plus split-district info. */
+  title?: string;
   description?: string;
 }
 
-const { data, citySlug, boroughSlug, active = "overview", title, description } = Astro.props;
+const { data, citySlug, boroughSlug, active = "overview", topic, title, description } = Astro.props;
 
 const basePath = `/${citySlug}/${boroughSlug}/${data.slug}/`;
 const placeName = displayPlaceName(data.postTown, data.wards, data.city);
+const isOverview = active === "overview";
+const heading = `${data.outcode} in ${data.borough}`;
+
+const splitInfo = getSplitInfo(citySlug, boroughSlug, data.outcode);
+const pageTitle = title ?? (topic ? topicTitle(topic, data.outcode, data.borough) : districtTitle(data.outcode, data.borough));
+const pageDescription =
+  description ?? (topic ? topicDescription(topic, data.outcode, data.borough, splitInfo) : districtDescription(data.outcode, data.borough, splitInfo));
 
 const available = new Set<CategoryKey>(
   CATEGORY_KEYS.filter((key) => (key === "transport" ? true : hasContent(data, key)))
 );
 ---
 
-<BaseLayout title={title} description={description} menuLevel="outcode" citySlug={citySlug} boroughSlug={boroughSlug}>
+<BaseLayout title={pageTitle} description={pageDescription} menuLevel="outcode" citySlug={citySlug} boroughSlug={boroughSlug}>
   <Breadcrumbs
     sticky
     crumbs={[
@@ -37,8 +49,8 @@ const available = new Set<CategoryKey>(
   />
   <CategoryNav basePath={basePath} active={active} available={available} overviewLabel={data.outcode} />
   <div class="mx-auto max-w-5xl px-4 pt-4">
-    <h1 class="sr-only">{data.outcode}</h1>
-    {placeName && <p class="text-xl font-bold text-stone-900">{placeName}</p>}
+    {isOverview ? <h1 class="text-xl font-bold text-stone-900">{heading}</h1> : <p class="text-xl font-bold text-stone-900">{heading}</p>}
+    {placeName && <p class="text-base font-semibold text-stone-700 mt-1">{placeName}</p>}
     <p class="text-sm text-stone-500 mt-1">{data.wards.join(", ")}</p>
   </div>
   <div class="mx-auto max-w-5xl px-4 py-8">

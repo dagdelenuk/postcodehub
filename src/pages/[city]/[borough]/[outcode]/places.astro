@@ -29,10 +29,9 @@ const total = data.places.places.length;
   citySlug={city!}
   boroughSlug={borough!}
   active="places"
-  title={`Places in ${data.outcode}`}
-  description={`Parks, libraries, leisure centres, and community spaces in the ${data.outcode} area.`}
+  topic="Places"
 >
-  <h1 class="text-2xl font-bold mb-4">Places in {placeName} - {data.outcode} ({total})</h1>
+  <h1 class="text-2xl font-bold mb-4">Places in {placeName} - {data.outcode}, {data.borough} ({total})</h1>
 
   <LeafletAssets />
   <PlacesFilters counts={counts} />

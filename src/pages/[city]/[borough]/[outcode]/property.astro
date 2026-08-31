@@ -25,8 +25,7 @@ const recentSales = data.property.sales.slice(0, 40);
   citySlug={city!}
   boroughSlug={borough!}
   active="property"
-  title={`Property in ${data.outcode}`}
-  description={`Recent property sales and price trends in the ${data.outcode} area.`}
+  topic="Property"
 >
   {
     councilTax && (
@@ -79,7 +78,7 @@ const recentSales = data.property.sales.slice(0, 40);
     )
   }
 
-  <h1 class="text-2xl font-bold mb-2">Property Statistics in {data.outcode}</h1>
+  <h1 class="text-2xl font-bold mb-2">Property Statistics in {data.outcode}, {data.borough}</h1>
   <p class="text-stone-500 mb-6">{data.property.sales.length} recorded sales over the last two years.</p>
 
   <div class="grid gap-4 sm:grid-cols-2 mb-8">

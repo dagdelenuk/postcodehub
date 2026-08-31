@@ -30,10 +30,9 @@ const MODE_LOGOS: Record<string, { src: string; alt: string }> = {
   citySlug={city!}
   boroughSlug={borough!}
   active="transport"
-  title={`Transport in ${data.outcode}`}
-  description={`Live transport status and links for the ${data.outcode} area.`}
+  topic="Transport"
 >
-  <h1 class="text-2xl font-bold mb-6">Transport in {data.outcode}</h1>
+  <h1 class="text-2xl font-bold mb-6">Transport in {data.outcode}, {data.borough}</h1>
 
   <div class="grid gap-4 sm:grid-cols-2 mb-8">
     <LiveTflWidget lines={data.transport.lines} nearestStationName={data.transport.nearbyStations[0]?.name} />

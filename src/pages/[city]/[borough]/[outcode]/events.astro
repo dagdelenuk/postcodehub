@@ -17,10 +17,9 @@ const { data } = Astro.props;
   citySlug={city!}
   boroughSlug={borough!}
   active="events"
-  title={`Events near ${data.outcode}`}
-  description={`Local events and things to do near ${data.outcode}.`}
+  topic="Events"
 >
-  <h1 class="text-2xl font-bold mb-6">Events near {data.outcode}</h1>
+  <h1 class="text-2xl font-bold mb-6">Events near {data.outcode}, {data.borough}</h1>
 
   {
     data.events.events.length > 0 ? (

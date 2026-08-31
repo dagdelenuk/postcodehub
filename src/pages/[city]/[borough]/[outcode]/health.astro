@@ -28,10 +28,9 @@ const placeName = displayPlaceName(data.postTown, data.wards, data.city);
   citySlug={city!}
   boroughSlug={borough!}
   active="health"
-  title={`Health in ${data.outcode}`}
-  description={`GP surgeries, dentists, pharmacies, and hospitals serving the ${data.outcode} area.`}
+  topic="Health"
 >
-  <h1 class="text-2xl font-bold mb-4">Health services in {placeName} - {data.outcode} ({totalServices})</h1>
+  <h1 class="text-2xl font-bold mb-4">Health services in {placeName} - {data.outcode}, {data.borough} ({totalServices})</h1>
 
   <LeafletAssets />
   <HealthFilters counts={counts} />

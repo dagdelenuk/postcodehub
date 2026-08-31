@@ -38,8 +38,7 @@ const totalStations = stationCounts.police + stationCounts.fire;
   citySlug={city!}
   boroughSlug={borough!}
   active="safety"
-  title={`Safety in ${data.outcode}`}
-  description={`Crime statistics and trends for the ${data.outcode} area.`}
+  topic="Safety"
 >
   {
     totalStations > 0 && (
@@ -94,7 +93,7 @@ const totalStations = stationCounts.police + stationCounts.fire;
     </div>
   </section>
 
-  <h1 class="text-2xl font-bold mb-2">Crime Statistics in {data.outcode}</h1>
+  <h1 class="text-2xl font-bold mb-2">Crime Statistics in {data.outcode}, {data.borough}</h1>
   <p class="text-stone-500 mb-6">{data.safety.totalLast12Months.toLocaleString()} recorded crimes over the last 12 months, within roughly 1 mile of the area centre.</p>
 
   <section class="mb-8">
