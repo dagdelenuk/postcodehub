@@ -1,0 +1,183 @@
+---
+import type { Place } from "../lib/types";
+import type { PlaceCategoryDef } from "../lib/place-categories";
+import PlaceCard from "./PlaceCard.astro";
+
+interface Props {
+  cat: PlaceCategoryDef;
+  items: Place[];
+}
+
+const { cat, items } = Astro.props;
+const mapPoints = items.map((p) => ({ name: p.name, lat: p.latitude, lon: p.longitude }));
+---
+
+<section class="mb-8" data-place-type-block data-place-kind={cat.key}>
+  <div class="flex items-center justify-between mb-3 gap-2">
+    <h2 class="text-lg font-semibold">{cat.label} ({items.length})</h2>
+    <div class="inline-flex items-center gap-0.5 rounded-full border border-stone-200 bg-white p-0.5 shrink-0" data-place-view-toggle data-map-id={cat.key}>
+      <button type="button" data-place-view="cards" aria-pressed="true" aria-label={`Show ${cat.label} as cards`} title="Card view" class="view-btn is-active">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2.5" y="2.5" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.4" />
+          <rect x="11.5" y="2.5" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.4" />
+          <rect x="2.5" y="11.5" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.4" />
+          <rect x="11.5" y="11.5" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.4" />
+        </svg>
+      </button>
+      <button type="button" data-place-view="map" aria-pressed="false" aria-label={`Show ${cat.label} on a map`} title="Map view" class="view-btn">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 18s6-6.5 6-11a6 6 0 1 0-12 0c0 4.5 6 11 6 11Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+          <circle cx="10" cy="7" r="2" stroke="currentColor" stroke-width="1.4" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="hidden rounded-lg border border-stone-200 overflow-hidden mb-3 relative isolate" data-place-map-wrap data-map-id={cat.key}>
+    <div class="h-72 sm:h-96 w-full" data-place-map-canvas></div>
+  </div>
+
+  <div class="grid gap-3 sm:grid-cols-2" data-place-cards data-map-id={cat.key}>
+    {items.map((place) => <PlaceCard place={place} />)}
+  </div>
+</section>
+<script type="application/json" data-place-map-json={cat.key} set:html={JSON.stringify(mapPoints)} />
+
+<style>
+  .view-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 9999px;
+    color: #a8a29e;
+    transition: background-color 0.15s, color 0.15s;
+  }
+  .view-btn:hover {
+    background: #f5f5f4;
+  }
+  .view-btn.is-active {
+    background: #ecfdf5;
+    color: #065f46;
+  }
+  /* Leaflet builds its own DOM at runtime, outside Astro's scoped-style
+     attribute - rules targeting it must be :global. */
+  [data-place-map-wrap] :global(.leaflet-container) {
+    font-family: inherit;
+  }
+</style>
+
+<script>
+  interface MapPoint {
+    name: string;
+    lat: number;
+    lon: number;
+  }
+
+  // Leaflet has no npm dependency here - it's loaded from a CDN <script> in
+  // LeafletAssets.astro, so its global is typed loosely rather than via
+  // Leaflet's own (unavailable) type package.
+  declare global {
+    interface Window {
+      L: any;
+    }
+  }
+
+  let leafletReady: Promise<any> | undefined;
+
+  // Never assume script load order: this block is compiled to a deferred ES
+  // module by Astro, while the Leaflet CDN <script defer> in LeafletAssets.astro
+  // is an independent, separately-scheduled request. Poll instead.
+  function whenLeafletReady(): Promise<any> {
+    leafletReady ??= new Promise((resolve, reject) => {
+      if (window.L) {
+        resolve(window.L);
+        return;
+      }
+      let waited = 0;
+      const id = setInterval(() => {
+        if (window.L) {
+          clearInterval(id);
+          resolve(window.L);
+        } else if ((waited += 50) > 10000) {
+          clearInterval(id);
+          reject(new Error("Leaflet failed to load"));
+        }
+      }, 50);
+    });
+    return leafletReady;
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-place-view-toggle]").forEach((toggle) => {
+    const id = toggle.dataset.mapId!;
+    const cards = document.querySelector<HTMLElement>(`[data-place-cards][data-map-id="${id}"]`);
+    const wrap = document.querySelector<HTMLElement>(`[data-place-map-wrap][data-map-id="${id}"]`);
+    const canvas = wrap?.querySelector<HTMLElement>("[data-place-map-canvas]");
+    const buttons = [...toggle.querySelectorAll<HTMLButtonElement>("[data-place-view]")];
+    if (!cards || !wrap || !canvas) return;
+
+    let map: any = null;
+
+    // Leaflet measures its container at construction time, and again
+    // whenever this observer fires - required because the map starts inside
+    // a hidden box, and PlacesFilters can also hide/reshow this whole
+    // section independently of which view (cards/map) it's currently on.
+    new ResizeObserver(() => {
+      if (map && canvas.clientWidth > 0 && canvas.clientHeight > 0) map.invalidateSize();
+    }).observe(canvas);
+
+    async function show(view: string) {
+      cards!.classList.toggle("hidden", view === "map");
+      wrap!.classList.toggle("hidden", view !== "map");
+      for (const btn of buttons) {
+        const active = btn.dataset.placeView === view;
+        btn.classList.toggle("is-active", active);
+        btn.setAttribute("aria-pressed", String(active));
+      }
+      if (view !== "map") return;
+
+      if (!map) {
+        let L: Window["L"];
+        try {
+          L = await whenLeafletReady();
+        } catch {
+          return; // fall back silently to cards rather than leaving a blank box
+        }
+        const dataEl = document.querySelector<HTMLScriptElement>(`[data-place-map-json="${id}"]`);
+        const points = JSON.parse(dataEl?.textContent ?? "[]") as MapPoint[];
+
+        map = L.map(canvas, { scrollWheelZoom: false });
+        // Donated, rate-limited tile server - fine for lazy, user-initiated
+        // maps like these, but not meant for heavy production traffic. If
+        // that ever becomes a concern, swap for self-hosted tiles or a
+        // provider like MapTiler/Stadia Maps/Carto (free tiers available).
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        const markers = points.map((p) => {
+          // textContent, not bindPopup(string) - place names are OSM user
+          // data, avoid interpreting them as HTML.
+          const el = document.createElement("div");
+          el.textContent = p.name;
+          return L.marker([p.lat, p.lon]).bindPopup(el);
+        });
+
+        if (markers.length > 0) {
+          const group = L.featureGroup(markers).addTo(map);
+          // maxZoom caps the 1-marker case (e.g. a single market), where the
+          // bounds are a zero-area point and Leaflet would otherwise snap to
+          // a street-level zoom with no context.
+          map.fitBounds(group.getBounds(), { padding: [24, 24], maxZoom: 16 });
+        }
+      }
+      map.invalidateSize();
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => show(btn.dataset.placeView!));
+    });
+  });
+</script>

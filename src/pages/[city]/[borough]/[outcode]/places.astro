@@ -1,6 +1,7 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import PlaceCard from "../../../../components/PlaceCard.astro";
+import LeafletAssets from "../../../../components/LeafletAssets.astro";
+import PlaceCategorySection from "../../../../components/PlaceCategorySection.astro";
 import PlacesFilters from "../../../../components/PlacesFilters.astro";
 import { displayPlaceName, getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 import { PLACE_CATEGORIES } from "../../../../lib/place-categories";
@@ -33,25 +34,13 @@ const total = data.places.places.length;
 >
   <h1 class="text-2xl font-bold mb-4">Places in {placeName} - {data.outcode} ({total})</h1>
 
+  <LeafletAssets />
   <PlacesFilters counts={counts} />
 
   {
     PLACE_CATEGORIES.map((cat) => {
       const items = data.places.places.filter((p) => p.category === cat.key);
-      return (
-        items.length > 0 && (
-          <section class="mb-8" data-place-type-block data-place-kind={cat.key}>
-            <h2 class="text-lg font-semibold mb-3">
-              {cat.label} ({items.length})
-            </h2>
-            <div class="grid gap-3 sm:grid-cols-2">
-              {items.map((place) => (
-                <PlaceCard place={place} />
-              ))}
-            </div>
-          </section>
-        )
-      );
+      return items.length > 0 && <PlaceCategorySection cat={cat} items={items} />;
     })
   }
 

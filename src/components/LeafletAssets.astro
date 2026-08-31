@@ -1,0 +1,22 @@
+---
+// Loads Leaflet once per page - render this a single time, not inside a
+// loop of per-category components. Pinned version with SRI hashes; if you
+// bump the version, recompute both hashes (e.g.
+// `curl -sfL <url> | openssl dgst -sha384 -binary | openssl base64 -A`) - a
+// stale/wrong hash silently blocks the asset with no visible error beyond
+// a browser console integrity warning.
+---
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H"
+  crossorigin="anonymous"
+  is:inline
+/>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH"
+  crossorigin="anonymous"
+  defer
+  is:inline></script>
