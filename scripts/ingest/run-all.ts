@@ -15,10 +15,11 @@ const STEPS = [
   "fetch-crime.ts",
   "fetch-police-stations.ts",
   "fetch-fire-stations.ts",
+  "fetch-places.ts",
   "fetch-property.ts",
   "fetch-representatives.ts",
   "fetch-planning.ts",
-  "seed-places-events-history.ts",
+  "seed-events-history.ts",
   "fetch-banner-images.ts",
   "build-outcode-data.ts",
 ];

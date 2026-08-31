@@ -2937,16 +2937,448 @@
   "places": {
     "places": [
       {
-        "name": "Valentines Park",
+        "name": "Uphall Recreation Ground",
         "category": "park",
-        "address": "Ilford",
-        "description": "A large Victorian park surrounding the historic Valentines Mansion."
+        "address": "",
+        "postcode": "IG1 2EP",
+        "latitude": 51.5531944,
+        "longitude": 0.0693424,
+        "website": "https://my.redbridge.gov.uk/map/parks-and-open-spaces/uphall-recreation-ground",
+        "distanceKm": 1.1
       },
       {
-        "name": "Hainault Forest Country Park",
+        "name": "Loxford Park",
         "category": "park",
-        "address": "Romford Road, Hainault, IG7 4QJ",
-        "description": "A surviving fragment of the ancient Forest of Essex, with woodland, a lake, and a small farm park."
+        "address": "",
+        "postcode": "IG1 2XE",
+        "latitude": 51.5483685,
+        "longitude": 0.0813848,
+        "website": "https://visionrcl.org.uk/centre/loxford-park/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Wanstead Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E11 2LT",
+        "latitude": 51.5679663,
+        "longitude": 0.0386568,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Barking Park",
+        "category": "park",
+        "address": "",
+        "postcode": "IG1 2NT",
+        "latitude": 51.5456951,
+        "longitude": 0.0852744,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Wanstead Flats",
+        "category": "park",
+        "address": "",
+        "postcode": "E11 3QR",
+        "latitude": 51.5596801,
+        "longitude": 0.021889,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Valentines Park",
+        "category": "park",
+        "address": "",
+        "postcode": "IG1 4SB",
+        "latitude": 51.5690067,
+        "longitude": 0.070845,
+        "website": "https://www.valentines.org.uk/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "City of London Cemetery Church",
+        "category": "place-of-worship",
+        "address": "Wanstead Park Avenue, London",
+        "postcode": "E12 5EN",
+        "latitude": 51.560244,
+        "longitude": 0.0450348,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "St Luke's Church",
+        "category": "place-of-worship",
+        "address": "14 Baxter Road, Ilford",
+        "postcode": "IG1 2HN",
+        "latitude": 51.5489076,
+        "longitude": 0.0718467,
+        "website": "http://stluke-ilford.org.uk",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Hospital Chapel of St Mary and St Thomas",
+        "category": "place-of-worship",
+        "address": "48 Ilford Hill, Ilford",
+        "postcode": "IG1 2AT",
+        "latitude": 51.5579643,
+        "longitude": 0.0692996,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Ilford Methodist Church",
+        "category": "place-of-worship",
+        "address": "58A Ilford Lane, Ilford",
+        "postcode": "IG1 2JZ",
+        "latitude": 51.5554994,
+        "longitude": 0.0712503,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "category": "place-of-worship",
+        "address": "2-4 Audrey Road, Ilford",
+        "postcode": "IG1 2DY",
+        "latitude": 51.5562792,
+        "longitude": 0.0706462,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Clementswood Baptist Church",
+        "category": "place-of-worship",
+        "address": "132 Ilford Lane, Ilford",
+        "postcode": "IG1 2LG",
+        "latitude": 51.553178,
+        "longitude": 0.0729923,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Cineworld",
+        "category": "culture",
+        "address": "",
+        "postcode": "IG1 1BP",
+        "latitude": 51.5574848,
+        "longitude": 0.073899,
+        "website": "https://www.cineworld.co.uk/cinemas/london-ilford/060",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Redbridge Museum",
+        "category": "culture",
+        "address": "Clements Road, Ilford",
+        "postcode": "IG1 1EA",
+        "latitude": 51.558088,
+        "longitude": 0.075381,
+        "website": "https://www.redbridge.gov.uk/leisure-sport-and-the-arts/redbridge-museum/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Kenneth More Theatre",
+        "category": "culture",
+        "address": "7-19 Oakfield Road, Ilford",
+        "postcode": "IG1 1BT",
+        "latitude": 51.5585435,
+        "longitude": 0.0751829,
+        "website": "https://www.kmtheatre.co.uk/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "The Temple",
+        "category": "culture",
+        "address": "",
+        "postcode": "E11 2LT",
+        "latitude": 51.5678079,
+        "longitude": 0.0422276,
+        "website": "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/epping-forest/where-to-go-in-epping-forest/the-temple",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Dairy Wing",
+        "category": "culture",
+        "address": "",
+        "postcode": "IG1 4XA",
+        "latitude": 51.5721472,
+        "longitude": 0.0660958,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "The Wanstead Curtain",
+        "category": "culture",
+        "address": "",
+        "postcode": "E11 2AT",
+        "latitude": 51.580801,
+        "longitude": 0.0246373,
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Mercato Metropolitano Ilford",
+        "category": "market",
+        "address": "3 Chadwick Road, Ilford",
+        "postcode": "IG1 1EQ",
+        "latitude": 51.5581098,
+        "longitude": 0.0739303,
+        "website": "https://mercatometropolitano.com/mm-ilford/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Redbridge Central Library",
+        "category": "library",
+        "address": "Clements Road, Ilford",
+        "postcode": "IG1 1EA",
+        "latitude": 51.5580614,
+        "longitude": 0.0753621,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Aldersbrook Library",
+        "category": "library",
+        "address": "2a Park Road, London",
+        "postcode": "E12 5HQ",
+        "latitude": 51.5633737,
+        "longitude": 0.033044,
+        "distanceKm": 2
+      },
+      {
+        "name": "Gants Hill Library",
+        "category": "library",
+        "address": "490 Cranbrook Road, Ilford",
+        "postcode": "IG2 6LA",
+        "latitude": 51.5775635,
+        "longitude": 0.0699174,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Wanstead Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E11 2RX",
+        "latitude": 51.5758271,
+        "longitude": 0.0252928,
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Goodmayes Library",
+        "category": "library",
+        "address": "76 Goodmayes Lane, Ilford",
+        "postcode": "IG3 9QB",
+        "latitude": 51.5593946,
+        "longitude": 0.1089951,
+        "distanceKm": 4
+      },
+      {
+        "name": "The Library @ Clayhall",
+        "category": "library",
+        "address": "1 Claybury Broadway, Ilford",
+        "postcode": "IG5 0LQ",
+        "latitude": 51.5903062,
+        "longitude": 0.0494812,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Ilford Post Office",
+        "category": "post-office",
+        "address": "Ilford",
+        "postcode": "IG1 1DQ",
+        "latitude": 51.56033,
+        "longitude": 0.0717,
+        "website": "https://www.postoffice.co.uk/branch-finder/2050269/ilford",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Belgrave Road Post Office",
+        "category": "post-office",
+        "address": "113 Belgrave Road, Ilford",
+        "postcode": "IG1 3LG",
+        "latitude": 51.56544,
+        "longitude": 0.05587,
+        "website": "https://www.postoffice.co.uk/branch-finder/1550268/belgrave-road",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Cranbrook Road Post Office",
+        "category": "post-office",
+        "address": "126 Cranbrook Road, Ilford",
+        "postcode": "IG1 4LZ",
+        "latitude": 51.562395,
+        "longitude": 0.0682431,
+        "website": "https://www.postoffice.co.uk/branch-finder/1580264/cranbrook-road-(126)",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Gordon Road Post Office",
+        "category": "post-office",
+        "address": "139 Gordon Road, Ilford",
+        "postcode": "IG1 2XT",
+        "latitude": 51.5529777,
+        "longitude": 0.0879405,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Cranbrook Road 449 Post Office",
+        "category": "post-office",
+        "address": "449 Cranbrook Road, Ilford",
+        "postcode": "IG2 6EW",
+        "latitude": 51.5728408,
+        "longitude": 0.0649629,
+        "website": "https://www.postoffice.co.uk/branch-finder/159026x/cranbrook-road-(449)",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Ley Street Post Office",
+        "category": "post-office",
+        "address": "332 Ley Street, Ilford",
+        "postcode": "IG1 4AF",
+        "latitude": 51.56509,
+        "longitude": 0.08372,
+        "website": "https://www.postoffice.co.uk/branch-finder/1740261/ley-street",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Aldersbrook Bowls Club",
+        "category": "leisure-centre",
+        "address": "34 Aldersbrook Road, London",
+        "postcode": "E12 5DY",
+        "latitude": 51.5620696,
+        "longitude": 0.0356749,
+        "website": "https://www.aldersbrookbowlsclub.co.uk/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Ilford Club",
+        "category": "leisure-centre",
+        "address": "Ilford",
+        "postcode": "IG1 4XF",
+        "latitude": 51.5688777,
+        "longitude": 0.0677935,
+        "website": "https://theilfordclub.wordpress.com/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Cranbrook Castle Lawn Tennis & Social Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "IG1 3PG",
+        "latitude": 51.5710694,
+        "longitude": 0.0595381,
+        "website": "http://www.cranbrookcastle.co.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Fernford Clubs",
+        "category": "leisure-centre",
+        "address": "The Drive, Ilford",
+        "postcode": "IG1 3PS",
+        "latitude": 51.572722,
+        "longitude": 0.0589567,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Wanstead and Snaresbrook Cricket Club",
+        "category": "leisure-centre",
+        "address": "Overton Drive, London",
+        "postcode": "E11 2LW",
+        "latitude": 51.5697089,
+        "longitude": 0.0312573,
+        "website": "https://wanstead.hitscricket.com/Default.aspx",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Aldersbrook Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "Blake Hall Crescent, London",
+        "postcode": "E11 3RH",
+        "latitude": 51.5652219,
+        "longitude": 0.0244652,
+        "website": "https://clubspark.lta.org.uk/AldersbrookLawnTennisClub",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Wanstead Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E11 2LT",
+        "latitude": 51.5682412,
+        "longitude": 0.043472,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Kolbe Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "IG3 8LG",
+        "latitude": 51.5647965,
+        "longitude": 0.0935547,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Palmer Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "IG3 8LG",
+        "latitude": 51.5642284,
+        "longitude": 0.0951512,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "ELHAP Special Needs Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "IG8 8FG",
+        "latitude": 51.5994327,
+        "longitude": 0.0558523,
+        "website": "https://www.elhap.org.uk/",
+        "distanceKm": 5.4
+      },
+      {
+        "name": "Aldersbrook Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "E11 3RS",
+        "latitude": 51.5645465,
+        "longitude": 0.0306205,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Cardinal Heenan Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "IG1 1TE",
+        "latitude": 51.560486,
+        "longitude": 0.0826126,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Ley Street Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "IG1 4AF",
+        "latitude": 51.5650773,
+        "longitude": 0.0832426,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Uniting Friends",
+        "category": "community-hub",
+        "address": "94 Beehive Lane",
+        "postcode": "IG4 5EG",
+        "latitude": 51.5769649,
+        "longitude": 0.0601308,
+        "website": "https://unitingfriends.org.uk",
+        "distanceKm": 3
+      },
+      {
+        "name": "Wanstead House Community Association",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "E11 2NS",
+        "latitude": 51.5742506,
+        "longitude": 0.0292866,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Our Lady of Lourdes Pastoral Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "E11 2PZ",
+        "latitude": 51.5745997,
+        "longitude": 0.0244219,
+        "distanceKm": 3.3
       }
     ]
   },

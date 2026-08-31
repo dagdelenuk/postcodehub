@@ -4412,16 +4412,442 @@
   "places": {
     "places": [
       {
-        "name": "Valentines Park",
-        "category": "park",
-        "address": "Ilford",
-        "description": "A large Victorian park surrounding the historic Valentines Mansion."
+        "name": "Somerville Hall",
+        "category": "community-hub",
+        "address": "Somerville Road",
+        "postcode": "RM6 5AT",
+        "latitude": 51.5802831,
+        "longitude": 0.1277365,
+        "distanceKm": 0.5
       },
       {
-        "name": "Hainault Forest Country Park",
+        "name": "Keith Axon Centre",
+        "category": "community-hub",
+        "address": "160-170 Grove Road, Romford",
+        "postcode": "RM6 4XB",
+        "latitude": 51.5743851,
+        "longitude": 0.1213136,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Parkside Community Association",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "IG3 9PP",
+        "latitude": 51.5525405,
+        "longitude": 0.1071993,
+        "distanceKm": 3
+      },
+      {
+        "name": "Saint Laurence Church Hall",
+        "category": "community-hub",
+        "address": "Emmott Avenue, Ilford",
+        "postcode": "IG6 1AL",
+        "latitude": 51.5789829,
+        "longitude": 0.0818271,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Ley Street Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "IG1 4AF",
+        "latitude": 51.5650773,
+        "longitude": 0.0832426,
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Cardinal Heenan Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "IG1 1TE",
+        "latitude": 51.560486,
+        "longitude": 0.0826126,
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Wangey Road Chapel",
+        "category": "place-of-worship",
+        "address": "Wangey Road, Romford",
+        "postcode": "RM6 4AB",
+        "latitude": 51.5701553,
+        "longitude": 0.1295945,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Chadwell Heath Muslim Centre",
+        "category": "place-of-worship",
+        "address": "1041-1043 High Road, Romford",
+        "postcode": "RM6 4AU",
+        "latitude": 51.5696015,
+        "longitude": 0.1244983,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "London Pentecostal Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM6 4EU",
+        "latitude": 51.5683278,
+        "longitude": 0.1212997,
+        "distanceKm": 1
+      },
+      {
+        "name": "St Paul",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "IG3 8YU",
+        "latitude": 51.5683602,
+        "longitude": 0.1108309,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St Cedd's",
+        "category": "place-of-worship",
+        "address": "4 Blythswood Road, Ilford",
+        "postcode": "IG3 8SH",
+        "latitude": 51.5662027,
+        "longitude": 0.1061446,
+        "website": "http://www.saintcedd.co.uk/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Newbury Park Synagogue",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "IG3 8JZ",
+        "latitude": 51.5752382,
+        "longitude": 0.0979886,
+        "website": "https://www.jewishgen.org/JCR-uk/London/newburypark/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Barley Lane Recreation Ground",
         "category": "park",
-        "address": "Romford Road, Hainault, IG7 4QJ",
-        "description": "A surviving fragment of the ancient Forest of Essex, with woodland, a lake, and a small farm park."
+        "address": "",
+        "postcode": "RM6 4RE",
+        "latitude": 51.5676509,
+        "longitude": 0.1131207,
+        "website": "https://visionrcl.org.uk/centre/barley-lane-recreation-ground/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Seven Kings Park",
+        "category": "park",
+        "address": "",
+        "postcode": "IG3 8QP",
+        "latitude": 51.5735819,
+        "longitude": 0.1019756,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Goodmayes Park",
+        "category": "park",
+        "address": "",
+        "postcode": "IG3 9RA",
+        "latitude": 51.5600077,
+        "longitude": 0.1165168,
+        "distanceKm": 2
+      },
+      {
+        "name": "Fairlop Waters Country Park",
+        "category": "park",
+        "address": "Ilford",
+        "postcode": "IG6 3HN",
+        "latitude": 51.5927133,
+        "longitude": 0.1002983,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Ilford War Memorial Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "IG2 7JY",
+        "latitude": 51.5749069,
+        "longitude": 0.0874296,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Vicarage Lane Play Park",
+        "category": "park",
+        "address": "",
+        "postcode": "IG1 4AU",
+        "latitude": 51.5664785,
+        "longitude": 0.0879404,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Goodmayes Green Lane Post Office",
+        "category": "post-office",
+        "address": "612 Green Lane, Ilford",
+        "postcode": "IG3 9SQ",
+        "latitude": 51.5630121,
+        "longitude": 0.1106658,
+        "website": "https://www.postoffice.co.uk/branch-finder/1660268/goodmayes-green-lane",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Silverdale Parade Post Office",
+        "category": "post-office",
+        "address": "968-970 Eastern Avenue, Ilford",
+        "postcode": "IG2 7JD",
+        "latitude": 51.5774808,
+        "longitude": 0.0990092,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Seven Kings Post Office",
+        "category": "post-office",
+        "address": "663 High Road, Ilford",
+        "postcode": "IG3 8RA",
+        "latitude": 51.5645484,
+        "longitude": 0.0990536,
+        "website": "https://www.postoffice.co.uk/branch-finder/2110261/seven-kings",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Eastern Avenue Post Office",
+        "category": "post-office",
+        "address": "714 Eastern Avenue, Ilford",
+        "postcode": "IG2 6PE",
+        "latitude": 51.57342,
+        "longitude": 0.08261,
+        "website": "https://www.postoffice.co.uk/branch-finder/1600265/eastern-avenue",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Ley Street Post Office",
+        "category": "post-office",
+        "address": "332 Ley Street, Ilford",
+        "postcode": "IG1 4AF",
+        "latitude": 51.56509,
+        "longitude": 0.08372,
+        "website": "https://www.postoffice.co.uk/branch-finder/1740261/ley-street",
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Gordon Road Post Office",
+        "category": "post-office",
+        "address": "139 Gordon Road, Ilford",
+        "postcode": "IG1 2XT",
+        "latitude": 51.5529777,
+        "longitude": 0.0879405,
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Goodmayes Library",
+        "category": "library",
+        "address": "76 Goodmayes Lane, Ilford",
+        "postcode": "IG3 9QB",
+        "latitude": 51.5593946,
+        "longitude": 0.1089951,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Fullwell Cross Library",
+        "category": "library",
+        "address": "140 High Street, Ilford",
+        "postcode": "IG6 2EA",
+        "latitude": 51.5931559,
+        "longitude": 0.0851933,
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Hainault Library",
+        "category": "library",
+        "address": "",
+        "postcode": "IG7 4DD",
+        "latitude": 51.6079663,
+        "longitude": 0.1042784,
+        "distanceKm": 4
+      },
+      {
+        "name": "Gants Hill Library",
+        "category": "library",
+        "address": "490 Cranbrook Road, Ilford",
+        "postcode": "IG2 6LA",
+        "latitude": 51.5775635,
+        "longitude": 0.0699174,
+        "distanceKm": 4.1
+      },
+      {
+        "name": "Redbridge Central Library",
+        "category": "library",
+        "address": "Clements Road, Ilford",
+        "postcode": "IG1 1EA",
+        "latitude": 51.5580614,
+        "longitude": 0.0753621,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "The Library @ Clayhall",
+        "category": "library",
+        "address": "1 Claybury Broadway, Ilford",
+        "postcode": "IG5 0LQ",
+        "latitude": 51.5903062,
+        "longitude": 0.0494812,
+        "distanceKm": 5.8
+      },
+      {
+        "name": "Palmer Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "IG3 8LG",
+        "latitude": 51.5642284,
+        "longitude": 0.0951512,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Kolbe Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "IG3 8LG",
+        "latitude": 51.5647965,
+        "longitude": 0.0935547,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "ELHAP Special Needs Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "IG8 8FG",
+        "latitude": 51.5994327,
+        "longitude": 0.0558523,
+        "website": "https://www.elhap.org.uk/",
+        "distanceKm": 5.7
+      },
+      {
+        "name": "Wanstead Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E11 2LT",
+        "latitude": 51.5682412,
+        "longitude": 0.043472,
+        "distanceKm": 6
+      },
+      {
+        "name": "Fairlop Waters Sailing Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "IG6 3HN",
+        "latitude": 51.5944092,
+        "longitude": 0.0993263,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Fairlop R/C Car Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "IG6 3HN",
+        "latitude": 51.5942381,
+        "longitude": 0.0991173,
+        "website": "https://www.facebook.com/FairlopCarClub/",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Fairlop Outdoor Activity Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "IG6 3HX",
+        "latitude": 51.5979098,
+        "longitude": 0.1041607,
+        "distanceKm": 3
+      },
+      {
+        "name": "Powerleague Fairlop",
+        "category": "leisure-centre",
+        "address": "Forest Road, Ilford",
+        "postcode": "IG6 3HJ",
+        "latitude": 51.5988909,
+        "longitude": 0.101371,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Redbridge Cycling Centre",
+        "category": "leisure-centre",
+        "address": "Forest Road, Ilford",
+        "postcode": "IG6 3HP",
+        "latitude": 51.6048236,
+        "longitude": 0.1299945,
+        "website": "https://www.redbridgecyclingcentre.co.uk/",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "London Marathon Playing Fields",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "IG6 3FP",
+        "latitude": 51.6002484,
+        "longitude": 0.0978609,
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Redbridge Museum",
+        "category": "culture",
+        "address": "Clements Road, Ilford",
+        "postcode": "IG1 1EA",
+        "latitude": 51.558088,
+        "longitude": 0.075381,
+        "website": "https://www.redbridge.gov.uk/leisure-sport-and-the-arts/redbridge-museum/",
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Kenneth More Theatre",
+        "category": "culture",
+        "address": "7-19 Oakfield Road, Ilford",
+        "postcode": "IG1 1BT",
+        "latitude": 51.5585435,
+        "longitude": 0.0751829,
+        "website": "https://www.kmtheatre.co.uk/",
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Cineworld",
+        "category": "culture",
+        "address": "",
+        "postcode": "IG1 1BP",
+        "latitude": 51.5574848,
+        "longitude": 0.073899,
+        "website": "https://www.cineworld.co.uk/cinemas/london-ilford/060",
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Dairy Wing",
+        "category": "culture",
+        "address": "",
+        "postcode": "IG1 4XA",
+        "latitude": 51.5721472,
+        "longitude": 0.0660958,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "The Temple",
+        "category": "culture",
+        "address": "",
+        "postcode": "E11 2LT",
+        "latitude": 51.5678079,
+        "longitude": 0.0422276,
+        "website": "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/epping-forest/where-to-go-in-epping-forest/the-temple",
+        "distanceKm": 6.1
+      },
+      {
+        "name": "The Wanstead Curtain",
+        "category": "culture",
+        "address": "",
+        "postcode": "E11 2AT",
+        "latitude": 51.580801,
+        "longitude": 0.0246373,
+        "distanceKm": 7.3
+      },
+      {
+        "name": "Mercato Metropolitano Ilford",
+        "category": "market",
+        "address": "3 Chadwick Road, Ilford",
+        "postcode": "IG1 1EQ",
+        "latitude": 51.5581098,
+        "longitude": 0.0739303,
+        "website": "https://mercatometropolitano.com/mm-ilford/",
+        "distanceKm": 4.3
       }
     ]
   },

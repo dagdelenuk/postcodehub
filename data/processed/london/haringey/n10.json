@@ -4513,16 +4513,507 @@
   "places": {
     "places": [
       {
-        "name": "Alexandra Palace",
-        "category": "community-hub",
-        "address": "Alexandra Park",
-        "description": "A Victorian entertainment venue on a hilltop park, site of the BBC's first TV broadcasts in 1936."
+        "name": "Our Lady of Muswell",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "N10 1PN",
+        "latitude": 51.5937463,
+        "longitude": -0.1448446,
+        "distanceKm": 0.2
       },
       {
-        "name": "Bruce Castle Museum",
+        "name": "Muswell Hill District Synagogue",
+        "category": "place-of-worship",
+        "address": "Tetherdown, London",
+        "postcode": "N10 1ND",
+        "latitude": 51.5934036,
+        "longitude": -0.1503501,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St Andrew's",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N10 2DE",
+        "latitude": 51.5977717,
+        "longitude": -0.1424422,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Wilton Community Church",
+        "category": "place-of-worship",
+        "address": "Wilton Road, London",
+        "postcode": "N10 1LT",
+        "latitude": 51.5976419,
+        "longitude": -0.1513219,
+        "website": "https://wiltonchurch.org.uk",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "United Reformed Church",
+        "category": "place-of-worship",
+        "address": "Queen's Avenue, London",
+        "postcode": "N10 3NU",
+        "latitude": 51.5915702,
+        "longitude": -0.148789,
+        "website": "https://sites.google.com/site/mhurc01/home",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Muswell Hill Baptist Church",
+        "category": "place-of-worship",
+        "address": "Dukes Avenue, London",
+        "postcode": "N10 2PT",
+        "latitude": 51.5915063,
+        "longitude": -0.14122,
+        "website": "http://mhbc.org.uk",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Muswell Hill Methodist Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N10 1PL",
+        "latitude": 51.5934836,
+        "longitude": -0.1462605,
+        "website": "https://clubspark.lta.org.uk/MuswellHillMethodistLTC",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Muswell Hill Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N10 1NB",
+        "latitude": 51.5922451,
+        "longitude": -0.1482507,
+        "website": "https://muswellhillbowlsclub.co.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Total Boxer",
+        "category": "leisure-centre",
+        "address": "Muswell Hill Broadway, London",
+        "postcode": "N10 3RU",
+        "latitude": 51.5901393,
+        "longitude": -0.1436908,
+        "website": "https://totalboxer.com",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "The Muswell Hill Club",
+        "category": "leisure-centre",
+        "address": "140 Fortis Green, London",
+        "postcode": "N10 3EF",
+        "latitude": 51.5911867,
+        "longitude": -0.1525308,
+        "website": "https://www.muswellhillclub.com",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Bowling Green",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N11 2AU",
+        "latitude": 51.6030322,
+        "longitude": -0.1336963,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Wood Vale Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N10 3DJ",
+        "latitude": 51.584336,
+        "longitude": -0.1366827,
+        "website": "https://clubspark.lta.org.uk/WoodValeLTC",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Mail Boxes Etc",
+        "category": "post-office",
+        "address": "Muswell Hill Broadway, London",
+        "postcode": "N10 1DJ",
+        "latitude": 51.5917689,
+        "longitude": -0.1425629,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Muswell Hill Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "N10 2WJ",
+        "latitude": 51.5922678,
+        "longitude": -0.1427292,
+        "website": "https://www.postoffice.co.uk/branch-finder/2070049/muswell-hill",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Hornsey Post Office",
+        "category": "post-office",
+        "address": "24 High Street, London",
+        "postcode": "N8 7PB",
+        "latitude": 51.5872185,
+        "longitude": -0.1205545,
+        "website": "https://www.postoffice.co.uk/branch-finder/0930040/hornsey",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Highgate Post Office",
+        "category": "post-office",
+        "address": "Archway Road, London",
+        "postcode": "N6 4EJ",
+        "latitude": 51.5778512,
+        "longitude": -0.1478866,
+        "website": "https://www.postoffice.co.uk/branch-finder/0840041/highgate",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Raj News",
+        "category": "post-office",
+        "address": "",
+        "postcode": "N11 2DN",
+        "latitude": 51.6070337,
+        "longitude": -0.1236173,
+        "distanceKm": 2
+      },
+      {
+        "name": "Crouch End Post Office",
+        "category": "post-office",
+        "address": "28-29 Topsfield Parade, Tottenham Lane, London",
+        "postcode": "N8 8QB",
+        "latitude": 51.5805611,
+        "longitude": -0.1228096,
+        "website": "https://www.postoffice.co.uk/branch-finder/2050048/crouch-end",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Muswell Hill Library",
+        "category": "library",
+        "address": "Queen's Avenue, London",
+        "postcode": "N10 3PE",
+        "latitude": 51.5911304,
+        "longitude": -0.1432651,
+        "website": "https://www.haringey.gov.uk/libraries-sport-and-leisure/libraries/muswell-hill-library",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Alexandra Park Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N22 7UN",
+        "latitude": 51.598828,
+        "longitude": -0.1367933,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Highgate Library",
+        "category": "library",
+        "address": "1 Shepherd's Hill, London",
+        "postcode": "N6 5QJ",
+        "latitude": 51.5771278,
+        "longitude": -0.1437262,
+        "website": "https://www.haringey.gov.uk/libraries-sport-and-leisure/libraries/highgate-library",
+        "distanceKm": 2
+      },
+      {
+        "name": "Hornsey Library",
+        "category": "library",
+        "address": "Haringey Park, London",
+        "postcode": "N8 9JA",
+        "latitude": 51.5782312,
+        "longitude": -0.1219168,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Wood Green Central Library",
+        "category": "library",
+        "address": "187-197A High Road, London",
+        "postcode": "N22 6XD",
+        "latitude": 51.5956405,
+        "longitude": -0.109702,
+        "website": "https://new.haringey.gov.uk/libraries/libraries-haringey/wood-green-library",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Stroud Green & Harringay Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N4 4QP",
+        "latitude": 51.5776046,
+        "longitude": -0.1064846,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Everyman Cinema",
+        "category": "culture",
+        "address": "Fortis Green Road, London",
+        "postcode": "N10 3HP",
+        "latitude": 51.5895948,
+        "longitude": -0.1462083,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Alexandra Palace Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "N22 7AY",
+        "latitude": 51.5945562,
+        "longitude": -0.1312121,
+        "website": "https://www.alexandrapalace.com/theatre/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Jacksons Lane",
+        "category": "culture",
+        "address": "269a Archway Road, London",
+        "postcode": "N6 5AA",
+        "latitude": 51.5766112,
+        "longitude": -0.1453716,
+        "website": "https://www.jacksonslane.org.uk/",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "ArtHouse Crouch End",
+        "category": "culture",
+        "address": "159A Tottenham Lane, London",
+        "postcode": "N8 9BT",
+        "latitude": 51.5818917,
+        "longitude": -0.1200548,
+        "website": "https://www.arthousecrouchend.co.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Crouch End Picturehouse",
+        "category": "culture",
+        "address": "",
+        "postcode": "N8 9FD",
+        "latitude": 51.5816373,
+        "longitude": -0.1208243,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Hornsey Town Hall",
+        "category": "culture",
+        "address": "",
+        "postcode": "N8 9BQ",
+        "latitude": 51.5787914,
+        "longitude": -0.1225527,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Muswell Hill Centre",
         "category": "community-hub",
-        "address": "Lordship Lane, Tottenham, N17 8NU",
-        "description": "A 16th-century manor house, now a free museum of local history for Haringey."
+        "address": "",
+        "postcode": "N10 3QJ",
+        "latitude": 51.5895001,
+        "longitude": -0.1417657,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Royal British Legion",
+        "category": "community-hub",
+        "address": "Muswell Hill Road, London",
+        "postcode": "N10 3NG",
+        "latitude": 51.587791,
+        "longitude": -0.1458977,
+        "website": "https://counties.britishlegion.org.uk/counties/greater-london/london-branches/muswell-hill-and-highgate",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Community Use For the Old Station",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "N22 7AY",
+        "latitude": 51.59478,
+        "longitude": -0.1319119,
+        "website": "https://www.cufos.org.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Golf Course Allotments Community Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "N11 2AS",
+        "latitude": 51.6045782,
+        "longitude": -0.1345813,
+        "website": "https://www.golfcourseallotments.co.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Freehold Community Centre",
+        "category": "community-hub",
+        "address": "9 Alexandra Road, London",
+        "postcode": "N10 2EY",
+        "latitude": 51.6079854,
+        "longitude": -0.142983,
+        "website": "http://www.freeholdcommunity.org/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Komkar Kurdish Advice Centre",
+        "category": "community-hub",
+        "address": "1 Eastfield Road, London",
+        "postcode": "N8 7AD",
+        "latitude": 51.5897883,
+        "longitude": -0.1210315,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Little Dinosaurs",
+        "category": "playground",
+        "address": "Alexandra Palace Way, London",
+        "postcode": "N10 2DP",
+        "latitude": 51.5912331,
+        "longitude": -0.1380567,
+        "website": "https://www.littledinosaurs.co.uk",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Tree Swing",
+        "category": "playground",
+        "address": "",
+        "postcode": "N10 3DS",
+        "latitude": 51.5875633,
+        "longitude": -0.1430589,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Campsbourne Play Centre",
+        "category": "playground",
+        "address": "",
+        "postcode": "N8 7AJ",
+        "latitude": 51.5918892,
+        "longitude": -0.1194156,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Wood Green Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N22 7SX",
+        "latitude": 51.5965911,
+        "longitude": -0.1172134,
+        "distanceKm": 2
+      },
+      {
+        "name": "Clarendon Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N8 0FF",
+        "latitude": 51.5920585,
+        "longitude": -0.1119362,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Fairland Park Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N8 0NE",
+        "latitude": 51.5849789,
+        "longitude": -0.1062934,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Alexandra Park",
+        "category": "park",
+        "address": "",
+        "postcode": "N22 7AY",
+        "latitude": 51.593217,
+        "longitude": -0.1293193,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Muswell Hill Playing Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "N10 1QT",
+        "latitude": 51.6013274,
+        "longitude": -0.1580697,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Albert Road Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "N22 7AQ",
+        "latitude": 51.6016679,
+        "longitude": -0.1315633,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Hollickwood Park",
+        "category": "park",
+        "address": "",
+        "postcode": "N10 2EY",
+        "latitude": 51.6075831,
+        "longitude": -0.1419411,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Priory Common",
+        "category": "park",
+        "address": "",
+        "postcode": "N8 7EY",
+        "latitude": 51.5869191,
+        "longitude": -0.1278707,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Cherry Tree Wood",
+        "category": "park",
+        "address": "",
+        "postcode": "N2 0NL",
+        "latitude": 51.5856274,
+        "longitude": -0.1604147,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Myddleton Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N22 8ND",
+        "latitude": 51.6064094,
+        "longitude": -0.1170323,
+        "website": "https://www.myddletonroadmarket.co.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Dovecote Avenue",
+        "category": "market",
+        "address": "",
+        "postcode": "N22 6DH",
+        "latitude": 51.5926729,
+        "longitude": -0.1056624,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Stroud Green Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N4 3HB",
+        "latitude": 51.5686867,
+        "longitude": -0.1077279,
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Seven Sisters Market",
+        "category": "market",
+        "address": "245-253 High Road, London",
+        "postcode": "N15 5BT",
+        "latitude": 51.5834032,
+        "longitude": -0.0726974,
+        "website": "https://sevensisters.market",
+        "distanceKm": 5.2
+      },
+      {
+        "name": "Holcombe Market",
+        "category": "market",
+        "address": "1 Holcombe Road, London",
+        "postcode": "N17 9AA",
+        "latitude": 51.5929555,
+        "longitude": -0.0693816,
+        "website": "https://haringey.gov.uk/leisure-parks-culture/culture/welcome-to-tottenham-tales/tottenham-tales/holcombe-market",
+        "distanceKm": 5.3
       }
     ]
   },

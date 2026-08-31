@@ -4322,16 +4322,518 @@
   "places": {
     "places": [
       {
-        "name": "Natural History Museum",
-        "category": "community-hub",
-        "address": "South Kensington",
-        "description": "One of the world's great natural history collections, housed in a landmark Victorian building."
+        "name": "St Luke's Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SW3 6NH",
+        "latitude": 51.4896323,
+        "longitude": -0.1693619,
+        "distanceKm": 0.2
       },
       {
-        "name": "Science Museum",
+        "name": "Dovehouse Green",
+        "category": "park",
+        "address": "",
+        "postcode": "SW3 5UF",
+        "latitude": 51.4874897,
+        "longitude": -0.1698106,
+        "website": "https://www.londonremembers.com/subjects/dovehouse-green",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Royal Avenue",
+        "category": "park",
+        "address": "",
+        "postcode": "SW3 4QF",
+        "latitude": 51.4894225,
+        "longitude": -0.1615739,
+        "website": "https://www.rbkc.gov.uk/parks-leisure-and-culture/parks/royal-avenue",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Burton Court",
+        "category": "park",
+        "address": "",
+        "postcode": "SW3 4QJ",
+        "latitude": 51.4883355,
+        "longitude": -0.1597474,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Roper's Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "SW3 5AX",
+        "latitude": 51.482803,
+        "longitude": -0.1717931,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Chelsea Quay",
+        "category": "park",
+        "address": "",
+        "postcode": "SW3 4LW",
+        "latitude": 51.4849077,
+        "longitude": -0.1539949,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "St. Luke's",
+        "category": "place-of-worship",
+        "address": "Sydney Street, London",
+        "postcode": "SW3 6NH",
+        "latitude": 51.4896346,
+        "longitude": -0.1693943,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Kingdom Hall of Jehovah's Witnesses",
+        "category": "place-of-worship",
+        "address": "23 Pond Place, London",
+        "postcode": "SW3 6QR",
+        "latitude": 51.4913085,
+        "longitude": -0.1704625,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "The Chelsea Synagogue",
+        "category": "place-of-worship",
+        "address": "Smith Terrace, London",
+        "postcode": "SW3 4EW",
+        "latitude": 51.4881793,
+        "longitude": -0.1628085,
+        "website": "https://www.theus.org.uk/chelsea",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Chelsea Methodist Church",
+        "category": "place-of-worship",
+        "address": "155a King's Road",
+        "postcode": "SW3 5RP",
+        "latitude": 51.4877044,
+        "longitude": -0.1674799,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Christ Church",
+        "category": "place-of-worship",
+        "address": "Christchurch Street, London",
+        "postcode": "SW3 4AS",
+        "latitude": 51.4856509,
+        "longitude": -0.1638701,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Saint Mary's",
+        "category": "place-of-worship",
+        "address": "Draycott Terrace, London",
+        "postcode": "SW3 2QR",
+        "latitude": 51.4932377,
+        "longitude": -0.1615374,
+        "website": "https://www.stmaryscadoganstreet.co.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Luke's Chuch PLayground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW3 3SD",
+        "latitude": 51.4901117,
+        "longitude": -0.1692513,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Ifield Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW10 9AS",
+        "latitude": 51.485439,
+        "longitude": -0.189349,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Princess Diana Memorial Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W2 4RU",
+        "latitude": 51.5090522,
+        "longitude": -0.1881889,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W14 8EL",
+        "latitude": 51.5022537,
+        "longitude": -0.206106,
+        "distanceKm": 3
+      },
+      {
+        "name": "nature play garden",
+        "category": "playground",
+        "address": "",
+        "postcode": "W14 8EP",
+        "latitude": 51.5031219,
+        "longitude": -0.20702,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Russell Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W14 8GE",
+        "latitude": 51.4997978,
+        "longitude": -0.2119998,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Chelsea Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW3 5EE",
+        "latitude": 51.4873496,
+        "longitude": -0.1685063,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Bibliothèque Quentin Blake",
+        "category": "library",
+        "address": "32 Harrington Road, London",
+        "postcode": "SW7 2DX",
+        "latitude": 51.4941307,
+        "longitude": -0.1771524,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "La Médiathèque",
+        "category": "library",
+        "address": "17 Queensberry Place",
+        "postcode": "SW7 2EB",
+        "latitude": 51.4945387,
+        "longitude": -0.1773004,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Dana Research Centre and Library",
+        "category": "library",
+        "address": "165 Queen's Gate, London",
+        "postcode": "SW7 5HD",
+        "latitude": 51.4971028,
+        "longitude": -0.1790422,
+        "website": "https://www.sciencemuseum.org.uk/researchers/dana-research-centre-and-library",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Brompton Library",
+        "category": "library",
+        "address": "208 Old Brompton Road, London",
+        "postcode": "SW5 0BS",
+        "latitude": 51.4900365,
+        "longitude": -0.1882974,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Kensington Central Library",
+        "category": "library",
+        "address": "12 Phillimore Walk, London",
+        "postcode": "W8 7RX",
+        "latitude": 51.5014344,
+        "longitude": -0.1944214,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Chelsea Farmers Market",
+        "category": "market",
+        "address": "125-135 Sydney Street, London",
+        "postcode": "SW3 6NR",
+        "latitude": 51.4881956,
+        "longitude": -0.1698794,
+        "website": "https://chelseafarmersmkt.org/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Duke of York Square Fine Food Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SW3 4UG",
+        "latitude": 51.490885,
+        "longitude": -0.1604196,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "South Kensington (Saturdays) Farmers' Market",
+        "category": "market",
+        "address": "Bute Street, London",
+        "postcode": "SW7 3EY",
+        "latitude": 51.4936007,
+        "longitude": -0.1763468,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "High Street Kensington Farmers' Market",
+        "category": "market",
+        "address": "Phillimore Walk, London",
+        "postcode": "W8 7RX",
+        "latitude": 51.5012358,
+        "longitude": -0.1942248,
+        "website": "https://www.lfm.org.uk/markets/high-street-kensington/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Notting Hill Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W8 7LX",
+        "latitude": 51.5084879,
+        "longitude": -0.1956314,
+        "website": "https://www.lfm.org.uk/markets/notting-hill/",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Portobello Market",
+        "category": "market",
+        "address": "Portobello Road, London",
+        "postcode": "W11 1LU",
+        "latitude": 51.5160858,
+        "longitude": -0.2051174,
+        "website": "https://www.portobelloroad.co.uk/",
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Chelsea Sports Centre",
+        "category": "leisure-centre",
+        "address": "Chelsea Manor Street, London",
+        "postcode": "SW3 5PL",
+        "latitude": 51.4873076,
+        "longitude": -0.1679271,
+        "website": "https://www.better.org.uk/leisure-centre/london/kensington-and-chelsea/chelsea-sports-centre",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Campden Hill Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "9 Aubrey Walk, London",
+        "postcode": "W8 7JH",
+        "latitude": 51.5059014,
+        "longitude": -0.2010862,
+        "website": "https://chltc.co.uk/",
+        "distanceKm": 3
+      },
+      {
+        "name": "Holland Park Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "1 Addison Road, London",
+        "postcode": "W11 4UT",
+        "latitude": 51.5051314,
+        "longitude": -0.2101194,
+        "website": "https://hollandparkltc.co.uk/",
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Kensington Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Silchester Road, London",
+        "postcode": "W10 6EX",
+        "latitude": 51.5136371,
+        "longitude": -0.214057,
+        "website": "https://www.better.org.uk/leisure-centre/london/kensington-and-chelsea/kensington-leisure-centre",
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Westway Sports & Fitness",
+        "category": "leisure-centre",
+        "address": "3-5 Thorpe Close, London",
+        "postcode": "W10 5XL",
+        "latitude": 51.5182897,
+        "longitude": -0.2084052,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "BaySixty6",
+        "category": "leisure-centre",
+        "address": "Acklam Road, London",
+        "postcode": "W10 5YU",
+        "latitude": 51.520517,
+        "longitude": -0.2048623,
+        "website": "https://baysixty6.com",
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Dove Studios",
+        "category": "culture",
+        "address": "105 Dovehouse Street",
+        "postcode": "SW3 6JZ",
+        "latitude": 51.4895214,
+        "longitude": -0.1722437,
+        "website": "https://www.dove-studios.com/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "National Army Museum",
+        "category": "culture",
+        "address": "London",
+        "postcode": "SW3 4HT",
+        "latitude": 51.4862396,
+        "longitude": -0.1602867,
+        "website": "https://www.nam.ac.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Everyman Chelsea",
+        "category": "culture",
+        "address": "279 King's Road, London",
+        "postcode": "SW3 5AU",
+        "latitude": 51.4855904,
+        "longitude": -0.1731524,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Carlyle's House",
+        "category": "culture",
+        "address": "24 Cheyne Row, London",
+        "postcode": "SW3 5HL",
+        "latitude": 51.4841139,
+        "longitude": -0.1697922,
+        "website": "https://www.nationaltrust.org.uk/carlyles-house",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Cadogan Hall",
+        "category": "culture",
+        "address": "5 Sloane Terrace, London",
+        "postcode": "SW1X 9DQ",
+        "latitude": 51.4937972,
+        "longitude": -0.1572408,
+        "website": "https://www.cadoganhall.com/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Royal Court Theatre",
+        "category": "culture",
+        "address": "Sloane Square, London",
+        "postcode": "SW1W 8AS",
+        "latitude": 51.4925742,
+        "longitude": -0.1563496,
+        "website": "https://www.royalcourttheatre.com/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Hall of Remembrance",
         "category": "community-hub",
-        "address": "Exhibition Road, SW7 2DD",
-        "description": "One of the world's leading science museums, part of South Kensington's cluster of free national museums."
+        "address": "Flood Street, London",
+        "postcode": "SW3 5SY",
+        "latitude": 51.4862655,
+        "longitude": -0.165692,
+        "website": "https://www.chelseaparish.org/hallofremembrance.htm",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "The Hut",
+        "category": "community-hub",
+        "address": "Alpha Place, London",
+        "postcode": "SW3 5AS",
+        "latitude": 51.4861467,
+        "longitude": -0.1658148,
+        "website": "https://www.chelseaparish.org/thehut.htm",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Ismaili Centre",
+        "category": "community-hub",
+        "address": "1-7 Cromwell Gardens",
+        "postcode": "SW7 2SL",
+        "latitude": 51.4955182,
+        "longitude": -0.1730483,
+        "website": "https://the.ismaili/london/about-london",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "St Joseph's Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW7 2RR",
+        "latitude": 51.4966465,
+        "longitude": -0.1703004,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Institut français du Royaume-Uni (Language Centre)",
+        "category": "community-hub",
+        "address": "13 Cromwell Place, London",
+        "postcode": "SW7 2JX",
+        "latitude": 51.4946585,
+        "longitude": -0.1751887,
+        "website": "https://www.institut-francais.org.uk/french-courses/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Institut français du Royaume-Uni",
+        "category": "community-hub",
+        "address": "17;13-15 Queensberry Place",
+        "postcode": "SW7 2DW",
+        "latitude": 51.4946161,
+        "longitude": -0.1771073,
+        "website": "https://www.institut-francais.org.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "28 Old Brompton Road, London",
+        "postcode": "SW7 3DL",
+        "latitude": 51.4936939,
+        "longitude": -0.1752632,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Worlds End Post Office",
+        "category": "post-office",
+        "address": "351-353 King's Road, London",
+        "postcode": "SW3 5EX",
+        "latitude": 51.4839236,
+        "longitude": -0.1766245,
+        "website": "https://www.postoffice.co.uk/branch-finder/0040088/worlds-end",
+        "distanceKm": 1
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "405 King's Road, London",
+        "postcode": "SW10 0LR",
+        "latitude": 51.4828409,
+        "longitude": -0.1777098,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Gloucester Road Post Office",
+        "category": "post-office",
+        "address": "118 Gloucester Road, London",
+        "postcode": "SW7 4SP",
+        "latitude": 51.4951683,
+        "longitude": -0.1831504,
+        "website": "https://www.postoffice.co.uk/branch-finder/1030086/gloucester-road",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "56 Gloucester Road, London",
+        "postcode": "SW7 4UB",
+        "latitude": 51.4979157,
+        "longitude": -0.1839492,
+        "website": "https://www.mbe.co.uk/londonkensington",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "235 Earl's Court Road, London",
+        "postcode": "SW5 9FE",
+        "latitude": 51.4897859,
+        "longitude": -0.1902119,
+        "website": "https://www.mbe.co.uk/londonearlscourt",
+        "distanceKm": 1.6
       }
     ]
   },

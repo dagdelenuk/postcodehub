@@ -4780,16 +4780,434 @@
   "places": {
     "places": [
       {
-        "name": "Eastbrookend Country Park",
-        "category": "park",
-        "address": "Dagenham",
-        "description": "A large country park with lakes and nature trails on the site of former gravel pits."
+        "name": "Bethel Christian Centre",
+        "category": "place-of-worship",
+        "address": "170-172 Bennetts Castle Lane, Dagenham",
+        "postcode": "RM8 3XP",
+        "latitude": 51.554974,
+        "longitude": 0.1263626,
+        "distanceKm": 0.3
       },
       {
-        "name": "Valence House Museum",
+        "name": "Catholic Church of St Vincent, Becontree",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM8 2QB",
+        "latitude": 51.5592534,
+        "longitude": 0.1220529,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Vincent's Catholic Church, Becontree",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM8 2QB",
+        "latitude": 51.5592563,
+        "longitude": 0.1220255,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Thomas's Church, Becontree",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM8 2PA",
+        "latitude": 51.5590976,
+        "longitude": 0.1228942,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Saint Peter's Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM8 3DG",
+        "latitude": 51.5608744,
+        "longitude": 0.1329381,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Elisabeth's, Becontree",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM8 2XT",
+        "latitude": 51.551378,
+        "longitude": 0.1283267,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Valence Library",
+        "category": "library",
+        "address": "",
+        "postcode": "RM8 3HT",
+        "latitude": 51.5585398,
+        "longitude": 0.1338078,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Markyate Road",
+        "category": "library",
+        "address": "",
+        "postcode": "RM8 2LP",
+        "latitude": 51.5452279,
+        "longitude": 0.1172644,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Robert Jayes Library",
+        "category": "library",
+        "address": "High Road, Romford",
+        "postcode": "RM6 6AS",
+        "latitude": 51.5726754,
+        "longitude": 0.1429725,
+        "website": "https://www.lbbd.gov.uk/libraries-and-local-history/our-libraries/library-opening-times-and-information/chadwell-heath-and",
+        "distanceKm": 2
+      },
+      {
+        "name": "Wantz Library",
+        "category": "library",
+        "address": "Rainham Road North, Dagenham",
+        "postcode": "RM10 7DX",
+        "latitude": 51.5526081,
+        "longitude": 0.1601005,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Dagenham Library",
+        "category": "library",
+        "address": "",
+        "postcode": "RM10 8QZ",
+        "latitude": 51.5404619,
+        "longitude": 0.1483284,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Marks Gate Library",
+        "category": "library",
+        "address": "",
+        "postcode": "RM6 5NJ",
+        "latitude": 51.5853372,
+        "longitude": 0.1359589,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Valence House",
+        "category": "culture",
+        "address": "Becontree Avenue, Dagenham",
+        "postcode": "RM8 3HT",
+        "latitude": 51.5582384,
+        "longitude": 0.1342924,
+        "website": "https://valencehousecollections.co.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Vue Dagenham",
+        "category": "culture",
+        "address": "Cook Road, Dagenham",
+        "postcode": "RM9 6UQ",
+        "latitude": 51.5326613,
+        "longitude": 0.1349168,
+        "website": "https://www.myvue.com/cinema/dagenham/whats-on",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Eastbury Manor House",
+        "category": "culture",
+        "address": "Eastbury Square, Barking",
+        "postcode": "IG11 9RY",
+        "latitude": 51.5343068,
+        "longitude": 0.0994317,
+        "website": "https://www.nationaltrust.org.uk/visit/london/eastbury-manor-house",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "A House for Artists",
+        "category": "culture",
+        "address": "",
+        "postcode": "IG11 8SE",
+        "latitude": 51.5397555,
+        "longitude": 0.0778012,
+        "website": "https://createlondon.org/event/a-house-for-artists/",
+        "distanceKm": 4
+      },
+      {
+        "name": "The Broadway Theatre, Barking",
+        "category": "culture",
+        "address": "Broadway, Barking",
+        "postcode": "IG11 7LS",
+        "latitude": 51.5359833,
+        "longitude": 0.0772176,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "The Broadway",
+        "category": "culture",
+        "address": "",
+        "postcode": "IG11 7HW",
+        "latitude": 51.5355012,
+        "longitude": 0.0777824,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Valence Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM8 3HT",
+        "latitude": 51.5574242,
+        "longitude": 0.136027,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Mayesbrook Park",
+        "category": "park",
+        "address": "",
+        "postcode": "IG11 9BB",
+        "latitude": 51.5448772,
+        "longitude": 0.108806,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "St. Chad's Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM6 6YB",
+        "latitude": 51.5750276,
+        "longitude": 0.1314713,
+        "distanceKm": 2
+      },
+      {
+        "name": "Goresbrook Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM9 6HJ",
+        "latitude": 51.5385325,
+        "longitude": 0.1427173,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Goresbrook Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM9 6AT",
+        "latitude": 51.5360745,
+        "longitude": 0.1364931,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Goresbrook Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM9 6LJ",
+        "latitude": 51.535528,
+        "longitude": 0.1410855,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Wood Lane Post Office",
+        "category": "post-office",
+        "address": "72 Wood Lane, Dagenham",
+        "postcode": "RM8 2NT",
+        "latitude": 51.5515884,
+        "longitude": 0.129559,
+        "website": "https://www.postoffice.co.uk/branch-finder/0750263/wood-lane",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Burnside Market Post Office",
+        "category": "post-office",
+        "address": "Rowallen Parade, Dagenham",
+        "postcode": "RM8 1XU",
+        "latitude": 51.5628373,
+        "longitude": 0.1211336,
+        "website": "https://www.postoffice.co.uk/branch-finder/0650269/burnside-market",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Dagenham Post Office",
+        "category": "post-office",
+        "address": "Wood Lane, Dagenham",
+        "postcode": "RM8 3NH",
+        "latitude": 51.5543824,
+        "longitude": 0.1420866,
+        "website": "https://www.postoffice.co.uk/branch-finder/0810266/dagenham",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Becontree Avenue Post Office",
+        "category": "post-office",
+        "address": "2 Becontree Avenue, Dagenham",
+        "postcode": "RM8 2UB",
+        "latitude": 51.5518983,
+        "longitude": 0.1147155,
+        "website": "https://www.postoffice.co.uk/branch-finder/3504581/becontree-avenue",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Beacontree Heath Post Office",
+        "category": "post-office",
+        "address": "Whalebone Lane South, Dagenham",
+        "postcode": "RM8 1BB",
+        "latitude": 51.5632368,
+        "longitude": 0.1469834,
+        "website": "https://www.postoffice.co.uk/branch-finder/207026x/beacontree-heath",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Chadwell Heath Post Office",
+        "category": "post-office",
+        "address": "4-5 Tutor Parade, Romford",
+        "postcode": "RM6 6PS",
+        "latitude": 51.5710233,
+        "longitude": 0.1329678,
+        "website": "https://www.postoffice.co.uk/branch-finder/2000261/chadwell-heath",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Kingsley Hall",
         "category": "community-hub",
-        "address": "Becontree Avenue, Dagenham, RM8 3HT",
-        "description": "A moated medieval manor house, now a free local history museum for the borough."
+        "address": "",
+        "postcode": "RM9 5NL",
+        "latitude": 51.5507791,
+        "longitude": 0.1318709,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "The Vibe",
+        "category": "community-hub",
+        "address": "195-211 Becontree Avenue, Dagenham",
+        "postcode": "RM8 2UT",
+        "latitude": 51.5565355,
+        "longitude": 0.1196878,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Holy Family Catholic Social Club",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "RM9 5XJ",
+        "latitude": 51.551252,
+        "longitude": 0.1436971,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Barking and Dagenham Community Music Centre",
+        "category": "community-hub",
+        "address": "Fanshawe Crescent, Dagenham",
+        "postcode": "RM9 5QA",
+        "latitude": 51.546048,
+        "longitude": 0.1405626,
+        "website": "https://www.lbbd.gov.uk/community-music-service",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Fitya Centre",
+        "category": "community-hub",
+        "address": "1221 High Road, Romford",
+        "postcode": "RM6 4AL",
+        "latitude": 51.5708783,
+        "longitude": 0.1296348,
+        "website": "https://www.fityacentre.com/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Heath Parks Community Halls",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "RM10 7PR",
+        "latitude": 51.5556559,
+        "longitude": 0.1523998,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Becontree Heath Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM10 7FH",
+        "latitude": 51.5606873,
+        "longitude": 0.1488578,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Jim Peters Stadium",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM8 2JP",
+        "latitude": 51.5467594,
+        "longitude": 0.1111226,
+        "website": "https://www.everyoneactive.com/centre/jim-peters-stadium/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "West Ham United Training Ground",
+        "category": "leisure-centre",
+        "address": "Rush Green Road",
+        "postcode": "RM8 1EG",
+        "latitude": 51.5649138,
+        "longitude": 0.1592405,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Barking Rugby Union Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM9 6BJ",
+        "latitude": 51.5331041,
+        "longitude": 0.1298772,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Dagenham Park Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM10 9QH",
+        "latitude": 51.5352295,
+        "longitude": 0.154952,
+        "distanceKm": 3
+      },
+      {
+        "name": "Benita Yoga",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "IG11 7BT",
+        "latitude": 51.5318448,
+        "longitude": 0.0756903,
+        "distanceKm": 4.6
+      },
+      {
+        "name": "Goresbrook Park Play Area",
+        "category": "playground",
+        "address": "Dagenham Road",
+        "postcode": "RM9 6JJ",
+        "latitude": 51.5367016,
+        "longitude": 0.1422102,
+        "website": "https://www.lbbd.gov.uk/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Baynes Crescent Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM10 9AF",
+        "latitude": 51.538061,
+        "longitude": 0.1665336,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Tyrell Gardens Play Area",
+        "category": "playground",
+        "address": "Tyrell Gardens",
+        "postcode": "RM10 9XZ",
+        "latitude": 51.5353663,
+        "longitude": 0.1653647,
+        "website": "https://www.lbbd.gov.uk/",
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Little Bees Playpark",
+        "category": "playground",
+        "address": "",
+        "postcode": "IG11 0NT",
+        "latitude": 51.5257414,
+        "longitude": 0.1232069,
+        "distanceKm": 3.5
       }
     ]
   },

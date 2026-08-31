@@ -6607,16 +6607,469 @@
   "places": {
     "places": [
       {
-        "name": "Wembley Stadium",
-        "category": "leisure-centre",
-        "address": "Wembley",
-        "description": "England's national football stadium, with an 90,000 capacity."
+        "name": "Kenton Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "HA3 0XF",
+        "latitude": 51.58597,
+        "longitude": -0.3077102,
+        "distanceKm": 1.3
       },
       {
-        "name": "BAPS Shri Swaminarayan Mandir",
+        "name": "Kenton Spiritualist Church",
+        "category": "place-of-worship",
+        "address": "35 Churchill Avenue, Harrow",
+        "postcode": "HA3 0AX",
+        "latitude": 51.5799323,
+        "longitude": -0.3161361,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Haridham",
+        "category": "place-of-worship",
+        "address": "63 Woodcock Hill, Harrow",
+        "postcode": "HA3 0JH",
+        "latitude": 51.5821559,
+        "longitude": -0.3061376,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "All Saints",
+        "category": "place-of-worship",
+        "address": "Harrow",
+        "postcode": "HA3 0UG",
+        "latitude": 51.5860935,
+        "longitude": -0.2929395,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Saint Cuthberts Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "HA0 3QY",
+        "latitude": 51.5696072,
+        "longitude": -0.320667,
+        "website": "http://www.stcuths.org.uk/",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Queensbury Methodist Church",
+        "category": "place-of-worship",
+        "address": "Beverley Drive, Edgware",
+        "postcode": "HA8 5ND",
+        "latitude": 51.5951367,
+        "longitude": -0.2799047,
+        "website": "https://www.barnetmethodist.co.uk/queensbury/",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Woodcock Park",
+        "category": "park",
+        "address": "",
+        "postcode": "HA3 0XH",
+        "latitude": 51.5839543,
+        "longitude": -0.3030197,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Tenterden Sports Ground",
+        "category": "park",
+        "address": "Woodcock Hill, Harrow",
+        "postcode": "HA3 0PQ",
+        "latitude": 51.5745805,
+        "longitude": -0.296949,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Leybourne Road Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW9 9QP",
+        "latitude": 51.5868169,
+        "longitude": -0.2812233,
+        "website": "https://www.brent.gov.uk/services-for-residents/culture-leisure-and-parks/parks-and-allotments/park-finder/leybourne-road/",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Preston Park",
+        "category": "park",
+        "address": "",
+        "postcode": "HA9 8RG",
+        "latitude": 51.570589,
+        "longitude": -0.302724,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Eton Grove Open Space",
+        "category": "park",
+        "address": "Rugby Road, London",
+        "postcode": "NW9 9LD",
+        "latitude": 51.5920203,
+        "longitude": -0.2758245,
+        "website": "http://www.brent.gov.uk/services-for-residents/sport,-leisure-and-parks/parks/park-finder/eton-grove/",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Sudbury Court",
+        "category": "park",
+        "address": "Pasture Road",
+        "postcode": "HA0 3JH",
+        "latitude": 51.5648322,
+        "longitude": -0.3180356,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Library",
+        "category": "library",
+        "address": "",
+        "postcode": "HA1 3TP",
+        "latitude": 51.5777093,
+        "longitude": -0.3227232,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Kingsbury Library Plus",
+        "category": "library",
+        "address": "",
+        "postcode": "NW9 9HE",
+        "latitude": 51.5859819,
+        "longitude": -0.276464,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Barham Park Library",
+        "category": "library",
+        "address": "666 Harrow Road",
+        "postcode": "HA0 2HB",
+        "latitude": 51.55218,
+        "longitude": -0.311442,
+        "distanceKm": 4.7
+      },
+      {
+        "name": "Wembley Library",
+        "category": "library",
+        "address": "Engineers Way, Wembley",
+        "postcode": "HA9 0FJ",
+        "latitude": 51.5588361,
+        "longitude": -0.2810964,
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Ealing Road Library",
+        "category": "library",
+        "address": "",
+        "postcode": "HA0 4AZ",
+        "latitude": 51.5495042,
+        "longitude": -0.2974072,
+        "distanceKm": 5.2
+      },
+      {
+        "name": "Neasden Library Plus",
+        "category": "library",
+        "address": "",
+        "postcode": "NW10 1QJ",
+        "latitude": 51.5598343,
+        "longitude": -0.2515019,
+        "distanceKm": 6.1
+      },
+      {
+        "name": "Lindsay Park playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA3 9TG",
+        "latitude": 51.5822364,
+        "longitude": -0.2848099,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Springfield Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW9 0EA",
+        "latitude": 51.5849214,
+        "longitude": -0.2493131,
+        "distanceKm": 5
+      },
+      {
+        "name": "Owen Way Playground",
+        "category": "playground",
+        "address": "2 Owen Way, London",
+        "postcode": "NW10 0UB",
+        "latitude": 51.5507011,
+        "longitude": -0.2655672,
+        "distanceKm": 6.1
+      },
+      {
+        "name": "St. Raphaels Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW10 0TN",
+        "latitude": 51.5492783,
+        "longitude": -0.2679127,
+        "distanceKm": 6.2
+      },
+      {
+        "name": "Rainbow Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW2 6QS",
+        "latitude": 51.5606009,
+        "longitude": -0.223822,
+        "distanceKm": 7.7
+      },
+      {
+        "name": "Brondesbury Park Open Space",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW2 5JL",
+        "latitude": 51.5460619,
+        "longitude": -0.2245266,
+        "distanceKm": 8.5
+      },
+      {
+        "name": "Preston Road Post Office",
+        "category": "post-office",
+        "address": "267-269 Preston Road, Harrow",
+        "postcode": "HA3 0PU",
+        "latitude": 51.57246,
+        "longitude": -0.2948517,
+        "distanceKm": 3
+      },
+      {
+        "name": "Royal Mail",
+        "category": "post-office",
+        "address": "271 Preston Road, Harrow",
+        "postcode": "HA3 0QA",
+        "latitude": 51.5725504,
+        "longitude": -0.2948412,
+        "distanceKm": 3
+      },
+      {
+        "name": "Kingsbury Post Office",
+        "category": "post-office",
+        "address": "Kingsbury Road, London",
+        "postcode": "NW9 9DU",
+        "latitude": 51.5857802,
+        "longitude": -0.2754167,
+        "website": "https://www.postoffice.co.uk/branch-finder/0160059/kingsbury",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Sudbury Post Office and Store",
+        "category": "post-office",
+        "address": "791 Harrow Road, Wembley",
+        "postcode": "HA0 2LP",
+        "latitude": 51.5557635,
+        "longitude": -0.316994,
+        "website": "https://www.postoffice.co.uk/branch-finder/1800205/harrow-road",
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Brent Newsagents & Post Office",
+        "category": "post-office",
+        "address": "6 Grand Parade, Wembley",
+        "postcode": "HA9 9JS",
+        "latitude": 51.5656802,
+        "longitude": -0.2777244,
+        "website": "https://www.postoffice.co.uk/branch-finder/1530208/barn-hill",
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Church Lane Post Office",
+        "category": "post-office",
+        "address": "Church Lane, London",
+        "postcode": "NW9 8LU",
+        "latitude": 51.5750261,
+        "longitude": -0.2621555,
+        "website": "https://www.postoffice.co.uk/branch-finder/0930059/church-lane",
+        "distanceKm": 4.6
+      },
+      {
+        "name": "FitnessFirst",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW9 9HN",
+        "latitude": 51.5852333,
+        "longitude": -0.2799092,
+        "distanceKm": 3
+      },
+      {
+        "name": "The Arch Climbing Wall: Arch North",
+        "category": "leisure-centre",
+        "address": "5 Burnt Oak Broadway, Edgware",
+        "postcode": "HA8 5LD",
+        "latitude": 51.5988083,
+        "longitude": -0.2657352,
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Parkside Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA0 3HF",
+        "latitude": 51.558791,
+        "longitude": -0.3174489,
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Vale Farm Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA0 3HG",
+        "latitude": 51.5594145,
+        "longitude": -0.3164266,
+        "website": "https://www.everyoneactive.com/centre/vale-farm-sports-centre/",
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Wembley & Sudbury Tennis, Squash and Social Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA0 3AA",
+        "latitude": 51.5548254,
+        "longitude": -0.3056758,
+        "website": "https://wstsclub.co.uk/",
+        "distanceKm": 4.5
+      },
+      {
+        "name": "Wembley Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Empire Way, Wembley",
+        "postcode": "HA9 0EF",
+        "latitude": 51.5604915,
+        "longitude": -0.2828809,
+        "distanceKm": 4.6
+      },
+      {
+        "name": "Sattavis Patidar Centre",
         "category": "community-hub",
-        "address": "105-119 Brentfield Road, Neasden, NW10 8LD",
-        "description": "The largest traditional Hindu stone temple outside India, opened in 1995 and known as Neasden Temple."
+        "address": "",
+        "postcode": "HA9 9PE",
+        "latitude": 51.5661349,
+        "longitude": -0.2837323,
+        "distanceKm": 4
+      },
+      {
+        "name": "The Jennings Hall",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW9 8QG",
+        "latitude": 51.5782346,
+        "longitude": -0.2656219,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Chalkhill Community Centre (\"Metropolitan\")",
+        "category": "community-hub",
+        "address": "113 Chalkhill Road, Wembley",
+        "postcode": "HA9 9FX",
+        "latitude": 51.5637849,
+        "longitude": -0.276308,
+        "distanceKm": 4.6
+      },
+      {
+        "name": "St Joseph's Social Club",
+        "category": "community-hub",
+        "address": "Empire Way, Wembley",
+        "postcode": "HA9 0RJ",
+        "latitude": 51.5573723,
+        "longitude": -0.2865226,
+        "distanceKm": 4.7
+      },
+      {
+        "name": "205 (Wembley) Detachment ACF",
+        "category": "community-hub",
+        "address": "607 Harrow Road, Wembley",
+        "postcode": "HA0 2EF",
+        "latitude": 51.5514594,
+        "longitude": -0.3062424,
+        "website": "https://armycadets.com/county/middlesex-and-north-west-london-sector-acf/",
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Patidar House",
+        "category": "community-hub",
+        "address": "London Road, Wembley",
+        "postcode": "HA9 7HQ",
+        "latitude": 51.5523008,
+        "longitude": -0.295027,
+        "distanceKm": 5
+      },
+      {
+        "name": "East Lane Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "HA0 3FA",
+        "latitude": 51.5572123,
+        "longitude": -0.314717,
+        "distanceKm": 4.1
+      },
+      {
+        "name": "Fresh Arts",
+        "category": "culture",
+        "address": "1 Humphry Repton Lane, Wembley",
+        "postcode": "HA9 0GL",
+        "latitude": 51.5600346,
+        "longitude": -0.2824975,
+        "distanceKm": 4.6
+      },
+      {
+        "name": "Cineworld Wembley",
+        "category": "culture",
+        "address": "Wembley Park Boulevard, Wembley",
+        "postcode": "HA9 0TG",
+        "latitude": 51.5563016,
+        "longitude": -0.2839283,
+        "website": "https://www.cineworld.co.uk/cinemas/london-wembley/082",
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Brent Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW10 2SF",
+        "latitude": 51.5467447,
+        "longitude": -0.2289943,
+        "website": "https://www.brent.gov.uk/libraries-arts-and-heritage/brent-museum-and-archives",
+        "distanceKm": 8.2
+      },
+      {
+        "name": "Lexi Cinema",
+        "category": "culture",
+        "address": "194b Chamberlayne Road, London",
+        "postcode": "NW10 3JU",
+        "latitude": 51.5375275,
+        "longitude": -0.2224753,
+        "website": "https://thelexicinema.co.uk/",
+        "distanceKm": 9.3
+      },
+      {
+        "name": "Kiln Theatre",
+        "category": "culture",
+        "address": "269 Kilburn High Road, London",
+        "postcode": "NW6 7JR",
+        "latitude": 51.543133,
+        "longitude": -0.2002986,
+        "website": "https://kilntheatre.com",
+        "distanceKm": 10.1
+      },
+      {
+        "name": "Queen's Park Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW6 6NU",
+        "latitude": 51.5367078,
+        "longitude": -0.2058295,
+        "distanceKm": 10.2
+      },
+      {
+        "name": "Kilburn Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW6 6PJ",
+        "latitude": 51.5388883,
+        "longitude": -0.1951477,
+        "distanceKm": 10.6
       }
     ]
   },

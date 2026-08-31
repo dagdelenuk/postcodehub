@@ -3874,16 +3874,471 @@
   "places": {
     "places": [
       {
-        "name": "Walpole Park",
-        "category": "park",
-        "address": "Ealing",
-        "description": "A historic park surrounding Pitzhanger Manor, designed in part by Sir John Soane."
+        "name": "Hanwell Library",
+        "category": "library",
+        "address": "Cherington Road",
+        "postcode": "W7 3HL",
+        "latitude": 51.5098799,
+        "longitude": -0.3360454,
+        "distanceKm": 0.3
       },
       {
-        "name": "Ealing Studios",
+        "name": "West Ealing Community Library",
+        "category": "library",
+        "address": "Melbourne Avenue, London",
+        "postcode": "W13 9BA",
+        "latitude": 51.5093573,
+        "longitude": -0.3245923,
+        "website": "https://wecl.org.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Northfields Community Library",
+        "category": "library",
+        "address": "Northfield Avenue, London",
+        "postcode": "W5 4UA",
+        "latitude": 51.4990383,
+        "longitude": -0.314188,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Ealing Central Library",
+        "category": "library",
+        "address": "",
+        "postcode": "W5 5JY",
+        "latitude": 51.5123207,
+        "longitude": -0.3024731,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Greenford Library",
+        "category": "library",
+        "address": "",
+        "postcode": "UB6 9LG",
+        "latitude": 51.5298234,
+        "longitude": -0.3550859,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Jubilee Gardens Library",
+        "category": "library",
+        "address": "",
+        "postcode": "UB1 2TJ",
+        "latitude": 51.5213867,
+        "longitude": -0.3691008,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "St Mellitus Church",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "W7 3BA",
+        "latitude": 51.5093337,
+        "longitude": -0.3349352,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Hanwell Seventh Day Adventist Church",
+        "category": "place-of-worship",
+        "address": "Greenford Avenue, London",
+        "postcode": "W7 3QP",
+        "latitude": 51.5144017,
+        "longitude": -0.3375638,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Catholic Church of Our Lady and St Joseph",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "W7 3QW",
+        "latitude": 51.5083767,
+        "longitude": -0.3346546,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "The Apostolic Catholic Assyrian Church of the East",
+        "category": "place-of-worship",
+        "address": "Westminster Road, London",
+        "postcode": "W7 3TU",
+        "latitude": 51.5079544,
+        "longitude": -0.3391048,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Gurdwara London Sikh Centre Ealing",
+        "category": "place-of-worship",
+        "address": "Sawyers Lawn, London",
+        "postcode": "W13 0JP",
+        "latitude": 51.51753,
+        "longitude": -0.3297509,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Jamia Masjid UKIM",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "W13 0SQ",
+        "latitude": 51.5104278,
+        "longitude": -0.326266,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "St Mellitus Church Hall",
         "category": "community-hub",
-        "address": "Ealing Green, W5 5EP",
-        "description": "The oldest continuously working film studio facility in the world, in operation since 1902."
+        "address": "Church Road, London",
+        "postcode": "W7 3BB",
+        "latitude": 51.5097268,
+        "longitude": -0.3349106,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Muslim Welfare Association Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "W7 3PS",
+        "latitude": 51.5100954,
+        "longitude": -0.3286767,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "William Hobbayne Centre",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "W7 2HB",
+        "latitude": 51.5062411,
+        "longitude": -0.3381023,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Hanwell Community Centre",
+        "category": "community-hub",
+        "address": "Westcott Crescent, London",
+        "postcode": "W7 1PD",
+        "latitude": 51.5209583,
+        "longitude": -0.33554,
+        "distanceKm": 1
+      },
+      {
+        "name": "Colin Bryant Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "W13 9HB",
+        "latitude": 51.5085983,
+        "longitude": -0.3203814,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Copley Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "W7 1DT",
+        "latitude": 51.523374,
+        "longitude": -0.3321614,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Hanwell Post Office",
+        "category": "post-office",
+        "address": "139 Uxbridge Road, London",
+        "postcode": "W7 3SZ",
+        "latitude": 51.5089524,
+        "longitude": -0.3372112,
+        "website": "https://www.postoffice.co.uk/branch-finder/088006x/hanwell",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Leeland Road Post Office",
+        "category": "post-office",
+        "address": "49 Broadway, London",
+        "postcode": "W13 9BP",
+        "latitude": 51.5100879,
+        "longitude": -0.3239225,
+        "website": "https://www.postoffice.co.uk/branch-finder/1400061/leeland-road",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Greenford Avenue Post Office",
+        "category": "post-office",
+        "address": "Greenford Avenue, London",
+        "postcode": "W7 3DA",
+        "latitude": 51.5223629,
+        "longitude": -0.3404766,
+        "website": "https://www.postoffice.co.uk/branch-finder/0870064/greenford-avenue",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "West Ealing Post Office",
+        "category": "post-office",
+        "address": "187 Uxbridge Road, London",
+        "postcode": "W13 9AJ",
+        "latitude": 51.5110779,
+        "longitude": -0.3176568,
+        "website": "https://www.postoffice.co.uk/branch-finder/1290061/west-ealing",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Great Greenford Post Office",
+        "category": "post-office",
+        "address": "Greenford",
+        "postcode": "UB6 9AJ",
+        "latitude": 51.5267771,
+        "longitude": -0.3522495,
+        "website": "https://www.postoffice.co.uk/branch-finder/2780208/great-greenford",
+        "distanceKm": 2
+      },
+      {
+        "name": "Pitshanger Lane Post Office",
+        "category": "post-office",
+        "address": "Pitshanger Lane, London",
+        "postcode": "W5 1QP",
+        "latitude": 51.5264718,
+        "longitude": -0.3128392,
+        "website": "https://www.postoffice.co.uk/branch-finder/0730068/pitshanger-lane",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Conolly Dell",
+        "category": "park",
+        "address": "",
+        "postcode": "W7 3JW",
+        "latitude": 51.5107318,
+        "longitude": -0.3413772,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Brent Meadow",
+        "category": "park",
+        "address": "",
+        "postcode": "UB1 3ES",
+        "latitude": 51.509574,
+        "longitude": -0.3442961,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "King George V Playing Field",
+        "category": "park",
+        "address": "",
+        "postcode": "W7 2PR",
+        "latitude": 51.5062538,
+        "longitude": -0.3394441,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Drayton Green",
+        "category": "park",
+        "address": "",
+        "postcode": "W13 0LT",
+        "latitude": 51.515292,
+        "longitude": -0.3266828,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Brent Lodge Park (Bunny Park)",
+        "category": "park",
+        "address": "",
+        "postcode": "W7 3BZ",
+        "latitude": 51.5129942,
+        "longitude": -0.3491804,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Brent River Park",
+        "category": "park",
+        "address": "",
+        "postcode": "W7 2PB",
+        "latitude": 51.5059083,
+        "longitude": -0.3444337,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "West Middlesex Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W13 0JU",
+        "latitude": 51.515354,
+        "longitude": -0.3291542,
+        "website": "https://westmiddlesexltc.co.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Elthorne Sports Centre",
+        "category": "leisure-centre",
+        "address": "Westlea Road, London",
+        "postcode": "W7 2AD",
+        "latitude": 51.4999069,
+        "longitude": -0.3310034,
+        "website": "https://www.everyoneactive.com/centre/elthorne-sports-centre/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Trailfinders Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W13 0BQ",
+        "latitude": 51.525494,
+        "longitude": -0.329737,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Warren Farm Radio Flyers",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "UB2 4NG",
+        "latitude": 51.4999907,
+        "longitude": -0.3457723,
+        "website": "https://wfrf.bmfa.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "London Pilates 4U",
+        "category": "leisure-centre",
+        "address": "20 Boston Road, London",
+        "postcode": "W7 2DG",
+        "latitude": 51.4971679,
+        "longitude": -0.3257974,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Osterley Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "UB2 4LP",
+        "latitude": 51.5013917,
+        "longitude": -0.3572199,
+        "website": "https://www.osterleysportsandwellbeingcentre.com/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Sandy Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "W7 2PR",
+        "latitude": 51.5059481,
+        "longitude": -0.3397776,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Dormers Wells Play Centre",
+        "category": "playground",
+        "address": "",
+        "postcode": "UB1 3JP",
+        "latitude": 51.5171932,
+        "longitude": -0.3609275,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Lammas Park Play Centre",
+        "category": "playground",
+        "address": "",
+        "postcode": "W13 9QD",
+        "latitude": 51.5042679,
+        "longitude": -0.3119424,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Walpole Sandpit Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "W5 5BS",
+        "latitude": 51.5091558,
+        "longitude": -0.3087153,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Walpole Toddler Sandpit",
+        "category": "playground",
+        "address": "",
+        "postcode": "W5 5BS",
+        "latitude": 51.5094842,
+        "longitude": -0.3086464,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Woods Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W5 1QE",
+        "latitude": 51.5238512,
+        "longitude": -0.3042885,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Ealing Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W13 9HH",
+        "latitude": 51.5098577,
+        "longitude": -0.323423,
+        "website": "https://www.lfm.org.uk/markets/ealing/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Acton Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W3 9NW",
+        "latitude": 51.5077876,
+        "longitude": -0.2724507,
+        "website": "https://www.actonmarket.co.uk/",
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Questors Theatre",
+        "category": "culture",
+        "address": "12 Mattock Lane, London",
+        "postcode": "W5 5BQ",
+        "latitude": 51.5115566,
+        "longitude": -0.3094722,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Pitzhanger Manor House and Gallery",
+        "category": "culture",
+        "address": "",
+        "postcode": "W5 5EQ",
+        "latitude": 51.5108862,
+        "longitude": -0.307107,
+        "website": "https://www.pitzhanger.org.uk/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Ealing Picturehouse",
+        "category": "culture",
+        "address": "",
+        "postcode": "W5 5FA",
+        "latitude": 51.5119899,
+        "longitude": -0.3068819,
+        "website": "https://picturehouses.com",
+        "distanceKm": 2
+      },
+      {
+        "name": "The Ealing Doll House",
+        "category": "culture",
+        "address": "12 Haven Green, London",
+        "postcode": "W5 2UU",
+        "latitude": 51.5158256,
+        "longitude": -0.3050594,
+        "website": "https://www.dollhousemuseums.com/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Art-K",
+        "category": "culture",
+        "address": "181 South Ealing Road",
+        "postcode": "W5 4RH",
+        "latitude": 51.4976725,
+        "longitude": -0.3054585,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Transport Museum Depot",
+        "category": "culture",
+        "address": "London",
+        "postcode": "W3 9BQ",
+        "latitude": 51.5046663,
+        "longitude": -0.2813747,
+        "website": "https://www.ltmuseum.co.uk/visit/museum-depot",
+        "distanceKm": 3.9
       }
     ]
   },

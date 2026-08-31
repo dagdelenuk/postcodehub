@@ -5814,16 +5814,468 @@
   "places": {
     "places": [
       {
-        "name": "Kingston Market Place",
+        "name": "Kingston Environment Centre",
         "category": "community-hub",
-        "address": "Kingston upon Thames",
-        "description": "A historic market place, home to the ancient Coronation Stone of Anglo-Saxon kings."
+        "address": "",
+        "postcode": "KT3 3PP",
+        "latitude": 51.398978,
+        "longitude": -0.2563681,
+        "distanceKm": 0.1
       },
       {
-        "name": "Bentall Centre",
+        "name": "Korean Culture & Arts Centre",
         "category": "community-hub",
-        "address": "Wood Street, Kingston upon Thames, KT1 1TP",
-        "description": "A large town-centre shopping centre built around the historic Bentalls department store."
+        "address": "",
+        "postcode": "KT3 4BH",
+        "latitude": 51.3998172,
+        "longitude": -0.2557982,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Wesleys",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "KT3 4HE",
+        "latitude": 51.4021787,
+        "longitude": -0.2565085,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St James Church Hall & nursery",
+        "category": "community-hub",
+        "address": "Malden Road, New Malden",
+        "postcode": "KT3 5QE",
+        "latitude": 51.3953935,
+        "longitude": -0.2548496,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Shiraz Mirza Trust Manor Park Hall",
+        "category": "community-hub",
+        "address": "Malden Road, New Malden",
+        "postcode": "KT3 6AU",
+        "latitude": 51.3873366,
+        "longitude": -0.2511541,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Berrylands Scouts",
+        "category": "community-hub",
+        "address": "Stirling Walk, Surbiton",
+        "postcode": "KT5 9HY",
+        "latitude": 51.3918302,
+        "longitude": -0.2794075,
+        "website": "https://berrylands-scouts.org.uk/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "New Malden Library",
+        "category": "library",
+        "address": "",
+        "postcode": "KT3 3LY",
+        "latitude": 51.3993078,
+        "longitude": -0.2606713,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Surbiton Library",
+        "category": "library",
+        "address": "Ewell Road, Surbiton",
+        "postcode": "KT6 6AG",
+        "latitude": 51.3927606,
+        "longitude": -0.2982184,
+        "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/surbiton",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Surbiton Library Hall",
+        "category": "library",
+        "address": "Ewell Road, Surbiton",
+        "postcode": "KT6 6AF",
+        "latitude": 51.392501,
+        "longitude": -0.2980639,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Kingston Library",
+        "category": "library",
+        "address": "",
+        "postcode": "KT1 2PS",
+        "latitude": 51.4093636,
+        "longitude": -0.3002283,
+        "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/kingston",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Nightingale Centre (Library)",
+        "category": "library",
+        "address": "",
+        "postcode": "KT2 7NB",
+        "latitude": 51.4284693,
+        "longitude": -0.2644475,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Town House",
+        "category": "library",
+        "address": "",
+        "postcode": "KT1 2EU",
+        "latitude": 51.4039913,
+        "longitude": -0.3036864,
+        "website": "https://www.kingston.ac.uk/experience/our-campuses/penrhyn-road",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "New Malden Post Office",
+        "category": "post-office",
+        "address": "150-154 High Street, New Malden",
+        "postcode": "KT3 4ER",
+        "latitude": 51.399458,
+        "longitude": -0.2552542,
+        "website": "https://www.postoffice.co.uk/branch-finder/0070238/new-malden",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Alexandra Drive Post Office",
+        "category": "post-office",
+        "address": "104 Alexandra Drive, Surbiton",
+        "postcode": "KT5 9AG",
+        "latitude": 51.3900742,
+        "longitude": -0.2824252,
+        "website": "https://www.postoffice.co.uk/branch-finder/0510238/alexandra-drive",
+        "distanceKm": 2
+      },
+      {
+        "name": "Hawks Road Post Office",
+        "category": "post-office",
+        "address": "Kingston upon Thames",
+        "postcode": "KT1 3EG",
+        "latitude": 51.4089857,
+        "longitude": -0.2915556,
+        "website": "https://www.postoffice.co.uk/branch-finder/0700231/hawks-road",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Broadway Post Office",
+        "category": "post-office",
+        "address": "Surbiton",
+        "postcode": "KT6 7HR",
+        "latitude": 51.3808865,
+        "longitude": -0.2828218,
+        "website": "https://www.postoffice.co.uk/branch-finder/055023x/broadway",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Surbiton Post Office",
+        "category": "post-office",
+        "address": "2-3 Victoria Road, Surbiton",
+        "postcode": "KT6 4JU",
+        "latitude": 51.3930526,
+        "longitude": -0.3047957,
+        "website": "https://www.postoffice.co.uk/branch-finder/1710230/surbiton",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Red Lion Road Post Office",
+        "category": "post-office",
+        "address": "165 Red Lion Road, Surbiton",
+        "postcode": "KT6 7RG",
+        "latitude": 51.3783392,
+        "longitude": -0.2920078,
+        "website": "https://www.postoffice.co.uk/branch-finder/0860239/red-lion-road",
+        "distanceKm": 3.4
+      },
+      {
+        "name": "St Joseph's Church & Hall",
+        "category": "place-of-worship",
+        "address": "1 Montem Road, New Malden",
+        "postcode": "KT3 3QW",
+        "latitude": 51.3998886,
+        "longitude": -0.2609352,
+        "website": "https://catholicnewmalden.org/",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "New Malden Methodist Church",
+        "category": "place-of-worship",
+        "address": "49 High Street, New Malden",
+        "postcode": "KT3 4BY",
+        "latitude": 51.4022098,
+        "longitude": -0.2567718,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "United Reformed Church New Malden",
+        "category": "place-of-worship",
+        "address": "Malden Road, New Malden",
+        "postcode": "KT3 6AA",
+        "latitude": 51.3978527,
+        "longitude": -0.2548171,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "New Malden Baptist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "KT3 3NX",
+        "latitude": 51.4003059,
+        "longitude": -0.2647385,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Church of St. James",
+        "category": "place-of-worship",
+        "address": "Bodley Road, New Malden",
+        "postcode": "KT3 5QE",
+        "latitude": 51.3952663,
+        "longitude": -0.2546545,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Christ Church New Malden",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "KT3 4QS",
+        "latitude": 51.4068577,
+        "longitude": -0.2574446,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Blagdon Road Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "KT3 4BD",
+        "latitude": 51.4000182,
+        "longitude": -0.2513574,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Cromwell Avenue Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "KT3 6DY",
+        "latitude": 51.3967868,
+        "longitude": -0.2509657,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Beverley Park",
+        "category": "park",
+        "address": "",
+        "postcode": "KT3 4LL",
+        "latitude": 51.4040165,
+        "longitude": -0.246243,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "The Green",
+        "category": "park",
+        "address": "",
+        "postcode": "KT3 3LD",
+        "latitude": 51.4069672,
+        "longitude": -0.2690141,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Barton Green",
+        "category": "park",
+        "address": "",
+        "postcode": "KT3 3HU",
+        "latitude": 51.4085422,
+        "longitude": -0.2643009,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Green Lane Recreation Ground",
+        "category": "park",
+        "address": "Green Lane, New Malden",
+        "postcode": "KT3 5DA",
+        "latitude": 51.3986016,
+        "longitude": -0.275031,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "The Graham Spicer Institute",
+        "category": "leisure-centre",
+        "address": "Dukes Avenue, New Malden",
+        "postcode": "KT3 4HL",
+        "latitude": 51.4029694,
+        "longitude": -0.2554071,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "New Malden Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Blagdon Road, New Malden",
+        "postcode": "KT3 4TA",
+        "latitude": 51.4002778,
+        "longitude": -0.2524441,
+        "website": "https://www.placesleisure.org/centres/malden-centre",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "New Malden Sports Club",
+        "category": "leisure-centre",
+        "address": "Somerset Close, New Malden",
+        "postcode": "KT3 5RG",
+        "latitude": 51.3933192,
+        "longitude": -0.2548377,
+        "website": "https://www.newmaldenclub.co.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Malden Lime Grove Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "KT3 3DP",
+        "latitude": 51.406325,
+        "longitude": -0.2610246,
+        "website": "https://www.maldenlimegrovebowlingclub.com/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Motspur Park",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "KT3 6RQ",
+        "latitude": 51.392984,
+        "longitude": -0.2472754,
+        "distanceKm": 1
+      },
+      {
+        "name": "LSE Sports Ground",
+        "category": "leisure-centre",
+        "address": "Windsor Avenue, New Malden",
+        "postcode": "KT3 5HB",
+        "latitude": 51.3933383,
+        "longitude": -0.270618,
+        "website": "https://info.lse.ac.uk/staff/divisions/estates-division/lse-estate/sportsground",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Dickerage Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT1 3RU",
+        "latitude": 51.4077812,
+        "longitude": -0.274466,
+        "website": "https://ymcastpaulsgroup.org/ymca-dickerage-sports-community-centre/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Knollmead Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT5 9PL",
+        "latitude": 51.3832855,
+        "longitude": -0.2663092,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Elm Road Children's Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT2 6EH",
+        "latitude": 51.4152858,
+        "longitude": -0.2966543,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Canbury Gardens Play park",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT2 5AW",
+        "latitude": 51.4175928,
+        "longitude": -0.3045104,
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Royal Park Gate Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT2 5GQ",
+        "latitude": 51.428119,
+        "longitude": -0.3108734,
+        "website": "https://www.kingston.gov.uk/directory-record/562/royal-park-gate-playground",
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Childrens Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT9 2LA",
+        "latitude": 51.3595925,
+        "longitude": -0.3015469,
+        "distanceKm": 5.4
+      },
+      {
+        "name": "Kingston Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "KT1 2PS",
+        "latitude": 51.4095749,
+        "longitude": -0.3002538,
+        "website": "https://www.kingstonheritage.org.uk/visit",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Odeon Kingston",
+        "category": "culture",
+        "address": "Clarence Street, Kingston upon Thames",
+        "postcode": "KT1 1QP",
+        "latitude": 51.4119331,
+        "longitude": -0.2992998,
+        "website": "https://www.odeon.co.uk/cinemas/kingston/",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Curzon",
+        "category": "culture",
+        "address": "",
+        "postcode": "KT1 1NY",
+        "latitude": 51.4110413,
+        "longitude": -0.3049355,
+        "website": "https://www.curzon.com/venues/kingston/",
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Rose Theatre",
+        "category": "culture",
+        "address": "24-26 High Street, Kingston upon Thames",
+        "postcode": "KT1 1HL",
+        "latitude": 51.4085969,
+        "longitude": -0.3075869,
+        "website": "https://www.rosetheatre.org",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "FUSEBOX",
+        "category": "culture",
+        "address": "2 Buckland's Wharf, Kingston upon Thames",
+        "postcode": "KT1 1TF",
+        "latitude": 51.411481,
+        "longitude": -0.3078652,
+        "website": "https://creativeyouthcharity.org/fusebox/",
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Dorich House Museum",
+        "category": "culture",
+        "address": "67 Kingston Vale, London",
+        "postcode": "SW15 3RN",
+        "latitude": 51.4333464,
+        "longitude": -0.2630286,
+        "website": "https://www.dorichhousemuseum.org.uk/",
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Kingston Market",
+        "category": "market",
+        "address": "",
+        "postcode": "KT1 1JS",
+        "latitude": 51.409835,
+        "longitude": -0.3059996,
+        "distanceKm": 3.5
       }
     ]
   },

@@ -4854,22 +4854,472 @@
   "places": {
     "places": [
       {
-        "name": "Royal Botanic Gardens, Kew",
+        "name": "Raleigh Road Recreation Ground",
         "category": "park",
-        "address": "Kew, Richmond upon Thames, TW9",
-        "description": "UNESCO World Heritage Site and the world's largest collection of living plants."
+        "address": "",
+        "postcode": "TW9 2DX",
+        "latitude": 51.4684918,
+        "longitude": -0.2903528,
+        "distanceKm": 0.2
       },
       {
-        "name": "The National Archives",
-        "category": "community-hub",
-        "address": "Kew, Richmond upon Thames, TW9",
-        "description": "The UK government's official archive, holding over 1,000 years of records."
+        "name": "North Sheen Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "TW9 4HE",
+        "latitude": 51.4710583,
+        "longitude": -0.285106,
+        "distanceKm": 0.4
       },
       {
-        "name": "Kew Palace",
+        "name": "St Luke's Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "TW9 3NN",
+        "latitude": 51.4751952,
+        "longitude": -0.2869598,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Old Deer Park",
+        "category": "park",
+        "address": "",
+        "postcode": "TW9 2SB",
+        "latitude": 51.4671036,
+        "longitude": -0.3067639,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Tangier Green",
+        "category": "park",
+        "address": "",
+        "postcode": "TW10 5DP",
+        "latitude": 51.4661225,
+        "longitude": -0.2770964,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Pesthouse Common",
+        "category": "park",
+        "address": "",
+        "postcode": "TW10 6HW",
+        "latitude": 51.4594596,
+        "longitude": -0.2886047,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Richmond Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "187 Kew Road, Richmond",
+        "postcode": "TW9 2AZ",
+        "latitude": 51.4694466,
+        "longitude": -0.2950163,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Old Deer Park Sports Ground",
+        "category": "leisure-centre",
+        "address": "187 Kew Road, Richmond",
+        "postcode": "TW9 2BB",
+        "latitude": 51.4691209,
+        "longitude": -0.2962754,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Pensford Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW9 4HQ",
+        "latitude": 51.4740642,
+        "longitude": -0.2844222,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "North Sheen Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW9 4NB",
+        "latitude": 51.4690043,
+        "longitude": -0.2828352,
+        "website": "https://www.northsheenbowlingclub.co.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Richmond Athletic Ground",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW9 2SF",
+        "latitude": 51.4668364,
+        "longitude": -0.3033641,
+        "website": "https://www.rag-events.co.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Richmond Fitness Club",
+        "category": "leisure-centre",
+        "address": "Kew Road, Richmond",
+        "postcode": "TW9 2NA",
+        "latitude": 51.4634673,
+        "longitude": -0.3017525,
+        "website": "http://www.richmondfitnessclub.co.uk",
+        "distanceKm": 1
+      },
+      {
+        "name": "Raleigh Road United Church",
+        "category": "place-of-worship",
+        "address": "Raleigh Road, Richmond",
+        "postcode": "TW9 2DX",
+        "latitude": 51.4678438,
+        "longitude": -0.2908451,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Kew Baptist Church",
+        "category": "place-of-worship",
+        "address": "Windsor Road, Richmond",
+        "postcode": "TW9 2EL",
+        "latitude": 51.4723231,
+        "longitude": -0.2873971,
+        "website": "http://www.kewbaptist.com",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St. Luke's Parish Church and Community Centre",
+        "category": "place-of-worship",
+        "address": "The Avenue, Richmond",
+        "postcode": "TW9 2AJ",
+        "latitude": 51.4739191,
+        "longitude": -0.2890515,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Ebenezer Strict Baptist Chapel",
+        "category": "place-of-worship",
+        "address": "Jocelyn Road, Richmond",
+        "postcode": "TW9 2TJ",
+        "latitude": 51.4675077,
+        "longitude": -0.2988394,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "The Barn Church (St Philip & All Saints)",
+        "category": "place-of-worship",
+        "address": "Atwood Avenue, Richmond",
+        "postcode": "TW9 4HF",
+        "latitude": 51.4721207,
+        "longitude": -0.2820769,
+        "website": "http://www.thebarnchurchkew.org/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Holy Trinity Richmond",
+        "category": "place-of-worship",
+        "address": "Sheen Park, Richmond",
+        "postcode": "TW9 1UP",
+        "latitude": 51.4627587,
+        "longitude": -0.2931656,
+        "website": "https://www.htrichmond.org.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Shirley Sherwood Gallery",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW9 2AA",
+        "latitude": 51.4746556,
+        "longitude": -0.2923647,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Kew Art Studio",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW9 3NN",
+        "latitude": 51.474997,
+        "longitude": -0.2868022,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Orange Tree Theatre",
+        "category": "culture",
+        "address": "53 Kew Road, London",
+        "postcode": "TW9 2SA",
+        "latitude": 51.4644134,
+        "longitude": -0.3012489,
+        "website": "https://www.orangetreetheatre.co.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Queen Charlotte Hall",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW9 2RE",
+        "latitude": 51.4645702,
+        "longitude": -0.3030536,
+        "distanceKm": 1
+      },
+      {
+        "name": "Richmond Theatre",
+        "category": "culture",
+        "address": "Little Green, Richmond",
+        "postcode": "TW9 1QJ",
+        "latitude": 51.4620472,
+        "longitude": -0.3037625,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Odeon Richmond Studio (Screens 4-7)",
+        "category": "culture",
+        "address": "6 Red Lion Street, Richmond",
+        "postcode": "TW9 1RW",
+        "latitude": 51.4593806,
+        "longitude": -0.3054528,
+        "website": "https://www.odeon.co.uk/cinemas/richmond/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Kew Scouts",
         "category": "community-hub",
-        "address": "Kew Green, Richmond upon Thames, TW9 3AB",
-        "description": "The smallest of the UK's royal palaces, once a country retreat for George III's family, set within Kew Gardens."
+        "address": "Richmond",
+        "postcode": "TW9 3QA",
+        "latitude": 51.4767612,
+        "longitude": -0.2853764,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Old Fellows Memorial Hall",
+        "category": "community-hub",
+        "address": "Parkshot, Richmond",
+        "postcode": "TW9 2RG",
+        "latitude": 51.464043,
+        "longitude": -0.3022624,
+        "distanceKm": 1
+      },
+      {
+        "name": "Sea Cadet Hut",
+        "category": "community-hub",
+        "address": "Park Lane, Richmond",
+        "postcode": "TW9 2RA",
+        "latitude": 51.4635402,
+        "longitude": -0.3059217,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Air Training Corps",
+        "category": "community-hub",
+        "address": "Park Lane, Richmond",
+        "postcode": "TW9 2RA",
+        "latitude": 51.4634904,
+        "longitude": -0.3064335,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "St John Ambulance",
+        "category": "community-hub",
+        "address": "Park Lane, Richmond",
+        "postcode": "TW9 2RA",
+        "latitude": 51.4635184,
+        "longitude": -0.3061361,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "E.T.N.A. Community Centre",
+        "category": "community-hub",
+        "address": "Rosslyn Road, Twickenham",
+        "postcode": "TW1 2AR",
+        "latitude": 51.4552577,
+        "longitude": -0.3132531,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Kew Library",
+        "category": "library",
+        "address": "106 North Road",
+        "postcode": "TW9 4HJ",
+        "latitude": 51.4765363,
+        "longitude": -0.2846743,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Richmond Library",
+        "category": "library",
+        "address": "Little Green, Richmond",
+        "postcode": "TW9 1QL",
+        "latitude": 51.4622294,
+        "longitude": -0.3036715,
+        "website": "https://www.richmond.gov.uk/richmond_library",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Richmond Reference Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW9 1TP",
+        "latitude": 51.458887,
+        "longitude": -0.3066298,
+        "website": "https://www.richmond.gov.uk/services/libraries/branch_libraries/reference_library",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "East Sheen Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW14 8LP",
+        "latitude": 51.4654433,
+        "longitude": -0.267371,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Twickenham Library",
+        "category": "library",
+        "address": "Garfield Road, Twickenham",
+        "postcode": "TW1 3JT",
+        "latitude": 51.4475374,
+        "longitude": -0.3278669,
+        "website": "https://www.richmond.gov.uk/twickenham_library",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Ham Library",
+        "category": "library",
+        "address": "Ham Street, Richmond",
+        "postcode": "TW10 7HR",
+        "latitude": 51.4378741,
+        "longitude": -0.3132413,
+        "website": "https://www.richmond.gov.uk/ham_library",
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Skinners Newsagents",
+        "category": "post-office",
+        "address": "143 Sheen Road, Richmond",
+        "postcode": "TW9 1YJ",
+        "latitude": 51.4621255,
+        "longitude": -0.2935956,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Richmond Post Office",
+        "category": "post-office",
+        "address": "16-17 George Street, Richmond",
+        "postcode": "TW9 1JS",
+        "latitude": 51.4600425,
+        "longitude": -0.3049436,
+        "website": "https://www.postoffice.co.uk/branch-finder/1560255/richmond",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "Red Lion Street, Richmond",
+        "postcode": "TW9 1RW",
+        "latitude": 51.4596009,
+        "longitude": -0.3040248,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "East Sheen Post Office",
+        "category": "post-office",
+        "address": "234 Upper Richmond Road West, London",
+        "postcode": "SW14 8AG",
+        "latitude": 51.4649462,
+        "longitude": -0.2657375,
+        "website": "https://www.postoffice.co.uk/branch-finder/1440012/east-sheen",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "St Margarets Post Office",
+        "category": "post-office",
+        "address": "118 St Margarets Road, Twickenham",
+        "postcode": "TW1 2AA",
+        "latitude": 51.4551826,
+        "longitude": -0.31956,
+        "website": "https://www.postoffice.co.uk/branch-finder/0760250/st-margarets",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Barnes Post Office",
+        "category": "post-office",
+        "address": "96 Church Road, London",
+        "postcode": "SW13 0DQ",
+        "latitude": 51.4750275,
+        "longitude": -0.2397686,
+        "website": "https://www.postoffice.co.uk/branch-finder/057001x/church-road",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Mortlake Green Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW14 7HB",
+        "latitude": 51.4686699,
+        "longitude": -0.268199,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Westerly Ware Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW9 3AW",
+        "latitude": 51.486196,
+        "longitude": -0.2869707,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Palewell Common & Fields Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW14 8RE",
+        "latitude": 51.4593021,
+        "longitude": -0.2595383,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Petersham Gate Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW10 7AE",
+        "latitude": 51.4454807,
+        "longitude": -0.3000749,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Vine Road Recreation Ground Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW13 0PL",
+        "latitude": 51.4683868,
+        "longitude": -0.2492735,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Moor Mead Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW1 1HR",
+        "latitude": 51.4531085,
+        "longitude": -0.3262297,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Duck Pond Market",
+        "category": "market",
+        "address": "Heron Square, Richmond upon Thames",
+        "postcode": "TW9 1EJ",
+        "latitude": 51.458417,
+        "longitude": -0.3061978,
+        "website": "https://duckpondmarket.com/richmond",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Twickenham Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "TW1 4HF",
+        "latitude": 51.446345,
+        "longitude": -0.3311438,
+        "website": "https://www.lfm.org.uk/markets/twickenham/",
+        "distanceKm": 3.8
       }
     ]
   },

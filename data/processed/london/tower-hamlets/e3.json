@@ -8413,16 +8413,518 @@
   "places": {
     "places": [
       {
-        "name": "Victoria Park",
-        "category": "park",
-        "address": "Tower Hamlets/Hackney border",
-        "description": "One of London's oldest public parks, opened in 1845 for the East End."
+        "name": "Tredegar Community Centre",
+        "category": "community-hub",
+        "address": "333 Morville Street, London",
+        "postcode": "E3 2DZ",
+        "latitude": 51.5302516,
+        "longitude": -0.0241429,
+        "distanceKm": 0.2
       },
       {
-        "name": "Canary Wharf",
+        "name": "The Centre Community Hall",
         "category": "community-hub",
-        "address": "Canary Wharf",
-        "description": "One of the UK's two main financial centres, developed from the 1980s on former Docklands land."
+        "address": "32 Merchant Street, London",
+        "postcode": "E3 4LX",
+        "latitude": 51.5255046,
+        "longitude": -0.02611,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "The Kirtland Centre",
+        "category": "community-hub",
+        "address": "1-3 Coborn Street, London",
+        "postcode": "E3 2AB",
+        "latitude": 51.5272485,
+        "longitude": -0.0289808,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Look Ahead Care & Support",
+        "category": "community-hub",
+        "address": "199 Hamlets Way, London",
+        "postcode": "E3 4NW",
+        "latitude": 51.5247655,
+        "longitude": -0.0271247,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Antill Road Centre",
+        "category": "community-hub",
+        "address": "109a Antill Road, London",
+        "postcode": "E3 5BW",
+        "latitude": 51.5297334,
+        "longitude": -0.0331166,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Greenlight Youth Club",
+        "category": "community-hub",
+        "address": "223 Bow Road, London",
+        "postcode": "E3 2SJ",
+        "latitude": 51.529376,
+        "longitude": -0.0160838,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bow Road Methodist Church",
+        "category": "place-of-worship",
+        "address": "1 Merchant Street, London",
+        "postcode": "E3 4LY",
+        "latitude": 51.5262991,
+        "longitude": -0.0275495,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Gurdwara Sikh Sangat",
+        "category": "place-of-worship",
+        "address": "43 Harley Grove, London",
+        "postcode": "E3 2AT",
+        "latitude": 51.5285158,
+        "longitude": -0.0289379,
+        "website": "https://www.gurdwarasikhsangat.org/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Gurdwara Sikh Sangat",
+        "category": "place-of-worship",
+        "address": "1a Campbell Road, London",
+        "postcode": "E3 4DS",
+        "latitude": 51.5274925,
+        "longitude": -0.0211027,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Our Lady & St Catherine of Siena",
+        "category": "place-of-worship",
+        "address": "179 Bow Road, London",
+        "postcode": "E3 2SG",
+        "latitude": 51.5287398,
+        "longitude": -0.0182203,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Bow Baptist Church",
+        "category": "place-of-worship",
+        "address": "1 Payne Road, London",
+        "postcode": "E3 2SP",
+        "latitude": 51.5294813,
+        "longitude": -0.0158716,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Hindu Pragati Sangha Mandir",
+        "category": "place-of-worship",
+        "address": "33 Rhondda Grove, London",
+        "postcode": "E3 5AP",
+        "latitude": 51.5259218,
+        "longitude": -0.033159,
+        "website": "http://hindupragatisangha.net/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Archibald Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 4XA",
+        "latitude": 51.5250202,
+        "longitude": -0.0243047,
+        "website": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Parks-directory/Archibald-Open-Space.aspx",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Tredegar Square",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 5AG",
+        "latitude": 51.5271252,
+        "longitude": -0.0321838,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Grove Hall Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 2TW",
+        "latitude": 51.5298358,
+        "longitude": -0.0180322,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Rounton Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 4HA",
+        "latitude": 51.5236489,
+        "longitude": -0.0196096,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Selwyn Green",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 5DX",
+        "latitude": 51.5304138,
+        "longitude": -0.0328886,
+        "website": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Parks-directory/Selwyn-Green.aspx",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Lefevre Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 2EY",
+        "latitude": 51.5346172,
+        "longitude": -0.0256489,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Bow Post Office",
+        "category": "post-office",
+        "address": "161A Bow Road, London",
+        "postcode": "E3 2SG",
+        "latitude": 51.5284673,
+        "longitude": -0.0190359,
+        "website": "https://www.postoffice.co.uk/branch-finder/2000024/bow",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Roman Road Post Office",
+        "category": "post-office",
+        "address": "603 Roman Road, London",
+        "postcode": "E3 2RN",
+        "latitude": 51.5337688,
+        "longitude": -0.0280822,
+        "website": "https://www.postoffice.co.uk/branch-finder/0560022/roman-road",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Mile End Post Office",
+        "category": "post-office",
+        "address": "13 Burdett Road, London",
+        "postcode": "E3 4TU",
+        "latitude": 51.5239974,
+        "longitude": -0.0341469,
+        "website": "https://www.postoffice.co.uk/branch-finder/197002x/mile-end",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "QMUL Post Room",
+        "category": "post-office",
+        "address": "Mile End Road, London",
+        "postcode": "E1 4LJ",
+        "latitude": 51.5237672,
+        "longitude": -0.0416932,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Roman Road Post Office",
+        "category": "post-office",
+        "address": "138 Roman Road, London",
+        "postcode": "E2 0RX",
+        "latitude": 51.529045,
+        "longitude": -0.0467353,
+        "website": "https://www.postoffice.co.uk/branch-finder/0040029/roman-road",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Globe Road Post Office",
+        "category": "post-office",
+        "address": "34 Globe Road, London",
+        "postcode": "E1 4DU",
+        "latitude": 51.5226904,
+        "longitude": -0.0468686,
+        "website": "https://www.postoffice.co.uk/branch-finder/1300024/globe-road",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Bow Arts Trust (Bow Road Studios)",
+        "category": "culture",
+        "address": "181-183 Bow Road, London",
+        "postcode": "E3 2SJ",
+        "latitude": 51.5288248,
+        "longitude": -0.0175485,
+        "website": "https://bowarts.org/studios/bow-road-studios",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Chisenhale Art Place",
+        "category": "culture",
+        "address": "64-84 Chisenhale Road, London",
+        "postcode": "E3 5RG",
+        "latitude": 51.5330577,
+        "longitude": -0.0397096,
+        "website": "https://chisenhale.co.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Vittoria Wharf Studio",
+        "category": "culture",
+        "address": "10 Stour Road, London",
+        "postcode": "E3 2NT",
+        "latitude": 51.5398887,
+        "longitude": -0.0209588,
+        "website": "https://www.vittoriawharfstudio.com/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Ragged School Museum",
+        "category": "culture",
+        "address": "46-50 Copperfield Road, London",
+        "postcode": "E3 4RR",
+        "latitude": 51.5187926,
+        "longitude": -0.0357381,
+        "website": "https://raggedschoolmuseum.org.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "White Building",
+        "category": "culture",
+        "address": "43 White Post Lane, London",
+        "postcode": "E9 5EN",
+        "latitude": 51.5429337,
+        "longitude": -0.0221393,
+        "website": "https://www.thewhitebuilding.org.uk/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Studio Yukari",
+        "category": "culture",
+        "address": "129 Mile End Road, London",
+        "postcode": "E1 4BG",
+        "latitude": 51.5214592,
+        "longitude": -0.049274,
+        "website": "https://studioyukari.com",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Idea Store, Bow",
+        "category": "library",
+        "address": "",
+        "postcode": "E3 5EU",
+        "latitude": 51.5327503,
+        "longitude": -0.029746,
+        "website": "https://www.ideastore.co.uk/idea-store-bow",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Mile End Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E1 4NT",
+        "latitude": 51.5242313,
+        "longitude": -0.0395934,
+        "website": "https://www.qmul.ac.uk/library/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Tower Hamlets Local History Library and Archives",
+        "category": "library",
+        "address": "Bancroft Road, London",
+        "postcode": "E1 4DQ",
+        "latitude": 51.5238375,
+        "longitude": -0.0422976,
+        "website": "https://www.ideastore.co.uk/local-history",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Bethnal Green Library",
+        "category": "library",
+        "address": "Cambridge Heath Road, London",
+        "postcode": "E2 0HL",
+        "latitude": 51.5264873,
+        "longitude": -0.0537742,
+        "website": "https://www.ideastore.co.uk/visit-us/bethnal-green-library",
+        "distanceKm": 2
+      },
+      {
+        "name": "Idea Store Chrisp Street",
+        "category": "library",
+        "address": "Vesey Path, London",
+        "postcode": "E14 6BT",
+        "latitude": 51.5116019,
+        "longitude": -0.0144826,
+        "website": "https://www.ideastore.co.uk/idea-store-chrisp-street",
+        "distanceKm": 2
+      },
+      {
+        "name": "Whitechapel Idea Store",
+        "category": "library",
+        "address": "321 Whitechapel Road, London",
+        "postcode": "E1 1BU",
+        "latitude": 51.5199152,
+        "longitude": -0.0579668,
+        "website": "https://www.ideastore.co.uk/idea-store-whitechapel",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Roman Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E3 2HR",
+        "latitude": 51.5332255,
+        "longitude": -0.0294821,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Globe Town Market Square",
+        "category": "market",
+        "address": "",
+        "postcode": "E2 0RN",
+        "latitude": 51.5287154,
+        "longitude": -0.0475254,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Victoria Park Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E2 9JW",
+        "latitude": 51.5345449,
+        "longitude": -0.0481711,
+        "website": "http://victoriaparkmarket.com/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Stepney Farmers Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E1 3DG",
+        "latitude": 51.5176057,
+        "longitude": -0.0437838,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Chrisp Street Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E14 6AQ",
+        "latitude": 51.5125069,
+        "longitude": -0.014515,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Whitechapel Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E1 1BY",
+        "latitude": 51.5192055,
+        "longitude": -0.0598545,
+        "website": "https://www.towerhamlets.gov.uk/lgnl/business/markets/markets_in_tower_hamlets.aspx",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Wager Street Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 4GY",
+        "latitude": 51.5205633,
+        "longitude": -0.0306854,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Roman Road Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 5QD",
+        "latitude": 51.5330405,
+        "longitude": -0.0354208,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Nicholson Square",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 3UE",
+        "latitude": 51.5282074,
+        "longitude": -0.0108906,
+        "distanceKm": 1
+      },
+      {
+        "name": "Children's Play Pavilion and Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 7EJ",
+        "latitude": 51.5165835,
+        "longitude": -0.0302395,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Pools Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 5PA",
+        "latitude": 51.5384893,
+        "longitude": -0.0351746,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Bartlett Park Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 6DY",
+        "latitude": 51.5139326,
+        "longitude": -0.0196693,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Mile End Climbing Wall",
+        "category": "leisure-centre",
+        "address": "Haverfield Road, London",
+        "postcode": "E3 5BE",
+        "latitude": 51.527652,
+        "longitude": -0.0396704,
+        "website": "https://www.mileendwall.org.uk/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Mile End Park Leisure Centre",
+        "category": "leisure-centre",
+        "address": "190 Burdett Road, London",
+        "postcode": "E3 4HL",
+        "latitude": 51.5192831,
+        "longitude": -0.0323244,
+        "website": "https://be-well.org.uk/centres/mile-end-leisure-centre-and-stadium/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Revolution Karting",
+        "category": "leisure-centre",
+        "address": "422-424 Burdett Road, London",
+        "postcode": "E3 4AA",
+        "latitude": 51.5178939,
+        "longitude": -0.0307004,
+        "website": "https://revolutionkarting.com/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Bobby Moore Academy Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E3 2RX",
+        "latitude": 51.5400662,
+        "longitude": -0.0198218,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Mile End American Pool & Snooker Centre",
+        "category": "leisure-centre",
+        "address": "229 Mile End Road, London",
+        "postcode": "E1 4AA",
+        "latitude": 51.5222569,
+        "longitude": -0.0449498,
+        "website": "http://www.mileendsnooker.co.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Skeeters Axe-Throwing",
+        "category": "leisure-centre",
+        "address": "96 White Post Lane, London",
+        "postcode": "E9 5GS",
+        "latitude": 51.5426843,
+        "longitude": -0.0218712,
+        "website": "https://www.skeeters.ax/",
+        "distanceKm": 1.6
       }
     ]
   },

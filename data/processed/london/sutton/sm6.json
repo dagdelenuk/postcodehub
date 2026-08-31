@@ -5957,16 +5957,425 @@
   "places": {
     "places": [
       {
-        "name": "Carshalton Park",
-        "category": "park",
-        "address": "Carshalton",
-        "description": "A green space in one of Sutton's oldest villages, known for its ponds and lavender fields nearby."
+        "name": "Gospel Hall",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SM6 8QW",
+        "latitude": 51.360997,
+        "longitude": -0.1449879,
+        "distanceKm": 0.1
       },
       {
-        "name": "Nonsuch Park",
+        "name": "St Elphege's Church",
+        "category": "place-of-worship",
+        "address": "120 Stafford Road, Wallington",
+        "postcode": "SM6 9AY",
+        "latitude": 51.3594316,
+        "longitude": -0.1416085,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St. Michael's and All Angels",
+        "category": "place-of-worship",
+        "address": "Milton Road, Wallington",
+        "postcode": "SM6 9RP",
+        "latitude": 51.3584377,
+        "longitude": -0.1410328,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Bandon Hill Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SM6 8LA",
+        "latitude": 51.3612903,
+        "longitude": -0.1366176,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Kingdom Hall of Jehovah's Witnesses",
+        "category": "place-of-worship",
+        "address": "Queens Road, Wallington",
+        "postcode": "SM6 0AG",
+        "latitude": 51.3638422,
+        "longitude": -0.1522437,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Holy Trinity",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SM6 0AB",
+        "latitude": 51.3646956,
+        "longitude": -0.1514031,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "The Centre Wallington",
+        "category": "community-hub",
+        "address": "Milton Road, Wallington",
+        "postcode": "SM6 9RP",
+        "latitude": 51.3586514,
+        "longitude": -0.140886,
+        "website": "https://thecentrewallington.co.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Beddington Village Hall",
+        "category": "community-hub",
+        "address": "1-5 Beddington Lane, Croydon",
+        "postcode": "CR0 4TG",
+        "latitude": 51.3716875,
+        "longitude": -0.1320045,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Scout Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SM1 4JN",
+        "latitude": 51.3660792,
+        "longitude": -0.1771353,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Riverside Community Centre",
+        "category": "community-hub",
+        "address": "113 Culvers Avenue, Carshalton",
+        "postcode": "SM5 2FJ",
+        "latitude": 51.3791569,
+        "longitude": -0.1646882,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "All Saints Centre",
+        "category": "community-hub",
+        "address": "New Road, Mitcham",
+        "postcode": "CR4 4JN",
+        "latitude": 51.38302,
+        "longitude": -0.1581466,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Austenasia",
+        "category": "community-hub",
+        "address": "312 Green Wrythe Lane",
+        "postcode": "SM5 1TR",
+        "latitude": 51.381396,
+        "longitude": -0.1718383,
+        "website": "https://austenasia.com/",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Wallington Post Office",
+        "category": "post-office",
+        "address": "92 Woodcote Road, Wallington",
+        "postcode": "SM6 0NG",
+        "latitude": 51.35845,
+        "longitude": -0.149782,
+        "website": "https://www.postoffice.co.uk/branch-finder/0200131/wallington",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Carshalton Post Office",
+        "category": "post-office",
+        "address": "29 Beacon Grove, Carshalton",
+        "postcode": "SM5 3BA",
+        "latitude": 51.3658944,
+        "longitude": -0.1603244,
+        "website": "https://www.postoffice.co.uk/branch-finder/0580139/carshalton",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "High View Post Office",
+        "category": "post-office",
+        "address": "Croydon",
+        "postcode": "CR0 4NH",
+        "latitude": 51.362077,
+        "longitude": -0.1225005,
+        "website": "https://www.postoffice.co.uk/branch-finder/1790137/high-view",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "The Beeches Post Office",
+        "category": "post-office",
+        "address": "1-3 Station Approach, Carshalton",
+        "postcode": "SM5 3RF",
+        "latitude": 51.3573906,
+        "longitude": -0.1701206,
+        "website": "https://www.postoffice.co.uk/branch-finder/6834582/the-beeches",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "The Wrythe Post Office",
+        "category": "post-office",
+        "address": "18 Green Wrythe Lane, Carshalton",
+        "postcode": "SM5 2DW",
+        "latitude": 51.3724008,
+        "longitude": -0.1675818,
+        "website": "https://www.postoffice.co.uk/branch-finder/163013x/the-wrythe",
+        "distanceKm": 2
+      },
+      {
+        "name": "Hackbridge Post Office",
+        "category": "post-office",
+        "address": "17 London Road, Wallington",
+        "postcode": "SM6 7HW",
+        "latitude": 51.3793239,
+        "longitude": -0.1552958,
+        "website": "https://www.postoffice.co.uk/branch-finder/0210137/hackbridge",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "St Mary's Field",
         "category": "park",
-        "address": "Ewell Road, Sutton, SM3 8AB",
-        "description": "Former grounds of Henry VIII's lost Nonsuch Palace, straddling the Sutton and Epsom & Ewell border."
+        "address": "",
+        "postcode": "SM6 8BT",
+        "latitude": 51.3661458,
+        "longitude": -0.1480136,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Mellows Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SM6 8JY",
+        "latitude": 51.3608629,
+        "longitude": -0.1340265,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Wallington Green",
+        "category": "park",
+        "address": "",
+        "postcode": "SM6 7NU",
+        "latitude": 51.3671267,
+        "longitude": -0.154182,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Elm Grove",
+        "category": "park",
+        "address": "",
+        "postcode": "SM6 7DD",
+        "latitude": 51.3690244,
+        "longitude": -0.1546278,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Carshalton Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SM5 3DE",
+        "latitude": 51.3616335,
+        "longitude": -0.1613412,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Beddington Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SM6 7ED",
+        "latitude": 51.3730788,
+        "longitude": -0.1448089,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Wallington Library",
+        "category": "library",
+        "address": "Shotfield, Wallington",
+        "postcode": "SM6 0HY",
+        "latitude": 51.3578706,
+        "longitude": -0.1509367,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "The Library @ The Phoenix Centre",
+        "category": "library",
+        "address": "Mollison Drive, Wallington",
+        "postcode": "SM6 9NZ",
+        "latitude": 51.353377,
+        "longitude": -0.1332357,
+        "website": "https://arena.yourlondonlibrary.net/web/sutton/phoenix-library",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Middleton Circle Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SM5 1JJ",
+        "latitude": 51.3855897,
+        "longitude": -0.1746541,
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Sutton Central Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SM1 1EA",
+        "latitude": 51.3620022,
+        "longitude": -0.1952956,
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Sutton Life Centre",
+        "category": "library",
+        "address": "",
+        "postcode": "SM3 9QA",
+        "latitude": 51.3789627,
+        "longitude": -0.201619,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Cheam Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SM3 8QH",
+        "latitude": 51.3601417,
+        "longitude": -0.2166396,
+        "distanceKm": 5
+      },
+      {
+        "name": "WCGS Sports Hall",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SM6 7BY",
+        "latitude": 51.3699474,
+        "longitude": -0.1511024,
+        "distanceKm": 1
+      },
+      {
+        "name": "Croygas Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SM6 9DJ",
+        "latitude": 51.3567981,
+        "longitude": -0.1313452,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "The Phoenix Centre",
+        "category": "leisure-centre",
+        "address": "Mollison Drive, Wallington",
+        "postcode": "SM6 9NZ",
+        "latitude": 51.353216,
+        "longitude": -0.1328794,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Westcroft Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Westcroft Road",
+        "postcode": "SM5 2TG",
+        "latitude": 51.3680725,
+        "longitude": -0.1582993,
+        "website": "https://www.sutton.gov.uk/index.aspx?articleid=1637",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Del Toro Dance School",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SM5 3JG",
+        "latitude": 51.3547622,
+        "longitude": -0.1616762,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Carshalton Tennis Club",
+        "category": "leisure-centre",
+        "address": "Beeches Avenue",
+        "postcode": "SM5 3LW",
+        "latitude": 51.3547241,
+        "longitude": -0.1700931,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Charles Cryer Studio Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "SM5 3BB",
+        "latitude": 51.3659217,
+        "longitude": -0.159608,
+        "website": "http://www.secombetheatre.co.uk/charles+cryer+studio+theatre",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Vellum Mill Gallery",
+        "category": "culture",
+        "address": "76a Mill Lane, Carshalton",
+        "postcode": "SM5 2JR",
+        "latitude": 51.3705515,
+        "longitude": -0.1598752,
+        "website": "https://www.vellummill.co.uk/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Honeywood Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "SM5 3NX",
+        "latitude": 51.3652296,
+        "longitude": -0.1650792,
+        "website": "https://www.friendsofhoneywood.co.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Carshalton Water Tower",
+        "category": "culture",
+        "address": "",
+        "postcode": "SM5 3NY",
+        "latitude": 51.3650663,
+        "longitude": -0.1668429,
+        "website": "https://www.carshaltonwatertower.co.uk/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Little Holland House",
+        "category": "culture",
+        "address": "",
+        "postcode": "SM5 3LW",
+        "latitude": 51.3553025,
+        "longitude": -0.1706494,
+        "website": "https://friendsofhoneywood.co.uk/little-holland-house.html",
+        "distanceKm": 2
+      },
+      {
+        "name": "Omniplex Cinema Sutton",
+        "category": "culture",
+        "address": "St. Nicholas Way",
+        "postcode": "SM1 1AZ",
+        "latitude": 51.3647655,
+        "longitude": -0.1953102,
+        "website": "https://www.omniplexcinemas.co.uk/cinema/sutton/",
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Manor Park Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SM1 4AJ",
+        "latitude": 51.3627456,
+        "longitude": -0.1896574,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Overton Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "SM2 6QT",
+        "latitude": 51.3517579,
+        "longitude": -0.200197,
+        "distanceKm": 4
+      },
+      {
+        "name": "Ryan Gate",
+        "category": "market",
+        "address": "174 Central Road, Worcester Park",
+        "postcode": "KT4 8HQ",
+        "latitude": 51.3798333,
+        "longitude": -0.2437104,
+        "distanceKm": 7.2
       }
     ]
   },

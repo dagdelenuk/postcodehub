@@ -9,7 +9,7 @@ import type {
   HealthData,
   HistoryData,
   OutcodeData,
-  PlacesData,
+  Place,
   PlanningData,
   PoliceStation,
   PropertyData,
@@ -30,15 +30,16 @@ async function loadRaw<T>(filename: string): Promise<Record<string, T>> {
 }
 
 type RawStation = PoliceStation & { borough: string };
+type RawPlace = Omit<Place, "distanceKm"> & { borough: string };
 
-/** Groups a flat, borough-tagged station list (police or fire) by borough name. */
-async function loadStationsByBorough(filename: string): Promise<Map<string, RawStation[]>> {
-  const all = JSON.parse(await readFile(path.join(RAW_DIR, filename), "utf-8")) as RawStation[];
-  const byBorough = new Map<string, RawStation[]>();
-  for (const station of all) {
-    const list = byBorough.get(station.borough) ?? [];
-    list.push(station);
-    byBorough.set(station.borough, list);
+/** Groups a flat, borough-tagged list (stations or places) by borough name. */
+async function loadByBorough<T extends { borough: string }>(filename: string): Promise<Map<string, T[]>> {
+  const all = JSON.parse(await readFile(path.join(RAW_DIR, filename), "utf-8")) as T[];
+  const byBorough = new Map<string, T[]>();
+  for (const item of all) {
+    const list = byBorough.get(item.borough) ?? [];
+    list.push(item);
+    byBorough.set(item.borough, list);
   }
   return byBorough;
 }
@@ -58,21 +59,57 @@ function stationsNearestTo(byBorough: Map<string, RawStation[]>, borough: string
     .sort((a, b) => a.distanceKm - b.distanceKm);
 }
 
+/**
+ * Every place in `borough` nearest to (lat, lon), capped at `perCategory`
+ * per category (not globally - a global top-N in central London would
+ * return N places of worship and nothing else) and sorted nearest-first
+ * within each category.
+ */
+function nearestPlacesTo(byBorough: Map<string, RawPlace[]>, borough: string, lat: number, lon: number, perCategory: number): Place[] {
+  const withDistance = (byBorough.get(borough) ?? [])
+    .map((p) => ({
+      name: p.name,
+      category: p.category,
+      address: p.address,
+      postcode: p.postcode,
+      latitude: p.latitude,
+      longitude: p.longitude,
+      website: p.website,
+      distanceKm: Math.round(haversineKm(lat, lon, p.latitude, p.longitude) * 10) / 10,
+    }))
+    .sort((a, b) => a.distanceKm - b.distanceKm);
+
+  const byCategory = new Map<string, Place[]>();
+  for (const place of withDistance) {
+    const list = byCategory.get(place.category) ?? [];
+    if (list.length < perCategory) list.push(place);
+    byCategory.set(place.category, list);
+  }
+  return [...byCategory.values()].flat();
+}
+
+// Places nearer than this per-outcode cap are dropped once a category has
+// enough entries - keeps a dense central-London outcode from showing 30+
+// cards of the same category. Tune here if that still feels overwhelming.
+const PLACES_PER_CATEGORY = 6;
+
 async function main() {
   // health/schools/crime/property are keyed by plain outcode (borough-agnostic
-  // raw facts); representatives/planning/places/events/history are keyed by
-  // the (borough, outcode) composite key (genuinely borough-specific). Every
+  // raw facts); representatives/planning/events/history are keyed by the
+  // (borough, outcode) composite key (genuinely borough-specific). Every
   // (borough, outcode) PAIR gets its own merged file and page - a boundary
   // outcode shared between boroughs is not deduplicated away.
   const pairs = await loadOutcodeBoroughPairs();
 
-  // Police/fire stations are flat, borough-tagged lists (not keyed by outcode -
-  // an outcode's nearest station is often outside it), grouped here so each
-  // outcode can be matched against every station in its own borough.
-  const policeByBorough = await loadStationsByBorough("police-stations.json");
-  const fireByBorough = await loadStationsByBorough("fire-stations.json");
+  // Police/fire stations and places are flat, borough-tagged lists (not keyed
+  // by outcode - an outcode's nearest station/place is often outside it),
+  // grouped here so each outcode can be matched against everything in its
+  // own borough.
+  const policeByBorough = await loadByBorough<RawStation>("police-stations.json");
+  const fireByBorough = await loadByBorough<RawStation>("fire-stations.json");
+  const placesByBorough = await loadByBorough<RawPlace>("places.json");
 
-  const [health, schools, crime, transport, property, representatives, planning, places, events, history] = await Promise.all([
+  const [health, schools, crime, transport, property, representatives, planning, events, history] = await Promise.all([
     loadRaw<HealthData>("health-by-outcode.json"),
     loadRaw<SchoolsData>("schools-by-outcode.json").then((raw) => {
       // schools raw is keyed by outcode -> School[], not { schools: [] }
@@ -87,7 +124,6 @@ async function main() {
     loadRaw<PropertyData>("property-by-outcode.json"),
     loadRaw<RepresentativesData>("representatives-by-outcode.json"),
     loadRaw<PlanningData>("planning-by-outcode.json"),
-    loadRaw<PlacesData>("places-by-outcode.json"),
     loadRaw<EventsData>("events-by-outcode.json"),
     loadRaw<HistoryData>("history-by-outcode.json"),
   ]);
@@ -122,7 +158,7 @@ async function main() {
       property: property[outcode] ?? { sales: [], averagePrice: null, medianPrice: null },
       representatives: representatives[key] ?? { representatives: [] },
       planning: planning[key] ?? { applications: [], searchUrl: null },
-      places: places[key] ?? { places: [] },
+      places: { places: nearestPlacesTo(placesByBorough, entry.borough, entry.outcode.latitude, entry.outcode.longitude, PLACES_PER_CATEGORY) },
       events: events[key] ?? { events: [], listingUrl: null },
       history: history[key] ?? { summary: "", keyFacts: [] },
     };

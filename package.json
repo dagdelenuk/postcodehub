@@ -19,10 +19,11 @@
     "ingest:crime": "tsx scripts/ingest/fetch-crime.ts",
     "ingest:police-stations": "tsx scripts/ingest/fetch-police-stations.ts",
     "ingest:fire-stations": "tsx scripts/ingest/fetch-fire-stations.ts",
+    "ingest:places": "tsx scripts/ingest/fetch-places.ts",
     "ingest:property": "tsx scripts/ingest/fetch-property.ts",
     "ingest:representatives": "tsx scripts/ingest/fetch-representatives.ts",
     "ingest:planning": "tsx scripts/ingest/fetch-planning.ts",
-    "ingest:seed": "tsx scripts/ingest/seed-places-events-history.ts",
+    "ingest:seed": "tsx scripts/ingest/seed-events-history.ts",
     "ingest:banners": "tsx scripts/ingest/fetch-banner-images.ts",
     "ingest:merge": "tsx scripts/ingest/build-outcode-data.ts"
   },

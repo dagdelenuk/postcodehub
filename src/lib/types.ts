@@ -154,11 +154,27 @@ export interface PlanningData {
   searchUrl: string | null;
 }
 
+export type PlaceCategory =
+  | "park"
+  | "library"
+  | "community-hub"
+  | "leisure-centre"
+  | "playground"
+  | "place-of-worship"
+  | "post-office"
+  | "culture"
+  | "market";
+
 export interface Place {
   name: string;
-  category: "library" | "park" | "leisure-centre" | "community-hub";
+  category: PlaceCategory;
   address: string;
-  description: string;
+  postcode: string;
+  latitude: number;
+  longitude: number;
+  /** Distance from the outcode this record is attached to, in kilometres. */
+  distanceKm: number;
+  website?: string;
 }
 
 export interface PlacesData {

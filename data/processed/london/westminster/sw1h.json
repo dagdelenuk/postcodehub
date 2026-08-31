@@ -642,16 +642,514 @@
   "places": {
     "places": [
       {
-        "name": "Westminster Abbey",
-        "category": "community-hub",
-        "address": "Westminster",
-        "description": "The historic coronation church of English and British monarchs since 1066."
+        "name": "Christchurch Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SW1H 0AY",
+        "latitude": 51.4981134,
+        "longitude": -0.1344937,
+        "distanceKm": 0.1
       },
       {
-        "name": "Buckingham Palace",
+        "name": "Dean's Yard",
+        "category": "park",
+        "address": "",
+        "postcode": "SW1P 3NY",
+        "latitude": 51.4985817,
+        "longitude": -0.1290543,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "United Nations Green",
+        "category": "park",
+        "address": "",
+        "postcode": "SW1H 9NH",
+        "latitude": 51.4999131,
+        "longitude": -0.1290251,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Channel 4 Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW1P 2TB",
+        "latitude": 51.495849,
+        "longitude": -0.1323097,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St. James's Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW1Y 5HY",
+        "latitude": 51.5031135,
+        "longitude": -0.1344197,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "College Green",
+        "category": "park",
+        "address": "",
+        "postcode": "SW1P 3JY",
+        "latitude": 51.4980919,
+        "longitude": -0.1261387,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The Guards Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW1H 9EX",
+        "latitude": 51.5000475,
+        "longitude": -0.1361252,
+        "website": "https://theguardsmuseum.com/",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Curzon Victoria",
+        "category": "culture",
+        "address": "58 Victoria Street, London",
+        "postcode": "SW1E 6QW",
+        "latitude": 51.4975349,
+        "longitude": -0.1365788,
+        "website": "https://www.curzon.com/venues/victoria/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Churchill War Rooms",
+        "category": "culture",
+        "address": "King Charles Street, London",
+        "postcode": "SW1A 2AQ",
+        "latitude": 51.5022091,
+        "longitude": -0.1292513,
+        "website": "https://www.iwm.org.uk/visits/churchill-war-rooms",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Cardinal Place Roof Garden",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW1E 5JQ",
+        "latitude": 51.4979062,
+        "longitude": -0.1412604,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The King's Gallery",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW1E 6JP",
+        "latitude": 51.4998279,
+        "longitude": -0.142551,
+        "website": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Smith Square Hall",
+        "category": "culture",
+        "address": "Smith Square, London",
+        "postcode": "SW1P 3HA",
+        "latitude": 51.495976,
+        "longitude": -0.1270485,
+        "website": "https://www.sjss.org.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Guards Chapel",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "SW1E 6HQ",
+        "latitude": 51.5003746,
+        "longitude": -0.1353801,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Westminster Chapel",
+        "category": "place-of-worship",
+        "address": "136 Buckingham Gate, London",
+        "postcode": "SW1E 6BS",
+        "latitude": 51.4987997,
+        "longitude": -0.1381849,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St Matthew's Church",
+        "category": "place-of-worship",
+        "address": "20 Great Peter Street, London",
+        "postcode": "SW1P 2BU",
+        "latitude": 51.4970904,
+        "longitude": -0.1306654,
+        "website": "https://www.stmw.org/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Methodist Central Hall",
+        "category": "place-of-worship",
+        "address": "Storey's Gate, London",
+        "postcode": "SW1H 9NH",
+        "latitude": 51.5000101,
+        "longitude": -0.1300439,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Westminster Abbey",
+        "category": "place-of-worship",
+        "address": "20 Dean's Yard, London",
+        "postcode": "SW1P 3PA",
+        "latitude": 51.4994013,
+        "longitude": -0.1273907,
+        "website": "https://www.westminster-abbey.org/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Emmanuel Evangelical Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SW1P 3RB",
+        "latitude": 51.4964681,
+        "longitude": -0.1286885,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Strutton Ground Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SW1P 2HZ",
+        "latitude": 51.4970742,
+        "longitude": -0.1337998,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Tachbrook Street Market",
+        "category": "market",
+        "address": "Tachbrook Street, London",
+        "postcode": "SW1V 2JS",
+        "latitude": 51.4922315,
+        "longitude": -0.1386605,
+        "website": "https://www.westminster.gov.uk/markets-available-guide",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Piccadilly Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W1J 9LL",
+        "latitude": 51.5087836,
+        "longitude": -0.1368694,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Soho Vegan Market",
+        "category": "market",
+        "address": "Rupert Street, London",
+        "postcode": "W1D 7PQ",
+        "latitude": 51.5120132,
+        "longitude": -0.1334829,
+        "website": "https://www.streetfoodunion.com",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Pimlico Road Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SW1W 8UN",
+        "latitude": 51.4907669,
+        "longitude": -0.1527849,
+        "website": "https://www.lfm.org.uk/markets/pimlico-road/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Apple Market",
+        "category": "market",
+        "address": "",
+        "postcode": "WC2E 8HD",
+        "latitude": 51.511991,
+        "longitude": -0.1230691,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "",
+        "postcode": "SW1H 0HW",
+        "latitude": 51.4975035,
+        "longitude": -0.1347858,
+        "website": "https://www.mbe.co.uk/westminster",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Vauxhall Bridge Road Post Office",
+        "category": "post-office",
+        "address": "Vauxhall Bridge Road, London",
+        "postcode": "SW1V 2ST",
+        "latitude": 51.4924312,
+        "longitude": -0.1377957,
+        "website": "https://www.postoffice.co.uk/branch-finder/0060119/vauxhall-bridge-road",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "95 Wilton Road, London",
+        "postcode": "SW1V 1DW",
+        "latitude": 51.492734,
+        "longitude": -0.1407544,
+        "website": "https://www.mbe.co.uk/londonvictoria",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Lower Regent Street Post Office",
+        "category": "post-office",
+        "address": "11 Lower Regent Street, London",
+        "postcode": "SW1Y 4LR",
+        "latitude": 51.5083597,
+        "longitude": -0.1338763,
+        "website": "https://www.postoffice.co.uk/branch-finder/0540110/regent-street-st.-james's",
+        "distanceKm": 1
+      },
+      {
+        "name": "Eccleston Street Post Office",
+        "category": "post-office",
+        "address": "Eccleston Street, London",
+        "postcode": "SW1W 9LS",
+        "latitude": 51.494481,
+        "longitude": -0.147555,
+        "website": "https://www.postoffice.co.uk/branch-finder/0020117/eccleston-street",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "8 Shepherd Market, London",
+        "postcode": "W1J 7JY",
+        "latitude": 51.5064821,
+        "longitude": -0.1462446,
+        "website": "https://www.mbe.co.uk/londonmayfair",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Westminster Archives Centre",
+        "category": "library",
+        "address": "London",
+        "postcode": "SW1P 2DE",
+        "latitude": 51.4975767,
+        "longitude": -0.1301074,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "RHS Lindley Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW1P 2PB",
+        "latitude": 51.4944304,
+        "longitude": -0.1346948,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "House of Lords Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW1A 0PW",
+        "latitude": 51.4986472,
+        "longitude": -0.1242626,
+        "website": "https://lordslibrary.parliament.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Commons Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW1A 0RS",
+        "latitude": 51.4999807,
+        "longitude": -0.1239986,
+        "website": "https://commonslibrary.parliament.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "The London Library",
+        "category": "library",
+        "address": "14 St James's Square, London",
+        "postcode": "SW1Y 4LG",
+        "latitude": 51.5073215,
+        "longitude": -0.136938,
+        "website": "https://www.londonlibrary.co.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Stuart Hall Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW1P 4ED",
+        "latitude": 51.4904254,
+        "longitude": -0.1293135,
+        "distanceKm": 1
+      },
+      {
+        "name": "Westminster School Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW1P 2QD",
+        "latitude": 51.4949581,
+        "longitude": -0.1339195,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "iFit Personal Training",
+        "category": "leisure-centre",
+        "address": "239 Vauxhall Bridge Road, London",
+        "postcode": "SW1V 1EQ",
+        "latitude": 51.4942659,
+        "longitude": -0.1413063,
+        "website": "http://ifit-pt.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Queen Mother Sports Centre",
+        "category": "leisure-centre",
+        "address": "Vauxhall Bridge Road, London",
+        "postcode": "SW1V 1EL",
+        "latitude": 51.4933137,
+        "longitude": -0.1404882,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Ten",
+        "category": "leisure-centre",
+        "address": "6 Duke Street St James's, London",
+        "postcode": "SW1Y 6BN",
+        "latitude": 51.5070642,
+        "longitude": -0.1373699,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "PlayFit Sports Club",
+        "category": "leisure-centre",
+        "address": "36 Lupus Street, London",
+        "postcode": "SW1V 3AT",
+        "latitude": 51.4880827,
+        "longitude": -0.1376377,
+        "website": "https://playfit.co.uk",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Dolphin Square Fitness Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW1V 3LX",
+        "latitude": 51.4868277,
+        "longitude": -0.1363491,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Grosvenor Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW1P 4HB",
+        "latitude": 51.4932541,
+        "longitude": -0.1301496,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Horseferry Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW1P 3JR",
+        "latitude": 51.4952117,
+        "longitude": -0.1248943,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Longmoore Gardens Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW1V 2ST",
+        "latitude": 51.4923333,
+        "longitude": -0.137972,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "New Trinity Mews",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW1V 3RJ",
+        "latitude": 51.4874277,
+        "longitude": -0.132349,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Covent Garden Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "WC2B 5SN",
+        "latitude": 51.5137122,
+        "longitude": -0.1206571,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Hyde Park Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW7 1SE",
+        "latitude": 51.5031046,
+        "longitude": -0.1626967,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Besborough Family Hub",
         "category": "community-hub",
-        "address": "Westminster, SW1A 1AA",
-        "description": "The monarch's administrative headquarters and London residence since 1837."
+        "address": "",
+        "postcode": "SW1V 3RL",
+        "latitude": 51.4888509,
+        "longitude": -0.1337152,
+        "website": "https://www.westminster.gov.uk/node/2876",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Westminster Muslim Cultural Centre",
+        "category": "community-hub",
+        "address": "30 Winchester Street, London",
+        "postcode": "SW1V 4RR",
+        "latitude": 51.4887523,
+        "longitude": -0.1436469,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Romanian Cultural Institute",
+        "category": "community-hub",
+        "address": "1 Belgrave Square, London",
+        "postcode": "SW1X 8PH",
+        "latitude": 51.5002882,
+        "longitude": -0.1540488,
+        "website": "http://www.icr-london.co.uk/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Hungarian Cultural Centre London",
+        "category": "community-hub",
+        "address": "10 Maiden Lane, London",
+        "postcode": "WC2E 7NA",
+        "latitude": 51.5106742,
+        "longitude": -0.1228927,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St. Gabriel's Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW1V 3HE",
+        "latitude": 51.487165,
+        "longitude": -0.1429182,
+        "website": "https://www.stgabrielshalls.org.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Kent House Knightsbridge",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW7 1BX",
+        "latitude": 51.5012936,
+        "longitude": -0.166728,
+        "distanceKm": 2.3
       }
     ]
   },

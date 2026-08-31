@@ -852,16 +852,512 @@
   "places": {
     "places": [
       {
-        "name": "Sadler's Wells",
-        "category": "leisure-centre",
-        "address": "Islington",
-        "description": "A leading dance theatre with roots going back to a 17th-century well."
+        "name": "Community Room",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "WC1X 9BQ",
+        "latitude": 51.526731,
+        "longitude": -0.1128319,
+        "distanceKm": 0.1
       },
       {
-        "name": "Emirates Stadium",
+        "name": "Unity Rooms",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "EC1R 0LN",
+        "latitude": 51.5266134,
+        "longitude": -0.1058602,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "3 Corners Centre",
+        "category": "community-hub",
+        "address": "Northampton Road, London",
+        "postcode": "EC1R 0HU",
+        "latitude": 51.5252633,
+        "longitude": -0.1067734,
+        "website": "https://www.peelinstitute.org.uk/hall-3-corners",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Claremont Project",
+        "category": "community-hub",
+        "address": "24-27 White Lion Street, London",
+        "postcode": "N1 9PD",
+        "latitude": 51.5326109,
+        "longitude": -0.1084748,
+        "website": "https://www.claremont-project.org/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Islington Bangladesh Association",
+        "category": "community-hub",
+        "address": "71 Caledonian Road, London",
+        "postcode": "N1 9BT",
+        "latitude": 51.5329371,
+        "longitude": -0.119651,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Tompion Community Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "EC1V 0HT",
+        "latitude": 51.5260739,
+        "longitude": -0.1015386,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Mount Pleasant Post Office",
+        "category": "post-office",
+        "address": "Rosebery Avenue, London",
+        "postcode": "EC1R 4SQ",
+        "latitude": 51.5249303,
+        "longitude": -0.1108724,
+        "website": "https://www.postoffice.co.uk/branch-finder/0260037/mount-pleasant",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Mail Boxes Etc",
+        "category": "post-office",
+        "address": "",
+        "postcode": "N1 9UZ",
+        "latitude": 51.531222,
+        "longitude": -0.1177034,
+        "website": "https://www.mbe.co.uk/kingscross",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Mail Boxes Etc",
+        "category": "post-office",
+        "address": "",
+        "postcode": "N1 9FQ",
+        "latitude": 51.5310259,
+        "longitude": -0.1202499,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Chapel Market Post Office",
+        "category": "post-office",
+        "address": "27 Chapel Market, London",
+        "postcode": "N1 9EL",
+        "latitude": 51.5336287,
+        "longitude": -0.1085029,
+        "website": "https://www.postoffice.co.uk/branch-finder/2100045/chapel-market",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Mail Boxes Etc. Angel Islington",
+        "category": "post-office",
+        "address": "8 Duncan Street, London",
+        "postcode": "N1 8BW",
+        "latitude": 51.5334599,
+        "longitude": -0.1042514,
+        "website": "https://www.mbe.co.uk/londonangelislington",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Central Street Post Office",
+        "category": "post-office",
+        "address": "129 Central Street, London",
+        "postcode": "EC1V 8AP",
+        "latitude": 51.5271741,
+        "longitude": -0.0972477,
+        "website": "https://www.postoffice.co.uk/branch-finder/1030035/central-street",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "King's Cross Baptist Church",
+        "category": "place-of-worship",
+        "address": "Vernon Square, London",
+        "postcode": "WC1X 9EP",
+        "latitude": 51.5297843,
+        "longitude": -0.1150465,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Church of our Most Holy Redeemer",
+        "category": "place-of-worship",
+        "address": "Exmouth Market, London",
+        "postcode": "EC1R 4QE",
+        "latitude": 51.5255192,
+        "longitude": -0.1091795,
+        "website": "https://www.holyredeemerclerkenwell.com/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Roman Catholic Church of St Peter & St Paul",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "EC1R 1UL",
+        "latitude": 51.527062,
+        "longitude": -0.1089877,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Ethiopian Christian Fellowship Church (UK)",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "WC1X 9DE",
+        "latitude": 51.5308374,
+        "longitude": -0.118502,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Mark's Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "EC1R 1XP",
+        "latitude": 51.5300661,
+        "longitude": -0.1086851,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Al-Nehar Mosque & Education Centre",
+        "category": "place-of-worship",
+        "address": "70 Caledonian Road, London",
+        "postcode": "N1 9DN",
+        "latitude": 51.5326528,
+        "longitude": -0.1195678,
+        "website": "https://alneharmosque.com",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Wilmington Square",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1X 0EG",
+        "latitude": 51.5267774,
+        "longitude": -0.1105249,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Vernon Square",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1X 9EP",
+        "latitude": 51.5298915,
+        "longitude": -0.1154701,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Spa Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "EC1R 0HU",
+        "latitude": 51.5255681,
+        "longitude": -0.1074384,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Joseph Grimaldi Park",
+        "category": "park",
+        "address": "",
+        "postcode": "N1 9JE",
+        "latitude": 51.5319338,
+        "longitude": -0.1149283,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Spa Green",
+        "category": "park",
+        "address": "",
+        "postcode": "EC1R 4TR",
+        "latitude": 51.5285829,
+        "longitude": -0.1063348,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Killick Street Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "N1 9AY",
+        "latitude": 51.5330991,
+        "longitude": -0.1182844,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Exmouth Market",
+        "category": "market",
+        "address": "",
+        "postcode": "EC1R 4QE",
+        "latitude": 51.5257675,
+        "longitude": -0.1092021,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Chapel Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N1 9ER",
+        "latitude": 51.5335036,
+        "longitude": -0.1087098,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Camden Passage Antiques Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N1 8EF",
+        "latitude": 51.5346742,
+        "longitude": -0.1039502,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Whitecross Street Market",
+        "category": "market",
+        "address": "Whitecross Street, London",
+        "postcode": "EC1Y 8JN",
+        "latitude": 51.5235459,
+        "longitude": -0.093296,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Nags Head Market",
+        "category": "market",
+        "address": "22 Seven Sisters Road, London",
+        "postcode": "N7 6AG",
+        "latitude": 51.5582187,
+        "longitude": -0.1180036,
+        "website": "https://nagsheadmarket.com/",
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Yerbury Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N15 3XP",
+        "latitude": 51.5609092,
+        "longitude": -0.1305901,
+        "website": "https://www.yerburyfarmersmarket.com/",
+        "distanceKm": 4
+      },
+      {
+        "name": "Quentin Blake Centre for Illustration",
+        "category": "culture",
+        "address": "1 Myddelton Passage, London",
+        "postcode": "EC1R 1AG",
+        "latitude": 51.528594,
+        "longitude": -0.1076445,
+        "website": "https://qbcentre.org.uk",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "2Northdown",
+        "category": "culture",
+        "address": "2 Northdown Street, London",
+        "postcode": "N1 9BG",
+        "latitude": 51.5313387,
+        "longitude": -0.1191871,
+        "website": "https://www.2northdown.com/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Islington Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "EC1V 4NB",
+        "latitude": 51.5264897,
+        "longitude": -0.1045003,
+        "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/heritage/islington-museum",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "The London Improv Theatre",
+        "category": "culture",
+        "address": "29 Clerkenwell Green, London",
+        "postcode": "EC1R 0DU",
+        "latitude": 51.5227777,
+        "longitude": -0.106411,
+        "website": "https://www.londonimprovtheatre.com/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Sadler's Wells",
+        "category": "culture",
+        "address": "Rosebery Avenue, London",
+        "postcode": "EC1R 4TN",
+        "latitude": 51.5294846,
+        "longitude": -0.1061834,
+        "website": "https://www.sadlerswells.com/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Old Red Lion Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "EC1V 4NJ",
+        "latitude": 51.531418,
+        "longitude": -0.1059198,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Three Corners Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "EC1R 0HU",
+        "latitude": 51.5254895,
+        "longitude": -0.1066345,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Brunswick Estate Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "EC1V 4PH",
+        "latitude": 51.5261214,
+        "longitude": -0.1028763,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Fife Terrace-Muriel Street Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N1 9RA",
+        "latitude": 51.5343866,
+        "longitude": -0.1158652,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Barnard Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N1 0JG",
+        "latitude": 51.5363907,
+        "longitude": -0.1116989,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Seward Street Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "EC1V 3NZ",
+        "latitude": 51.5259021,
+        "longitude": -0.0985623,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Pocket Playground",
+        "category": "playground",
+        "address": "2 Wicks Place, London",
+        "postcode": "N1 1XJ",
+        "latitude": 51.53824,
+        "longitude": -0.1030198,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Islington Local History Centre",
+        "category": "library",
+        "address": "",
+        "postcode": "EC1V 4NB",
+        "latitude": 51.5262413,
+        "longitude": -0.1045059,
+        "website": "https://www.islington.gov.uk/islington/history-heritage/heritage_lhc/Pages/default.aspx",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Finsbury Library",
+        "category": "library",
+        "address": "245 St. John Street, London",
+        "postcode": "EC1V 4NB",
+        "latitude": 51.526375,
+        "longitude": -0.1043746,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Marx Memorial Library",
+        "category": "library",
+        "address": "37a Clerkenwell Green, London",
+        "postcode": "EC1R 0DU",
+        "latitude": 51.5230105,
+        "longitude": -0.1057402,
+        "website": "https://www.marx-memorial-library.org.uk",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Lewis Carroll Children's Library",
+        "category": "library",
+        "address": "Copenhagen Street, London",
+        "postcode": "N1 0ST",
+        "latitude": 51.537135,
+        "longitude": -0.1189539,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "West Library",
+        "category": "library",
+        "address": "107 Bridgeman Road, London",
+        "postcode": "N1 1BD",
+        "latitude": 51.5407525,
+        "longitude": -0.1162446,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "South Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N1 2SL",
+        "latitude": 51.5390428,
+        "longitude": -0.0987829,
+        "website": "https://www.islington.gov.uk/Education/Libraries/Local/South.asp",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Shaolin Way",
         "category": "leisure-centre",
-        "address": "75 Drayton Park, N5 1BU",
-        "description": "Arsenal Football Club's home ground since 2006."
+        "address": "84 Chapel Market, London",
+        "postcode": "N1 9EX",
+        "latitude": 51.5332763,
+        "longitude": -0.1099337,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Cally Pool and Gym",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N1 0NH",
+        "latitude": 51.5383387,
+        "longitude": -0.1170227,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Regents Canoe Club & Islington Boat Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N1 8GB",
+        "latitude": 51.5314078,
+        "longitude": -0.0977816,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Finsbury Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Norman Street, London",
+        "postcode": "EC1V 3PU",
+        "latitude": 51.5260391,
+        "longitude": -0.0951374,
+        "website": "http://www.better.org.uk/leisure-centre/london/islington/finsbury",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Islington Tennis Centre and Gym",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N7 9NH",
+        "latitude": 51.5458622,
+        "longitude": -0.1217592,
+        "website": "https://www.better.org.uk/leisure-centre/london/islington/islingtontc/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Highbury Leisure Centre",
+        "category": "leisure-centre",
+        "address": "London",
+        "postcode": "N5 1QZ",
+        "latitude": 51.5476556,
+        "longitude": -0.1034201,
+        "website": "https://www.better.org.uk/leisure-centre/london/islington/highbury/",
+        "distanceKm": 2.5
       }
     ]
   },

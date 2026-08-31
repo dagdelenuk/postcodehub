@@ -3347,16 +3347,469 @@
   "places": {
     "places": [
       {
-        "name": "East Sheen Common",
-        "category": "park",
-        "address": "East Sheen, SW14",
-        "description": "Woodland and open common bordering Richmond Park."
+        "name": "East Sheen Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW14 8LP",
+        "latitude": 51.4654433,
+        "longitude": -0.267371,
+        "distanceKm": 0
       },
       {
-        "name": "Stag Brewery site",
+        "name": "Kew Library",
+        "category": "library",
+        "address": "106 North Road",
+        "postcode": "TW9 4HJ",
+        "latitude": 51.4765363,
+        "longitude": -0.2846743,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Castelnau Library",
+        "category": "library",
+        "address": "75 Castelnau, London",
+        "postcode": "SW13 9RT",
+        "latitude": 51.4802576,
+        "longitude": -0.2375025,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Richmond Library",
+        "category": "library",
+        "address": "Little Green, Richmond",
+        "postcode": "TW9 1QL",
+        "latitude": 51.4622294,
+        "longitude": -0.3036715,
+        "website": "https://www.richmond.gov.uk/richmond_library",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Richmond Reference Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW9 1TP",
+        "latitude": 51.458887,
+        "longitude": -0.3066298,
+        "website": "https://www.richmond.gov.uk/services/libraries/branch_libraries/reference_library",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Ham Library",
+        "category": "library",
+        "address": "Ham Street, Richmond",
+        "postcode": "TW10 7HR",
+        "latitude": 51.4378741,
+        "longitude": -0.3132413,
+        "website": "https://www.richmond.gov.uk/ham_library",
+        "distanceKm": 4.4
+      },
+      {
+        "name": "East Sheen Post Office",
+        "category": "post-office",
+        "address": "234 Upper Richmond Road West, London",
+        "postcode": "SW14 8AG",
+        "latitude": 51.4649462,
+        "longitude": -0.2657375,
+        "website": "https://www.postoffice.co.uk/branch-finder/1440012/east-sheen",
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Skinners Newsagents",
+        "category": "post-office",
+        "address": "143 Sheen Road, Richmond",
+        "postcode": "TW9 1YJ",
+        "latitude": 51.4621255,
+        "longitude": -0.2935956,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Barnes Post Office",
+        "category": "post-office",
+        "address": "96 Church Road, London",
+        "postcode": "SW13 0DQ",
+        "latitude": 51.4750275,
+        "longitude": -0.2397686,
+        "website": "https://www.postoffice.co.uk/branch-finder/057001x/church-road",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "Red Lion Street, Richmond",
+        "postcode": "TW9 1RW",
+        "latitude": 51.4596009,
+        "longitude": -0.3040248,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Richmond Post Office",
+        "category": "post-office",
+        "address": "16-17 George Street, Richmond",
+        "postcode": "TW9 1JS",
+        "latitude": 51.4600425,
+        "longitude": -0.3049436,
+        "website": "https://www.postoffice.co.uk/branch-finder/1560255/richmond",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Castelnau Post Office",
+        "category": "post-office",
+        "address": "191 Castelnau, London",
+        "postcode": "SW13 9ER",
+        "latitude": 51.4853577,
+        "longitude": -0.2335968,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Mortlake Green",
+        "category": "park",
+        "address": "",
+        "postcode": "SW14 7HA",
+        "latitude": 51.469016,
+        "longitude": -0.2676104,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Tangier Green",
+        "category": "park",
+        "address": "",
+        "postcode": "TW10 5DP",
+        "latitude": 51.4661225,
+        "longitude": -0.2770964,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Dovecote Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SW14 8SH",
+        "latitude": 51.470072,
+        "longitude": -0.2596411,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "East Sheen Common",
+        "category": "park",
+        "address": "",
+        "postcode": "SW14 7AU",
+        "latitude": 51.4590702,
+        "longitude": -0.2796975,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "North Sheen Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "TW9 4HE",
+        "latitude": 51.4710583,
+        "longitude": -0.285106,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Pesthouse Common",
+        "category": "park",
+        "address": "",
+        "postcode": "TW10 6HW",
+        "latitude": 51.4594596,
+        "longitude": -0.2886047,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "East Sheen Baptist Church",
+        "category": "place-of-worship",
+        "address": "Temple Sheen Road, London",
+        "postcode": "SW14 7PY",
+        "latitude": 51.4636815,
+        "longitude": -0.271574,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "All Saints",
+        "category": "place-of-worship",
+        "address": "East Sheen Avenue, London",
+        "postcode": "SW14 8AX",
+        "latitude": 51.4624605,
+        "longitude": -0.2618145,
+        "website": "http://www.allsaintschurch.org.uk",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Mary Magdalen RC Church",
+        "category": "place-of-worship",
+        "address": "North Worple Way, London",
+        "postcode": "SW14 8PR",
+        "latitude": 51.4683134,
+        "longitude": -0.2618282,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Mary the Virgin",
+        "category": "place-of-worship",
+        "address": "Mortlake High Street, London",
+        "postcode": "SW14 8JA",
+        "latitude": 51.4695481,
+        "longitude": -0.2616091,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Parkside Christian Centre",
+        "category": "place-of-worship",
+        "address": "Upper Richmond Road West, London",
+        "postcode": "SW14 8DU",
+        "latitude": 51.4649456,
+        "longitude": -0.2584886,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Christ Church",
+        "category": "place-of-worship",
+        "address": "Christchurch Road, London",
+        "postcode": "SW14 7AW",
+        "latitude": 51.4603003,
+        "longitude": -0.275021,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Mortlake Green Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW14 7HB",
+        "latitude": 51.4686699,
+        "longitude": -0.268199,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Palewell Common & Fields Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW14 8RE",
+        "latitude": 51.4593021,
+        "longitude": -0.2595383,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Vine Road Recreation Ground Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW13 0PL",
+        "latitude": 51.4683868,
+        "longitude": -0.2492735,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Westerly Ware Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW9 3AW",
+        "latitude": 51.486196,
+        "longitude": -0.2869707,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Petersham Gate Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW10 7AE",
+        "latitude": 51.4454807,
+        "longitude": -0.3000749,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW13 9JT",
+        "latitude": 51.4880572,
+        "longitude": -0.2392984,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Powerstation Youth Centre",
         "category": "community-hub",
-        "address": "Lower Richmond Road, Mortlake, SW14",
-        "description": "Site of the Mortlake Brewery, brewing on and off since the 15th century and known as the Stag Brewery from 1959 until closure in 2015; now being redeveloped."
+        "address": "121 Mortlake High Street, London",
+        "postcode": "SW14 8SW",
+        "latitude": 51.470144,
+        "longitude": -0.258325,
+        "website": "https://kr.afcinfo.org.uk/pages/young-people/information-and-advice/youth-centres-and-activities/powerstation-youth-centre",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "OSO Arts Centre",
+        "category": "community-hub",
+        "address": "49 Station Road, London",
+        "postcode": "SW13 0LF",
+        "latitude": 51.4722797,
+        "longitude": -0.2466172,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Barnes Community Association",
+        "category": "community-hub",
+        "address": "70 Barnes High Street, London",
+        "postcode": "SW13 9LD",
+        "latitude": 51.4735353,
+        "longitude": -0.2480483,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Kew Scouts",
+        "category": "community-hub",
+        "address": "Richmond",
+        "postcode": "TW9 3QA",
+        "latitude": 51.4767612,
+        "longitude": -0.2853764,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Kitson Hall",
+        "category": "community-hub",
+        "address": "Kitson Road, London",
+        "postcode": "SW13 9HJ",
+        "latitude": 51.4753608,
+        "longitude": -0.2425307,
+        "distanceKm": 2
+      },
+      {
+        "name": "Old Fellows Memorial Hall",
+        "category": "community-hub",
+        "address": "Parkshot, Richmond",
+        "postcode": "TW9 2RG",
+        "latitude": 51.464043,
+        "longitude": -0.3022624,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Sheen Lawn Tennis and Squash Club",
+        "category": "leisure-centre",
+        "address": "Parklands Close, London",
+        "postcode": "SW14 7EH",
+        "latitude": 51.4585048,
+        "longitude": -0.2714424,
+        "website": "https://www.sheentennisquash.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Skieasy",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW14 8HL",
+        "latitude": 51.4723376,
+        "longitude": -0.2642683,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Sheen Park Cricket Club",
+        "category": "leisure-centre",
+        "address": "Fife Road, London",
+        "postcode": "SW14 7EW",
+        "latitude": 51.4572909,
+        "longitude": -0.2754917,
+        "website": "https://sheenpark.play-cricket.com/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Putney Town Rowing Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW9 4EN",
+        "latitude": 51.4744885,
+        "longitude": -0.2735111,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "North Sheen Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW9 4NB",
+        "latitude": 51.4690043,
+        "longitude": -0.2828352,
+        "website": "https://www.northsheenbowlingclub.co.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Rosslyn Park FC",
+        "category": "leisure-centre",
+        "address": "Priory Lane, London",
+        "postcode": "SW15 5JH",
+        "latitude": 51.4647056,
+        "longitude": -0.2455528,
+        "website": "https://www.rosslynpark.co.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Kew Art Studio",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW9 3NN",
+        "latitude": 51.474997,
+        "longitude": -0.2868022,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Shirley Sherwood Gallery",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW9 2AA",
+        "latitude": 51.4746556,
+        "longitude": -0.2923647,
+        "distanceKm": 2
+      },
+      {
+        "name": "Olympic Studios",
+        "category": "culture",
+        "address": "117-123 Church Road, London",
+        "postcode": "SW13 9HL",
+        "latitude": 51.4752698,
+        "longitude": -0.2406397,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Orange Tree Theatre",
+        "category": "culture",
+        "address": "53 Kew Road, London",
+        "postcode": "TW9 2SA",
+        "latitude": 51.4644134,
+        "longitude": -0.3012489,
+        "website": "https://www.orangetreetheatre.co.uk/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Queen Charlotte Hall",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW9 2RE",
+        "latitude": 51.4645702,
+        "longitude": -0.3030536,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Richmond Theatre",
+        "category": "culture",
+        "address": "Little Green, Richmond",
+        "postcode": "TW9 1QJ",
+        "latitude": 51.4620472,
+        "longitude": -0.3037625,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Duck Pond Market",
+        "category": "market",
+        "address": "Heron Square, Richmond upon Thames",
+        "postcode": "TW9 1EJ",
+        "latitude": 51.458417,
+        "longitude": -0.3061978,
+        "website": "https://duckpondmarket.com/richmond",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Twickenham Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "TW1 4HF",
+        "latitude": 51.446345,
+        "longitude": -0.3311438,
+        "website": "https://www.lfm.org.uk/markets/twickenham/",
+        "distanceKm": 4.9
       }
     ]
   },

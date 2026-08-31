@@ -1246,16 +1246,469 @@
   "places": {
     "places": [
       {
-        "name": "Raphael Park",
-        "category": "park",
+        "name": "Bower Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "RM4 1QP",
+        "latitude": 51.6165439,
+        "longitude": 0.1809703,
+        "website": "https://www.facebook.com/HABDC/?locale=en_GB",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "North Romford Community Association",
+        "category": "community-hub",
+        "address": "Clockhouse Lane",
+        "postcode": "RM5 3PJ",
+        "latitude": 51.6006999,
+        "longitude": 0.1637113,
+        "website": "https://nrca.co.uk/index_1.html",
+        "distanceKm": 4.6
+      },
+      {
+        "name": "myplace",
+        "category": "community-hub",
         "address": "Romford",
-        "description": "A Victorian park with a boating lake, adjoining the historic Gidea Park estate."
+        "postcode": "RM3 9EN",
+        "latitude": 51.6083264,
+        "longitude": 0.2238607,
+        "distanceKm": 5.8
+      },
+      {
+        "name": "Harold Hill Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "RM3 9LB",
+        "latitude": 51.6058043,
+        "longitude": 0.2260673,
+        "distanceKm": 6.1
+      },
+      {
+        "name": "St John's Community Hall",
+        "category": "community-hub",
+        "address": "Mawney Road, Romford",
+        "postcode": "RM7 7BH",
+        "latitude": 51.5807056,
+        "longitude": 0.1658238,
+        "website": "https://www.anandacentre.co.uk/",
+        "distanceKm": 6.8
+      },
+      {
+        "name": "Wykeham Centre",
+        "category": "community-hub",
+        "address": "Market Place, Romford",
+        "postcode": "RM1 3AB",
+        "latitude": 51.579406,
+        "longitude": 0.1809412,
+        "website": "https://www.stedwardsromford.com/",
+        "distanceKm": 7.1
+      },
+      {
+        "name": "St John the Evangelist",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM4 1PL",
+        "latitude": 51.6161484,
+        "longitude": 0.1822862,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "St James",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM5 3YR",
+        "latitude": 51.6024771,
+        "longitude": 0.1738445,
+        "distanceKm": 4.5
+      },
+      {
+        "name": "The Ascension, Collier Row",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM5 3PA",
+        "latitude": 51.598827,
+        "longitude": 0.1601197,
+        "distanceKm": 4.7
+      },
+      {
+        "name": "Colier Row Gospel hall",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM5 2BD",
+        "latitude": 51.5980106,
+        "longitude": 0.1546447,
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Havering Road Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM1 4BQ",
+        "latitude": 51.5986388,
+        "longitude": 0.1769289,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Catholic Church of Corpus Christi, Collier Row",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM5 2AP",
+        "latitude": 51.5967131,
+        "longitude": 0.1602073,
+        "distanceKm": 5
+      },
+      {
+        "name": "Bedfords Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM1 4FA",
+        "latitude": 51.6069639,
+        "longitude": 0.1932424,
+        "distanceKm": 4.5
+      },
+      {
+        "name": "Lawns Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM5 3TS",
+        "latitude": 51.596925,
+        "longitude": 0.1697833,
+        "distanceKm": 5
+      },
+      {
+        "name": "Rise Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM1 4AE",
+        "latitude": 51.5987735,
+        "longitude": 0.1852824,
+        "distanceKm": 5.1
+      },
+      {
+        "name": "Central Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM3 9FE",
+        "latitude": 51.6071716,
+        "longitude": 0.2293199,
+        "distanceKm": 6.2
+      },
+      {
+        "name": "King George's Playing Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "RM7 8ET",
+        "latitude": 51.5851215,
+        "longitude": 0.1657858,
+        "distanceKm": 6.3
+      },
+      {
+        "name": "Dagnam Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM3 9YA",
+        "latitude": 51.6145031,
+        "longitude": 0.2383882,
+        "distanceKm": 6.3
+      },
+      {
+        "name": "Collier Row Library",
+        "category": "library",
+        "address": "45 Collier Row, Romford",
+        "postcode": "RM5 3NR",
+        "latitude": 51.5984634,
+        "longitude": 0.1608654,
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Harold Hill Library",
+        "category": "library",
+        "address": "19a Farnham Road, Romford",
+        "postcode": "RM3 8ED",
+        "latitude": 51.6064383,
+        "longitude": 0.2196023,
+        "distanceKm": 5.7
+      },
+      {
+        "name": "Romford Central Library",
+        "category": "library",
+        "address": "",
+        "postcode": "RM1 3AR",
+        "latitude": 51.5807694,
+        "longitude": 0.1835434,
+        "distanceKm": 7
+      },
+      {
+        "name": "Harold Wood Library",
+        "category": "library",
+        "address": "",
+        "postcode": "RM3 0NX",
+        "latitude": 51.5945193,
+        "longitude": 0.2354511,
+        "distanceKm": 7.4
+      },
+      {
+        "name": "Gidea Park Library",
+        "category": "library",
+        "address": "168 Balgores Lane, Gidea Park, Romford",
+        "postcode": "RM2 6BS",
+        "latitude": 51.5799892,
+        "longitude": 0.2058978,
+        "distanceKm": 7.6
+      },
+      {
+        "name": "Hornchurch Library",
+        "category": "library",
+        "address": "Hornchurch",
+        "postcode": "RM11 1TB",
+        "latitude": 51.5649049,
+        "longitude": 0.2205614,
+        "distanceKm": 9.5
+      },
+      {
+        "name": "Noak Hill Sports Complex",
+        "category": "leisure-centre",
+        "address": "Noak Hill Road, Romford",
+        "postcode": "RM3 7FL",
+        "latitude": 51.6121937,
+        "longitude": 0.2090782,
+        "website": "https://www.everyoneactive.com/centre/noak-hill-sports-complex/",
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Central Park Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM3 9EN",
+        "latitude": 51.6078657,
+        "longitude": 0.2242182,
+        "distanceKm": 5.9
+      },
+      {
+        "name": "PlayFootball Romford",
+        "category": "leisure-centre",
+        "address": "Eastern Avenue West, Romford",
+        "postcode": "RM7 7AY",
+        "latitude": 51.5837141,
+        "longitude": 0.1674068,
+        "website": "https://www.playfootball.net/romford",
+        "distanceKm": 6.5
+      },
+      {
+        "name": "Romford Hockey Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM2 6NP",
+        "latitude": 51.591793,
+        "longitude": 0.2099264,
+        "distanceKm": 6.6
+      },
+      {
+        "name": "Romford Rock and Boulder",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM1 1DX",
+        "latitude": 51.5829803,
+        "longitude": 0.1745672,
+        "website": "https://www.romfordrockandboulder.co.uk/",
+        "distanceKm": 6.6
+      },
+      {
+        "name": "Maylands Golf Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM3 0AZ",
+        "latitude": 51.6071178,
+        "longitude": 0.2491087,
+        "distanceKm": 7.3
+      },
+      {
+        "name": "Harold Hill Post Office",
+        "category": "post-office",
+        "address": "Farnham Road, Romford",
+        "postcode": "RM3 8EJ",
+        "latitude": 51.6065137,
+        "longitude": 0.2191423,
+        "website": "https://www.postoffice.co.uk/branch-finder/0080268/harold-hill",
+        "distanceKm": 5.7
+      },
+      {
+        "name": "North Street Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "RM5 3AA",
+        "latitude": 51.5847949,
+        "longitude": 0.1728717,
+        "website": "https://www.postoffice.co.uk/branch-finder/104026x/north-street",
+        "distanceKm": 6.4
+      },
+      {
+        "name": "Harold Wood Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "RM3 0BP",
+        "latitude": 51.5936606,
+        "longitude": 0.233886,
+        "website": "https://www.postoffice.co.uk/branch-finder/0830267/harold-wood",
+        "distanceKm": 7.4
+      },
+      {
+        "name": "Minster Parade Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "RM11 3XB",
+        "latitude": 51.5593116,
+        "longitude": 0.2350761,
+        "website": "https://www.postoffice.co.uk/branch-finder/1000268/minster-parade",
+        "distanceKm": 10.5
+      },
+      {
+        "name": "Suttons Lane Post Office",
+        "category": "post-office",
+        "address": "11 Suttons Lane, Hornchurch",
+        "postcode": "RM12 6RD",
+        "latitude": 51.5535007,
+        "longitude": 0.2193416,
+        "website": "https://www.postoffice.co.uk/branch-finder/1160265/suttons-lane",
+        "distanceKm": 10.6
+      },
+      {
+        "name": "Upminster Post Office",
+        "category": "post-office",
+        "address": "Station Road, Upminster",
+        "postcode": "RM14 2UB",
+        "latitude": 51.5572341,
+        "longitude": 0.2499383,
+        "website": "https://www.postoffice.co.uk/branch-finder/115026x/upminster",
+        "distanceKm": 11.3
+      },
+      {
+        "name": "Raphael Park Open Air Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "RM1 4EE",
+        "latitude": 51.5879262,
+        "longitude": 0.1906561,
+        "distanceKm": 6.4
+      },
+      {
+        "name": "Lumiere Cinema Romford",
+        "category": "culture",
+        "address": "Mercury Shopping Centre, Romford",
+        "postcode": "RM1 3EE",
+        "latitude": 51.5794872,
+        "longitude": 0.1852042,
+        "website": "https://www.lumiereromford.com/",
+        "distanceKm": 7.1
+      },
+      {
+        "name": "Havering Museum",
+        "category": "culture",
+        "address": "19-21 High Street",
+        "postcode": "RM1 1HR",
+        "latitude": 51.5778422,
+        "longitude": 0.1793468,
+        "website": "https://www.haveringmuseum.org.uk/",
+        "distanceKm": 7.2
+      },
+      {
+        "name": "Brookside Theatre",
+        "category": "culture",
+        "address": "Romford",
+        "postcode": "RM1 3NH",
+        "latitude": 51.5761504,
+        "longitude": 0.1852421,
+        "distanceKm": 7.5
+      },
+      {
+        "name": "Vue",
+        "category": "culture",
+        "address": "1-15 Waterloo Rd, Romford",
+        "postcode": "RM1 1AU",
+        "latitude": 51.5747423,
+        "longitude": 0.1790185,
+        "distanceKm": 7.6
+      },
+      {
+        "name": "Fairkytes Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "RM11 1AX",
+        "latitude": 51.5650064,
+        "longitude": 0.2181857,
+        "distanceKm": 9.4
       },
       {
         "name": "Romford Market",
-        "category": "community-hub",
-        "address": "Market Place, Romford, RM1 3AB",
-        "description": "An outdoor market trading since a royal charter of 1247, still held several days a week."
+        "category": "market",
+        "address": "",
+        "postcode": "RM1 3AB",
+        "latitude": 51.5793142,
+        "longitude": 0.1819783,
+        "distanceKm": 7.1
+      },
+      {
+        "name": "Willow Farm Car Boot Sale",
+        "category": "market",
+        "address": "",
+        "postcode": "RM13 9ED",
+        "latitude": 51.5056828,
+        "longitude": 0.2280334,
+        "distanceKm": 15.8
+      },
+      {
+        "name": "Kidspace Romford",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM1 1AU",
+        "latitude": 51.5746374,
+        "longitude": 0.1793634,
+        "distanceKm": 7.6
+      },
+      {
+        "name": "Harold Wood Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM3 0NB",
+        "latitude": 51.587806,
+        "longitude": 0.2388275,
+        "distanceKm": 8.1
+      },
+      {
+        "name": "Grenfell Park Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM12 4DQ",
+        "latitude": 51.5648894,
+        "longitude": 0.1859681,
+        "distanceKm": 8.7
+      },
+      {
+        "name": "Harrow Lodge Park Parkour Facility",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM11 1JU",
+        "latitude": 51.5617882,
+        "longitude": 0.2073344,
+        "distanceKm": 9.5
+      },
+      {
+        "name": "Harrow Lodge Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM12 4XL",
+        "latitude": 51.5604308,
+        "longitude": 0.207714,
+        "distanceKm": 9.6
+      },
+      {
+        "name": "Harrow Lodge Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM12 4EQ",
+        "latitude": 51.5540315,
+        "longitude": 0.1918876,
+        "distanceKm": 10
       }
     ]
   },

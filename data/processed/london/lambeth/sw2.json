@@ -9067,16 +9067,509 @@
   "places": {
     "places": [
       {
-        "name": "Lambeth Palace",
-        "category": "community-hub",
-        "address": "Lambeth",
-        "description": "The official London residence of the Archbishop of Canterbury for over 800 years."
+        "name": "Elm Park Post Office",
+        "category": "post-office",
+        "address": "Elm Park, London",
+        "postcode": "SW2 2UB",
+        "latitude": 51.4494488,
+        "longitude": -0.1178224,
+        "website": "https://www.postoffice.co.uk/branch-finder/0530085/elm-park",
+        "distanceKm": 0.1
       },
       {
-        "name": "Royal Festival Hall",
+        "name": "Brixton Hill Post Office",
+        "category": "post-office",
+        "address": "104-106 Brixton Hill, London",
+        "postcode": "SW2 1AH",
+        "latitude": 51.4543542,
+        "longitude": -0.1201921,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Streatham Hill Post Office",
+        "category": "post-office",
+        "address": "102 Streatham Hill, London",
+        "postcode": "SW2 4UQ",
+        "latitude": 51.4406365,
+        "longitude": -0.1256209,
+        "website": "https://www.postoffice.co.uk/branch-finder/1010085/streatham-hill",
+        "distanceKm": 1
+      },
+      {
+        "name": "Tulse Hill Post Office",
+        "category": "post-office",
+        "address": "192 Tulse Hill, London",
+        "postcode": "SW2 3BU",
+        "latitude": 51.4410219,
+        "longitude": -0.1071792,
+        "website": "https://www.postoffice.co.uk/branch-finder/0600083/tulse-hill",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Leigham Vale Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "SW16 2JH",
+        "latitude": 51.4343281,
+        "longitude": -0.1179295,
+        "website": "https://www.postoffice.co.uk/branch-finder/0890014/leigham-vale",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Brixton Post Office",
+        "category": "post-office",
+        "address": "Ferndale Road, London",
+        "postcode": "SW9 8FR",
+        "latitude": 51.4641172,
+        "longitude": -0.116046,
+        "website": "https://www.postoffice.co.uk/branch-finder/0290084/brixton",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Gospel Tabernacle",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "SW2 2SQ",
+        "latitude": 51.4486254,
+        "longitude": -0.1198142,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Carribbean Hindu Cultural Society",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "SW2 2BB",
+        "latitude": 51.4486818,
+        "longitude": -0.1193799,
+        "website": "www.chcstemple.org.uk",
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Brixton Hill Islamic Centre",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SW2 1HE",
+        "latitude": 51.4487467,
+        "longitude": -0.1240323,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Friends Meeting House",
+        "category": "place-of-worship",
+        "address": "Redlands Way, London",
+        "postcode": "SW2 3LU",
+        "latitude": 51.4467123,
+        "longitude": -0.1227112,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Brixton Hill United Reform Church",
+        "category": "place-of-worship",
+        "address": "235 Brixton Hill, London",
+        "postcode": "SW2 1NR",
+        "latitude": 51.4461793,
+        "longitude": -0.1238237,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "All Saints Church",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "SW2 5NP",
+        "latitude": 51.4485635,
+        "longitude": -0.1261247,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Rush Common",
+        "category": "park",
+        "address": "",
+        "postcode": "SW2 1HY",
+        "latitude": 51.4502723,
+        "longitude": -0.1219787,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Holmewood Gardens",
+        "category": "park",
+        "address": "Holmewood Road, London",
+        "postcode": "SW2 2SJ",
+        "latitude": 51.4465068,
+        "longitude": -0.1214269,
+        "website": "https://beta.lambeth.gov.uk/parks/holmewood-gardens",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Rush Common",
+        "category": "park",
+        "address": "",
+        "postcode": "SW2 3LP",
+        "latitude": 51.4483444,
+        "longitude": -0.1231645,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Pencil Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW2 1AE",
+        "latitude": 51.4521821,
+        "longitude": -0.120837,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Dumbarton Court Public Open Space",
+        "category": "park",
+        "address": "Brixton Hill, London",
+        "postcode": "SW2 5LX",
+        "latitude": 51.4497404,
+        "longitude": -0.1234213,
+        "website": "https://beta.lambeth.gov.uk/parks/dumbarton-court-gardens",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Rush Common",
+        "category": "park",
+        "address": "Brixton Hill, London",
+        "postcode": "SW2 3RN",
+        "latitude": 51.4530781,
+        "longitude": -0.1201703,
+        "website": "https://beta.lambeth.gov.uk/parks/rush-common",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Brockwell Park Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW2 2HU",
+        "latitude": 51.4519343,
+        "longitude": -0.1113407,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Sand & Water Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE24 9BN",
+        "latitude": 51.4489849,
+        "longitude": -0.1095507,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Willington Road Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW9 9NB",
+        "latitude": 51.4638869,
+        "longitude": -0.1251794,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Clapham Common playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW4 9DE",
+        "latitude": 51.4571804,
+        "longitude": -0.1459476,
+        "distanceKm": 2
+      },
+      {
+        "name": "Grove Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE5 9DT",
+        "latitude": 51.4684223,
+        "longitude": -0.1029348,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Slade Gardens Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW9 0DA",
+        "latitude": 51.4715315,
+        "longitude": -0.1158852,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Knights Youth Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW2 4QQ",
+        "latitude": 51.4462458,
+        "longitude": -0.1279756,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Clapham Park Cube",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW4 8BT",
+        "latitude": 51.4482366,
+        "longitude": -0.1321745,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Whippersnappers",
+        "category": "community-hub",
+        "address": "Dulwich Road, London",
+        "postcode": "SE24 0PA",
+        "latitude": 51.4526699,
+        "longitude": -0.1060801,
+        "distanceKm": 1
+      },
+      {
+        "name": "St Matthew's Estate Tenants & Residents Association Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW2 1NH",
+        "latitude": 51.4576036,
+        "longitude": -0.1164887,
+        "distanceKm": 1
+      },
+      {
+        "name": "Mosaic Clubhouse",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW2 1LR",
+        "latitude": 51.4569037,
+        "longitude": -0.1135364,
+        "distanceKm": 1
+      },
+      {
+        "name": "Yellow Qube",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "SW2 3DH",
+        "latitude": 51.4409146,
+        "longitude": -0.110809,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "St Martins Library Centre",
+        "category": "library",
+        "address": "",
+        "postcode": "SW2 2NT",
+        "latitude": 51.444615,
+        "longitude": -0.1116142,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Brixton Library",
+        "category": "library",
+        "address": "Brixton Oval, London",
+        "postcode": "SW2 1JQ",
+        "latitude": 51.4609462,
+        "longitude": -0.1148482,
+        "website": "https://www.lambeth.gov.uk/libraries-0/brixton-tate-library",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Clapham Library",
+        "category": "library",
+        "address": "91 Clapham High Street, London",
+        "postcode": "SW4 7DB",
+        "latitude": 51.4629946,
+        "longitude": -0.1329797,
+        "website": "https://www.lambeth.gov.uk/libraries-0/clapham-library",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Streatham Tate Library",
+        "category": "library",
+        "address": "63 Streatham High Road, London",
+        "postcode": "SW16 1PN",
+        "latitude": 51.4315839,
+        "longitude": -0.1290913,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "West Norwood Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SE27 0HX",
+        "latitude": 51.4332267,
+        "longitude": -0.1031212,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Carnegie Library",
+        "category": "library",
+        "address": "192 Herne Hill Road",
+        "postcode": "SE24 0DG",
+        "latitude": 51.4606722,
+        "longitude": -0.0965447,
+        "website": "https://www.lambeth.gov.uk/libraries-0/carnegie-library",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Brockwell Lido",
         "category": "leisure-centre",
-        "address": "Belvedere Road, SE1 8XX",
-        "description": "The centrepiece concert hall of the South Bank Centre, built for the 1951 Festival of Britain."
+        "address": "Dulwich Road, London",
+        "postcode": "SE24 0PA",
+        "latitude": 51.4530304,
+        "longitude": -0.1064862,
+        "website": "https://www.fusion-lifestyle.com/centres/Brockwell_Lido",
+        "distanceKm": 1
+      },
+      {
+        "name": "London Ip Man Wing Chun Kung Fu",
+        "category": "leisure-centre",
+        "address": "Talma Road, London",
+        "postcode": "SW2 1AS",
+        "latitude": 51.4589094,
+        "longitude": -0.110979,
+        "website": "https://www.londonipmanwingchun.co.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Grafton Tennis Club",
+        "category": "leisure-centre",
+        "address": "70A Thornton Road, London",
+        "postcode": "SW12 0LF",
+        "latitude": 51.4439451,
+        "longitude": -0.1356598,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Telford Park Tennis Club",
+        "category": "leisure-centre",
+        "address": "35A Killieser Avenue, London",
+        "postcode": "SW2 4NX",
+        "latitude": 51.4403866,
+        "longitude": -0.1297853,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Substation",
+        "category": "leisure-centre",
+        "address": "Ellerslie Square, London",
+        "postcode": "SW2 5DZ",
+        "latitude": 51.4587276,
+        "longitude": -0.1283887,
+        "website": "https://substation.co.uk/brixton/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Belmont Bowling Club",
+        "category": "leisure-centre",
+        "address": "Broadlands Avenue, London",
+        "postcode": "SW16 1NA",
+        "latitude": 51.4369992,
+        "longitude": -0.1286937,
+        "website": "http://www.belmontbowls.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Streatham Hill Theatre",
+        "category": "culture",
+        "address": "110 Streatham Hill, London",
+        "postcode": "SW2 4RD",
+        "latitude": 51.4405171,
+        "longitude": -0.12605,
+        "website": "https://streathamhilltheatre.org/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Streatham Space Project",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW2 4PA",
+        "latitude": 51.4387768,
+        "longitude": -0.1277422,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "South London Botanical Institute",
+        "category": "culture",
+        "address": "323 Norwood Road, London",
+        "postcode": "SE24 9AQ",
+        "latitude": 51.4421833,
+        "longitude": -0.1050851,
+        "website": "https://www.slbi.org.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Black Cultural Archive",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW2 1EF",
+        "latitude": 51.4605112,
+        "longitude": -0.1146653,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "The Ritzy",
+        "category": "culture",
+        "address": "1 Brixton Oval, London",
+        "postcode": "SW2 1JG",
+        "latitude": 51.46115,
+        "longitude": -0.1149611,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Fenwick Hall",
+        "category": "culture",
+        "address": "128 Willington Road, London",
+        "postcode": "SW9 9NN",
+        "latitude": 51.4636589,
+        "longitude": -0.1262831,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Electric Avenue",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8JX",
+        "latitude": 51.4623844,
+        "longitude": -0.1140593,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Reliance Arcade",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8JY",
+        "latitude": 51.4619307,
+        "longitude": -0.1146258,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Market Row",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8LD",
+        "latitude": 51.4619708,
+        "longitude": -0.1131849,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Brixton Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8LD",
+        "latitude": 51.4620444,
+        "longitude": -0.1129973,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Brixton Village",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8JL",
+        "latitude": 51.4623919,
+        "longitude": -0.1119956,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Oval Farmers' Market",
+        "category": "market",
+        "address": "Kennington Park Road, London",
+        "postcode": "SE11 4PW",
+        "latitude": 51.4814605,
+        "longitude": -0.112151,
+        "website": "https://weareccfm.com/locations/oval/",
+        "distanceKm": 3.6
       }
     ]
   },

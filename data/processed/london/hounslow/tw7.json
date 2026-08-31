@@ -5372,16 +5372,467 @@
   "places": {
     "places": [
       {
-        "name": "Chiswick House and Gardens",
-        "category": "community-hub",
-        "address": "Chiswick",
-        "description": "A celebrated 18th-century Palladian villa with historic landscape gardens."
+        "name": "St. John the Baptist's, Isleworth",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW7 6PA",
+        "latitude": 51.4720847,
+        "longitude": -0.3364522,
+        "distanceKm": 0.1
       },
       {
-        "name": "Syon House",
+        "name": "Husseini Islamic Mission",
+        "category": "place-of-worship",
+        "address": "19 Thornbury Road, Isleworth",
+        "postcode": "TW7 4HQ",
+        "latitude": 51.4749571,
+        "longitude": -0.3458897,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Our Lady of Sorrows and St.Bridget of Sweden",
+        "category": "place-of-worship",
+        "address": "112 Twickenham Road, Isleworth",
+        "postcode": "TW7 6DL",
+        "latitude": 51.4693448,
+        "longitude": -0.3280202,
+        "website": "https://stbridgets.org.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Isleworth Congregational Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW7 7EU",
+        "latitude": 51.4675037,
+        "longitude": -0.3297813,
+        "website": "https://isleworthcongregational.org/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Kingdom Hall of Jehovah's Witnesses",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW7 7BB",
+        "latitude": 51.4670534,
+        "longitude": -0.3281065,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "St. Vincent de Paul",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW7 4AJ",
+        "latitude": 51.4766427,
+        "longitude": -0.3477381,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Isleworth Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "TW7 4BX",
+        "latitude": 51.4749909,
+        "longitude": -0.3378241,
+        "website": "https://www.postoffice.co.uk/branch-finder/1320254/isleworth",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Hounslow Post Office",
+        "category": "post-office",
+        "address": "173 High Street, Hounslow",
+        "postcode": "TW3 1QL",
+        "latitude": 51.4690799,
+        "longitude": -0.3606656,
+        "website": "https://www.postoffice.co.uk/branch-finder/0250252/hounslow",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Hounslow Delivery Office",
+        "category": "post-office",
+        "address": "9 Matisse Road, Hounslow",
+        "postcode": "TW3 1AA",
+        "latitude": 51.4698073,
+        "longitude": -0.3610089,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Hounslow Heath Post Office",
+        "category": "post-office",
+        "address": "434 Staines Road, Hounslow",
+        "postcode": "TW4 5AB",
+        "latitude": 51.4632934,
+        "longitude": -0.3858181,
+        "website": "https://www.postoffice.co.uk/branch-finder/1060252/hounslow-heath",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Strand On The Green Post Office",
+        "category": "post-office",
+        "address": "Thames Road, London",
+        "postcode": "W4 3RE",
+        "latitude": 51.4866726,
+        "longitude": -0.2809207,
+        "website": "https://www.postoffice.co.uk/branch-finder/0640069/strand-on-the-green",
+        "distanceKm": 4.1
+      },
+      {
+        "name": "Beavers Farm Estate Post Office",
+        "category": "post-office",
+        "address": "69 Salisbury Road, Hounslow",
+        "postcode": "TW4 7NW",
+        "latitude": 51.4695851,
+        "longitude": -0.3967881,
+        "website": "https://www.postoffice.co.uk/branch-finder/1150251/beavers-farm-estate",
+        "distanceKm": 4.2
+      },
+      {
+        "name": "St. John's Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "TW7 6RA",
+        "latitude": 51.4719247,
+        "longitude": -0.3317639,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Thornbury Park",
+        "category": "park",
+        "address": "",
+        "postcode": "TW7 6JY",
+        "latitude": 51.4721026,
+        "longitude": -0.3437716,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Silverhall Park",
+        "category": "park",
+        "address": "",
+        "postcode": "TW7 6RE",
+        "latitude": 51.4709792,
+        "longitude": -0.3268385,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Redlees Park",
+        "category": "park",
+        "address": "",
+        "postcode": "TW7 7EU",
+        "latitude": 51.4659325,
+        "longitude": -0.3322153,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Jersey Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "TW7 4PS",
+        "latitude": 51.482973,
+        "longitude": -0.3431447,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Jersey Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "TW7 5LU",
+        "latitude": 51.4833706,
+        "longitude": -0.3404489,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Old Isleworthians Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW7 5ED",
+        "latitude": 51.4772248,
+        "longitude": -0.3348599,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Isleworth Bowls Club",
+        "category": "leisure-centre",
+        "address": "Worton Road",
+        "postcode": "TW7 6DS",
+        "latitude": 51.4672421,
+        "longitude": -0.3329795,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Isleworth Recreation Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW7 7EU",
+        "latitude": 51.4663368,
+        "longitude": -0.3304458,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Osterley Sports & Athletic Centre",
+        "category": "leisure-centre",
+        "address": "Wood Lane, Isleworth",
+        "postcode": "TW7 5FF",
+        "latitude": 51.481726,
+        "longitude": -0.3370513,
+        "distanceKm": 1
+      },
+      {
+        "name": "The Indian Gymkhana Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW7 4PY",
+        "latitude": 51.4794457,
+        "longitude": -0.3503736,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Thistleworth Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW7 5LY",
+        "latitude": 51.4842367,
+        "longitude": -0.3401939,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "St.Bridget's Parish Hall",
         "category": "community-hub",
-        "address": "Syon Park, Brentford, TW8 8JF",
-        "description": "The London home of the Duke of Northumberland for over 400 years, with interiors by Robert Adam."
+        "address": "",
+        "postcode": "TW7 7EE",
+        "latitude": 51.4692509,
+        "longitude": -0.328057,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Isleworth Congregational Church Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW7 6EL",
+        "latitude": 51.4675029,
+        "longitude": -0.3299813,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Redlees Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW7 7EU",
+        "latitude": 51.4671496,
+        "longitude": -0.3306453,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Isleworth Explorers Club",
+        "category": "community-hub",
+        "address": "Twickenham Road, Isleworth",
+        "postcode": "TW7 7EU",
+        "latitude": 51.465619,
+        "longitude": -0.3307926,
+        "website": "http://www.isleworthexplorers.co.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Isleworth Public Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW7 7BG",
+        "latitude": 51.4688251,
+        "longitude": -0.325632,
+        "website": "http://www.fusion-lifestyle.com/centres/isleworth-public-hall/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "3rd Osterley Sea Scouts",
+        "category": "community-hub",
+        "address": "Richmond Road",
+        "postcode": "TW7 7BU",
+        "latitude": 51.4656217,
+        "longitude": -0.3228763,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Isleworth Public Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW7 7EU",
+        "latitude": 51.4668026,
+        "longitude": -0.330159,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Osterley Public Library",
+        "category": "library",
+        "address": "St. Marys Crescent, Hounslow",
+        "postcode": "TW7 4NB",
+        "latitude": 51.4823567,
+        "longitude": -0.3459183,
+        "website": "https://www.hounslow.info/libraries/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Hounslow Library",
+        "category": "library",
+        "address": "Bath Road",
+        "postcode": "TW3 3EB",
+        "latitude": 51.4684928,
+        "longitude": -0.3674686,
+        "website": "https://www.hounslowlibraries.org",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Brentford Library",
+        "category": "library",
+        "address": "Boston Manor Road",
+        "postcode": "TW8 8DW",
+        "latitude": 51.4865829,
+        "longitude": -0.3075478,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Heston Public Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW5 0LW",
+        "latitude": 51.4858289,
+        "longitude": -0.3753784,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Cranford Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW5 9TL",
+        "latitude": 51.4781102,
+        "longitude": -0.4064419,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Kingsley Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW3 4AB",
+        "latitude": 51.4739534,
+        "longitude": -0.3559777,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Flip Out Hounslow",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW3 1EY",
+        "latitude": 51.4694424,
+        "longitude": -0.3618844,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Den Arena",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW7 4RH",
+        "latitude": 51.4860742,
+        "longitude": -0.3560588,
+        "distanceKm": 2
+      },
+      {
+        "name": "Snakes and Ladders Outdoor Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW8 8HE",
+        "latitude": 51.4807002,
+        "longitude": -0.3091512,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Lampton Park Children's Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW3 4FF",
+        "latitude": 51.4733722,
+        "longitude": -0.3687588,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Wesley Avenue Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW3 4LB",
+        "latitude": 51.4736704,
+        "longitude": -0.3777155,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Sky Cinema",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW7 5QD",
+        "latitude": 51.4884965,
+        "longitude": -0.3280474,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Cineworld",
+        "category": "culture",
+        "address": "Unity Square, London",
+        "postcode": "TW3 1EL",
+        "latitude": 51.4695854,
+        "longitude": -0.3626798,
+        "website": "https://www.cineworld.co.uk/cinemas/london-hounslow/118",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Toll House",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW8 8AQ",
+        "latitude": 51.4831341,
+        "longitude": -0.3113139,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Everyman",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW8 8GL",
+        "latitude": 51.4827893,
+        "longitude": -0.307835,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Boston Manor",
+        "category": "culture",
+        "address": "Boston Manor Road, Brentford",
+        "postcode": "TW8 9JX",
+        "latitude": 51.4919748,
+        "longitude": -0.31854,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Watermans Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW8 0DS",
+        "latitude": 51.4858042,
+        "longitude": -0.2979129,
+        "distanceKm": 3
+      },
+      {
+        "name": "Hounslow Heath Car Boot Sale",
+        "category": "market",
+        "address": "Staines Road, Hounslow",
+        "postcode": "TW4 5DL",
+        "latitude": 51.4609084,
+        "longitude": -0.3904797,
+        "website": "http://www.hounslowheathcarboot.co.uk/",
+        "distanceKm": 4
+      },
+      {
+        "name": "Chiswick Food market",
+        "category": "market",
+        "address": "",
+        "postcode": "W4 2RX",
+        "latitude": 51.4807318,
+        "longitude": -0.256159,
+        "distanceKm": 5.6
       }
     ]
   },

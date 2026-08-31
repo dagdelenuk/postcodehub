@@ -3664,16 +3664,510 @@
   "places": {
     "places": [
       {
-        "name": "Borough Market",
-        "category": "community-hub",
-        "address": "Southwark",
-        "description": "One of London's oldest food markets, trading in some form since the 12th century."
+        "name": "East Street Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE17 2DQ",
+        "latitude": 51.4885995,
+        "longitude": -0.0922251,
+        "website": "https://www.southwark.gov.uk/business/markets-and-street-trading/southwark-markets?chapter=3",
+        "distanceKm": 0.1
       },
       {
-        "name": "Shakespeare's Globe",
+        "name": "Elephant Park Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE17 1HL",
+        "latitude": 51.4931302,
+        "longitude": -0.0972199,
+        "website": "https://elephantparkmarket.co.uk",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bermondsey Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE1 3UN",
+        "latitude": 51.4974511,
+        "longitude": -0.0810574,
+        "website": "https://www.lfm.org.uk/markets/bermondsey/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Tabard Street Food Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE1 1JA",
+        "latitude": 51.5014333,
+        "longitude": -0.0924173,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Maltby Street Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE1 3FH",
+        "latitude": 51.4992577,
+        "longitude": -0.0756237,
+        "website": "http://www.maltby.st/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Kappacasein Dairy",
+        "category": "market",
+        "address": "1 Voyager Industrial Estate, London",
+        "postcode": "SE16 4RP",
+        "latitude": 51.4964307,
+        "longitude": -0.0688149,
+        "website": "https://kappacasein.webflow.io/eat#spa",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Faraday Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SE17 2HQ",
+        "latitude": 51.4874214,
+        "longitude": -0.0920809,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Saint Peter's Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SE17 2TL",
+        "latitude": 51.4866124,
+        "longitude": -0.0925285,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Nursery Row Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SE17 1EF",
+        "latitude": 51.4902302,
+        "longitude": -0.0910387,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Wansey Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SE17 1NL",
+        "latitude": 51.4919429,
+        "longitude": -0.0942294,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Victory Community Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SE17 1PT",
+        "latitude": 51.4931479,
+        "longitude": -0.0926978,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Pullens Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "SE17 3AQ",
+        "latitude": 51.4891399,
+        "longitude": -0.0998256,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "219 Walworth Road, London",
+        "postcode": "SE17 1RL",
+        "latitude": 51.4891353,
+        "longitude": -0.0960313,
+        "website": "https://www.mbe.co.uk/elephantandcastle",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Pack Send",
+        "category": "post-office",
+        "address": "",
+        "postcode": "SE17 3UE",
+        "latitude": 51.484323,
+        "longitude": -0.0941264,
+        "website": "https://www.packsend.co.uk/elephantcastle/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Old Kent Road Post Office",
+        "category": "post-office",
+        "address": "240 Old Kent Road, London",
+        "postcode": "SE1 5UB",
+        "latitude": 51.4894782,
+        "longitude": -0.0793361,
+        "distanceKm": 1
+      },
+      {
+        "name": "Wyndham Road Post Office",
+        "category": "post-office",
+        "address": "164 Wyndham Road, London",
+        "postcode": "SE5 0UB",
+        "latitude": 51.4778297,
+        "longitude": -0.1010931,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "The Local",
+        "category": "post-office",
+        "address": "156 Southampton Way, London",
+        "postcode": "SE5 7EW",
+        "latitude": 51.4781494,
+        "longitude": -0.0849311,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Southwark Post Office",
+        "category": "post-office",
+        "address": "Southwark Bridge Road, London",
+        "postcode": "SE1 0DG",
+        "latitude": 51.5005716,
+        "longitude": -0.0991917,
+        "website": "https://www.postoffice.co.uk/branch-finder/2420074/southwark",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Saint Peter's Walworth",
+        "category": "place-of-worship",
+        "address": "Liverpool Grove, London",
+        "postcode": "SE17 2TL",
+        "latitude": 51.4865779,
+        "longitude": -0.0925921,
+        "website": "https://stpeterswalworth.tumblr.com/",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Walworth Road Mosque",
+        "category": "place-of-worship",
+        "address": "175A Walworth Road",
+        "postcode": "SE17 1LR",
+        "latitude": 51.4901557,
+        "longitude": -0.0966546,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Foursquare Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SE17 1LR",
+        "latitude": 51.4901038,
+        "longitude": -0.0966213,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Parish Church of St John The Evangelist",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SE17 1LS",
+        "latitude": 51.4906522,
+        "longitude": -0.0954062,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SE17 3FQ",
+        "latitude": 51.488107,
+        "longitude": -0.098897,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "English Martyrs Church Hall",
+        "category": "place-of-worship",
+        "address": "142 Rodney Road",
+        "postcode": "SE17 1BF",
+        "latitude": 51.4913833,
+        "longitude": -0.090849,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Walworth Town Hall Community Space",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE17 1RS",
+        "latitude": 51.4910074,
+        "longitude": -0.0970355,
+        "website": "https://wthcommunityspace.com/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Surrey Gardens Memorial Hall",
+        "category": "community-hub",
+        "address": "Penrose Street, London",
+        "postcode": "SE17 3DX",
+        "latitude": 51.4867704,
+        "longitude": -0.0985899,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "The Tree House",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE17 1HL",
+        "latitude": 51.4931358,
+        "longitude": -0.0967797,
+        "website": "https://www.elephantpark.co.uk/community/community-space/the-tree-house/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Pelier Community Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE17 3UL",
+        "latitude": 51.4834244,
+        "longitude": -0.0981716,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Rockingham Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE1 6QP",
+        "latitude": 51.4954321,
+        "longitude": -0.0954759,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Grosvenor Tra House",
+        "category": "community-hub",
+        "address": "41 Grosvenor Park, London",
+        "postcode": "SE5 0NH",
+        "latitude": 51.4809539,
+        "longitude": -0.0978965,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Newington Library",
+        "category": "library",
+        "address": "155 Walworth Road, London",
+        "postcode": "SE17 1RS",
+        "latitude": 51.4908112,
+        "longitude": -0.0968388,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Southwark Heritage Centre and Walworth Library",
+        "category": "library",
+        "address": "145-147 Walworth Road, London",
+        "postcode": "SE17 1RW",
+        "latitude": 51.4915828,
+        "longitude": -0.0974662,
+        "website": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/southwark-heritage-centre-and-walworth-library",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Una Marson Library",
+        "category": "library",
+        "address": "62 Thurlow Street, London",
+        "postcode": "SE17 2GN",
+        "latitude": 51.4877397,
+        "longitude": -0.0860229,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Brandon Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SE17 3NH",
+        "latitude": 51.4823684,
+        "longitude": -0.102943,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Camberwell Library",
+        "category": "library",
+        "address": "48 Camberwell Green, London",
+        "postcode": "SE5 7AL",
+        "latitude": 51.4757527,
+        "longitude": -0.0919629,
+        "website": "https://www.southwark.gov.uk/libraries/find-a-library?chapter=4",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Local History Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SE1 1YY",
+        "latitude": 51.5017274,
+        "longitude": -0.0917292,
+        "website": "https://www.southwark.gov.uk/info/200161/local_history_library",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "The Queer Comedy Club",
+        "category": "culture",
+        "address": "9 Hewson Way, London",
+        "postcode": "SE17 1JS",
+        "latitude": 51.4928948,
+        "longitude": -0.0963302,
+        "website": "https://queercomedyclub.co.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Southwark Playhouse Elephant",
+        "category": "culture",
+        "address": "1 Dante Place, London",
+        "postcode": "SE11 4RX",
+        "latitude": 51.4924252,
+        "longitude": -0.1027731,
+        "website": "https://www.southwarkplayhouse.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Nursery Gallery",
+        "category": "culture",
+        "address": "",
+        "postcode": "SE1 6SB",
+        "latitude": 51.4950031,
+        "longitude": -0.1022482,
+        "distanceKm": 1
+      },
+      {
+        "name": "Blue Elephant Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "SE5 0XT",
+        "latitude": 51.4800491,
+        "longitude": -0.0983422,
+        "distanceKm": 1
+      },
+      {
+        "name": "Southwark Playhouse Borough",
+        "category": "culture",
+        "address": "77-85 Newington Causeway, London",
+        "postcode": "SE1 6BD",
+        "latitude": 51.497606,
+        "longitude": -0.0984055,
+        "website": "https://southwarkplayhouse.co.uk/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Henry Wood Hall",
+        "category": "culture",
+        "address": "Trinity Church Square, London",
+        "postcode": "SE1 4HU",
+        "latitude": 51.4986026,
+        "longitude": -0.093912,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Elephant Springs",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE17 1GU",
+        "latitude": 51.493396,
+        "longitude": -0.0961154,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE5 0AH",
+        "latitude": 51.4831738,
+        "longitude": -0.0876332,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Anne Keane Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE1 4JL",
+        "latitude": 51.4974672,
+        "longitude": -0.0936448,
+        "website": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-playground/dickens-fields-anne-keane-playground",
+        "distanceKm": 1
+      },
+      {
+        "name": "Charlie Chaplin Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE5 0AF",
+        "latitude": 51.4808513,
+        "longitude": -0.1067541,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Comber Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE5 0JZ",
+        "latitude": 51.476847,
+        "longitude": -0.0962773,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Little Dorrit's Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE1 1AN",
+        "latitude": 51.5021895,
+        "longitude": -0.0936071,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Burgess Park Tennis Centre",
         "category": "leisure-centre",
-        "address": "21 New Globe Walk, SE1 9DT",
-        "description": "A faithful reconstruction of Shakespeare's original Elizabethan theatre, close to its original Bankside site."
+        "address": "",
+        "postcode": "SE5 7LA",
+        "latitude": 51.481533,
+        "longitude": -0.0923248,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Lynn Athletic Boxing Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE5 0PX",
+        "latitude": 51.4824639,
+        "longitude": -0.0855007,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "The Castle",
+        "category": "leisure-centre",
+        "address": "St. Gabriel Walk, London",
+        "postcode": "SE1 6FG",
+        "latitude": 51.4934683,
+        "longitude": -0.1024076,
+        "website": "https://southwarkleisure.co.uk/centres/the-castle-centre/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "PlayFit Sports Club",
+        "category": "leisure-centre",
+        "address": "Shorncliffe Road, London",
+        "postcode": "SE1 5UJ",
+        "latitude": 51.4876134,
+        "longitude": -0.0780022,
+        "website": "https://playfit.co.uk",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "LSBU Active Gym & Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE1 6JY",
+        "latitude": 51.4974421,
+        "longitude": -0.1025562,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Burgess Park Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE5 0JB",
+        "latitude": 51.4839171,
+        "longitude": -0.0770491,
+        "distanceKm": 1.2
       }
     ]
   },

@@ -1,0 +1,91 @@
+---
+import type { PlaceCategory } from "../lib/types";
+import { PLACE_CATEGORIES } from "../lib/place-categories";
+
+interface Props {
+  counts: Partial<Record<PlaceCategory, number>>;
+}
+
+const { counts } = Astro.props;
+
+const available = PLACE_CATEGORIES.filter((c) => (counts[c.key] ?? 0) > 0);
+const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors";
+---
+
+{
+  available.length > 1 && (
+    <div>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2" data-places-filters>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <span class="text-xs text-stone-400">Type:</span>
+          {available.map((c) => (
+            <button type="button" class={PILL_BASE} data-filter-value={c.key}>
+              {c.label}
+            </button>
+          ))}
+        </div>
+        <button type="button" class="text-xs text-stone-400 underline hidden" data-filter-clear>
+          Clear filters
+        </button>
+      </div>
+      <p class="text-xs text-stone-400 mb-6" data-filter-count />
+    </div>
+  )
+}
+
+<style>
+  [data-filter-value] {
+    border-color: #d6d3d1;
+    color: #57534e;
+    background: white;
+  }
+  [data-filter-value].is-active {
+    border-color: #059669;
+    background: #ecfdf5;
+    color: #065f46;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-places-filters]").forEach((bar) => {
+    const pills = [...bar.querySelectorAll<HTMLButtonElement>("[data-filter-value]")];
+    const clearBtn = bar.querySelector<HTMLElement>("[data-filter-clear]");
+    const countEl = document.querySelector<HTMLElement>("[data-filter-count]");
+    const cards = [...document.querySelectorAll<HTMLElement>("[data-place-card]")];
+    const typeBlocks = [...document.querySelectorAll<HTMLElement>("[data-place-type-block]")];
+    const totalCount = cards.length;
+
+    const active = new Set<string>();
+
+    function apply() {
+      let visible = 0;
+      for (const card of cards) {
+        const matches = active.size === 0 || active.has(card.dataset.placeKind ?? "");
+        card.classList.toggle("hidden", !matches);
+        if (matches) visible++;
+      }
+      for (const block of typeBlocks) {
+        const matches = active.size === 0 || active.has(block.dataset.placeKind ?? "");
+        block.classList.toggle("hidden", !matches);
+      }
+      clearBtn?.classList.toggle("hidden", active.size === 0);
+      if (countEl) countEl.textContent = active.size > 0 ? `Showing ${visible} of ${totalCount} results` : "";
+    }
+
+    pills.forEach((pill) => {
+      const value = pill.dataset.filterValue!;
+      pill.addEventListener("click", () => {
+        if (active.has(value)) active.delete(value);
+        else active.add(value);
+        pill.classList.toggle("is-active", active.has(value));
+        apply();
+      });
+    });
+
+    clearBtn?.addEventListener("click", () => {
+      active.clear();
+      pills.forEach((p) => p.classList.remove("is-active"));
+      apply();
+    });
+  });
+</script>

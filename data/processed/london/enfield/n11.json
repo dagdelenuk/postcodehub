@@ -4145,16 +4145,458 @@
   "places": {
     "places": [
       {
-        "name": "Forty Hall",
-        "category": "community-hub",
-        "address": "Enfield",
-        "description": "A Jacobean mansion set in a 275-acre country park, now a museum and gallery."
+        "name": "High Road Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "N11 1RU",
+        "latitude": 51.6136632,
+        "longitude": -0.1389798,
+        "distanceKm": 0
       },
       {
-        "name": "Myddelton House Gardens",
+        "name": "Millennium Green",
         "category": "park",
-        "address": "Bulls Cross, Enfield, EN2 9HG",
-        "description": "Historic gardens developed by plantsman E. A. Bowles, now managed by Lee Valley Regional Park."
+        "address": "",
+        "postcode": "N11 1SY",
+        "latitude": 51.6126625,
+        "longitude": -0.1392856,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Grove Road Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "N11 1LX",
+        "latitude": 51.6155525,
+        "longitude": -0.140422,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Arnos Park",
+        "category": "park",
+        "address": "",
+        "postcode": "N14 7AH",
+        "latitude": 51.6190071,
+        "longitude": -0.1310894,
+        "website": "https://friendsofarnospark.wordpress.com/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Minchenden Oak Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "N14 7EP",
+        "latitude": 51.6243118,
+        "longitude": -0.128878,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Walker Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "N14 7JZ",
+        "latitude": 51.6259001,
+        "longitude": -0.1287115,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Nanak Darbar North London",
+        "category": "place-of-worship",
+        "address": "136 High Road, London",
+        "postcode": "N11 1PJ",
+        "latitude": 51.6144337,
+        "longitude": -0.1398208,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Saint Paul, New Southgate",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N11 1PL",
+        "latitude": 51.6153977,
+        "longitude": -0.1414671,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Our Lady of Lourdes",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N11 1AG",
+        "latitude": 51.6159373,
+        "longitude": -0.1363183,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Palmers Green and Southgate District Synagogue",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N11 2JA",
+        "latitude": 51.6125216,
+        "longitude": -0.1220216,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "North London Assembly Hall of Jehovah's Witnesses",
+        "category": "place-of-worship",
+        "address": "174 Bowes Road",
+        "postcode": "N11 2JG",
+        "latitude": 51.6137556,
+        "longitude": -0.1229081,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Christ Church, Southgate",
+        "category": "place-of-worship",
+        "address": "Waterfall Road, London",
+        "postcode": "N14 7EG",
+        "latitude": 51.6246512,
+        "longitude": -0.1279018,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Arnos Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N11 1AX",
+        "latitude": 51.6153744,
+        "longitude": -0.1305364,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Southgate Public Library",
+        "category": "library",
+        "address": "High Street, London",
+        "postcode": "N14 6BP",
+        "latitude": 51.6303732,
+        "longitude": -0.1282901,
+        "website": "https://libraries.enfield.gov.uk/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Southgate Library",
+        "category": "library",
+        "address": "High Street, London",
+        "postcode": "N14 6BP",
+        "latitude": 51.6303696,
+        "longitude": -0.1282973,
+        "distanceKm": 2
+      },
+      {
+        "name": "Palmers Green Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N13 4EY",
+        "latitude": 51.6155739,
+        "longitude": -0.1105167,
+        "distanceKm": 2
+      },
+      {
+        "name": "Winchmore Hill Library",
+        "category": "library",
+        "address": "Green Lanes, London",
+        "postcode": "N21 3AP",
+        "latitude": 51.6284649,
+        "longitude": -0.0983055,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Oakwood Library",
+        "category": "library",
+        "address": "185-187 Bramley Road, London",
+        "postcode": "N14 4XA",
+        "latitude": 51.6488987,
+        "longitude": -0.1292409,
+        "distanceKm": 4
+      },
+      {
+        "name": "Arnos Pool",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N11 1BD",
+        "latitude": 51.6153778,
+        "longitude": -0.1301337,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Broomfield Park outdoor gym",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N13 4PW",
+        "latitude": 51.6190256,
+        "longitude": -0.1155255,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Southgate Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Winchmore Hill Road, London",
+        "postcode": "N14 6AD",
+        "latitude": 51.6343965,
+        "longitude": -0.1244283,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Brackendale Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N21 3DH",
+        "latitude": 51.629453,
+        "longitude": -0.1094737,
+        "website": "https://clubspark.lta.org.uk/BrackendaleLTC",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Vicars Moor Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N21 2LA",
+        "latitude": 51.6364517,
+        "longitude": -0.0925161,
+        "website": "https://clubspark.lta.org.uk/VicarsMoorLTC/",
+        "distanceKm": 4.1
+      },
+      {
+        "name": "Hazelwood Sports Club",
+        "category": "leisure-centre",
+        "address": "Ridge Avenue, London",
+        "postcode": "N21 2AJ",
+        "latitude": 51.6377759,
+        "longitude": -0.0873996,
+        "website": "https://hazelwoodsportsclub.co.uk/",
+        "distanceKm": 4.5
+      },
+      {
+        "name": "Alan Pullinger Centre",
+        "category": "community-hub",
+        "address": "1 John Bradshaw Road, London",
+        "postcode": "N14 6BT",
+        "latitude": 51.6308386,
+        "longitude": -0.1268598,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Burford Hall",
+        "category": "community-hub",
+        "address": "Fox Lane, London",
+        "postcode": "N13 4AL",
+        "latitude": 51.6227444,
+        "longitude": -0.1105177,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Darji Pavilion",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "N13 5JL",
+        "latitude": 51.6149478,
+        "longitude": -0.1058655,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Friends Lounge",
+        "category": "community-hub",
+        "address": "Green Lanes",
+        "postcode": "N13 5TS",
+        "latitude": 51.6195392,
+        "longitude": -0.1067278,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Highlands Village Hall",
+        "category": "community-hub",
+        "address": "5 Florey Square, London",
+        "postcode": "N21 1UJ",
+        "latitude": 51.6463201,
+        "longitude": -0.1101273,
+        "distanceKm": 4.1
+      },
+      {
+        "name": "Hazelbury Children's Centre",
+        "category": "community-hub",
+        "address": "Haselbury Road, London",
+        "postcode": "N9 9TT",
+        "latitude": 51.6224579,
+        "longitude": -0.0761694,
+        "distanceKm": 4.5
+      },
+      {
+        "name": "Southgate Post Office",
+        "category": "post-office",
+        "address": "64 Chase Side, London",
+        "postcode": "N14 5PA",
+        "latitude": 51.6331284,
+        "longitude": -0.1297605,
+        "website": "https://www.postoffice.co.uk/branch-finder/1980041/southgate",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Palmers Green Post Office",
+        "category": "post-office",
+        "address": "364 Green Lanes, London",
+        "postcode": "N13 5XL",
+        "latitude": 51.6206664,
+        "longitude": -0.1060562,
+        "website": "https://www.postoffice.co.uk/branch-finder/058004x/palmers-green",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Chequers Way Post Office",
+        "category": "post-office",
+        "address": "1 Chequers Parade, London",
+        "postcode": "N13 6BX",
+        "latitude": 51.6139017,
+        "longitude": -0.0949753,
+        "website": "https://www.postoffice.co.uk/branch-finder/1330047/chequers-way",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Chaseville Parade Post Office",
+        "category": "post-office",
+        "address": "London",
+        "postcode": "N21 1PG",
+        "latitude": 51.6438059,
+        "longitude": -0.1134782,
+        "website": "https://www.postoffice.co.uk/branch-finder/1750046/chaseville-parade",
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Green Lanes Post Office",
+        "category": "post-office",
+        "address": "822 Green Lanes, London",
+        "postcode": "N21 2RT",
+        "latitude": 51.634233,
+        "longitude": -0.0938679,
+        "website": "https://www.postoffice.co.uk/branch-finder/1820044/green-lanes",
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Bramley Road Convenience Store",
+        "category": "post-office",
+        "address": "209 Bramley Road, London",
+        "postcode": "N14 4XA",
+        "latitude": 51.6492931,
+        "longitude": -0.1284714,
+        "distanceKm": 4
+      },
+      {
+        "name": "Intimate Theatre",
+        "category": "culture",
+        "address": "521 Green Lanes, London",
+        "postcode": "N13 4DH",
+        "latitude": 51.6242501,
+        "longitude": -0.1028258,
+        "website": "http://www.smptheatre.co.uk/faqs/the-intimate-theatre/",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Chickenshed",
+        "category": "culture",
+        "address": "290 Chase Side, London",
+        "postcode": "N14 4PE",
+        "latitude": 51.6444114,
+        "longitude": -0.1451016,
+        "website": "https://www.chickenshed.org.uk",
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Millfield Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "N18 1BD",
+        "latitude": 51.6160685,
+        "longitude": -0.0813121,
+        "distanceKm": 4
+      },
+      {
+        "name": "Millfield House",
+        "category": "culture",
+        "address": "",
+        "postcode": "N18 1QS",
+        "latitude": 51.6159456,
+        "longitude": -0.0801217,
+        "distanceKm": 4.1
+      },
+      {
+        "name": "Pymmes Park Amphitheatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "N18 2UF",
+        "latitude": 51.6162929,
+        "longitude": -0.0690631,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Trent Park House of Secrets",
+        "category": "culture",
+        "address": "Daffodil Crescent, Barnet",
+        "postcode": "EN4 0PS",
+        "latitude": 51.6600474,
+        "longitude": -0.134882,
+        "website": "https://trentparkhouse.org.uk/",
+        "distanceKm": 5.1
+      },
+      {
+        "name": "Boxers Lake Open Space Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN2 7RS",
+        "latitude": 51.6496741,
+        "longitude": -0.1131695,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Centenary Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N18 2UG",
+        "latitude": 51.6173792,
+        "longitude": -0.0686029,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Churchfield Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N9 9EN",
+        "latitude": 51.632271,
+        "longitude": -0.0706796,
+        "distanceKm": 5.2
+      },
+      {
+        "name": "Junior Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN2 6BY",
+        "latitude": 51.6497071,
+        "longitude": -0.0856555,
+        "distanceKm": 5.5
+      },
+      {
+        "name": "Hoppa Play and Skate Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "N18 2FQ",
+        "latitude": 51.6112407,
+        "longitude": -0.0516846,
+        "distanceKm": 6.1
+      },
+      {
+        "name": "Four Hills Estate Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN2 0TQ",
+        "latitude": 51.6646929,
+        "longitude": -0.0906519,
+        "distanceKm": 6.6
+      },
+      {
+        "name": "The Scratching Post Charity Shop Rescue & Shelter Appeal for Cats",
+        "category": "market",
+        "address": "107 Lancaster Road, Enfield",
+        "postcode": "EN2 0JN",
+        "latitude": 51.6640771,
+        "longitude": -0.0827307,
+        "distanceKm": 6.8
       }
     ]
   },

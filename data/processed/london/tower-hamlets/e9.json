@@ -4259,16 +4259,519 @@
   "places": {
     "places": [
       {
-        "name": "Victoria Park",
-        "category": "park",
-        "address": "Tower Hamlets/Hackney border",
-        "description": "One of London's oldest public parks, opened in 1845 for the East End."
+        "name": "Pools Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 5PA",
+        "latitude": 51.5384893,
+        "longitude": -0.0351746,
+        "distanceKm": 0.8
       },
       {
-        "name": "Canary Wharf",
+        "name": "Roman Road Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 5QD",
+        "latitude": 51.5330405,
+        "longitude": -0.0354208,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Weavers Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E2 0BU",
+        "latitude": 51.5261699,
+        "longitude": -0.0599768,
+        "website": "https://www.weavers-adventure-playground.co.uk/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Wager Street Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 4GY",
+        "latitude": 51.5205633,
+        "longitude": -0.0306854,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Nicholson Square",
+        "category": "playground",
+        "address": "",
+        "postcode": "E3 3UE",
+        "latitude": 51.5282074,
+        "longitude": -0.0108906,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Stepney Green Infant Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E1 3DH",
+        "latitude": 51.5172795,
+        "longitude": -0.0455602,
+        "distanceKm": 3
+      },
+      {
+        "name": "The Hub",
         "category": "community-hub",
-        "address": "Canary Wharf",
-        "description": "One of the UK's two main financial centres, developed from the 1980s on former Docklands land."
+        "address": "",
+        "postcode": "E3 5PB",
+        "latitude": 51.5377021,
+        "longitude": -0.0355247,
+        "website": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/victoria_park/room_bookings.aspx",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Francis Lee Community Centre",
+        "category": "community-hub",
+        "address": "10 Hawthorn Avenue, London",
+        "postcode": "E3 5PY",
+        "latitude": 51.5364617,
+        "longitude": -0.030896,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Canal Club Community Centre",
+        "category": "community-hub",
+        "address": "Waterloo Gardens, London",
+        "postcode": "E2 9HP",
+        "latitude": 51.534509,
+        "longitude": -0.0523368,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Wrights Road Community Centre",
+        "category": "community-hub",
+        "address": "41 Wrights Road, London",
+        "postcode": "E3 5LB",
+        "latitude": 51.5340563,
+        "longitude": -0.0302216,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "The Walter Newby Centre",
+        "category": "community-hub",
+        "address": "Approach Road, London",
+        "postcode": "E2 9JP",
+        "latitude": 51.5323837,
+        "longitude": -0.0506577,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Ridley House",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "E2 9JD",
+        "latitude": 51.5316884,
+        "longitude": -0.0477761,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Victoria Park Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E2 9JW",
+        "latitude": 51.5345449,
+        "longitude": -0.0481711,
+        "website": "http://victoriaparkmarket.com/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Roman Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E3 2HR",
+        "latitude": 51.5332255,
+        "longitude": -0.0294821,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Globe Town Market Square",
+        "category": "market",
+        "address": "",
+        "postcode": "E2 0RN",
+        "latitude": 51.5287154,
+        "longitude": -0.0475254,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Columbia Road Flower Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E2 7RG",
+        "latitude": 51.5293544,
+        "longitude": -0.0694277,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Brick Lane Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E1 6SB",
+        "latitude": 51.5242738,
+        "longitude": -0.0715608,
+        "distanceKm": 3
+      },
+      {
+        "name": "Stepney Farmers Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E1 3DG",
+        "latitude": 51.5176057,
+        "longitude": -0.0437838,
+        "distanceKm": 3
+      },
+      {
+        "name": "Chisenhale Art Place",
+        "category": "culture",
+        "address": "64-84 Chisenhale Road, London",
+        "postcode": "E3 5RG",
+        "latitude": 51.5330577,
+        "longitude": -0.0397096,
+        "website": "https://chisenhale.co.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "White Building",
+        "category": "culture",
+        "address": "43 White Post Lane, London",
+        "postcode": "E9 5EN",
+        "latitude": 51.5429337,
+        "longitude": -0.0221393,
+        "website": "https://www.thewhitebuilding.org.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Vittoria Wharf Studio",
+        "category": "culture",
+        "address": "10 Stour Road, London",
+        "postcode": "E3 2NT",
+        "latitude": 51.5398887,
+        "longitude": -0.0209588,
+        "website": "https://www.vittoriawharfstudio.com/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Oval Space",
+        "category": "culture",
+        "address": "29-32 The Oval, London",
+        "postcode": "E2 9DT",
+        "latitude": 51.5332043,
+        "longitude": -0.0593928,
+        "website": "https://ovalspace.co.uk/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Vagina Museum",
+        "category": "culture",
+        "address": "275-276 Poyser Street, London",
+        "postcode": "E2 9RF",
+        "latitude": 51.5303676,
+        "longitude": -0.0570451,
+        "website": "https://www.vaginamuseum.co.uk/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Young V&A",
+        "category": "culture",
+        "address": "Cambridge Heath Road, London",
+        "postcode": "E2 9PA",
+        "latitude": 51.5290596,
+        "longitude": -0.0548708,
+        "website": "https://www.vam.ac.uk/young",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "St Stephen's Green",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 5PQ",
+        "latitude": 51.534501,
+        "longitude": -0.034103,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "McKenna Green",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 5LF",
+        "latitude": 51.5335834,
+        "longitude": -0.0299897,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Wennington Green",
+        "category": "park",
+        "address": "",
+        "postcode": "E2 0SU",
+        "latitude": 51.5312356,
+        "longitude": -0.0417675,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Lefevre Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 2EY",
+        "latitude": 51.5346172,
+        "longitude": -0.0256489,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Selwyn Green",
+        "category": "park",
+        "address": "",
+        "postcode": "E3 5DX",
+        "latitude": 51.5304138,
+        "longitude": -0.0328886,
+        "website": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Parks-directory/Selwyn-Green.aspx",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Meath Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "E2 0TA",
+        "latitude": 51.5281025,
+        "longitude": -0.0431424,
+        "website": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Meath_gardens.aspx",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Skeeters Axe-Throwing",
+        "category": "leisure-centre",
+        "address": "96 White Post Lane, London",
+        "postcode": "E9 5GS",
+        "latitude": 51.5426843,
+        "longitude": -0.0218712,
+        "website": "https://www.skeeters.ax/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Bobby Moore Academy Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E3 2RX",
+        "latitude": 51.5400662,
+        "longitude": -0.0198218,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Fitness4Less",
+        "category": "leisure-centre",
+        "address": "Cambridge Heath Road, London",
+        "postcode": "E2 9BY",
+        "latitude": 51.5327411,
+        "longitude": -0.0575637,
+        "website": "https://www.fitness4less.co.uk/location/cambridge/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Mile End Climbing Wall",
+        "category": "leisure-centre",
+        "address": "Haverfield Road, London",
+        "postcode": "E3 5BE",
+        "latitude": 51.527652,
+        "longitude": -0.0396704,
+        "website": "https://www.mileendwall.org.uk/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "York Hall Leisure Centre",
+        "category": "leisure-centre",
+        "address": "5 Old Ford Road, London",
+        "postcode": "E2 9PJ",
+        "latitude": 51.529915,
+        "longitude": -0.0552961,
+        "website": "https://better.org.uk/leisure/york-hall-leisure-centre",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "BethWall Climbing Centre",
+        "category": "leisure-centre",
+        "address": "Hollybush Place, London",
+        "postcode": "E2 9QX",
+        "latitude": 51.5277422,
+        "longitude": -0.056381,
+        "website": "https://londonclimbingcentres.co.uk/centre/bethwall/",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Hope and Anchor Community Church",
+        "category": "place-of-worship",
+        "address": "83 Smeed Road, London",
+        "postcode": "E3 2NR",
+        "latitude": 51.5382767,
+        "longitude": -0.0234365,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Victoria Park Baptist Church",
+        "category": "place-of-worship",
+        "address": "186 Grove Road, London",
+        "postcode": "E3 5TG",
+        "latitude": 51.531753,
+        "longitude": -0.0403347,
+        "website": "http://www.vpbc.org.uk",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Kingdom Hall of Jehovah's Witnesses",
+        "category": "place-of-worship",
+        "address": "184 Grove Road, London",
+        "postcode": "E3 5TG",
+        "latitude": 51.5316216,
+        "longitude": -0.0402654,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "St Paul's",
+        "category": "place-of-worship",
+        "address": "St Stephen's Road, London",
+        "postcode": "E3 5JL",
+        "latitude": 51.533169,
+        "longitude": -0.0323824,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "St James-the-Less",
+        "category": "place-of-worship",
+        "address": "St. James's Avenue, London",
+        "postcode": "E2 9JD",
+        "latitude": 51.5318239,
+        "longitude": -0.0477942,
+        "website": "http://stjamesthelessbg.org.uk/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Anchor of Hope",
+        "category": "place-of-worship",
+        "address": "59-61 Vyner Street, London",
+        "postcode": "E2 9DQ",
+        "latitude": 51.5348639,
+        "longitude": -0.0548079,
+        "website": "https://www.aohchurch.co.uk",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Idea Store, Bow",
+        "category": "library",
+        "address": "",
+        "postcode": "E3 5EU",
+        "latitude": 51.5327503,
+        "longitude": -0.029746,
+        "website": "https://www.ideastore.co.uk/idea-store-bow",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Bethnal Green Library",
+        "category": "library",
+        "address": "Cambridge Heath Road, London",
+        "postcode": "E2 0HL",
+        "latitude": 51.5264873,
+        "longitude": -0.0537742,
+        "website": "https://www.ideastore.co.uk/visit-us/bethnal-green-library",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Mile End Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E1 4NT",
+        "latitude": 51.5242313,
+        "longitude": -0.0395934,
+        "website": "https://www.qmul.ac.uk/library/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Tower Hamlets Local History Library and Archives",
+        "category": "library",
+        "address": "Bancroft Road, London",
+        "postcode": "E1 4DQ",
+        "latitude": 51.5238375,
+        "longitude": -0.0422976,
+        "website": "https://www.ideastore.co.uk/local-history",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Dorest Social Club",
+        "category": "library",
+        "address": "",
+        "postcode": "E2 7QY",
+        "latitude": 51.5300112,
+        "longitude": -0.0723922,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Whitechapel Idea Store",
+        "category": "library",
+        "address": "321 Whitechapel Road, London",
+        "postcode": "E1 1BU",
+        "latitude": 51.5199152,
+        "longitude": -0.0579668,
+        "website": "https://www.ideastore.co.uk/idea-store-whitechapel",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Roman Road Post Office",
+        "category": "post-office",
+        "address": "603 Roman Road, London",
+        "postcode": "E3 2RN",
+        "latitude": 51.5337688,
+        "longitude": -0.0280822,
+        "website": "https://www.postoffice.co.uk/branch-finder/0560022/roman-road",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Roman Road Post Office",
+        "category": "post-office",
+        "address": "138 Roman Road, London",
+        "postcode": "E2 0RX",
+        "latitude": 51.529045,
+        "longitude": -0.0467353,
+        "website": "https://www.postoffice.co.uk/branch-finder/0040029/roman-road",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Cambridge Heath Post Office",
+        "category": "post-office",
+        "address": "481 Cambridge Heath Road, London",
+        "postcode": "E2 9BU",
+        "latitude": 51.5328955,
+        "longitude": -0.0574108,
+        "website": "https://www.postoffice.co.uk/branch-finder/0510025/cambridge-heath",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Bow Post Office",
+        "category": "post-office",
+        "address": "161A Bow Road, London",
+        "postcode": "E3 2SG",
+        "latitude": 51.5284673,
+        "longitude": -0.0190359,
+        "website": "https://www.postoffice.co.uk/branch-finder/2000024/bow",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Bethnal Green Road Post Office",
+        "category": "post-office",
+        "address": "365 Bethnal Green Road, London",
+        "postcode": "E2 0AN",
+        "latitude": 51.5270045,
+        "longitude": -0.0610854,
+        "website": "https://www.postoffice.co.uk/branch-finder/0700029/bethnal-green-road",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "QMUL Post Room",
+        "category": "post-office",
+        "address": "Mile End Road, London",
+        "postcode": "E1 4LJ",
+        "latitude": 51.5237672,
+        "longitude": -0.0416932,
+        "distanceKm": 2.3
       }
     ]
   },

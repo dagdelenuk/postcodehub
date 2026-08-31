@@ -14400,16 +14400,511 @@
   "places": {
     "places": [
       {
-        "name": "Victoria Park",
-        "category": "park",
-        "address": "Tower Hamlets/Hackney border",
-        "description": "One of London's oldest public parks, opened in 1845 for the East End."
+        "name": "Everyman",
+        "category": "culture",
+        "address": "1 Crossrail Place, London",
+        "postcode": "E14 5AR",
+        "latitude": 51.5061329,
+        "longitude": -0.0178293,
+        "website": "https://www.everymancinema.com/canary-wharf",
+        "distanceKm": 0
       },
       {
-        "name": "Canary Wharf",
+        "name": "Cineworld",
+        "category": "culture",
+        "address": "4 Hertsmere Road, London",
+        "postcode": "E14 4AL",
+        "latitude": 51.5078481,
+        "longitude": -0.0224965,
+        "website": "https://www.cineworld.co.uk/cinemas/london-west-india-quay/041",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Canary Wharf Theatre",
+        "category": "culture",
+        "address": "4 Charter Street, London",
+        "postcode": "E14 5HF",
+        "latitude": 51.5036423,
+        "longitude": -0.0129904,
+        "website": "https://www.troubadourtheatres.com/canary-wharf-theatre",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "London Museum Docklands",
+        "category": "culture",
+        "address": "Hertsmere Road, London",
+        "postcode": "E14 4AL",
+        "latitude": 51.5075942,
+        "longitude": -0.0238722,
+        "website": "https://www.londonmuseum.org.uk/docklands/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Theatreship",
+        "category": "culture",
+        "address": "",
+        "postcode": "E14 9SH",
+        "latitude": 51.500958,
+        "longitude": -0.0161252,
+        "website": "https://theatreship.co.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Lanterns Studio Theatre",
+        "category": "culture",
+        "address": "3 Millharbour, London",
+        "postcode": "E14 9XP",
+        "latitude": 51.4987091,
+        "longitude": -0.0186234,
+        "website": "https://lanternsstudiotheatre.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Canada Square Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E14 5HT",
+        "latitude": 51.5047596,
+        "longitude": -0.0179371,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Jubilee Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E14 5NY",
+        "latitude": 51.503351,
+        "longitude": -0.0186757,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Poplar Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "E14 0AD",
+        "latitude": 51.5099585,
+        "longitude": -0.0165811,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Compton Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "E14 5GX",
+        "latitude": 51.5024978,
+        "longitude": -0.014818,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Pennyfields Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E14 0DZ",
+        "latitude": 51.5098046,
+        "longitude": -0.0228677,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Storey House Green",
+        "category": "park",
+        "address": "",
+        "postcode": "E14 0HD",
+        "latitude": 51.5097568,
+        "longitude": -0.0142993,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Idea Store",
+        "category": "library",
+        "address": "2 Churchill Place, London",
+        "postcode": "E14 5RB",
+        "latitude": 51.5045285,
+        "longitude": -0.0146933,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Idea Store Chrisp Street",
+        "category": "library",
+        "address": "Vesey Path, London",
+        "postcode": "E14 6BT",
+        "latitude": 51.5116019,
+        "longitude": -0.0144826,
+        "website": "https://www.ideastore.co.uk/idea-store-chrisp-street",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Cubitt Town Library",
+        "category": "library",
+        "address": "Strattondale Street, London",
+        "postcode": "E14 3HG",
+        "latitude": 51.4959781,
+        "longitude": -0.0117488,
+        "website": "https://www.towerhamletsarts.org.uk/?cid=17732&guide=Venues",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Mile End Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E1 4NT",
+        "latitude": 51.5242313,
+        "longitude": -0.0395934,
+        "website": "https://www.qmul.ac.uk/library/",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Tower Hamlets Local History Library and Archives",
+        "category": "library",
+        "address": "Bancroft Road, London",
+        "postcode": "E1 4DQ",
+        "latitude": 51.5238375,
+        "longitude": -0.0422976,
+        "website": "https://www.ideastore.co.uk/local-history",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Idea Store Watney Market",
+        "category": "library",
+        "address": "260 Commercial Road, London",
+        "postcode": "E1 2FB",
+        "latitude": 51.5143499,
+        "longitude": -0.0572566,
+        "website": "https://www.ideastore.co.uk/idea-store-watney-market",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Churchill Place Post Office",
+        "category": "post-office",
+        "address": "2 Churchill Place, London",
+        "postcode": "E14 5RB",
+        "latitude": 51.5043902,
+        "longitude": -0.014298,
+        "website": "https://www.postoffice.co.uk/branch-finder/142002x/churchill-place",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Canary Wharf Post Office",
+        "category": "post-office",
+        "address": "6 South Colonnade, London",
+        "postcode": "E14 4PZ",
+        "latitude": 51.504699,
+        "longitude": -0.0219782,
+        "website": "https://www.postoffice.co.uk/branch-finder/1160028/canary-wharf",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Poplar Post Office",
+        "category": "post-office",
+        "address": "22 Market Square, London",
+        "postcode": "E14 6AB",
+        "latitude": 51.5120164,
+        "longitude": -0.0153652,
+        "website": "https://www.postoffice.co.uk/branch-finder/0180025/poplar",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Cubitt Town Post Office",
+        "category": "post-office",
+        "address": "15 Castalia Square, London",
+        "postcode": "E14 3PQ",
+        "latitude": 51.4982204,
+        "longitude": -0.0108763,
+        "website": "https://www.postoffice.co.uk/branch-finder/0680028/cubitt-town",
+        "distanceKm": 1
+      },
+      {
+        "name": "West Ferry Road Post Office",
+        "category": "post-office",
+        "address": "367-369 Westferry Road, London",
+        "postcode": "E14 3RH",
+        "latitude": 51.4894946,
+        "longitude": -0.0210673,
+        "website": "https://www.postoffice.co.uk/branch-finder/1320025/west-ferry-road",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Isle Of Dogs Post Office",
+        "category": "post-office",
+        "address": "159 Manchester Road, London",
+        "postcode": "E14 3DR",
+        "latitude": 51.4892776,
+        "longitude": -0.0069339,
+        "website": "https://www.postoffice.co.uk/branch-finder/0990027/isle-of-dogs",
+        "distanceKm": 2
+      },
+      {
+        "name": "Canary Wharf Prayer Room",
+        "category": "place-of-worship",
+        "address": "2 Churchill Place, London",
+        "postcode": "E14 5RB",
+        "latitude": 51.5043397,
+        "longitude": -0.0141752,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St Peter's Church",
+        "category": "place-of-worship",
+        "address": "Hertsmere Road, London",
+        "postcode": "E14 4AL",
+        "latitude": 51.5070508,
+        "longitude": -0.0238991,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Poplar Shahjalal Mosque",
+        "category": "place-of-worship",
+        "address": "25 Hale Street, London",
+        "postcode": "E14 0BF",
+        "latitude": 51.5094826,
+        "longitude": -0.0173918,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Salvation Army Hall",
+        "category": "place-of-worship",
+        "address": "Kerbey Street, London",
+        "postcode": "E14 6AJ",
+        "latitude": 51.5116132,
+        "longitude": -0.0157702,
+        "website": "https://www.salvationarmy.org.uk/poplar",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Calvary Charismatic Baptist Church",
+        "category": "place-of-worship",
+        "address": "119 East India Dock Road, London",
+        "postcode": "E14 6DE",
+        "latitude": 51.5112816,
+        "longitude": -0.0194233,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "All Saints Church",
+        "category": "place-of-worship",
+        "address": "East India Dock Road, London",
+        "postcode": "E14 0EH",
+        "latitude": 51.5105215,
+        "longitude": -0.0116422,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "The Workhouse",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E14 0BX",
+        "latitude": 51.5086362,
+        "longitude": -0.018031,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "The Workhouse Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E14 0BY",
+        "latitude": 51.5084962,
+        "longitude": -0.018253,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Poplar Bowls Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E14 0BF",
+        "latitude": 51.5092043,
+        "longitude": -0.0171945,
+        "website": "https://www.bowlsengland.com/club/poplar/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Padium",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E14 4DE",
+        "latitude": 51.5032804,
+        "longitude": -0.0233373,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Poplar Public Baths",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E14 0EH",
+        "latitude": 51.5107555,
+        "longitude": -0.0138484,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Canary Wall",
+        "category": "leisure-centre",
+        "address": "21-23 Trinidad Street, London",
+        "postcode": "E14 8AA",
+        "latitude": 51.5096695,
+        "longitude": -0.0273713,
+        "website": "https://londonclimbingcentres.co.uk/centre/canarywall/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Vietnamese Pastoral Centre",
         "category": "community-hub",
-        "address": "Canary Wharf",
-        "description": "One of the UK's two main financial centres, developed from the 1980s on former Docklands land."
+        "address": "130 Poplar High Street, London",
+        "postcode": "E14 0AG",
+        "latitude": 51.5087228,
+        "longitude": -0.0158123,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Saint Matthias Community Centre",
+        "category": "community-hub",
+        "address": "112 Poplar High Street, London",
+        "postcode": "E14 0AE",
+        "latitude": 51.5095559,
+        "longitude": -0.0160262,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "East Wintergarden",
+        "category": "community-hub",
+        "address": "45 Bank Street, London",
+        "postcode": "E14 5NY",
+        "latitude": 51.5025052,
+        "longitude": -0.018721,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Phoenix Heights Community Centre",
+        "category": "community-hub",
+        "address": "140A Byng Street, London",
+        "postcode": "E14 9AR",
+        "latitude": 51.5002756,
+        "longitude": -0.0217673,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Trussler Hall",
+        "category": "community-hub",
+        "address": "78 Grundy Street, London",
+        "postcode": "E14 6DR",
+        "latitude": 51.5119955,
+        "longitude": -0.016045,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Limehouse Youth Centre",
+        "category": "community-hub",
+        "address": "Limehouse Causeway, London",
+        "postcode": "E14 8RX",
+        "latitude": 51.5089971,
+        "longitude": -0.0278106,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Chrisp Street Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E14 6AQ",
+        "latitude": 51.5125069,
+        "longitude": -0.014515,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Stepney Farmers Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E1 3DG",
+        "latitude": 51.5176057,
+        "longitude": -0.0437838,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Wapping Docklands Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E1W 3SG",
+        "latitude": 51.5079071,
+        "longitude": -0.0514674,
+        "website": "https://www.squidmarkets.co.uk/wapping-market",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Watney Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E1 2PR",
+        "latitude": 51.513671,
+        "longitude": -0.0567892,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Roman Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E3 2HR",
+        "latitude": 51.5332255,
+        "longitude": -0.0294821,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Globe Town Market Square",
+        "category": "market",
+        "address": "",
+        "postcode": "E2 0RN",
+        "latitude": 51.5287154,
+        "longitude": -0.0475254,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Lightman Mastmaker Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 9WX",
+        "latitude": 51.4991721,
+        "longitude": -0.0208743,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Blackwall Way Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 9QU",
+        "latitude": 51.5063674,
+        "longitude": -0.0061441,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Bartlett Park Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 6DY",
+        "latitude": 51.5139326,
+        "longitude": -0.0196693,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Adderley Green",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 0QX",
+        "latitude": 51.512883,
+        "longitude": -0.0101348,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Dagmar Court Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 3JL",
+        "latitude": 51.4960358,
+        "longitude": -0.0064273,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Children's Play Pavilion and Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "E14 7EJ",
+        "latitude": 51.5165835,
+        "longitude": -0.0302395,
+        "distanceKm": 1.5
       }
     ]
   },

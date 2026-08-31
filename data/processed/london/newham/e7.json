@@ -4444,16 +4444,511 @@
   "places": {
     "places": [
       {
-        "name": "Queen Elizabeth Olympic Park",
-        "category": "park",
-        "address": "Stratford",
-        "description": "The main venue for the London 2012 Olympics, now a public park and sports venue."
+        "name": "The Gate Forest Gate Community Neighbourhood",
+        "category": "library",
+        "address": "6-8 Woodgrange Road, London",
+        "postcode": "E7 0QH",
+        "latitude": 51.5469131,
+        "longitude": 0.0257528,
+        "distanceKm": 0.1
       },
       {
-        "name": "ExCeL London",
+        "name": "Stratford Library",
+        "category": "library",
+        "address": "London",
+        "postcode": "E15 4NH",
+        "latitude": 51.5445581,
+        "longitude": 0.0087521,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Green Street Library",
+        "category": "library",
+        "address": "337-341 Green Street, London",
+        "postcode": "E13 9AR",
+        "latitude": 51.536389,
+        "longitude": 0.0353067,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Manor Park Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E12 5BS",
+        "latitude": 51.5508178,
+        "longitude": 0.0472934,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Stratford Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E15 1EL",
+        "latitude": 51.5427088,
+        "longitude": 0.0042126,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Plaistow Library",
+        "category": "library",
+        "address": "North Street, London",
+        "postcode": "E13 9HL",
+        "latitude": 51.5297087,
+        "longitude": 0.0256627,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Emmanuel Church Forest Gate",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "E7 8BE",
+        "latitude": 51.546271,
+        "longitude": 0.0264049,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Masjid Yousuf",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "E7 8FA",
+        "latitude": 51.5464882,
+        "longitude": 0.0286684,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Woodgrange Baptist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "E7 8AA",
+        "latitude": 51.5470068,
+        "longitude": 0.0284262,
+        "website": "http://www.woodgrangebaptist.org.uk/",
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Destiny Apostolic Church International",
+        "category": "place-of-worship",
+        "address": "333 Romford Road",
+        "postcode": "E7 0QQ",
+        "latitude": 51.5468554,
+        "longitude": 0.026752,
+        "website": "https://www.daci.org.uk/",
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Sword of the Spirit Evangelical Outreach",
+        "category": "place-of-worship",
+        "address": "305 Sprowston Mews, London",
+        "postcode": "E7 9AE",
+        "latitude": 51.5468047,
+        "longitude": 0.0240231,
+        "website": "https://sseooutreach.org.uk/",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Minhaj Ul Quran Centre",
+        "category": "place-of-worship",
+        "address": "292-296 Romford Road",
+        "postcode": "E7 8BL",
+        "latitude": 51.5460428,
+        "longitude": 0.0248432,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Forest Gate Post Office",
+        "category": "post-office",
+        "address": "21-23 Woodgrange Road, London",
+        "postcode": "E7 8BA",
+        "latitude": 51.5475161,
+        "longitude": 0.0251026,
+        "website": "https://www.postoffice.co.uk/branch-finder/1000020/forest-gate",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Romford Road Post Office",
+        "category": "post-office",
+        "address": "444 Romford Road, London",
+        "postcode": "E7 8DF",
+        "latitude": 51.5473398,
+        "longitude": 0.0351749,
+        "website": "https://www.postoffice.co.uk/branch-finder/0870021/romford-road",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Green Street Post Office",
+        "category": "post-office",
+        "address": "164 Green Street, London",
+        "postcode": "E7 8JT",
+        "latitude": 51.5418952,
+        "longitude": 0.0324637,
+        "website": "https://www.postoffice.co.uk/branch-finder/1830023/green-street",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Station Road Post Office",
+        "category": "post-office",
+        "address": "78 Station Road, London",
+        "postcode": "E7 0AD",
+        "latitude": 51.5530256,
+        "longitude": 0.0215056,
+        "website": "https://www.postoffice.co.uk/branch-finder/2090023/station-road",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Romford Road (667) Post Office",
+        "category": "post-office",
+        "address": "667 Romford Road, London",
+        "postcode": "E12 5AD",
+        "latitude": 51.5503583,
+        "longitude": 0.0464419,
+        "website": "https://www.postoffice.co.uk/branch-finder/1270028/romford-road-(667)",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "High Street North (406) Post Office",
+        "category": "post-office",
+        "address": "406 High Street North, London",
+        "postcode": "E12 6RH",
+        "latitude": 51.5454378,
+        "longitude": 0.0495776,
+        "website": "https://www.postoffice.co.uk/branch-finder/1260022/high-street-north-(406)",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Durning Hall",
         "category": "community-hub",
-        "address": "Western Gateway, E16 1XL",
-        "description": "A major exhibition and convention centre on the Royal Victoria Dock in the Docklands."
+        "address": "",
+        "postcode": "E7 9AB",
+        "latitude": 51.5488416,
+        "longitude": 0.0240694,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Forest Gate Youth & Community Centre",
+        "category": "community-hub",
+        "address": "Woodford Road, London",
+        "postcode": "E7 0DH",
+        "latitude": 51.5523469,
+        "longitude": 0.0247791,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "ELBWO Centre",
+        "category": "community-hub",
+        "address": "Clinton Road",
+        "postcode": "E7 0DS",
+        "latitude": 51.5525312,
+        "longitude": 0.0236344,
+        "website": "https://elbwo.org",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Forest Gate Lodge Community Centre",
+        "category": "community-hub",
+        "address": "Magpie Close",
+        "postcode": "E7 9DF",
+        "latitude": 51.5484267,
+        "longitude": 0.0168813,
+        "website": "https://www.newham.gov.uk/homepage/125/forest-gate-lodge-community-centre",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Field Community Centre",
+        "category": "community-hub",
+        "address": "147 Station Road, London",
+        "postcode": "E7 0AE",
+        "latitude": 51.5536544,
+        "longitude": 0.0203166,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Hibiscus Community Centre",
+        "category": "community-hub",
+        "address": "Buckingham Road, London",
+        "postcode": "E15 1SW",
+        "latitude": 51.5505012,
+        "longitude": 0.0119036,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Old Spotted Dog Ground",
+        "category": "leisure-centre",
+        "address": "Upton Lane, London",
+        "postcode": "E7 9NP",
+        "latitude": 51.5422233,
+        "longitude": 0.0215186,
+        "website": "https://www.oldspotted.dog/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Upton Town Snooker & American Pool",
+        "category": "leisure-centre",
+        "address": "358 Green Street, London",
+        "postcode": "E13 9AP",
+        "latitude": 51.5364221,
+        "longitude": 0.0347905,
+        "website": "http://www.uptonparksnooker.co.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Newham Boys Amateur Boxing Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E13 0PF",
+        "latitude": 51.5328918,
+        "longitude": 0.0255339,
+        "website": "https://twitter.com/newhamboysabc?lang=en",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Plashet Park Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E6 1DQ",
+        "latitude": 51.5403173,
+        "longitude": 0.0471907,
+        "website": "https://www.bowlsengland.com/club/plashet-park/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "East London Rugby Football Club",
+        "category": "leisure-centre",
+        "address": "71 Holland Road, London",
+        "postcode": "E15 3BP",
+        "latitude": 51.5291883,
+        "longitude": 0.0102772,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "City Bouldering Stratford",
+        "category": "leisure-centre",
+        "address": "234 High Street, London",
+        "postcode": "E15 2JA",
+        "latitude": 51.5371878,
+        "longitude": -0.0039442,
+        "website": "https://www.citybouldering.co.uk/locations/stratford",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Wellington Road Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "E7 9BY",
+        "latitude": 51.5505972,
+        "longitude": 0.0182227,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Forest Lane Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E7 9DF",
+        "latitude": 51.5489865,
+        "longitude": 0.0161116,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "West Ham Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E15 3QN",
+        "latitude": 51.5391992,
+        "longitude": 0.0178617,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Plashet Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E12 6SR",
+        "latitude": 51.5411665,
+        "longitude": 0.0458554,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Stratford Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E15 4DS",
+        "latitude": 51.5383223,
+        "longitude": 0.0071792,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Priory Park",
+        "category": "park",
+        "address": "",
+        "postcode": "E6 1QZ",
+        "latitude": 51.5343359,
+        "longitude": 0.0411823,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Chatsworth Active Games Enclosure",
+        "category": "playground",
+        "address": "",
+        "postcode": "E15 1RR",
+        "latitude": 51.5499412,
+        "longitude": 0.011019,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Waddington Street Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E15 1PH",
+        "latitude": 51.5460321,
+        "longitude": 0.0022217,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Prize Walk Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E20 1AD",
+        "latitude": 51.5478596,
+        "longitude": -0.0076766,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Woodland Trail",
+        "category": "playground",
+        "address": "",
+        "postcode": "E20 1GP",
+        "latitude": 51.543939,
+        "longitude": -0.0079146,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Disney Playworld",
+        "category": "playground",
+        "address": "",
+        "postcode": "E20 1GP",
+        "latitude": 51.5437929,
+        "longitude": -0.0087279,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "The Spark",
+        "category": "playground",
+        "address": "",
+        "postcode": "E20 1HW",
+        "latitude": 51.5411415,
+        "longitude": -0.0088723,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Queen's Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E13 9BA",
+        "latitude": 51.5345652,
+        "longitude": 0.0344502,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Stratford Outdoor Market",
+        "category": "market",
+        "address": "Broadway",
+        "postcode": "E15 1NT",
+        "latitude": 51.5414421,
+        "longitude": 0.0020204,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Stratford Indoor Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E15 1XD",
+        "latitude": 51.5416306,
+        "longitude": -0.0007095,
+        "distanceKm": 2
+      },
+      {
+        "name": "Stratford Mall",
+        "category": "market",
+        "address": "61-62 The Mall, London",
+        "postcode": "E15 1XF",
+        "latitude": 51.5421211,
+        "longitude": 0.0003653,
+        "website": "https://www.62mallmanagement.co.uk/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Kelland Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E13 8AH",
+        "latitude": 51.5224025,
+        "longitude": 0.0220605,
+        "website": "https://www.newham.gov.uk/community-parks-leisure/newham-markets/9",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "View Tube Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E15 2PJ",
+        "latitude": 51.5354814,
+        "longitude": -0.0135619,
+        "website": "https://theviewtube.co.uk/farmers-market/",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "The Source",
+        "category": "culture",
+        "address": "Theatre Square, London",
+        "postcode": "E15 1BX",
+        "latitude": 51.5427409,
+        "longitude": 0.0017342,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Stratford East",
+        "category": "culture",
+        "address": "Gerry Raffles Square, London",
+        "postcode": "E15 1BN",
+        "latitude": 51.5425604,
+        "longitude": 0.0009099,
+        "website": "https://www.stratfordeast.com/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Rooftop Film Club",
+        "category": "culture",
+        "address": "",
+        "postcode": "E15 1XD",
+        "latitude": 51.5416661,
+        "longitude": -0.0011234,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Vue Westfield Stratford City",
+        "category": "culture",
+        "address": "Montfichet Road, London",
+        "postcode": "E20 1ET",
+        "latitude": 51.5436072,
+        "longitude": -0.0065433,
+        "website": "https://www.myvue.com/cinema/westfield-stratford-city",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Everyman",
+        "category": "culture",
+        "address": "4 Redman Place, London",
+        "postcode": "E20 1JQ",
+        "latitude": 51.5424397,
+        "longitude": -0.0105386,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Sadler's Wells East",
+        "category": "culture",
+        "address": "101 Carpenters Road, London",
+        "postcode": "E20 2AR",
+        "latitude": 51.5410186,
+        "longitude": -0.011866,
+        "distanceKm": 2.8
       }
     ]
   },

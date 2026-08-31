@@ -4572,22 +4572,473 @@
   "places": {
     "places": [
       {
-        "name": "Teddington Lock",
-        "category": "park",
-        "address": "Teddington, TW11",
-        "description": "The largest lock complex on the Thames and the river's tidal limit."
+        "name": "Sugden Hall",
+        "category": "community-hub",
+        "address": "Station Road",
+        "postcode": "TW11 9BL",
+        "latitude": 51.426147,
+        "longitude": -0.3327465,
+        "distanceKm": 0.1
       },
       {
-        "name": "Landmark Arts Centre",
+        "name": "The Elleray Centre",
         "category": "community-hub",
-        "address": "Ferry Road, Teddington, TW11 9NN",
-        "description": "A Grade II listed former Victorian church on the riverside, now a community arts venue for exhibitions, concerts, and events."
+        "address": "23 North Lane, Teddington",
+        "postcode": "TW11 0HG",
+        "latitude": 51.4251756,
+        "longitude": -0.3376634,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St Mary with St Alban Church Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW11 9ND",
+        "latitude": 51.4277551,
+        "longitude": -0.3251239,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Teddington Social Club",
+        "category": "community-hub",
+        "address": "Church Road",
+        "postcode": "TW11 8GW",
+        "latitude": 51.4304338,
+        "longitude": -0.3401167,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "St Mark's Church Hall",
+        "category": "community-hub",
+        "address": "St. Mark's Road",
+        "postcode": "TW11 9DD",
+        "latitude": 51.4209154,
+        "longitude": -0.3215287,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Teddington Rugby Football Club, Teddington Town Cricket Club",
+        "category": "community-hub",
+        "address": "Teddington",
+        "postcode": "TW11 0EA",
+        "latitude": 51.4226362,
+        "longitude": -0.3442634,
+        "distanceKm": 1
+      },
+      {
+        "name": "Christ Church Hall",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW11 9AB",
+        "latitude": 51.4263729,
+        "longitude": -0.3323835,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "St. Peter & St. Paul",
+        "category": "place-of-worship",
+        "address": "Bychurch End, Teddington",
+        "postcode": "TW11 8PS",
+        "latitude": 51.4262927,
+        "longitude": -0.3360206,
+        "website": "http://www.stpeterstpaulteddington.co.uk/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Teddington Baptist Church",
+        "category": "place-of-worship",
+        "address": "Church Road, Teddington",
+        "postcode": "TW11 8PF",
+        "latitude": 51.4269647,
+        "longitude": -0.337426,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "The Salvation Army",
+        "category": "place-of-worship",
+        "address": "27 Church Road, Teddington",
+        "postcode": "TW11 8PF",
+        "latitude": 51.4274022,
+        "longitude": -0.3376748,
+        "website": "https://www.salvationarmy.org.uk/teddington",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St Mary With St Alban C of E Church",
+        "category": "place-of-worship",
+        "address": "7 Twickenham Road, Teddington",
+        "postcode": "TW11 9NN",
+        "latitude": 51.428547,
+        "longitude": -0.3252713,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Teddington Methodist Church",
+        "category": "place-of-worship",
+        "address": "1 Stanley Road",
+        "postcode": "TW11 8TP",
+        "latitude": 51.4268455,
+        "longitude": -0.3408407,
+        "website": "http://www.teddingtonmethodistchurch.org.uk/welcome.htm",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Teddington Post Office",
+        "category": "post-office",
+        "address": "89 High Street, Teddington",
+        "postcode": "TW11 8HG",
+        "latitude": 51.4274513,
+        "longitude": -0.3297587,
+        "website": "https://www.postoffice.co.uk/branch-finder/0540250/teddington",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "News Dip",
+        "category": "post-office",
+        "address": "171 Ashburnham Road, Richmond",
+        "postcode": "TW10 7NR",
+        "latitude": 51.4362544,
+        "longitude": -0.32028,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Strawberry Hill Post Office",
+        "category": "post-office",
+        "address": "50 Tower Road, Twickenham",
+        "postcode": "TW1 4PE",
+        "latitude": 51.4390079,
+        "longitude": -0.3383551,
+        "website": "https://www.postoffice.co.uk/branch-finder/0800252/strawberry-hill",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Hampton Wick Post Office",
+        "category": "post-office",
+        "address": "56-58 High Street, Kingston upon Thames",
+        "postcode": "KT1 4DB",
+        "latitude": 51.4133191,
+        "longitude": -0.3113046,
+        "website": "https://www.postoffice.co.uk/branch-finder/0690236/hampton-wick",
+        "distanceKm": 2
+      },
+      {
+        "name": "Pack Send",
+        "category": "post-office",
+        "address": "45 King Street, Twickenham",
+        "postcode": "TW1 3SG",
+        "latitude": 51.4451943,
+        "longitude": -0.3294155,
+        "website": "https://www.packsend.co.uk/richmondpark",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Fulwell Park Post Office",
+        "category": "post-office",
+        "address": "330 Staines Road, Twickenham",
+        "postcode": "TW2 5AT",
+        "latitude": 51.4395295,
+        "longitude": -0.361225,
+        "website": "https://www.postoffice.co.uk/branch-finder/0560251/fulwell-park",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Teddington Library",
+        "category": "library",
+        "address": "Waldegrave Road",
+        "postcode": "TW11 8HT",
+        "latitude": 51.4277292,
+        "longitude": -0.3343911,
+        "website": "https://www.richmond.gov.uk/teddington_library",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Naylor Library",
+        "category": "library",
+        "address": "99 Waldegrave Road, Teddington",
+        "postcode": "TW11 8LA",
+        "latitude": 51.4289404,
+        "longitude": -0.3361063,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW1 4SX",
+        "latitude": 51.4363613,
+        "longitude": -0.3350381,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Hampton Hill Library",
+        "category": "library",
+        "address": "68 High Street, Hampton Hill",
+        "postcode": "TW12 1NY",
+        "latitude": 51.4265798,
+        "longitude": -0.3558305,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Ham Library",
+        "category": "library",
+        "address": "Ham Street, Richmond",
+        "postcode": "TW10 7HR",
+        "latitude": 51.4378741,
+        "longitude": -0.3132413,
+        "website": "https://www.richmond.gov.uk/ham_library",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Hampton Wick Library",
+        "category": "library",
+        "address": "",
+        "postcode": "KT1 4DH",
+        "latitude": 51.4138038,
+        "longitude": -0.313375,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Teddington Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW11 8DX",
+        "latitude": 51.4287838,
+        "longitude": -0.332084,
+        "website": "https://clubspark.lta.org.uk/teddingtonlawntennisclub",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Pavillion 1",
+        "category": "leisure-centre",
+        "address": "Kingston Road, Teddington",
+        "postcode": "TW11 9JX",
+        "latitude": 51.4280205,
+        "longitude": -0.3229166,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bushy Park Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW11 0EL",
+        "latitude": 51.4202557,
+        "longitude": -0.3367914,
+        "website": "https://bushyparksportsclub.org.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Tennis Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW1 4TL",
+        "latitude": 51.4343274,
+        "longitude": -0.3359258,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Sport Centre, Clinic and R Block Rooms",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW1 4TL",
+        "latitude": 51.4347388,
+        "longitude": -0.3357658,
+        "distanceKm": 1
+      },
+      {
+        "name": "Ènergie Fitness",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW12 1NY",
+        "latitude": 51.4276566,
+        "longitude": -0.3547863,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Udney Park Playing Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "TW11 9HN",
+        "latitude": 51.4247013,
+        "longitude": -0.3262254,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Udney Hall Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "TW11 9ND",
+        "latitude": 51.4274543,
+        "longitude": -0.3243492,
+        "website": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/udney_hall_gardens",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Grove Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "TW11 8AS",
+        "latitude": 51.4310201,
+        "longitude": -0.3294541,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Manor Road Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "TW11 8BP",
+        "latitude": 51.43042,
+        "longitude": -0.3247479,
+        "distanceKm": 0.7
       },
       {
         "name": "Bushy Park",
         "category": "park",
-        "address": "Teddington, TW11",
-        "description": "London's second-largest Royal Park, known for its wild deer herds and Chestnut Avenue; its Teddington side borders TW11."
+        "address": "",
+        "postcode": "TW11 0EW",
+        "latitude": 51.4168297,
+        "longitude": -0.3356673,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "School House Lane Orchard",
+        "category": "park",
+        "address": "",
+        "postcode": "TW11 0ED",
+        "latitude": 51.4180785,
+        "longitude": -0.3196259,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Church Road Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW11 8PR",
+        "latitude": 51.4283473,
+        "longitude": -0.3385218,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Addison Road Community Sports Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW11 9ET",
+        "latitude": 51.4224133,
+        "longitude": -0.3220947,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Normansfield Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW11 9NJ",
+        "latitude": 51.4211406,
+        "longitude": -0.3135983,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Alpha Road Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW11 0QG",
+        "latitude": 51.4291925,
+        "longitude": -0.3519342,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Strawberry Fields Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW2 5NW",
+        "latitude": 51.4356182,
+        "longitude": -0.3469766,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Wellesley Road Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW2 5RX",
+        "latitude": 51.4384215,
+        "longitude": -0.3434181,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Landmark Arts Centre",
+        "category": "culture",
+        "address": "Ferry Road, Teddington",
+        "postcode": "TW11 9NN",
+        "latitude": 51.428157,
+        "longitude": -0.3245124,
+        "website": "https://landmarkartscentre.org/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Normansfield Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW11 9PS",
+        "latitude": 51.4189389,
+        "longitude": -0.3154107,
+        "website": "https://langdondowncentre.org.uk/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Hampton Hill Playhouse",
+        "category": "culture",
+        "address": "90 High Street, Hampton Hill",
+        "postcode": "TW12 1NZ",
+        "latitude": 51.4273756,
+        "longitude": -0.355162,
+        "website": "https://www.hamptonhilltheatre.org.uk/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Creative and Performing Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW2 5NL",
+        "latitude": 51.4376648,
+        "longitude": -0.3493323,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Twickenham Museum",
+        "category": "culture",
+        "address": "25 The Embankment, Twickenham",
+        "postcode": "TW1 3DU",
+        "latitude": 51.4468203,
+        "longitude": -0.3256181,
+        "website": "https://twickenham-museum.org.uk",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "The Mary Wallace Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW1 3DU",
+        "latitude": 51.4465338,
+        "longitude": -0.3255628,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Twickenham Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "TW1 4HF",
+        "latitude": 51.446345,
+        "longitude": -0.3311438,
+        "website": "https://www.lfm.org.uk/markets/twickenham/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Duck Pond Market",
+        "category": "market",
+        "address": "Heron Square, Richmond upon Thames",
+        "postcode": "TW9 1EJ",
+        "latitude": 51.458417,
+        "longitude": -0.3061978,
+        "website": "https://duckpondmarket.com/richmond",
+        "distanceKm": 4
       }
     ]
   },

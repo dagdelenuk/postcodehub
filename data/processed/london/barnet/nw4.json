@@ -4237,16 +4237,474 @@
   "places": {
     "places": [
       {
-        "name": "RAF Museum London",
-        "category": "community-hub",
-        "address": "Hendon",
-        "description": "The Royal Air Force's national museum, built around historic Hendon Aerodrome."
+        "name": "Hendon Post Office",
+        "category": "post-office",
+        "address": "Brent Street, London",
+        "postcode": "NW4 4BY",
+        "latitude": 51.5880012,
+        "longitude": -0.2215883,
+        "website": "https://www.postoffice.co.uk/branch-finder/1020056/hendon",
+        "distanceKm": 0.2
       },
       {
-        "name": "Hadley Highstone",
+        "name": "Hendon Central Post Office",
+        "category": "post-office",
+        "address": "58 Vivian Avenue",
+        "postcode": "NW4 3XJ",
+        "latitude": 51.5826066,
+        "longitude": -0.2302878,
+        "website": "https://www.postoffice.co.uk/branch-finder/0650056/hendon-central",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Holders Hill Road Post Office",
+        "category": "post-office",
+        "address": "5 Thornfield Parade, London",
+        "postcode": "NW7 1LN",
+        "latitude": 51.604475,
+        "longitude": -0.2073229,
+        "website": "https://www.postoffice.co.uk/branch-finder/0990051/holders-hill-road",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Colindale Avenue Post Office",
+        "category": "post-office",
+        "address": "Colindale Avenue, London",
+        "postcode": "NW9 5EP",
+        "latitude": 51.5936362,
+        "longitude": -0.2545131,
+        "website": "https://www.postoffice.co.uk/branch-finder/1110055/colindale-avenue",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Brookfield Estate Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "NW7 2FH",
+        "latitude": 51.6090725,
+        "longitude": -0.2228235,
+        "website": "https://www.postoffice.co.uk/branch-finder/0980056/brookfield-estate",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Golders Green Post Office",
+        "category": "post-office",
+        "address": "879 Finchley Road, London",
+        "postcode": "NW11 8RT",
+        "latitude": 51.5712271,
+        "longitude": -0.1955259,
+        "website": "https://www.postoffice.co.uk/branch-finder/0080055/golders-green",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Hendon Synagogue",
+        "category": "place-of-worship",
+        "address": "18 Raleigh Close, London",
+        "postcode": "NW4 2TA",
+        "latitude": 51.5855401,
+        "longitude": -0.2236101,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "The Salvation Army - Hendon",
+        "category": "place-of-worship",
+        "address": "1-5 Brampton Grove, London",
+        "postcode": "NW4 4AE",
+        "latitude": 51.5875506,
+        "longitude": -0.2217431,
+        "website": "https://www.salvationarmy.org.uk/hendon",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Our Lady of Dolours Catholic Church",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "NW4 4BA",
+        "latitude": 51.5880234,
+        "longitude": -0.2273205,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Lubavitch Chabad House of Hendon",
+        "category": "place-of-worship",
+        "address": "112-114 Brent Street, London",
+        "postcode": "NW4 2DT",
+        "latitude": 51.58647,
+        "longitude": -0.2200552,
+        "website": "https://www.chabadlive.com/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Hendon Methodist Church",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "NW4 4EH",
+        "latitude": 51.5877729,
+        "longitude": -0.2286931,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Porat Yousef",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "NW4 4AU",
+        "latitude": 51.5869132,
+        "longitude": -0.2305132,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Hendon Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW4 4BQ",
+        "latitude": 51.5885771,
+        "longitude": -0.2288779,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Colindale Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW9 4BR",
+        "latitude": 51.5972668,
+        "longitude": -0.2457198,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Golders Green Library",
+        "category": "library",
+        "address": "156 Golders Green Road, London",
+        "postcode": "NW11 8HE",
+        "latitude": 51.5747425,
+        "longitude": -0.2017428,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Church End Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N3 2TX",
+        "latitude": 51.5999559,
+        "longitude": -0.1950956,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Childs Hill Library",
+        "category": "library",
+        "address": "320 Cricklewood Lane, London",
+        "postcode": "NW2 2QE",
+        "latitude": 51.5622231,
+        "longitude": -0.2007901,
+        "website": "https://www.barnet.gov.uk/libraries/find-your-local-library/childs-hill-library",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Mill Hill Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW7 4RU",
+        "latitude": 51.6153882,
+        "longitude": -0.243064,
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Grove Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW4 4BF",
+        "latitude": 51.5890338,
+        "longitude": -0.2302829,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Hendon Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW4 3QR",
+        "latitude": 51.5811287,
+        "longitude": -0.2216207,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Sunnyhill Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW4 4RB",
+        "latitude": 51.595642,
+        "longitude": -0.2293067,
+        "distanceKm": 1
+      },
+      {
+        "name": "Malcolm Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW4 4HP",
+        "latitude": 51.5834628,
+        "longitude": -0.2376004,
+        "distanceKm": 1
+      },
+      {
+        "name": "Brent Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW11 9LD",
+        "latitude": 51.585969,
+        "longitude": -0.2106928,
+        "distanceKm": 1
+      },
+      {
+        "name": "Sturgess Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW4 3TS",
+        "latitude": 51.5770861,
+        "longitude": -0.2268148,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Nuffield Health",
+        "category": "leisure-centre",
+        "address": "260 Hendon Way, London",
+        "postcode": "NW4 3NL",
+        "latitude": 51.5825995,
+        "longitude": -0.2265016,
+        "website": "https://www.nuffieldhealth.com/gyms/hendon",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Temple Fortune Club",
+        "category": "leisure-centre",
+        "address": "122 Bridge Lane, London",
+        "postcode": "NW11 9JS",
+        "latitude": 51.5868445,
+        "longitude": -0.2059617,
+        "website": "https://www.templefortuneclub.co.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Hendon Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW2 1XQ",
+        "latitude": 51.5739365,
+        "longitude": -0.2154513,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "The 108",
+        "category": "leisure-centre",
+        "address": "Brent Terrace, London",
+        "postcode": "NW2 1LT",
+        "latitude": 51.5705361,
+        "longitude": -0.2257252,
+        "website": "https://the108.co.uk/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Barnet Copthall Leisure Centre",
+        "category": "leisure-centre",
+        "address": "London",
+        "postcode": "NW4 1PX",
+        "latitude": 51.604433,
+        "longitude": -0.2284145,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Farm Walk Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW11 7TP",
+        "latitude": 51.5821669,
+        "longitude": -0.197653,
+        "website": "https://www.farmwalktennis.net/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "St Patrick's Centre",
         "category": "community-hub",
-        "address": "Great North Road, Monken Hadley, EN5 4QQ",
-        "description": "An 18th-century obelisk marking the site of the 1471 Battle of Barnet, a decisive clash in the Wars of the Roses."
+        "address": "West Hendon Broadway, London",
+        "postcode": "NW9 7EB",
+        "latitude": 51.5773499,
+        "longitude": -0.2398286,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Trading Hut",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW2 1JJ",
+        "latitude": 51.5715921,
+        "longitude": -0.211474,
+        "distanceKm": 2
+      },
+      {
+        "name": "Grahame Park Community Centre",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW9 5XS",
+        "latitude": 51.6015083,
+        "longitude": -0.2447388,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "The Old Library",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW9 5XA",
+        "latitude": 51.6017968,
+        "longitude": -0.2450715,
+        "website": "https://www.colindalecommunitiestrust.org",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Our Yard",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "NW2 1PH",
+        "latitude": 51.5668153,
+        "longitude": -0.2168244,
+        "website": "https://www.ouryard.org/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Cycletastic",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "NW2 1PH",
+        "latitude": 51.5668312,
+        "longitude": -0.2170162,
+        "website": "https://cycletastic.org.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Hangar 1",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW9 5TQ",
+        "latitude": 51.5972817,
+        "longitude": -0.2401418,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "RAF Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW9 5LL",
+        "latitude": 51.5979808,
+        "longitude": -0.2391016,
+        "website": "https://www.rafmuseum.org.uk/london",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Little Oak Wood open air theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW11 6QS",
+        "latitude": 51.5862462,
+        "longitude": -0.1923656,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Spike Milligan Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "N3 3QJ",
+        "latitude": 51.5966085,
+        "longitude": -0.1945763,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Vue Cinema",
+        "category": "culture",
+        "address": "Chaplin Square, London",
+        "postcode": "N12 0GL",
+        "latitude": 51.6038551,
+        "longitude": -0.1732082,
+        "distanceKm": 4
+      },
+      {
+        "name": "Phoenix Cinema",
+        "category": "culture",
+        "address": "",
+        "postcode": "N2 9PS",
+        "latitude": 51.5885079,
+        "longitude": -0.1637085,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Wild Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N3 2JS",
+        "latitude": 51.5977794,
+        "longitude": -0.1926739,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Childs Hill Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW2 2DU",
+        "latitude": 51.5675349,
+        "longitude": -0.2021701,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Cricklewood Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW2 6QP",
+        "latitude": 51.5590973,
+        "longitude": -0.2162081,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Market Place Playground",
+        "category": "playground",
+        "address": "London",
+        "postcode": "N2 8DQ",
+        "latitude": 51.592216,
+        "longitude": -0.1681373,
+        "website": "https://friendsofmarketplace.org.uk/",
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Percy Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N12 8BU",
+        "latitude": 51.6157587,
+        "longitude": -0.178643,
+        "website": "https://www.barnet.gov.uk/directories/parks/percy-road-playground",
+        "distanceKm": 4.5
+      },
+      {
+        "name": "Woodridge School Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N12 7HE",
+        "latitude": 51.6237574,
+        "longitude": -0.193157,
+        "distanceKm": 4.6
+      },
+      {
+        "name": "Watling Market (disused)",
+        "category": "market",
+        "address": "",
+        "postcode": "HA8 0FU",
+        "latitude": 51.6026838,
+        "longitude": -0.2646693,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Barnet Market",
+        "category": "market",
+        "address": "",
+        "postcode": "EN5 4QT",
+        "latitude": 51.6560269,
+        "longitude": -0.2041236,
+        "website": "https://barnet-market.co.uk",
+        "distanceKm": 7.8
       }
     ]
   },

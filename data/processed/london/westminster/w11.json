@@ -4396,16 +4396,515 @@
   "places": {
     "places": [
       {
-        "name": "Westminster Abbey",
-        "category": "community-hub",
-        "address": "Westminster",
-        "description": "The historic coronation church of English and British monarchs since 1066."
+        "name": "Westbourne Grove Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "W11 2AS",
+        "latitude": 51.514786,
+        "longitude": -0.1989334,
+        "distanceKm": 0.6
       },
       {
-        "name": "Buckingham Palace",
+        "name": "St Mary of the Angels",
+        "category": "place-of-worship",
+        "address": "Moorhouse Road, London",
+        "postcode": "W2 5DN",
+        "latitude": 51.5158081,
+        "longitude": -0.1974275,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Capellanía Catolica Española",
+        "category": "place-of-worship",
+        "address": "47 Palace Court, London",
+        "postcode": "W2 4LS",
+        "latitude": 51.511604,
+        "longitude": -0.1925522,
+        "distanceKm": 1
+      },
+      {
+        "name": "Kingdom Hall of Jehovah's Witnesses",
+        "category": "place-of-worship",
+        "address": "11 Monmouth Road, London",
+        "postcode": "W2 4UT",
+        "latitude": 51.5150676,
+        "longitude": -0.1926242,
+        "website": "https://www.jw.org/en/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Dechen London: Sakya Buddhist Centre",
+        "category": "place-of-worship",
+        "address": "106 Chepstow Road, London",
+        "postcode": "W2 5QS",
+        "latitude": 51.5188633,
+        "longitude": -0.1961552,
+        "website": "https://www.dechen.london/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "St Matthew's Church Bayswater",
+        "category": "place-of-worship",
+        "address": "29 St Petersburgh Place, London",
+        "postcode": "W2 4LA",
+        "latitude": 51.511655,
+        "longitude": -0.1911678,
+        "website": "https://www.stmatthewsbayswater.org.uk/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Meanwhile Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "W9 3NQ",
+        "latitude": 51.5237583,
+        "longitude": -0.2037582,
+        "website": "https://meanwhile-gardens.org.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Edbrooke Road Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "W9 2DE",
+        "latitude": 51.524455,
+        "longitude": -0.1954249,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Westbourne Green Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "W2 5AT",
+        "latitude": 51.5213741,
+        "longitude": -0.1894793,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Tamplin Mews Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "W9 3LR",
+        "latitude": 51.5263743,
+        "longitude": -0.1979578,
+        "website": "https://www.westminster.gov.uk/my-parks/parks/tamplin-mews-open-space/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Harrow Road Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "W10 4EN",
+        "latitude": 51.5268461,
+        "longitude": -0.2112229,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Queen's Park Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "W10 4SF",
+        "latitude": 51.5284173,
+        "longitude": -0.2088116,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Harbour Club Notting Hill",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W2 5HE",
+        "latitude": 51.5207291,
+        "longitude": -0.1944871,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Academy Sport",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W2 5EN",
+        "latitude": 51.5202816,
+        "longitude": -0.192536,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Queens Skate Dine Bowl",
+        "category": "leisure-centre",
+        "address": "17 Queensway, London",
+        "postcode": "W2 4QP",
+        "latitude": 51.5108972,
+        "longitude": -0.1873387,
+        "website": "https://queens.london/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Porchester Centre",
+        "category": "leisure-centre",
+        "address": "Queensway, London",
+        "postcode": "W2 5HS",
+        "latitude": 51.5171897,
+        "longitude": -0.1892282,
+        "website": "https://www.everyoneactive.com/centre/porchester-centre/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Little Venice Pilates & Physiotherapy",
+        "category": "leisure-centre",
+        "address": "28 Bristol Gardens, London",
+        "postcode": "W9 2JQ",
+        "latitude": 51.5231372,
+        "longitude": -0.1862359,
+        "website": "https://www.ten.co.uk/our_studios/little-venice-pilates-physiotherapy",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Paddington Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W9 2LH",
+        "latitude": 51.5259633,
+        "longitude": -0.1888197,
+        "website": "https://www.psclondon.com/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Paddington Arts",
         "category": "community-hub",
-        "address": "Westminster, SW1A 1AA",
-        "description": "The monarch's administrative headquarters and London residence since 1837."
+        "address": "32 Woodfield Road, London",
+        "postcode": "W9 2BE",
+        "latitude": 51.523057,
+        "longitude": -0.200193,
+        "website": "https://www.paddingtonarts.org.uk/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Asian Muslim Cultural Centre",
+        "category": "community-hub",
+        "address": "348 Harrow Road, London",
+        "postcode": "W9 2HP",
+        "latitude": 51.5228771,
+        "longitude": -0.1941924,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "The Yaa Centre",
+        "category": "community-hub",
+        "address": "1 Chippenham Mews, London",
+        "postcode": "W9 2HU",
+        "latitude": 51.5238314,
+        "longitude": -0.1959024,
+        "website": "http://yaacentrew9.com/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "The Avenues",
+        "category": "community-hub",
+        "address": "3-7 Third Avenue, London",
+        "postcode": "W10 4RS",
+        "latitude": 51.5270784,
+        "longitude": -0.2080934,
+        "website": "https://www.avenues.org.uk/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Amberley Clubroom",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "W9 2JZ",
+        "latitude": 51.5237304,
+        "longitude": -0.1892486,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Queen's Park Community Hall",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "W10 4QB",
+        "latitude": 51.5289138,
+        "longitude": -0.2138478,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Paddington Children’s Library",
+        "category": "library",
+        "address": "",
+        "postcode": "W2 5DX",
+        "latitude": 51.5184638,
+        "longitude": -0.1895813,
+        "website": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/paddington-library",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Paddington Children's Library",
+        "category": "library",
+        "address": "150 Queensway, London",
+        "postcode": "W2 6LY",
+        "latitude": 51.5149447,
+        "longitude": -0.1878899,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Paddington Library",
+        "category": "library",
+        "address": "Porchester Road, London",
+        "postcode": "W2 5DU",
+        "latitude": 51.5175162,
+        "longitude": -0.1886781,
+        "website": "https://www.westminster.gov.uk/library-opening-hours-and-contact-details#paddington-library",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Queen's Park Library",
+        "category": "library",
+        "address": "666 Harrow Road, London",
+        "postcode": "W10 4NE",
+        "latitude": 51.5270593,
+        "longitude": -0.2107994,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Maida Vale Library",
+        "category": "library",
+        "address": "Sutherland Avenue, London",
+        "postcode": "W9 2QT",
+        "latitude": 51.5247349,
+        "longitude": -0.1904854,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "ICSF Library",
+        "category": "library",
+        "address": "London",
+        "postcode": "SW7 2BA",
+        "latitude": 51.5001094,
+        "longitude": -0.1784897,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Queensway Post Office",
+        "category": "post-office",
+        "address": "118/120 Queensway, London",
+        "postcode": "W2 6LT",
+        "latitude": 51.5141344,
+        "longitude": -0.1876618,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Maida Hill Post Office",
+        "category": "post-office",
+        "address": "377 Harrow Road, London",
+        "postcode": "W9 3ND",
+        "latitude": 51.5245295,
+        "longitude": -0.2026786,
+        "website": "https://www.postoffice.co.uk/branch-finder/1370065/maida-hill",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Dhigs",
+        "category": "post-office",
+        "address": "12 Formosa Street, London",
+        "postcode": "W9 1EE",
+        "latitude": 51.5246497,
+        "longitude": -0.1849127,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Portland Express",
+        "category": "post-office",
+        "address": "19 Clifton Road, London",
+        "postcode": "W9 1SY",
+        "latitude": 51.5254233,
+        "longitude": -0.1793575,
+        "website": "https://portlands247.co.uk/blogs/stores/portland-express-19-clifton-road",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Paddington Quay Post Office",
+        "category": "post-office",
+        "address": "Praed Street, London",
+        "postcode": "W2 1JX",
+        "latitude": 51.5185005,
+        "longitude": -0.170695,
+        "website": "https://www.postoffice.co.uk/branch-finder/0050067/paddington-quay",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Mail Boxes ETC.",
+        "category": "post-office",
+        "address": "464 Edgware Road, London",
+        "postcode": "W2 1AH",
+        "latitude": 51.5236512,
+        "longitude": -0.1749712,
+        "website": "https://www.mbe.co.uk/londonmaidavale",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Maida Hill Market",
+        "category": "market",
+        "address": "Fernhead Road, London",
+        "postcode": "W9 3QA",
+        "latitude": 51.5244141,
+        "longitude": -0.2014289,
+        "website": "https://www.westminster.gov.uk/markets-available-guide",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Marylebone Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W1U 4FA",
+        "latitude": 51.5193068,
+        "longitude": -0.1530012,
+        "website": "https://www.lfm.org.uk/markets/marylebone/",
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Cabbages & Frocks Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W1U 5BA",
+        "latitude": 51.5224249,
+        "longitude": -0.1517308,
+        "distanceKm": 4
+      },
+      {
+        "name": "Pimlico Road Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SW1W 8UN",
+        "latitude": 51.4907669,
+        "longitude": -0.1527849,
+        "website": "https://www.lfm.org.uk/markets/pimlico-road/",
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Piccadilly Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W1J 9LL",
+        "latitude": 51.5087836,
+        "longitude": -0.1368694,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Berwick Street Market",
+        "category": "market",
+        "address": "Berwick Street, London",
+        "postcode": "W1F 0PJ",
+        "latitude": 51.5132572,
+        "longitude": -0.1346139,
+        "distanceKm": 5
+      },
+      {
+        "name": "Avenue Gardens Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W10 4EN",
+        "latitude": 51.5270861,
+        "longitude": -0.2111286,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Cleveland Square Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W2 6DB",
+        "latitude": 51.5146595,
+        "longitude": -0.1819222,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Selby Square Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W10 4AP",
+        "latitude": 51.5313148,
+        "longitude": -0.2068689,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Buck Hill Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W2 2UD",
+        "latitude": 51.510823,
+        "longitude": -0.1736461,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Play area - Ages 3 to 7",
+        "category": "playground",
+        "address": "",
+        "postcode": "W9 1PD",
+        "latitude": 51.5307401,
+        "longitude": -0.1913142,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Hyde Park Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW7 1SE",
+        "latitude": 51.5031046,
+        "longitude": -0.1626967,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Canal Cafe Theatre",
+        "category": "culture",
+        "address": "13 Westbourne Terrace Road, London",
+        "postcode": "W2 6ND",
+        "latitude": 51.5210488,
+        "longitude": -0.1842895,
+        "website": "https://canalcafetheatre.com/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "The Puppet Theatre Barge",
+        "category": "culture",
+        "address": "",
+        "postcode": "W9 2PF",
+        "latitude": 51.5216697,
+        "longitude": -0.1823399,
+        "website": "https://www.puppetbarge.com",
+        "distanceKm": 2
+      },
+      {
+        "name": "Sheldon Square",
+        "category": "culture",
+        "address": "",
+        "postcode": "W2 6EP",
+        "latitude": 51.5193954,
+        "longitude": -0.1799824,
+        "distanceKm": 2
+      },
+      {
+        "name": "Imperial Cinema",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW7 2BB",
+        "latitude": 51.500423,
+        "longitude": -0.1780006,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Royal Albert Hall",
+        "category": "culture",
+        "address": "4 Kensington Gore, London",
+        "postcode": "SW7 2AP",
+        "latitude": 51.5010147,
+        "longitude": -0.17741,
+        "website": "http://www.royalalberthall.com/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Royal College of Music Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW7 2BS",
+        "latitude": 51.49964,
+        "longitude": -0.1774845,
+        "website": "https://www.rcm.ac.uk/museum/",
+        "distanceKm": 2.5
       }
     ]
   },

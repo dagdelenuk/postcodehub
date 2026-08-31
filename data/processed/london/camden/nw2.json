@@ -7926,16 +7926,517 @@
   "places": {
     "places": [
       {
-        "name": "Camden Market",
-        "category": "community-hub",
-        "address": "Camden Town",
-        "description": "One of the UK's most visited attractions, a sprawling market for fashion, food, and crafts."
+        "name": "Hampstead Cemetery",
+        "category": "park",
+        "address": "Fortune Green Road, London",
+        "postcode": "NW6 1DR",
+        "latitude": 51.5557913,
+        "longitude": -0.2002153,
+        "website": "https://iccslondon.co.uk/the-sites/hampstead-cemetery/",
+        "distanceKm": 1.4
       },
       {
-        "name": "British Museum",
+        "name": "Fortune Green",
+        "category": "park",
+        "address": "",
+        "postcode": "NW6 1EF",
+        "latitude": 51.5546644,
+        "longitude": -0.1977086,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Maygrove Peace Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW6 2DF",
+        "latitude": 51.5485926,
+        "longitude": -0.198548,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Sumatra Road Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "NW6 1PR",
+        "latitude": 51.5496611,
+        "longitude": -0.196729,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "West End Green",
+        "category": "park",
+        "address": "",
+        "postcode": "NW6 1LU",
+        "latitude": 51.5522804,
+        "longitude": -0.1925024,
+        "distanceKm": 2
+      },
+      {
+        "name": "Mill Lane Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "NW6 1BH",
+        "latitude": 51.5513805,
+        "longitude": -0.1941096,
+        "distanceKm": 2
+      },
+      {
+        "name": "St Cuthbert's Parish Church",
+        "category": "place-of-worship",
+        "address": "Fordwych Road, London",
+        "postcode": "NW2 3TN",
+        "latitude": 51.5499041,
+        "longitude": -0.2023814,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St Luke's Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "NW3 7DA",
+        "latitude": 51.55819,
+        "longitude": -0.1944117,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Brondesbury Christian Church",
+        "category": "place-of-worship",
+        "address": "9-11 Iverson Road, London",
+        "postcode": "NW6 2QT",
+        "latitude": 51.546177,
+        "longitude": -0.2017082,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Shomrei Hadath Synagogue",
+        "category": "place-of-worship",
+        "address": "64 Burrard Road, London",
+        "postcode": "NW6 1DD",
+        "latitude": 51.5551411,
+        "longitude": -0.1940291,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Emmanuel Church, West Hampstead",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "NW6 1JU",
+        "latitude": 51.5526613,
+        "longitude": -0.1925055,
+        "distanceKm": 2
+      },
+      {
+        "name": "Hampstead Synagogue",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "NW6 1AX",
+        "latitude": 51.5497929,
+        "longitude": -0.1919725,
+        "website": "https://www.hampsteadshul.org.uk/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Mill Lane Post Office",
+        "category": "post-office",
+        "address": "44-46 Mill Lane, London",
+        "postcode": "NW6 1NJ",
+        "latitude": 51.5511666,
+        "longitude": -0.2007604,
+        "website": "https://www.postoffice.co.uk/branch-finder/1940058/mill-lane",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Post Office & Shop",
+        "category": "post-office",
+        "address": "Sherriff Road, London",
+        "postcode": "NW6 2AP",
+        "latitude": 51.5458239,
+        "longitude": -0.1919424,
+        "website": "https://www.thesherriffcentre.co.uk/post-office/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "268 Belsize Road, London",
+        "postcode": "NW6 4BT",
+        "latitude": 51.5376399,
+        "longitude": -0.1922188,
+        "website": "http://www.mbe.co.uk/kilburn",
+        "distanceKm": 3
+      },
+      {
+        "name": "Hampstead Post Office",
+        "category": "post-office",
+        "address": "Hampstead High Street, London",
+        "postcode": "NW3 1QL",
+        "latitude": 51.5555117,
+        "longitude": -0.1763595,
+        "website": "https://www.postoffice.co.uk/branch-finder/0090050/hampstead",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Mailbox & Shipping",
+        "category": "post-office",
+        "address": "Finchley Road, London",
+        "postcode": "NW3 5EG",
+        "latitude": 51.542122,
+        "longitude": -0.1749506,
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Belsize Park Post Office",
+        "category": "post-office",
+        "address": "Haverstock Hill, London",
+        "postcode": "NW3 4QG",
+        "latitude": 51.5506116,
+        "longitude": -0.1657981,
+        "website": "https://www.postoffice.co.uk/branch-finder/1860054/belsize-park",
+        "distanceKm": 3.9
+      },
+      {
+        "name": "West Hampstead Community Centre",
         "category": "community-hub",
-        "address": "Great Russell Street, WC1B 3DG",
-        "description": "One of the world's great museums of human history and culture, free to enter since its founding in 1753."
+        "address": "17 Dornfell Street, London",
+        "postcode": "NW6 1QN",
+        "latitude": 51.551125,
+        "longitude": -0.1993831,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Sidings Community Centre",
+        "category": "community-hub",
+        "address": "150 Brassey Road, London",
+        "postcode": "NW6 2BA",
+        "latitude": 51.5490669,
+        "longitude": -0.1989922,
+        "website": "https://sidings.org.uk/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Kilburn Islamic Centre",
+        "category": "community-hub",
+        "address": "292-294, London",
+        "postcode": "NW6 2DB",
+        "latitude": 51.544184,
+        "longitude": -0.2003885,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Kingsgate Community Centre",
+        "category": "community-hub",
+        "address": "107 Kingsgate Road, London",
+        "postcode": "NW6 2JH",
+        "latitude": 51.5442568,
+        "longitude": -0.1961472,
+        "website": "http://www.kingsgatecommunitycentre.org.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "West Hampstead Women's Centre",
+        "category": "community-hub",
+        "address": "26-30 Cotleigh Road, London",
+        "postcode": "NW6 2NP",
+        "latitude": 51.5437412,
+        "longitude": -0.1943005,
+        "website": "http://whwc.co.uk/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Lymington Road Residents' Association",
+        "category": "community-hub",
+        "address": "Dresden Close, London",
+        "postcode": "NW6 1XP",
+        "latitude": 51.5501965,
+        "longitude": -0.1845619,
+        "website": "https://www.lymingtonroad.com/",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Sumatra Road Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW6 1PR",
+        "latitude": 51.549529,
+        "longitude": -0.1968053,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Iverson Road Open Space",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW6 2HH",
+        "latitude": 51.5468385,
+        "longitude": -0.1969693,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Lymington Road Estate Natural Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW6 1XZ",
+        "latitude": 51.548717,
+        "longitude": -0.1882307,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Quex Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW6 4PG",
+        "latitude": 51.5406049,
+        "longitude": -0.1930408,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Broadhurst Gardens",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW6 3QT",
+        "latitude": 51.5470001,
+        "longitude": -0.1825321,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Vale of Health playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW3 1DA",
+        "latitude": 51.5613654,
+        "longitude": -0.1728116,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "West Heath Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW3 7PQ",
+        "latitude": 51.5579093,
+        "longitude": -0.1920056,
+        "website": "https://westheathltc.co.uk/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Cumberland Lawn Tennis Club and Hampstead Cricket Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW6 1JD",
+        "latitude": 51.5507879,
+        "longitude": -0.1871137,
+        "website": "https://cltc-hcc.com/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Acol Bridge Club & Academy",
+        "category": "leisure-centre",
+        "address": "86 West End Lane, London",
+        "postcode": "NW6 2LX",
+        "latitude": 51.5456406,
+        "longitude": -0.1909705,
+        "website": "https://acolbridgeclub.com/",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Tokia",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW3 6LU",
+        "latitude": 51.5481067,
+        "longitude": -0.1814409,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Gav the Champ",
+        "category": "leisure-centre",
+        "address": "95b Fairfax Road, London",
+        "postcode": "NW6 4DY",
+        "latitude": 51.5419388,
+        "longitude": -0.1799981,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Armoury Fitness",
+        "category": "leisure-centre",
+        "address": "25 Pond Street, London",
+        "postcode": "NW3 2PN",
+        "latitude": 51.5540642,
+        "longitude": -0.1668014,
+        "website": "http://www.jubileehalltrust.org/armoury/",
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Arthur Murry Dance School",
+        "category": "culture",
+        "address": "242 Kilburn High Road, London",
+        "postcode": "NW6 2BS",
+        "latitude": 51.5429906,
+        "longitude": -0.1989692,
+        "website": "http://www.dance-arthurmurray.co.uk/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Kingsgate Workshops",
+        "category": "culture",
+        "address": "110-116 Kingsgate Road, London",
+        "postcode": "NW6 2JG",
+        "latitude": 51.5442039,
+        "longitude": -0.1966224,
+        "website": "https://www.kingsgateworkshops.org.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Camden Arts Centre",
+        "category": "culture",
+        "address": "52 Arkwright Road, London",
+        "postcode": "NW3 6DG",
+        "latitude": 51.5511852,
+        "longitude": -0.1834845,
+        "website": "https://www.camdenartcentre.org/",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Fenton House",
+        "category": "culture",
+        "address": "Hampstead Grove, London",
+        "postcode": "NW3 6SP",
+        "latitude": 51.5588821,
+        "longitude": -0.1796818,
+        "website": "https://www.nationaltrust.org.uk/visit/london/fenton-house-and-garden",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Pentameter's theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW3 1QN",
+        "latitude": 51.55596,
+        "longitude": -0.1783675,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Vue Finchley Road",
+        "category": "culture",
+        "address": "255 Finchley Road, London",
+        "postcode": "NW3 6LU",
+        "latitude": 51.5481248,
+        "longitude": -0.1815748,
+        "website": "https://www.myvue.com/cinema/finchley-road/whats-on",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "West Hampstead Library",
+        "category": "library",
+        "address": "London",
+        "postcode": "NW6 1AU",
+        "latitude": 51.5502951,
+        "longitude": -0.1916249,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Kilburn Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW6 5UH",
+        "latitude": 51.5363825,
+        "longitude": -0.1911436,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Keats Community Library",
+        "category": "library",
+        "address": "10 Keats Grove, London",
+        "postcode": "NW3 2RR",
+        "latitude": 51.5554439,
+        "longitude": -0.1682031,
+        "website": "http://keatscommunitylibrary.org.uk",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Swiss Cottage Library",
+        "category": "library",
+        "address": "88 Avenue Road, London",
+        "postcode": "NW3 3HA",
+        "latitude": 51.5423489,
+        "longitude": -0.1732767,
+        "website": "https://www.camden.gov.uk/swiss-cottage-library",
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Belsize Park Community Library",
+        "category": "library",
+        "address": "Antrim Road, London",
+        "postcode": "NW3 4XN",
+        "latitude": 51.5479002,
+        "longitude": -0.1622777,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Primrose Hill Community Library",
+        "category": "library",
+        "address": "11a Sharpleshall Street, London",
+        "postcode": "NW1 8YN",
+        "latitude": 51.5411213,
+        "longitude": -0.1566667,
+        "distanceKm": 4.8
+      },
+      {
+        "name": "West Hampstead Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW6 2LJ",
+        "latitude": 51.5480778,
+        "longitude": -0.1915096,
+        "website": "https://www.lfm.org.uk/markets/westhampstead/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Community Market",
+        "category": "market",
+        "address": "78 Hampstead High Street, London",
+        "postcode": "NW3 1QL",
+        "latitude": 51.555543,
+        "longitude": -0.1767256,
+        "distanceKm": 3
+      },
+      {
+        "name": "Swiss Cottage Farmers’ Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW3 3HY",
+        "latitude": 51.5439238,
+        "longitude": -0.1741416,
+        "website": "https://www.lfm.org.uk/markets/swiss-cottage/",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Primrose Hill Food Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW3 3DU",
+        "latitude": 51.541743,
+        "longitude": -0.1620307,
+        "website": "https://www.primrosehillfoodmarket.co.uk/",
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Parliament Hill Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW5 1RN",
+        "latitude": 51.5591879,
+        "longitude": -0.1508913,
+        "website": "https://www.lfm.org.uk/markets/parliament-hill/",
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Queen's Crescent Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW5 4EB",
+        "latitude": 51.5498897,
+        "longitude": -0.1516261,
+        "website": "https://www.camden.gov.uk/markets",
+        "distanceKm": 4.8
       }
     ]
   },

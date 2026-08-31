@@ -1104,16 +1104,517 @@
   "places": {
     "places": [
       {
-        "name": "Camden Market",
-        "category": "community-hub",
-        "address": "Camden Town",
-        "description": "One of the UK's most visited attractions, a sprawling market for fashion, food, and crafts."
+        "name": "St Mary's (St-Mary-Le-Savoy) with St George's",
+        "category": "place-of-worship",
+        "address": "10 Sandwich Street, London",
+        "postcode": "WC1H 9PL",
+        "latitude": 51.5271044,
+        "longitude": -0.1256538,
+        "website": "https://www.london-ost.german-church.org/st-marien-mit-st-george?lang=en",
+        "distanceKm": 0
       },
       {
-        "name": "British Museum",
+        "name": "Holy Cross Church",
+        "category": "place-of-worship",
+        "address": "Cromer Street, London",
+        "postcode": "WC1H 8JU",
+        "latitude": 51.5274791,
+        "longitude": -0.1232506,
+        "website": "https://www.holycrosscromerstreet.org/",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "King's Cross Mosque and Islamic Centre",
+        "category": "place-of-worship",
+        "address": "Cromer Street, London",
+        "postcode": "WC1H 8DU",
+        "latitude": 51.528205,
+        "longitude": -0.1212167,
+        "website": "https://www.kingscrossmosque.org/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St Pancras Church",
+        "category": "place-of-worship",
+        "address": "Euston Rd, London",
+        "postcode": "NW1 2BA",
+        "latitude": 51.5271971,
+        "longitude": -0.1299858,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Lumen United Reformed Church",
+        "category": "place-of-worship",
+        "address": "88 Tavistock Place, London",
+        "postcode": "WC1H 9RS",
+        "latitude": 51.5262001,
+        "longitude": -0.1221959,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "King's Cross Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "WC1H 8BB",
+        "latitude": 51.5300324,
+        "longitude": -0.1223946,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Bramber Green",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1H 8JS",
+        "latitude": 51.5270465,
+        "longitude": -0.1236051,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Cartwright Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1H 9EL",
+        "latitude": 51.5268593,
+        "longitude": -0.1267283,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Tavistock Square",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1H 9LT",
+        "latitude": 51.5250414,
+        "longitude": -0.1290244,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Argyle Square Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1H 8AS",
+        "latitude": 51.5290446,
+        "longitude": -0.122248,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St George's Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1N 1PG",
+        "latitude": 51.526163,
+        "longitude": -0.1210331,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Regent Square Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "WC1H 8HZ",
+        "latitude": 51.5268488,
+        "longitude": -0.1216121,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "One KX",
+        "category": "culture",
+        "address": "120 Cromer Street, London",
+        "postcode": "WC1H 8BS",
+        "latitude": 51.5275438,
+        "longitude": -0.1244838,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "The Place",
+        "category": "culture",
+        "address": "17 Duke's Road, London",
+        "postcode": "WC1H 9PY",
+        "latitude": 51.5274371,
+        "longitude": -0.1287334,
+        "website": "https://www.theplace.org.uk/",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Shaw Theatre",
+        "category": "culture",
+        "address": "100-110 Euston Road, London",
+        "postcode": "NW1 2AJ",
+        "latitude": 51.5288526,
+        "longitude": -0.1281323,
+        "website": "https://www.shaw-theatre.com/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "British Library Exhibition Space",
+        "category": "culture",
+        "address": "96 Euston Road, London",
+        "postcode": "NW1 1JJ",
+        "latitude": 51.5295982,
+        "longitude": -0.1281295,
+        "website": "https://www.bl.uk/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Arts Catalyst Centre for Arts, Science, and Technology",
+        "category": "culture",
+        "address": "74-76 Cromer Street, London",
+        "postcode": "WC1H 8DR",
+        "latitude": 51.5280014,
+        "longitude": -0.1216561,
+        "website": "https://www.artscatalyst.org/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Restored K6 phone booth",
+        "category": "culture",
+        "address": "",
+        "postcode": "WC1H 9GX",
+        "latitude": 51.5294316,
+        "longitude": -0.1257524,
+        "website": "https://www.buildingcentre.co.uk/whats_on/exhibitions/the-k6",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Marchmont Community Centre",
         "category": "community-hub",
-        "address": "Great Russell Street, WC1B 3DG",
-        "description": "One of the world's great museums of human history and culture, free to enter since its founding in 1753."
+        "address": "62 Marchmont Street, London",
+        "postcode": "WC1N 1AB",
+        "latitude": 51.5252932,
+        "longitude": -0.125126,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "The last word",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "NW1 1JJ",
+        "latitude": 51.529291,
+        "longitude": -0.1275542,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "London Welsh Centre",
+        "category": "community-hub",
+        "address": "157-163 Gray's Inn Road, London",
+        "postcode": "WC1X 8UE",
+        "latitude": 51.5249398,
+        "longitude": -0.1168211,
+        "website": "http://www.londonwelsh.org/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Somers Town Community Centre",
+        "category": "community-hub",
+        "address": "150 Ossulston Street, London",
+        "postcode": "NW1 1EE",
+        "latitude": 51.5319803,
+        "longitude": -0.1307497,
+        "website": "https://www.somerstown.org.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Coopers Lane Tenants Association Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "NW1 1HX",
+        "latitude": 51.5329885,
+        "longitude": -0.129963,
+        "website": "https://cindex.camden.gov.uk/kb5/camden/cd/service.page?id=51FGSKyOycg",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Doreen Bazell Hall",
+        "category": "community-hub",
+        "address": "1 Goldington Street, London",
+        "postcode": "NW1 1RU",
+        "latitude": 51.5338538,
+        "longitude": -0.1306335,
+        "website": "https://cindex.camden.gov.uk/kb5/camden/cd/service.page?id=ba2g-6Re7rk",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Marchmont Street Post Office",
+        "category": "post-office",
+        "address": "33-37 Marchmont Street, London",
+        "postcode": "WC1N 1AP",
+        "latitude": 51.5246181,
+        "longitude": -0.1252115,
+        "website": "https://www.postoffice.co.uk/branch-finder/0520101/marchmont-street",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Mailboxes Etc",
+        "category": "post-office",
+        "address": "",
+        "postcode": "NW1 1JY",
+        "latitude": 51.5291728,
+        "longitude": -0.1325519,
+        "website": "https://www.mbe.co.uk/londoneuston",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Southampton Row Post Office",
+        "category": "post-office",
+        "address": "86 Southampton Row, London",
+        "postcode": "WC1B 4BB",
+        "latitude": 51.5198743,
+        "longitude": -0.1219493,
+        "website": "https://www.postoffice.co.uk/branch-finder/0540102/southampton-row",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Mail Boxes Etc. Holborn",
+        "category": "post-office",
+        "address": "19 Bury Place, London",
+        "postcode": "WC1A 2JB",
+        "latitude": 51.5184945,
+        "longitude": -0.1245722,
+        "website": "https://www.mbe.co.uk/londonholborn",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Euston Food and Wine",
+        "category": "post-office",
+        "address": "42 Hampstead Road, London",
+        "postcode": "NW1 2PY",
+        "latitude": 51.5259948,
+        "longitude": -0.1381959,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Crowndale Road Post Office",
+        "category": "post-office",
+        "address": "Crowndale Road, London",
+        "postcode": "NW1 1TT",
+        "latitude": 51.5354834,
+        "longitude": -0.134406,
+        "website": "https://www.postoffice.co.uk/branch-finder/324458x/crowndale-road",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Bartlett Library",
+        "category": "library",
+        "address": "14 Upper Woburn Place, London",
+        "postcode": "WC1H 0NN",
+        "latitude": 51.5269488,
+        "longitude": -0.129594,
+        "website": "https://www.ucl.ac.uk/library/using-library/libraries-and-study-spaces/bartlett-library",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "British Library",
+        "category": "library",
+        "address": "96 Euston Road, London",
+        "postcode": "NW1 2DB",
+        "latitude": 51.5300022,
+        "longitude": -0.1277087,
+        "website": "https://www.bl.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Dr Williams's Library",
+        "category": "library",
+        "address": "14 Gordon Square, London",
+        "postcode": "WC1H 0AR",
+        "latitude": 51.5239529,
+        "longitude": -0.1315296,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "UCL Institute of Education Library",
+        "category": "library",
+        "address": "",
+        "postcode": "WC1H 0NS",
+        "latitude": 51.5232843,
+        "longitude": -0.1286332,
+        "website": "https://www.ucl.ac.uk/library/libraries-and-study-spaces/institute-education-library",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The Wellcome Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW1 2BE",
+        "latitude": 51.5259772,
+        "longitude": -0.1339659,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Main Library",
+        "category": "library",
+        "address": "",
+        "postcode": "WC1H 0AH",
+        "latitude": 51.5247805,
+        "longitude": -0.133408,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Brunswick Saturday Food Market",
+        "category": "market",
+        "address": "",
+        "postcode": "WC1N 1AE",
+        "latitude": 51.5242502,
+        "longitude": -0.1237328,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Chalton Street Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW1 1JB",
+        "latitude": 51.5292788,
+        "longitude": -0.1297036,
+        "website": "https://www.camden.gov.uk/markets",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Real Food Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N1C 4AL",
+        "latitude": 51.5307105,
+        "longitude": -0.1236282,
+        "website": "https://www.realfoodfestival.co.uk/our_work/real-food-market",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Canopy Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N1C 4BZ",
+        "latitude": 51.5360452,
+        "longitude": -0.1238176,
+        "website": "https://canopymarket.co.uk/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Goodge Place Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W1T 4LY",
+        "latitude": 51.5192865,
+        "longitude": -0.1363,
+        "website": "https://www.camden.gov.uk/markets",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Leather Lane Market",
+        "category": "market",
+        "address": "",
+        "postcode": "EC1N 7TJ",
+        "latitude": 51.5204557,
+        "longitude": -0.1096724,
+        "website": "https://www.camden.gov.uk/markets",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Wicklow Street Open Space",
+        "category": "playground",
+        "address": "",
+        "postcode": "WC1X 9LF",
+        "latitude": 51.5295383,
+        "longitude": -0.1170221,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "The Alf Barnett Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "WC1N 3BT",
+        "latitude": 51.5204176,
+        "longitude": -0.1214237,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "The Warren",
+        "category": "playground",
+        "address": "",
+        "postcode": "W1T 5JX",
+        "latitude": 51.5239381,
+        "longitude": -0.1384545,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Handyside Gardens Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N1C 4AY",
+        "latitude": 51.5367317,
+        "longitude": -0.1229266,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Bourne Estate Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "EC1N 7UR",
+        "latitude": 51.5207579,
+        "longitude": -0.1110335,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "St. Martin's Gardens Childrens Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW1 0HR",
+        "latitude": 51.5387535,
+        "longitude": -0.139036,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Pancras Square Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N1C 4UR",
+        "latitude": 51.5338475,
+        "longitude": -0.1264633,
+        "website": "https://www.better.org.uk/leisure-centre/london/camden/pancras-square",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Somers Town Community Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW1 1RX",
+        "latitude": 51.5328542,
+        "longitude": -0.1330058,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Good Vibes",
+        "category": "leisure-centre",
+        "address": "11 Tottenham Street, London",
+        "postcode": "W1T 2AQ",
+        "latitude": 51.5204977,
+        "longitude": -0.1350188,
+        "distanceKm": 1
+      },
+      {
+        "name": "EustonWall Climbing Centre",
+        "category": "leisure-centre",
+        "address": "350 Euston Road, London",
+        "postcode": "NW1 3AX",
+        "latitude": 51.5246047,
+        "longitude": -0.1418928,
+        "website": "https://londonclimbingcentres.co.uk/centre/eustonwall/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Oasis Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "WC2H 9RA",
+        "latitude": 51.5155252,
+        "longitude": -0.1255945,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Mornington Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW1 7BR",
+        "latitude": 51.5379647,
+        "longitude": -0.1431024,
+        "distanceKm": 1.7
       }
     ]
   },

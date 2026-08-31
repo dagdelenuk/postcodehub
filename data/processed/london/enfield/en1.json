@@ -6521,16 +6521,463 @@
   "places": {
     "places": [
       {
-        "name": "Forty Hall",
-        "category": "community-hub",
-        "address": "Enfield",
-        "description": "A Jacobean mansion set in a 275-acre country park, now a museum and gallery."
+        "name": "Enfield Playing Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "EN1 3SU",
+        "latitude": 51.6551523,
+        "longitude": -0.0644012,
+        "distanceKm": 0.2
       },
       {
-        "name": "Myddelton House Gardens",
+        "name": "Bush Hill Park",
         "category": "park",
-        "address": "Bulls Cross, Enfield, EN2 9HG",
-        "description": "Historic gardens developed by plantsman E. A. Bowles, now managed by Lee Valley Regional Park."
+        "address": "",
+        "postcode": "EN1 1PS",
+        "latitude": 51.6488011,
+        "longitude": -0.0681839,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Aldersbrook Avenue Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "EN1 3JD",
+        "latitude": 51.6587027,
+        "longitude": -0.0750533,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Library Green",
+        "category": "park",
+        "address": "",
+        "postcode": "EN2 6AS",
+        "latitude": 51.6520124,
+        "longitude": -0.0863435,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Riverside Park",
+        "category": "park",
+        "address": "",
+        "postcode": "EN1 2HR",
+        "latitude": 51.6441396,
+        "longitude": -0.0790133,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Enfield Town Park",
+        "category": "park",
+        "address": "",
+        "postcode": "EN2 6BY",
+        "latitude": 51.6492686,
+        "longitude": -0.0863456,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Southbury Leisure Centre",
+        "category": "leisure-centre",
+        "address": "192 Southbury Road, Enfield",
+        "postcode": "EN1 1YP",
+        "latitude": 51.6522566,
+        "longitude": -0.0622332,
+        "website": "https://www.better.org.uk/leisure-centre/london/enfield/southbury-leisure-centre",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "David Lloyd Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "EN1 4LF",
+        "latitude": 51.659335,
+        "longitude": -0.0611682,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Enfield Cricket Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "EN1 2FD",
+        "latitude": 51.6468191,
+        "longitude": -0.076161,
+        "website": "https://www.enfieldcricketclub.com/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Bush Hill Park Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "EN1 2QP",
+        "latitude": 51.6438477,
+        "longitude": -0.0728715,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Anytime Fitness",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "EN3 4FB",
+        "latitude": 51.6487089,
+        "longitude": -0.0513824,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Drill Hall",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "EN2 6SA",
+        "latitude": 51.6529648,
+        "longitude": -0.0889117,
+        "website": "https://www.enfielddrillhall.club/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Cineworld Enfield",
+        "category": "culture",
+        "address": "208 Southbury Road, Enfield",
+        "postcode": "EN1 1YQ",
+        "latitude": 51.6502249,
+        "longitude": -0.0609636,
+        "website": "https://www.cineworld.co.uk/cinemas/london-enfield/048",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Dugdale Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "EN2 6DR",
+        "latitude": 51.6505408,
+        "longitude": -0.0804846,
+        "distanceKm": 1
+      },
+      {
+        "name": "Dugdale Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "EN2 6DR",
+        "latitude": 51.6505092,
+        "longitude": -0.0804658,
+        "distanceKm": 1
+      },
+      {
+        "name": "Dugdale Centre Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "EN2 6DR",
+        "latitude": 51.6504326,
+        "longitude": -0.0804069,
+        "website": "https://www.dugdaleartscentre.co.uk/museum",
+        "distanceKm": 1
+      },
+      {
+        "name": "Forty Hall Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "EN2 9HA",
+        "latitude": 51.6696411,
+        "longitude": -0.0682465,
+        "website": "https://www.fortyhallestate.co.uk/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Odeon Lee Valley",
+        "category": "culture",
+        "address": "Picketts Lock Lane, London",
+        "postcode": "N9 0AS",
+        "latitude": 51.6331646,
+        "longitude": -0.0372559,
+        "website": "https://www.odeon.co.uk/cinemas/lee-valley/",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Cambridge Road Post Office",
+        "category": "post-office",
+        "address": "Great Cambridge Road, Enfield",
+        "postcode": "EN1 4JU",
+        "latitude": 51.660306,
+        "longitude": -0.0580832,
+        "website": "https://www.postoffice.co.uk/branch-finder/1450050/cambridge-road",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Enfield Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "EN2 6AQ",
+        "latitude": 51.6523222,
+        "longitude": -0.0843474,
+        "website": "https://www.postoffice.co.uk/branch-finder/1090054/enfield",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Bush Hill Park Post Office",
+        "category": "post-office",
+        "address": "4 Queen Anne's Place, Enfield",
+        "postcode": "EN1 2PT",
+        "latitude": 51.6415629,
+        "longitude": -0.0702058,
+        "website": "https://www.postoffice.co.uk/branch-finder/1440055/bush-hill-park",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Enfield Highway Post Office",
+        "category": "post-office",
+        "address": "Hertford Road, Enfield",
+        "postcode": "EN3 5JG",
+        "latitude": 51.6577835,
+        "longitude": -0.0469281,
+        "website": "https://www.postoffice.co.uk/branch-finder/1700057/enfield-highway",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Lancaster Road Post Office",
+        "category": "post-office",
+        "address": "Lancaster Road, Enfield",
+        "postcode": "EN2 0JN",
+        "latitude": 51.6641071,
+        "longitude": -0.0846651,
+        "website": "https://www.postoffice.co.uk/branch-finder/1510053/lancaster-road",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Ponders End Post Office",
+        "category": "post-office",
+        "address": "High Street, Ponders End, Enfield",
+        "postcode": "EN3 4EU",
+        "latitude": 51.6442164,
+        "longitude": -0.046743,
+        "website": "https://www.postoffice.co.uk/branch-finder/1800051/ponders-end",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "The Salvation Army - Enfield",
+        "category": "place-of-worship",
+        "address": "201 Churchbury Lane, Enfield",
+        "postcode": "EN1 3HQ",
+        "latitude": 51.6611868,
+        "longitude": -0.0748604,
+        "website": "https://www.salvationarmy.org.uk/enfield",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "St Andrew's Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "EN1 3EG",
+        "latitude": 51.6530511,
+        "longitude": -0.082027,
+        "distanceKm": 1
+      },
+      {
+        "name": "Bush Hill Park URC",
+        "category": "place-of-worship",
+        "address": "25 Main Avenue, Enfield",
+        "postcode": "EN1 1DJ",
+        "latitude": 51.6448705,
+        "longitude": -0.067622,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Our Lady of Mt. Carmel and St. George",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "EN2 6DS",
+        "latitude": 51.649815,
+        "longitude": -0.0804782,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "St Mark's",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "EN1 1BG",
+        "latitude": 51.6449057,
+        "longitude": -0.066396,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Revival Christian Centre",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "EN2 6DS",
+        "latitude": 51.6495114,
+        "longitude": -0.0803478,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Bush Hill Park Library",
+        "category": "library",
+        "address": "Agricola Place, Enfield",
+        "postcode": "EN1 1DW",
+        "latitude": 51.6453233,
+        "longitude": -0.0665088,
+        "distanceKm": 1
+      },
+      {
+        "name": "Enfield Library",
+        "category": "library",
+        "address": "66 Church Street, Enfield",
+        "postcode": "EN2 6AX",
+        "latitude": 51.6517022,
+        "longitude": -0.0861323,
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/210976",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Enfield Highway Library",
+        "category": "library",
+        "address": "201 Hertford Road, Enfield",
+        "postcode": "EN3 5JH",
+        "latitude": 51.6588385,
+        "longitude": -0.0468448,
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/210974",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Ridge Avenue Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N9 9FB",
+        "latitude": 51.6361231,
+        "longitude": -0.0819676,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Ordnance Unity Centre Library",
+        "category": "library",
+        "address": "",
+        "postcode": "EN3 6ND",
+        "latitude": 51.6719587,
+        "longitude": -0.0394306,
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/210991",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Edmonton Green Library",
+        "category": "library",
+        "address": "36-44 South Mall",
+        "postcode": "N9 0NX",
+        "latitude": 51.6239502,
+        "longitude": -0.0584635,
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/216435",
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Boleyn Hall",
+        "category": "community-hub",
+        "address": "St Martins Close / Boleyn Avenue, Enfield",
+        "postcode": "EN1 4HR",
+        "latitude": 51.6639588,
+        "longitude": -0.0552915,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Enfield Highway Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "EN3 5JF",
+        "latitude": 51.6563409,
+        "longitude": -0.047121,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Durants Park Fellowship Hut",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "EN3 5AJ",
+        "latitude": 51.6546236,
+        "longitude": -0.046798,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Ponders End Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "EN3 4JU",
+        "latitude": 51.6495846,
+        "longitude": -0.0466704,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St Stephen's Church Hall",
+        "category": "community-hub",
+        "address": "Enfield",
+        "postcode": "EN1 2BA",
+        "latitude": 51.6420424,
+        "longitude": -0.0787507,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "The Qube",
+        "category": "community-hub",
+        "address": "Enfield",
+        "postcode": "EN3 4DP",
+        "latitude": 51.6481529,
+        "longitude": -0.0462054,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Junior Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN2 6BY",
+        "latitude": 51.6497071,
+        "longitude": -0.0856555,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Natural Play",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN3 5HA",
+        "latitude": 51.6537609,
+        "longitude": -0.0462998,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "St Michael's Green Play Garden",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN2 0QX",
+        "latitude": 51.6625097,
+        "longitude": -0.0861133,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Four Hills Estate Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN2 0TQ",
+        "latitude": 51.6646929,
+        "longitude": -0.0906519,
+        "distanceKm": 2
+      },
+      {
+        "name": "Churchfield Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N9 9EN",
+        "latitude": 51.632271,
+        "longitude": -0.0706796,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Boxers Lake Open Space Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "EN2 7RS",
+        "latitude": 51.6496741,
+        "longitude": -0.1131695,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "The Scratching Post Charity Shop Rescue & Shelter Appeal for Cats",
+        "category": "market",
+        "address": "107 Lancaster Road, Enfield",
+        "postcode": "EN2 0JN",
+        "latitude": 51.6640771,
+        "longitude": -0.0827307,
+        "distanceKm": 1.5
       }
     ]
   },

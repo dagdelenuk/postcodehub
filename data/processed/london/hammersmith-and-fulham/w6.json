@@ -6084,16 +6084,511 @@
   "places": {
     "places": [
       {
-        "name": "Bishops Park",
-        "category": "park",
-        "address": "Fulham",
-        "description": "A riverside park next to Fulham Palace, the former residence of the Bishops of London."
+        "name": "Lyric Hammersmith Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "W6 0QL",
+        "latitude": 51.4930924,
+        "longitude": -0.2264424,
+        "distanceKm": 0.1
       },
       {
-        "name": "Stamford Bridge",
+        "name": "Eventim Apollo",
+        "category": "culture",
+        "address": "45 Queen Caroline Street, London",
+        "postcode": "W6 9QH",
+        "latitude": 51.4907086,
+        "longitude": -0.2244626,
+        "website": "https://www.eventimapollo.com/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Riverside Studios",
+        "category": "culture",
+        "address": "101 Queen Caroline Street, London",
+        "postcode": "W6 9BN",
+        "latitude": 51.488785,
+        "longitude": -0.2283572,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "William Morris Society",
+        "category": "culture",
+        "address": "26 Upper Mall, London",
+        "postcode": "W6 9TA",
+        "latitude": 51.4905465,
+        "longitude": -0.2355495,
+        "website": "https://williammorrissociety.org/our-museum/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Sainsbury Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "W6 8RH",
+        "latitude": 51.4905116,
+        "longitude": -0.2165652,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "British Airways Theatre",
+        "category": "culture",
+        "address": "Hammersmith Road, London",
+        "postcode": "W14 8UX",
+        "latitude": 51.4952047,
+        "longitude": -0.2115674,
+        "website": "https://britishairwaystheatre.com/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Thursday and Friday markets",
+        "category": "market",
+        "address": "",
+        "postcode": "W6 0ED",
+        "latitude": 51.4930325,
+        "longitude": -0.2259523,
+        "website": "https://www.lbhf.gov.uk/business/markets/lyric-square",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Shepherd's Bush Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W12 8DW",
+        "latitude": 51.5039461,
+        "longitude": -0.2261498,
+        "website": "https://myshepherdsbushmarket.com/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Shepherd's Bush Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W12 7JS",
+        "latitude": 51.5054194,
+        "longitude": -0.2262459,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "The New Shepherd's Bush Market",
+        "category": "market",
+        "address": "Uxbridge Road, London",
+        "postcode": "W12 8DQ",
+        "latitude": 51.5047841,
+        "longitude": -0.2267944,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "North End Road",
+        "category": "market",
+        "address": "",
+        "postcode": "SW6 1NR",
+        "latitude": 51.4831889,
+        "longitude": -0.2007279,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "North End Road Market",
+        "category": "market",
+        "address": "270 North End Road, London",
+        "postcode": "SW6 1NW",
+        "latitude": 51.4833299,
+        "longitude": -0.2008148,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "St Paul",
+        "category": "place-of-worship",
+        "address": "Queen Caroline Street, London",
+        "postcode": "W6 9PJ",
+        "latitude": 51.4914769,
+        "longitude": -0.2254989,
+        "website": "https://www.sph.org/",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Quaker Meeting House",
+        "category": "place-of-worship",
+        "address": "30-32 Bradmore Park Road, London",
+        "postcode": "W6 0DT",
+        "latitude": 51.4956102,
+        "longitude": -0.2319497,
+        "website": "https://www.hammersmithquakers.org.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St Augustine's",
+        "category": "place-of-worship",
+        "address": "55 Fulham Palace Road, London",
+        "postcode": "W6 8AU",
+        "latitude": 51.4905587,
+        "longitude": -0.2230754,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Ravenscourt Baptist Church",
+        "category": "place-of-worship",
+        "address": "7 Ravenscourt Road, London",
+        "postcode": "W6 0UH",
+        "latitude": 51.4939234,
+        "longitude": -0.2370819,
+        "website": "https://ravenscourtbaptist.com/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Rivercourt Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "W6 0RA",
+        "latitude": 51.4927443,
+        "longitude": -0.2360819,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "The Church of The Holy Innocents",
+        "category": "place-of-worship",
+        "address": "Paddenswick Road, London",
+        "postcode": "W6 0EJ",
+        "latitude": 51.4972802,
+        "longitude": -0.2352256,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Fitness First",
         "category": "leisure-centre",
-        "address": "Fulham Road, SW6 1HS",
-        "description": "Home of Chelsea Football Club since 1905, despite its name referencing neighbouring Fulham."
+        "address": "",
+        "postcode": "W6 7BA",
+        "latitude": 51.4949078,
+        "longitude": -0.2260117,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Auriol Kensington Rowing Club",
+        "category": "leisure-centre",
+        "address": "Lower Mall, London",
+        "postcode": "W6 9DJ",
+        "latitude": 51.4896282,
+        "longitude": -0.2309662,
+        "website": "https://www.akrowing.com/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Furnivall Sculling Club",
+        "category": "leisure-centre",
+        "address": "19 Lower Mall, London",
+        "postcode": "W6 9DJ",
+        "latitude": 51.4899455,
+        "longitude": -0.2316524,
+        "website": "https://www.furnivall.org/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Sports Building",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W6 7AT",
+        "latitude": 51.4947309,
+        "longitude": -0.2233069,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Hammersmith Fitness and Squash Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W6 8DR",
+        "latitude": 51.4920482,
+        "longitude": -0.2213562,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Paul's Girls' Swimming Pool",
+        "category": "leisure-centre",
+        "address": "London",
+        "postcode": "W6 7BS",
+        "latitude": 51.4960823,
+        "longitude": -0.2216703,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "King Street Post Office",
+        "category": "post-office",
+        "address": "168 King Street, London",
+        "postcode": "W6 0LY",
+        "latitude": 51.4929009,
+        "longitude": -0.2338858,
+        "website": "https://www.postoffice.co.uk/branch-finder/0810061/king-street",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Shepherds Bush Road Post Office",
+        "category": "post-office",
+        "address": "146 Shepherds Bush Road, London",
+        "postcode": "W6 7PB",
+        "latitude": 51.4979675,
+        "longitude": -0.2226542,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Starch Green Post Office",
+        "category": "post-office",
+        "address": "Kings Parade, London",
+        "postcode": "W12 9BA",
+        "latitude": 51.500202,
+        "longitude": -0.2393015,
+        "website": "https://www.postoffice.co.uk/branch-finder/114006x/starch-green",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Olympia Post Office",
+        "category": "post-office",
+        "address": "8-10 North End Road, London",
+        "postcode": "W14 0SH",
+        "latitude": 51.49465,
+        "longitude": -0.2111308,
+        "website": "https://www.postoffice.co.uk/branch-finder/0570060/olympia",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Mail Boxes Etc. Shepherd's Bush",
+        "category": "post-office",
+        "address": "1 Rockley Road, London",
+        "postcode": "W14 0DJ",
+        "latitude": 51.503516,
+        "longitude": -0.2202346,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Munster Road Post Office",
+        "category": "post-office",
+        "address": "306 Munster Road, London",
+        "postcode": "SW6 6BH",
+        "latitude": 51.4821916,
+        "longitude": -0.2133751,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Furnivall Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "W6 9LQ",
+        "latitude": 51.4905603,
+        "longitude": -0.2325592,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Beckett's Wharf",
+        "category": "park",
+        "address": "",
+        "postcode": "W6 9XF",
+        "latitude": 51.4888874,
+        "longitude": -0.2289641,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Dalling Road Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "W6 0LZ",
+        "latitude": 51.4942454,
+        "longitude": -0.23433,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Frank Banfield Park",
+        "category": "park",
+        "address": "",
+        "postcode": "W6 9US",
+        "latitude": 51.4881257,
+        "longitude": -0.2237142,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Brook Green",
+        "category": "park",
+        "address": "",
+        "postcode": "W6 7BE",
+        "latitude": 51.4961085,
+        "longitude": -0.2198063,
+        "website": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/brook-green",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Ravenscourt Park",
+        "category": "park",
+        "address": "",
+        "postcode": "W6 0TJ",
+        "latitude": 51.4970755,
+        "longitude": -0.2394441,
+        "website": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/ravenscourt-park",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Hammersmith Library",
+        "category": "library",
+        "address": "London",
+        "postcode": "W6 7AT",
+        "latitude": 51.4946168,
+        "longitude": -0.2236491,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Hammersmith and Fulham Archives and Local History Centre",
+        "category": "library",
+        "address": "",
+        "postcode": "W6 8BJ",
+        "latitude": 51.4909721,
+        "longitude": -0.2202562,
+        "website": "https://www.lbhf.gov.uk/Directory/Leisure_and_Culture/Libraries/Archives/17430_Archives_and_Local_History.asp",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Blythe House Archive and Library Reading Room",
+        "category": "library",
+        "address": "",
+        "postcode": "W14 0HG",
+        "latitude": 51.4961432,
+        "longitude": -0.2129539,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Shepherd's Bush Library",
+        "category": "library",
+        "address": "6 Wood Lane, London",
+        "postcode": "W12 7DR",
+        "latitude": 51.50587,
+        "longitude": -0.2243572,
+        "website": "https://www.lbhf.gov.uk/libraries/find-your-library/shepherds-bush-library",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Avonmore Library",
+        "category": "library",
+        "address": "London",
+        "postcode": "W14 8TG",
+        "latitude": 51.492559,
+        "longitude": -0.2070957,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Askew Road Library",
+        "category": "library",
+        "address": "87/91 Askew Road, London",
+        "postcode": "W12 9AN",
+        "latitude": 51.5035837,
+        "longitude": -0.2432748,
+        "website": "https://www.lbhf.gov.uk/libraries/find-your-library/askew-road-library",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Grove Neighbourhood Centre",
+        "category": "community-hub",
+        "address": "7 Bradmore Park Road, London",
+        "postcode": "W6 0DT",
+        "latitude": 51.49559,
+        "longitude": -0.2324121,
+        "website": "https://www.groveneighbours.org.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Kanoon Towhid",
+        "category": "community-hub",
+        "address": "30-32 Southerton Road, London",
+        "postcode": "W6 0PH",
+        "latitude": 51.4958186,
+        "longitude": -0.2282707,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Polish Social and Cultural Association",
+        "category": "community-hub",
+        "address": "238-246 King Street, London",
+        "postcode": "W6 0RF",
+        "latitude": 51.4935328,
+        "longitude": -0.2374235,
+        "website": "https://posk.org/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Saint Mary's Church Hall",
+        "category": "community-hub",
+        "address": "147 Hammersmith Road, London",
+        "postcode": "W14 0QL",
+        "latitude": 51.4934835,
+        "longitude": -0.2143083,
+        "distanceKm": 1
+      },
+      {
+        "name": "Bishop Creighton House",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW6 7PH",
+        "latitude": 51.4835372,
+        "longitude": -0.2177486,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Masbro Community Centre",
+        "category": "community-hub",
+        "address": "87 Masbro' Road, London",
+        "postcode": "W14 0LL",
+        "latitude": 51.5001298,
+        "longitude": -0.2161025,
+        "website": "https://www.upg.org.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "North Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W12 8EU",
+        "latitude": 51.4988973,
+        "longitude": -0.2393569,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Lillie Road Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW6 7PB",
+        "latitude": 51.4824886,
+        "longitude": -0.2167301,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Clem Attlee Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW6 7SQ",
+        "latitude": 51.4826597,
+        "longitude": -0.2046607,
+        "distanceKm": 2
+      },
+      {
+        "name": "Bronze Walk Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "W12 7HX",
+        "latitude": 51.5094819,
+        "longitude": -0.2198069,
+        "distanceKm": 2
+      },
+      {
+        "name": "Gold Avenue Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "W12 7FU",
+        "latitude": 51.5103949,
+        "longitude": -0.2228444,
+        "distanceKm": 2
+      },
+      {
+        "name": "White City Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W12 7DE",
+        "latitude": 51.5113917,
+        "longitude": -0.2319327,
+        "distanceKm": 2.1
       }
     ]
   },

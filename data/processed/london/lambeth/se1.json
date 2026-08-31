@@ -10870,16 +10870,521 @@
   "places": {
     "places": [
       {
-        "name": "Lambeth Palace",
+        "name": "BOST Living Space",
         "category": "community-hub",
-        "address": "Lambeth",
-        "description": "The official London residence of the Archbishop of Canterbury for over 800 years."
+        "address": "1 Coral Street, London",
+        "postcode": "SE1 7BE",
+        "latitude": 51.500929,
+        "longitude": -0.1088236,
+        "website": "https://bost.org.uk/living-space",
+        "distanceKm": 1.2
       },
       {
-        "name": "Royal Festival Hall",
+        "name": "Jamyang Buddhist Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE11 4BF",
+        "latitude": 51.4916922,
+        "longitude": -0.1053353,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Waterloo Action Centre",
+        "category": "community-hub",
+        "address": "14 Baylis Road, London",
+        "postcode": "SE1 7AA",
+        "latitude": 51.5020374,
+        "longitude": -0.1105654,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Latinos Help Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE11 6LS",
+        "latitude": 51.4955195,
+        "longitude": -0.1113032,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Alford house youth club",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE11 5DQ",
+        "latitude": 51.4878658,
+        "longitude": -0.1140105,
+        "distanceKm": 2
+      },
+      {
+        "name": "The Carmelita Centre",
+        "category": "community-hub",
+        "address": "41 Vauxhall Walk, London",
+        "postcode": "SE11 5JT",
+        "latitude": 51.4902034,
+        "longitude": -0.119618,
+        "website": "https://the-carmelita-centre.business.site",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "The Young Vic",
+        "category": "culture",
+        "address": "66 The Cut, London",
+        "postcode": "SE1 8LZ",
+        "latitude": 51.5032796,
+        "longitude": -0.1073173,
+        "website": "https://www.youngvic.org/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "The Cinema Museum",
+        "category": "culture",
+        "address": "2 Dugard Way, London",
+        "postcode": "SE11 4TH",
+        "latitude": 51.4923804,
+        "longitude": -0.1050422,
+        "website": "https://cinemamuseum.org.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "The Old Vic",
+        "category": "culture",
+        "address": "103 The Cut, London",
+        "postcode": "SE1 8NB",
+        "latitude": 51.5020083,
+        "longitude": -0.1092836,
+        "website": "https://www.oldvictheatre.com/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Waterloo East Theatre",
+        "category": "culture",
+        "address": "Brad Street, London",
+        "postcode": "SE1 8TN",
+        "latitude": 51.504072,
+        "longitude": -0.110137,
+        "website": "https://www.waterlooeast.co.uk/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Network Theatre",
+        "category": "culture",
+        "address": "246a Lower Road, London",
+        "postcode": "SE1 8SJ",
+        "latitude": 51.5018685,
+        "longitude": -0.1121537,
+        "website": "https://www.networktheatre.org/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Dorfman Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "SE1 9PX",
+        "latitude": 51.5070769,
+        "longitude": -0.1132985,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Ufford Street Gardens",
+        "category": "park",
+        "address": "Ufford Street, London",
+        "postcode": "SE1 8QD",
+        "latitude": 51.5019685,
+        "longitude": -0.1077982,
+        "website": "https://beta.lambeth.gov.uk/parks/ufford-street-gardens",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Waterloo Millennium Green",
+        "category": "park",
+        "address": "Baylis Road, London",
+        "postcode": "SE1 7AA",
+        "latitude": 51.5015861,
+        "longitude": -0.1097481,
+        "website": "https://beta.lambeth.gov.uk/parks/waterloo-millennium-green",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Hatfields Green",
+        "category": "park",
+        "address": "Hatfields, London",
+        "postcode": "SE1 8AL",
+        "latitude": 51.5056741,
+        "longitude": -0.1070491,
+        "website": "https://beta.lambeth.gov.uk/parks/hatfields-green",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Emma Cons Gardens",
+        "category": "park",
+        "address": "The Cut, London",
+        "postcode": "SE1 8TQ",
+        "latitude": 51.5025172,
+        "longitude": -0.1098727,
+        "website": "https://beta.lambeth.gov.uk/parks/emma-cons-gardens",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Bernie Spain Gardens (South Park)",
+        "category": "park",
+        "address": "",
+        "postcode": "SE1 9QE",
+        "latitude": 51.5072081,
+        "longitude": -0.1089396,
+        "website": "https://coinstreet.org/about-us/our-developments/bernie-spain-gardens",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St. John's Church Gardens",
+        "category": "park",
+        "address": "Waterloo Road, London",
+        "postcode": "SE1 8TY",
+        "latitude": 51.5045624,
+        "longitude": -0.1118876,
+        "website": "https://beta.lambeth.gov.uk/parks/st-johns-church-gardens",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Small Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE1 7HN",
+        "latitude": 51.4977434,
+        "longitude": -0.1108525,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Big Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE1 7QA",
+        "latitude": 51.4977065,
+        "longitude": -0.1117279,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Wren Mews Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE11 6BA",
+        "latitude": 51.49225,
+        "longitude": -0.1154092,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Bromfield Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE11 6JH",
+        "latitude": 51.4903245,
+        "longitude": -0.1174047,
+        "distanceKm": 2
+      },
+      {
+        "name": "Vauxhall Walk Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE11 5HL",
+        "latitude": 51.4883813,
+        "longitude": -0.120246,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Kingfisher Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE11 4PW",
+        "latitude": 51.4812003,
+        "longitude": -0.1127057,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "88 Lower Marsh, London",
+        "postcode": "SE1 7RJ",
+        "latitude": 51.5015176,
+        "longitude": -0.1113592,
+        "website": "https://www.mbe.co.uk/waterloo",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Westminster Bridge Road Post Office",
+        "category": "post-office",
+        "address": "125-131 Westminster Bridge Road, London",
+        "postcode": "SE1 7HJ",
+        "latitude": 51.4993748,
+        "longitude": -0.1137372,
+        "website": "https://www.postoffice.co.uk/branch-finder/2350076/westminster-bridge-road",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Cornwall Road Post Office",
+        "category": "post-office",
+        "address": "62 Cornwall Road, London",
+        "postcode": "SE1 9PU",
+        "latitude": 51.5066769,
+        "longitude": -0.1117802,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Kennington Park Post Office",
+        "category": "post-office",
+        "address": "Kennington Road, London",
+        "postcode": "SE11 4QA",
+        "latitude": 51.4846716,
+        "longitude": -0.1105815,
+        "website": "https://www.postoffice.co.uk/branch-finder/0160075/kennington-park",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Vauxhall Street Post Office",
+        "category": "post-office",
+        "address": "36-38 Vauxhall Street, London",
+        "postcode": "SE11 5LG",
+        "latitude": 51.4891963,
+        "longitude": -0.1173635,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "",
+        "postcode": "SE11 5HY",
+        "latitude": 51.4864297,
+        "longitude": -0.1198538,
+        "website": "https://www.mbe.co.uk/londonvauxhall",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Christ Church and Upton Chapel",
+        "category": "place-of-worship",
+        "address": "77 Westminster Bridge Road, London",
+        "postcode": "SE1 7HA",
+        "latitude": 51.4984917,
+        "longitude": -0.1119013,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Emmanuel Chinese Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SE11 4BN",
+        "latitude": 51.4897001,
+        "longitude": -0.1073531,
+        "website": "https://www.ecclondon.com",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Lambeth Walk Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SE1 7DQ",
+        "latitude": 51.4959827,
+        "longitude": -0.1128115,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Saint John's, Waterloo",
+        "category": "place-of-worship",
+        "address": "73 Waterloo Road, London",
+        "postcode": "SE1 8TY",
+        "latitude": 51.5045657,
+        "longitude": -0.111975,
+        "website": "https://stjohnswaterloo.org/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St Patrick's",
+        "category": "place-of-worship",
+        "address": "26 Cornwall Road, London",
+        "postcode": "SE1 8TW",
+        "latitude": 51.5048483,
+        "longitude": -0.1109603,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St Anselm Kennington Cross",
+        "category": "place-of-worship",
+        "address": "286 Kennington Road, London",
+        "postcode": "SE11 5DU",
+        "latitude": 51.4887767,
+        "longitude": -0.1117573,
+        "website": "https://northlambethparish.org/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Kinetic",
         "category": "leisure-centre",
-        "address": "Belvedere Road, SE1 8XX",
-        "description": "The centrepiece concert hall of the South Bank Centre, built for the 1951 Festival of Britain."
+        "address": "",
+        "postcode": "SE1 9NQ",
+        "latitude": 51.5055035,
+        "longitude": -0.1114232,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "House of Vans London",
+        "category": "leisure-centre",
+        "address": "Arches 228-232 Station Approach, London",
+        "postcode": "SE1 8SW",
+        "latitude": 51.5005801,
+        "longitude": -0.1142097,
+        "website": "https://www.houseofvanslondon.com",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "VauxWall East Climbing Centre",
+        "category": "leisure-centre",
+        "address": "1 Cabanel Place, London",
+        "postcode": "SE11 6BD",
+        "latitude": 51.4923297,
+        "longitude": -0.1145915,
+        "website": "https://londonclimbingcentres.co.uk/centre/vauxeast/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Black Prince Community Hub",
+        "category": "leisure-centre",
+        "address": "5 Beaufoy Walk, London",
+        "postcode": "SE11 6AA",
+        "latitude": 51.4917513,
+        "longitude": -0.1155739,
+        "website": "https://blackprincetrust.org.uk/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "VauxWall West Climbing Centre",
+        "category": "leisure-centre",
+        "address": "South Lambeth Road, London",
+        "postcode": "SW8 1SU",
+        "latitude": 51.4850511,
+        "longitude": -0.1229171,
+        "website": "https://londonclimbingcentres.co.uk/centre/vauxwest/",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Better",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW8 1DN",
+        "latitude": 51.483753,
+        "longitude": -0.1234874,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Lower Marsh Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE1 7FL",
+        "latitude": 51.5009141,
+        "longitude": -0.1125576,
+        "website": "https://www.lowermarshmarket.com/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Southbank Centre Food Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE1 8XU",
+        "latitude": 51.5054559,
+        "longitude": -0.1160792,
+        "website": "https://www.southbankcentre.co.uk/visit/cafes-restaurants-bars/scfood-market",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Oval Farmers' Market",
+        "category": "market",
+        "address": "Kennington Park Road, London",
+        "postcode": "SE11 4PW",
+        "latitude": 51.4814605,
+        "longitude": -0.112151,
+        "website": "https://weareccfm.com/locations/oval/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Brixton Village",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8JL",
+        "latitude": 51.4623919,
+        "longitude": -0.1119956,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Electric Avenue",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8JX",
+        "latitude": 51.4623844,
+        "longitude": -0.1140593,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Reliance Arcade",
+        "category": "market",
+        "address": "",
+        "postcode": "SW9 8JY",
+        "latitude": 51.4619307,
+        "longitude": -0.1146258,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Durning Library",
+        "category": "library",
+        "address": "167 Kennington Lane, London",
+        "postcode": "SE11 4HF",
+        "latitude": 51.4888746,
+        "longitude": -0.1101789,
+        "website": "https://www.lambeth.gov.uk/libraries-0/durning-library",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "BFI Reuben Library",
+        "category": "library",
+        "address": "Belvedere Road, London",
+        "postcode": "SE1 8XT",
+        "latitude": 51.5064245,
+        "longitude": -0.1149447,
+        "website": "https://www.bfi.org.uk/bfi-reuben-library/visiting-library",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "BFI Mediatheque",
+        "category": "library",
+        "address": "",
+        "postcode": "SE1 8TL",
+        "latitude": 51.5065319,
+        "longitude": -0.1151806,
+        "website": "https://www.bfi.org.uk/bfi-national-archive/watch-archive-collections/visit-us-view-archive-material/bfi-mediatheque",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Lambeth Palace Library",
+        "category": "library",
+        "address": "Lambeth Palace Road",
+        "postcode": "SE1 7EH",
+        "latitude": 51.4976834,
+        "longitude": -0.1181685,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Lambeth Archives & Minet Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SE5 9QY",
+        "latitude": 51.4713817,
+        "longitude": -0.1052039,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Minet Library and Lambeth Archives",
+        "category": "library",
+        "address": "52 Knatchbull Road, London",
+        "postcode": "SE5 9QY",
+        "latitude": 51.4713898,
+        "longitude": -0.1052762,
+        "website": "https://www.lambeth.gov.uk/places/lambeth-archives",
+        "distanceKm": 3.2
       }
     ]
   },

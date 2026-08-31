@@ -14403,16 +14403,482 @@
   "places": {
     "places": [
       {
-        "name": "Battersea Park",
-        "category": "park",
-        "address": "Battersea",
-        "description": "A large Thames-side park opened in 1858, near the landmark Battersea Power Station."
+        "name": "St Mary's Community Centre",
+        "category": "community-hub",
+        "address": "Garratt Lane, London",
+        "postcode": "SW18 4DW",
+        "latitude": 51.4524659,
+        "longitude": -0.190617,
+        "distanceKm": 0.1
       },
       {
-        "name": "Battersea Power Station",
+        "name": "Penfold Centre",
         "category": "community-hub",
-        "address": "188 Kirtling Street, SW8 5BN",
-        "description": "The iconic decommissioned coal-fired power station on the Thames, redeveloped into shops, homes, and offices."
+        "address": "1 Neville Gill Close, London",
+        "postcode": "SW18 4BS",
+        "latitude": 51.4553397,
+        "longitude": -0.1950999,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Wandsworth Training & Resource Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW18 1AQ",
+        "latitude": 51.4599731,
+        "longitude": -0.1871668,
+        "distanceKm": 1
+      },
+      {
+        "name": "Gwynneth Morgan Resource Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW18 2HJ",
+        "latitude": 51.4593241,
+        "longitude": -0.1819509,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "1st Wandsworth Scouts",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW18 3LQ",
+        "latitude": 51.4471169,
+        "longitude": -0.1749488,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "John Morris House Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW11 1YG",
+        "latitude": 51.460075,
+        "longitude": -0.1799191,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Greenwood Nursery Scool",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW18 4DN",
+        "latitude": 51.4516518,
+        "longitude": -0.1931412,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Wandle Recreation Centre",
+        "category": "leisure-centre",
+        "address": "Mapleton Road, London",
+        "postcode": "SW18 4DN",
+        "latitude": 51.4528056,
+        "longitude": -0.1926685,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "All Star Tennis",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW18 4AX",
+        "latitude": 51.453074,
+        "longitude": -0.1959352,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Parthian Climbing Wandsworth",
+        "category": "leisure-centre",
+        "address": "52-58 Garratt Lane, London",
+        "postcode": "SW18 4TF",
+        "latitude": 51.4549274,
+        "longitude": -0.1931177,
+        "website": "https://parthianclimbing.com/wandsworth/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Flow 63",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW18 2PT",
+        "latitude": 51.4564578,
+        "longitude": -0.1919277,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The Font Wandsworth",
+        "category": "leisure-centre",
+        "address": "30 Lydden Road, London",
+        "postcode": "SW18 4LR",
+        "latitude": 51.4472776,
+        "longitude": -0.1912095,
+        "website": "https://www.the-font.co.uk/wandsworth",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Cineworld",
+        "category": "culture",
+        "address": "Southside Shopping Centre, London",
+        "postcode": "SW18 4TF",
+        "latitude": 51.4541535,
+        "longitude": -0.1934097,
+        "website": "https://www.cineworld.co.uk/cinemas/london-wandsworth/066",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Sambrook's Brewery Heritage Centre & Beershop",
+        "category": "culture",
+        "address": "40 Ram Street, London",
+        "postcode": "SW18 1UR",
+        "latitude": 51.4570942,
+        "longitude": -0.1927226,
+        "website": "https://www.sambrooksbrewery.co.uk",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Backyard Cinema",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW18 1SH",
+        "latitude": 51.459185,
+        "longitude": -0.1922538,
+        "website": "https://www.backyardcinema.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Tara Arts",
+        "category": "culture",
+        "address": "356 Garratt Lane, London",
+        "postcode": "SW18 4ES",
+        "latitude": 51.4422042,
+        "longitude": -0.188394,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Wimbledon Art Studios",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW17 0BB",
+        "latitude": 51.4328049,
+        "longitude": -0.1883575,
+        "website": "https://www.wimbledonartstudios.co.uk/",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "ODEON Putney",
+        "category": "culture",
+        "address": "25 Putney High Street, London",
+        "postcode": "SW15 1SN",
+        "latitude": 51.4651771,
+        "longitude": -0.2139173,
+        "website": "https://www.odeon.co.uk/cinemas/putney/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "King George's Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW18 4NJ",
+        "latitude": 51.4492129,
+        "longitude": -0.1944339,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Garratt Lane Old Burial Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "SW18 4PG",
+        "latitude": 51.455624,
+        "longitude": -0.1914846,
+        "website": "https://www.wandsworth.gov.uk/leisure-and-culture/parks-and-open-spaces/parks/garratt-lane-old-burial-ground-open-space/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "King George's Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW18 4RG",
+        "latitude": 51.4555243,
+        "longitude": -0.1958384,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Coronation Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SW18 5TH",
+        "latitude": 51.4464878,
+        "longitude": -0.200081,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Heathfield Square",
+        "category": "park",
+        "address": "",
+        "postcode": "SW18 3JB",
+        "latitude": 51.448793,
+        "longitude": -0.1793058,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "The Spit",
+        "category": "park",
+        "address": "",
+        "postcode": "SW18 1GD",
+        "latitude": 51.461587,
+        "longitude": -0.1946202,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Kimber Skatepark and BMX Track",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 4LW",
+        "latitude": 51.448329,
+        "longitude": -0.1929357,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Reception playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 2LT",
+        "latitude": 51.4535381,
+        "longitude": -0.1859771,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Wandsworth One O'Clock Centre",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 2EU",
+        "latitude": 51.4531547,
+        "longitude": -0.1792808,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Osiers Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 1UW",
+        "latitude": 51.461162,
+        "longitude": -0.1977855,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Wandsworth Common disabled children's adventure playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW11 6HA",
+        "latitude": 51.4565584,
+        "longitude": -0.171244,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Point pocket Park play area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW15 1JN",
+        "latitude": 51.4673294,
+        "longitude": -0.2154458,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Wandsworth Town Library",
+        "category": "library",
+        "address": "9 Courthouse Way, London",
+        "postcode": "SW18 4QG",
+        "latitude": 51.4559503,
+        "longitude": -0.1917779,
+        "website": "https://www.better.org.uk/library/london/wandsworth/wandsworth-town-library",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Earlsfield Library",
+        "category": "library",
+        "address": "276 Magdalen Road, London",
+        "postcode": "SW18 3NY",
+        "latitude": 51.4424712,
+        "longitude": -0.1866852,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Southfields Library",
+        "category": "library",
+        "address": "300 Wimbledon Park Road, London",
+        "postcode": "SW19 6NL",
+        "latitude": 51.4435512,
+        "longitude": -0.2087087,
+        "website": "https://better.org.uk/venues/southfields-library",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Putney Library",
+        "category": "library",
+        "address": "5,7 Disraeli Road, London",
+        "postcode": "SW15 2DR",
+        "latitude": 51.4617225,
+        "longitude": -0.2159483,
+        "website": "https://www.better.org.uk/library/london/wandsworth/putney-library",
+        "distanceKm": 2
+      },
+      {
+        "name": "York Gardens Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW11 3RD",
+        "latitude": 51.467216,
+        "longitude": -0.1777196,
+        "distanceKm": 2
+      },
+      {
+        "name": "Battersea Library",
+        "category": "library",
+        "address": "265 Lavender Hill, London",
+        "postcode": "SW11 1JB",
+        "latitude": 51.4638967,
+        "longitude": -0.163954,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "St. Anne's Church",
+        "category": "place-of-worship",
+        "address": "182 St. Ann's Hill, London",
+        "postcode": "SW18 2RS",
+        "latitude": 51.4549844,
+        "longitude": -0.1874779,
+        "website": "https://stanneswandsworth.org.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Quaker Meeting House",
+        "category": "place-of-worship",
+        "address": "59 Wandsworth High Street, London",
+        "postcode": "SW18 2PT",
+        "latitude": 51.456533,
+        "longitude": -0.1917379,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "East Hill United Reformed Church",
+        "category": "place-of-worship",
+        "address": "East Hill, London",
+        "postcode": "SW18 2QD",
+        "latitude": 51.4573154,
+        "longitude": -0.1858508,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "All Saints",
+        "category": "place-of-worship",
+        "address": "Wandsworth High Street, London",
+        "postcode": "SW18 4LA",
+        "latitude": 51.4575538,
+        "longitude": -0.1953348,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "East Hill Baptist Church",
+        "category": "place-of-worship",
+        "address": "East Hill, London",
+        "postcode": "SW18 2HD",
+        "latitude": 51.4571789,
+        "longitude": -0.1887676,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "West Side Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SW18 2QQ",
+        "latitude": 51.4542911,
+        "longitude": -0.1821234,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Wandsworth Post Office",
+        "category": "post-office",
+        "address": "159 Wandsworth High Street, London",
+        "postcode": "SW18 4JB",
+        "latitude": 51.4571382,
+        "longitude": -0.1963239,
+        "website": "https://www.postoffice.co.uk/branch-finder/0310018/wandsworth",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Earlsfield Post Office",
+        "category": "post-office",
+        "address": "591 Garratt Lane, London",
+        "postcode": "SW18 4ST",
+        "latitude": 51.4393387,
+        "longitude": -0.1866049,
+        "website": "https://www.postoffice.co.uk/branch-finder/0710016/earlsfield",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "210 Upper Richmond Road, London",
+        "postcode": "SW15 6TD",
+        "latitude": 51.4611726,
+        "longitude": -0.217762,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Putney Post Office",
+        "category": "post-office",
+        "address": "197 Upper Richmond Road, London",
+        "postcode": "SW15 6SG",
+        "latitude": 51.4611376,
+        "longitude": -0.2191674,
+        "website": "https://www.postoffice.co.uk/branch-finder/1460013/putney",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Lavender Hill Post Office",
+        "category": "post-office",
+        "address": "Lavender Hill, London",
+        "postcode": "SW11 1AB",
+        "latitude": 51.464456,
+        "longitude": -0.1643375,
+        "website": "https://www.postoffice.co.uk/branch-finder/0190012/battersea",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Alfriston Road Post Office",
+        "category": "post-office",
+        "address": "99 Alfriston Road, London",
+        "postcode": "SW11 6NP",
+        "latitude": 51.4555972,
+        "longitude": -0.1579967,
+        "website": "https://www.postoffice.co.uk/branch-finder/0600016/alfriston-road",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Broadway Market",
+        "category": "market",
+        "address": "29 Tooting High Street, London",
+        "postcode": "SW17 0RJ",
+        "latitude": 51.4284366,
+        "longitude": -0.1666543,
+        "website": "https://bmtooting.co.uk",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Tooting Market",
+        "category": "market",
+        "address": "21-23 Tooting High Street, London",
+        "postcode": "SW17 0SN",
+        "latitude": 51.4289958,
+        "longitude": -0.1660218,
+        "website": "https://tootingmarket.com",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Nine Elms Market and Boot Sale",
+        "category": "market",
+        "address": "",
+        "postcode": "SW8 5HH",
+        "latitude": 51.4786154,
+        "longitude": -0.13521,
+        "distanceKm": 4.9
       }
     ]
   },

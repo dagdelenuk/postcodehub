@@ -5497,16 +5497,478 @@
   "places": {
     "places": [
       {
-        "name": "All England Lawn Tennis Club",
-        "category": "leisure-centre",
-        "address": "Wimbledon",
-        "description": "Host of the Wimbledon Championships, the oldest tennis tournament in the world, since 1877."
+        "name": "Lantern Methodist Church",
+        "category": "place-of-worship",
+        "address": "195-205 Worple Road, London",
+        "postcode": "SW20 8RA",
+        "latitude": 51.4108101,
+        "longitude": -0.2286767,
+        "website": "https://www.lanternmethodist.co.uk/",
+        "distanceKm": 0
       },
       {
-        "name": "Wimbledon Windmill Museum",
+        "name": "St. Matthew's",
+        "category": "place-of-worship",
+        "address": "Durham Road, London",
+        "postcode": "SW20 0DE",
+        "latitude": 51.4118394,
+        "longitude": -0.2339432,
+        "website": "https://www.stmatthewswimbledon.org/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Dundonald Church",
+        "category": "place-of-worship",
+        "address": "577 Kingston Road, London",
+        "postcode": "SW20 8SA",
+        "latitude": 51.4106161,
+        "longitude": -0.2221013,
+        "website": "https://www.dundonald.org/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "London Full Gospel Church",
+        "category": "place-of-worship",
+        "address": "37 West Barnes Lane, London",
+        "postcode": "SW20 0BP",
+        "latitude": 51.4084494,
+        "longitude": -0.2352799,
+        "website": "https://www.lfgc.co.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Raynes Park Community Church",
+        "category": "place-of-worship",
+        "address": "496 Kingston Road, London",
+        "postcode": "SW20 8DX",
+        "latitude": 51.4103563,
+        "longitude": -0.2208549,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Saviour",
+        "category": "place-of-worship",
+        "address": "Church Walk, London",
+        "postcode": "SW20 9DL",
+        "latitude": 51.405474,
+        "longitude": -0.2298406,
+        "website": "http://stsaviour.net/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Lantern Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW20 8QY",
+        "latitude": 51.4108203,
+        "longitude": -0.229028,
+        "distanceKm": 0
+      },
+      {
+        "name": "St Angela's Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW20 8HR",
+        "latitude": 51.4164653,
+        "longitude": -0.2221068,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Museum of Wimbledon",
+        "category": "culture",
+        "address": "22 Ridgway, London",
+        "postcode": "SW19 4QN",
+        "latitude": 51.4233433,
+        "longitude": -0.2166552,
+        "website": "https://www.wimbledonmuseum.org.uk/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Odeon Wimbledon",
+        "category": "culture",
+        "address": "39 The Broadway, London",
+        "postcode": "SW19 1QB",
+        "latitude": 51.4198096,
+        "longitude": -0.2048792,
+        "website": "https://www.odeon.co.uk/cinemas/wimbledon/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Curzon Wimbledon",
+        "category": "culture",
+        "address": "23 The Broadway, London",
+        "postcode": "SW19 1RE",
+        "latitude": 51.4203554,
+        "longitude": -0.2052534,
+        "website": "https://www.curzon.com/venues/wimbledon/",
+        "distanceKm": 2
+      },
+      {
+        "name": "Merton Arts Space",
+        "category": "culture",
+        "address": "35 Wimbledon Hill Road, London",
+        "postcode": "SW19 7NB",
+        "latitude": 51.4225324,
+        "longitude": -0.2076214,
+        "distanceKm": 2
+      },
+      {
+        "name": "Raynes Park",
+        "category": "post-office",
+        "address": "1a Amity Grove, London",
+        "postcode": "SW20 0LL",
+        "latitude": 51.4097042,
+        "longitude": -0.2318123,
+        "website": "https://www.postoffice.co.uk/branch-finder",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Londis",
+        "category": "post-office",
+        "address": "3 Merton Park Parade, London",
+        "postcode": "SW19 3NT",
+        "latitude": 51.411404,
+        "longitude": -0.2081595,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Martin Way Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "SM4 4AH",
+        "latitude": 51.4028539,
+        "longitude": -0.2079363,
+        "website": "https://www.postoffice.co.uk/branch-finder/1530135/martin-way",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Sima Brothers",
+        "category": "post-office",
+        "address": "",
+        "postcode": "KT3 6JF",
+        "latitude": 51.3949463,
+        "longitude": -0.2379474,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Wimbledon Post Office",
+        "category": "post-office",
+        "address": "56 Wimbledon Hill Road, London",
+        "postcode": "SW19 7PA",
+        "latitude": 51.4224662,
+        "longitude": -0.2094355,
+        "website": "https://www.postoffice.co.uk/branch-finder/1190016/wimbledon",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Grand Drive Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "SW20 9NQ",
+        "latitude": 51.3921913,
+        "longitude": -0.2228258,
+        "website": "https://www.postoffice.co.uk/branch-finder/1170015/grand-drive",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Revivals",
+        "category": "leisure-centre",
+        "address": "15 Approach Road, London",
+        "postcode": "SW20 8BA",
+        "latitude": 51.4092624,
+        "longitude": -0.2273029,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "West Wimbledon Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW20 0QW",
+        "latitude": 51.4122924,
+        "longitude": -0.2346254,
+        "website": "https://wwbowls.club/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "PlayFit Sports Club",
+        "category": "leisure-centre",
+        "address": "The Downs, London",
+        "postcode": "SW20 8HF",
+        "latitude": 51.4146942,
+        "longitude": -0.2224639,
+        "website": "https://playfit.co.uk",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "David Lloyd Raynes Park health club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW20 8DE",
+        "latitude": 51.4056536,
+        "longitude": -0.2225432,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "David Lloyd Raynes Park",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW20 8DE",
+        "latitude": 51.4055749,
+        "longitude": -0.222772,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Westside Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "20 Woodhayes Road, London",
+        "postcode": "SW19 4RF",
+        "latitude": 51.4186882,
+        "longitude": -0.2302489,
+        "website": "https://westsideltc.co.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Raynes Park Library",
+        "category": "library",
+        "address": "Approach Road, London",
+        "postcode": "SW20 8BA",
+        "latitude": 51.4090405,
+        "longitude": -0.2278622,
+        "website": "https://libraries.merton.gov.uk/digital-content/libraries/library-branches/raynes-park-library",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "West Barnes Library",
+        "category": "library",
+        "address": "",
+        "postcode": "KT3 6JJ",
+        "latitude": 51.3950807,
+        "longitude": -0.2391256,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Wimbledon Library",
+        "category": "library",
+        "address": "35 Wimbledon Hill Road, London",
+        "postcode": "SW19 7NB",
+        "latitude": 51.4222515,
+        "longitude": -0.208266,
+        "website": "https://www.merton.gov.uk/learning/libraries/wimlib.htm",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Morden Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SM4 9SF",
+        "latitude": 51.4015082,
+        "longitude": -0.1960588,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Aragon Public Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SM4 4QP",
+        "latitude": 51.3881527,
+        "longitude": -0.2199633,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Colliers Wood Library",
+        "category": "library",
+        "address": "105-109 High Street Colliers Wood, London",
+        "postcode": "SW19 2HR",
+        "latitude": 51.4188165,
+        "longitude": -0.177297,
+        "website": "https://arena.yourlondonlibrary.net/web/merton/colliers-wood-library",
+        "distanceKm": 3.7
+      },
+      {
+        "name": "St. Matthews Hall",
         "category": "community-hub",
-        "address": "Windmill Road, Wimbledon Common, SW19 5NQ",
-        "description": "A rare surviving hollow-post flour mill on Wimbledon Common, now a small museum."
+        "address": "",
+        "postcode": "SW20 0QW",
+        "latitude": 51.4118557,
+        "longitude": -0.234405,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "West Wimbledon Society",
+        "category": "community-hub",
+        "address": "70 Richmond Road, London",
+        "postcode": "SW20 0QS",
+        "latitude": 51.4112608,
+        "longitude": -0.2366409,
+        "website": "https://www.westwimbledonsociety.org/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "19th Wimbledon Scout Group",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SW20 0PN",
+        "latitude": 51.4154021,
+        "longitude": -0.241236,
+        "website": "https://www.19thwimbledonscouts.co.uk",
+        "distanceKm": 1
+      },
+      {
+        "name": "The Avenue Children's Centre",
+        "category": "community-hub",
+        "address": "Whatley Avenue, London",
+        "postcode": "SW20 9NS",
+        "latitude": 51.4065357,
+        "longitude": -0.214521,
+        "website": "https://fsd.merton.gov.uk/kb5/merton/directory/service.page?id=Jakee1r29wA&familychannel=4_1",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Lighthouse Community Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "KT3 6JR",
+        "latitude": 51.4001521,
+        "longitude": -0.2360088,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Endeavour Youth Club",
+        "category": "community-hub",
+        "address": "Martin Way, Morden",
+        "postcode": "SM4 4AJ",
+        "latitude": 51.4026371,
+        "longitude": -0.2092167,
+        "website": "http://endeavouryouthclub.com/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Holland Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "SW20 0FW",
+        "latitude": 51.4153052,
+        "longitude": -0.2314542,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Cottenham Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW20 0PT",
+        "latitude": 51.4137281,
+        "longitude": -0.2368144,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Morley Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW20 0FS",
+        "latitude": 51.4165893,
+        "longitude": -0.2401138,
+        "distanceKm": 1
+      },
+      {
+        "name": "Cannon Hill Common",
+        "category": "park",
+        "address": "",
+        "postcode": "SW20 9DB",
+        "latitude": 51.4007037,
+        "longitude": -0.2210123,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Dundonald Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "SW19 3PH",
+        "latitude": 51.4151641,
+        "longitude": -0.2098728,
+        "website": "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/parks-and-recreation-grounds/wimbledon/dundonald-recreation-ground",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "John Innes Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW19 3HL",
+        "latitude": 51.409357,
+        "longitude": -0.2066987,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Rushmere playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW19 4QU",
+        "latitude": 51.4216746,
+        "longitude": -0.2250352,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Dundonald Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW19 3QR",
+        "latitude": 51.4158606,
+        "longitude": -0.208582,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Poplar Community Scooter Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "SM4 5AH",
+        "latitude": 51.4023398,
+        "longitude": -0.2011415,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Priory Close Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW19 2TG",
+        "latitude": 51.4142236,
+        "longitude": -0.1917237,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Natural Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SM4 5JA",
+        "latitude": 51.4042233,
+        "longitude": -0.1873024,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Oscar's Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW19 3YX",
+        "latitude": 51.4082965,
+        "longitude": -0.1852061,
+        "distanceKm": 3
+      },
+      {
+        "name": "Merton Abbey Mills",
+        "category": "market",
+        "address": "",
+        "postcode": "SW19 2RD",
+        "latitude": 51.4131815,
+        "longitude": -0.1833092,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Wimbledon Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SW19 8EJ",
+        "latitude": 51.4383957,
+        "longitude": -0.1956189,
+        "website": "https://www.lfm.org.uk/markets/wimbledon/",
+        "distanceKm": 3.9
       }
     ]
   },

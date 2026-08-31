@@ -5915,16 +5915,462 @@
   "places": {
     "places": [
       {
-        "name": "Cranford Country Park",
-        "category": "park",
-        "address": "Hillingdon",
-        "description": "Woodland and meadows around the former Cranford House estate."
+        "name": "North Hillingdon Post Office",
+        "category": "post-office",
+        "address": "Uxbridge",
+        "postcode": "UB10 9PG",
+        "latitude": 51.5509492,
+        "longitude": -0.4487385,
+        "website": "https://www.postoffice.co.uk/branch-finder/1610201/north-hillingdon",
+        "distanceKm": 0.3
       },
       {
-        "name": "Battle of Britain Bunker",
+        "name": "Ryefield Avenue Post Office",
+        "category": "post-office",
+        "address": "Uxbridge",
+        "postcode": "UB10 9DA",
+        "latitude": 51.544562,
+        "longitude": -0.4397763,
+        "website": "https://www.postoffice.co.uk/branch-finder/2280205/ryefield-avenue",
+        "distanceKm": 1
+      },
+      {
+        "name": "Ickenham Post Office",
+        "category": "post-office",
+        "address": "2 Long Lane, Uxbridge",
+        "postcode": "UB10 8TB",
+        "latitude": 51.564241,
+        "longitude": -0.4441579,
+        "website": "https://www.postoffice.co.uk/branch-finder/1950207/ickenham",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Mail Boxes Etc. Uxbridge",
+        "category": "post-office",
+        "address": "52A Windsor Street, Uxbridge",
+        "postcode": "UB8 1AB",
+        "latitude": 51.5458164,
+        "longitude": -0.4800132,
+        "website": "https://www.mbe.co.uk/uxbridge",
+        "distanceKm": 2
+      },
+      {
+        "name": "Hillingdon Heath Post Office",
+        "category": "post-office",
+        "address": "Uxbridge",
+        "postcode": "UB10 0LX",
+        "latitude": 51.5296708,
+        "longitude": -0.4458051,
+        "website": "https://www.postoffice.co.uk/branch-finder/1920200/hillingdon-heath",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Colham Green Post Office",
+        "category": "post-office",
+        "address": "Uxbridge",
+        "postcode": "UB8 3NJ",
+        "latitude": 51.5260298,
+        "longitude": -0.4586023,
+        "website": "https://www.postoffice.co.uk/branch-finder/1630202/colham-green",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "All Saints, Hillingdon",
+        "category": "place-of-worship",
+        "address": "Uxbridge",
+        "postcode": "UB10 9PE",
+        "latitude": 51.5480079,
+        "longitude": -0.4486183,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "North Hillingdon Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "UB10 9JP",
+        "latitude": 51.5454459,
+        "longitude": -0.44923,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Andrew's Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "UB8 2BX",
+        "latitude": 51.5429793,
+        "longitude": -0.473463,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "St John the Baptist",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "UB10 0JE",
+        "latitude": 51.5350032,
+        "longitude": -0.4599122,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "St Giles' Church",
+        "category": "place-of-worship",
+        "address": "Uxbridge",
+        "postcode": "UB10 8LE",
+        "latitude": 51.564916,
+        "longitude": -0.4439616,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Quaker Meeting House",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "UB8 1QW",
+        "latitude": 51.547917,
+        "longitude": -0.4774843,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Hillingdon Court Park",
+        "category": "park",
+        "address": "",
+        "postcode": "UB10 9LW",
+        "latitude": 51.544723,
+        "longitude": -0.4557505,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Swakeleys Park",
+        "category": "park",
+        "address": "",
+        "postcode": "UB10 8SL",
+        "latitude": 51.5611246,
+        "longitude": -0.4548505,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Dowding Park",
+        "category": "park",
+        "address": "",
+        "postcode": "UB10 0FD",
+        "latitude": 51.5424689,
+        "longitude": -0.4671823,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Uxbridge Common",
+        "category": "park",
+        "address": "",
+        "postcode": "UB8 1NZ",
+        "latitude": 51.553229,
+        "longitude": -0.4722112,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Bubridge Gardens Pocket Park",
+        "category": "park",
+        "address": "",
+        "postcode": "UB10 0GD",
+        "latitude": 51.5406004,
+        "longitude": -0.469207,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Milton Court",
+        "category": "park",
+        "address": "",
+        "postcode": "UB10 8NB",
+        "latitude": 51.5631125,
+        "longitude": -0.4465902,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "The Elephant Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "UB10 9AT",
+        "latitude": 51.5480725,
+        "longitude": -0.4403163,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "BMW Earth Works",
+        "category": "playground",
+        "address": "",
+        "postcode": "UB10 8AB",
+        "latitude": 51.5563063,
+        "longitude": -0.462706,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Blenheim Crescent Children's Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA4 7HB",
+        "latitude": 51.5686937,
+        "longitude": -0.4322273,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Trevor Crescent Childrens Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA4 6PG",
+        "latitude": 51.5611564,
+        "longitude": -0.4182484,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Morello Avenue Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "UB8 3LF",
+        "latitude": 51.523651,
+        "longitude": -0.4468882,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Churchfield Gardens",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA4 8EZ",
+        "latitude": 51.5763073,
+        "longitude": -0.4246608,
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Oak Farm Library",
+        "category": "library",
+        "address": "Sutton Court Road, Uxbridge",
+        "postcode": "UB10 9PB",
+        "latitude": 51.5415825,
+        "longitude": -0.450091,
+        "website": "https://www.hillingdon.gov.uk/article/8702/Oak-Farm-Library",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Ickenham Library",
+        "category": "library",
+        "address": "Community Close, Ickenham",
+        "postcode": "UB10 8RE",
+        "latitude": 51.5635198,
+        "longitude": -0.4434771,
+        "website": "https://pre.hillingdon.gov.uk/library-branches/ickenham-library",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Brunel University Library",
+        "category": "library",
+        "address": "",
+        "postcode": "UB8 3PH",
+        "latitude": 51.5327124,
+        "longitude": -0.4739006,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Hayes End Library",
+        "category": "library",
+        "address": "",
+        "postcode": "UB4 8HW",
+        "latitude": 51.525854,
+        "longitude": -0.4361979,
+        "website": "https://www.hillingdon.gov.uk/article/8711/Hayes-End-Library",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Manor Farm Library",
+        "category": "library",
+        "address": "",
+        "postcode": "HA4 7SU",
+        "latitude": 51.5780239,
+        "longitude": -0.428254,
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Ruislip Manor Library",
+        "category": "library",
+        "address": "",
+        "postcode": "HA4 8FD",
+        "latitude": 51.5722969,
+        "longitude": -0.4115158,
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Uxbridge Lido",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "UB8 1GN",
+        "latitude": 51.5510467,
+        "longitude": -0.467594,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Brunel University Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "UB8 3PH",
+        "latitude": 51.5333736,
+        "longitude": -0.4702122,
+        "website": "https://www.brunel.ac.uk/life/sport/facilities/sports-centre",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Indoor Athletics Centre (IAC)",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "UB8 3PQ",
+        "latitude": 51.5324123,
+        "longitude": -0.4695994,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Brunel University Sports Park",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "UB8 3PW",
+        "latitude": 51.5304687,
+        "longitude": -0.4646572,
+        "website": "https://www.brunel.ac.uk/life/sport/facilities/sports-park/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Ruislip Golf Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA4 7DP",
+        "latitude": 51.5704693,
+        "longitude": -0.4379293,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Grosvenor Vale",
+        "category": "leisure-centre",
+        "address": "Grosvenor Vale, Ruislip",
+        "postcode": "HA4 6JQ",
+        "latitude": 51.5694157,
+        "longitude": -0.416613,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "2nd Uxbridge Scout Group",
         "category": "community-hub",
-        "address": "Wren Avenue, Uxbridge, UB10 0BE",
-        "description": "The underground WWII operations room at former RAF Uxbridge that directed fighter squadrons during the Battle of Britain."
+        "address": "",
+        "postcode": "UB8 1ES",
+        "latitude": 51.5516922,
+        "longitude": -0.470211,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Ickenham Village Hall",
+        "category": "community-hub",
+        "address": "33 Swakeleys Road, Uxbridge",
+        "postcode": "UB10 8DG",
+        "latitude": 51.5646596,
+        "longitude": -0.4458159,
+        "website": "https://www.ickenhamvillagehall.co.uk/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Fountain Mill Young Peoples Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "UB8 1JB",
+        "latitude": 51.5492684,
+        "longitude": -0.4828757,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "14F Squadron Air Training Corps",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "HA4 6PW",
+        "latitude": 51.5568282,
+        "longitude": -0.4200522,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Sea Cadet Corps Ruislip",
+        "category": "community-hub",
+        "address": "Cordingley Road, Ruislip",
+        "postcode": "HA4 7HJ",
+        "latitude": 51.5713649,
+        "longitude": -0.4334663,
+        "website": "https://www.sea-cadets.org/ruislip",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "114 Squadron Air Training Corps",
+        "category": "community-hub",
+        "address": "Ickenham Road, Ruislip",
+        "postcode": "HA4 7DQ",
+        "latitude": 51.5714308,
+        "longitude": -0.4332172,
+        "website": "https://www.114squadronatc.org.uk",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Battle of Britain Bunker - RAF Uxbridge",
+        "category": "culture",
+        "address": "Wren Avenue, Uxbridge",
+        "postcode": "UB10 0GG",
+        "latitude": 51.5408027,
+        "longitude": -0.4649031,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Compass Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "UB10 8RP",
+        "latitude": 51.5622636,
+        "longitude": -0.4404421,
+        "website": "http://www.hillingdontheatres.uk/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Uxbridge Odeon",
+        "category": "culture",
+        "address": "",
+        "postcode": "UB8 1GD",
+        "latitude": 51.5453132,
+        "longitude": -0.4755082,
+        "website": "https://www.odeon.co.uk/cinemas/uxbridge/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Sir Keith Park Operations Building",
+        "category": "culture",
+        "address": "West End Road, Ruislip",
+        "postcode": "HA4 6NG",
+        "latitude": 51.5576789,
+        "longitude": -0.4142379,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Manor Farm Complex",
+        "category": "culture",
+        "address": "Eastcote Road, Ruislip",
+        "postcode": "HA4 8BD",
+        "latitude": 51.578726,
+        "longitude": -0.4275317,
+        "website": "https://www.hillingdon.gov.uk/manor-farm",
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Manor Farm House",
+        "category": "culture",
+        "address": "Eastcote Road, Ruislip",
+        "postcode": "HA4 8BD",
+        "latitude": 51.5787648,
+        "longitude": -0.4273012,
+        "distanceKm": 3.7
+      },
+      {
+        "name": "The Great Barn",
+        "category": "market",
+        "address": "",
+        "postcode": "HA4 7SU",
+        "latitude": 51.578152,
+        "longitude": -0.428666,
+        "distanceKm": 3.6
       }
     ]
   },

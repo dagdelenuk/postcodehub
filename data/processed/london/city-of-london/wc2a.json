@@ -307,16 +307,418 @@
   "places": {
     "places": [
       {
-        "name": "St Paul's Cathedral",
-        "category": "community-hub",
-        "address": "City of London",
-        "description": "Sir Christopher Wren's Baroque cathedral, completed in 1710, at the heart of the Square Mile."
+        "name": "St Dunstan-in-the-West",
+        "category": "place-of-worship",
+        "address": "186a Fleet Street, London",
+        "postcode": "EC4A 2HR",
+        "latitude": 51.5142317,
+        "longitude": -0.1101522,
+        "website": "http://stdunstaninthewest.org/",
+        "distanceKm": 0.3
       },
       {
-        "name": "Bank of England Museum",
+        "name": "Temple Church",
+        "category": "place-of-worship",
+        "address": "Temple, London",
+        "postcode": "EC4Y 7BB",
+        "latitude": 51.5132589,
+        "longitude": -0.1102627,
+        "website": "http://www.templechurch.com/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Saint Andrew",
+        "category": "place-of-worship",
+        "address": "5 St Andrew Street, London",
+        "postcode": "EC4A 3AF",
+        "latitude": 51.5172647,
+        "longitude": -0.1066078,
+        "website": "http://standrewholborn.org.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The City Temple",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "EC1A 2DE",
+        "latitude": 51.5172069,
+        "longitude": -0.1060739,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "St Brides",
+        "category": "place-of-worship",
+        "address": "St. Bride's Avenue, London",
+        "postcode": "EC4Y 8AU",
+        "latitude": 51.5137757,
+        "longitude": -0.1055038,
+        "website": "https://www.stbrides.com/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "St. Sepulchre's Church",
+        "category": "place-of-worship",
+        "address": "Holborn Viaduct, London",
+        "postcode": "EC1A 2DQ",
+        "latitude": 51.5166696,
+        "longitude": -0.1022347,
+        "website": "https://hsl.church/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Prince Henry's Room",
+        "category": "culture",
+        "address": "Fleet Street, London",
+        "postcode": "EC4Y 1AF",
+        "latitude": 51.513729,
+        "longitude": -0.1109158,
+        "website": "https://www.cityoflondon.gov.uk/Corporation/LGNL_Services/Leisure_and_culture/Local_history_and_heritage/Buildings_within_the_City/prince_henrys.htm",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Dr Johnson's House",
+        "category": "culture",
+        "address": "17 Gough Square, London",
+        "postcode": "EC4A 3DE",
+        "latitude": 51.5149094,
+        "longitude": -0.1081661,
+        "website": "http://www.drjohnsonshouse.org/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Dr. Johnsons House",
+        "category": "culture",
+        "address": "Gough Square, London",
+        "postcode": "EC4A 3EA",
+        "latitude": 51.5150407,
+        "longitude": -0.1081639,
+        "website": "https://www.drjohnsonshouse.org/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Bridewell Theatre",
+        "category": "culture",
+        "address": "14 Bride Lane, London",
+        "postcode": "EC4Y 8EQ",
+        "latitude": 51.5134159,
+        "longitude": -0.1050251,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "St Bartholomew's Hospital museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "EC1A 7BE",
+        "latitude": 51.517723,
+        "longitude": -0.1004735,
+        "website": "https://www.bartshealth.nhs.uk/bartsmuseum",
+        "distanceKm": 1
+      },
+      {
+        "name": "Barbican Centre (Cinema)",
+        "category": "culture",
+        "address": "",
+        "postcode": "EC2Y 8DS",
+        "latitude": 51.5197763,
+        "longitude": -0.0937556,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Maughan Library",
+        "category": "library",
+        "address": "Chancery Lane, London",
+        "postcode": "WC2A 1LR",
+        "latitude": 51.5151674,
+        "longitude": -0.1104409,
+        "website": "https://www.kcl.ac.uk/visit/maughan-library",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Shoe Lane Library",
+        "category": "library",
+        "address": "Little New Street, London",
+        "postcode": "EC4A 3JR",
+        "latitude": 51.5154661,
+        "longitude": -0.1064782,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Bride Library",
+        "category": "library",
+        "address": "Bride Lane, London",
+        "postcode": "EC4Y 8EQ",
+        "latitude": 51.5134457,
+        "longitude": -0.1051991,
+        "website": "https://www.stbride.org/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Barbican Library",
+        "category": "library",
+        "address": "London",
+        "postcode": "EC2Y 8DS",
+        "latitude": 51.5199273,
+        "longitude": -0.0941693,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Guildhall Library",
+        "category": "library",
+        "address": "Aldermanbury, London",
+        "postcode": "EC2V 7HH",
+        "latitude": 51.5161758,
+        "longitude": -0.0925982,
+        "website": "https://www.cityoflondon.gov.uk/things-to-do/visiting-the-city/archives-and-city-history/guildhall-library/Pages/default.aspx",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Artizan Street Library and Community Centre",
+        "category": "library",
+        "address": "Petticoat Square, London",
+        "postcode": "E1 7AE;E1 7AF",
+        "latitude": 51.5155607,
+        "longitude": -0.0767372,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Gray's Inn Gardens",
+        "category": "park",
+        "address": "Gray's Inn Road, London",
+        "postcode": "EC4A 3AF",
+        "latitude": 51.517422,
+        "longitude": -0.1070642,
+        "website": "https://www.graysinn.org.uk/the-inn/history/the-historic-estate/the-walks/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Bazalgette Embankment",
+        "category": "park",
+        "address": "",
+        "postcode": "EC4Y 0JP",
+        "latitude": 51.5107242,
+        "longitude": -0.1061288,
+        "website": "https://www.tideway.london/locations/blackfriars-bridge-foreshore/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Smithfield Rotunda Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "EC1A 9JR",
+        "latitude": 51.5184771,
+        "longitude": -0.1011269,
+        "website": "https://www.cityoflondon.gov.uk/things-to-do/city-gardens/find-a-garden/smithfield-rotunda-garden",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Churchyard of St. Ann Blackfriars",
+        "category": "park",
+        "address": "",
+        "postcode": "EC4V 5EP",
+        "latitude": 51.5131742,
+        "longitude": -0.1023922,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Princess Alice Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "EC1A 7BE",
+        "latitude": 51.518033,
+        "longitude": -0.1006942,
+        "website": "https://www.bartsguild.org.uk/princess-alice-garden/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Postman's Park",
+        "category": "park",
+        "address": "King Edward Street, London",
+        "postcode": "EC1A 7BT",
+        "latitude": 51.5168211,
+        "longitude": -0.0977129,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "",
+        "postcode": "EC4Y 8DU",
+        "latitude": 51.5137801,
+        "longitude": -0.1048858,
+        "website": "https://www.mbe.co.uk/londonstpauls",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Moorgate Post Office",
+        "category": "post-office",
+        "address": "45 London Wall, London",
+        "postcode": "EC2M 5TE",
+        "latitude": 51.5170387,
+        "longitude": -0.0882824,
+        "website": "https://www.postoffice.co.uk/branch-finder/1010034/moorgate",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "The City of London Post Office",
+        "category": "post-office",
+        "address": "12 Eastcheap, London",
+        "postcode": "EC3M 1AJ",
+        "latitude": 51.5105865,
+        "longitude": -0.084566,
+        "website": "https://www.postoffice.co.uk/branch-finder/0300039/the-city-of-london",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Doddle",
+        "category": "post-office",
+        "address": "",
+        "postcode": "EC2M 4LX",
+        "latitude": 51.5175271,
+        "longitude": -0.0808367,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "DX Delivered Exactly",
+        "category": "post-office",
+        "address": "42 Houndsditch, London",
+        "postcode": "EC3A 7DB",
+        "latitude": 51.515162,
+        "longitude": -0.0785957,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Houndsditch Post Office",
+        "category": "post-office",
+        "address": "11 White Kennett Street, London",
+        "postcode": "E1 7BS",
+        "latitude": 51.5154812,
+        "longitude": -0.0772379,
+        "website": "https://www.postoffice.co.uk/branch-finder/0040037/houndsditch",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Smithfield Market",
+        "category": "market",
+        "address": "West Smithfield, London",
+        "postcode": "EC1A 9PS",
+        "latitude": 51.519338,
+        "longitude": -0.10133,
+        "website": "https://www.smithfieldmarket.com/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Broadgate Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "EC2M 2PJ",
+        "latitude": 51.5194229,
+        "longitude": -0.0845149,
+        "website": "https://www.lfm.org.uk/markets/broadgate/",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Leadenhall Market",
+        "category": "market",
+        "address": "Gracechurch Street, London",
+        "postcode": "EC3V 1LT",
+        "latitude": 51.5127295,
+        "longitude": -0.0835691,
+        "website": "https://leadenhallmarket.co.uk/",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Golden Lane Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Golden Lane Estate, London",
+        "postcode": "EC1Y 0SH",
+        "latitude": 51.5225517,
+        "longitude": -0.0964775,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Pure Ride",
+        "category": "leisure-centre",
+        "address": "1 Fore Street Avenue, London",
+        "postcode": "EC2Y 5EJ",
+        "latitude": 51.5183566,
+        "longitude": -0.0907248,
+        "website": "https://www.pureride.co.uk",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Bank Health Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "EC2N 1DW",
+        "latitude": 51.5147315,
+        "longitude": -0.0853714,
+        "distanceKm": 2
+      },
+      {
+        "name": "Stone",
+        "category": "leisure-centre",
+        "address": "52 Cornhill, London",
+        "postcode": "EC3V 3PD",
+        "latitude": 51.5133316,
+        "longitude": -0.0849272,
+        "website": "https://www.stonelondon.com/bank",
+        "distanceKm": 2
+      },
+      {
+        "name": "Kobox",
+        "category": "leisure-centre",
+        "address": "85 London Wall, London",
+        "postcode": "EC2M 7AD",
+        "latitude": 51.5168719,
+        "longitude": -0.0852907,
+        "distanceKm": 2
+      },
+      {
+        "name": "Slim Jim's",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "EC2M 2PB",
+        "latitude": 51.5197284,
+        "longitude": -0.0850676,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Golden Lane Community Centre.",
         "category": "community-hub",
-        "address": "Bartholomew Lane, EC2R 8AH",
-        "description": "A free museum inside the Bank of England telling the story of the UK's central bank since 1694."
+        "address": "Fann Street, London",
+        "postcode": "EC1Y 0SA",
+        "latitude": 51.5221846,
+        "longitude": -0.0954439,
+        "website": "https://www.cityoflondon.gov.uk/services/housing-and-homelessness/resident-involvement/golden-lane-community-centre",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "St Botolph's Church Hall",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "EC2M 7PN",
+        "latitude": 51.5168197,
+        "longitude": -0.0821178,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Portsoken Community Centre",
+        "category": "community-hub",
+        "address": "20 Little Somerset Street, London",
+        "postcode": "E1 8AH",
+        "latitude": 51.5133961,
+        "longitude": -0.0744296,
+        "website": "https://www.cityoflondon.gov.uk/services/housing/resident-involvement/portsoken-community-centre-4",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Portsoken Community and Health Centre",
+        "category": "community-hub",
+        "address": "14 Little Somerset Street, London",
+        "postcode": "E1 8AE",
+        "latitude": 51.5133391,
+        "longitude": -0.0739823,
+        "distanceKm": 2.8
       }
     ]
   },

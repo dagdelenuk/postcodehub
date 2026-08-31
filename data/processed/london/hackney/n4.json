@@ -8540,16 +8540,522 @@
   "places": {
     "places": [
       {
-        "name": "Victoria Park",
-        "category": "park",
-        "address": "Hackney/Tower Hamlets border",
-        "description": "One of London's oldest public parks, opened in 1845 for the East End."
+        "name": "Carribean Community Centre & Day Nursery",
+        "category": "community-hub",
+        "address": "416 Seven Sisters Road, London",
+        "postcode": "N4 2LX",
+        "latitude": 51.5699527,
+        "longitude": -0.0965343,
+        "distanceKm": 0.4
       },
       {
-        "name": "Hackney Empire",
+        "name": "Azalea Court Community Hall",
+        "category": "community-hub",
+        "address": "Queen's Drive, London",
+        "postcode": "N4 2DB",
+        "latitude": 51.5659681,
+        "longitude": -0.1014127,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The Redmond Community Centre",
+        "category": "community-hub",
+        "address": "Kayani Avenue, London",
+        "postcode": "N4 2EQ",
+        "latitude": 51.5699765,
+        "longitude": -0.0913916,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Woodberry Down Community Organisation",
+        "category": "community-hub",
+        "address": "C Seven Sisters Road, London",
+        "postcode": "N4 1FS",
+        "latitude": 51.5729236,
+        "longitude": -0.0901474,
+        "website": "https://wdco.org.uk",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Manor House Development Trust",
+        "category": "community-hub",
+        "address": "Seven Sisters Road, London",
+        "postcode": "N4 1JU",
+        "latitude": 51.5731419,
+        "longitude": -0.0895699,
+        "website": "https://www.mhdt.org.uk",
+        "distanceKm": 1
+      },
+      {
+        "name": "Hackney Showroom",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "N4 2BN",
+        "latitude": 51.562512,
+        "longitude": -0.0924387,
+        "website": "https://www.hackneyshowroom.com/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "St. Thomas More Catholic Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N4 2LH",
+        "latitude": 51.5676871,
+        "longitude": -0.0965268,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Olave's Woodberry Down",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N4 2RE",
+        "latitude": 51.5712338,
+        "longitude": -0.0936732,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "St John the Evangelist",
+        "category": "place-of-worship",
+        "address": "Queen's Drive, London",
+        "postcode": "N4 2LW",
+        "latitude": 51.5655593,
+        "longitude": -0.100573,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Finsbury Park Methodist Church",
+        "category": "place-of-worship",
+        "address": "1 Wilberforce Road, London",
+        "postcode": "N4 2SW",
+        "latitude": 51.5654018,
+        "longitude": -0.1022596,
+        "website": "http://newrivercircuit.org.uk/?page_id=121",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Adath Yisroel Synagogue",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "N16 0HJ",
+        "latitude": 51.5642191,
+        "longitude": -0.0863182,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Manor Road United Reformed Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N16 5NU",
+        "latitude": 51.5661011,
+        "longitude": -0.0845184,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Finsbury Park Post Office",
+        "category": "post-office",
+        "address": "290-292 Seven Sisters Road, London",
+        "postcode": "N4 2AB",
+        "latitude": 51.5648951,
+        "longitude": -0.1037908,
+        "website": "https://www.royalmail.com/services-near-you/post-office/finsbury-park-n4-2ab",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Woodberry Grove Post Office",
+        "category": "post-office",
+        "address": "Woodberry Grove, London",
+        "postcode": "N4 2LZ",
+        "latitude": 51.5712833,
+        "longitude": -0.0896955,
+        "website": "https://www.postoffice.co.uk/branch-finder/0720046/woodberry-grove",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Dunsmure Road Post Office",
+        "category": "post-office",
+        "address": "Dunsmure Road, London",
+        "postcode": "N16 5JY",
+        "latitude": 51.5706808,
+        "longitude": -0.0794682,
+        "website": "https://www.postoffice.co.uk/branch-finder/1530046/dunsmure-road",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Church Street Post Office",
+        "category": "post-office",
+        "address": "170 Stoke Newington Church Street, London",
+        "postcode": "N16 0JL",
+        "latitude": 51.5616188,
+        "longitude": -0.0820202,
+        "website": "https://www.postoffice.co.uk/branch-finder/1520040/church-street",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Green Lanes Post Office",
+        "category": "post-office",
+        "address": "137 Green Lanes, London",
+        "postcode": "N16 9DA",
+        "latitude": 51.5553033,
+        "longitude": -0.0898245,
+        "website": "https://www.postoffice.co.uk/branch-finder/1550047/green-lanes-(137)",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Stamford Hill Post Office",
+        "category": "post-office",
+        "address": "Stamford Hill, London",
+        "postcode": "N16 6TW",
+        "latitude": 51.5742666,
+        "longitude": -0.0720772,
+        "website": "https://www.postoffice.co.uk/branch-finder/0190047/stamford-hill",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Spring Park",
+        "category": "park",
+        "address": "",
+        "postcode": "N4 2GU",
+        "latitude": 51.57012,
+        "longitude": -0.0922101,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Clissold Park",
+        "category": "park",
+        "address": "",
+        "postcode": "N16 9HJ",
+        "latitude": 51.5609926,
+        "longitude": -0.0877894,
+        "website": "https://hackney.gov.uk/clissold-park",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Church Street Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "N16 9ET",
+        "latitude": 51.5605511,
+        "longitude": -0.0852794,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Allens Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "N16 5BD",
+        "latitude": 51.5682252,
+        "longitude": -0.0777905,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Albion Parade",
+        "category": "park",
+        "address": "",
+        "postcode": "N16 9LH",
+        "latitude": 51.5565116,
+        "longitude": -0.0842635,
+        "distanceKm": 2
+      },
+      {
+        "name": "Kynaston Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "N16 0DE",
+        "latitude": 51.5608457,
+        "longitude": -0.074412,
+        "website": "https://hackney.gov.uk/kynaston-gardens",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Stoke Newington West Reservoir Centre",
         "category": "leisure-centre",
-        "address": "291 Mare Street, E8 1EJ",
-        "description": "A Grade II* listed Edwardian variety theatre, still a leading live entertainment venue today."
+        "address": "",
+        "postcode": "N4 2NY",
+        "latitude": 51.5666542,
+        "longitude": -0.0914182,
+        "website": "https://www.better.org.uk/leisure-centre/london/hackney/west-reservoir-centre",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "The Castle Climbing Centre",
+        "category": "leisure-centre",
+        "address": "Green Lanes, London",
+        "postcode": "N4 2HA",
+        "latitude": 51.5652788,
+        "longitude": -0.0924406,
+        "website": "https://www.castle-climbing.co.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Clissold Park Tennis Pavilion",
+        "category": "leisure-centre",
+        "address": "3 Queen Elizabeth's Walk, London",
+        "postcode": "N16 0BF",
+        "latitude": 51.5639621,
+        "longitude": -0.0866592,
+        "website": "https://www.hackneytennis.co.uk/about/tennis-pavillion/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Clissold Leisure Centre",
+        "category": "leisure-centre",
+        "address": "63 Clissold Road, London",
+        "postcode": "N16 9EX",
+        "latitude": 51.5591296,
+        "longitude": -0.0856431,
+        "website": "http://www.better.org.uk/leisure/clissold-leisure-centre",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Muslceworks Gym",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N16 7NA",
+        "latitude": 51.5594021,
+        "longitude": -0.0736253,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Queensbridge Sports & Community Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E8 3XW",
+        "latitude": 51.5422529,
+        "longitude": -0.0712494,
+        "distanceKm": 3.8
+      },
+      {
+        "name": "The Old Church",
+        "category": "culture",
+        "address": "Stoke Newington Church Street, London",
+        "postcode": "N16 9ES",
+        "latitude": 51.561372,
+        "longitude": -0.0847068,
+        "website": "https://www.theoldchurch.org.uk/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Praxis N16 Studios",
+        "category": "culture",
+        "address": "3-9 Belfast Road, London",
+        "postcode": "N16 6UN",
+        "latitude": 51.5655798,
+        "longitude": -0.0722906,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "V22 Studios",
+        "category": "culture",
+        "address": "3-9 Belfast Road, London",
+        "postcode": "N16 6UN",
+        "latitude": 51.5659018,
+        "longitude": -0.07209,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Tower Theatre",
+        "category": "culture",
+        "address": "16 Northwold Road, London",
+        "postcode": "N16 7HR",
+        "latitude": 51.5628069,
+        "longitude": -0.0719688,
+        "website": "https://www.towertheatre.org.uk/tower.htm",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Upfront Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "N16 7SX",
+        "latitude": 51.5553607,
+        "longitude": -0.0736029,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Lighthouse Studios",
+        "category": "culture",
+        "address": "89a Shacklewell Lane, London",
+        "postcode": "E8 2EB",
+        "latitude": 51.552709,
+        "longitude": -0.0711483,
+        "website": "https://lighthousespace.co.uk/",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Stoke Newington Public Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N16 0JS",
+        "latitude": 51.5615631,
+        "longitude": -0.0827529,
+        "website": "https://hackney.gov.uk/stoke-newington-library/",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Lubavitch Lending Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N16 5RP",
+        "latitude": 51.5723472,
+        "longitude": -0.073831,
+        "distanceKm": 2
+      },
+      {
+        "name": "Stamford Hill Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N16 6SB",
+        "latitude": 51.5704019,
+        "longitude": -0.0722133,
+        "website": "https://hackney.gov.uk/stamford-hill-library",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Clapton Library",
+        "category": "library",
+        "address": "Northwold Road, London",
+        "postcode": "E5 8RA",
+        "latitude": 51.5626967,
+        "longitude": -0.0598633,
+        "website": "https://hackney.gov.uk/clapton-library",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Dalston CLR James Library",
+        "category": "library",
+        "address": "Dalston Square, London",
+        "postcode": "E8 3BQ",
+        "latitude": 51.5460434,
+        "longitude": -0.0739135,
+        "website": "http://www.hackney.gov.uk/dalston-library.htm",
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Hackney Central Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E8 1GR",
+        "latitude": 51.5446215,
+        "longitude": -0.0556753,
+        "website": "https://hackney.gov.uk/hackney-central-library",
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Brett Close Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N16 0JX",
+        "latitude": 51.5624122,
+        "longitude": -0.0802462,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Shakespeare Walk Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N16 8TX",
+        "latitude": 51.5547659,
+        "longitude": -0.081324,
+        "website": "http://www.swapa.org.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "St Paul's Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N16 8BP",
+        "latitude": 51.5568037,
+        "longitude": -0.0739575,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Somerford Estate Play Area",
+        "category": "playground",
+        "address": "London",
+        "postcode": "N16 7TN",
+        "latitude": 51.5542775,
+        "longitude": -0.0730034,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Somerford Grove Play Area",
+        "category": "playground",
+        "address": "London",
+        "postcode": "N16 7TJ",
+        "latitude": 51.5542871,
+        "longitude": -0.0739823,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "KIDS Adventure Play Hackney",
+        "category": "playground",
+        "address": "",
+        "postcode": "E5 9HQ",
+        "latitude": 51.5695421,
+        "longitude": -0.0545976,
+        "website": "https://www.kids.org.uk/hackney-adventure-playground1",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Growing Communities Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N16 8DT",
+        "latitude": 51.5570333,
+        "longitude": -0.0742758,
+        "website": "https://growingcommunities.org/market",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Ridley Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E8 2NP",
+        "latitude": 51.5481428,
+        "longitude": -0.0730727,
+        "website": "https://hackney.gov.uk/ridley-road-market",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Chatsworth Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E5 0LH",
+        "latitude": 51.5532437,
+        "longitude": -0.0446587,
+        "website": "https://hackney.gov.uk/chatsworth-road-market",
+        "distanceKm": 4.5
+      },
+      {
+        "name": "Broadway Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E8 4PH",
+        "latitude": 51.5368612,
+        "longitude": -0.0615166,
+        "website": "https://broadwaymarket.co.uk",
+        "distanceKm": 4.7
+      },
+      {
+        "name": "Netil Market",
+        "category": "market",
+        "address": "13-23 Westgate Street, London",
+        "postcode": "E8 3RL",
+        "latitude": 51.53757,
+        "longitude": -0.058638,
+        "website": "https://eatworkart.com/netil-market",
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Flea London",
+        "category": "market",
+        "address": "",
+        "postcode": "E15 2SJ",
+        "latitude": 51.5446055,
+        "longitude": -0.0211974,
+        "website": "https://www.flealondon.com/",
+        "distanceKm": 6.3
       }
     ]
   },

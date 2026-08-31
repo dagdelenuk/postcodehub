@@ -5865,16 +5865,466 @@
   "places": {
     "places": [
       {
-        "name": "Crystal Palace Park",
-        "category": "park",
-        "address": "Bromley/Croydon border",
-        "description": "A large Victorian park containing the world-famous Crystal Palace Dinosaurs sculptures."
+        "name": "The Yoga Edge",
+        "category": "leisure-centre",
+        "address": "83 Church Road",
+        "postcode": "SE19 2TA",
+        "latitude": 51.4175554,
+        "longitude": -0.0805978,
+        "distanceKm": 0.4
       },
       {
-        "name": "Down House",
+        "name": "Crystal Palace National Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE19 2BB",
+        "latitude": 51.420085,
+        "longitude": -0.0688874,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "National Sports Centre",
+        "category": "leisure-centre",
+        "address": "London",
+        "postcode": "SE19 2BB",
+        "latitude": 51.4211,
+        "longitude": -0.0673563,
+        "website": "https://www.better.org.uk/leisure-centre/london/crystal-palace/crystal-palace-national-sports-centre",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Crystal Palace Indoor Bowling Club",
+        "category": "leisure-centre",
+        "address": "London",
+        "postcode": "SE20 8EF",
+        "latitude": 51.4106595,
+        "longitude": -0.0626884,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Sydenham Tennis, Squash and Croquet Club",
+        "category": "leisure-centre",
+        "address": "Lawrie Park Road, London",
+        "postcode": "SE26 6ET",
+        "latitude": 51.4220519,
+        "longitude": -0.0591797,
+        "website": "https://www.sydenham-tennis-squash-croquet-club.co.uk/",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Goals",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "BR3 4XS",
+        "latitude": 51.3985651,
+        "longitude": -0.0508395,
+        "website": "https://www.goalsfootball.co.uk/our-clubs/south-east/beckenham",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Fox Hill Playing Field",
+        "category": "park",
+        "address": "",
+        "postcode": "SE19 2HF",
+        "latitude": 51.4154823,
+        "longitude": -0.0784079,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Fox Hill Green",
+        "category": "park",
+        "address": "",
+        "postcode": "SE19 2HX",
+        "latitude": 51.4144885,
+        "longitude": -0.0760562,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Crystal Palace Park",
+        "category": "park",
+        "address": "London",
+        "postcode": "SE20 8DT",
+        "latitude": 51.4214817,
+        "longitude": -0.0698677,
+        "website": "https://www.crystalpalaceparktrust.org/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Betts Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SE20 8TP",
+        "latitude": 51.408577,
+        "longitude": -0.0645526,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Penge Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "SE20 8RY",
+        "latitude": 51.4153947,
+        "longitude": -0.0569864,
+        "distanceKm": 2
+      },
+      {
+        "name": "Winsford Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SE20 7SQ",
+        "latitude": 51.4093594,
+        "longitude": -0.0563633,
+        "website": "https://www.pengegreengym.org.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Crystal Palace Museum",
+        "category": "culture",
+        "address": "Anerley Hill, London",
+        "postcode": "SE19 2BA",
+        "latitude": 51.419718,
+        "longitude": -0.0766168,
+        "website": "https://www.crystalpalacepark.org.uk",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Bridge House Theatre",
+        "category": "culture",
+        "address": "2 High Street, London",
+        "postcode": "SE20 8RZ",
+        "latitude": 51.4180693,
+        "longitude": -0.0604394,
+        "website": "https://thebridgehousetheatre.co.uk/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Odeon Cinema",
+        "category": "culture",
+        "address": "High Street, Beckenham",
+        "postcode": "BR3 1DY",
+        "latitude": 51.4070192,
+        "longitude": -0.0316159,
+        "website": "https://www.odeon.co.uk/cinemas/beckenham/",
+        "distanceKm": 4
+      },
+      {
+        "name": "Bethlem Museum of the Mind",
+        "category": "culture",
+        "address": "",
+        "postcode": "BR3 3BY",
+        "latitude": 51.3809327,
+        "longitude": -0.0294471,
+        "distanceKm": 5.7
+      },
+      {
+        "name": "Amphitheatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "BR1 1HA",
+        "latitude": 51.4036026,
+        "longitude": 0.0128518,
+        "distanceKm": 7.1
+      },
+      {
+        "name": "The Churchill",
+        "category": "culture",
+        "address": "",
+        "postcode": "BR1 1EX",
+        "latitude": 51.4035538,
+        "longitude": 0.0143007,
+        "website": "http://churchilltheatre.co.uk/",
+        "distanceKm": 7.2
+      },
+      {
+        "name": "St Paul's",
+        "category": "place-of-worship",
+        "address": "Hamlet Road",
+        "postcode": "SE19 2AN",
+        "latitude": 51.4160247,
+        "longitude": -0.07311,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Christ Church",
+        "category": "place-of-worship",
+        "address": "197 Anerley Road, London",
+        "postcode": "SE20 8ER",
+        "latitude": 51.4096746,
+        "longitude": -0.0613488,
+        "website": "https://anerleyteamministry.org.uk/",
+        "distanceKm": 2
+      },
+      {
+        "name": "St Anthony of Padua Catholic Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SE20 8ES",
+        "latitude": 51.4098704,
+        "longitude": -0.0596952,
+        "distanceKm": 2
+      },
+      {
+        "name": "Penge Baptist Church",
+        "category": "place-of-worship",
+        "address": "121 Maple Road, London",
+        "postcode": "SE20 8LP",
+        "latitude": 51.4135425,
+        "longitude": -0.0571717,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Salvation Army",
+        "category": "place-of-worship",
+        "address": "174 Maple Road, London",
+        "postcode": "SE20 8JB",
+        "latitude": 51.4150081,
+        "longitude": -0.0547136,
+        "website": "https://www.salvationarmy.org.uk/penge",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "St John the Evangelist",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "SE20 7EQ",
+        "latitude": 51.4166438,
+        "longitude": -0.0549164,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "KS2 Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE20 8BW",
+        "latitude": 51.4108636,
+        "longitude": -0.0698788,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Dinosaur Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE19 2BB",
+        "latitude": 51.4193151,
+        "longitude": -0.0661237,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Crystal Palace Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE26 6EG",
+        "latitude": 51.4202189,
+        "longitude": -0.0650126,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Astro-turf",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR6 7WE",
+        "latitude": 51.3660083,
+        "longitude": 0.0664368,
+        "distanceKm": 12.1
+      },
+      {
+        "name": "Cudham lane recreation ground",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR6 6BW",
+        "latitude": 51.3495501,
+        "longitude": 0.0868364,
+        "distanceKm": 14.2
+      },
+      {
+        "name": "Eldred Drive Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR5 4PA",
+        "latitude": 51.3735798,
+        "longitude": 0.120965,
+        "distanceKm": 15.2
+      },
+      {
+        "name": "Anerley Town Hall: Community Centre",
         "category": "community-hub",
-        "address": "Luxted Road, Downe, BR6 7JT",
-        "description": "Charles Darwin's family home for 40 years, where he wrote On the Origin of Species; now an English Heritage museum."
+        "address": "Anerley Road, London",
+        "postcode": "SE20 8BD",
+        "latitude": 51.4118519,
+        "longitude": -0.0673109,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Hawthorn Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE20 8LB",
+        "latitude": 51.4119043,
+        "longitude": -0.0592407,
+        "distanceKm": 2
+      },
+      {
+        "name": "Penge East Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE20 7BE",
+        "latitude": 51.4196749,
+        "longitude": -0.0554449,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Melvin Hall",
+        "category": "community-hub",
+        "address": "Melvin Road, London",
+        "postcode": "SE20 8EU",
+        "latitude": 51.4109985,
+        "longitude": -0.0568777,
+        "website": "https://bromley.simplyconnect.uk/providers/360ee540-c290-11ec-b20d-6dd30d0aeb8c/melvin-hall-community-group",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Azelia Hall",
+        "category": "community-hub",
+        "address": "Croydon Road, Beckenham",
+        "postcode": "BR3 4DA",
+        "latitude": 51.4017194,
+        "longitude": -0.0390796,
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Beckenham Public Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "BR3 5JE",
+        "latitude": 51.4085828,
+        "longitude": -0.0244478,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Crystal Palace Park Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE20 8DS",
+        "latitude": 51.4195638,
+        "longitude": -0.06501,
+        "website": "https://www.crystalpalaceparkmarket.com/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Cargo Depot - AfriCargo",
+        "category": "post-office",
+        "address": "160 Maple Road, London",
+        "postcode": "SE20 8JB",
+        "latitude": 51.4147469,
+        "longitude": -0.0550583,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Penge Post Office",
+        "category": "post-office",
+        "address": "High Street, London",
+        "postcode": "SE20 7HA",
+        "latitude": 51.4155913,
+        "longitude": -0.0537596,
+        "website": "https://www.postoffice.co.uk/branch-finder/2290073/penge",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "VM's Variety",
+        "category": "post-office",
+        "address": "79 Elmers End Road, London",
+        "postcode": "SE20 7UU",
+        "latitude": 51.4058455,
+        "longitude": -0.0568563,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Croydon Road Post Office",
+        "category": "post-office",
+        "address": "271-273 Croydon Road, Beckenham",
+        "postcode": "BR3 3PS",
+        "latitude": 51.4029496,
+        "longitude": -0.0364232,
+        "website": "https://www.postoffice.co.uk/branch-finder/126012x/croydon-road",
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Beckenham Post Office",
+        "category": "post-office",
+        "address": "172 High Street, Beckenham",
+        "postcode": "BR3 1EW",
+        "latitude": 51.4074574,
+        "longitude": -0.0278289,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Park Langley Post Office",
+        "category": "post-office",
+        "address": "98 Wickham Road, Beckenham",
+        "postcode": "BR3 6QH",
+        "latitude": 51.3996631,
+        "longitude": -0.0185119,
+        "website": "https://www.postoffice.co.uk/branch-finder/1240129/park-langley",
+        "distanceKm": 5.1
+      },
+      {
+        "name": "Penge Library",
+        "category": "library",
+        "address": "46 Green Lane",
+        "postcode": "SE20 7PF",
+        "latitude": 51.4139078,
+        "longitude": -0.0510555,
+        "website": "https://www.better.org.uk/library/london/bromley/penge-library",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Beckenham Library",
+        "category": "library",
+        "address": "22 Beckenham Road, Beckenham",
+        "postcode": "BR3 4PE",
+        "latitude": 51.4085636,
+        "longitude": -0.0368991,
+        "website": "https://www.better.org.uk/library/london/bromley/beckenham-library",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Shortlands Library",
+        "category": "library",
+        "address": "110 Shortlands Road, Bromley",
+        "postcode": "BR2 0JP",
+        "latitude": 51.3997112,
+        "longitude": -0.0070943,
+        "distanceKm": 5.9
+      },
+      {
+        "name": "West Wickham Library",
+        "category": "library",
+        "address": "Glebe Way, West Wickham",
+        "postcode": "BR4 0SH",
+        "latitude": 51.3759009,
+        "longitude": -0.0139352,
+        "website": "https://www.better.org.uk/library/london/bromley/west-wickham-library",
+        "distanceKm": 6.9
+      },
+      {
+        "name": "Bromley Central Library",
+        "category": "library",
+        "address": "High Street, Bromley",
+        "postcode": "BR1 1EX",
+        "latitude": 51.4036103,
+        "longitude": 0.0146503,
+        "website": "https://www.better.org.uk/library/london/bromley/bromley-central-library",
+        "distanceKm": 7.2
+      },
+      {
+        "name": "Burnt Ash Library",
+        "category": "library",
+        "address": "Burnt Ash Lane, Bromley",
+        "postcode": "BR1 5AF",
+        "latitude": 51.4198564,
+        "longitude": 0.0196908,
+        "website": "https://www.better.org.uk/library/london/bromley/burnt-ash-library",
+        "distanceKm": 7.3
       }
     ]
   },

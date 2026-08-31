@@ -10520,16 +10520,480 @@
   "places": {
     "places": [
       {
-        "name": "Battersea Park",
-        "category": "park",
-        "address": "Battersea",
-        "description": "A large Thames-side park opened in 1858, near the landmark Battersea Power Station."
+        "name": "The Yard",
+        "category": "place-of-worship",
+        "address": "401-403 Tildesley Road, London",
+        "postcode": "SW15 3BD",
+        "latitude": 51.4551128,
+        "longitude": -0.2290246,
+        "distanceKm": 0.2
       },
       {
-        "name": "Battersea Power Station",
+        "name": "St Simon's Church",
+        "category": "place-of-worship",
+        "address": "Hazlewell Road, London",
+        "postcode": "SW15 6LU",
+        "latitude": 51.4594206,
+        "longitude": -0.2241126,
+        "website": "http://www.stsimonputney.org.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St. Margaret's",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "SW15 5HU",
+        "latitude": 51.4590279,
+        "longitude": -0.2344207,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St John the Evangelist",
+        "category": "place-of-worship",
+        "address": "St John's Avenue, London",
+        "postcode": "SW15 6AR",
+        "latitude": 51.459868,
+        "longitude": -0.2193526,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Putney Methodist Church",
+        "category": "place-of-worship",
+        "address": "Upper Richmond Road, London",
+        "postcode": "SW15 6SN",
+        "latitude": 51.46208,
+        "longitude": -0.2221733,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Holy Trinity",
+        "category": "place-of-worship",
+        "address": "Ponsonby Road, London",
+        "postcode": "SW15 4LA",
+        "latitude": 51.4492198,
+        "longitude": -0.2371673,
+        "distanceKm": 1
+      },
+      {
+        "name": "Amplitheatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW15 3AP",
+        "latitude": 51.4552868,
+        "longitude": -0.2249109,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "ODEON Putney",
+        "category": "culture",
+        "address": "25 Putney High Street, London",
+        "postcode": "SW15 1SN",
+        "latitude": 51.4651771,
+        "longitude": -0.2139173,
+        "website": "https://www.odeon.co.uk/cinemas/putney/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Cineworld",
+        "category": "culture",
+        "address": "Southside Shopping Centre, London",
+        "postcode": "SW18 4TF",
+        "latitude": 51.4541535,
+        "longitude": -0.1934097,
+        "website": "https://www.cineworld.co.uk/cinemas/london-wandsworth/066",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Sambrook's Brewery Heritage Centre & Beershop",
+        "category": "culture",
+        "address": "40 Ram Street, London",
+        "postcode": "SW18 1UR",
+        "latitude": 51.4570942,
+        "longitude": -0.1927226,
+        "website": "https://www.sambrooksbrewery.co.uk",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Backyard Cinema",
+        "category": "culture",
+        "address": "",
+        "postcode": "SW18 1SH",
+        "latitude": 51.459185,
+        "longitude": -0.1922538,
+        "website": "https://www.backyardcinema.co.uk/",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Tara Arts",
+        "category": "culture",
+        "address": "356 Garratt Lane, London",
+        "postcode": "SW18 4ES",
+        "latitude": 51.4422042,
+        "longitude": -0.188394,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Putney Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW15 6DL",
+        "latitude": 51.4617605,
+        "longitude": -0.2249002,
+        "website": "https://www.pltc.co.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Putney Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW15 6JB",
+        "latitude": 51.4638587,
+        "longitude": -0.2287891,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Physical Culture Gymnasium",
+        "category": "leisure-centre",
+        "address": "Studios 21-22 Winthorpe Road, London",
+        "postcode": "SW15 2LW",
+        "latitude": 51.4617632,
+        "longitude": -0.2104237,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Whiteland Sports field",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW15 4JB",
+        "latitude": 51.4487157,
+        "longitude": -0.2452551,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Southfields Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SW18 1PH",
+        "latitude": 51.4522696,
+        "longitude": -0.2078226,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "London Rowing Club",
+        "category": "leisure-centre",
+        "address": "Embankment, London",
+        "postcode": "SW15 1LB",
+        "latitude": 51.4686337,
+        "longitude": -0.2194888,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "The Pleasance",
+        "category": "park",
+        "address": "",
+        "postcode": "SW15 5HF",
+        "latitude": 51.4614513,
+        "longitude": -0.236126,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Communal Garden Square",
+        "category": "park",
+        "address": "",
+        "postcode": "SW15 1BQ",
+        "latitude": 51.4665079,
+        "longitude": -0.22583,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Oak Park Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "SW19 6AR",
+        "latitude": 51.4463352,
+        "longitude": -0.2206637,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Waterman's Green",
+        "category": "park",
+        "address": "",
+        "postcode": "SW15 1EL",
+        "latitude": 51.4663168,
+        "longitude": -0.2146003,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Putney Embankment Foreshore",
+        "category": "park",
+        "address": "",
+        "postcode": "SW15 1EW",
+        "latitude": 51.466827,
+        "longitude": -0.2152762,
+        "website": "https://www.tideway.london/locations/putney-embankment-foreshore/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Whitelands Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SW18 5QY",
+        "latitude": 51.4507012,
+        "longitude": -0.2096427,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Putney Post Office",
+        "category": "post-office",
+        "address": "197 Upper Richmond Road, London",
+        "postcode": "SW15 6SG",
+        "latitude": 51.4611376,
+        "longitude": -0.2191674,
+        "website": "https://www.postoffice.co.uk/branch-finder/1460013/putney",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "210 Upper Richmond Road, London",
+        "postcode": "SW15 6TD",
+        "latitude": 51.4611726,
+        "longitude": -0.217762,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Upper Richmond Road 355 Post Office",
+        "category": "post-office",
+        "address": "355 Upper Richmond Road, London",
+        "postcode": "SW15 5QJ",
+        "latitude": 51.4643932,
+        "longitude": -0.237096,
+        "website": "https://www.postoffice.co.uk/branch-finder/0830011/upper-richmond-road-355",
+        "distanceKm": 1
+      },
+      {
+        "name": "Roehampton Local",
+        "category": "post-office",
+        "address": "35 Roehampton High Street, London",
+        "postcode": "SW15 4HL",
+        "latitude": 51.450638,
+        "longitude": -0.238854,
+        "website": "https://www.postoffice.co.uk/branch-finder/0840017/roehampton-high-street-35",
+        "distanceKm": 1
+      },
+      {
+        "name": "Danebury Avenue Post Office",
+        "category": "post-office",
+        "address": "53-57 Danebury Avenue, London",
+        "postcode": "SW15 4DQ",
+        "latitude": 51.4495673,
+        "longitude": -0.2426048,
+        "website": "https://www.postoffice.co.uk/branch-finder/0080012/danebury-avenue",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Wandsworth Post Office",
+        "category": "post-office",
+        "address": "159 Wandsworth High Street, London",
+        "postcode": "SW18 4JB",
+        "latitude": 51.4571382,
+        "longitude": -0.1963239,
+        "website": "https://www.postoffice.co.uk/branch-finder/0310018/wandsworth",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Toland Square Community Clubroom",
         "category": "community-hub",
-        "address": "188 Kirtling Street, SW8 5BN",
-        "description": "The iconic decommissioned coal-fired power station on the Thames, redeveloped into shops, homes, and offices."
+        "address": "London",
+        "postcode": "SW15 5PF",
+        "latitude": 51.4565648,
+        "longitude": -0.2418287,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "The Cornerstone",
+        "category": "community-hub",
+        "address": "Alton Road, London",
+        "postcode": "SW15 4LG",
+        "latitude": 51.4488958,
+        "longitude": -0.2387334,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Alton Community Hall",
+        "category": "community-hub",
+        "address": "1 Petersfield Rise, London",
+        "postcode": "SW15 4AE",
+        "latitude": 51.44711,
+        "longitude": -0.2380703,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Manresa Clubroom",
+        "category": "community-hub",
+        "address": "Fontley Way, London",
+        "postcode": "SW15 4LY",
+        "latitude": 51.4472251,
+        "longitude": -0.2418762,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Alton Club",
+        "category": "community-hub",
+        "address": "Dilton Gardens, London",
+        "postcode": "SW15 4AT",
+        "latitude": 51.4453129,
+        "longitude": -0.2385948,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Woking Close Family Centre",
+        "category": "community-hub",
+        "address": "140 Woking Close, London",
+        "postcode": "SW15 5LD",
+        "latitude": 51.4638886,
+        "longitude": -0.2480923,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Putney Library",
+        "category": "library",
+        "address": "5,7 Disraeli Road, London",
+        "postcode": "SW15 2DR",
+        "latitude": 51.4617225,
+        "longitude": -0.2159483,
+        "website": "https://www.better.org.uk/library/london/wandsworth/putney-library",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "University of Roehampton Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SW15 5SZ",
+        "latitude": 51.4582252,
+        "longitude": -0.2447585,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Roehampton Library",
+        "category": "library",
+        "address": "Danebury Avenue, London",
+        "postcode": "SW15 4HD",
+        "latitude": 51.4497802,
+        "longitude": -0.2421528,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Southfields Library",
+        "category": "library",
+        "address": "300 Wimbledon Park Road, London",
+        "postcode": "SW19 6NL",
+        "latitude": 51.4435512,
+        "longitude": -0.2087087,
+        "website": "https://better.org.uk/venues/southfields-library",
+        "distanceKm": 2
+      },
+      {
+        "name": "Wandsworth Town Library",
+        "category": "library",
+        "address": "9 Courthouse Way, London",
+        "postcode": "SW18 4QG",
+        "latitude": 51.4559503,
+        "longitude": -0.1917779,
+        "website": "https://www.better.org.uk/library/london/wandsworth/wandsworth-town-library",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Earlsfield Library",
+        "category": "library",
+        "address": "276 Magdalen Road, London",
+        "postcode": "SW18 3NY",
+        "latitude": 51.4424712,
+        "longitude": -0.1866852,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Alton Activity Centre",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW15 4DR",
+        "latitude": 51.450771,
+        "longitude": -0.2449072,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Point pocket Park play area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW15 1JN",
+        "latitude": 51.4673294,
+        "longitude": -0.2154458,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Osiers Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 1UW",
+        "latitude": 51.461162,
+        "longitude": -0.1977855,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Kimber Skatepark and BMX Track",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 4LW",
+        "latitude": 51.448329,
+        "longitude": -0.1929357,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Reception playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 2LT",
+        "latitude": 51.4535381,
+        "longitude": -0.1859771,
+        "distanceKm": 3
+      },
+      {
+        "name": "Wandsworth One O'Clock Centre",
+        "category": "playground",
+        "address": "",
+        "postcode": "SW18 2EU",
+        "latitude": 51.4531547,
+        "longitude": -0.1792808,
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Broadway Market",
+        "category": "market",
+        "address": "29 Tooting High Street, London",
+        "postcode": "SW17 0RJ",
+        "latitude": 51.4284366,
+        "longitude": -0.1666543,
+        "website": "https://bmtooting.co.uk",
+        "distanceKm": 5.3
+      },
+      {
+        "name": "Tooting Market",
+        "category": "market",
+        "address": "21-23 Tooting High Street, London",
+        "postcode": "SW17 0SN",
+        "latitude": 51.4289958,
+        "longitude": -0.1660218,
+        "website": "https://tootingmarket.com",
+        "distanceKm": 5.3
+      },
+      {
+        "name": "Nine Elms Market and Boot Sale",
+        "category": "market",
+        "address": "",
+        "postcode": "SW8 5HH",
+        "latitude": 51.4786154,
+        "longitude": -0.13521,
+        "distanceKm": 6.9
       }
     ]
   },

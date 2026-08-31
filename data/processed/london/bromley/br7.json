@@ -3780,16 +3780,466 @@
   "places": {
     "places": [
       {
-        "name": "Crystal Palace Park",
-        "category": "park",
-        "address": "Bromley/Croydon border",
-        "description": "A large Victorian park containing the world-famous Crystal Palace Dinosaurs sculptures."
+        "name": "Chislehurst Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "BR7 5LX",
+        "latitude": 51.4149717,
+        "longitude": 0.0687699,
+        "distanceKm": 0.2
       },
       {
-        "name": "Down House",
+        "name": "Church of the Annunciation",
+        "category": "place-of-worship",
+        "address": "Chislehurst",
+        "postcode": "BR7 5AQ",
+        "latitude": 51.4191359,
+        "longitude": 0.0672213,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St Patrick's",
+        "category": "place-of-worship",
+        "address": "Chislehurst",
+        "postcode": "BR7 6DB",
+        "latitude": 51.4202716,
+        "longitude": 0.0654737,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Saint Nicholas",
+        "category": "place-of-worship",
+        "address": "Chislehurst",
+        "postcode": "BR7 5PF",
+        "latitude": 51.4098824,
+        "longitude": 0.0751217,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "St Mary's",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "BR7 5PL",
+        "latitude": 51.4077309,
+        "longitude": 0.0723017,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Christ Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "BR7 5RB",
+        "latitude": 51.4104705,
+        "longitude": 0.0555373,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Chislehurst Post Office",
+        "category": "post-office",
+        "address": "60 High Street, Chislehurst",
+        "postcode": "BR7 5AQ",
+        "latitude": 51.4196045,
+        "longitude": 0.0662689,
+        "website": "https://www.postoffice.co.uk/branch-finder/0640123/chislehurst",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Lower Camden Post Office",
+        "category": "post-office",
+        "address": "63 Chislehurst Road, Chislehurst",
+        "postcode": "BR7 5NP",
+        "latitude": 51.4077034,
+        "longitude": 0.0559931,
+        "website": "https://www.postoffice.co.uk/branch-finder/0880124/lower-camden",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Kimmeridge Road Post Office",
+        "category": "post-office",
+        "address": "London",
+        "postcode": "SE9 4EA",
+        "latitude": 51.4274665,
+        "longitude": 0.0456821,
+        "website": "https://www.postoffice.co.uk/branch-finder/1140078/kimmeridge-road",
+        "distanceKm": 2
+      },
+      {
+        "name": "Cotmandene Post Office",
+        "category": "post-office",
+        "address": "60-62 Cotmandene Crescent, Orpington",
+        "postcode": "BR5 2RG",
+        "latitude": 51.4041548,
+        "longitude": 0.1048554,
+        "website": "https://www.postoffice.co.uk/branch-finder/1250124/cotmandene",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Petts Wood Post Office",
+        "category": "post-office",
+        "address": "5 Fairway, Orpington",
+        "postcode": "BR5 1EF",
+        "latitude": 51.3890002,
+        "longitude": 0.0762157,
+        "distanceKm": 3
+      },
+      {
+        "name": "St Pauls Cray Post Office",
+        "category": "post-office",
+        "address": "6 Crays Parade, Orpington",
+        "postcode": "BR5 3HG",
+        "latitude": 51.4011769,
+        "longitude": 0.1169577,
+        "website": "https://www.postoffice.co.uk/branch-finder/1000128/st-pauls-cray",
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Chislehurst Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "BR7 5DF",
+        "latitude": 51.4181069,
+        "longitude": 0.0615847,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Walden Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "BR7 5RU",
+        "latitude": 51.4203963,
+        "longitude": 0.0587343,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Belmont Lane Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "BR7 6JP",
+        "latitude": 51.4252687,
+        "longitude": 0.0745124,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Wayside Green Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "SE9 4ND",
+        "latitude": 51.4256743,
+        "longitude": 0.0519833,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Scadbury Park",
+        "category": "park",
+        "address": "",
+        "postcode": "BR5 2TJ",
+        "latitude": 51.4097532,
+        "longitude": 0.0945426,
+        "distanceKm": 2
+      },
+      {
+        "name": "Jubilee Country Park",
+        "category": "park",
+        "address": "",
+        "postcode": "BR5 1DA",
+        "latitude": 51.3924741,
+        "longitude": 0.0629464,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Chislehurst Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "BR7 5BG",
+        "latitude": 51.4187907,
+        "longitude": 0.0630992,
+        "website": "https://chislehursttennis.org.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Red 1 Airsoft Chislehurst",
+        "category": "leisure-centre",
+        "address": "Foxbury Avenue, Chislehurst",
+        "postcode": "BR7 6SD",
+        "latitude": 51.4185165,
+        "longitude": 0.0815372,
+        "website": "https://www.red1airsoft.com/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Bromley Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "BR1 3JF",
+        "latitude": 51.4126432,
+        "longitude": 0.026278,
+        "website": "https://bromleybowlingclub.co.uk/",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Petts Wood Snooker Club",
+        "category": "leisure-centre",
+        "address": "West Approach, Orpington",
+        "postcode": "BR5 1DB",
+        "latitude": 51.3884239,
+        "longitude": 0.073742,
+        "distanceKm": 3
+      },
+      {
+        "name": "Eric Liddell Sports Centre",
+        "category": "leisure-centre",
+        "address": "College View, London",
+        "postcode": "SE9 4QG",
+        "latitude": 51.437724,
+        "longitude": 0.0402617,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Bromley Wendover Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "BR2 9JB",
+        "latitude": 51.3979393,
+        "longitude": 0.0235757,
+        "website": "https://bromleywendovertennis.co.uk/",
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Chislehurst library",
+        "category": "library",
+        "address": "Red Hill, Chislehurst",
+        "postcode": "BR7 6DA",
+        "latitude": 51.42012,
+        "longitude": 0.0647095,
+        "website": "https://www.better.org.uk/library/london/bromley/chislehurst-library",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "St Paul's Cray Library",
+        "category": "library",
+        "address": "Mickleham Road, Orpington",
+        "postcode": "BR5 2RW",
+        "latitude": 51.4045695,
+        "longitude": 0.1032603,
+        "website": "https://www.better.org.uk/library/london/bromley/st-paul-s-cray-library-community-support-centre",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Petts Wood Library",
+        "category": "library",
+        "address": "Frankswood Avenue, Orpington",
+        "postcode": "BR5 1BP",
+        "latitude": 51.390025,
+        "longitude": 0.0708966,
+        "website": "https://www.better.org.uk/library/london/bromley/petts-wood-library",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Mottingham Library",
+        "category": "library",
+        "address": "31 Mottingham Road, London",
+        "postcode": "SE9 4QZ",
+        "latitude": 51.4374684,
+        "longitude": 0.043571,
+        "website": "https://www.better.org.uk/library/london/bromley/mottingham-library",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Southborough Library",
+        "category": "library",
+        "address": "Southborough Lane, Bromley",
+        "postcode": "BR2 8AP",
+        "latitude": 51.389905,
+        "longitude": 0.0434445,
+        "website": "https://www.better.org.uk/library/london/bromley/southborough-library",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Burnt Ash Library",
+        "category": "library",
+        "address": "Burnt Ash Lane, Bromley",
+        "postcode": "BR1 5AF",
+        "latitude": 51.4198564,
+        "longitude": 0.0196908,
+        "website": "https://www.better.org.uk/library/london/bromley/burnt-ash-library",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Mottingham Community Centre",
         "category": "community-hub",
-        "address": "Luxted Road, Downe, BR6 7JT",
-        "description": "Charles Darwin's family home for 40 years, where he wrote On the Origin of Species; now an English Heritage museum."
+        "address": "Kimmeridge Road, London",
+        "postcode": "SE9 4EB",
+        "latitude": 51.4273838,
+        "longitude": 0.0469547,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Geffery's Hall Community Centre",
+        "category": "community-hub",
+        "address": "27 Nunnington Close, London",
+        "postcode": "SE9 4TA",
+        "latitude": 51.4321621,
+        "longitude": 0.0481595,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Link Youth Centre",
+        "category": "community-hub",
+        "address": "Midfield Way, Orpington",
+        "postcode": "BR5 2QL",
+        "latitude": 51.4091874,
+        "longitude": 0.1022211,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Sanderson Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "BR5 2TR",
+        "latitude": 51.4048141,
+        "longitude": 0.1014378,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "St Paul’s Cray Community Support Centre",
+        "category": "community-hub",
+        "address": "Mickleham Road, Orpington",
+        "postcode": "BR5 2RW",
+        "latitude": 51.4045732,
+        "longitude": 0.1032945,
+        "website": "https://www.better.org.uk/library/london/bromley/st-paul-s-cray-library-community-support-centre",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Petts Wood Memorial Hall",
+        "category": "community-hub",
+        "address": "Petts Wood Road, Orpington",
+        "postcode": "BR5 1LA",
+        "latitude": 51.390403,
+        "longitude": 0.0737949,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Anthony Barnard Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "SE9 4QG",
+        "latitude": 51.4380906,
+        "longitude": 0.0401193,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Bromley Little Theatre",
+        "category": "culture",
+        "address": "North Street, Bromley",
+        "postcode": "BR1 1SB",
+        "latitude": 51.4076274,
+        "longitude": 0.016134,
+        "website": "https://bromleylittletheatre.org/",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "The Churchill",
+        "category": "culture",
+        "address": "",
+        "postcode": "BR1 1EX",
+        "latitude": 51.4035538,
+        "longitude": 0.0143007,
+        "website": "http://churchilltheatre.co.uk/",
+        "distanceKm": 3.8
+      },
+      {
+        "name": "Amphitheatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "BR1 1HA",
+        "latitude": 51.4036026,
+        "longitude": 0.0128518,
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Vue Cinema",
+        "category": "culture",
+        "address": "6 St Mark's Square, Bromley",
+        "postcode": "BR2 9UY",
+        "latitude": 51.3998168,
+        "longitude": 0.0151334,
+        "website": "https://www.myvue.com/cinema/bromley/whats-on",
+        "distanceKm": 4
+      },
+      {
+        "name": "Odeon",
+        "category": "culture",
+        "address": "Orpington",
+        "postcode": "BR6 0TW",
+        "latitude": 51.3765645,
+        "longitude": 0.1013825,
+        "website": "https://www.odeon.co.uk/cinemas/orpington/",
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Astro-turf",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR6 7WE",
+        "latitude": 51.3660083,
+        "longitude": 0.0664368,
+        "distanceKm": 5.5
+      },
+      {
+        "name": "Eldred Drive Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR5 4PA",
+        "latitude": 51.3735798,
+        "longitude": 0.120965,
+        "distanceKm": 6
+      },
+      {
+        "name": "Cudham lane recreation ground",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR6 6BW",
+        "latitude": 51.3495501,
+        "longitude": 0.0868364,
+        "distanceKm": 7.4
+      },
+      {
+        "name": "Broke Farm Wreck",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR6 7UX",
+        "latitude": 51.3434941,
+        "longitude": 0.1137294,
+        "distanceKm": 8.6
+      },
+      {
+        "name": "Crystal Palace Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE26 6EG",
+        "latitude": 51.4202189,
+        "longitude": -0.0650126,
+        "distanceKm": 9.1
+      },
+      {
+        "name": "Pratts Bottom Wreck",
+        "category": "playground",
+        "address": "",
+        "postcode": "BR6 7NG",
+        "latitude": 51.3376525,
+        "longitude": 0.1135306,
+        "distanceKm": 9.2
+      },
+      {
+        "name": "Crystal Palace Park Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE20 8DS",
+        "latitude": 51.4195638,
+        "longitude": -0.06501,
+        "website": "https://www.crystalpalaceparkmarket.com/",
+        "distanceKm": 9.1
       }
     ]
   },

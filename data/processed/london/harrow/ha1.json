@@ -5982,16 +5982,451 @@
   "places": {
     "places": [
       {
-        "name": "Harrow School",
-        "category": "community-hub",
-        "address": "Harrow-on-the-Hill",
-        "description": "One of England's oldest public schools, founded in 1572."
+        "name": "Vue Cinema",
+        "category": "culture",
+        "address": "27 St Anns Road, Harrow",
+        "postcode": "HA1 1HS",
+        "latitude": 51.5815021,
+        "longitude": -0.338995,
+        "website": "https://www.myvue.com/cinema/harrow/whats-on",
+        "distanceKm": 0.1
       },
       {
-        "name": "Headstone Manor and Museum",
+        "name": "Metro Cinema",
+        "category": "culture",
+        "address": "",
+        "postcode": "HA1 2BP",
+        "latitude": 51.5865654,
+        "longitude": -0.3324561,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "The Ryan Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "HA1 3DN",
+        "latitude": 51.5732814,
+        "longitude": -0.3390171,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Museum of Harrow Life",
+        "category": "culture",
+        "address": "",
+        "postcode": "HA1 3EZ",
+        "latitude": 51.5737702,
+        "longitude": -0.335334,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Harrow Museum",
+        "category": "culture",
+        "address": "Harrow",
+        "postcode": "HA2 6PX",
+        "latitude": 51.5945827,
+        "longitude": -0.3543766,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Harrow Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "HA5 4EA",
+        "latitude": 51.6084242,
+        "longitude": -0.363693,
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Harrow Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "HA1 1AS",
+        "latitude": 51.5806836,
+        "longitude": -0.3371057,
+        "website": "https://www.postoffice.co.uk/branch-finder/2810204/harrow",
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Harrow Collection Office",
+        "category": "post-office",
+        "address": "Elmgrove Road, Harrow",
+        "postcode": "HA1 2RF",
+        "latitude": 51.5853664,
+        "longitude": -0.3299188,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Wealdstone Post Office",
+        "category": "post-office",
+        "address": "4-12 Headstone Drive, Harrow",
+        "postcode": "HA3 5QL",
+        "latitude": 51.5941182,
+        "longitude": -0.3358794,
+        "website": "https://www.postoffice.co.uk/branch-finder/0160202/wealdstone",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Kenton Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "HA3 8AZ",
+        "latitude": 51.5830283,
+        "longitude": -0.3159109,
+        "website": "https://www.postoffice.co.uk/branch-finder/2580209/kenton",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "North Harrow Post Office",
+        "category": "post-office",
+        "address": "Pinner Road, Harrow",
+        "postcode": "HA2 6DZ",
+        "latitude": 51.5866829,
+        "longitude": -0.361446,
+        "website": "https://www.postoffice.co.uk/branch-finder/2570203/north-harrow",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "South Harrow Post Office",
+        "category": "post-office",
+        "address": "Northolt Road",
+        "postcode": "HA2 8JA",
+        "latitude": 51.5628352,
+        "longitude": -0.3554775,
+        "website": "https://www.postoffice.co.uk/branch-finder/2740206/south-harrow",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Greenhill Library",
+        "category": "library",
+        "address": "College Road, Harrow",
+        "postcode": "HA1 1GX",
+        "latitude": 51.5795748,
+        "longitude": -0.3360332,
+        "website": "https://libraries.harrow.gov.uk/digital-content/harrow-libraries/greenhill-library",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Harrow Reference Library",
+        "category": "library",
+        "address": "",
+        "postcode": "HA1 1ST",
+        "latitude": 51.5896505,
+        "longitude": -0.3350294,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Wealdstone Library",
+        "category": "library",
+        "address": "",
+        "postcode": "HA3 7AE",
+        "latitude": 51.5942225,
+        "longitude": -0.3349034,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "North Harrow Community Library",
+        "category": "library",
+        "address": "429-433 Pinner Road, Harrow",
+        "postcode": "HA1 4HN",
+        "latitude": 51.5853511,
+        "longitude": -0.3607028,
+        "website": "https://northharrowlibrary.org/",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Roxeth Library",
+        "category": "library",
+        "address": "Northolt Road, Harrow",
+        "postcode": "HA2 8EQ",
+        "latitude": 51.5625561,
+        "longitude": -0.3563662,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Kenton Library",
+        "category": "library",
+        "address": "",
+        "postcode": "HA3 8NE",
+        "latitude": 51.5926133,
+        "longitude": -0.3112681,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "DAWN Community Centre",
         "category": "community-hub",
-        "address": "Pinner View, Harrow, HA2 6PX",
-        "description": "A moated 14th-century manor house, the oldest of its kind in Middlesex, now Harrow's local museum."
+        "address": "",
+        "postcode": "HA1 1QA",
+        "latitude": 51.5819738,
+        "longitude": -0.3394688,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "The Welldon Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "HA1 1QP",
+        "latitude": 51.583172,
+        "longitude": -0.3356259,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Harrow Voluntary Services Centre",
+        "category": "community-hub",
+        "address": "64 Pinner Road, Harrow",
+        "postcode": "HA1 4HZ",
+        "latitude": 51.5813673,
+        "longitude": -0.3468107,
+        "website": "https://www.voluntaryactionharrow.org.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "201 (Harrow) Detachment ACF",
+        "category": "community-hub",
+        "address": "Elmgrove Road, Harrow",
+        "postcode": "HA1 2BG",
+        "latitude": 51.584852,
+        "longitude": -0.3313097,
+        "website": "https://armycadets.com/county/middlesex-and-north-west-london-sector-acf/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Northhold Road Communal Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "HA2 0NR",
+        "latitude": 51.5682914,
+        "longitude": -0.3475973,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Harrow Royal British Legion",
+        "category": "community-hub",
+        "address": "76 Northolt Road, Harrow",
+        "postcode": "HA2 0DW",
+        "latitude": 51.5682338,
+        "longitude": -0.3491279,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Harrow Spiritualist Church",
+        "category": "place-of-worship",
+        "address": "1 Vaughan Road, Harrow",
+        "postcode": "HA1 4DP",
+        "latitude": 51.5792275,
+        "longitude": -0.3430946,
+        "website": "http://www.lightonthehill.moonfruit.com/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Mosaic Reform Synagogue",
+        "category": "place-of-worship",
+        "address": "39 Bessborough Road, Harrow",
+        "postcode": "HA1 3BS",
+        "latitude": 51.578469,
+        "longitude": -0.3419984,
+        "website": "https://choosemosaic.org/reform/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Harrow Baptist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "HA1 1BW",
+        "latitude": 51.5796117,
+        "longitude": -0.3349226,
+        "website": "http://www.harrow-baptist.org.uk",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Jain Vishva Bharati London",
+        "category": "place-of-worship",
+        "address": "39 Roxborough Road, Harrow",
+        "postcode": "HA1 1NS",
+        "latitude": 51.5817693,
+        "longitude": -0.3418559,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Our Lady & St Thomas of Canterbury",
+        "category": "place-of-worship",
+        "address": "Harrow",
+        "postcode": "HA1 3BE",
+        "latitude": 51.5765519,
+        "longitude": -0.3403328,
+        "website": "https://harrowcatholicchurch.org/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Trinity Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "HA1 1RW",
+        "latitude": 51.5847926,
+        "longitude": -0.3399434,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Lowlands Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "HA1 3AH",
+        "latitude": 51.5782969,
+        "longitude": -0.3367967,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "The Grove Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "HA1 3BB",
+        "latitude": 51.5770153,
+        "longitude": -0.3368675,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Harrow Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "HA1 1RS",
+        "latitude": 51.584244,
+        "longitude": -0.3449471,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Church Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "HA1 3EU",
+        "latitude": 51.5743807,
+        "longitude": -0.3413452,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Old Lyonian Association Sports Ground",
+        "category": "park",
+        "address": "74 Pinner View, Harrow",
+        "postcode": "HA1 4QD",
+        "latitude": 51.5863333,
+        "longitude": -0.3520956,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "West Harrow Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "HA1 4DX",
+        "latitude": 51.5770995,
+        "longitude": -0.3557267,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Perceval Square Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA1 1ER",
+        "latitude": 51.5793112,
+        "longitude": -0.3353729,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Courtyard",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA2 0AD",
+        "latitude": 51.5740874,
+        "longitude": -0.3521745,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Headstone Manor Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA2 6PX",
+        "latitude": 51.5937303,
+        "longitude": -0.3559131,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Roxbourne Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA2 9TD",
+        "latitude": 51.5759257,
+        "longitude": -0.3807626,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Centanary Play Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "HA7 2NW",
+        "latitude": 51.5972185,
+        "longitude": -0.3030697,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Sports Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA1 3EA",
+        "latitude": 51.5730166,
+        "longitude": -0.3333366,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Harrow Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA3 5BD",
+        "latitude": 51.592612,
+        "longitude": -0.3275961,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Harrow Town Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA2 9TJ",
+        "latitude": 51.573668,
+        "longitude": -0.3692781,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Kenton Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA3 8UB",
+        "latitude": 51.5893445,
+        "longitude": -0.3061839,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Harrow Weald Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA3 6EF",
+        "latitude": 51.6060566,
+        "longitude": -0.338122,
+        "website": "https://www.harrowwealdtennisclub.org.uk/",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Centanary Sports",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA7 1LX",
+        "latitude": 51.5986594,
+        "longitude": -0.3032571,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "South Harrow Market",
+        "category": "market",
+        "address": "",
+        "postcode": "HA2 0EU",
+        "latitude": 51.5650828,
+        "longitude": -0.3528727,
+        "distanceKm": 1.9
       }
     ]
   },

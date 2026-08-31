@@ -7294,16 +7294,501 @@
   "places": {
     "places": [
       {
-        "name": "Royal Observatory Greenwich",
-        "category": "community-hub",
-        "address": "Greenwich Park",
-        "description": "Home of the Prime Meridian and Greenwich Mean Time, within a UNESCO World Heritage Site."
+        "name": "St. James' Church",
+        "category": "place-of-worship",
+        "address": "62 Kidbrooke Park Road, London",
+        "postcode": "SE3 0DX",
+        "latitude": 51.4698975,
+        "longitude": 0.0237497,
+        "distanceKm": 0.2
       },
       {
-        "name": "Cutty Sark",
+        "name": "St John Fisher Catholic Church Kidbrooke",
+        "category": "place-of-worship",
+        "address": "141 Kidbrooke Park Road, London",
+        "postcode": "SE3 0DZ",
+        "latitude": 51.4671393,
+        "longitude": 0.0269433,
+        "website": "https://www.sjfkcc.org.uk",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Michael and All Angels",
+        "category": "place-of-worship",
+        "address": "Blackheath Park, London",
+        "postcode": "SE3 9JL",
+        "latitude": 51.4647381,
+        "longitude": 0.0136133,
+        "website": "https://se3.org.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Church of Our Lady Help of Christians",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "SE3 9RB",
+        "latitude": 51.4650455,
+        "longitude": 0.0108693,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "St John the Evangelist",
+        "category": "place-of-worship",
+        "address": "Stratheden Road, London",
+        "postcode": "SE3 7TH",
+        "latitude": 51.4757847,
+        "longitude": 0.0187039,
+        "website": "https://www.stjohnsblackheath.org.uk",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Sunfields Methodist Church",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "SE3 8SJ",
+        "latitude": 51.476441,
+        "longitude": 0.0245151,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Chiswell Square Playsite",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE3 0JF",
+        "latitude": 51.4687618,
+        "longitude": 0.0270603,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Greenwich Park Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE10 9LY",
+        "latitude": 51.4816947,
+        "longitude": 0.0007703,
+        "website": "https://www.royalparks.org.uk/visit/parks/greenwich-park/greenwich-park-playground",
+        "distanceKm": 2
+      },
+      {
+        "name": "The Cove",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE10 9NF",
+        "latitude": 51.4805878,
+        "longitude": -0.0050616,
+        "website": "https://www.rmg.co.uk/national-maritime-museum/attractions/cove-playground",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Dabin Crescent Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE10 8TF",
+        "latitude": 51.4728527,
+        "longitude": -0.0134229,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "St Alfege's Recreation Ground",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE10 9RQ",
+        "latitude": 51.480801,
+        "longitude": -0.0124838,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Northern Square",
+        "category": "playground",
+        "address": "",
+        "postcode": "SE10 0SH",
+        "latitude": 51.4933257,
+        "longitude": 0.0167706,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Blackheath High School Sports Grounds",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE3 0DX",
+        "latitude": 51.4667908,
+        "longitude": 0.0243569,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Blackheath & Greenwich Bowling Club",
+        "category": "leisure-centre",
+        "address": "Brooklands Park, London",
+        "postcode": "SE3 9BL",
+        "latitude": 51.462805,
+        "longitude": 0.0169204,
+        "website": "https://www.blackheathandgreenwichbc.co.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Crofton Albion Sports & Social Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE12 8HG",
+        "latitude": 51.4582396,
+        "longitude": 0.0202298,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "David Lloyd Kidbrooke",
+        "category": "leisure-centre",
+        "address": "Kidbrooke Park Road, London",
+        "postcode": "SE12 8HG",
+        "latitude": 51.4588763,
+        "longitude": 0.025846,
+        "website": "https://www.davidlloyd.co.uk/club-finder/kidbrooke",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Blackheath Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE7 7EY",
+        "latitude": 51.4783188,
+        "longitude": 0.0280018,
+        "website": "http://www.blackheathsportsclub.co.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Blackheath Wanderers Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "SE12 8UF",
+        "latitude": 51.4561728,
+        "longitude": 0.0201645,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Kidbrooke Parade Post Office",
+        "category": "post-office",
+        "address": "122 Rochester Way, London",
+        "postcode": "SE3 8AR",
+        "latitude": 51.4676607,
+        "longitude": 0.0283014,
+        "website": "https://www.postoffice.co.uk/branch-finder/0630071/kidbrooke-parade",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Westcombe Hill Post Office",
+        "category": "post-office",
+        "address": "6 Stratheden Parade, London",
+        "postcode": "SE3 7SX",
+        "latitude": 51.4767634,
+        "longitude": 0.019305,
+        "website": "https://www.postoffice.co.uk/branch-finder/0650072/westcombe-hill",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Shooters Hill Road Post Office",
+        "category": "post-office",
+        "address": "178 Shooters Hill Road, London",
+        "postcode": "SE3 8RP",
+        "latitude": 51.4746204,
+        "longitude": 0.0342526,
+        "website": "https://www.postoffice.co.uk/branch-finder/0640077/shooters-hill-road",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Lee Green Post Office",
+        "category": "post-office",
+        "address": "Lee Road, London",
+        "postcode": "SE3 9DJ",
+        "latitude": 51.4566522,
+        "longitude": 0.0118418,
+        "website": "https://www.postoffice.co.uk/branch-finder/1420070/lee-green",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Trafalgar Road Post Office",
+        "category": "post-office",
+        "address": "191 Trafalgar Road, London",
+        "postcode": "SE10 9EQ",
+        "latitude": 51.4855644,
+        "longitude": 0.0059611,
+        "website": "https://www.postoffice.co.uk/branch-finder/1090070/trafalgar-road",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "151 Trafalgar Road, London",
+        "postcode": "SE10 9TX",
+        "latitude": 51.4847663,
+        "longitude": 0.0029992,
+        "website": "https://www.mbe.co.uk/londongreenwich",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Hervey Road Playing Field",
+        "category": "park",
+        "address": "",
+        "postcode": "SE3 8BT",
+        "latitude": 51.4721798,
+        "longitude": 0.0296322,
+        "website": "https://www.royalgreenwich.gov.uk/directory_record/860689/hervey_road_playing_field",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Kidbrooke Green Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SE3 9QR",
+        "latitude": 51.4644379,
+        "longitude": 0.0319372,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Batley Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SE3 7EU",
+        "latitude": 51.477726,
+        "longitude": 0.0199642,
+        "distanceKm": 1
+      },
+      {
+        "name": "Cator Park",
+        "category": "park",
+        "address": "",
+        "postcode": "SE3 9YY",
+        "latitude": 51.4598284,
+        "longitude": 0.0268534,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Blackheath",
+        "category": "park",
+        "address": "",
+        "postcode": "SE3 7BN",
+        "latitude": 51.4720675,
+        "longitude": 0.0022916,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "The Woodlands Dell",
+        "category": "park",
+        "address": "",
+        "postcode": "SE3 7LJ",
+        "latitude": 51.4809363,
+        "longitude": 0.0167795,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Village Hall",
         "category": "community-hub",
-        "address": "King William Walk, Greenwich, SE10 9HT",
-        "description": "The last surviving tea clipper ship in the world, preserved as a museum ship since the 1950s."
+        "address": "",
+        "postcode": "SE3 9ET",
+        "latitude": 51.461745,
+        "longitude": 0.0234328,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Kidbrooke Community Hub",
+        "category": "community-hub",
+        "address": "8 Pegler Square Pegler Square",
+        "postcode": "SE3 9GU",
+        "latitude": 51.4611943,
+        "longitude": 0.0269384,
+        "website": "https://www.kidbrookechub.org.uk/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Charlton Triangle Residents Association & Community Office",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE7 7EU",
+        "latitude": 51.4783088,
+        "longitude": 0.0300408,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Mycenae House",
+        "category": "community-hub",
+        "address": "90 Mycenae Road, London",
+        "postcode": "SE3 7SE",
+        "latitude": 51.4796803,
+        "longitude": 0.0159092,
+        "website": "https://mycenaehouse.co.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Mascalls Meeting Rooms",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "SE7 7TX",
+        "latitude": 51.4806578,
+        "longitude": 0.0310897,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "The Bridge",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "SE10 0LB",
+        "latitude": 51.4841171,
+        "longitude": 0.0127182,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Blackheath Standard Library",
+        "category": "library",
+        "address": "17 Old Dover Road, London",
+        "postcode": "SE3 7BT",
+        "latitude": 51.4769442,
+        "longitude": 0.021571,
+        "website": "https://www.better.org.uk/library/london/greenwich/blackheath-library",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Charlton Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SE7 8RE",
+        "latitude": 51.4804373,
+        "longitude": 0.0371994,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Greenwich Centre Library",
+        "category": "library",
+        "address": "",
+        "postcode": "SE10 9HW",
+        "latitude": 51.4857294,
+        "longitude": 0.0080731,
+        "website": "https://www.better.org.uk/library/london/greenwich/greenwich-centre-library",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Stockwell Street Library",
+        "category": "library",
+        "address": "10 Stockwell Street, London",
+        "postcode": "SE10 9BD",
+        "latitude": 51.4802572,
+        "longitude": -0.0084176,
+        "website": "https://www.gre.ac.uk/it-and-library/library",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "West Greenwich Library",
+        "category": "library",
+        "address": "Greenwich High Road, London",
+        "postcode": "SE10 8NN",
+        "latitude": 51.4780956,
+        "longitude": -0.0114671,
+        "website": "https://www.better.org.uk/library/london/greenwich/west-greenwich-library",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Eltham Library",
+        "category": "library",
+        "address": "Archery Road, London",
+        "postcode": "SE9 1HA",
+        "latitude": 51.4512635,
+        "longitude": 0.057393,
+        "website": "https://www.better.org.uk/library/london/greenwich/eltham-library",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "The Prince Philip Maritime Collections Centre",
+        "category": "culture",
+        "address": "Nelson Mandela Road, London",
+        "postcode": "SE3 9QS",
+        "latitude": 51.4617617,
+        "longitude": 0.0309989,
+        "website": "https://www.rmg.co.uk/collections/prince-philip-maritime-collections-centre",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Royal Observatory Greenwich",
+        "category": "culture",
+        "address": "Blackheath Avenue, London",
+        "postcode": "SE10 8XJ",
+        "latitude": 51.4773471,
+        "longitude": -0.0011761,
+        "website": "https://www.rmg.co.uk/royal-observatory",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "National Maritime Museum",
+        "category": "culture",
+        "address": "Romney Road, London",
+        "postcode": "SE10 9NF",
+        "latitude": 51.4807826,
+        "longitude": -0.0054049,
+        "website": "https://www.rmg.co.uk/national-maritime-museum",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Queen's House",
+        "category": "culture",
+        "address": "London",
+        "postcode": "SE10 9NF",
+        "latitude": 51.4811879,
+        "longitude": -0.0037479,
+        "website": "https://www.rmg.co.uk/queens-house",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "The Fan Museum",
+        "category": "culture",
+        "address": "12 Crooms Hill, London",
+        "postcode": "SE10 8ER",
+        "latitude": 51.4790982,
+        "longitude": -0.0080694,
+        "website": "https://www.thefanmuseum.org.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Greenwich Theatre",
+        "category": "culture",
+        "address": "Crooms Hill, London",
+        "postcode": "SE10 8ES",
+        "latitude": 51.4794627,
+        "longitude": -0.0076417,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "The Greenwich Vintage Market",
+        "category": "market",
+        "address": "2 Greenwich Church Street, London",
+        "postcode": "SE10 9BQ",
+        "latitude": 51.4804341,
+        "longitude": -0.0087587,
+        "website": "https://www.greenwichvintagemarket.co.uk/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Greenwich Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE10 9HZ",
+        "latitude": 51.4815833,
+        "longitude": -0.0090449,
+        "website": "https://www.greenwichmarket.london",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Woolwich Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE18 6BB",
+        "latitude": 51.4911065,
+        "longitude": 0.0689731,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Royal Arsenal Farmers Market",
+        "category": "market",
+        "address": "Artillery Square, London",
+        "postcode": "SE18 6ST",
+        "latitude": 51.4939802,
+        "longitude": 0.0693165,
+        "distanceKm": 4.4
       }
     ]
   },

@@ -3974,16 +3974,519 @@
   "places": {
     "places": [
       {
-        "name": "Camden Market",
+        "name": "The Camden Society",
         "category": "community-hub",
-        "address": "Camden Town",
-        "description": "One of the UK's most visited attractions, a sprawling market for fashion, food, and crafts."
+        "address": "",
+        "postcode": "NW5 1LB",
+        "latitude": 51.5527339,
+        "longitude": -0.1432658,
+        "distanceKm": 0.1
       },
       {
-        "name": "British Museum",
+        "name": "Ingestre Road Community Centre",
         "category": "community-hub",
-        "address": "Great Russell Street, WC1B 3DG",
-        "description": "One of the world's great museums of human history and culture, free to enter since its founding in 1753."
+        "address": "",
+        "postcode": "NW5 1XD",
+        "latitude": 51.5554954,
+        "longitude": -0.1428945,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Queen's Crescent Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "NW5 4EA",
+        "latitude": 51.5501473,
+        "longitude": -0.1516064,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Kiln Place Tenants' Hall",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW5 4AP",
+        "latitude": 51.5539862,
+        "longitude": -0.1511229,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Peckwater Tenants' Association Hall",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW5 2UE",
+        "latitude": 51.549919,
+        "longitude": -0.1361166,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "NW5 Project",
+        "category": "community-hub",
+        "address": "Islip Street, London",
+        "postcode": "NW5 2TU",
+        "latitude": 51.5495351,
+        "longitude": -0.1360299,
+        "website": "https://nw5project.com/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Christ Apostolic Church",
+        "category": "place-of-worship",
+        "address": "23 Highgate Road, London",
+        "postcode": "NW5 1JY",
+        "latitude": 51.552478,
+        "longitude": -0.1424452,
+        "distanceKm": 0.1
+      },
+      {
+        "name": "Our Lady Help of Christians",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "NW5 2XT",
+        "latitude": 51.5517064,
+        "longitude": -0.1374098,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Church of Saint Anargyre (Cosmas and Damianos)",
+        "category": "place-of-worship",
+        "address": "1 Gordon House Road, London",
+        "postcode": "NW5 1LN",
+        "latitude": 51.5562562,
+        "longitude": -0.1469241,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Kentish Town Baitul Aman Masjid",
+        "category": "place-of-worship",
+        "address": "156-158 Weedington Road, London",
+        "postcode": "NW5 4NU",
+        "latitude": 51.5500785,
+        "longitude": -0.1505116,
+        "website": "https://ktbam.co.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Saint Benet and All Saints' Church",
+        "category": "place-of-worship",
+        "address": "Lupton Street, London",
+        "postcode": "NW5 2JB",
+        "latitude": 51.5542347,
+        "longitude": -0.1383574,
+        "website": "https://www.saintbenets.org.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Highgate Road Chapel",
+        "category": "place-of-worship",
+        "address": "Chetwynd Road, London",
+        "postcode": "NW5 1BU",
+        "latitude": 51.5569892,
+        "longitude": -0.1455342,
+        "website": "https://www.highgateroadchapel.co.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "4 Fortess Road, London",
+        "postcode": "NW5 2ES",
+        "latitude": 51.5518166,
+        "longitude": -0.1409481,
+        "website": "https://www.mbe.co.uk/londonkentishtown",
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Highgate Road Post Office",
+        "category": "post-office",
+        "address": "Highgate Road, London",
+        "postcode": "NW5 1TR",
+        "latitude": 51.5549643,
+        "longitude": -0.145285,
+        "website": "https://www.postoffice.co.uk/branch-finder/0830054/highgate-road",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Kentish Town Post Office",
+        "category": "post-office",
+        "address": "251 Kentish Town Road, London",
+        "postcode": "NW5 2JT",
+        "latitude": 51.5483895,
+        "longitude": -0.1415309,
+        "website": "https://www.postoffice.co.uk/branch-finder/1000055/kentish-town",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Queens Crescent Post Office",
+        "category": "post-office",
+        "address": "Queen's Crescent, London",
+        "postcode": "NW5 4ED",
+        "latitude": 51.5494845,
+        "longitude": -0.1527235,
+        "website": "https://www.postoffice.co.uk/branch-finder/0850055/queens-crescent",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Regents Park Road Post Office",
+        "category": "post-office",
+        "address": "Regent's Park Road, London",
+        "postcode": "NW1 8UT",
+        "latitude": 51.5418539,
+        "longitude": -0.1569106,
+        "website": "https://www.postoffice.co.uk/branch-finder/1040057/regents-park-road",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Mail Boxes Etc. Camden",
+        "category": "post-office",
+        "address": "33 Parkway, London",
+        "postcode": "NW1 7PN",
+        "latitude": 51.538262,
+        "longitude": -0.1441091,
+        "website": "https://www.mbe.co.uk/camden",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Falkland Place Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW5 2PH",
+        "latitude": 51.5515446,
+        "longitude": -0.1402829,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Talacre Town Green Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW5 3LN",
+        "latitude": 51.5471583,
+        "longitude": -0.1479472,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Lismore Circus Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW5 4QF",
+        "latitude": 51.5528425,
+        "longitude": -0.1546183,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Lismore Circus Extension Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW5 4AH",
+        "latitude": 51.5529448,
+        "longitude": -0.1538385,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Cantelowe Gardens Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW5 2AU",
+        "latitude": 51.5470465,
+        "longitude": -0.1338113,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Charlton Court Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW5 2SA",
+        "latitude": 51.5513588,
+        "longitude": -0.131615,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Falkland Place Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "NW5 2TH",
+        "latitude": 51.5516835,
+        "longitude": -0.1405344,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Inkerman Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "NW5 3AP",
+        "latitude": 51.5490487,
+        "longitude": -0.146082,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Talacre Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "NW5 3LN",
+        "latitude": 51.5469724,
+        "longitude": -0.148116,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Highgate Enclosures",
+        "category": "park",
+        "address": "",
+        "postcode": "NW5 1PN",
+        "latitude": 51.5573079,
+        "longitude": -0.1476915,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Peckwater Estate Natural Play Area",
+        "category": "park",
+        "address": "",
+        "postcode": "NW5 2UD",
+        "latitude": 51.5496195,
+        "longitude": -0.1363692,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Montpelier Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "N19 5AH",
+        "latitude": 51.5528454,
+        "longitude": -0.1343942,
+        "website": "https://cindex.camden.gov.uk/kb5/camden/cd/service.page?id=eq_caQXAtfs",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Kentish Town Library",
+        "category": "library",
+        "address": "262-268 Kentish Town Road, London",
+        "postcode": "NW5 2AA",
+        "latitude": 51.5499838,
+        "longitude": -0.1404434,
+        "website": "https://www.camden.gov.uk/kentish-town-library",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Queen's Crescent Library",
+        "category": "library",
+        "address": "165 Queen's Crescent, London",
+        "postcode": "NW5 4HH",
+        "latitude": 51.5504443,
+        "longitude": -0.1512516,
+        "website": "https://www.camden.gov.uk/queens-crescent-library",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Highgate Public Library",
+        "category": "library",
+        "address": "Chester Road, London",
+        "postcode": "N19 5DH",
+        "latitude": 51.5637831,
+        "longitude": -0.1440767,
+        "website": "https://www.camden.gov.uk/highgatelibrary",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Belsize Park Community Library",
+        "category": "library",
+        "address": "Antrim Road, London",
+        "postcode": "NW3 4XN",
+        "latitude": 51.5479002,
+        "longitude": -0.1622777,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Primrose Hill Community Library",
+        "category": "library",
+        "address": "11a Sharpleshall Street, London",
+        "postcode": "NW1 8YN",
+        "latitude": 51.5411213,
+        "longitude": -0.1566667,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Keats Community Library",
+        "category": "library",
+        "address": "10 Keats Grove, London",
+        "postcode": "NW3 2RR",
+        "latitude": 51.5554439,
+        "longitude": -0.1682031,
+        "website": "http://keatscommunitylibrary.org.uk",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "The Dome",
+        "category": "leisure-centre",
+        "address": "170 Weedington Road, London",
+        "postcode": "NW5 4DS",
+        "latitude": 51.5507915,
+        "longitude": -0.1507286,
+        "website": "https://qcca.org.uk/hire/the-dome/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Crossfit Tufnell Park",
+        "category": "leisure-centre",
+        "address": "144 Fortess Road, London",
+        "postcode": "NW5 2HP",
+        "latitude": 51.5563658,
+        "longitude": -0.1385848,
+        "website": "https://www.crossfittufnellpark.com",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Talacre Community Sports Centre",
+        "category": "leisure-centre",
+        "address": "Dalby Street, London",
+        "postcode": "NW5 3AF",
+        "latitude": 51.5474416,
+        "longitude": -0.1472716,
+        "website": "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Parliament Hill Lido",
+        "category": "leisure-centre",
+        "address": "Gordon House Road, London",
+        "postcode": "NW5 1LT",
+        "latitude": 51.5564413,
+        "longitude": -0.1512318,
+        "website": "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/where-to-go-at-hampstead-heath/parliament-hill-lido",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Parliament Hill Fields Athletics Track",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW3 2LA",
+        "latitude": 51.5572631,
+        "longitude": -0.1556626,
+        "distanceKm": 1
+      },
+      {
+        "name": "Cantelowes Gardens Sports Pitch",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW1 9AE",
+        "latitude": 51.5467436,
+        "longitude": -0.1328933,
+        "website": "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre/cantelowes-pitch",
+        "distanceKm": 1
+      },
+      {
+        "name": "Lion and Unicorn",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW5 2EL",
+        "latitude": 51.5480478,
+        "longitude": -0.1390239,
+        "website": "https://www.thelionandunicorntheatre.com/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Curzon Camden",
+        "category": "culture",
+        "address": "Dockray Place, London",
+        "postcode": "NW1 8QD",
+        "latitude": 51.5422302,
+        "longitude": -0.1434672,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Roundhouse",
+        "category": "culture",
+        "address": "Chalk Farm Road, London",
+        "postcode": "NW1 8EH",
+        "latitude": 51.5432483,
+        "longitude": -0.1519736,
+        "website": "https://www.roundhouse.org.uk/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "London Irish Centre",
+        "category": "culture",
+        "address": "50-52 Camden Square, London",
+        "postcode": "NW1 9XB",
+        "latitude": 51.5438261,
+        "longitude": -0.1324276,
+        "website": "https://londonirishcentre.org",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Everyman",
+        "category": "culture",
+        "address": "203 Haverstock Hill, London",
+        "postcode": "NW3 4QG",
+        "latitude": 51.5508149,
+        "longitude": -0.1657783,
+        "website": "https://www.everymancinema.com/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "WAC Arts Centre",
+        "category": "culture",
+        "address": "213 Haverstock Hill, London",
+        "postcode": "NW3 4QP",
+        "latitude": 51.55097,
+        "longitude": -0.1665386,
+        "website": "https://www.wacarts.co.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Queen's Crescent Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW5 4EB",
+        "latitude": 51.5498897,
+        "longitude": -0.1516261,
+        "website": "https://www.camden.gov.uk/markets",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Bootyfull ​Car Boot",
+        "category": "market",
+        "address": "Croftdown Road",
+        "postcode": "NW5 1QR",
+        "latitude": 51.5591113,
+        "longitude": -0.1493241,
+        "website": "https://www.bootyfullcarboot.com",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Parliament Hill Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "NW5 1RN",
+        "latitude": 51.5591879,
+        "longitude": -0.1508913,
+        "website": "https://www.lfm.org.uk/markets/parliament-hill/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Camden Market",
+        "category": "market",
+        "address": "56-56 Camden Lock Place, London",
+        "postcode": "NW1 8AF",
+        "latitude": 51.5423781,
+        "longitude": -0.1471949,
+        "website": "https://www.camdenmarket.com/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Camden Stables",
+        "category": "market",
+        "address": "Chalk Farm Road, London",
+        "postcode": "NW1 8AH",
+        "latitude": 51.5423409,
+        "longitude": -0.1477397,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Waterside Halls East",
+        "category": "market",
+        "address": "",
+        "postcode": "NW1 8JZ",
+        "latitude": 51.5418402,
+        "longitude": -0.1439292,
+        "distanceKm": 1.1
       }
     ]
   },

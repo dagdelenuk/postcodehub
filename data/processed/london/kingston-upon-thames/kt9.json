@@ -3709,16 +3709,471 @@
   "places": {
     "places": [
       {
-        "name": "Kingston Market Place",
-        "category": "community-hub",
-        "address": "Kingston upon Thames",
-        "description": "A historic market place, home to the ancient Coronation Stone of Anglo-Saxon kings."
+        "name": "Chessington Post Office",
+        "category": "post-office",
+        "address": "381-385 Hook Road, Chessington",
+        "postcode": "KT9 1EL",
+        "latitude": 51.3670314,
+        "longitude": -0.3064381,
+        "website": "https://www.postoffice.co.uk/branch-finder/0780235/chessington",
+        "distanceKm": 0.4
       },
       {
-        "name": "Bentall Centre",
+        "name": "Red Lion Road Post Office",
+        "category": "post-office",
+        "address": "165 Red Lion Road, Surbiton",
+        "postcode": "KT6 7RG",
+        "latitude": 51.3783392,
+        "longitude": -0.2920078,
+        "website": "https://www.postoffice.co.uk/branch-finder/0860239/red-lion-road",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Broadway Post Office",
+        "category": "post-office",
+        "address": "Surbiton",
+        "postcode": "KT6 7HR",
+        "latitude": 51.3808865,
+        "longitude": -0.2828218,
+        "website": "https://www.postoffice.co.uk/branch-finder/055023x/broadway",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "61 Victoria Road, Surbiton",
+        "postcode": "KT6 4JX",
+        "latitude": 51.3919351,
+        "longitude": -0.3069957,
+        "website": "https://www.mbe.co.uk/surbiton",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Alexandra Drive Post Office",
+        "category": "post-office",
+        "address": "104 Alexandra Drive, Surbiton",
+        "postcode": "KT5 9AG",
+        "latitude": 51.3900742,
+        "longitude": -0.2824252,
+        "website": "https://www.postoffice.co.uk/branch-finder/0510238/alexandra-drive",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Surbiton Post Office",
+        "category": "post-office",
+        "address": "2-3 Victoria Road, Surbiton",
+        "postcode": "KT6 4JU",
+        "latitude": 51.3930526,
+        "longitude": -0.3047957,
+        "website": "https://www.postoffice.co.uk/branch-finder/1710230/surbiton",
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Chessington Methodist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "KT9 2AA",
+        "latitude": 51.3632497,
+        "longitude": -0.2955152,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St Paul",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "KT9 1EH",
+        "latitude": 51.3692341,
+        "longitude": -0.3066551,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Saint Catherine of Siena",
+        "category": "place-of-worship",
+        "address": "Chessington",
+        "postcode": "KT9 2HY",
+        "latitude": 51.3600871,
+        "longitude": -0.3116357,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "St Mary the Virgin",
+        "category": "place-of-worship",
+        "address": "Chessington",
+        "postcode": "KT9 2LB",
+        "latitude": 51.3580879,
+        "longitude": -0.3000864,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Chessington Evangelical Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "KT9 2GZ",
+        "latitude": 51.3623104,
+        "longitude": -0.3144434,
+        "website": "https://www.thekingscentre.org.uk",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Hook Evangelical Church",
+        "category": "place-of-worship",
+        "address": "Brook Road, Surbiton",
+        "postcode": "KT6 5DB",
+        "latitude": 51.3769323,
+        "longitude": -0.3038527,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Hook and Chessington Library",
+        "category": "library",
+        "address": "Hook Road, Chessington",
+        "postcode": "KT9 1EJ",
+        "latitude": 51.368091,
+        "longitude": -0.3060649,
+        "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/hook-chessington",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Surbiton Library",
+        "category": "library",
+        "address": "Ewell Road, Surbiton",
+        "postcode": "KT6 6AG",
+        "latitude": 51.3927606,
+        "longitude": -0.2982184,
+        "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/surbiton",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Surbiton Library Hall",
+        "category": "library",
+        "address": "Ewell Road, Surbiton",
+        "postcode": "KT6 6AF",
+        "latitude": 51.392501,
+        "longitude": -0.2980639,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Town House",
+        "category": "library",
+        "address": "",
+        "postcode": "KT1 2EU",
+        "latitude": 51.4039913,
+        "longitude": -0.3036864,
+        "website": "https://www.kingston.ac.uk/experience/our-campuses/penrhyn-road",
+        "distanceKm": 4.5
+      },
+      {
+        "name": "New Malden Library",
+        "category": "library",
+        "address": "",
+        "postcode": "KT3 3LY",
+        "latitude": 51.3993078,
+        "longitude": -0.2606713,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Kingston Library",
+        "category": "library",
+        "address": "",
+        "postcode": "KT1 2PS",
+        "latitude": 51.4093636,
+        "longitude": -0.3002283,
+        "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/kingston",
+        "distanceKm": 5.1
+      },
+      {
+        "name": "Childrens Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT9 2LA",
+        "latitude": 51.3595925,
+        "longitude": -0.3015469,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Knollmead Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT5 9PL",
+        "latitude": 51.3832855,
+        "longitude": -0.2663092,
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Dickerage Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT1 3RU",
+        "latitude": 51.4077812,
+        "longitude": -0.274466,
+        "website": "https://ymcastpaulsgroup.org/ymca-dickerage-sports-community-centre/",
+        "distanceKm": 5.3
+      },
+      {
+        "name": "Elm Road Children's Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT2 6EH",
+        "latitude": 51.4152858,
+        "longitude": -0.2966543,
+        "distanceKm": 5.8
+      },
+      {
+        "name": "Canbury Gardens Play park",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT2 5AW",
+        "latitude": 51.4175928,
+        "longitude": -0.3045104,
+        "distanceKm": 6
+      },
+      {
+        "name": "Royal Park Gate Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "KT2 5GQ",
+        "latitude": 51.428119,
+        "longitude": -0.3108734,
+        "website": "https://www.kingston.gov.uk/directory-record/562/royal-park-gate-playground",
+        "distanceKm": 7.2
+      },
+      {
+        "name": "Hook Centre",
         "category": "community-hub",
-        "address": "Wood Street, Kingston upon Thames, KT1 1TP",
-        "description": "A large town-centre shopping centre built around the historic Bentalls department store."
+        "address": "Hook Road, Chessington",
+        "postcode": "KT9 1EJ",
+        "latitude": 51.368028,
+        "longitude": -0.3060005,
+        "website": "https://www.kingston.gov.uk/things/hook-centre",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The King's Centre",
+        "category": "community-hub",
+        "address": "Coppard Gardens, Chessington",
+        "postcode": "KT9 2GZ",
+        "latitude": 51.3623271,
+        "longitude": -0.3141329,
+        "website": "https://www.thekingscentre.org.uk",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "2nd Hook Scout Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "KT9 1PL",
+        "latitude": 51.3719494,
+        "longitude": -0.3063735,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "1st Surbiton (Sealion) Sea Scout Group",
+        "category": "community-hub",
+        "address": "6 Electric Parade, Surbiton",
+        "postcode": "KT6 5NT",
+        "latitude": 51.3913034,
+        "longitude": -0.3107941,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Berrylands Scouts",
+        "category": "community-hub",
+        "address": "Stirling Walk, Surbiton",
+        "postcode": "KT5 9HY",
+        "latitude": 51.3918302,
+        "longitude": -0.2794075,
+        "website": "https://berrylands-scouts.org.uk/",
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Shiraz Mirza Trust Manor Park Hall",
+        "category": "community-hub",
+        "address": "Malden Road, New Malden",
+        "postcode": "KT3 6AU",
+        "latitude": 51.3873366,
+        "longitude": -0.2511541,
+        "distanceKm": 4.5
+      },
+      {
+        "name": "Woodgate Avenue Playground",
+        "category": "park",
+        "address": "Woodgate Avenue",
+        "postcode": "KT9 2QH",
+        "latitude": 51.3663095,
+        "longitude": -0.3118381,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Merritt Gardens Park",
+        "category": "park",
+        "address": "",
+        "postcode": "KT9 2GU",
+        "latitude": 51.3614814,
+        "longitude": -0.3166103,
+        "distanceKm": 1
+      },
+      {
+        "name": "Hook Leisure Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "KT9 1DP",
+        "latitude": 51.3738708,
+        "longitude": -0.3063803,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Sir Francis Barker Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "KT9 2SB",
+        "latitude": 51.3552313,
+        "longitude": -0.3138075,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Signal Park Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "KT5 9PD",
+        "latitude": 51.3770938,
+        "longitude": -0.2808644,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Alexandra Park",
+        "category": "park",
+        "address": "",
+        "postcode": "KT5 9BE",
+        "latitude": 51.3858503,
+        "longitude": -0.2884064,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Chessington Sports",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "KT9 2JS",
+        "latitude": 51.3568073,
+        "longitude": -0.3086152,
+        "website": "https://www.placesleisure.org/centres/chessington-sports-centre/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "White Spider Indoor Climbing",
+        "category": "leisure-centre",
+        "address": "225 Hook Rise South, Surbiton",
+        "postcode": "KT6 7LD",
+        "latitude": 51.3723559,
+        "longitude": -0.2914608,
+        "website": "https://spiderclimbing.com/white-spider/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "goals",
+        "category": "leisure-centre",
+        "address": "Surbiton",
+        "postcode": "KT5 9NT",
+        "latitude": 51.3772357,
+        "longitude": -0.2772792,
+        "distanceKm": 2.3
+      },
+      {
+        "name": "YMCA",
+        "category": "leisure-centre",
+        "address": "49 Victoria Road",
+        "postcode": "KT6 4NG",
+        "latitude": 51.3912436,
+        "longitude": -0.3086252,
+        "website": "https://ymca.org.uk/locations/ymca-st-pauls-group/",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Rokeby Sports Ground",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "KT4 7PX",
+        "latitude": 51.3786362,
+        "longitude": -0.2662886,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "The River Club",
+        "category": "leisure-centre",
+        "address": "Old Malden Lane, Worcester Park",
+        "postcode": "KT4 7PX",
+        "latitude": 51.3782806,
+        "longitude": -0.2643971,
+        "website": "http://www.theriverclub.info",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Rose Theatre",
+        "category": "culture",
+        "address": "24-26 High Street, Kingston upon Thames",
+        "postcode": "KT1 1HL",
+        "latitude": 51.4085969,
+        "longitude": -0.3075869,
+        "website": "https://www.rosetheatre.org",
+        "distanceKm": 5
+      },
+      {
+        "name": "Kingston Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "KT1 2PS",
+        "latitude": 51.4095749,
+        "longitude": -0.3002538,
+        "website": "https://www.kingstonheritage.org.uk/visit",
+        "distanceKm": 5.1
+      },
+      {
+        "name": "Curzon",
+        "category": "culture",
+        "address": "",
+        "postcode": "KT1 1NY",
+        "latitude": 51.4110413,
+        "longitude": -0.3049355,
+        "website": "https://www.curzon.com/venues/kingston/",
+        "distanceKm": 5.3
+      },
+      {
+        "name": "FUSEBOX",
+        "category": "culture",
+        "address": "2 Buckland's Wharf, Kingston upon Thames",
+        "postcode": "KT1 1TF",
+        "latitude": 51.411481,
+        "longitude": -0.3078652,
+        "website": "https://creativeyouthcharity.org/fusebox/",
+        "distanceKm": 5.3
+      },
+      {
+        "name": "Odeon Kingston",
+        "category": "culture",
+        "address": "Clarence Street, Kingston upon Thames",
+        "postcode": "KT1 1QP",
+        "latitude": 51.4119331,
+        "longitude": -0.2992998,
+        "website": "https://www.odeon.co.uk/cinemas/kingston/",
+        "distanceKm": 5.4
+      },
+      {
+        "name": "Dorich House Museum",
+        "category": "culture",
+        "address": "67 Kingston Vale, London",
+        "postcode": "SW15 3RN",
+        "latitude": 51.4333464,
+        "longitude": -0.2630286,
+        "website": "https://www.dorichhousemuseum.org.uk/",
+        "distanceKm": 8.2
+      },
+      {
+        "name": "Kingston Market",
+        "category": "market",
+        "address": "",
+        "postcode": "KT1 1JS",
+        "latitude": 51.409835,
+        "longitude": -0.3059996,
+        "distanceKm": 5.1
       }
     ]
   },

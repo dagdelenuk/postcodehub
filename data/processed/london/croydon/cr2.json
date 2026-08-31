@@ -9332,16 +9332,468 @@
   "places": {
     "places": [
       {
-        "name": "Lloyd Park",
+        "name": "Elmfield Way Post Office",
+        "category": "post-office",
+        "address": "41 Elmfield Way, South Croydon",
+        "postcode": "CR2 0EJ",
+        "latitude": 51.3475102,
+        "longitude": -0.0837213,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Selsdon Post Office",
+        "category": "post-office",
+        "address": "224 Addington Road, South Croydon",
+        "postcode": "CR2 8LD",
+        "latitude": 51.3447341,
+        "longitude": -0.0599739,
+        "website": "https://www.postoffice.co.uk/branch-finder/185013x/selsdon",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Sanderstead Post Office",
+        "category": "post-office",
+        "address": "41 Limpsfield Road, South Croydon",
+        "postcode": "CR2 9LA",
+        "latitude": 51.3335534,
+        "longitude": -0.0764151,
+        "website": "https://www.postoffice.co.uk/branch-finder/1090135/sanderstead",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Riddlesdown Post Office",
+        "category": "post-office",
+        "address": "102 Lower Barn Road, Purley",
+        "postcode": "CR8 1HR",
+        "latitude": 51.3332703,
+        "longitude": -0.0988669,
+        "website": "https://www.postoffice.co.uk/branch-finder/1060139/riddlesdown",
+        "distanceKm": 2
+      },
+      {
+        "name": "South End Post Office",
+        "category": "post-office",
+        "address": "129 South End, Croydon",
+        "postcode": "CR0 1BJ",
+        "latitude": 51.3637763,
+        "longitude": -0.0977896,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Purley Post Office",
+        "category": "post-office",
+        "address": "940 Brighton Road, Purley",
+        "postcode": "CR8 2LP",
+        "latitude": 51.3391994,
+        "longitude": -0.1162349,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Croham Hurst",
         "category": "park",
-        "address": "Croydon",
-        "description": "A large public park in the shadow of Croydon's historic Addington Hills."
+        "address": "",
+        "postcode": "CR2 0DZ",
+        "latitude": 51.3521666,
+        "longitude": -0.0798113,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "South Croydon Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "CR2 6EX",
+        "latitude": 51.3495765,
+        "longitude": -0.0978863,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Clears Croft",
+        "category": "park",
+        "address": "",
+        "postcode": "CR2 7SD",
+        "latitude": 51.3483276,
+        "longitude": -0.063838,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Sanderstead Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "CR2 9BZ",
+        "latitude": 51.3324959,
+        "longitude": -0.0788841,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Fallen Oak Field",
+        "category": "park",
+        "address": "",
+        "postcode": "CR2 7RD",
+        "latitude": 51.3503415,
+        "longitude": -0.0590891,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Birch (Selsdon)",
+        "category": "park",
+        "address": "",
+        "postcode": "CR2 9AZ",
+        "latitude": 51.335307,
+        "longitude": -0.0652488,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Sanderstead Library",
+        "category": "library",
+        "address": "",
+        "postcode": "CR2 0JP",
+        "latitude": 51.3408164,
+        "longitude": -0.0855471,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Selsdon Library",
+        "category": "library",
+        "address": "",
+        "postcode": "CR2 8LA",
+        "latitude": 51.3425402,
+        "longitude": -0.0625652,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Purley Library",
+        "category": "library",
+        "address": "Banstead Road, Purley",
+        "postcode": "CR8 3YH",
+        "latitude": 51.3391636,
+        "longitude": -0.1186042,
+        "website": "https://www.croydon.gov.uk/libraries-leisure-and-culture/libraries/find-your-library/purley-library",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Croydon Central Library",
+        "category": "library",
+        "address": "",
+        "postcode": "CR9 1ET",
+        "latitude": 51.3718166,
+        "longitude": -0.0994473,
+        "distanceKm": 3
+      },
+      {
+        "name": "Shirley Library",
+        "category": "library",
+        "address": "Wickham Road, Croydon",
+        "postcode": "CR0 8BH",
+        "latitude": 51.3752604,
+        "longitude": -0.0451209,
+        "website": "https://www.croydon.gov.uk/leisure/libraries/find-your-library/shirley-library",
+        "distanceKm": 4
+      },
+      {
+        "name": "Ashburton Library",
+        "category": "library",
+        "address": "Shirley Road, Croydon",
+        "postcode": "CR9 7AL",
+        "latitude": 51.3829409,
+        "longitude": -0.0642003,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Sanderstead United Reformed Church",
+        "category": "place-of-worship",
+        "address": "Sanderstead Hill, South Croydon",
+        "postcode": "CR2 0HB",
+        "latitude": 51.3405733,
+        "longitude": -0.0850666,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "St. Mary's Sanderstead",
+        "category": "place-of-worship",
+        "address": "Purley Oaks Road, South Croydon",
+        "postcode": "CR2 0NS",
+        "latitude": 51.3443681,
+        "longitude": -0.0935929,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "St. Columba's Catholic Church Selsdon",
+        "category": "place-of-worship",
+        "address": "37 Queenhill Road, South Croydon",
+        "postcode": "CR2 8DW",
+        "latitude": 51.3459931,
+        "longitude": -0.0649487,
+        "website": "https://www.stcolumbaschurchselsdon.uk/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "All Saints Sanderstead",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "CR2 8RA",
+        "latitude": 51.3366541,
+        "longitude": -0.0756575,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "St.John The Divine",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "CR2 8DD",
+        "latitude": 51.3423322,
+        "longitude": -0.0660812,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Emmanuel Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "CR2 7AQ",
+        "latitude": 51.3566675,
+        "longitude": -0.0886002,
+        "website": "https://www.emmanuelcroydon.org.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "St. Paul's Lawn Tennis & Croquet Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "CR2 0BH",
+        "latitude": 51.3529451,
+        "longitude": -0.0913179,
+        "website": "https://stpaulstennis.co.uk/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Sanderstead Cricket and Hockey Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "CR2 9ES",
+        "latitude": 51.3342019,
+        "longitude": -0.0790972,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Croydon High Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "CR2 8YB",
+        "latitude": 51.340413,
+        "longitude": -0.0616961,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "South Croydon Sports Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "CR2 7EL",
+        "latitude": 51.362973,
+        "longitude": -0.0869613,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Purley Bury Bowling Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "CR8 1JF",
+        "latitude": 51.3386349,
+        "longitude": -0.1034798,
+        "website": "http://www.purleyburybc.co.uk/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Purley Bury Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "CR8 1JF",
+        "latitude": 51.338095,
+        "longitude": -0.1033259,
+        "website": "https://purleyburytennisclub.net/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Sanderstead Memorial Hall",
+        "category": "community-hub",
+        "address": "Purley Oaks Road, South Croydon",
+        "postcode": "CR2 0NR",
+        "latitude": 51.3450471,
+        "longitude": -0.0946038,
+        "distanceKm": 1
+      },
+      {
+        "name": "St.John's Community Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "CR2 8DD",
+        "latitude": 51.3426024,
+        "longitude": -0.066166,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Selsdon Community Centre",
+        "category": "community-hub",
+        "address": "132 Addington Road, South Croydon",
+        "postcode": "CR2 8LA",
+        "latitude": 51.3425046,
+        "longitude": -0.0625456,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Brighton Road Baptist Church Hall",
+        "category": "community-hub",
+        "address": "215 Brighton Road, South Croydon",
+        "postcode": "CR2 6EJ",
+        "latitude": 51.3550962,
+        "longitude": -0.0973816,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "St Paul's Church Hall",
+        "category": "community-hub",
+        "address": "Croham Park Avenue, South Croydon",
+        "postcode": "CR2 7HH",
+        "latitude": 51.3605284,
+        "longitude": -0.0835456,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Ruskin House",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "CR0 1FA",
+        "latitude": 51.3676233,
+        "longitude": -0.0967202,
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Edgecoombe Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "CR2 8AB",
+        "latitude": 51.3489278,
+        "longitude": -0.0554408,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Kidspace Adventures",
+        "category": "playground",
+        "address": "619 Purley Way, Croydon",
+        "postcode": "CR0 4RQ",
+        "latitude": 51.3567012,
+        "longitude": -0.1149063,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Roke Open Space",
+        "category": "playground",
+        "address": "",
+        "postcode": "CR8 5NA",
+        "latitude": 51.3293637,
+        "longitude": -0.1096505,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Courtwood Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "CR0 9LQ",
+        "latitude": 51.345119,
+        "longitude": -0.0393814,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Addiscombe Recreation Ground",
+        "category": "playground",
+        "address": "",
+        "postcode": "CR0 7EX",
+        "latitude": 51.3784517,
+        "longitude": -0.0709287,
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Boulogne Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "CR0 2XG",
+        "latitude": 51.3888802,
+        "longitude": -0.0973838,
+        "distanceKm": 4.8
+      },
+      {
+        "name": "David Lean Cinema",
+        "category": "culture",
+        "address": "Katharine Street, Croydon",
+        "postcode": "CR9 1ET",
+        "latitude": 51.3721316,
+        "longitude": -0.0990117,
+        "distanceKm": 3
+      },
+      {
+        "name": "Museum of Croydon",
+        "category": "culture",
+        "address": "",
+        "postcode": "CR0 1NX",
+        "latitude": 51.3720528,
+        "longitude": -0.0992517,
+        "website": "https://museumofcroydon.com/",
+        "distanceKm": 3
       },
       {
         "name": "Fairfield Halls",
-        "category": "leisure-centre",
-        "address": "Park Lane, Croydon, CR9 1DG",
-        "description": "Croydon's main concert hall and theatre complex, home to the Ashcroft Theatre."
+        "category": "culture",
+        "address": "Park Lane, Croydon",
+        "postcode": "CR0 1JB",
+        "latitude": 51.3723221,
+        "longitude": -0.0954888,
+        "distanceKm": 3
+      },
+      {
+        "name": "Croydon Clocktower",
+        "category": "culture",
+        "address": "Katharine Street, Croydon",
+        "postcode": "CR9 1ET",
+        "latitude": 51.3720634,
+        "longitude": -0.0994604,
+        "distanceKm": 3
+      },
+      {
+        "name": "The Front Room",
+        "category": "culture",
+        "address": "37-39 St George's Walk, Croydon",
+        "postcode": "CR0 1YL",
+        "latitude": 51.3731874,
+        "longitude": -0.0980063,
+        "website": "https://www.frontroom.space/",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Vue Purley Way",
+        "category": "culture",
+        "address": "21 Hesterman Way, Croydon",
+        "postcode": "CR0 4YA",
+        "latitude": 51.3780368,
+        "longitude": -0.1246385,
+        "website": "https://www.myvue.com/cinema/croydon-purley-way/whats-on",
+        "distanceKm": 4.6
+      },
+      {
+        "name": "Surrey Street",
+        "category": "market",
+        "address": "",
+        "postcode": "CR0 1RJ",
+        "latitude": 51.3728859,
+        "longitude": -0.1012933,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Crystal Palace Food Market",
+        "category": "market",
+        "address": "",
+        "postcode": "SE19 3AN",
+        "latitude": 51.4181961,
+        "longitude": -0.083575,
+        "website": "https://www.crystalpalacefoodmarket.co.uk/",
+        "distanceKm": 7.9
       }
     ]
   },

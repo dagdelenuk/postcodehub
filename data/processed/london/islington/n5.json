@@ -3919,16 +3919,511 @@
   "places": {
     "places": [
       {
-        "name": "Sadler's Wells",
-        "category": "leisure-centre",
-        "address": "Islington",
-        "description": "A leading dance theatre with roots going back to a 17th-century well."
+        "name": "Highbury Park Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "N5 2AB",
+        "latitude": 51.5534249,
+        "longitude": -0.0982044,
+        "website": "https://www.postoffice.co.uk/branch-finder/0810045/highbury-park",
+        "distanceKm": 0.1
       },
       {
-        "name": "Emirates Stadium",
+        "name": "Holloway Road Post Office",
+        "category": "post-office",
+        "address": "118 Holloway Road, London",
+        "postcode": "N7 8JE",
+        "latitude": 51.550332,
+        "longitude": -0.1088747,
+        "website": "https://www.postoffice.co.uk/branch-finder/091004x/holloway-road(118)",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Newington Green Road Post Office",
+        "category": "post-office",
+        "address": "113 Newington Green Road, London",
+        "postcode": "N1 4QY",
+        "latitude": 51.5501367,
+        "longitude": -0.0868414,
+        "website": "https://www.postoffice.co.uk/branch-finder/1200046/newington-green-road",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "",
+        "postcode": "N7 8JZ",
+        "latitude": 51.5474209,
+        "longitude": -0.1056961,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Holloway Post Office",
+        "category": "post-office",
+        "address": "116-120 Seven Sisters Road, London",
+        "postcode": "N7 6AE",
+        "latitude": 51.559877,
+        "longitude": -0.1153434,
+        "website": "https://www.postoffice.co.uk/branch-finder/0320048/holloway",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Essex Road Post Office",
+        "category": "post-office",
+        "address": "238 Essex Road, London",
+        "postcode": "N1 3AP",
+        "latitude": 51.5411956,
+        "longitude": -0.0940872,
+        "website": "https://www.postoffice.co.uk/branch-finder/2010046/essex-road-238",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Christ Church Highbury",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N5 1SA",
+        "latitude": 51.5525183,
+        "longitude": -0.0987135,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "St Joan of Arc",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N5 2XH",
+        "latitude": 51.5560646,
+        "longitude": -0.0972896,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "St Augustine's",
+        "category": "place-of-worship",
+        "address": "108 Highbury New Park, London",
+        "postcode": "N5 2DR",
+        "latitude": 51.5545879,
+        "longitude": -0.0919164,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Highbury Evangelical Fellowship",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N5 1JB",
+        "latitude": 51.548214,
+        "longitude": -0.1018394,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "North London Buddhist Centre",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "N7 8JG",
+        "latitude": 51.5494177,
+        "longitude": -0.1077444,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Richmond Fellowship",
+        "category": "place-of-worship",
+        "address": "Holloway Road, London",
+        "postcode": "N7 8JG",
+        "latitude": 51.5495134,
+        "longitude": -0.1078499,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Aubert Court Community Centre",
+        "category": "community-hub",
+        "address": "Avenell Road, London",
+        "postcode": "N5 1BJ",
+        "latitude": 51.5562657,
+        "longitude": -0.1022435,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Highbury Roundhouse",
+        "category": "community-hub",
+        "address": "71 Ronalds Road, London",
+        "postcode": "N5 1XB",
+        "latitude": 51.5515656,
+        "longitude": -0.104051,
+        "website": "https://www.highbury-roundhouse.org.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The Morris Art and Community Building",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "N5 1PJ",
+        "latitude": 51.5519323,
+        "longitude": -0.1056065,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Birchmore Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "N5 2TZ",
+        "latitude": 51.5589727,
+        "longitude": -0.0937005,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Elizabeth House Community Centre",
+        "category": "community-hub",
+        "address": "2 Hurlock Street, London",
+        "postcode": "N5 1ED",
+        "latitude": 51.5598041,
+        "longitude": -0.0991097,
+        "website": "https://elizabeth-house.org.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Canonbury Project",
+        "category": "community-hub",
+        "address": "Unit 3 St. Paul's Road, London",
+        "postcode": "N1 2SY",
+        "latitude": 51.546898,
+        "longitude": -0.0917035,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Highbury Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "N5 1JH",
+        "latitude": 51.5496715,
+        "longitude": -0.1015429,
+        "website": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks/highbury-fields",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Petherton Green",
+        "category": "park",
+        "address": "",
+        "postcode": "N5 2QU",
+        "latitude": 51.5529463,
+        "longitude": -0.0905709,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "St Paul's Shrubbery",
+        "category": "park",
+        "address": "",
+        "postcode": "N1 2PP",
+        "latitude": 51.5475724,
+        "longitude": -0.0897547,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Northampton Park Triangle",
+        "category": "park",
+        "address": "",
+        "postcode": "N1 2QP",
+        "latitude": 51.5475366,
+        "longitude": -0.0911661,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "St Mary Magdalene Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "N7 8LU",
+        "latitude": 51.5480751,
+        "longitude": -0.1084837,
+        "distanceKm": 1
+      },
+      {
+        "name": "Newington Green",
+        "category": "park",
+        "address": "",
+        "postcode": "N16 9PX",
+        "latitude": 51.5515027,
+        "longitude": -0.0851879,
+        "distanceKm": 1
+      },
+      {
+        "name": "Arsenal Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "N5 1GB",
+        "latitude": 51.5566742,
+        "longitude": -0.1081434,
+        "website": "https://www.arsenal.com/history/the-arsenal-museum",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Clay Time",
+        "category": "culture",
+        "address": "",
+        "postcode": "N5 1HA",
+        "latitude": 51.560212,
+        "longitude": -0.098746,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Finsbury Park Picturehouse",
+        "category": "culture",
+        "address": "17 City North Place, London",
+        "postcode": "N4 3FU",
+        "latitude": 51.565068,
+        "longitude": -0.1074654,
+        "website": "https://www.picturehouses.com/cinema/finsbury-park",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Park Theatre",
+        "category": "culture",
+        "address": "Clifton Terrace, London",
+        "postcode": "N4 3JP",
+        "latitude": 51.5657257,
+        "longitude": -0.1084766,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Almeida Theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "N1 1AA",
+        "latitude": 51.5394403,
+        "longitude": -0.1030764,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Little Angel Theatre",
+        "category": "culture",
+        "address": "13 Dagmar Passage, London",
+        "postcode": "N1 2DN",
+        "latitude": 51.5388222,
+        "longitude": -0.1013532,
+        "website": "https://www.littleangeltheatre.com",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Highbury Leisure Centre",
         "category": "leisure-centre",
-        "address": "75 Drayton Park, N5 1BU",
-        "description": "Arsenal Football Club's home ground since 2006."
+        "address": "London",
+        "postcode": "N5 1QZ",
+        "latitude": 51.5476556,
+        "longitude": -0.1034201,
+        "website": "https://www.better.org.uk/leisure-centre/london/islington/highbury/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Fit4less Highbury & Islington",
+        "category": "leisure-centre",
+        "address": "555 Liverpool Road, London",
+        "postcode": "N7 8NP",
+        "latitude": 51.5504002,
+        "longitude": -0.1105849,
+        "website": "http://www.f4l.com/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Sobell Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Hornsey Road, London",
+        "postcode": "N7 7NY",
+        "latitude": 51.558896,
+        "longitude": -0.1121218,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Islington Tennis Centre and Gym",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N7 9NH",
+        "latitude": 51.5458622,
+        "longitude": -0.1217592,
+        "website": "https://www.better.org.uk/leisure-centre/london/islington/islingtontc/",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Cally Pool and Gym",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N1 0NH",
+        "latitude": 51.5383387,
+        "longitude": -0.1170227,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Shaolin Way",
+        "category": "leisure-centre",
+        "address": "84 Chapel Market, London",
+        "postcode": "N1 9EX",
+        "latitude": 51.5332763,
+        "longitude": -0.1099337,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Islington Central Library",
+        "category": "library",
+        "address": "Fieldway Crescent, London",
+        "postcode": "N5 1PF",
+        "latitude": 51.5491283,
+        "longitude": -0.1071278,
+        "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/central-library",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Mildmay Library",
+        "category": "library",
+        "address": "21-23 Mildmay Park, London",
+        "postcode": "N1 4NA",
+        "latitude": 51.5475764,
+        "longitude": -0.0843734,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "N4 Library",
+        "category": "library",
+        "address": "26 Blackstock Road, London",
+        "postcode": "N4 2DW",
+        "latitude": 51.5637894,
+        "longitude": -0.1036188,
+        "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/n4-library",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "South Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N1 2SL",
+        "latitude": 51.5390428,
+        "longitude": -0.0987829,
+        "website": "https://www.islington.gov.uk/Education/Libraries/Local/South.asp",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Cat and Mouse Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N7 0JN",
+        "latitude": 51.5526724,
+        "longitude": -0.125077,
+        "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/cat-and-mouse-library",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Islington North Library",
+        "category": "library",
+        "address": "Manor Gardens, London",
+        "postcode": "N7 6JX",
+        "latitude": 51.5604213,
+        "longitude": -0.1216695,
+        "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/north-library",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Quill Street play space",
+        "category": "playground",
+        "address": "",
+        "postcode": "N4 2AE",
+        "latitude": 51.559858,
+        "longitude": -0.1058947,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Vivian Comma Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N4 2BQ",
+        "latitude": 51.56163,
+        "longitude": -0.1011032,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "King Henry's Walk Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N1 4NX",
+        "latitude": 51.5476027,
+        "longitude": -0.0820837,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "The Hayward",
+        "category": "playground",
+        "address": "",
+        "postcode": "N7 9HJ",
+        "latitude": 51.5461999,
+        "longitude": -0.119781,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Pocket Playground",
+        "category": "playground",
+        "address": "2 Wicks Place, London",
+        "postcode": "N1 1XJ",
+        "latitude": 51.53824,
+        "longitude": -0.1030198,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Lumpy Hill Adventure Park",
+        "category": "playground",
+        "address": "",
+        "postcode": "N7 9NH",
+        "latitude": 51.5461006,
+        "longitude": -0.1209303,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Nags Head Market",
+        "category": "market",
+        "address": "22 Seven Sisters Road, London",
+        "postcode": "N7 6AG",
+        "latitude": 51.5582187,
+        "longitude": -0.1180036,
+        "website": "https://nagsheadmarket.com/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Camden Passage Antiques Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N1 8EF",
+        "latitude": 51.5346742,
+        "longitude": -0.1039502,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Yerbury Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N15 3XP",
+        "latitude": 51.5609092,
+        "longitude": -0.1305901,
+        "website": "https://www.yerburyfarmersmarket.com/",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Chapel Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N1 9ER",
+        "latitude": 51.5335036,
+        "longitude": -0.1087098,
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Exmouth Market",
+        "category": "market",
+        "address": "",
+        "postcode": "EC1R 4QE",
+        "latitude": 51.5257675,
+        "longitude": -0.1092021,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Whitecross Street Market",
+        "category": "market",
+        "address": "Whitecross Street, London",
+        "postcode": "EC1Y 8JN",
+        "latitude": 51.5235459,
+        "longitude": -0.093296,
+        "distanceKm": 3.4
       }
     ]
   },

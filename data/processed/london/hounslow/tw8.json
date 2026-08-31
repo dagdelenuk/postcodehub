@@ -4562,16 +4562,467 @@
   "places": {
     "places": [
       {
-        "name": "Chiswick House and Gardens",
-        "category": "community-hub",
-        "address": "Chiswick",
-        "description": "A celebrated 18th-century Palladian villa with historic landscape gardens."
+        "name": "Jubilee Chapel",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW8 0PP",
+        "latitude": 51.4885815,
+        "longitude": -0.3042996,
+        "distanceKm": 0.1
       },
       {
-        "name": "Syon House",
+        "name": "Methodist Chapel",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW8 0PD",
+        "latitude": 51.4871899,
+        "longitude": -0.3070771,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Brentford Free Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW8 8DL",
+        "latitude": 51.4856638,
+        "longitude": -0.3071968,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Ealing Road Baptist Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW8 0LS",
+        "latitude": 51.4888859,
+        "longitude": -0.3010694,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St Paul's Church",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW8 0PN",
+        "latitude": 51.4849411,
+        "longitude": -0.3059766,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Our Lady and St. John's",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "TW8 9JF",
+        "latitude": 51.4896495,
+        "longitude": -0.311761,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "St. Paul's Recreation Ground",
+        "category": "park",
+        "address": "",
+        "postcode": "TW8 0PL",
+        "latitude": 51.4855335,
+        "longitude": -0.3042259,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "The Butts",
+        "category": "park",
+        "address": "",
+        "postcode": "TW8 8BL",
+        "latitude": 51.484301,
+        "longitude": -0.3093041,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Carville Hall Park South",
+        "category": "park",
+        "address": "",
+        "postcode": "TW8 0BW",
+        "latitude": 51.4906339,
+        "longitude": -0.2964455,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Watermans Park",
+        "category": "park",
+        "address": "",
+        "postcode": "TW8 0BD",
+        "latitude": 51.4867265,
+        "longitude": -0.2952474,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Carville Hall Park North",
+        "category": "park",
+        "address": "",
+        "postcode": "TW8 9RD",
+        "latitude": 51.4922882,
+        "longitude": -0.2966005,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Green Dragon Lane Open Space",
+        "category": "park",
+        "address": "",
+        "postcode": "TW8 0DE",
+        "latitude": 51.4899425,
+        "longitude": -0.2941839,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Brentford Library",
+        "category": "library",
+        "address": "Boston Manor Road",
+        "postcode": "TW8 8DW",
+        "latitude": 51.4865829,
+        "longitude": -0.3075478,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Osterley Public Library",
+        "category": "library",
+        "address": "St. Marys Crescent, Hounslow",
+        "postcode": "TW7 4NB",
+        "latitude": 51.4823567,
+        "longitude": -0.3459183,
+        "website": "https://www.hounslow.info/libraries/",
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Isleworth Public Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW7 7EU",
+        "latitude": 51.4668026,
+        "longitude": -0.330159,
+        "distanceKm": 2.9
+      },
+      {
+        "name": "Chiswick Area Library",
+        "category": "library",
+        "address": "",
+        "postcode": "W4 2AB",
+        "latitude": 51.4917562,
+        "longitude": -0.2610858,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Hounslow Library",
+        "category": "library",
+        "address": "Bath Road",
+        "postcode": "TW3 3EB",
+        "latitude": 51.4684928,
+        "longitude": -0.3674686,
+        "website": "https://www.hounslowlibraries.org",
+        "distanceKm": 4.8
+      },
+      {
+        "name": "Heston Public Library",
+        "category": "library",
+        "address": "",
+        "postcode": "TW5 0LW",
+        "latitude": 51.4858289,
+        "longitude": -0.3753784,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "Watermans Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW8 0DS",
+        "latitude": 51.4858042,
+        "longitude": -0.2979129,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Everyman",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW8 8GL",
+        "latitude": 51.4827893,
+        "longitude": -0.307835,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Toll House",
+        "category": "culture",
+        "address": "",
+        "postcode": "TW8 8AQ",
+        "latitude": 51.4831341,
+        "longitude": -0.3113139,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "The Musical Museum",
+        "category": "culture",
+        "address": "399 Brentford High Street",
+        "postcode": "TW8 0DU",
+        "latitude": 51.4878667,
+        "longitude": -0.2931341,
+        "website": "https://www.musicalmuseum.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "London Museum of Water and Steam",
+        "category": "culture",
+        "address": "Green Dragon Lane, London",
+        "postcode": "TW8 0EN",
+        "latitude": 51.4889858,
+        "longitude": -0.2904058,
+        "website": "http://www.waterandsteam.org.uk",
+        "distanceKm": 1
+      },
+      {
+        "name": "Boston Manor",
+        "category": "culture",
+        "address": "Boston Manor Road, Brentford",
+        "postcode": "TW8 9JX",
+        "latitude": 51.4919748,
+        "longitude": -0.31854,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Watermans Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW8 0BD",
+        "latitude": 51.4868487,
+        "longitude": -0.295035,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Snakes and Ladders Outdoor Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW8 8HE",
+        "latitude": 51.4807002,
+        "longitude": -0.3091512,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Splash Zone",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW8 0EF",
+        "latitude": 51.4887953,
+        "longitude": -0.2903464,
+        "distanceKm": 1
+      },
+      {
+        "name": "Den Arena",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW7 4RH",
+        "latitude": 51.4860742,
+        "longitude": -0.3560588,
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Dukes Meadows Recreational Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "W4 2RJ",
+        "latitude": 51.4797902,
+        "longitude": -0.2533043,
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Kingsley Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "TW3 4AB",
+        "latitude": 51.4739534,
+        "longitude": -0.3559777,
+        "distanceKm": 3.8
+      },
+      {
+        "name": "203 (Brentford) Detachment ACF",
         "category": "community-hub",
-        "address": "Syon Park, Brentford, TW8 8JF",
-        "description": "The London home of the Duke of Northumberland for over 400 years, with interiors by Robert Adam."
+        "address": "Windmill Road, London",
+        "postcode": "W5 4BT",
+        "latitude": 51.4928021,
+        "longitude": -0.3132099,
+        "website": "https://armycadets.com/county/middlesex-and-north-west-london-sector-acf/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "The Rose Community Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW8 8NT",
+        "latitude": 51.4808708,
+        "longitude": -0.3192918,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Isleworth Public Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW7 7BG",
+        "latitude": 51.4688251,
+        "longitude": -0.325632,
+        "website": "http://www.fusion-lifestyle.com/centres/isleworth-public-hall/",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "St.Bridget's Parish Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW7 7EE",
+        "latitude": 51.4692509,
+        "longitude": -0.328057,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "3rd Osterley Sea Scouts",
+        "category": "community-hub",
+        "address": "Richmond Road",
+        "postcode": "TW7 7BU",
+        "latitude": 51.4656217,
+        "longitude": -0.3228763,
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Isleworth Congregational Church Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "TW7 6EL",
+        "latitude": 51.4675029,
+        "longitude": -0.3299813,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Topnotch health club",
+        "category": "leisure-centre",
+        "address": "1-2 Windsor Close,Great West Road, Brentford",
+        "postcode": "TW8 9DZ",
+        "latitude": 51.4858987,
+        "longitude": -0.3218898,
+        "website": "https://www.topnotchhealthclubs.com",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Brentford Fountain Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW8 0HJ",
+        "latitude": 51.4909974,
+        "longitude": -0.2847438,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Gunnersbury Park Sports Hub",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W5 4NH",
+        "latitude": 51.4985538,
+        "longitude": -0.2916419,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Goals Gillette Corner",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "TW7 5PX",
+        "latitude": 51.4875343,
+        "longitude": -0.3323685,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Gunnersbury Triangle Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W3 8ND",
+        "latitude": 51.5003079,
+        "longitude": -0.2816352,
+        "website": "https://www.gunnersburytriangleclub.org.uk",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "University of London Boat Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "W4 3TU",
+        "latitude": 51.481752,
+        "longitude": -0.2750003,
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Strand On The Green Post Office",
+        "category": "post-office",
+        "address": "Thames Road, London",
+        "postcode": "W4 3RE",
+        "latitude": 51.4866726,
+        "longitude": -0.2809207,
+        "website": "https://www.postoffice.co.uk/branch-finder/0640069/strand-on-the-green",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "295 Chiswick High Road, London",
+        "postcode": "W4 4HH",
+        "latitude": 51.492612,
+        "longitude": -0.2675824,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Isleworth Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "TW7 4BX",
+        "latitude": 51.4749909,
+        "longitude": -0.3378241,
+        "website": "https://www.postoffice.co.uk/branch-finder/1320254/isleworth",
+        "distanceKm": 2.7
+      },
+      {
+        "name": "Chiswick Post Office",
+        "category": "post-office",
+        "address": "1 Heathfield Terrace, London",
+        "postcode": "W4 4PH",
+        "latitude": 51.4916964,
+        "longitude": -0.26265,
+        "website": "https://www.postoffice.co.uk/branch-finder/1300067/chiswick",
+        "distanceKm": 3
+      },
+      {
+        "name": "Chiswick Delivery Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "W4 2FE",
+        "latitude": 51.4917323,
+        "longitude": -0.2626041,
+        "distanceKm": 3
+      },
+      {
+        "name": "Hounslow Post Office",
+        "category": "post-office",
+        "address": "173 High Street, Hounslow",
+        "postcode": "TW3 1QL",
+        "latitude": 51.4690799,
+        "longitude": -0.3606656,
+        "website": "https://www.postoffice.co.uk/branch-finder/0250252/hounslow",
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Chiswick Food market",
+        "category": "market",
+        "address": "",
+        "postcode": "W4 2RX",
+        "latitude": 51.4807318,
+        "longitude": -0.256159,
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Hounslow Heath Car Boot Sale",
+        "category": "market",
+        "address": "Staines Road, Hounslow",
+        "postcode": "TW4 5DL",
+        "latitude": 51.4609084,
+        "longitude": -0.3904797,
+        "website": "http://www.hounslowheathcarboot.co.uk/",
+        "distanceKm": 6.6
       }
     ]
   },

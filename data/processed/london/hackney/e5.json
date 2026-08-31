@@ -5358,16 +5358,526 @@
   "places": {
     "places": [
       {
-        "name": "Victoria Park",
-        "category": "park",
-        "address": "Hackney/Tower Hamlets border",
-        "description": "One of London's oldest public parks, opened in 1845 for the East End."
+        "name": "Alf Partridge MBE Community Hall",
+        "category": "community-hub",
+        "address": "Prout Road, London",
+        "postcode": "E5 9NR",
+        "latitude": 51.5596989,
+        "longitude": -0.0551481,
+        "distanceKm": 0.1
       },
       {
-        "name": "Hackney Empire",
+        "name": "The Mount Community Hall",
+        "category": "community-hub",
+        "address": "Mount Pleasant Lane, London",
+        "postcode": "E5 9DW",
+        "latitude": 51.5636487,
+        "longitude": -0.0573281,
+        "website": "https://hackney.gov.uk/community-hall-hire",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Nye Bevan Community Hall",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "E5 0AH",
+        "latitude": 51.5566591,
+        "longitude": -0.0414861,
+        "website": "https://communityhalls.hackney.gov.uk/venues/26-nye-bevan-community-hall/43-main-hall-nyeb",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Betaminds",
+        "category": "community-hub",
+        "address": "24 Lower Clapton Road, London",
+        "postcode": "E9 6DW",
+        "latitude": 51.5507691,
+        "longitude": -0.0517707,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "The New Pedro Club",
+        "category": "community-hub",
+        "address": "175 Rushmore Road, London",
+        "postcode": "E5 0HD",
+        "latitude": 51.5555628,
+        "longitude": -0.0406215,
+        "website": "https://pedroclub.com/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Lea View Community Hall",
+        "category": "community-hub",
+        "address": "Springfield Road, London",
+        "postcode": "E5 9EJ",
+        "latitude": 51.5680158,
+        "longitude": -0.0584097,
+        "distanceKm": 1
+      },
+      {
+        "name": "Madina Masjid",
+        "category": "place-of-worship",
+        "address": "2a Lea Bridge Road, London",
+        "postcode": "E5 9QD",
+        "latitude": 51.5582227,
+        "longitude": -0.0547024,
+        "website": "https://madina-masjid.org.uk/",
+        "distanceKm": 0.1
+      },
+      {
+        "name": "St James, Clapton",
+        "category": "place-of-worship",
+        "address": "Lower Clapton Road, London",
+        "postcode": "E5 8EG",
+        "latitude": 51.5573478,
+        "longitude": -0.0563866,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Tserha Tsion St Mary",
+        "category": "place-of-worship",
+        "address": "229 Lower Clapton Road, London",
+        "postcode": "E5 8EG",
+        "latitude": 51.5575895,
+        "longitude": -0.0563826,
+        "website": "https://tserhasion.org.uk",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Clapton Methodist Church",
+        "category": "place-of-worship",
+        "address": "Downs Road, London",
+        "postcode": "E5 8DS",
+        "latitude": 51.5560625,
+        "longitude": -0.0565218,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Open Doors Baptist Church",
+        "category": "place-of-worship",
+        "address": "Downs Road, London",
+        "postcode": "E5 8DS",
+        "latitude": 51.5554864,
+        "longitude": -0.0582244,
+        "website": "https://opendoorsbc.org.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The Salvation Army",
+        "category": "place-of-worship",
+        "address": "122 Lower Clapton Road, London",
+        "postcode": "E5 0QR",
+        "latitude": 51.5543878,
+        "longitude": -0.0536045,
+        "website": "https://www.salvationarmy.org.uk/clapton",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Clapton Pond",
+        "category": "park",
+        "address": "",
+        "postcode": "E5 0QH",
+        "latitude": 51.5564465,
+        "longitude": -0.0551517,
+        "website": "https://hackney.gov.uk/clapton-pond",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Millfields Park",
+        "category": "park",
+        "address": "Millfields Road, London",
+        "postcode": "E5 0AR",
+        "latitude": 51.5601616,
+        "longitude": -0.0472941,
+        "website": "https://hackney.gov.uk/millfields-park",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Clapton Square",
+        "category": "park",
+        "address": "",
+        "postcode": "E5 8HW",
+        "latitude": 51.5509909,
+        "longitude": -0.0538876,
+        "website": "https://hackney.gov.uk/clapton-square",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Hackney Downs",
+        "category": "park",
+        "address": "",
+        "postcode": "E5 8QP",
+        "latitude": 51.5537867,
+        "longitude": -0.062305,
+        "website": "https://hackney.gov.uk/hackney-downs",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Leyton Marsh",
+        "category": "park",
+        "address": "",
+        "postcode": "E5 9RR",
+        "latitude": 51.5655515,
+        "longitude": -0.0437223,
+        "distanceKm": 1
+      },
+      {
+        "name": "The Walled Garden",
+        "category": "park",
+        "address": "",
+        "postcode": "E8 1FW",
+        "latitude": 51.548619,
+        "longitude": -0.0529817,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Cell Studios",
+        "category": "culture",
+        "address": "Grosvenor Way, London",
+        "postcode": "E5 9NE",
+        "latitude": 51.5645281,
+        "longitude": -0.0531737,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Hackney showroom",
+        "category": "culture",
+        "address": "Amhurst Terrace, London",
+        "postcode": "E8 2BT",
+        "latitude": 51.5547769,
+        "longitude": -0.0675458,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Coachworks",
+        "category": "culture",
+        "address": "",
+        "postcode": "E8 2AA",
+        "latitude": 51.5507828,
+        "longitude": -0.0623515,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Castle Cinema",
+        "category": "culture",
+        "address": "64-66 Brooksby's Walk, London",
+        "postcode": "E9 6DA",
+        "latitude": 51.5513301,
+        "longitude": -0.0431931,
+        "website": "https://thecastlecinema.com/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Chats Palace",
+        "category": "culture",
+        "address": "42-44 Brooksby's Walk, London",
+        "postcode": "E9 6DF",
+        "latitude": 51.5502689,
+        "longitude": -0.0426032,
+        "website": "https://chatspalace.com/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Tower Theatre",
+        "category": "culture",
+        "address": "16 Northwold Road, London",
+        "postcode": "N16 7HR",
+        "latitude": 51.5628069,
+        "longitude": -0.0719688,
+        "website": "https://www.towertheatre.org.uk/tower.htm",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Clapton Library",
+        "category": "library",
+        "address": "Northwold Road, London",
+        "postcode": "E5 8RA",
+        "latitude": 51.5626967,
+        "longitude": -0.0598633,
+        "website": "https://hackney.gov.uk/clapton-library",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Homerton Library",
+        "category": "library",
+        "address": "Homerton High Street, London",
+        "postcode": "E9 6AS",
+        "latitude": 51.5489088,
+        "longitude": -0.0418302,
+        "website": "https://hackney.gov.uk/homerton-library",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Hackney Central Library",
+        "category": "library",
+        "address": "",
+        "postcode": "E8 1GR",
+        "latitude": 51.5446215,
+        "longitude": -0.0556753,
+        "website": "https://hackney.gov.uk/hackney-central-library",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Stamford Hill Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N16 6SB",
+        "latitude": 51.5704019,
+        "longitude": -0.0722133,
+        "website": "https://hackney.gov.uk/stamford-hill-library",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Lubavitch Lending Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N16 5RP",
+        "latitude": 51.5723472,
+        "longitude": -0.073831,
+        "distanceKm": 2
+      },
+      {
+        "name": "Dalston CLR James Library",
+        "category": "library",
+        "address": "Dalston Square, London",
+        "postcode": "E8 3BQ",
+        "latitude": 51.5460434,
+        "longitude": -0.0739135,
+        "website": "http://www.hackney.gov.uk/dalston-library.htm",
+        "distanceKm": 2
+      },
+      {
+        "name": "Upper Clapton Post Office",
+        "category": "post-office",
+        "address": "1 Mount Pleasant Lane, London",
+        "postcode": "E5 9DD",
+        "latitude": 51.5635885,
+        "longitude": -0.0580895,
+        "website": "https://www.postoffice.co.uk/branch-finder/1900021/upper-clapton",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Rushmore Road Post Office",
+        "category": "post-office",
+        "address": "195-197 Rushmore Road, London",
+        "postcode": "E5 0HD",
+        "latitude": 51.5557872,
+        "longitude": -0.0392668,
+        "website": "https://www.postoffice.co.uk/branch-finder/0570028/rushmore-road",
+        "distanceKm": 1
+      },
+      {
+        "name": "Dalston Lane Post Office",
+        "category": "post-office",
+        "address": "244 Dalston Lane, London",
+        "postcode": "E8 1JG",
+        "latitude": 51.5494022,
+        "longitude": -0.0587236,
+        "website": "https://www.postoffice.co.uk/branch-finder/072002x/dalston-lane",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Hackney Post Office",
+        "category": "post-office",
+        "address": "398-400 Mare Street, London",
+        "postcode": "E8 1HP",
+        "latitude": 51.5490565,
+        "longitude": -0.0549111,
+        "website": "https://www.postoffice.co.uk/branch-finder/1980025/hackney",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Stoke Newington Post Office",
+        "category": "post-office",
+        "address": "150 Stoke Newington High Street, London",
+        "postcode": "N16 7JP",
+        "latitude": 51.561116,
+        "longitude": -0.0736261,
+        "website": "https://www.postoffice.co.uk/branch-finder/2080044/stoke-newington",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "High Street Post Office",
+        "category": "post-office",
+        "address": "226-228 Homerton High Street, London",
+        "postcode": "E9 6AS",
+        "latitude": 51.5485851,
+        "longitude": -0.0405844,
+        "website": "https://www.postoffice.co.uk/branch-finder/0960020/high-street",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Hackney Downs Children Garden",
+        "category": "playground",
+        "address": "",
+        "postcode": "E5 8NP",
+        "latitude": 51.5535684,
+        "longitude": -0.0615685,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Pembury East - Yalding Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E5 8JP",
+        "latitude": 51.5519499,
+        "longitude": -0.0570053,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Melbourne Green Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E5 0JL",
+        "latitude": 51.5548637,
+        "longitude": -0.0382211,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "KIDS Adventure Play Hackney",
+        "category": "playground",
+        "address": "",
+        "postcode": "E5 9HQ",
+        "latitude": 51.5695421,
+        "longitude": -0.0545976,
+        "website": "https://www.kids.org.uk/hackney-adventure-playground1",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Homerton Grove Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "E9 6DJ",
+        "latitude": 51.549316,
+        "longitude": -0.0432409,
+        "website": "http://www.hackneyplay.org/homerton-grove/",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Banister House Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "E9 6BP",
+        "latitude": 51.5488397,
+        "longitude": -0.0453595,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Chatsworth Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E5 0LH",
+        "latitude": 51.5532437,
+        "longitude": -0.0446587,
+        "website": "https://hackney.gov.uk/chatsworth-road-market",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Growing Communities Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "N16 8DT",
+        "latitude": 51.5570333,
+        "longitude": -0.0742758,
+        "website": "https://growingcommunities.org/market",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Ridley Road Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E8 2NP",
+        "latitude": 51.5481428,
+        "longitude": -0.0730727,
+        "website": "https://hackney.gov.uk/ridley-road-market",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Netil Market",
+        "category": "market",
+        "address": "13-23 Westgate Street, London",
+        "postcode": "E8 3RL",
+        "latitude": 51.53757,
+        "longitude": -0.058638,
+        "website": "https://eatworkart.com/netil-market",
+        "distanceKm": 2.4
+      },
+      {
+        "name": "Broadway Market",
+        "category": "market",
+        "address": "",
+        "postcode": "E8 4PH",
+        "latitude": 51.5368612,
+        "longitude": -0.0615166,
+        "website": "https://broadwaymarket.co.uk",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Flea London",
+        "category": "market",
+        "address": "",
+        "postcode": "E15 2SJ",
+        "latitude": 51.5446055,
+        "longitude": -0.0211974,
+        "website": "https://www.flealondon.com/",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Hackney Marshes Pavilion",
         "category": "leisure-centre",
-        "address": "291 Mare Street, E8 1EJ",
-        "description": "A Grade II* listed Edwardian variety theatre, still a leading live entertainment venue today."
+        "address": "",
+        "postcode": "E5 0SW",
+        "latitude": 51.5578633,
+        "longitude": -0.0365418,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Muslceworks Gym",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "N16 7NA",
+        "latitude": 51.5594021,
+        "longitude": -0.0736253,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "London Fields Lido",
+        "category": "leisure-centre",
+        "address": "London Fields West Side, London",
+        "postcode": "E8 3EU",
+        "latitude": 51.5426434,
+        "longitude": -0.0614206,
+        "website": "https://www.better.org.uk/leisure-centre/london/hackney/london-fields-lido",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Hackney Marshes Centre",
+        "category": "leisure-centre",
+        "address": "Homerton Road, London",
+        "postcode": "E9 5PF",
+        "latitude": 51.5529426,
+        "longitude": -0.0255091,
+        "website": "https://www.better.org.uk/leisure-centre/london/hackney/hackney-marshes",
+        "distanceKm": 2
+      },
+      {
+        "name": "Clissold Leisure Centre",
+        "category": "leisure-centre",
+        "address": "63 Clissold Road, London",
+        "postcode": "N16 9EX",
+        "latitude": 51.5591296,
+        "longitude": -0.0856431,
+        "website": "http://www.better.org.uk/leisure/clissold-leisure-centre",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "Queensbridge Sports & Community Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "E8 3XW",
+        "latitude": 51.5422529,
+        "longitude": -0.0712494,
+        "distanceKm": 2.3
       }
     ]
   },

@@ -1,6 +1,10 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+import PlaceCard from "../../../../components/PlaceCard.astro";
+import PlacesFilters from "../../../../components/PlacesFilters.astro";
+import { displayPlaceName, getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { PLACE_CATEGORIES } from "../../../../lib/place-categories";
+import type { PlaceCategory } from "../../../../lib/types";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -10,13 +14,13 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.params;
 const { data } = Astro.props;
+const placeName = displayPlaceName(data.postTown, data.wards, data.city);
 
-const CATEGORY_LABELS: Record<string, string> = {
-  library: "Library",
-  park: "Park / Open space",
-  "leisure-centre": "Leisure centre",
-  "community-hub": "Community hub",
-};
+const counts: Partial<Record<PlaceCategory, number>> = {};
+for (const place of data.places.places) {
+  counts[place.category] = (counts[place.category] ?? 0) + 1;
+}
+const total = data.places.places.length;
 ---
 
 <LocalityLayout
@@ -25,24 +29,31 @@ const CATEGORY_LABELS: Record<string, string> = {
   boroughSlug={borough!}
   active="places"
   title={`Places in ${data.outcode}`}
-  description={`Parks, landmarks, and community hubs in the ${data.outcode} area.`}
+  description={`Parks, libraries, leisure centres, and community spaces in the ${data.outcode} area.`}
 >
-  <h1 class="text-2xl font-bold mb-6">Places in {data.outcode}</h1>
+  <h1 class="text-2xl font-bold mb-4">Places in {placeName} - {data.outcode} ({total})</h1>
 
-  <div class="grid gap-3 sm:grid-cols-2">
-    {
-      data.places.places.map((place) => (
-        <div class="rounded-lg border border-stone-200 bg-white p-4">
-          <div class="flex items-start justify-between gap-2">
-            <p class="font-medium">{place.name}</p>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-stone-100 text-stone-600 whitespace-nowrap">
-              {CATEGORY_LABELS[place.category] ?? place.category}
-            </span>
-          </div>
-          <p class="text-sm text-stone-500 mt-1">{place.address}</p>
-          <p class="text-sm text-stone-600 mt-2">{place.description}</p>
-        </div>
-      ))
-    }
-  </div>
+  <PlacesFilters counts={counts} />
+
+  {
+    PLACE_CATEGORIES.map((cat) => {
+      const items = data.places.places.filter((p) => p.category === cat.key);
+      return (
+        items.length > 0 && (
+          <section class="mb-8" data-place-type-block data-place-kind={cat.key}>
+            <h2 class="text-lg font-semibold mb-3">
+              {cat.label} ({items.length})
+            </h2>
+            <div class="grid gap-3 sm:grid-cols-2">
+              {items.map((place) => (
+                <PlaceCard place={place} />
+              ))}
+            </div>
+          </section>
+        )
+      );
+    })
+  }
+
+  <p class="text-xs text-stone-400 mt-4">Source: OpenStreetMap contributors.</p>
 </LocalityLayout>

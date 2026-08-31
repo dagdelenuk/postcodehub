@@ -5259,16 +5259,469 @@
   "places": {
     "places": [
       {
-        "name": "Raphael Park",
+        "name": "Cranham Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "RM14 1XL",
+        "latitude": 51.5618422,
+        "longitude": 0.2666598,
+        "website": "https://www.postoffice.co.uk/branch-finder/2020262/cranham",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Upminster Post Office",
+        "category": "post-office",
+        "address": "Station Road, Upminster",
+        "postcode": "RM14 2UB",
+        "latitude": 51.5572341,
+        "longitude": 0.2499383,
+        "website": "https://www.postoffice.co.uk/branch-finder/115026x/upminster",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Corbets Tey Post Office & Convenience Store",
+        "category": "post-office",
+        "address": "",
+        "postcode": "RM14 2DN",
+        "latitude": 51.5430445,
+        "longitude": 0.2519051,
+        "website": "https://www.postoffice.co.uk/branch-finder/0700266/corbets-tey",
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Minster Parade Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "RM11 3XB",
+        "latitude": 51.5593116,
+        "longitude": 0.2350761,
+        "website": "https://www.postoffice.co.uk/branch-finder/1000268/minster-parade",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Suttons Lane Post Office",
+        "category": "post-office",
+        "address": "11 Suttons Lane, Hornchurch",
+        "postcode": "RM12 6RD",
+        "latitude": 51.5535007,
+        "longitude": 0.2193416,
+        "website": "https://www.postoffice.co.uk/branch-finder/1160265/suttons-lane",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Harold Wood Post Office",
+        "category": "post-office",
+        "address": "",
+        "postcode": "RM3 0BP",
+        "latitude": 51.5936606,
+        "longitude": 0.233886,
+        "website": "https://www.postoffice.co.uk/branch-finder/0830267/harold-wood",
+        "distanceKm": 4.6
+      },
+      {
+        "name": "All Saints', Cranham",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM14 3YB",
+        "latitude": 51.5522787,
+        "longitude": 0.2661688,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Upminster Methodist Church",
+        "category": "place-of-worship",
+        "address": "Upminster",
+        "postcode": "RM14 1AE",
+        "latitude": 51.5597805,
+        "longitude": 0.2514679,
+        "website": "http://www.upminstermethodistchurch.org/",
+        "distanceKm": 1
+      },
+      {
+        "name": "Trinity United Reformed Church",
+        "category": "place-of-worship",
+        "address": "Station Road, Upminster",
+        "postcode": "RM14 2SJ",
+        "latitude": 51.5576346,
+        "longitude": 0.2494622,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "St Luke's Cranham",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM14 1LD",
+        "latitude": 51.5675935,
+        "longitude": 0.267718,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Upminster Baptist Church",
+        "category": "place-of-worship",
+        "address": "Upminster",
+        "postcode": "RM14 3EH",
+        "latitude": 51.5533045,
+        "longitude": 0.2491772,
+        "website": "https://www.upminsterbaptists.co.uk/",
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Church of Saint Laurence",
+        "category": "place-of-worship",
+        "address": "",
+        "postcode": "RM14 2BB",
+        "latitude": 51.5557679,
+        "longitude": 0.2479447,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Cranham Social Hall",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "RM14 1XN",
+        "latitude": 51.5629253,
+        "longitude": 0.2661892,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "The Old Chapel",
+        "category": "community-hub",
+        "address": "Upminster",
+        "postcode": "RM14 2QP",
+        "latitude": 51.5570578,
+        "longitude": 0.2436556,
+        "website": "https://sacredheartofmary.net/about/the-old-chapel/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Havering Association for People with Disabilities",
+        "category": "community-hub",
+        "address": "1a Woodhall Crescent, Hornchurch",
+        "postcode": "RM11 3NN",
+        "latitude": 51.5629126,
+        "longitude": 0.2336111,
+        "website": "https://www.hadhavering.co.uk/",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Robert Beard Youth Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "RM11 3XU",
+        "latitude": 51.5613924,
+        "longitude": 0.2258345,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Royal British Legion",
+        "category": "community-hub",
+        "address": "Hornchurch",
+        "postcode": "RM11 3XT",
+        "latitude": 51.5615556,
+        "longitude": 0.2235983,
+        "distanceKm": 3
+      },
+      {
+        "name": "North Street Hall",
+        "category": "community-hub",
+        "address": "Hornchurch",
+        "postcode": "RM11 1QX",
+        "latitude": 51.5634018,
+        "longitude": 0.2205315,
+        "website": "https://www.parishofhornchurch.co.uk/hall-and-church-hire/north-street-hall-hire-details-and-availability/",
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Clockhouse Gardens",
         "category": "park",
+        "address": "",
+        "postcode": "RM14 3DU",
+        "latitude": 51.556101,
+        "longitude": 0.2544466,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Upminster Hall Playing Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "RM14 1RD",
+        "latitude": 51.5678223,
+        "longitude": 0.2604203,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Cranham Brickfields",
+        "category": "park",
+        "address": "",
+        "postcode": "RM14 1JA",
+        "latitude": 51.5656561,
+        "longitude": 0.2791497,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Upminster Park",
+        "category": "park",
+        "address": "",
+        "postcode": "RM14 2BE",
+        "latitude": 51.5549806,
+        "longitude": 0.2457552,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Upminster Windmill Field",
+        "category": "park",
+        "address": "",
+        "postcode": "RM14 2QL",
+        "latitude": 51.5576181,
+        "longitude": 0.2447206,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Parklands",
+        "category": "park",
+        "address": "",
+        "postcode": "RM14 2EX",
+        "latitude": 51.5428732,
+        "longitude": 0.2453973,
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Upminster Tithe Barn",
+        "category": "culture",
+        "address": "Upminster",
+        "postcode": "RM14 1AU",
+        "latitude": 51.5668265,
+        "longitude": 0.2569675,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Queen's Theatre",
+        "category": "culture",
+        "address": "Hornchurch",
+        "postcode": "RM11 1QT",
+        "latitude": 51.5651958,
+        "longitude": 0.2194491,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Fairkytes Arts Centre",
+        "category": "culture",
+        "address": "",
+        "postcode": "RM11 1AX",
+        "latitude": 51.5650064,
+        "longitude": 0.2181857,
+        "distanceKm": 3.4
+      },
+      {
+        "name": "RAF Hornchurch Heritage Centre",
+        "category": "culture",
+        "address": "119,121 Suttons Lane",
+        "postcode": "RM12 6RU",
+        "latitude": 51.5458709,
+        "longitude": 0.2159911,
+        "website": "https://rafhornchurch.com/",
+        "distanceKm": 3.7
+      },
+      {
+        "name": "Brookside Theatre",
+        "category": "culture",
         "address": "Romford",
-        "description": "A Victorian park with a boating lake, adjoining the historic Gidea Park estate."
+        "postcode": "RM1 3NH",
+        "latitude": 51.5761504,
+        "longitude": 0.1852421,
+        "distanceKm": 6
+      },
+      {
+        "name": "Lumiere Cinema Romford",
+        "category": "culture",
+        "address": "Mercury Shopping Centre, Romford",
+        "postcode": "RM1 3EE",
+        "latitude": 51.5794872,
+        "longitude": 0.1852042,
+        "website": "https://www.lumiereromford.com/",
+        "distanceKm": 6.1
+      },
+      {
+        "name": "Upminster Library",
+        "category": "library",
+        "address": "Corbets Tey Road, Upminster",
+        "postcode": "RM14 2AP",
+        "latitude": 51.5551405,
+        "longitude": 0.2481435,
+        "website": "https://libraries.havering.gov.uk/digital-content/libraries/find-a-library/upminster-library",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Hornchurch Library",
+        "category": "library",
+        "address": "Hornchurch",
+        "postcode": "RM11 1TB",
+        "latitude": 51.5649049,
+        "longitude": 0.2205614,
+        "distanceKm": 3.3
+      },
+      {
+        "name": "Harold Wood Library",
+        "category": "library",
+        "address": "",
+        "postcode": "RM3 0NX",
+        "latitude": 51.5945193,
+        "longitude": 0.2354511,
+        "distanceKm": 4.7
+      },
+      {
+        "name": "Elm Park Library",
+        "category": "library",
+        "address": "St Nicholas Avenue, Hornchurch",
+        "postcode": "RM12 4PT",
+        "latitude": 51.5525155,
+        "longitude": 0.1985386,
+        "distanceKm": 4.7
+      },
+      {
+        "name": "Gidea Park Library",
+        "category": "library",
+        "address": "168 Balgores Lane, Gidea Park, Romford",
+        "postcode": "RM2 6BS",
+        "latitude": 51.5799892,
+        "longitude": 0.2058978,
+        "distanceKm": 4.9
+      },
+      {
+        "name": "South Hornchurch Library",
+        "category": "library",
+        "address": "Rainham",
+        "postcode": "RM13 7RD",
+        "latitude": 51.5302137,
+        "longitude": 0.1875596,
+        "distanceKm": 6.2
+      },
+      {
+        "name": "Cranston Park Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM14 3XR",
+        "latitude": 51.5481115,
+        "longitude": 0.2503034,
+        "website": "https://www.cranstonpark.co.uk/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Abbs Cross Sports and Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM12 4YB",
+        "latitude": 51.552863,
+        "longitude": 0.208055,
+        "distanceKm": 4
+      },
+      {
+        "name": "Teenage Area",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM3 0TD",
+        "latitude": 51.5876373,
+        "longitude": 0.2361406,
+        "distanceKm": 4
+      },
+      {
+        "name": "Abbs Cross Swimming Pool",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM12 4YB",
+        "latitude": 51.552595,
+        "longitude": 0.207887,
+        "distanceKm": 4
+      },
+      {
+        "name": "Harrow Lodge Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Hornchurch",
+        "postcode": "RM11 1JU",
+        "latitude": 51.5620803,
+        "longitude": 0.2063799,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Girls Allowed",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "RM12 5RX",
+        "latitude": 51.5436397,
+        "longitude": 0.2074668,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Harold Wood Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM3 0NB",
+        "latitude": 51.587806,
+        "longitude": 0.2388275,
+        "distanceKm": 3.9
+      },
+      {
+        "name": "Harrow Lodge Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM12 4XL",
+        "latitude": 51.5604308,
+        "longitude": 0.207714,
+        "distanceKm": 4
+      },
+      {
+        "name": "Harrow Lodge Park Parkour Facility",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM11 1JU",
+        "latitude": 51.5617882,
+        "longitude": 0.2073344,
+        "distanceKm": 4.1
+      },
+      {
+        "name": "Harrow Lodge Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM12 4EQ",
+        "latitude": 51.5540315,
+        "longitude": 0.1918876,
+        "distanceKm": 5.1
+      },
+      {
+        "name": "Grenfell Park Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM12 4DQ",
+        "latitude": 51.5648894,
+        "longitude": 0.1859681,
+        "distanceKm": 5.6
+      },
+      {
+        "name": "Kidspace Romford",
+        "category": "playground",
+        "address": "",
+        "postcode": "RM1 1AU",
+        "latitude": 51.5746374,
+        "longitude": 0.1793634,
+        "distanceKm": 6.3
       },
       {
         "name": "Romford Market",
-        "category": "community-hub",
-        "address": "Market Place, Romford, RM1 3AB",
-        "description": "An outdoor market trading since a royal charter of 1247, still held several days a week."
+        "category": "market",
+        "address": "",
+        "postcode": "RM1 3AB",
+        "latitude": 51.5793142,
+        "longitude": 0.1819783,
+        "distanceKm": 6.3
+      },
+      {
+        "name": "Willow Farm Car Boot Sale",
+        "category": "market",
+        "address": "",
+        "postcode": "RM13 9ED",
+        "latitude": 51.5056828,
+        "longitude": 0.2280334,
+        "distanceKm": 6.3
       }
     ]
   },

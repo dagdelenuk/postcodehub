@@ -4389,16 +4389,524 @@
   "places": {
     "places": [
       {
-        "name": "Natural History Museum",
-        "category": "community-hub",
-        "address": "South Kensington",
-        "description": "One of the world's great natural history collections, housed in a landmark Victorian building."
+        "name": "St. John's Church",
+        "category": "place-of-worship",
+        "address": "Ladbroke Grove, London",
+        "postcode": "W11 2NP",
+        "latitude": 51.5106354,
+        "longitude": -0.2057641,
+        "website": "https://stjohnsnottinghill.com/",
+        "distanceKm": 0.2
       },
       {
-        "name": "Science Museum",
+        "name": "St Peter's",
+        "category": "place-of-worship",
+        "address": "90 Kensington Park Road, London",
+        "postcode": "W11 2PL",
+        "latitude": 51.5127162,
+        "longitude": -0.2026834,
+        "website": "https://www.stpetersnottinghill.org.uk/",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Notting Hill Community Church",
+        "category": "place-of-worship",
+        "address": "Kensington Park Road, London",
+        "postcode": "W11 2ES",
+        "latitude": 51.5153025,
+        "longitude": -0.2052629,
+        "website": "http://www.nhcc.org.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "The Salvation Army",
+        "category": "place-of-worship",
+        "address": "205 Portobello Road, London",
+        "postcode": "W11 1LU",
+        "latitude": 51.5160817,
+        "longitude": -0.2054281,
+        "website": "https://www.salvationarmy.org.uk/notting-hill",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "St Francis of Assisi Catholic Church",
+        "category": "place-of-worship",
+        "address": "Pottery Lane, London",
+        "postcode": "W11 4NQ",
+        "latitude": 51.5097914,
+        "longitude": -0.2107919,
+        "website": "https://www.stfrancisnottinghill.org.uk/",
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Serbian Orthodox Church of St. Sava",
+        "category": "place-of-worship",
+        "address": "89 Lancaster Road, London",
+        "postcode": "W11 1QQ",
+        "latitude": 51.5167544,
+        "longitude": -0.2087081,
+        "website": "http://www.spclondon.org/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Clarendon Road Post Office",
+        "category": "post-office",
+        "address": "109 Clarendon Road, London",
+        "postcode": "W11 4JG",
+        "latitude": 51.5122682,
+        "longitude": -0.2110157,
+        "website": "https://www.postoffice.co.uk/branch-finder/1480065/clarendon-road",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Ladbroke Grove Post Office",
+        "category": "post-office",
+        "address": "116 Ladbroke Grove, London",
+        "postcode": "W10 5NE",
+        "latitude": 51.5171376,
+        "longitude": -0.2096292,
+        "website": "https://www.postoffice.co.uk/branch-finder/1000063/ladbroke-grove",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Kensington Church Street Post Office",
+        "category": "post-office",
+        "address": "190 Kensington Church Street, London",
+        "postcode": "W8 4DS",
+        "latitude": 51.5086632,
+        "longitude": -0.1948962,
+        "website": "https://www.postoffice.co.uk/branch-finder/1330063/kensington-church-street",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Mail Boxes Etc.",
+        "category": "post-office",
+        "address": "22 Notting Hill Gate, London",
+        "postcode": "W11 3JE",
+        "latitude": 51.5096806,
+        "longitude": -0.1937988,
+        "distanceKm": 1
+      },
+      {
+        "name": "Portobello Road Post Office",
+        "category": "post-office",
+        "address": "325 Portobello Road, London",
+        "postcode": "W10 5SY",
+        "latitude": 51.5209234,
+        "longitude": -0.2096378,
+        "website": "https://www.postoffice.co.uk/branch-finder/103006x/portobello-road",
+        "distanceKm": 1
+      },
+      {
+        "name": "Russell Gardens Post Office",
+        "category": "post-office",
+        "address": "11B Russell Gardens, London",
+        "postcode": "W14 8EZ",
+        "latitude": 51.5001477,
+        "longitude": -0.2108462,
+        "website": "https://www.postoffice.co.uk/branch-finder/1510061/russell-gardens",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Longlands Court Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W11 2QG",
+        "latitude": 51.5132833,
+        "longitude": -0.2022923,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "Pathfinder Project",
+        "category": "playground",
+        "address": "",
+        "postcode": "W11 1AR",
+        "latitude": 51.5186755,
+        "longitude": -0.2054758,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "nature play garden",
+        "category": "playground",
+        "address": "",
+        "postcode": "W14 8EP",
+        "latitude": 51.5031219,
+        "longitude": -0.20702,
+        "distanceKm": 1
+      },
+      {
+        "name": "Adventure Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W14 8EL",
+        "latitude": 51.5022537,
+        "longitude": -0.206106,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Princess Diana Memorial Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W2 4RU",
+        "latitude": 51.5090522,
+        "longitude": -0.1881889,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Russell Road Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "W14 8GE",
+        "latitude": 51.4997978,
+        "longitude": -0.2119998,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Avondale Park",
+        "category": "park",
+        "address": "",
+        "postcode": "W11 4PP",
+        "latitude": 51.5105681,
+        "longitude": -0.2127591,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Colville Square Gardens",
+        "category": "park",
+        "address": "Colville Square, London",
+        "postcode": "W11 2BD",
+        "latitude": 51.5156713,
+        "longitude": -0.2037415,
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Powis Square",
+        "category": "park",
+        "address": "",
+        "postcode": "W11 2BN",
+        "latitude": 51.5161233,
+        "longitude": -0.2013423,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Maxilla Walk",
+        "category": "park",
+        "address": "",
+        "postcode": "W10 6JB",
+        "latitude": 51.5166717,
+        "longitude": -0.2150626,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Portobello Green",
+        "category": "park",
+        "address": "",
+        "postcode": "W10 5XL",
+        "latitude": 51.518495,
+        "longitude": -0.2084452,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Tavistock Road Gardens",
+        "category": "park",
+        "address": "",
+        "postcode": "W11 1AE",
+        "latitude": 51.5188529,
+        "longitude": -0.2052573,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Electric Cinema",
+        "category": "culture",
+        "address": "191 Portobello Road, London",
+        "postcode": "W11 2ED",
+        "latitude": 51.5155295,
+        "longitude": -0.2050653,
+        "distanceKm": 0.4
+      },
+      {
+        "name": "Museum of Brands",
+        "category": "culture",
+        "address": "111-117 Lancaster Road, London",
+        "postcode": "W11 1QT",
+        "latitude": 51.5162502,
+        "longitude": -0.2109988,
+        "website": "https://museumofbrands.com/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "The Coronet Theatre",
+        "category": "culture",
+        "address": "103 Notting Hill Gate, London",
+        "postcode": "W11 3LB",
+        "latitude": 51.5085434,
+        "longitude": -0.1981366,
+        "website": "https://www.coronet.org/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Opera Holland Park",
+        "category": "culture",
+        "address": "",
+        "postcode": "W8 6LU",
+        "latitude": 51.5023041,
+        "longitude": -0.2021397,
+        "website": "http://www.ohp.rbkc.gov.uk/",
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Design Museum",
+        "category": "culture",
+        "address": "224-238 Kensington High Street, London",
+        "postcode": "W8 6AG",
+        "latitude": 51.4998875,
+        "longitude": -0.2001738,
+        "website": "https://designmuseum.org/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "The Playground Theatre, Cafe and Bar",
+        "category": "culture",
+        "address": "8 Latimer Industrial Estate, London",
+        "postcode": "W10 6RQ",
+        "latitude": 51.5177786,
+        "longitude": -0.2244145,
+        "website": "https://theplaygroundtheatre.london/",
+        "distanceKm": 1.4
+      },
+      {
+        "name": "Portobello Market",
+        "category": "market",
+        "address": "Portobello Road, London",
+        "postcode": "W11 1LU",
+        "latitude": 51.5160858,
+        "longitude": -0.2051174,
+        "website": "https://www.portobelloroad.co.uk/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Portobello Green Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W10 5XL",
+        "latitude": 51.5182451,
+        "longitude": -0.2089919,
+        "website": "https://www.portobellofashionmarket.co.uk/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Notting Hill Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W8 7LX",
+        "latitude": 51.5084879,
+        "longitude": -0.1956314,
+        "website": "https://www.lfm.org.uk/markets/notting-hill/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Ladbroke Grove Farmers' Market",
+        "category": "market",
+        "address": "",
+        "postcode": "W10 5SX",
+        "latitude": 51.5200764,
+        "longitude": -0.209521,
+        "distanceKm": 0.9
+      },
+      {
+        "name": "High Street Kensington Farmers' Market",
+        "category": "market",
+        "address": "Phillimore Walk, London",
+        "postcode": "W8 7RX",
+        "latitude": 51.5012358,
+        "longitude": -0.1942248,
+        "website": "https://www.lfm.org.uk/markets/high-street-kensington/",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "South Kensington (Saturdays) Farmers' Market",
+        "category": "market",
+        "address": "Bute Street, London",
+        "postcode": "SW7 3EY",
+        "latitude": 51.4936007,
+        "longitude": -0.1763468,
+        "distanceKm": 3
+      },
+      {
+        "name": "Kensington Leisure Centre",
+        "category": "leisure-centre",
+        "address": "Silchester Road, London",
+        "postcode": "W10 6EX",
+        "latitude": 51.5136371,
+        "longitude": -0.214057,
+        "website": "https://www.better.org.uk/leisure-centre/london/kensington-and-chelsea/kensington-leisure-centre",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Westway Sports & Fitness",
+        "category": "leisure-centre",
+        "address": "3-5 Thorpe Close, London",
+        "postcode": "W10 5XL",
+        "latitude": 51.5182897,
+        "longitude": -0.2084052,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Holland Park Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "1 Addison Road, London",
+        "postcode": "W11 4UT",
+        "latitude": 51.5051314,
+        "longitude": -0.2101194,
+        "website": "https://hollandparkltc.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Campden Hill Lawn Tennis Club",
+        "category": "leisure-centre",
+        "address": "9 Aubrey Walk, London",
+        "postcode": "W8 7JH",
+        "latitude": 51.5059014,
+        "longitude": -0.2010862,
+        "website": "https://chltc.co.uk/",
+        "distanceKm": 0.8
+      },
+      {
+        "name": "BaySixty6",
+        "category": "leisure-centre",
+        "address": "Acklam Road, London",
+        "postcode": "W10 5YU",
+        "latitude": 51.520517,
+        "longitude": -0.2048623,
+        "website": "https://baysixty6.com",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Westway Sports Centre",
+        "category": "leisure-centre",
+        "address": "1 Crowthorne Road, London",
+        "postcode": "W10 6RP",
+        "latitude": 51.5155273,
+        "longitude": -0.2207132,
+        "website": "https://www.everyoneactive.com/centre/westway-sports-fitness-centre",
+        "distanceKm": 1
+      },
+      {
+        "name": "North Kensington Library",
+        "category": "library",
+        "address": "108 Ladbroke Grove, London",
+        "postcode": "W11 1PZ",
+        "latitude": 51.5166797,
+        "longitude": -0.2092315,
+        "website": "https://www.northkensingtonlibrary.org/",
+        "distanceKm": 0.5
+      },
+      {
+        "name": "Notting Hill Gate Library",
+        "category": "library",
+        "address": "1 Pembridge Square, London",
+        "postcode": "W2 4EW",
+        "latitude": 51.5113479,
+        "longitude": -0.1974346,
+        "website": "https://www.rbkc.gov.uk/libraries/your-library/find-library/notting-hill-gate-library",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "Kensal Library",
+        "category": "library",
+        "address": "20 Golborne Road, London",
+        "postcode": "W10 5PW",
+        "latitude": 51.5238653,
+        "longitude": -0.2068063,
+        "website": "https://www.rbkc.gov.uk/libraries/your-library/find-library/kensal-library",
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Kensington Central Library",
+        "category": "library",
+        "address": "12 Phillimore Walk, London",
+        "postcode": "W8 7RX",
+        "latitude": 51.5014344,
+        "longitude": -0.1944214,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Dana Research Centre and Library",
+        "category": "library",
+        "address": "165 Queen's Gate, London",
+        "postcode": "SW7 5HD",
+        "latitude": 51.4971028,
+        "longitude": -0.1790422,
+        "website": "https://www.sciencemuseum.org.uk/researchers/dana-research-centre-and-library",
+        "distanceKm": 2.6
+      },
+      {
+        "name": "Brompton Library",
+        "category": "library",
+        "address": "208 Old Brompton Road, London",
+        "postcode": "SW5 0BS",
+        "latitude": 51.4900365,
+        "longitude": -0.1882974,
+        "distanceKm": 2.8
+      },
+      {
+        "name": "The Tabernacle",
         "category": "community-hub",
-        "address": "Exhibition Road, SW7 2DD",
-        "description": "One of the world's leading science museums, part of South Kensington's cluster of free national museums."
+        "address": "35 Powis Square, London",
+        "postcode": "W11 2AY",
+        "latitude": 51.5170717,
+        "longitude": -0.2019261,
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Ukrainian Institute in London",
+        "category": "community-hub",
+        "address": "79 Holland Park, London",
+        "postcode": "W11 3RW",
+        "latitude": 51.5073338,
+        "longitude": -0.2038085,
+        "website": "https://ukrainianinstitute.org.uk/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "The ClementJames Centre",
+        "category": "community-hub",
+        "address": "95 Sirdar Road",
+        "postcode": "W11 4EQ",
+        "latitude": 51.5118602,
+        "longitude": -0.2156835,
+        "website": "https://clementjames.org/",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "AUGB London",
+        "category": "community-hub",
+        "address": "154 Holland Park Avenue, London",
+        "postcode": "W11 4PY",
+        "latitude": 51.5060107,
+        "longitude": -0.2109806,
+        "website": "https://augb-london.business.site/",
+        "distanceKm": 0.7
+      },
+      {
+        "name": "The Harrow Club",
+        "category": "community-hub",
+        "address": "187 Freston Road, London",
+        "postcode": "W10 6TT",
+        "latitude": 51.5131385,
+        "longitude": -0.2200343,
+        "website": "https://www.harrowclubw10.org/",
+        "distanceKm": 0.9
+      },
+      {
+        "name": "Al Manaar Muslim Cultural Heritage Centre",
+        "category": "community-hub",
+        "address": "244 Acklam Road, London",
+        "postcode": "W10 5YG",
+        "latitude": 51.521567,
+        "longitude": -0.2037021,
+        "website": "https://almanaar.org.uk/",
+        "distanceKm": 1.1
       }
     ]
   },

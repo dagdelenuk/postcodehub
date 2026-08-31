@@ -8976,16 +8976,468 @@
   "places": {
     "places": [
       {
-        "name": "RAF Museum London",
-        "category": "community-hub",
-        "address": "Hendon",
-        "description": "The Royal Air Force's national museum, built around historic Hendon Aerodrome."
+        "name": "London Fatwa Council",
+        "category": "place-of-worship",
+        "address": "9 Sheaveshill Avenue, London",
+        "postcode": "NW9 6RS",
+        "latitude": 51.5882762,
+        "longitude": -0.2514944,
+        "website": "https://londonfatwacouncil.org/",
+        "distanceKm": 0.2
       },
       {
-        "name": "Hadley Highstone",
+        "name": "Colindale Church",
+        "category": "place-of-worship",
+        "address": "Varley Parade, Edgware Road, London",
+        "postcode": "NW9 6RR",
+        "latitude": 51.5879647,
+        "longitude": -0.2514385,
+        "distanceKm": 0.2
+      },
+      {
+        "name": "Colindale Church (Back Hall)",
+        "category": "place-of-worship",
+        "address": "Colin Close, London",
+        "postcode": "NW9 6RT",
+        "latitude": 51.5881155,
+        "longitude": -0.2510365,
+        "distanceKm": 0.3
+      },
+      {
+        "name": "St Matthias Colindale",
+        "category": "place-of-worship",
+        "address": "London",
+        "postcode": "NW9 6QS",
+        "latitude": 51.5863437,
+        "longitude": -0.2451345,
+        "distanceKm": 0.7
+      },
+      {
+        "name": "St Alphage, Hendon",
+        "category": "place-of-worship",
+        "address": "5 Montrose Avenue, Edgware",
+        "postcode": "HA8 0DN",
+        "latitude": 51.598555,
+        "longitude": -0.2629065,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Sri Jeya Veera Hanuman Temple",
+        "category": "place-of-worship",
+        "address": "201 West Hendon Broadway, London",
+        "postcode": "NW9 7DE",
+        "latitude": 51.5781918,
+        "longitude": -0.24058,
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Colindale Avenue Post Office",
+        "category": "post-office",
+        "address": "Colindale Avenue, London",
+        "postcode": "NW9 5EP",
+        "latitude": 51.5936362,
+        "longitude": -0.2545131,
+        "website": "https://www.postoffice.co.uk/branch-finder/1110055/colindale-avenue",
+        "distanceKm": 0.6
+      },
+      {
+        "name": "Watling Post Office",
+        "category": "post-office",
+        "address": "Edgware",
+        "postcode": "HA8 0BE",
+        "latitude": 51.6005187,
+        "longitude": -0.2669548,
+        "website": "https://www.postoffice.co.uk/branch-finder/271020x/watling",
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Hendon Central Post Office",
+        "category": "post-office",
+        "address": "58 Vivian Avenue",
+        "postcode": "NW4 3XJ",
+        "latitude": 51.5826066,
+        "longitude": -0.2302878,
+        "website": "https://www.postoffice.co.uk/branch-finder/0650056/hendon-central",
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Hendon Post Office",
+        "category": "post-office",
+        "address": "Brent Street, London",
+        "postcode": "NW4 4BY",
+        "latitude": 51.5880012,
+        "longitude": -0.2215883,
+        "website": "https://www.postoffice.co.uk/branch-finder/1020056/hendon",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "Deansbrook Road Post Office",
+        "category": "post-office",
+        "address": "Edgware",
+        "postcode": "HA8 9BU",
+        "latitude": 51.6105625,
+        "longitude": -0.2579929,
+        "website": "https://www.postoffice.co.uk/branch-finder/2800209/deansbrook-road",
+        "distanceKm": 2.5
+      },
+      {
+        "name": "Mill Hill Post Office",
+        "category": "post-office",
+        "address": "The Broadway, London",
+        "postcode": "NW7 3DG",
+        "latitude": 51.6145881,
+        "longitude": -0.2479059,
+        "website": "https://www.postoffice.co.uk/branch-finder/1030051/mill-hill",
+        "distanceKm": 3
+      },
+      {
+        "name": "Colindale Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW9 4BB",
+        "latitude": 51.5941239,
+        "longitude": -0.2492956,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Rushgrove Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW9 6RD",
+        "latitude": 51.5889384,
+        "longitude": -0.2435107,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "Silver Jubilee Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW9 7JA",
+        "latitude": 51.5813788,
+        "longitude": -0.2553532,
+        "distanceKm": 0.8
+      },
+      {
+        "name": "West Hendon Playing Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "NW9 7HE",
+        "latitude": 51.5791038,
+        "longitude": -0.2515729,
+        "distanceKm": 1
+      },
+      {
+        "name": "Montrose Playing Fields",
+        "category": "park",
+        "address": "",
+        "postcode": "NW9 5TF",
+        "latitude": 51.5977691,
+        "longitude": -0.2562371,
+        "distanceKm": 1.1
+      },
+      {
+        "name": "Malcolm Park",
+        "category": "park",
+        "address": "",
+        "postcode": "NW4 4HP",
+        "latitude": 51.5834628,
+        "longitude": -0.2376004,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "Colindale Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW9 4BR",
+        "latitude": 51.5972668,
+        "longitude": -0.2457198,
+        "distanceKm": 1.2
+      },
+      {
+        "name": "Hendon Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW4 4BQ",
+        "latitude": 51.5885771,
+        "longitude": -0.2288779,
+        "distanceKm": 1.8
+      },
+      {
+        "name": "Mill Hill Library",
+        "category": "library",
+        "address": "",
+        "postcode": "NW7 4RU",
+        "latitude": 51.6153882,
+        "longitude": -0.243064,
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Edgware Library",
+        "category": "library",
+        "address": "Edgware",
+        "postcode": "HA8 8NN",
+        "latitude": 51.6162547,
+        "longitude": -0.2740086,
+        "distanceKm": 3.4
+      },
+      {
+        "name": "Golders Green Library",
+        "category": "library",
+        "address": "156 Golders Green Road, London",
+        "postcode": "NW11 8HE",
+        "latitude": 51.5747425,
+        "longitude": -0.2017428,
+        "distanceKm": 4
+      },
+      {
+        "name": "Church End Library",
+        "category": "library",
+        "address": "",
+        "postcode": "N3 2TX",
+        "latitude": 51.5999559,
+        "longitude": -0.1950956,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Unitas Youth Zone",
         "category": "community-hub",
-        "address": "Great North Road, Monken Hadley, EN5 4QQ",
-        "description": "An 18th-century obelisk marking the site of the 1471 Battle of Barnet, a decisive clash in the Wars of the Roses."
+        "address": "Edgware",
+        "postcode": "HA8 0DT",
+        "latitude": 51.5995876,
+        "longitude": -0.2575556,
+        "distanceKm": 1.3
+      },
+      {
+        "name": "St Patrick's Centre",
+        "category": "community-hub",
+        "address": "West Hendon Broadway, London",
+        "postcode": "NW9 7EB",
+        "latitude": 51.5773499,
+        "longitude": -0.2398286,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Canon Smyth Parish Centre",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "HA8 0HH",
+        "latitude": 51.602417,
+        "longitude": -0.2610136,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Grahame Park Community Centre",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW9 5XS",
+        "latitude": 51.6015083,
+        "longitude": -0.2447388,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "The Old Library",
+        "category": "community-hub",
+        "address": "London",
+        "postcode": "NW9 5XA",
+        "latitude": 51.6017968,
+        "longitude": -0.2450715,
+        "website": "https://www.colindalecommunitiestrust.org",
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Young Barnet Foundation",
+        "category": "community-hub",
+        "address": "",
+        "postcode": "HA8 0LN",
+        "latitude": 51.6027553,
+        "longitude": -0.2625569,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Hangar 1",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW9 5TQ",
+        "latitude": 51.5972817,
+        "longitude": -0.2401418,
+        "distanceKm": 1.4
+      },
+      {
+        "name": "RAF Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW9 5LL",
+        "latitude": 51.5979808,
+        "longitude": -0.2391016,
+        "website": "https://www.rafmuseum.org.uk/london",
+        "distanceKm": 1.5
+      },
+      {
+        "name": "Spike Milligan Museum",
+        "category": "culture",
+        "address": "",
+        "postcode": "N3 3QJ",
+        "latitude": 51.5966085,
+        "longitude": -0.1945763,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Little Oak Wood open air theatre",
+        "category": "culture",
+        "address": "",
+        "postcode": "NW11 6QS",
+        "latitude": 51.5862462,
+        "longitude": -0.1923656,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Vue Cinema",
+        "category": "culture",
+        "address": "Chaplin Square, London",
+        "postcode": "N12 0GL",
+        "latitude": 51.6038551,
+        "longitude": -0.1732082,
+        "distanceKm": 5.9
+      },
+      {
+        "name": "Arts Depot",
+        "category": "culture",
+        "address": "5 Nether Street, London",
+        "postcode": "N12 0GA",
+        "latitude": 51.6128028,
+        "longitude": -0.1764278,
+        "website": "https://www.artsdepot.co.uk/",
+        "distanceKm": 6.1
+      },
+      {
+        "name": "Greentop Young Persons Activity Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW9 5WR",
+        "latitude": 51.6015433,
+        "longitude": -0.2470694,
+        "distanceKm": 1.6
+      },
+      {
+        "name": "Barnet Burnt Oak Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "HA8 0NP",
+        "latitude": 51.6051171,
+        "longitude": -0.2546355,
+        "distanceKm": 1.9
+      },
+      {
+        "name": "Nuffield Health",
+        "category": "leisure-centre",
+        "address": "260 Hendon Way, London",
+        "postcode": "NW4 3NL",
+        "latitude": 51.5825995,
+        "longitude": -0.2265016,
+        "website": "https://www.nuffieldhealth.com/gyms/hendon",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Barnet Copthall Leisure Centre",
+        "category": "leisure-centre",
+        "address": "London",
+        "postcode": "NW4 1PX",
+        "latitude": 51.604433,
+        "longitude": -0.2284145,
+        "distanceKm": 2.6
+      },
+      {
+        "name": "The 108",
+        "category": "leisure-centre",
+        "address": "Brent Terrace, London",
+        "postcode": "NW2 1LT",
+        "latitude": 51.5705361,
+        "longitude": -0.2257252,
+        "website": "https://the108.co.uk/",
+        "distanceKm": 2.8
+      },
+      {
+        "name": "Hendon Leisure Centre",
+        "category": "leisure-centre",
+        "address": "",
+        "postcode": "NW2 1XQ",
+        "latitude": 51.5739365,
+        "longitude": -0.2154513,
+        "distanceKm": 3.2
+      },
+      {
+        "name": "Watling Market (disused)",
+        "category": "market",
+        "address": "",
+        "postcode": "HA8 0FU",
+        "latitude": 51.6026838,
+        "longitude": -0.2646693,
+        "distanceKm": 1.7
+      },
+      {
+        "name": "Barnet Market",
+        "category": "market",
+        "address": "",
+        "postcode": "EN5 4QT",
+        "latitude": 51.6560269,
+        "longitude": -0.2041236,
+        "website": "https://barnet-market.co.uk",
+        "distanceKm": 8.3
+      },
+      {
+        "name": "Cricklewood Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW2 6QP",
+        "latitude": 51.5590973,
+        "longitude": -0.2162081,
+        "distanceKm": 4.2
+      },
+      {
+        "name": "Childs Hill Park Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW2 2DU",
+        "latitude": 51.5675349,
+        "longitude": -0.2021701,
+        "distanceKm": 4.3
+      },
+      {
+        "name": "Wild Play Area",
+        "category": "playground",
+        "address": "",
+        "postcode": "N3 2JS",
+        "latitude": 51.5977794,
+        "longitude": -0.1926739,
+        "distanceKm": 4.4
+      },
+      {
+        "name": "Mill Hill County High School",
+        "category": "playground",
+        "address": "",
+        "postcode": "NW7 4LN",
+        "latitude": 51.6292817,
+        "longitude": -0.2491902,
+        "distanceKm": 4.6
+      },
+      {
+        "name": "Woodridge School Playground",
+        "category": "playground",
+        "address": "",
+        "postcode": "N12 7HE",
+        "latitude": 51.6237574,
+        "longitude": -0.193157,
+        "distanceKm": 5.8
+      },
+      {
+        "name": "Market Place Playground",
+        "category": "playground",
+        "address": "London",
+        "postcode": "N2 8DQ",
+        "latitude": 51.592216,
+        "longitude": -0.1681373,
+        "website": "https://friendsofmarketplace.org.uk/",
+        "distanceKm": 6
       }
     ]
   },
