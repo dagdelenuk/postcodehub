@@ -1,6 +1,18 @@
 import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import type { Banners, BannerImage, FireStation, GpSurgery, Hierarchy, HierarchyBorough, HierarchyCity, OutcodeData, PoliceStation, School } from "./types";
+import type {
+  Banners,
+  BannerImage,
+  FireStation,
+  GpSurgery,
+  Hierarchy,
+  HierarchyBorough,
+  HierarchyCity,
+  HierarchyOutcode,
+  OutcodeData,
+  PoliceStation,
+  School,
+} from "./types";
 
 const PROCESSED_DIR = path.resolve(process.cwd(), "data/processed");
 const REFERENCE_DIR = path.resolve(process.cwd(), "data/reference");
@@ -595,6 +607,148 @@ function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): nu
 export function displayPlaceName(postTown: string, wards: string[], cityName: string): string {
   if (postTown && postTown !== cityName) return postTown;
   return wards[0] ?? postTown;
+}
+
+/**
+ * The label a district should carry in a borough-scoped list: its Royal Mail
+ * post town when the whole district is in this borough (unchanged from
+ * displayPlaceName), or this borough's own leading ward names when the
+ * district is split across boroughs - "KT1 - Kingston upon Thames" inside
+ * Richmond upon Thames would be actively misleading, so a split district is
+ * labelled by what's actually in this slice instead (e.g. "Hampton Wick &
+ * South Teddington"). Does not modify displayPlaceName itself, which has
+ * several existing callers that need unchanged non-split behaviour.
+ */
+export function districtLocalName(o: HierarchyOutcode, cityName: string, maxWards = 2): string {
+  if (!o.isSplit || o.wards.length === 0) return displayPlaceName(o.postTown, o.wards, cityName);
+  return o.wards.slice(0, maxWards).join(" & ");
+}
+
+/**
+ * Splits a borough's districts into "full" (this borough is the whole
+ * district) and "split" (shared with another borough), each sorted by the
+ * same districtLocalName key already used for display - so `full` is
+ * ordered identically to today's single sorted list, and `split` sorts the
+ * same way among itself.
+ */
+export function partitionDistrictsForNav(
+  outcodes: HierarchyOutcode[],
+  cityName: string
+): { full: HierarchyOutcode[]; split: HierarchyOutcode[] } {
+  const byLocalName = (a: HierarchyOutcode, b: HierarchyOutcode) =>
+    districtLocalName(a, cityName).localeCompare(districtLocalName(b, cityName));
+  const full = outcodes.filter((o) => !o.isSplit).sort(byLocalName);
+  const split = outcodes.filter((o) => o.isSplit).sort(byLocalName);
+  return { full, split };
+}
+
+export interface SplitSibling {
+  boroughName: string;
+  boroughSlug: string;
+  href: string;
+  sharePercent: number;
+  isPrimary: boolean;
+  wards: string[];
+  localName: string;
+}
+
+export interface SplitInfo {
+  isSplit: boolean;
+  outcode: string;
+  boroughName: string;
+  boroughSlug: string;
+  isPrimary: boolean;
+  sharePercent: number;
+  wards: string[];
+  localName: string;
+  /** Every OTHER London slice of this district, share desc. Empty when !isSplit. */
+  siblings: SplitSibling[];
+  /** Every London borough this district appears in, share desc, including this one. */
+  allBoroughNames: string[];
+}
+
+let cachedOutcodeIndex: Map<string, { citySlug: string; boroughSlug: string; boroughName: string; outcode: HierarchyOutcode }[]> | null = null;
+
+function outcodeIndex(): Map<string, { citySlug: string; boroughSlug: string; boroughName: string; outcode: HierarchyOutcode }[]> {
+  if (cachedOutcodeIndex) return cachedOutcodeIndex;
+  const index = new Map<string, { citySlug: string; boroughSlug: string; boroughName: string; outcode: HierarchyOutcode }[]>();
+  for (const city of loadHierarchy().cities) {
+    for (const borough of city.boroughs) {
+      for (const outcode of borough.outcodes) {
+        const key = `${city.slug}:${outcode.outcode}`;
+        const list = index.get(key) ?? [];
+        list.push({ citySlug: city.slug, boroughSlug: borough.slug, boroughName: borough.name, outcode });
+        index.set(key, list);
+      }
+    }
+  }
+  cachedOutcodeIndex = index;
+  return index;
+}
+
+/**
+ * Everything a page needs to describe a district's split status and link to
+ * its sibling slice(s) - built from the (already in-process-memoised)
+ * hierarchy, so sibling wards/labels come straight from each sibling's own
+ * entry rather than being duplicated into the JSON at ingest time.
+ */
+export function getSplitInfo(citySlug: string, boroughSlug: string, outcode: string): SplitInfo {
+  const cityName = getCity(citySlug)?.name ?? "";
+  const entries = outcodeIndex().get(`${citySlug}:${outcode}`) ?? [];
+  const mine = entries.find((e) => e.boroughSlug === boroughSlug)!;
+  const others = entries.filter((e) => e.boroughSlug !== boroughSlug).sort((a, b) => b.outcode.sharePercent - a.outcode.sharePercent);
+
+  return {
+    isSplit: mine.outcode.isSplit,
+    outcode,
+    boroughName: mine.boroughName,
+    boroughSlug: mine.boroughSlug,
+    isPrimary: mine.outcode.isPrimaryBorough,
+    sharePercent: mine.outcode.sharePercent,
+    wards: mine.outcode.wards,
+    localName: districtLocalName(mine.outcode, cityName),
+    siblings: others.map((e) => ({
+      boroughName: e.boroughName,
+      boroughSlug: e.boroughSlug,
+      href: `/${e.citySlug}/${e.boroughSlug}/${e.outcode.slug}/`,
+      sharePercent: e.outcode.sharePercent,
+      isPrimary: e.outcode.isPrimaryBorough,
+      wards: e.outcode.wards,
+      localName: districtLocalName(e.outcode, cityName),
+    })),
+    allBoroughNames: [...entries]
+      .sort((a, b) => b.outcode.sharePercent - a.outcode.sharePercent)
+      .map((e) => e.boroughName),
+  };
+}
+
+/** "KT1 (Richmond upon Thames)" - BaseLayout appends " · PostcodeHub". */
+export function districtTitle(outcode: string, boroughName: string): string {
+  return `${outcode} (${boroughName})`;
+}
+
+/** "Planning in KT1, Richmond upon Thames" */
+export function topicTitle(topic: string, outcode: string, boroughName: string): string {
+  return `${topic} in ${outcode}, ${boroughName}`;
+}
+
+const MAX_DESCRIPTION_LENGTH = 155;
+function truncateDescription(s: string): string {
+  return s.length <= MAX_DESCRIPTION_LENGTH ? s : `${s.slice(0, MAX_DESCRIPTION_LENGTH - 1).trimEnd()}…`;
+}
+
+export function districtDescription(outcode: string, boroughName: string, info: SplitInfo): string {
+  const base = info.isSplit
+    ? `The ${boroughName} part of ${outcode} — ${info.localName}. Health, schools, safety, transport and civic information.`
+    : `Health, schools, safety, transport, and civic information for the ${outcode} postcode district in ${boroughName}.`;
+  return truncateDescription(base);
+}
+
+export function topicDescription(topic: string, outcode: string, boroughName: string, info: SplitInfo): string {
+  const base = info.isSplit
+    ? `${topic} for the ${boroughName} part of ${outcode} — ${info.localName}.`
+    : `${topic} for the ${outcode} postcode district in ${boroughName}.`;
+  return truncateDescription(base);
 }
 
 /**
