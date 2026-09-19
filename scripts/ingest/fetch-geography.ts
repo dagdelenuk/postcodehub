@@ -1,10 +1,9 @@
 import { writeFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getOutcode } from "./lib/postcodes.js";
-import { ensureNsplZip, listZipEntries, readLadNameLookup, readNsplArea, readWardNameLookup } from "./lib/nspl.js";
+import { ensureNsplZip, listZipEntries, readLadNameLookup, readNsplArea, readPconNameLookup, readWardNameLookup } from "./lib/nspl.js";
 import { fetchWardPopulations } from "./lib/wards.js";
-import { logStep, sleep } from "./lib/fetch-utils.js";
+import { logStep } from "./lib/fetch-utils.js";
 import type { Hierarchy, HierarchyOutcode } from "../../src/lib/types.js";
 
 const STEP = "geography";
@@ -78,6 +77,11 @@ interface OutcodeAssignment {
   latitude: number;
   longitude: number;
   primaryLad: string;
+  /** Outcode-wide modal parliamentary constituency code (pcon24cd), tallied
+   * across all of its real small-user postcodes regardless of LAD - a given
+   * outcode's constituency is the same regardless of which borough's page
+   * you reach it from. */
+  primaryPcon: string;
   touchingLads: Set<string>;
   totalPostcodes: number;
   /** ladCode -> that LAD's tally - kept (not discarded) so shares and borough-scoped ward lists can be computed per borough below without re-reading NSPL. */
@@ -141,6 +145,7 @@ async function main() {
     let latSum = 0;
     let lonSum = 0;
     const touchingLads = new Set<string>();
+    const pconTotals = new Map<string, number>();
     for (const [lad, t] of ladMap) {
       latSum += t.latSum;
       lonSum += t.lonSum;
@@ -149,8 +154,17 @@ async function main() {
         primaryLad = lad;
       }
       if (t.count / total >= PRIMARY_THRESHOLD) touchingLads.add(lad);
+      for (const [pcon, n] of t.pcons) pconTotals.set(pcon, (pconTotals.get(pcon) ?? 0) + n);
     }
-    assignments.push({ outcode, latitude: latSum / total, longitude: lonSum / total, primaryLad, touchingLads, totalPostcodes: total, byLad: ladMap });
+    let primaryPcon = "";
+    let primaryPconCount = -1;
+    for (const [pcon, n] of pconTotals) {
+      if (n > primaryPconCount) {
+        primaryPconCount = n;
+        primaryPcon = pcon;
+      }
+    }
+    assignments.push({ outcode, latitude: latSum / total, longitude: lonSum / total, primaryLad, primaryPcon, touchingLads, totalPostcodes: total, byLad: ladMap });
   }
   logStep(STEP, `${assignments.length} real outcodes pass the ${MIN_SMALL_USER_POSTCODES}-postcode floor.`);
 
@@ -159,23 +173,21 @@ async function main() {
   const relevant = assignments.filter((a) => [...a.touchingLads].some((lad) => londonLadCodes.has(lad)));
   logStep(STEP, `${relevant.length} outcodes touch at least one London borough at the ${Math.round(PRIMARY_THRESHOLD * 100)}% floor.`);
 
-  // Enrich each unique outcode once with its parliamentary constituency -
-  // cached so a boundary outcode shared by several boroughs only costs one
-  // API call. Wards no longer come from here (see below) - postcodes.io's
-  // admin_ward is a single cross-borough list, not scoped to any one
-  // borough's slice, which is exactly the bug this pipeline is fixing.
+  // Each outcode's parliamentary constituency is the modal pcon24cd across
+  // its own real small-user postcodes (tallied above from NSPL directly),
+  // named via NSPL's own constituency lookup doc. This used to call
+  // postcodes.io per outcode and take parliamentary_constituency[0] - but
+  // that array isn't ordered by frequency, so a boundary outcode (e.g. TW1,
+  // mostly Twickenham but touching a handful of Brentford and Isleworth
+  // postcodes) could have its MP misattributed to whichever constituency
+  // happened to sort first. Wards still don't come from here (see below) -
+  // postcodes.io's admin_ward is a single cross-borough list, not scoped to
+  // any one borough's slice, which is exactly the bug this pipeline is
+  // fixing.
+  const pconNames = readPconNameLookup(NSPL_ZIP_PATH, entries);
   const enrichment = new Map<string, { constituency: string }>();
-  let i = 0;
   for (const a of relevant) {
-    i++;
-    try {
-      const detail = await getOutcode(a.outcode);
-      enrichment.set(a.outcode, { constituency: detail.parliamentary_constituency[0] ?? "" });
-    } catch {
-      enrichment.set(a.outcode, { constituency: "" });
-    }
-    if (i % 50 === 0) logStep(STEP, `Enriched ${i}/${relevant.length} outcodes via postcodes.io...`);
-    await sleep(50);
+    enrichment.set(a.outcode, { constituency: a.primaryPcon ? pconNames.get(a.primaryPcon) ?? "" : "" });
   }
 
   // Whether an outcode is "split" - i.e. has a real page under 2+ London
