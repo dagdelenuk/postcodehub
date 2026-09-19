@@ -129,4 +129,17 @@ export function readWardNameLookup(zipPath: string, entries: string[]): Map<stri
   return map;
 }
 
+/** Maps PCON24CD -> PCON24NM (e.g. "E14001042" -> "Twickenham") from the NSPL's bundled constituency lookup doc. */
+export function readPconNameLookup(zipPath: string, entries: string[]): Map<string, string> {
+  const entry = entries.find((e) => e.includes("Constituency names and codes"));
+  if (!entry) throw new Error("Could not find the parliamentary constituency name lookup file in the NSPL zip");
+  const csvText = extractZipEntry(zipPath, entry);
+  const records: Record<string, string>[] = parse(csvText, { columns: true, skip_empty_lines: true, relax_column_count: true });
+  const map = new Map<string, string>();
+  for (const rec of records) {
+    if (rec.PCON24CD && rec.PCON24NM) map.set(rec.PCON24CD, rec.PCON24NM);
+  }
+  return map;
+}
+
 export { listZipEntries };
