@@ -1,6 +1,6 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { getAllOutcodeParams, getLocalElections, getWardElectionResults, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -13,6 +13,10 @@ const { data } = Astro.props;
 
 const mp = data.representatives.representatives.filter((r) => r.role === "MP");
 const councillors = data.representatives.representatives.filter((r) => r.role === "Councillor");
+
+const election = getLocalElections(borough!);
+const wardResults = election ? getWardElectionResults(borough!, data.wards) : [];
+const pct = new Intl.NumberFormat("en-GB", { maximumFractionDigits: 1 });
 ---
 
 <LocalityLayout
@@ -57,6 +61,68 @@ const councillors = data.representatives.representatives.filter((r) => r.role ==
             </div>
           ))}
         </div>
+      </section>
+    )
+  }
+
+  {
+    election && (
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold mb-1">Local election results</h2>
+        <p class="text-sm text-stone-500 mb-4">
+          Last election: {election.lastElectionYear} &middot; Turnout {pct.format(election.lastElectionTurnoutPercent)}% (
+          {election.lastElectionTurnoutVotes.toLocaleString()} of {election.lastElectionRegisteredElectors.toLocaleString()} registered
+          electors) &middot; Next election due {election.nextElectionYear}
+        </p>
+
+        {
+          wardResults.length > 0 && (
+            <div class="grid gap-4 sm:grid-cols-2 mb-3">
+              {wardResults.map((ward) => (
+                <div class="rounded-lg border border-stone-200 bg-white p-4">
+                  <p class="font-medium">
+                    {ward.ward} <span class="font-normal text-stone-500">&middot; {ward.year} result</span>
+                  </p>
+                  {ward.turnoutPercent != null && (
+                    <p class="text-xs text-stone-500 mt-0.5">
+                      Turnout {pct.format(ward.turnoutPercent)}%{ward.turnoutVotes != null && ` (${ward.turnoutVotes.toLocaleString()} votes)`}
+                    </p>
+                  )}
+                  <table class="w-full text-sm mt-3">
+                    <tbody>
+                      {ward.candidates.map((c) => (
+                        <tr class="border-b border-stone-100 last:border-0">
+                          <td class="py-1.5 pr-2">
+                            {c.elected && <span title="Elected">✅ </span>}
+                            {c.name}
+                            <span class="block text-xs text-stone-500">{c.party}</span>
+                          </td>
+                          <td class="py-1.5 text-right align-top whitespace-nowrap">
+                            {c.votes.toLocaleString()}
+                            <span class="block text-xs text-stone-500">{pct.format(c.votePercent)}%</span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ))}
+            </div>
+          )
+        }
+
+        <p class="text-xs text-stone-400">
+          {wardResults.length > 0 && election.wardResultsYear !== election.lastElectionYear && (
+            <>
+              Ward-level vote counts above are from the {election.wardResultsYear} election, the most recent with published figures for
+              every candidate - current ward councillors (above) reflect {election.lastElectionYear} results and any by-elections since.{" "}
+            </>
+          )}
+          Full, up-to-date results:{" "}
+          <a href={election.resultsUrl} target="_blank" rel="noopener" class="text-emerald-700 hover:underline">
+            {data.borough} council &rarr;
+          </a>
+        </p>
       </section>
     )
   }

@@ -162,6 +162,40 @@ export interface Representative {
   contactUrl?: string;
 }
 
+export interface ElectionCandidateResult {
+  name: string;
+  party: string;
+  votes: number;
+  votePercent: number;
+  elected: boolean;
+}
+
+export interface WardElectionResult {
+  ward: string;
+  year: number;
+  turnoutVotes: number | null;
+  turnoutPercent: number | null;
+  candidates: ElectionCandidateResult[];
+}
+
+export interface LocalElectionData {
+  boroughName: string;
+  /** Year of the most recent borough-wide election (all council seats up for election). */
+  lastElectionYear: number;
+  lastElectionTurnoutPercent: number;
+  lastElectionTurnoutVotes: number;
+  lastElectionRegisteredElectors: number;
+  nextElectionYear: number;
+  /** Deep link to the council's own published results, for the full ward-by-ward breakdown. */
+  resultsUrl: string;
+  /** Year the candidate-level `wards` breakdown below is from - may lag
+   * `lastElectionYear` when that election's full vote-by-vote figures aren't
+   * sourced yet (current ward councillors are still shown separately, from
+   * the live councillor scrape, not from here). */
+  wardResultsYear: number;
+  wards: WardElectionResult[];
+}
+
 export interface RepresentativesData {
   representatives: Representative[];
 }

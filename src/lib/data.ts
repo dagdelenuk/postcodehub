@@ -9,10 +9,12 @@ import type {
   HierarchyBorough,
   HierarchyCity,
   HierarchyOutcode,
+  LocalElectionData,
   OutcodeData,
   Place,
   PoliceStation,
   School,
+  WardElectionResult,
 } from "./types";
 
 const PROCESSED_DIR = path.resolve(process.cwd(), "data/processed");
@@ -156,6 +158,35 @@ function loadSchoolAdmissions(): Record<string, string> {
 
 export function getSchoolAdmissionsUrl(boroughSlug: string): string | undefined {
   return loadSchoolAdmissions()[boroughSlug];
+}
+
+let cachedLocalElections: Record<string, LocalElectionData> | null = null;
+
+// Local (borough) election results have no single free bulk API - each
+// council publishes its own declared results, same problem as the
+// councillors scrape in fetch-representatives.ts. Rather than fabricate
+// ward-by-ward figures for boroughs we haven't sourced yet, this is a
+// hand-curated reference table (see data/reference/local-elections.json),
+// populated borough by borough as results are verified - a borough missing
+// here just gets no "Local election results" section, same honest-gap
+// approach as fetchCouncillorsByWard.
+function loadLocalElections(): Record<string, LocalElectionData> {
+  if (cachedLocalElections) return cachedLocalElections;
+  const filePath = path.join(REFERENCE_DIR, "local-elections.json");
+  cachedLocalElections = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as Record<string, LocalElectionData>) : {};
+  return cachedLocalElections;
+}
+
+export function getLocalElections(boroughSlug: string): LocalElectionData | undefined {
+  return loadLocalElections()[boroughSlug];
+}
+
+/** This outcode's own wards, matched against the borough's ward-level election results (a ward not yet sourced is just left out, not fabricated). */
+export function getWardElectionResults(boroughSlug: string, wards: string[]): WardElectionResult[] {
+  const election = getLocalElections(boroughSlug);
+  if (!election) return [];
+  const wardSet = new Set(wards);
+  return election.wards.filter((w) => wardSet.has(w.ward));
 }
 
 // A short, genuinely-about-the-city fact, used on the city page instead of
