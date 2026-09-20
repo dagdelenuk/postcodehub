@@ -415,3 +415,21 @@ export interface BroadbandFile {
   boroughs: Record<string, BroadbandMetrics>;
   outcodes: Record<string, BroadbandMetrics & { postcodes: number }>;
 }
+
+/** % of premises with coverage, from Ofcom's per-network counts (all four networks vs at least one). */
+export interface MobileCoverageMetrics {
+  fourGOutdoorAll: number;
+  fourGOutdoorAny: number;
+  fourGIndoorAll: number;
+  fourGIndoorAny: number;
+  fiveGOutdoorAll: number;
+  fiveGOutdoorAny: number;
+  voiceIndoorAll: number;
+}
+
+export interface MobileCoverageFile {
+  source: string;
+  period: string;
+  london: MobileCoverageMetrics;
+  boroughs: Record<string, MobileCoverageMetrics>;
+}

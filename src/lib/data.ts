@@ -7,6 +7,8 @@ import type {
   FireStation,
   BroadbandFile,
   BroadbandMetrics,
+  MobileCoverageFile,
+  MobileCoverageMetrics,
   FoodHygieneFile,
   GpSurgery,
   HpiData,
@@ -1036,4 +1038,20 @@ export function getBroadband(outcode: string, boroughSlug: string): { outcode: B
   const b = loadBroadband();
   const local = b?.outcodes[outcode];
   return b && local ? { outcode: local, borough: b.boroughs[boroughSlug] ?? null, london: b.london, period: b.period, source: b.source } : null;
+}
+
+let cachedMobile: MobileCoverageFile | null | undefined;
+
+// Ofcom mobile coverage per borough, written by scripts/ingest/fetch-mobile.ts.
+function loadMobile(): MobileCoverageFile | null {
+  if (cachedMobile !== undefined) return cachedMobile;
+  const filePath = path.join(PROCESSED_DIR, "mobile.json");
+  cachedMobile = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as MobileCoverageFile) : null;
+  return cachedMobile;
+}
+
+export function getMobileCoverage(boroughSlug: string): { borough: MobileCoverageMetrics; london: MobileCoverageMetrics; period: string; source: string } | null {
+  const m = loadMobile();
+  const borough = m?.boroughs[boroughSlug];
+  return m && borough ? { borough, london: m.london, period: m.period, source: m.source } : null;
 }
