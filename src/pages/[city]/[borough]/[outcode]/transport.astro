@@ -1,7 +1,10 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import EvChargingSection from "../../../../components/EvChargingSection.astro";
+import LeafletAssets from "../../../../components/LeafletAssets.astro";
+import LiveCycleHire from "../../../../components/LiveCycleHire.astro";
 import LiveTflWidget from "../../../../components/LiveTflWidget.astro";
-import { getAllOutcodeParams, getJourneyTimes, loadOutcodeData } from "../../../../lib/data";
+import { getAllOutcodeParams, getEvCharging, getJourneyTimes, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   // Every outcode gets a Transport page unconditionally, even one with no
@@ -20,6 +23,7 @@ const { data } = Astro.props;
 // public domain). Any other mode TfL's StopPoint API could still return for
 // these stopTypes (dlr, overground, elizabeth-line, tram) falls back to text.
 const journeyTimes = getJourneyTimes(data.outcode);
+const ev = getEvCharging(borough!, data.latitude, data.longitude);
 const MODE_LABELS: Record<string, string> = {
   tube: "Tube",
   "national-rail": "Rail",
@@ -113,6 +117,22 @@ const MODE_LOGOS: Record<string, { src: string; alt: string }> = {
           ))}
         </div>
       </section>
+    )
+  }
+
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold mb-1">Cycle hire</h2>
+    <p class="text-sm text-stone-500 mb-3">Santander Cycles docking stations within a mile of {data.outcode}, with bikes and free docks right now.</p>
+    <LiveCycleHire latitude={data.latitude} longitude={data.longitude} outcode={data.outcode} />
+    <p class="text-xs text-stone-400 mt-2">Source: Transport for London (live).</p>
+  </section>
+
+  {
+    ev && (
+      <>
+        <LeafletAssets />
+        <EvChargingSection ev={ev} outcode={data.outcode} boroughName={data.borough} />
+      </>
     )
   }
 

@@ -498,3 +498,53 @@ export interface JourneyTimesFile {
   /** Fastest public transport journey per destination id. `modes` excludes walking; `changes` counts interchanges. */
   outcodes: Record<string, Record<string, { minutes: number; modes: string[]; changes: number }>>;
 }
+
+export interface NoiseFile {
+  source: string;
+  modelled: string;
+  /** Labels for each entry of a district's `bands`, quietest first. */
+  bandLabels: string[];
+  /** % of the area within a mile of each district's centre in each Lden band (sums to ~100). */
+  outcodes: Record<string, { bands: number[] }>;
+}
+
+export interface GreenspaceMetrics {
+  /** Average distance from a home to the nearest park, public garden or playing field, in metres. */
+  parkDistanceM: number | null;
+  /** Average number of parks, public gardens or playing fields within 1 km. */
+  parksWithin1km: number | null;
+  /** % of postcodes within 300 m / 900 m of one. */
+  within300m: number | null;
+  within900m: number | null;
+  /** % of addresses with a private garden or other outdoor space. */
+  gardenShare: number | null;
+  /** Average size of that private space, in square metres. */
+  gardenAvgSizeM2: number | null;
+}
+
+export interface GreenspaceFile {
+  source: string;
+  year: number;
+  london: GreenspaceMetrics;
+  boroughs: Record<string, GreenspaceMetrics>;
+  outcodes: Record<string, GreenspaceMetrics>;
+}
+
+export interface EvBoroughStats {
+  /** Public charging devices of any speed. */
+  devices: number;
+  /** Devices rated 50 kW or more. */
+  rapidDevices: number;
+  devicesPer100k: number;
+  rapidPer100k: number;
+}
+
+export interface EvChargingFile {
+  source: string;
+  /** Quarter the DfT figures are for, e.g. "Jul-26". */
+  period: string;
+  london: EvBoroughStats;
+  boroughs: Record<string, EvBoroughStats>;
+  /** Mapped charging stations (OpenStreetMap); many kerbside units are not mapped, so this undercounts. */
+  sites: { lat: number; lon: number; name: string; operator: string; capacity: number | null }[];
+}

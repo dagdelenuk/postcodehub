@@ -3,13 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getBoroughCrimeCategories, getBoroughCrimeTrend, getBoroughSummary, getCitySummary, getCityCrimeTrend, getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
+import { getGreenspace, getNoise, getBoroughCrimeCategories, getBoroughCrimeTrend, getBoroughSummary, getCitySummary, getCityCrimeTrend, getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
 import ConnectivitySection from "../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../components/DemographicsSection.astro";
 import BoroughComparisonTable from "../../components/BoroughComparisonTable.astro";
 import HousingMarket from "../../components/HousingMarket.astro";
 import { datasetJsonLd } from "../../lib/seo";
 import CrimeStats from "../../components/CrimeStats.astro";
+import NoiseGreenSection from "../../components/NoiseGreenSection.astro";
 import LiveAirQualityWidget from "../../components/LiveAirQualityWidget.astro";
 import LiveFloodWarningsWidget from "../../components/LiveFloodWarningsWidget.astro";
 import SectionTabs from "../../components/SectionTabs.astro";
@@ -185,6 +186,9 @@ const londonCrimeCategories = (() => {
 // Environment: live air quality and flood warnings around each borough's centre, and around the whole city.
 const boroughCentres = new Map(trend.boroughs.map((b) => [b.slug, getBoroughSummary(city.slug, b.slug)]));
 const cityCentre = getCitySummary(city.slug);
+const environmentByBorough = Object.fromEntries(trend.boroughs.map((b) => [b.slug, { noise: getNoise("", city.slug, b.slug), green: getGreenspace(b.slug) }]));
+const londonNoise = getNoise("", city.slug, firstSlug);
+const londonGreen = getGreenspace(firstSlug);
 ---
 
 <BaseLayout
@@ -196,7 +200,7 @@ const cityCentre = getCitySummary(city.slug);
     name: `Statistics across ${city.name}`,
     description: `Rents, house prices, Council Tax, demographics, deprivation, recorded crime, broadband, mobile coverage and environment compared across every borough in ${city.name}.`,
     url: `/${city.slug}/statistics/`,
-    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "data.police.uk street-level crime data", "Ofcom Connected Nations 2025", "gov.uk Council Tax levels 2026-27", "Environment Agency flood monitoring"],
+    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "data.police.uk street-level crime data", "Ofcom Connected Nations 2025", "gov.uk Council Tax levels 2026-27", "Environment Agency flood monitoring", "Defra strategic noise mapping", "ONS access to gardens and public green space"],
     keywords: [city.name, "house prices", "rents", "Council Tax", "demographics", "deprivation", "crime", "broadband", "flood risk", "borough comparison"],
     spatial: { name: city.name },
   })}
@@ -534,6 +538,22 @@ const cityCentre = getCitySummary(city.slug);
               </div>
             </a>
             <p class="text-xs text-stone-400 mt-2">Sources: Open-Meteo air quality; Environment Agency flood monitoring. Warnings cover an 8 km radius from the centre of {b.name}.</p>
+            {(environmentByBorough[b.slug].noise || environmentByBorough[b.slug].green) && (
+              <div class="mt-8">
+                <NoiseGreenSection
+                  columns={[
+                    { label: b.name, noise: environmentByBorough[b.slug].noise?.borough ?? null, green: environmentByBorough[b.slug].green?.borough ?? null },
+                    { label: "London", noise: environmentByBorough[b.slug].noise?.london ?? null, green: environmentByBorough[b.slug].green?.london ?? null },
+                  ]}
+                  noiseLabels={environmentByBorough[b.slug].noise?.labels ?? []}
+                  noiseModelled={environmentByBorough[b.slug].noise?.modelled ?? ""}
+                  noiseSource={environmentByBorough[b.slug].noise?.source ?? ""}
+                  greenSource={environmentByBorough[b.slug].green?.source ?? ""}
+                  greenYear={environmentByBorough[b.slug].green?.year ?? 2020}
+                  noiseScope={`within a mile of the centre of each of ${b.name}'s postcode districts (averaged)`}
+                />
+              </div>
+            )}
           </div>
         ))
       }
@@ -557,6 +577,19 @@ const cityCentre = getCitySummary(city.slug);
           </div>
         </a>
         <p class="text-xs text-stone-400 mt-2">Sources: Open-Meteo air quality; Environment Agency flood monitoring (30 km around central {city.name}). Select a borough for its own readings.</p>
+        {(londonNoise || londonGreen) && (
+          <div class="mt-8">
+            <NoiseGreenSection
+              columns={[{ label: city.name, noise: londonNoise?.london ?? null, green: londonGreen?.london ?? null }]}
+              noiseLabels={londonNoise?.labels ?? []}
+              noiseModelled={londonNoise?.modelled ?? ""}
+              noiseSource={londonNoise?.source ?? ""}
+              greenSource={londonGreen?.source ?? ""}
+              greenYear={londonGreen?.year ?? 2020}
+              noiseScope={`within a mile of the centre of every postcode district (averaged)`}
+            />
+          </div>
+        )}
       </div>
     </section>
   </section>

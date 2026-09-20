@@ -10,6 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const STEPS = [
   "fetch-geography.ts",
   "fetch-transport.ts",
+  "fetch-ev.ts",
   "fetch-journey-times.ts",
   "fetch-health.ts",
   "fetch-schools.ts",
@@ -26,6 +27,8 @@ const STEPS = [
   "fetch-mobile.ts",
   "fetch-council-services.ts",
   "fetch-demographics.ts",
+  "fetch-noise.ts",
+  "fetch-greenspace.ts",
   "fetch-representatives.ts",
   "fetch-planning.ts",
   "seed-events-history.ts",

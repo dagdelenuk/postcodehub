@@ -5,6 +5,7 @@ import ConnectivitySection from "../../../../components/ConnectivitySection.astr
 import DemographicsSection from "../../../../components/DemographicsSection.astro";
 import FavoriteStar from "../../../../components/FavoriteStar.astro";
 import HousingMarket from "../../../../components/HousingMarket.astro";
+import NoiseGreenSection from "../../../../components/NoiseGreenSection.astro";
 import LiveFloodWarningsWidget from "../../../../components/LiveFloodWarningsWidget.astro";
 import { datasetJsonLd } from "../../../../lib/seo";
 import SectionTabs from "../../../../components/SectionTabs.astro";
@@ -17,8 +18,10 @@ import {
   getBroadband,
   getCouncilTax,
   getCouncilTaxAverage,
+  getGreenspace,
   getHpi,
   getMobileCoverage,
+  getNoise,
   getRents,
   hasContent,
   loadOutcodeData,
@@ -56,6 +59,8 @@ const demographics = data.demographics && boroughDemographics ? { outcode: data.
 const broadband = getBroadband(data.outcode, borough!);
 const mobile = getMobileCoverage(borough!);
 const hasConnectivity = Boolean(broadband || mobile);
+const noise = getNoise(data.outcode, city!, borough!);
+const green = getGreenspace(borough!, data.outcode);
 
 const tabs = [
   { id: "housing", label: "Housing" },
@@ -79,8 +84,8 @@ const recentSales = data.property.sales.slice(0, 40);
     name: `Statistics for ${data.outcode}, ${data.borough}`,
     description: `Housing costs, demographics, deprivation, recorded crime, broadband and mobile coverage and flood risk for the ${data.outcode} postcode district in ${data.borough}, compared with London.`,
     url: `/${city}/${borough}/${data.slug}/statistics/`,
-    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "data.police.uk street-level crime data", "Ofcom Connected Nations 2025", "Environment Agency flood monitoring"],
-    keywords: [data.outcode, data.borough, "house prices", "rents", "Council Tax", "demographics", "deprivation", "crime", "broadband", "flood risk"],
+    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "data.police.uk street-level crime data", "Ofcom Connected Nations 2025", "Environment Agency flood monitoring", "Defra strategic noise mapping", "ONS access to gardens and public green space"],
+    keywords: [data.outcode, data.borough, "house prices", "rents", "Council Tax", "demographics", "deprivation", "crime", "broadband", "flood risk", "road noise", "green space"],
     spatial: { name: `${data.outcode}, ${data.borough}`, latitude: data.latitude, longitude: data.longitude },
   })}
 >
@@ -300,5 +305,25 @@ const recentSales = data.property.sales.slice(0, 40);
       </div>
     </a>
     </div>
+
+    {
+      (noise || green) && (
+        <div class="mt-8">
+          <NoiseGreenSection
+            columns={[
+              { label: data.outcode, noise: noise?.outcode ?? null, green: green?.outcode ?? null },
+              { label: data.borough, noise: noise?.borough ?? null, green: green?.borough ?? null },
+              { label: "London", noise: noise?.london ?? null, green: green?.london ?? null },
+            ]}
+            noiseLabels={noise?.labels ?? []}
+            noiseModelled={noise?.modelled ?? ""}
+            noiseSource={noise?.source ?? ""}
+            greenSource={green?.source ?? ""}
+            greenYear={green?.year ?? 2020}
+            noiseScope={`within a mile of the centre of ${data.outcode}`}
+          />
+        </div>
+      )
+    }
   </section>
 </LocalityLayout>

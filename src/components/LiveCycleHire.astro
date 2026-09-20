@@ -1,0 +1,91 @@
+---
+interface Props {
+  latitude: number;
+  longitude: number;
+  /** Search radius in metres. */
+  radiusM?: number;
+  outcode: string;
+}
+
+const { latitude, longitude, radiusM = 1609, outcode } = Astro.props;
+---
+
+<div class="rounded-lg border border-stone-200 bg-white p-4" data-cycle-hire data-lat={latitude} data-lon={longitude} data-radius={radiusM} data-outcode={outcode}>
+  <p class="text-xs uppercase tracking-wide text-stone-400 mb-2">Live availability &middot; Santander Cycles (TfL)</p>
+  <div data-cycle-output>
+    <p class="text-stone-600 text-sm">Checking for docking stations&hellip;</p>
+  </div>
+</div>
+
+<script>
+  interface Property {
+    key: string;
+    value: string;
+  }
+  interface Place {
+    id: string;
+    commonName: string;
+    distance: number;
+    lat: number;
+    lon: number;
+    additionalProperties: Property[];
+  }
+
+  for (const widget of document.querySelectorAll<HTMLElement>("[data-cycle-hire]")) {
+    const output = widget.querySelector<HTMLElement>("[data-cycle-output]")!;
+    const { lat, lon, radius, outcode } = widget.dataset;
+
+    const el = (tag: string, className: string, text?: string) => {
+      const node = document.createElement(tag);
+      node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    };
+
+    fetch(`https://api.tfl.gov.uk/Place?type=BikePoint&lat=${lat}&lon=${lon}&radius=${radius}`)
+      .then((res) => {
+        if (!res.ok) throw new Error(String(res.status));
+        return res.json() as Promise<{ places: Place[] }>;
+      })
+      .then(({ places }) => {
+        output.replaceChildren();
+        const stations = places
+          .filter((p) => prop(p, "Installed") === "true" && prop(p, "Temporary") !== "true")
+          .sort((a, b) => a.distance - b.distance);
+        if (stations.length === 0) {
+          output.append(el("p", "text-sm text-stone-600", `No Santander Cycles docking stations within a mile of ${outcode}. The scheme covers inner London and some outer boroughs.`));
+          return;
+        }
+        const totalBikes = stations.reduce((sum, p) => sum + Number(prop(p, "NbBikes") ?? 0), 0);
+        const totalEBikes = stations.reduce((sum, p) => sum + Number(prop(p, "NbEBikes") ?? 0), 0);
+        output.append(
+          el("p", "text-sm text-stone-700 mb-3", `${stations.length} docking station${stations.length === 1 ? "" : "s"} within a mile, with ${totalBikes} bikes available now${totalEBikes > 0 ? ` (${totalEBikes} electric)` : ""}.`)
+        );
+        const list = el("ul", "grid gap-2 sm:grid-cols-2");
+        for (const p of stations.slice(0, 8)) {
+          const bikes = Number(prop(p, "NbBikes") ?? 0);
+          const ebikes = Number(prop(p, "NbEBikes") ?? 0);
+          const empty = Number(prop(p, "NbEmptyDocks") ?? 0);
+          const li = el("li", "rounded-md border border-stone-200 px-3 py-2 text-sm");
+          const top = el("div", "flex items-baseline justify-between gap-2");
+          const link = el("a", "font-medium hover:text-emerald-700 truncate") as HTMLAnchorElement;
+          link.textContent = p.commonName;
+          link.href = `https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lon}`;
+          link.target = "_blank";
+          link.rel = "noopener";
+          top.append(link, el("span", "shrink-0 text-xs text-stone-400", `${(p.distance * 0.000621371).toFixed(1)} mi`));
+          li.append(top, el("p", `text-xs mt-0.5 ${bikes === 0 ? "text-red-600" : "text-stone-500"}`, `${bikes} bike${bikes === 1 ? "" : "s"}${ebikes > 0 ? ` (${ebikes} e-bike${ebikes === 1 ? "" : "s"})` : ""} · ${empty} free dock${empty === 1 ? "" : "s"}`));
+          list.append(li);
+        }
+        output.append(list);
+        if (stations.length > 8) output.append(el("p", "text-xs text-stone-400 mt-2", `Showing the nearest 8 of ${stations.length}.`));
+      })
+      .catch(() => {
+        output.replaceChildren(el("p", "text-sm text-stone-600", "Live cycle hire availability is unavailable right now - check TfL's Santander Cycles map."));
+      });
+
+    function prop(p: Place, key: string): string | undefined {
+      return p.additionalProperties.find((a) => a.key === key)?.value;
+    }
+  }
+</script>

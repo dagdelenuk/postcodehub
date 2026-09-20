@@ -8,6 +8,11 @@ import type {
   AreaRents,
   BroadbandFile,
   CouncilServicesData,
+  EvChargingFile,
+  EvBoroughStats,
+  GreenspaceFile,
+  GreenspaceMetrics,
+  NoiseFile,
   CouncilServicesFile,
   BroadbandMetrics,
   DemographicsFile,
@@ -1212,4 +1217,92 @@ export function getBoroughCrimeCategories(citySlug: string, boroughSlug: string)
     }
   }
   return [...totals.entries()].sort(([, a], [, b]) => b - a);
+}
+
+// ---- Environment: road noise and green space ----
+
+let cachedNoise: NoiseFile | null | undefined;
+
+// Defra road noise bands per district, written by scripts/ingest/fetch-noise.ts.
+function loadNoise(): NoiseFile | null {
+  if (cachedNoise !== undefined) return cachedNoise;
+  const filePath = path.join(PROCESSED_DIR, "noise.json");
+  cachedNoise = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as NoiseFile) : null;
+  return cachedNoise;
+}
+
+const meanBands = (all: number[][]): number[] | null => {
+  if (all.length === 0) return null;
+  return all[0].map((_, i) => Math.round((all.reduce((sum, b) => sum + b[i], 0) / all.length) * 10) / 10);
+};
+
+/** Share of the area within a mile of a district's centre in each road-noise band, for the district, its borough (mean of its districts) and London. */
+export function getNoise(outcode: string, citySlug: string, boroughSlug: string): { outcode: number[] | null; borough: number[] | null; london: number[] | null; labels: string[]; modelled: string; source: string } | null {
+  const noise = loadNoise();
+  if (!noise) return null;
+  const inBorough = (getBorough(citySlug, boroughSlug)?.outcodes ?? []).filter((o) => o.isPrimaryBorough).map((o) => noise.outcodes[o.outcode]?.bands).filter((b): b is number[] => Boolean(b));
+  return {
+    outcode: noise.outcodes[outcode]?.bands ?? null,
+    borough: meanBands(inBorough),
+    london: meanBands(Object.values(noise.outcodes).map((o) => o.bands)),
+    labels: noise.bandLabels,
+    modelled: noise.modelled,
+    source: noise.source,
+  };
+}
+
+let cachedGreenspace: GreenspaceFile | null | undefined;
+
+// ONS green space and garden access, written by scripts/ingest/fetch-greenspace.ts.
+function loadGreenspace(): GreenspaceFile | null {
+  if (cachedGreenspace !== undefined) return cachedGreenspace;
+  const filePath = path.join(PROCESSED_DIR, "greenspace.json");
+  cachedGreenspace = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as GreenspaceFile) : null;
+  return cachedGreenspace;
+}
+
+export function getGreenspace(boroughSlug: string, outcode?: string): { outcode: GreenspaceMetrics | null; borough: GreenspaceMetrics | null; london: GreenspaceMetrics; year: number; source: string } | null {
+  const g = loadGreenspace();
+  if (!g) return null;
+  return { outcode: outcode ? g.outcodes[outcode] ?? null : null, borough: g.boroughs[boroughSlug] ?? null, london: g.london, year: g.year, source: g.source };
+}
+
+// ---- Transport: EV charging ----
+
+let cachedEv: EvChargingFile | null | undefined;
+
+// DfT charging device statistics plus OpenStreetMap charge point locations, written by scripts/ingest/fetch-ev.ts.
+function loadEv(): EvChargingFile | null {
+  if (cachedEv !== undefined) return cachedEv;
+  const filePath = path.join(PROCESSED_DIR, "ev-charging.json");
+  cachedEv = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as EvChargingFile) : null;
+  return cachedEv;
+}
+
+export interface EvSiteNearby {
+  name: string;
+  operator: string;
+  capacity: number | null;
+  latitude: number;
+  longitude: number;
+  distanceKm: number;
+}
+
+/** Borough charging totals against London, plus the mapped charge points within a radius of a point (nearest first). */
+export function getEvCharging(boroughSlug: string, latitude: number, longitude: number, radiusKm = 1.6): { borough: EvBoroughStats | null; london: EvBoroughStats; period: string; source: string; nearby: EvSiteNearby[]; nearbyPoints: number } | null {
+  const ev = loadEv();
+  if (!ev) return null;
+  const nearby = ev.sites
+    .map((s) => ({ name: s.name, operator: s.operator, capacity: s.capacity, latitude: s.lat, longitude: s.lon, distanceKm: haversineKm(latitude, longitude, s.lat, s.lon) }))
+    .filter((s) => s.distanceKm <= radiusKm)
+    .sort((a, b) => a.distanceKm - b.distanceKm)
+    .map((s) => ({ ...s, distanceKm: Math.round(s.distanceKm * 10) / 10 }));
+  return {
+    borough: ev.boroughs[boroughSlug] ?? null,
+    london: ev.london,
+    period: ev.period,
+    source: ev.source,
+    nearby,
+    nearbyPoints: nearby.reduce((sum, s) => sum + (s.capacity ?? 1), 0),
+  };
 }

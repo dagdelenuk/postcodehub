@@ -76,6 +76,9 @@ export interface NsplRow {
   largeUser: boolean;
   /** 2021 Census output area code (oa21cd). Empty string when absent. */
   oaCode: string;
+  /** 2021 LSOA and MSOA codes (lsoa21cd / msoa21cd). Empty string when absent. */
+  lsoaCode: string;
+  msoaCode: string;
   /** English IMD 2019 rank of the postcode's LSOA (1 = most deprived of 32,844); null outside England. */
   imdRank: number | null;
 }
@@ -103,6 +106,8 @@ export function readNsplArea(zipPath: string, entries: string[], areaPrefix: str
       terminated: Boolean(rec.doterm),
       largeUser: rec.usrtypind === "1",
       oaCode: rec.oa21cd ?? "",
+      lsoaCode: rec.lsoa21cd ?? "",
+      msoaCode: rec.msoa21cd ?? "",
       imdRank: rec.imd20ind ? Number(rec.imd20ind) : null,
     });
   }
