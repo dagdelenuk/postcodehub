@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Keep the CMS and the old /property/ redirect stubs out of the sitemap.
-      filter: (page) => !page.includes('/admin') && !/\/property\/?$/.test(page),
+      filter: (page) => !page.includes('/admin') && !page.endsWith('/offline/') && !/\/property\/?$/.test(page),
       changefreq: 'weekly',
       lastmod: new Date(),
     }),

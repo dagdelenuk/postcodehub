@@ -26,7 +26,8 @@
     "ingest:planning": "tsx scripts/ingest/fetch-planning.ts",
     "ingest:seed": "tsx scripts/ingest/seed-events-history.ts",
     "ingest:banners": "tsx scripts/ingest/fetch-banner-images.ts",
-    "ingest:merge": "tsx scripts/ingest/build-outcode-data.ts"
+    "ingest:merge": "tsx scripts/ingest/build-outcode-data.ts",
+    "icons": "node scripts/generate-pwa-icons.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
@@ -39,6 +40,7 @@
     "esbuild": true
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^26.4.0",
     "tsx": "^4.23.12"
   }

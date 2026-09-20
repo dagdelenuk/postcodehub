@@ -28,7 +28,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
   <div class="mx-auto max-w-5xl px-4 py-10">
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-4">
       <div>
-        <a href="/" class="text-lg font-extrabold tracking-tight">
+        <a href="/" class="text-2xl font-extrabold tracking-tight">
           Postcode<span class="text-emerald-700">Hub</span>.UK
         </a>
         <p class="mt-3 text-xs text-stone-500">
@@ -50,11 +50,6 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
                 <li>
                   <a href={`/${city.slug}/`} class="text-stone-600 hover:text-emerald-700">
                     {city.name}
-                  </a>
-                </li>
-                <li>
-                  <a href={`/${city.slug}/safety/`} class="text-stone-600 hover:text-emerald-700">
-                    Crime comparison
                   </a>
                 </li>
                 <li>
@@ -161,7 +156,31 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
       }
     </div>
 
-    <p class="mt-8 pt-6 border-t border-stone-100 text-xs text-stone-400">
+    <div class="mt-8 pt-6 border-t border-stone-100 flex flex-wrap items-center gap-x-4 gap-y-2" data-install-row>
+      <button
+        type="button"
+        class="inline-flex items-center gap-2 text-sm text-emerald-700 hover:underline"
+        data-install-app
+      >
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 3v9m0 0-3.5-3.5M10 12l3.5-3.5M4 15.5h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Install PostcodeHub as an app
+      </button>
+      <span class="text-xs text-stone-400">Works offline for pages you've visited. No app store needed.</span>
+    </div>
+
+    <dialog class="m-auto rounded-xl border border-stone-200 p-0 backdrop:bg-stone-900/40 max-w-sm w-[calc(100%-2rem)]" data-install-dialog>
+      <div class="p-5">
+        <h2 class="text-base font-semibold mb-2">Install PostcodeHub</h2>
+        <p class="text-sm text-stone-600" data-install-instructions></p>
+        <form method="dialog" class="mt-4 text-right">
+          <button class="rounded-lg bg-emerald-700 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-800 transition-colors">Got it</button>
+        </form>
+      </div>
+    </dialog>
+
+    <p class="mt-6 pt-6 border-t border-stone-100 text-center text-xs text-stone-400">
       PostcodeHub.UK is an independent project and is not affiliated with Royal Mail, the NHS, the Metropolitan
       Police, or any local council.
     </p>
@@ -177,5 +196,51 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
       extra.classList.remove("hidden");
       toggle.remove();
     });
+  });
+</script>
+
+<script>
+  // "Install as app". Chrome/Edge/Android offer a real install prompt (beforeinstallprompt); Safari and Firefox don't, so
+  // there we explain how to add it from the browser's own menu. Hidden once the site is already running as an installed app.
+  interface InstallPromptEvent extends Event {
+    prompt(): Promise<void>;
+    userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
+  }
+
+  const row = document.querySelector<HTMLElement>("[data-install-row]");
+  const button = document.querySelector<HTMLButtonElement>("[data-install-app]");
+  const dialog = document.querySelector<HTMLDialogElement>("[data-install-dialog]");
+  const instructions = document.querySelector<HTMLElement>("[data-install-instructions]");
+  let deferred: InstallPromptEvent | null = null;
+
+  const installed = () => window.matchMedia("(display-mode: standalone)").matches || (navigator as Navigator & { standalone?: boolean }).standalone === true;
+  if (installed()) row?.remove();
+
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    deferred = event as InstallPromptEvent;
+  });
+  window.addEventListener("appinstalled", () => row?.remove());
+
+  function instructionsFor(ua: string): string {
+    const isIos = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    if (isIos) return "Tap the Share button in Safari, then choose Add to Home Screen.";
+    if (/Android/.test(ua)) return "Open your browser menu (the three dots) and choose Install app or Add to Home screen.";
+    if (/Firefox/.test(ua)) return "Firefox on desktop can't install web apps. Open PostcodeHub in Chrome, Edge or Safari to install it.";
+    if (/Edg\//.test(ua)) return "Click the install icon at the right of the address bar, or open the menu and choose Apps, then Install this site as an app.";
+    if (/Chrome\//.test(ua)) return "Click the install icon at the right of the address bar, or open the menu and choose Cast, save and share, then Install page as app.";
+    if (/Safari\//.test(ua)) return "In the Safari menu bar choose File, then Add to Dock.";
+    return "Use your browser's menu and look for Install or Add to Home Screen.";
+  }
+
+  button?.addEventListener("click", async () => {
+    if (deferred) {
+      await deferred.prompt();
+      await deferred.userChoice;
+      deferred = null; // a prompt can only be used once
+      return;
+    }
+    if (instructions) instructions.textContent = instructionsFor(navigator.userAgent);
+    dialog?.showModal();
   });
 </script>

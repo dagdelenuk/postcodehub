@@ -1,0 +1,83 @@
+---
+import CrimeCompareChart from "./CrimeCompareChart.astro";
+import type { BoroughCrimeTrend } from "../lib/data";
+
+interface Props {
+  /** Recorded crimes in the last 12 months. */
+  total: number;
+  /** What the total covers, e.g. "within roughly 1 mile of the area centre". */
+  coverage: string;
+  monthly: { month: string; totalCrimes: number }[];
+  /** [category, count] pairs; the top eight are shown. */
+  categories: [string, number][];
+  /** Compares the postcode areas of a borough against each other. */
+  compare?: { trend: BoroughCrimeTrend; averageLabel: string; defaultHighlightSlug?: string; chartId: string; heading: string; intro: string };
+}
+
+const { total, coverage, monthly, categories, compare } = Astro.props;
+
+const maxMonthly = Math.max(...monthly.map((m) => m.totalCrimes), 1);
+const topCategories = [...categories].sort(([, a], [, b]) => b - a).slice(0, 8);
+const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
+
+// month is stored "YYYY-MM"; display as "MM-YY".
+function formatMonthLabel(month: string): string {
+  const [year, mon] = month.split("-");
+  return `${mon}-${year.slice(2)}`;
+}
+---
+
+<p class="text-stone-500 mb-6">{total.toLocaleString()} recorded crimes over the last 12 months, {coverage}.</p>
+
+<section class="mb-8">
+  <h3 class="text-lg font-semibold mb-3">Monthly trend</h3>
+  <div class="rounded-lg border border-stone-200 bg-white p-4">
+    <div class="flex items-end gap-1 h-40">
+      {
+        monthly.map((m) => (
+          <div class="flex-1 h-full flex items-end">
+            <div class="w-full bg-emerald-600/80 rounded-t" style={`height: ${Math.max((m.totalCrimes / maxMonthly) * 100, 2)}%`} title={`${formatMonthLabel(m.month)}: ${m.totalCrimes.toLocaleString()}`} />
+          </div>
+        ))
+      }
+    </div>
+    <div class="flex gap-1 mt-3">
+      {
+        monthly.map((m) => (
+          <div class="flex-1 min-w-0 flex justify-center">
+            <span class="text-[10px] text-stone-400 whitespace-nowrap" style="writing-mode: vertical-rl; transform: rotate(180deg);">{formatMonthLabel(m.month)}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+{
+  compare && (
+    <section class="mb-8">
+      <h3 class="text-lg font-semibold mb-1">{compare.heading}</h3>
+      <p class="text-stone-500 mb-3 text-sm">{compare.intro}</p>
+      <CrimeCompareChart trend={compare.trend} averageLabel={compare.averageLabel} defaultHighlightSlug={compare.defaultHighlightSlug} chartId={compare.chartId} />
+    </section>
+  )
+}
+
+<section class="mb-4">
+  <h3 class="text-lg font-semibold mb-3">By category</h3>
+  <div class="space-y-2">
+    {
+      topCategories.map(([category, count]) => (
+        <div class="flex items-center gap-3">
+          <span class="text-sm text-stone-600 w-40 shrink-0 truncate capitalize">{category.replace(/-/g, " ")}</span>
+          <div class="flex-1 bg-stone-100 rounded-full h-3">
+            <div class="bg-emerald-600 h-3 rounded-full" style={`width: ${(count / maxCategory) * 100}%`} />
+          </div>
+          <span class="text-sm text-stone-500 w-12 text-right">{count.toLocaleString()}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<p class="text-xs text-stone-400 mt-4">Source: data.police.uk street-level crime data.</p>

@@ -3,12 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
+import { getBoroughCrimeCategories, getBoroughCrimeTrend, getBoroughSummary, getCitySummary, getCityCrimeTrend, getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
 import ConnectivitySection from "../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../components/DemographicsSection.astro";
 import BoroughComparisonTable from "../../components/BoroughComparisonTable.astro";
 import HousingMarket from "../../components/HousingMarket.astro";
 import { datasetJsonLd } from "../../lib/seo";
+import CrimeStats from "../../components/CrimeStats.astro";
+import LiveAirQualityWidget from "../../components/LiveAirQualityWidget.astro";
+import LiveFloodWarningsWidget from "../../components/LiveFloodWarningsWidget.astro";
 import SectionTabs from "../../components/SectionTabs.astro";
 
 function slugify(name: string): string {
@@ -148,6 +151,28 @@ const connectivityComparison = housingByBorough
     fourGIndoor: b.mobile?.borough.fourGIndoorAll ?? null,
     fiveG: b.mobile?.borough.fiveGOutdoorAll ?? null,
   }));
+
+// Crime: every borough's monthly series (for the London comparison chart) plus, per borough, its postcode-area comparison and categories.
+const crimeTrend = getCityCrimeTrend(city.slug);
+const crimeByBorough = crimeTrend.boroughs.map((b) => ({
+  slug: b.slug,
+  name: b.name,
+  total: getBoroughSummary(city.slug, b.slug).crimes12mo,
+  monthly: crimeTrend.months.map((month, i) => ({ month, totalCrimes: b.series[i] })),
+  categories: getBoroughCrimeCategories(city.slug, b.slug),
+  compare: getBoroughCrimeTrend(city.slug, b.slug),
+}));
+const londonCrimeTotal = crimeByBorough.reduce((sum, b) => sum + b.total, 0);
+const londonCrimeMonthly = crimeTrend.months.map((month, i) => ({ month, totalCrimes: crimeTrend.boroughs.reduce((sum, b) => sum + b.series[i], 0) }));
+const londonCrimeCategories = (() => {
+  const totals = new Map<string, number>();
+  for (const b of crimeByBorough) for (const [category, count] of b.categories) totals.set(category, (totals.get(category) ?? 0) + count);
+  return [...totals.entries()] as [string, number][];
+})();
+
+// Environment: live air quality and flood warnings around each borough's centre, and around the whole city.
+const boroughCentres = new Map(trend.boroughs.map((b) => [b.slug, getBoroughSummary(city.slug, b.slug)]));
+const cityCentre = getCitySummary(city.slug);
 ---
 
 <BaseLayout
@@ -157,10 +182,10 @@ const connectivityComparison = housingByBorough
   citySlug={city.slug}
   jsonLd={datasetJsonLd({
     name: `Statistics across ${city.name}`,
-    description: `Rents, house prices, Council Tax, demographics, deprivation, broadband and mobile coverage compared across every borough in ${city.name}.`,
+    description: `Rents, house prices, Council Tax, demographics, deprivation, recorded crime, broadband, mobile coverage and environment compared across every borough in ${city.name}.`,
     url: `/${city.slug}/statistics/`,
-    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "Ofcom Connected Nations 2025", "gov.uk Council Tax levels 2026-27"],
-    keywords: [city.name, "house prices", "rents", "Council Tax", "demographics", "deprivation", "broadband", "borough comparison"],
+    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "data.police.uk street-level crime data", "Ofcom Connected Nations 2025", "gov.uk Council Tax levels 2026-27", "Environment Agency flood monitoring"],
+    keywords: [city.name, "house prices", "rents", "Council Tax", "demographics", "deprivation", "crime", "broadband", "flood risk", "borough comparison"],
     spatial: { name: city.name },
   })}
 >
@@ -331,6 +356,50 @@ const connectivityComparison = housingByBorough
       }
     </section>
 
+    <section data-section="crime" data-section-label="Crime" class="mt-10">
+      {
+        crimeByBorough.map((b) => (
+          <div class="hidden" data-borough-block data-borough-slug={b.slug}>
+            <h2 class="text-2xl font-bold mb-1">Crime in {b.name}</h2>
+            <CrimeStats
+              total={b.total}
+              coverage="counted within roughly 1 mile of each postcode area's centre"
+              monthly={b.monthly}
+              categories={b.categories}
+              compare={{
+                trend: b.compare,
+                averageLabel: `${b.name} average`,
+                chartId: `borough-crime-${b.slug}`,
+                heading: `Compare postcode areas in ${b.name}`,
+                intro: `Monthly crime trend across every postcode area in ${b.name}, against the borough average.`,
+              }}
+            />
+          </div>
+        ))
+      }
+
+      <div data-london-block>
+        <h2 class="text-2xl font-bold mb-1">Crime across {city.name}</h2>
+        <CrimeStats total={londonCrimeTotal} coverage="counted within roughly 1 mile of each postcode area's centre, added across boroughs" monthly={londonCrimeMonthly} categories={londonCrimeCategories} />
+      </div>
+
+      <section class="mt-8">
+        <h2 class="text-2xl font-bold mb-1">Crime comparison across {city.name}</h2>
+        <p class="text-stone-500 mb-3 text-sm">Monthly recorded crimes per borough, each counted within roughly 1 mile of its postcode areas' centres.</p>
+        <BoroughTrendChart trend={crimeTrend} averageLabel={`${city.name} average`} chartId="crime" />
+        <div class="mt-6" data-london-block>
+          <BoroughComparisonTable
+            title="Boroughs compared: recorded crime"
+            intro="Recorded crimes over the last 12 months in every borough, and each borough's share of the London total."
+            columns={["Recorded crimes (12 months)", "Share of London"]}
+            rows={crimeByBorough.map((b) => ({ name: b.name, href: boroughLink(b.slug), cells: [b.total.toLocaleString("en-GB"), pct1(londonCrimeTotal > 0 ? (b.total / londonCrimeTotal) * 100 : 0)] }))}
+            footer={{ name: "London", cells: [londonCrimeTotal.toLocaleString("en-GB"), "100.0%"] }}
+            source="Source: data.police.uk street-level crime data. Boroughs with larger centres and busier streets record more crime, so these are counts, not rates."
+          />
+        </div>
+      </section>
+    </section>
+
     <section data-section="connectivity" data-section-label="Connectivity" class="mt-10">
       {
         (londonBroadband || londonMobile) && (
@@ -417,6 +486,54 @@ const connectivityComparison = housingByBorough
             </div>
           ))
       }
+    </section>
+
+    <section data-section="environment" data-section-label="Environment" class="mt-10">
+      {
+        trend.boroughs.map((b) => (
+          <div class="hidden" data-borough-block data-borough-slug={b.slug}>
+            <h2 class="text-2xl font-bold mb-4">Environment in {b.name}</h2>
+            <div class="grid gap-4 sm:grid-cols-2 mb-4">
+              <LiveAirQualityWidget latitude={boroughCentres.get(b.slug)!.latitude} longitude={boroughCentres.get(b.slug)!.longitude} />
+              <LiveFloodWarningsWidget latitude={boroughCentres.get(b.slug)!.latitude} longitude={boroughCentres.get(b.slug)!.longitude} radiusKm={8} areaLabel={b.name} />
+            </div>
+            <a
+              href="https://check-long-term-flood-risk.service.gov.uk/"
+              target="_blank"
+              rel="noopener"
+              class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+            >
+              <span class="text-3xl leading-none" aria-hidden="true">🌊</span>
+              <div>
+                <p class="font-medium">Check long-term flood risk</p>
+                <p class="text-sm text-stone-500 mt-1">Flood risk from rivers, the sea and surface water varies street by street within {b.name} - look up an exact address on the Environment Agency's checker.</p>
+              </div>
+            </a>
+            <p class="text-xs text-stone-400 mt-2">Sources: Open-Meteo air quality; Environment Agency flood monitoring. Warnings cover an 8 km radius from the centre of {b.name}.</p>
+          </div>
+        ))
+      }
+
+      <div data-london-block>
+        <h2 class="text-2xl font-bold mb-4">Environment across {city.name}</h2>
+        <div class="grid gap-4 sm:grid-cols-2 mb-4">
+          <LiveAirQualityWidget latitude={cityCentre.latitude} longitude={cityCentre.longitude} />
+          <LiveFloodWarningsWidget latitude={cityCentre.latitude} longitude={cityCentre.longitude} radiusKm={30} areaLabel={city.name} />
+        </div>
+        <a
+          href="https://check-long-term-flood-risk.service.gov.uk/"
+          target="_blank"
+          rel="noopener"
+          class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+        >
+          <span class="text-3xl leading-none" aria-hidden="true">🌊</span>
+          <div>
+            <p class="font-medium">Check long-term flood risk</p>
+            <p class="text-sm text-stone-500 mt-1">Flood risk from rivers, the sea and surface water varies street by street - look up an exact address on the Environment Agency's checker.</p>
+          </div>
+        </a>
+        <p class="text-xs text-stone-400 mt-2">Sources: Open-Meteo air quality; Environment Agency flood monitoring (30 km around central {city.name}). Select a borough for its own readings.</p>
+      </div>
     </section>
   </section>
 

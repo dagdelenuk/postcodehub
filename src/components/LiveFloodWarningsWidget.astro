@@ -2,12 +2,16 @@
 interface Props {
   latitude: number;
   longitude: number;
+  /** Search radius around the point. 5 km suits a postcode district; use more for a borough or the whole city. */
+  radiusKm?: number;
+  /** Wording for where the radius is measured from in the "no warnings" message. */
+  areaLabel?: string;
 }
 
-const { latitude, longitude } = Astro.props;
+const { latitude, longitude, radiusKm = 5, areaLabel } = Astro.props;
 ---
 
-<div class="rounded-lg border border-stone-200 bg-white p-4" data-flood-widget data-lat={latitude} data-lon={longitude}>
+<div class="rounded-lg border border-stone-200 bg-white p-4" data-flood-widget data-lat={latitude} data-lon={longitude} data-radius={radiusKm} data-area={areaLabel}>
   <p class="text-xs uppercase tracking-wide text-stone-400 mb-2">Live flood warnings &middot; Environment Agency</p>
   <div data-flood-output>
     <p class="text-stone-600 text-sm">Checking for current flood warnings&hellip;</p>
@@ -24,19 +28,21 @@ const { latitude, longitude } = Astro.props;
     floodArea?: { riverOrSea?: string };
   }
 
-  const RADIUS_KM = 5;
   const STYLES: Record<number, string> = {
     1: "border-red-700 bg-red-50 text-red-900",
     2: "border-red-500 bg-red-50 text-red-800",
     3: "border-amber-500 bg-amber-50 text-amber-900",
   };
 
+  function initFloodWidgets() {
   for (const widget of document.querySelectorAll<HTMLElement>("[data-flood-widget]")) {
     const output = widget.querySelector<HTMLElement>("[data-flood-output]");
     if (!output) continue;
     const { lat, lon } = widget.dataset;
+    const radiusKm = Number(widget.dataset.radius) || 5;
+    const area = widget.dataset.area ?? "";
 
-    fetch(`https://environment.data.gov.uk/flood-monitoring/id/floods?lat=${lat}&long=${lon}&dist=${RADIUS_KM}`)
+    fetch(`https://environment.data.gov.uk/flood-monitoring/id/floods?lat=${lat}&long=${lon}&dist=${radiusKm}`)
       .then((res) => {
         if (!res.ok) throw new Error(String(res.status));
         return res.json() as Promise<{ items: FloodItem[] }>;
@@ -48,7 +54,7 @@ const { latitude, longitude } = Astro.props;
         if (active.length === 0) {
           const p = document.createElement("p");
           p.className = "text-sm text-emerald-700 font-medium";
-          p.textContent = `No flood warnings or alerts in force within ${RADIUS_KM} km right now.`;
+          p.textContent = `No flood warnings or alerts in force within ${radiusKm} km${area ? ` of the centre of ${widget.dataset.area}` : ""} right now.`;
           output.append(p);
           return;
         }
@@ -73,4 +79,8 @@ const { latitude, longitude } = Astro.props;
         output.className = "text-sm text-stone-600";
       });
   }
+  }
+  // Pages that prune per-borough blocks at load (the city Statistics page) must not have every borough fetch, so wait for load.
+  if (document.readyState === "complete") initFloodWidgets();
+  else window.addEventListener("load", initFloodWidgets);
 </script>

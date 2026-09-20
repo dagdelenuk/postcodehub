@@ -1,5 +1,6 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import CrimeStats from "../../../../components/CrimeStats.astro";
 import ConnectivitySection from "../../../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../../../components/DemographicsSection.astro";
 import HousingMarket from "../../../../components/HousingMarket.astro";
@@ -9,6 +10,7 @@ import SectionTabs from "../../../../components/SectionTabs.astro";
 import {
   getAllOutcodeParams,
   getBorough,
+  getBoroughCrimeTrend,
   getBoroughDemographics,
   getBoroughPostTownPrices,
   getBroadband,
@@ -47,6 +49,8 @@ const housing = {
 };
 
 const boroughDemographics = getBoroughDemographics(borough!);
+const hasCrime = data.safety.monthlyTrend.length > 0 || data.safety.totalLast12Months > 0;
+const boroughCrimeTrend = hasCrime ? getBoroughCrimeTrend(city!, borough!) : null;
 const demographics = data.demographics && boroughDemographics ? { outcode: data.demographics, ...boroughDemographics } : null;
 const broadband = getBroadband(data.outcode, borough!);
 const mobile = getMobileCoverage(borough!);
@@ -55,6 +59,7 @@ const hasConnectivity = Boolean(broadband || mobile);
 const tabs = [
   { id: "housing", label: "Housing" },
   ...(demographics ? [{ id: "demographics", label: "Demographics" }] : []),
+  ...(hasCrime ? [{ id: "crime", label: "Crime" }] : []),
   ...(hasConnectivity ? [{ id: "connectivity", label: "Connectivity" }] : []),
   { id: "environment", label: "Environment" },
 ];
@@ -71,10 +76,10 @@ const recentSales = data.property.sales.slice(0, 40);
   topic="Statistics"
   jsonLd={datasetJsonLd({
     name: `Statistics for ${data.outcode}, ${data.borough}`,
-    description: `Housing costs, demographics, deprivation, broadband and mobile coverage and flood risk for the ${data.outcode} postcode district in ${data.borough}, compared with London.`,
+    description: `Housing costs, demographics, deprivation, recorded crime, broadband and mobile coverage and flood risk for the ${data.outcode} postcode district in ${data.borough}, compared with London.`,
     url: `/${city}/${borough}/${data.slug}/statistics/`,
-    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "Ofcom Connected Nations 2025", "Environment Agency flood monitoring"],
-    keywords: [data.outcode, data.borough, "house prices", "rents", "Council Tax", "demographics", "deprivation", "broadband", "flood risk"],
+    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "data.police.uk street-level crime data", "Ofcom Connected Nations 2025", "Environment Agency flood monitoring"],
+    keywords: [data.outcode, data.borough, "house prices", "rents", "Council Tax", "demographics", "deprivation", "crime", "broadband", "flood risk"],
     spatial: { name: `${data.outcode}, ${data.borough}`, latitude: data.latitude, longitude: data.longitude },
   })}
 >
@@ -189,6 +194,28 @@ const recentSales = data.property.sales.slice(0, 40);
           ]}
           source={demographics.source}
           note={`${data.outcode} figures are built from the census neighbourhoods (output areas) whose postcodes mostly fall in ${data.outcode}, so they may not match its boundary exactly.`}
+        />
+      </section>
+    )
+  }
+
+  {
+    hasCrime && boroughCrimeTrend && (
+      <section id="crime" data-section="crime" class="mt-10">
+        <h2 class="text-2xl font-bold mb-1">Crime in {data.outcode}</h2>
+        <CrimeStats
+          total={data.safety.totalLast12Months}
+          coverage="within roughly 1 mile of the area centre"
+          monthly={data.safety.monthlyTrend}
+          categories={Object.entries(data.safety.categoryBreakdown)}
+          compare={{
+            trend: boroughCrimeTrend,
+            averageLabel: `${data.borough} average`,
+            defaultHighlightSlug: data.slug,
+            chartId: "borough-crime",
+            heading: `Compare postcode areas in ${data.borough}`,
+            intro: `Monthly crime trend across every postcode area in ${data.borough}, against the borough average.`,
+          }}
         />
       </section>
     )

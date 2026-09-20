@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
 import { getBoroughFireStations, getBoroughPoliceStations, getCityCrimeTrend, loadHierarchy } from "../../lib/data";
 
@@ -28,8 +27,8 @@ const stationsByBorough = trend.boroughs.map((b) => ({
 ---
 
 <BaseLayout
-  title={`Crime comparison across ${city.name}`}
-  description={`Monthly crime trends compared across every borough in ${city.name}, with a city average.`}
+  title={`Safety services across ${city.name}`}
+  description={`Police and fire stations, emergency contacts and a link to crime statistics for every borough in ${city.name}.`}
   menuLevel="city"
   citySlug={city.slug}
 >
@@ -38,7 +37,7 @@ const stationsByBorough = trend.boroughs.map((b) => ({
     crumbs={[
       { label: "PostcodeHub", href: "/" },
       { label: city.name, href: `/${city.slug}/` },
-      { label: "Crime comparison" },
+      { label: "Safety" },
     ]}
   />
   <HighlightBreadcrumbCrumb citySlug={city.slug} entities={trend.boroughs} />
@@ -100,13 +99,22 @@ const stationsByBorough = trend.boroughs.map((b) => ({
       </div>
     </section>
 
-    <h1 class="text-2xl font-bold mb-1">Crime comparison across {city.name}</h1>
-    <p class="text-stone-500 mb-6">Monthly recorded crimes per borough, each estimated within roughly 1 mile of its postcode areas' centres.</p>
-
-    <BoroughTrendChart trend={trend} averageLabel={`${city.name} average`} chartId="crime" />
+    <a
+      href={`/${city.slug}/statistics/#crime`}
+      class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+      data-crime-stats-link
+    >
+      <span class="text-3xl leading-none" aria-hidden="true">📊</span>
+      <div>
+        <p class="font-medium">Crime statistics across {city.name}</p>
+        <p class="text-sm text-stone-500 mt-1">
+          Monthly recorded crime, a comparison of every borough and a breakdown by category now sit on the Statistics page.
+        </p>
+      </div>
+    </a>
 
     <p class="text-xs text-stone-400 mt-6">
-      Source: data.police.uk street-level crime data. Police and fire station locations: OpenStreetMap contributors.
+      Police and fire station locations: OpenStreetMap contributors.
     </p>
   </section>
 
@@ -258,5 +266,12 @@ const stationsByBorough = trend.boroughs.map((b) => ({
         });
       }
     });
+  </script>
+
+  <script>
+    // Carry the highlighted borough over to the Statistics page's crime tab.
+    const highlight = new URLSearchParams(location.search).get("highlight");
+    const link = document.querySelector<HTMLAnchorElement>("[data-crime-stats-link]");
+    if (highlight && link) link.href = link.href.replace("/statistics/#crime", `/statistics/?highlight=${encodeURIComponent(highlight)}#crime`);
   </script>
 </BaseLayout>

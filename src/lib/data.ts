@@ -1202,3 +1202,14 @@ export function getJourneyTimes(outcode: string): { departure: string; source: s
     .sort((a, b) => a.minutes - b.minutes);
   return journeys.length > 0 ? { departure: file.departure, source: file.source, journeys } : null;
 }
+
+/** Recorded crimes by category across a borough's own postcode districts (each within ~1 mile of its centre), largest first. */
+export function getBoroughCrimeCategories(citySlug: string, boroughSlug: string): [string, number][] {
+  const totals = new Map<string, number>();
+  for (const outcode of (getBorough(citySlug, boroughSlug)?.outcodes ?? []).filter((o) => o.isPrimaryBorough)) {
+    for (const [category, count] of Object.entries(loadOutcodeData(citySlug, boroughSlug, outcode.slug).safety.categoryBreakdown)) {
+      totals.set(category, (totals.get(category) ?? 0) + count);
+    }
+  }
+  return [...totals.entries()].sort(([, a], [, b]) => b - a);
+}

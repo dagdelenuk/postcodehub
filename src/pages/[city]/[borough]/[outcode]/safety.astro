@@ -1,9 +1,8 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import CrimeCompareChart from "../../../../components/CrimeCompareChart.astro";
 import StationCard from "../../../../components/StationCard.astro";
 import StationFilters from "../../../../components/StationFilters.astro";
-import { displayPlaceName, getAllOutcodeParams, getBoroughCrimeTrend, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { displayPlaceName, getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -14,19 +13,6 @@ export function getStaticPaths() {
 const { city, borough } = Astro.params;
 const { data } = Astro.props;
 
-const boroughTrend = getBoroughCrimeTrend(city!, borough!);
-
-const maxMonthly = Math.max(...data.safety.monthlyTrend.map((m) => m.totalCrimes), 1);
-
-// month is stored "YYYY-MM"; display as "MM-YY" (Ay-Yil).
-function formatMonthLabel(month: string): string {
-  const [year, mon] = month.split("-");
-  return `${mon}-${year.slice(2)}`;
-}
-const topCategories = Object.entries(data.safety.categoryBreakdown)
-  .sort(([, a], [, b]) => b - a)
-  .slice(0, 8);
-const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
 const placeName = displayPlaceName(data.postTown, data.wards, data.city);
 
 const stationCounts = { police: data.safety.policeStations.length, fire: data.safety.fireStations.length };
@@ -93,62 +79,23 @@ const totalStations = stationCounts.police + stationCounts.fire;
     </div>
   </section>
 
-  <h1 class="text-2xl font-bold mb-2">Crime Statistics in {data.outcode}, {data.borough}</h1>
-  <p class="text-stone-500 mb-6">{data.safety.totalLast12Months.toLocaleString()} recorded crimes over the last 12 months, within roughly 1 mile of the area centre.</p>
-
   <section class="mb-8">
-    <h2 class="text-lg font-semibold mb-3">Monthly trend</h2>
-    <div class="rounded-lg border border-stone-200 bg-white p-4">
-      <div class="flex items-end gap-1 h-40">
-        {
-          data.safety.monthlyTrend.map((m) => (
-            <div class="flex-1 h-full flex items-end">
-              <div
-                class="w-full bg-emerald-600/80 rounded-t"
-                style={`height: ${Math.max((m.totalCrimes / maxMonthly) * 100, 2)}px`}
-              />
-            </div>
-          ))
-        }
+    <a
+      href={`/${city}/${borough}/${data.slug}/statistics/#crime`}
+      class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+    >
+      <span class="text-3xl leading-none" aria-hidden="true">📊</span>
+      <div>
+        <p class="font-medium">Crime statistics for {data.outcode}</p>
+        <p class="text-sm text-stone-500 mt-1">
+          {data.safety.totalLast12Months.toLocaleString()} recorded crimes over the last 12 months, with the monthly trend, a comparison of postcode areas in {data.borough}
+          and a breakdown by category, now on the Statistics page.
+        </p>
       </div>
-      <div class="flex gap-1 mt-3">
-        {
-          data.safety.monthlyTrend.map((m) => (
-            <div class="flex-1 flex justify-center">
-              <span class="text-[10px] text-stone-400 whitespace-nowrap -rotate-90">{formatMonthLabel(m.month)}</span>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-8">
-    <h2 class="text-lg font-semibold mb-1">Compare postcode areas in {data.borough}</h2>
-    <p class="text-stone-500 mb-3 text-sm">Monthly crime trend across every postcode area in {data.borough}, against the borough average.</p>
-    <CrimeCompareChart trend={boroughTrend} averageLabel={`${data.borough} average`} defaultHighlightSlug={data.slug} chartId="borough-crime" />
-  </section>
-
-  <section>
-    <h2 class="text-lg font-semibold mb-3">By category</h2>
-    <div class="space-y-2">
-      {
-        topCategories.map(([category, count]) => (
-          <div class="flex items-center gap-3">
-            <span class="text-sm text-stone-600 w-40 shrink-0 truncate">{category.replace(/-/g, " ")}</span>
-            <div class="flex-1 bg-stone-100 rounded-full h-3">
-              <div class="bg-emerald-600 h-3 rounded-full" style={`width: ${(count / maxCategory) * 100}%`} />
-            </div>
-            <span class="text-sm text-stone-500 w-10 text-right">{count}</span>
-          </div>
-        ))
-      }
-    </div>
+    </a>
   </section>
 
   <p class="text-xs text-stone-400 mt-6">
-    Source: data.police.uk street-level crime data.
-    {(data.safety.policeStations.length > 0 || data.safety.fireStations.length > 0) &&
-      " Police and fire station locations: OpenStreetMap contributors."}
+    {(data.safety.policeStations.length > 0 || data.safety.fireStations.length > 0) && "Police and fire station locations: OpenStreetMap contributors."}
   </p>
 </LocalityLayout>

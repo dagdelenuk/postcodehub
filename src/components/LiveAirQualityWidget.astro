@@ -39,6 +39,7 @@ const { latitude, longitude } = Astro.props;
     return (BANDS.find((b) => aqi <= b.max) ?? BANDS[BANDS.length - 1]).band;
   }
 
+  function initAirQualityWidgets() {
   document.querySelectorAll<HTMLElement>("[data-air-quality-widget]").forEach(async (widget) => {
     const output = widget.querySelector<HTMLElement>("[data-air-quality-output]");
     const label = widget.querySelector<HTMLElement>("[data-air-quality-label]");
@@ -113,4 +114,8 @@ const { latitude, longitude } = Astro.props;
       output.textContent = "Air quality data unavailable right now.";
     }
   });
+  }
+  // Wait for load so pages that prune hidden per-borough blocks first (city Statistics) only fetch for what remains.
+  if (document.readyState === "complete") initAirQualityWidgets();
+  else window.addEventListener("load", initAirQualityWidgets);
 </script>

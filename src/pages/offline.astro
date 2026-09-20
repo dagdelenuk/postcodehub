@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="You're offline" description="PostcodeHub is offline. Pages you have already visited are still available.">
+  <section class="mx-auto max-w-2xl px-4 py-16 text-center">
+    <p class="text-5xl mb-4" aria-hidden="true">📡</p>
+    <h1 class="text-2xl font-bold mb-2">You're offline</h1>
+    <p class="text-stone-600 mb-6">
+      This page hasn't been saved on your device yet. Pages you've already visited still open, and live information (road works, flood warnings, weather) needs a connection.
+    </p>
+    <button type="button" onclick="location.reload()" class="rounded-lg bg-emerald-700 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-800 transition-colors">Try again</button>
+  </section>
+</BaseLayout>

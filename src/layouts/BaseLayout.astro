@@ -39,6 +39,13 @@ const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonical} />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#047857" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="PostcodeHub" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={fullTitle} />
@@ -79,5 +86,15 @@ const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []
     </main>
 
     <Footer citySlug={citySlug} boroughSlug={boroughSlug} />
+    {
+      import.meta.env.PROD && (
+        <script is:inline>
+          {`// Offline support and installability. Production builds only: in dev a service worker would keep serving stale pages.
+          if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+          }`}
+        </script>
+      )
+    }
   </body>
 </html>
