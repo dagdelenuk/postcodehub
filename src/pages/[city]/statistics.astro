@@ -3,9 +3,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
+import { getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
 import ConnectivitySection from "../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../components/DemographicsSection.astro";
+import BoroughComparisonTable from "../../components/BoroughComparisonTable.astro";
 import HousingMarket from "../../components/HousingMarket.astro";
 import SectionTabs from "../../components/SectionTabs.astro";
 
@@ -70,6 +71,82 @@ const housingByBorough = trend.boroughs
     };
   })
   .filter((b) => b.hpi || b.rents || b.prices || b.demographics || b.broadband || b.mobile);
+
+// City-level view (no ?highlight=): London as a whole, plus every borough compared side by side.
+const firstSlug = trend.boroughs[0]?.slug ?? "";
+const londonHpiRaw = getHpi(firstSlug);
+const londonRentsRaw = getRents(firstSlug);
+const londonHousing = {
+  slug: "london",
+  name: city.name,
+  hpi: londonHpiRaw ? { borough: londonHpiRaw.london, london: londonHpiRaw.london, source: londonHpiRaw.source } : null,
+  hpiTrend: londonHpiRaw ? { months: londonHpiRaw.london.months, boroughs: [], average: londonHpiRaw.london.averagePrice } : null,
+  rents: londonRentsRaw
+    ? {
+        borough: londonRentsRaw.london,
+        london: londonRentsRaw.london,
+        latestMonth: londonRentsRaw.latestMonth,
+        source: londonRentsRaw.source,
+        trend: { months: londonRentsRaw.london.history.months, boroughs: [], average: londonRentsRaw.london.history.price },
+      }
+    : null,
+  prices: null,
+};
+const londonDemographics = getLondonDemographics();
+const londonBroadband = getBoroughBroadband(firstSlug);
+const londonMobile = getMobileCoverage(firstSlug);
+
+const gbpFmt = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+const pct1 = (n: number | null | undefined) => (n == null ? "n/a" : `${n.toFixed(1)}%`);
+const chg = (n: number | null | undefined) => (n == null ? "n/a" : `${n >= 0 ? "+" : ""}${n.toFixed(1)}%`);
+const COUNCIL_TAX_BANDS = ["A", "B", "C", "D", "E", "F", "G", "H"] as const;
+const councilTaxRange = COUNCIL_TAX_BANDS.map((band) => {
+  const values = councilTaxByBorough.map((b) => b.councilTax!.bands[band]).filter((v) => typeof v === "number");
+  return { band, average: councilTaxLondonAverage[band], lowest: Math.min(...values), highest: Math.max(...values) };
+});
+const boroughLink = (slug: string) => `/${city.slug}/statistics/?highlight=${slug}`;
+const housingComparison = housingByBorough.map((b) => {
+  const tax = councilTaxByBorough.find((t) => t.slug === b.slug);
+  const rentAll = b.rents?.borough.byBedrooms.all;
+  const twoBed = b.rents?.borough.byBedrooms.twoBed;
+  return {
+    slug: b.slug,
+    name: b.name,
+    rent: rentAll?.price ?? null,
+    rentChange: rentAll?.annualChange ?? null,
+    twoBed: twoBed?.price ?? null,
+    price: b.hpi ? b.hpi.borough.averagePrice[b.hpi.borough.averagePrice.length - 1] : null,
+    priceChange: b.hpi?.borough.annualChange ?? null,
+    bandD: tax?.councilTax?.bandD ?? null,
+  };
+});
+const demographicsComparison = housingByBorough
+  .filter((b) => b.demographics)
+  .map((b) => {
+    const d = b.demographics!.borough;
+    return {
+      slug: b.slug,
+      name: b.name,
+      population: d.population,
+      under15: d.age.under15,
+      over65: d.age.age65plus,
+      degree: d.qualifications.degreeLevel,
+      social: d.tenure.socialRented,
+      private: d.tenure.privateRented,
+      deprived: d.imdDeciles.slice(0, 3).reduce((a, x) => a + x, 0),
+    };
+  });
+const connectivityComparison = housingByBorough
+  .filter((b) => b.broadband || b.mobile)
+  .map((b) => ({
+    slug: b.slug,
+    name: b.name,
+    gigabit: b.broadband?.borough.gigabit ?? null,
+    fullFibre: b.broadband?.borough.fullFibre ?? null,
+    superfast: b.broadband?.borough.superfast ?? null,
+    fourGIndoor: b.mobile?.borough.fourGIndoorAll ?? null,
+    fiveG: b.mobile?.borough.fiveGOutdoorAll ?? null,
+  }));
 ---
 
 <BaseLayout
@@ -94,6 +171,61 @@ const housingByBorough = trend.boroughs
     <SectionTabs />
 
     <section data-section="housing" data-section-label="Housing">
+      <div data-london-block>
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold mb-1">Council Tax bands across {city.name}</h2>
+          <p class="text-stone-500 mb-3 text-sm">2026-27 annual Council Tax by band: the London average and the cheapest and most expensive borough.</p>
+          <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                  <th class="px-4 py-2 font-semibold">Band</th>
+                  <th class="px-4 py-2 font-semibold text-right">London average</th>
+                  <th class="px-4 py-2 font-semibold text-right">Lowest borough</th>
+                  <th class="px-4 py-2 font-semibold text-right">Highest borough</th>
+                </tr>
+              </thead>
+              <tbody>
+                {councilTaxRange.map((r) => (
+                  <tr class:list={["border-b border-stone-100 last:border-0", r.band === "D" && "bg-emerald-50 font-semibold"]}>
+                    <td class="px-4 py-2">Band {r.band}</td>
+                    <td class="px-4 py-2 text-right">{gbpFmt.format(r.average)}</td>
+                    <td class="px-4 py-2 text-right text-stone-500">{gbpFmt.format(r.lowest)}</td>
+                    <td class="px-4 py-2 text-right text-stone-500">{gbpFmt.format(r.highest)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-stone-400 mt-2">Source: gov.uk, Council Tax levels set by local authorities in England 2026 to 2027 (Band D area council tax, including the GLA precept).</p>
+        </section>
+
+        <HousingMarket b={londonHousing} solo />
+
+        <BoroughComparisonTable
+          title="Boroughs compared: rents, house prices and Council Tax"
+          intro="Average monthly rent, average house price and Band D Council Tax in every borough, with 12-month changes."
+          columns={["Avg rent / month", "Rent 12m", "2 bed rent", "Avg house price", "Price 12m", "Band D tax"]}
+          rows={housingComparison.map((r) => ({
+            name: r.name,
+            href: boroughLink(r.slug),
+            cells: [r.rent != null ? gbpFmt.format(r.rent) : "n/a", chg(r.rentChange), r.twoBed != null ? gbpFmt.format(r.twoBed) : "n/a", r.price != null ? gbpFmt.format(r.price) : "n/a", chg(r.priceChange), r.bandD != null ? gbpFmt.format(r.bandD) : "n/a"],
+          }))}
+          footer={{
+            name: "London average",
+            cells: [
+              londonRentsRaw?.london.byBedrooms.all.price != null ? gbpFmt.format(londonRentsRaw.london.byBedrooms.all.price) : "n/a",
+              chg(londonRentsRaw?.london.byBedrooms.all.annualChange),
+              londonRentsRaw?.london.byBedrooms.twoBed.price != null ? gbpFmt.format(londonRentsRaw.london.byBedrooms.twoBed.price) : "n/a",
+              londonHpiRaw ? gbpFmt.format(londonHpiRaw.london.averagePrice[londonHpiRaw.london.averagePrice.length - 1]) : "n/a",
+              chg(londonHpiRaw?.london.annualChange),
+              gbpFmt.format(councilTaxLondonAverage.D),
+            ],
+          }}
+          source="Sources: ONS Price Index of Private Rents; HM Land Registry UK House Price Index; gov.uk Council Tax 2026-27. City of London has no published rent figures."
+        />
+      </div>
+
       <section class="mb-8 hidden" data-council-tax-section>
         <h2 class="text-2xl font-bold mb-1" data-council-tax-heading>Council Tax bands</h2>
         <p class="text-stone-500 mb-3 text-sm" data-council-tax-sub></p>
@@ -144,6 +276,36 @@ const housingByBorough = trend.boroughs
 
     <section data-section="demographics" data-section-label="Demographics" class="mt-10">
       {
+        londonDemographics && (
+          <div data-london-block>
+            <DemographicsSection columns={[{ label: city.name, data: londonDemographics.london }]} source={londonDemographics.source} />
+            <BoroughComparisonTable
+              title="Boroughs compared: who lives where"
+              intro="Population, age, education, housing tenure and deprivation in every borough (2021 Census; deprivation from the 2019 Indices)."
+              columns={["Residents", "Under 15", "65 and over", "Degree level", "Social rent", "Private rent", "Most deprived 30%"]}
+              rows={demographicsComparison.map((r) => ({
+                name: r.name,
+                href: boroughLink(r.slug),
+                cells: [r.population.toLocaleString("en-GB"), pct1(r.under15), pct1(r.over65), pct1(r.degree), pct1(r.social), pct1(r.private), pct1(r.deprived)],
+              }))}
+              footer={{
+                name: "London",
+                cells: [
+                  londonDemographics.london.population.toLocaleString("en-GB"),
+                  pct1(londonDemographics.london.age.under15),
+                  pct1(londonDemographics.london.age.age65plus),
+                  pct1(londonDemographics.london.qualifications.degreeLevel),
+                  pct1(londonDemographics.london.tenure.socialRented),
+                  pct1(londonDemographics.london.tenure.privateRented),
+                  pct1(londonDemographics.london.imdDeciles.slice(0, 3).reduce((a, x) => a + x, 0)),
+                ],
+              }}
+              source="Sources: ONS Census 2021; English Indices of Deprivation 2019. Most deprived 30% is the share of postcodes in the most deprived 30% of England."
+            />
+          </div>
+        )
+      }
+      {
         housingByBorough
           .filter((b) => b.demographics)
           .map((b) => (
@@ -161,6 +323,54 @@ const housingByBorough = trend.boroughs
     </section>
 
     <section data-section="connectivity" data-section-label="Connectivity" class="mt-10">
+      {
+        (londonBroadband || londonMobile) && (
+          <div data-london-block>
+            <h2 class="text-2xl font-bold mb-4">Connectivity across {city.name}</h2>
+            <ConnectivitySection
+              broadband={
+                londonBroadband
+                  ? {
+                      columns: [{ label: city.name, data: londonBroadband.london }],
+                      period: londonBroadband.period,
+                      source: londonBroadband.source,
+                      note: "London figures are weighted by number of homes.",
+                    }
+                  : null
+              }
+              mobile={
+                londonMobile
+                  ? {
+                      columns: [{ label: city.name, data: londonMobile.london }],
+                      period: londonMobile.period,
+                      source: londonMobile.source,
+                      intro: `Share of homes in ${city.name} with mobile coverage from EE, O2, Three and Vodafone (Ofcom, ${londonMobile.period}).`,
+                    }
+                  : null
+              }
+            />
+            <BoroughComparisonTable
+              title="Boroughs compared: broadband and mobile"
+              intro="Share of homes that can get each service, in every borough."
+              columns={["Gigabit", "Full fibre", "Superfast (30+ Mbit/s)", "4G indoors, all networks", "5G outdoors, all networks"]}
+              rows={connectivityComparison.map((r) => ({
+                name: r.name,
+                href: boroughLink(r.slug),
+                cells: [pct1(r.gigabit), pct1(r.fullFibre), pct1(r.superfast), pct1(r.fourGIndoor), pct1(r.fiveG)],
+              }))}
+              footer={
+                londonBroadband && londonMobile
+                  ? {
+                      name: "London",
+                      cells: [pct1(londonBroadband.london.gigabit), pct1(londonBroadband.london.fullFibre), pct1(londonBroadband.london.superfast), pct1(londonMobile.london.fourGIndoorAll), pct1(londonMobile.london.fiveGOutdoorAll)],
+                    }
+                  : undefined
+              }
+              source="Source: Ofcom Connected Nations 2025."
+            />
+          </div>
+        )
+      }
       {
         housingByBorough
           .filter((b) => b.broadband || b.mobile)
@@ -280,9 +490,11 @@ const housingByBorough = trend.boroughs
       if (highlight && block.dataset.boroughSlug === highlight) block.classList.remove("hidden");
       else block.remove();
     }
+    // Without a highlighted borough the page shows London as a whole; with one, that view is replaced by the borough's.
+    if (highlight) document.querySelectorAll("[data-london-block]").forEach((b) => b.remove());
     for (const section of document.querySelectorAll<HTMLElement>("[data-section]")) {
-      // Demographics and Connectivity exist only through a borough's blocks.
-      if (section.dataset.section !== "housing" && !section.querySelector("[data-borough-block]")) section.remove();
+      // Demographics and Connectivity exist only through the London or a borough's blocks.
+      if (section.dataset.section !== "housing" && !section.querySelector("[data-borough-block], [data-london-block]")) section.remove();
     }
     const heading = document.querySelector<HTMLElement>("[data-stats-heading]");
     if (heading && highlight) {

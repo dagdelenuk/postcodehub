@@ -15,9 +15,11 @@ interface Props {
   };
   /** Distinguishes this chart's DOM ids when a page renders it more than once. */
   chartId?: string;
+  /** London as a whole: no "against London" comparison columns or duplicate cards. */
+  solo?: boolean;
 }
 
-const { b } = Astro.props;
+const { b, solo = false } = Astro.props;
 
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 const RENT_ROWS: { key: RentBedroomKey; label: string }[] = [
@@ -45,13 +47,13 @@ function formatMonth(month: string): string {
   <section class="mb-8">
     <h2 class="text-2xl font-bold mb-1">Private rents in {b.name}</h2>
     <p class="text-stone-500 mb-3 text-sm">
-      Average monthly rent by number of bedrooms, and how it has changed over 12 months, against the London average. Latest figures: {formatMonth(b.rents.latestMonth)}.
+      Average monthly rent by number of bedrooms, and how it has changed over 12 months{solo ? "" : ", against the London average"}. Latest figures: {formatMonth(b.rents.latestMonth)}.
     </p>
     <div class="grid gap-4 sm:grid-cols-2 mb-4">
       {[
         { label: b.name, area: b.rents.borough },
         { label: "London average", area: b.rents.london },
-      ].map((c) => (
+      ].slice(0, solo ? 1 : 2).map((c) => (
         <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
           <p class="text-2xl font-bold text-emerald-800">{c.area.byBedrooms.all.price != null ? gbp.format(c.area.byBedrooms.all.price) : "n/a"}<span class="text-sm font-normal text-stone-500"> a month</span></p>
           <p class="text-xs text-stone-500 mt-1">
@@ -65,7 +67,7 @@ function formatMonth(month: string): string {
         </div>
       ))}
     </div>
-    <BoroughTrendChart trend={b.rents.trend} averageLabel="London average" chartId={`rents-${b.slug}`} />
+    <BoroughTrendChart trend={b.rents.trend} averageLabel={solo ? "London average rent" : "London average"} chartId={`rents-${b.slug}`} />
     <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
       <table class="w-full text-sm">
         <thead>
@@ -73,8 +75,8 @@ function formatMonth(month: string): string {
             <th class="px-4 py-2 font-semibold">Property</th>
             <th class="px-4 py-2 font-semibold text-right">{b.name} / month</th>
             <th class="px-4 py-2 font-semibold text-right">12-month change</th>
-            <th class="px-4 py-2 font-semibold text-right">London / month</th>
-            <th class="px-4 py-2 font-semibold text-right">London change</th>
+            {!solo && <th class="px-4 py-2 font-semibold text-right">London / month</th>}
+            {!solo && <th class="px-4 py-2 font-semibold text-right">London change</th>}
           </tr>
         </thead>
         <tbody>
@@ -86,7 +88,7 @@ function formatMonth(month: string): string {
                 <td class="px-4 py-2">{row.label}</td>
                 <td class="px-4 py-2 text-right">
                   {local.price != null ? gbp.format(local.price) : "n/a"}
-                  {local.price != null && lon.price != null && local.price !== lon.price && (
+                  {!solo && local.price != null && lon.price != null && local.price !== lon.price && (
                     <span class:list={["ml-1.5", local.price > lon.price ? "text-red-600" : "text-emerald-600"]} title={local.price > lon.price ? "Above the London average" : "Below the London average"}>
                       {local.price > lon.price ? "▲" : "▼"}
                     </span>
@@ -94,14 +96,14 @@ function formatMonth(month: string): string {
                 </td>
                 <td class="px-4 py-2 text-right">
                   {pctChange(local.annualChange)}
-                  {local.annualChange != null && lon.annualChange != null && Math.abs(local.annualChange - lon.annualChange) >= 0.05 && (
+                  {!solo && local.annualChange != null && lon.annualChange != null && Math.abs(local.annualChange - lon.annualChange) >= 0.05 && (
                     <span class:list={["ml-1.5", local.annualChange > lon.annualChange ? "text-red-600" : "text-emerald-600"]} title={local.annualChange > lon.annualChange ? "Rising faster than London" : "Rising slower than London"}>
                       {local.annualChange > lon.annualChange ? "▲" : "▼"}
                     </span>
                   )}
                 </td>
-                <td class="px-4 py-2 text-right text-stone-500">{lon.price != null ? gbp.format(lon.price) : "n/a"}</td>
-                <td class="px-4 py-2 text-right text-stone-500">{pctChange(lon.annualChange)}</td>
+                {!solo && <td class="px-4 py-2 text-right text-stone-500">{lon.price != null ? gbp.format(lon.price) : "n/a"}</td>}
+                {!solo && <td class="px-4 py-2 text-right text-stone-500">{pctChange(lon.annualChange)}</td>}
               </tr>
             );
           })}
@@ -117,12 +119,12 @@ function formatMonth(month: string): string {
 {b.hpi && b.hpiTrend && (
             <section class="mb-8">
               <h2 class="text-2xl font-bold mb-1">House prices in {b.name}</h2>
-              <p class="text-stone-500 mb-3 text-sm">Average sale price by month, against the London average. Latest figures: {formatMonth(b.hpi.borough.months[b.hpi.borough.months.length - 1])}.</p>
+              <p class="text-stone-500 mb-3 text-sm">Average sale price by month{solo ? "" : ", against the London average"}. Latest figures: {formatMonth(b.hpi.borough.months[b.hpi.borough.months.length - 1])}.</p>
               <div class="grid gap-4 sm:grid-cols-2 mb-4">
                 {[
                   { label: b.name, series: b.hpi.borough },
                   { label: "London average", series: b.hpi.london },
-                ].map((c) => (
+                ].slice(0, solo ? 1 : 2).map((c) => (
                   <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
                     <p class="text-2xl font-bold text-emerald-800">{gbp.format(c.series.averagePrice[c.series.averagePrice.length - 1])}</p>
                     <p class="text-xs text-stone-500 mt-1">
@@ -136,14 +138,14 @@ function formatMonth(month: string): string {
                   </div>
                 ))}
               </div>
-              <BoroughTrendChart trend={b.hpiTrend} averageLabel="London average" chartId={`hpi-${b.slug}`} />
+              <BoroughTrendChart trend={b.hpiTrend} averageLabel={solo ? "London average price" : "London average"} chartId={`hpi-${b.slug}`} />
               <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
                 <table class="w-full text-sm">
                   <thead>
                     <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
                       <th class="px-4 py-2 font-semibold">Property type</th>
                       <th class="px-4 py-2 font-semibold text-right">{b.name}</th>
-                      <th class="px-4 py-2 font-semibold text-right">London average</th>
+                      {!solo && <th class="px-4 py-2 font-semibold text-right">London average</th>}
                     </tr>
                   </thead>
                   <tbody>
@@ -155,13 +157,13 @@ function formatMonth(month: string): string {
                           <td class="px-4 py-2">{row.label}</td>
                           <td class="px-4 py-2 text-right">
                             {local != null ? gbp.format(local) : "n/a"}
-                            {local != null && lon != null && local !== lon && (
+                            {!solo && local != null && lon != null && local !== lon && (
                               <span class:list={["ml-1.5", local > lon ? "text-red-600" : "text-emerald-600"]} title={local > lon ? "Above the London average" : "Below the London average"}>
                                 {local > lon ? "▲" : "▼"}
                               </span>
                             )}
                           </td>
-                          <td class="px-4 py-2 text-right text-stone-500">{lon != null ? gbp.format(lon) : "n/a"}</td>
+                          {!solo && <td class="px-4 py-2 text-right text-stone-500">{lon != null ? gbp.format(lon) : "n/a"}</td>}
                         </tr>
                       );
                     })}

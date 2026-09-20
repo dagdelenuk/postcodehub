@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+  intro: string;
+  /** Column headings after the borough name. */
+  columns: string[];
+  rows: { name: string; href: string; cells: string[] }[];
+  /** Optional last row, e.g. the London figure. */
+  footer?: { name: string; cells: string[] };
+  source: string;
+}
+
+const { title, intro, columns, rows, footer, source } = Astro.props;
+---
+
+<section class="mb-8">
+  <h3 class="text-lg font-semibold mb-1">{title}</h3>
+  <p class="text-stone-500 mb-3 text-sm">{intro}</p>
+  <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+          <th class="px-4 py-2 font-semibold">Borough</th>
+          {columns.map((c) => <th class="px-4 py-2 font-semibold text-right whitespace-nowrap">{c}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((r) => (
+            <tr class="border-b border-stone-100 last:border-0">
+              <td class="px-4 py-2 whitespace-nowrap">
+                <a href={r.href} class="text-emerald-700 hover:underline">{r.name}</a>
+              </td>
+              {r.cells.map((c) => <td class="px-4 py-2 text-right whitespace-nowrap">{c}</td>)}
+            </tr>
+          ))
+        }
+        {
+          footer && (
+            <tr class="bg-emerald-50 font-semibold">
+              <td class="px-4 py-2 whitespace-nowrap">{footer.name}</td>
+              {footer.cells.map((c) => <td class="px-4 py-2 text-right whitespace-nowrap">{c}</td>)}
+            </tr>
+          )
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="text-xs text-stone-400 mt-2">{source} Select a borough for its full breakdown.</p>
+</section>
