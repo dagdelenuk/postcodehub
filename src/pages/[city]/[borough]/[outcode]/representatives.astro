@@ -1,6 +1,6 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
-import { getAllOutcodeParams, getLocalElections, getWardElectionResults, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { getAllOutcodeParams, mpContactUrl, getLocalElections, getWardElectionResults, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -38,7 +38,7 @@ const pct = new Intl.NumberFormat("en-GB", { maximumFractionDigits: 1 });
               <p class="font-medium">{rep.name}</p>
               <p class="text-sm text-stone-500 mt-1">{rep.party} &middot; {rep.constituency}</p>
               {rep.contactUrl && (
-                <a href={rep.contactUrl} target="_blank" rel="noopener" class="text-sm text-emerald-700 hover:underline mt-1 inline-block">
+                <a href={mpContactUrl(rep.name)} target="_blank" rel="noopener" class="text-sm text-emerald-700 hover:underline mt-1 inline-block">
                   Contact &rarr;
                 </a>
               )}

@@ -33,7 +33,9 @@ const { city, borough } = Astro.props;
 const summary = getBoroughSummary(city.slug, borough.slug);
 const hasHealth = getBoroughHealth(city.slug, borough.slug).length > 0;
 const hasSchools = getBoroughSchools(city.slug, borough.slug).length > 0;
-const hasRepresentatives = getBoroughRepresentatives(city.slug, borough.slug).length > 0;
+const representativeGroups = getBoroughRepresentatives(city.slug, borough.slug);
+const hasRepresentatives = representativeGroups.length > 0;
+const mpCount = new Set(representativeGroups.flatMap((g) => g.representatives.filter((r) => r.role === "MP").map((r) => r.name))).size;
 const boroughPlaces = getBoroughPlaces(city.slug, borough.slug);
 const placesCount = boroughPlaces.reduce((sum, g) => sum + g.places.length, 0);
 const summaryStats = [
@@ -103,7 +105,7 @@ const hasSplitDistricts = districtGroups.split.length > 0;
             <span class="pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none text-purple-600" aria-hidden="true">
               🏛️
             </span>
-            <p class="relative text-2xl font-bold text-emerald-800">&nbsp;</p>
+            <p class="relative text-2xl font-bold text-emerald-800">{mpCount}</p>
             <p class="relative text-xs text-stone-500 mt-1">Representatives</p>
           </a>
         )

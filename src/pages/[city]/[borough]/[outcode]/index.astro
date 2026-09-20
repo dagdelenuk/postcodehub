@@ -22,6 +22,7 @@ const STAT_COLORS: Record<string, string> = {
   safety: "text-amber-600",
   property: "text-emerald-600",
   places: "text-teal-600",
+  representatives: "text-purple-600",
 };
 
 const summaryStats = [
@@ -30,6 +31,7 @@ const summaryStats = [
   { label: "Safety & Crime (12mo)", value: data.safety.totalLast12Months, category: "safety" as const },
   { label: "Property sales", value: data.property.sales.length, category: "property" as const },
   { label: "Places", value: data.places.places.length, category: "places" as const },
+  { label: "Representatives", value: new Set(data.representatives.representatives.filter((r) => r.role === "MP").map((r) => r.name)).size, category: "representatives" as const },
 ];
 
 const hasHealth = hasContent(data, "health");

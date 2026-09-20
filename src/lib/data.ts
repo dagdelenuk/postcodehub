@@ -890,3 +890,9 @@ export function hasContent(data: OutcodeData, category: keyof OutcodeData): bool
   }
   return Boolean(value);
 }
+
+/** Parliament member-search link pre-filled with the MP's name, instead of the generic MPs landing page. */
+export function mpContactUrl(name: string): string {
+  const q = new URLSearchParams({ SearchText: name, PartyId: "", Gender: "Any", ForParliament: "Current", ShowAdvanced: "False" });
+  return `https://members.parliament.uk/members/commons?${q.toString()}`;
+}

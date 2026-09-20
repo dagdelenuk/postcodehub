@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
-import { getBoroughRepresentatives, getLocalElections, getWardElectionResults, loadHierarchy } from "../../../lib/data";
+import { getBoroughRepresentatives, mpContactUrl, getLocalElections, getWardElectionResults, loadHierarchy } from "../../../lib/data";
 import type { Representative } from "../../../lib/types";
 
 export function getStaticPaths() {
@@ -82,7 +82,7 @@ const pct = new Intl.NumberFormat("en-GB", { maximumFractionDigits: 1 });
                 <p class="font-medium">{rep.name}</p>
                 <p class="text-sm text-stone-500 mt-1">{rep.party} &middot; {rep.constituency}</p>
                 {rep.contactUrl && (
-                  <a href={rep.contactUrl} target="_blank" rel="noopener" class="text-sm text-emerald-700 hover:underline mt-1 inline-block">
+                  <a href={mpContactUrl(rep.name)} target="_blank" rel="noopener" class="text-sm text-emerald-700 hover:underline mt-1 inline-block">
                     Contact &rarr;
                   </a>
                 )}
