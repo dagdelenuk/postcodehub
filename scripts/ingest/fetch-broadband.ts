@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { parse } from "csv-parse/sync";
 import { logStep } from "./lib/fetch-utils.js";
 import { loadHierarchy, loadOutcodeIndex } from "./lib/geo.js";
+import { findLatestOfcomRelease, type OfcomRelease } from "./lib/ofcom.js";
 import type { BroadbandFile, BroadbandMetrics } from "../../src/lib/types.js";
 
 const STEP = "broadband";
@@ -14,12 +15,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAW_DIR = path.resolve(__dirname, "../../data/raw");
 const OUT_FILE = path.resolve(__dirname, "../../data/processed/broadband.json");
 
-// Ofcom Connected Nations 2025 (data as at July 2025). Ofcom publishes a new
-// release each year under a new folder/filename, so bump these when refreshing.
-const PERIOD = "July 2025";
-const ZIP_URL =
-  "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/infrastructure-research/connected-nations-2025/202507_fixed_broadband_coverage_r01.zip";
-const ZIP_PATH = path.join(RAW_DIR, "ofcom-fixed-coverage-2025.zip");
+// Ofcom Connected Nations fixed broadband coverage. The release is discovered on Ofcom's data downloads pages (see lib/ofcom.ts);
+// this is the fallback when discovery finds nothing, which is also the release the committed data came from.
+const FALLBACK_RELEASE: OfcomRelease = {
+  url: "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/infrastructure-research/connected-nations-2025/202507_fixed_broadband_coverage_r01.zip",
+  tag: "202507",
+  rev: "r01",
+  period: "July 2025",
+  reportYear: 2025,
+};
 
 type Row = Record<string, string>;
 
@@ -66,33 +70,46 @@ function meanMetrics(rows: Row[]): BroadbandMetrics {
   return metricsFrom(synthetic, null);
 }
 
-async function ensureZip() {
-  if (existsSync(ZIP_PATH)) {
-    logStep(STEP, `Using cached ${ZIP_PATH}`);
-    return;
+async function ensureZip(release: OfcomRelease): Promise<string> {
+  const dest = path.join(RAW_DIR, `ofcom-fixed-coverage-${release.tag}-${release.rev}.zip`);
+  if (existsSync(dest)) {
+    logStep(STEP, `Using cached ${dest}`);
+    return dest;
   }
-  logStep(STEP, `Downloading ${ZIP_URL} (~35MB)...`);
-  const res = await fetch(ZIP_URL, { signal: AbortSignal.timeout(300000) });
-  if (!res.ok) throw new Error(`GET ${ZIP_URL} -> ${res.status}`);
+  logStep(STEP, `Downloading ${release.url} (~35MB)...`);
+  const res = await fetch(release.url, { signal: AbortSignal.timeout(300000) });
+  if (!res.ok) throw new Error(`GET ${release.url} -> ${res.status}`);
   await mkdir(RAW_DIR, { recursive: true });
-  await writeFile(ZIP_PATH, Buffer.from(await res.arrayBuffer()));
+  await writeFile(dest, Buffer.from(await res.arrayBuffer()));
+  return dest;
 }
 
 async function main() {
-  await ensureZip();
+  const release = (await findLatestOfcomRelease("fixed_broadband_coverage")) ?? FALLBACK_RELEASE;
+  logStep(STEP, `Using the ${release.period} release (${release.tag}_${release.rev}).`);
+  // Scheduled refreshes run this yearly-ish; skip the big download when the committed data is already this release.
+  if (!process.env.FORCE && existsSync(OUT_FILE)) {
+    const current = JSON.parse(await readFile(OUT_FILE, "utf-8")) as { period?: string };
+    if (current.period === release.period) {
+      logStep(STEP, `Already up to date (${release.period}); set FORCE=1 to rebuild anyway.`);
+      return;
+    }
+  }
+  const zipPath = await ensureZip(release);
+  const { tag, rev } = release;
   const tmp = path.join(os.tmpdir(), `ofcom-broadband-${process.pid}`);
   await mkdir(tmp, { recursive: true });
   try {
-    execFileSync("unzip", ["-oq", ZIP_PATH, "-d", tmp]);
-    const root = path.join(tmp, "202507_fixed_coverage_r01");
-    execFileSync("unzip", ["-oq", path.join(root, "202507_fixed_pc_coverage_r01.zip"), "-d", tmp]);
-    const pcDir = path.join(tmp, "202507_fixed_pc_coverage_r01", "postcode_res_files");
+    execFileSync("unzip", ["-oq", zipPath, "-d", tmp]);
+    const root = path.join(tmp, `${tag}_fixed_coverage_${rev}`);
+    execFileSync("unzip", ["-oq", path.join(root, `${tag}_fixed_pc_coverage_${rev}.zip`), "-d", tmp]);
+    const pcDir = path.join(tmp, `${tag}_fixed_pc_coverage_${rev}`, "postcode_res_files");
 
     const hierarchy = await loadHierarchy();
     const boroughs = hierarchy.cities.flatMap((c) => c.boroughs);
 
     // Borough + London: local-authority file carries premises counts, so London is premises-weighted.
-    const laRows = parse(await readFile(path.join(root, "202507_fixed_laua_res_coverage_r01.csv"), "utf-8"), { columns: true, skip_empty_lines: true, bom: true }) as Row[];
+    const laRows = parse(await readFile(path.join(root, `${tag}_fixed_laua_res_coverage_${rev}.csv`), "utf-8"), { columns: true, skip_empty_lines: true, bom: true }) as Row[];
     const boroughMetrics: Record<string, BroadbandMetrics> = {};
     const londonRows: Row[] = [];
     for (const b of boroughs) {
@@ -116,7 +133,7 @@ async function main() {
     const areas = new Set([...wanted].map((o) => o.match(/^[A-Z]+/)![0]));
     const byOutcode = new Map<string, Row[]>();
     for (const area of areas) {
-      const file = path.join(pcDir, `202507_fixed_pc_coverage_res_r01_${area}.csv`);
+      const file = path.join(pcDir, `${tag}_fixed_pc_coverage_res_${rev}_${area}.csv`);
       if (!existsSync(file)) continue;
       const rows = parse(await readFile(file, "utf-8"), { columns: true, skip_empty_lines: true, bom: true }) as Row[];
       for (const r of rows) {
@@ -131,8 +148,8 @@ async function main() {
     for (const [outcode, rows] of byOutcode) outcodes[outcode] = { ...meanMetrics(rows), postcodes: rows.length };
 
     const data: BroadbandFile = {
-      source: "Ofcom, Connected Nations 2025 - fixed broadband coverage (residential premises)",
-      period: PERIOD,
+      source: `Ofcom, Connected Nations ${release.reportYear} - fixed broadband coverage (residential premises)`,
+      period: release.period,
       london,
       boroughs: boroughMetrics,
       outcodes,

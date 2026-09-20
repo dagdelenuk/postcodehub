@@ -40,7 +40,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
         </p>
       </div>
 
-      <div>
+      <div class="min-w-0">
         <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">Explore</h2>
         <ul class="mt-3 space-y-2 text-sm">
           <li><a href="/" class="text-stone-600 hover:text-emerald-700">Home</a></li>
@@ -110,7 +110,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
 
       {
         currentBorough && districtGroups && districtGroups.full.length + districtGroups.split.length > 0 && (
-          <div>
+          <div class="min-w-0">
             <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">
               Postcode districts in<br />{currentBorough.name}
             </h2>
@@ -118,7 +118,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
               {districtGroups.full.map((o) => {
                 const label = `${o.outcode} - ${districtLocalName(o, city!.name)}`;
                 return (
-                  <li>
+                  <li class="min-w-0">
                     <a
                       href={`/${city!.slug}/${boroughSlug}/${o.slug}/`}
                       title={label}
@@ -138,7 +138,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
                     {districtGroups.split.map((o) => {
                       const label = `${o.outcode} - ${districtLocalName(o, city!.name)} (part)`;
                       return (
-                        <li>
+                        <li class="min-w-0">
                           <a
                             href={`/${city!.slug}/${boroughSlug}/${o.slug}/`}
                             title={label}

@@ -17,17 +17,25 @@ const { title, intro, columns, rows, footer, source } = Astro.props;
   <h3 class="text-lg font-semibold mb-1">{title}</h3>
   <p class="text-stone-500 mb-3 text-sm">{intro}</p>
   <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
-    <table class="w-full text-sm">
+    <table class="w-full text-sm" data-sortable-table>
       <thead>
         <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
-          <th class="px-4 py-2 font-semibold">Borough</th>
-          {columns.map((c) => <th class="px-4 py-2 font-semibold text-right whitespace-nowrap">{c}</th>)}
+          <th class="px-4 py-2 font-semibold" aria-sort="none">
+            <button type="button" class="sort-btn" data-sort-col="0">Borough <span class="sort-arrow" aria-hidden="true"></span></button>
+          </th>
+          {
+            columns.map((c, i) => (
+              <th class="px-4 py-2 font-semibold text-right whitespace-nowrap" aria-sort="none">
+                <button type="button" class="sort-btn justify-end" data-sort-col={i + 1}>{c} <span class="sort-arrow" aria-hidden="true"></span></button>
+              </th>
+            ))
+          }
         </tr>
       </thead>
       <tbody>
         {
           rows.map((r) => (
-            <tr class="border-b border-stone-100 last:border-0">
+            <tr class="border-b border-stone-100 last:border-0" data-sort-row>
               <td class="px-4 py-2 whitespace-nowrap">
                 <a href={r.href} class="text-emerald-700 hover:underline">{r.name}</a>
               </td>
@@ -37,7 +45,7 @@ const { title, intro, columns, rows, footer, source } = Astro.props;
         }
         {
           footer && (
-            <tr class="bg-emerald-50 font-semibold">
+            <tr class="bg-emerald-50 font-semibold" data-sort-footer>
               <td class="px-4 py-2 whitespace-nowrap">{footer.name}</td>
               {footer.cells.map((c) => <td class="px-4 py-2 text-right whitespace-nowrap">{c}</td>)}
             </tr>
@@ -46,5 +54,86 @@ const { title, intro, columns, rows, footer, source } = Astro.props;
       </tbody>
     </table>
   </div>
-  <p class="text-xs text-stone-400 mt-2">{source} Select a borough for its full breakdown.</p>
+  <p class="text-xs text-stone-400 mt-2">{source} Select a borough for its full breakdown, or click a column heading to sort.</p>
 </section>
+
+<style>
+  .sort-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .sort-btn:hover {
+    color: #047857;
+  }
+  .sort-arrow {
+    display: inline-block;
+    width: 0.7em;
+    font-size: 0.85em;
+    color: #047857;
+  }
+  th[aria-sort="ascending"] .sort-arrow::after {
+    content: "▲";
+  }
+  th[aria-sort="descending"] .sort-arrow::after {
+    content: "▼";
+  }
+</style>
+
+<script>
+  // Turns a cell like "£1,698", "+2.6%", "195,279" or "n/a" into something sortable; n/a always sorts last.
+  function sortValue(text: string): number | null {
+    const cleaned = text.replace(/[£,%\s]/g, "").replace(/^\+/, "");
+    if (cleaned === "" || cleaned.toLowerCase() === "n/a") return null;
+    const n = Number(cleaned);
+    return Number.isNaN(n) ? null : n;
+  }
+
+  document.querySelectorAll<HTMLTableElement>("[data-sortable-table]").forEach((table) => {
+    const body = table.tBodies[0];
+    const rows = [...body.querySelectorAll<HTMLTableRowElement>("[data-sort-row]")];
+    const footer = body.querySelector<HTMLTableRowElement>("[data-sort-footer]");
+    const heads = [...table.querySelectorAll<HTMLTableCellElement>("thead th")];
+    const original = [...rows]; // alphabetical, as rendered
+    let sortedCol = -1;
+    let direction: "ascending" | "descending" = "ascending";
+
+    function apply() {
+      let ordered = original;
+      if (sortedCol >= 0) {
+        ordered = [...original].sort((a, b) => {
+          const ta = a.cells[sortedCol].textContent?.trim() ?? "";
+          const tb = b.cells[sortedCol].textContent?.trim() ?? "";
+          if (sortedCol === 0) return direction === "ascending" ? ta.localeCompare(tb) : tb.localeCompare(ta);
+          const va = sortValue(ta);
+          const vb = sortValue(tb);
+          if (va === null && vb === null) return 0;
+          if (va === null) return 1; // n/a stays at the bottom either way
+          if (vb === null) return -1;
+          return direction === "ascending" ? va - vb : vb - va;
+        });
+      }
+      for (const row of ordered) body.insertBefore(row, footer ?? null);
+      heads.forEach((th, i) => th.setAttribute("aria-sort", i === sortedCol ? direction : "none"));
+    }
+
+    table.querySelectorAll<HTMLButtonElement>("[data-sort-col]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const col = Number(btn.dataset.sortCol);
+        // First click on a numeric column: highest first is the more useful default.
+        if (col === sortedCol) direction = direction === "ascending" ? "descending" : "ascending";
+        else {
+          sortedCol = col;
+          direction = col === 0 ? "ascending" : "descending";
+        }
+        apply();
+      });
+    });
+  });
+</script>

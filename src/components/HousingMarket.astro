@@ -67,7 +67,7 @@ function formatMonth(month: string): string {
         </div>
       ))}
     </div>
-    <BoroughTrendChart trend={b.rents.trend} averageLabel={solo ? "London average rent" : "London average"} chartId={`rents-${b.slug}`} />
+    <BoroughTrendChart trend={b.rents.trend} averageLabel={solo ? "London average rent" : "London average"} chartId={`rents-${b.slug}`} zoomAxis />
     <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
       <table class="w-full text-sm">
         <thead>
@@ -138,7 +138,7 @@ function formatMonth(month: string): string {
                   </div>
                 ))}
               </div>
-              <BoroughTrendChart trend={b.hpiTrend} averageLabel={solo ? "London average price" : "London average"} chartId={`hpi-${b.slug}`} />
+              <BoroughTrendChart trend={b.hpiTrend} averageLabel={solo ? "London average price" : "London average"} chartId={`hpi-${b.slug}`} zoomAxis />
               <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
                 <table class="w-full text-sm">
                   <thead>

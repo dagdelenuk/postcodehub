@@ -6,9 +6,11 @@ interface Props {
   averageLabel: string;
   /** Distinguishes multiple charts' localStorage-free client state and DOM ids if this component is ever used twice on one page. */
   chartId: string;
+  /** Start the vertical axis just below the lowest value instead of at zero, so gradual price/rent movements are visible. Leave off for counts (sales, crimes). */
+  zoomAxis?: boolean;
 }
 
-const { trend, averageLabel, chartId } = Astro.props;
+const { trend, averageLabel, chartId, zoomAxis = false } = Astro.props;
 
 // month is stored "YYYY-MM"; display as "MM-YY" (Ay-Yil).
 function formatMonthLabel(month: string): string {
@@ -33,13 +35,22 @@ const plotWidth = CHART_WIDTH - PAD_LEFT - PAD_RIGHT;
 const plotHeight = CHART_HEIGHT - PAD_TOP - PAD_BOTTOM;
 
 const monthCount = trend.months.length;
-const maxValue = Math.max(...trend.boroughs.flatMap((b) => b.series), ...trend.average, 1) * 1.08;
+const allValues = [...trend.boroughs.flatMap((b) => b.series), ...trend.average];
+// Same rule as the browser-side rescale below: [lo, hi] is the visible value range.
+function axisRange(values: number[], zoom: boolean): { lo: number; hi: number } {
+  const max = values.length > 0 ? Math.max(...values, 1) : 100;
+  if (!zoom || values.length === 0) return { lo: 0, hi: max * 1.08 };
+  const min = Math.min(...values);
+  const spread = max - min || max * 0.1;
+  return { lo: Math.max(0, min - spread * 0.25), hi: max + spread * 0.12 };
+}
+const axis = axisRange(allValues, zoomAxis);
 
 function xAt(i: number): number {
   return PAD_LEFT + (monthCount <= 1 ? 0 : (i / (monthCount - 1)) * plotWidth);
 }
 function yAt(value: number): number {
-  return PAD_TOP + (1 - value / maxValue) * plotHeight;
+  return PAD_TOP + (1 - (value - axis.lo) / (axis.hi - axis.lo)) * plotHeight;
 }
 function pointsFor(series: number[]): string {
   return series.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(" ");
@@ -47,7 +58,7 @@ function pointsFor(series: number[]): string {
 
 const gridLines = [0, 0.25, 0.5, 0.75, 1].map((frac) => ({
   y: PAD_TOP + (1 - frac) * plotHeight,
-  value: Math.round(maxValue * frac),
+  value: Math.round(axis.lo + (axis.hi - axis.lo) * frac),
   frac,
 }));
 
@@ -58,6 +69,7 @@ const chartData = {
   average: trend.average,
   boroughs: boroughsWithColor.map((b) => ({ slug: b.slug, series: b.series })),
   geometry: { PAD_LEFT, PAD_RIGHT, PAD_TOP, PAD_BOTTOM, CHART_WIDTH, CHART_HEIGHT },
+  zoom: zoomAxis,
 };
 ---
 
@@ -179,6 +191,7 @@ const chartData = {
       average: number[];
       boroughs: { slug: string; series: number[] }[];
       geometry: { PAD_LEFT: number; PAD_RIGHT: number; PAD_TOP: number; PAD_BOTTOM: number; CHART_WIDTH: number; CHART_HEIGHT: number };
+      zoom: boolean;
     } = JSON.parse(dataEl?.textContent ?? "null");
 
     // selected = which lines are visible; anything not in here is fully
@@ -198,10 +211,19 @@ const chartData = {
         if (selected.has(b.slug)) seriesInPlay.push(b.series);
       }
       const values = seriesInPlay.flat();
-      const maxValue = (values.length > 0 ? Math.max(...values, 1) : 100) * 1.08;
+      // Keep in step with axisRange() in the component frontmatter.
+      const max = values.length > 0 ? Math.max(...values, 1) : 100;
+      let lo = 0;
+      let hi = max * 1.08;
+      if (raw.zoom && values.length > 0) {
+        const min = Math.min(...values);
+        const spread = max - min || max * 0.1;
+        lo = Math.max(0, min - spread * 0.25);
+        hi = max + spread * 0.12;
+      }
 
       const xAt = (i: number) => PAD_LEFT + (monthCount <= 1 ? 0 : (i / (monthCount - 1)) * plotWidth);
-      const yAt = (v: number) => PAD_TOP + (1 - v / maxValue) * plotHeight;
+      const yAt = (v: number) => PAD_TOP + (1 - (v - lo) / (hi - lo)) * plotHeight;
       const pointsFor = (series: number[]) => series.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(" ");
 
       averageLine?.setAttribute("points", pointsFor(raw.average));
@@ -211,7 +233,7 @@ const chartData = {
       }
       for (const label of gridLabels) {
         const frac = Number(label.dataset.gridFrac);
-        label.textContent = Math.round(maxValue * frac).toLocaleString();
+        label.textContent = Math.round(lo + (hi - lo) * frac).toLocaleString();
       }
     }
 

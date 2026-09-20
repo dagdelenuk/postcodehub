@@ -1,0 +1,77 @@
+name: Refresh data
+
+# Re-runs the ingests whose sources change over time, checks the site still builds, and commits the refreshed data files to
+# main (which redeploys the site). Nothing is committed if a step fails, so a broken source never reaches the site.
+#
+#   monthly    (20th)      ONS private rents, HM Land Registry house prices, FSA food hygiene ratings
+#   quarterly  (1st of Jan/Apr/Jul/Oct)  council service links, TfL journey times, Ofcom broadband + mobile
+#                          (Ofcom only downloads when a newer release than the committed one exists)
+#
+# Not scheduled: road works and flood warnings are fetched live in the browser; census and deprivation data are 2021/2019
+# releases that only change with a new census or NSPL update.
+
+on:
+  schedule:
+    - cron: "0 6 20 * *"
+    - cron: "0 6 1 1,4,7,10 *"
+  workflow_dispatch:
+    inputs:
+      job:
+        description: Which refresh to run
+        type: choice
+        default: monthly
+        options: [monthly, quarterly, all]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      RUN_MONTHLY: ${{ github.event.schedule == '0 6 20 * *' || inputs.job == 'monthly' || inputs.job == 'all' }}
+      RUN_QUARTERLY: ${{ github.event.schedule == '0 6 1 1,4,7,10 *' || inputs.job == 'quarterly' || inputs.job == 'all' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Monthly ingests (rents, house prices, food hygiene)
+        if: env.RUN_MONTHLY == 'true'
+        run: |
+          npx tsx scripts/ingest/fetch-rents.ts
+          npx tsx scripts/ingest/fetch-hpi.ts
+          npx tsx scripts/ingest/fetch-food-hygiene.ts
+
+      - name: Quarterly ingests (council services, journey times, Ofcom)
+        if: env.RUN_QUARTERLY == 'true'
+        run: |
+          npx tsx scripts/ingest/fetch-council-services.ts
+          npx tsx scripts/ingest/fetch-journey-times.ts
+          npx tsx scripts/ingest/fetch-broadband.ts
+          npx tsx scripts/ingest/fetch-mobile.ts
+
+      - name: Check the site still builds with the new data
+        run: npm run build
+
+      - name: Commit refreshed data
+        run: |
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh data ($(date -u +%Y-%m-%d))"
+          git push

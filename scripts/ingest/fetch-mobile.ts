@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { parse } from "csv-parse/sync";
 import { logStep } from "./lib/fetch-utils.js";
 import { loadHierarchy } from "./lib/geo.js";
+import { findLatestOfcomRelease, type OfcomRelease } from "./lib/ofcom.js";
 import type { MobileCoverageFile, MobileCoverageMetrics } from "../../src/lib/types.js";
 
 const STEP = "mobile";
@@ -14,12 +15,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAW_DIR = path.resolve(__dirname, "../../data/raw");
 const OUT_FILE = path.resolve(__dirname, "../../data/processed/mobile.json");
 
-// Ofcom Connected Nations 2025 (data as at July 2025). Ofcom publishes a new
-// release each year under a new folder/filename, so bump these when refreshing.
-const PERIOD = "July 2025";
-const ZIP_URL =
-  "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/infrastructure-research/connected-nations-2025/202507_mobile_coverage_r01.zip";
-const ZIP_PATH = path.join(RAW_DIR, "ofcom-mobile-coverage-2025.zip");
+// Ofcom Connected Nations mobile coverage. The release is discovered on Ofcom's data downloads pages (see lib/ofcom.ts);
+// this is the fallback when discovery finds nothing, which is also the release the committed data came from.
+const FALLBACK_RELEASE: OfcomRelease = {
+  url: "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/infrastructure-research/connected-nations-2025/202507_mobile_coverage_r01.zip",
+  tag: "202507",
+  rev: "r01",
+  period: "July 2025",
+  reportYear: 2025,
+};
 
 type Row = Record<string, string>;
 
@@ -48,25 +52,38 @@ const COLUMNS = [
   "5G_high_confidence_prem_out_0", "5G_high_confidence_prem_out_4", "Voice_prem_in_4",
 ];
 
-async function ensureZip() {
-  if (existsSync(ZIP_PATH)) {
-    logStep(STEP, `Using cached ${ZIP_PATH}`);
-    return;
+async function ensureZip(release: OfcomRelease): Promise<string> {
+  const dest = path.join(RAW_DIR, `ofcom-mobile-coverage-${release.tag}-${release.rev}.zip`);
+  if (existsSync(dest)) {
+    logStep(STEP, `Using cached ${dest}`);
+    return dest;
   }
-  logStep(STEP, `Downloading ${ZIP_URL} (~0.3MB)...`);
-  const res = await fetch(ZIP_URL, { signal: AbortSignal.timeout(120000) });
-  if (!res.ok) throw new Error(`GET ${ZIP_URL} -> ${res.status}`);
+  logStep(STEP, `Downloading ${release.url} (~0.3MB)...`);
+  const res = await fetch(release.url, { signal: AbortSignal.timeout(120000) });
+  if (!res.ok) throw new Error(`GET ${release.url} -> ${res.status}`);
   await mkdir(RAW_DIR, { recursive: true });
-  await writeFile(ZIP_PATH, Buffer.from(await res.arrayBuffer()));
+  await writeFile(dest, Buffer.from(await res.arrayBuffer()));
+  return dest;
 }
 
 async function main() {
-  await ensureZip();
+  const release = (await findLatestOfcomRelease("mobile_coverage")) ?? FALLBACK_RELEASE;
+  logStep(STEP, `Using the ${release.period} release (${release.tag}_${release.rev}).`);
+  // Scheduled refreshes run this yearly-ish; skip the big download when the committed data is already this release.
+  if (!process.env.FORCE && existsSync(OUT_FILE)) {
+    const current = JSON.parse(await readFile(OUT_FILE, "utf-8")) as { period?: string };
+    if (current.period === release.period) {
+      logStep(STEP, `Already up to date (${release.period}); set FORCE=1 to rebuild anyway.`);
+      return;
+    }
+  }
+  const zipPath = await ensureZip(release);
+  const { tag, rev } = release;
   const tmp = path.join(os.tmpdir(), `ofcom-mobile-${process.pid}`);
   await mkdir(tmp, { recursive: true });
   try {
-    execFileSync("unzip", ["-oq", ZIP_PATH, "-d", tmp]);
-    const file = path.join(tmp, "202507_mobile_coverage_r01", "202507_mobile_coverage_laua_r01.csv");
+    execFileSync("unzip", ["-oq", zipPath, "-d", tmp]);
+    const file = path.join(tmp, `${tag}_mobile_coverage_${rev}`, `${tag}_mobile_coverage_laua_${rev}.csv`);
     const rows = parse(await readFile(file, "utf-8"), { columns: true, skip_empty_lines: true, bom: true }) as Row[];
 
     const hierarchy = await loadHierarchy();
@@ -87,8 +104,8 @@ async function main() {
     const londonRow: Row = {};
     for (const col of COLUMNS) londonRow[col] = String(londonRows.reduce((s, r) => s + num(r, col) * num(r, "prem_count"), 0) / totalPremises);
     const data: MobileCoverageFile = {
-      source: "Ofcom, Connected Nations 2025 - mobile coverage (premises)",
-      period: PERIOD,
+      source: `Ofcom, Connected Nations ${release.reportYear} - mobile coverage (premises)`,
+      period: release.period,
       london: metricsFrom(londonRow),
       boroughs,
     };
