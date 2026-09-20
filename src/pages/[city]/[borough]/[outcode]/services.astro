@@ -1,0 +1,20 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import CouncilServices from "../../../../components/CouncilServices.astro";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "services"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+---
+
+<LocalityLayout citySlug={city!} boroughSlug={borough!} data={data} active="services" topic="Council services">
+  <h1 class="text-2xl font-bold mb-2">Council services in {data.outcode}, {data.borough}</h1>
+  <p class="text-stone-500 mb-6">{data.borough} council runs bin collections, Council Tax, parking and local services for {data.outcode}.</p>
+  <CouncilServices services={data.services} boroughName={data.borough} />
+</LocalityLayout>

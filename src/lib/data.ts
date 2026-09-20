@@ -6,9 +6,12 @@ import type {
   ChildcareProvider,
   FireStation,
   BroadbandFile,
+  CouncilServicesData,
+  CouncilServicesFile,
   BroadbandMetrics,
   MobileCoverageFile,
   MobileCoverageMetrics,
+  FoodEstablishment,
   FoodHygieneFile,
   GpSurgery,
   HpiData,
@@ -225,6 +228,9 @@ export function loadOutcodeData(citySlug: string, boroughSlug: string, outcodeSl
   const raw = readFileSync(path.join(PROCESSED_DIR, citySlug, boroughSlug, `${outcodeSlug}.json`), "utf-8");
   const data = JSON.parse(raw) as OutcodeData;
   data.food = { establishments: loadFoodHygiene()?.outcodes[data.outcode] ?? [] };
+  data.services = getCouncilServices(boroughSlug);
+  // Pubs live under Food & Hospitality (with hygiene ratings), not Places.
+  data.places = { ...data.places, places: data.places.places.filter((p) => p.category !== "pub") };
   return data;
 }
 
@@ -675,17 +681,34 @@ export interface BoroughPlacesGroup {
   places: Place[];
 }
 
-/** Places (parks, libraries, pubs, etc.) for every outcode this borough is the primary owner of, grouped by outcode. */
+/**
+ * Places (parks, libraries, leisure centres, etc.) for every outcode this borough is the primary owner of, grouped by outcode.
+ *
+ * Each outcode's own list is "nearest places in the borough", so the same place shows up under
+ * several outcodes; here it is kept once, under the outcode it is closest to.
+ */
 export function getBoroughPlaces(citySlug: string, boroughSlug: string): BoroughPlacesGroup[] {
   const borough = getBorough(citySlug, boroughSlug);
-  return (borough?.outcodes ?? [])
+  const groups = (borough?.outcodes ?? [])
     .filter((o) => o.isPrimaryBorough)
     .map((o) => {
       const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
       return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, places: data.places.places };
     })
-    .filter((g) => g.places.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));
+
+  const placeKey = (p: Place) => `${p.category}|${p.name}|${p.latitude}|${p.longitude}`;
+  const closest = new Map<string, { group: string; distanceKm: number }>();
+  for (const g of groups) {
+    for (const p of g.places) {
+      const key = placeKey(p);
+      const best = closest.get(key);
+      if (!best || p.distanceKm < best.distanceKm) closest.set(key, { group: g.outcode, distanceKm: p.distanceKm });
+    }
+  }
+  return groups
+    .map((g) => ({ ...g, places: g.places.filter((p) => closest.get(placeKey(p))?.group === g.outcode) }))
+    .filter((g) => g.places.length > 0);
 }
 
 export interface BoroughRepresentativesGroup {
@@ -1054,4 +1077,58 @@ export function getMobileCoverage(boroughSlug: string): { borough: MobileCoverag
   const m = loadMobile();
   const borough = m?.boroughs[boroughSlug];
   return m && borough ? { borough, london: m.london, period: m.period, source: m.source } : null;
+}
+
+let cachedCouncilServices: CouncilServicesFile | null | undefined;
+
+// Each council's own pages for common tasks (bin days, Council Tax, parking...),
+// from GOV.UK's Local Links Manager - see scripts/ingest/fetch-council-services.ts.
+function loadCouncilServices(): CouncilServicesFile | null {
+  if (cachedCouncilServices !== undefined) return cachedCouncilServices;
+  const filePath = path.join(REFERENCE_DIR, "council-services.json");
+  cachedCouncilServices = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as CouncilServicesFile) : null;
+  return cachedCouncilServices;
+}
+
+export function getCouncilServices(boroughSlug: string): CouncilServicesData {
+  const file = loadCouncilServices();
+  const council = file?.councils[boroughSlug];
+  if (!file || !council) return { councilName: "", homepage: "", links: [] };
+  return {
+    councilName: council.name,
+    homepage: council.homepage,
+    links: file.services.filter((s) => council.links[s.slug]).map((s) => ({ slug: s.slug, title: s.title, group: s.group, url: council.links[s.slug] })),
+  };
+}
+
+/** Police + fire stations in a borough (each outcode lists the whole borough's stations, so dedupe across outcodes). */
+export function getBoroughSafetyServiceCount(citySlug: string, boroughSlug: string): number {
+  const stations = new Set<string>();
+  for (const outcode of (getBorough(citySlug, boroughSlug)?.outcodes ?? []).filter((o) => o.isPrimaryBorough)) {
+    const { safety } = loadOutcodeData(citySlug, boroughSlug, outcode.slug);
+    for (const s of safety.policeStations) stations.add(`police|${s.name}|${s.postcode}`);
+    for (const s of safety.fireStations) stations.add(`fire|${s.name}|${s.postcode}`);
+  }
+  return stations.size;
+}
+
+export interface BoroughFoodGroup {
+  outcode: string;
+  outcodeSlug: string;
+  wards: string[];
+  postTown: string;
+  establishments: FoodEstablishment[];
+}
+
+/** Rated food businesses for every outcode this borough is the primary owner of, grouped by outcode. */
+export function getBoroughFood(citySlug: string, boroughSlug: string): BoroughFoodGroup[] {
+  const borough = getBorough(citySlug, boroughSlug);
+  return (borough?.outcodes ?? [])
+    .filter((o) => o.isPrimaryBorough)
+    .map((o) => {
+      const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
+      return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, establishments: data.food.establishments };
+    })
+    .filter((g) => g.establishments.length > 0)
+    .sort((a, b) => a.outcode.localeCompare(b.outcode));
 }

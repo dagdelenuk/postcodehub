@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import CouncilServices from "../../../components/CouncilServices.astro";
+import { getCouncilServices, loadHierarchy } from "../../../lib/data";
+
+export function getStaticPaths() {
+  const hierarchy = loadHierarchy();
+  return hierarchy.cities.flatMap((city) =>
+    city.boroughs
+      .filter((borough) => getCouncilServices(borough.slug).links.length > 0)
+      .map((borough) => ({
+        params: { city: city.slug, borough: borough.slug },
+        props: { city, borough },
+      }))
+  );
+}
+
+const { city, borough } = Astro.props;
+const services = getCouncilServices(borough.slug);
+---
+
+<BaseLayout
+  title={`Council services in ${borough.name}`}
+  description={`Bin collection days, Council Tax, parking and other services from ${borough.name} council.`}
+  menuLevel="borough"
+  citySlug={city.slug}
+  boroughSlug={borough.slug}
+>
+  <Breadcrumbs
+    sticky
+    crumbs={[
+      { label: "PostcodeHub", href: "/" },
+      { label: city.name, href: `/${city.slug}/` },
+      { label: borough.name, href: `/${city.slug}/${borough.slug}/` },
+      { label: "Council services" },
+    ]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-6">
+    <h1 class="text-2xl font-bold mb-2">Council services in {borough.name}</h1>
+    <p class="text-stone-500 mb-6">Bin collection days, Council Tax, parking and other services, straight from {borough.name}'s own website.</p>
+    <CouncilServices services={services} boroughName={borough.name} />
+  </section>
+</BaseLayout>

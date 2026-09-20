@@ -22,16 +22,18 @@ const STAT_COLORS: Record<string, string> = {
   safety: "text-amber-600",
   property: "text-emerald-600",
   places: "text-teal-600",
-  representatives: "text-purple-600",
+  food: "text-orange-600",
 };
 
+const mpCount = new Set(data.representatives.representatives.filter((r) => r.role === "MP").map((r) => r.name)).size;
 const summaryStats = [
   { label: "Health services", value: data.health.gpSurgeries.length, category: "health" as const },
   { label: "Schools", value: data.schools.schools.length, category: "schools" as const },
-  { label: "Safety & Crime (12mo)", value: data.safety.totalLast12Months, category: "safety" as const },
-  { label: "Property sales", value: data.property.sales.length, category: "property" as const },
+  // Same figure as the borough page: each outcode lists its whole borough's police + fire stations.
+  { label: "Safety services", value: data.safety.policeStations.length + data.safety.fireStations.length, category: "safety" as const },
   { label: "Places", value: data.places.places.length, category: "places" as const },
-  { label: "Representatives", value: new Set(data.representatives.representatives.filter((r) => r.role === "MP").map((r) => r.name)).size, category: "representatives" as const },
+  { label: "Food & Hospitality", value: data.food.establishments.length, category: "food" as const },
+  { label: "Statistics", value: null as number | null, category: "property" as const },
 ];
 
 ---
@@ -53,7 +55,13 @@ const summaryStats = [
             <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none", STAT_COLORS[stat.category]]} aria-hidden="true">
               {icon}
             </span>
-            <p class="relative text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
+            {stat.value === null ? (
+              <svg class="relative mx-auto h-8 w-8 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Chart">
+                <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />
+              </svg>
+            ) : (
+              <p class="relative text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
+            )}
             <p class="relative text-xs text-stone-500 mt-1">{stat.label}</p>
           </>
         );
@@ -73,9 +81,25 @@ const summaryStats = [
     <LiveAirQualityWidget latitude={data.latitude} longitude={data.longitude} />
   </div>
 
-  <div class="rounded-lg border border-stone-200 bg-white p-4 mb-8">
-    <p class="text-xs uppercase tracking-wide text-stone-400 mb-1">About {data.outcode}</p>
-    <p class="text-sm text-stone-600">{data.history.summary}</p>
+  <div class="flex items-stretch gap-4 mb-8">
+    <div class="flex-1 rounded-lg border border-stone-200 bg-white p-4">
+      <p class="text-xs uppercase tracking-wide text-stone-400 mb-1">About {data.outcode}</p>
+      <p class="text-sm text-stone-600">{data.history.summary}</p>
+    </div>
+    {
+      hasContent(data, "representatives") && (
+        <a
+          href={`/${city}/${borough}/${data.slug}/representatives/`}
+          class="relative overflow-hidden shrink-0 w-32 sm:w-40 aspect-square rounded-lg border border-stone-200 bg-white p-4 text-center flex flex-col items-center justify-center transition-colors hover:border-emerald-600 cursor-pointer"
+        >
+          <span class="pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none text-purple-600" aria-hidden="true">
+            🏛️
+          </span>
+          <p class="relative text-2xl font-bold text-emerald-800">{mpCount}</p>
+          <p class="relative text-xs text-stone-500 mt-1">Representatives</p>
+        </a>
+      )
+    }
   </div>
 
   <h2 class="text-lg font-semibold mb-4">Explore {data.outcode}</h2>

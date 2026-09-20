@@ -28,7 +28,7 @@ const types = [...new Set(establishments.map((e) => e.type))].sort();
 const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 ---
 
-<LocalityLayout citySlug={city!} boroughSlug={borough!} data={data} active="food" topic="Food hygiene">
+<LocalityLayout citySlug={city!} boroughSlug={borough!} data={data} active="food" topic="Food & Hospitality">
   <h1 class="text-2xl font-bold mb-2">Food hygiene ratings in {data.outcode}, {data.borough}</h1>
   <p class="text-stone-500 mb-6">{total.toLocaleString()} restaurants, cafes, takeaways, pubs, hotels and food shops with a published rating.</p>
 

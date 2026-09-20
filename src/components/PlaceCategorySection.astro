@@ -1,11 +1,11 @@
 ---
 import type { Place } from "../lib/types";
-import type { PlaceCategoryDef } from "../lib/place-categories";
 import PlaceCard from "./PlaceCard.astro";
 
 interface Props {
-  cat: PlaceCategoryDef;
-  items: Place[];
+  cat: { key: string; label: string };
+  /** Places, or any records with a name and coordinates (e.g. food businesses, which pass their own cards via the default slot). */
+  items: (Pick<Place, "name"> & { latitude: number | null; longitude: number | null })[];
   /** Overrides the map/toggle DOM scoping id - needed when this component renders more than once per category on a page (e.g. one outcode group per borough), since `cat.key` alone would collide. Defaults to `cat.key`. */
   mapId?: string;
   /** Only passed on the borough page, where each section is one outcode's post town - forwarded to each card for the Post town filter. */
@@ -13,7 +13,10 @@ interface Props {
 }
 
 const { cat, items, mapId = cat.key, postTown } = Astro.props;
-const mapPoints = items.map((p) => ({ name: p.name, lat: p.latitude, lon: p.longitude }));
+const customCards = Astro.slots.has("default");
+const mapPoints = items
+  .filter((p) => p.latitude != null && p.longitude != null)
+  .map((p) => ({ name: p.name, lat: p.latitude, lon: p.longitude }));
 ---
 
 <section class="mb-8" data-place-type-block data-place-kind={cat.key}>
@@ -42,7 +45,7 @@ const mapPoints = items.map((p) => ({ name: p.name, lat: p.latitude, lon: p.long
   </div>
 
   <div class="grid gap-3 sm:grid-cols-2" data-place-cards data-map-id={mapId}>
-    {items.map((place) => <PlaceCard place={place} postTown={postTown} />)}
+    {customCards ? <slot /> : (items as Place[]).map((place) => <PlaceCard place={place} postTown={postTown} />)}
   </div>
 </section>
 <script type="application/json" data-place-map-json={mapId} set:html={JSON.stringify(mapPoints)} />

@@ -1,0 +1,59 @@
+---
+import type { CouncilServicesData } from "../lib/types";
+
+interface Props {
+  services: CouncilServicesData;
+  boroughName: string;
+}
+
+const { services, boroughName } = Astro.props;
+
+const binDay = services.links.find((l) => l.slug === "rubbish-collection-day");
+const groups = [...new Set(services.links.map((l) => l.group))].map((group) => ({
+  group,
+  links: services.links.filter((l) => l.group === group && l.slug !== "rubbish-collection-day"),
+}));
+---
+
+{
+  binDay && (
+    <a
+      href={binDay.url}
+      target="_blank"
+      rel="noopener"
+      class="flex items-start gap-3 rounded-lg border border-emerald-200 bg-emerald-50 p-4 mb-6 hover:border-emerald-600 transition-colors"
+    >
+      <span class="text-3xl leading-none" aria-hidden="true">🗑️</span>
+      <div>
+        <p class="font-medium">Find your bin collection day</p>
+        <p class="text-sm text-stone-600 mt-1">
+          Collection days differ street by street, so {services.councilName || boroughName} looks them up by address on its own website.
+        </p>
+      </div>
+    </a>
+  )
+}
+
+{
+  groups
+    .filter((g) => g.links.length > 0)
+    .map((g) => (
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-3">{g.group}</h2>
+        <ul class="grid gap-2 sm:grid-cols-2">
+          {g.links.map((l) => (
+            <li>
+              <a href={l.url} target="_blank" rel="noopener" class="block rounded-lg border border-stone-200 bg-white px-4 py-3 text-sm hover:border-emerald-600 transition-colors">
+                {l.title} <span class="text-stone-400" aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+}
+
+<p class="text-xs text-stone-400 mt-4">
+  Links go to {services.councilName || boroughName}'s own pages{services.homepage && (<> (<a href={services.homepage} target="_blank" rel="noopener" class="underline">council website</a>)</>)}. Source: GOV.UK Local
+  Links Manager.
+</p>

@@ -315,6 +315,8 @@ export interface OutcodeData {
   history: HistoryData;
   /** Not stored in the per-outcode JSON - attached by loadOutcodeData() from food-hygiene.json. */
   food: FoodHygieneData;
+  /** Not stored in the per-outcode JSON - attached by loadOutcodeData() from council-services.json. */
+  services: CouncilServicesData;
 }
 
 export const CATEGORY_KEYS = [
@@ -328,6 +330,7 @@ export const CATEGORY_KEYS = [
   "events",
   "property",
   "food",
+  "services",
   "history",
 ] as const;
 
@@ -377,6 +380,8 @@ export interface FoodEstablishment {
   /** FHRS rating, 0 (urgent improvement) to 5 (very good). */
   rating: number;
   ratingDate: string;
+  latitude: number | null;
+  longitude: number | null;
 }
 
 export interface FoodHygieneData {
@@ -432,4 +437,25 @@ export interface MobileCoverageFile {
   period: string;
   london: MobileCoverageMetrics;
   boroughs: Record<string, MobileCoverageMetrics>;
+}
+
+export interface CouncilServicesFile {
+  source: string;
+  fetchedAt: string;
+  services: { slug: string; title: string; group: string; lgsl: number; lgil: number }[];
+  /** Keyed by borough slug; `links` maps a service slug to the council's own page for it. */
+  councils: Record<string, { name: string; homepage: string; links: Record<string, string> }>;
+}
+
+export interface CouncilServiceLink {
+  slug: string;
+  title: string;
+  group: string;
+  url: string;
+}
+
+export interface CouncilServicesData {
+  councilName: string;
+  homepage: string;
+  links: CouncilServiceLink[];
 }

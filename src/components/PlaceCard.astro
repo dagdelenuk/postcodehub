@@ -10,7 +10,8 @@ interface Props {
 
 const { place, postTown } = Astro.props;
 const category = PLACE_CATEGORY_MAP[place.category];
-const addressLine = place.address;
+// Append the postcode unless the address already carries it.
+const addressLine = place.address && place.postcode && !place.address.toUpperCase().includes(place.postcode.toUpperCase()) ? `${place.address}, ${place.postcode}` : place.address;
 // Every place has coordinates (unlike health/station/school records, which
 // can lack them), so fall back to a "name @ lat,lon" query rather than
 // hiding the directions icon whenever OSM has no structured address - common

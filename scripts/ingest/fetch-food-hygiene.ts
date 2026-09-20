@@ -36,6 +36,7 @@ interface FhrsEstablishment {
   PostCode: string;
   RatingValue: string;
   RatingDate: string;
+  geocode?: { longitude?: string; latitude?: string };
 }
 
 /** "Richmond-Upon-Thames" / "Kensington and Chelsea" / "City of London Corporation" -> comparable key. */
@@ -75,6 +76,8 @@ async function main() {
         postcode: e.PostCode,
         rating: Number(e.RatingValue),
         ratingDate: e.RatingDate.slice(0, 10),
+        latitude: Number(e.geocode?.latitude) || null,
+        longitude: Number(e.geocode?.longitude) || null,
       });
       london[e.RatingValue] = (london[e.RatingValue] ?? 0) + 1;
       kept++;

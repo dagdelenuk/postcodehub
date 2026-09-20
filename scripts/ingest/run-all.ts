@@ -22,6 +22,7 @@ const STEPS = [
   "fetch-food-hygiene.ts",
   "fetch-broadband.ts",
   "fetch-mobile.ts",
+  "fetch-council-services.ts",
   "fetch-representatives.ts",
   "fetch-planning.ts",
   "seed-events-history.ts",
