@@ -390,3 +390,28 @@ export interface FoodHygieneFile {
   londonCounts: Record<string, number>;
   outcodes: Record<string, FoodEstablishment[]>;
 }
+
+export interface BroadbandMetrics {
+  /** % of residential premises able to get >=30 Mbit/s. */
+  superfast: number;
+  /** % able to get >=100 Mbit/s. */
+  ultrafast: number;
+  /** % able to get full fibre - only published per local authority, null per outcode. */
+  fullFibre: number | null;
+  /** % able to get >=1 Gbit/s. */
+  gigabit: number;
+  /** % unable to get 30 Mbit/s. */
+  below30: number;
+  /** % below the Universal Service Obligation (10 Mbit/s down). */
+  belowUso: number;
+  /** % of premises by the best download speed available. */
+  bands: { under10: number; from10to30: number; from30to300: number; over300: number };
+}
+
+export interface BroadbandFile {
+  source: string;
+  period: string;
+  london: BroadbandMetrics;
+  boroughs: Record<string, BroadbandMetrics>;
+  outcodes: Record<string, BroadbandMetrics & { postcodes: number }>;
+}

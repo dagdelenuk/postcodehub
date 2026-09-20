@@ -5,6 +5,8 @@ import type {
   BannerImage,
   ChildcareProvider,
   FireStation,
+  BroadbandFile,
+  BroadbandMetrics,
   FoodHygieneFile,
   GpSurgery,
   HpiData,
@@ -1018,4 +1020,20 @@ export function getBoroughPostTownPrices(citySlug: string, boroughSlug: string):
     london: cityPrices.summary,
     since: cutoff,
   };
+}
+
+let cachedBroadband: BroadbandFile | null | undefined;
+
+// Ofcom fixed broadband availability, written by scripts/ingest/fetch-broadband.ts.
+function loadBroadband(): BroadbandFile | null {
+  if (cachedBroadband !== undefined) return cachedBroadband;
+  const filePath = path.join(PROCESSED_DIR, "broadband.json");
+  cachedBroadband = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as BroadbandFile) : null;
+  return cachedBroadband;
+}
+
+export function getBroadband(outcode: string, boroughSlug: string): { outcode: BroadbandMetrics & { postcodes: number }; borough: BroadbandMetrics | null; london: BroadbandMetrics; period: string; source: string } | null {
+  const b = loadBroadband();
+  const local = b?.outcodes[outcode];
+  return b && local ? { outcode: local, borough: b.boroughs[boroughSlug] ?? null, london: b.london, period: b.period, source: b.source } : null;
 }
