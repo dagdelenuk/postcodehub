@@ -3,6 +3,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
+import LiveRoadWorks from "../../../components/LiveRoadWorks.astro";
 import LiveAirQualityWidget from "../../../components/LiveAirQualityWidget.astro";
 import FavoriteStar from "../../../components/FavoriteStar.astro";
 import PartBadge from "../../../components/PartBadge.astro";
@@ -154,6 +155,8 @@ const hasSplitDistricts = districtGroups.split.length > 0;
         </div>
       )
     }
+
+    <LiveRoadWorks boroughName={borough.name} />
   </section>
 
   <script type="application/json" id="favourites-lookup" set:html={JSON.stringify(favouritesLookup)} />

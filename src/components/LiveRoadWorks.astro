@@ -1,0 +1,152 @@
+---
+interface Props {
+  boroughName: string;
+}
+
+const { boroughName } = Astro.props;
+---
+
+<section class="mt-6" data-roadworks data-borough={boroughName}>
+  <div class="flex items-baseline justify-between gap-3 mb-3">
+    <h2 class="text-lg font-semibold">Road works &amp; closures <span class="text-stone-400 font-normal" data-roadworks-count></span></h2>
+    <span class="text-xs uppercase tracking-wide text-stone-400">Live &middot; TfL</span>
+  </div>
+  <div data-roadworks-output>
+    <p class="text-stone-600 text-sm">Checking for current road works&hellip;</p>
+  </div>
+  <p class="text-xs text-stone-400 mt-3">
+    Source: Transport for London road disruptions (main roads, including borough roads on the TfL network). Smaller local street works are on the
+    <a href="https://one.network/" target="_blank" rel="noopener" class="underline">one.network</a> map, and roads faults can be reported through the council's own services.
+  </p>
+</section>
+
+<script>
+  interface Disruption {
+    id: string;
+    severity: string;
+    category: string;
+    subCategory?: string;
+    comments?: string;
+    currentUpdate?: string;
+    startDateTime?: string;
+    endDateTime?: string;
+    location?: string;
+    hasClosures?: boolean;
+  }
+
+  const SEVERITY_STYLES: Record<string, string> = {
+    Serious: "bg-red-100 text-red-800",
+    Severe: "bg-red-100 text-red-800",
+    Moderate: "bg-amber-100 text-amber-800",
+    Minimal: "bg-stone-100 text-stone-600",
+    "No impact": "bg-stone-100 text-stone-500",
+  };
+  const SEVERITY_ORDER = ["Severe", "Serious", "Moderate", "Minimal", "No impact"];
+
+  // TfL writes "Hammersmith & Fulham"; we write "Hammersmith and Fulham".
+  const normalise = (name: string) => name.toLowerCase().replace(/&/g, "and").replace(/\s+/g, " ").trim();
+  const fmtDate = (iso?: string) => (iso ? new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "");
+
+  // The location string ends with the borough(s) in brackets, e.g. "(Kensington & Chelsea,Wandsworth)".
+  function boroughsOf(location = ""): string[] {
+    const match = location.match(/\(([^()]*)\)\s*$/);
+    return match ? match[1].split(",").map(normalise) : [];
+  }
+
+  function el(tag: string, className: string, text?: string): HTMLElement {
+    const node = document.createElement(tag);
+    node.className = className;
+    if (text) node.textContent = text;
+    return node;
+  }
+
+  for (const section of document.querySelectorAll<HTMLElement>("[data-roadworks]")) {
+    const output = section.querySelector<HTMLElement>("[data-roadworks-output]")!;
+    const countEl = section.querySelector<HTMLElement>("[data-roadworks-count]");
+    const borough = normalise(section.dataset.borough ?? "");
+
+    fetch("https://api.tfl.gov.uk/Road/all/Disruption")
+      .then((res) => {
+        if (!res.ok) throw new Error(String(res.status));
+        return res.json() as Promise<Disruption[]>;
+      })
+      .then((all) => {
+        const mine = all
+          .filter((d) => boroughsOf(d.location).includes(borough))
+          .sort((a, b) => SEVERITY_ORDER.indexOf(a.severity) - SEVERITY_ORDER.indexOf(b.severity));
+        output.replaceChildren();
+        if (countEl) countEl.textContent = mine.length > 0 ? `(${mine.length})` : "";
+
+        if (mine.length === 0) {
+          output.append(el("p", "text-sm text-emerald-700 font-medium", "No road works or closures reported on the main roads in this borough right now."));
+          return;
+        }
+
+        const grid = el("div", "grid items-start gap-3");
+        for (const d of mine) {
+          const card = el("div", "rounded-lg border border-stone-200 bg-white px-4 py-3");
+
+          // Row 1: chips + road name + chevron; click anywhere on it to open the details.
+          const header = el("button", "flex w-full items-center gap-2 text-left") as HTMLButtonElement;
+          header.type = "button";
+          header.setAttribute("aria-expanded", "false");
+          header.append(el("span", `shrink-0 text-xs font-medium rounded-full px-2 py-0.5 ${SEVERITY_STYLES[d.severity] ?? SEVERITY_STYLES.Minimal}`, `${d.severity} impact`));
+          header.append(el("span", "shrink-0 text-xs text-stone-500", d.subCategory || d.category));
+          if (d.hasClosures) header.append(el("span", "shrink-0 text-xs font-medium rounded-full px-2 py-0.5 bg-red-100 text-red-800", "Road closure"));
+          header.append(el("span", "min-w-0 flex-1 text-sm font-medium", (d.location ?? "").replace(/\s*\([^()]*\)\s*$/, "").replace(/\s+\(([A-Z0-9 ,]+)\)\s*$/, "")));
+          const chevron = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+          chevron.setAttribute("viewBox", "0 0 20 20");
+          chevron.setAttribute("fill", "none");
+          chevron.setAttribute("class", "h-4 w-4 shrink-0 text-stone-400 transition-transform");
+          chevron.setAttribute("aria-hidden", "true");
+          const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          path.setAttribute("d", "M5 7.5l5 5 5-5");
+          path.setAttribute("stroke", "currentColor");
+          path.setAttribute("stroke-width", "1.8");
+          path.setAttribute("stroke-linecap", "round");
+          path.setAttribute("stroke-linejoin", "round");
+          chevron.append(path);
+          header.append(chevron);
+          card.append(header);
+
+          // Row 2: dates.
+          const start = fmtDate(d.startDateTime);
+          const end = fmtDate(d.endDateTime);
+          if (start || end) card.append(el("p", "text-xs text-stone-400 mt-1 text-right", `${start}${end ? ` to ${end}` : ""}`));
+
+          // Details, folded by default.
+          const details = el("div", "hidden mt-3 border-t border-stone-100 pt-3");
+          if (d.comments) details.append(el("p", "text-sm text-stone-600", d.comments.trim()));
+          if (d.currentUpdate) details.append(el("p", "text-sm text-stone-500 mt-1 italic", d.currentUpdate.trim()));
+          card.append(details);
+          header.addEventListener("click", () => {
+            const open = header.getAttribute("aria-expanded") !== "true";
+            header.setAttribute("aria-expanded", String(open));
+            details.classList.toggle("hidden", !open);
+            chevron.classList.toggle("rotate-180", open);
+          });
+          grid.append(card);
+        }
+        output.append(grid);
+
+        // Busy boroughs (e.g. Westminster) can have 15+ - show the most severe first and fold the rest.
+        const VISIBLE = 6;
+        const cards = [...grid.children] as HTMLElement[];
+        if (cards.length > VISIBLE) {
+          cards.slice(VISIBLE).forEach((c) => c.classList.add("hidden"));
+          const toggle = el("button", "mt-3 text-sm text-emerald-700 hover:underline", `Show all ${cards.length}`) as HTMLButtonElement;
+          toggle.type = "button";
+          let expanded = false;
+          toggle.addEventListener("click", () => {
+            expanded = !expanded;
+            cards.slice(VISIBLE).forEach((c) => c.classList.toggle("hidden", !expanded));
+            toggle.textContent = expanded ? "Show fewer" : `Show all ${cards.length}`;
+          });
+          output.append(toggle);
+        }
+      })
+      .catch(() => {
+        output.replaceChildren(el("p", "text-sm text-stone-600", "Live road works are unavailable right now - check TfL's traffic status page."));
+      });
+  }
+</script>
