@@ -317,6 +317,8 @@ export interface OutcodeData {
   food: FoodHygieneData;
   /** Not stored in the per-outcode JSON - attached by loadOutcodeData() from council-services.json. */
   services: CouncilServicesData;
+  /** Not stored in the per-outcode JSON - attached by loadOutcodeData() from demographics.json. */
+  demographics: DemographicsWithDeprivation | null;
 }
 
 export const CATEGORY_KEYS = [
@@ -328,7 +330,7 @@ export const CATEGORY_KEYS = [
   "representatives",
   "places",
   "events",
-  "property",
+  "statistics",
   "food",
   "services",
   "history",
@@ -458,4 +460,32 @@ export interface CouncilServicesData {
   councilName: string;
   homepage: string;
   links: CouncilServiceLink[];
+}
+
+export interface DemographicsMetrics {
+  population: number;
+  /** % of residents. */
+  age: { under15: number; age15to24: number; age25to44: number; age45to64: number; age65plus: number };
+  /** % of residents, by broad ethnic group. */
+  ethnicity: { white: number; asian: number; black: number; mixed: number; other: number };
+  /** % of households. */
+  tenure: { owned: number; socialRented: number; privateRented: number };
+  /** % of residents aged 16+. */
+  qualifications: { degreeLevel: number; none: number };
+  /** % of residents aged 16+ (each includes full-time students where they fit). */
+  economic: { employed: number; unemployed: number; retired: number; student: number; longTermSick: number; other: number };
+  /** % of residents. */
+  health: { goodOrBetter: number; bad: number };
+}
+
+export interface DemographicsWithDeprivation extends DemographicsMetrics {
+  /** % of postcodes in each national IMD decile, index 0 = most deprived 10%. */
+  imdDeciles: number[];
+}
+
+export interface DemographicsFile {
+  source: string;
+  london: DemographicsWithDeprivation;
+  boroughs: Record<string, DemographicsWithDeprivation>;
+  outcodes: Record<string, DemographicsWithDeprivation>;
 }

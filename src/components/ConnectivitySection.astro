@@ -1,0 +1,192 @@
+---
+import type { BroadbandMetrics, MobileCoverageMetrics } from "../lib/types";
+
+interface Props {
+  /** First column is the area being viewed, last is London. */
+  broadband: { columns: { label: string; data: BroadbandMetrics }[]; period: string; source: string; note?: string } | null;
+  mobile: { columns: { label: string; data: MobileCoverageMetrics }[]; period: string; source: string; intro: string } | null;
+  /** When set (outcode pages), each table is followed by its Ofcom address-checker card. */
+  checkerOutcode?: string;
+}
+
+const { broadband, mobile, checkerOutcode } = Astro.props;
+
+const BROADBAND_ROWS = [
+  { key: "gigabit", label: "Gigabit (1 Gbit/s+) available", goodHigh: true },
+  { key: "fullFibre", label: "Full fibre available", goodHigh: true },
+  { key: "ultrafast", label: "Ultrafast (100 Mbit/s+) available", goodHigh: true },
+  { key: "superfast", label: "Superfast (30 Mbit/s+) available", goodHigh: true },
+  { key: "below30", label: "Cannot get 30 Mbit/s", goodHigh: false },
+] as const;
+const BROADBAND_BANDS = [
+  { key: "over300", label: "300 Mbit/s or faster", color: "bg-emerald-600" },
+  { key: "from30to300", label: "30 to 300 Mbit/s", color: "bg-lime-500" },
+  { key: "from10to30", label: "10 to 30 Mbit/s", color: "bg-amber-500" },
+  { key: "under10", label: "Under 10 Mbit/s", color: "bg-red-500" },
+] as const;
+const MOBILE_ROWS = [
+  { key: "fourGOutdoorAll", label: "4G outdoors, all four networks" },
+  { key: "fourGIndoorAll", label: "4G indoors, all four networks" },
+  { key: "fiveGOutdoorAll", label: "5G outdoors, all four networks" },
+  { key: "fiveGOutdoorAny", label: "5G outdoors, at least one network" },
+  { key: "voiceIndoorAll", label: "Voice calls indoors, all four networks" },
+] as const;
+
+const pctFmt = (n: number | null | undefined) => (n == null ? "n/a" : `${n.toFixed(1)}%`);
+const focusLabel = (cols: { label: string }[]) => cols[0].label;
+const compareLabels = (cols: { label: string }[]) => cols.slice(1).map((c) => c.label).join(" and ");
+
+const checkerCard = (kind: "broadband" | "mobile") =>
+  kind === "broadband"
+    ? { icon: "📶", title: "Broadband coverage", desc: "Available speeds and providers for an exact address, via Ofcom's checker." }
+    : { icon: "📱", title: "Mobile coverage", desc: "Indoor/outdoor signal by network for an exact address, via Ofcom's checker." };
+---
+
+{
+  broadband && (
+    <div class="mb-6">
+      <h3 class="text-base font-semibold mb-1">Broadband</h3>
+      <p class="text-sm text-stone-500 mb-3">
+        Share of homes in {focusLabel(broadband.columns)} that can get each speed of fixed broadband, against {compareLabels(broadband.columns)} (Ofcom, {broadband.period}). This is
+        what is available to order, not what people actually buy.
+      </p>
+      <div class="rounded-lg border border-stone-200 bg-white p-4 mb-3">
+        <p class="text-xs uppercase tracking-wide text-stone-400 mb-2">Best speed available to homes in {focusLabel(broadband.columns)}</p>
+        <div class="flex h-5 w-full overflow-hidden rounded bg-stone-100" role="img" aria-label="Share of homes by best available download speed">
+          {BROADBAND_BANDS.map((b) => (
+            <div class={b.color} style={`width:${broadband.columns[0].data.bands[b.key]}%`} title={`${b.label}: ${broadband.columns[0].data.bands[b.key].toFixed(1)}%`}></div>
+          ))}
+        </div>
+        <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-stone-600">
+          {BROADBAND_BANDS.map((b) => (
+            <span class="inline-flex items-center gap-1.5">
+              <span class:list={["inline-block h-2.5 w-2.5 rounded-sm", b.color]}></span>
+              {b.label} {broadband.columns[0].data.bands[b.key].toFixed(1)}%
+            </span>
+          ))}
+        </div>
+      </div>
+      <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+              <th class="px-4 py-2 font-semibold">Homes that can get&hellip;</th>
+              {broadband.columns.map((c) => <th class="px-4 py-2 font-semibold text-right">{c.label}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {BROADBAND_ROWS.map((row) => {
+              const lon = broadband.columns[broadband.columns.length - 1].data[row.key];
+              return (
+                <tr class="border-b border-stone-100 last:border-0">
+                  <td class="px-4 py-2">{row.label}</td>
+                  {broadband.columns.map((c, i) => {
+                    const v = c.data[row.key];
+                    const better = i === 0 && v != null && lon != null && v !== lon ? (row.goodHigh ? v > lon : v < lon) : null;
+                    return (
+                      <td class:list={["px-4 py-2 text-right", i > 0 && "text-stone-500"]}>
+                        {pctFmt(v)}
+                        {better !== null && (
+                          <span class:list={["ml-1.5", better ? "text-emerald-600" : "text-red-600"]} title={better ? "Better than the London average" : "Worse than the London average"}>
+                            {v! > lon! ? "▲" : "▼"}
+                          </span>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-stone-400 mt-2">
+        Source: {broadband.source}. {broadband.note}
+      </p>
+      {
+        checkerOutcode && (
+          <div class="mt-4">
+            <a
+              href={`https://checker.ofcom.org.uk/en-gb/broadband-coverage?postcode=${encodeURIComponent(checkerOutcode)}`}
+              target="_blank"
+              rel="noopener"
+              class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+            >
+              <span class="text-3xl leading-none" aria-hidden="true">{checkerCard("broadband").icon}</span>
+              <div>
+                <p class="font-medium">{checkerCard("broadband").title}</p>
+                <p class="text-sm text-stone-500 mt-1">{checkerCard("broadband").desc}</p>
+              </div>
+            </a>
+            <p class="text-xs text-stone-400 mt-2">Source: Ofcom mobile and broadband coverage checker.</p>
+          </div>
+        )
+      }
+    </div>
+  )
+}
+
+{
+  mobile && (
+    <div class="mb-6">
+      <h3 class="text-base font-semibold mb-1">Mobile coverage</h3>
+      <p class="text-sm text-stone-500 mb-3">{mobile.intro}</p>
+      <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+              <th class="px-4 py-2 font-semibold">Homes with&hellip;</th>
+              {mobile.columns.map((c) => <th class="px-4 py-2 font-semibold text-right">{c.label}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {MOBILE_ROWS.map((row) => {
+              const lon = mobile.columns[mobile.columns.length - 1].data[row.key];
+              return (
+                <tr class="border-b border-stone-100 last:border-0">
+                  <td class="px-4 py-2">{row.label}</td>
+                  {mobile.columns.map((c, i) => {
+                    const v = c.data[row.key];
+                    return (
+                      <td class:list={["px-4 py-2 text-right", i > 0 && "text-stone-500"]}>
+                        {pctFmt(v)}
+                        {i === 0 && v !== lon && (
+                          <span class:list={["ml-1.5", v > lon ? "text-emerald-600" : "text-red-600"]} title={v > lon ? "Better than the London average" : "Worse than the London average"}>
+                            {v > lon ? "▲" : "▼"}
+                          </span>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-stone-400 mt-2">
+        Source: {mobile.source}. Coverage is predicted by the networks and modelled by Ofcom, so real signal varies by building and street. London is weighted by number of
+        homes.
+      </p>
+      {
+        checkerOutcode && (
+          <div class="mt-4">
+            <a
+              href={`https://checker.ofcom.org.uk/en-gb/mobile-coverage?postcode=${encodeURIComponent(checkerOutcode)}`}
+              target="_blank"
+              rel="noopener"
+              class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+            >
+              <span class="text-3xl leading-none" aria-hidden="true">{checkerCard("mobile").icon}</span>
+              <div>
+                <p class="font-medium">{checkerCard("mobile").title}</p>
+                <p class="text-sm text-stone-500 mt-1">{checkerCard("mobile").desc}</p>
+              </div>
+            </a>
+            <p class="text-xs text-stone-400 mt-2">Source: Ofcom mobile and broadband coverage checker.</p>
+          </div>
+        )
+      }
+    </div>
+  )
+}

@@ -37,7 +37,7 @@ const pageDescription =
 // where a council/ward boundary actually changes what's shown (planning,
 // property, representatives) - everywhere else the notice would just repeat
 // itself with no new information for the reader.
-const CONDENSED_NOTICE_TOPICS = new Set(["planning", "property", "representatives"]);
+const CONDENSED_NOTICE_TOPICS = new Set(["planning", "statistics", "representatives"]);
 const showNotice = splitInfo.isSplit && (isOverview || CONDENSED_NOTICE_TOPICS.has(active));
 
 const available = new Set<CategoryKey>(

@@ -1,0 +1,294 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
+import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
+import { getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
+import ConnectivitySection from "../../components/ConnectivitySection.astro";
+import DemographicsSection from "../../components/DemographicsSection.astro";
+import HousingMarket from "../../components/HousingMarket.astro";
+import SectionTabs from "../../components/SectionTabs.astro";
+
+function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+export function getStaticPaths() {
+  const hierarchy = loadHierarchy();
+  return hierarchy.cities
+    .filter((city) => getCityPropertyTrend(city.slug).boroughs.length > 0)
+    .map((city) => ({ params: { city: city.slug }, props: { city } }));
+}
+
+const { city } = Astro.props;
+const trend = getCityPropertyTrend(city.slug);
+
+// ?highlight= (which borough the visitor arrived from) is only known once the
+// page loads in the browser, so every borough's Council Tax bands are
+// precomputed here and the right set is picked and rendered client-side -
+// same approach as the Police/Fire stations sections on the safety page.
+const councilTaxByBorough = trend.boroughs
+  .map((b) => ({ slug: b.slug, name: b.name, councilTax: getCouncilTax(b.slug) }))
+  .filter((b) => b.councilTax);
+const councilTaxLondonAverage = getCouncilTaxAverage();
+
+// Same precompute-every-borough-then-toggle-client-side approach: property
+// sales within the highlighted borough, grouped by Royal Mail post town
+// (multiple outcodes can share one, e.g. Twickenham covers TW1 and TW2).
+// BoroughTrendChart is reused as-is - its "boroughs" entities just happen to
+// be post towns here, with a locally slugified id used only for this chart's
+// own legend-toggle DOM matching, not a real route.
+const postTownTrendsByBorough = trend.boroughs
+  .map((b) => {
+    const postTownTrend = getBoroughPropertyTrendByPostTown(city.slug, b.slug);
+    return {
+      slug: b.slug,
+      name: b.name,
+      trend: {
+        months: postTownTrend.months,
+        boroughs: postTownTrend.postTowns.map((p) => ({ name: p.name, slug: slugify(p.name), series: p.series })),
+        average: postTownTrend.average,
+      },
+    };
+  })
+  .filter((b) => b.trend.boroughs.length > 0);
+
+// Same precompute-every-borough-then-reveal approach as the sections above.
+const housingByBorough = trend.boroughs
+  .map((b) => {
+    const hpi = getHpi(b.slug);
+    return {
+      slug: b.slug,
+      name: b.name,
+      hpi,
+      hpiTrend: hpi ? { months: hpi.borough.months, boroughs: [{ name: b.name, slug: b.slug, series: hpi.borough.averagePrice }], average: hpi.london.averagePrice } : null,
+      rents: getRents(b.slug),
+      prices: getBoroughPostTownPrices(city.slug, b.slug),
+      demographics: getBoroughDemographics(b.slug),
+      broadband: getBoroughBroadband(b.slug),
+      mobile: getMobileCoverage(b.slug),
+    };
+  })
+  .filter((b) => b.hpi || b.rents || b.prices || b.demographics || b.broadband || b.mobile);
+---
+
+<BaseLayout
+  title={`Statistics across ${city.name}`}
+  description={`Rents, house prices, deprivation, demographics and monthly property sales compared across every borough in ${city.name}.`}
+  menuLevel="city"
+  citySlug={city.slug}
+>
+  <Breadcrumbs
+    sticky
+    crumbs={[
+      { label: "PostcodeHub", href: "/" },
+      { label: city.name, href: `/${city.slug}/` },
+      { label: "Statistics" },
+    ]}
+  />
+  <HighlightBreadcrumbCrumb citySlug={city.slug} entities={trend.boroughs} />
+
+  <section class="mx-auto max-w-5xl px-4 py-6">
+    <h1 class="text-2xl font-bold mb-4" data-stats-heading data-default={`Statistics across ${city.name}`}>Statistics across {city.name}</h1>
+
+    <SectionTabs />
+
+    <section data-section="housing" data-section-label="Housing">
+      <section class="mb-8 hidden" data-council-tax-section>
+        <h2 class="text-2xl font-bold mb-1" data-council-tax-heading>Council Tax bands</h2>
+        <p class="text-stone-500 mb-3 text-sm" data-council-tax-sub></p>
+        <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                <th class="px-4 py-2 font-semibold">Band</th>
+                <th class="px-4 py-2 font-semibold text-right">Annual Council Tax</th>
+                <th class="px-4 py-2 font-semibold text-right">Annual Council Tax (AVG London)</th>
+              </tr>
+            </thead>
+            <tbody data-council-tax-rows></tbody>
+          </table>
+        </div>
+      </section>
+
+      {
+        housingByBorough
+          .filter((b) => b.hpi || b.rents || b.prices)
+          .map((b) => (
+            <div class="hidden" data-borough-block data-borough-slug={b.slug}>
+              <HousingMarket b={b} />
+            </div>
+          ))
+      }
+
+      {
+        postTownTrendsByBorough.map((b) => (
+          <div class="hidden mb-8" data-borough-block data-borough-slug={b.slug}>
+            <h2 class="text-2xl font-bold mb-1">Property sales comparison across {b.name}, grouped by post town</h2>
+            <p class="text-stone-500 mb-3 text-sm">Monthly residential sales by post town within {b.name}, against the borough average.</p>
+            <BoroughTrendChart trend={b.trend} averageLabel={`${b.name} average`} chartId={`property-posttown-${b.slug}`} />
+          </div>
+        ))
+      }
+
+      <h2 class="text-2xl font-bold mb-1">Property sales comparison across {city.name}</h2>
+      <p class="text-stone-500 mb-6">Number of residential sales completed per month in each borough, covering roughly the last two years.</p>
+
+      <BoroughTrendChart trend={trend} averageLabel={`${city.name} average`} chartId="property" />
+
+      <p class="text-xs text-stone-400 mt-6">
+        Source: HM Land Registry Price Paid Data.
+        {councilTaxByBorough.length > 0 && " Council Tax: gov.uk, Council Tax levels set by local authorities in England 2026 to 2027 (Band D area council tax, including the GLA precept)."}
+      </p>
+    </section>
+
+    <section data-section="demographics" data-section-label="Demographics" class="mt-10">
+      {
+        housingByBorough
+          .filter((b) => b.demographics)
+          .map((b) => (
+            <div class="hidden" data-borough-block data-borough-slug={b.slug}>
+              <DemographicsSection
+                columns={[
+                  { label: b.name, data: b.demographics!.borough },
+                  { label: "London", data: b.demographics!.london },
+                ]}
+                source={b.demographics!.source}
+              />
+            </div>
+          ))
+      }
+    </section>
+
+    <section data-section="connectivity" data-section-label="Connectivity" class="mt-10">
+      {
+        housingByBorough
+          .filter((b) => b.broadband || b.mobile)
+          .map((b) => (
+            <div class="hidden" data-borough-block data-borough-slug={b.slug}>
+              <h2 class="text-2xl font-bold mb-4">Connectivity in {b.name}</h2>
+              <ConnectivitySection
+                broadband={
+                  b.broadband
+                    ? {
+                        columns: [
+                          { label: b.name, data: b.broadband.borough },
+                          { label: "London", data: b.broadband.london },
+                        ],
+                        period: b.broadband.period,
+                        source: b.broadband.source,
+                        note: "Borough and London figures are weighted by number of homes.",
+                      }
+                    : null
+                }
+                mobile={
+                  b.mobile
+                    ? {
+                        columns: [
+                          { label: b.name, data: b.mobile.borough },
+                          { label: "London", data: b.mobile.london },
+                        ],
+                        period: b.mobile.period,
+                        source: b.mobile.source,
+                        intro: `Share of homes in ${b.name} with mobile coverage from EE, O2, Three and Vodafone (Ofcom, ${b.mobile.period}).`,
+                      }
+                    : null
+                }
+              />
+            </div>
+          ))
+      }
+    </section>
+  </section>
+
+  <script type="application/json" data-borough-names set:html={JSON.stringify(trend.boroughs.map((b) => ({ slug: b.slug, name: b.name })))} />
+  <script type="application/json" data-council-tax-data set:html={JSON.stringify(councilTaxByBorough)} />
+  <script type="application/json" data-council-tax-average set:html={JSON.stringify(councilTaxLondonAverage)} />
+
+  <script>
+    interface BoroughCouncilTax {
+      slug: string;
+      name: string;
+      councilTax: {
+        boroughName: string;
+        bandD: number;
+        bands: Record<string, number>;
+      };
+    }
+
+    const BAND_ORDER = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    const GBP = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+
+    document.querySelectorAll<HTMLScriptElement>("[data-council-tax-data]").forEach((el) => {
+      const boroughs = JSON.parse(el.textContent ?? "[]") as BoroughCouncilTax[];
+      const highlight = new URLSearchParams(location.search).get("highlight");
+      const match = highlight ? boroughs.find((b) => b.slug === highlight) : null;
+      if (!match) return;
+
+      const averageEl = document.querySelector<HTMLScriptElement>("[data-council-tax-average]");
+      const londonAverage = JSON.parse(averageEl?.textContent ?? "{}") as Record<string, number>;
+
+      const section = document.querySelector<HTMLElement>("[data-council-tax-section]");
+      const heading = document.querySelector<HTMLElement>("[data-council-tax-heading]");
+      const sub = document.querySelector<HTMLElement>("[data-council-tax-sub]");
+      const rows = document.querySelector<HTMLElement>("[data-council-tax-rows]");
+      if (!section || !heading || !sub || !rows) return;
+
+      heading.textContent = `Council Tax bands in ${match.name}`;
+      sub.textContent = `2026-27 rates, Band D (the reference band) is ${GBP.format(match.councilTax.bandD)} a year.`;
+
+      for (const band of BAND_ORDER) {
+        const amount = match.councilTax.bands[band];
+        if (amount == null) continue;
+        const avgAmount = londonAverage[band];
+        const tr = document.createElement("tr");
+        tr.className = band === "D" ? "border-b border-stone-100 bg-emerald-50 font-semibold" : "border-b border-stone-100 last:border-0";
+
+        const bandCell = document.createElement("td");
+        bandCell.className = "px-4 py-2";
+        bandCell.textContent = `Band ${band}`;
+
+        const amountCell = document.createElement("td");
+        amountCell.className = "px-4 py-2 text-right";
+        amountCell.textContent = GBP.format(amount);
+        if (avgAmount != null && amount !== avgAmount) {
+          const icon = document.createElement("span");
+          icon.className = amount > avgAmount ? "text-red-600 ml-1.5" : "text-emerald-600 ml-1.5";
+          icon.textContent = amount > avgAmount ? "▲" : "▼";
+          icon.title = amount > avgAmount ? "Above the London average" : "Below the London average";
+          amountCell.append(icon);
+        }
+
+        const avgCell = document.createElement("td");
+        avgCell.className = "px-4 py-2 text-right text-stone-500";
+        avgCell.textContent = avgAmount != null ? GBP.format(avgAmount) : "—";
+
+        tr.append(bandCell, amountCell, avgCell);
+        rows.append(tr);
+      }
+
+      section.classList.remove("hidden");
+    });
+  </script>
+
+  <script>
+    // Every borough's blocks are rendered; keep only the highlighted borough's and drop the rest, so section ids stay unique
+    // and the sticky tabs (built afterwards, on window load) list only sections that have data for it.
+    const params = new URLSearchParams(location.search);
+    const highlight = params.get("highlight");
+    for (const block of document.querySelectorAll<HTMLElement>("[data-borough-block]")) {
+      if (highlight && block.dataset.boroughSlug === highlight) block.classList.remove("hidden");
+      else block.remove();
+    }
+    for (const section of document.querySelectorAll<HTMLElement>("[data-section]")) {
+      // Demographics and Connectivity exist only through a borough's blocks.
+      if (section.dataset.section !== "housing" && !section.querySelector("[data-borough-block]")) section.remove();
+    }
+    const heading = document.querySelector<HTMLElement>("[data-stats-heading]");
+    if (heading && highlight) {
+      const names = JSON.parse(document.querySelector("[data-borough-names]")?.textContent ?? "[]") as { slug: string; name: string }[];
+      const match = names.find((b) => b.slug === highlight);
+      if (match) heading.textContent = `Statistics in ${match.name}`;
+    }
+  </script>
+</BaseLayout>

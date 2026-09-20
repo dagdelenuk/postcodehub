@@ -51,7 +51,7 @@ const summaryStats = [
   { label: "Safety services", value: getBoroughSafetyServiceCount(city.slug, borough.slug), href: `/${city.slug}/safety/?highlight=${borough.slug}`, icon: "🚨", color: "text-amber-600" },
   { label: "Places", value: placesCount, href: boroughPlaces.length > 0 ? `/${city.slug}/${borough.slug}/places/` : null, icon: "📍", color: "text-teal-600" },
   { label: "Food & Hospitality", value: foodCount, href: foodCount > 0 ? `/${city.slug}/${borough.slug}/food/` : null, icon: "🍽️", color: "text-orange-600" },
-  { label: "Statistics", value: null as number | null, href: `/${city.slug}/property/?highlight=${borough.slug}`, icon: "🏠", color: "text-emerald-600" },
+  { label: "Statistics", value: null as number | null, href: `/${city.slug}/statistics/?highlight=${borough.slug}`, icon: "🏠", color: "text-emerald-600" },
 ];
 const favouritesLookup = getFavouritesLookup();
 const districtGroups = partitionDistrictsForNav(borough.outcodes, city.name);

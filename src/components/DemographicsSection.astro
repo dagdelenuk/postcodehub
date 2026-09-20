@@ -1,0 +1,182 @@
+---
+import type { DemographicsWithDeprivation } from "../lib/types";
+
+interface Column {
+  label: string;
+  data: DemographicsWithDeprivation;
+}
+
+interface Props {
+  /** First column is the area being viewed; the rest are comparisons (borough, London). */
+  columns: Column[];
+  source: string;
+  /** Extra caveat shown under the tables (e.g. that a district's figures are apportioned from output areas). */
+  note?: string;
+}
+
+const { columns, source, note } = Astro.props;
+const [focus, ...others] = columns;
+const london = columns[columns.length - 1];
+
+const nf = new Intl.NumberFormat("en-GB");
+const p1 = (n: number) => `${n.toFixed(1)}%`;
+
+// Decile 1 = most deprived 10% of England, decile 10 = least deprived. Red to green.
+const DECILE_COLORS = ["#b91c1c", "#dc2626", "#f97316", "#f59e0b", "#eab308", "#bef264", "#84cc16", "#4ade80", "#22c55e", "#15803d"];
+const sumTo = (d: DemographicsWithDeprivation, from: number, to: number) => d.imdDeciles.slice(from, to).reduce((a, b) => a + b, 0);
+
+const GROUPS: { title: string; rows: { label: string; get: (d: DemographicsWithDeprivation) => number }[] }[] = [
+  {
+    title: "Age",
+    rows: [
+      { label: "Under 15", get: (d) => d.age.under15 },
+      { label: "15 to 24", get: (d) => d.age.age15to24 },
+      { label: "25 to 44", get: (d) => d.age.age25to44 },
+      { label: "45 to 64", get: (d) => d.age.age45to64 },
+      { label: "65 and over", get: (d) => d.age.age65plus },
+    ],
+  },
+  {
+    title: "Ethnic group",
+    rows: [
+      { label: "White", get: (d) => d.ethnicity.white },
+      { label: "Asian", get: (d) => d.ethnicity.asian },
+      { label: "Black", get: (d) => d.ethnicity.black },
+      { label: "Mixed or multiple", get: (d) => d.ethnicity.mixed },
+      { label: "Other", get: (d) => d.ethnicity.other },
+    ],
+  },
+  {
+    title: "Household tenure",
+    rows: [
+      { label: "Own their home", get: (d) => d.tenure.owned },
+      { label: "Rent from council or housing association", get: (d) => d.tenure.socialRented },
+      { label: "Rent privately", get: (d) => d.tenure.privateRented },
+    ],
+  },
+  {
+    title: "Economic activity (aged 16+)",
+    rows: [
+      { label: "In employment", get: (d) => d.economic.employed },
+      { label: "Unemployed", get: (d) => d.economic.unemployed },
+      { label: "Retired", get: (d) => d.economic.retired },
+      { label: "Full-time student", get: (d) => d.economic.student },
+      { label: "Long-term sick or disabled", get: (d) => d.economic.longTermSick },
+      { label: "Looking after home or family, other", get: (d) => d.economic.other },
+    ],
+  },
+  {
+    title: "Qualifications (aged 16+)",
+    rows: [
+      { label: "Degree level or above", get: (d) => d.qualifications.degreeLevel },
+      { label: "No qualifications", get: (d) => d.qualifications.none },
+    ],
+  },
+];
+
+// Neutral above/below marker against London - demographics aren't good or bad.
+const vsLondon = (v: number, lon: number) => (Math.abs(v - lon) < 0.05 ? null : v > lon ? "above" : "below");
+---
+
+
+<section class="mb-8">
+  <h2 class="text-2xl font-bold mb-1">Demographics of {focus.label}</h2>
+  <p class="text-stone-500 mb-3 text-sm">
+    {nf.format(focus.data.population)} residents at the 2021 Census{others.length > 0 ? `, compared with ${others.map((o) => o.label).join(" and ")}` : ""}.
+  </p>
+  <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+          <th class="px-4 py-2 font-semibold"></th>
+          {columns.map((c) => <th class="px-4 py-2 font-semibold text-right">{c.label}</th>)}
+        </tr>
+      </thead>
+      {
+        GROUPS.map((g) => (
+          <tbody>
+            <tr class="bg-stone-50 border-b border-stone-100">
+              <th colspan={columns.length + 1} class="px-4 py-1.5 text-left text-xs font-semibold uppercase tracking-wide text-stone-500">{g.title}</th>
+            </tr>
+            {g.rows.map((row) => {
+              const lonValue = row.get(london.data);
+              const dir = vsLondon(row.get(focus.data), lonValue);
+              return (
+                <tr class="border-b border-stone-100 last:border-0">
+                  <td class="px-4 py-2">{row.label}</td>
+                  {columns.map((c, i) => (
+                    <td class:list={["px-4 py-2 text-right", i === 0 ? "font-medium" : "text-stone-500"]}>
+                      {p1(row.get(c.data))}
+                      {i === 0 && dir && columns.length > 1 && c !== london && (
+                        <span class="ml-1.5 text-stone-400" title={dir === "above" ? "Above the London average" : "Below the London average"}>
+                          {dir === "above" ? "▲" : "▼"}
+                        </span>
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              );
+            })}
+          </tbody>
+        ))
+      }
+    </table>
+  </div>
+  <p class="text-xs text-stone-400 mt-2">
+    Source: {source}. Percentages are of residents unless stated (household tenure is of households). Triangles show above or below the London average.{note ? ` ${note}` : ""}
+  </p>
+</section>
+
+<section class="mb-8">
+  <h2 class="text-2xl font-bold mb-1">Deprivation in {focus.label}</h2>
+  <p class="text-stone-500 mb-3 text-sm">
+    Share of postcodes in each tenth of England ranked by deprivation. Red is the most deprived 10% of England, green the least deprived 10%.
+  </p>
+  <div class="rounded-lg border border-stone-200 bg-white p-4">
+    {
+      [focus, london].filter((c, i) => i === 0 || c !== focus).map((c, idx) => {
+        const most = sumTo(c.data, 0, 3);
+        const least = sumTo(c.data, 7, 10);
+        const lonMost = sumTo(london.data, 0, 3);
+        const lonLeast = sumTo(london.data, 7, 10);
+        return (
+          <div class="mb-4 last:mb-0">
+            <p class="text-sm font-medium mb-1">{c.label}</p>
+            <div class="flex h-5 w-full overflow-hidden rounded bg-stone-100" role="img" aria-label={`${c.label}: share of postcodes by deprivation decile`}>
+              {c.data.imdDeciles.map((share, i) => (
+                <div style={`width:${share}%;background:${DECILE_COLORS[i]}`} title={`Decile ${i + 1}${i === 0 ? " (most deprived)" : i === 9 ? " (least deprived)" : ""}: ${p1(share)} of postcodes`}></div>
+              ))}
+            </div>
+            <p class="text-xs text-stone-500 mt-1">
+              {p1(most)}
+              {idx === 0 && c !== london && Math.abs(most - lonMost) >= 0.05 && (
+                <span class="text-stone-400" title={most > lonMost ? "Above the London average" : "Below the London average"}> {most > lonMost ? "▲" : "▼"}</span>
+              )} in the most deprived 30% of England &middot; {p1(least)}
+              {idx === 0 && c !== london && Math.abs(least - lonLeast) >= 0.05 && (
+                <span class="text-stone-400" title={least > lonLeast ? "Above the London average" : "Below the London average"}> {least > lonLeast ? "▲" : "▼"}</span>
+              )} in the least deprived 30%
+            </p>
+          </div>
+        );
+      })
+    }
+    <div class="mt-4 border-t border-stone-100 pt-3" aria-label="Legend: deprivation deciles">
+      <div class="flex items-center gap-2 text-xs text-stone-500">
+        <span class="shrink-0">Most deprived</span>
+        <div class="flex flex-1 overflow-hidden rounded">
+          {DECILE_COLORS.map((color, i) => (
+            <div class:list={["flex-1 py-0.5 text-center text-[10px] font-medium", [3, 4, 5, 7].includes(i) ? "text-stone-900" : "text-white"]} style={`background:${color}`} title={`Decile ${i + 1}${i === 0 ? ": most deprived 10% of England" : i === 9 ? ": least deprived 10% of England" : ""}`}>
+              {i + 1}
+            </div>
+          ))}
+        </div>
+        <span class="shrink-0">Least deprived</span>
+      </div>
+      <p class="text-xs text-stone-400 mt-1.5">Each number is a decile: 1 is the most deprived 10% of neighbourhoods in England, 10 the least deprived 10%. Bar widths show the share of postcodes in each.</p>
+    </div>
+  </div>
+  <p class="text-xs text-stone-400 mt-2">
+    Source: English Indices of Deprivation 2019 (via the ONS Postcode Lookup). It compares each postcode's neighbourhood (LSOA) with every other in England; it is a
+    relative measure, and most people in a less deprived area are not affected.
+  </p>
+</section>

@@ -20,7 +20,7 @@ const STAT_COLORS: Record<string, string> = {
   health: "text-rose-600",
   schools: "text-indigo-600",
   safety: "text-amber-600",
-  property: "text-emerald-600",
+  statistics: "text-emerald-600",
   places: "text-teal-600",
   food: "text-orange-600",
 };
@@ -33,7 +33,7 @@ const summaryStats = [
   { label: "Safety services", value: data.safety.policeStations.length + data.safety.fireStations.length, category: "safety" as const },
   { label: "Places", value: data.places.places.length, category: "places" as const },
   { label: "Food & Hospitality", value: data.food.establishments.length, category: "food" as const },
-  { label: "Statistics", value: null as number | null, category: "property" as const },
+  { label: "Statistics", value: null as number | null, category: "statistics" as const },
 ];
 
 ---

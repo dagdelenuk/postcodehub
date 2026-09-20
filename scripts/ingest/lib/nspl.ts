@@ -74,6 +74,10 @@ export interface NsplRow {
    * user (a single high-mail-volume organisation gets its own postcode,
    * doesn't represent a neighbourhood). */
   largeUser: boolean;
+  /** 2021 Census output area code (oa21cd). Empty string when absent. */
+  oaCode: string;
+  /** English IMD 2019 rank of the postcode's LSOA (1 = most deprived of 32,844); null outside England. */
+  imdRank: number | null;
 }
 
 /** Parses one postcode-area CSV (e.g. the "NW" or "HA" file) from the NSPL zip. */
@@ -98,6 +102,8 @@ export function readNsplArea(zipPath: string, entries: string[], areaPrefix: str
       lon,
       terminated: Boolean(rec.doterm),
       largeUser: rec.usrtypind === "1",
+      oaCode: rec.oa21cd ?? "",
+      imdRank: rec.imd20ind ? Number(rec.imd20ind) : null,
     });
   }
   return rows;

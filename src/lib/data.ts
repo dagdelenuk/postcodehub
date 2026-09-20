@@ -9,6 +9,8 @@ import type {
   CouncilServicesData,
   CouncilServicesFile,
   BroadbandMetrics,
+  DemographicsFile,
+  DemographicsWithDeprivation,
   MobileCoverageFile,
   MobileCoverageMetrics,
   FoodEstablishment,
@@ -229,6 +231,7 @@ export function loadOutcodeData(citySlug: string, boroughSlug: string, outcodeSl
   const data = JSON.parse(raw) as OutcodeData;
   data.food = { establishments: loadFoodHygiene()?.outcodes[data.outcode] ?? [] };
   data.services = getCouncilServices(boroughSlug);
+  data.demographics = loadDemographics()?.outcodes[data.outcode] ?? null;
   // Pubs live under Food & Hospitality (with hygiene ratings), not Places.
   data.places = { ...data.places, places: data.places.places.filter((p) => p.category !== "pub") };
   return data;
@@ -931,7 +934,9 @@ export function getBoroughFireStations(citySlug: string, boroughSlug: string): F
  * Astro's thin-content guardrail: don't build a category sub-page when the
  * outcode has no real records for it, rather than shipping an empty page.
  */
-export function hasContent(data: OutcodeData, category: keyof OutcodeData): boolean {
+export function hasContent(data: OutcodeData, category: keyof OutcodeData | "statistics"): boolean {
+  // The Statistics tab covers property sales plus demographics/deprivation.
+  if (category === "statistics") return hasContent(data, "property") || data.demographics != null;
   const value = data[category];
   if (value == null) return false;
   if (Array.isArray(value)) return value.length > 0;
@@ -1063,6 +1068,12 @@ export function getBroadband(outcode: string, boroughSlug: string): { outcode: B
   return b && local ? { outcode: local, borough: b.boroughs[boroughSlug] ?? null, london: b.london, period: b.period, source: b.source } : null;
 }
 
+export function getBoroughBroadband(boroughSlug: string): { borough: BroadbandMetrics; london: BroadbandMetrics; period: string; source: string } | null {
+  const b = loadBroadband();
+  const borough = b?.boroughs[boroughSlug];
+  return b && borough ? { borough, london: b.london, period: b.period, source: b.source } : null;
+}
+
 let cachedMobile: MobileCoverageFile | null | undefined;
 
 // Ofcom mobile coverage per borough, written by scripts/ingest/fetch-mobile.ts.
@@ -1131,4 +1142,25 @@ export function getBoroughFood(citySlug: string, boroughSlug: string): BoroughFo
     })
     .filter((g) => g.establishments.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));
+}
+
+let cachedDemographics: DemographicsFile | null | undefined;
+
+// Census 2021 demographics + IMD deprivation, written by scripts/ingest/fetch-demographics.ts.
+function loadDemographics(): DemographicsFile | null {
+  if (cachedDemographics !== undefined) return cachedDemographics;
+  const filePath = path.join(PROCESSED_DIR, "demographics.json");
+  cachedDemographics = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as DemographicsFile) : null;
+  return cachedDemographics;
+}
+
+export function getBoroughDemographics(boroughSlug: string): { borough: DemographicsWithDeprivation; london: DemographicsWithDeprivation; source: string } | null {
+  const d = loadDemographics();
+  const borough = d?.boroughs[boroughSlug];
+  return d && borough ? { borough, london: d.london, source: d.source } : null;
+}
+
+export function getLondonDemographics(): { london: DemographicsWithDeprivation; source: string } | null {
+  const d = loadDemographics();
+  return d ? { london: d.london, source: d.source } : null;
 }

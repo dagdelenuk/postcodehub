@@ -1,0 +1,95 @@
+---
+interface Props {
+  /** Server-rendered tabs. Omit to build them in the browser from `[data-section]` elements (used when the sections depend on ?highlight=). */
+  tabs?: { id: string; label: string }[];
+}
+
+const { tabs } = Astro.props;
+---
+
+<nav aria-label="Sections on this page" class="sticky z-20 bg-white border-b border-stone-200 -mx-4 px-4 mb-6" data-section-tabs data-dynamic={tabs ? undefined : ""}>
+  <ul class="flex gap-1 overflow-x-auto overflow-y-hidden text-sm whitespace-nowrap" data-section-tab-list>
+    {
+      tabs?.map((t) => (
+        <li>
+          <a href={`#${t.id}`} data-section-tab={t.id} class="inline-block px-3 py-3.5 border-b-2 -mb-px border-transparent text-stone-600 hover:text-stone-900 transition-colors">
+            {t.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style is:global>
+  [data-section-tab].is-active {
+    border-color: #047857;
+    color: #065f46;
+    font-weight: 500;
+  }
+</style>
+
+<script>
+  const bar = document.querySelector<HTMLElement>("[data-section-tabs]");
+
+  function init() {
+    if (!bar) return;
+    const list = bar.querySelector<HTMLElement>("[data-section-tab-list]")!;
+    const sections = [...document.querySelectorAll<HTMLElement>("[data-section]")];
+
+    // Dynamic mode: one tab per section that is actually on the page.
+    if (bar.hasAttribute("data-dynamic")) {
+      list.replaceChildren();
+      for (const section of sections) {
+        section.id = section.dataset.section!;
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = `#${section.id}`;
+        a.dataset.sectionTab = section.id;
+        a.className = "inline-block px-3 py-3.5 border-b-2 -mb-px border-transparent text-stone-600 hover:text-stone-900 transition-colors";
+        a.textContent = section.dataset.sectionLabel ?? section.id;
+        li.append(a);
+        list.append(li);
+      }
+      // A single section needs no navigation.
+      bar.classList.toggle("hidden", sections.length < 2);
+    }
+
+    // Sit under whatever else is sticky (site header, breadcrumbs, category menu).
+    const stuck = [...document.querySelectorAll<HTMLElement>("header.sticky, nav.sticky")].filter((el) => el !== bar);
+    const offset = () => stuck.reduce((sum, el) => sum + el.offsetHeight, 0);
+    const place = () => {
+      const top = offset();
+      bar.style.top = `${top}px`;
+      const clearance = top + bar.offsetHeight + 8;
+      for (const section of sections) section.style.scrollMarginTop = `${clearance}px`;
+    };
+    place();
+    window.addEventListener("resize", place);
+
+    const tabs = [...bar.querySelectorAll<HTMLAnchorElement>("[data-section-tab]")];
+    const setActive = (id: string) => tabs.forEach((t) => t.classList.toggle("is-active", t.dataset.sectionTab === id));
+    if (tabs[0]) setActive(tabs[0].dataset.sectionTab!);
+
+    // The active tab is the section crossing a thin line just under the sticky stack. Sections have gaps between them, so
+    // when the line falls in a gap the previous highlight stays.
+    let observer: IntersectionObserver | undefined;
+    const observe = () => {
+      observer?.disconnect();
+      const line = offset() + bar.offsetHeight + 16;
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) if (e.isIntersecting) setActive(e.target.id);
+        },
+        { rootMargin: `-${line}px 0px -${Math.max(0, window.innerHeight - line - 1)}px 0px` }
+      );
+      sections.forEach((s) => observer!.observe(s));
+    };
+    observe();
+    window.addEventListener("resize", observe);
+  }
+
+  // Wait for every module script (the city page prunes other boroughs' sections at load).
+  if (document.readyState === "complete") init();
+  else window.addEventListener("load", init);
+</script>

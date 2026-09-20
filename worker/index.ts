@@ -15,6 +15,13 @@ export default {
       return handleCallback(url, env);
     }
 
+    // The Statistics pages used to live at .../property/ - keep old links working with a
+    // permanent redirect (query string kept, e.g. ?highlight=richmond-upon-thames).
+    const legacyStatistics = url.pathname.match(/^(\/[^/]+(?:\/[^/]+\/[^/]+)?)\/property\/?$/);
+    if (legacyStatistics) {
+      return Response.redirect(`${url.origin}${legacyStatistics[1]}/statistics/${url.search}`, 301);
+    }
+
     // Everything else is the static Astro site (dist/), including /admin.
     return env.ASSETS.fetch(request);
   },

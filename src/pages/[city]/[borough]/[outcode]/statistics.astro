@@ -1,0 +1,250 @@
+---
+import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import ConnectivitySection from "../../../../components/ConnectivitySection.astro";
+import DemographicsSection from "../../../../components/DemographicsSection.astro";
+import HousingMarket from "../../../../components/HousingMarket.astro";
+import LiveFloodWarningsWidget from "../../../../components/LiveFloodWarningsWidget.astro";
+import SectionTabs from "../../../../components/SectionTabs.astro";
+import {
+  getAllOutcodeParams,
+  getBorough,
+  getBoroughDemographics,
+  getBoroughPostTownPrices,
+  getBroadband,
+  getCouncilTax,
+  getCouncilTaxAverage,
+  getHpi,
+  getMobileCoverage,
+  getRents,
+  hasContent,
+  loadOutcodeData,
+} from "../../../../lib/data";
+
+export function getStaticPaths() {
+  return getAllOutcodeParams()
+    .map((p) => ({ params: p, props: { data: loadOutcodeData(p.city, p.borough, p.outcode) } }))
+    .filter((entry) => hasContent(entry.props.data, "statistics"));
+}
+
+const { city, borough } = Astro.params;
+const { data } = Astro.props;
+
+const boroughName = getBorough(city!, borough!)?.name ?? data.city;
+const councilTax = getCouncilTax(borough!);
+const londonAverage = getCouncilTaxAverage();
+const COUNCIL_TAX_BANDS = ["A", "B", "C", "D", "E", "F", "G", "H"] as const;
+
+// Borough-level housing market data (rents, HPI, post town prices) - the outcode inherits its borough's.
+const hpi = getHpi(borough!);
+const housing = {
+  slug: borough!,
+  name: data.borough,
+  hpi,
+  hpiTrend: hpi ? { months: hpi.borough.months, boroughs: [{ name: data.borough, slug: borough!, series: hpi.borough.averagePrice }], average: hpi.london.averagePrice } : null,
+  rents: getRents(borough!),
+  prices: getBoroughPostTownPrices(city!, borough!),
+};
+
+const boroughDemographics = getBoroughDemographics(borough!);
+const demographics = data.demographics && boroughDemographics ? { outcode: data.demographics, ...boroughDemographics } : null;
+const broadband = getBroadband(data.outcode, borough!);
+const mobile = getMobileCoverage(borough!);
+const hasConnectivity = Boolean(broadband || mobile);
+
+const tabs = [
+  { id: "housing", label: "Housing" },
+  ...(demographics ? [{ id: "demographics", label: "Demographics" }] : []),
+  ...(hasConnectivity ? [{ id: "connectivity", label: "Connectivity" }] : []),
+  { id: "environment", label: "Environment" },
+];
+
+const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+const recentSales = data.property.sales.slice(0, 40);
+---
+
+<LocalityLayout
+  data={data}
+  citySlug={city!}
+  boroughSlug={borough!}
+  active="statistics"
+  topic="Statistics"
+>
+  <h1 class="text-2xl font-bold mb-4">Statistics in {data.outcode}, {data.borough}</h1>
+
+  <SectionTabs tabs={tabs} />
+
+  <section id="housing" data-section="housing">
+  {
+    councilTax && (
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-1">Council Tax bands in {boroughName}</h2>
+        <p class="text-sm text-stone-500 mb-3">
+          2026-27 rates, Band D (the reference band) is {gbp.format(councilTax.bandD)} a year.
+        </p>
+        <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                <th class="px-4 py-2 font-semibold">Band</th>
+                <th class="px-4 py-2 font-semibold text-right">Annual Council Tax</th>
+                <th class="px-4 py-2 font-semibold text-right">Annual Council Tax (AVG London)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                COUNCIL_TAX_BANDS.map((band) => {
+                  const amount = councilTax.bands[band];
+                  const avgAmount = londonAverage[band];
+                  return (
+                    <tr class:list={["border-b border-stone-100 last:border-0", band === "D" && "bg-emerald-50 font-semibold"]}>
+                      <td class="px-4 py-2">Band {band}</td>
+                      <td class="px-4 py-2 text-right">
+                        {gbp.format(amount)}
+                        {avgAmount != null && amount !== avgAmount && (
+                          <span
+                            class:list={["ml-1.5", amount > avgAmount ? "text-red-600" : "text-emerald-600"]}
+                            title={amount > avgAmount ? "Above the London average" : "Below the London average"}
+                          >
+                            {amount > avgAmount ? "▲" : "▼"}
+                          </span>
+                        )}
+                      </td>
+                      <td class="px-4 py-2 text-right text-stone-500">{avgAmount != null ? gbp.format(avgAmount) : "—"}</td>
+                    </tr>
+                  );
+                })
+              }
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-stone-400 mt-2">
+          Source: gov.uk, Council Tax levels set by local authorities in England 2026 to 2027 (Band D area council tax, including the GLA
+          precept).
+        </p>
+      </section>
+    )
+  }
+
+    <HousingMarket b={housing} />
+
+  <p class="text-stone-500 mb-6">{data.property.sales.length} recorded sales over the last two years.</p>
+
+  <div class="grid gap-4 sm:grid-cols-2 mb-8">
+    <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
+      <p class="text-2xl font-bold text-emerald-800">{data.property.medianPrice ? gbp.format(data.property.medianPrice) : "n/a"}</p>
+      <p class="text-xs text-stone-500 mt-1">Median sale price</p>
+    </div>
+    <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
+      <p class="text-2xl font-bold text-emerald-800">{data.property.averagePrice ? gbp.format(data.property.averagePrice) : "n/a"}</p>
+      <p class="text-xs text-stone-500 mt-1">Average sale price</p>
+    </div>
+  </div>
+
+  <h2 class="text-lg font-semibold mb-3">Recent sales</h2>
+  <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+          <th class="px-4 py-2 font-semibold">Address</th>
+          <th class="px-4 py-2 font-semibold">Type</th>
+          <th class="px-4 py-2 font-semibold">Date</th>
+          <th class="px-4 py-2 font-semibold text-right">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          recentSales.map((sale) => (
+            <tr class="border-b border-stone-100 last:border-0">
+              <td class="px-4 py-2">{sale.address || sale.postcode}</td>
+              <td class="px-4 py-2 text-stone-500">{sale.propertyType}{sale.newBuild ? " (new build)" : ""}</td>
+              <td class="px-4 py-2 text-stone-500">{sale.dateOfTransfer}</td>
+              <td class="px-4 py-2 text-right font-medium">{gbp.format(sale.price)}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-xs text-stone-400 mt-4">Source: HM Land Registry Price Paid Data.</p>
+  </section>
+
+  {
+    demographics && (
+      <section id="demographics" data-section="demographics" class="mt-10">
+        <DemographicsSection
+          columns={[
+            { label: data.outcode, data: demographics.outcode },
+            { label: data.borough, data: demographics.borough },
+            { label: "London", data: demographics.london },
+          ]}
+          source={demographics.source}
+          note={`${data.outcode} figures are built from the census neighbourhoods (output areas) whose postcodes mostly fall in ${data.outcode}, so they may not match its boundary exactly.`}
+        />
+      </section>
+    )
+  }
+
+  {
+    hasConnectivity && (
+      <section id="connectivity" data-section="connectivity" class="mt-10">
+        <h2 class="text-2xl font-bold mb-4">Connectivity in {data.outcode}</h2>
+        <ConnectivitySection
+          checkerOutcode={data.outcode}
+          broadband={
+            broadband
+              ? {
+                  columns: [
+                    { label: data.outcode, data: broadband.outcode },
+                    ...(broadband.borough ? [{ label: data.borough, data: broadband.borough }] : []),
+                    { label: "London", data: broadband.london },
+                  ],
+                  period: broadband.period,
+                  source: broadband.source,
+                  note: `${data.outcode} figures are the average across its ${broadband.outcode.postcodes.toLocaleString()} postcodes; borough and London figures are weighted by number of homes. Full fibre is only published per borough. Use the checker below for an exact address.`,
+                }
+              : null
+          }
+          mobile={
+            mobile
+              ? {
+                  columns: [
+                    { label: data.borough, data: mobile.borough },
+                    { label: "London", data: mobile.london },
+                  ],
+                  period: mobile.period,
+                  source: mobile.source,
+                  intro: `Share of homes in ${data.borough} with mobile coverage from EE, O2, Three and Vodafone (Ofcom, ${mobile.period}). Mobile coverage is only published per borough, so this applies to the whole of ${data.borough}, not just ${data.outcode}. Use the checker below for an exact address.`,
+                }
+              : null
+          }
+        />
+      </section>
+    )
+  }
+
+  <section id="environment" data-section="environment" class="mt-10">
+    <h2 class="text-2xl font-bold mb-4">Environment</h2>
+    <div id="flood-risk">
+    <h2 class="text-lg font-semibold mb-3">Flood risk</h2>
+    <div class="mb-3">
+      <LiveFloodWarningsWidget latitude={data.latitude} longitude={data.longitude} />
+    </div>
+    <a
+      href={`https://check-long-term-flood-risk.service.gov.uk/postcode?postcode=${encodeURIComponent(data.outcode)}`}
+      target="_blank"
+      rel="noopener"
+      class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+    >
+      <span class="text-3xl leading-none" aria-hidden="true">🌊</span>
+      <div>
+        <p class="font-medium">Check long-term flood risk</p>
+        <p class="text-sm text-stone-500 mt-1">
+          Flood risk from rivers, the sea and surface water varies street by street within {data.outcode} - look up an exact
+          address on the Environment Agency's checker.
+        </p>
+      </div>
+    </a>
+    </div>
+  </section>
+</LocalityLayout>
