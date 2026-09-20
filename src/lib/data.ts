@@ -13,6 +13,7 @@ import type {
   OutcodeData,
   Place,
   PoliceStation,
+  Representative,
   School,
   WardElectionResult,
 } from "./types";
@@ -635,6 +636,27 @@ export function getBoroughPlaces(citySlug: string, boroughSlug: string): Borough
       return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, places: data.places.places };
     })
     .filter((g) => g.places.length > 0)
+    .sort((a, b) => a.outcode.localeCompare(b.outcode));
+}
+
+export interface BoroughRepresentativesGroup {
+  outcode: string;
+  outcodeSlug: string;
+  wards: string[];
+  postTown: string;
+  representatives: Representative[];
+}
+
+/** MPs and ward councillors for every outcode this borough is the primary owner of, grouped by outcode. */
+export function getBoroughRepresentatives(citySlug: string, boroughSlug: string): BoroughRepresentativesGroup[] {
+  const borough = getBorough(citySlug, boroughSlug);
+  return (borough?.outcodes ?? [])
+    .filter((o) => o.isPrimaryBorough)
+    .map((o) => {
+      const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
+      return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, representatives: data.representatives.representatives };
+    })
+    .filter((g) => g.representatives.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));
 }
 
