@@ -1,5 +1,6 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import VotingInfo from "../../../../components/VotingInfo.astro";
 import { getAllOutcodeParams, mpContactUrl, getLocalElections, getWardElectionResults, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -126,6 +127,8 @@ const pct = new Intl.NumberFormat("en-GB", { maximumFractionDigits: 1 });
       </section>
     )
   }
+
+  <VotingInfo services={data.services} boroughName={data.borough} />
 
   <p class="text-xs text-stone-400 mt-6">Sources: UK Parliament Members API; {data.borough} council.</p>
 </LocalityLayout>

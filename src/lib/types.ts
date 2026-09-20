@@ -356,23 +356,23 @@ export interface HpiData {
   boroughs: Record<string, HpiSeries>;
 }
 
-export interface RentStat {
-  count: number | null;
-  mean: number | null;
-  lowerQuartile: number | null;
-  median: number | null;
-  upperQuartile: number | null;
+export type RentBedroomKey = "all" | "oneBed" | "twoBed" | "threeBed" | "fourPlusBed";
+
+export interface AreaRents {
+  /** Average monthly rent (GBP) and 12-month % change in the latest month. */
+  byBedrooms: Record<RentBedroomKey, { price: number | null; annualChange: number | null }>;
+  /** Average monthly rent across all property sizes, for the trend chart. */
+  history: { months: string[]; price: number[] };
 }
 
-export type RentBedroomKey = "room" | "studio" | "oneBed" | "twoBed" | "threeBed" | "fourPlusBed" | "all";
-
-export interface PrivateRentsData {
+export interface RentsFile {
   source: string;
-  period: string;
-  note: string;
-  london: Record<RentBedroomKey, RentStat>;
-  boroughs: Record<string, Record<RentBedroomKey, RentStat>>;
+  /** "YYYY-MM" of the latest figures. */
+  latestMonth: string;
+  london: AreaRents;
+  boroughs: Record<string, AreaRents>;
 }
+
 
 export interface FoodEstablishment {
   name: string;
@@ -488,4 +488,13 @@ export interface DemographicsFile {
   london: DemographicsWithDeprivation;
   boroughs: Record<string, DemographicsWithDeprivation>;
   outcodes: Record<string, DemographicsWithDeprivation>;
+}
+
+export interface JourneyTimesFile {
+  source: string;
+  /** Human-readable departure the times were planned for, e.g. "Tuesday 22 September 2026, 08:30". */
+  departure: string;
+  destinations: { id: string; name: string; area: string }[];
+  /** Fastest public transport journey per destination id. `modes` excludes walking; `changes` counts interchanges. */
+  outcodes: Record<string, Record<string, { minutes: number; modes: string[]; changes: number }>>;
 }

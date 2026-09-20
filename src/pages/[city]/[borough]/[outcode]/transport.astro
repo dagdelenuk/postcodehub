@@ -1,7 +1,7 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import LiveTflWidget from "../../../../components/LiveTflWidget.astro";
-import { getAllOutcodeParams, loadOutcodeData } from "../../../../lib/data";
+import { getAllOutcodeParams, getJourneyTimes, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   // Every outcode gets a Transport page unconditionally, even one with no
@@ -19,6 +19,19 @@ const { data } = Astro.props;
 // (Wikimedia Commons: National_Rail_logo.svg and Underground.svg, both
 // public domain). Any other mode TfL's StopPoint API could still return for
 // these stopTypes (dlr, overground, elizabeth-line, tram) falls back to text.
+const journeyTimes = getJourneyTimes(data.outcode);
+const MODE_LABELS: Record<string, string> = {
+  tube: "Tube",
+  "national-rail": "Rail",
+  overground: "Overground",
+  "elizabeth-line": "Elizabeth line",
+  dlr: "DLR",
+  bus: "Bus",
+  tram: "Tram",
+  "river-bus": "River bus",
+  "cable-car": "Cable car",
+};
+const formatMinutes = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} h ${String(m % 60).padStart(2, "0")} min` : `${m} min`);
 const MODE_LOGOS: Record<string, { src: string; alt: string }> = {
   "national-rail": { src: "/logos/national-rail.svg", alt: "National Rail" },
   tube: { src: "/logos/underground.svg", alt: "London Underground" },
@@ -37,6 +50,46 @@ const MODE_LOGOS: Record<string, { src: string; alt: string }> = {
   <div class="grid gap-4 sm:grid-cols-2 mb-8">
     <LiveTflWidget lines={data.transport.lines} nearestStationName={data.transport.nearbyStations[0]?.name} />
   </div>
+
+  {
+    journeyTimes && (
+      <section class="mb-8">
+        <h2 class="text-lg font-semibold mb-1">Journey times to central London</h2>
+        <p class="text-sm text-stone-500 mb-3">
+          Fastest public transport journey from the centre of {data.outcode}, door to door including walking, leaving at 08:30 on a weekday.
+        </p>
+        <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                <th class="px-4 py-2 font-semibold">To</th>
+                <th class="px-4 py-2 font-semibold text-right">Time</th>
+                <th class="px-4 py-2 font-semibold">How</th>
+              </tr>
+            </thead>
+            <tbody>
+              {journeyTimes.journeys.map((j, i) => (
+                <tr class:list={["border-b border-stone-100 last:border-0", i === 0 && "bg-emerald-50"]}>
+                  <td class="px-4 py-2">
+                    <span class="font-medium">{j.name}</span>
+                    <span class="block text-xs text-stone-400">{j.area}</span>
+                  </td>
+                  <td class:list={["px-4 py-2 text-right whitespace-nowrap", i === 0 ? "font-semibold text-emerald-800" : "font-medium"]}>{formatMinutes(j.minutes)}</td>
+                  <td class="px-4 py-2 text-stone-500">
+                    {j.modes.length > 0 ? j.modes.map((m) => MODE_LABELS[m] ?? m.replace(/-/g, " ")).join(" + ") : "Walk"}
+                    <span class="block text-xs text-stone-400">{j.changes === 0 ? "Direct" : `${j.changes} ${j.changes === 1 ? "change" : "changes"}`}</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-stone-400 mt-2">
+          Source: {journeyTimes.source}, planned for {journeyTimes.departure}. Times vary by street, service and day; check the journey planner below before you travel.
+        </p>
+      </section>
+    )
+  }
 
   {
     data.transport.nearbyStations.length > 0 && (

@@ -1,0 +1,61 @@
+---
+import type { CouncilServicesData } from "../lib/types";
+
+interface Props {
+  services: CouncilServicesData;
+  boroughName: string;
+}
+
+const { services, boroughName } = Astro.props;
+const electoralOffice = services.links.find((l) => l.slug === "contact-electoral-registration-office");
+
+const cards = [
+  {
+    icon: "🗳️",
+    title: "Register to vote",
+    text: "You must be on the electoral register to vote. It takes about five minutes online.",
+    href: "https://www.gov.uk/register-to-vote",
+  },
+  {
+    icon: "📍",
+    title: "Find your polling station",
+    text: "Enter your postcode to see where you vote at the next election (Democracy Club's Where Do I Vote).",
+    href: "https://wheredoivote.co.uk/",
+  },
+  {
+    icon: "🪪",
+    title: "How to vote and what ID you need",
+    text: "Voting in person, by post or by proxy, and the photo ID accepted at polling stations.",
+    href: "https://www.gov.uk/how-to-vote",
+  },
+  ...(electoralOffice
+    ? [
+        {
+          icon: "🏛️",
+          title: `${services.councilName || boroughName} electoral registration office`,
+          text: "Check your registration, get help with your details or ask about postal and proxy votes.",
+          href: electoralOffice.url,
+        },
+      ]
+    : []),
+];
+---
+
+<section class="mt-10">
+  <h2 class="text-lg font-semibold mb-1">Voting &amp; elections</h2>
+  <p class="text-sm text-stone-500 mb-3">Polling stations change between elections and are set street by street, so they are looked up by address on the official finder.</p>
+  <div class="grid gap-3 sm:grid-cols-2">
+    {
+      cards.map((c) => (
+        <a href={c.href} target="_blank" rel="noopener" class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors">
+          <span class="text-3xl leading-none" aria-hidden="true">{c.icon}</span>
+          <div>
+            <p class="font-medium">{c.title}</p>
+            <p class="text-sm text-stone-500 mt-1">{c.text}</p>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+  <p class="text-xs text-stone-400 mt-2">Sources: GOV.UK, Democracy Club, and {services.councilName || boroughName}'s own electoral services page.</p>
+</section>

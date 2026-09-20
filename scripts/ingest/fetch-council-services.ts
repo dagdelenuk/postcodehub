@@ -20,7 +20,7 @@ const GROUPS: { group: string; slugs: string[] }[] = [
   { group: "Report a problem", slugs: ["report-litter", "report-dog-fouling", "report-graffiti", "report-abandoned-vehicle", "report-noise-pollution-to-council", "report-pest-problem", "report-blocked-drain"] },
   { group: "Housing", slugs: ["apply-for-council-housing", "homelessness-help-from-council", "repair-council-property"] },
   { group: "Schools & families", slugs: ["apply-for-primary-school-place", "apply-for-secondary-school-place", "school-term-holiday-dates", "apply-free-school-meals", "find-free-early-education"] },
-  { group: "Community & your council", slugs: ["local-library-services", "find-your-local-councillors", "apply-allotment", "alcohol-licence-your-area", "complain-about-your-council"] },
+  { group: "Community & your council", slugs: ["local-library-services", "find-your-local-councillors", "contact-electoral-registration-office", "apply-allotment", "alcohol-licence-your-area", "complain-about-your-council"] },
 ];
 
 interface ContentResponse {

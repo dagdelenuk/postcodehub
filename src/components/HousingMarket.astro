@@ -21,14 +21,14 @@ const { b } = Astro.props;
 
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 const RENT_ROWS: { key: RentBedroomKey; label: string }[] = [
-  { key: "room", label: "Room in a shared house" },
-  { key: "studio", label: "Studio" },
+  { key: "all", label: "All private rentals" },
   { key: "oneBed", label: "1 bedroom" },
   { key: "twoBed", label: "2 bedrooms" },
   { key: "threeBed", label: "3 bedrooms" },
   { key: "fourPlusBed", label: "4+ bedrooms" },
-  { key: "all", label: "All private rentals" },
 ];
+const pctChange = (n: number | null | undefined) => (n == null ? "n/a" : `${n >= 0 ? "+" : ""}${n.toFixed(1)}%`);
+
 const TYPE_ROWS = [
   { key: "flat", label: "Flat / maisonette" },
   { key: "terraced", label: "Terraced" },
@@ -42,52 +42,79 @@ function formatMonth(month: string): string {
 ---
 
           {b.rents && (
-            <section class="mb-8">
-              <h2 class="text-2xl font-bold mb-1">Private rents in {b.name}</h2>
-              <p class="text-stone-500 mb-3 text-sm">Median monthly rent by number of bedrooms, against the London median. Rents recorded {b.rents.period}.</p>
-              <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
-                <table class="w-full text-sm">
-                  <thead>
-                    <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
-                      <th class="px-4 py-2 font-semibold">Property</th>
-                      <th class="px-4 py-2 font-semibold text-right">{b.name} median / month</th>
-                      <th class="px-4 py-2 font-semibold text-right">Typical range</th>
-                      <th class="px-4 py-2 font-semibold text-right">London median / month</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {RENT_ROWS.map((row) => {
-                      const local = b.rents!.borough[row.key];
-                      const lon = b.rents!.london[row.key];
-                      return (
-                        <tr class:list={["border-b border-stone-100 last:border-0", row.key === "all" && "bg-emerald-50 font-semibold"]}>
-                          <td class="px-4 py-2">{row.label}</td>
-                          <td class="px-4 py-2 text-right">
-                            {local.median != null ? gbp.format(local.median) : "n/a"}
-                            {local.median != null && lon.median != null && local.median !== lon.median && (
-                              <span class:list={["ml-1.5", local.median > lon.median ? "text-red-600" : "text-emerald-600"]} title={local.median > lon.median ? "Above the London median" : "Below the London median"}>
-                                {local.median > lon.median ? "▲" : "▼"}
-                              </span>
-                            )}
-                          </td>
-                          <td class="px-4 py-2 text-right text-stone-500">
-                            {local.lowerQuartile != null && local.upperQuartile != null ? `${gbp.format(local.lowerQuartile)} - ${gbp.format(local.upperQuartile)}` : "—"}
-                          </td>
-                          <td class="px-4 py-2 text-right text-stone-500">{lon.median != null ? gbp.format(lon.median) : "n/a"}</td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
-              <p class="text-xs text-stone-400 mt-2">
-                Source: {b.rents.source}. "Typical range" is the lower to upper quartile. This series was discontinued after this period, so
-                current asking rents will be higher. "n/a" means too few rents recorded to publish.
-              </p>
-            </section>
-          )}
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-1">Private rents in {b.name}</h2>
+    <p class="text-stone-500 mb-3 text-sm">
+      Average monthly rent by number of bedrooms, and how it has changed over 12 months, against the London average. Latest figures: {formatMonth(b.rents.latestMonth)}.
+    </p>
+    <div class="grid gap-4 sm:grid-cols-2 mb-4">
+      {[
+        { label: b.name, area: b.rents.borough },
+        { label: "London average", area: b.rents.london },
+      ].map((c) => (
+        <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
+          <p class="text-2xl font-bold text-emerald-800">{c.area.byBedrooms.all.price != null ? gbp.format(c.area.byBedrooms.all.price) : "n/a"}<span class="text-sm font-normal text-stone-500"> a month</span></p>
+          <p class="text-xs text-stone-500 mt-1">
+            {c.label} average rent
+            {c.area.byBedrooms.all.annualChange != null && (
+              <span class:list={["ml-1 font-medium", c.area.byBedrooms.all.annualChange >= 0 ? "text-red-600" : "text-emerald-600"]}>
+                {c.area.byBedrooms.all.annualChange >= 0 ? "▲" : "▼"} {Math.abs(c.area.byBedrooms.all.annualChange).toFixed(1)}% in 12 months
+              </span>
+            )}
+          </p>
+        </div>
+      ))}
+    </div>
+    <BoroughTrendChart trend={b.rents.trend} averageLabel="London average" chartId={`rents-${b.slug}`} />
+    <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+            <th class="px-4 py-2 font-semibold">Property</th>
+            <th class="px-4 py-2 font-semibold text-right">{b.name} / month</th>
+            <th class="px-4 py-2 font-semibold text-right">12-month change</th>
+            <th class="px-4 py-2 font-semibold text-right">London / month</th>
+            <th class="px-4 py-2 font-semibold text-right">London change</th>
+          </tr>
+        </thead>
+        <tbody>
+          {RENT_ROWS.map((row) => {
+            const local = b.rents!.borough.byBedrooms[row.key];
+            const lon = b.rents!.london.byBedrooms[row.key];
+            return (
+              <tr class:list={["border-b border-stone-100 last:border-0", row.key === "all" && "bg-emerald-50 font-semibold"]}>
+                <td class="px-4 py-2">{row.label}</td>
+                <td class="px-4 py-2 text-right">
+                  {local.price != null ? gbp.format(local.price) : "n/a"}
+                  {local.price != null && lon.price != null && local.price !== lon.price && (
+                    <span class:list={["ml-1.5", local.price > lon.price ? "text-red-600" : "text-emerald-600"]} title={local.price > lon.price ? "Above the London average" : "Below the London average"}>
+                      {local.price > lon.price ? "▲" : "▼"}
+                    </span>
+                  )}
+                </td>
+                <td class="px-4 py-2 text-right">
+                  {pctChange(local.annualChange)}
+                  {local.annualChange != null && lon.annualChange != null && Math.abs(local.annualChange - lon.annualChange) >= 0.05 && (
+                    <span class:list={["ml-1.5", local.annualChange > lon.annualChange ? "text-red-600" : "text-emerald-600"]} title={local.annualChange > lon.annualChange ? "Rising faster than London" : "Rising slower than London"}>
+                      {local.annualChange > lon.annualChange ? "▲" : "▼"}
+                    </span>
+                  )}
+                </td>
+                <td class="px-4 py-2 text-right text-stone-500">{lon.price != null ? gbp.format(lon.price) : "n/a"}</td>
+                <td class="px-4 py-2 text-right text-stone-500">{pctChange(lon.annualChange)}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400 mt-2">
+      Source: {b.rents.source}. Average rent paid across all private tenancies, not just new lets. These are official statistics in development.
+    </p>
+  </section>
+)}
 
-          {b.hpi && b.hpiTrend && (
+{b.hpi && b.hpiTrend && (
             <section class="mb-8">
               <h2 class="text-2xl font-bold mb-1">House prices in {b.name}</h2>
               <p class="text-stone-500 mb-3 text-sm">Average sale price by month, against the London average. Latest figures: {formatMonth(b.hpi.borough.months[b.hpi.borough.months.length - 1])}.</p>

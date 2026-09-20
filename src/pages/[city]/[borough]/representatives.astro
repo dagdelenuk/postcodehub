@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
-import { getBoroughRepresentatives, mpContactUrl, getLocalElections, getWardElectionResults, loadHierarchy } from "../../../lib/data";
+import VotingInfo from "../../../components/VotingInfo.astro";
+import { getBoroughRepresentatives, getCouncilServices, mpContactUrl, getLocalElections, getWardElectionResults, loadHierarchy } from "../../../lib/data";
 import type { Representative } from "../../../lib/types";
 
 export function getStaticPaths() {
@@ -175,6 +176,8 @@ const pct = new Intl.NumberFormat("en-GB", { maximumFractionDigits: 1 });
         </section>
       )
     }
+
+    <VotingInfo services={getCouncilServices(borough.slug)} boroughName={borough.name} />
 
     <p class="text-xs text-stone-400 mt-6">Sources: UK Parliament Members API; {borough.name} council.</p>
   </section>

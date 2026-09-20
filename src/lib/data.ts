@@ -5,6 +5,7 @@ import type {
   BannerImage,
   ChildcareProvider,
   FireStation,
+  AreaRents,
   BroadbandFile,
   CouncilServicesData,
   CouncilServicesFile,
@@ -17,6 +18,7 @@ import type {
   FoodHygieneFile,
   GpSurgery,
   HpiData,
+  JourneyTimesFile,
   HpiSeries,
   Hierarchy,
   HierarchyBorough,
@@ -26,9 +28,7 @@ import type {
   OutcodeData,
   Place,
   PoliceStation,
-  PrivateRentsData,
-  RentBedroomKey,
-  RentStat,
+  RentsFile,
   Representative,
   School,
   WardElectionResult,
@@ -968,21 +968,37 @@ export function getHpi(boroughSlug: string): { borough: HpiSeries; london: HpiSe
   return hpi && borough ? { borough, london: hpi.london, source: hpi.source } : null;
 }
 
-let cachedRents: PrivateRentsData | null | undefined;
+let cachedRents: RentsFile | null | undefined;
 
-// ONS/VOA private rents by bedroom count - a discontinued series (last period
-// is the year to Sept 2023), see data/reference/private-rents-2022-23.json.
-function loadRents(): PrivateRentsData | null {
+// ONS Price Index of Private Rents (monthly), written by scripts/ingest/fetch-rents.ts.
+function loadRents(): RentsFile | null {
   if (cachedRents !== undefined) return cachedRents;
-  const filePath = path.join(REFERENCE_DIR, "private-rents-2022-23.json");
-  cachedRents = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as PrivateRentsData) : null;
+  const filePath = path.join(REFERENCE_DIR, "rents-current.json");
+  cachedRents = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as RentsFile) : null;
   return cachedRents;
 }
 
-export function getRents(boroughSlug: string): { borough: Record<RentBedroomKey, RentStat>; london: Record<RentBedroomKey, RentStat>; period: string; source: string } | null {
+export function getRents(boroughSlug: string): { borough: AreaRents; london: AreaRents; latestMonth: string; source: string; trend: CityTrendData } | null {
   const rents = loadRents();
   const borough = rents?.boroughs[boroughSlug];
-  return rents && borough ? { borough, london: rents.london, period: rents.period, source: rents.source } : null;
+  if (!rents || !borough) return null;
+  const name = getBoroughNameBySlug(boroughSlug);
+  return {
+    borough,
+    london: rents.london,
+    latestMonth: rents.latestMonth,
+    source: rents.source,
+    // Both series cover the same months (one PIPR release); the chart reuses the borough-comparison component.
+    trend: { months: borough.history.months, boroughs: [{ name, slug: boroughSlug, series: borough.history.price }], average: rents.london.history.price },
+  };
+}
+
+function getBoroughNameBySlug(slug: string): string {
+  for (const city of loadHierarchy().cities) {
+    const match = city.boroughs.find((b) => b.slug === slug);
+    if (match) return match.name;
+  }
+  return slug;
 }
 
 function medianOf(nums: number[]): number | null {
@@ -1163,4 +1179,26 @@ export function getBoroughDemographics(boroughSlug: string): { borough: Demograp
 export function getLondonDemographics(): { london: DemographicsWithDeprivation; source: string } | null {
   const d = loadDemographics();
   return d ? { london: d.london, source: d.source } : null;
+}
+
+let cachedJourneyTimes: JourneyTimesFile | null | undefined;
+
+// TfL Journey Planner times to central London, written by scripts/ingest/fetch-journey-times.ts.
+function loadJourneyTimes(): JourneyTimesFile | null {
+  if (cachedJourneyTimes !== undefined) return cachedJourneyTimes;
+  const filePath = path.join(PROCESSED_DIR, "journey-times.json");
+  cachedJourneyTimes = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as JourneyTimesFile) : null;
+  return cachedJourneyTimes;
+}
+
+/** Fastest journeys from an outcode to each central London destination, quickest first. */
+export function getJourneyTimes(outcode: string): { departure: string; source: string; journeys: { id: string; name: string; area: string; minutes: number; modes: string[]; changes: number }[] } | null {
+  const file = loadJourneyTimes();
+  const times = file?.outcodes[outcode];
+  if (!file || !times) return null;
+  const journeys = file.destinations
+    .filter((d) => times[d.id])
+    .map((d) => ({ ...d, ...times[d.id] }))
+    .sort((a, b) => a.minutes - b.minutes);
+  return journeys.length > 0 ? { departure: file.departure, source: file.source, journeys } : null;
 }
