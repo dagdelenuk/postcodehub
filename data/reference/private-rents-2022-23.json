@@ -1,0 +1,1741 @@
+{
+ "source": "ONS / Valuation Office Agency, Private rental market summary statistics in England",
+ "period": "1 October 2022 to 30 September 2023",
+ "note": "Monthly rents in \u00a3. This series was discontinued after the year to September 2023; suppressed cells are null.",
+ "london": {
+  "room": {
+   "count": 870,
+   "mean": 757,
+   "lowerQuartile": 650,
+   "median": 750,
+   "upperQuartile": 867
+  },
+  "studio": {
+   "count": 2290,
+   "mean": 1196,
+   "lowerQuartile": 946,
+   "median": 1100,
+   "upperQuartile": 1400
+  },
+  "oneBed": {
+   "count": 12770,
+   "mean": 1529,
+   "lowerQuartile": 1170,
+   "median": 1400,
+   "upperQuartile": 1733
+  },
+  "twoBed": {
+   "count": 17550,
+   "mean": 1860,
+   "lowerQuartile": 1400,
+   "median": 1650,
+   "upperQuartile": 2100
+  },
+  "threeBed": {
+   "count": 7770,
+   "mean": 2274,
+   "lowerQuartile": 1650,
+   "median": 1950,
+   "upperQuartile": 2500
+  },
+  "fourPlusBed": {
+   "count": 2960,
+   "mean": 3240,
+   "lowerQuartile": 2200,
+   "median": 2744,
+   "upperQuartile": 3659
+  },
+  "all": {
+   "count": 44210,
+   "mean": 1873,
+   "lowerQuartile": 1300,
+   "median": 1625,
+   "upperQuartile": 2100
+  }
+ },
+ "boroughs": {
+  "camden": {
+   "room": {
+    "count": 10,
+    "mean": 935,
+    "lowerQuartile": 780,
+    "median": 900,
+    "upperQuartile": 1050
+   },
+   "studio": {
+    "count": 190,
+    "mean": 1151,
+    "lowerQuartile": 940,
+    "median": 1045,
+    "upperQuartile": 1280
+   },
+   "oneBed": {
+    "count": 570,
+    "mean": 1785,
+    "lowerQuartile": 1430,
+    "median": 1725,
+    "upperQuartile": 2050
+   },
+   "twoBed": {
+    "count": 670,
+    "mean": 2445,
+    "lowerQuartile": 1993,
+    "median": 2383,
+    "upperQuartile": 2750
+   },
+   "threeBed": {
+    "count": 280,
+    "mean": 3210,
+    "lowerQuartile": 2599,
+    "median": 3077,
+    "upperQuartile": 3770
+   },
+   "fourPlusBed": {
+    "count": 80,
+    "mean": 4314,
+    "lowerQuartile": 3336,
+    "median": 4225,
+    "upperQuartile": 5200
+   },
+   "all": {
+    "count": 1810,
+    "mean": 2290,
+    "lowerQuartile": 1600,
+    "median": 2102,
+    "upperQuartile": 2708
+   }
+  },
+  "city-of-london": {
+   "room": {
+    "count": 0,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 30,
+    "mean": 1967,
+    "lowerQuartile": 1517,
+    "median": 1950,
+    "upperQuartile": 2427
+   },
+   "oneBed": {
+    "count": 60,
+    "mean": 2137,
+    "lowerQuartile": 1750,
+    "median": 2058,
+    "upperQuartile": 2492
+   },
+   "twoBed": {
+    "count": 20,
+    "mean": 2685,
+    "lowerQuartile": 2350,
+    "median": 2700,
+    "upperQuartile": 2925
+   },
+   "threeBed": {
+    "count": null,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "fourPlusBed": {
+    "count": 0,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "all": {
+    "count": 110,
+    "mean": 2237,
+    "lowerQuartile": 1800,
+    "median": 2159,
+    "upperQuartile": 2535
+   }
+  },
+  "hackney": {
+   "room": {
+    "count": 10,
+    "mean": 786,
+    "lowerQuartile": null,
+    "median": 700,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 40,
+    "mean": 1336,
+    "lowerQuartile": 1000,
+    "median": 1300,
+    "upperQuartile": 1660
+   },
+   "oneBed": {
+    "count": 370,
+    "mean": 1679,
+    "lowerQuartile": 1370,
+    "median": 1620,
+    "upperQuartile": 1900
+   },
+   "twoBed": {
+    "count": 380,
+    "mean": 2038,
+    "lowerQuartile": 1600,
+    "median": 1950,
+    "upperQuartile": 2325
+   },
+   "threeBed": {
+    "count": 160,
+    "mean": 2644,
+    "lowerQuartile": 2200,
+    "median": 2600,
+    "upperQuartile": 3054
+   },
+   "fourPlusBed": {
+    "count": 40,
+    "mean": 3461,
+    "lowerQuartile": 3100,
+    "median": 3300,
+    "upperQuartile": 3800
+   },
+   "all": {
+    "count": 1000,
+    "mean": 2018,
+    "lowerQuartile": 1500,
+    "median": 1850,
+    "upperQuartile": 2400
+   }
+  },
+  "hammersmith-and-fulham": {
+   "room": {
+    "count": 0,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 70,
+    "mean": 1198,
+    "lowerQuartile": 975,
+    "median": 1092,
+    "upperQuartile": 1350
+   },
+   "oneBed": {
+    "count": 420,
+    "mean": 1686,
+    "lowerQuartile": 1350,
+    "median": 1600,
+    "upperQuartile": 1890
+   },
+   "twoBed": {
+    "count": 440,
+    "mean": 2253,
+    "lowerQuartile": 1750,
+    "median": 2100,
+    "upperQuartile": 2650
+   },
+   "threeBed": {
+    "count": 150,
+    "mean": 3232,
+    "lowerQuartile": 2400,
+    "median": 2973,
+    "upperQuartile": 3800
+   },
+   "fourPlusBed": {
+    "count": 110,
+    "mean": 4708,
+    "lowerQuartile": 3525,
+    "median": 4295,
+    "upperQuartile": 5500
+   },
+   "all": {
+    "count": 1180,
+    "mean": 2340,
+    "lowerQuartile": 1525,
+    "median": 1950,
+    "upperQuartile": 2780
+   }
+  },
+  "haringey": {
+   "room": {
+    "count": 30,
+    "mean": 826,
+    "lowerQuartile": 685,
+    "median": 856,
+    "upperQuartile": 963
+   },
+   "studio": {
+    "count": 90,
+    "mean": 976,
+    "lowerQuartile": 835,
+    "median": 975,
+    "upperQuartile": 1100
+   },
+   "oneBed": {
+    "count": 300,
+    "mean": 1403,
+    "lowerQuartile": 1250,
+    "median": 1400,
+    "upperQuartile": 1550
+   },
+   "twoBed": {
+    "count": 410,
+    "mean": 1742,
+    "lowerQuartile": 1500,
+    "median": 1700,
+    "upperQuartile": 1900
+   },
+   "threeBed": {
+    "count": 150,
+    "mean": 2257,
+    "lowerQuartile": 1830,
+    "median": 2104,
+    "upperQuartile": 2600
+   },
+   "fourPlusBed": {
+    "count": 110,
+    "mean": 3173,
+    "lowerQuartile": 2222,
+    "median": 2950,
+    "upperQuartile": 3600
+   },
+   "all": {
+    "count": 1080,
+    "mean": 1781,
+    "lowerQuartile": 1350,
+    "median": 1600,
+    "upperQuartile": 1993
+   }
+  },
+  "islington": {
+   "room": {
+    "count": 10,
+    "mean": 759,
+    "lowerQuartile": null,
+    "median": 777,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 50,
+    "mean": 1256,
+    "lowerQuartile": 1000,
+    "median": 1150,
+    "upperQuartile": 1450
+   },
+   "oneBed": {
+    "count": 450,
+    "mean": 1804,
+    "lowerQuartile": 1500,
+    "median": 1750,
+    "upperQuartile": 2000
+   },
+   "twoBed": {
+    "count": 430,
+    "mean": 2287,
+    "lowerQuartile": 1865,
+    "median": 2250,
+    "upperQuartile": 2600
+   },
+   "threeBed": {
+    "count": 150,
+    "mean": 2770,
+    "lowerQuartile": 2200,
+    "median": 2700,
+    "upperQuartile": 3150
+   },
+   "fourPlusBed": {
+    "count": 60,
+    "mean": 3972,
+    "lowerQuartile": 3400,
+    "median": 3800,
+    "upperQuartile": 4300
+   },
+   "all": {
+    "count": 1140,
+    "mean": 2196,
+    "lowerQuartile": 1675,
+    "median": 2025,
+    "upperQuartile": 2557
+   }
+  },
+  "kensington-and-chelsea": {
+   "room": {
+    "count": 40,
+    "mean": 948,
+    "lowerQuartile": 867,
+    "median": 910,
+    "upperQuartile": 1018
+   },
+   "studio": {
+    "count": 390,
+    "mean": 1551,
+    "lowerQuartile": 1365,
+    "median": 1517,
+    "upperQuartile": 1700
+   },
+   "oneBed": {
+    "count": 940,
+    "mean": 2425,
+    "lowerQuartile": 1885,
+    "median": 2201,
+    "upperQuartile": 2687
+   },
+   "twoBed": {
+    "count": 960,
+    "mean": 3230,
+    "lowerQuartile": 2492,
+    "median": 2990,
+    "upperQuartile": 3600
+   },
+   "threeBed": {
+    "count": 310,
+    "mean": 4977,
+    "lowerQuartile": 3380,
+    "median": 4355,
+    "upperQuartile": 6100
+   },
+   "fourPlusBed": {
+    "count": 100,
+    "mean": 8014,
+    "lowerQuartile": 5671,
+    "median": 7750,
+    "upperQuartile": 9533
+   },
+   "all": {
+    "count": 2730,
+    "mean": 3051,
+    "lowerQuartile": 1907,
+    "median": 2557,
+    "upperQuartile": 3500
+   }
+  },
+  "lambeth": {
+   "room": {
+    "count": null,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 80,
+    "mean": 1072,
+    "lowerQuartile": 835,
+    "median": 950,
+    "upperQuartile": 1310
+   },
+   "oneBed": {
+    "count": 380,
+    "mean": 1627,
+    "lowerQuartile": 1390,
+    "median": 1550,
+    "upperQuartile": 1800
+   },
+   "twoBed": {
+    "count": 580,
+    "mean": 1967,
+    "lowerQuartile": 1595,
+    "median": 1875,
+    "upperQuartile": 2300
+   },
+   "threeBed": {
+    "count": 200,
+    "mean": 2583,
+    "lowerQuartile": 1950,
+    "median": 2500,
+    "upperQuartile": 3015
+   },
+   "fourPlusBed": {
+    "count": 80,
+    "mean": 3592,
+    "lowerQuartile": 2883,
+    "median": 3400,
+    "upperQuartile": 4200
+   },
+   "all": {
+    "count": 1310,
+    "mean": 2007,
+    "lowerQuartile": 1490,
+    "median": 1800,
+    "upperQuartile": 2400
+   }
+  },
+  "lewisham": {
+   "room": {
+    "count": 100,
+    "mean": 744,
+    "lowerQuartile": 650,
+    "median": 750,
+    "upperQuartile": 825
+   },
+   "studio": {
+    "count": 80,
+    "mean": 1042,
+    "lowerQuartile": 913,
+    "median": 1000,
+    "upperQuartile": 1150
+   },
+   "oneBed": {
+    "count": 520,
+    "mean": 1270,
+    "lowerQuartile": 1135,
+    "median": 1250,
+    "upperQuartile": 1400
+   },
+   "twoBed": {
+    "count": 720,
+    "mean": 1533,
+    "lowerQuartile": 1330,
+    "median": 1500,
+    "upperQuartile": 1700
+   },
+   "threeBed": {
+    "count": 270,
+    "mean": 1910,
+    "lowerQuartile": 1625,
+    "median": 1850,
+    "upperQuartile": 2100
+   },
+   "fourPlusBed": {
+    "count": 100,
+    "mean": 2542,
+    "lowerQuartile": 2100,
+    "median": 2400,
+    "upperQuartile": 2850
+   },
+   "all": {
+    "count": 1790,
+    "mean": 1508,
+    "lowerQuartile": 1200,
+    "median": 1425,
+    "upperQuartile": 1700
+   }
+  },
+  "newham": {
+   "room": {
+    "count": 50,
+    "mean": 751,
+    "lowerQuartile": 672,
+    "median": 780,
+    "upperQuartile": 880
+   },
+   "studio": {
+    "count": 30,
+    "mean": 1152,
+    "lowerQuartile": 925,
+    "median": 1100,
+    "upperQuartile": 1350
+   },
+   "oneBed": {
+    "count": 650,
+    "mean": 1400,
+    "lowerQuartile": 1200,
+    "median": 1420,
+    "upperQuartile": 1600
+   },
+   "twoBed": {
+    "count": 780,
+    "mean": 1696,
+    "lowerQuartile": 1400,
+    "median": 1700,
+    "upperQuartile": 1925
+   },
+   "threeBed": {
+    "count": 400,
+    "mean": 1960,
+    "lowerQuartile": 1650,
+    "median": 1890,
+    "upperQuartile": 2280
+   },
+   "fourPlusBed": {
+    "count": 100,
+    "mean": 2199,
+    "lowerQuartile": 1913,
+    "median": 2100,
+    "upperQuartile": 2400
+   },
+   "all": {
+    "count": 2010,
+    "mean": 1645,
+    "lowerQuartile": 1350,
+    "median": 1600,
+    "upperQuartile": 1900
+   }
+  },
+  "southwark": {
+   "room": {
+    "count": 30,
+    "mean": 866,
+    "lowerQuartile": 725,
+    "median": 850,
+    "upperQuartile": 1000
+   },
+   "studio": {
+    "count": 40,
+    "mean": 1212,
+    "lowerQuartile": 1058,
+    "median": 1150,
+    "upperQuartile": 1275
+   },
+   "oneBed": {
+    "count": 860,
+    "mean": 1566,
+    "lowerQuartile": 1300,
+    "median": 1500,
+    "upperQuartile": 1750
+   },
+   "twoBed": {
+    "count": 1020,
+    "mean": 2030,
+    "lowerQuartile": 1600,
+    "median": 1900,
+    "upperQuartile": 2300
+   },
+   "threeBed": {
+    "count": 340,
+    "mean": 2455,
+    "lowerQuartile": 2000,
+    "median": 2400,
+    "upperQuartile": 2720
+   },
+   "fourPlusBed": {
+    "count": 170,
+    "mean": 3502,
+    "lowerQuartile": 3000,
+    "median": 3500,
+    "upperQuartile": 3850
+   },
+   "all": {
+    "count": 2450,
+    "mean": 2001,
+    "lowerQuartile": 1475,
+    "median": 1820,
+    "upperQuartile": 2375
+   }
+  },
+  "tower-hamlets": {
+   "room": {
+    "count": 30,
+    "mean": 869,
+    "lowerQuartile": 750,
+    "median": 845,
+    "upperQuartile": 1000
+   },
+   "studio": {
+    "count": 80,
+    "mean": 1550,
+    "lowerQuartile": 1300,
+    "median": 1525,
+    "upperQuartile": 1750
+   },
+   "oneBed": {
+    "count": 510,
+    "mean": 1738,
+    "lowerQuartile": 1495,
+    "median": 1650,
+    "upperQuartile": 1935
+   },
+   "twoBed": {
+    "count": 590,
+    "mean": 2138,
+    "lowerQuartile": 1750,
+    "median": 2000,
+    "upperQuartile": 2400
+   },
+   "threeBed": {
+    "count": 180,
+    "mean": 2492,
+    "lowerQuartile": 2050,
+    "median": 2400,
+    "upperQuartile": 2800
+   },
+   "fourPlusBed": {
+    "count": 50,
+    "mean": 3336,
+    "lowerQuartile": 2921,
+    "median": 3300,
+    "upperQuartile": 3700
+   },
+   "all": {
+    "count": 1450,
+    "mean": 2028,
+    "lowerQuartile": 1600,
+    "median": 1900,
+    "upperQuartile": 2315
+   }
+  },
+  "wandsworth": {
+   "room": {
+    "count": 50,
+    "mean": 780,
+    "lowerQuartile": 723,
+    "median": 773,
+    "upperQuartile": 855
+   },
+   "studio": {
+    "count": 50,
+    "mean": 1141,
+    "lowerQuartile": 1000,
+    "median": 1113,
+    "upperQuartile": 1250
+   },
+   "oneBed": {
+    "count": 590,
+    "mean": 1594,
+    "lowerQuartile": 1400,
+    "median": 1575,
+    "upperQuartile": 1701
+   },
+   "twoBed": {
+    "count": 880,
+    "mean": 2032,
+    "lowerQuartile": 1700,
+    "median": 1925,
+    "upperQuartile": 2300
+   },
+   "threeBed": {
+    "count": 400,
+    "mean": 2541,
+    "lowerQuartile": 2144,
+    "median": 2500,
+    "upperQuartile": 2900
+   },
+   "fourPlusBed": {
+    "count": 230,
+    "mean": 3589,
+    "lowerQuartile": 2800,
+    "median": 3500,
+    "upperQuartile": 4117
+   },
+   "all": {
+    "count": 2210,
+    "mean": 2123,
+    "lowerQuartile": 1575,
+    "median": 1900,
+    "upperQuartile": 2500
+   }
+  },
+  "westminster": {
+   "room": {
+    "count": 20,
+    "mean": 967,
+    "lowerQuartile": 910,
+    "median": 945,
+    "upperQuartile": 990
+   },
+   "studio": {
+    "count": 180,
+    "mean": 1516,
+    "lowerQuartile": 1257,
+    "median": 1440,
+    "upperQuartile": 1722
+   },
+   "oneBed": {
+    "count": 650,
+    "mean": 2384,
+    "lowerQuartile": 1895,
+    "median": 2275,
+    "upperQuartile": 2708
+   },
+   "twoBed": {
+    "count": 650,
+    "mean": 3345,
+    "lowerQuartile": 2492,
+    "median": 3003,
+    "upperQuartile": 3792
+   },
+   "threeBed": {
+    "count": 230,
+    "mean": 4912,
+    "lowerQuartile": 3315,
+    "median": 4225,
+    "upperQuartile": 5547
+   },
+   "fourPlusBed": {
+    "count": 50,
+    "mean": 9324,
+    "lowerQuartile": 4500,
+    "median": 6600,
+    "upperQuartile": 15383
+   },
+   "all": {
+    "count": 1790,
+    "mean": 3154,
+    "lowerQuartile": 1998,
+    "median": 2622,
+    "upperQuartile": 3500
+   }
+  },
+  "barking-and-dagenham": {
+   "room": {
+    "count": 10,
+    "mean": 564,
+    "lowerQuartile": null,
+    "median": 600,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 10,
+    "mean": 777,
+    "lowerQuartile": 700,
+    "median": 750,
+    "upperQuartile": 850
+   },
+   "oneBed": {
+    "count": 180,
+    "mean": 1097,
+    "lowerQuartile": 1000,
+    "median": 1100,
+    "upperQuartile": 1175
+   },
+   "twoBed": {
+    "count": 320,
+    "mean": 1334,
+    "lowerQuartile": 1200,
+    "median": 1325,
+    "upperQuartile": 1450
+   },
+   "threeBed": {
+    "count": 230,
+    "mean": 1554,
+    "lowerQuartile": 1400,
+    "median": 1550,
+    "upperQuartile": 1650
+   },
+   "fourPlusBed": {
+    "count": 30,
+    "mean": 1906,
+    "lowerQuartile": 1700,
+    "median": 1825,
+    "upperQuartile": 2175
+   },
+   "all": {
+    "count": 780,
+    "mean": 1353,
+    "lowerQuartile": 1150,
+    "median": 1350,
+    "upperQuartile": 1500
+   }
+  },
+  "barnet": {
+   "room": {
+    "count": 30,
+    "mean": 635,
+    "lowerQuartile": 500,
+    "median": 650,
+    "upperQuartile": 725
+   },
+   "studio": {
+    "count": 110,
+    "mean": 1010,
+    "lowerQuartile": 900,
+    "median": 1000,
+    "upperQuartile": 1105
+   },
+   "oneBed": {
+    "count": 510,
+    "mean": 1315,
+    "lowerQuartile": 1200,
+    "median": 1300,
+    "upperQuartile": 1400
+   },
+   "twoBed": {
+    "count": 990,
+    "mean": 1585,
+    "lowerQuartile": 1400,
+    "median": 1550,
+    "upperQuartile": 1700
+   },
+   "threeBed": {
+    "count": 360,
+    "mean": 2125,
+    "lowerQuartile": 1850,
+    "median": 2050,
+    "upperQuartile": 2350
+   },
+   "fourPlusBed": {
+    "count": 200,
+    "mean": 3065,
+    "lowerQuartile": 2450,
+    "median": 2850,
+    "upperQuartile": 3500
+   },
+   "all": {
+    "count": 2210,
+    "mean": 1702,
+    "lowerQuartile": 1349,
+    "median": 1550,
+    "upperQuartile": 1850
+   }
+  },
+  "bexley": {
+   "room": {
+    "count": null,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 10,
+    "mean": 992,
+    "lowerQuartile": null,
+    "median": 950,
+    "upperQuartile": null
+   },
+   "oneBed": {
+    "count": 90,
+    "mean": 1068,
+    "lowerQuartile": 900,
+    "median": 1000,
+    "upperQuartile": 1250
+   },
+   "twoBed": {
+    "count": 170,
+    "mean": 1334,
+    "lowerQuartile": 1146,
+    "median": 1350,
+    "upperQuartile": 1500
+   },
+   "threeBed": {
+    "count": 190,
+    "mean": 1516,
+    "lowerQuartile": 1200,
+    "median": 1500,
+    "upperQuartile": 1800
+   },
+   "fourPlusBed": {
+    "count": 70,
+    "mean": 1737,
+    "lowerQuartile": 1370,
+    "median": 1540,
+    "upperQuartile": 2100
+   },
+   "all": {
+    "count": 530,
+    "mean": 1397,
+    "lowerQuartile": 1150,
+    "median": 1350,
+    "upperQuartile": 1650
+   }
+  },
+  "brent": {
+   "room": {
+    "count": 40,
+    "mean": 833,
+    "lowerQuartile": 720,
+    "median": 810,
+    "upperQuartile": 900
+   },
+   "studio": {
+    "count": 30,
+    "mean": 903,
+    "lowerQuartile": 800,
+    "median": 875,
+    "upperQuartile": 975
+   },
+   "oneBed": {
+    "count": 120,
+    "mean": 1331,
+    "lowerQuartile": 1160,
+    "median": 1300,
+    "upperQuartile": 1450
+   },
+   "twoBed": {
+    "count": 200,
+    "mean": 1636,
+    "lowerQuartile": 1400,
+    "median": 1600,
+    "upperQuartile": 1800
+   },
+   "threeBed": {
+    "count": 140,
+    "mean": 2041,
+    "lowerQuartile": 1750,
+    "median": 1995,
+    "upperQuartile": 2200
+   },
+   "fourPlusBed": {
+    "count": 40,
+    "mean": 2661,
+    "lowerQuartile": 2125,
+    "median": 2620,
+    "upperQuartile": 2938
+   },
+   "all": {
+    "count": 580,
+    "mean": 1651,
+    "lowerQuartile": 1250,
+    "median": 1600,
+    "upperQuartile": 1950
+   }
+  },
+  "bromley": {
+   "room": {
+    "count": 10,
+    "mean": 704,
+    "lowerQuartile": null,
+    "median": 675,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 40,
+    "mean": 888,
+    "lowerQuartile": 765,
+    "median": 900,
+    "upperQuartile": 975
+   },
+   "oneBed": {
+    "count": 650,
+    "mean": 1144,
+    "lowerQuartile": 1000,
+    "median": 1150,
+    "upperQuartile": 1250
+   },
+   "twoBed": {
+    "count": 1000,
+    "mean": 1440,
+    "lowerQuartile": 1300,
+    "median": 1418,
+    "upperQuartile": 1600
+   },
+   "threeBed": {
+    "count": 410,
+    "mean": 1811,
+    "lowerQuartile": 1575,
+    "median": 1750,
+    "upperQuartile": 2000
+   },
+   "fourPlusBed": {
+    "count": 180,
+    "mean": 2599,
+    "lowerQuartile": 2000,
+    "median": 2322,
+    "upperQuartile": 2750
+   },
+   "all": {
+    "count": 2290,
+    "mean": 1502,
+    "lowerQuartile": 1200,
+    "median": 1400,
+    "upperQuartile": 1670
+   }
+  },
+  "croydon": {
+   "room": {
+    "count": 50,
+    "mean": 652,
+    "lowerQuartile": 575,
+    "median": 617,
+    "upperQuartile": 800
+   },
+   "studio": {
+    "count": 210,
+    "mean": 988,
+    "lowerQuartile": 950,
+    "median": 1000,
+    "upperQuartile": 1050
+   },
+   "oneBed": {
+    "count": 530,
+    "mean": 1091,
+    "lowerQuartile": 960,
+    "median": 1100,
+    "upperQuartile": 1200
+   },
+   "twoBed": {
+    "count": 640,
+    "mean": 1367,
+    "lowerQuartile": 1204,
+    "median": 1350,
+    "upperQuartile": 1500
+   },
+   "threeBed": {
+    "count": 270,
+    "mean": 1692,
+    "lowerQuartile": 1450,
+    "median": 1641,
+    "upperQuartile": 1850
+   },
+   "fourPlusBed": {
+    "count": 120,
+    "mean": 2265,
+    "lowerQuartile": 1900,
+    "median": 2200,
+    "upperQuartile": 2600
+   },
+   "all": {
+    "count": 1820,
+    "mean": 1329,
+    "lowerQuartile": 1050,
+    "median": 1250,
+    "upperQuartile": 1500
+   }
+  },
+  "ealing": {
+   "room": {
+    "count": 10,
+    "mean": 721,
+    "lowerQuartile": 750,
+    "median": 796,
+    "upperQuartile": 817
+   },
+   "studio": {
+    "count": 60,
+    "mean": 1096,
+    "lowerQuartile": 900,
+    "median": 1088,
+    "upperQuartile": 1250
+   },
+   "oneBed": {
+    "count": 420,
+    "mean": 1353,
+    "lowerQuartile": 1208,
+    "median": 1330,
+    "upperQuartile": 1450
+   },
+   "twoBed": {
+    "count": 610,
+    "mean": 1665,
+    "lowerQuartile": 1450,
+    "median": 1607,
+    "upperQuartile": 1847
+   },
+   "threeBed": {
+    "count": 180,
+    "mean": 2048,
+    "lowerQuartile": 1700,
+    "median": 1950,
+    "upperQuartile": 2350
+   },
+   "fourPlusBed": {
+    "count": 130,
+    "mean": 2896,
+    "lowerQuartile": 2294,
+    "median": 2550,
+    "upperQuartile": 3250
+   },
+   "all": {
+    "count": 1420,
+    "mean": 1704,
+    "lowerQuartile": 1314,
+    "median": 1569,
+    "upperQuartile": 1900
+   }
+  },
+  "enfield": {
+   "room": {
+    "count": 20,
+    "mean": 691,
+    "lowerQuartile": 625,
+    "median": 700,
+    "upperQuartile": 800
+   },
+   "studio": {
+    "count": 30,
+    "mean": 976,
+    "lowerQuartile": 868,
+    "median": 950,
+    "upperQuartile": 1000
+   },
+   "oneBed": {
+    "count": 190,
+    "mean": 1158,
+    "lowerQuartile": 1050,
+    "median": 1125,
+    "upperQuartile": 1295
+   },
+   "twoBed": {
+    "count": 350,
+    "mean": 1442,
+    "lowerQuartile": 1300,
+    "median": 1400,
+    "upperQuartile": 1550
+   },
+   "threeBed": {
+    "count": 250,
+    "mean": 1732,
+    "lowerQuartile": 1550,
+    "median": 1700,
+    "upperQuartile": 1850
+   },
+   "fourPlusBed": {
+    "count": 60,
+    "mean": 2445,
+    "lowerQuartile": 2100,
+    "median": 2300,
+    "upperQuartile": 2700
+   },
+   "all": {
+    "count": 900,
+    "mean": 1500,
+    "lowerQuartile": 1250,
+    "median": 1450,
+    "upperQuartile": 1700
+   }
+  },
+  "greenwich": {
+   "room": {
+    "count": 50,
+    "mean": 785,
+    "lowerQuartile": 600,
+    "median": 733,
+    "upperQuartile": 893
+   },
+   "studio": {
+    "count": 20,
+    "mean": 1087,
+    "lowerQuartile": 900,
+    "median": 988,
+    "upperQuartile": 1200
+   },
+   "oneBed": {
+    "count": 240,
+    "mean": 1437,
+    "lowerQuartile": 1200,
+    "median": 1475,
+    "upperQuartile": 1650
+   },
+   "twoBed": {
+    "count": 420,
+    "mean": 1677,
+    "lowerQuartile": 1400,
+    "median": 1650,
+    "upperQuartile": 1900
+   },
+   "threeBed": {
+    "count": 160,
+    "mean": 1958,
+    "lowerQuartile": 1598,
+    "median": 1850,
+    "upperQuartile": 2275
+   },
+   "fourPlusBed": {
+    "count": 50,
+    "mean": 2471,
+    "lowerQuartile": 2000,
+    "median": 2350,
+    "upperQuartile": 2800
+   },
+   "all": {
+    "count": 940,
+    "mean": 1652,
+    "lowerQuartile": 1300,
+    "median": 1600,
+    "upperQuartile": 1900
+   }
+  },
+  "harrow": {
+   "room": {
+    "count": 20,
+    "mean": 700,
+    "lowerQuartile": 675,
+    "median": 695,
+    "upperQuartile": 800
+   },
+   "studio": {
+    "count": 30,
+    "mean": 861,
+    "lowerQuartile": 768,
+    "median": 888,
+    "upperQuartile": 975
+   },
+   "oneBed": {
+    "count": 190,
+    "mean": 1195,
+    "lowerQuartile": 1075,
+    "median": 1175,
+    "upperQuartile": 1300
+   },
+   "twoBed": {
+    "count": 450,
+    "mean": 1475,
+    "lowerQuartile": 1310,
+    "median": 1450,
+    "upperQuartile": 1600
+   },
+   "threeBed": {
+    "count": 310,
+    "mean": 1844,
+    "lowerQuartile": 1650,
+    "median": 1800,
+    "upperQuartile": 2000
+   },
+   "fourPlusBed": {
+    "count": 110,
+    "mean": 2471,
+    "lowerQuartile": 2050,
+    "median": 2400,
+    "upperQuartile": 2700
+   },
+   "all": {
+    "count": 1110,
+    "mean": 1598,
+    "lowerQuartile": 1278,
+    "median": 1500,
+    "upperQuartile": 1830
+   }
+  },
+  "havering": {
+   "room": {
+    "count": 10,
+    "mean": 689,
+    "lowerQuartile": 650,
+    "median": 700,
+    "upperQuartile": 750
+   },
+   "studio": {
+    "count": 10,
+    "mean": 795,
+    "lowerQuartile": null,
+    "median": 800,
+    "upperQuartile": null
+   },
+   "oneBed": {
+    "count": 180,
+    "mean": 1016,
+    "lowerQuartile": 925,
+    "median": 1000,
+    "upperQuartile": 1100
+   },
+   "twoBed": {
+    "count": 280,
+    "mean": 1277,
+    "lowerQuartile": 1150,
+    "median": 1258,
+    "upperQuartile": 1400
+   },
+   "threeBed": {
+    "count": 230,
+    "mean": 1528,
+    "lowerQuartile": 1365,
+    "median": 1500,
+    "upperQuartile": 1650
+   },
+   "fourPlusBed": {
+    "count": 50,
+    "mean": 2029,
+    "lowerQuartile": 1750,
+    "median": 2010,
+    "upperQuartile": 2285
+   },
+   "all": {
+    "count": 760,
+    "mean": 1324,
+    "lowerQuartile": 1095,
+    "median": 1300,
+    "upperQuartile": 1500
+   }
+  },
+  "hillingdon": {
+   "room": {
+    "count": 20,
+    "mean": 680,
+    "lowerQuartile": 625,
+    "median": 673,
+    "upperQuartile": 800
+   },
+   "studio": {
+    "count": 60,
+    "mean": 927,
+    "lowerQuartile": 773,
+    "median": 900,
+    "upperQuartile": 1050
+   },
+   "oneBed": {
+    "count": 430,
+    "mean": 1099,
+    "lowerQuartile": 995,
+    "median": 1100,
+    "upperQuartile": 1225
+   },
+   "twoBed": {
+    "count": 680,
+    "mean": 1390,
+    "lowerQuartile": 1250,
+    "median": 1375,
+    "upperQuartile": 1500
+   },
+   "threeBed": {
+    "count": 420,
+    "mean": 1633,
+    "lowerQuartile": 1408,
+    "median": 1605,
+    "upperQuartile": 1815
+   },
+   "fourPlusBed": {
+    "count": 140,
+    "mean": 2290,
+    "lowerQuartile": 1850,
+    "median": 2100,
+    "upperQuartile": 2500
+   },
+   "all": {
+    "count": 1740,
+    "mean": 1423,
+    "lowerQuartile": 1150,
+    "median": 1350,
+    "upperQuartile": 1600
+   }
+  },
+  "hounslow": {
+   "room": {
+    "count": 100,
+    "mean": 703,
+    "lowerQuartile": 600,
+    "median": 675,
+    "upperQuartile": 800
+   },
+   "studio": {
+    "count": 110,
+    "mean": 1045,
+    "lowerQuartile": 850,
+    "median": 1000,
+    "upperQuartile": 1260
+   },
+   "oneBed": {
+    "count": 380,
+    "mean": 1364,
+    "lowerQuartile": 1175,
+    "median": 1350,
+    "upperQuartile": 1550
+   },
+   "twoBed": {
+    "count": 560,
+    "mean": 1663,
+    "lowerQuartile": 1400,
+    "median": 1600,
+    "upperQuartile": 1842
+   },
+   "threeBed": {
+    "count": 240,
+    "mean": 2014,
+    "lowerQuartile": 1650,
+    "median": 1850,
+    "upperQuartile": 2250
+   },
+   "fourPlusBed": {
+    "count": 100,
+    "mean": 3038,
+    "lowerQuartile": 2000,
+    "median": 2400,
+    "upperQuartile": 3500
+   },
+   "all": {
+    "count": 1480,
+    "mean": 1626,
+    "lowerQuartile": 1250,
+    "median": 1500,
+    "upperQuartile": 1825
+   }
+  },
+  "kingston-upon-thames": {
+   "room": {
+    "count": 20,
+    "mean": 650,
+    "lowerQuartile": 625,
+    "median": 650,
+    "upperQuartile": 700
+   },
+   "studio": {
+    "count": 10,
+    "mean": 1091,
+    "lowerQuartile": null,
+    "median": 998,
+    "upperQuartile": null
+   },
+   "oneBed": {
+    "count": 110,
+    "mean": 1245,
+    "lowerQuartile": 1125,
+    "median": 1250,
+    "upperQuartile": 1350
+   },
+   "twoBed": {
+    "count": 230,
+    "mean": 1549,
+    "lowerQuartile": 1325,
+    "median": 1516,
+    "upperQuartile": 1680
+   },
+   "threeBed": {
+    "count": 120,
+    "mean": 2068,
+    "lowerQuartile": 1678,
+    "median": 1995,
+    "upperQuartile": 2500
+   },
+   "fourPlusBed": {
+    "count": 40,
+    "mean": 2723,
+    "lowerQuartile": 2188,
+    "median": 2775,
+    "upperQuartile": 3000
+   },
+   "all": {
+    "count": 530,
+    "mean": 1659,
+    "lowerQuartile": 1270,
+    "median": 1500,
+    "upperQuartile": 1900
+   }
+  },
+  "merton": {
+   "room": {
+    "count": 40,
+    "mean": 765,
+    "lowerQuartile": 650,
+    "median": 750,
+    "upperQuartile": 875
+   },
+   "studio": {
+    "count": 10,
+    "mean": 966,
+    "lowerQuartile": 900,
+    "median": 1050,
+    "upperQuartile": 1055
+   },
+   "oneBed": {
+    "count": 110,
+    "mean": 1371,
+    "lowerQuartile": 1200,
+    "median": 1350,
+    "upperQuartile": 1550
+   },
+   "twoBed": {
+    "count": 270,
+    "mean": 1679,
+    "lowerQuartile": 1300,
+    "median": 1575,
+    "upperQuartile": 1900
+   },
+   "threeBed": {
+    "count": 140,
+    "mean": 2228,
+    "lowerQuartile": 1800,
+    "median": 2100,
+    "upperQuartile": 2600
+   },
+   "fourPlusBed": {
+    "count": 50,
+    "mean": 3178,
+    "lowerQuartile": 2400,
+    "median": 2850,
+    "upperQuartile": 4250
+   },
+   "all": {
+    "count": 620,
+    "mean": 1809,
+    "lowerQuartile": 1250,
+    "median": 1600,
+    "upperQuartile": 2100
+   }
+  },
+  "redbridge": {
+   "room": {
+    "count": 40,
+    "mean": 771,
+    "lowerQuartile": 695,
+    "median": 748,
+    "upperQuartile": 850
+   },
+   "studio": {
+    "count": 40,
+    "mean": 881,
+    "lowerQuartile": 800,
+    "median": 900,
+    "upperQuartile": 950
+   },
+   "oneBed": {
+    "count": 330,
+    "mean": 1140,
+    "lowerQuartile": 1000,
+    "median": 1125,
+    "upperQuartile": 1250
+   },
+   "twoBed": {
+    "count": 520,
+    "mean": 1431,
+    "lowerQuartile": 1300,
+    "median": 1400,
+    "upperQuartile": 1550
+   },
+   "threeBed": {
+    "count": 310,
+    "mean": 1747,
+    "lowerQuartile": 1550,
+    "median": 1742,
+    "upperQuartile": 1895
+   },
+   "fourPlusBed": {
+    "count": 120,
+    "mean": 2251,
+    "lowerQuartile": 1900,
+    "median": 2200,
+    "upperQuartile": 2500
+   },
+   "all": {
+    "count": 1360,
+    "mean": 1467,
+    "lowerQuartile": 1200,
+    "median": 1400,
+    "upperQuartile": 1700
+   }
+  },
+  "richmond-upon-thames": {
+   "room": {
+    "count": 0,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 30,
+    "mean": 982,
+    "lowerQuartile": 867,
+    "median": 1040,
+    "upperQuartile": 1090
+   },
+   "oneBed": {
+    "count": 180,
+    "mean": 1315,
+    "lowerQuartile": 1195,
+    "median": 1275,
+    "upperQuartile": 1450
+   },
+   "twoBed": {
+    "count": 340,
+    "mean": 1772,
+    "lowerQuartile": 1500,
+    "median": 1675,
+    "upperQuartile": 2000
+   },
+   "threeBed": {
+    "count": 160,
+    "mean": 2248,
+    "lowerQuartile": 1725,
+    "median": 2100,
+    "upperQuartile": 2500
+   },
+   "fourPlusBed": {
+    "count": 70,
+    "mean": 3828,
+    "lowerQuartile": 2700,
+    "median": 3500,
+    "upperQuartile": 4300
+   },
+   "all": {
+    "count": 780,
+    "mean": 1935,
+    "lowerQuartile": 1400,
+    "median": 1664,
+    "upperQuartile": 2150
+   }
+  },
+  "sutton": {
+   "room": {
+    "count": null,
+    "mean": null,
+    "lowerQuartile": null,
+    "median": null,
+    "upperQuartile": null
+   },
+   "studio": {
+    "count": 60,
+    "mean": 797,
+    "lowerQuartile": 725,
+    "median": 800,
+    "upperQuartile": 850
+   },
+   "oneBed": {
+    "count": 310,
+    "mean": 1009,
+    "lowerQuartile": 900,
+    "median": 975,
+    "upperQuartile": 1150
+   },
+   "twoBed": {
+    "count": 450,
+    "mean": 1307,
+    "lowerQuartile": 1150,
+    "median": 1275,
+    "upperQuartile": 1450
+   },
+   "threeBed": {
+    "count": 150,
+    "mean": 1726,
+    "lowerQuartile": 1500,
+    "median": 1675,
+    "upperQuartile": 1980
+   },
+   "fourPlusBed": {
+    "count": 50,
+    "mean": 2435,
+    "lowerQuartile": 2095,
+    "median": 2400,
+    "upperQuartile": 2700
+   },
+   "all": {
+    "count": 1010,
+    "mean": 1303,
+    "lowerQuartile": 1000,
+    "median": 1200,
+    "upperQuartile": 1500
+   }
+  },
+  "waltham-forest": {
+   "room": {
+    "count": 30,
+    "mean": 651,
+    "lowerQuartile": 600,
+    "median": 633,
+    "upperQuartile": 673
+   },
+   "studio": {
+    "count": 40,
+    "mean": 979,
+    "lowerQuartile": 875,
+    "median": 988,
+    "upperQuartile": 1075
+   },
+   "oneBed": {
+    "count": 360,
+    "mean": 1224,
+    "lowerQuartile": 1100,
+    "median": 1200,
+    "upperQuartile": 1350
+   },
+   "twoBed": {
+    "count": 540,
+    "mean": 1489,
+    "lowerQuartile": 1330,
+    "median": 1500,
+    "upperQuartile": 1650
+   },
+   "threeBed": {
+    "count": 270,
+    "mean": 1810,
+    "lowerQuartile": 1600,
+    "median": 1750,
+    "upperQuartile": 2000
+   },
+   "fourPlusBed": {
+    "count": 70,
+    "mean": 2241,
+    "lowerQuartile": 2000,
+    "median": 2225,
+    "upperQuartile": 2550
+   },
+   "all": {
+    "count": 1300,
+    "mean": 1488,
+    "lowerQuartile": 1225,
+    "median": 1450,
+    "upperQuartile": 1700
+   }
+  }
+ }
+}

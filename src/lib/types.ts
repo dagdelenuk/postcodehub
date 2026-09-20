@@ -313,6 +313,8 @@ export interface OutcodeData {
   places: PlacesData;
   events: EventsData;
   history: HistoryData;
+  /** Not stored in the per-outcode JSON - attached by loadOutcodeData() from food-hygiene.json. */
+  food: FoodHygieneData;
 }
 
 export const CATEGORY_KEYS = [
@@ -325,7 +327,66 @@ export const CATEGORY_KEYS = [
   "places",
   "events",
   "property",
+  "food",
   "history",
 ] as const;
 
 export type CategoryKey = (typeof CATEGORY_KEYS)[number];
+
+export interface HpiSeries {
+  /** "YYYY-MM", ascending. */
+  months: string[];
+  /** Average price (£) per month, same length as months. */
+  averagePrice: number[];
+  /** Latest month's annual % change. */
+  annualChange: number | null;
+  /** Latest month's average price by property type. */
+  byType: { flat: number | null; terraced: number | null; semiDetached: number | null; detached: number | null };
+}
+
+export interface HpiData {
+  source: string;
+  latestMonth: string;
+  london: HpiSeries;
+  boroughs: Record<string, HpiSeries>;
+}
+
+export interface RentStat {
+  count: number | null;
+  mean: number | null;
+  lowerQuartile: number | null;
+  median: number | null;
+  upperQuartile: number | null;
+}
+
+export type RentBedroomKey = "room" | "studio" | "oneBed" | "twoBed" | "threeBed" | "fourPlusBed" | "all";
+
+export interface PrivateRentsData {
+  source: string;
+  period: string;
+  note: string;
+  london: Record<RentBedroomKey, RentStat>;
+  boroughs: Record<string, Record<RentBedroomKey, RentStat>>;
+}
+
+export interface FoodEstablishment {
+  name: string;
+  type: string;
+  address: string;
+  postcode: string;
+  /** FHRS rating, 0 (urgent improvement) to 5 (very good). */
+  rating: number;
+  ratingDate: string;
+}
+
+export interface FoodHygieneData {
+  establishments: FoodEstablishment[];
+}
+
+export interface FoodHygieneFile {
+  source: string;
+  fetchedAt: string;
+  /** Rated consumer-facing premises across all London boroughs, by rating "0".."5". */
+  londonCounts: Record<string, number>;
+  outcodes: Record<string, FoodEstablishment[]>;
+}

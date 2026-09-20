@@ -5,7 +5,10 @@ import type {
   BannerImage,
   ChildcareProvider,
   FireStation,
+  FoodHygieneFile,
   GpSurgery,
+  HpiData,
+  HpiSeries,
   Hierarchy,
   HierarchyBorough,
   HierarchyCity,
@@ -14,6 +17,9 @@ import type {
   OutcodeData,
   Place,
   PoliceStation,
+  PrivateRentsData,
+  RentBedroomKey,
+  RentStat,
   Representative,
   School,
   WardElectionResult,
@@ -213,7 +219,24 @@ export function getBorough(citySlug: string, boroughSlug: string): HierarchyBoro
 
 export function loadOutcodeData(citySlug: string, boroughSlug: string, outcodeSlug: string): OutcodeData {
   const raw = readFileSync(path.join(PROCESSED_DIR, citySlug, boroughSlug, `${outcodeSlug}.json`), "utf-8");
-  return JSON.parse(raw) as OutcodeData;
+  const data = JSON.parse(raw) as OutcodeData;
+  data.food = { establishments: loadFoodHygiene()?.outcodes[data.outcode] ?? [] };
+  return data;
+}
+
+let cachedFood: FoodHygieneFile | null | undefined;
+
+// FSA hygiene ratings by outcode, written by scripts/ingest/fetch-food-hygiene.ts.
+function loadFoodHygiene(): FoodHygieneFile | null {
+  if (cachedFood !== undefined) return cachedFood;
+  const filePath = path.join(PROCESSED_DIR, "food-hygiene.json");
+  cachedFood = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as FoodHygieneFile) : null;
+  return cachedFood;
+}
+
+export function getFoodHygieneMeta(): { source: string; fetchedAt: string; londonCounts: Record<string, number> } | null {
+  const f = loadFoodHygiene();
+  return f ? { source: f.source, fetchedAt: f.fetchedAt, londonCounts: f.londonCounts } : null;
 }
 
 export interface OutcodeParams {
@@ -895,4 +918,104 @@ export function hasContent(data: OutcodeData, category: keyof OutcodeData): bool
 export function mpContactUrl(name: string): string {
   const q = new URLSearchParams({ SearchText: name, PartyId: "", Gender: "Any", ForParliament: "Current", ShowAdvanced: "False" });
   return `https://members.parliament.uk/members/commons?${q.toString()}`;
+}
+
+let cachedHpi: HpiData | null | undefined;
+
+// UK HPI per borough + London, written by scripts/ingest/fetch-hpi.ts.
+function loadHpi(): HpiData | null {
+  if (cachedHpi !== undefined) return cachedHpi;
+  const filePath = path.join(REFERENCE_DIR, "house-price-index.json");
+  cachedHpi = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as HpiData) : null;
+  return cachedHpi;
+}
+
+export function getHpi(boroughSlug: string): { borough: HpiSeries; london: HpiSeries; source: string } | null {
+  const hpi = loadHpi();
+  const borough = hpi?.boroughs[boroughSlug];
+  return hpi && borough ? { borough, london: hpi.london, source: hpi.source } : null;
+}
+
+let cachedRents: PrivateRentsData | null | undefined;
+
+// ONS/VOA private rents by bedroom count - a discontinued series (last period
+// is the year to Sept 2023), see data/reference/private-rents-2022-23.json.
+function loadRents(): PrivateRentsData | null {
+  if (cachedRents !== undefined) return cachedRents;
+  const filePath = path.join(REFERENCE_DIR, "private-rents-2022-23.json");
+  cachedRents = existsSync(filePath) ? (JSON.parse(readFileSync(filePath, "utf-8")) as PrivateRentsData) : null;
+  return cachedRents;
+}
+
+export function getRents(boroughSlug: string): { borough: Record<RentBedroomKey, RentStat>; london: Record<RentBedroomKey, RentStat>; period: string; source: string } | null {
+  const rents = loadRents();
+  const borough = rents?.boroughs[boroughSlug];
+  return rents && borough ? { borough, london: rents.london, period: rents.period, source: rents.source } : null;
+}
+
+function medianOf(nums: number[]): number | null {
+  if (nums.length === 0) return null;
+  const sorted = [...nums].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+}
+
+export interface PriceSummary {
+  name: string;
+  /** Sales in the most recent 12 months of Price Paid data. */
+  sales: number;
+  median: number | null;
+  /** % change of the median vs the preceding period we hold, or null with too few sales to compare. */
+  change: number | null;
+}
+
+function summarisePrices(name: string, sales: { price: number; date: string }[], cutoff: string): PriceSummary {
+  const recent = sales.filter((s) => s.date >= cutoff).map((s) => s.price);
+  const prior = sales.filter((s) => s.date < cutoff).map((s) => s.price);
+  const median = medianOf(recent);
+  const priorMedian = prior.length >= 10 && recent.length >= 10 ? medianOf(prior) : null;
+  return { name, sales: recent.length, median, change: median != null && priorMedian ? ((median - priorMedian) / priorMedian) * 100 : null };
+}
+
+const cachedCityPrices = new Map<string, { all: { price: number; date: string }[]; cutoff: string; summary: PriceSummary }>();
+
+/**
+ * Median sale price per post town within a borough, against the borough as a
+ * whole and London, all from Price Paid Data (like-for-like medians) - the
+ * official HPI stops at borough level, so post towns can only be compared this way.
+ */
+export function getBoroughPostTownPrices(citySlug: string, boroughSlug: string): { postTowns: PriceSummary[]; borough: PriceSummary; london: PriceSummary; since: string } | null {
+  const city = getCity(citySlug);
+  const toSales = (slug: string, outcodes: HierarchyOutcode[]) =>
+    outcodes.filter((o) => o.isPrimaryBorough).map((o) => ({ postTown: o.postTown, sales: loadOutcodeData(citySlug, slug, o.slug).property.sales }));
+
+  const cityKey = citySlug;
+  let cityPrices = cachedCityPrices.get(cityKey);
+  if (!cityPrices) {
+    const all = (city?.boroughs ?? []).flatMap((b) => toSales(b.slug, b.outcodes).flatMap((g) => g.sales.map((s) => ({ price: s.price, date: s.dateOfTransfer }))));
+    const latest = all.reduce((max, s) => (s.date > max ? s.date : max), "");
+    const cutoffDate = new Date(latest || Date.now());
+    cutoffDate.setFullYear(cutoffDate.getFullYear() - 1);
+    const cutoff = cutoffDate.toISOString().slice(0, 10);
+    cityPrices = { all, cutoff, summary: summarisePrices("London", all, cutoff) };
+    cachedCityPrices.set(cityKey, cityPrices);
+  }
+  if (cityPrices.all.length === 0) return null;
+  const { cutoff } = cityPrices;
+
+  const borough = getBorough(citySlug, boroughSlug);
+  const groups = toSales(boroughSlug, borough?.outcodes ?? []);
+  const byPostTown = new Map<string, { price: number; date: string }[]>();
+  for (const g of groups) {
+    const list = byPostTown.get(g.postTown) ?? [];
+    list.push(...g.sales.map((s) => ({ price: s.price, date: s.dateOfTransfer })));
+    byPostTown.set(g.postTown, list);
+  }
+  const boroughSales = [...byPostTown.values()].flat();
+  return {
+    postTowns: [...byPostTown.entries()].map(([name, sales]) => summarisePrices(name, sales, cutoff)).filter((p) => p.sales > 0).sort((a, b) => a.name.localeCompare(b.name)),
+    borough: summarisePrices(borough?.name ?? boroughSlug, boroughSales, cutoff),
+    london: cityPrices.summary,
+    since: cutoff,
+  };
 }

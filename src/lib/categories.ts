@@ -16,6 +16,7 @@ export const CATEGORIES: CategoryDef[] = [
   { key: "places", label: "Places", icon: "📍", description: "Parks, libraries, leisure centres, and community spaces" },
   { key: "planning", label: "Planning", icon: "🏗️", description: "Planning applications" },
   { key: "representatives", label: "Representatives", icon: "🏛️", description: "Your MP and local councillors" },
+  { key: "food", label: "Food hygiene", icon: "🍽️", description: "Hygiene ratings for local restaurants, cafes, pubs and shops" },
   { key: "events", label: "Events", icon: "📅", description: "Local events and things to do" },
   { key: "history", label: "History", icon: "📜", description: "Local heritage and history" },
 ];

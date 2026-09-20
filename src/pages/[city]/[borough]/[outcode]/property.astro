@@ -1,5 +1,6 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import LiveFloodWarningsWidget from "../../../../components/LiveFloodWarningsWidget.astro";
 import { getAllOutcodeParams, getBorough, getCouncilTax, getCouncilTaxAverage, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -122,6 +123,9 @@ const recentSales = data.property.sales.slice(0, 40);
 
   <section id="flood-risk" class="mt-8 mb-4">
     <h2 class="text-lg font-semibold mb-3">Flood risk</h2>
+    <div class="mb-3">
+      <LiveFloodWarningsWidget latitude={data.latitude} longitude={data.longitude} />
+    </div>
     <a
       href={`https://check-long-term-flood-risk.service.gov.uk/postcode?postcode=${encodeURIComponent(data.outcode)}`}
       target="_blank"

@@ -1,0 +1,76 @@
+---
+interface Props {
+  latitude: number;
+  longitude: number;
+}
+
+const { latitude, longitude } = Astro.props;
+---
+
+<div class="rounded-lg border border-stone-200 bg-white p-4" data-flood-widget data-lat={latitude} data-lon={longitude}>
+  <p class="text-xs uppercase tracking-wide text-stone-400 mb-2">Live flood warnings &middot; Environment Agency</p>
+  <div data-flood-output>
+    <p class="text-stone-600 text-sm">Checking for current flood warnings&hellip;</p>
+  </div>
+</div>
+
+<script>
+  interface FloodItem {
+    description?: string;
+    severity: string;
+    severityLevel: number;
+    message?: string;
+    timeMessageChanged?: string;
+    floodArea?: { riverOrSea?: string };
+  }
+
+  const RADIUS_KM = 5;
+  const STYLES: Record<number, string> = {
+    1: "border-red-700 bg-red-50 text-red-900",
+    2: "border-red-500 bg-red-50 text-red-800",
+    3: "border-amber-500 bg-amber-50 text-amber-900",
+  };
+
+  for (const widget of document.querySelectorAll<HTMLElement>("[data-flood-widget]")) {
+    const output = widget.querySelector<HTMLElement>("[data-flood-output]");
+    if (!output) continue;
+    const { lat, lon } = widget.dataset;
+
+    fetch(`https://environment.data.gov.uk/flood-monitoring/id/floods?lat=${lat}&long=${lon}&dist=${RADIUS_KM}`)
+      .then((res) => {
+        if (!res.ok) throw new Error(String(res.status));
+        return res.json() as Promise<{ items: FloodItem[] }>;
+      })
+      .then(({ items }) => {
+        // Level 4 = "warning no longer in force".
+        const active = items.filter((i) => i.severityLevel >= 1 && i.severityLevel <= 3).sort((a, b) => a.severityLevel - b.severityLevel);
+        output.replaceChildren();
+        if (active.length === 0) {
+          const p = document.createElement("p");
+          p.className = "text-sm text-emerald-700 font-medium";
+          p.textContent = `No flood warnings or alerts in force within ${RADIUS_KM} km right now.`;
+          output.append(p);
+          return;
+        }
+        for (const item of active) {
+          const div = document.createElement("div");
+          div.className = `rounded border-l-4 p-3 mb-2 text-sm ${STYLES[item.severityLevel] ?? ""}`;
+          const title = document.createElement("p");
+          title.className = "font-semibold";
+          title.textContent = `${item.severity}${item.description ? ` - ${item.description}` : ""}`;
+          div.append(title);
+          if (item.message) {
+            const msg = document.createElement("p");
+            msg.className = "mt-1";
+            msg.textContent = item.message.length > 240 ? `${item.message.slice(0, 240)}…` : item.message;
+            div.append(msg);
+          }
+          output.append(div);
+        }
+      })
+      .catch(() => {
+        output.textContent = "Live flood warnings are unavailable right now - check the Environment Agency's site below.";
+        output.className = "text-sm text-stone-600";
+      });
+  }
+</script>

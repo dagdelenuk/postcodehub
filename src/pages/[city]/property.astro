@@ -3,7 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, loadHierarchy } from "../../lib/data";
+import { getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getHpi, getRents, loadHierarchy } from "../../lib/data";
+import type { RentBedroomKey } from "../../lib/types";
 
 function slugify(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -48,6 +49,42 @@ const postTownTrendsByBorough = trend.boroughs
     };
   })
   .filter((b) => b.trend.boroughs.length > 0);
+
+const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+const RENT_ROWS: { key: RentBedroomKey; label: string }[] = [
+  { key: "room", label: "Room in a shared house" },
+  { key: "studio", label: "Studio" },
+  { key: "oneBed", label: "1 bedroom" },
+  { key: "twoBed", label: "2 bedrooms" },
+  { key: "threeBed", label: "3 bedrooms" },
+  { key: "fourPlusBed", label: "4+ bedrooms" },
+  { key: "all", label: "All private rentals" },
+];
+const TYPE_ROWS = [
+  { key: "flat", label: "Flat / maisonette" },
+  { key: "terraced", label: "Terraced" },
+  { key: "semiDetached", label: "Semi-detached" },
+  { key: "detached", label: "Detached" },
+] as const;
+
+function formatMonth(month: string): string {
+  return new Date(`${month}-01`).toLocaleDateString("en-GB", { month: "long", year: "numeric" });
+}
+
+// Same precompute-every-borough-then-reveal approach as the sections above.
+const housingByBorough = trend.boroughs
+  .map((b) => {
+    const hpi = getHpi(b.slug);
+    return {
+      slug: b.slug,
+      name: b.name,
+      hpi,
+      hpiTrend: hpi ? { months: hpi.borough.months, boroughs: [{ name: b.name, slug: b.slug, series: hpi.borough.averagePrice }], average: hpi.london.averagePrice } : null,
+      rents: getRents(b.slug),
+      prices: getBoroughPostTownPrices(city.slug, b.slug),
+    };
+  })
+  .filter((b) => b.hpi || b.rents || b.prices);
 ---
 
 <BaseLayout
@@ -83,6 +120,156 @@ const postTownTrendsByBorough = trend.boroughs
         </table>
       </div>
     </section>
+
+    {
+      housingByBorough.map((b) => (
+        <div class="hidden" data-borough-housing data-borough-slug={b.slug}>
+          {b.rents && (
+            <section class="mb-8">
+              <h2 class="text-2xl font-bold mb-1">Private rents in {b.name}</h2>
+              <p class="text-stone-500 mb-3 text-sm">Median monthly rent by number of bedrooms, against the London median. Rents recorded {b.rents.period}.</p>
+              <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                      <th class="px-4 py-2 font-semibold">Property</th>
+                      <th class="px-4 py-2 font-semibold text-right">{b.name} median / month</th>
+                      <th class="px-4 py-2 font-semibold text-right">Typical range</th>
+                      <th class="px-4 py-2 font-semibold text-right">London median / month</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {RENT_ROWS.map((row) => {
+                      const local = b.rents!.borough[row.key];
+                      const lon = b.rents!.london[row.key];
+                      return (
+                        <tr class:list={["border-b border-stone-100 last:border-0", row.key === "all" && "bg-emerald-50 font-semibold"]}>
+                          <td class="px-4 py-2">{row.label}</td>
+                          <td class="px-4 py-2 text-right">
+                            {local.median != null ? gbp.format(local.median) : "n/a"}
+                            {local.median != null && lon.median != null && local.median !== lon.median && (
+                              <span class:list={["ml-1.5", local.median > lon.median ? "text-red-600" : "text-emerald-600"]} title={local.median > lon.median ? "Above the London median" : "Below the London median"}>
+                                {local.median > lon.median ? "▲" : "▼"}
+                              </span>
+                            )}
+                          </td>
+                          <td class="px-4 py-2 text-right text-stone-500">
+                            {local.lowerQuartile != null && local.upperQuartile != null ? `${gbp.format(local.lowerQuartile)} - ${gbp.format(local.upperQuartile)}` : "—"}
+                          </td>
+                          <td class="px-4 py-2 text-right text-stone-500">{lon.median != null ? gbp.format(lon.median) : "n/a"}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-xs text-stone-400 mt-2">
+                Source: {b.rents.source}. "Typical range" is the lower to upper quartile. This series was discontinued after this period, so
+                current asking rents will be higher. "n/a" means too few rents recorded to publish.
+              </p>
+            </section>
+          )}
+
+          {b.hpi && b.hpiTrend && (
+            <section class="mb-8">
+              <h2 class="text-2xl font-bold mb-1">House prices in {b.name}</h2>
+              <p class="text-stone-500 mb-3 text-sm">Average sale price by month, against the London average. Latest figures: {formatMonth(b.hpi.borough.months[b.hpi.borough.months.length - 1])}.</p>
+              <div class="grid gap-4 sm:grid-cols-2 mb-4">
+                {[
+                  { label: b.name, series: b.hpi.borough },
+                  { label: "London average", series: b.hpi.london },
+                ].map((c) => (
+                  <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
+                    <p class="text-2xl font-bold text-emerald-800">{gbp.format(c.series.averagePrice[c.series.averagePrice.length - 1])}</p>
+                    <p class="text-xs text-stone-500 mt-1">
+                      {c.label} average price
+                      {c.series.annualChange != null && (
+                        <span class:list={["ml-1 font-medium", c.series.annualChange >= 0 ? "text-emerald-600" : "text-red-600"]}>
+                          {c.series.annualChange >= 0 ? "▲" : "▼"} {Math.abs(c.series.annualChange).toFixed(1)}% in 12 months
+                        </span>
+                      )}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <BoroughTrendChart trend={b.hpiTrend} averageLabel="London average" chartId={`hpi-${b.slug}`} />
+              <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                      <th class="px-4 py-2 font-semibold">Property type</th>
+                      <th class="px-4 py-2 font-semibold text-right">{b.name}</th>
+                      <th class="px-4 py-2 font-semibold text-right">London average</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {TYPE_ROWS.map((row) => {
+                      const local = b.hpi!.borough.byType[row.key];
+                      const lon = b.hpi!.london.byType[row.key];
+                      return (
+                        <tr class="border-b border-stone-100 last:border-0">
+                          <td class="px-4 py-2">{row.label}</td>
+                          <td class="px-4 py-2 text-right">
+                            {local != null ? gbp.format(local) : "n/a"}
+                            {local != null && lon != null && local !== lon && (
+                              <span class:list={["ml-1.5", local > lon ? "text-red-600" : "text-emerald-600"]} title={local > lon ? "Above the London average" : "Below the London average"}>
+                                {local > lon ? "▲" : "▼"}
+                              </span>
+                            )}
+                          </td>
+                          <td class="px-4 py-2 text-right text-stone-500">{lon != null ? gbp.format(lon) : "n/a"}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-xs text-stone-400 mt-2">Source: {b.hpi.source}.</p>
+            </section>
+          )}
+
+          {b.prices && b.prices.postTowns.length > 0 && (
+            <section class="mb-8">
+              <h2 class="text-2xl font-bold mb-1">Sale prices by post town in {b.name}</h2>
+              <p class="text-stone-500 mb-3 text-sm">Median price of homes sold since {new Date(b.prices.since).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}, and how it moved on the earlier sales we hold, against the borough and London medians.</p>
+              <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                      <th class="px-4 py-2 font-semibold">Post town</th>
+                      <th class="px-4 py-2 font-semibold text-right">Sales</th>
+                      <th class="px-4 py-2 font-semibold text-right">Median price</th>
+                      <th class="px-4 py-2 font-semibold text-right">Change</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[...b.prices.postTowns, { ...b.prices.borough, name: `${b.name} (all)` }, { ...b.prices.london, name: "London average (all boroughs)" }].map((row, i, all) => (
+                      <tr class:list={["border-b border-stone-100 last:border-0", i >= all.length - 2 && "bg-emerald-50 font-semibold"]}>
+                        <td class="px-4 py-2">{row.name}</td>
+                        <td class="px-4 py-2 text-right text-stone-500">{row.sales.toLocaleString()}</td>
+                        <td class="px-4 py-2 text-right">
+                          {row.median != null ? gbp.format(row.median) : "n/a"}
+                          {i < all.length - 2 && row.median != null && b.prices!.london.median != null && row.median !== b.prices!.london.median && (
+                            <span class:list={["ml-1.5", row.median > b.prices!.london.median! ? "text-red-600" : "text-emerald-600"]} title={row.median > b.prices!.london.median! ? "Above the London median" : "Below the London median"}>
+                              {row.median > b.prices!.london.median! ? "▲" : "▼"}
+                            </span>
+                          )}
+                        </td>
+                        <td class="px-4 py-2 text-right text-stone-500">{row.change != null ? `${row.change >= 0 ? "+" : ""}${row.change.toFixed(1)}%` : "—"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-xs text-stone-400 mt-2">
+                Source: HM Land Registry Price Paid Data. The official house price index stops at borough level, so post towns are compared on
+                median sale prices instead. Change is shown only where there are enough sales in both periods.
+              </p>
+            </section>
+          )}
+        </div>
+      ))
+    }
 
     {
       postTownTrendsByBorough.map((b) => (
@@ -178,6 +365,7 @@ const postTownTrendsByBorough = trend.boroughs
     const highlight = new URLSearchParams(location.search).get("highlight");
     if (highlight) {
       document.querySelector(`[data-post-town-section][data-borough-slug="${highlight}"]`)?.classList.remove("hidden");
+      document.querySelector(`[data-borough-housing][data-borough-slug="${highlight}"]`)?.classList.remove("hidden");
     }
   </script>
 </BaseLayout>
