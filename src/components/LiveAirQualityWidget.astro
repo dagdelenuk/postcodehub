@@ -1,0 +1,116 @@
+---
+interface Props {
+  latitude: number;
+  longitude: number;
+}
+
+const { latitude, longitude } = Astro.props;
+---
+
+<div
+  class="rounded-lg border border-stone-200 bg-white p-4 transition-colors duration-500"
+  data-air-quality-widget
+  data-lat={latitude}
+  data-lon={longitude}
+>
+  <p class="text-xs uppercase tracking-wide text-stone-400 mb-2" data-air-quality-label>Live air quality &middot; Open-Meteo</p>
+  <div data-air-quality-output>
+    <p class="text-stone-600 text-sm">Loading current air quality&hellip;</p>
+  </div>
+</div>
+
+<script>
+  interface AqiBand {
+    label: string;
+    background: string;
+  }
+
+  // European Air Quality Index bands (0-100+), per Open-Meteo/EEA definitions.
+  const BANDS: { max: number; band: AqiBand }[] = [
+    { max: 20, band: { label: "Good", background: "linear-gradient(135deg, #22c55e, #16a34a)" } },
+    { max: 40, band: { label: "Fair", background: "linear-gradient(135deg, #84cc16, #65a30d)" } },
+    { max: 60, band: { label: "Moderate", background: "linear-gradient(135deg, #eab308, #ca8a04)" } },
+    { max: 80, band: { label: "Poor", background: "linear-gradient(135deg, #f97316, #ea580c)" } },
+    { max: 100, band: { label: "Very Poor", background: "linear-gradient(135deg, #ef4444, #b91c1c)" } },
+    { max: Infinity, band: { label: "Extremely Poor", background: "linear-gradient(135deg, #a21caf, #6b21a8)" } },
+  ];
+
+  function bandFor(aqi: number): AqiBand {
+    return (BANDS.find((b) => aqi <= b.max) ?? BANDS[BANDS.length - 1]).band;
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-air-quality-widget]").forEach(async (widget) => {
+    const output = widget.querySelector<HTMLElement>("[data-air-quality-output]");
+    const label = widget.querySelector<HTMLElement>("[data-air-quality-label]");
+    if (!output) return;
+    const lat = widget.dataset.lat;
+    const lon = widget.dataset.lon;
+    try {
+      const res = await fetch(
+        `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&current=european_aqi,pm2_5,pm10,nitrogen_dioxide,ozone`
+      );
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const aqi = data.current?.european_aqi;
+      const pm25 = data.current?.pm2_5;
+      const pm10 = data.current?.pm10;
+      const no2 = data.current?.nitrogen_dioxide;
+      const o3 = data.current?.ozone;
+      if (aqi == null) throw new Error("No AQI in response");
+
+      const band = bandFor(aqi);
+
+      widget.style.background = band.background;
+      widget.style.borderColor = "transparent";
+      widget.style.color = "white";
+      if (label) label.style.color = "rgba(255, 255, 255, 0.75)";
+
+      output.innerHTML = "";
+
+      const mainLine = document.createElement("div");
+      mainLine.className = "flex items-center gap-2";
+
+      const iconSpan = document.createElement("span");
+      iconSpan.className = "text-3xl leading-none";
+      iconSpan.textContent = "🌬️";
+
+      const textWrap = document.createElement("div");
+      const conditionP = document.createElement("p");
+      conditionP.className = "font-semibold";
+      conditionP.textContent = band.label;
+      const aqiP = document.createElement("p");
+      aqiP.className = "text-2xl font-bold leading-tight";
+      aqiP.textContent = `AQI ${Math.round(aqi)}`;
+      textWrap.append(conditionP, aqiP);
+
+      mainLine.append(iconSpan, textWrap);
+      output.append(mainLine);
+
+      const stats: { label: string; value: string }[] = [];
+      if (pm25 != null) stats.push({ label: "PM2.5", value: `${Math.round(pm25)} µg/m³` });
+      if (pm10 != null) stats.push({ label: "PM10", value: `${Math.round(pm10)} µg/m³` });
+      if (no2 != null) stats.push({ label: "NO₂", value: `${Math.round(no2)} µg/m³` });
+      if (o3 != null) stats.push({ label: "Ozone", value: `${Math.round(o3)} µg/m³` });
+
+      if (stats.length > 0) {
+        const statsRow = document.createElement("div");
+        statsRow.className = "mt-3 pt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs";
+        statsRow.style.borderTop = "1px solid rgba(255, 255, 255, 0.25)";
+        for (const stat of stats) {
+          const item = document.createElement("span");
+          const statLabel = document.createElement("span");
+          statLabel.style.color = "rgba(255, 255, 255, 0.7)";
+          statLabel.textContent = `${stat.label}: `;
+          const statValue = document.createElement("span");
+          statValue.className = "font-medium";
+          statValue.textContent = stat.value;
+          item.append(statLabel, statValue);
+          statsRow.append(item);
+        }
+        output.append(statsRow);
+      }
+    } catch {
+      output.textContent = "Air quality data unavailable right now.";
+    }
+  });
+</script>
