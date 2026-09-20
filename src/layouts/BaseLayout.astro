@@ -13,6 +13,8 @@ interface Props {
   boroughSlug?: string;
   /** schema.org JSON-LD objects for this page (Place, Dataset, ...). Breadcrumbs add their own. */
   jsonLd?: object | object[];
+  /** Keep this page out of search results (e.g. pages whose content is built in the browser). Links are still followed. */
+  noindex?: boolean;
 }
 
 const {
@@ -22,6 +24,7 @@ const {
   citySlug,
   boroughSlug,
   jsonLd,
+  noindex = false,
 } = Astro.props;
 
 // One canonical URL per page: no query string (?highlight= is a view of the same page) and always a trailing slash.
@@ -40,6 +43,7 @@ const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="theme-color" content="#047857" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />

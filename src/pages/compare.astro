@@ -1,0 +1,392 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+---
+
+<BaseLayout
+  title="Compare areas"
+  description="Compare postcode districts side by side: house prices, rents, journey times to central London, crime, broadband, food and local services."
+  menuLevel="home"
+  noindex
+>
+  <Breadcrumbs sticky crumbs={[{ label: "PostcodeHub", href: "/" }, { label: "Compare areas" }]} />
+
+  <section class="mx-auto max-w-5xl px-4 py-6">
+    <h1 class="text-2xl font-bold mb-1">Compare areas</h1>
+    <p class="text-stone-500 mb-5 text-sm">Pick up to four postcode districts to see what they cost, how far they are from central London, how safe and connected they are, and what is on the doorstep.</p>
+
+    <div class="rounded-lg border border-stone-200 bg-white p-4 mb-6">
+      <label for="compare-search" class="block text-sm font-medium mb-1">Add an area</label>
+      <div class="relative">
+        <input
+          id="compare-search"
+          type="text"
+          autocomplete="off"
+          placeholder="Postcode district or place, e.g. TW11 or Teddington"
+          class="w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
+          data-compare-search
+        />
+        <ul class="absolute z-20 mt-1 w-full rounded-md border border-stone-200 bg-white shadow-lg hidden max-h-72 overflow-y-auto" data-compare-results role="listbox"></ul>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-3 text-sm">
+        <span class="text-stone-500" data-compare-count></span>
+        <button type="button" class="text-emerald-700 hover:underline" data-compare-favourites>Add my saved areas</button>
+        <button type="button" class="text-emerald-700 hover:underline" data-compare-copy>Copy link</button>
+        <button type="button" class="text-stone-500 hover:underline" data-compare-clear>Clear</button>
+        <span class="text-emerald-700 hidden" data-compare-message role="status"></span>
+      </div>
+    </div>
+
+    <p class="text-sm text-stone-500 mb-6 hidden" data-compare-empty>
+      No areas picked yet. Search above, or open a district's Statistics page and choose <em>Compare with other areas</em>. Star districts on the home page and use
+      <em>Add my saved areas</em> to bring them in.
+    </p>
+
+    <div class="hidden" data-compare-table-wrap>
+      <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white" data-compare-scroller>
+        <table class="w-full text-sm border-separate border-spacing-0" data-compare-table></table>
+      </div>
+      <p class="text-xs text-stone-400 mt-2">
+        <span class="inline-block h-2.5 w-2.5 rounded-sm bg-emerald-100 border border-emerald-300 align-middle"></span>
+        Green marks the best of the areas you picked: lower cost, shorter journey, less crime, faster broadband, more services and food. Rows with no colour just describe the
+        area. Figures marked "borough" describe the whole borough, so districts in the same borough show the same number.
+      </p>
+      <p class="text-xs text-stone-400 mt-1" data-compare-sources></p>
+    </div>
+  </section>
+
+  <script>
+    interface Metrics {
+      medianPrice: number | null;
+      salesCount: number | null;
+      boroughRent: number | null;
+      boroughRent2Bed: number | null;
+      boroughPrice: number | null;
+      boroughBandD: number | null;
+      population: number | null;
+      under15: number | null;
+      over65: number | null;
+      owned: number | null;
+      privateRented: number | null;
+      degree: number | null;
+      mostDeprived30: number | null;
+      crimes12mo: number | null;
+      gigabit: number | null;
+      superfast: number | null;
+      foodBusinesses: number | null;
+      foodRated5: number | null;
+      healthServices: number | null;
+      schools: number | null;
+      places: number | null;
+      safetyServices: number | null;
+      journeys: Record<string, number>;
+    }
+    interface District {
+      code: string;
+      slug: string;
+      name: string;
+      citySlug: string;
+      boroughSlug: string;
+      borough: string;
+      m: Metrics;
+    }
+    interface CompareData {
+      journeyDestinations: { id: string; name: string }[];
+      journeyDeparture: string | null;
+      districts: District[];
+    }
+    interface Row {
+      label: string;
+      get: (m: Metrics) => number | null | undefined;
+      format: (n: number) => string;
+      /** Which direction is "better" for a newcomer; null rows are descriptive and never coloured. */
+      better: "lower" | "higher" | null;
+    }
+
+    const MAX_AREAS = 4;
+    const FAVOURITES_KEY = "postcodehub:favorites";
+    const SELECTION_KEY = "postcodehub:compare";
+
+    const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+    const num = new Intl.NumberFormat("en-GB");
+    const pct = (n: number) => `${n.toFixed(1)}%`;
+    const minutes = (n: number) => (n >= 60 ? `${Math.floor(n / 60)} h ${String(n % 60).padStart(2, "0")} min` : `${n} min`);
+
+    const $ = <T extends HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
+    const searchInput = $<HTMLInputElement>("[data-compare-search]");
+    const resultsList = $<HTMLUListElement>("[data-compare-results]");
+    const countEl = $("[data-compare-count]");
+    const messageEl = $("[data-compare-message]");
+    const emptyEl = $("[data-compare-empty]");
+    const tableWrap = $("[data-compare-table-wrap]");
+    const table = $<HTMLTableElement>("[data-compare-table]");
+    const sourcesEl = $("[data-compare-sources]");
+
+    let data: CompareData;
+    let selected: string[] = []; // district codes, in the order they were added
+
+    function readSafe(key: string): string | null {
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
+      }
+    }
+
+    function el<K extends keyof HTMLElementTagNameMap>(tag: K, className = "", text?: string): HTMLElementTagNameMap[K] {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+
+    function buildRows(): { title: string; rows: Row[] }[] {
+      const journeyRows: Row[] = data.journeyDestinations.map((d) => ({
+        label: `To ${d.name}`,
+        get: (m) => m.journeys[d.id],
+        format: minutes,
+        better: "lower",
+      }));
+      return [
+        {
+          title: "What it costs",
+          rows: [
+            { label: "Median sale price (district)", get: (m) => m.medianPrice, format: (n) => gbp.format(n), better: "lower" },
+            { label: "Average rent per month (borough)", get: (m) => m.boroughRent, format: (n) => gbp.format(n), better: "lower" },
+            { label: "2-bedroom rent per month (borough)", get: (m) => m.boroughRent2Bed, format: (n) => gbp.format(n), better: "lower" },
+            { label: "Average house price (borough)", get: (m) => m.boroughPrice, format: (n) => gbp.format(n), better: "lower" },
+            { label: "Band D Council Tax a year (borough)", get: (m) => m.boroughBandD, format: (n) => gbp.format(n), better: "lower" },
+            { label: "Sales in the last two years", get: (m) => m.salesCount, format: (n) => num.format(n), better: null },
+          ],
+        },
+        { title: "Getting to central London", rows: journeyRows },
+        {
+          title: "Safety and connectivity",
+          rows: [
+            { label: "Recorded crimes, last 12 months", get: (m) => m.crimes12mo, format: (n) => num.format(n), better: "lower" },
+            { label: "Homes that can get gigabit broadband", get: (m) => m.gigabit, format: pct, better: "higher" },
+            { label: "Homes that can get superfast broadband", get: (m) => m.superfast, format: pct, better: "higher" },
+            { label: "Postcodes in the most deprived 30% of England", get: (m) => m.mostDeprived30, format: pct, better: "lower" },
+          ],
+        },
+        {
+          title: "Who lives there",
+          rows: [
+            { label: "Residents", get: (m) => m.population, format: (n) => num.format(n), better: null },
+            { label: "Under 15", get: (m) => m.under15, format: pct, better: null },
+            { label: "65 and over", get: (m) => m.over65, format: pct, better: null },
+            { label: "Households that own their home", get: (m) => m.owned, format: pct, better: null },
+            { label: "Households renting privately", get: (m) => m.privateRented, format: pct, better: null },
+            { label: "Degree level or above", get: (m) => m.degree, format: pct, better: null },
+          ],
+        },
+        {
+          title: "On the doorstep",
+          rows: [
+            { label: "Food businesses with a hygiene rating", get: (m) => m.foodBusinesses, format: (n) => num.format(n), better: "higher" },
+            { label: "Rated 5 for food hygiene", get: (m) => m.foodRated5, format: pct, better: "higher" },
+            { label: "Health services", get: (m) => m.healthServices, format: (n) => num.format(n), better: "higher" },
+            { label: "Schools", get: (m) => m.schools, format: (n) => num.format(n), better: "higher" },
+            { label: "Parks, libraries and other places", get: (m) => m.places, format: (n) => num.format(n), better: "higher" },
+          ],
+        },
+      ];
+    }
+
+    function districtByCode(code: string): District | undefined {
+      return data.districts.find((d) => d.code === code);
+    }
+
+    function flash(message: string) {
+      messageEl.textContent = message;
+      messageEl.classList.remove("hidden");
+      window.setTimeout(() => messageEl.classList.add("hidden"), 2500);
+    }
+
+    function persist() {
+      const url = new URL(location.href);
+      if (selected.length > 0) url.searchParams.set("areas", selected.join(","));
+      else url.searchParams.delete("areas");
+      history.replaceState(null, "", url);
+      try {
+        localStorage.setItem(SELECTION_KEY, selected.join(","));
+      } catch {
+        // storage unavailable: the URL still carries the selection
+      }
+    }
+
+    function add(code: string) {
+      if (selected.includes(code)) return;
+      if (selected.length >= MAX_AREAS) {
+        flash(`You can compare up to ${MAX_AREAS} areas - remove one first.`);
+        return;
+      }
+      selected.push(code);
+      render();
+    }
+
+    function remove(code: string) {
+      selected = selected.filter((c) => c !== code);
+      render();
+    }
+
+    function render() {
+      persist();
+      const areas = selected.map(districtByCode).filter((d): d is District => Boolean(d));
+      countEl.textContent = `${areas.length} of ${MAX_AREAS} areas`;
+      emptyEl.classList.toggle("hidden", areas.length > 0);
+      tableWrap.classList.toggle("hidden", areas.length === 0);
+      table.replaceChildren();
+      if (areas.length === 0) return;
+
+      const thead = el("thead");
+      const headRow = el("tr");
+      headRow.append(el("th", "sticky left-0 z-10 bg-white border-b border-stone-200 px-3 py-3 text-left w-32 min-w-[8rem] sm:w-56"));
+      for (const d of areas) {
+        const th = el("th", "border-b border-stone-200 px-4 py-3 text-left align-top min-w-[9rem]");
+        const link = el("a", "font-semibold text-emerald-700 hover:underline block", d.code);
+        link.href = `/${d.citySlug}/${d.boroughSlug}/${d.slug}/statistics/`;
+        const name = el("span", "block text-xs font-normal text-stone-500", `${d.name}, ${d.borough}`);
+        const btn = el("button", "text-xs font-normal text-stone-400 hover:text-red-600 mt-1", "Remove");
+        btn.type = "button";
+        btn.addEventListener("click", () => remove(d.code));
+        th.append(link, name, btn);
+        headRow.append(th);
+      }
+      thead.append(headRow);
+      table.append(thead);
+
+      for (const group of buildRows()) {
+        const tbody = el("tbody");
+        const titleRow = el("tr");
+        const titleCell = el("th", "bg-stone-50 border-b border-stone-100 px-4 py-1.5 text-left text-xs font-semibold uppercase tracking-wide text-stone-500", group.title);
+        titleCell.colSpan = areas.length + 1;
+        titleRow.append(titleCell);
+        tbody.append(titleRow);
+
+        for (const row of group.rows) {
+          const values = areas.map((d) => row.get(d.m) ?? null);
+          const known = values.filter((v): v is number => v !== null);
+          let best: number | null = null;
+          // Only colour a row when there is a real difference to point at.
+          if (row.better && known.length >= 2 && Math.min(...known) !== Math.max(...known)) {
+            best = row.better === "lower" ? Math.min(...known) : Math.max(...known);
+          }
+          const tr = el("tr");
+          tr.append(el("th", "sticky left-0 z-10 bg-white border-b border-stone-100 px-3 py-2 text-left font-normal text-stone-600 w-32 min-w-[8rem] sm:w-56", row.label));
+          values.forEach((v) => {
+            const isBest = best !== null && v === best;
+            const td = el(
+              "td",
+              `border-b border-stone-100 px-4 py-2 whitespace-nowrap ${isBest ? "bg-emerald-50 text-emerald-800 font-semibold" : ""}`,
+              v === null ? "n/a" : row.format(v)
+            );
+            if (v === null) td.classList.add("text-stone-400");
+            tr.append(td);
+          });
+          tbody.append(tr);
+        }
+        table.append(tbody);
+      }
+
+      sourcesEl.textContent = `Sources: HM Land Registry, ONS, Ofcom, data.police.uk, Food Standards Agency, NHS, DfE and Transport for London${data.journeyDeparture ? ` (journeys planned for ${data.journeyDeparture})` : ""}. Crimes are counted within about a mile of each district's centre.`;
+    }
+
+    // Search: match on district code or place/borough name; results appear as you type.
+    function showResults() {
+      const q = searchInput.value.trim().toLowerCase();
+      resultsList.replaceChildren();
+      if (q.length === 0) {
+        resultsList.classList.add("hidden");
+        return;
+      }
+      const matches = data.districts
+        .filter((d) => !selected.includes(d.code))
+        .filter((d) => d.code.toLowerCase().startsWith(q) || d.name.toLowerCase().includes(q) || d.borough.toLowerCase().includes(q))
+        .slice(0, 8);
+      if (matches.length === 0) {
+        resultsList.append(el("li", "px-3 py-2 text-sm text-stone-500", "No matching areas"));
+      }
+      for (const d of matches) {
+        const li = el("li");
+        const btn = el("button", "flex w-full items-center gap-3 px-3 py-2 text-left text-sm hover:bg-stone-50");
+        btn.type = "button";
+        btn.setAttribute("role", "option");
+        btn.append(el("span", "w-12 shrink-0 font-semibold text-stone-700", d.code), el("span", "truncate", `${d.name}, ${d.borough}`));
+        btn.addEventListener("click", () => {
+          add(d.code);
+          searchInput.value = "";
+          showResults();
+          searchInput.focus();
+        });
+        li.append(btn);
+        resultsList.append(li);
+      }
+      resultsList.classList.remove("hidden");
+    }
+
+    searchInput.addEventListener("input", showResults);
+    searchInput.addEventListener("focus", showResults);
+    document.addEventListener("click", (e) => {
+      if (!(e.target as HTMLElement).closest("[data-compare-search], [data-compare-results]")) resultsList.classList.add("hidden");
+    });
+
+    $("[data-compare-favourites]").addEventListener("click", () => {
+      let keys: string[] = [];
+      try {
+        keys = JSON.parse(readSafe(FAVOURITES_KEY) ?? "[]") as string[];
+      } catch {
+        keys = [];
+      }
+      // Favourites are stored as "outcode:city/borough/slug".
+      const slugs = keys.filter((k) => k.startsWith("outcode:")).map((k) => k.split("/").pop()!);
+      const found = data.districts.filter((d) => slugs.includes(d.slug));
+      if (found.length === 0) {
+        flash("No saved areas yet - tap the star on a district to save it.");
+        return;
+      }
+      let added = 0;
+      for (const d of found) {
+        if (selected.length >= MAX_AREAS) break;
+        if (!selected.includes(d.code)) {
+          selected.push(d.code);
+          added++;
+        }
+      }
+      render();
+      flash(added > 0 ? `Added ${added} saved area${added === 1 ? "" : "s"}.` : "Your saved areas are already here.");
+    });
+
+    $("[data-compare-copy]").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(location.href);
+        flash("Link copied.");
+      } catch {
+        flash("Copy the address from your browser's address bar.");
+      }
+    });
+
+    $("[data-compare-clear]").addEventListener("click", () => {
+      selected = [];
+      render();
+    });
+
+    async function init() {
+      const res = await fetch("/compare-data.json");
+      data = (await res.json()) as CompareData;
+      const fromUrl = new URLSearchParams(location.search).get("areas");
+      const raw = fromUrl ?? readSafe(SELECTION_KEY) ?? "";
+      selected = raw
+        .split(",")
+        .map((c) => c.trim().toUpperCase())
+        .filter((c, i, all) => c && all.indexOf(c) === i && districtByCode(c))
+        .slice(0, MAX_AREAS);
+      render();
+    }
+
+    init().catch(() => {
+      emptyEl.classList.remove("hidden");
+      emptyEl.textContent = "The comparison data couldn't be loaded. Check your connection and try again.";
+    });
+  </script>
+</BaseLayout>

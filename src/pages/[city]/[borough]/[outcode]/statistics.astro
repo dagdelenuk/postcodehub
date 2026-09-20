@@ -3,6 +3,7 @@ import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import CrimeStats from "../../../../components/CrimeStats.astro";
 import ConnectivitySection from "../../../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../../../components/DemographicsSection.astro";
+import FavoriteStar from "../../../../components/FavoriteStar.astro";
 import HousingMarket from "../../../../components/HousingMarket.astro";
 import LiveFloodWarningsWidget from "../../../../components/LiveFloodWarningsWidget.astro";
 import { datasetJsonLd } from "../../../../lib/seo";
@@ -83,7 +84,24 @@ const recentSales = data.property.sales.slice(0, 40);
     spatial: { name: `${data.outcode}, ${data.borough}`, latitude: data.latitude, longitude: data.longitude },
   })}
 >
-  <h1 class="text-2xl font-bold mb-4">Statistics in {data.outcode}, {data.borough}</h1>
+  <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+    <h1 class="text-2xl font-bold">Statistics in {data.outcode}, {data.borough}</h1>
+    <div class="flex items-center gap-2 shrink-0">
+      <span class="inline-flex items-center gap-1 text-sm text-stone-500">
+        <FavoriteStar favKey={`outcode:${city}/${borough}/${data.slug}`} />
+        Save
+      </span>
+      <a
+        href={`/compare/?areas=${data.outcode}`}
+        class="inline-flex items-center gap-1.5 rounded-lg bg-emerald-700 px-3.5 py-2 text-sm font-medium text-white hover:bg-emerald-800 transition-colors"
+      >
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 6h9m0 0L9.5 3.5M12 6 9.5 8.5M17 14H8m0 0 2.5-2.5M8 14l2.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Compare with other areas
+      </a>
+    </div>
+  </div>
 
   <SectionTabs tabs={tabs} />
 
