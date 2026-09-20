@@ -1,0 +1,70 @@
+---
+import type { ChildcareProvider } from "../lib/types";
+import { OFSTED_RATING_COLORS, formatOfstedDate } from "../lib/ofsted";
+
+interface Props {
+  provider: ChildcareProvider;
+}
+
+const { provider } = Astro.props;
+
+function iconFor(providerType: string): { emoji: string; text: string } {
+  const t = providerType.toLowerCase();
+  if (t.includes("childminder")) return { emoji: "🧑‍🍼", text: "text-rose-700" };
+  return { emoji: "🧸", text: "text-amber-700" };
+}
+
+const icon = iconFor(provider.providerType);
+const mapsUrl = provider.address
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${provider.name}, ${provider.address}`)}`
+  : null;
+---
+
+<div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-childcare-card>
+  <span class:list={["pointer-events-none select-none absolute -right-3 -bottom-4 text-7xl opacity-25 leading-none", icon.text]} aria-hidden="true">
+    {icon.emoji}
+  </span>
+
+  <div class:list={["relative pr-8", (provider.ofstedRating || provider.registeredPlaces) && "pb-5"]}>
+    <p class="font-medium">{provider.name}</p>
+    <p class="text-sm text-stone-500 mt-1">{provider.providerType} &middot; {provider.address}</p>
+    {
+      provider.ofstedRating && formatOfstedDate(provider.ofstedLastInspection) && (
+        <p class="text-xs text-stone-400 mt-1">Inspected {formatOfstedDate(provider.ofstedLastInspection)}</p>
+      )
+    }
+    {provider.registeredPlaces && <p class="text-xs text-stone-400 mt-1">{provider.registeredPlaces} registered places</p>}
+  </div>
+
+  {
+    provider.ofstedRating && (
+      <span class="absolute bottom-2 left-4">
+        <span
+          class:list={[
+            "text-xs px-2 py-0.5 rounded-full whitespace-nowrap",
+            OFSTED_RATING_COLORS[provider.ofstedRating] ?? "bg-stone-100 text-stone-600",
+          ]}
+        >
+          {provider.ofstedRating}
+        </span>
+      </span>
+    )
+  }
+
+  {
+    mapsUrl && (
+      <a
+        href={mapsUrl}
+        target="_blank"
+        rel="noopener"
+        aria-label={`Get directions to ${provider.name}`}
+        title="Get directions"
+        class="absolute top-2 right-2 inline-flex items-center justify-center h-7 w-7 rounded-full text-stone-400 hover:bg-stone-100 hover:text-emerald-700 transition-colors"
+      >
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 2.5L16.5 16.5L10 13L3.5 16.5L10 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+        </svg>
+      </a>
+    )
+  }
+</div>

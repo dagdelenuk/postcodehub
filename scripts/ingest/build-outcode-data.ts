@@ -5,6 +5,7 @@ import { logStep } from "./lib/fetch-utils.js";
 import { boroughOutcodeKey, haversineKm, loadOutcodeBoroughPairs } from "./lib/geo.js";
 import { bulkForwardGeocode } from "./lib/postcodes.js";
 import type {
+  ChildcareData,
   EventsData,
   FireStation,
   HealthData,
@@ -110,13 +111,21 @@ async function main() {
   const fireByBorough = await loadByBorough<RawStation>("fire-stations.json");
   const placesByBorough = await loadByBorough<RawPlace>("places.json");
 
-  const [health, schools, crime, transport, property, representatives, planning, events, history] = await Promise.all([
+  const [health, schools, childcare, crime, transport, property, representatives, planning, events, history] = await Promise.all([
     loadRaw<HealthData>("health-by-outcode.json"),
     loadRaw<SchoolsData>("schools-by-outcode.json").then((raw) => {
       // schools raw is keyed by outcode -> School[], not { schools: [] }
       const wrapped: Record<string, SchoolsData> = {};
       for (const [outcode, list] of Object.entries(raw as unknown as Record<string, SchoolsData["schools"]>)) {
         wrapped[outcode] = { schools: list };
+      }
+      return wrapped;
+    }),
+    loadRaw<ChildcareData>("childcare-by-outcode.json").then((raw) => {
+      // childcare raw is keyed by outcode -> ChildcareProvider[], not { providers: [] }
+      const wrapped: Record<string, ChildcareData> = {};
+      for (const [outcode, list] of Object.entries(raw as unknown as Record<string, ChildcareData["providers"]>)) {
+        wrapped[outcode] = { providers: list };
       }
       return wrapped;
     }),

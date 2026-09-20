@@ -12,6 +12,7 @@ const STEPS = [
   "fetch-transport.ts",
   "fetch-health.ts",
   "fetch-schools.ts",
+  "fetch-childcare.ts",
   "fetch-crime.ts",
   "fetch-police-stations.ts",
   "fetch-fire-stations.ts",

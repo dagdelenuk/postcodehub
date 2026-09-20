@@ -3,6 +3,7 @@ import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import LeafletAssets from "../../../../components/LeafletAssets.astro";
 import SchoolFilters from "../../../../components/SchoolFilters.astro";
 import SchoolListSection from "../../../../components/SchoolListSection.astro";
+import ChildcareCard from "../../../../components/ChildcareCard.astro";
 import { displayPlaceName, getAllOutcodeParams, getSchoolAdmissionsUrl, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -16,6 +17,8 @@ const { data } = Astro.props;
 const placeName = displayPlaceName(data.postTown, data.wards, data.city);
 const admissionsUrl = getSchoolAdmissionsUrl(borough!);
 const hasCompositeLabelNote = data.schools.schools.some((s) => s.ofstedRatingDerivedFromAreaGrades);
+// Older processed data files (pre-dating the childcare ingest step) won't have this key at all.
+const childcareProviders = data.childcare?.providers ?? [];
 ---
 
 <LocalityLayout
@@ -37,6 +40,19 @@ const hasCompositeLabelNote = data.schools.schools.some((s) => s.ofstedRatingDer
         Some ratings above are based on a school's lowest-graded individual area, since Ofsted's post-2024 framework doesn't
         publish a single composite label.
       </p>
+    )
+  }
+
+  {
+    childcareProviders.length > 0 && (
+      <section class="mb-8">
+        <h2 class="text-lg font-semibold mb-3">
+          Nurseries &amp; Childminders in {placeName} - {data.outcode}, {data.borough} ({childcareProviders.length})
+        </h2>
+        <div class="grid gap-3 sm:grid-cols-2">
+          {childcareProviders.map((provider) => <ChildcareCard provider={provider} />)}
+        </div>
+      </section>
     )
   }
 
@@ -63,5 +79,8 @@ const hasCompositeLabelNote = data.schools.schools.some((s) => s.ofstedRatingDer
     )
   }
 
-  <p class="text-xs text-stone-400 mt-4">Source: DfE Get Information about Schools (GIAS) and Ofsted inspection outcomes.</p>
+  <p class="text-xs text-stone-400 mt-4">
+    Sources: DfE Get Information about Schools (GIAS) and Ofsted inspection outcomes; Ofsted childcare providers and
+    inspections register.
+  </p>
 </LocalityLayout>

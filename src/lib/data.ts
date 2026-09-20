@@ -3,6 +3,7 @@ import path from "node:path";
 import type {
   Banners,
   BannerImage,
+  ChildcareProvider,
   FireStation,
   GpSurgery,
   Hierarchy,
@@ -615,6 +616,27 @@ export function getBoroughSchools(citySlug: string, boroughSlug: string): Boroug
       return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, schools: data.schools.schools };
     })
     .filter((g) => g.schools.length > 0)
+    .sort((a, b) => a.outcode.localeCompare(b.outcode));
+}
+
+export interface BoroughChildcareGroup {
+  outcode: string;
+  outcodeSlug: string;
+  wards: string[];
+  postTown: string;
+  providers: ChildcareProvider[];
+}
+
+/** Registered childcare providers (nurseries/childminders) for every outcode this borough is the primary owner of, grouped by outcode. */
+export function getBoroughChildcare(citySlug: string, boroughSlug: string): BoroughChildcareGroup[] {
+  const borough = getBorough(citySlug, boroughSlug);
+  return (borough?.outcodes ?? [])
+    .filter((o) => o.isPrimaryBorough)
+    .map((o) => {
+      const data = loadOutcodeData(citySlug, boroughSlug, o.slug);
+      return { outcode: o.outcode, outcodeSlug: o.slug, wards: o.wards, postTown: o.postTown, providers: data.childcare?.providers ?? [] };
+    })
+    .filter((g) => g.providers.length > 0)
     .sort((a, b) => a.outcode.localeCompare(b.outcode));
 }
 

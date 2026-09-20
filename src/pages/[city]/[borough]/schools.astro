@@ -4,7 +4,8 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import LeafletAssets from "../../../components/LeafletAssets.astro";
 import SchoolFilters from "../../../components/SchoolFilters.astro";
 import SchoolListSection from "../../../components/SchoolListSection.astro";
-import { displayPlaceName, getBoroughSchools, getSchoolAdmissionsUrl, loadHierarchy } from "../../../lib/data";
+import ChildcareCard from "../../../components/ChildcareCard.astro";
+import { displayPlaceName, getBoroughChildcare, getBoroughSchools, getSchoolAdmissionsUrl, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -28,6 +29,11 @@ const totalSchools = allSchools.length;
 const admissionsUrl = getSchoolAdmissionsUrl(borough.slug);
 const hasCompositeLabelNote = allSchools.some((s) => s.ofstedRatingDerivedFromAreaGrades);
 const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.localeCompare(b));
+const childcareGroups = getBoroughChildcare(city.slug, borough.slug).map((g) => ({
+  ...g,
+  placeName: displayPlaceName(g.postTown, g.wards, city.name),
+}));
+const totalChildcare = childcareGroups.reduce((sum, g) => sum + g.providers.length, 0);
 ---
 
 <BaseLayout
@@ -75,6 +81,29 @@ const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.
     }
 
     {
+      childcareGroups.length > 0 && (
+        <section class="mb-8">
+          <h2 class="text-lg font-semibold mb-3">Nurseries &amp; Childminders in {borough.name} ({totalChildcare})</h2>
+          {childcareGroups.map((group) => (
+            <div class="mb-6">
+              <h3 class="font-medium text-stone-700 mb-2">
+                <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/schools/`} class="hover:text-emerald-700">
+                  {group.outcode} - {group.placeName}
+                </a>{" "}
+                ({group.providers.length})
+              </h3>
+              <div class="grid gap-3 sm:grid-cols-2">
+                {group.providers.map((provider) => (
+                  <ChildcareCard provider={provider} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+      )
+    }
+
+    {
       admissionsUrl && (
         <section class="mb-4">
           <h2 class="text-lg font-semibold mb-3">School admissions</h2>
@@ -97,6 +126,9 @@ const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.
       )
     }
 
-    <p class="text-xs text-stone-400 mt-4">Source: DfE Get Information about Schools (GIAS) and Ofsted inspection outcomes.</p>
+    <p class="text-xs text-stone-400 mt-4">
+      Sources: DfE Get Information about Schools (GIAS) and Ofsted inspection outcomes; Ofsted childcare providers and
+      inspections register.
+    </p>
   </section>
 </BaseLayout>

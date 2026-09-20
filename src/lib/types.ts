@@ -109,6 +109,25 @@ export interface SchoolsData {
   schools: School[];
 }
 
+export interface ChildcareProvider {
+  name: string;
+  urn: string;
+  /** Free text from Ofsted's register, e.g. "Childminder", "Childcare on non-domestic premises". */
+  providerType: string;
+  ofstedRating: string | null;
+  ofstedLastInspection: string | null;
+  registeredPlaces: number | null;
+  address: string;
+  postcode: string;
+  /** Geocoded from postcode at merge time - null if the postcode couldn't be resolved. */
+  latitude: number | null;
+  longitude: number | null;
+}
+
+export interface ChildcareData {
+  providers: ChildcareProvider[];
+}
+
 export interface CrimeMonthSummary {
   month: string;
   totalCrimes: number;
@@ -285,6 +304,7 @@ export interface OutcodeData {
   postTown: string;
   health: HealthData;
   schools: SchoolsData;
+  childcare: ChildcareData;
   safety: CrimeData;
   transport: TransportData;
   property: PropertyData;
