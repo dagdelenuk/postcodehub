@@ -14,5 +14,28 @@ const render = (svgFile, size, outFile) => {
 render("icon.svg", 192, "icon-192.png");
 render("icon.svg", 512, "icon-512.png");
 render("icon-maskable.svg", 512, "icon-maskable-512.png");
+
+// favicon.ico: an ICO container holding 16, 32 and 48px PNGs, for browsers and tools that still ask for /favicon.ico.
+const sizes = [16, 32, 48];
+const pngs = sizes.map((size) => new Resvg(readFileSync(path.join(dir, "icon.svg")), { fitTo: { mode: "width", value: size } }).render().asPng());
+const header = Buffer.alloc(6);
+header.writeUInt16LE(0, 0); // reserved
+header.writeUInt16LE(1, 2); // type: icon
+header.writeUInt16LE(sizes.length, 4);
+let offset = 6 + sizes.length * 16;
+const entries = sizes.map((size, i) => {
+  const entry = Buffer.alloc(16);
+  entry.writeUInt8(size, 0); // width
+  entry.writeUInt8(size, 1); // height
+  entry.writeUInt16LE(1, 4); // colour planes
+  entry.writeUInt16LE(32, 6); // bits per pixel
+  entry.writeUInt32LE(pngs[i].length, 8);
+  entry.writeUInt32LE(offset, 12);
+  offset += pngs[i].length;
+  return entry;
+});
+writeFileSync(path.join(dir, "../favicon.ico"), Buffer.concat([header, ...entries, ...pngs]));
+console.log("favicon.ico (16, 32, 48)");
+
 // iOS rounds the corners itself, so it wants a full-bleed square.
 render("icon-maskable.svg", 180, "apple-touch-icon.png");
