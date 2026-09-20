@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import HamburgerMenu from "../components/HamburgerMenu.astro";
 import PostcodeSearch from "../components/PostcodeSearch.astro";
+import { SITE_NAME, absoluteUrl } from "../lib/seo";
 
 interface Props {
   title: string;
@@ -10,6 +11,8 @@ interface Props {
   menuLevel?: "home" | "city" | "borough" | "outcode";
   citySlug?: string;
   boroughSlug?: string;
+  /** schema.org JSON-LD objects for this page (Place, Dataset, ...). Breadcrumbs add their own. */
+  jsonLd?: object | object[];
 }
 
 const {
@@ -18,7 +21,14 @@ const {
   menuLevel = "home",
   citySlug,
   boroughSlug,
+  jsonLd,
 } = Astro.props;
+
+// One canonical URL per page: no query string (?highlight= is a view of the same page) and always a trailing slash.
+const canonicalPath = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = absoluteUrl(canonicalPath);
+const fullTitle = `${title} · PostcodeHub`;
+const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 ---
 
 <html lang="en">
@@ -26,11 +36,20 @@ const {
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="googlebot" content="noindex, nofollow" />
-    <meta name="bingbot" content="noindex, nofollow" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} · PostcodeHub</title>
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <title>{fullTitle}</title>
+    {structuredData.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
   </head>
   <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
     <header class="sticky top-0 z-40 border-b border-stone-200 bg-white">

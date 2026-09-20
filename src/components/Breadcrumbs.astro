@@ -1,4 +1,6 @@
 ---
+import { absoluteUrl } from "../lib/seo";
+
 interface Crumb {
   label: string;
   href?: string;
@@ -10,6 +12,18 @@ interface Props {
 }
 
 const { crumbs, sticky = false } = Astro.props;
+
+// BreadcrumbList for search engines; the last crumb is the current page and has no link.
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: crumbs.map((crumb, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: crumb.label === "PostcodeHub" ? "Home" : crumb.label,
+    ...(crumb.href ? { item: absoluteUrl(crumb.href) } : {}),
+  })),
+};
 ---
 
 <nav aria-label="Breadcrumb" class:list={["text-sm text-stone-500", sticky ? "sticky top-[69px] z-30 bg-stone-50 border-b border-stone-200 py-3" : "pt-6"]}>
@@ -38,3 +52,4 @@ const { crumbs, sticky = false } = Astro.props;
     </ol>
   </div>
 </nav>
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />

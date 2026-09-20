@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { placeJsonLd } from "../../lib/seo";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../components/LiveWeatherWidget.astro";
@@ -20,7 +21,7 @@ const cityFact = getCityFact(city.slug) ?? summary.historySummary;
 const favouritesLookup = getFavouritesLookup();
 ---
 
-<BaseLayout title={city.name} description={`Community information for ${city.name}, organised by council authority and postcode.`} menuLevel="city" citySlug={city.slug}>
+<BaseLayout title={city.name} description={`Community information for ${city.name}, organised by council authority and postcode.`} menuLevel="city" citySlug={city.slug} jsonLd={placeJsonLd({ name: city.name, type: "AdministrativeArea", url: `/${city.slug}/`, latitude: summary.latitude, longitude: summary.longitude, description: `Community information for ${city.name}, organised by council authority and postcode.` })}>
   <Breadcrumbs sticky crumbs={[{ label: "PostcodeHub", href: "/" }, { label: city.name }]} />
 
   <section class="mx-auto max-w-5xl px-4 pt-6 pb-4">

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { websiteJsonLd } from "../lib/seo";
 import FavoriteStar from "../components/FavoriteStar.astro";
 import PostcodeSearch from "../components/PostcodeSearch.astro";
 import { getBannerImages, getFavouritesLookup, loadHierarchy } from "../lib/data";
@@ -8,7 +9,7 @@ const hierarchy = loadHierarchy();
 const favouritesLookup = getFavouritesLookup();
 ---
 
-<BaseLayout title="Home" description="A non-commercial community information hub for UK neighbourhoods, covering health, safety, transport, schools, and civic data by postcode." menuLevel="home">
+<BaseLayout title="Home" description="A non-commercial community information hub for UK neighbourhoods, covering health, safety, transport, schools, and civic data by postcode." menuLevel="home" jsonLd={websiteJsonLd}>
   <div class="relative">
     <div
       class="absolute inset-0"

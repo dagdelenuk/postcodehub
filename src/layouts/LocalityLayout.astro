@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { placeJsonLd } from "../lib/seo";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import CategoryNav from "../components/CategoryNav.astro";
 import SplitDistrictNotice from "../components/SplitDistrictNotice.astro";
@@ -18,10 +19,12 @@ interface Props {
   topic?: string;
   /** Explicit overrides - when omitted, title/description are composed from `topic` (or the district itself, on the overview page) plus split-district info. */
   title?: string;
+  /** Extra JSON-LD for this page (e.g. a Dataset); the district's Place is always included. */
+  jsonLd?: object | object[];
   description?: string;
 }
 
-const { data, citySlug, boroughSlug, active = "overview", topic, title, description } = Astro.props;
+const { data, citySlug, boroughSlug, active = "overview", topic, title, description, jsonLd: extraJsonLd } = Astro.props;
 
 const basePath = `/${citySlug}/${boroughSlug}/${data.slug}/`;
 const placeName = displayPlaceName(data.postTown, data.wards, data.city);
@@ -45,7 +48,24 @@ const available = new Set<CategoryKey>(
 );
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} menuLevel="outcode" citySlug={citySlug} boroughSlug={boroughSlug}>
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  menuLevel="outcode"
+  citySlug={citySlug}
+  boroughSlug={boroughSlug}
+  jsonLd={[
+    placeJsonLd({
+      name: `${data.outcode}, ${data.borough}`,
+      url: `/${citySlug}/${boroughSlug}/${data.slug}/`,
+      latitude: data.latitude,
+      longitude: data.longitude,
+      description: `${data.outcode} postcode district in ${data.borough}: ${data.wards.join(", ")}.`,
+      containedIn: { name: data.borough, url: `/${citySlug}/${boroughSlug}/` },
+    }),
+    ...(extraJsonLd ? (Array.isArray(extraJsonLd) ? extraJsonLd : [extraJsonLd]) : []),
+  ]}
+>
   <Breadcrumbs
     sticky
     crumbs={[

@@ -52,7 +52,7 @@ function formatMonth(month: string): string {
     <div class="grid gap-4 sm:grid-cols-2 mb-4">
       {[
         { label: b.name, area: b.rents.borough },
-        { label: "London average", area: b.rents.london },
+        { label: "London", area: b.rents.london },
       ].slice(0, solo ? 1 : 2).map((c) => (
         <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
           <p class="text-2xl font-bold text-emerald-800">{c.area.byBedrooms.all.price != null ? gbp.format(c.area.byBedrooms.all.price) : "n/a"}<span class="text-sm font-normal text-stone-500"> a month</span></p>
@@ -123,7 +123,7 @@ function formatMonth(month: string): string {
               <div class="grid gap-4 sm:grid-cols-2 mb-4">
                 {[
                   { label: b.name, series: b.hpi.borough },
-                  { label: "London average", series: b.hpi.london },
+                  { label: "London", series: b.hpi.london },
                 ].slice(0, solo ? 1 : 2).map((c) => (
                   <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
                     <p class="text-2xl font-bold text-emerald-800">{gbp.format(c.series.averagePrice[c.series.averagePrice.length - 1])}</p>

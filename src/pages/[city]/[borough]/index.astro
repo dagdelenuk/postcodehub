@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { placeJsonLd } from "../../../lib/seo";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
@@ -58,7 +59,9 @@ const districtGroups = partitionDistrictsForNav(borough.outcodes, city.name);
 const hasSplitDistricts = districtGroups.split.length > 0;
 ---
 
-<BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}>
+<BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}
+  jsonLd={placeJsonLd({ name: borough.name, type: "AdministrativeArea", url: `/${city.slug}/${borough.slug}/`, latitude: summary.latitude, longitude: summary.longitude, description: summary.historySummary || undefined, containedIn: { name: city.name, url: `/${city.slug}/` } })}
+>
   <Breadcrumbs
     sticky
     crumbs={[

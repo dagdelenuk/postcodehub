@@ -26,7 +26,7 @@ function colorFor(index: number): string {
 const PAD_LEFT = 56;
 const PAD_RIGHT = 16;
 const PAD_TOP = 16;
-const PAD_BOTTOM = 36;
+const PAD_BOTTOM = 52;
 const CHART_WIDTH = 900;
 const CHART_HEIGHT = 360;
 const plotWidth = CHART_WIDTH - PAD_LEFT - PAD_RIGHT;
@@ -75,7 +75,7 @@ const chartData = {
     }
     {
       trend.months.map((m, i) => (
-        <text x={xAt(i)} y={CHART_HEIGHT - PAD_BOTTOM + 16} text-anchor="middle" font-size="10" fill="#a8a29e">
+        <text transform={`translate(${xAt(i) + 3.5} ${CHART_HEIGHT - PAD_BOTTOM + 8}) rotate(-90)`} text-anchor="end" font-size="10" fill="#a8a29e">
           {formatMonthLabel(m)}
         </text>
       ))

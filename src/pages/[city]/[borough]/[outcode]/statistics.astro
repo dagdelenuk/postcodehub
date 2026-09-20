@@ -4,6 +4,7 @@ import ConnectivitySection from "../../../../components/ConnectivitySection.astr
 import DemographicsSection from "../../../../components/DemographicsSection.astro";
 import HousingMarket from "../../../../components/HousingMarket.astro";
 import LiveFloodWarningsWidget from "../../../../components/LiveFloodWarningsWidget.astro";
+import { datasetJsonLd } from "../../../../lib/seo";
 import SectionTabs from "../../../../components/SectionTabs.astro";
 import {
   getAllOutcodeParams,
@@ -68,6 +69,14 @@ const recentSales = data.property.sales.slice(0, 40);
   boroughSlug={borough!}
   active="statistics"
   topic="Statistics"
+  jsonLd={datasetJsonLd({
+    name: `Statistics for ${data.outcode}, ${data.borough}`,
+    description: `Housing costs, demographics, deprivation, broadband and mobile coverage and flood risk for the ${data.outcode} postcode district in ${data.borough}, compared with London.`,
+    url: `/${city}/${borough}/${data.slug}/statistics/`,
+    sources: ["HM Land Registry Price Paid Data", "HM Land Registry UK House Price Index", "ONS Price Index of Private Rents", "ONS Census 2021", "English Indices of Deprivation 2019", "Ofcom Connected Nations 2025", "Environment Agency flood monitoring"],
+    keywords: [data.outcode, data.borough, "house prices", "rents", "Council Tax", "demographics", "deprivation", "broadband", "flood risk"],
+    spatial: { name: `${data.outcode}, ${data.borough}`, latitude: data.latitude, longitude: data.longitude },
+  })}
 >
   <h1 class="text-2xl font-bold mb-4">Statistics in {data.outcode}, {data.borough}</h1>
 
