@@ -91,6 +91,29 @@ const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []
     </main>
 
     <Footer citySlug={citySlug} boroughSlug={boroughSlug} />
+    <script is:inline>
+      // The site header is taller on phones (the search box drops onto its own row) and the breadcrumbs can wrap, so the sticky bars
+      // below them (breadcrumbs, district menu, section tabs) can't use fixed offsets: measure and publish them as CSS variables.
+      (function () {
+        var root = document.documentElement;
+        function update() {
+          var header = document.querySelector("header.sticky");
+          var crumbs = document.querySelector('nav[aria-label="Breadcrumb"].sticky');
+          var headerHeight = header ? header.offsetHeight : 0;
+          root.style.setProperty("--sticky-header", headerHeight + "px");
+          root.style.setProperty("--sticky-crumbs", headerHeight + (crumbs ? crumbs.offsetHeight : 0) + "px");
+        }
+        update();
+        window.addEventListener("resize", update);
+        window.addEventListener("load", update);
+        if ("ResizeObserver" in window) {
+          var observer = new ResizeObserver(update);
+          [document.querySelector("header.sticky"), document.querySelector('nav[aria-label="Breadcrumb"].sticky')].forEach(function (el) {
+            if (el) observer.observe(el);
+          });
+        }
+      })();
+    </script>
     {
       import.meta.env.PROD && (
         <script is:inline>
