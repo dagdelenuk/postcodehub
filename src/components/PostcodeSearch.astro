@@ -1,8 +1,4 @@
 ---
-import { getPostcodeSearchIndex, getQuickSearchIndex } from "../lib/data";
-
-const index = getPostcodeSearchIndex();
-const quickSearchIndex = getQuickSearchIndex();
 
 const TYPE_ICON: Record<string, string> = {
   city: "🏙️",
@@ -38,8 +34,6 @@ const TYPE_ICON: Record<string, string> = {
   <ul data-postcode-search-results class="hidden absolute left-0 top-full mt-1 w-96 max-w-[90vw] max-h-80 overflow-y-auto bg-white border border-stone-200 rounded-md shadow-sm z-10 py-1"></ul>
 </div>
 
-<script type="application/json" id="postcode-search-index" set:html={JSON.stringify(index)} />
-<script type="application/json" id="postcode-quick-search-index" set:html={JSON.stringify(quickSearchIndex)} />
 <script type="application/json" id="postcode-search-type-icon" set:html={JSON.stringify(TYPE_ICON)} />
 
 <script>
@@ -87,22 +81,31 @@ const TYPE_ICON: Record<string, string> = {
     const input = root.querySelector<HTMLInputElement>("[data-postcode-search-input]");
     const message = root.querySelector<HTMLElement>("[data-postcode-search-message]");
     const results = root.querySelector<HTMLUListElement>("[data-postcode-search-results]");
-    const indexEl = document.getElementById("postcode-search-index");
-    const quickIndexEl = document.getElementById("postcode-quick-search-index");
     const typeIconEl = document.getElementById("postcode-search-type-icon");
-    if (!form || !input || !message || !results || !indexEl || !quickIndexEl || !typeIconEl) return;
+    if (!form || !input || !message || !results || !typeIconEl) return;
 
-    let index: Record<string, string>;
-    let quickIndex: QuickSearchEntry[];
     let typeIcon: Record<string, string>;
     try {
-      index = JSON.parse(indexEl.textContent ?? "{}");
-      quickIndex = JSON.parse(quickIndexEl.textContent ?? "[]");
       typeIcon = JSON.parse(typeIconEl.textContent ?? "{}");
     } catch {
-      index = {};
-      quickIndex = [];
       typeIcon = {};
+    }
+
+    // The district list is a separate static file, fetched the first time the box is used rather than shipped inside every page.
+    let index: Record<string, string> = {};
+    let quickIndex: QuickSearchEntry[] = [];
+    let loading: Promise<void> | null = null;
+    function ensureIndex(): Promise<void> {
+      loading ??= fetch("/search-index.json")
+        .then((res) => res.json() as Promise<{ index: Record<string, string>; quick: QuickSearchEntry[] }>)
+        .then((data) => {
+          index = data.index;
+          quickIndex = data.quick;
+        })
+        .catch(() => {
+          loading = null; // try again next time
+        });
+      return loading;
     }
 
     function hideResults() {
@@ -149,8 +152,9 @@ const TYPE_ICON: Record<string, string> = {
       results!.classList.remove("hidden");
     }
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      await ensureIndex();
       const outcode = postcodeToOutcode(input.value);
       const path = outcode ? index[outcode] : null;
       if (path) {
@@ -164,12 +168,14 @@ const TYPE_ICON: Record<string, string> = {
       message.classList.remove("hidden");
     });
 
-    input.addEventListener("input", () => {
+    input.addEventListener("input", async () => {
       message.classList.add("hidden");
+      await ensureIndex();
       renderResults(rankResults(quickIndex, input.value));
     });
 
-    input.addEventListener("focus", () => {
+    input.addEventListener("focus", async () => {
+      await ensureIndex(); // start the download as soon as the box is touched
       if (input.value.trim()) renderResults(rankResults(quickIndex, input.value));
     });
 

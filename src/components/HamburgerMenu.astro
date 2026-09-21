@@ -45,6 +45,7 @@ const pathLinks = [
 <nav
   data-menu-panel
   aria-hidden="true"
+  inert
   class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 shadow-xl translate-x-full transition-transform duration-200 flex flex-col"
 >
   <div class="flex items-center justify-between px-4 py-4 border-b border-stone-200">
@@ -187,12 +188,14 @@ const pathLinks = [
     function open() {
       panel!.classList.remove("translate-x-full");
       panel!.setAttribute("aria-hidden", "false");
+      panel!.inert = false; // a closed drawer must not be reachable by keyboard or screen reader
       backdrop!.classList.remove("hidden");
       toggle.setAttribute("aria-expanded", "true");
     }
     function close() {
       panel!.classList.add("translate-x-full");
       panel!.setAttribute("aria-hidden", "true");
+      panel!.inert = true;
       backdrop!.classList.add("hidden");
       toggle.setAttribute("aria-expanded", "false");
     }

@@ -27,7 +27,9 @@
     "ingest:seed": "tsx scripts/ingest/seed-events-history.ts",
     "ingest:banners": "tsx scripts/ingest/fetch-banner-images.ts",
     "ingest:merge": "tsx scripts/ingest/build-outcode-data.ts",
-    "icons": "node scripts/generate-pwa-icons.mjs"
+    "icons": "node scripts/generate-pwa-icons.mjs",
+    "check": "node scripts/check-build.mjs",
+    "test": "node --check public/sw.js && npm run build && npm run check"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

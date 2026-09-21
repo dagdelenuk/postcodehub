@@ -30,8 +30,8 @@ const TYPES = [
   { key: "Retailers - other", label: "Food shops & other retailers", emoji: "🥖", colorClass: "text-rose-700" },
 ];
 const RATING_LABELS: Record<number, string> = { 5: "Very good", 4: "Good", 3: "Generally satisfactory", 2: "Improvement necessary", 1: "Major improvement necessary", 0: "Urgent improvement necessary" };
-const RATING_COLORS: Record<number, string> = { 5: "bg-emerald-600", 4: "bg-lime-600", 3: "bg-yellow-500", 2: "bg-orange-500", 1: "bg-red-500", 0: "bg-red-700" };
-const RATING_TEXT: Record<number, string> = { 5: "text-emerald-600", 4: "text-lime-600", 3: "text-yellow-600", 2: "text-orange-600", 1: "text-red-500", 0: "text-red-700" };
+const RATING_COLORS: Record<number, string> = { 5: "bg-emerald-700", 4: "bg-lime-700", 3: "bg-yellow-400 !text-stone-900", 2: "bg-orange-600", 1: "bg-red-600", 0: "bg-red-800" };
+const RATING_TEXT: Record<number, string> = { 5: "text-emerald-700", 4: "text-lime-700", 3: "text-yellow-700", 2: "text-orange-700", 1: "text-red-700", 0: "text-red-800" };
 const mapsUrl = (e: { name: string; address: string; postcode: string; latitude: number | null; longitude: number | null }) =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e.address ? `${e.name}, ${e.address}, ${e.postcode}` : `${e.name} @ ${e.latitude},${e.longitude}`)}`;
 const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors";
@@ -108,7 +108,7 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
               items.length > 0 && (
                 <PlaceCategorySection cat={{ key: t.key, label: t.label }} items={items} mapId={`${group.outcodeSlug}-food-${ti}`}>
                   {items.map((e) => (
-                    <div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-food-card data-food-type={e.type} data-food-rating={e.rating} data-food-post-town={group.placeName}>
+                    <div class="defer-render relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-food-card data-food-type={e.type} data-food-rating={e.rating} data-food-post-town={group.placeName}>
                       <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none", t.colorClass]} aria-hidden="true">{t.emoji}</span>
                       <div class="relative pr-8">
                         <p class="font-medium">{e.name}</p>

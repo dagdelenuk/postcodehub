@@ -3,7 +3,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import CouncilServices from "../../../components/CouncilServices.astro";
 import NewcomerChecklist from "../../../components/NewcomerChecklist.astro";
-import { getCouncilServices, getCouncilTax, loadHierarchy } from "../../../lib/data";
+import { getBoroughFood, getBoroughHealth, getBoroughPlaces, getBoroughSchools, getCouncilServices, getCouncilTax, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -48,6 +48,13 @@ const services = getCouncilServices(borough.slug);
       base={`/${city.slug}/${borough.slug}`}
       connectivityHref={`/${city.slug}/statistics/?highlight=${borough.slug}#connectivity`}
       bandD={getCouncilTax(borough.slug)?.bandD}
+      pages={{
+        health: getBoroughHealth(city.slug, borough.slug).length > 0,
+        schools: getBoroughSchools(city.slug, borough.slug).length > 0,
+        places: getBoroughPlaces(city.slug, borough.slug).length > 0,
+        food: getBoroughFood(city.slug, borough.slug).length > 0,
+        transport: false, // transport pages exist per district, not per borough
+      }}
     />
     <h2 class="text-2xl font-bold mb-4">All council services</h2>
     <CouncilServices services={services} boroughName={borough.name} />

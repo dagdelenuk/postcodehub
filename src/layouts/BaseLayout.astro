@@ -64,6 +64,7 @@ const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []
     {structuredData.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
   </head>
   <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-emerald-700 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white">Skip to main content</a>
     <header class="sticky top-0 z-40 border-b border-stone-200 bg-white">
       <div class="mx-auto max-w-5xl px-4 py-4 flex flex-wrap items-center justify-between gap-3">
         <a href="/" class="text-2xl font-extrabold tracking-tight">
@@ -86,11 +87,51 @@ const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []
       </div>
     </header>
 
-    <main class="flex-1">
+    <main id="main-content" tabindex="-1" class="flex-1 focus:outline-none">
       <slot />
     </main>
 
     <Footer citySlug={citySlug} boroughSlug={boroughSlug} />
+    <script is:inline>
+      // Wide tables and charts scroll sideways inside their box. A scrollable box has to be reachable by keyboard, so give the ones that
+      // actually overflow a tab stop and a label (the nearest heading above, else a generic one).
+      (function () {
+        function label(box) {
+          for (var node = box; node && node !== document.body; node = node.parentElement) {
+            for (var prev = node.previousElementSibling; prev; prev = prev.previousElementSibling) {
+              var heading = /^H[1-6]$/.test(prev.tagName) ? prev : prev.querySelector && prev.querySelector("h1,h2,h3");
+              if (heading && heading.textContent.trim()) return heading.textContent.trim();
+            }
+          }
+          return "Scrollable content";
+        }
+        function update() {
+          var seen = {};
+          document.querySelectorAll(".overflow-x-auto").forEach(function (box) {
+            var scrolls = box.scrollWidth > box.clientWidth + 1;
+            if (scrolls && !box.hasAttribute("tabindex")) {
+              box.setAttribute("tabindex", "0");
+              // Only generic containers can be a labelled region; a scrollable list keeps its own role.
+              if (box.tagName === "DIV" || box.tagName === "SECTION") {
+                var name = label(box);
+                seen[name] = (seen[name] || 0) + 1;
+                box.setAttribute("role", "region");
+                box.setAttribute("aria-label", seen[name] > 1 ? name + " (" + seen[name] + ")" : name);
+              } else {
+                box.setAttribute("aria-label", label(box));
+              }
+            } else if (!scrolls && box.dataset.a11yScroll) {
+              box.removeAttribute("tabindex");
+              box.removeAttribute("role");
+              box.removeAttribute("aria-label");
+            }
+            if (scrolls) box.dataset.a11yScroll = "1";
+          });
+        }
+        window.addEventListener("load", function () { update(); setTimeout(update, 1500); });
+        window.addEventListener("resize", update);
+      })();
+    </script>
     <script is:inline>
       // The site header is taller on phones (the search box drops onto its own row) and the breadcrumbs can wrap, so the sticky bars
       // below them (breadcrumbs, district menu, section tabs) can't use fixed offsets: measure and publish them as CSS variables.

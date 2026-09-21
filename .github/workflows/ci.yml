@@ -1,0 +1,39 @@
+name: CI
+
+# Builds the site and runs smoke checks (scripts/check-build.mjs) on every push to main and every pull request, so a change that
+# breaks a page, a link, the sitemap or the app manifest is caught before it goes live.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Service worker syntax
+        run: node --check public/sw.js
+
+      - name: Build
+        run: npm run build
+
+      - name: Smoke checks
+        run: npm run check

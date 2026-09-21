@@ -275,7 +275,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 
       const thead = el("thead");
       const headRow = el("tr");
-      headRow.append(el("th", "sticky left-0 z-10 bg-white border-b border-stone-200 px-3 py-3 text-left w-32 min-w-[8rem] sm:w-56"));
+      headRow.append(el("th", "sticky left-0 z-10 bg-white border-b border-stone-200 px-3 py-3 text-left w-32 min-w-[8rem] sm:w-56 text-xs font-normal text-stone-500", "Measure"));
       for (const d of areas) {
         const th = el("th", "border-b border-stone-200 px-4 py-3 text-left align-top min-w-[9rem]");
         const link = el("a", "font-semibold text-emerald-700 hover:underline block", d.title);

@@ -20,7 +20,7 @@ const mapsQuery = addressLine ? `${place.name}, ${addressLine}` : `${place.name}
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsQuery)}`;
 ---
 
-<div class="relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-place-card data-place-kind={place.category} data-place-post-town={postTown}>
+<div class="defer-render relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4" data-place-card data-place-kind={place.category} data-place-post-town={postTown}>
   <span class:list={["pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none", category.colorClass]} aria-hidden="true">
     {category.emoji}
   </span>

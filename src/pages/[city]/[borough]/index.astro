@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { placeJsonLd } from "../../../lib/seo";
+import { boroughGlance, glanceDescription } from "../../../lib/glance";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import RotatingBanner from "../../../components/RotatingBanner.astro";
 import LiveWeatherWidget from "../../../components/LiveWeatherWidget.astro";
@@ -36,6 +37,8 @@ export function getStaticPaths() {
 
 const { city, borough } = Astro.props;
 const summary = getBoroughSummary(city.slug, borough.slug);
+const glance = boroughGlance(borough.slug);
+const description = glance ? glanceDescription(glance) : `Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`;
 const hasHealth = getBoroughHealth(city.slug, borough.slug).length > 0;
 const boroughFood = getBoroughFood(city.slug, borough.slug);
 const foodCount = boroughFood.reduce((sum, g) => sum + g.establishments.length, 0);
@@ -59,7 +62,7 @@ const districtGroups = partitionDistrictsForNav(borough.outcodes, city.name);
 const hasSplitDistricts = districtGroups.split.length > 0;
 ---
 
-<BaseLayout title={borough.name} description={`Health, safety, schools, transport, and civic information for every postcode area in ${borough.name}.`} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}
+<BaseLayout title={borough.name} description={description} menuLevel="borough" citySlug={city.slug} boroughSlug={borough.slug}
   jsonLd={placeJsonLd({ name: borough.name, type: "AdministrativeArea", url: `/${city.slug}/${borough.slug}/`, latitude: summary.latitude, longitude: summary.longitude, description: summary.historySummary || undefined, containedIn: { name: city.name, url: `/${city.slug}/` } })}
 >
   <Breadcrumbs
@@ -99,6 +102,16 @@ const hasSplitDistricts = districtGroups.split.length > 0;
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-8">
+    {
+      glance && (
+        <div class="rounded-lg border border-emerald-100 bg-emerald-50/60 p-4 mb-6" data-at-a-glance>
+          <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-1">At a glance</p>
+          <p class="text-sm text-stone-700 leading-relaxed">{glance.detail.join(" ")}</p>
+          <p class="text-xs text-stone-400 mt-2">Summarised from the figures on this site, set against the rest of London. See Statistics for the detail and sources.</p>
+        </div>
+      )
+    }
+
     <div class="grid grid-cols-2 gap-3 sm:grid-cols-6 sm:gap-4 mb-8">
       {
         summaryStats.map((stat) => {

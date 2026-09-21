@@ -16,7 +16,7 @@ const establishments = data.food.establishments;
 const total = establishments.length;
 const RATINGS = [5, 4, 3] as const;
 const RATING_LABELS: Record<number, string> = { 5: "Very good", 4: "Good", 3: "Generally satisfactory", 2: "Improvement necessary", 1: "Major improvement necessary", 0: "Urgent improvement necessary" };
-const RATING_COLORS: Record<number, string> = { 5: "bg-emerald-600", 4: "bg-lime-600", 3: "bg-yellow-500", 2: "bg-orange-500", 1: "bg-red-500", 0: "bg-red-700" };
+const RATING_COLORS: Record<number, string> = { 5: "bg-emerald-700", 4: "bg-lime-700", 3: "bg-yellow-400 !text-stone-900", 2: "bg-orange-600", 1: "bg-red-600", 0: "bg-red-800" };
 
 const counts = Object.fromEntries([5, 4, 3, 2, 1, 0].map((r) => [r, establishments.filter((e) => e.rating === r).length])) as Record<number, number>;
 const londonCounts = meta?.londonCounts ?? {};
@@ -72,11 +72,11 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
 
   <div class="flex flex-wrap items-center gap-3 mb-3" data-food-filters>
     <input type="search" placeholder="Search by name or street" class="rounded border border-stone-300 px-3 py-1.5 text-sm w-64" data-food-search />
-    <select class="rounded border border-stone-300 px-2 py-1.5 text-sm" data-food-type>
+    <select class="rounded border border-stone-300 px-2 py-1.5 text-sm" data-food-type aria-label="Filter by business type">
       <option value="">All types</option>
       {types.map((t) => <option value={t}>{t}</option>)}
     </select>
-    <select class="rounded border border-stone-300 px-2 py-1.5 text-sm" data-food-rating>
+    <select class="rounded border border-stone-300 px-2 py-1.5 text-sm" data-food-rating aria-label="Filter by hygiene rating">
       <option value="">Any rating</option>
       <option value="5">5 only</option>
       <option value="4">4 and above</option>

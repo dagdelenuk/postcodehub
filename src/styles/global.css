@@ -1,9 +1,24 @@
 @import "tailwindcss";
 
+/* Tailwind's default stone-400 (#a6a09b) is only 2.6:1 against white, below the 4.5:1 WCAG AA minimum for text, and it is used for a lot of
+   small helper text. Darken it, and nudge stone-500 down one step so the two still read as different levels. */
+@theme {
+  --color-stone-400: #78716c;
+  --color-stone-500: #625b55;
+  /* emerald-600 (#009966) is 3.7:1 on white; it colours the small green up-arrows and figures, so bring it to 5:1 as well. */
+  --color-emerald-600: #047857;
+}
+
 /* Applied client-side (favorites.ts logic in FavoriteStar.astro) to whichever
    element wraps a favorited city/borough/outcode, in both card grids and the
    hamburger menu lists - highlights it and moves it to the top of its list. */
 .is-favorited-item {
   background-color: color-mix(in srgb, #fef3c7 55%, white);
   border-color: #f59e0b !important;
+}
+
+/* Long card lists (a busy borough's food businesses run to thousands): let the browser skip laying out and painting cards that are off screen. */
+.defer-render {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 110px;
 }

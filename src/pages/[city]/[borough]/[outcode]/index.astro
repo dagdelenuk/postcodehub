@@ -6,6 +6,7 @@ import { CATEGORIES } from "../../../../lib/categories";
 import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 import { CATEGORY_KEYS } from "../../../../lib/types";
 import { getSimilarDistricts } from "../../../../lib/similar";
+import { districtGlance, glanceDescription } from "../../../../lib/glance";
 
 export function getStaticPaths() {
   return getAllOutcodeParams().map((p) => ({
@@ -27,6 +28,8 @@ const STAT_COLORS: Record<string, string> = {
 };
 
 const similar = getSimilarDistricts(data.outcode, 4);
+const glance = districtGlance(data.outcode);
+const description = glance ? glanceDescription(glance) : undefined;
 const mpCount = new Set(data.representatives.representatives.filter((r) => r.role === "MP").map((r) => r.name)).size;
 const summaryStats = [
   { label: "Health services", value: data.health.gpSurgeries.length, category: "health" as const },
@@ -45,7 +48,18 @@ const summaryStats = [
   citySlug={city!}
   boroughSlug={borough!}
   active="overview"
+  description={description}
 >
+  {
+    glance && (
+      <div class="rounded-lg border border-emerald-100 bg-emerald-50/60 p-4 mb-6" data-at-a-glance>
+        <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-1">At a glance</p>
+        <p class="text-sm text-stone-700 leading-relaxed">{glance.detail.join(" ")}</p>
+        <p class="text-xs text-stone-400 mt-2">Summarised from the figures on this site, set against the rest of London. See Statistics for the detail and sources.</p>
+      </div>
+    )
+  }
+
   <div class="grid grid-cols-2 gap-3 sm:grid-cols-6 sm:gap-4 mb-8">
     {
       summaryStats.map((stat) => {

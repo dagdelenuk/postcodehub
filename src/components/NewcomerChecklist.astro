@@ -11,9 +11,11 @@ interface Props {
   /** Where the Connectivity section of the Statistics page lives for this area. */
   connectivityHref: string;
   bandD?: number | null;
+  /** Which of this area's own pages exist, so the checklist never links to one that doesn't. */
+  pages: { health: boolean; schools: boolean; places: boolean; food: boolean; transport: boolean };
 }
 
-const { services, boroughName, storageKey, base, connectivityHref, bandD } = Astro.props;
+const { services, boroughName, storageKey, base, connectivityHref, bandD, pages } = Astro.props;
 const council = services.councilName || boroughName;
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 
@@ -43,7 +45,7 @@ const steps: Step[] = [
     title: "Register with a GP and a dentist",
     text: "Registering is free and you don't need proof of address or ID. Do it early: dentists in particular can have long waiting lists.",
     links: [
-      { label: `GPs, dentists and pharmacies in ${boroughName}`, href: `${base}/health/`, kind: "site" },
+      ...(pages.health ? [{ label: `GPs, dentists and pharmacies in ${boroughName}`, href: `${base}/health/`, kind: "site" as const }] : []),
       { label: "Find a GP (NHS)", href: "https://www.nhs.uk/service-search/find-a-gp", kind: "national" },
       { label: "Find a dentist (NHS)", href: "https://www.nhs.uk/service-search/find-a-dentist", kind: "national" },
     ],
@@ -88,7 +90,7 @@ const steps: Step[] = [
       ...council_("parking-permit", "Get a parking permit"),
       ...council_("blue-badge-scheme-information-council", "Blue Badge scheme"),
       ...council_("apply-dropped-kerb", "Apply for a dropped kerb"),
-      { label: "Journey times and cycle hire", href: `${base}/transport/`, kind: "site" },
+      ...(pages.transport ? [{ label: "Journey times, EV charging and cycle hire", href: `${base}/transport/`, kind: "site" as const }] : []),
     ],
   },
   {
@@ -116,7 +118,7 @@ const steps: Step[] = [
     title: "Schools and childcare",
     text: "If you have children, check school admissions deadlines early. They are set by the council and can fall well before you move in.",
     links: [
-      { label: `Schools and Ofsted ratings in ${boroughName}`, href: `${base}/schools/`, kind: "site" },
+      ...(pages.schools ? [{ label: `Schools and Ofsted ratings in ${boroughName}`, href: `${base}/schools/`, kind: "site" as const }] : []),
       ...council_("apply-for-primary-school-place", "Apply for a primary school place"),
       ...council_("apply-for-secondary-school-place", "Apply for a secondary school place"),
       ...council_("find-free-early-education", "Free early education and childcare"),
@@ -127,8 +129,8 @@ const steps: Step[] = [
     title: "Get to know the area",
     text: "Find the nearest parks, libraries and places to eat, and who represents you locally.",
     links: [
-      { label: "Parks, libraries and places", href: `${base}/places/`, kind: "site" },
-      { label: "Food and hospitality with hygiene ratings", href: `${base}/food/`, kind: "site" },
+      ...(pages.places ? [{ label: "Parks, libraries and places", href: `${base}/places/`, kind: "site" as const }] : []),
+      ...(pages.food ? [{ label: "Food and hospitality with hygiene ratings", href: `${base}/food/`, kind: "site" as const }] : []),
       ...council_("local-library-services", "Local library services"),
       ...council_("find-your-local-councillors", "Find your councillors"),
       ...council_("apply-allotment", "Apply for an allotment"),

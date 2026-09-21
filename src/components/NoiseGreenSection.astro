@@ -85,7 +85,7 @@ const GREEN_ROWS: { label: string; get: (g: GreenspaceMetrics) => number | null;
           <table class="w-full text-sm">
             <thead>
               <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
-                <th class="px-4 py-2 font-semibold"></th>
+                <th class="px-4 py-2 font-semibold"><span class="sr-only">Measure</span></th>
                 {columns.filter((c) => c.noise).map((c) => <th class="px-4 py-2 font-semibold text-right">{c.label}</th>)}
               </tr>
             </thead>
@@ -134,7 +134,7 @@ const GREEN_ROWS: { label: string; get: (g: GreenspaceMetrics) => number | null;
         <table class="w-full text-sm">
           <thead>
             <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
-              <th class="px-4 py-2 font-semibold"></th>
+              <th class="px-4 py-2 font-semibold"><span class="sr-only">Measure</span></th>
               {columns.map((c) => <th class="px-4 py-2 font-semibold text-right">{c.label}</th>)}
             </tr>
           </thead>
