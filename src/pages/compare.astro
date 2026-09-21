@@ -13,7 +13,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 
   <section class="mx-auto max-w-5xl px-4 py-6">
     <h1 class="text-2xl font-bold mb-1">Compare areas</h1>
-    <p class="text-stone-500 mb-5 text-sm">Pick up to four postcode districts to see what they cost, how far they are from central London, how safe and connected they are, and what is on the doorstep.</p>
+    <p class="text-stone-500 mb-5 text-sm">Pick up to four postcode districts or whole boroughs to see what they cost, how far they are from central London, how safe and connected they are, and what is on the doorstep.</p>
 
     <div class="rounded-lg border border-stone-200 bg-white p-4 mb-6">
       <label for="compare-search" class="block text-sm font-medium mb-1">Add an area</label>
@@ -22,7 +22,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
           id="compare-search"
           type="text"
           autocomplete="off"
-          placeholder="Postcode district or place, e.g. TW11 or Teddington"
+          placeholder="District, place or borough, e.g. TW11, Teddington or Camden"
           class="w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
           data-compare-search
         />
@@ -49,7 +49,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       <p class="text-xs text-stone-400 mt-2">
         <span class="inline-block h-2.5 w-2.5 rounded-sm bg-emerald-100 border border-emerald-300 align-middle"></span>
         Green marks the best of the areas you picked: lower cost, shorter journey, less crime, faster broadband, more services and food. Rows with no colour just describe the
-        area. Figures marked "borough" describe the whole borough, so districts in the same borough show the same number.
+        area. Figures marked "borough" describe the whole borough, so districts in the same borough show the same number. A borough column uses whole-borough figures on every row (its journey times are the average of its districts).
       </p>
       <p class="text-xs text-stone-400 mt-1" data-compare-sources></p>
     </div>
@@ -90,10 +90,26 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       borough: string;
       m: Metrics;
     }
+    interface Borough {
+      code: string;
+      slug: string;
+      name: string;
+      citySlug: string;
+      m: Metrics;
+    }
     interface CompareData {
       journeyDestinations: { id: string; name: string }[];
       journeyDeparture: string | null;
       districts: District[];
+      boroughs: Borough[];
+    }
+    /** A column in the table: a postcode district or a whole borough. */
+    interface Area {
+      code: string;
+      title: string;
+      subtitle: string;
+      href: string;
+      m: Metrics;
     }
     interface Row {
       label: string;
@@ -193,8 +209,16 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       ];
     }
 
-    function districtByCode(code: string): District | undefined {
-      return data.districts.find((d) => d.code === code);
+    function areaByCode(code: string): Area | undefined {
+      const district = data.districts.find((d) => d.code === code);
+      if (district) {
+        return { code: district.code, title: district.code, subtitle: `${district.name}, ${district.borough}`, href: `/${district.citySlug}/${district.boroughSlug}/${district.slug}/statistics/`, m: district.m };
+      }
+      const borough = data.boroughs.find((b) => b.code === code);
+      if (borough) {
+        return { code: borough.code, title: borough.name, subtitle: "Whole borough", href: `/${borough.citySlug}/statistics/?highlight=${borough.slug}`, m: borough.m };
+      }
+      return undefined;
     }
 
     function flash(message: string) {
@@ -232,7 +256,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 
     function render() {
       persist();
-      const areas = selected.map(districtByCode).filter((d): d is District => Boolean(d));
+      const areas = selected.map(areaByCode).filter((a): a is Area => Boolean(a));
       countEl.textContent = `${areas.length} of ${MAX_AREAS} areas`;
       emptyEl.classList.toggle("hidden", areas.length > 0);
       tableWrap.classList.toggle("hidden", areas.length === 0);
@@ -244,9 +268,9 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       headRow.append(el("th", "sticky left-0 z-10 bg-white border-b border-stone-200 px-3 py-3 text-left w-32 min-w-[8rem] sm:w-56"));
       for (const d of areas) {
         const th = el("th", "border-b border-stone-200 px-4 py-3 text-left align-top min-w-[9rem]");
-        const link = el("a", "font-semibold text-emerald-700 hover:underline block", d.code);
-        link.href = `/${d.citySlug}/${d.boroughSlug}/${d.slug}/statistics/`;
-        const name = el("span", "block text-xs font-normal text-stone-500", `${d.name}, ${d.borough}`);
+        const link = el("a", "font-semibold text-emerald-700 hover:underline block", d.title);
+        link.href = d.href;
+        const name = el("span", "block text-xs font-normal text-stone-500", d.subtitle);
         const btn = el("button", "text-xs font-normal text-stone-400 hover:text-red-600 mt-1", "Remove");
         btn.type = "button";
         btn.addEventListener("click", () => remove(d.code));
@@ -300,10 +324,17 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
         resultsList.classList.add("hidden");
         return;
       }
-      const matches = data.districts
+      const boroughMatches = data.boroughs
+        .filter((b) => !selected.includes(b.code) && b.name.toLowerCase().includes(q))
+        .slice(0, 4);
+      const districtMatches = data.districts
         .filter((d) => !selected.includes(d.code))
         .filter((d) => d.code.toLowerCase().startsWith(q) || d.name.toLowerCase().includes(q) || d.borough.toLowerCase().includes(q))
         .slice(0, 8);
+      const matches = [
+        ...boroughMatches.map((b) => ({ code: b.code, label: b.name, detail: "Borough" })),
+        ...districtMatches.map((d) => ({ code: d.code, label: d.code, detail: `${d.name}, ${d.borough}` })),
+      ];
       if (matches.length === 0) {
         resultsList.append(el("li", "px-3 py-2 text-sm text-stone-500", "No matching areas"));
       }
@@ -312,7 +343,10 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
         const btn = el("button", "flex w-full items-center gap-3 px-3 py-2 text-left text-sm hover:bg-stone-50");
         btn.type = "button";
         btn.setAttribute("role", "option");
-        btn.append(el("span", "w-12 shrink-0 font-semibold text-stone-700", d.code), el("span", "truncate", `${d.name}, ${d.borough}`));
+        btn.append(
+          el("span", `${d.code.startsWith("b:") ? "min-w-[3rem]" : "w-12"} shrink-0 font-semibold text-stone-700`, d.label),
+          el("span", "truncate text-stone-500", d.code.startsWith("b:") ? "· Whole borough" : d.detail)
+        );
         btn.addEventListener("click", () => {
           add(d.code);
           searchInput.value = "";
@@ -378,8 +412,10 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       const raw = fromUrl ?? readSafe(SELECTION_KEY) ?? "";
       selected = raw
         .split(",")
-        .map((c) => c.trim().toUpperCase())
-        .filter((c, i, all) => c && all.indexOf(c) === i && districtByCode(c))
+        // District codes are upper case ("TW11"); borough codes keep their lower-case slug ("b:camden").
+        .map((c) => c.trim())
+        .map((c) => (c.toLowerCase().startsWith("b:") ? c.toLowerCase() : c.toUpperCase()))
+        .filter((c, i, all) => c && all.indexOf(c) === i && areaByCode(c))
         .slice(0, MAX_AREAS);
       render();
     }

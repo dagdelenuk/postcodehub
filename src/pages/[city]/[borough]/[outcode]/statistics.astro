@@ -1,5 +1,7 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
+import LeafletAssets from "../../../../components/LeafletAssets.astro";
+import DataUpdated from "../../../../components/DataUpdated.astro";
 import CrimeStats from "../../../../components/CrimeStats.astro";
 import ConnectivitySection from "../../../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../../../components/DemographicsSection.astro";
@@ -18,6 +20,7 @@ import {
   getBroadband,
   getCouncilTax,
   getCouncilTaxAverage,
+  formatDataDate,
   getGreenspace,
   getHpi,
   getMobileCoverage,
@@ -72,6 +75,26 @@ const tabs = [
 
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 const recentSales = data.property.sales.slice(0, 40);
+
+// "Data as of" labels: the latest period each source in a section covers.
+const latestSale = data.property.sales.reduce((max, s) => (s.dateOfTransfer > max ? s.dateOfTransfer : max), "");
+const housingUpdated = [
+  ...(housing.rents ? [{ label: "Rents", value: formatDataDate(housing.rents.latestMonth) }] : []),
+  ...(hpi ? [{ label: "House prices", value: formatDataDate(hpi.borough.months[hpi.borough.months.length - 1]) }] : []),
+  ...(latestSale ? [{ label: "Sales to", value: formatDataDate(latestSale) }] : []),
+  ...(councilTax ? [{ label: "Council Tax", value: "2026-27" }] : []),
+];
+const crimeMonths = data.safety.monthlyTrend;
+const crimeUpdated = crimeMonths.length > 0 ? [{ label: "Crime to", value: formatDataDate(crimeMonths[crimeMonths.length - 1].month) }] : [];
+const connectivityUpdated = [
+  ...(broadband ? [{ label: "Broadband", value: broadband.period }] : []),
+  ...(mobile ? [{ label: "Mobile", value: mobile.period }] : []),
+];
+const environmentUpdated = [
+  { label: "Air quality and flood warnings", value: "live" },
+  ...(noise ? [{ label: "Road noise (modelled)", value: noise.modelled }] : []),
+  ...(green ? [{ label: "Green space", value: String(green.year) }] : []),
+];
 ---
 
 <LocalityLayout
@@ -111,6 +134,7 @@ const recentSales = data.property.sales.slice(0, 40);
   <SectionTabs tabs={tabs} />
 
   <section id="housing" data-section="housing">
+    <DataUpdated items={housingUpdated} />
   {
     councilTax && (
       <section class="mb-8">
@@ -209,6 +233,7 @@ const recentSales = data.property.sales.slice(0, 40);
   {
     demographics && (
       <section id="demographics" data-section="demographics" class="mt-10">
+        <DataUpdated items={[{ label: "Census", value: "2021" }, { label: "Deprivation index", value: "2019" }]} />
         <DemographicsSection
           columns={[
             { label: data.outcode, data: demographics.outcode },
@@ -225,6 +250,7 @@ const recentSales = data.property.sales.slice(0, 40);
   {
     hasCrime && boroughCrimeTrend && (
       <section id="crime" data-section="crime" class="mt-10">
+        <DataUpdated items={crimeUpdated} />
         <h2 class="text-2xl font-bold mb-1">Crime in {data.outcode}</h2>
         <CrimeStats
           total={data.safety.totalLast12Months}
@@ -247,6 +273,7 @@ const recentSales = data.property.sales.slice(0, 40);
   {
     hasConnectivity && (
       <section id="connectivity" data-section="connectivity" class="mt-10">
+        <DataUpdated items={connectivityUpdated} />
         <h2 class="text-2xl font-bold mb-4">Connectivity in {data.outcode}</h2>
         <ConnectivitySection
           checkerOutcode={data.outcode}
@@ -282,7 +309,9 @@ const recentSales = data.property.sales.slice(0, 40);
     )
   }
 
+  <LeafletAssets />
   <section id="environment" data-section="environment" class="mt-10">
+    <DataUpdated items={environmentUpdated} />
     <h2 class="text-2xl font-bold mb-4">Environment</h2>
     <div id="flood-risk">
     <h2 class="text-lg font-semibold mb-3">Flood risk</h2>
@@ -321,6 +350,14 @@ const recentSales = data.property.sales.slice(0, 40);
             greenSource={green?.source ?? ""}
             greenYear={green?.year ?? 2020}
             noiseScope={`within a mile of the centre of ${data.outcode}`}
+            map={{
+              latitude: data.latitude,
+              longitude: data.longitude,
+              zoom: 14,
+              radiusM: 1609,
+              areaLabel: `${data.outcode}: the area the figures cover (1 mile)`,
+              parks: data.places.places.filter((p) => p.category === "park").map((p) => ({ name: p.name, latitude: p.latitude, longitude: p.longitude })),
+            }}
           />
         </div>
       )

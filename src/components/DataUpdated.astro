@@ -1,0 +1,21 @@
+---
+interface Props {
+  /** What each source was last updated to, e.g. { label: "Rents", value: "Aug 2026" }. */
+  items: { label: string; value: string }[];
+}
+
+const { items } = Astro.props;
+---
+
+<p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-stone-400 mb-4" data-data-updated>
+  <span class="inline-flex items-center gap-1 font-medium text-stone-500">
+    <svg width="12" height="12" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5" />
+      <path d="M10 5.5V10l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    Data as of
+  </span>
+  {items.map((item, i) => (
+    <span>{item.label} <span class="text-stone-500">{item.value}</span>{i < items.length - 1 && <span class="ml-3 text-stone-300" aria-hidden="true">&middot;</span>}</span>
+  ))}
+</p>

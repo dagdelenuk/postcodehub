@@ -1,4 +1,5 @@
 ---
+import EnvironmentMap from "./EnvironmentMap.astro";
 import type { GreenspaceMetrics } from "../lib/types";
 
 interface Column {
@@ -17,9 +18,11 @@ interface Props {
   greenYear: number;
   /** Where the noise picture is drawn from, e.g. "within a mile of the centre of TW11". */
   noiseScope: string;
+  /** Optional map of the road noise around the area (and its parks). */
+  map?: { latitude: number; longitude: number; zoom: number; radiusM?: number; parks?: { name: string; latitude: number; longitude: number }[]; areaLabel?: string };
 }
 
-const { columns, noiseLabels, noiseModelled, noiseSource, greenSource, greenYear, noiseScope } = Astro.props;
+const { columns, noiseLabels, noiseModelled, noiseSource, greenSource, greenYear, noiseScope, map } = Astro.props;
 const focus = columns[0];
 const london = columns[columns.length - 1];
 const withNoise = columns.filter((c) => c.noise);
@@ -55,6 +58,7 @@ const GREEN_ROWS: { label: string; get: (g: GreenspaceMetrics) => number | null;
         Average road traffic noise over a 24 hour day (Lden, which counts evening and night noise more heavily), across the area {noiseScope}, as modelled by Defra in {noiseModelled}. A typical quiet
         residential street is around 45 dB and a busy main road above 65 dB.
       </p>
+      {map && <EnvironmentMap {...map} />}
       <div class="rounded-lg border border-stone-200 bg-white p-4 mb-3">
         {withNoise.map((c) => (
           <div class="mb-4 last:mb-2">

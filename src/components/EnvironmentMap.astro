@@ -1,0 +1,135 @@
+---
+interface Props {
+  latitude: number;
+  longitude: number;
+  zoom: number;
+  /** Draws a ring this many metres around the centre (the area the district figures cover). */
+  radiusM?: number;
+  /** Parks to mark on the map. */
+  parks?: { name: string; latitude: number; longitude: number }[];
+  /** Label for the ring, e.g. "TW11 (1 mile)". */
+  areaLabel?: string;
+}
+
+const { latitude, longitude, zoom, radiusM, parks = [], areaLabel } = Astro.props;
+const config = { lat: latitude, lon: longitude, zoom, radiusM: radiusM ?? null, parks: parks.map((p) => ({ n: p.name, lat: p.latitude, lon: p.longitude })), label: areaLabel ?? "" };
+---
+
+<div class="rounded-lg border border-stone-200 bg-white overflow-hidden mb-3" data-env-map>
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 px-4 py-2 border-b border-stone-100 text-sm">
+    <label class="inline-flex items-center gap-1.5 text-stone-600">
+      <input type="checkbox" checked class="accent-emerald-700" data-env-noise-toggle /> Road noise
+    </label>
+    {
+      parks.length > 0 && (
+        <label class="inline-flex items-center gap-1.5 text-stone-600">
+          <input type="checkbox" checked class="accent-emerald-700" data-env-parks-toggle /> Parks
+        </label>
+      )
+    }
+    <span class="text-xs text-stone-400 ml-auto">Zoom with + / - or pinch</span>
+  </div>
+  <div class="relative isolate">
+    <div class="h-72 sm:h-96 w-full" data-env-map-canvas></div>
+  </div>
+  <script type="application/json" data-env-map-config set:html={JSON.stringify(config)} />
+</div>
+
+<style>
+  [data-env-map] :global(.leaflet-container) {
+    font-family: inherit;
+  }
+</style>
+
+<script>
+  declare global {
+    interface Window {
+      L: any;
+    }
+  }
+
+  const NOISE_WMS = "https://environment.data.gov.uk/spatialdata/road-noise-all-metrics-england-round-4/wms";
+  const NOISE_LAYER = "Road_Noise_Lden_England_Round_4_All";
+
+  function whenLeafletReady(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      if (window.L) return resolve(window.L);
+      let waited = 0;
+      const id = setInterval(() => {
+        if (window.L) {
+          clearInterval(id);
+          resolve(window.L);
+        } else if ((waited += 50) > 10000) {
+          clearInterval(id);
+          reject(new Error("Leaflet failed to load"));
+        }
+      }, 50);
+    });
+  }
+
+  interface MapConfig {
+    lat: number;
+    lon: number;
+    zoom: number;
+    radiusM: number | null;
+    parks: { n: string; lat: number; lon: number }[];
+    label: string;
+  }
+
+  // Wait for load: the city Statistics page removes other boroughs' blocks first, and Leaflet arrives from a CDN.
+  async function initMaps() {
+    const wrappers = document.querySelectorAll<HTMLElement>("[data-env-map]");
+    if (wrappers.length === 0) return;
+    let L: any;
+    try {
+      L = await whenLeafletReady();
+    } catch {
+      return; // the tables underneath still carry the numbers
+    }
+    for (const wrap of wrappers) {
+      const canvas = wrap.querySelector<HTMLElement>("[data-env-map-canvas]")!;
+      const config = JSON.parse(wrap.querySelector("[data-env-map-config]")?.textContent ?? "null") as MapConfig | null;
+      if (!config) continue;
+
+      const map = L.map(canvas, { scrollWheelZoom: false }).setView([config.lat, config.lon], config.zoom);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      const noise = L.tileLayer.wms(NOISE_WMS, {
+        layers: NOISE_LAYER,
+        format: "image/png",
+        transparent: true,
+        version: "1.3.0",
+        opacity: 0.65,
+        attribution: "Road noise &copy; Defra",
+      }).addTo(map);
+
+      if (config.radiusM) {
+        L.circle([config.lat, config.lon], { radius: config.radiusM, color: "#047857", weight: 2, fill: false, dashArray: "6 4" }).addTo(map).bindTooltip(config.label || "Area covered", { sticky: true });
+      }
+
+      const parks = L.featureGroup(
+        config.parks.map((p) => {
+          // textContent, not bindTooltip(string): place names are OpenStreetMap user data.
+          const label = document.createElement("div");
+          label.textContent = p.n;
+          return L.circleMarker([p.lat, p.lon], { radius: 7, color: "#166534", weight: 2, fillColor: "#4ade80", fillOpacity: 0.9 }).bindTooltip(label);
+        })
+      ).addTo(map);
+
+      wrap.querySelector<HTMLInputElement>("[data-env-noise-toggle]")?.addEventListener("change", (e) => {
+        if ((e.target as HTMLInputElement).checked) noise.addTo(map);
+        else map.removeLayer(noise);
+      });
+      wrap.querySelector<HTMLInputElement>("[data-env-parks-toggle]")?.addEventListener("change", (e) => {
+        if ((e.target as HTMLInputElement).checked) parks.addTo(map);
+        else map.removeLayer(parks);
+      });
+    }
+  }
+
+  if (document.readyState === "complete") initMaps();
+  else window.addEventListener("load", initMaps);
+</script>

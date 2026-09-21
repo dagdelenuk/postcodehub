@@ -3,12 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
 import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { getGreenspace, getNoise, getBoroughCrimeCategories, getBoroughCrimeTrend, getBoroughSummary, getCitySummary, getCityCrimeTrend, getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
+import { formatDataDate, getGreenspace, getNoise, getBoroughCrimeCategories, getBoroughCrimeTrend, getBoroughSummary, getCitySummary, getCityCrimeTrend, getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
 import ConnectivitySection from "../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../components/DemographicsSection.astro";
 import BoroughComparisonTable from "../../components/BoroughComparisonTable.astro";
 import HousingMarket from "../../components/HousingMarket.astro";
 import { datasetJsonLd } from "../../lib/seo";
+import LeafletAssets from "../../components/LeafletAssets.astro";
+import DataUpdated from "../../components/DataUpdated.astro";
 import CrimeStats from "../../components/CrimeStats.astro";
 import NoiseGreenSection from "../../components/NoiseGreenSection.astro";
 import LiveAirQualityWidget from "../../components/LiveAirQualityWidget.astro";
@@ -189,6 +191,25 @@ const cityCentre = getCitySummary(city.slug);
 const environmentByBorough = Object.fromEntries(trend.boroughs.map((b) => [b.slug, { noise: getNoise("", city.slug, b.slug), green: getGreenspace(b.slug) }]));
 const londonNoise = getNoise("", city.slug, firstSlug);
 const londonGreen = getGreenspace(firstSlug);
+
+// "Data as of" labels: the latest period each source in a section covers.
+const housingUpdated = [
+  ...(londonRentsRaw ? [{ label: "Rents", value: formatDataDate(londonRentsRaw.latestMonth) }] : []),
+  ...(londonHpiRaw ? [{ label: "House prices", value: formatDataDate(londonHpiRaw.london.months[londonHpiRaw.london.months.length - 1]) }] : []),
+  ...(trend.months.length > 0 ? [{ label: "Sales to", value: formatDataDate(trend.months[trend.months.length - 1]) }] : []),
+  { label: "Council Tax", value: "2026-27" },
+];
+const crimeUpdated = crimeTrend.months.length > 0 ? [{ label: "Crime to", value: formatDataDate(crimeTrend.months[crimeTrend.months.length - 1]) }] : [];
+const connectivityUpdated = [
+  ...(londonBroadband ? [{ label: "Broadband", value: londonBroadband.period }] : []),
+  ...(londonMobile ? [{ label: "Mobile", value: londonMobile.period }] : []),
+];
+const environmentUpdated = [
+  { label: "Air quality and flood warnings", value: "live" },
+  ...(londonNoise ? [{ label: "Road noise (modelled)", value: londonNoise.modelled }] : []),
+  ...(londonGreen ? [{ label: "Green space", value: String(londonGreen.year) }] : []),
+];
+
 ---
 
 <BaseLayout
@@ -228,11 +249,13 @@ const londonGreen = getGreenspace(firstSlug);
         </svg>
         <span data-compare-label>Compare areas</span>
       </a>
+      <a href="/compare/" class="hidden w-full text-sm text-emerald-700 hover:underline text-right" data-compare-borough>Compare this borough with others &rarr;</a>
     </div>
 
     <SectionTabs />
 
     <section data-section="housing" data-section-label="Housing">
+      <DataUpdated items={housingUpdated} />
       <div data-london-block>
         <section class="mb-8">
           <h2 class="text-2xl font-bold mb-1">Council Tax bands across {city.name}</h2>
@@ -337,6 +360,7 @@ const londonGreen = getGreenspace(firstSlug);
     </section>
 
     <section data-section="demographics" data-section-label="Demographics" class="mt-10">
+      <DataUpdated items={[{ label: "Census", value: "2021" }, { label: "Deprivation index", value: "2019" }]} />
       {
         londonDemographics && (
           <div data-london-block>
@@ -385,6 +409,7 @@ const londonGreen = getGreenspace(firstSlug);
     </section>
 
     <section data-section="crime" data-section-label="Crime" class="mt-10">
+      <DataUpdated items={crimeUpdated} />
       {
         crimeByBorough.map((b) => (
           <div class="hidden" data-borough-block data-borough-slug={b.slug}>
@@ -429,6 +454,7 @@ const londonGreen = getGreenspace(firstSlug);
     </section>
 
     <section data-section="connectivity" data-section-label="Connectivity" class="mt-10">
+      <DataUpdated items={connectivityUpdated} />
       {
         (londonBroadband || londonMobile) && (
           <div data-london-block>
@@ -516,7 +542,9 @@ const londonGreen = getGreenspace(firstSlug);
       }
     </section>
 
+    <LeafletAssets />
     <section data-section="environment" data-section-label="Environment" class="mt-10">
+      <DataUpdated items={environmentUpdated} />
       {
         trend.boroughs.map((b) => (
           <div class="hidden" data-borough-block data-borough-slug={b.slug}>
@@ -551,6 +579,7 @@ const londonGreen = getGreenspace(firstSlug);
                   greenSource={environmentByBorough[b.slug].green?.source ?? ""}
                   greenYear={environmentByBorough[b.slug].green?.year ?? 2020}
                   noiseScope={`within a mile of the centre of each of ${b.name}'s postcode districts (averaged)`}
+                  map={{ latitude: boroughCentres.get(b.slug)!.latitude, longitude: boroughCentres.get(b.slug)!.longitude, zoom: 12 }}
                 />
               </div>
             )}
@@ -587,6 +616,7 @@ const londonGreen = getGreenspace(firstSlug);
               greenSource={londonGreen?.source ?? ""}
               greenYear={londonGreen?.year ?? 2020}
               noiseScope={`within a mile of the centre of every postcode district (averaged)`}
+              map={{ latitude: cityCentre.latitude, longitude: cityCentre.longitude, zoom: 10 }}
             />
           </div>
         )}
@@ -694,6 +724,11 @@ const londonGreen = getGreenspace(firstSlug);
       if (districts) {
         compareLink.href = `/compare/?areas=${districts}`;
         if (compareLabel) compareLabel.textContent = "Compare districts";
+      }
+      const boroughLink = document.querySelector<HTMLAnchorElement>("[data-compare-borough]");
+      if (boroughLink) {
+        boroughLink.href = `/compare/?areas=b:${highlight}`;
+        boroughLink.classList.remove("hidden");
       }
     }
   </script>

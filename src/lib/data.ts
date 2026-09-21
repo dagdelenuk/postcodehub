@@ -1306,3 +1306,12 @@ export function getEvCharging(boroughSlug: string, latitude: number, longitude: 
     nearbyPoints: nearby.reduce((sum, s) => sum + (s.capacity ?? 1), 0),
   };
 }
+
+/** "2026-08" -> "Aug 2026"; "2026-08-31" -> "31 Aug 2026". */
+export function formatDataDate(value: string): string {
+  const parts = value.split("-");
+  const monthName = (m: string) => new Date(2000, Number(m) - 1, 1).toLocaleDateString("en-GB", { month: "short" });
+  if (parts.length === 3) return `${Number(parts[2])} ${monthName(parts[1])} ${parts[0]}`;
+  if (parts.length === 2) return `${monthName(parts[1])} ${parts[0]}`;
+  return value;
+}
