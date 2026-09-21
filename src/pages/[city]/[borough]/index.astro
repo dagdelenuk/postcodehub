@@ -135,6 +135,22 @@ const hasSplitDistricts = districtGroups.split.length > 0;
     </div>
 
     {
+      hasCouncilServices && (
+        <a
+          href={`/${city.slug}/${borough.slug}/services/#moving-checklist`}
+          class="mt-6 flex items-center gap-3 rounded-lg border border-emerald-200 bg-emerald-50 p-4 hover:border-emerald-600 transition-colors"
+        >
+          <span class="text-3xl leading-none" aria-hidden="true">📦</span>
+          <div class="min-w-0">
+            <p class="font-medium">Moving to {borough.name}?</p>
+            <p class="text-sm text-stone-600 mt-0.5">A ten-step first-month checklist: GP, voting, Council Tax, bins, parking and more, with the right council links.</p>
+          </div>
+          <span class="ml-auto text-emerald-700" aria-hidden="true">&rarr;</span>
+        </a>
+      )
+    }
+
+    {
       (summary.historySummary || hasRepresentatives) && (
         <div class="flex items-stretch gap-4 mt-6">
           {summary.historySummary && (

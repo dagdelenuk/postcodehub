@@ -1,7 +1,8 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import CouncilServices from "../../../../components/CouncilServices.astro";
-import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
+import NewcomerChecklist from "../../../../components/NewcomerChecklist.astro";
+import { getAllOutcodeParams, getCouncilTax, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -16,5 +17,14 @@ const { data } = Astro.props;
 <LocalityLayout citySlug={city!} boroughSlug={borough!} data={data} active="services" topic="Council services">
   <h1 class="text-2xl font-bold mb-2">Council services in {data.outcode}, {data.borough}</h1>
   <p class="text-stone-500 mb-6">{data.borough} council runs bin collections, Council Tax, parking and local services for {data.outcode}.</p>
+  <NewcomerChecklist
+    services={data.services}
+    boroughName={data.borough}
+    storageKey={borough!}
+    base={`/${city}/${borough}/${data.slug}`}
+    connectivityHref={`/${city}/${borough}/${data.slug}/statistics/#connectivity`}
+    bandD={getCouncilTax(borough!)?.bandD}
+  />
+  <h2 class="text-2xl font-bold mb-4">All council services</h2>
   <CouncilServices services={data.services} boroughName={data.borough} />
 </LocalityLayout>

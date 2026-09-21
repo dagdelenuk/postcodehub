@@ -1,0 +1,272 @@
+---
+import type { CouncilServicesData } from "../lib/types";
+
+interface Props {
+  services: CouncilServicesData;
+  boroughName: string;
+  /** Storage key for ticked steps - one checklist per borough. */
+  storageKey: string;
+  /** Path prefix of the pages this checklist links to inside the site, e.g. "/london/camden" or "/london/camden/nw6". */
+  base: string;
+  /** Where the Connectivity section of the Statistics page lives for this area. */
+  connectivityHref: string;
+  bandD?: number | null;
+}
+
+const { services, boroughName, storageKey, base, connectivityHref, bandD } = Astro.props;
+const council = services.councilName || boroughName;
+const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
+
+interface Link {
+  label: string;
+  href: string;
+  /** "local" links go to the council or this site; "national" links go to GOV.UK, the NHS and similar. */
+  kind: "local" | "site" | "national";
+}
+
+// A council's own page for a task, when GOV.UK's Local Links Manager has one.
+const council_ = (slug: string, label: string): Link[] => {
+  const found = services.links.find((l) => l.slug === slug);
+  return found ? [{ label, href: found.url, kind: "local" }] : [];
+};
+
+interface Step {
+  id: string;
+  title: string;
+  text: string;
+  links: Link[];
+}
+
+const steps: Step[] = [
+  {
+    id: "gp",
+    title: "Register with a GP and a dentist",
+    text: "Registering is free and you don't need proof of address or ID. Do it early: dentists in particular can have long waiting lists.",
+    links: [
+      { label: `GPs, dentists and pharmacies in ${boroughName}`, href: `${base}/health/`, kind: "site" },
+      { label: "Find a GP (NHS)", href: "https://www.nhs.uk/service-search/find-a-gp", kind: "national" },
+      { label: "Find a dentist (NHS)", href: "https://www.nhs.uk/service-search/find-a-dentist", kind: "national" },
+    ],
+  },
+  {
+    id: "vote",
+    title: "Register to vote",
+    text: "It takes about five minutes, and being on the electoral register also helps with credit checks and getting a mortgage or phone contract.",
+    links: [
+      { label: "Register to vote (GOV.UK)", href: "https://www.gov.uk/register-to-vote", kind: "national" },
+      ...council_("contact-electoral-registration-office", `${council} electoral registration office`),
+    ],
+  },
+  {
+    id: "council-tax",
+    title: "Sort out Council Tax",
+    text: `You are usually liable from the day you move in. ${bandD ? `Band D in ${boroughName} is ${gbp.format(bandD)} a year (2026-27). ` : ""}Check your band, and ask about discounts such as the 25% single person discount.`,
+    links: [
+      ...council_("pay-council-tax", `Set up or pay Council Tax (${council})`),
+      ...council_("apply-for-council-tax-discount", "Apply for a Council Tax discount"),
+      ...council_("apply-council-tax-reduction", "Apply for Council Tax Reduction"),
+      { label: "Check a property's Council Tax band (GOV.UK)", href: "https://www.gov.uk/council-tax-bands", kind: "national" },
+    ],
+  },
+  {
+    id: "bins",
+    title: "Find your bin and recycling days",
+    text: "Collection days differ street by street, so the council looks them up by address. Check what goes in each bin and how to book bulky waste.",
+    links: [
+      ...council_("rubbish-collection-day", "Find your rubbish collection day"),
+      ...council_("recycling-collections", "Recycling collections"),
+      ...council_("garden-waste-disposal", "Garden waste"),
+      ...council_("collection-large-waste-items", "Book a bulky waste collection"),
+      ...council_("missed-bin-collection", "Report a missed collection"),
+    ],
+  },
+  {
+    id: "parking",
+    title: "Parking and getting around",
+    text: "Many streets need a resident parking permit, and the rules differ between boroughs. Check the controlled parking zone before you bring a car.",
+    links: [
+      ...council_("parking-permit", "Get a parking permit"),
+      ...council_("blue-badge-scheme-information-council", "Blue Badge scheme"),
+      ...council_("apply-dropped-kerb", "Apply for a dropped kerb"),
+      { label: "Journey times and cycle hire", href: `${base}/transport/`, kind: "site" },
+    ],
+  },
+  {
+    id: "address",
+    title: "Tell people your new address",
+    text: "Update your driving licence, HMRC, your bank, insurers and employer. Redirect your post for a few months so nothing is missed, and get a TV licence if you need one.",
+    links: [
+      { label: "Change your driving licence address (GOV.UK)", href: "https://www.gov.uk/change-address-driving-licence", kind: "national" },
+      { label: "Tell HMRC you've moved (GOV.UK)", href: "https://www.gov.uk/tell-hmrc-change-of-details", kind: "national" },
+      { label: "Redirect your post (Royal Mail)", href: "https://www.royalmail.com/receiving-mail/redirection", kind: "national" },
+      { label: "TV Licence (GOV.UK)", href: "https://www.gov.uk/tv-licence", kind: "national" },
+    ],
+  },
+  {
+    id: "broadband",
+    title: "Check broadband and mobile signal",
+    text: "Look at what speeds are available on your street before you sign a contract, and order early: some installations take weeks.",
+    links: [
+      { label: "Broadband and mobile coverage here", href: connectivityHref, kind: "site" },
+      { label: "Ofcom coverage checker", href: "https://checker.ofcom.org.uk/en-gb/broadband-coverage", kind: "national" },
+    ],
+  },
+  {
+    id: "schools",
+    title: "Schools and childcare",
+    text: "If you have children, check school admissions deadlines early. They are set by the council and can fall well before you move in.",
+    links: [
+      { label: `Schools and Ofsted ratings in ${boroughName}`, href: `${base}/schools/`, kind: "site" },
+      ...council_("apply-for-primary-school-place", "Apply for a primary school place"),
+      ...council_("apply-for-secondary-school-place", "Apply for a secondary school place"),
+      ...council_("find-free-early-education", "Free early education and childcare"),
+    ],
+  },
+  {
+    id: "area",
+    title: "Get to know the area",
+    text: "Find the nearest parks, libraries and places to eat, and who represents you locally.",
+    links: [
+      { label: "Parks, libraries and places", href: `${base}/places/`, kind: "site" },
+      { label: "Food and hospitality with hygiene ratings", href: `${base}/food/`, kind: "site" },
+      ...council_("local-library-services", "Local library services"),
+      ...council_("find-your-local-councillors", "Find your councillors"),
+      ...council_("apply-allotment", "Apply for an allotment"),
+    ],
+  },
+  {
+    id: "report",
+    title: "Know how to report problems",
+    text: "Save these for later: fixing potholes, litter, graffiti and broken street lights is usually quicker through the council's own forms.",
+    links: [
+      ...council_("report-pothole", "Report a pothole"),
+      ...council_("report-litter", "Report litter"),
+      ...council_("report-problem-street-light", "Report a street light problem"),
+      ...council_("report-noise-pollution-to-council", "Report a noise nuisance"),
+    ],
+  },
+];
+
+const KIND_LABEL: Record<Link["kind"], string> = { local: "Council", site: "On PostcodeHub", national: "National" };
+---
+
+<section id="moving-checklist" class="mb-10 scroll-mt-40" data-checklist data-storage-key={storageKey} data-total={steps.length}>
+  <div class="flex flex-wrap items-end justify-between gap-2 mb-1">
+    <h2 class="text-2xl font-bold">Moving to {boroughName}? Your first-month checklist</h2>
+    <button type="button" class="text-xs text-stone-400 underline hidden" data-checklist-reset>Reset</button>
+  </div>
+  <p class="text-stone-500 mb-4 text-sm">Ten things worth doing in your first weeks, with the right link for {boroughName} on each. Tick them off as you go: your progress is saved on this device.</p>
+
+  <div class="mb-4" data-checklist-progress aria-live="polite">
+    <div class="flex items-center justify-between text-xs text-stone-500 mb-1">
+      <span data-checklist-count>0 of {steps.length} done</span>
+    </div>
+    <div class="h-2 w-full rounded-full bg-stone-100 overflow-hidden">
+      <div class="h-2 rounded-full bg-emerald-600 transition-all" style="width:0%" data-checklist-bar></div>
+    </div>
+  </div>
+
+  <ol class="space-y-3">
+    {
+      steps.map((step, i) => (
+        <li class="rounded-lg border border-stone-200 bg-white p-4 transition-colors" data-checklist-step data-step-id={step.id}>
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input type="checkbox" class="mt-1 h-4 w-4 shrink-0 accent-emerald-700" data-checklist-box />
+            <span class="min-w-0">
+              <span class="block font-semibold" data-checklist-title>
+                <span class="text-stone-400 font-normal mr-1">{i + 1}.</span>{step.title}
+              </span>
+              <span class="block text-sm text-stone-600 mt-1">{step.text}</span>
+            </span>
+          </label>
+          {
+            step.links.length > 0 && (
+              <ul class="mt-3 ml-7 flex flex-wrap gap-2">
+                {step.links.map((l) => (
+                  <li>
+                    <a
+                      href={l.href}
+                      {...(l.kind === "site" ? {} : { target: "_blank", rel: "noopener" })}
+                      class="inline-flex items-center gap-1.5 rounded-full border border-stone-200 px-3 py-1 text-xs text-stone-700 hover:border-emerald-600 hover:text-emerald-800 transition-colors"
+                      title={KIND_LABEL[l.kind]}
+                    >
+                      <span
+                        class:list={["h-1.5 w-1.5 rounded-full", l.kind === "local" ? "bg-emerald-600" : l.kind === "site" ? "bg-sky-500" : "bg-stone-400"]}
+                        aria-hidden="true"
+                      ></span>
+                      {l.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )
+          }
+        </li>
+      ))
+    }
+  </ol>
+  <p class="text-xs text-stone-400 mt-3">
+    <span class="inline-flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span> {council} page</span>
+    <span class="mx-2">&middot;</span>
+    <span class="inline-flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-sky-500"></span> On PostcodeHub</span>
+    <span class="mx-2">&middot;</span>
+    <span class="inline-flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-stone-400"></span> GOV.UK, NHS and others</span>
+  </p>
+</section>
+
+<script>
+  for (const list of document.querySelectorAll<HTMLElement>("[data-checklist]")) {
+    const key = `postcodehub:checklist:${list.dataset.storageKey}`;
+    const total = Number(list.dataset.total);
+    const boxes = [...list.querySelectorAll<HTMLInputElement>("[data-checklist-box]")];
+    const steps = [...list.querySelectorAll<HTMLElement>("[data-checklist-step]")];
+    const bar = list.querySelector<HTMLElement>("[data-checklist-bar]")!;
+    const count = list.querySelector<HTMLElement>("[data-checklist-count]")!;
+    const reset = list.querySelector<HTMLElement>("[data-checklist-reset]")!;
+
+    let done = new Set<string>();
+    try {
+      done = new Set(JSON.parse(localStorage.getItem(key) ?? "[]") as string[]);
+    } catch {
+      // storage unavailable: the checklist still works for this visit
+    }
+
+    function render() {
+      steps.forEach((step, i) => {
+        const checked = done.has(step.dataset.stepId!);
+        boxes[i].checked = checked;
+        step.classList.toggle("bg-emerald-50", checked);
+        step.classList.toggle("border-emerald-200", checked);
+        step.querySelector("[data-checklist-title]")?.classList.toggle("line-through", checked);
+        step.querySelector("[data-checklist-title]")?.classList.toggle("text-stone-400", checked);
+      });
+      const n = done.size;
+      count.textContent = n === total ? `All ${total} done - welcome to the neighbourhood!` : `${n} of ${total} done`;
+      bar.style.width = `${(n / total) * 100}%`;
+      reset.classList.toggle("hidden", n === 0);
+    }
+
+    function save() {
+      try {
+        localStorage.setItem(key, JSON.stringify([...done]));
+      } catch {
+        // ignore
+      }
+      render();
+    }
+
+    steps.forEach((step, i) => {
+      boxes[i].addEventListener("change", () => {
+        const id = step.dataset.stepId!;
+        if (boxes[i].checked) done.add(id);
+        else done.delete(id);
+        save();
+      });
+    });
+    reset.addEventListener("click", () => {
+      done = new Set();
+      save();
+    });
+    render();
+  }
+</script>

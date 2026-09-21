@@ -2,7 +2,8 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import CouncilServices from "../../../components/CouncilServices.astro";
-import { getCouncilServices, loadHierarchy } from "../../../lib/data";
+import NewcomerChecklist from "../../../components/NewcomerChecklist.astro";
+import { getCouncilServices, getCouncilTax, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
@@ -21,8 +22,8 @@ const services = getCouncilServices(borough.slug);
 ---
 
 <BaseLayout
-  title={`Council services in ${borough.name}`}
-  description={`Bin collection days, Council Tax, parking and other services from ${borough.name} council.`}
+  title={`Council services and moving checklist for ${borough.name}`}
+  description={`Moving to ${borough.name}? A first-month checklist (GP, voting, Council Tax, bins, parking) plus bin days and other council services.`}
   menuLevel="borough"
   citySlug={city.slug}
   boroughSlug={borough.slug}
@@ -40,6 +41,15 @@ const services = getCouncilServices(borough.slug);
   <section class="mx-auto max-w-5xl px-4 py-6">
     <h1 class="text-2xl font-bold mb-2">Council services in {borough.name}</h1>
     <p class="text-stone-500 mb-6">Bin collection days, Council Tax, parking and other services, straight from {borough.name}'s own website.</p>
+    <NewcomerChecklist
+      services={services}
+      boroughName={borough.name}
+      storageKey={borough.slug}
+      base={`/${city.slug}/${borough.slug}`}
+      connectivityHref={`/${city.slug}/statistics/?highlight=${borough.slug}#connectivity`}
+      bandD={getCouncilTax(borough.slug)?.bandD}
+    />
+    <h2 class="text-2xl font-bold mb-4">All council services</h2>
     <CouncilServices services={services} boroughName={borough.name} />
   </section>
 </BaseLayout>
