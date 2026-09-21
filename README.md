@@ -66,3 +66,7 @@ rate-limited by NHS/police.uk/etc, so don't point the platform's build command a
   `scripts/ingest/fetch-planning.ts`'s link-out with real ingestion.
 - **Councillor scrape**: `fetch-representatives.ts` parses Richmond's ModernGov HTML, which is
   council-specific and could break if the council changes its site.
+
+## Analytics (optional)
+
+Privacy-friendly, cookieless analytics via Cloudflare Web Analytics. Create a site in the Cloudflare dashboard (Web Analytics), copy its token, and set `PUBLIC_CF_ANALYTICS_TOKEN` in the build environment. Without the token no script is added.

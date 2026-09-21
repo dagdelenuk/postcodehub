@@ -64,6 +64,8 @@ export interface CompareDistrict {
   citySlug: string;
   boroughSlug: string;
   borough: string;
+  latitude: number;
+  longitude: number;
   /** % of the district that lies inside London (inside the borough that owns most of it). Low for districts that mostly sit outside. */
   sharePercent: number;
   m: CompareMetrics;
@@ -127,6 +129,8 @@ export function buildCompareData(): CompareData {
           citySlug: city.slug,
           boroughSlug: borough.slug,
           borough: borough.name,
+          latitude: outcode.latitude,
+          longitude: outcode.longitude,
           sharePercent: outcode.sharePercent,
           m: {
             medianPrice: data.property.medianPrice ?? null,

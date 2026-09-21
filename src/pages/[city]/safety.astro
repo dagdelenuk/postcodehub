@@ -272,6 +272,6 @@ const stationsByBorough = trend.boroughs.map((b) => ({
     // Carry the highlighted borough over to the Statistics page's crime tab.
     const highlight = new URLSearchParams(location.search).get("highlight");
     const link = document.querySelector<HTMLAnchorElement>("[data-crime-stats-link]");
-    if (highlight && link) link.href = link.href.replace("/statistics/#crime", `/statistics/?highlight=${encodeURIComponent(highlight)}#crime`);
+    if (highlight && /^[a-z0-9-]+$/.test(highlight) && link) link.href = link.href.replace("/statistics/#crime", `/${highlight}/statistics/#crime`);
   </script>
 </BaseLayout>

@@ -46,7 +46,7 @@ const services = getCouncilServices(borough.slug);
       boroughName={borough.name}
       storageKey={borough.slug}
       base={`/${city.slug}/${borough.slug}`}
-      connectivityHref={`/${city.slug}/statistics/?highlight=${borough.slug}#connectivity`}
+      connectivityHref={`/${city.slug}/${borough.slug}/statistics/#connectivity`}
       bandD={getCouncilTax(borough.slug)?.bandD}
       pages={{
         health: getBoroughHealth(city.slug, borough.slug).length > 0,

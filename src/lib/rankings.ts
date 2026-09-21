@@ -171,7 +171,7 @@ export function getRanking(slug: string): { def: RankingDef; rows: RankedRow[] }
           // Districts that mostly sit outside London (e.g. Westerham, in Kent) would rank on a sliver of London, so leave them out.
           .filter((d) => d.sharePercent >= 50)
           .map((d) => ({ code: d.code, name: `${d.code} ${d.name}`, subtitle: d.borough, href: `/${d.citySlug}/${d.boroughSlug}/${d.slug}/statistics/`, m: d.m }))
-      : data.boroughs.map((b) => ({ code: b.code, name: b.name, subtitle: "Whole borough", href: `/${b.citySlug}/statistics/?highlight=${b.slug}`, m: b.m }));
+      : data.boroughs.map((b) => ({ code: b.code, name: b.name, subtitle: "Whole borough", href: `/${b.citySlug}/${b.slug}/statistics/`, m: b.m }));
 
   const rows = items
     .filter((i) => def.primary.get(i.m) !== null && (def.eligible ? def.eligible(i.m) : true))

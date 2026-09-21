@@ -8,9 +8,11 @@ interface Props {
   chartId: string;
   /** Start the vertical axis just below the lowest value instead of at zero, so gradual price/rent movements are visible. Leave off for counts (sales, crimes). */
   zoomAxis?: boolean;
+  /** Borough (or entity) to emphasise when the URL has no ?highlight=, e.g. the borough whose own page this chart sits on. */
+  highlightSlug?: string;
 }
 
-const { trend, averageLabel, chartId, zoomAxis = false } = Astro.props;
+const { trend, averageLabel, chartId, zoomAxis = false, highlightSlug } = Astro.props;
 
 // month is stored "YYYY-MM"; display as "MM-YY" (Ay-Yil).
 function formatMonthLabel(month: string): string {
@@ -73,7 +75,7 @@ const chartData = {
 };
 ---
 
-<div class="rounded-lg border border-stone-200 bg-white p-4 overflow-x-auto" data-trend-chart data-chart-id={chartId}>
+<div class="rounded-lg border border-stone-200 bg-white p-4 overflow-x-auto" data-trend-chart data-chart-id={chartId} data-default-highlight={highlightSlug}>
   <svg viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`} class="w-full min-w-[640px]" role="img" aria-label={`Monthly trend by borough`}>
     {
       gridLines.map((g) => (
@@ -273,7 +275,7 @@ const chartData = {
     // borough's line (emphasised) plus the average, hiding every other
     // borough until the visitor opts back in via the legend.
     const params = new URLSearchParams(location.search);
-    const highlight = params.get("highlight");
+    const highlight = params.get("highlight") ?? chart.dataset.defaultHighlight ?? null;
     if (highlight && lines.some((l) => l.dataset.boroughSlug === highlight)) {
       selected = new Set(["average", highlight]);
       lines.find((l) => l.dataset.boroughSlug === highlight)?.classList.add("is-emphasised");

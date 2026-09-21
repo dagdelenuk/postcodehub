@@ -2,8 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BoroughTrendChart from "../../components/BoroughTrendChart.astro";
-import HighlightBreadcrumbCrumb from "../../components/HighlightBreadcrumbCrumb.astro";
-import { formatDataDate, getGreenspace, getNoise, getBoroughCrimeCategories, getBoroughCrimeTrend, getBoroughSummary, getCitySummary, getCityCrimeTrend, getBoroughPostTownPrices, getBoroughPropertyTrendByPostTown, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
+import { formatDataDate, getGreenspace, getNoise, getBoroughCrimeCategories, getBoroughSummary, getCitySummary, getCityCrimeTrend, getBoroughPostTownPrices, getCityPropertyTrend, getCouncilTax, getCouncilTaxAverage, getBoroughBroadband, getBoroughDemographics, getHpi, getLondonDemographics, getMobileCoverage, getRents, loadHierarchy } from "../../lib/data";
 import ConnectivitySection from "../../components/ConnectivitySection.astro";
 import DemographicsSection from "../../components/DemographicsSection.astro";
 import BoroughComparisonTable from "../../components/BoroughComparisonTable.astro";
@@ -17,10 +16,6 @@ import LiveAirQualityWidget from "../../components/LiveAirQualityWidget.astro";
 import LiveFloodWarningsWidget from "../../components/LiveFloodWarningsWidget.astro";
 import SectionTabs from "../../components/SectionTabs.astro";
 
-function slugify(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-}
-
 export function getStaticPaths() {
   const hierarchy = loadHierarchy();
   return hierarchy.cities
@@ -31,37 +26,12 @@ export function getStaticPaths() {
 const { city } = Astro.props;
 const trend = getCityPropertyTrend(city.slug);
 
-// ?highlight= (which borough the visitor arrived from) is only known once the
-// page loads in the browser, so every borough's Council Tax bands are
-// precomputed here and the right set is picked and rendered client-side -
-// same approach as the Police/Fire stations sections on the safety page.
 const councilTaxByBorough = trend.boroughs
   .map((b) => ({ slug: b.slug, name: b.name, councilTax: getCouncilTax(b.slug) }))
   .filter((b) => b.councilTax);
 const councilTaxLondonAverage = getCouncilTaxAverage();
 
-// Same precompute-every-borough-then-toggle-client-side approach: property
-// sales within the highlighted borough, grouped by Royal Mail post town
-// (multiple outcodes can share one, e.g. Twickenham covers TW1 and TW2).
-// BoroughTrendChart is reused as-is - its "boroughs" entities just happen to
-// be post towns here, with a locally slugified id used only for this chart's
-// own legend-toggle DOM matching, not a real route.
-const postTownTrendsByBorough = trend.boroughs
-  .map((b) => {
-    const postTownTrend = getBoroughPropertyTrendByPostTown(city.slug, b.slug);
-    return {
-      slug: b.slug,
-      name: b.name,
-      trend: {
-        months: postTownTrend.months,
-        boroughs: postTownTrend.postTowns.map((p) => ({ name: p.name, slug: slugify(p.name), series: p.series })),
-        average: postTownTrend.average,
-      },
-    };
-  })
-  .filter((b) => b.trend.boroughs.length > 0);
-
-// Same precompute-every-borough-then-reveal approach as the sections above.
+// Every borough's headline figures, for the comparison tables.
 const housingByBorough = trend.boroughs
   .map((b) => {
     const hpi = getHpi(b.slug);
@@ -79,7 +49,7 @@ const housingByBorough = trend.boroughs
   })
   .filter((b) => b.hpi || b.rents || b.prices || b.demographics || b.broadband || b.mobile);
 
-// City-level view (no ?highlight=): London as a whole, plus every borough compared side by side.
+// London as a whole, plus every borough compared side by side (each borough has its own Statistics page).
 const firstSlug = trend.boroughs[0]?.slug ?? "";
 const londonHpiRaw = getHpi(firstSlug);
 const londonRentsRaw = getRents(firstSlug);
@@ -103,18 +73,6 @@ const londonDemographics = getLondonDemographics();
 const londonBroadband = getBoroughBroadband(firstSlug);
 const londonMobile = getMobileCoverage(firstSlug);
 
-// Up to four of each borough's own postcode districts, for the "Compare districts in <borough>" button.
-const compareDistricts = Object.fromEntries(
-  trend.boroughs.map((b) => [
-    b.slug,
-    (city.boroughs.find((x) => x.slug === b.slug)?.outcodes ?? [])
-      .filter((o) => o.isPrimaryBorough)
-      .slice(0, 4)
-      .map((o) => o.outcode)
-      .join(","),
-  ])
-);
-
 const gbpFmt = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 const pct1 = (n: number | null | undefined) => (n == null ? "n/a" : `${n.toFixed(1)}%`);
 const chg = (n: number | null | undefined) => (n == null ? "n/a" : `${n >= 0 ? "+" : ""}${n.toFixed(1)}%`);
@@ -123,7 +81,7 @@ const councilTaxRange = COUNCIL_TAX_BANDS.map((band) => {
   const values = councilTaxByBorough.map((b) => b.councilTax!.bands[band]).filter((v) => typeof v === "number");
   return { band, average: councilTaxLondonAverage[band], lowest: Math.min(...values), highest: Math.max(...values) };
 });
-const boroughLink = (slug: string) => `/${city.slug}/statistics/?highlight=${slug}`;
+const boroughLink = (slug: string) => `/${city.slug}/${slug}/statistics/`;
 const housingComparison = housingByBorough.map((b) => {
   const tax = councilTaxByBorough.find((t) => t.slug === b.slug);
   const rentAll = b.rents?.borough.byBedrooms.all;
@@ -175,7 +133,6 @@ const crimeByBorough = crimeTrend.boroughs.map((b) => ({
   total: getBoroughSummary(city.slug, b.slug).crimes12mo,
   monthly: crimeTrend.months.map((month, i) => ({ month, totalCrimes: b.series[i] })),
   categories: getBoroughCrimeCategories(city.slug, b.slug),
-  compare: getBoroughCrimeTrend(city.slug, b.slug),
 }));
 const londonCrimeTotal = crimeByBorough.reduce((sum, b) => sum + b.total, 0);
 const londonCrimeMonthly = crimeTrend.months.map((month, i) => ({ month, totalCrimes: crimeTrend.boroughs.reduce((sum, b) => sum + b.series[i], 0) }));
@@ -185,10 +142,8 @@ const londonCrimeCategories = (() => {
   return [...totals.entries()] as [string, number][];
 })();
 
-// Environment: live air quality and flood warnings around each borough's centre, and around the whole city.
-const boroughCentres = new Map(trend.boroughs.map((b) => [b.slug, getBoroughSummary(city.slug, b.slug)]));
+// Environment: live air quality and flood warnings around the whole city, plus the noise and green space picture.
 const cityCentre = getCitySummary(city.slug);
-const environmentByBorough = Object.fromEntries(trend.boroughs.map((b) => [b.slug, { noise: getNoise("", city.slug, b.slug), green: getGreenspace(b.slug) }]));
 const londonNoise = getNoise("", city.slug, firstSlug);
 const londonGreen = getGreenspace(firstSlug);
 
@@ -234,29 +189,26 @@ const environmentUpdated = [
       { label: "Statistics" },
     ]}
   />
-  <HighlightBreadcrumbCrumb citySlug={city.slug} entities={trend.boroughs} />
 
   <section class="mx-auto max-w-5xl px-4 py-6">
     <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
-      <h1 class="text-2xl font-bold" data-stats-heading data-default={`Statistics across ${city.name}`}>Statistics across {city.name}</h1>
+      <h1 class="text-2xl font-bold">Statistics across {city.name}</h1>
       <a
         href="/compare/"
         class="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-emerald-700 px-3.5 py-2 text-sm font-medium text-white hover:bg-emerald-800 transition-colors"
-        data-compare-link
       >
         <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M3 6h9m0 0L9.5 3.5M12 6 9.5 8.5M17 14H8m0 0 2.5-2.5M8 14l2.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-        <span data-compare-label>Compare areas</span>
+        Compare areas
       </a>
-      <a href="/compare/" class="hidden w-full text-sm text-emerald-700 hover:underline text-right" data-compare-borough>Compare this borough with others &rarr;</a>
     </div>
 
-    <SectionTabs />
+    <SectionTabs tabs={[{ id: "housing", label: "Housing" }, { id: "demographics", label: "Demographics" }, { id: "crime", label: "Crime" }, { id: "connectivity", label: "Connectivity" }, { id: "environment", label: "Environment" }]} />
 
-    <section data-section="housing" data-section-label="Housing">
+    <section id="housing" data-section="housing">
       <DataUpdated items={housingUpdated} />
-      <div data-london-block>
+      <div>
         <section class="mb-8">
           <h2 class="text-2xl font-bold mb-1">Council Tax bands across {city.name}</h2>
           <p class="text-stone-500 mb-3 text-sm">2026-27 annual Council Tax by band: the London average and the cheapest and most expensive borough.</p>
@@ -311,43 +263,6 @@ const environmentUpdated = [
         />
       </div>
 
-      <section class="mb-8 hidden" data-council-tax-section>
-        <h2 class="text-2xl font-bold mb-1" data-council-tax-heading>Council Tax bands</h2>
-        <p class="text-stone-500 mb-3 text-sm" data-council-tax-sub></p>
-        <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
-                <th class="px-4 py-2 font-semibold">Band</th>
-                <th class="px-4 py-2 font-semibold text-right">Annual Council Tax</th>
-                <th class="px-4 py-2 font-semibold text-right">Annual Council Tax (AVG London)</th>
-              </tr>
-            </thead>
-            <tbody data-council-tax-rows></tbody>
-          </table>
-        </div>
-      </section>
-
-      {
-        housingByBorough
-          .filter((b) => b.hpi || b.rents || b.prices)
-          .map((b) => (
-            <div class="hidden" data-borough-block data-borough-slug={b.slug}>
-              <HousingMarket b={b} />
-            </div>
-          ))
-      }
-
-      {
-        postTownTrendsByBorough.map((b) => (
-          <div class="hidden mb-8" data-borough-block data-borough-slug={b.slug}>
-            <h2 class="text-2xl font-bold mb-1">Property sales comparison across {b.name}, grouped by post town</h2>
-            <p class="text-stone-500 mb-3 text-sm">Monthly residential sales by post town within {b.name}, against the borough average.</p>
-            <BoroughTrendChart trend={b.trend} averageLabel={`${b.name} average`} chartId={`property-posttown-${b.slug}`} />
-          </div>
-        ))
-      }
-
       <h2 class="text-2xl font-bold mb-1">Property sales comparison across {city.name}</h2>
       <p class="text-stone-500 mb-6">Number of residential sales completed per month in each borough, covering roughly the last two years.</p>
 
@@ -359,11 +274,11 @@ const environmentUpdated = [
       </p>
     </section>
 
-    <section data-section="demographics" data-section-label="Demographics" class="mt-10">
+    <section id="demographics" data-section="demographics" class="mt-10">
       <DataUpdated items={[{ label: "Census", value: "2021" }, { label: "Deprivation index", value: "2019" }]} />
       {
         londonDemographics && (
-          <div data-london-block>
+          <div>
             <DemographicsSection columns={[{ label: city.name, data: londonDemographics.london }]} source={londonDemographics.source} />
             <BoroughComparisonTable
               title="Boroughs compared: who lives where"
@@ -391,47 +306,11 @@ const environmentUpdated = [
           </div>
         )
       }
-      {
-        housingByBorough
-          .filter((b) => b.demographics)
-          .map((b) => (
-            <div class="hidden" data-borough-block data-borough-slug={b.slug}>
-              <DemographicsSection
-                columns={[
-                  { label: b.name, data: b.demographics!.borough },
-                  { label: "London", data: b.demographics!.london },
-                ]}
-                source={b.demographics!.source}
-              />
-            </div>
-          ))
-      }
     </section>
 
-    <section data-section="crime" data-section-label="Crime" class="mt-10">
+    <section id="crime" data-section="crime" class="mt-10">
       <DataUpdated items={crimeUpdated} />
-      {
-        crimeByBorough.map((b) => (
-          <div class="hidden" data-borough-block data-borough-slug={b.slug}>
-            <h2 class="text-2xl font-bold mb-1">Crime in {b.name}</h2>
-            <CrimeStats
-              total={b.total}
-              coverage="counted within roughly 1 mile of each postcode area's centre"
-              monthly={b.monthly}
-              categories={b.categories}
-              compare={{
-                trend: b.compare,
-                averageLabel: `${b.name} average`,
-                chartId: `borough-crime-${b.slug}`,
-                heading: `Compare postcode areas in ${b.name}`,
-                intro: `Monthly crime trend across every postcode area in ${b.name}, against the borough average.`,
-              }}
-            />
-          </div>
-        ))
-      }
-
-      <div data-london-block>
+      <div>
         <h2 class="text-2xl font-bold mb-1">Crime across {city.name}</h2>
         <CrimeStats total={londonCrimeTotal} coverage="counted within roughly 1 mile of each postcode area's centre, added across boroughs" monthly={londonCrimeMonthly} categories={londonCrimeCategories} />
       </div>
@@ -440,7 +319,7 @@ const environmentUpdated = [
         <h2 class="text-2xl font-bold mb-1">Crime comparison across {city.name}</h2>
         <p class="text-stone-500 mb-3 text-sm">Monthly recorded crimes per borough, each counted within roughly 1 mile of its postcode areas' centres.</p>
         <BoroughTrendChart trend={crimeTrend} averageLabel={`${city.name} average`} chartId="crime" />
-        <div class="mt-6" data-london-block>
+        <div class="mt-6">
           <BoroughComparisonTable
             title="Boroughs compared: recorded crime"
             intro="Recorded crimes over the last 12 months in every borough, and each borough's share of the London total."
@@ -453,11 +332,11 @@ const environmentUpdated = [
       </section>
     </section>
 
-    <section data-section="connectivity" data-section-label="Connectivity" class="mt-10">
+    <section id="connectivity" data-section="connectivity" class="mt-10">
       <DataUpdated items={connectivityUpdated} />
       {
         (londonBroadband || londonMobile) && (
-          <div data-london-block>
+          <div>
             <h2 class="text-2xl font-bold mb-4">Connectivity across {city.name}</h2>
             <ConnectivitySection
               broadband={
@@ -503,91 +382,12 @@ const environmentUpdated = [
           </div>
         )
       }
-      {
-        housingByBorough
-          .filter((b) => b.broadband || b.mobile)
-          .map((b) => (
-            <div class="hidden" data-borough-block data-borough-slug={b.slug}>
-              <h2 class="text-2xl font-bold mb-4">Connectivity in {b.name}</h2>
-              <ConnectivitySection
-                broadband={
-                  b.broadband
-                    ? {
-                        columns: [
-                          { label: b.name, data: b.broadband.borough },
-                          { label: "London", data: b.broadband.london },
-                        ],
-                        period: b.broadband.period,
-                        source: b.broadband.source,
-                        note: "Borough and London figures are weighted by number of homes.",
-                      }
-                    : null
-                }
-                mobile={
-                  b.mobile
-                    ? {
-                        columns: [
-                          { label: b.name, data: b.mobile.borough },
-                          { label: "London", data: b.mobile.london },
-                        ],
-                        period: b.mobile.period,
-                        source: b.mobile.source,
-                        intro: `Share of homes in ${b.name} with mobile coverage from EE, O2, Three and Vodafone (Ofcom, ${b.mobile.period}).`,
-                      }
-                    : null
-                }
-              />
-            </div>
-          ))
-      }
     </section>
 
     <LeafletAssets />
-    <section data-section="environment" data-section-label="Environment" class="mt-10">
+    <section id="environment" data-section="environment" class="mt-10">
       <DataUpdated items={environmentUpdated} />
-      {
-        trend.boroughs.map((b) => (
-          <div class="hidden" data-borough-block data-borough-slug={b.slug}>
-            <h2 class="text-2xl font-bold mb-4">Environment in {b.name}</h2>
-            <div class="grid gap-4 sm:grid-cols-2 mb-4">
-              <LiveAirQualityWidget latitude={boroughCentres.get(b.slug)!.latitude} longitude={boroughCentres.get(b.slug)!.longitude} />
-              <LiveFloodWarningsWidget latitude={boroughCentres.get(b.slug)!.latitude} longitude={boroughCentres.get(b.slug)!.longitude} radiusKm={8} areaLabel={b.name} />
-            </div>
-            <a
-              href="https://check-long-term-flood-risk.service.gov.uk/"
-              target="_blank"
-              rel="noopener"
-              class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
-            >
-              <span class="text-3xl leading-none" aria-hidden="true">🌊</span>
-              <div>
-                <p class="font-medium">Check long-term flood risk</p>
-                <p class="text-sm text-stone-500 mt-1">Flood risk from rivers, the sea and surface water varies street by street within {b.name} - look up an exact address on the Environment Agency's checker.</p>
-              </div>
-            </a>
-            <p class="text-xs text-stone-400 mt-2">Sources: Open-Meteo air quality; Environment Agency flood monitoring. Warnings cover an 8 km radius from the centre of {b.name}.</p>
-            {(environmentByBorough[b.slug].noise || environmentByBorough[b.slug].green) && (
-              <div class="mt-8">
-                <NoiseGreenSection
-                  columns={[
-                    { label: b.name, noise: environmentByBorough[b.slug].noise?.borough ?? null, green: environmentByBorough[b.slug].green?.borough ?? null },
-                    { label: "London", noise: environmentByBorough[b.slug].noise?.london ?? null, green: environmentByBorough[b.slug].green?.london ?? null },
-                  ]}
-                  noiseLabels={environmentByBorough[b.slug].noise?.labels ?? []}
-                  noiseModelled={environmentByBorough[b.slug].noise?.modelled ?? ""}
-                  noiseSource={environmentByBorough[b.slug].noise?.source ?? ""}
-                  greenSource={environmentByBorough[b.slug].green?.source ?? ""}
-                  greenYear={environmentByBorough[b.slug].green?.year ?? 2020}
-                  noiseScope={`within a mile of the centre of each of ${b.name}'s postcode districts (averaged)`}
-                  map={{ latitude: boroughCentres.get(b.slug)!.latitude, longitude: boroughCentres.get(b.slug)!.longitude, zoom: 12 }}
-                />
-              </div>
-            )}
-          </div>
-        ))
-      }
-
-      <div data-london-block>
+      <div>
         <h2 class="text-2xl font-bold mb-4">Environment across {city.name}</h2>
         <div class="grid gap-4 sm:grid-cols-2 mb-4">
           <LiveAirQualityWidget latitude={cityCentre.latitude} longitude={cityCentre.longitude} />
@@ -605,7 +405,7 @@ const environmentUpdated = [
             <p class="text-sm text-stone-500 mt-1">Flood risk from rivers, the sea and surface water varies street by street - look up an exact address on the Environment Agency's checker.</p>
           </div>
         </a>
-        <p class="text-xs text-stone-400 mt-2">Sources: Open-Meteo air quality; Environment Agency flood monitoring (30 km around central {city.name}). Select a borough for its own readings.</p>
+        <p class="text-xs text-stone-400 mt-2">Sources: Open-Meteo air quality; Environment Agency flood monitoring (30 km around central {city.name}).</p>
         {(londonNoise || londonGreen) && (
           <div class="mt-8">
             <NoiseGreenSection
@@ -624,112 +424,11 @@ const environmentUpdated = [
     </section>
   </section>
 
-  <script type="application/json" data-compare-districts set:html={JSON.stringify(compareDistricts)} />
-  <script type="application/json" data-borough-names set:html={JSON.stringify(trend.boroughs.map((b) => ({ slug: b.slug, name: b.name })))} />
-  <script type="application/json" data-council-tax-data set:html={JSON.stringify(councilTaxByBorough)} />
-  <script type="application/json" data-council-tax-average set:html={JSON.stringify(councilTaxLondonAverage)} />
-
   <script>
-    interface BoroughCouncilTax {
-      slug: string;
-      name: string;
-      councilTax: {
-        boroughName: string;
-        bandD: number;
-        bands: Record<string, number>;
-      };
-    }
-
-    const BAND_ORDER = ["A", "B", "C", "D", "E", "F", "G", "H"];
-    const GBP = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
-
-    document.querySelectorAll<HTMLScriptElement>("[data-council-tax-data]").forEach((el) => {
-      const boroughs = JSON.parse(el.textContent ?? "[]") as BoroughCouncilTax[];
-      const highlight = new URLSearchParams(location.search).get("highlight");
-      const match = highlight ? boroughs.find((b) => b.slug === highlight) : null;
-      if (!match) return;
-
-      const averageEl = document.querySelector<HTMLScriptElement>("[data-council-tax-average]");
-      const londonAverage = JSON.parse(averageEl?.textContent ?? "{}") as Record<string, number>;
-
-      const section = document.querySelector<HTMLElement>("[data-council-tax-section]");
-      const heading = document.querySelector<HTMLElement>("[data-council-tax-heading]");
-      const sub = document.querySelector<HTMLElement>("[data-council-tax-sub]");
-      const rows = document.querySelector<HTMLElement>("[data-council-tax-rows]");
-      if (!section || !heading || !sub || !rows) return;
-
-      heading.textContent = `Council Tax bands in ${match.name}`;
-      sub.textContent = `2026-27 rates, Band D (the reference band) is ${GBP.format(match.councilTax.bandD)} a year.`;
-
-      for (const band of BAND_ORDER) {
-        const amount = match.councilTax.bands[band];
-        if (amount == null) continue;
-        const avgAmount = londonAverage[band];
-        const tr = document.createElement("tr");
-        tr.className = band === "D" ? "border-b border-stone-100 bg-emerald-50 font-semibold" : "border-b border-stone-100 last:border-0";
-
-        const bandCell = document.createElement("td");
-        bandCell.className = "px-4 py-2";
-        bandCell.textContent = `Band ${band}`;
-
-        const amountCell = document.createElement("td");
-        amountCell.className = "px-4 py-2 text-right";
-        amountCell.textContent = GBP.format(amount);
-        if (avgAmount != null && amount !== avgAmount) {
-          const icon = document.createElement("span");
-          icon.className = amount > avgAmount ? "text-red-600 ml-1.5" : "text-emerald-600 ml-1.5";
-          icon.textContent = amount > avgAmount ? "▲" : "▼";
-          icon.title = amount > avgAmount ? "Above the London average" : "Below the London average";
-          amountCell.append(icon);
-        }
-
-        const avgCell = document.createElement("td");
-        avgCell.className = "px-4 py-2 text-right text-stone-500";
-        avgCell.textContent = avgAmount != null ? GBP.format(avgAmount) : "—";
-
-        tr.append(bandCell, amountCell, avgCell);
-        rows.append(tr);
-      }
-
-      section.classList.remove("hidden");
-    });
-  </script>
-
-  <script>
-    // Every borough's blocks are rendered; keep only the highlighted borough's and drop the rest, so section ids stay unique
-    // and the sticky tabs (built afterwards, on window load) list only sections that have data for it.
-    const params = new URLSearchParams(location.search);
-    const highlight = params.get("highlight");
-    for (const block of document.querySelectorAll<HTMLElement>("[data-borough-block]")) {
-      if (highlight && block.dataset.boroughSlug === highlight) block.classList.remove("hidden");
-      else block.remove();
-    }
-    // Without a highlighted borough the page shows London as a whole; with one, that view is replaced by the borough's.
-    if (highlight) document.querySelectorAll("[data-london-block]").forEach((b) => b.remove());
-    for (const section of document.querySelectorAll<HTMLElement>("[data-section]")) {
-      // Demographics and Connectivity exist only through the London or a borough's blocks.
-      if (section.dataset.section !== "housing" && !section.querySelector("[data-borough-block], [data-london-block]")) section.remove();
-    }
-    const heading = document.querySelector<HTMLElement>("[data-stats-heading]");
-    if (heading && highlight) {
-      const names = JSON.parse(document.querySelector("[data-borough-names]")?.textContent ?? "[]") as { slug: string; name: string }[];
-      const match = names.find((b) => b.slug === highlight);
-      if (match) heading.textContent = `Statistics in ${match.name}`;
-    }
-    // Point the Compare button at the highlighted borough's own districts.
-    const compareLink = document.querySelector<HTMLAnchorElement>("[data-compare-link]");
-    const compareLabel = document.querySelector<HTMLElement>("[data-compare-label]");
-    if (compareLink && highlight) {
-      const districts = (JSON.parse(document.querySelector("[data-compare-districts]")?.textContent ?? "{}") as Record<string, string>)[highlight];
-      if (districts) {
-        compareLink.href = `/compare/?areas=${districts}`;
-        if (compareLabel) compareLabel.textContent = "Compare districts";
-      }
-      const boroughLink = document.querySelector<HTMLAnchorElement>("[data-compare-borough]");
-      if (boroughLink) {
-        boroughLink.href = `/compare/?areas=b:${highlight}`;
-        boroughLink.classList.remove("hidden");
-      }
+    // Old links to a borough's statistics used /statistics/?highlight=<borough>; each borough now has its own page.
+    const highlight = new URLSearchParams(location.search).get("highlight");
+    if (highlight && /^[a-z0-9-]+$/.test(highlight)) {
+      location.replace(`${location.pathname.replace(/statistics\/?$/, "")}${highlight}/statistics/${location.hash}`);
     }
   </script>
 </BaseLayout>

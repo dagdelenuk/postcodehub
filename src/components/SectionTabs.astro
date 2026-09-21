@@ -1,6 +1,6 @@
 ---
 interface Props {
-  /** Server-rendered tabs. Omit to build them in the browser from `[data-section]` elements (used when the sections depend on ?highlight=). */
+  /** Server-rendered tabs. Omit to build them in the browser from `[data-section]` elements (for pages whose sections are only known at runtime). */
   tabs?: { id: string; label: string }[];
 }
 

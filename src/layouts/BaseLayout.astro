@@ -5,6 +5,9 @@ import HamburgerMenu from "../components/HamburgerMenu.astro";
 import PostcodeSearch from "../components/PostcodeSearch.astro";
 import { SITE_NAME, absoluteUrl } from "../lib/seo";
 
+// Cookieless Cloudflare Web Analytics; inert until PUBLIC_CF_ANALYTICS_TOKEN is set at build time.
+const analyticsToken = import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN as string | undefined;
+
 interface Props {
   title: string;
   description?: string;
@@ -62,6 +65,11 @@ const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []
     <meta name="twitter:description" content={description} />
     <title>{fullTitle}</title>
     {structuredData.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
+  {
+    analyticsToken && (
+      <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: analyticsToken })} />
+    )
+  }
   </head>
   <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-emerald-700 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white">Skip to main content</a>

@@ -226,7 +226,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       }
       const borough = data.boroughs.find((b) => b.code === code);
       if (borough) {
-        return { code: borough.code, title: borough.name, subtitle: "Whole borough", href: `/${borough.citySlug}/statistics/?highlight=${borough.slug}`, m: borough.m };
+        return { code: borough.code, title: borough.name, subtitle: "Whole borough", href: `/${borough.citySlug}/${borough.slug}/statistics/`, m: borough.m };
       }
       return undefined;
     }

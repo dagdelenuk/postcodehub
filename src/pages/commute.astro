@@ -1,0 +1,408 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+---
+
+<BaseLayout
+  title="Commute checker"
+  description="Enter your work postcode and see how long the journey takes from the London areas you are considering, using live Transport for London journey planning."
+  menuLevel="home"
+>
+  <Breadcrumbs sticky crumbs={[{ label: "PostcodeHub", href: "/" }, { label: "Commute checker" }]} />
+
+  <section class="mx-auto max-w-5xl px-4 py-6">
+    <h1 class="text-2xl font-bold mb-1">Commute checker</h1>
+    <p class="text-stone-500 mb-5 text-sm">
+      Enter your work postcode to see how long the journey takes from the areas you are considering, arriving by 09:00 on a weekday. Journeys are planned by Transport for London for
+      the next Tuesday.
+    </p>
+
+    <form class="rounded-lg border border-stone-200 bg-white p-4 mb-6" data-commute-form>
+      <label for="commute-work" class="block text-sm font-medium mb-1">Work postcode</label>
+      <div class="flex flex-wrap gap-2">
+        <input
+          id="commute-work"
+          type="text"
+          autocomplete="postal-code"
+          placeholder="e.g. EC2N 2DB"
+          class="min-w-0 flex-1 rounded-md border border-stone-300 bg-white px-3 py-2 text-sm uppercase placeholder:normal-case placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
+          data-commute-work
+        />
+        <button type="submit" class="rounded-lg bg-emerald-700 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-800 transition-colors disabled:opacity-50" data-commute-go>Check commute</button>
+      </div>
+
+      <fieldset class="mt-4">
+        <legend class="text-sm font-medium mb-2">From which areas?</legend>
+        <div class="space-y-2 text-sm">
+          <label class="flex items-start gap-2">
+            <input type="radio" name="commute-mode" value="picked" class="mt-1 accent-emerald-700" checked data-commute-mode />
+            <span>
+              <span class="font-medium">Areas I'm considering</span>
+              <span class="block text-stone-500" data-commute-picked-summary>No areas picked yet: add some below or on the Compare page.</span>
+            </span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="commute-mode" value="near" class="mt-1 accent-emerald-700" data-commute-mode />
+            <span>
+              <span class="font-medium">Districts near my work</span>
+              <span class="block text-stone-500">The 12 nearest postcode districts, ranked by how long the journey really takes.</span>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="mt-4" data-commute-picker>
+        <label for="commute-search" class="block text-sm font-medium mb-1">Add an area</label>
+        <div class="relative">
+          <input
+            id="commute-search"
+            type="text"
+            autocomplete="off"
+            placeholder="District or place, e.g. TW11 or Teddington"
+            class="w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
+            data-commute-search
+          />
+          <ul class="absolute z-20 mt-1 w-full rounded-md border border-stone-200 bg-white shadow-lg hidden max-h-72 overflow-y-auto" data-commute-results role="listbox"></ul>
+        </div>
+        <ul class="mt-3 flex flex-wrap gap-2" data-commute-chips></ul>
+        <button type="button" class="mt-2 text-sm text-emerald-700 hover:underline" data-commute-favourites>Add my saved areas</button>
+      </div>
+      <p class="text-sm text-red-700 mt-3 hidden" data-commute-error role="alert"></p>
+    </form>
+
+    <div class="hidden" data-commute-output>
+      <h2 class="text-lg font-semibold mb-1" data-commute-heading></h2>
+      <p class="text-sm text-stone-500 mb-3" data-commute-status aria-live="polite"></p>
+      <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+              <th class="px-4 py-2 font-semibold w-12">#</th>
+              <th class="px-4 py-2 font-semibold">From</th>
+              <th class="px-4 py-2 font-semibold text-right">Journey</th>
+              <th class="px-4 py-2 font-semibold hidden sm:table-cell">How</th>
+              <th class="px-4 py-2 font-semibold hidden sm:table-cell text-right">Leave by</th>
+            </tr>
+          </thead>
+          <tbody data-commute-rows></tbody>
+        </table>
+      </div>
+      <p class="text-xs text-stone-400 mt-2">
+        Source: Transport for London Journey Planner and postcodes.io. Times are door to door from the centre of each district on one planned weekday, so your own start point and
+        day will differ. Use the link on each row to plan an exact journey.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    interface District {
+      code: string;
+      slug: string;
+      name: string;
+      borough: string;
+      citySlug: string;
+      boroughSlug: string;
+      latitude: number;
+      longitude: number;
+    }
+    interface Journey {
+      duration: number;
+      startDateTime: string;
+      arrivalDateTime: string;
+      legs: { mode: { name: string } }[];
+    }
+
+    const MAX_PICKED = 8;
+    const NEAR_COUNT = 12;
+    const SELECTION_KEY = "postcodehub:compare";
+    const WORK_KEY = "postcodehub:work-postcode";
+    const FAVOURITES_KEY = "postcodehub:favorites";
+    const MODE_LABELS: Record<string, string> = {
+      tube: "Tube",
+      "national-rail": "Rail",
+      overground: "Overground",
+      "elizabeth-line": "Elizabeth line",
+      dlr: "DLR",
+      bus: "Bus",
+      tram: "Tram",
+      "river-bus": "River bus",
+      "cable-car": "Cable car",
+    };
+
+    const $ = <T extends HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
+    const form = $<HTMLFormElement>("[data-commute-form]");
+    const workInput = $<HTMLInputElement>("[data-commute-work]");
+    const goButton = $<HTMLButtonElement>("[data-commute-go]");
+    const modes = [...document.querySelectorAll<HTMLInputElement>("[data-commute-mode]")];
+    const picker = $("[data-commute-picker]");
+    const searchInput = $<HTMLInputElement>("[data-commute-search]");
+    const resultsList = $<HTMLUListElement>("[data-commute-results]");
+    const chips = $<HTMLUListElement>("[data-commute-chips]");
+    const summary = $("[data-commute-picked-summary]");
+    const errorEl = $("[data-commute-error]");
+    const output = $("[data-commute-output]");
+    const heading = $("[data-commute-heading]");
+    const status = $("[data-commute-status]");
+    const rows = $<HTMLTableSectionElement>("[data-commute-rows]");
+
+    let districts: District[] = [];
+    let picked: string[] = [];
+
+    const el = <K extends keyof HTMLElementTagNameMap>(tag: K, className = "", text?: string) => {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    };
+    const readSafe = (key: string) => {
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
+      }
+    };
+    const showError = (message: string) => {
+      errorEl.textContent = message;
+      errorEl.classList.toggle("hidden", !message);
+    };
+
+    /** The next Tuesday, as YYYYMMDD - a typical working day. */
+    function nextTuesday(): { compact: string; label: string } {
+      const d = new Date();
+      d.setDate(d.getDate() + ((2 - d.getDay() + 7) % 7 || 7));
+      const iso = d.toISOString().slice(0, 10);
+      return { compact: iso.replaceAll("-", ""), label: d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) };
+    }
+
+    function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
+      const R = 6371;
+      const dLat = ((lat2 - lat1) * Math.PI) / 180;
+      const dLon = ((lon2 - lon1) * Math.PI) / 180;
+      const a = Math.sin(dLat / 2) ** 2 + Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
+      return 2 * R * Math.asin(Math.sqrt(a));
+    }
+
+    function renderPicked() {
+      chips.replaceChildren();
+      for (const code of picked) {
+        const d = districts.find((x) => x.code === code);
+        if (!d) continue;
+        const li = el("li", "inline-flex items-center gap-1.5 rounded-full border border-stone-200 bg-stone-50 pl-3 pr-1 py-1 text-sm");
+        li.append(el("span", "font-medium", d.code), el("span", "text-stone-500", d.name));
+        const remove = el("button", "ml-1 h-5 w-5 rounded-full text-stone-400 hover:bg-stone-200 hover:text-stone-700", "×");
+        remove.type = "button";
+        remove.setAttribute("aria-label", `Remove ${d.code}`);
+        remove.addEventListener("click", () => {
+          picked = picked.filter((c) => c !== code);
+          renderPicked();
+        });
+        li.append(remove);
+        chips.append(li);
+      }
+      summary.textContent = picked.length > 0 ? `${picked.length} area${picked.length === 1 ? "" : "s"} picked.` : "No areas picked yet: add some below or on the Compare page.";
+    }
+
+    function currentMode(): "picked" | "near" {
+      return (modes.find((m) => m.checked)?.value ?? "picked") as "picked" | "near";
+    }
+    function syncMode() {
+      picker.classList.toggle("hidden", currentMode() === "near");
+    }
+
+    function showResults() {
+      const q = searchInput.value.trim().toLowerCase();
+      resultsList.replaceChildren();
+      if (q.length === 0) {
+        resultsList.classList.add("hidden");
+        return;
+      }
+      const matches = districts.filter((d) => !picked.includes(d.code) && (d.code.toLowerCase().startsWith(q) || d.name.toLowerCase().includes(q) || d.borough.toLowerCase().includes(q))).slice(0, 8);
+      if (matches.length === 0) resultsList.append(el("li", "px-3 py-2 text-sm text-stone-500", "No matching areas"));
+      for (const d of matches) {
+        const li = el("li");
+        const btn = el("button", "flex w-full items-center gap-3 px-3 py-2 text-left text-sm hover:bg-stone-50");
+        btn.type = "button";
+        btn.setAttribute("role", "option");
+        btn.append(el("span", "w-12 shrink-0 font-semibold text-stone-700", d.code), el("span", "truncate text-stone-500", `${d.name}, ${d.borough}`));
+        btn.addEventListener("click", () => {
+          if (picked.length >= MAX_PICKED) {
+            showError(`You can check up to ${MAX_PICKED} areas at once.`);
+          } else {
+            showError("");
+            picked.push(d.code);
+            renderPicked();
+          }
+          searchInput.value = "";
+          showResults();
+          searchInput.focus();
+        });
+        li.append(btn);
+        resultsList.append(li);
+      }
+      resultsList.classList.remove("hidden");
+    }
+
+    async function geocode(postcode: string): Promise<{ lat: number; lon: number } | null> {
+      const res = await fetch(`https://api.postcodes.io/postcodes/${encodeURIComponent(postcode.replace(/\s+/g, ""))}`);
+      if (!res.ok) return null;
+      const body = (await res.json()) as { result?: { latitude: number; longitude: number } };
+      return body.result ? { lat: body.result.latitude, lon: body.result.longitude } : null;
+    }
+
+    async function fastestJourney(from: { lat: number; lon: number }, to: { lat: number; lon: number }, day: string): Promise<Journey | null> {
+      const url = `https://api.tfl.gov.uk/Journey/JourneyResults/${from.lat},${from.lon}/to/${to.lat},${to.lon}?date=${day}&time=0900&timeIs=Arriving&journeyPreference=LeastTime`;
+      const res = await fetch(url);
+      if (!res.ok) return null;
+      const body = (await res.json()) as { journeys?: Journey[] };
+      return [...(body.journeys ?? [])].sort((a, b) => a.duration - b.duration)[0] ?? null;
+    }
+
+    const minutes = (n: number) => (n >= 60 ? `${Math.floor(n / 60)} h ${String(n % 60).padStart(2, "0")} min` : `${n} min`);
+    const clock = (iso: string) => iso.slice(11, 16);
+
+    interface Result {
+      district: District;
+      journey: Journey | null;
+    }
+
+    function renderRows(results: Result[], work: { lat: number; lon: number }, done: boolean) {
+      const ranked = [...results].sort((a, b) => (a.journey?.duration ?? 9999) - (b.journey?.duration ?? 9999));
+      rows.replaceChildren();
+      ranked.forEach((r, i) => {
+        const tr = el("tr", `border-b border-stone-100 last:border-0 ${i === 0 && done && r.journey ? "bg-emerald-50" : ""}`);
+        tr.append(el("td", "px-4 py-2 font-semibold text-stone-500", r.journey ? String(i + 1) : "-"));
+        const from = el("td", "px-4 py-2");
+        const link = el("a", "font-medium text-emerald-700 hover:underline", r.district.code);
+        link.href = `/${r.district.citySlug}/${r.district.boroughSlug}/${r.district.slug}/transport/`;
+        from.append(link, el("span", "block text-xs text-stone-400", `${r.district.name}, ${r.district.borough}`));
+        tr.append(from);
+        if (!r.journey) {
+          const none = el("td", "px-4 py-2 text-right text-stone-400", "No route found");
+          none.colSpan = 3;
+          tr.append(none);
+        } else {
+          const modeNames = r.journey.legs.map((l) => l.mode.name).filter((m, idx, all) => m !== "walking" && all.indexOf(m) === idx).map((m) => MODE_LABELS[m] ?? m.replace(/-/g, " "));
+          const rides = r.journey.legs.filter((l) => l.mode.name !== "walking").length;
+          const journey = el("td", "px-4 py-2 text-right whitespace-nowrap font-semibold", minutes(r.journey.duration));
+          const how = el("td", "px-4 py-2 text-stone-500 hidden sm:table-cell");
+          how.append(document.createTextNode(modeNames.length > 0 ? modeNames.join(" + ") : "Walk"), el("span", "block text-xs text-stone-400", rides <= 1 ? "Direct" : `${rides - 1} change${rides === 2 ? "" : "s"}`));
+          const leave = el("td", "px-4 py-2 text-right text-stone-500 whitespace-nowrap hidden sm:table-cell", clock(r.journey.startDateTime));
+          tr.append(journey, how, leave);
+        }
+        rows.append(tr);
+      });
+    }
+
+    async function run() {
+      showError("");
+      const postcode = workInput.value.trim();
+      if (!/^[A-Za-z]{1,2}\d[A-Za-z\d]?\s*\d[A-Za-z]{2}$/.test(postcode)) {
+        showError("Enter a full UK postcode, for example EC2N 2DB.");
+        return;
+      }
+      goButton.disabled = true;
+      try {
+        const work = await geocode(postcode);
+        if (!work) {
+          showError("We couldn't find that postcode. Check it and try again.");
+          return;
+        }
+        try {
+          localStorage.setItem(WORK_KEY, postcode.toUpperCase());
+        } catch {
+          // storage unavailable
+        }
+
+        let targets: District[];
+        if (currentMode() === "near") {
+          targets = [...districts].sort((a, b) => haversineKm(work.lat, work.lon, a.latitude, a.longitude) - haversineKm(work.lat, work.lon, b.latitude, b.longitude)).slice(0, NEAR_COUNT);
+        } else {
+          targets = picked.map((c) => districts.find((d) => d.code === c)).filter((d): d is District => Boolean(d));
+          if (targets.length === 0) {
+            showError("Pick at least one area to check, or choose Districts near my work.");
+            return;
+          }
+        }
+
+        const day = nextTuesday();
+        output.classList.remove("hidden");
+        heading.textContent = `Journeys to ${postcode.toUpperCase()}, arriving by 09:00 on ${day.label}`;
+        const results: Result[] = targets.map((district) => ({ district, journey: null }));
+        renderRows(results, work, false);
+
+        let finished = 0;
+        status.textContent = `Planning journeys: 0 of ${targets.length} done...`;
+        // A few at a time: TfL's planner takes a couple of seconds per journey.
+        const queue = [...results];
+        const worker = async () => {
+          for (let next = queue.shift(); next; next = queue.shift()) {
+            try {
+              next.journey = await fastestJourney({ lat: next.district.latitude, lon: next.district.longitude }, work, day.compact);
+            } catch {
+              next.journey = null;
+            }
+            finished++;
+            status.textContent = `Planning journeys: ${finished} of ${targets.length} done...`;
+            renderRows(results, work, false);
+          }
+        };
+        await Promise.all([worker(), worker(), worker()]);
+        const found = results.filter((r) => r.journey).length;
+        status.textContent = found === 0 ? "TfL couldn't plan any of these journeys right now. Try again in a moment." : `Fastest first. ${found} of ${targets.length} journeys planned.`;
+        renderRows(results, work, true);
+        output.scrollIntoView({ behavior: "smooth", block: "start" });
+      } catch {
+        showError("Something went wrong reaching the journey planner. Check your connection and try again.");
+      } finally {
+        goButton.disabled = false;
+      }
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      run();
+    });
+    modes.forEach((m) => m.addEventListener("change", syncMode));
+    searchInput.addEventListener("input", showResults);
+    searchInput.addEventListener("focus", showResults);
+    document.addEventListener("click", (e) => {
+      if (!(e.target as HTMLElement).closest("[data-commute-search], [data-commute-results]")) resultsList.classList.add("hidden");
+    });
+    $("[data-commute-favourites]").addEventListener("click", () => {
+      let keys: string[] = [];
+      try {
+        keys = JSON.parse(readSafe(FAVOURITES_KEY) ?? "[]") as string[];
+      } catch {
+        keys = [];
+      }
+      const slugs = keys.filter((k) => k.startsWith("outcode:")).map((k) => k.split("/").pop()!);
+      const found = districts.filter((d) => slugs.includes(d.slug));
+      if (found.length === 0) {
+        showError("No saved areas yet: tap the star on a district to save it.");
+        return;
+      }
+      showError("");
+      for (const d of found) if (picked.length < MAX_PICKED && !picked.includes(d.code)) picked.push(d.code);
+      renderPicked();
+    });
+
+    async function init() {
+      const res = await fetch("/compare-data.json");
+      const data = (await res.json()) as { districts: District[] };
+      districts = data.districts;
+
+      // Areas can arrive from the Compare page (?areas=TW11,SW14) or from the last comparison on this device.
+      const fromUrl = new URLSearchParams(location.search).get("areas") ?? readSafe(SELECTION_KEY) ?? "";
+      picked = fromUrl
+        .split(",")
+        .map((c) => c.trim().toUpperCase())
+        .filter((c, i, all) => c && !c.startsWith("B:") && all.indexOf(c) === i && districts.some((d) => d.code === c))
+        .slice(0, MAX_PICKED);
+      const savedWork = readSafe(WORK_KEY);
+      if (savedWork) workInput.value = savedWork;
+      renderPicked();
+      syncMode();
+    }
+    init().catch(() => showError("The area list couldn't be loaded. Check your connection and reload the page."));
+  </script>
+</BaseLayout>
