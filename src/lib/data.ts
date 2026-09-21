@@ -234,13 +234,16 @@ export function getBorough(citySlug: string, boroughSlug: string): HierarchyBoro
 export function loadOutcodeData(citySlug: string, boroughSlug: string, outcodeSlug: string): OutcodeData {
   const raw = readFileSync(path.join(PROCESSED_DIR, citySlug, boroughSlug, `${outcodeSlug}.json`), "utf-8");
   const data = JSON.parse(raw) as OutcodeData;
-  data.food = { establishments: loadFoodHygiene()?.outcodes[data.outcode] ?? [] };
+  data.food = { establishments: (loadFoodHygiene()?.outcodes[data.outcode] ?? []).filter((e) => e.rating >= MIN_FOOD_RATING) };
   data.services = getCouncilServices(boroughSlug);
   data.demographics = loadDemographics()?.outcodes[data.outcode] ?? null;
   // Pubs live under Food & Hospitality (with hygiene ratings), not Places.
   data.places = { ...data.places, places: data.places.places.filter((p) => p.category !== "pub") };
   return data;
 }
+
+/** Businesses rated below this (FHRS 0 to 2) are not listed anywhere on the site. */
+export const MIN_FOOD_RATING = 3;
 
 let cachedFood: FoodHygieneFile | null | undefined;
 
@@ -254,7 +257,10 @@ function loadFoodHygiene(): FoodHygieneFile | null {
 
 export function getFoodHygieneMeta(): { source: string; fetchedAt: string; londonCounts: Record<string, number> } | null {
   const f = loadFoodHygiene();
-  return f ? { source: f.source, fetchedAt: f.fetchedAt, londonCounts: f.londonCounts } : null;
+  if (!f) return null;
+  // London's split is compared against districts that only list ratings of MIN_FOOD_RATING and above, so leave the lower ratings out of it too.
+  const londonCounts = Object.fromEntries(Object.entries(f.londonCounts).filter(([rating]) => Number(rating) >= MIN_FOOD_RATING));
+  return { source: f.source, fetchedAt: f.fetchedAt, londonCounts };
 }
 
 export interface OutcodeParams {

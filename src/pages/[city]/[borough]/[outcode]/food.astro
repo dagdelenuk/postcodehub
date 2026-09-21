@@ -14,15 +14,16 @@ const meta = getFoodHygieneMeta();
 
 const establishments = data.food.establishments;
 const total = establishments.length;
-const RATINGS = [5, 4, 3, 2, 1, 0] as const;
+const RATINGS = [5, 4, 3] as const;
 const RATING_LABELS: Record<number, string> = { 5: "Very good", 4: "Good", 3: "Generally satisfactory", 2: "Improvement necessary", 1: "Major improvement necessary", 0: "Urgent improvement necessary" };
 const RATING_COLORS: Record<number, string> = { 5: "bg-emerald-600", 4: "bg-lime-600", 3: "bg-yellow-500", 2: "bg-orange-500", 1: "bg-red-500", 0: "bg-red-700" };
 
-const counts = Object.fromEntries(RATINGS.map((r) => [r, establishments.filter((e) => e.rating === r).length])) as Record<number, number>;
+const counts = Object.fromEntries([5, 4, 3, 2, 1, 0].map((r) => [r, establishments.filter((e) => e.rating === r).length])) as Record<number, number>;
 const londonCounts = meta?.londonCounts ?? {};
 const londonTotal = Object.values(londonCounts).reduce((a, b) => a + b, 0);
 const pct = (n: number, of: number) => (of > 0 ? (n / of) * 100 : 0);
 const fiveStarShare = pct(counts[5], total);
+const fourOrFiveShare = pct(counts[5] + counts[4], total);
 const londonFiveStarShare = pct(londonCounts["5"] ?? 0, londonTotal);
 const types = [...new Set(establishments.map((e) => e.type))].sort();
 const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
@@ -45,8 +46,8 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
       </p>
     </div>
     <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
-      <p class="text-2xl font-bold text-emerald-800">{counts[2] + counts[1] + counts[0]}</p>
-      <p class="text-xs text-stone-500 mt-1">rated 2 or below (needs improvement)</p>
+      <p class="text-2xl font-bold text-emerald-800">{fourOrFiveShare.toFixed(0)}%</p>
+      <p class="text-xs text-stone-500 mt-1">rated 4 or 5 (good or very good)</p>
     </div>
   </div>
 
@@ -79,7 +80,6 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
       <option value="">Any rating</option>
       <option value="5">5 only</option>
       <option value="4">4 and above</option>
-      <option value="low">2 or below</option>
     </select>
     <span class="text-xs text-stone-400" data-food-count></span>
   </div>
@@ -115,7 +115,7 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
   </div>
 
   <p class="text-xs text-stone-400 mt-4">
-    Source: {meta?.source ?? "Food Standards Agency"}, retrieved {meta ? formatDate(meta.fetchedAt) : ""}. Ratings reflect the last inspection and can change; premises awaiting inspection or exempt are not shown.
+    Source: {meta?.source ?? "Food Standards Agency"}, retrieved {meta ? formatDate(meta.fetchedAt) : ""}. Ratings reflect the last inspection and can change. Only businesses rated 3 (generally satisfactory) or above are listed; premises rated below 3, awaiting inspection or exempt are not shown.
   </p>
 
   <script>

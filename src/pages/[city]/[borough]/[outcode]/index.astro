@@ -5,6 +5,7 @@ import LiveAirQualityWidget from "../../../../components/LiveAirQualityWidget.as
 import { CATEGORIES } from "../../../../lib/categories";
 import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 import { CATEGORY_KEYS } from "../../../../lib/types";
+import { getSimilarDistricts } from "../../../../lib/similar";
 
 export function getStaticPaths() {
   return getAllOutcodeParams().map((p) => ({
@@ -25,6 +26,7 @@ const STAT_COLORS: Record<string, string> = {
   food: "text-orange-600",
 };
 
+const similar = getSimilarDistricts(data.outcode, 4);
 const mpCount = new Set(data.representatives.representatives.filter((r) => r.role === "MP").map((r) => r.name)).size;
 const summaryStats = [
   { label: "Health services", value: data.health.gpSurgeries.length, category: "health" as const },
@@ -101,6 +103,48 @@ const summaryStats = [
       )
     }
   </div>
+
+  {
+    similar.length > 0 && (
+      <section class="mb-8">
+        <div class="flex flex-wrap items-end justify-between gap-2 mb-1">
+          <h2 class="text-lg font-semibold">Areas like {data.outcode}</h2>
+          <a
+            href={`/compare/?areas=${[data.outcode, ...similar.map((s) => s.district.code)].slice(0, 4).join(",")}`}
+            class="text-sm text-emerald-700 hover:underline"
+          >
+            Compare side by side &rarr;
+          </a>
+        </div>
+        <p class="text-sm text-stone-500 mb-3">
+          The London districts whose numbers sit closest to {data.outcode}'s on price, commute, crime, noise, green space and who lives there, and how each one differs.
+        </p>
+        <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {similar.map(({ district, differences }) => (
+            <li class="min-w-0">
+              <a
+                href={`/${district.citySlug}/${district.boroughSlug}/${district.slug}/`}
+                class="block h-full rounded-lg border border-stone-200 bg-white px-4 py-3 hover:border-emerald-600 transition-colors"
+              >
+                <span class="flex items-center gap-3">
+                  <span class="h-10 w-10 shrink-0 rounded-md border border-stone-200 bg-stone-100 text-stone-600 text-[11px] font-bold flex items-center justify-center">{district.code}</span>
+                  <span class="min-w-0">
+                    <span class="block font-semibold truncate">{district.name}</span>
+                    <span class="block text-xs text-stone-500 truncate">{district.borough}</span>
+                  </span>
+                </span>
+                <span class="mt-2 flex flex-wrap gap-1.5">
+                  {(differences.length > 0 ? differences : ["Very close on everything we track"]).map((d) => (
+                    <span class="rounded-full bg-stone-100 px-2.5 py-0.5 text-xs text-stone-600">{d}</span>
+                  ))}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 
   <h2 class="text-lg font-semibold mb-4">Explore {data.outcode}</h2>
   <div class="grid gap-3 sm:grid-cols-2">

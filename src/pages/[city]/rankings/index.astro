@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import { loadHierarchy } from "../../../lib/data";
+import { RANKINGS, getRanking } from "../../../lib/rankings";
+import { itemListJsonLd } from "../../../lib/seo";
+
+export function getStaticPaths() {
+  return loadHierarchy().cities.map((city) => ({ params: { city: city.slug }, props: { city } }));
+}
+
+const { city } = Astro.props;
+const cards = RANKINGS.map((def) => ({ def, top: getRanking(def.slug)!.rows.slice(0, 3) }));
+---
+
+<BaseLayout
+  title={`${city.name} rankings`}
+  description={`Where is quietest, greenest, best connected or cheapest? ${city.name}'s postcode districts and boroughs ranked on the things that matter when choosing where to live.`}
+  menuLevel="city"
+  citySlug={city.slug}
+  jsonLd={itemListJsonLd({
+    name: `${city.name} rankings`,
+    description: `Rankings of ${city.name}'s postcode districts and boroughs.`,
+    url: `/${city.slug}/rankings/`,
+    items: RANKINGS.map((r) => ({ name: r.title, url: `/${city.slug}/rankings/${r.slug}/` })),
+  })}
+>
+  <Breadcrumbs sticky crumbs={[{ label: "PostcodeHub", href: "/" }, { label: city.name, href: `/${city.slug}/` }, { label: "Rankings" }]} />
+
+  <section class="mx-auto max-w-5xl px-4 py-6">
+    <h1 class="text-2xl font-bold mb-2">{city.name} rankings</h1>
+    <p class="text-stone-600 mb-6">Where is quietest, greenest, best connected or cheapest? Every postcode district and borough ranked on the things that matter when choosing where to live, from official data.</p>
+
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {
+        cards.map(({ def, top }) => (
+          <li>
+            <a href={`/${city.slug}/rankings/${def.slug}/`} class="block h-full rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors">
+              <p class="text-lg font-semibold"><span aria-hidden="true">{def.emoji}</span> {def.name}</p>
+              <p class="text-sm text-stone-500 mt-1">{def.description}</p>
+              <ol class="mt-3 space-y-1 text-sm">
+                {top.map((r) => (
+                  <li class="flex items-baseline justify-between gap-3">
+                    <span class="truncate"><span class="text-stone-400 mr-1.5">{r.rank}.</span>{r.name} <span class="text-stone-400 text-xs">{r.subtitle}</span></span>
+                    <span class="shrink-0 font-medium text-emerald-800">{r.primary}</span>
+                  </li>
+                ))}
+              </ol>
+              <p class="text-sm text-emerald-700 mt-3">See the full ranking &rarr;</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

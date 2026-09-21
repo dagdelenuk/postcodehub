@@ -138,8 +138,8 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
     }
 
     <p class="text-xs text-stone-400 mt-4">
-      Source: {meta?.source ?? "Food Standards Agency"}, retrieved {meta ? formatDate(meta.fetchedAt) : ""}. Ratings run from 5 (very good) to 0 (urgent improvement
-      necessary) and reflect the last inspection. Premises awaiting inspection or exempt are not shown.
+      Source: {meta?.source ?? "Food Standards Agency"}, retrieved {meta ? formatDate(meta.fetchedAt) : ""}. Ratings run from 5 (very good) to 3 (generally satisfactory) and
+      reflect the last inspection. Only businesses rated 3 or above are listed; premises rated below 3, awaiting inspection or exempt are not shown.
     </p>
   </section>
 

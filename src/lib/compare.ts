@@ -7,6 +7,8 @@ import {
   getBoroughPlaces,
   getBoroughSummary,
   getBroadband,
+  getGreenspace,
+  getNoise,
   getCouncilTax,
   getHpi,
   getJourneyTimes,
@@ -39,6 +41,16 @@ export interface CompareMetrics {
   schools: number | null;
   places: number | null;
   safetyServices: number | null;
+  /** % of the area within a mile of the centre at 55 dB or more of road noise, and under 45 dB. */
+  noise55: number | null;
+  noiseQuiet: number | null;
+  parkDistanceM: number | null;
+  parksWithin1km: number | null;
+  /** % of postcodes within 300 m of a park. */
+  within300m: number | null;
+  gardenShare: number | null;
+  /** Mean of the fastest journeys to the central London destinations, in minutes. */
+  avgJourney: number | null;
   /** Fastest journey in minutes, by destination id (see the journey-times data). */
   journeys: Record<string, number>;
 }
@@ -52,6 +64,8 @@ export interface CompareDistrict {
   citySlug: string;
   boroughSlug: string;
   borough: string;
+  /** % of the district that lies inside London (inside the borough that owns most of it). Low for districts that mostly sit outside. */
+  sharePercent: number;
   m: CompareMetrics;
 }
 
@@ -72,8 +86,13 @@ export interface CompareData {
 }
 
 const round1 = (n: number) => Math.round(n * 10) / 10;
+const sumBands = (bands: number[] | null | undefined, from: number, to?: number) => (bands ? round1(bands.slice(from, to).reduce((a, b) => a + b, 0)) : null);
+const meanOf = (nums: number[]): number | null => (nums.length > 0 ? Math.round(nums.reduce((a, b) => a + b, 0) / nums.length) : null);
+
+let cachedCompare: CompareData | undefined;
 
 export function buildCompareData(): CompareData {
+  if (cachedCompare) return cachedCompare;
   const districts: CompareDistrict[] = [];
   const seen = new Set<string>();
   let journeyDestinations: CompareData["journeyDestinations"] = [];
@@ -98,6 +117,8 @@ export function buildCompareData(): CompareData {
         }
         const food = data.food.establishments;
         const demo = data.demographics;
+        const noise = getNoise(data.outcode, city.slug, borough.slug)?.outcode;
+        const green = getGreenspace(borough.slug, data.outcode)?.outcode;
 
         districts.push({
           code: data.outcode,
@@ -106,6 +127,7 @@ export function buildCompareData(): CompareData {
           citySlug: city.slug,
           boroughSlug: borough.slug,
           borough: borough.name,
+          sharePercent: outcode.sharePercent,
           m: {
             medianPrice: data.property.medianPrice ?? null,
             salesCount: data.property.sales.length || null,
@@ -129,6 +151,13 @@ export function buildCompareData(): CompareData {
             schools: data.schools.schools.length,
             places: data.places.places.length,
             safetyServices: data.safety.policeStations.length + data.safety.fireStations.length,
+            noise55: sumBands(noise, 4),
+            noiseQuiet: sumBands(noise, 0, 2),
+            parkDistanceM: green?.parkDistanceM ?? null,
+            parksWithin1km: green?.parksWithin1km ?? null,
+            within300m: green?.within300m ?? null,
+            gardenShare: green?.gardenShare ?? null,
+            avgJourney: meanOf(Object.values(journeys?.journeys ?? []).map((j) => j.minutes)),
             journeys: Object.fromEntries((journeys?.journeys ?? []).map((j) => [j.id, j.minutes])),
           },
         });
@@ -137,7 +166,8 @@ export function buildCompareData(): CompareData {
   }
 
   districts.sort((a, b) => a.code.localeCompare(b.code, "en", { numeric: true }));
-  return { journeyDestinations, journeyDeparture, districts, boroughs: buildBoroughs(districts) };
+  cachedCompare = { journeyDestinations, journeyDeparture, districts, boroughs: buildBoroughs(districts) };
+  return cachedCompare;
 }
 
 const medianOf = (nums: number[]): number | null => {
@@ -162,6 +192,8 @@ function buildBoroughs(districts: CompareDistrict[]): CompareBorough[] {
       const broadband = getBoroughBroadband(borough.slug)?.borough;
       const food = getBoroughFood(city.slug, borough.slug).flatMap((g) => g.establishments);
       const places = getBoroughPlaces(city.slug, borough.slug).reduce((sum, g) => sum + g.places.length, 0);
+      const noise = getNoise("", city.slug, borough.slug)?.borough;
+      const green = getGreenspace(borough.slug)?.borough;
       const prices = primary.flatMap((o) => loadOutcodeData(city.slug, borough.slug, o.slug).property.sales.map((s) => s.price));
 
       // Journey times are per district; a borough's figure is the average of its districts'.
@@ -199,6 +231,13 @@ function buildBoroughs(districts: CompareDistrict[]): CompareBorough[] {
           schools: summary.schools,
           places,
           safetyServices: own[0]?.m.safetyServices ?? null,
+          noise55: sumBands(noise, 4),
+          noiseQuiet: sumBands(noise, 0, 2),
+          parkDistanceM: green?.parkDistanceM ?? null,
+          parksWithin1km: green?.parksWithin1km ?? null,
+          within300m: green?.within300m ?? null,
+          gardenShare: green?.gardenShare ?? null,
+          avgJourney: meanOf(Object.values(journeys)),
           journeys,
         },
       });

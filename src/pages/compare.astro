@@ -79,6 +79,13 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       schools: number | null;
       places: number | null;
       safetyServices: number | null;
+      noise55: number | null;
+      noiseQuiet: number | null;
+      parkDistanceM: number | null;
+      parksWithin1km: number | null;
+      within300m: number | null;
+      gardenShare: number | null;
+      avgJourney: number | null;
       journeys: Record<string, number>;
     }
     interface District {
@@ -157,12 +164,12 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
     }
 
     function buildRows(): { title: string; rows: Row[] }[] {
-      const journeyRows: Row[] = data.journeyDestinations.map((d) => ({
+      const journeyRows: Row[] = [{ label: "Average to the five below", get: (m) => m.avgJourney, format: minutes, better: "lower" as const }, ...data.journeyDestinations.map((d) => ({
         label: `To ${d.name}`,
         get: (m) => m.journeys[d.id],
         format: minutes,
-        better: "lower",
-      }));
+        better: "lower" as const,
+      }))];
       return [
         {
           title: "What it costs",
@@ -204,6 +211,9 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
             { label: "Health services", get: (m) => m.healthServices, format: (n) => num.format(n), better: "higher" },
             { label: "Schools", get: (m) => m.schools, format: (n) => num.format(n), better: "higher" },
             { label: "Parks, libraries and other places", get: (m) => m.places, format: (n) => num.format(n), better: "higher" },
+            { label: "Area at 55 dB or more of road noise", get: (m) => m.noise55, format: pct, better: "lower" },
+            { label: "Postcodes within 300 m of a park", get: (m) => m.within300m, format: pct, better: "higher" },
+            { label: "Homes with a private garden", get: (m) => m.gardenShare, format: pct, better: "higher" },
           ],
         },
       ];

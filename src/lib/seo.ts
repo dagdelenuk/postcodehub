@@ -84,3 +84,17 @@ export const websiteJsonLd = {
     },
   ],
 };
+
+/** An ordered list (e.g. a ranking) for search engines. */
+export function itemListJsonLd({ name, description, url, items }: { name: string; description: string; url: string; items: { name: string; url: string }[] }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    url: absoluteUrl(url),
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: items.length,
+    itemListElement: items.map((item, i) => ({ "@type": "ListItem", position: i + 1, name: item.name, url: absoluteUrl(item.url) })),
+  };
+}
