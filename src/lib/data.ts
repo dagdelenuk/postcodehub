@@ -67,10 +67,18 @@ export function getBannerImages(slug: string): BannerImage[] {
 
 let cachedPlaceImages: Banners | null = null;
 
+// place-images.json is a named list of {slug, images} (like data/manual/banner-overrides.json), not a bare Record<slug,
+// images[]> - that's the shape Decap CMS's file-collection + list widget can actually show/edit (with thumbnails) in
+// /admin, so a bad automatic pick can be fixed by looking at it, not just by excluding a photo ID blind.
 function loadPlaceImages(): Banners {
   if (cachedPlaceImages) return cachedPlaceImages;
   const placeImagesPath = path.join(PROCESSED_DIR, "place-images.json");
-  cachedPlaceImages = existsSync(placeImagesPath) ? (JSON.parse(readFileSync(placeImagesPath, "utf-8")) as Banners) : {};
+  const parsed = existsSync(placeImagesPath) ? (JSON.parse(readFileSync(placeImagesPath, "utf-8")) as { overrides?: { slug: string; images: BannerImage[] }[] }) : { overrides: [] };
+  const record: Banners = {};
+  for (const entry of parsed.overrides ?? []) {
+    if (entry.slug && entry.images?.length > 0) record[entry.slug] = entry.images;
+  }
+  cachedPlaceImages = record;
   return cachedPlaceImages;
 }
 

@@ -7,6 +7,7 @@ import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { fetchJson, logStep, sleep, withRetry } from "./lib/fetch-utils.js";
 import { haversineKm, loadOutcodeIndex } from "./lib/geo.js";
 import { nameSimilarity, normalizeName } from "./lib/text.js";
+import { fromOverridesFile, toOverridesFile, type ImageOverridesFile } from "./lib/manual-images.js";
 import type { BannerImage } from "../../src/lib/types.js";
 
 const STEP = "district-images";
@@ -246,7 +247,7 @@ async function main() {
 
   let existing: Record<string, BannerImage[]> = {};
   try {
-    existing = JSON.parse(await readFile(OUT_PATH, "utf-8")) as Record<string, BannerImage[]>;
+    existing = fromOverridesFile(JSON.parse(await readFile(OUT_PATH, "utf-8")) as ImageOverridesFile);
   } catch {
     // first run
   }
@@ -295,7 +296,7 @@ async function main() {
   }
 
   await mkdir(PROCESSED_DIR, { recursive: true });
-  await writeFile(OUT_PATH, JSON.stringify(result, null, 2));
+  await writeFile(OUT_PATH, JSON.stringify(toOverridesFile(result), null, 2));
   await mkdir(RAW_DIR, { recursive: true });
   await writeFile(UPLOAD_MANIFEST_PATH, JSON.stringify([...uploaded], null, 2));
   logStep(STEP, `Wrote ${OUT_PATH} (${Object.keys(result).length} districts with photos).`);

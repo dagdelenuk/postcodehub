@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { logStep } from "./lib/fetch-utils.js";
 import { loadHierarchy } from "./lib/geo.js";
+import { fromOverridesFile, toOverridesFile, type ImageOverridesFile } from "./lib/manual-images.js";
 import type { BannerImage } from "../../src/lib/types.js";
 
 const STEP = "curate-borough-images";
@@ -36,11 +37,11 @@ async function main() {
   const [hierarchy, districtImages, locked, existing] = await Promise.all([
     loadHierarchy(),
     readFile(DISTRICT_IMAGES_PATH, "utf-8")
-      .then((raw) => JSON.parse(raw) as Record<string, BannerImage[]>)
+      .then((raw) => fromOverridesFile(JSON.parse(raw) as ImageOverridesFile))
       .catch(() => ({}) as Record<string, BannerImage[]>),
     loadLockedSlugs(),
     readFile(OUT_PATH, "utf-8")
-      .then((raw) => JSON.parse(raw) as Record<string, BannerImage[]>)
+      .then((raw) => fromOverridesFile(JSON.parse(raw) as ImageOverridesFile))
       .catch(() => ({}) as Record<string, BannerImage[]>),
   ]);
 
@@ -70,7 +71,7 @@ async function main() {
   }
 
   await mkdir(PROCESSED_DIR, { recursive: true });
-  await writeFile(OUT_PATH, JSON.stringify(result, null, 2));
+  await writeFile(OUT_PATH, JSON.stringify(toOverridesFile(result), null, 2));
   logStep(STEP, `Wrote ${OUT_PATH} (${Object.keys(result).length} places with photos).`);
 }
 
