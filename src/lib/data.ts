@@ -1,4 +1,4 @@
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import path from "node:path";
 import type {
   Banners,
@@ -67,16 +67,19 @@ export function getBannerImages(slug: string): BannerImage[] {
 
 let cachedPlaceImages: Banners | null = null;
 
-// place-images.json is a named list of {slug, images} (like data/manual/banner-overrides.json), not a bare Record<slug,
-// images[]> - that's the shape Decap CMS's file-collection + list widget can actually show/edit (with thumbnails) in
-// /admin, so a bad automatic pick can be fixed by looking at it, not just by excluding a photo ID blind.
+// data/processed/place-images/ holds one small JSON file per slug ({slug, images}), not one combined file - that's what
+// lets Decap CMS's folder collection type show a real, searchable per-entry list in /admin (see public/admin/config.yml's
+// "place_photos" collection), so a bad automatic pick can be fixed by looking at the actual photo, not blind by ID.
 function loadPlaceImages(): Banners {
   if (cachedPlaceImages) return cachedPlaceImages;
-  const placeImagesPath = path.join(PROCESSED_DIR, "place-images.json");
-  const parsed = existsSync(placeImagesPath) ? (JSON.parse(readFileSync(placeImagesPath, "utf-8")) as { overrides?: { slug: string; images: BannerImage[] }[] }) : { overrides: [] };
+  const dir = path.join(PROCESSED_DIR, "place-images");
   const record: Banners = {};
-  for (const entry of parsed.overrides ?? []) {
-    if (entry.slug && entry.images?.length > 0) record[entry.slug] = entry.images;
+  if (existsSync(dir)) {
+    for (const file of readdirSync(dir)) {
+      if (!file.endsWith(".json")) continue;
+      const entry = JSON.parse(readFileSync(path.join(dir, file), "utf-8")) as { slug?: string; images?: BannerImage[] };
+      if (entry.slug && entry.images && entry.images.length > 0) record[entry.slug] = entry.images;
+    }
   }
   cachedPlaceImages = record;
   return cachedPlaceImages;

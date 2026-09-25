@@ -73,65 +73,63 @@ collections:
 
   - name: "district_photos"
     label: "District photos (currently live)"
-    files:
-      - file: "data/processed/district-images.json"
-        label: "District photo selections"
-        name: "district-images"
-        description: >
-          What's currently showing in each district page's photo slider -
-          auto-picked from geograph.org.uk by fetch-district-images.ts. You
-          can see the actual photo here (click an image to preview) and
-          delete, reorder or swap one directly. To stop the next quarterly
-          refresh from overwriting your edit, also tick "Locked" for this
-          slug in "Geograph photo overrides" above.
+    description: >
+      One entry per postcode district (e.g. tw11) - what's currently showing
+      in its page's photo slider, auto-picked from geograph.org.uk by
+      fetch-district-images.ts. Use the search box above the list to jump to
+      a district. Click an image to preview it, or delete/reorder/swap one
+      directly. To stop the next quarterly refresh from overwriting your
+      edit, also tick "Locked" for this slug in "Geograph photo overrides".
+    folder: "data/processed/district-images"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    identifier_field: "slug"
+    slug: "{{fields.slug}}"
+    summary: "{{fields.slug}} ({{fields.images}} photos)"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        summary: "{{fields.credit}}"
         fields:
-          - label: "Districts"
-            name: "overrides"
-            widget: "list"
-            summary: "{{fields.slug}}"
-            fields:
-              - { label: "Slug", name: "slug", widget: "string", hint: "e.g. tw11" }
-              - label: "Images"
-                name: "images"
-                widget: "list"
-                summary: "{{fields.credit}}"
-                fields:
-                  - { label: "Image", name: "src", widget: "image", choose_url: true, hint: "R2-hosted, e.g. /images/geograph/tw11/8002714.webp" }
-                  - { label: "Width (px)", name: "width", widget: "number", value_type: "int" }
-                  - { label: "Height (px)", name: "height", widget: "number", value_type: "int" }
-                  - { label: "Credit text", name: "credit", widget: "string" }
-                  - { label: "Credit link (geograph.org.uk photo page)", name: "creditUrl", widget: "string" }
-                  - { label: "License", name: "license", widget: "string", default: "CC BY-SA 2.0" }
+          - { label: "Image", name: "src", widget: "image", choose_url: true, hint: "R2-hosted, e.g. /images/geograph/tw11/8002714.webp" }
+          - { label: "Width (px)", name: "width", widget: "number", value_type: "int" }
+          - { label: "Height (px)", name: "height", widget: "number", value_type: "int" }
+          - { label: "Credit text", name: "credit", widget: "string" }
+          - { label: "Credit link (geograph.org.uk photo page)", name: "creditUrl", widget: "string" }
+          - { label: "License", name: "license", widget: "string", default: "CC BY-SA 2.0" }
 
   - name: "place_photos"
     label: "Borough & city photos (currently live)"
-    files:
-      - file: "data/processed/place-images.json"
-        label: "Borough/city photo selections"
-        name: "place-images"
-        description: >
-          What's currently showing in each borough and the London homepage's
-          photo slider - curated by curate-borough-images.ts from each
-          borough's own districts (see "District photos" above for those).
-          Same editing as District photos: click an image to preview, delete/
-          reorder/swap directly, then tick "Locked" in "Geograph photo
-          overrides" for a slug you've hand-edited so the next refresh
-          leaves it alone.
+    description: >
+      One entry per borough (e.g. richmond-upon-thames) plus "london" - what's
+      currently showing in that page's photo slider, curated by
+      curate-borough-images.ts from the borough's own districts (see
+      "District photos" for those). Same editing as District photos: search,
+      preview, delete/reorder/swap, then tick "Locked" in "Geograph photo
+      overrides" for a slug you've hand-edited so the next refresh leaves it
+      alone.
+    folder: "data/processed/place-images"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    identifier_field: "slug"
+    slug: "{{fields.slug}}"
+    summary: "{{fields.slug}} ({{fields.images}} photos)"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        summary: "{{fields.credit}}"
         fields:
-          - label: "Places"
-            name: "overrides"
-            widget: "list"
-            summary: "{{fields.slug}}"
-            fields:
-              - { label: "Slug", name: "slug", widget: "string", hint: "e.g. richmond-upon-thames, london" }
-              - label: "Images"
-                name: "images"
-                widget: "list"
-                summary: "{{fields.credit}}"
-                fields:
-                  - { label: "Image", name: "src", widget: "image", choose_url: true, hint: "R2-hosted, e.g. /images/geograph/tw11/8002714.webp" }
-                  - { label: "Width (px)", name: "width", widget: "number", value_type: "int" }
-                  - { label: "Height (px)", name: "height", widget: "number", value_type: "int" }
-                  - { label: "Credit text", name: "credit", widget: "string" }
-                  - { label: "Credit link (geograph.org.uk photo page)", name: "creditUrl", widget: "string" }
-                  - { label: "License", name: "license", widget: "string", default: "CC BY-SA 2.0" }
+          - { label: "Image", name: "src", widget: "image", choose_url: true, hint: "R2-hosted, e.g. /images/geograph/tw11/8002714.webp" }
+          - { label: "Width (px)", name: "width", widget: "number", value_type: "int" }
+          - { label: "Height (px)", name: "height", widget: "number", value_type: "int" }
+          - { label: "Credit text", name: "credit", widget: "string" }
+          - { label: "Credit link (geograph.org.uk photo page)", name: "creditUrl", widget: "string" }
+          - { label: "License", name: "license", widget: "string", default: "CC BY-SA 2.0" }

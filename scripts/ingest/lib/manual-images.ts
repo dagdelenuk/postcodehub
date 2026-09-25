@@ -1,26 +1,38 @@
+import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
+import path from "node:path";
 import type { BannerImage } from "../../../src/lib/types.js";
 
-// The on-disk shape both district-images.json and place-images.json use - a named list of {slug, images}, not a bare
-// Record<slug, images[]> - because that's what Decap CMS's file-collection + list widget can actually edit (a "files"
-// collection's fields map onto named top-level keys in the JSON file; it can't enumerate an object's own dynamic keys).
-// Same convention data/manual/banner-overrides.json already established for the Wikimedia banners.
-export interface ImageOverrideEntry {
+// district-images/ and place-images/ hold one small JSON file per slug (data/processed/district-images/tw11.json etc.),
+// not one big combined file - that's what lets Decap CMS's "folder" collection type give a real per-entry, searchable list
+// in /admin (a "files" collection with one huge list field, the earlier approach, has no way to search within the list).
+
+export interface ImageEntry {
   slug: string;
   images: BannerImage[];
 }
 
-export interface ImageOverridesFile {
-  overrides: ImageOverrideEntry[];
-}
-
-export function toOverridesFile(record: Record<string, BannerImage[]>): ImageOverridesFile {
-  return { overrides: Object.entries(record).map(([slug, images]) => ({ slug, images })) };
-}
-
-export function fromOverridesFile(parsed: Partial<ImageOverridesFile> | null | undefined): Record<string, BannerImage[]> {
+/** Every entry currently in a photo folder (district-images/ or place-images/), keyed by slug. */
+export async function readImageDir(dir: string): Promise<Record<string, BannerImage[]>> {
+  let files: string[];
+  try {
+    files = await readdir(dir);
+  } catch {
+    return {};
+  }
   const result: Record<string, BannerImage[]> = {};
-  for (const entry of parsed?.overrides ?? []) {
-    if (entry.slug && entry.images?.length > 0) result[entry.slug] = entry.images;
+  for (const file of files) {
+    if (!file.endsWith(".json")) continue;
+    try {
+      const entry = JSON.parse(await readFile(path.join(dir, file), "utf-8")) as Partial<ImageEntry>;
+      if (entry.slug && entry.images && entry.images.length > 0) result[entry.slug] = entry.images;
+    } catch {
+      // skip an unreadable/hand-broken file rather than fail the whole run
+    }
   }
   return result;
+}
+
+export async function writeImageFile(dir: string, slug: string, images: BannerImage[]): Promise<void> {
+  await mkdir(dir, { recursive: true });
+  await writeFile(path.join(dir, `${slug}.json`), JSON.stringify({ slug, images }, null, 2));
 }

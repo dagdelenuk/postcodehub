@@ -7,14 +7,14 @@ import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { fetchJson, logStep, sleep, withRetry } from "./lib/fetch-utils.js";
 import { haversineKm, loadOutcodeIndex } from "./lib/geo.js";
 import { nameSimilarity, normalizeName } from "./lib/text.js";
-import { fromOverridesFile, toOverridesFile, type ImageOverridesFile } from "./lib/manual-images.js";
+import { writeImageFile } from "./lib/manual-images.js";
 import type { BannerImage } from "../../src/lib/types.js";
 
 const STEP = "district-images";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAW_DIR = path.resolve(__dirname, "../../data/raw/geograph");
 const PROCESSED_DIR = path.resolve(__dirname, "../../data/processed");
-const OUT_PATH = path.join(PROCESSED_DIR, "district-images.json");
+const OUT_DIR = path.join(PROCESSED_DIR, "district-images");
 const MANUAL_OVERRIDES_PATH = path.resolve(__dirname, "../../data/manual/geograph-overrides.json");
 const UPLOAD_MANIFEST_PATH = path.join(RAW_DIR, "uploaded-manifest.json");
 
@@ -235,9 +235,9 @@ async function main() {
   if (!API_KEY) {
     // Optional data source: a full `npm run ingest` shouldn't fail for everyone just because this one key isn't set
     // yet (same spirit as fetch-schools.ts/fetch-health.ts proceeding without Ofsted/CQC data when their source is
-    // unreachable) - district/borough pages just keep whatever's already in district-images.json (or fall back to
-    // the Wikipedia banner, or show nothing).
-    logStep(STEP, "WARNING: GEOGRAPH_API_KEY is not set - skipping (existing data/processed/district-images.json, if any, is left untouched).");
+    // unreachable) - district/borough pages just keep whatever's already in data/processed/district-images/ (or fall
+    // back to the Wikipedia banner, or show nothing).
+    logStep(STEP, "WARNING: GEOGRAPH_API_KEY is not set - skipping (existing data/processed/district-images/ files, if any, are left untouched).");
     return;
   }
 
@@ -245,21 +245,16 @@ async function main() {
   const overrides = await loadOverrides();
   const uploaded = await loadUploadManifest();
 
-  let existing: Record<string, BannerImage[]> = {};
-  try {
-    existing = fromOverridesFile(JSON.parse(await readFile(OUT_PATH, "utf-8")) as ImageOverridesFile);
-  } catch {
-    // first run
-  }
-
-  const result: Record<string, BannerImage[]> = { ...existing };
+  let written = 0;
+  let lockedCount = 0;
 
   for (const [outcode, entry] of outcodeIndex) {
     if (outcodeFilter && !outcodeFilter.has(outcode)) continue;
     const slug = entry.outcode.slug;
     const override = overrides.get(slug);
     if (override?.locked) {
-      logStep(STEP, `${outcode}: locked via geograph-overrides.json - leaving as-is.`);
+      logStep(STEP, `${outcode}: locked via geograph-overrides.json - leaving its file as-is.`);
+      lockedCount++;
       continue;
     }
 
@@ -291,15 +286,16 @@ async function main() {
       if (image) images.push(image);
     }
 
-    if (images.length > 0) result[slug] = images;
+    if (images.length > 0) {
+      await writeImageFile(OUT_DIR, slug, images);
+      written++;
+    }
     logStep(STEP, `${outcode}: ${images.length} photo(s) selected (${ranked.length} candidates considered).`);
   }
 
-  await mkdir(PROCESSED_DIR, { recursive: true });
-  await writeFile(OUT_PATH, JSON.stringify(toOverridesFile(result), null, 2));
   await mkdir(RAW_DIR, { recursive: true });
   await writeFile(UPLOAD_MANIFEST_PATH, JSON.stringify([...uploaded], null, 2));
-  logStep(STEP, `Wrote ${OUT_PATH} (${Object.keys(result).length} districts with photos).`);
+  logStep(STEP, `Wrote ${written} district photo files to ${OUT_DIR}${lockedCount > 0 ? ` (${lockedCount} locked, left unchanged)` : ""}.`);
 }
 
 main().catch((err) => {
