@@ -26,6 +26,8 @@
     "ingest:planning": "tsx scripts/ingest/fetch-planning.ts",
     "ingest:seed": "tsx scripts/ingest/seed-events-history.ts",
     "ingest:banners": "tsx scripts/ingest/fetch-banner-images.ts",
+    "ingest:district-images": "tsx scripts/ingest/fetch-district-images.ts",
+    "ingest:curate-borough-images": "tsx scripts/ingest/curate-borough-images.ts",
     "ingest:merge": "tsx scripts/ingest/build-outcode-data.ts",
     "icons": "node scripts/generate-pwa-icons.mjs",
     "check": "node scripts/check-build.mjs",
@@ -42,10 +44,13 @@
     "esbuild": true
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1140.0",
     "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^26.4.0",
     "@types/pngjs": "^6.0.5",
     "pngjs": "^7.0.0",
-    "tsx": "^4.23.12"
+    "sharp": "^0.35.4",
+    "tsx": "^4.23.12",
+    "wrangler": "^4.140.0"
   }
 }

@@ -5,12 +5,19 @@ name: Refresh data
 #
 #   monthly    (20th)      ONS private rents, HM Land Registry house prices, FSA food hygiene ratings
 #   quarterly  (1st of Jan/Apr/Jul/Oct)  council service links, TfL journey times, EV charging, Ofcom broadband + mobile,
-#                          NHS/CQC GP ratings, DfE/Ofsted school ratings
+#                          NHS/CQC GP ratings, DfE/Ofsted school ratings, geograph.org.uk district/borough/city photos
 #                          (Ofcom only downloads when a newer release than the committed one exists)
 #
 # Health and schools only patch their two sections of the already-built data/processed files (patch-health-schools.ts),
 # rather than a full build-outcode-data.ts run - that needs every other raw source (property, crime, places...) present at
 # once, which only a complete run-all.ts pipeline guarantees.
+#
+# The photo step needs four repo secrets to actually do anything: GEOGRAPH_API_KEY (geograph.org.uk/get-api-key.php) and
+# R2_ACCOUNT_ID/R2_ACCESS_KEY_ID/R2_SECRET_ACCESS_KEY (Cloudflare dashboard: R2 > Manage R2 API Tokens - a general account
+# API token doesn't reliably carry R2 object read/write permission, confirmed live, so this needs the R2-specific S3-API
+# credential pair, not CLOUDFLARE_API_TOKEN). Skips itself cleanly if any are missing rather than
+# failing the whole workflow. The very first run (seeding ~1,600 photos) is better done manually via workflow_dispatch,
+# watched, than left to a quiet scheduled cron - see scripts/ingest/fetch-district-images.ts.
 #
 # Not scheduled: road works, flood warnings and cycle hire are fetched live in the browser; census, deprivation, road noise (Defra 2022)
 # and green space (ONS 2020) are fixed releases that only change when a new one is published.
@@ -73,6 +80,17 @@ jobs:
           npx tsx scripts/ingest/fetch-health.ts
           npx tsx scripts/ingest/fetch-schools.ts
           npx tsx scripts/ingest/patch-health-schools.ts
+
+      - name: Quarterly district/borough/city photos (geograph.org.uk)
+        if: env.RUN_QUARTERLY == 'true'
+        env:
+          GEOGRAPH_API_KEY: ${{ secrets.GEOGRAPH_API_KEY }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          npx tsx scripts/ingest/fetch-district-images.ts
+          npx tsx scripts/ingest/curate-borough-images.ts
 
       - name: Check the site still builds with the new data
         run: npm run build

@@ -65,6 +65,25 @@ export function getBannerImages(slug: string): BannerImage[] {
   return loadBanners()[slug] ?? [];
 }
 
+let cachedPlaceImages: Banners | null = null;
+
+function loadPlaceImages(): Banners {
+  if (cachedPlaceImages) return cachedPlaceImages;
+  const placeImagesPath = path.join(PROCESSED_DIR, "place-images.json");
+  cachedPlaceImages = existsSync(placeImagesPath) ? (JSON.parse(readFileSync(placeImagesPath, "utf-8")) as Banners) : {};
+  return cachedPlaceImages;
+}
+
+/**
+ * Geograph-sourced photos (fetch-district-images.ts / curate-borough-images.ts) - preferred over the Wikimedia banners
+ * above wherever available, since Geograph has real coverage of ordinary postcode districts that Wikipedia mostly
+ * doesn't. Falls back to getBannerImages(slug) only when Geograph has nothing for this slug.
+ */
+export function getPlaceImages(slug: string): BannerImage[] {
+  const geograph = loadPlaceImages()[slug];
+  return geograph && geograph.length > 0 ? geograph : getBannerImages(slug);
+}
+
 export interface FavouriteEntry {
   label: string;
   sublabel: string;

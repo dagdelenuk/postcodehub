@@ -28,3 +28,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# wrangler-generated local types (regenerate with `npx wrangler types`)
+worker-configuration.d.ts

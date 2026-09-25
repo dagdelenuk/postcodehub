@@ -33,6 +33,8 @@ const STEPS = [
   "fetch-planning.ts",
   "seed-events-history.ts",
   "fetch-banner-images.ts",
+  "fetch-district-images.ts",
+  "curate-borough-images.ts",
   "build-outcode-data.ts",
 ];
 

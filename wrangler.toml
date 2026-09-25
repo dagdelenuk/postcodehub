@@ -7,8 +7,9 @@ directory = "./dist"
 binding = "ASSETS"
 # Static assets win over the worker by default, and Astro emits stub pages for the old /property/ URLs
 # (meta refresh, query string dropped). Send those paths to the worker first so it can 301 them with the
-# query kept - see the legacy redirect in worker/index.ts. Other paths still go straight to assets.
-run_worker_first = ["/*/property", "/*/property/"]
+# query kept - see the legacy redirect in worker/index.ts. /images/geograph/* isn't a static file at all
+# (it's served from R2), so it has to reach the worker too. Other paths still go straight to assets.
+run_worker_first = ["/*/property", "/*/property/", "/images/geograph/*"]
 
 # GITHUB_OAUTH_ID is not secret (a GitHub OAuth App's client ID is public by
 # design - it's meant to appear in the authorize URL). GITHUB_OAUTH_SECRET is
@@ -16,3 +17,8 @@ run_worker_first = ["/*/property", "/*/property/"]
 # Secrets), never committed here.
 [vars]
 GITHUB_OAUTH_ID = "Ov23liD29AaxFDktRQGq"
+
+# Public photos sourced from geograph.org.uk (CC BY-SA 2.0), uploaded by scripts/ingest/fetch-district-images.ts.
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "postcodehubuk-bucket"

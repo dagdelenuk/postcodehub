@@ -40,3 +40,32 @@ collections:
                   - { label: "Credit text", name: "credit", widget: "string", hint: "Shown in the banner's corner, e.g. \"Jane Smith · CC BY 4.0 · Wikimedia Commons\"" }
                   - { label: "Credit link", name: "creditUrl", widget: "string", hint: "Where the credit text links to" }
                   - { label: "License", name: "license", widget: "string", hint: "e.g. CC BY 4.0, or \"All rights reserved (used with permission)\"" }
+
+  - name: "geograph_overrides"
+    label: "Geograph photo overrides"
+    files:
+      - file: "data/manual/geograph-overrides.json"
+        label: "District/borough/city Geograph photo overrides"
+        name: "geograph-overrides"
+        description: >
+          Corrects what fetch-district-images.ts picked automatically from
+          geograph.org.uk for a district, borough or city slug (e.g. "tw11",
+          "richmond-upon-thames", "london"). Find a photo's ID in its
+          geograph.org.uk/photo/<id> URL.
+        fields:
+          - label: "Overrides"
+            name: "overrides"
+            widget: "list"
+            summary: "{{fields.slug}}"
+            fields:
+              - { label: "Slug", name: "slug", widget: "string", hint: "e.g. tw11, richmond-upon-thames, london" }
+              - { label: "Include these photo IDs", name: "include", widget: "list", required: false, field: { label: "Photo ID", name: "id", widget: "string" } }
+              - { label: "Exclude these photo IDs", name: "exclude", widget: "list", required: false, field: { label: "Photo ID", name: "id", widget: "string" } }
+              - label: "Locked"
+                name: "locked"
+                widget: "boolean"
+                default: false
+                hint: >
+                  When on, the next refresh leaves this slug's photos exactly
+                  as they currently are instead of re-picking them - set this
+                  once you're happy with a slug's Include/Exclude list above.

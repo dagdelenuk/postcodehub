@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { websiteJsonLd } from "../lib/seo";
 import FavoriteStar from "../components/FavoriteStar.astro";
 import PostcodeSearch from "../components/PostcodeSearch.astro";
-import { getBannerImages, getFavouritesLookup, loadHierarchy } from "../lib/data";
+import { getPlaceImages, getFavouritesLookup, loadHierarchy } from "../lib/data";
 
 const hierarchy = loadHierarchy();
 const favouritesLookup = getFavouritesLookup();
@@ -40,7 +40,7 @@ const favouritesLookup = getFavouritesLookup();
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2" data-favorite-list>
       {
         hierarchy.cities.map((city) => {
-          const thumb = getBannerImages(city.slug)[0];
+          const thumb = getPlaceImages(city.slug)[0];
           const favKey = `city:${city.slug}`;
           return (
             <div class="relative min-w-0 rounded-lg border border-stone-200 bg-white transition-colors" data-favorite-key={favKey}>

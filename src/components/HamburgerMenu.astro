@@ -1,5 +1,5 @@
 ---
-import { districtLocalName, getBannerImages, getBorough, getCity, loadHierarchy, partitionDistrictsForNav } from "../lib/data";
+import { districtLocalName, getPlaceImages, getBorough, getCity, loadHierarchy, partitionDistrictsForNav } from "../lib/data";
 import FavoriteStar from "./FavoriteStar.astro";
 import PartBadge from "./PartBadge.astro";
 
@@ -105,7 +105,7 @@ const pathLinks = [
           <p class="px-3 pt-2 pb-1 text-xs font-medium uppercase tracking-wide text-stone-400">Boroughs</p>
           <ul data-favorite-list>
             {[...city.boroughs].sort((a, b) => a.name.localeCompare(b.name)).map((b) => {
-              const thumb = getBannerImages(b.slug)[0];
+              const thumb = getPlaceImages(b.slug)[0];
               const favKey = `borough:${b.slug}`;
               return (
                 <li class="flex items-center rounded-md transition-colors" data-favorite-key={favKey}>

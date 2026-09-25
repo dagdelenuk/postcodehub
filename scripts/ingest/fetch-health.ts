@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { fetchJson, fetchText, logStep, sleep, withRetry } from "./lib/fetch-utils.js";
 import { loadOutcodeIndex, postcodeToOutcode } from "./lib/geo.js";
 import { streamOdsSheetRows } from "./lib/ods.js";
+import { nameSimilarity, normalizeName } from "./lib/text.js";
 import type { GpSurgery, HealthData } from "../../src/lib/types.js";
 
 const STEP = "health";
@@ -91,32 +92,6 @@ async function getOrgDetail(orgId: string): Promise<GpSurgery> {
 // entries by fuzzy name similarity instead, which catches those while leaving
 // distinct real organisations that happen to share a generic ODS name (e.g.
 // two different "Dental Surgery" practices in different postcodes) alone.
-function normalizeName(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/^the\s+/, "")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-}
-
-function levenshtein(a: string, b: string): number {
-  const dp: number[][] = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
-  for (let i = 0; i <= a.length; i++) dp[i][0] = i;
-  for (let j = 0; j <= b.length; j++) dp[0][j] = j;
-  for (let i = 1; i <= a.length; i++) {
-    for (let j = 1; j <= b.length; j++) {
-      dp[i][j] = a[i - 1] === b[j - 1] ? dp[i - 1][j - 1] : 1 + Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]);
-    }
-  }
-  return dp[a.length][b.length];
-}
-
-function nameSimilarity(a: string, b: string): number {
-  if (a === b) return 1;
-  const maxLen = Math.max(a.length, b.length);
-  return maxLen === 0 ? 1 : 1 - levenshtein(a, b) / maxLen;
-}
-
 const NAME_MATCH_THRESHOLD = 0.82;
 
 function dedupeOrgs(orgs: GpSurgery[]): GpSurgery[] {
