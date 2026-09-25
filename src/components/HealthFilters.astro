@@ -1,11 +1,15 @@
 ---
+import type { GpSurgery } from "../lib/types";
+
 interface Props {
   counts: { gp: number; dentist: number; pharmacy: number; hospital: number };
   /** Only passed on the borough health page - one pill per post town, filtering by whole outcode group. */
   postTowns?: string[];
+  /** GP surgeries, so a CQC rating pill row can be offered when any of them carry a rating. */
+  ratedOrgs?: GpSurgery[];
 }
 
-const { counts, postTowns = [] } = Astro.props;
+const { counts, postTowns = [], ratedOrgs = [] } = Astro.props;
 
 const TYPES = [
   { kind: "gp", label: "GP surgeries" },
@@ -15,9 +19,11 @@ const TYPES = [
 ] as const;
 
 const available = TYPES.filter((t) => counts[t.kind] > 0);
+const RATING_ORDER = ["Outstanding", "Good", "Requires improvement", "Inadequate"];
+const ratings = RATING_ORDER.filter((r) => ratedOrgs.some((o) => o.cqcRating === r));
 const PILL_BASE = "text-xs px-3 py-1 rounded-full border whitespace-nowrap transition-colors";
 
-const hasAnyFilters = available.length > 1 || postTowns.length > 1;
+const hasAnyFilters = available.length > 1 || ratings.length > 0 || postTowns.length > 1;
 ---
 
 {
@@ -30,6 +36,16 @@ const hasAnyFilters = available.length > 1 || postTowns.length > 1;
             {available.map((t) => (
               <button type="button" class={PILL_BASE} data-filter-group="kind" data-filter-value={t.kind}>
                 {t.label}
+              </button>
+            ))}
+          </div>
+        )}
+        {ratings.length > 0 && (
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs text-stone-400">CQC rating:</span>
+            {ratings.map((r) => (
+              <button type="button" class={PILL_BASE} data-filter-group="rating" data-filter-value={r}>
+                {r}
               </button>
             ))}
           </div>

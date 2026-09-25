@@ -1,14 +1,24 @@
 import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { fetchJson, logStep, sleep, withRetry } from "./lib/fetch-utils.js";
+import { fetchJson, fetchText, logStep, sleep, withRetry } from "./lib/fetch-utils.js";
 import { loadOutcodeIndex, postcodeToOutcode } from "./lib/geo.js";
+import { streamOdsSheetRows } from "./lib/ods.js";
 import type { GpSurgery, HealthData } from "../../src/lib/types.js";
 
 const STEP = "health";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAW_DIR = path.resolve(__dirname, "../../data/raw");
 const ORD_BASE = "https://directory.spineservices.nhs.uk/ORD/2-0-0";
+const CQC_DATA_PAGE = "https://www.cqc.org.uk/about-us/transparency/using-cqc-data";
+
+// GP practices are the only ODS category CQC rates on its Outstanding/Good/Requires improvement/Inadequate scale in a way
+// that's both matchable by ODS code and actually populated: pharmacies aren't CQC-regulated at all (that's the GPhC),
+// hospitals in the ODS list don't carry a usable CQC-matching ODS code, and CQC's own data confirms dental practices are
+// almost universally marked "Not applicable" for an overall rating (verified live: 4,008 of 4,016 English dental locations),
+// so showing "no rating" for nearly every dentist would just be noise rather than useful signal.
+const CQC_MATCHED_CATEGORIES = new Set(["GP Practices"]);
+const CQC_GRADED_RATINGS = new Set(["Outstanding", "Good", "Requires improvement", "Inadequate"]);
 
 // NHS ODS role codes, confirmed live against /ORD/2-0-0/roles.
 const ROLES = {
@@ -138,6 +148,82 @@ function dedupeOrgs(orgs: GpSurgery[]): GpSurgery[] {
   return deduped;
 }
 
+interface CqcRating {
+  rating: string;
+  lastInspection: string | null;
+  url: string | null;
+}
+
+/**
+ * CQC's "Care directory with ratings" is a monthly ODS export (no API key needed, unlike their Syndication API) with one
+ * row per location per rating domain (Safe/Effective/Caring/Responsive/Well-led/Overall) per service population group, so
+ * the same location's Overall row repeats several times with identical values - only its "Location ODS Code" is unique per
+ * location, and only GP practices carry one that lines up with the ODS codes fetched above (see CQC_MATCHED_CATEGORIES).
+ */
+async function fetchCqcRatings(): Promise<Map<string, CqcRating>> {
+  const ratings = new Map<string, CqcRating>();
+  try {
+    const page = await fetchText(CQC_DATA_PAGE);
+    const match = page.match(/https:\/\/www\.cqc\.org\.uk\/system\/files\/[^"]*Latest_ratings\.ods/);
+    if (!match) {
+      logStep(STEP, "WARNING: could not find the CQC 'Care directory with ratings' file link — proceeding without CQC ratings.");
+      return ratings;
+    }
+    const url = match[0];
+    const dest = path.join(RAW_DIR, "cqc-latest-ratings.ods");
+    await mkdir(RAW_DIR, { recursive: true });
+    logStep(STEP, `Downloading ${url}...`);
+    const res = await fetch(url, { signal: AbortSignal.timeout(300000) });
+    if (!res.ok) throw new Error(`GET ${url} -> ${res.status}`);
+    await writeFile(dest, Buffer.from(await res.arrayBuffer()));
+
+    // ~250k locations x up to 6 domain rows x several population groups makes this sheet's XML over a gigabyte uncompressed
+    // - well past Node's maximum string length - so it's streamed row by row rather than read into memory at once.
+    let idx: Record<string, number> | null = null;
+    let rowNum = 0;
+    await streamOdsSheetRows(dest, "Locations", (row) => {
+      rowNum++;
+      if (rowNum === 1) {
+        const col = (name: string) => row.indexOf(name);
+        idx = { odsCode: col("Location ODS Code"), category: col("Location Primary Inspection Category"), rating: col("Latest Rating"), domain: col("Domain"), reportType: col("Report Type"), date: col("Publication Date"), url: col("URL") };
+        if (Object.values(idx).some((i) => i === -1)) idx = null;
+        return;
+      }
+      if (!idx) return; // header didn't match what we expect - skip every row rather than misread columns
+      if (row[idx.domain] !== "Overall" || row[idx.reportType] !== "Location") return;
+      const odsCode = row[idx.odsCode];
+      const category = row[idx.category];
+      const rating = row[idx.rating];
+      if (typeof odsCode !== "string" || !odsCode || typeof category !== "string" || !CQC_MATCHED_CATEGORIES.has(category)) return;
+      if (typeof rating !== "string" || !CQC_GRADED_RATINGS.has(rating)) return;
+      const dateRaw = row[idx.date];
+      ratings.set(odsCode, {
+        rating,
+        lastInspection: typeof dateRaw === "string" ? dateRaw.slice(0, 10) : null,
+        url: typeof row[idx.url] === "string" ? (row[idx.url] as string) : null,
+      });
+    });
+    if (rowNum === 0) {
+      logStep(STEP, "WARNING: CQC ratings sheet 'Locations' was empty or not found — proceeding without CQC ratings.");
+    } else if (ratings.size === 0) {
+      logStep(STEP, "WARNING: CQC ratings file header didn't match the expected columns — proceeding without CQC ratings.");
+    } else {
+      logStep(STEP, `Loaded CQC ratings for ${ratings.size} GP practices.`);
+    }
+  } catch (err) {
+    logStep(STEP, `WARNING: fetching CQC ratings failed (${(err as Error).message}) — proceeding without CQC ratings.`);
+  }
+  return ratings;
+}
+
+/** Merges a CQC rating onto each org by NHS ODS code, returning a fresh array (only meaningful for the GP surgeries list). */
+function mergeCqcRatings(orgs: GpSurgery[], cqcRatings: Map<string, CqcRating>): GpSurgery[] {
+  return orgs.map((org) => {
+    const cqc = cqcRatings.get(org.odsCode);
+    return cqc ? { ...org, cqcRating: cqc.rating, cqcLastInspection: cqc.lastInspection, cqcUrl: cqc.url } : { ...org, cqcRating: null, cqcLastInspection: null, cqcUrl: null };
+  });
+}
+
 async function fetchCategory(outcode: string, roleId: string, nameFilter?: RegExp): Promise<GpSurgery[]> {
   let orgs = await listActiveOrgs(outcode, roleId);
   if (nameFilter) orgs = orgs.filter((org) => nameFilter.test(org.Name));
@@ -161,6 +247,7 @@ async function fetchCategory(outcode: string, roleId: string, nameFilter?: RegEx
 
 async function main() {
   const outcodeIndex = await loadOutcodeIndex();
+  const cqcRatings = await fetchCqcRatings();
   const byOutcode: Record<string, HealthData> = {};
 
   for (const outcode of outcodeIndex.keys()) {
@@ -170,7 +257,7 @@ async function main() {
       fetchCategory(outcode, ROLES.pharmacies),
       fetchCategory(outcode, ROLES.hospitals, /hospital/i),
     ]);
-    byOutcode[outcode] = { gpSurgeries, dentists, pharmacies, hospitals };
+    byOutcode[outcode] = { gpSurgeries: mergeCqcRatings(gpSurgeries, cqcRatings), dentists, pharmacies, hospitals };
     logStep(
       STEP,
       `${outcode}: ${gpSurgeries.length} GPs, ${dentists.length} dentists, ${pharmacies.length} pharmacies, ${hospitals.length} hospitals`

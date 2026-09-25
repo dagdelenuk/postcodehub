@@ -74,6 +74,15 @@ export interface GpSurgery {
   /** Geocoded from postcode at merge time - null if the postcode couldn't be resolved. */
   latitude: number | null;
   longitude: number | null;
+  /**
+   * CQC's latest published rating for this location, matched by NHS ODS code. Only populated for GP surgeries: pharmacies
+   * aren't CQC-regulated, hospitals don't match cleanly by ODS code, and CQC doesn't publish a meaningful overall rating
+   * for dental practices (almost all come back "Not applicable").
+   */
+  cqcRating?: string | null;
+  /** ISO date (YYYY-MM-DD) the current rating's report was published. */
+  cqcLastInspection?: string | null;
+  cqcUrl?: string | null;
 }
 
 export interface HealthData {

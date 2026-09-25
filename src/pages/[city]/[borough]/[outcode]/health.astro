@@ -33,7 +33,7 @@ const placeName = displayPlaceName(data.postTown, data.wards, data.city);
   <h1 class="text-2xl font-bold mb-4">Health services in {placeName} - {data.outcode}, {data.borough} ({totalServices})</h1>
 
   <LeafletAssets />
-  <HealthFilters counts={counts} />
+  <HealthFilters counts={counts} ratedOrgs={data.health.gpSurgeries} />
 
   {
     [
@@ -96,5 +96,5 @@ const placeName = displayPlaceName(data.postTown, data.wards, data.city);
     </a>
   </section>
 
-  <p class="text-xs text-stone-400 mt-4">Source: NHS Organisation Data Service (ODS).</p>
+  <p class="text-xs text-stone-400 mt-4">Sources: NHS Organisation Data Service (ODS); Care Quality Commission ratings.</p>
 </LocalityLayout>
