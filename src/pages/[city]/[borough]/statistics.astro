@@ -113,45 +113,42 @@ const compareDistricts = borough.outcodes
   .map((o) => o.outcode)
   .join(",");
 
-// Key-figures summaries and top-value blurbs, rolled out for Richmond upon Thames only for now.
-const isRichmond = borough.slug === "richmond-upon-thames";
-const housingSummary = isRichmond ? boroughSectionSummary("housing", borough.slug) : null;
-const demographicsSummary = isRichmond ? boroughSectionSummary("demographics", borough.slug) : null;
-const crimeSummary = isRichmond ? boroughSectionSummary("crime", borough.slug) : null;
-const connectivitySummary = isRichmond ? boroughSectionSummary("connectivity", borough.slug) : null;
-const environmentSummary = isRichmond ? boroughSectionSummary("environment", borough.slug) : null;
+// Key-figures summaries and top-value blurbs, comparing this borough with every other London borough.
+const housingSummary = boroughSectionSummary("housing", borough.slug);
+const demographicsSummary = boroughSectionSummary("demographics", borough.slug);
+const crimeSummary = boroughSectionSummary("crime", borough.slug);
+const connectivitySummary = boroughSectionSummary("connectivity", borough.slug);
+const environmentSummary = boroughSectionSummary("environment", borough.slug);
 
 const councilTaxSummary =
-  isRichmond && councilTax && londonTax.D != null && councilTax.bandD !== londonTax.D
+  councilTax && londonTax.D != null && councilTax.bandD !== londonTax.D
     ? `Band D costs ${gbp.format(councilTax.bandD)}, ${councilTax.bandD > londonTax.D ? "above" : "below"} the London average of ${gbp.format(londonTax.D)}.`
     : null;
 
-const postTownSalesSummary = isRichmond ? topAndBottom(postTownChart.boroughs.map((p) => ({ label: p.name, value: p.series.at(-1) ?? null })), (n) => `${n} sales`) : null;
+const postTownSalesSummary = topAndBottom(postTownChart.boroughs.map((p) => ({ label: p.name, value: p.series.at(-1) ?? null })), (n) => `${n} sales`);
 
-// Quietest/greenest of Richmond's own postcode districts - NoiseGreenSection's own columns are just [borough, London], so this is built here from the same per-district loaders the district page uses.
-const richmondNoiseGreenSummary = isRichmond
-  ? (() => {
-      const primary = borough.outcodes.filter((o) => o.isPrimaryBorough);
-      const rows = primary.map((o) => {
-        const n = getNoise(o.outcode, city.slug, borough.slug)?.outcode;
-        const g = getGreenspace(borough.slug, o.outcode)?.outcode;
-        return { outcode: o.outcode, noise55: n ? n.slice(4).reduce((a, b) => a + b, 0) : null, within300m: g?.within300m ?? null };
-      });
-      const noiseLine = topAndBottom(
-        rows.map((r) => ({ label: r.outcode, value: r.noise55 })),
-        (n) => `${n.toFixed(1)}%`,
-      );
-      const greenLine = topAndBottom(
-        rows.map((r) => ({ label: r.outcode, value: r.within300m })),
-        (n) => `${n.toFixed(1)}%`,
-      );
-      const parts = [
-        noiseLine ? `Road noise (55dB+ of the area) - ${noiseLine}` : null,
-        greenLine ? `Within 300m of a park - ${greenLine}` : null,
-      ].filter((p): p is string => p !== null);
-      return parts.length > 0 ? parts.join(" ") : null;
-    })()
-  : null;
+// Quietest/greenest of the borough's own postcode districts - NoiseGreenSection's own columns are just [borough, London], so this is built here from the same per-district loaders the district page uses.
+const noiseGreenTopSummary = (() => {
+  const primary = borough.outcodes.filter((o) => o.isPrimaryBorough);
+  const rows = primary.map((o) => {
+    const n = getNoise(o.outcode, city.slug, borough.slug)?.outcode;
+    const g = getGreenspace(borough.slug, o.outcode)?.outcode;
+    return { outcode: o.outcode, noise55: n ? n.slice(4).reduce((a, b) => a + b, 0) : null, within300m: g?.within300m ?? null };
+  });
+  const noiseLine = topAndBottom(
+    rows.map((r) => ({ label: r.outcode, value: r.noise55 })),
+    (n) => `${n.toFixed(1)}%`,
+  );
+  const greenLine = topAndBottom(
+    rows.map((r) => ({ label: r.outcode, value: r.within300m })),
+    (n) => `${n.toFixed(1)}%`,
+  );
+  const parts = [
+    noiseLine ? `Road noise (55dB+ of the area) - ${noiseLine}` : null,
+    greenLine ? `Within 300m of a park - ${greenLine}` : null,
+  ].filter((p): p is string => p !== null);
+  return parts.length > 0 ? parts.join(" ") : null;
+})();
 ---
 
 <BaseLayout
@@ -242,7 +239,7 @@ const richmondNoiseGreenSummary = isRichmond
         )
       }
 
-      <HousingMarket b={housing} summary={housingSummary ?? undefined} showTopValues={isRichmond} />
+      <HousingMarket b={housing} summary={housingSummary ?? undefined} showTopValues />
 
       {
         postTownChart.boroughs.length > 0 && (
@@ -272,7 +269,7 @@ const richmondNoiseGreenSummary = isRichmond
             ]}
             source={demographics.source}
             summary={demographicsSummary ?? undefined}
-            showTopValues={isRichmond}
+            showTopValues
           />
         </section>
       )
@@ -296,7 +293,7 @@ const richmondNoiseGreenSummary = isRichmond
               intro: `Monthly crime trend across every postcode area in ${borough.name}, against the borough average.`,
             }}
             summary={crimeSummary ?? undefined}
-            showTopValues={isRichmond}
+            showTopValues
           />
           <div class="mt-8">
             <h2 class="text-2xl font-bold mb-1">Crime in {borough.name} compared with London</h2>
@@ -382,7 +379,7 @@ const richmondNoiseGreenSummary = isRichmond
               noiseScope={`within a mile of the centre of each of ${borough.name}'s postcode districts (averaged)`}
               map={{ latitude: summary.latitude, longitude: summary.longitude, zoom: 12 }}
               summary={environmentSummary ?? undefined}
-              topSummary={richmondNoiseGreenSummary ?? undefined}
+              topSummary={noiseGreenTopSummary ?? undefined}
             />
           </div>
         )

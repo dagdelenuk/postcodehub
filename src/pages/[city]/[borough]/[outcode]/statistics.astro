@@ -78,21 +78,20 @@ const tabs = [
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 const recentSales = data.property.sales.slice(0, 40);
 
-// Key-figures summaries and top-value blurbs, rolled out for Richmond upon Thames only for now.
-const isRichmond = borough === "richmond-upon-thames";
-const housingSummary = isRichmond ? districtSectionSummary("housing", data.outcode) : null;
-const demographicsSummary = isRichmond ? districtSectionSummary("demographics", data.outcode) : null;
-const crimeSummary = isRichmond ? districtSectionSummary("crime", data.outcode) : null;
-const connectivitySummary = isRichmond ? districtSectionSummary("connectivity", data.outcode) : null;
-const environmentSummary = isRichmond ? districtSectionSummary("environment", data.outcode) : null;
+// Key-figures summaries and top-value blurbs, comparing this district with the other postcode districts in its own borough.
+const housingSummary = districtSectionSummary("housing", data.outcode);
+const demographicsSummary = districtSectionSummary("demographics", data.outcode);
+const crimeSummary = districtSectionSummary("crime", data.outcode);
+const connectivitySummary = districtSectionSummary("connectivity", data.outcode);
+const environmentSummary = districtSectionSummary("environment", data.outcode);
 
 const councilTaxSummaryText =
-  isRichmond && councilTax && councilTax.bandD !== londonAverage.D
+  councilTax && councilTax.bandD !== londonAverage.D
     ? `Band D costs ${gbp.format(councilTax.bandD)}, ${councilTax.bandD > londonAverage.D ? "above" : "below"} the London average of ${gbp.format(londonAverage.D)}.`
     : null;
 
 const recentSalesSummary =
-  isRichmond && recentSales.length > 0
+  recentSales.length > 0
     ? (() => {
         const top = [...recentSales].sort((a, b) => b.price - a.price)[0];
         return `Highest recorded sale here: ${gbp.format(top.price)}, ${top.address || top.postcode}, ${top.dateOfTransfer}.`;
@@ -210,7 +209,7 @@ const environmentUpdated = [
     )
   }
 
-    <HousingMarket b={housing} summary={housingSummary ?? undefined} showTopValues={isRichmond} />
+    <HousingMarket b={housing} summary={housingSummary ?? undefined} showTopValues />
 
   <p class="text-stone-500 mb-6">{data.property.sales.length} recorded sales over the last two years.</p>
 
@@ -268,7 +267,7 @@ const environmentUpdated = [
           source={demographics.source}
           note={`${data.outcode} figures are built from the census neighbourhoods (output areas) whose postcodes mostly fall in ${data.outcode}, so they may not match its boundary exactly.`}
           summary={demographicsSummary ?? undefined}
-          showTopValues={isRichmond}
+          showTopValues
         />
       </section>
     )
@@ -293,7 +292,7 @@ const environmentUpdated = [
             intro: `Monthly crime trend across every postcode area in ${data.borough}, against the borough average.`,
           }}
           summary={crimeSummary ?? undefined}
-          showTopValues={isRichmond}
+          showTopValues
         />
       </section>
     )

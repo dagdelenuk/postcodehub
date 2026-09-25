@@ -30,34 +30,31 @@ const admissionsUrl = getSchoolAdmissionsUrl(borough.slug);
 const hasCompositeLabelNote = allSchools.some((s) => s.ofstedRatingDerivedFromAreaGrades);
 const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.localeCompare(b));
 
-// Ofsted-ratings summary, rolled out for Richmond upon Thames only for now.
-const isRichmond = borough.slug === "richmond-upon-thames";
-const ratingsSummary = isRichmond
-  ? (() => {
-      const rated = allSchools.filter((s) => s.ofstedRating);
-      if (rated.length === 0) return null;
-      const pct = (n: number) => `${((n / rated.length) * 100).toFixed(0)}%`;
-      const counts = new Map<string, number>();
-      for (const s of rated) counts.set(s.ofstedRating!, (counts.get(s.ofstedRating!) ?? 0) + 1);
-      const breakdown = [...counts.entries()]
-        .sort(([, a], [, b]) => b - a)
-        .map(([rating, count]) => `${pct(count)} ${rating}`)
-        .join(", ");
-      const primary = allSchools.filter((s) => s.phaseOfEducation === "Primary").length;
-      const secondary = allSchools.filter((s) => s.phaseOfEducation === "Secondary").length;
-      const other = totalSchools - primary - secondary;
-      const phaseParts = [
-        primary > 0 ? `${primary} primary` : null,
-        secondary > 0 ? `${secondary} secondary` : null,
-        other > 0 ? `${other} other (independent, special or further/higher education)` : null,
-      ].filter((p): p is string => p !== null);
-      return {
-        headline: `Of the ${rated.length} schools in ${borough.name} with a current Ofsted rating (out of ${totalSchools} in total), ${breakdown}.`,
-        phases: phaseParts.length > 0 ? `By phase: ${phaseParts.join(", ")}.` : null,
-        unrated: totalSchools - rated.length,
-      };
-    })()
-  : null;
+// Ofsted-ratings summary.
+const ratingsSummary = (() => {
+  const rated = allSchools.filter((s) => s.ofstedRating);
+  if (rated.length === 0) return null;
+  const pct = (n: number) => `${((n / rated.length) * 100).toFixed(0)}%`;
+  const counts = new Map<string, number>();
+  for (const s of rated) counts.set(s.ofstedRating!, (counts.get(s.ofstedRating!) ?? 0) + 1);
+  const breakdown = [...counts.entries()]
+    .sort(([, a], [, b]) => b - a)
+    .map(([rating, count]) => `${pct(count)} ${rating}`)
+    .join(", ");
+  const primary = allSchools.filter((s) => s.phaseOfEducation === "Primary").length;
+  const secondary = allSchools.filter((s) => s.phaseOfEducation === "Secondary").length;
+  const other = totalSchools - primary - secondary;
+  const phaseParts = [
+    primary > 0 ? `${primary} primary` : null,
+    secondary > 0 ? `${secondary} secondary` : null,
+    other > 0 ? `${other} other (independent, special or further/higher education)` : null,
+  ].filter((p): p is string => p !== null);
+  return {
+    headline: `Of the ${rated.length} schools in ${borough.name} with a current Ofsted rating (out of ${totalSchools} in total), ${breakdown}.`,
+    phases: phaseParts.length > 0 ? `By phase: ${phaseParts.join(", ")}.` : null,
+    unrated: totalSchools - rated.length,
+  };
+})();
 const childcareGroups = getBoroughChildcare(city.slug, borough.slug).map((g) => ({
   ...g,
   placeName: displayPlaceName(g.postTown, g.wards, city.name),
