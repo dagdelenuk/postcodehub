@@ -7,9 +7,11 @@ interface Props {
   mobile: { columns: { label: string; data: MobileCoverageMetrics }[]; period: string; source: string; intro: string } | null;
   /** When set (outcode pages), each table is followed by its Ofcom address-checker card. */
   checkerOutcode?: string;
+  /** Key-figures summary against peers, shown once above the Broadband sub-section. */
+  summary?: string;
 }
 
-const { broadband, mobile, checkerOutcode } = Astro.props;
+const { broadband, mobile, checkerOutcode, summary } = Astro.props;
 
 const BROADBAND_ROWS = [
   { key: "gigabit", label: "Gigabit (1 Gbit/s+) available", goodHigh: true },
@@ -41,6 +43,8 @@ const checkerCard = (kind: "broadband" | "mobile") =>
     ? { icon: "📶", title: "Broadband coverage", desc: "Available speeds and providers for an exact address, via Ofcom's checker." }
     : { icon: "📱", title: "Mobile coverage", desc: "Indoor/outdoor signal by network for an exact address, via Ofcom's checker." };
 ---
+
+{summary && <p class="text-sm text-stone-700 bg-emerald-50/60 border border-emerald-100 rounded-md px-3 py-2 mb-5">{summary}</p>}
 
 {
   broadband && (

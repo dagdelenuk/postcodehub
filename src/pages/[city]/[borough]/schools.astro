@@ -29,6 +29,35 @@ const totalSchools = allSchools.length;
 const admissionsUrl = getSchoolAdmissionsUrl(borough.slug);
 const hasCompositeLabelNote = allSchools.some((s) => s.ofstedRatingDerivedFromAreaGrades);
 const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.localeCompare(b));
+
+// Ofsted-ratings summary, rolled out for Richmond upon Thames only for now.
+const isRichmond = borough.slug === "richmond-upon-thames";
+const ratingsSummary = isRichmond
+  ? (() => {
+      const rated = allSchools.filter((s) => s.ofstedRating);
+      if (rated.length === 0) return null;
+      const pct = (n: number) => `${((n / rated.length) * 100).toFixed(0)}%`;
+      const counts = new Map<string, number>();
+      for (const s of rated) counts.set(s.ofstedRating!, (counts.get(s.ofstedRating!) ?? 0) + 1);
+      const breakdown = [...counts.entries()]
+        .sort(([, a], [, b]) => b - a)
+        .map(([rating, count]) => `${pct(count)} ${rating}`)
+        .join(", ");
+      const primary = allSchools.filter((s) => s.phaseOfEducation === "Primary").length;
+      const secondary = allSchools.filter((s) => s.phaseOfEducation === "Secondary").length;
+      const other = totalSchools - primary - secondary;
+      const phaseParts = [
+        primary > 0 ? `${primary} primary` : null,
+        secondary > 0 ? `${secondary} secondary` : null,
+        other > 0 ? `${other} other (independent, special or further/higher education)` : null,
+      ].filter((p): p is string => p !== null);
+      return {
+        headline: `Of the ${rated.length} schools in ${borough.name} with a current Ofsted rating (out of ${totalSchools} in total), ${breakdown}.`,
+        phases: phaseParts.length > 0 ? `By phase: ${phaseParts.join(", ")}.` : null,
+        unrated: totalSchools - rated.length,
+      };
+    })()
+  : null;
 const childcareGroups = getBoroughChildcare(city.slug, borough.slug).map((g) => ({
   ...g,
   placeName: displayPlaceName(g.postTown, g.wards, city.name),
@@ -55,6 +84,22 @@ const totalChildcare = childcareGroups.reduce((sum, g) => sum + g.providers.leng
 
   <section class="mx-auto max-w-5xl px-4 py-6">
     <h1 class="text-2xl font-bold mb-4">Schools in {borough.name} ({totalSchools})</h1>
+
+    {
+      ratingsSummary && (
+        <div class="rounded-lg border border-emerald-100 bg-emerald-50/60 p-4 mb-6" data-schools-summary>
+          <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-1">At a glance</p>
+          <p class="text-sm text-stone-700 leading-relaxed">
+            {ratingsSummary.headline} {ratingsSummary.phases}
+            {ratingsSummary.unrated > 0 && ` ${ratingsSummary.unrated} have no current Ofsted rating (often a new or independent school).`}
+          </p>
+          <p class="text-xs text-stone-500 mt-2">
+            This is Ofsted inspection ratings only, from DfE Get Information about Schools - we don't hold exam or SATs performance
+            data (GCSE or KS2 league tables) for individual schools.
+          </p>
+        </div>
+      )
+    }
 
     <LeafletAssets />
     <SchoolFilters schools={allSchools} postTowns={postTowns} />

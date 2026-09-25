@@ -12,9 +12,13 @@ interface Props {
   source: string;
   /** Extra caveat shown under the tables (e.g. that a district's figures are apportioned from output areas). */
   note?: string;
+  /** Key-figures summary against peers, shown once above the age/tenure table. */
+  summary?: string;
+  /** Adds a one-line "largest age band / most common tenure" blurb. */
+  showTopValues?: boolean;
 }
 
-const { columns, source, note } = Astro.props;
+const { columns, source, note, summary, showTopValues = false } = Astro.props;
 const [focus, ...others] = columns;
 const london = columns[columns.length - 1];
 
@@ -76,6 +80,16 @@ const GROUPS: { title: string; rows: { label: string; get: (d: DemographicsWithD
 
 // Neutral above/below marker against London - demographics aren't good or bad.
 const vsLondon = (v: number, lon: number) => (Math.abs(v - lon) < 0.05 ? null : v > lon ? "above" : "below");
+
+const topValueLine = showTopValues
+  ? (() => {
+      const ageRows = GROUPS[0].rows;
+      const topAge = [...ageRows].sort((a, b) => b.get(focus.data) - a.get(focus.data))[0];
+      const tenureRows = GROUPS[2].rows;
+      const topTenure = [...tenureRows].sort((a, b) => b.get(focus.data) - a.get(focus.data))[0];
+      return `Largest age band: ${topAge.label.toLowerCase()} (${p1(topAge.get(focus.data))}). Most common tenure: ${topTenure.label.toLowerCase()} (${p1(topTenure.get(focus.data))}).`;
+    })()
+  : null;
 ---
 
 
@@ -84,6 +98,8 @@ const vsLondon = (v: number, lon: number) => (Math.abs(v - lon) < 0.05 ? null : 
   <p class="text-stone-500 mb-3 text-sm">
     {nf.format(focus.data.population)} residents at the 2021 Census{others.length > 0 ? `, compared with ${others.map((o) => o.label).join(" and ")}` : ""}.
   </p>
+  {summary && <p class="text-sm text-stone-700 bg-emerald-50/60 border border-emerald-100 rounded-md px-3 py-2 mb-3">{summary}</p>}
+  {topValueLine && <p class="text-sm text-stone-600 mb-3">{topValueLine}</p>}
   <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
     <table class="w-full text-sm">
       <thead>

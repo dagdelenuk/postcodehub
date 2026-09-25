@@ -3,6 +3,7 @@ import BoroughTrendChart from "./BoroughTrendChart.astro";
 import type { CityTrendData } from "../lib/data";
 import type { getBoroughPostTownPrices, getHpi, getRents } from "../lib/data";
 import type { RentBedroomKey } from "../lib/types";
+import { topAndBottom } from "../lib/topValues";
 
 interface Props {
   b: {
@@ -17,9 +18,13 @@ interface Props {
   chartId?: string;
   /** London as a whole: no "against London" comparison columns or duplicate cards. */
   solo?: boolean;
+  /** Key-figures summary against peers, shown once above the rents section. */
+  summary?: string;
+  /** Adds a one-line highest/lowest blurb above each sub-table, from data already on `b`. */
+  showTopValues?: boolean;
 }
 
-const { b, solo = false } = Astro.props;
+const { b, solo = false, summary, showTopValues = false } = Astro.props;
 
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 const RENT_ROWS: { key: RentBedroomKey; label: string }[] = [
@@ -41,7 +46,20 @@ const TYPE_ROWS = [
 function formatMonth(month: string): string {
   return new Date(`${month}-01`).toLocaleDateString("en-GB", { month: "long", year: "numeric" });
 }
+
+// One-line highest/lowest blurbs for each sub-table, built from data already on `b`.
+const rentsTopValues =
+  showTopValues && b.rents
+    ? topAndBottom(RENT_ROWS.filter((r) => r.key !== "all").map((r) => ({ label: r.label, value: b.rents!.borough.byBedrooms[r.key].price })), (n) => `${gbp.format(n)}/month`)
+    : null;
+const hpiTopValues = showTopValues && b.hpi ? topAndBottom(TYPE_ROWS.map((r) => ({ label: r.label, value: b.hpi!.borough.byType[r.key] })), (n) => gbp.format(n)) : null;
+const postTownTopValues =
+  showTopValues && b.prices ? topAndBottom(b.prices.postTowns.map((p) => ({ label: p.name, value: p.median })), (n) => gbp.format(n)) : null;
 ---
+
+          {summary && (
+    <p class="text-sm text-stone-700 bg-emerald-50/60 border border-emerald-100 rounded-md px-3 py-2 mb-5">{summary}</p>
+  )}
 
           {b.rents && (
   <section class="mb-8">
@@ -49,6 +67,7 @@ function formatMonth(month: string): string {
     <p class="text-stone-500 mb-3 text-sm">
       Average monthly rent by number of bedrooms, and how it has changed over 12 months{solo ? "" : ", against the London average"}. Latest figures: {formatMonth(b.rents.latestMonth)}.
     </p>
+    {rentsTopValues && <p class="text-sm text-stone-600 mb-3">{rentsTopValues}</p>}
     <div class="grid gap-4 sm:grid-cols-2 mb-4">
       {[
         { label: b.name, area: b.rents.borough },
@@ -120,6 +139,7 @@ function formatMonth(month: string): string {
             <section class="mb-8">
               <h2 class="text-2xl font-bold mb-1">House prices in {b.name}</h2>
               <p class="text-stone-500 mb-3 text-sm">Average sale price by month{solo ? "" : ", against the London average"}. Latest figures: {formatMonth(b.hpi.borough.months[b.hpi.borough.months.length - 1])}.</p>
+              {hpiTopValues && <p class="text-sm text-stone-600 mb-3">{hpiTopValues}</p>}
               <div class="grid gap-4 sm:grid-cols-2 mb-4">
                 {[
                   { label: b.name, series: b.hpi.borough },
@@ -178,6 +198,7 @@ function formatMonth(month: string): string {
             <section class="mb-8">
               <h2 class="text-2xl font-bold mb-1">Sale prices by post town in {b.name}</h2>
               <p class="text-stone-500 mb-3 text-sm">Median price of homes sold since {new Date(b.prices.since).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}, and how it moved on the earlier sales we hold, against the borough and London medians.</p>
+              {postTownTopValues && <p class="text-sm text-stone-600 mb-3">{postTownTopValues}</p>}
               <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
                 <table class="w-full text-sm">
                   <thead>

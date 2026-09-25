@@ -29,6 +29,8 @@ import {
   hasContent,
   loadOutcodeData,
 } from "../../../../lib/data";
+import { districtSectionSummary } from "../../../../lib/sectionSummary";
+import { topAndBottom } from "../../../../lib/topValues";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -75,6 +77,27 @@ const tabs = [
 
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 const recentSales = data.property.sales.slice(0, 40);
+
+// Key-figures summaries and top-value blurbs, rolled out for Richmond upon Thames only for now.
+const isRichmond = borough === "richmond-upon-thames";
+const housingSummary = isRichmond ? districtSectionSummary("housing", data.outcode) : null;
+const demographicsSummary = isRichmond ? districtSectionSummary("demographics", data.outcode) : null;
+const crimeSummary = isRichmond ? districtSectionSummary("crime", data.outcode) : null;
+const connectivitySummary = isRichmond ? districtSectionSummary("connectivity", data.outcode) : null;
+const environmentSummary = isRichmond ? districtSectionSummary("environment", data.outcode) : null;
+
+const councilTaxSummaryText =
+  isRichmond && councilTax && councilTax.bandD !== londonAverage.D
+    ? `Band D costs ${gbp.format(councilTax.bandD)}, ${councilTax.bandD > londonAverage.D ? "above" : "below"} the London average of ${gbp.format(londonAverage.D)}.`
+    : null;
+
+const recentSalesSummary =
+  isRichmond && recentSales.length > 0
+    ? (() => {
+        const top = [...recentSales].sort((a, b) => b.price - a.price)[0];
+        return `Highest recorded sale here: ${gbp.format(top.price)}, ${top.address || top.postcode}, ${top.dateOfTransfer}.`;
+      })()
+    : null;
 
 // "Data as of" labels: the latest period each source in a section covers.
 const latestSale = data.property.sales.reduce((max, s) => (s.dateOfTransfer > max ? s.dateOfTransfer : max), "");
@@ -142,6 +165,7 @@ const environmentUpdated = [
         <p class="text-sm text-stone-500 mb-3">
           2026-27 rates, Band D (the reference band) is {gbp.format(councilTax.bandD)} a year.
         </p>
+        {councilTaxSummaryText && <p class="text-sm text-stone-600 mb-3">{councilTaxSummaryText}</p>}
         <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
           <table class="w-full text-sm">
             <thead>
@@ -186,7 +210,7 @@ const environmentUpdated = [
     )
   }
 
-    <HousingMarket b={housing} />
+    <HousingMarket b={housing} summary={housingSummary ?? undefined} showTopValues={isRichmond} />
 
   <p class="text-stone-500 mb-6">{data.property.sales.length} recorded sales over the last two years.</p>
 
@@ -202,6 +226,7 @@ const environmentUpdated = [
   </div>
 
   <h2 class="text-lg font-semibold mb-3">Recent sales</h2>
+  {recentSalesSummary && <p class="text-sm text-stone-600 mb-3">{recentSalesSummary}</p>}
   <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
     <table class="w-full text-sm">
       <thead>
@@ -242,6 +267,8 @@ const environmentUpdated = [
           ]}
           source={demographics.source}
           note={`${data.outcode} figures are built from the census neighbourhoods (output areas) whose postcodes mostly fall in ${data.outcode}, so they may not match its boundary exactly.`}
+          summary={demographicsSummary ?? undefined}
+          showTopValues={isRichmond}
         />
       </section>
     )
@@ -265,6 +292,8 @@ const environmentUpdated = [
             heading: `Compare postcode areas in ${data.borough}`,
             intro: `Monthly crime trend across every postcode area in ${data.borough}, against the borough average.`,
           }}
+          summary={crimeSummary ?? undefined}
+          showTopValues={isRichmond}
         />
       </section>
     )
@@ -304,6 +333,7 @@ const environmentUpdated = [
                 }
               : null
           }
+          summary={connectivitySummary ?? undefined}
         />
       </section>
     )
@@ -358,6 +388,7 @@ const environmentUpdated = [
               areaLabel: `${data.outcode}: the area the figures cover (1 mile)`,
               parks: data.places.places.filter((p) => p.category === "park").map((p) => ({ name: p.name, latitude: p.latitude, longitude: p.longitude })),
             }}
+            summary={environmentSummary ?? undefined}
           />
         </div>
       )

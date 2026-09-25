@@ -1,6 +1,7 @@
 ---
 import CrimeCompareChart from "./CrimeCompareChart.astro";
 import type { BoroughCrimeTrend } from "../lib/data";
+import { topAndBottom } from "../lib/topValues";
 
 interface Props {
   /** Recorded crimes in the last 12 months. */
@@ -12,13 +13,34 @@ interface Props {
   categories: [string, number][];
   /** Compares the postcode areas of a borough against each other. */
   compare?: { trend: BoroughCrimeTrend; averageLabel: string; defaultHighlightSlug?: string; chartId: string; heading: string; intro: string };
+  /** Key-figures summary against peers, shown once above the monthly trend. */
+  summary?: string;
+  /** Adds a one-line "most common category" / "safest and highest postcode area" blurb. */
+  showTopValues?: boolean;
 }
 
-const { total, coverage, monthly, categories, compare } = Astro.props;
+const { total, coverage, monthly, categories, compare, summary, showTopValues = false } = Astro.props;
 
 const maxMonthly = Math.max(...monthly.map((m) => m.totalCrimes), 1);
 const topCategories = [...categories].sort(([, a], [, b]) => b - a).slice(0, 8);
 const maxCategory = Math.max(...topCategories.map(([, count]) => count), 1);
+
+const categoryTopValue =
+  showTopValues && topCategories.length > 0
+    ? (() => {
+        const [name, count] = topCategories[0];
+        const share = total > 0 ? ` (${((count / total) * 100).toFixed(1)}% of the total)` : "";
+        return `Most common: ${name.replace(/-/g, " ")}, ${count.toLocaleString()} incidents${share}.`;
+      })()
+    : null;
+
+const compareTopValue =
+  showTopValues && compare
+    ? topAndBottom(
+        compare.trend.outcodes.map((o) => ({ label: o.outcode, value: o.total.reduce((sum, n) => sum + n, 0) })),
+        (n) => `${n.toLocaleString()} crimes`,
+      )
+    : null;
 
 // month is stored "YYYY-MM"; display as "MM-YY".
 function formatMonthLabel(month: string): string {
@@ -28,6 +50,8 @@ function formatMonthLabel(month: string): string {
 ---
 
 <p class="text-stone-500 mb-6">{total.toLocaleString()} recorded crimes over the last 12 months, {coverage}.</p>
+
+{summary && <p class="text-sm text-stone-700 bg-emerald-50/60 border border-emerald-100 rounded-md px-3 py-2 mb-5">{summary}</p>}
 
 <section class="mb-8">
   <h3 class="text-lg font-semibold mb-3">Monthly trend</h3>
@@ -58,6 +82,7 @@ function formatMonthLabel(month: string): string {
     <section class="mb-8">
       <h3 class="text-lg font-semibold mb-1">{compare.heading}</h3>
       <p class="text-stone-500 mb-3 text-sm">{compare.intro}</p>
+      {compareTopValue && <p class="text-sm text-stone-600 mb-3">{compareTopValue}</p>}
       <CrimeCompareChart trend={compare.trend} averageLabel={compare.averageLabel} defaultHighlightSlug={compare.defaultHighlightSlug} chartId={compare.chartId} />
     </section>
   )
@@ -65,6 +90,7 @@ function formatMonthLabel(month: string): string {
 
 <section class="mb-4">
   <h3 class="text-lg font-semibold mb-3">By category</h3>
+  {categoryTopValue && <p class="text-sm text-stone-600 mb-3">{categoryTopValue}</p>}
   <div class="space-y-2">
     {
       topCategories.map(([category, count]) => (

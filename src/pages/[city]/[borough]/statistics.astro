@@ -33,6 +33,8 @@ import {
   loadHierarchy,
 } from "../../../lib/data";
 import { datasetJsonLd } from "../../../lib/seo";
+import { boroughSectionSummary } from "../../../lib/sectionSummary";
+import { topAndBottom } from "../../../lib/topValues";
 
 // One Statistics page per borough (the London-wide page carries the comparison tables). It used to be a client-side view of a single huge
 // page; a real page per borough is light, has its own URL for search engines, and old ?highlight= links redirect here.
@@ -110,6 +112,46 @@ const compareDistricts = borough.outcodes
   .slice(0, 4)
   .map((o) => o.outcode)
   .join(",");
+
+// Key-figures summaries and top-value blurbs, rolled out for Richmond upon Thames only for now.
+const isRichmond = borough.slug === "richmond-upon-thames";
+const housingSummary = isRichmond ? boroughSectionSummary("housing", borough.slug) : null;
+const demographicsSummary = isRichmond ? boroughSectionSummary("demographics", borough.slug) : null;
+const crimeSummary = isRichmond ? boroughSectionSummary("crime", borough.slug) : null;
+const connectivitySummary = isRichmond ? boroughSectionSummary("connectivity", borough.slug) : null;
+const environmentSummary = isRichmond ? boroughSectionSummary("environment", borough.slug) : null;
+
+const councilTaxSummary =
+  isRichmond && councilTax && londonTax.D != null && councilTax.bandD !== londonTax.D
+    ? `Band D costs ${gbp.format(councilTax.bandD)}, ${councilTax.bandD > londonTax.D ? "above" : "below"} the London average of ${gbp.format(londonTax.D)}.`
+    : null;
+
+const postTownSalesSummary = isRichmond ? topAndBottom(postTownChart.boroughs.map((p) => ({ label: p.name, value: p.series.at(-1) ?? null })), (n) => `${n} sales`) : null;
+
+// Quietest/greenest of Richmond's own postcode districts - NoiseGreenSection's own columns are just [borough, London], so this is built here from the same per-district loaders the district page uses.
+const richmondNoiseGreenSummary = isRichmond
+  ? (() => {
+      const primary = borough.outcodes.filter((o) => o.isPrimaryBorough);
+      const rows = primary.map((o) => {
+        const n = getNoise(o.outcode, city.slug, borough.slug)?.outcode;
+        const g = getGreenspace(borough.slug, o.outcode)?.outcode;
+        return { outcode: o.outcode, noise55: n ? n.slice(4).reduce((a, b) => a + b, 0) : null, within300m: g?.within300m ?? null };
+      });
+      const noiseLine = topAndBottom(
+        rows.map((r) => ({ label: r.outcode, value: r.noise55 })),
+        (n) => `${n.toFixed(1)}%`,
+      );
+      const greenLine = topAndBottom(
+        rows.map((r) => ({ label: r.outcode, value: r.within300m })),
+        (n) => `${n.toFixed(1)}%`,
+      );
+      const parts = [
+        noiseLine ? `Road noise (55dB+ of the area) - ${noiseLine}` : null,
+        greenLine ? `Within 300m of a park - ${greenLine}` : null,
+      ].filter((p): p is string => p !== null);
+      return parts.length > 0 ? parts.join(" ") : null;
+    })()
+  : null;
 ---
 
 <BaseLayout
@@ -163,6 +205,7 @@ const compareDistricts = borough.outcodes
           <section class="mb-8">
             <h2 class="text-2xl font-bold mb-1">Council Tax bands in {borough.name}</h2>
             <p class="text-stone-500 mb-3 text-sm">2026-27 rates, Band D (the reference band) is {gbp.format(councilTax.bandD)} a year.</p>
+            {councilTaxSummary && <p class="text-sm text-stone-600 mb-3">{councilTaxSummary}</p>}
             <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
               <table class="w-full text-sm">
                 <thead>
@@ -199,13 +242,14 @@ const compareDistricts = borough.outcodes
         )
       }
 
-      <HousingMarket b={housing} />
+      <HousingMarket b={housing} summary={housingSummary ?? undefined} showTopValues={isRichmond} />
 
       {
         postTownChart.boroughs.length > 0 && (
           <div class="mb-8">
             <h2 class="text-2xl font-bold mb-1">Property sales across {borough.name}, grouped by post town</h2>
             <p class="text-stone-500 mb-3 text-sm">Monthly residential sales by post town within {borough.name}, against the borough average.</p>
+            {postTownSalesSummary && <p class="text-sm text-stone-600 mb-3">{postTownSalesSummary}</p>}
             <BoroughTrendChart trend={postTownChart} averageLabel={`${borough.name} average`} chartId={`property-posttown-${borough.slug}`} />
           </div>
         )
@@ -227,6 +271,8 @@ const compareDistricts = borough.outcodes
               { label: "London", data: demographics.london },
             ]}
             source={demographics.source}
+            summary={demographicsSummary ?? undefined}
+            showTopValues={isRichmond}
           />
         </section>
       )
@@ -249,6 +295,8 @@ const compareDistricts = borough.outcodes
               heading: `Compare postcode areas in ${borough.name}`,
               intro: `Monthly crime trend across every postcode area in ${borough.name}, against the borough average.`,
             }}
+            summary={crimeSummary ?? undefined}
+            showTopValues={isRichmond}
           />
           <div class="mt-8">
             <h2 class="text-2xl font-bold mb-1">Crime in {borough.name} compared with London</h2>
@@ -291,6 +339,7 @@ const compareDistricts = borough.outcodes
                   }
                 : null
             }
+            summary={connectivitySummary ?? undefined}
           />
         </section>
       )
@@ -332,6 +381,8 @@ const compareDistricts = borough.outcodes
               greenYear={green?.year ?? 2020}
               noiseScope={`within a mile of the centre of each of ${borough.name}'s postcode districts (averaged)`}
               map={{ latitude: summary.latitude, longitude: summary.longitude, zoom: 12 }}
+              summary={environmentSummary ?? undefined}
+              topSummary={richmondNoiseGreenSummary ?? undefined}
             />
           </div>
         )
