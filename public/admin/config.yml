@@ -27,7 +27,7 @@ collections:
           - label: "Overrides"
             name: "overrides"
             widget: "list"
-            summary: "{{fields.slug}} ({{fields.images}} images)"
+            summary: "{{fields.slug}}"
             fields:
               - { label: "Slug", name: "slug", widget: "string", hint: "e.g. london, richmond-upon-thames, kensington-and-chelsea" }
               - label: "Images"
@@ -87,7 +87,7 @@ collections:
     delete: false
     identifier_field: "slug"
     slug: "{{fields.slug}}"
-    summary: "{{fields.slug}} ({{fields.images}} photos)"
+    summary: "{{fields.slug}}"
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
       - label: "Images"
@@ -119,7 +119,7 @@ collections:
     delete: false
     identifier_field: "slug"
     slug: "{{fields.slug}}"
-    summary: "{{fields.slug}} ({{fields.images}} photos)"
+    summary: "{{fields.slug}}"
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
       - label: "Images"
