@@ -4,8 +4,13 @@ name: Refresh data
 # main (which redeploys the site). Nothing is committed if a step fails, so a broken source never reaches the site.
 #
 #   monthly    (20th)      ONS private rents, HM Land Registry house prices, FSA food hygiene ratings
-#   quarterly  (1st of Jan/Apr/Jul/Oct)  council service links, TfL journey times, EV charging, Ofcom broadband + mobile
+#   quarterly  (1st of Jan/Apr/Jul/Oct)  council service links, TfL journey times, EV charging, Ofcom broadband + mobile,
+#                          NHS/CQC GP ratings, DfE/Ofsted school ratings
 #                          (Ofcom only downloads when a newer release than the committed one exists)
+#
+# Health and schools only patch their two sections of the already-built data/processed files (patch-health-schools.ts),
+# rather than a full build-outcode-data.ts run - that needs every other raw source (property, crime, places...) present at
+# once, which only a complete run-all.ts pipeline guarantees.
 #
 # Not scheduled: road works, flood warnings and cycle hire are fetched live in the browser; census, deprivation, road noise (Defra 2022)
 # and green space (ONS 2020) are fixed releases that only change when a new one is published.
@@ -61,6 +66,13 @@ jobs:
           npx tsx scripts/ingest/fetch-ev.ts
           npx tsx scripts/ingest/fetch-broadband.ts
           npx tsx scripts/ingest/fetch-mobile.ts
+
+      - name: Quarterly GP and school ratings (NHS/CQC, DfE/Ofsted)
+        if: env.RUN_QUARTERLY == 'true'
+        run: |
+          npx tsx scripts/ingest/fetch-health.ts
+          npx tsx scripts/ingest/fetch-schools.ts
+          npx tsx scripts/ingest/patch-health-schools.ts
 
       - name: Check the site still builds with the new data
         run: npm run build
