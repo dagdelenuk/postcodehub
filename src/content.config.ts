@@ -22,6 +22,10 @@ const guides = defineCollection({
         z.object({
           label: z.string(),
           href: z.string(),
+          /** When set (e.g. "schools/"), and the guide is reached from a specific borough's checklist (?base=/london/camden
+           * in the URL), the link is rewritten client-side to `${base}/${boroughPath}` - so "Schools in a borough" can
+           * point at that actual borough's Schools page instead of the generic fallback in `href`. */
+          boroughPath: z.string().optional(),
         })
       )
       .default([]),

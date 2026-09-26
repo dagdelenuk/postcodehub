@@ -8,6 +8,7 @@ lastReviewed: 2026-09-26
 relatedTools:
   - label: "Schools in a borough"
     href: "/london/"
+    boroughPath: "schools/"
   - label: "Compare areas"
     href: "/compare/"
 ---

@@ -8,6 +8,7 @@ lastReviewed: 2026-09-26
 relatedTools:
   - label: "Statistics for a borough"
     href: "/london/"
+    boroughPath: "statistics/"
   - label: "Compare areas"
     href: "/compare/"
 ---

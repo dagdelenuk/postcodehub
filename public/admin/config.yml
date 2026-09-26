@@ -149,6 +149,7 @@ collections:
         required: false
         fields:
           - { label: "Label", name: "label", widget: "string" }
-          - { label: "Link", name: "href", widget: "string", hint: "e.g. /commute/, /compare/, /london/" }
+          - { label: "Link", name: "href", widget: "string", hint: "e.g. /commute/, /compare/, /london/ - used when the borough isn't known (see Borough-specific path below)." }
+          - { label: "Borough-specific path (optional)", name: "boroughPath", widget: "string", required: false, hint: "e.g. \"schools/\" or \"statistics/\" - if the guide is reached from a specific borough's checklist, the link points there instead (e.g. /london/richmond-upon-thames/schools/)." }
       - { label: "Draft (hide from the site)", name: "draft", widget: "boolean", default: true }
       - { label: "Body", name: "body", widget: "markdown" }

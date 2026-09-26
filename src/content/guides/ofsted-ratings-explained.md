@@ -8,6 +8,7 @@ lastReviewed: 2026-09-26
 relatedTools:
   - label: "Schools in a borough"
     href: "/london/"
+    boroughPath: "schools/"
 ---
 
 Ofsted's four-word ratings — Outstanding, Good, Requires improvement, Inadequate — are probably the single most-quoted fact about any English school. They're genuinely useful, but they answer a narrower question than most people assume.

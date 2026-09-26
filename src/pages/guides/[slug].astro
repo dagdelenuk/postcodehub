@@ -21,6 +21,11 @@ const isoDate = guide.data.lastReviewed.toISOString();
 // visit came from a specific borough's checklist - this is a fully static site, so there is no server-side way to know
 // that at build time.
 const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) => s.id === t));
+
+// A relatedTool with a boroughPath (e.g. "schools/") gets its href rewritten client-side to that actual borough's page
+// (from the same ?base=/london/camden the checklist sidebar above already reads) instead of the generic fallback in
+// `href` - so "Schools in a borough" can point at the borough you actually came from, not just /london/.
+const hasBoroughAwareLinks = guide.data.relatedTools.some((t) => t.boroughPath);
 ---
 
 <BaseLayout
@@ -54,7 +59,7 @@ const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) =>
             <ul class="space-y-1.5">
               {guide.data.relatedTools.map((tool) => (
                 <li>
-                  <a href={tool.href} class="text-sm text-emerald-700 hover:underline">
+                  <a href={tool.href} data-related-tool-link data-borough-path={tool.boroughPath} class="text-sm text-emerald-700 hover:underline">
                     {tool.label} &rarr;
                   </a>
                 </li>
@@ -95,8 +100,8 @@ const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) =>
 </BaseLayout>
 
 {
-  relevantStepId && (
-    <script define:vars={{ relevantStepId }}>
+  (relevantStepId || hasBoroughAwareLinks) && (
+    <script define:vars={{ relevantStepId: relevantStepId ?? null }}>
       const params = new URLSearchParams(location.search);
       const base = params.get("base");
       const step = params.get("step");
@@ -104,9 +109,13 @@ const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) =>
       const isValidStep = step && /^[a-z-]+$/.test(step);
 
       if (params.get("from") === "checklist" && isValidBase) {
+        for (const link of document.querySelectorAll("[data-related-tool-link][data-borough-path]")) {
+          link.href = `${base}/${link.dataset.boroughPath}`;
+        }
+
         const aside = document.querySelector("[data-checklist-sidebar]");
         const list = aside?.querySelector("[data-checklist-sidebar-list]");
-        if (aside && list) {
+        if (aside && list && relevantStepId) {
           for (const li of list.querySelectorAll("[data-step-id]")) {
             for (const link of li.querySelectorAll("[data-checklist-sidebar-link]")) {
               link.href = `${base}/services/#${li.dataset.stepId}`;

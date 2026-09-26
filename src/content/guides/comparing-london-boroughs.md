@@ -12,6 +12,7 @@ relatedTools:
     href: "/london/rankings/"
   - label: "Statistics for a borough"
     href: "/london/"
+    boroughPath: "statistics/"
 ---
 
 London has 33 boroughs plus the City of London, and most people considering a move are realistically choosing between two or three of them, or a handful of postcode districts within one. The hard part usually isn't a lack of information - it's that the information arrives unevenly, one fact at a time from different places, which makes it easy to over-weight whatever you happened to read most recently.
