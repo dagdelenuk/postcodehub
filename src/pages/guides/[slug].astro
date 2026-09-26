@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { getCollection, render } from "astro:content";
 import { articleJsonLd } from "../../lib/seo";
+import { CHECKLIST_STEPS } from "../../lib/checklist";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides", ({ data }) => !data.draft);
@@ -13,6 +14,13 @@ const { guide } = Astro.props;
 const { Content } = await render(guide);
 const reviewedDate = guide.data.lastReviewed.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 const isoDate = guide.data.lastReviewed.toISOString();
+
+// This guide can only show the "moving checklist" sidebar if it's actually about one of the checklist's own steps
+// (matched by topic id) - a guide like commute-budget-impact has no such step and gets no sidebar/script at all. Even
+// then, the sidebar stays hidden until the page's own client-side script confirms (from the URL) that this particular
+// visit came from a specific borough's checklist - this is a fully static site, so there is no server-side way to know
+// that at build time.
+const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) => s.id === t));
 ---
 
 <BaseLayout
@@ -28,34 +36,87 @@ const isoDate = guide.data.lastReviewed.toISOString();
 >
   <Breadcrumbs sticky crumbs={[{ label: "PostcodeHub", href: "/" }, { label: "Guides", href: "/guides/" }, { label: guide.data.title }]} />
 
-  <article class="mx-auto max-w-3xl px-4 py-6">
-    <p class="text-xs uppercase tracking-wide text-emerald-700 font-medium mb-2">Guide &middot; {guide.data.minutesToRead} min read</p>
-    <h1 class="text-2xl font-bold mb-2">{guide.data.title}</h1>
-    <p class="text-stone-500 mb-1">{guide.data.description}</p>
-    <p class="text-xs text-stone-400 mb-6">Last reviewed: {reviewedDate}</p>
+  <div class="mx-auto max-w-5xl px-4 py-6 lg:grid lg:grid-cols-[1fr_18rem] lg:gap-8 lg:items-start">
+    <article class="max-w-3xl">
+      <p class="text-xs uppercase tracking-wide text-emerald-700 font-medium mb-2">Guide &middot; {guide.data.minutesToRead} min read</p>
+      <h1 class="text-2xl font-bold mb-2">{guide.data.title}</h1>
+      <p class="text-stone-500 mb-1">{guide.data.description}</p>
+      <p class="text-xs text-stone-400 mb-6">Last reviewed: {reviewedDate}</p>
 
-    <div class="guide-content text-stone-700 leading-relaxed">
-      <Content />
-    </div>
+      <div class="guide-content text-stone-700 leading-relaxed">
+        <Content />
+      </div>
+
+      {
+        guide.data.relatedTools.length > 0 && (
+          <div class="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-4">
+            <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-2">PostcodeHub tools for this</p>
+            <ul class="space-y-1.5">
+              {guide.data.relatedTools.map((tool) => (
+                <li>
+                  <a href={tool.href} class="text-sm text-emerald-700 hover:underline">
+                    {tool.label} &rarr;
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </article>
 
     {
-      guide.data.relatedTools.length > 0 && (
-        <div class="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-4">
-          <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-2">PostcodeHub tools for this</p>
-          <ul class="space-y-1.5">
-            {guide.data.relatedTools.map((tool) => (
-              <li>
-                <a href={tool.href} class="text-sm text-emerald-700 hover:underline">
-                  {tool.label} &rarr;
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      relevantStepId && (
+        <aside id="checklist-sidebar" class="hidden mt-8 lg:mt-0 lg:sticky lg:top-24 rounded-lg border border-stone-200 bg-white p-4" data-checklist-sidebar>
+          <p class="text-xs uppercase tracking-wide text-stone-500 font-medium mb-3">Your moving checklist</p>
+          <ol class="space-y-2 text-sm" data-checklist-sidebar-list>
+            {
+              CHECKLIST_STEPS.map((step) => (
+                <li data-step-id={step.id} class="rounded-md border border-stone-200 p-2 transition-colors">
+                  <p class="font-medium">{step.title}</p>
+                  <p class="text-stone-500 text-xs mt-0.5">{step.text}</p>
+                  <a class="text-xs text-emerald-700 hover:underline mt-1 inline-block" data-checklist-sidebar-link>
+                    Back to checklist &rarr;
+                  </a>
+                </li>
+              ))
+            }
+          </ol>
+        </aside>
       )
     }
-  </article>
+  </div>
 </BaseLayout>
+
+{
+  relevantStepId && (
+    <script define:vars={{ relevantStepId }}>
+      const params = new URLSearchParams(location.search);
+      const base = params.get("base");
+      const step = params.get("step");
+      const isValidBase = base && /^\/[a-z0-9-]+(\/[a-z0-9-]+){1,2}$/.test(base);
+      const isValidStep = step && /^[a-z-]+$/.test(step);
+
+      if (params.get("from") === "checklist" && isValidBase) {
+        const aside = document.querySelector("[data-checklist-sidebar]");
+        const list = aside?.querySelector("[data-checklist-sidebar-list]");
+        if (aside && list) {
+          for (const li of list.querySelectorAll("[data-step-id]")) {
+            const link = li.querySelector("[data-checklist-sidebar-link]");
+            if (link) link.href = `${base}/services/#${li.dataset.stepId}`;
+          }
+          const pinnedId = isValidStep ? step : relevantStepId;
+          const pinned = list.querySelector(`[data-step-id="${pinnedId}"]`);
+          if (pinned) {
+            list.prepend(pinned);
+            pinned.classList.add("border-emerald-300", "bg-emerald-50");
+          }
+          aside.classList.remove("hidden");
+        }
+      }
+    </script>
+  )
+}
 
 <style>
   .guide-content :global(h2) {

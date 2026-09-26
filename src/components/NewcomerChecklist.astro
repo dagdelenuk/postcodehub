@@ -1,5 +1,7 @@
 ---
 import type { CouncilServicesData } from "../lib/types";
+import { CHECKLIST_STEPS } from "../lib/checklist";
+import { getGuidesForTopic } from "../lib/guides";
 
 interface Props {
   services: CouncilServicesData;
@@ -22,8 +24,8 @@ const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP",
 interface Link {
   label: string;
   href: string;
-  /** "local" links go to the council or this site; "national" links go to GOV.UK, the NHS and similar. */
-  kind: "local" | "site" | "national";
+  /** "local" links go to the council; "site" links stay on PostcodeHub; "national" go to GOV.UK/NHS/etc; "guide" is a PostcodeHub Guide (a 4th, distinct source). */
+  kind: "local" | "site" | "national" | "guide";
 }
 
 // A council's own page for a task, when GOV.UK's Local Links Manager has one.
@@ -39,117 +41,81 @@ interface Step {
   links: Link[];
 }
 
-const steps: Step[] = [
-  {
-    id: "gp",
-    title: "Register with a GP and a dentist",
-    text: "Registering is free and you don't need proof of address or ID. Do it early: dentists in particular can have long waiting lists.",
-    links: [
-      ...(pages.health ? [{ label: `GPs, dentists and pharmacies in ${boroughName}`, href: `${base}/health/`, kind: "site" as const }] : []),
-      { label: "Find a GP (NHS)", href: "https://www.nhs.uk/service-search/find-a-gp", kind: "national" },
-      { label: "Find a dentist (NHS)", href: "https://www.nhs.uk/service-search/find-a-dentist", kind: "national" },
-    ],
-  },
-  {
-    id: "vote",
-    title: "Register to vote",
-    text: "It takes about five minutes, and being on the electoral register also helps with credit checks and getting a mortgage or phone contract.",
-    links: [
-      { label: "Register to vote (GOV.UK)", href: "https://www.gov.uk/register-to-vote", kind: "national" },
-      ...council_("contact-electoral-registration-office", `${council} electoral registration office`),
-    ],
-  },
-  {
-    id: "council-tax",
-    title: "Sort out Council Tax",
-    text: `You are usually liable from the day you move in. ${bandD ? `Band D in ${boroughName} is ${gbp.format(bandD)} a year (2026-27). ` : ""}Check your band, and ask about discounts such as the 25% single person discount.`,
-    links: [
-      ...council_("pay-council-tax", `Set up or pay Council Tax (${council})`),
-      ...council_("apply-for-council-tax-discount", "Apply for a Council Tax discount"),
-      ...council_("apply-council-tax-reduction", "Apply for Council Tax Reduction"),
-      { label: "Check a property's Council Tax band (GOV.UK)", href: "https://www.gov.uk/council-tax-bands", kind: "national" },
-    ],
-  },
-  {
-    id: "bins",
-    title: "Find your bin and recycling days",
-    text: "Collection days differ street by street, so the council looks them up by address. Check what goes in each bin and how to book bulky waste.",
-    links: [
-      ...council_("rubbish-collection-day", "Find your rubbish collection day"),
-      ...council_("recycling-collections", "Recycling collections"),
-      ...council_("garden-waste-disposal", "Garden waste"),
-      ...council_("collection-large-waste-items", "Book a bulky waste collection"),
-      ...council_("missed-bin-collection", "Report a missed collection"),
-    ],
-  },
-  {
-    id: "parking",
-    title: "Parking and getting around",
-    text: "Many streets need a resident parking permit, and the rules differ between boroughs. Check the controlled parking zone before you bring a car.",
-    links: [
-      ...council_("parking-permit", "Get a parking permit"),
-      ...council_("blue-badge-scheme-information-council", "Blue Badge scheme"),
-      ...council_("apply-dropped-kerb", "Apply for a dropped kerb"),
-      ...(pages.transport ? [{ label: "Journey times, EV charging and cycle hire", href: `${base}/transport/`, kind: "site" as const }] : []),
-    ],
-  },
-  {
-    id: "address",
-    title: "Tell people your new address",
-    text: "Update your driving licence, HMRC, your bank, insurers and employer. Redirect your post for a few months so nothing is missed, and get a TV licence if you need one.",
-    links: [
-      { label: "Change your driving licence address (GOV.UK)", href: "https://www.gov.uk/change-address-driving-licence", kind: "national" },
-      { label: "Tell HMRC you've moved (GOV.UK)", href: "https://www.gov.uk/tell-hmrc-change-of-details", kind: "national" },
-      { label: "Redirect your post (Royal Mail)", href: "https://www.royalmail.com/receiving-mail/redirection", kind: "national" },
-      { label: "TV Licence (GOV.UK)", href: "https://www.gov.uk/tv-licence", kind: "national" },
-    ],
-  },
-  {
-    id: "broadband",
-    title: "Check broadband and mobile signal",
-    text: "Look at what speeds are available on your street before you sign a contract, and order early: some installations take weeks.",
-    links: [
-      { label: "Broadband and mobile coverage here", href: connectivityHref, kind: "site" },
-      { label: "Ofcom coverage checker", href: "https://checker.ofcom.org.uk/en-gb/broadband-coverage", kind: "national" },
-    ],
-  },
-  {
-    id: "schools",
-    title: "Schools and childcare",
-    text: "If you have children, check school admissions deadlines early. They are set by the council and can fall well before you move in.",
-    links: [
-      ...(pages.schools ? [{ label: `Schools and Ofsted ratings in ${boroughName}`, href: `${base}/schools/`, kind: "site" as const }] : []),
-      ...council_("apply-for-primary-school-place", "Apply for a primary school place"),
-      ...council_("apply-for-secondary-school-place", "Apply for a secondary school place"),
-      ...council_("find-free-early-education", "Free early education and childcare"),
-    ],
-  },
-  {
-    id: "area",
-    title: "Get to know the area",
-    text: "Find the nearest parks, libraries and places to eat, and who represents you locally.",
-    links: [
-      ...(pages.places ? [{ label: "Parks, libraries and places", href: `${base}/places/`, kind: "site" as const }] : []),
-      ...(pages.food ? [{ label: "Food and hospitality with hygiene ratings", href: `${base}/food/`, kind: "site" as const }] : []),
-      ...council_("local-library-services", "Local library services"),
-      ...council_("find-your-local-councillors", "Find your councillors"),
-      ...council_("apply-allotment", "Apply for an allotment"),
-    ],
-  },
-  {
-    id: "report",
-    title: "Know how to report problems",
-    text: "Save these for later: fixing potholes, litter, graffiti and broken street lights is usually quicker through the council's own forms.",
-    links: [
-      ...council_("report-pothole", "Report a pothole"),
-      ...council_("report-litter", "Report litter"),
-      ...council_("report-problem-street-light", "Report a street light problem"),
-      ...council_("report-noise-pollution-to-council", "Report a noise nuisance"),
-    ],
-  },
-];
+const STEP_LINKS: Record<string, Link[]> = {
+  gp: [
+    ...(pages.health ? [{ label: `GPs, dentists and pharmacies in ${boroughName}`, href: `${base}/health/`, kind: "site" as const }] : []),
+    { label: "Find a GP (NHS)", href: "https://www.nhs.uk/service-search/find-a-gp", kind: "national" },
+    { label: "Find a dentist (NHS)", href: "https://www.nhs.uk/service-search/find-a-dentist", kind: "national" },
+  ],
+  vote: [
+    { label: "Register to vote (GOV.UK)", href: "https://www.gov.uk/register-to-vote", kind: "national" },
+    ...council_("contact-electoral-registration-office", `${council} electoral registration office`),
+  ],
+  "council-tax": [
+    ...council_("pay-council-tax", `Set up or pay Council Tax (${council})`),
+    ...council_("apply-for-council-tax-discount", "Apply for a Council Tax discount"),
+    ...council_("apply-council-tax-reduction", "Apply for Council Tax Reduction"),
+    { label: "Check a property's Council Tax band (GOV.UK)", href: "https://www.gov.uk/council-tax-bands", kind: "national" },
+  ],
+  bins: [
+    ...council_("rubbish-collection-day", "Find your rubbish collection day"),
+    ...council_("recycling-collections", "Recycling collections"),
+    ...council_("garden-waste-disposal", "Garden waste"),
+    ...council_("collection-large-waste-items", "Book a bulky waste collection"),
+    ...council_("missed-bin-collection", "Report a missed collection"),
+  ],
+  parking: [
+    ...council_("parking-permit", "Get a parking permit"),
+    ...council_("blue-badge-scheme-information-council", "Blue Badge scheme"),
+    ...council_("apply-dropped-kerb", "Apply for a dropped kerb"),
+    ...(pages.transport ? [{ label: "Journey times, EV charging and cycle hire", href: `${base}/transport/`, kind: "site" as const }] : []),
+  ],
+  address: [
+    { label: "Change your driving licence address (GOV.UK)", href: "https://www.gov.uk/change-address-driving-licence", kind: "national" },
+    { label: "Tell HMRC you've moved (GOV.UK)", href: "https://www.gov.uk/tell-hmrc-change-of-details", kind: "national" },
+    { label: "Redirect your post (Royal Mail)", href: "https://www.royalmail.com/receiving-mail/redirection", kind: "national" },
+    { label: "TV Licence (GOV.UK)", href: "https://www.gov.uk/tv-licence", kind: "national" },
+  ],
+  broadband: [
+    { label: "Broadband and mobile coverage here", href: connectivityHref, kind: "site" },
+    { label: "Ofcom coverage checker", href: "https://checker.ofcom.org.uk/en-gb/broadband-coverage", kind: "national" },
+  ],
+  schools: [
+    ...(pages.schools ? [{ label: `Schools and Ofsted ratings in ${boroughName}`, href: `${base}/schools/`, kind: "site" as const }] : []),
+    ...council_("apply-for-primary-school-place", "Apply for a primary school place"),
+    ...council_("apply-for-secondary-school-place", "Apply for a secondary school place"),
+    ...council_("find-free-early-education", "Free early education and childcare"),
+  ],
+  area: [
+    ...(pages.places ? [{ label: "Parks, libraries and places", href: `${base}/places/`, kind: "site" as const }] : []),
+    ...(pages.food ? [{ label: "Food and hospitality with hygiene ratings", href: `${base}/food/`, kind: "site" as const }] : []),
+    ...council_("local-library-services", "Local library services"),
+    ...council_("find-your-local-councillors", "Find your councillors"),
+    ...council_("apply-allotment", "Apply for an allotment"),
+  ],
+  report: [
+    ...council_("report-pothole", "Report a pothole"),
+    ...council_("report-litter", "Report litter"),
+    ...council_("report-problem-street-light", "Report a street light problem"),
+    ...council_("report-noise-pollution-to-council", "Report a noise nuisance"),
+  ],
+};
 
-const KIND_LABEL: Record<Link["kind"], string> = { local: "Council", site: "On PostcodeHub", national: "National" };
+const steps: Step[] = await Promise.all(
+  CHECKLIST_STEPS.map(async (meta) => {
+    const links = [...(STEP_LINKS[meta.id] ?? [])];
+    const [guide] = await getGuidesForTopic(meta.id, 1);
+    if (guide) links.push({ label: "Learn more", href: `/guides/${guide.id}/?from=checklist&base=${encodeURIComponent(base)}&step=${meta.id}`, kind: "guide" });
+    return {
+      id: meta.id,
+      title: meta.title,
+      text: meta.id === "council-tax" ? `You are usually liable from the day you move in. ${bandD ? `Band D in ${boroughName} is ${gbp.format(bandD)} a year (2026-27). ` : ""}Check your band, and ask about discounts such as the 25% single person discount.` : meta.text,
+      links,
+    };
+  })
+);
+
+const KIND_LABEL: Record<Link["kind"], string> = { local: "Council", site: "On PostcodeHub", national: "National", guide: "Guide" };
 ---
 
 <section id="moving-checklist" class="mb-10 scroll-mt-40" data-checklist data-storage-key={storageKey} data-total={steps.length}>
@@ -188,12 +154,12 @@ const KIND_LABEL: Record<Link["kind"], string> = { local: "Council", site: "On P
                   <li>
                     <a
                       href={l.href}
-                      {...(l.kind === "site" ? {} : { target: "_blank", rel: "noopener" })}
+                      {...(l.kind === "site" || l.kind === "guide" ? {} : { target: "_blank", rel: "noopener" })}
                       class="inline-flex items-center gap-1.5 rounded-full border border-stone-200 px-3 py-1 text-xs text-stone-700 hover:border-emerald-600 hover:text-emerald-800 transition-colors"
                       title={KIND_LABEL[l.kind]}
                     >
                       <span
-                        class:list={["h-1.5 w-1.5 rounded-full", l.kind === "local" ? "bg-emerald-600" : l.kind === "site" ? "bg-sky-500" : "bg-stone-400"]}
+                        class:list={["h-1.5 w-1.5 rounded-full", l.kind === "local" ? "bg-emerald-600" : l.kind === "site" ? "bg-sky-500" : l.kind === "guide" ? "bg-amber-500" : "bg-stone-400"]}
                         aria-hidden="true"
                       ></span>
                       {l.label}
@@ -213,6 +179,8 @@ const KIND_LABEL: Record<Link["kind"], string> = { local: "Council", site: "On P
     <span class="inline-flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-sky-500"></span> On PostcodeHub</span>
     <span class="mx-2">&middot;</span>
     <span class="inline-flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-stone-400"></span> GOV.UK, NHS and others</span>
+    <span class="mx-2">&middot;</span>
+    <span class="inline-flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Guide</span>
   </p>
 </section>
 
