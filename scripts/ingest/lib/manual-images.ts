@@ -34,5 +34,9 @@ export async function readImageDir(dir: string): Promise<Record<string, BannerIm
 
 export async function writeImageFile(dir: string, slug: string, images: BannerImage[]): Promise<void> {
   await mkdir(dir, { recursive: true });
-  await writeFile(path.join(dir, `${slug}.json`), JSON.stringify({ slug, images }, null, 2));
+  // `image` (the first photo) and `photoCount` are redundant with `images` - they exist purely so Decap CMS's folder
+  // collections can show a real thumbnail and a sortable photo count in list/card view (Decap only renders a card
+  // thumbnail for a field literally named "image", and has no way to display/sort by a list field's length itself).
+  const entry = { slug, image: images[0]?.src ?? "", photoCount: images.length, images };
+  await writeFile(path.join(dir, `${slug}.json`), JSON.stringify(entry, null, 2));
 }

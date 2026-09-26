@@ -87,9 +87,16 @@ collections:
     delete: false
     identifier_field: "slug"
     slug: "{{fields.slug}}"
-    summary: "{{fields.slug}}"
+    summary: "{{fields.slug}} — {{fields.photoCount}} photo(s)"
+    sortable_fields: ["slug", "photoCount"]
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
+      - label: "Cover photo"
+        name: "image"
+        widget: "image"
+        required: false
+        hint: "Auto-set to the first photo below on the next refresh - shown here so the card/list view has a thumbnail."
+      - { label: "Photo count", name: "photoCount", widget: "number", value_type: "int", required: false, hint: "Auto-set to the number of photos below on the next refresh." }
       - label: "Images"
         name: "images"
         widget: "list"
@@ -119,9 +126,16 @@ collections:
     delete: false
     identifier_field: "slug"
     slug: "{{fields.slug}}"
-    summary: "{{fields.slug}}"
+    summary: "{{fields.slug}} — {{fields.photoCount}} photo(s)"
+    sortable_fields: ["slug", "photoCount"]
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
+      - label: "Cover photo"
+        name: "image"
+        widget: "image"
+        required: false
+        hint: "Auto-set to the first photo below on the next refresh - shown here so the card/list view has a thumbnail."
+      - { label: "Photo count", name: "photoCount", widget: "number", value_type: "int", required: false, hint: "Auto-set to the number of photos below on the next refresh." }
       - label: "Images"
         name: "images"
         widget: "list"
