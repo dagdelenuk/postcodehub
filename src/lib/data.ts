@@ -65,8 +65,6 @@ export function getBannerImages(slug: string): BannerImage[] {
   return loadBanners()[slug] ?? [];
 }
 
-let cachedPlaceImages: Banners | null = null;
-
 function loadImageDir(dir: string): Banners {
   const record: Banners = {};
   if (existsSync(dir)) {
@@ -79,29 +77,32 @@ function loadImageDir(dir: string): Banners {
   return record;
 }
 
-// Each of data/processed/district-images/ and data/processed/place-images/ holds one small JSON file per slug
-// ({slug, images}), not one combined file - that's what lets Decap CMS's folder collection type show a real,
-// searchable per-entry list in /admin ("District photos" and "Borough & city photos" in public/admin/config.yml),
-// so a bad automatic pick can be fixed by looking at the actual photo, not blind by ID. district-images/ holds the
-// raw per-outcode Geograph pull; place-images/ holds curate-borough-images.ts's pooled borough/city selections.
-// Slugs never collide between the two (outcode vs borough/city), so a plain merge is safe.
-function loadPlaceImages(): Banners {
-  if (cachedPlaceImages) return cachedPlaceImages;
-  cachedPlaceImages = {
-    ...loadImageDir(path.join(PROCESSED_DIR, "district-images")),
-    ...loadImageDir(path.join(PROCESSED_DIR, "place-images")),
-  };
-  return cachedPlaceImages;
+// Geograph-sourced photos, one directory per level - each holds one small JSON file per slug ({slug, image,
+// photoCount, images}), not one combined file, so Decap CMS's folder collection type gives a real, searchable
+// per-entry list in /admin ("District photos", "Borough photos", "City photos"). Each level is a separate,
+// independently-edited collection with no fallback between them: district-images/ is the raw per-outcode Geograph
+// pull (fetch-district-images.ts), borough-images/ is curate-borough-images.ts's pooled selection from its own
+// districts, and city-images/ is hand-curated only (nothing regenerates it automatically).
+let cachedDistrictImages: Banners | null = null;
+let cachedBoroughImages: Banners | null = null;
+let cachedCityImages: Banners | null = null;
+
+/** Never throws - a district with no chosen photos just gets no banner. */
+export function getDistrictImages(slug: string): BannerImage[] {
+  cachedDistrictImages ??= loadImageDir(path.join(PROCESSED_DIR, "district-images"));
+  return cachedDistrictImages[slug] ?? [];
 }
 
-/**
- * Geograph-sourced photos (fetch-district-images.ts / curate-borough-images.ts) - preferred over the Wikimedia banners
- * above wherever available, since Geograph has real coverage of ordinary postcode districts that Wikipedia mostly
- * doesn't. Falls back to getBannerImages(slug) only when Geograph has nothing for this slug.
- */
-export function getPlaceImages(slug: string): BannerImage[] {
-  const geograph = loadPlaceImages()[slug];
-  return geograph && geograph.length > 0 ? geograph : getBannerImages(slug);
+/** Never throws - a borough with no chosen photos just gets no banner. */
+export function getBoroughImages(slug: string): BannerImage[] {
+  cachedBoroughImages ??= loadImageDir(path.join(PROCESSED_DIR, "borough-images"));
+  return cachedBoroughImages[slug] ?? [];
+}
+
+/** Never throws - a city with no hand-curated photos just gets no banner. */
+export function getCityImages(slug: string): BannerImage[] {
+  cachedCityImages ??= loadImageDir(path.join(PROCESSED_DIR, "city-images"));
+  return cachedCityImages[slug] ?? [];
 }
 
 export interface FavouriteEntry {

@@ -15,7 +15,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAW_DIR = path.resolve(__dirname, "../../data/raw/geograph");
 const PROCESSED_DIR = path.resolve(__dirname, "../../data/processed");
 const OUT_DIR = path.join(PROCESSED_DIR, "district-images");
-const MANUAL_OVERRIDES_PATH = path.resolve(__dirname, "../../data/manual/geograph-overrides.json");
 const UPLOAD_MANIFEST_PATH = path.join(RAW_DIR, "uploaded-manifest.json");
 
 const API_KEY = process.env.GEOGRAPH_API_KEY;
@@ -59,34 +58,6 @@ interface GeographItem {
 
 interface GeographResponse {
   items?: GeographItem[];
-}
-
-interface OverrideEntry {
-  slug: string;
-  include?: string[];
-  exclude?: string[];
-  locked?: boolean;
-}
-
-interface Overrides {
-  include: Set<string>;
-  exclude: Set<string>;
-  locked: boolean;
-}
-
-async function loadOverrides(): Promise<Map<string, Overrides>> {
-  const result = new Map<string, Overrides>();
-  let parsed: { overrides?: OverrideEntry[] };
-  try {
-    parsed = JSON.parse(await readFile(MANUAL_OVERRIDES_PATH, "utf-8")) as { overrides?: OverrideEntry[] };
-  } catch {
-    return result;
-  }
-  for (const entry of parsed.overrides ?? []) {
-    if (!entry.slug) continue;
-    result.set(entry.slug, { include: new Set(entry.include ?? []), exclude: new Set(entry.exclude ?? []), locked: entry.locked ?? false });
-  }
-  return result;
 }
 
 async function loadUploadManifest(): Promise<Set<string>> {
@@ -242,43 +213,16 @@ async function main() {
   }
 
   const outcodeIndex = await loadOutcodeIndex();
-  const overrides = await loadOverrides();
   const uploaded = await loadUploadManifest();
 
   let written = 0;
-  let lockedCount = 0;
 
   for (const [outcode, entry] of outcodeIndex) {
     if (outcodeFilter && !outcodeFilter.has(outcode)) continue;
     const slug = entry.outcode.slug;
-    const override = overrides.get(slug);
-    if (override?.locked) {
-      logStep(STEP, `${outcode}: locked via geograph-overrides.json - leaving its file as-is.`);
-      lockedCount++;
-      continue;
-    }
 
     const ranked = await findCandidates(entry.outcode.latitude, entry.outcode.longitude);
-    let chosen = ranked.filter((r) => !override?.exclude.has(r.item.guid)).slice(0, IMAGES_PER_DISTRICT);
-
-    // Manually included IDs are looked up directly (Details API) and prepended, ahead of the automatic picks.
-    if (override?.include.size) {
-      const alreadyChosen = new Set(chosen.map((c) => c.item.guid));
-      for (const photoId of override.include) {
-        if (alreadyChosen.has(photoId)) continue;
-        try {
-          const detail = await withRetry(() => fetchJson<{ title: string; user: string; img: { src: string; width: number; height: number } }>(`https://api.geograph.org.uk/api/photo/${photoId}/${API_KEY}?format=json`));
-          chosen.unshift({
-            item: { title: detail.title, link: `https://www.geograph.org.uk/photo/${photoId}`, author: detail.user, guid: photoId, date: 0, lat: entry.outcode.latitude, long: entry.outcode.longitude, thumb: detail.img.src, licence: "CC BY-SA 2.0" },
-            score: Infinity,
-            distanceKm: 0,
-          });
-        } catch (err) {
-          logStep(STEP, `WARNING: could not look up manually-included photo ${photoId} for ${outcode}: ${(err as Error).message}`);
-        }
-      }
-      chosen = chosen.slice(0, IMAGES_PER_DISTRICT);
-    }
+    const chosen = ranked.slice(0, IMAGES_PER_DISTRICT);
 
     const images: BannerImage[] = [];
     for (const candidate of chosen) {
@@ -295,7 +239,7 @@ async function main() {
 
   await mkdir(RAW_DIR, { recursive: true });
   await writeFile(UPLOAD_MANIFEST_PATH, JSON.stringify([...uploaded], null, 2));
-  logStep(STEP, `Wrote ${written} district photo files to ${OUT_DIR}${lockedCount > 0 ? ` (${lockedCount} locked, left unchanged)` : ""}.`);
+  logStep(STEP, `Wrote ${written} district photo files to ${OUT_DIR}.`);
 }
 
 main().catch((err) => {

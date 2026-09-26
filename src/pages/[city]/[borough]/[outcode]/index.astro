@@ -4,7 +4,7 @@ import LiveWeatherWidget from "../../../../components/LiveWeatherWidget.astro";
 import LiveAirQualityWidget from "../../../../components/LiveAirQualityWidget.astro";
 import RotatingBanner from "../../../../components/RotatingBanner.astro";
 import { CATEGORIES } from "../../../../lib/categories";
-import { getAllOutcodeParams, getPlaceImages, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { getAllOutcodeParams, getDistrictImages, hasContent, loadOutcodeData } from "../../../../lib/data";
 import { CATEGORY_KEYS } from "../../../../lib/types";
 import { getSimilarDistricts } from "../../../../lib/similar";
 import { districtGlance, glanceDescription } from "../../../../lib/glance";
@@ -52,7 +52,7 @@ const summaryStats = [
   description={description}
 >
   <div class="mb-6">
-    <RotatingBanner images={getPlaceImages(data.slug)} />
+    <RotatingBanner images={getDistrictImages(data.slug)} />
   </div>
   {
     glance && (

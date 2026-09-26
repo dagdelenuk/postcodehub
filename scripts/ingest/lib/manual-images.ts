@@ -2,16 +2,17 @@ import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import type { BannerImage } from "../../../src/lib/types.js";
 
-// district-images/ and place-images/ hold one small JSON file per slug (data/processed/district-images/tw11.json etc.),
-// not one big combined file - that's what lets Decap CMS's "folder" collection type give a real per-entry, searchable list
-// in /admin (a "files" collection with one huge list field, the earlier approach, has no way to search within the list).
+// district-images/, borough-images/ and city-images/ each hold one small JSON file per slug
+// (data/processed/district-images/tw11.json etc.), not one big combined file - that's what lets Decap CMS's "folder"
+// collection type give a real per-entry, searchable list in /admin (a "files" collection with one huge list field,
+// the earlier approach, has no way to search within the list).
 
 export interface ImageEntry {
   slug: string;
   images: BannerImage[];
 }
 
-/** Every entry currently in a photo folder (district-images/ or place-images/), keyed by slug. */
+/** Every entry currently in a photo folder (district-images/, borough-images/ or city-images/), keyed by slug. */
 export async function readImageDir(dir: string): Promise<Record<string, BannerImage[]>> {
   let files: string[];
   try {

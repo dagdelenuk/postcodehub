@@ -1,4 +1,4 @@
-import { writeFile, mkdir, readFile } from "node:fs/promises";
+import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { fetchJson, logStep, sleep } from "./lib/fetch-utils.js";
@@ -8,33 +8,6 @@ import type { Banners, BannerImage } from "../../src/lib/types.js";
 const STEP = "banners";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROCESSED_DIR = path.resolve(__dirname, "../../data/processed");
-const MANUAL_OVERRIDES_PATH = path.resolve(__dirname, "../../data/manual/banner-overrides.json");
-
-interface ManualOverrideEntry {
-  slug: string;
-  images: BannerImage[];
-}
-
-/**
- * Hand-curated banners (data/manual/ - never touched by ingestion) win over
- * whatever was auto-fetched. Stored on disk as { overrides: [{slug, images}] }
- * - a named list, not a bare array or a Record<slug,...> - because that's
- * what the Decap CMS admin UI's file-collection + list widget edits (a file
- * collection's fields map onto named top-level keys in the JSON file).
- */
-async function loadManualOverrides(): Promise<Banners> {
-  let parsed: { overrides?: ManualOverrideEntry[] };
-  try {
-    parsed = JSON.parse(await readFile(MANUAL_OVERRIDES_PATH, "utf-8")) as { overrides?: ManualOverrideEntry[] };
-  } catch {
-    return {};
-  }
-  const byLocation: Banners = {};
-  for (const entry of parsed.overrides ?? []) {
-    if (entry.slug && entry.images?.length > 0) byLocation[entry.slug] = entry.images;
-  }
-  return byLocation;
-}
 
 // Wikimedia's API policy requires a descriptive User-Agent identifying the
 // app; a generic one gets more aggressively rate-limited (confirmed live).
@@ -186,27 +159,15 @@ async function main() {
     }
   }
 
-  const overrides = await loadManualOverrides();
-  let overrideCount = 0;
-  for (const [slug, images] of Object.entries(overrides)) {
-    if (images.length > 0) {
-      banners[slug] = images;
-      overrideCount++;
-    }
-  }
-
   const total = Object.values(banners).reduce((sum, imgs) => sum + imgs.length, 0);
   const empty = Object.entries(banners).filter(([, imgs]) => imgs.length === 0).map(([slug]) => slug);
 
   await mkdir(PROCESSED_DIR, { recursive: true });
   const outPath = path.join(PROCESSED_DIR, "banners.json");
   await writeFile(outPath, JSON.stringify(banners, null, 2));
-  logStep(
-    STEP,
-    `Wrote ${outPath}: ${total} images across ${Object.keys(banners).length} locations (${overrideCount} from data/manual/banner-overrides.json).`
-  );
+  logStep(STEP, `Wrote ${outPath}: ${total} images across ${Object.keys(banners).length} locations.`);
   if (empty.length > 0) {
-    logStep(STEP, `No free-licensed images found for: ${empty.join(", ")} (honest gap, banner just won't render there). Add these to data/manual/banner-overrides.json to fill them in yourself.`);
+    logStep(STEP, `No free-licensed images found for: ${empty.join(", ")} (honest gap - this only feeds the "Your Favourites" thumbnail, not the main district/borough/city banners).`);
   }
 }
 
