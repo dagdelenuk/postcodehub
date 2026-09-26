@@ -133,3 +133,33 @@ collections:
           - { label: "Credit text", name: "credit", widget: "string" }
           - { label: "Credit link (geograph.org.uk photo page)", name: "creditUrl", widget: "string" }
           - { label: "License", name: "license", widget: "string", default: "CC BY-SA 2.0" }
+
+  - name: "guides"
+    label: "Guides"
+    description: >
+      Long-form editorial articles (school admissions, commute costs,
+      comparing boroughs...) - shown at /guides/ and cross-linked as
+      "Related guides" on relevant pages (matched by Topics below, e.g. a
+      guide tagged "schools" appears on every borough's Schools page).
+    folder: "src/content/guides"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    identifier_field: "title"
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", hint: "Shown as the card blurb, the meta description, and in Related guides." }
+      - { label: "Topics", name: "topics", widget: "list", hint: "e.g. schools, commute, budget - lowercase, matches what a page asks Related Guides for." }
+      - { label: "Minutes to read", name: "minutesToRead", widget: "number", value_type: "int" }
+      - { label: "Last reviewed", name: "lastReviewed", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - label: "Related PostcodeHub tools"
+        name: "relatedTools"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Link", name: "href", widget: "string", hint: "e.g. /commute/, /compare/, /london/" }
+      - { label: "Draft (hide from the site)", name: "draft", widget: "boolean", default: true }
+      - { label: "Body", name: "body", widget: "markdown" }

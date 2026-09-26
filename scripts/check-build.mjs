@@ -38,6 +38,8 @@ const REQUIRED = [
   ["london/richmond-upon-thames/tw11/index.html", ["TW11", "Areas like TW11"]],
   ["london/richmond-upon-thames/statistics/index.html", ["Statistics", "Housing", "Demographics", "Crime", "Environment"]],
   ["commute/index.html", ["Commute checker", "Work postcode"]],
+  ["guides/index.html", ["Guides"]],
+  ["guides/school-admissions-distance/index.html", ["school admissions", "Last reviewed"]],
   ["london/richmond-upon-thames/tw11/statistics/index.html", ["Statistics in TW11", "Road noise", "Green space", "Compare with other areas"]],
   ["london/richmond-upon-thames/tw11/transport/index.html", ["Journey times", "EV charge points", "Cycle hire"]],
   ["london/richmond-upon-thames/tw11/food/index.html", ["Food hygiene"]],

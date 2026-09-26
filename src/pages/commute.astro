@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
+import RelatedGuides from "../components/RelatedGuides.astro";
 ---
 
 <BaseLayout
@@ -91,6 +92,10 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
         Source: Transport for London Journey Planner and postcodes.io. Times are door to door from the centre of each district on one planned weekday, so your own start point and
         day will differ. Use the link on each row to plan an exact journey.
       </p>
+    </div>
+
+    <div class="mt-8">
+      <RelatedGuides topic="commute" />
     </div>
   </section>
 

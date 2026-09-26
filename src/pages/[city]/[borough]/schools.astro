@@ -5,6 +5,7 @@ import LeafletAssets from "../../../components/LeafletAssets.astro";
 import SchoolFilters from "../../../components/SchoolFilters.astro";
 import SchoolListSection from "../../../components/SchoolListSection.astro";
 import ChildcareCard from "../../../components/ChildcareCard.astro";
+import RelatedGuides from "../../../components/RelatedGuides.astro";
 import { displayPlaceName, getBoroughChildcare, getBoroughSchools, getSchoolAdmissionsUrl, loadHierarchy } from "../../../lib/data";
 
 export function getStaticPaths() {
@@ -167,6 +168,8 @@ const totalChildcare = childcareGroups.reduce((sum, g) => sum + g.providers.leng
         </section>
       )
     }
+
+    <RelatedGuides topic="schools" />
 
     <p class="text-xs text-stone-400 mt-4">
       Sources: DfE Get Information about Schools (GIAS) and Ofsted inspection outcomes; Ofsted childcare providers and

@@ -4,6 +4,7 @@ import EvChargingSection from "../../../../components/EvChargingSection.astro";
 import LeafletAssets from "../../../../components/LeafletAssets.astro";
 import LiveCycleHire from "../../../../components/LiveCycleHire.astro";
 import LiveTflWidget from "../../../../components/LiveTflWidget.astro";
+import RelatedGuides from "../../../../components/RelatedGuides.astro";
 import { getAllOutcodeParams, getEvCharging, getJourneyTimes, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
@@ -150,6 +151,10 @@ const MODE_LOGOS: Record<string, { src: string; alt: string }> = {
       <p class="text-sm text-stone-500 mt-1">Bus and local transport timetables.</p>
     </a>
   </section>
+
+  <div class="mt-8">
+    <RelatedGuides topic="commute" />
+  </div>
 
   <p class="text-xs text-stone-400 mt-6">Live status: Transport for London Unified API.</p>
 </LocalityLayout>

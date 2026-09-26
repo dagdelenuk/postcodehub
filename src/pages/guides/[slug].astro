@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { getCollection, render } from "astro:content";
+import { articleJsonLd } from "../../lib/seo";
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides", ({ data }) => !data.draft);
+  return guides.map((guide) => ({ params: { slug: guide.id }, props: { guide } }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+const reviewedDate = guide.data.lastReviewed.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+const isoDate = guide.data.lastReviewed.toISOString();
+---
+
+<BaseLayout
+  title={guide.data.title}
+  description={guide.data.description}
+  jsonLd={articleJsonLd({
+    headline: guide.data.title,
+    description: guide.data.description,
+    url: `/guides/${guide.id}/`,
+    datePublished: isoDate,
+    dateModified: isoDate,
+  })}
+>
+  <Breadcrumbs sticky crumbs={[{ label: "PostcodeHub", href: "/" }, { label: "Guides", href: "/guides/" }, { label: guide.data.title }]} />
+
+  <article class="mx-auto max-w-3xl px-4 py-6">
+    <p class="text-xs uppercase tracking-wide text-emerald-700 font-medium mb-2">Guide &middot; {guide.data.minutesToRead} min read</p>
+    <h1 class="text-2xl font-bold mb-2">{guide.data.title}</h1>
+    <p class="text-stone-500 mb-1">{guide.data.description}</p>
+    <p class="text-xs text-stone-400 mb-6">Last reviewed: {reviewedDate}</p>
+
+    <div class="guide-content text-stone-700 leading-relaxed">
+      <Content />
+    </div>
+
+    {
+      guide.data.relatedTools.length > 0 && (
+        <div class="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-4">
+          <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-2">PostcodeHub tools for this</p>
+          <ul class="space-y-1.5">
+            {guide.data.relatedTools.map((tool) => (
+              <li>
+                <a href={tool.href} class="text-sm text-emerald-700 hover:underline">
+                  {tool.label} &rarr;
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  </article>
+</BaseLayout>
+
+<style>
+  .guide-content :global(h2) {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #1c1917;
+  }
+  .guide-content :global(p) {
+    margin-bottom: 1rem;
+  }
+  .guide-content :global(ul),
+  .guide-content :global(ol) {
+    margin: 0 0 1rem 1.25rem;
+    list-style: disc;
+  }
+  .guide-content :global(ol) {
+    list-style: decimal;
+  }
+  .guide-content :global(li) {
+    margin-bottom: 0.375rem;
+  }
+  .guide-content :global(a) {
+    color: #047857;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .guide-content :global(strong) {
+    font-weight: 600;
+    color: #1c1917;
+  }
+</style>

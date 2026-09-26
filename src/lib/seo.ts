@@ -85,6 +85,29 @@ export const websiteJsonLd = {
   ],
 };
 
+interface ArticleInput {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+}
+
+/** A Guides page - editorial content, unlike the Dataset/Place types used for the open-data pages. */
+export function articleJsonLd({ headline, description, url, datePublished, dateModified }: ArticleInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    url: absoluteUrl(url),
+    datePublished,
+    dateModified,
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, logo: { "@type": "ImageObject", url: absoluteUrl("/favicon.svg") } },
+  };
+}
+
 /** An ordered list (e.g. a ranking) for search engines. */
 export function itemListJsonLd({ name, description, url, items }: { name: string; description: string; url: string; items: { name: string; url: string }[] }) {
   return {
