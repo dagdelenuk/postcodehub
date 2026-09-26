@@ -1,5 +1,6 @@
 ---
 title: "Reading TfL journey times when comparing areas"
+icon: "🚇"
 description: "Journey planners give you a number, but the same number can mean quite different daily experiences. What to look at beyond the headline minutes."
 topics: ["commute", "transport"]
 minutesToRead: 4

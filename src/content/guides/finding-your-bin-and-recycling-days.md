@@ -1,5 +1,6 @@
 ---
 title: "Finding your bin and recycling days after you move"
+icon: "🗑️"
 description: "Collection days and what goes in which bin are set by your specific street, not a borough-wide default - here's why, and what to check before your first missed collection."
 topics: ["bins", "moving"]
 minutesToRead: 3

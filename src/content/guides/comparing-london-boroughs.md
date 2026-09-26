@@ -1,5 +1,6 @@
 ---
 title: "A practical way to compare London boroughs"
+icon: "⚖️"
 description: "Comparing boroughs on gut feel usually means comparing whichever few facts happened to come up in conversation. A more structured way to do it, in five factors."
 topics: ["comparing", "moving"]
 minutesToRead: 6

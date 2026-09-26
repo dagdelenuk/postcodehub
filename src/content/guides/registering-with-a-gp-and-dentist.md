@@ -1,5 +1,6 @@
 ---
 title: "Registering with a GP and dentist when you move"
+icon: "🩺"
 description: "Registering with a GP and dentist is free and needs no proof of address - but dentist waiting lists mean it's worth doing in your first week, not your first month."
 topics: ["gp", "healthcare", "moving"]
 minutesToRead: 4

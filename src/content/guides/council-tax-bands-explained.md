@@ -1,5 +1,6 @@
 ---
 title: "What Council Tax bands mean for your monthly budget"
+icon: "🏷️"
 description: "Council Tax bands are set by a property's 1991 valuation, not its current price - which is why two similar-looking homes nearby can land in different bands, and why the same band costs different amounts in different boroughs."
 topics: ["council-tax", "budget", "moving"]
 minutesToRead: 5

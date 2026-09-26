@@ -1,5 +1,6 @@
 ---
 title: "What Ofsted ratings do (and don't) tell you"
+icon: "🎓"
 description: "Outstanding, Good, Requires improvement, Inadequate - what each Ofsted grade actually assesses, how current a rating really is, and what it can't tell you about a school."
 topics: ["schools"]
 minutesToRead: 5

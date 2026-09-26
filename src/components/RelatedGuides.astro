@@ -16,10 +16,15 @@ const guides = await getGuidesForTopic(topic, limit);
       <h2 class="text-lg font-semibold mb-3">Related guides</h2>
       <div class="grid gap-3 sm:grid-cols-2">
         {guides.map((guide) => (
-          <a href={`/guides/${guide.id}/`} class="block rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors">
-            <p class="font-medium">{guide.data.title}</p>
-            <p class="text-sm text-stone-500 mt-1">{guide.data.description}</p>
-            <p class="text-xs text-stone-400 mt-2">{guide.data.minutesToRead} min read</p>
+          <a href={`/guides/${guide.id}/`} class="relative overflow-hidden block rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors">
+            <span class="pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none" aria-hidden="true">
+              {guide.data.icon}
+            </span>
+            <div class="relative pr-6">
+              <p class="font-medium">{guide.data.title}</p>
+              <p class="text-sm text-stone-500 mt-1">{guide.data.description}</p>
+              <p class="text-xs text-stone-400 mt-2">{guide.data.minutesToRead} min read</p>
+            </div>
           </a>
         ))}
       </div>

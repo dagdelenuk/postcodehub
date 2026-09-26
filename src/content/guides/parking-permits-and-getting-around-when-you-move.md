@@ -1,5 +1,6 @@
 ---
 title: "Parking permits and getting around in a new area"
+icon: "🅿️"
 description: "Most residential streets in London sit inside a controlled parking zone - check before you bring a car, since permit cost and eligibility vary a lot between councils."
 topics: ["parking", "moving", "transport"]
 minutesToRead: 4

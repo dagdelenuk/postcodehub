@@ -1,5 +1,6 @@
 ---
 title: "How to report potholes, litter and other council problems"
+icon: "🚧"
 description: "Fixing a pothole, streetlight or noise complaint is almost always faster through your council's own online form than by phone - here's what to have ready before you report."
 topics: ["report", "moving"]
 minutesToRead: 3

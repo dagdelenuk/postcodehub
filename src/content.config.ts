@@ -10,6 +10,8 @@ const guides = defineCollection({
     title: z.string(),
     /** Also used as the meta description and the card blurb on /guides/ and in Related Guides. */
     description: z.string(),
+    /** One emoji, shown large and faded bottom-right on the guide's card - same treatment as SchoolCard.astro. */
+    icon: z.string(),
     /** e.g. ["schools", "admissions"], ["commute", "budget"] - matched against a page's topic in getGuidesForTopic(). */
     topics: z.array(z.string()),
     minutesToRead: z.number().int().positive(),

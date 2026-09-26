@@ -69,15 +69,21 @@ const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) =>
       relevantStepId && (
         <aside id="checklist-sidebar" class="hidden mt-8 lg:mt-0 lg:sticky lg:top-24 rounded-lg border border-stone-200 bg-white p-4" data-checklist-sidebar>
           <p class="text-xs uppercase tracking-wide text-stone-500 font-medium mb-3">Your moving checklist</p>
-          <ol class="space-y-2 text-sm" data-checklist-sidebar-list>
+          <ol class="space-y-1 text-sm" data-checklist-sidebar-list>
             {
               CHECKLIST_STEPS.map((step) => (
-                <li data-step-id={step.id} class="rounded-md border border-stone-200 p-2 transition-colors">
-                  <p class="font-medium">{step.title}</p>
-                  <p class="text-stone-500 text-xs mt-0.5">{step.text}</p>
-                  <a class="text-xs text-emerald-700 hover:underline mt-1 inline-block" data-checklist-sidebar-link>
-                    Back to checklist &rarr;
+                <li data-step-id={step.id} class="rounded-md transition-colors">
+                  <a href="#" class="flex items-start gap-2 p-2 rounded-md hover:bg-stone-50 transition-colors" data-checklist-compact data-checklist-sidebar-link>
+                    <input type="checkbox" disabled class="mt-0.5 h-3.5 w-3.5 shrink-0 accent-stone-300 pointer-events-none" />
+                    <span class="text-stone-700">{step.title}</span>
                   </a>
+                  <div class="hidden rounded-md p-3" data-checklist-full>
+                    <p class="font-semibold text-white">{step.title}</p>
+                    <p class="text-emerald-50 text-xs mt-1">{step.text}</p>
+                    <a href="#" class="text-xs text-white underline mt-2 inline-block" data-checklist-sidebar-link>
+                      Back to checklist &rarr;
+                    </a>
+                  </div>
                 </li>
               ))
             }
@@ -102,14 +108,17 @@ const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) =>
         const list = aside?.querySelector("[data-checklist-sidebar-list]");
         if (aside && list) {
           for (const li of list.querySelectorAll("[data-step-id]")) {
-            const link = li.querySelector("[data-checklist-sidebar-link]");
-            if (link) link.href = `${base}/services/#${li.dataset.stepId}`;
+            for (const link of li.querySelectorAll("[data-checklist-sidebar-link]")) {
+              link.href = `${base}/services/#${li.dataset.stepId}`;
+            }
           }
           const pinnedId = isValidStep ? step : relevantStepId;
           const pinned = list.querySelector(`[data-step-id="${pinnedId}"]`);
           if (pinned) {
             list.prepend(pinned);
-            pinned.classList.add("border-emerald-300", "bg-emerald-50");
+            pinned.querySelector("[data-checklist-compact]")?.classList.add("hidden");
+            pinned.querySelector("[data-checklist-full]")?.classList.remove("hidden");
+            pinned.querySelector("[data-checklist-full]")?.classList.add("bg-emerald-600");
           }
           aside.classList.remove("hidden");
         }

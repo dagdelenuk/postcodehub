@@ -1,5 +1,6 @@
 ---
 title: "How a longer commute really affects your budget"
+icon: "🚆"
 description: "A cheaper home further out isn't automatically a cheaper choice once you add the real cost, and time, of getting to work every day."
 topics: ["commute", "budget"]
 minutesToRead: 5

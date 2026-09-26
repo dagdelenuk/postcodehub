@@ -1,5 +1,6 @@
 ---
 title: "Getting to know a new area after you move"
+icon: "🧭"
 description: "The practical side of settling in - finding the nearest park, library and GP aren't the interesting part of moving, but they're what makes an area feel liveable within the first month."
 topics: ["area", "moving"]
 minutesToRead: 3

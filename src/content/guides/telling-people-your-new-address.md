@@ -1,5 +1,6 @@
 ---
 title: "Telling people your new address after you move"
+icon: "✉️"
 description: "A sensible order for updating your driving licence, HMRC, bank and employer, plus how long Royal Mail redirection actually takes to kick in."
 topics: ["address", "moving"]
 minutesToRead: 3

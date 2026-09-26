@@ -1,5 +1,6 @@
 ---
 title: "How school admissions distance actually works"
+icon: "🏫"
 description: "Distance decides a lot of school places in London, but it's rarely the whole story. What councils actually measure, and how to use it sensibly when you're weighing up an area."
 topics: ["schools", "admissions"]
 minutesToRead: 5

@@ -1,5 +1,6 @@
 ---
 title: "Checking broadband and mobile signal before you move"
+icon: "📶"
 description: "Broadband speed and mobile coverage both vary street by street, not just by area - check both before signing a contract, and order early since some installs take weeks."
 topics: ["broadband", "moving"]
 minutesToRead: 3

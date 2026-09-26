@@ -138,6 +138,7 @@ collections:
     summary: "{{title}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Icon", name: "icon", widget: "string", hint: "One emoji, shown large and faded in the corner of the guide's card - e.g. 🩺, 💷, 🅿️." }
       - { label: "Description", name: "description", widget: "text", hint: "Shown as the card blurb, the meta description, and in Related guides." }
       - { label: "Topics", name: "topics", widget: "list", hint: "e.g. schools, commute, budget - lowercase, matches what a page asks Related Guides for." }
       - { label: "Minutes to read", name: "minutesToRead", widget: "number", value_type: "int" }

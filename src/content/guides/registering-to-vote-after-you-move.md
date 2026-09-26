@@ -1,5 +1,6 @@
 ---
 title: "Registering to vote after you move"
+icon: "🗳️"
 description: "It takes about five minutes online - but being on the electoral register at your current address matters for more than elections, including credit checks and mortgage applications."
 topics: ["vote", "moving"]
 minutesToRead: 3
