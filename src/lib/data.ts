@@ -67,12 +67,7 @@ export function getBannerImages(slug: string): BannerImage[] {
 
 let cachedPlaceImages: Banners | null = null;
 
-// data/processed/place-images/ holds one small JSON file per slug ({slug, images}), not one combined file - that's what
-// lets Decap CMS's folder collection type show a real, searchable per-entry list in /admin (see public/admin/config.yml's
-// "place_photos" collection), so a bad automatic pick can be fixed by looking at the actual photo, not blind by ID.
-function loadPlaceImages(): Banners {
-  if (cachedPlaceImages) return cachedPlaceImages;
-  const dir = path.join(PROCESSED_DIR, "place-images");
+function loadImageDir(dir: string): Banners {
   const record: Banners = {};
   if (existsSync(dir)) {
     for (const file of readdirSync(dir)) {
@@ -81,7 +76,21 @@ function loadPlaceImages(): Banners {
       if (entry.slug && entry.images && entry.images.length > 0) record[entry.slug] = entry.images;
     }
   }
-  cachedPlaceImages = record;
+  return record;
+}
+
+// Each of data/processed/district-images/ and data/processed/place-images/ holds one small JSON file per slug
+// ({slug, images}), not one combined file - that's what lets Decap CMS's folder collection type show a real,
+// searchable per-entry list in /admin ("District photos" and "Borough & city photos" in public/admin/config.yml),
+// so a bad automatic pick can be fixed by looking at the actual photo, not blind by ID. district-images/ holds the
+// raw per-outcode Geograph pull; place-images/ holds curate-borough-images.ts's pooled borough/city selections.
+// Slugs never collide between the two (outcode vs borough/city), so a plain merge is safe.
+function loadPlaceImages(): Banners {
+  if (cachedPlaceImages) return cachedPlaceImages;
+  cachedPlaceImages = {
+    ...loadImageDir(path.join(PROCESSED_DIR, "district-images")),
+    ...loadImageDir(path.join(PROCESSED_DIR, "place-images")),
+  };
   return cachedPlaceImages;
 }
 

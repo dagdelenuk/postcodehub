@@ -72,7 +72,7 @@ collections:
                   once you're happy with a slug's Include/Exclude list above.
 
   - name: "district_photos"
-    label: "District photos (currently live)"
+    label: "District photos"
     description: >
       One entry per postcode district (e.g. tw11) - what's currently showing
       in its page's photo slider, auto-picked from geograph.org.uk by
@@ -103,7 +103,7 @@ collections:
           - { label: "License", name: "license", widget: "string", default: "CC BY-SA 2.0" }
 
   - name: "place_photos"
-    label: "Borough & city photos (currently live)"
+    label: "Borough & city photos"
     description: >
       One entry per borough (e.g. richmond-upon-thames) plus "london" - what's
       currently showing in that page's photo slider, curated by
