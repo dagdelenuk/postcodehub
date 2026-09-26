@@ -2,7 +2,7 @@
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import CouncilServices from "../../../../components/CouncilServices.astro";
 import NewcomerChecklist from "../../../../components/NewcomerChecklist.astro";
-import { getAllOutcodeParams, getCouncilTax, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { displayPlaceName, getAllOutcodeParams, getCouncilTax, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -20,6 +20,7 @@ const { data } = Astro.props;
   <NewcomerChecklist
     services={data.services}
     boroughName={data.borough}
+    placeName={displayPlaceName(data.postTown, data.wards, data.city)}
     storageKey={borough!}
     base={`/${city}/${borough}/${data.slug}`}
     connectivityHref={`/${city}/${borough}/${data.slug}/statistics/#connectivity`}

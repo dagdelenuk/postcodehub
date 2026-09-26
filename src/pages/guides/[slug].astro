@@ -67,7 +67,7 @@ const relevantStepId = guide.data.topics.find((t) => CHECKLIST_STEPS.some((s) =>
 
     {
       relevantStepId && (
-        <aside id="checklist-sidebar" class="hidden mt-8 lg:mt-0 lg:sticky lg:top-24 rounded-lg border border-stone-200 bg-white p-4" data-checklist-sidebar>
+        <aside id="checklist-sidebar" class="hidden mt-8 lg:mt-0 lg:sticky top-[calc(var(--sticky-crumbs,114px)+0.75rem)] rounded-lg border border-stone-200 bg-white p-4" data-checklist-sidebar>
           <p class="text-xs uppercase tracking-wide text-stone-500 font-medium mb-3">Your moving checklist</p>
           <ol class="space-y-1 text-sm" data-checklist-sidebar-list>
             {
