@@ -1,8 +1,7 @@
 ---
 import LocalityLayout from "../../../../layouts/LocalityLayout.astro";
 import CouncilServices from "../../../../components/CouncilServices.astro";
-import NewcomerChecklist from "../../../../components/NewcomerChecklist.astro";
-import { displayPlaceName, getAllOutcodeParams, getCouncilTax, hasContent, loadOutcodeData } from "../../../../lib/data";
+import { getAllOutcodeParams, hasContent, loadOutcodeData } from "../../../../lib/data";
 
 export function getStaticPaths() {
   return getAllOutcodeParams()
@@ -17,22 +16,19 @@ const { data } = Astro.props;
 <LocalityLayout citySlug={city!} boroughSlug={borough!} data={data} active="services" topic="Council services">
   <h1 class="text-2xl font-bold mb-2">Council services in {data.outcode}, {data.borough}</h1>
   <p class="text-stone-500 mb-6">{data.borough} council runs bin collections, Council Tax, parking and local services for {data.outcode}.</p>
-  <NewcomerChecklist
-    services={data.services}
-    boroughName={data.borough}
-    placeName={displayPlaceName(data.postTown, data.wards, data.city)}
-    storageKey={borough!}
-    base={`/${city}/${borough}/${data.slug}`}
-    connectivityHref={`/${city}/${borough}/${data.slug}/statistics/#connectivity`}
-    bandD={getCouncilTax(borough!)?.bandD}
-    pages={{
-      health: hasContent(data, "health"),
-      schools: hasContent(data, "schools"),
-      places: hasContent(data, "places"),
-      food: hasContent(data, "food"),
-      transport: true, // every district has a transport page
-    }}
-  />
+
+  <a
+    href={`/${city}/${borough}/services/#moving-checklist`}
+    class="mb-8 flex items-center gap-4 rounded-lg border border-emerald-100 bg-emerald-50/60 p-4 hover:border-emerald-300 transition-colors"
+  >
+    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white text-xl" aria-hidden="true">&#128230;</span>
+    <div class="min-w-0 flex-1">
+      <p class="font-semibold">Moving to {data.borough}?</p>
+      <p class="text-sm text-stone-600 mt-0.5">A ten-step first-month checklist: GP, voting, Council Tax, bins, parking and more, with the right council links.</p>
+    </div>
+    <span class="text-emerald-700 shrink-0" aria-hidden="true">&rarr;</span>
+  </a>
+
   <h2 class="text-2xl font-bold mb-4">All council services</h2>
   <CouncilServices services={data.services} boroughName={data.borough} />
 </LocalityLayout>

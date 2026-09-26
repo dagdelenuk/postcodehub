@@ -6,9 +6,6 @@ import { getGuidesForTopic } from "../lib/guides";
 interface Props {
   services: CouncilServicesData;
   boroughName: string;
-  /** Shown in the "Moving to ...?" heading - defaults to boroughName. Pass the district's own post town (e.g.
-   * "Teddington") on a district's own services page, so its heading isn't identical to its borough's. */
-  placeName?: string;
   /** Storage key for ticked steps - one checklist per borough. */
   storageKey: string;
   /** Path prefix of the pages this checklist links to inside the site, e.g. "/london/camden" or "/london/camden/nw6". */
@@ -20,7 +17,7 @@ interface Props {
   pages: { health: boolean; schools: boolean; places: boolean; food: boolean; transport: boolean };
 }
 
-const { services, boroughName, placeName = boroughName, storageKey, base, connectivityHref, bandD, pages } = Astro.props;
+const { services, boroughName, storageKey, base, connectivityHref, bandD, pages } = Astro.props;
 const council = services.councilName || boroughName;
 const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 });
 
@@ -123,7 +120,7 @@ const KIND_LABEL: Record<Link["kind"], string> = { local: "Council", site: "On P
 
 <section id="moving-checklist" class="mb-10 scroll-mt-40" data-checklist data-storage-key={storageKey} data-total={steps.length}>
   <div class="flex flex-wrap items-end justify-between gap-2 mb-1">
-    <h2 class="text-2xl font-bold">&#128230; Moving to {placeName}? Your first-month checklist</h2>
+    <h2 class="text-2xl font-bold">&#128230; Moving to {boroughName}? Your first-month checklist</h2>
     <button type="button" class="text-xs text-stone-400 underline hidden" data-checklist-reset>Reset</button>
   </div>
   <p class="text-stone-500 mb-4 text-sm">Ten things worth doing in your first weeks, with the right link for {boroughName} on each. Tick them off as you go: your progress is saved on this device.</p>
