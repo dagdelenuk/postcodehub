@@ -1,0 +1,29 @@
+---
+import type { KeyFigure } from "../lib/glance";
+
+interface Props {
+  figures: KeyFigure[];
+}
+
+const { figures } = Astro.props;
+const TONE = { good: "text-emerald-700", bad: "text-amber-700", neutral: "text-ink-soft" } as const;
+---
+
+{
+  figures.length > 0 && (
+    <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 mb-6">
+      {figures.map((f) => (
+        <div class="rounded-[var(--radius-card)] border border-line bg-white p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-ink-faint">{f.label}</p>
+          <p class="mt-1 text-2xl font-extrabold tracking-tight text-ink">{f.value}</p>
+          {f.bar !== undefined && (
+            <div class="mt-2 h-1.5 rounded-full bg-line">
+              <div class="h-1.5 rounded-full bg-brand" style={`width:${f.bar}%`} />
+            </div>
+          )}
+          {f.note && <p class:list={["mt-2 text-xs font-medium", TONE[f.tone]]}>{f.note}</p>}
+        </div>
+      ))}
+    </div>
+  )
+}
