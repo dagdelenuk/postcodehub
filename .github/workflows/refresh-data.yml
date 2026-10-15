@@ -36,6 +36,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: refresh-data
@@ -106,3 +107,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Refresh data ($(date -u +%Y-%m-%d))"
           git push
+          # A push made with GITHUB_TOKEN deliberately doesn't trigger other workflows, so deploy.yml's own
+          # "on: push" never fires for this commit - dispatch it explicitly (workflow_dispatch is exempt).
+          gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
