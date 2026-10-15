@@ -14,6 +14,10 @@ const guides = defineCollection({
     icon: z.string(),
     /** e.g. ["schools", "admissions"], ["commute", "budget"] - matched against a page's topic in getGuidesForTopic(). */
     topics: z.array(z.string()),
+    /** When several guides share a checklist step's topic (e.g. two "council-tax" guides), the one the moving checklist's
+     * "Learn more" link should point at - set to that step's id (see src/lib/checklist.ts). Optional: with none set,
+     * getChecklistGuide() falls back to the first topic match. */
+    checklistStep: z.string().optional(),
     minutesToRead: z.number().int().positive(),
     lastReviewed: z.date(),
     /** Links into PostcodeHub's own tools relevant to this guide, e.g. { label: "Commute checker", href: "/commute/" }. */

@@ -1,7 +1,7 @@
 ---
 import type { CouncilServicesData } from "../lib/types";
 import { CHECKLIST_STEPS } from "../lib/checklist";
-import { getGuidesForTopic } from "../lib/guides";
+import { getChecklistGuide } from "../lib/guides";
 
 interface Props {
   services: CouncilServicesData;
@@ -104,7 +104,7 @@ const STEP_LINKS: Record<string, Link[]> = {
 const steps: Step[] = await Promise.all(
   CHECKLIST_STEPS.map(async (meta) => {
     const links = [...(STEP_LINKS[meta.id] ?? [])];
-    const [guide] = await getGuidesForTopic(meta.id, 1);
+    const guide = await getChecklistGuide(meta.id);
     if (guide) links.push({ label: "Learn more", href: `/guides/${guide.id}/?from=checklist&base=${encodeURIComponent(base)}&step=${meta.id}`, kind: "guide" });
     return {
       id: meta.id,

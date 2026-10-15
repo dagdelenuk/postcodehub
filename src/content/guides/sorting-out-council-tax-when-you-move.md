@@ -3,6 +3,7 @@ title: "Sorting out Council Tax when you move house"
 icon: "💷"
 description: "You're liable for Council Tax from the day you move in, whether or not you've registered yet - here's who to tell, in what order, and which discounts are worth checking."
 topics: ["council-tax", "moving"]
+checklistStep: "council-tax"
 minutesToRead: 5
 lastReviewed: 2026-09-26
 relatedTools:

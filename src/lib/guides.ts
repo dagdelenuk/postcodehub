@@ -22,3 +22,10 @@ export async function getGuidesForTopic(topic: string, limit = 3): Promise<Guide
   const guides = await loadPublishedGuides();
   return guides.filter((g) => g.data.topics.includes(topic)).slice(0, limit);
 }
+
+/** The single guide a moving-checklist step's "Learn more" link should open: the one explicitly marked
+ * `checklistStep: <id>`, else the first topic match (newest-reviewed). Undefined if the step has no guide. */
+export async function getChecklistGuide(stepId: string): Promise<Guide | undefined> {
+  const guides = await loadPublishedGuides();
+  return guides.find((g) => g.data.checklistStep === stepId) ?? guides.find((g) => g.data.topics.includes(stepId));
+}

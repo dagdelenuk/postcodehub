@@ -141,6 +141,7 @@ collections:
       - { label: "Icon", name: "icon", widget: "string", hint: "One emoji, shown large and faded in the corner of the guide's card - e.g. 🩺, 💷, 🅿️." }
       - { label: "Description", name: "description", widget: "text", hint: "Shown as the card blurb, the meta description, and in Related guides." }
       - { label: "Topics", name: "topics", widget: "list", hint: "e.g. schools, commute, budget - lowercase, matches what a page asks Related Guides for." }
+      - { label: "Checklist step", name: "checklistStep", widget: "string", required: false, hint: "Only when two guides share a moving-checklist topic: set the step id (gp, vote, council-tax, bins, parking, address, broadband, schools, area, report) on the one its \"Learn more\" link should open." }
       - { label: "Minutes to read", name: "minutesToRead", widget: "number", value_type: "int" }
       - { label: "Last reviewed", name: "lastReviewed", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - label: "Related PostcodeHub tools"
