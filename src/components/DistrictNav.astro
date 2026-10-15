@@ -1,0 +1,100 @@
+---
+import { CATEGORIES } from "../lib/categories";
+import type { CategoryKey } from "../lib/types";
+import Icon from "./Icon.astro";
+
+interface Props {
+  basePath: string;
+  active: CategoryKey | "overview";
+  available: Set<CategoryKey>;
+}
+
+const { basePath, active, available } = Astro.props;
+
+const items = [
+  { key: "overview" as const, label: "Overview", href: basePath, icon: "overview" as const, enabled: true },
+  ...CATEGORIES.map((c) => ({ key: c.key, label: c.label, href: `${basePath}${c.key}/`, icon: c.tabler, enabled: available.has(c.key) })),
+];
+const MOBILE_PRIMARY = 4;
+const primary = items.slice(0, MOBILE_PRIMARY);
+const more = items.slice(MOBILE_PRIMARY);
+const moreActive = more.some((i) => i.key === active);
+---
+
+<nav aria-label="Sections" class="hidden lg:block sticky top-[calc(var(--sticky-header,69px)+1rem)] self-start">
+  <ul class="flex flex-col gap-0.5 text-sm">
+    {
+      items.map((item) => (
+        <li>
+          {item.enabled ? (
+            <a
+              href={item.href}
+              aria-current={active === item.key ? "page" : undefined}
+              class:list={[
+                "flex items-center gap-2.5 rounded-lg px-3 py-2 transition-colors",
+                active === item.key ? "bg-brand-soft text-brand-strong font-semibold" : "text-ink-soft hover:bg-white hover:text-ink",
+              ]}
+            >
+              <Icon name={item.icon} size={18} />
+              {item.label}
+            </a>
+          ) : (
+            <span class="flex items-center gap-2.5 rounded-lg px-3 py-2 text-stone-300 cursor-default" title="No data available for this area">
+              <Icon name={item.icon} size={18} />
+              {item.label}
+            </span>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<nav aria-label="Sections" class="lg:hidden fixed bottom-0 inset-x-0 z-30 border-t border-line bg-white">
+  <ul class="mx-auto flex max-w-lg items-stretch text-[11px] font-medium">
+    {
+      primary.map((item) => (
+        <li class="flex-1">
+          {item.enabled ? (
+            <a href={item.href} aria-current={active === item.key ? "page" : undefined} class:list={["flex flex-col items-center gap-0.5 py-2", active === item.key ? "text-brand-strong" : "text-ink-soft"]}>
+              <Icon name={item.icon} size={22} />
+              {item.label}
+            </a>
+          ) : (
+            <span class="flex flex-col items-center gap-0.5 py-2 text-stone-300">
+              <Icon name={item.icon} size={22} />
+              {item.label}
+            </span>
+          )}
+        </li>
+      ))
+    }
+    <li class="flex-1 relative">
+      <details class="group">
+        <summary class:list={["flex cursor-pointer list-none flex-col items-center gap-0.5 py-2 [&::-webkit-details-marker]:hidden", moreActive ? "text-brand-strong" : "text-ink-soft"]}>
+          <Icon name="more" size={22} />
+          More
+        </summary>
+        <ul class="absolute bottom-full right-2 mb-2 w-56 rounded-xl border border-line bg-white p-1.5 text-sm font-normal">
+          {
+            more.map((item) => (
+              <li>
+                {item.enabled ? (
+                  <a href={item.href} aria-current={active === item.key ? "page" : undefined} class:list={["flex items-center gap-2.5 rounded-lg px-3 py-2", active === item.key ? "bg-brand-soft text-brand-strong font-semibold" : "text-ink-soft"]}>
+                    <Icon name={item.icon} size={18} />
+                    {item.label}
+                  </a>
+                ) : (
+                  <span class="flex items-center gap-2.5 rounded-lg px-3 py-2 text-stone-300">
+                    <Icon name={item.icon} size={18} />
+                    {item.label}
+                  </span>
+                )}
+              </li>
+            ))
+          }
+        </ul>
+      </details>
+    </li>
+  </ul>
+</nav>
