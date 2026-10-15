@@ -51,16 +51,16 @@ function formatMonthLabel(month: string): string {
 
 <p class="text-stone-500 mb-6">{total.toLocaleString()} recorded crimes over the last 12 months, {coverage}.</p>
 
-{summary && <p class="text-sm text-stone-700 bg-emerald-50/60 border border-emerald-100 rounded-md px-3 py-2 mb-5">{summary}</p>}
+{summary && <p class="text-sm text-ink-soft bg-brand-soft/60 border border-brand-soft rounded-md px-3 py-2 mb-5">{summary}</p>}
 
 <section class="mb-8">
   <h3 class="text-lg font-semibold mb-3">Monthly trend</h3>
-  <div class="rounded-lg border border-stone-200 bg-white p-4">
+  <div class="rounded-lg border border-line bg-white p-4">
     <div class="flex items-end gap-1 h-40">
       {
         monthly.map((m) => (
           <div class="flex-1 h-full flex items-end">
-            <div class="w-full bg-emerald-600/80 rounded-t" style={`height: ${Math.max((m.totalCrimes / maxMonthly) * 100, 2)}%`} title={`${formatMonthLabel(m.month)}: ${m.totalCrimes.toLocaleString()}`} />
+            <div class="w-full bg-brand/80 rounded-t" style={`height: ${Math.max((m.totalCrimes / maxMonthly) * 100, 2)}%`} title={`${formatMonthLabel(m.month)}: ${m.totalCrimes.toLocaleString()}`} />
           </div>
         ))
       }
@@ -97,7 +97,7 @@ function formatMonthLabel(month: string): string {
         <div class="flex items-center gap-3">
           <span class="text-sm text-stone-600 w-40 shrink-0 truncate capitalize">{category.replace(/-/g, " ")}</span>
           <div class="flex-1 bg-stone-100 rounded-full h-3">
-            <div class="bg-emerald-600 h-3 rounded-full" style={`width: ${(count / maxCategory) * 100}%`} />
+            <div class="bg-brand h-3 rounded-full" style={`width: ${(count / maxCategory) * 100}%`} />
           </div>
           <span class="text-sm text-stone-500 w-12 text-right">{count.toLocaleString()}</span>
         </div>

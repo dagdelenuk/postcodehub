@@ -78,13 +78,13 @@ const { boroughName } = Astro.props;
         if (countEl) countEl.textContent = mine.length > 0 ? `(${mine.length})` : "";
 
         if (mine.length === 0) {
-          output.append(el("p", "text-sm text-emerald-700 font-medium", "No road works or closures reported on the main roads in this borough right now."));
+          output.append(el("p", "text-sm text-brand font-medium", "No road works or closures reported on the main roads in this borough right now."));
           return;
         }
 
         const grid = el("div", "grid items-start gap-3");
         for (const d of mine) {
-          const card = el("div", "rounded-lg border border-stone-200 bg-white px-4 py-3");
+          const card = el("div", "rounded-lg border border-line bg-white px-4 py-3");
 
           // Row 1: chips + road name + chevron; click anywhere on it to open the details.
           const header = el("button", "flex w-full items-center gap-2 text-left") as HTMLButtonElement;
@@ -115,7 +115,7 @@ const { boroughName } = Astro.props;
           if (start || end) card.append(el("p", "text-xs text-stone-400 mt-1 text-right", `${start}${end ? ` to ${end}` : ""}`));
 
           // Details, folded by default.
-          const details = el("div", "hidden mt-3 border-t border-stone-100 pt-3");
+          const details = el("div", "hidden mt-3 border-t border-line pt-3");
           if (d.comments) details.append(el("p", "text-sm text-stone-600", d.comments.trim()));
           if (d.currentUpdate) details.append(el("p", "text-sm text-stone-500 mt-1 italic", d.currentUpdate.trim()));
           card.append(details);
@@ -134,7 +134,7 @@ const { boroughName } = Astro.props;
         const cards = [...grid.children] as HTMLElement[];
         if (cards.length > VISIBLE) {
           cards.slice(VISIBLE).forEach((c) => c.classList.add("hidden"));
-          const toggle = el("button", "mt-3 text-sm text-emerald-700 hover:underline", `Show all ${cards.length}`) as HTMLButtonElement;
+          const toggle = el("button", "mt-3 text-sm text-brand hover:underline", `Show all ${cards.length}`) as HTMLButtonElement;
           toggle.type = "button";
           let expanded = false;
           toggle.addEventListener("click", () => {

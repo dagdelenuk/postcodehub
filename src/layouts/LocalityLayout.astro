@@ -2,7 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import { placeJsonLd } from "../lib/seo";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import CategoryNav from "../components/CategoryNav.astro";
+import DistrictNav from "../components/DistrictNav.astro";
 import SplitDistrictNotice from "../components/SplitDistrictNotice.astro";
 import { displayPlaceName, districtDescription, districtTitle, getSplitInfo, hasContent, topicDescription, topicTitle } from "../lib/data";
 import type { CategoryKey, OutcodeData } from "../lib/types";
@@ -67,7 +67,6 @@ const available = new Set<CategoryKey>(
   ]}
 >
   <Breadcrumbs
-    sticky
     crumbs={[
       { label: "PostcodeHub", href: "/" },
       { label: data.city, href: `/${citySlug}/` },
@@ -75,14 +74,16 @@ const available = new Set<CategoryKey>(
       { label: data.outcode },
     ]}
   />
-  <CategoryNav basePath={basePath} active={active} available={available} overviewLabel={data.outcode} />
-  <div class="mx-auto max-w-5xl px-4 pt-4">
-    {isOverview ? <h1 class="text-xl font-bold text-stone-900">{heading}</h1> : <p class="text-xl font-bold text-stone-900">{heading}</p>}
-    {placeName && <p class="text-base font-semibold text-stone-700 mt-1">{placeName}</p>}
-    <p class="text-sm text-stone-500 mt-1">{data.wards.join(", ")}</p>
-    {showNotice && <SplitDistrictNotice info={splitInfo} variant={isOverview ? "full" : "condensed"} />}
-  </div>
-  <div class="mx-auto max-w-5xl px-4 py-8">
-    <slot />
+  <div class="mx-auto max-w-5xl px-4 pt-4 pb-24 lg:pb-8 lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-8">
+    <DistrictNav basePath={basePath} active={active} available={available} />
+    <div class="min-w-0">
+      {isOverview ? <h1 class="text-xl font-bold text-ink">{heading}</h1> : <p class="text-xl font-bold text-ink">{heading}</p>}
+      {placeName && <p class="text-base font-semibold text-ink-soft mt-1">{placeName}</p>}
+      <p class="text-sm text-stone-500 mt-1">{data.wards.join(", ")}</p>
+      {showNotice && <SplitDistrictNotice info={splitInfo} variant={isOverview ? "full" : "condensed"} />}
+      <div class="pt-6">
+        <slot />
+      </div>
+    </div>
   </div>
 </BaseLayout>

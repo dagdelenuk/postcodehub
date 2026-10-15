@@ -132,3 +132,55 @@ export function glanceDescription(glance: Glance, max = 155): string {
   const first = glance.detail[0];
   return `${first.slice(0, max - 1).trimEnd()}…`;
 }
+
+export interface KeyFigure {
+  label: string;
+  value: string;
+  /** One short comparison line, e.g. "36% below London median". */
+  note: string | null;
+  tone: "good" | "bad" | "neutral";
+  /** 0-100, drawn as a thin progress bar when present. */
+  bar?: number;
+}
+
+function median(values: number[]): number | null {
+  if (values.length < 10) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = sorted.length >> 1;
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+/** "12% below" / "8% above" / "in line with" against a reference; null if either side is missing. */
+function versus(value: number | null, reference: number | null): { text: string; below: boolean } | null {
+  if (value === null || reference === null || reference === 0) return null;
+  const pct = Math.round(((value - reference) / reference) * 100);
+  if (Math.abs(pct) < 3) return { text: "in line with London median", below: false };
+  return { text: `${Math.abs(pct)}% ${pct < 0 ? "below" : "above"} London median`, below: pct < 0 };
+}
+
+/** Four headline figures for the top of a district page, each set against the median London district. */
+export function districtKeyFigures(code: string): KeyFigure[] {
+  const data = buildCompareData();
+  const own = data.districts.find((d) => d.code === code);
+  if (!own) return [];
+  const peers = data.districts.filter((d) => d.sharePercent >= 50).map((d) => d.m);
+  const med = (get: Getter) => median(peers.map(get).filter((v): v is number => v !== null));
+  const figures: KeyFigure[] = [];
+
+  if (own.m.medianPrice !== null) {
+    const v = versus(own.m.medianPrice, med(price));
+    figures.push({ label: "Median home price", value: gbp.format(own.m.medianPrice), note: v?.text ?? null, tone: "neutral" });
+  }
+  if (own.m.crimes12mo !== null) {
+    const v = versus(own.m.crimes12mo, med(crime));
+    figures.push({ label: "Crimes, last 12 months", value: Math.round(own.m.crimes12mo).toLocaleString("en-GB"), note: v?.text ?? null, tone: v ? (v.below ? "good" : "bad") : "neutral" });
+  }
+  if (own.m.avgJourney !== null) {
+    const v = versus(own.m.avgJourney, med(journey));
+    figures.push({ label: "To central London", value: `${own.m.avgJourney} min`, note: v?.text ?? null, tone: v ? (v.below ? "good" : "bad") : "neutral" });
+  }
+  if (own.m.gigabit !== null) {
+    figures.push({ label: "Gigabit broadband", value: `${Math.round(own.m.gigabit)}%`, note: "of homes can get it", tone: own.m.gigabit >= 90 ? "good" : "neutral", bar: Math.round(own.m.gigabit) });
+  }
+  return figures;
+}

@@ -16,10 +16,10 @@ const { title, intro, columns, rows, footer, source } = Astro.props;
 <section class="mb-8">
   <h3 class="text-lg font-semibold mb-1">{title}</h3>
   <p class="text-stone-500 mb-3 text-sm">{intro}</p>
-  <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+  <div class="overflow-x-auto rounded-lg border border-line bg-white">
     <table class="w-full text-sm" data-sortable-table>
       <thead>
-        <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+        <tr class="border-b border-line text-left text-xs uppercase tracking-wide text-stone-400">
           <th class="px-4 py-2 font-semibold" aria-sort="none">
             <button type="button" class="sort-btn" data-sort-col="0">Borough <span class="sort-arrow" aria-hidden="true"></span></button>
           </th>
@@ -35,9 +35,9 @@ const { title, intro, columns, rows, footer, source } = Astro.props;
       <tbody>
         {
           rows.map((r) => (
-            <tr class="border-b border-stone-100 last:border-0" data-sort-row>
+            <tr class="border-b border-line last:border-0" data-sort-row>
               <td class="px-4 py-2 whitespace-nowrap">
-                <a href={r.href} class="text-emerald-700 hover:underline">{r.name}</a>
+                <a href={r.href} class="text-brand hover:underline">{r.name}</a>
               </td>
               {r.cells.map((c) => <td class="px-4 py-2 text-right whitespace-nowrap">{c}</td>)}
             </tr>
@@ -45,7 +45,7 @@ const { title, intro, columns, rows, footer, source } = Astro.props;
         }
         {
           footer && (
-            <tr class="bg-emerald-50 font-semibold" data-sort-footer>
+            <tr class="bg-brand-soft font-semibold" data-sort-footer>
               <td class="px-4 py-2 whitespace-nowrap">{footer.name}</td>
               {footer.cells.map((c) => <td class="px-4 py-2 text-right whitespace-nowrap">{c}</td>)}
             </tr>
@@ -70,13 +70,13 @@ const { title, intro, columns, rows, footer, source } = Astro.props;
     white-space: nowrap;
   }
   .sort-btn:hover {
-    color: #047857;
+    color: #0e7490;
   }
   .sort-arrow {
     display: inline-block;
     width: 0.7em;
     font-size: 0.85em;
-    color: #047857;
+    color: #0e7490;
   }
   th[aria-sort="ascending"] .sort-arrow::after {
     content: "▲";

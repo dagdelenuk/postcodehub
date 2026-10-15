@@ -26,12 +26,12 @@ const TYPES = [
   { key: "Pub/bar/nightclub", label: "Pubs, bars & nightclubs", emoji: "🍺", colorClass: "text-yellow-700" },
   { key: "Hotel/bed & breakfast/guest house", label: "Hotels & guest houses", emoji: "🛎️", colorClass: "text-sky-700" },
   { key: "Mobile caterer", label: "Mobile caterers", emoji: "🚚", colorClass: "text-teal-700" },
-  { key: "Retailers - supermarkets/hypermarkets", label: "Supermarkets", emoji: "🛒", colorClass: "text-emerald-700" },
+  { key: "Retailers - supermarkets/hypermarkets", label: "Supermarkets", emoji: "🛒", colorClass: "text-brand" },
   { key: "Retailers - other", label: "Food shops & other retailers", emoji: "🥖", colorClass: "text-rose-700" },
 ];
 const RATING_LABELS: Record<number, string> = { 5: "Very good", 4: "Good", 3: "Generally satisfactory", 2: "Improvement necessary", 1: "Major improvement necessary", 0: "Urgent improvement necessary" };
-const RATING_COLORS: Record<number, string> = { 5: "bg-emerald-700", 4: "bg-lime-700", 3: "bg-yellow-400 !text-stone-900", 2: "bg-orange-600", 1: "bg-red-600", 0: "bg-red-800" };
-const RATING_TEXT: Record<number, string> = { 5: "text-emerald-700", 4: "text-lime-700", 3: "text-yellow-700", 2: "text-orange-700", 1: "text-red-700", 0: "text-red-800" };
+const RATING_COLORS: Record<number, string> = { 5: "bg-brand", 4: "bg-lime-700", 3: "bg-yellow-400 !text-ink", 2: "bg-orange-600", 1: "bg-red-600", 0: "bg-red-800" };
+const RATING_TEXT: Record<number, string> = { 5: "text-brand", 4: "text-lime-700", 3: "text-yellow-700", 2: "text-orange-700", 1: "text-red-700", 0: "text-red-800" };
 // Coordinates keep the link short (a busy borough has thousands of these); fall back to the address when a business has none.
 const mapsUrl = (e: { name: string; address: string; postcode: string; latitude: number | null; longitude: number | null }) =>
   e.latitude != null && e.longitude != null
@@ -101,7 +101,7 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
       groups.map((group) => (
         <div class="mb-8" data-food-group data-post-town={group.placeName}>
           <h2 class="text-lg font-semibold mb-3">
-            <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/food/`} class="hover:text-emerald-700">
+            <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/food/`} class="hover:text-brand">
               {group.outcode} - {group.placeName}
             </a>
           </h2>
@@ -149,9 +149,9 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
       background: white;
     }
     [data-filter-group].is-active {
-      border-color: #059669;
-      background: #ecfdf5;
-      color: #065f46;
+      border-color: #0e7490;
+      background: #cffafe;
+      color: #155e75;
     }
     /* Compact food cards: a busy borough lists thousands, so the markup and its styling are kept as small as possible. */
     .fc {
@@ -179,13 +179,13 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString("en-GB", { day:
     .fc-addr { font-size: 0.875rem; color: #625b55; margin-top: 0.25rem; }
     .fc-meta { font-size: 0.75rem; color: #78716c; margin-top: 0.25rem; }
     .fc-meta b { font-weight: 600; }
-    .fc-r5 { color: #047857; } .fc-r4 { color: #4d7c0f; } .fc-r3 { color: #a16207; }
+    .fc-r5 { color: #0e7490; } .fc-r4 { color: #4d7c0f; } .fc-r3 { color: #a16207; }
     .fc-dir {
       position: absolute; top: 0.5rem; right: 0.5rem; z-index: 1;
       display: inline-flex; align-items: center; justify-content: center;
       width: 1.75rem; height: 1.75rem; border-radius: 9999px; color: #78716c;
     }
-    .fc-dir:hover { background: #f5f5f4; color: #047857; }
+    .fc-dir:hover { background: #f5f5f4; color: #0e7490; }
   </style>
 
   <script>

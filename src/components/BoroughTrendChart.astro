@@ -75,7 +75,7 @@ const chartData = {
 };
 ---
 
-<div class="rounded-lg border border-stone-200 bg-white p-4 overflow-x-auto" data-trend-chart data-chart-id={chartId} data-default-highlight={highlightSlug}>
+<div class="rounded-lg border border-line bg-white p-4 overflow-x-auto" data-trend-chart data-chart-id={chartId} data-default-highlight={highlightSlug}>
   <svg viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`} class="w-full min-w-[640px]" role="img" aria-label={`Monthly trend by borough`}>
     {
       gridLines.map((g) => (
@@ -153,9 +153,9 @@ const chartData = {
     transition: opacity 0.15s;
   }
   .legend-pill.is-active {
-    border-color: #059669;
-    background: #ecfdf5;
-    color: #065f46;
+    border-color: #0e7490;
+    background: #cffafe;
+    color: #155e75;
   }
   .legend-dot {
     display: inline-block;

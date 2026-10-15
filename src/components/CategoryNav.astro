@@ -12,7 +12,7 @@ interface Props {
 const { basePath, active, available, overviewLabel = "🏠" } = Astro.props;
 ---
 
-<nav class="border-b border-stone-200 bg-white sticky top-[var(--sticky-crumbs,114px)] z-10">
+<nav class="border-b border-line bg-white sticky top-[var(--sticky-crumbs,114px)] z-10">
   <div class="mx-auto max-w-5xl px-2 sm:px-4 overflow-x-auto overflow-y-hidden">
     <ul class="flex text-sm whitespace-nowrap">
       <li>
@@ -22,7 +22,7 @@ const { basePath, active, available, overviewLabel = "🏠" } = Astro.props;
           title="Overview"
           class:list={[
             "inline-block px-1.5 sm:px-2 py-3 border-b-2 -mb-px transition-colors",
-            active === "overview" ? "border-emerald-700 text-emerald-800 font-medium" : "border-transparent text-stone-600 hover:text-stone-900",
+            active === "overview" ? "border-brand text-brand-strong font-medium" : "border-transparent text-stone-600 hover:text-ink",
           ]}
         >
           {overviewLabel}
@@ -38,7 +38,7 @@ const { basePath, active, available, overviewLabel = "🏠" } = Astro.props;
                   href={`${basePath}${cat.key}/`}
                   class:list={[
                     "inline-block px-1.5 sm:px-2 py-3 border-b-2 -mb-px transition-colors",
-                    active === cat.key ? "border-emerald-700 text-emerald-800 font-medium" : "border-transparent text-stone-600 hover:text-stone-900",
+                    active === cat.key ? "border-brand text-brand-strong font-medium" : "border-transparent text-stone-600 hover:text-ink",
                   ]}
                 >
                   {cat.icon} {cat.label}

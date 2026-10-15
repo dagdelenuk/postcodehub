@@ -21,7 +21,7 @@ const groups = [...new Set(services.links.map((l) => l.group))].map((group) => (
       href={binDay.url}
       target="_blank"
       rel="noopener"
-      class="flex items-start gap-3 rounded-lg border border-emerald-200 bg-emerald-50 p-4 mb-6 hover:border-emerald-600 transition-colors"
+      class="flex items-start gap-3 rounded-lg border border-brand-soft bg-brand-soft p-4 mb-6 hover:border-brand transition-colors"
     >
       <span class="text-3xl leading-none" aria-hidden="true">🗑️</span>
       <div>
@@ -43,7 +43,7 @@ const groups = [...new Set(services.links.map((l) => l.group))].map((group) => (
         <ul class="grid gap-2 sm:grid-cols-2">
           {g.links.map((l) => (
             <li>
-              <a href={l.url} target="_blank" rel="noopener" class="block rounded-lg border border-stone-200 bg-white px-4 py-3 text-sm hover:border-emerald-600 transition-colors">
+              <a href={l.url} target="_blank" rel="noopener" class="block rounded-lg border border-line bg-white px-4 py-3 text-sm hover:border-brand transition-colors">
                 {l.title} <span class="text-stone-400" aria-hidden="true">&rarr;</span>
               </a>
             </li>

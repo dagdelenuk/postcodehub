@@ -85,9 +85,9 @@ const totalChildcare = childcareGroups.reduce((sum, g) => sum + g.providers.leng
 
     {
       ratingsSummary && (
-        <div class="rounded-lg border border-emerald-100 bg-emerald-50/60 p-4 mb-6" data-schools-summary>
-          <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-1">At a glance</p>
-          <p class="text-sm text-stone-700 leading-relaxed">
+        <div class="rounded-lg border border-brand-soft bg-brand-soft/60 p-4 mb-6" data-schools-summary>
+          <p class="text-xs uppercase tracking-wide text-brand-strong font-medium mb-1">At a glance</p>
+          <p class="text-sm text-ink-soft leading-relaxed">
             {ratingsSummary.headline} {ratingsSummary.phases}
             {ratingsSummary.unrated > 0 && ` ${ratingsSummary.unrated} have no current Ofsted rating (often a new or independent school).`}
           </p>
@@ -129,8 +129,8 @@ const totalChildcare = childcareGroups.reduce((sum, g) => sum + g.providers.leng
           <h2 class="text-lg font-semibold mb-3">Nurseries &amp; Childminders in {borough.name} ({totalChildcare})</h2>
           {childcareGroups.map((group) => (
             <div class="mb-6">
-              <h3 class="font-medium text-stone-700 mb-2">
-                <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/schools/`} class="hover:text-emerald-700">
+              <h3 class="font-medium text-ink-soft mb-2">
+                <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/schools/`} class="hover:text-brand">
                   {group.outcode} - {group.placeName}
                 </a>{" "}
                 ({group.providers.length})
@@ -154,7 +154,7 @@ const totalChildcare = childcareGroups.reduce((sum, g) => sum + g.providers.leng
             href={admissionsUrl}
             target="_blank"
             rel="noopener"
-            class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors sm:max-w-md"
+            class="flex items-start gap-3 rounded-lg border border-line bg-white p-4 hover:border-brand transition-colors sm:max-w-md"
           >
             <span class="text-3xl leading-none" aria-hidden="true">📝</span>
             <div>

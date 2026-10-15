@@ -1,0 +1,19 @@
+---
+import { ICONS, type IconName } from "../lib/icons";
+
+interface Props {
+  name: IconName;
+  /** Pixel size (width and height). */
+  size?: number;
+  class?: string;
+  /** Accessible name; omit for purely decorative icons (the usual case, next to a text label). */
+  label?: string;
+}
+
+const { name, size = 20, class: className, label } = Astro.props;
+const svg = ICONS[name]
+  .replace(/\s(width|height)="[^"]*"/g, "")
+  .replace("<svg", `<svg width="${size}" height="${size}" stroke-width="1.75" ${label ? `role="img" aria-label="${label}"` : 'aria-hidden="true"'} focusable="false"`);
+---
+
+<span class:list={["inline-flex shrink-0 align-middle", className]} set:html={svg} />

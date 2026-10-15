@@ -63,7 +63,7 @@ const postTowns = [...new Set(groups.map((g) => g.placeName))].sort((a, b) => a.
       groups.map((group) => (
         <div class="mb-8" data-place-group>
           <h2 class="text-lg font-semibold mb-3">
-            <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/places/`} class="hover:text-emerald-700">
+            <a href={`/${city.slug}/${borough.slug}/${group.outcodeSlug}/places/`} class="hover:text-brand">
               {group.outcode} - {group.placeName}
             </a>
           </h2>

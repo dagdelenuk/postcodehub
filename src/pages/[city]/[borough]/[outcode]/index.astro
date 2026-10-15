@@ -7,7 +7,8 @@ import { CATEGORIES } from "../../../../lib/categories";
 import { getAllOutcodeParams, getDistrictImages, hasContent, loadOutcodeData } from "../../../../lib/data";
 import { CATEGORY_KEYS } from "../../../../lib/types";
 import { getSimilarDistricts } from "../../../../lib/similar";
-import { districtGlance, glanceDescription } from "../../../../lib/glance";
+import { districtGlance, districtKeyFigures, glanceDescription } from "../../../../lib/glance";
+import KeyFigures from "../../../../components/KeyFigures.astro";
 
 export function getStaticPaths() {
   return getAllOutcodeParams().map((p) => ({
@@ -30,6 +31,7 @@ const STAT_COLORS: Record<string, string> = {
 
 const similar = getSimilarDistricts(data.outcode, 4);
 const glance = districtGlance(data.outcode);
+const keyFigures = districtKeyFigures(data.outcode);
 const description = glance ? glanceDescription(glance) : undefined;
 const mpCount = new Set(data.representatives.representatives.filter((r) => r.role === "MP").map((r) => r.name)).size;
 const summaryStats = [
@@ -54,11 +56,12 @@ const summaryStats = [
   <div class="mb-6">
     <RotatingBanner images={getDistrictImages(data.slug)} />
   </div>
+  <KeyFigures figures={keyFigures} />
   {
     glance && (
-      <div class="rounded-lg border border-emerald-100 bg-emerald-50/60 p-4 mb-6" data-at-a-glance>
-        <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-1">At a glance</p>
-        <p class="text-sm text-stone-700 leading-relaxed">{glance.detail.join(" ")}</p>
+      <div class="rounded-lg border border-brand-soft bg-brand-soft/60 p-4 mb-6" data-at-a-glance>
+        <p class="text-xs uppercase tracking-wide text-brand-strong font-medium mb-1">At a glance</p>
+        <p class="text-sm text-ink-soft leading-relaxed">{glance.detail.join(" ")}</p>
         <p class="text-xs text-stone-400 mt-2">Summarised from the figures on this site, set against the rest of London. See Statistics for the detail and sources.</p>
       </div>
     )
@@ -68,7 +71,7 @@ const summaryStats = [
     {
       summaryStats.map((stat) => {
         const clickable = hasContent(data, stat.category);
-        const cardClass = "relative overflow-hidden rounded-lg border border-stone-200 bg-white p-4 text-center transition-colors" + (clickable ? " hover:border-emerald-600 cursor-pointer" : "");
+        const cardClass = "relative overflow-hidden rounded-lg border border-line bg-white p-4 text-center transition-colors" + (clickable ? " hover:border-brand cursor-pointer" : "");
         const icon = CATEGORIES.find((c) => c.key === stat.category)!.icon;
         const content = (
           <>
@@ -76,11 +79,11 @@ const summaryStats = [
               {icon}
             </span>
             {stat.value === null ? (
-              <svg class="relative mx-auto h-8 w-8 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Chart">
+              <svg class="relative mx-auto h-8 w-8 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Chart">
                 <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />
               </svg>
             ) : (
-              <p class="relative text-2xl font-bold text-emerald-800">{stat.value.toLocaleString()}</p>
+              <p class="relative text-2xl font-bold text-brand-strong">{stat.value.toLocaleString()}</p>
             )}
             <p class="relative text-xs text-stone-500 mt-1">{stat.label}</p>
           </>
@@ -102,7 +105,7 @@ const summaryStats = [
   </div>
 
   <div class="flex items-stretch gap-4 mb-8">
-    <div class="flex-1 rounded-lg border border-stone-200 bg-white p-4">
+    <div class="flex-1 rounded-lg border border-line bg-white p-4">
       <p class="text-xs uppercase tracking-wide text-stone-400 mb-1">About {data.outcode}</p>
       <p class="text-sm text-stone-600">{data.history.summary}</p>
     </div>
@@ -110,12 +113,12 @@ const summaryStats = [
       hasContent(data, "representatives") && (
         <a
           href={`/${city}/${borough}/${data.slug}/representatives/`}
-          class="relative overflow-hidden shrink-0 w-32 sm:w-40 aspect-square rounded-lg border border-stone-200 bg-white p-4 text-center flex flex-col items-center justify-center transition-colors hover:border-emerald-600 cursor-pointer"
+          class="relative overflow-hidden shrink-0 w-32 sm:w-40 aspect-square rounded-lg border border-line bg-white p-4 text-center flex flex-col items-center justify-center transition-colors hover:border-brand cursor-pointer"
         >
           <span class="pointer-events-none select-none absolute -right-2 -bottom-3 text-6xl opacity-25 leading-none text-purple-600" aria-hidden="true">
             🏛️
           </span>
-          <p class="relative text-2xl font-bold text-emerald-800">{mpCount}</p>
+          <p class="relative text-2xl font-bold text-brand-strong">{mpCount}</p>
           <p class="relative text-xs text-stone-500 mt-1">Representatives</p>
         </a>
       )
@@ -130,7 +133,7 @@ const summaryStats = [
         return (
           <a
             href={`/${city}/${borough}/${data.slug}/${key}/`}
-            class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-emerald-600 transition-colors"
+            class="flex items-start gap-3 rounded-lg border border-line bg-white p-4 hover:border-brand transition-colors"
           >
             <span class="text-2xl leading-none">{cat.icon}</span>
             <span>
@@ -150,7 +153,7 @@ const summaryStats = [
           <h2 class="text-lg font-semibold">Areas like {data.outcode}</h2>
           <a
             href={`/compare/?areas=${[data.outcode, ...similar.map((s) => s.district.code)].slice(0, 4).join(",")}`}
-            class="text-sm text-emerald-700 hover:underline"
+            class="text-sm text-brand hover:underline"
           >
             Compare side by side &rarr;
           </a>
@@ -163,10 +166,10 @@ const summaryStats = [
             <li class="min-w-0">
               <a
                 href={`/${district.citySlug}/${district.boroughSlug}/${district.slug}/`}
-                class="block h-full rounded-lg border border-stone-200 bg-white px-4 py-3 hover:border-emerald-600 transition-colors"
+                class="block h-full rounded-lg border border-line bg-white px-4 py-3 hover:border-brand transition-colors"
               >
                 <span class="flex items-center gap-3">
-                  <span class="h-10 w-10 shrink-0 rounded-md border border-stone-200 bg-stone-100 text-stone-600 text-[11px] font-bold flex items-center justify-center">{district.code}</span>
+                  <span class="h-10 w-10 shrink-0 rounded-md border border-line bg-stone-100 text-stone-600 text-[11px] font-bold flex items-center justify-center">{district.code}</span>
                   <span class="min-w-0">
                     <span class="block font-semibold truncate">{district.name}</span>
                     <span class="block text-xs text-stone-500 truncate">{district.borough}</span>
