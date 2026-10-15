@@ -35,7 +35,7 @@ const breadcrumbJsonLd = {
           <li class="flex items-center gap-1">
             {i > 0 && <Icon name="chevron-right" size={14} class="text-stone-300" />}
             {crumb.href ? (
-              <a href={crumb.href} class="hover:text-emerald-700 flex items-center" aria-label={crumb.href === "/" ? crumb.label : undefined}>
+              <a href={crumb.href} class="hover:text-brand flex items-center" aria-label={crumb.href === "/" ? crumb.label : undefined}>
                 {crumb.href === "/" ? (
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path d="M3 9.5L10 3l7 6.5M5 8v8.5a.5.5 0 00.5.5H8.5a.5.5 0 00.5-.5V13a1 1 0 011-1h0a1 1 0 011 1v3.5a.5.5 0 00.5.5h3a.5.5 0 00.5-.5V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
@@ -45,7 +45,7 @@ const breadcrumbJsonLd = {
                 )}
               </a>
             ) : (
-              <span class="text-stone-900 font-medium">{crumb.label}</span>
+              <span class="text-ink font-medium">{crumb.label}</span>
             )}
           </li>
         ))

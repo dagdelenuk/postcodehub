@@ -15,7 +15,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
     <h1 class="text-2xl font-bold mb-1">Compare areas</h1>
     <p class="text-stone-500 mb-5 text-sm">Pick up to four postcode districts or whole boroughs to see what they cost, how far they are from central London, how safe and connected they are, and what is on the doorstep.</p>
 
-    <div class="rounded-lg border border-stone-200 bg-white p-4 mb-6">
+    <div class="rounded-lg border border-line bg-white p-4 mb-6">
       <label for="compare-search" class="block text-sm font-medium mb-1">Add an area</label>
       <div class="relative">
         <input
@@ -23,17 +23,17 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
           type="text"
           autocomplete="off"
           placeholder="District, place or borough, e.g. TW11, Teddington or Camden"
-          class="w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
+          class="w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-brand"
           data-compare-search
         />
-        <ul class="absolute z-20 mt-1 w-full rounded-md border border-stone-200 bg-white shadow-lg hidden max-h-72 overflow-y-auto" data-compare-results role="listbox"></ul>
+        <ul class="absolute z-20 mt-1 w-full rounded-md border border-line bg-white shadow-lg hidden max-h-72 overflow-y-auto" data-compare-results role="listbox"></ul>
       </div>
       <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-3 text-sm">
         <span class="text-stone-500" data-compare-count></span>
-        <button type="button" class="text-emerald-700 hover:underline" data-compare-favourites>Add my saved areas</button>
-        <button type="button" class="text-emerald-700 hover:underline" data-compare-copy>Copy link</button>
+        <button type="button" class="text-brand hover:underline" data-compare-favourites>Add my saved areas</button>
+        <button type="button" class="text-brand hover:underline" data-compare-copy>Copy link</button>
         <button type="button" class="text-stone-500 hover:underline" data-compare-clear>Clear</button>
-        <span class="text-emerald-700 hidden" data-compare-message role="status"></span>
+        <span class="text-brand hidden" data-compare-message role="status"></span>
       </div>
     </div>
 
@@ -43,11 +43,11 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
     </p>
 
     <div class="hidden" data-compare-table-wrap>
-      <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white" data-compare-scroller>
+      <div class="overflow-x-auto rounded-lg border border-line bg-white" data-compare-scroller>
         <table class="w-full text-sm border-separate border-spacing-0" data-compare-table></table>
       </div>
       <p class="text-xs text-stone-400 mt-2">
-        <span class="inline-block h-2.5 w-2.5 rounded-sm bg-emerald-100 border border-emerald-300 align-middle"></span>
+        <span class="inline-block h-2.5 w-2.5 rounded-sm bg-brand-soft border border-brand/40 align-middle"></span>
         Green marks the best of the areas you picked: lower cost, shorter journey, less crime, faster broadband, more services and food. Rows with no colour just describe the
         area. Figures marked "borough" describe the whole borough, so districts in the same borough show the same number. A borough column uses whole-borough figures on every row (its journey times are the average of its districts).
       </p>
@@ -275,10 +275,10 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 
       const thead = el("thead");
       const headRow = el("tr");
-      headRow.append(el("th", "sticky left-0 z-10 bg-white border-b border-stone-200 px-3 py-3 text-left w-32 min-w-[8rem] sm:w-56 text-xs font-normal text-stone-500", "Measure"));
+      headRow.append(el("th", "sticky left-0 z-10 bg-white border-b border-line px-3 py-3 text-left w-32 min-w-[8rem] sm:w-56 text-xs font-normal text-stone-500", "Measure"));
       for (const d of areas) {
-        const th = el("th", "border-b border-stone-200 px-4 py-3 text-left align-top min-w-[9rem]");
-        const link = el("a", "font-semibold text-emerald-700 hover:underline block", d.title);
+        const th = el("th", "border-b border-line px-4 py-3 text-left align-top min-w-[9rem]");
+        const link = el("a", "font-semibold text-brand hover:underline block", d.title);
         link.href = d.href;
         const name = el("span", "block text-xs font-normal text-stone-500", d.subtitle);
         const btn = el("button", "text-xs font-normal text-stone-400 hover:text-red-600 mt-1", "Remove");
@@ -293,7 +293,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       for (const group of buildRows()) {
         const tbody = el("tbody");
         const titleRow = el("tr");
-        const titleCell = el("th", "bg-stone-50 border-b border-stone-100 px-4 py-1.5 text-left text-xs font-semibold uppercase tracking-wide text-stone-500", group.title);
+        const titleCell = el("th", "bg-canvas border-b border-line px-4 py-1.5 text-left text-xs font-semibold uppercase tracking-wide text-stone-500", group.title);
         titleCell.colSpan = areas.length + 1;
         titleRow.append(titleCell);
         tbody.append(titleRow);
@@ -307,12 +307,12 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
             best = row.better === "lower" ? Math.min(...known) : Math.max(...known);
           }
           const tr = el("tr");
-          tr.append(el("th", "sticky left-0 z-10 bg-white border-b border-stone-100 px-3 py-2 text-left font-normal text-stone-600 w-32 min-w-[8rem] sm:w-56", row.label));
+          tr.append(el("th", "sticky left-0 z-10 bg-white border-b border-line px-3 py-2 text-left font-normal text-stone-600 w-32 min-w-[8rem] sm:w-56", row.label));
           values.forEach((v) => {
             const isBest = best !== null && v === best;
             const td = el(
               "td",
-              `border-b border-stone-100 px-4 py-2 whitespace-nowrap ${isBest ? "bg-emerald-50 text-emerald-800 font-semibold" : ""}`,
+              `border-b border-line px-4 py-2 whitespace-nowrap ${isBest ? "bg-brand-soft text-brand-strong font-semibold" : ""}`,
               v === null ? "n/a" : row.format(v)
             );
             if (v === null) td.classList.add("text-stone-400");
@@ -350,11 +350,11 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
       }
       for (const d of matches) {
         const li = el("li");
-        const btn = el("button", "flex w-full items-center gap-3 px-3 py-2 text-left text-sm hover:bg-stone-50");
+        const btn = el("button", "flex w-full items-center gap-3 px-3 py-2 text-left text-sm hover:bg-canvas");
         btn.type = "button";
         btn.setAttribute("role", "option");
         btn.append(
-          el("span", `${d.code.startsWith("b:") ? "min-w-[3rem]" : "w-12"} shrink-0 font-semibold text-stone-700`, d.label),
+          el("span", `${d.code.startsWith("b:") ? "min-w-[3rem]" : "w-12"} shrink-0 font-semibold text-ink-soft`, d.label),
           el("span", "truncate text-stone-500", d.code.startsWith("b:") ? "· Whole borough" : d.detail)
         );
         btn.addEventListener("click", () => {

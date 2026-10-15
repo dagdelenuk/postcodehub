@@ -7,12 +7,12 @@ interface Props {
 const { tabs } = Astro.props;
 ---
 
-<nav aria-label="Sections on this page" class="sticky z-20 bg-white border-b border-stone-200 -mx-4 px-4 mb-6" data-section-tabs data-dynamic={tabs ? undefined : ""}>
+<nav aria-label="Sections on this page" class="sticky z-20 bg-white border-b border-line -mx-4 px-4 mb-6" data-section-tabs data-dynamic={tabs ? undefined : ""}>
   <ul class="flex gap-1 overflow-x-auto overflow-y-hidden text-sm whitespace-nowrap" data-section-tab-list>
     {
       tabs?.map((t) => (
         <li>
-          <a href={`#${t.id}`} data-section-tab={t.id} class="inline-block px-3 py-3.5 border-b-2 -mb-px border-transparent text-stone-600 hover:text-stone-900 transition-colors">
+          <a href={`#${t.id}`} data-section-tab={t.id} class="inline-block px-3 py-3.5 border-b-2 -mb-px border-transparent text-stone-600 hover:text-ink transition-colors">
             {t.label}
           </a>
         </li>
@@ -23,8 +23,8 @@ const { tabs } = Astro.props;
 
 <style is:global>
   [data-section-tab].is-active {
-    border-color: #047857;
-    color: #065f46;
+    border-color: #0e7490;
+    color: #155e75;
     font-weight: 500;
   }
 </style>
@@ -46,7 +46,7 @@ const { tabs } = Astro.props;
         const a = document.createElement("a");
         a.href = `#${section.id}`;
         a.dataset.sectionTab = section.id;
-        a.className = "inline-block px-3 py-3.5 border-b-2 -mb-px border-transparent text-stone-600 hover:text-stone-900 transition-colors";
+        a.className = "inline-block px-3 py-3.5 border-b-2 -mb-px border-transparent text-stone-600 hover:text-ink transition-colors";
         a.textContent = section.dataset.sectionLabel ?? section.id;
         li.append(a);
         list.append(li);

@@ -17,12 +17,12 @@ const TYPE_ICON: Record<string, string> = {
       autocomplete="off"
       placeholder="Search a postcode (e.g. TW9)"
       data-postcode-search-input
-      class="w-full rounded-md border border-stone-300 bg-white px-3 py-1.5 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
+      class="w-full rounded-md border border-stone-300 bg-white px-3 py-1.5 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-brand"
     />
     <button
       type="submit"
       aria-label="Search"
-      class="flex items-center justify-center h-8 w-8 shrink-0 rounded-md text-stone-600 hover:bg-stone-100 hover:text-stone-900 transition-colors"
+      class="flex items-center justify-center h-8 w-8 shrink-0 rounded-md text-stone-600 hover:bg-stone-100 hover:text-ink transition-colors"
     >
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <circle cx="7" cy="7" r="5.2" stroke="currentColor" stroke-width="1.6" />
@@ -30,8 +30,8 @@ const TYPE_ICON: Record<string, string> = {
       </svg>
     </button>
   </form>
-  <p data-postcode-search-message class="hidden absolute left-0 top-full mt-1 text-xs text-stone-500 bg-white border border-stone-200 rounded-md px-3 py-2 shadow-sm z-10"></p>
-  <ul data-postcode-search-results class="hidden absolute left-0 top-full mt-1 w-96 max-w-[90vw] max-h-80 overflow-y-auto bg-white border border-stone-200 rounded-md shadow-sm z-10 py-1"></ul>
+  <p data-postcode-search-message class="hidden absolute left-0 top-full mt-1 text-xs text-stone-500 bg-white border border-line rounded-md px-3 py-2 shadow-sm z-10"></p>
+  <ul data-postcode-search-results class="hidden absolute left-0 top-full mt-1 w-96 max-w-[90vw] max-h-80 overflow-y-auto bg-white border border-line rounded-md shadow-sm z-10 py-1"></ul>
 </div>
 
 <script type="application/json" id="postcode-search-type-icon" set:html={JSON.stringify(TYPE_ICON)} />

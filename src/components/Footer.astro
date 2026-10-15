@@ -24,12 +24,12 @@ const currentBorough = citySlug && boroughSlug ? getBorough(citySlug, boroughSlu
 const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.outcodes, city!.name) : null;
 ---
 
-<footer class="border-t border-stone-200 bg-white mt-12">
+<footer class="border-t border-line bg-white mt-12">
   <div class="mx-auto max-w-5xl px-4 py-10">
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-4">
       <div>
         <a href="/" class="text-2xl font-extrabold tracking-tight">
-          Postcode<span class="text-emerald-700">Hub</span>.UK
+          Postcode<span class="text-brand">Hub</span>.UK
         </a>
         <p class="mt-3 text-xs text-stone-500">
           Health, safety, transport, schools, and local civic data for UK neighbourhoods.
@@ -43,25 +43,25 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
       <div class="min-w-0">
         <h2 class="text-xs font-semibold uppercase tracking-wide text-stone-400">Explore</h2>
         <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="/" class="text-stone-600 hover:text-emerald-700">Home</a></li>
-          <li><a href="/compare/" class="text-stone-600 hover:text-emerald-700">Compare areas</a></li>
-          <li><a href="/commute/" class="text-stone-600 hover:text-emerald-700">Commute checker</a></li>
-          <li><a href="/guides/" class="text-stone-600 hover:text-emerald-700">Guides</a></li>
+          <li><a href="/" class="text-stone-600 hover:text-brand">Home</a></li>
+          <li><a href="/compare/" class="text-stone-600 hover:text-brand">Compare areas</a></li>
+          <li><a href="/commute/" class="text-stone-600 hover:text-brand">Commute checker</a></li>
+          <li><a href="/guides/" class="text-stone-600 hover:text-brand">Guides</a></li>
           {
             city && (
               <>
                 <li>
-                  <a href={`/${city.slug}/`} class="text-stone-600 hover:text-emerald-700">
+                  <a href={`/${city.slug}/`} class="text-stone-600 hover:text-brand">
                     {city.name}
                   </a>
                 </li>
                 <li>
-                  <a href={`/${city.slug}/rankings/`} class="text-stone-600 hover:text-emerald-700">
+                  <a href={`/${city.slug}/rankings/`} class="text-stone-600 hover:text-brand">
                     Rankings
                   </a>
                 </li>
                 <li>
-                  <a href={`/${city.slug}/statistics/`} class="text-stone-600 hover:text-emerald-700">
+                  <a href={`/${city.slug}/statistics/`} class="text-stone-600 hover:text-brand">
                     Statistics
                   </a>
                 </li>
@@ -80,7 +80,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
             <ul class:list={["mt-3 text-sm", currentBorough ? "space-y-2" : "grid grid-cols-2 gap-x-6 gap-y-2"]}>
               {boroughs.slice(0, 10).map((b) => (
                 <li>
-                  <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700">
+                  <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-brand">
                     {b.name}
                   </a>
                 </li>
@@ -95,7 +95,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
                   >
                     {boroughs.slice(10).map((b) => (
                       <li>
-                        <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-emerald-700">
+                        <a href={`/${city!.slug}/${b.slug}/`} class="text-stone-600 hover:text-brand">
                           {b.name}
                         </a>
                       </li>
@@ -125,7 +125,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
                     <a
                       href={`/${city!.slug}/${boroughSlug}/${o.slug}/`}
                       title={label}
-                      class="block truncate text-stone-600 hover:text-emerald-700"
+                      class="block truncate text-stone-600 hover:text-brand"
                     >
                       {label}
                     </a>
@@ -145,7 +145,7 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
                           <a
                             href={`/${city!.slug}/${boroughSlug}/${o.slug}/`}
                             title={label}
-                            class="flex min-w-0 items-center text-stone-600 hover:text-emerald-700"
+                            class="flex min-w-0 items-center text-stone-600 hover:text-brand"
                           >
                             <span class="truncate">
                               {o.outcode} - {districtLocalName(o, city!.name)}
@@ -164,10 +164,10 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
       }
     </div>
 
-    <div class="mt-8 pt-6 border-t border-stone-100 flex flex-wrap items-center gap-x-4 gap-y-2" data-install-row>
+    <div class="mt-8 pt-6 border-t border-line flex flex-wrap items-center gap-x-4 gap-y-2" data-install-row>
       <button
         type="button"
-        class="inline-flex items-center gap-2 text-sm text-emerald-700 hover:underline"
+        class="inline-flex items-center gap-2 text-sm text-brand hover:underline"
         data-install-app
       >
         <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -178,17 +178,17 @@ const districtGroups = currentBorough ? partitionDistrictsForNav(currentBorough.
       <span class="text-xs text-stone-400">Works offline for pages you've visited. No app store needed.</span>
     </div>
 
-    <dialog class="m-auto rounded-xl border border-stone-200 p-0 backdrop:bg-stone-900/40 max-w-sm w-[calc(100%-2rem)]" data-install-dialog>
+    <dialog class="m-auto rounded-xl border border-line p-0 backdrop:bg-stone-900/40 max-w-sm w-[calc(100%-2rem)]" data-install-dialog>
       <div class="p-5">
         <h2 class="text-base font-semibold mb-2">Install PostcodeHub</h2>
         <p class="text-sm text-stone-600" data-install-instructions></p>
         <form method="dialog" class="mt-4 text-right">
-          <button class="rounded-lg bg-emerald-700 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-800 transition-colors">Got it</button>
+          <button class="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white hover:bg-brand-strong transition-colors">Got it</button>
         </form>
       </div>
     </dialog>
 
-    <p class="mt-6 pt-6 border-t border-stone-100 text-center text-xs text-stone-400">
+    <p class="mt-6 pt-6 border-t border-line text-center text-xs text-stone-400">
       PostcodeHub.UK is an independent project and is not affiliated with Royal Mail, the NHS, the Metropolitan
       Police, or any local council.
     </p>

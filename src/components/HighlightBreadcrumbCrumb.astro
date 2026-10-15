@@ -32,7 +32,7 @@ const { citySlug, entities } = Astro.props;
     sep.textContent = "/";
     const a = document.createElement("a");
     a.href = `/${citySlug}/${entity.slug}/`;
-    a.className = "hover:text-emerald-700 flex items-center";
+    a.className = "hover:text-brand flex items-center";
     a.textContent = entity.name;
     li.append(sep, a);
     list.insertBefore(li, lastItem);

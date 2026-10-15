@@ -43,23 +43,23 @@ const hasBoroughAwareLinks = guide.data.relatedTools.some((t) => t.boroughPath);
 
   <div class="mx-auto max-w-5xl px-4 py-6 lg:grid lg:grid-cols-[1fr_18rem] lg:gap-8 lg:items-start">
     <article class="max-w-3xl">
-      <p class="text-xs uppercase tracking-wide text-emerald-700 font-medium mb-2">Guide &middot; {guide.data.minutesToRead} min read</p>
+      <p class="text-xs uppercase tracking-wide text-brand font-medium mb-2">Guide &middot; {guide.data.minutesToRead} min read</p>
       <h1 class="text-2xl font-bold mb-2">{guide.data.title}</h1>
       <p class="text-stone-500 mb-1">{guide.data.description}</p>
       <p class="text-xs text-stone-400 mb-6">Last reviewed: {reviewedDate}</p>
 
-      <div class="guide-content text-stone-700 leading-relaxed">
+      <div class="guide-content text-ink-soft leading-relaxed">
         <Content />
       </div>
 
       {
         guide.data.relatedTools.length > 0 && (
-          <div class="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-4">
-            <p class="text-xs uppercase tracking-wide text-emerald-800 font-medium mb-2">PostcodeHub tools for this</p>
+          <div class="mt-8 rounded-lg border border-brand-soft bg-brand-soft/60 p-4">
+            <p class="text-xs uppercase tracking-wide text-brand-strong font-medium mb-2">PostcodeHub tools for this</p>
             <ul class="space-y-1.5">
               {guide.data.relatedTools.map((tool) => (
                 <li>
-                  <a href={tool.href} data-related-tool-link data-borough-path={tool.boroughPath} class="text-sm text-emerald-700 hover:underline">
+                  <a href={tool.href} data-related-tool-link data-borough-path={tool.boroughPath} class="text-sm text-brand hover:underline">
                     {tool.label} &rarr;
                   </a>
                 </li>
@@ -72,15 +72,15 @@ const hasBoroughAwareLinks = guide.data.relatedTools.some((t) => t.boroughPath);
 
     {
       relevantStepId && (
-        <aside id="checklist-sidebar" class="hidden mt-8 lg:mt-0 lg:sticky top-[calc(var(--sticky-crumbs,114px)+0.75rem)] rounded-lg border border-stone-200 bg-white p-4" data-checklist-sidebar>
+        <aside id="checklist-sidebar" class="hidden mt-8 lg:mt-0 lg:sticky top-[calc(var(--sticky-crumbs,114px)+0.75rem)] rounded-lg border border-line bg-white p-4" data-checklist-sidebar>
           <p class="text-xs uppercase tracking-wide text-stone-500 font-medium mb-3">Your moving checklist</p>
           <ol class="space-y-1 text-sm" data-checklist-sidebar-list>
             {
               CHECKLIST_STEPS.map((step) => (
                 <li data-step-id={step.id} class="rounded-md transition-colors">
-                  <a href="#" class="flex items-start gap-2 p-2 rounded-md hover:bg-stone-50 transition-colors" data-checklist-compact data-checklist-sidebar-link>
+                  <a href="#" class="flex items-start gap-2 p-2 rounded-md hover:bg-canvas transition-colors" data-checklist-compact data-checklist-sidebar-link>
                     <input type="checkbox" disabled class="mt-0.5 h-3.5 w-3.5 shrink-0 accent-stone-300 pointer-events-none" />
-                    <span class="text-stone-700">{step.title}</span>
+                    <span class="text-ink-soft">{step.title}</span>
                   </a>
                   <div class="hidden rounded-md p-3" data-checklist-full>
                     <p class="font-semibold text-white">{step.title}</p>
@@ -127,7 +127,7 @@ const hasBoroughAwareLinks = guide.data.relatedTools.some((t) => t.boroughPath);
             list.prepend(pinned);
             pinned.querySelector("[data-checklist-compact]")?.classList.add("hidden");
             pinned.querySelector("[data-checklist-full]")?.classList.remove("hidden");
-            pinned.querySelector("[data-checklist-full]")?.classList.add("bg-emerald-600");
+            pinned.querySelector("[data-checklist-full]")?.classList.add("bg-brand");
           }
           aside.classList.remove("hidden");
         }
@@ -159,7 +159,7 @@ const hasBoroughAwareLinks = guide.data.relatedTools.some((t) => t.boroughPath);
     margin-bottom: 0.375rem;
   }
   .guide-content :global(a) {
-    color: #047857;
+    color: #0e7490;
     text-decoration: underline;
     text-underline-offset: 2px;
   }

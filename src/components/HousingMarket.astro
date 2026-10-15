@@ -58,7 +58,7 @@ const postTownTopValues =
 ---
 
           {summary && (
-    <p class="text-sm text-stone-700 bg-emerald-50/60 border border-emerald-100 rounded-md px-3 py-2 mb-5">{summary}</p>
+    <p class="text-sm text-ink-soft bg-brand-soft/60 border border-brand-soft rounded-md px-3 py-2 mb-5">{summary}</p>
   )}
 
           {b.rents && (
@@ -73,8 +73,8 @@ const postTownTopValues =
         { label: b.name, area: b.rents.borough },
         { label: "London", area: b.rents.london },
       ].slice(0, solo ? 1 : 2).map((c) => (
-        <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
-          <p class="text-2xl font-bold text-emerald-800">{c.area.byBedrooms.all.price != null ? gbp.format(c.area.byBedrooms.all.price) : "n/a"}<span class="text-sm font-normal text-stone-500"> a month</span></p>
+        <div class="rounded-lg border border-line bg-white p-4 text-center">
+          <p class="text-2xl font-bold text-brand-strong">{c.area.byBedrooms.all.price != null ? gbp.format(c.area.byBedrooms.all.price) : "n/a"}<span class="text-sm font-normal text-stone-500"> a month</span></p>
           <p class="text-xs text-stone-500 mt-1">
             {c.label} average rent
             {c.area.byBedrooms.all.annualChange != null && (
@@ -87,10 +87,10 @@ const postTownTopValues =
       ))}
     </div>
     <BoroughTrendChart trend={b.rents.trend} averageLabel={solo ? "London average rent" : "London average"} chartId={`rents-${b.slug}`} zoomAxis />
-    <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
+    <div class="overflow-x-auto rounded-lg border border-line bg-white mt-4">
       <table class="w-full text-sm">
         <thead>
-          <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+          <tr class="border-b border-line text-left text-xs uppercase tracking-wide text-stone-400">
             <th class="px-4 py-2 font-semibold">Property</th>
             <th class="px-4 py-2 font-semibold text-right">{b.name} / month</th>
             <th class="px-4 py-2 font-semibold text-right">12-month change</th>
@@ -103,7 +103,7 @@ const postTownTopValues =
             const local = b.rents!.borough.byBedrooms[row.key];
             const lon = b.rents!.london.byBedrooms[row.key];
             return (
-              <tr class:list={["border-b border-stone-100 last:border-0", row.key === "all" && "bg-emerald-50 font-semibold"]}>
+              <tr class:list={["border-b border-line last:border-0", row.key === "all" && "bg-brand-soft font-semibold"]}>
                 <td class="px-4 py-2">{row.label}</td>
                 <td class="px-4 py-2 text-right">
                   {local.price != null ? gbp.format(local.price) : "n/a"}
@@ -145,8 +145,8 @@ const postTownTopValues =
                   { label: b.name, series: b.hpi.borough },
                   { label: "London", series: b.hpi.london },
                 ].slice(0, solo ? 1 : 2).map((c) => (
-                  <div class="rounded-lg border border-stone-200 bg-white p-4 text-center">
-                    <p class="text-2xl font-bold text-emerald-800">{gbp.format(c.series.averagePrice[c.series.averagePrice.length - 1])}</p>
+                  <div class="rounded-lg border border-line bg-white p-4 text-center">
+                    <p class="text-2xl font-bold text-brand-strong">{gbp.format(c.series.averagePrice[c.series.averagePrice.length - 1])}</p>
                     <p class="text-xs text-stone-500 mt-1">
                       {c.label} average price
                       {c.series.annualChange != null && (
@@ -159,10 +159,10 @@ const postTownTopValues =
                 ))}
               </div>
               <BoroughTrendChart trend={b.hpiTrend} averageLabel={solo ? "London average price" : "London average"} chartId={`hpi-${b.slug}`} zoomAxis />
-              <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white mt-4">
+              <div class="overflow-x-auto rounded-lg border border-line bg-white mt-4">
                 <table class="w-full text-sm">
                   <thead>
-                    <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                    <tr class="border-b border-line text-left text-xs uppercase tracking-wide text-stone-400">
                       <th class="px-4 py-2 font-semibold">Property type</th>
                       <th class="px-4 py-2 font-semibold text-right">{b.name}</th>
                       {!solo && <th class="px-4 py-2 font-semibold text-right">London average</th>}
@@ -173,7 +173,7 @@ const postTownTopValues =
                       const local = b.hpi!.borough.byType[row.key];
                       const lon = b.hpi!.london.byType[row.key];
                       return (
-                        <tr class="border-b border-stone-100 last:border-0">
+                        <tr class="border-b border-line last:border-0">
                           <td class="px-4 py-2">{row.label}</td>
                           <td class="px-4 py-2 text-right">
                             {local != null ? gbp.format(local) : "n/a"}
@@ -199,10 +199,10 @@ const postTownTopValues =
               <h2 class="text-2xl font-bold mb-1">Sale prices by post town in {b.name}</h2>
               <p class="text-stone-500 mb-3 text-sm">Median price of homes sold since {new Date(b.prices.since).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}, and how it moved on the earlier sales we hold, against the borough and London medians.</p>
               {postTownTopValues && <p class="text-sm text-stone-600 mb-3">{postTownTopValues}</p>}
-              <div class="overflow-x-auto rounded-lg border border-stone-200 bg-white">
+              <div class="overflow-x-auto rounded-lg border border-line bg-white">
                 <table class="w-full text-sm">
                   <thead>
-                    <tr class="border-b border-stone-200 text-left text-xs uppercase tracking-wide text-stone-400">
+                    <tr class="border-b border-line text-left text-xs uppercase tracking-wide text-stone-400">
                       <th class="px-4 py-2 font-semibold">Post town</th>
                       <th class="px-4 py-2 font-semibold text-right">Sales</th>
                       <th class="px-4 py-2 font-semibold text-right">Median price</th>
@@ -211,7 +211,7 @@ const postTownTopValues =
                   </thead>
                   <tbody>
                     {[...b.prices.postTowns, { ...b.prices.borough, name: `${b.name} (all)` }, { ...b.prices.london, name: "London average (all boroughs)" }].map((row, i, all) => (
-                      <tr class:list={["border-b border-stone-100 last:border-0", i >= all.length - 2 && "bg-emerald-50 font-semibold"]}>
+                      <tr class:list={["border-b border-line last:border-0", i >= all.length - 2 && "bg-brand-soft font-semibold"]}>
                         <td class="px-4 py-2">{row.name}</td>
                         <td class="px-4 py-2 text-right text-stone-500">{row.sales.toLocaleString()}</td>
                         <td class="px-4 py-2 text-right">

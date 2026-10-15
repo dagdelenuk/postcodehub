@@ -15,15 +15,15 @@ const { latitude, longitude, zoom, radiusM, parks = [], areaLabel } = Astro.prop
 const config = { lat: latitude, lon: longitude, zoom, radiusM: radiusM ?? null, parks: parks.map((p) => ({ n: p.name, lat: p.latitude, lon: p.longitude })), label: areaLabel ?? "" };
 ---
 
-<div class="rounded-lg border border-stone-200 bg-white overflow-hidden mb-3" data-env-map>
-  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 px-4 py-2 border-b border-stone-100 text-sm">
+<div class="rounded-lg border border-line bg-white overflow-hidden mb-3" data-env-map>
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 px-4 py-2 border-b border-line text-sm">
     <label class="inline-flex items-center gap-1.5 text-stone-600">
-      <input type="checkbox" checked class="accent-emerald-700" data-env-noise-toggle /> Road noise
+      <input type="checkbox" checked class="accent-brand" data-env-noise-toggle /> Road noise
     </label>
     {
       parks.length > 0 && (
         <label class="inline-flex items-center gap-1.5 text-stone-600">
-          <input type="checkbox" checked class="accent-emerald-700" data-env-parks-toggle /> Parks
+          <input type="checkbox" checked class="accent-brand" data-env-parks-toggle /> Parks
         </label>
       )
     }
@@ -107,7 +107,7 @@ const config = { lat: latitude, lon: longitude, zoom, radiusM: radiusM ?? null, 
       }).addTo(map);
 
       if (config.radiusM) {
-        L.circle([config.lat, config.lon], { radius: config.radiusM, color: "#047857", weight: 2, fill: false, dashArray: "6 4" }).addTo(map).bindTooltip(config.label || "Area covered", { sticky: true });
+        L.circle([config.lat, config.lon], { radius: config.radiusM, color: "#0e7490", weight: 2, fill: false, dashArray: "6 4" }).addTo(map).bindTooltip(config.label || "Area covered", { sticky: true });
       }
 
       const parks = L.featureGroup(
